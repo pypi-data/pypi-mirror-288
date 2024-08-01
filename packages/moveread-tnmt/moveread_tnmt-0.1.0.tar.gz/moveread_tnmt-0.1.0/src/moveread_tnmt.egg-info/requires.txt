@@ -1,0 +1,10 @@
+lazy-loader
+sqlmodel
+sqltypes
+fastapi
+python-kv
+pure-cv
+aiohttp
+chess-pairings
+chess-scraping
+chess-utils
