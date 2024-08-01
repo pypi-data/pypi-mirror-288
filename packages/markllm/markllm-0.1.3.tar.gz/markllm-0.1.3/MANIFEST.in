@@ -1,0 +1,11 @@
+include README.md
+include requirements.txt
+include markllm/config/*
+include markllm/dataset/*
+include markllm/font/*
+include markllm/images/*
+include markllm/watermark/exp_edit/cython_files/*
+include markllm/watermark/its_edit/cython_files/*
+include markllm/watermark/upv/model/*
+include markllm/watermark/xsir/*
+include markllm/sir/*
