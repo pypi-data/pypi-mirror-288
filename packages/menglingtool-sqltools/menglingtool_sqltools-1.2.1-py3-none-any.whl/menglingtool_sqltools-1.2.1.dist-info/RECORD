@@ -1,0 +1,13 @@
+menglingtool_sqltools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+menglingtool_sqltools/mysql.py,sha256=azRmG-l0Uy0G6oWho2CpdypFhhBJlv6PldMBwdEpsag,3002
+menglingtool_sqltools/pgsql.py,sha256=FP6EjDaMkW7hJnp2WyYYxy7QhzWckb-twK0iMHOxlWE,5049
+menglingtool_sqltools/sqlite.py,sha256=AISoscdxrQ4nKRfyBMDWXCDYyknFvYnMklr-WGHNBsc,1215
+menglingtool_sqltools/sqlserver.py,sha256=DMvQmXFHJZc9sf6RMbxxFgRKKuRC0kckh7HnsWaIVZ8,2092
+menglingtool_sqltools/tools.py,sha256=vPtPWXb566YcnR-DZKw0TqJUUcfBIJnZY1iWvZTAAvo,5739
+menglingtool_sqltools/__sqltool__/action.py,sha256=OV_DPpiIgtMTDyuV-6dYPMmjfXouL2ffMbqwMvhcJDo,5382
+menglingtool_sqltools/__sqltool__/alter.py,sha256=9YR7IcxMcdIw54ZN4u48V5BHDQO4FjnDmglIMoQV6iA,1660
+menglingtool_sqltools/__sqltool__/body.py,sha256=BdiSSYBcd112gKYEGfYoDNTg2RVKSZuzdRQk6jDycyI,2784
+menglingtool_sqltools-1.2.1.dist-info/METADATA,sha256=s8IAKVaaMcj3PGyBH6j9DzQyUSaXlAi-9No0LNlG7IY,227
+menglingtool_sqltools-1.2.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+menglingtool_sqltools-1.2.1.dist-info/top_level.txt,sha256=v56oCFYL9sqdRpJYI3FvJgBAKmONhW2P5jAf8Uxa3Vg,22
+menglingtool_sqltools-1.2.1.dist-info/RECORD,,
