@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: addlib-test-publish
+Version: 0.1.0
+Summary: A simple library to perform addition
+License: MIT
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# addlib-test-publish
+
+`addlib-test-publish` is a simple Python library to perform addition.
+
+## Installation
+
+```sh
+pip install addlib-test-publish
+```
+
