@@ -1,0 +1,40 @@
+[
+    {
+        "group_names": [
+            "Control",
+            "Silenced",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "group_dirs": [
+            "/Users/mahan/sciebo/Research/AutoGaitA/Mouse/Sanity Test Interaction Graziana/Result 10 joints/Control",
+            "/Users/mahan/sciebo/Research/AutoGaitA/Mouse/Sanity Test Interaction Graziana/Result 10 joints/Silenced",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "results_dir": "/Users/mahan/sciebo/Research/AutoGaitA/Mouse/Sanity Test Interaction Graziana/Result 10 joints/Test12"
+    },
+    {
+        "do_permtest": true,
+        "do_anova": true,
+        "anova_design": "Mixed ANOVA",
+        "permutation_number": 10,
+        "stats_threshold": "0.05",
+        "which_leg": "right",
+        "number_of_PCs": 3,
+        "save_3D_PCA_video": false,
+        "plot_SE": false,
+        "color_palette": "viridis",
+        "dont_show_plots": false,
+        "legend_outside": true,
+        "stats_variables": [
+            "Nose x",
+            "Ankle Angle"
+        ],
+        "PCA_variables": []
+    }
+]
