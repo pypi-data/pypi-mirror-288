@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: plan-d
+Version: 0.1.0
+Summary: Python Language's Another Nonpareil remote Debugger
+License: MIT
+Keywords: debugger,remote,ipython
+Author: ZhengYu, Xu
+Author-email: zen-xu@outlook.com
+Requires-Python: >=3.8,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Debuggers
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: ipython (>=8,<9)
+Requires-Dist: madbg (>=1.3.2,<2.0.0)
+Requires-Dist: prompt-toolkit (>=3,<4)
+Requires-Dist: rich (>=13)
+Description-Content-Type: text/markdown
+
+# plan-d
+Python Language's Another Nonpareil remote Debugger
+
