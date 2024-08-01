@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+mongal/__init__.py
+mongal.egg-info/PKG-INFO
+mongal.egg-info/SOURCES.txt
+mongal.egg-info/dependency_links.txt
+mongal.egg-info/requires.txt
+mongal.egg-info/top_level.txt
