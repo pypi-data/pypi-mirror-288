@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: ligoauth
+Version: 0.0.9
+Summary: ligo upload mac sdk
+Requires-Python: >=3.6
+
