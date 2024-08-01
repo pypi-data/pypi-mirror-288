@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pytest-dpg
+Version: 0.1.0
+Summary: 
+License: GPL-3.0-or-later
+Author: TJ
+Author-email: tbruno25@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: dearpygui (>=1.11.1,<2.0.0)
+Requires-Dist: multiprocess (>=0.70.16,<0.71.0)
+Requires-Dist: pyautogui (>=0.9.54,<0.10.0)
+Description-Content-Type: text/markdown
+
+
