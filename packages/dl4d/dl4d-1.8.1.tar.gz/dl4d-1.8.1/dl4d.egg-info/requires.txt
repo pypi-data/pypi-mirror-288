@@ -1,0 +1,14 @@
+numpy
+scipy
+matplotlib
+xarray
+ecubevis
+tensorflow
+scikit-learn
+opencv-python
+joblib
+seaborn
+absl-py
+
+[horovod]
+horovod
