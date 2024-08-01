@@ -1,0 +1,5 @@
+[build-system]
+requires = ["maturin"]
+build-backend = "maturin"
+[tool.maturin]
+license = "MIT"
