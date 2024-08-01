@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: tket2-eccs
+Version: 0.1.0
+Summary: Precompiled rewrite sets for the tket 2 compiler
+License: Apache-2.0
+Author: TKET development team
+Author-email: tket-support@quantinuum.com
+Maintainer: TKET development team
+Maintainer-email: tket-support@quantinuum.com
+Requires-Python: >=3.10,<4.0
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+
+# tket2-eccs
+
+[![pypi][]](https://pypi.org/project/tket2/)
+[![codecov][]](https://codecov.io/gh/CQCL/tket2)
+[![py-version][]](https://pypi.org/project/tket2/)
+
+  [codecov]: https://img.shields.io/codecov/c/gh/CQCL/tket2?logo=codecov
+  [py-version]: https://img.shields.io/pypi/pyversions/tket2
+  [pypi]: https://img.shields.io/pypi/v/tket2
+
+This is an auxiliary Python package containing compiler rewrite sets used for `tket2`'s optimisation passes.
+
+This package is intended to be used as an internal dependency for `tket2`.
+See https://pypi.org/project/tket2/ for the main package.
+
+
+## Install
+
+TKET2-eccs can be installed via `pip`.
+
+```sh
+pip install tket2_eccs
+```
+
+## Development
+
+See [DEVELOPMENT.md] information on how to develop and contribute to this package.
+
+  [DEVELOPMENT.md]: https://github.com/CQCL/tket2/blob/main/DEVELOPMENT.md
+
+
+## License
+
+This project is licensed under Apache License, Version 2.0 ([LICENCE][] or http://www.apache.org/licenses/LICENSE-2.0).
+
+  [LICENCE]: https://github.com/CQCL/tket2/blob/main/LICENCE
+
