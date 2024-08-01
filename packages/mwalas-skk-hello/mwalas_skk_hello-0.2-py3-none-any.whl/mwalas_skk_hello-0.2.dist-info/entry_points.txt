@@ -1,0 +1,2 @@
+[console_scripts]
+my_package_mwalas_skk = my_package_mwalas_skk.hello:main
