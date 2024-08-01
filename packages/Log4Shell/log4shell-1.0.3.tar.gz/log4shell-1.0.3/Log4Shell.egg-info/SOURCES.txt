@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Log4Shell/__init__.py
+Log4Shell.egg-info/PKG-INFO
+Log4Shell.egg-info/SOURCES.txt
+Log4Shell.egg-info/dependency_links.txt
+Log4Shell.egg-info/requires.txt
+Log4Shell.egg-info/top_level.txt
