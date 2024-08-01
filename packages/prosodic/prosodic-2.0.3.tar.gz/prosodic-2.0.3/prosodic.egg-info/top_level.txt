@@ -1,0 +1,9 @@
+corpora
+data
+dist
+docs
+metricaltree
+notebooks
+prosodic
+syllabiphon
+tests
