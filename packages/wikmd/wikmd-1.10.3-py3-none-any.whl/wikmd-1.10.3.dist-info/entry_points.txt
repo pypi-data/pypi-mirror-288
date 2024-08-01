@@ -1,0 +1,2 @@
+[console_scripts]
+wikmd = wikmd.wiki:run_wiki
