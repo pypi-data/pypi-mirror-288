@@ -1,0 +1,11 @@
+alteza/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alteza/__main__.py,sha256=6iFrbO5bBfgNve_1Z_AyUaaFaXdCVBJtTVaNEhRZU3c,267
+alteza/engine.py,sha256=VJCgLS0DAIckhl_xZYuaRXFhgThozMpNyRcPWb82xO4,16433
+alteza/fs.py,sha256=f9IUAKkSYBa7zH7CEGiSl9LHBeTRVf3prdjmmY6oaKw,15990
+alteza/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alteza-0.8.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+alteza-0.8.1.dist-info/METADATA,sha256=PM717fdMAPD3CKXwVpiuBCzYzNApYaBKoDkQDn_J4Ic,18182
+alteza-0.8.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+alteza-0.8.1.dist-info/entry_points.txt,sha256=M7GnPBSSLX_mIlhUP4pUU8dl4HVsvfxIHIaHATlwvfo,48
+alteza-0.8.1.dist-info/top_level.txt,sha256=XZZSAAi3cE6ztGlkSB9hap2K3Ix5L37-O96KjkMGOTU,7
+alteza-0.8.1.dist-info/RECORD,,
