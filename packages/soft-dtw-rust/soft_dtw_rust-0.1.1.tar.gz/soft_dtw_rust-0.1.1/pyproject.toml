@@ -1,0 +1,24 @@
+[build-system]
+requires = ["maturin>=1.7,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "soft-dtw-rust"
+authors = [
+  { name="Alberto Zancanaro", email="alberto.zancanaro.1@gmail.com" },
+]
+description = "A simple implementation of the soft-dtw algorithm in rust with python bindings"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/jesus-333/soft-dtw-rust"
+Issues = "https://github.com/jesus-333/soft-dtw-rust/issues"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
