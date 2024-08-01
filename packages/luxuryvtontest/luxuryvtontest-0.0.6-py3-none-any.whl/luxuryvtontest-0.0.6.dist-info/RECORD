@@ -1,0 +1,10 @@
+luxuryvtontest/__init__.py,sha256=QiiYsv0kcJaB8wCWyT-FnI2b6be87HA-CrrIUn8LQhg,22
+luxuryvtontest/test.py,sha256=E6XdSKkspzQjA-OXuNflOfob6KBgrgxbEoDK9Orlna4,54
+luxuryvtontest/folder_test/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+luxuryvtontest/folder_test/f_test.py,sha256=2TaP6Rz0N283-rr3uTeZvddNc2cBKxDuOoWj4Y7Jwjs,94
+luxuryvtontest/folder_test/test2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+luxuryvtontest/folder_test/test2/test_import.py,sha256=Dh2UAPnbr7nBLM5IfFBy6LCUTn4Qff5_QTjIm1FlYbs,73
+luxuryvtontest-0.0.6.dist-info/METADATA,sha256=3sYLOoEMKGM_ejAmjruESY5MjSlyRklCWsN7dgNI3kg,562
+luxuryvtontest-0.0.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+luxuryvtontest-0.0.6.dist-info/top_level.txt,sha256=1fhPv2Bl9QMzpyrhWUP2eDyt3avpU_Jula-FsYIYGrQ,15
+luxuryvtontest-0.0.6.dist-info/RECORD,,
