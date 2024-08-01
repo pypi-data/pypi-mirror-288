@@ -1,0 +1,25 @@
+[project]
+name = "numpyro-oop"
+version = "0.0.1"
+authors = [
+  { name="Thomas Wallis", email="thomas.wallis@tu-darmstadt.de" },
+]
+description = "A convenient object-oriented wrapper for working with numpyro models."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+license = { file = "LICENSE" }
+keywords = ["numpyro", "probabilistic programming", "mcmc", "bayesian inference"]
+
+dynamic = ["dependencies", "optional-dependencies"]
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+optional-dependencies = {dev = { file = ["requirements-dev.txt"] }}
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
