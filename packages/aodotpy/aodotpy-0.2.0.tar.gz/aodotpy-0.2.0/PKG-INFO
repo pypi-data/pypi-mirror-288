@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: aodotpy
+Version: 0.2.0
+Summary: Python wrappers for ao
+Home-page: https://github.com/permadao/ao.py
+Download-URL: https://github.com/xiaojay/permadao/archive/refs/tags/v0.2.0.tar.gz
+Author: xiaojay
+Author-email: xiaojay@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ao.py
+python sdk for ao https://ao.arweave.dev/
+
+## install
+
+```
+```
+
+
+## Example
+
+```
+import ao
+
+# ao cred process id
+CRED = 'Sa0iBLPNyJQrwpTTG-tWLQU-1QeUAJA73DdxGGiKoJc'
+signer = ao.ARSigner('your ar wallet json file')
+
+# use dry run to get your cred balance
+result = ao.dry_run(signer, CRED, '', {'Action':'Balance'})
+print(result)
+
+# transfer
+recipient = 'your recipient ar address'
+message_id, result =ao.send_and_get(signer, CRED, '', {'Action':'Transfer', 'Recipient':recipient, 'Quantity':'1000'})
+print(message_id)
+print(result)
+```
