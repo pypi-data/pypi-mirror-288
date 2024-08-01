@@ -1,0 +1,9 @@
+# Python things
+__pycache__
+
+#Build things
+*.egg-info/
+dist/
+
+# Security credentials
+credentials.yml
