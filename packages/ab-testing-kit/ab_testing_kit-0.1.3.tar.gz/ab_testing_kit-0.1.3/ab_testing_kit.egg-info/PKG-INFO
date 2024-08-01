@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ab_testing_kit
+Version: 0.1.3
+Summary: Useful functions for ab testing and data exploration
+Author: oamenmodupe@gmail
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Requires-Dist: numpy==1.23.5
+Requires-Dist: pandas==1.5.3
+Requires-Dist: pillow==10.4.0
+Requires-Dist: seaborn==0.12.2
+Requires-Dist: packaging==23.1
+Requires-Dist: pyarrow==15.0.2
+Requires-Dist: matplotlib==3.7
