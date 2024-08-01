@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "dms-recommender"
+version = "0.1.0"
+description = "A recommendation system"
+authors = ["Cream <cream.p@gmail.com>"]
+readme = "README.md"
+packages = [{include = "dms_recommender"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "<2.0,>=1.17"
+pandas = "^2.2.2"
+transformers = "^4.42.4"
+scikit-learn = "^1.5.1"
+pydantic = "^2.8.2"
+torch = "2.3.1"
+
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
