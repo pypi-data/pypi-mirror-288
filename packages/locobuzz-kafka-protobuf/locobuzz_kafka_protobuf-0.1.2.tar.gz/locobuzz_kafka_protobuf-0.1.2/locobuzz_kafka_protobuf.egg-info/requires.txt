@@ -1,0 +1,3 @@
+Cython
+confluent_kafka
+protobuf
