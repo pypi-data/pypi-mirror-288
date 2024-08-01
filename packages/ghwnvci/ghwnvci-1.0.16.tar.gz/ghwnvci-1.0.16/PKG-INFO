@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: ghwnvci
+Version: 1.0.16
+Summary: Using make4python to do nvci releases and run tests in version 2.0 of ghw-nvci setup
+Author: Miguel Castilho
+Author-email: mcastilhooli@nvidia.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: cli
+Requires-Dist: click (>=8.1.7,<9.0.0) ; extra == "cli"
+Requires-Dist: click-output-formatter (>=1.4.4,<2.0.0) ; extra == "cli"
+Requires-Dist: datetime (>=4.4,<5.0)
+Requires-Dist: error-value (>=1.1.0,<2.0.0)
+Requires-Dist: hwinf-ci-logging (>=1.0.3,<2.0.0) ; extra == "cli"
+Requires-Dist: ipython (>=7.8.0,<8.0.0)
+Requires-Dist: jsonschema (>=4.4.0,<5.0.0)
+Requires-Dist: nv-otel-instrument-click (>=1.1.3,<2.0.0) ; extra == "cli"
+Requires-Dist: nv-p4 (>=4.1.1,<5.0.0)
+Requires-Dist: p4mapper (>=1.2.8,<2.0.0)
+Requires-Dist: requesttoken (>=1.9.17,<2.0.0)
+Requires-Dist: types-PyYAML (>=6.0.12.20240724,<7.0.0.0)
+Requires-Dist: types-click (>=7.1.8,<8.0.0)
+Requires-Dist: types-requests (>=2.32.0.20240712,<3.0.0.0)
+Description-Content-Type: text/markdown
+
+# Project Description
+
+Using make4python to do nvci releases and run tests in version 2.0 of ghw-nvci setup
+
+# Development
+
+Please refer to /home/nv/utils/make4python/latest/docs/ or to
+https://sc.talos.nvidia.com/serve/home/nv/utils/make4python/latest/html/index.html
+for information on interacting with development environment, including
+building, checking, testing and making releases.
+
+# Releases
+
+## Releasing
+
+This tool is released as both a library and an executable.
+
+## Announcements
+
+A blog post in [the ghw_nvci_2 tool space](https://confluence.nvidia.com/display/ghw_nvci_2).
+

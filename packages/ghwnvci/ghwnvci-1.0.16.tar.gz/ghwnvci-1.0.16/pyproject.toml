@@ -1,0 +1,97 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.2.2"]
+
+[tool.black]
+target-version = ["py39"]
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_any_unimported = true
+disallow_untyped_defs = true
+files = "**/*.py"
+namespace_packages = true
+no_implicit_optional = true
+show_error_codes = true
+warn_unused_ignores = true
+warn_return_any = true
+mypy_path = "stubs"
+
+[tool.poetry]
+name = "ghwnvci"
+description = "Using make4python to do nvci releases and run tests in version 2.0 of ghw-nvci setup"
+version = "1.0.16"
+authors = ["Miguel Castilho <mcastilhooli@nvidia.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = {version = "^8.1.7", optional = true}
+click-output-formatter = {version = "^1.4.4", optional = true}
+hwinf-ci-logging = {version = "^1.0.3", optional = true}
+error-value = {version = "^1.1.0", optional = true}
+nv-otel-instrument-click = {version = "^1.1.3", optional = true}
+types-click = {version = "^7.1.8", optional = true}
+p4mapper = "^1.2.8"
+jsonschema = "^4.4.0"
+datetime = "^4.4"
+ipython = "^7.8.0"
+nv-p4 = "^4.1.1"
+requesttoken = "^1.9.17"
+types-PyYAML = "^6.0.12.20240724"
+types-requests = "^2.32.0.20240712"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+requests-mock = "^1.9.3"
+flake8 = "^3.9.0"
+darglint2 = "^1.8.2"
+isort = "^5.13.2"
+ruff = "^0.5.4"
+mypy = "^1.11.0"
+pdoc3 = "^0.11.1"
+pytest = "^8.3.1"
+pytest-asyncio = "^0.23.8"
+pytest-mock = "^3.14.0"
+pytest-xdist = "^3.6.1"
+coverage="^7.6.0"
+
+[tool.python_release_tools]
+blog_space="GPUTOOL"
+jira_project = "HWINFCI"
+
+[[tool.poetry.source]]
+name = "hwinfGpuwaRepo"
+url = "https://sc-hw-artf.nvidia.com/artifactory/api/pypi/hwinf-gpuwa-pypi/simple"
+priority = "supplemental"
+
+[[tool.poetry.source]]
+name = "it-mis"
+url = "https://urm.nvidia.com/artifactory/api/pypi/it-misunix-pypi-local/simple"
+priority = "primary"
+
+[[tool.poetry.source]]
+name = "pypi"
+
+[[tool.poetry.source]]
+name = "nvidiaPrivateRepo"
+url = "https://urm.nvidia.com/artifactory/api/pypi/nv-shared-pypi/simple"
+priority = "supplemental"
+
+[tool.poetry.extras]
+cli = ["click","click_output_formatter","hwinf_ci_logging","nv-otel-instrument-click"]
+
+[tool.poetry.scripts]
+ghwnvci = {callable = "ghwnvci.main:cli", extras = ["cli"]}
+workspace = 'ghwnvci.workspace.py:main'
+wm_util   = 'ghwnvci.wm_util:main'
+conman   = 'ghwnvci.conman:main'
+xform = 'ghwnvci.xform:main'
+ytt_parse = 'ghwnvci.ytt_parse:main'
+site_path  = 'ghwnvci.site_path:main'
+nvci-delete = 'ghwnvci.nvci_delete:main'
+nvci-snapshot = 'ghwnvci.nvci_snapshot:main'
+nvci-asbtest = 'ghwnvci.nvci_asbtest:main'
+nvci-migrate = 'ghwnvci.nvci_migrate:main'
+rules_cl = 'ghwnvci.rules_cl:main'
+get_branch_config = 'ghwnvci.get_branch_config:main'
