@@ -1,0 +1,11 @@
+alq-0.0.15.data/scripts/alq,sha256=EXH5BW04EhDwI3jbPXgNOprCkSUaL-Z8smHcnh2P3Co,316
+alq-0.0.15.data/scripts/alq.bat,sha256=4gZ8jFBpfz-UAvj2Pcvy64cWMmgluHSuMOkh9uok_xc,30
+subfunctions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+subfunctions/configuration.py,sha256=up7NE9oPB4OJeLiax878EwF_JwuXJn1mBozu0sW5Hx8,2177
+subfunctions/fileSystem.py,sha256=ZoMJYHkUVfG9rtJ9o6GHci8uUHUJPuotAoIeMewWXf8,7018
+subfunctions/owncloud.py,sha256=wdA2mAuqgVHl8rfe05zddOmgElTL0H808M02QkAsQBc,10821
+subfunctions/webdavefs.py,sha256=9Ah1VW-jKLmRb9Njw-L8lEE33LvJQVZFwY4XQGlt2kY,1795
+alq-0.0.15.dist-info/METADATA,sha256=IhplUVXczZgxl6bhlv9OxG80inrJFHD_WBZ35O2JRQs,260
+alq-0.0.15.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+alq-0.0.15.dist-info/top_level.txt,sha256=cj_wvsgatO_VDmqNS0IE7dJSF0CTwS6lwvbgnpfPtiI,13
+alq-0.0.15.dist-info/RECORD,,
