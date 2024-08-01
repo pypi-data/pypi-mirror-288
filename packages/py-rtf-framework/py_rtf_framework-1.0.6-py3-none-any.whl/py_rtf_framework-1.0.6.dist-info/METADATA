@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: py_rtf_framework
+Version: 1.0.6
+Home-page: 
+Author: liupeng
+Author-email: 895876294@qq.com
+License: Apache
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml >=6.0.1
+Requires-Dist: pydantic >=2.8.2
+Requires-Dist: aiofiles >=24.1.0
+Requires-Dist: pandas >=2.2.2
+Requires-Dist: numba >=0.60.0
+Requires-Dist: swifter >=1.4.0
+Requires-Dist: aiolimiter >=1.1.0
+Requires-Dist: flask >=3.0.3
+Requires-Dist: langchain-community >=0.2.10
+Requires-Dist: clickhouse-driver >=0.2.8
+Requires-Dist: clickhouse-sqlalchemy >=0.3.2
+Requires-Dist: elastic-transport >=8.13.1
+Requires-Dist: elasticsearch >=8.14.0
+Requires-Dist: langchain-core >=0.2.24
+Requires-Dist: langchain-elasticsearch >=0.2.2
+Requires-Dist: networkx >=3.3
+Requires-Dist: sqlalchemy >=2.0.31
+Requires-Dist: pymysql >=1.1.1
+Requires-Dist: asyncio >=3.4.3
+Requires-Dist: tqdm >=4.66.4
+Requires-Dist: pyotp >=2.9.0
+Requires-Dist: matplotlib >=3.9.1
+Requires-Dist: cachetools >=5.4.0
+Requires-Dist: diskcache >=5.6.3
+Requires-Dist: jsonschema >=4.23.0
+
+py_framework
