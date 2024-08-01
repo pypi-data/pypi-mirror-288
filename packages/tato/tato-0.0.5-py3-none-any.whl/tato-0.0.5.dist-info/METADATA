@@ -1,0 +1,45 @@
+Metadata-Version: 2.3
+Name: tato
+Version: 0.0.5
+Summary: Autoformatted file layout using sections (imports, constants, classes, functions).
+Project-URL: Documentation, https://github.com/vivster7/tato#readme
+Project-URL: Issues, https://github.com/vivster7/tato/issues
+Project-URL: Source, https://github.com/vivster7/tato
+Author-email: Vivek Dasari <vivster7@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Keywords: autoformat,format,layout,sections
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: libcst>=1.0.0
+Description-Content-Type: text/markdown
+
+# tato
+
+[![PyPI - Version](https://img.shields.io/pypi/v/tato.svg)](https://pypi.org/project/tato)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/tato.svg)](https://pypi.org/project/tato)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install tato
+```
+
+## License
+
+`tato` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
