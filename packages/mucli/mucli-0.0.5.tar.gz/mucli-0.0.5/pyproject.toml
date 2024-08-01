@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "mucli"
+version = "0.0.5"
+description = "Light client directly to milvus service "
+authors = ["SimFG <simf00544@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+build-mucli = "mucli.pyinstaller:install"
+mucli = "mucli.main:main"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+click = "^8"
+# milvus_connector = { path = "../..", develop = true }
+milvus_connector = "0.1.0"
+pyinstaller = "^6.5.0"
+python-dotenv = "^1.0.1"
+# orderedmultidict = { git = "https://github.com/gruns/orderedmultidict.git", rev = "d3912b8" }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
