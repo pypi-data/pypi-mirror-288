@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "epic-py"
+version = "0.1.2"
+description = "ePIC API in Python"
+authors = ["Triet Doan <triet.doan@gwdg.de>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://gitlab.gwdg.de/epic/epic-python-library"
+keywords = ["pid", "handle", "persistent-identifier", "epic"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+pydantic = "^2.8.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "~8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
