@@ -1,0 +1,11 @@
+motrainer/__init__.py,sha256=pMan0HKZtrCcxMOe-ZgtlMGH6s6y6BijFpjtGzvTFvc,145
+motrainer/dnn.py,sha256=3rxFk3QjP420d_MRL1s1JNhHWTs6DCI_d6hull6ipxA,9463
+motrainer/jackknife.py,sha256=8KXsjYIiaVqQLEzluDdXHh6Xy9mR-r6asL1VgkQX9Jg,8787
+motrainer/model.py,sha256=q6bgFefW1dslKRuGJnFLF_8mJSbaXvGIRZPKbDN0FeM,2917
+motrainer/splitter.py,sha256=nzxKEhtQtUbpUr85X4dCVdfJFwPxFchpCbD4i9dJGUo,7365
+motrainer/util.py,sha256=p6hNw68rTvLrwgN9PXGHEulr6ukayz7f-_JkwLOUyoQ,4398
+motrainer-0.1.5.dist-info/LICENSE,sha256=OPzV6bHGPCXFylyiCR3GYAK-EP8seLDbcbgO87DYM1o,11359
+motrainer-0.1.5.dist-info/METADATA,sha256=8r1cUGGmFTPvn8Hs25YzMRBr4i7kf2vu4devXizYTk8,17402
+motrainer-0.1.5.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+motrainer-0.1.5.dist-info/top_level.txt,sha256=N4e7931C1Pr2b3H5mIUXl3ISVeY0qOrmTIgzgVGM01Q,10
+motrainer-0.1.5.dist-info/RECORD,,
