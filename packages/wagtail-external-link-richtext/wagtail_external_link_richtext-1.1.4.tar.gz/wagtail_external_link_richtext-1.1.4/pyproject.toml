@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+include = ["external_link*"]
+exclude = ["sandbox*", "docs*", "tests*"]
+
+[project]
+name = "wagtail-external-link-richtext"
+version = "1.1.4"
+description = "A feature for the richtext fields in Wagtail"
+readme = "README.md"
+authors = [{name = "Ruben Hesselink", email = "ruben@fourdigits.nl" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "Environment :: Web Environment",
+    "Framework :: Wagtail",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+keywords = ["richtext", "external", "link", "wagtail", "newtab", "django"]
+dependencies = [
+    "Django>=3.2",
+    "wagtail>=3.0",
+]
+
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-django",
+]
+
+[project.urls]
+Homepage = "https://github.com/fourdigits/wagtail-external-richtext-link"
+
+[tool.isort]
+profile = "black"
+src_paths = ["test_project", "sandbox", "external_link"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "test_project.settings.dev"
+python_files = ["tests.py", "*_test.py", "testing/python/*.py"]

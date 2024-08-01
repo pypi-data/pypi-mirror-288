@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: wagtail-external-link-richtext
+Version: 1.1.4
+Summary: A feature for the richtext fields in Wagtail
+Author-email: Ruben Hesselink <ruben@fourdigits.nl>
+License: Copyright 2023 Four Digits
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Project-URL: Homepage, https://github.com/fourdigits/wagtail-external-richtext-link
+Keywords: richtext,external,link,wagtail,newtab,django
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Wagtail
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django>=3.2
+Requires-Dist: wagtail>=3.0
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-django; extra == "test"
+
+# wagtail-external-richtext-link
+
+[![PyPI - Version](https://img.shields.io/pypi/v/wagtail-external-link-richtext.svg)](https://pypi.org/project/wagtail-external-link-richtext/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/wagtail-external-link-richtext.svg)](https://pypi.org/project/wagtail-external-link-richtext/)
+
+-----
+
+A simple app that gives you the option to add links to the richtext editor in Wagtail that always open in a new tab.
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [License](#license)
+
+## Installation
+
+```console
+$ pip install wagtail-external-link-richtext
+```
+
+## Configuration
+
+Add `wagtail_external_link` to your `INSTALLED_APPS`:
+
+```python
+INSTALLED_APPS = [
+    # ...
+    'wagtail_external_link',
+    # ...
+]
+```
+
+Add `"new_tab_link"` to your `RICHTEXT_FEATURES` in your settings:
+
+```python
+RICHTEXT_FEATURES = [
+    # ...
+    'new_tab_link',
+    'link', #IMPORTANT IT MUST ALWAYS BE ABOVE `link`
+]
+```
+
+## Usage
+
+When you add a `RichTextField` to your model, you will now see a new button called `New tab 🔗` in the richtext editor:
+1. Select the text you want to link or just place the cursor where you want the link to be.
+2. Click the `New tab 🔗` button.
+3. If you didn't select any text, enter some text for the link. This will be the text that is displayed.
+4. Enter the URL you want to link to.
+5. Click `Submit`.
+6. The link will be added to the richtext editor.
+7. Save the page.
+
+Correct way to render the link in your template:
+
+```django
+{% load wagtailcore_tags %}
+
+{{ page.body|richtext }}
+```
+
+## License
+
+`wagtail-external-richtext-link` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.

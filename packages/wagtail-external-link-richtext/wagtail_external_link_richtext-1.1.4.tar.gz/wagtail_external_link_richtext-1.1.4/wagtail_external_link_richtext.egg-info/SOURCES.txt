@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+external_link/__init__.py
+external_link/handlers.py
+external_link/wagtail_hooks.py
+external_link/migrations/__init__.py
+external_link/static/css/newtab_form.css
+external_link/static/js/newtab.js
+wagtail_external_link_richtext.egg-info/PKG-INFO
+wagtail_external_link_richtext.egg-info/SOURCES.txt
+wagtail_external_link_richtext.egg-info/dependency_links.txt
+wagtail_external_link_richtext.egg-info/requires.txt
+wagtail_external_link_richtext.egg-info/top_level.txt

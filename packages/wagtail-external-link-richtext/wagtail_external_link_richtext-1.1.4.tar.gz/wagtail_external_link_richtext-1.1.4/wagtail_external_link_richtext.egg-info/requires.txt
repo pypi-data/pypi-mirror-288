@@ -1,0 +1,6 @@
+Django>=3.2
+wagtail>=3.0
+
+[test]
+pytest
+pytest-django
