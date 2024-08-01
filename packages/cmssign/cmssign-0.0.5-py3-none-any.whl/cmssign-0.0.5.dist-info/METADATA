@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: cmssign
+Version: 0.0.5
+Summary: Tool for cms signature
+Home-page: UNKNOWN
+License: Apache
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >= 3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: pip (>=21.0)
+Requires-Dist: cryptography (>=36.0.0)
+Requires-Dist: asn1crypto (>=1.3.0)
+
+Introduce
+=========
+
+This tool is used sign file with Cryptographic Message Syntax. And add a Timestamp Reply to the cms file optionally.
+
+Installation
+============
+
+To install using ``pip``,::
+
+    python -m pip install --upgrade pip
+    python -m pip install cmssign
+
+This tool depend on ``cryptographic`` and ``asn1crypto``
+
+Notice
+======
+
+The version 0.0.1 have some bug, it should not be used.
+
+History
+=======
+
+* 0.0.3  support normal rsa signature
+
+* 0.0.4  add support for RSASSA-PSS signature, but need java because openssl not support pss padding for timestamp signature
+
+
+Use with GUI
+==============
+
+.. code-block:: sh
+
+    cmssignui
+
+
+Use within Command line
+=======================
+
+cmssign sign
+~~~~~~~~~~~~
+
+.. code-block:: sh
+
+    Usage: cmssign sign [-h] --cafile CAFILE --cakey CAKEY [--tsca TSACA] [--tskey TSAKEY] --in INFILE [--out OUTFILE]
+
+          -h, --help            show this help message and exit
+          --signer CAFILE       signer certificate file, DER format
+          --key CAKEY           signer private key
+          --signerCA SIGNERCA   CA of signer, DER format
+          --signerCRL SIGNERCRL
+                                CRL of signer, DER format
+          --rootCRL ROOTCRL     CRL of root CA, DER format
+          --tssigner TSSIGNER   timestamp signer certificate, DER format
+          --tskey TSKEY         timestamp signer private key, DER format
+          --tsCA TSCA           CA of timestamp signer, DER format
+          --timestamp TIMESTAMP
+                                timestamp. use system time if not set. format must be
+                                '20220101123000' yyyyMMDDHHMMSS
+          --in INFILE           file to sign
+          --out OUTFILE         output file, not implement yet, output file will be INFILE.p7s
+
+
+If the tssigner and tskey is set correctly, the timestamp reply will be add to the unsigned attributes section at the end of the cms file
+
+cmssign combine
+~~~~~~~~~~~~~~~
+
+This command will add the timestamp reply to  the unsigned attributes section at the end of the cms file
+
+.. code-block:: sh
+
+    Usage: cmssign combine [-h] --cmsfile CMSFILE --tsfile TSFILE --out OUTFILE
+
+--cmsfile       cms file
+
+--tsfile        timestamp reply file
+
+--out           specific the file to save the output
+
+
+Example:
+~~~~~~~~
+
+.. code-block:: sh
+
+    // Sign file with timestamp
+    cmssign sign --signer rootCA.crt --key rootCA.pem --tssigner tsa.crt --tskey tsa.pem --in file_go_sign
+
+    // sign with certificates and crls
+    cmssign sign --signer sign.crt --key sign_pri.pem  --signerCRL cacrl.crl --rootCRL rootcrl.crl --tssigner tsa.crt --tskey tsa.pem --tsCA ca.crt --in rootCA.crt
+
+The certificate  only support DER format
+
+
+Reference
+=========
+
+* Cryptographic Message Syntax https://www.rfc-editor.org/rfc/rfc5652.html
+* Time-Stamp Protocol https://www.rfc-editor.org/rfc/rfc3161.txt
+
+
