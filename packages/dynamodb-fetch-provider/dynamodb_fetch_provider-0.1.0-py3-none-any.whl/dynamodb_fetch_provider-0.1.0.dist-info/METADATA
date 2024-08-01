@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: dynamodb-fetch-provider
+Version: 0.1.0
+Summary: Custom Fetch Provider for DynamoDB
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: opal-common
+Requires-Dist: cachetools
+Requires-Dist: pydantic
+Requires-Dist: flask
+
