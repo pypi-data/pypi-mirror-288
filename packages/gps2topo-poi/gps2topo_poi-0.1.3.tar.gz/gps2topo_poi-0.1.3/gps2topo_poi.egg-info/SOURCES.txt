@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+gps2topo_poi/__init__.py
+gps2topo_poi/dwell_time_stop_classifier_poi_extraction.py
+gps2topo_poi/running_time_poi_extraction.py
+gps2topo_poi/topological_feature_extraction.py
+gps2topo_poi.egg-info/PKG-INFO
+gps2topo_poi.egg-info/SOURCES.txt
+gps2topo_poi.egg-info/dependency_links.txt
+gps2topo_poi.egg-info/requires.txt
+gps2topo_poi.egg-info/top_level.txt
