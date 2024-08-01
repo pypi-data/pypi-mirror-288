@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+hyperscript_cli/__init__.py
+hyperscript_cli/__main__.py
+hyperscript_cli/parser.py
+hyperscript_cli.egg-info/PKG-INFO
+hyperscript_cli.egg-info/SOURCES.txt
+hyperscript_cli.egg-info/dependency_links.txt
+hyperscript_cli.egg-info/entry_points.txt
+hyperscript_cli.egg-info/not-zip-safe
+hyperscript_cli.egg-info/requires.txt
+hyperscript_cli.egg-info/top_level.txt
