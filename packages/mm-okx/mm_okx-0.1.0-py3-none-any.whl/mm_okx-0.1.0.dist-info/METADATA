@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mm-okx
+Version: 0.1.0
+Requires-Python: >=3.12
+Requires-Dist: mm-std ~=0.1.0
+Provides-Extra: dev
+Requires-Dist: build ~=1.2.1 ; extra == 'dev'
+Requires-Dist: twine ~=5.1.0 ; extra == 'dev'
+Requires-Dist: pytest ~=8.3.2 ; extra == 'dev'
+Requires-Dist: pytest-xdist ~=3.6.1 ; extra == 'dev'
+Requires-Dist: pytest-httpserver ~=1.0.8 ; extra == 'dev'
+Requires-Dist: coverage ~=7.6.0 ; extra == 'dev'
+Requires-Dist: ruff ~=0.5.2 ; extra == 'dev'
+Requires-Dist: pip-audit ~=2.7.0 ; extra == 'dev'
+Requires-Dist: bandit ~=1.7.7 ; extra == 'dev'
+Requires-Dist: mypy ~=1.11.0 ; extra == 'dev'
+Requires-Dist: types-python-dateutil ~=2.9.0 ; extra == 'dev'
+Requires-Dist: types-requests ~=2.32.0.20240523 ; extra == 'dev'
+Requires-Dist: types-PyYAML ~=6.0.12.12 ; extra == 'dev'
+
