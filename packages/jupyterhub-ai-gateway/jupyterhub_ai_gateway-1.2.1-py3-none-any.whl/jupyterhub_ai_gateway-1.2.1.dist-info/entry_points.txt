@@ -1,0 +1,2 @@
+[console_scripts]
+jupyterhub-ai-gateway = jupyterhub_ai_gateway.cli:main
