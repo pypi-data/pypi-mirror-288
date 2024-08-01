@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+ligoauth/__init__.py
+ligoauth/ligoauth.py
+ligoauth.egg-info/PKG-INFO
+ligoauth.egg-info/SOURCES.txt
+ligoauth.egg-info/dependency_links.txt
+ligoauth.egg-info/top_level.txt
