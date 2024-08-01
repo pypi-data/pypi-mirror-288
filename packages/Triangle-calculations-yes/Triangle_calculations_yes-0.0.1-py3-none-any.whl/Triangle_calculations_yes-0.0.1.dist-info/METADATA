@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Triangle-calculations-yes
+Version: 0.0.1
+Summary: Triangle calculations
+Home-page: https://github.com/yesandnoandperhaps/Triangle
+Author: LinQiuyun
+Author-email: haizhimenhao@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 三角形计算库triangular calculation library
+可以用它计算面积，周长，四心，费马点，拿破仑点
+
+It can be used to calculate area, perimeter, four hearts, Fermat points, Napoleon points
+
+其中费马点是用退火算法逼近
+
+where the Fermat point is approximated by the annealing algorithm
