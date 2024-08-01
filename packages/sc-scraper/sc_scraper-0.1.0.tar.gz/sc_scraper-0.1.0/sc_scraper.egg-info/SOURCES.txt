@@ -1,0 +1,8 @@
+README.md
+setup.py
+sc_scraper/__init__.py
+sc_scraper/main.py
+sc_scraper.egg-info/PKG-INFO
+sc_scraper.egg-info/SOURCES.txt
+sc_scraper.egg-info/dependency_links.txt
+sc_scraper.egg-info/top_level.txt
