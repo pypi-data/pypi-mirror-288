@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: nbweb
+Version: 0.0.1
+Summary: an application to simplify web data
+Author-email: Subrat Lima <subrat.k.lima@protonmail.com>
+Project-URL: Homepage, https://github.com/subrat-lima/nbweb
+Project-URL: Issues, https://github.com/subrat-lima/nbweb/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx
+Requires-Dist: parsel
+Provides-Extra: dev
+Requires-Dist: nbweb[formatter,test] ; extra == 'dev'
+Provides-Extra: formatter
+Requires-Dist: black ; extra == 'formatter'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# nbweb
+nbweb is short for no bloat web
+
+## installation
+```sh
+pip install nbweb
+```
+
+## usage
+```sh
+nbweb <url>
+```
+
+## supported websites
+list of supported websites can be found in the 'data.json' file

@@ -1,0 +1,29 @@
+[
+    {
+        "name": "OdishaTV",
+        "url": "https://odishatv.in",
+        "rules": {
+            "title": {
+                "selector": "h1::text"
+            },
+            "img": {
+                "selector": "div#storymultiimg div.article-featured > img::attr(data-src)"
+            },
+            "content": {
+                "selector": "div.article-content > p::text"
+            }
+        }
+    },
+    {
+        "name": "TechSpot",
+        "url": "https://www.techspot.com",
+        "rules": {
+            "title": {
+                "selector": "h1::text"
+            },
+            "content": {
+                "selector": "div.articleBody > :not(.twitter-tweet):not(div.related-news)::text"
+            }
+        }
+    }
+]
