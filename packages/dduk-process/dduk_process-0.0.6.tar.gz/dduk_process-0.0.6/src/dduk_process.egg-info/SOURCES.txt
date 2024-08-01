@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+build.py
+res/.gitkeep
+src/dduk/__init__.py
+src/dduk/__main__.py
+src/dduk/process/__init__.py
+src/dduk/process/__main__.py
+src/dduk/process/processinfo.py
+src/dduk/process/processmanager.py
+src/dduk_process.egg-info/PKG-INFO
+src/dduk_process.egg-info/SOURCES.txt
+src/dduk_process.egg-info/dependency_links.txt
+src/dduk_process.egg-info/requires.txt
+src/dduk_process.egg-info/top_level.txt
+tests/test_1.py
