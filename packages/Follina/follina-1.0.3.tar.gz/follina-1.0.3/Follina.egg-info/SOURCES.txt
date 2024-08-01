@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Follina/__init__.py
+Follina.egg-info/PKG-INFO
+Follina.egg-info/SOURCES.txt
+Follina.egg-info/dependency_links.txt
+Follina.egg-info/requires.txt
+Follina.egg-info/top_level.txt
