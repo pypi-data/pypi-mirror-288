@@ -1,0 +1,109 @@
+
+
+
+![aishield](https://aisdocs.blob.core.windows.net/images/aishieldLogoPypi.PNG)
+
+## AIShield Python Integration Package
+
+AIShield provides the Python convenience package to allow users to seamlessly integrate AIShield Vulnerability Assessment and Defense capabilities into their AI development workflows. Users will receive assessment reports, sample attack vectors, and a threat-informed defense model with telemetry connection to SIEM/SOAR, such as Splunk and Microsoft Sentinel.
+
+
+## Requirements
+
+Requires Python>=3.6, and pip >= 19.0
+
+## Installation
+
+    $ pip install aishield
+
+## Details
+
+Check out the Quick Start Example [here](https://github.com/bosch-aisecurity-aishield/Reference-Implementations/tree/main/Product_Taskpair_wise/Image_Classification/Extraction). 
+
+More references implementations, tutorials, samples, and documentation of AIShield can be found on our [Github Repository](https://github.com/bosch-aisecurity-aishield/Reference-Implementations).
+
+**Pre-requisites:**
+    
+ - AIShield API should be white-listed, or proxy settings must be appropriately configured for the AIShield API to be called. 
+ - Valid AIShield API subscription plan and authentication keys. For details regarding subscription please visit, [Subscription Page](https://aws.amazon.com/marketplace/pp/prodview-ppbwtiryaohti) or reach out to sales at <AIShield.Contact@bosch.com>
+    
+**Supported Features:**
+
+ - Model Extraction attack Vulnerability Analysis and Threat informed Defense Generation with relevant report artifacts for Image & Tabular Classification
+ - Supported for Models trained on Tensorflow (Tensorflow >=2.5.0 and <=2.9.1)
+ - Supported Input Model File formats: .h5,.pyc
+ - Assessment Report formats available: PDF, JSON, XML, TXT
+
+**Supported Keywords:**
+
+We support various tasks and attacks, which are defined as follows:
+
+Attack Types
+- Extraction: `extraction`
+- Evasion: `evasion`
+- Poisoning: `poisoning`
+- Supply chain: `supply-chain`
+
+Task Types
+- Image Classification: `image_classification`
+- Image Segmentation: `image_segmentation`
+- Timeseries Forecasting: `timeseries_forecasting`
+- Natural Language Processing (NLP): `nlp`
+- Tabular Classification: `tabular_classification`
+- Text Recommendation: `text_recommendation`
+- Object Detection: `object_detection`
+
+Output Artifacts and Reports
+- Vulnerability: `vulnerability`
+- Defense: `defense`
+- Defense Model Artifact: `defense_artifact`
+- Attack Samples: `attack_samples`
+
+Report Formats
+- PDF: `pdf`
+- JSON: `json`
+
+   
+## More about AIShield
+
+- Website:  https://www.boschaishield.com/
+- Email:   <AIShield.Contact@bosch.com>
+
+## Version History
+
+
+### 0.1.7
+- Added vulnerability analysis for supply chain attacks for all task pairs.
+
+### 0.1.6
+- Added vulnerability analysis for Image classification task pair with data and model poisoning attack.
+- Added vulnerability analysis for Object Detection: model evasion attack
+- Added vulnerability analysis for alpha task pairs like NLP, Text Recommendation: model extraction attack.
+  Defense generation for these tasks to be supported in future releases
+- ONNX model framework supports vulnerability analysis for Image Classification, Image Segmentation, Tabular Classification, and Timeseries Forecasting.
+
+### 0.1.5
+- Added vulnerability analysis for image segmentation: model extraction attack
+- Updated to be compatible with latest AIShield API version. Also, now api_key is not required to be provided explicitly for analysis. It will be generated from org_id and policies are consumed accordingly. 
+
+### 0.1.4
+- Added vulnerability analysis for time series forecasting: model extraction attack
+
+### 0.1.3
+- Updated to be compatible with latest AIShield API version
+- Added vulnerability analysis for tabular classification: model evasion attack
+
+### 0.1.2
+- Added vulnerability analysis for image classification: model evasion & model poisoning attack
+- Added vulnerability analysis for tabular classification: model extraction attack
+
+### 0.1.1
+- Updated to be compatible with latest AIShield API version 
+
+### 0.1.0
+   - Initial version
+   - Added vulnerability analysis for model extraction attack:
+     - for image_classification task
+         -  *Prepare the vulnerability configs and send the model for analysis to AIShield API. 
+             This will generate vulnerability analysis reports, threat-informed defense generation with SIEM/SOAR telemetry enabled, defense reports, and sample attack data artifacts.*
+
