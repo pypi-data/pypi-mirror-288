@@ -1,0 +1,8 @@
+README.md
+setup.py
+monisys.egg-info/PKG-INFO
+monisys.egg-info/SOURCES.txt
+monisys.egg-info/dependency_links.txt
+monisys.egg-info/entry_points.txt
+monisys.egg-info/requires.txt
+monisys.egg-info/top_level.txt

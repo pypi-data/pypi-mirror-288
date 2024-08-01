@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: monisys
+Version: 0.1
+Summary: Monisys with tool we can able to moniter entire os
+Home-page: https://github.com/prasaanth2k/monisys
+Author: Prasaanth Sakthivel
+Author-email: prasaanth@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: rich
+
+### Monisys
