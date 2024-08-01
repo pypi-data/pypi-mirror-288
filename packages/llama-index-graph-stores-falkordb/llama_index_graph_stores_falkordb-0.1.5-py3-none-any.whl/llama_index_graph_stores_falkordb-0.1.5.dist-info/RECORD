@@ -1,0 +1,6 @@
+llama_index/graph_stores/falkordb/__init__.py,sha256=Wy4tuPs5MxeaXjMVrsUxxbbQkEYvwm6UwGFmbxa7AaA,280
+llama_index/graph_stores/falkordb/base.py,sha256=fv2iopQQP5Vfr30DporPFSHM8Z0fHY7f8zm5-w5dtkk,6165
+llama_index/graph_stores/falkordb/falkordb_property_graph.py,sha256=EM9P4sordcc580Q9FVc1jMG6dFBodQ3xJARXiONu5hc,20596
+llama_index_graph_stores_falkordb-0.1.5.dist-info/METADATA,sha256=m3PCTgQtS-VPDTf13Cv3S9_hFjqodZgw8VTiWtlckxE,656
+llama_index_graph_stores_falkordb-0.1.5.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+llama_index_graph_stores_falkordb-0.1.5.dist-info/RECORD,,
