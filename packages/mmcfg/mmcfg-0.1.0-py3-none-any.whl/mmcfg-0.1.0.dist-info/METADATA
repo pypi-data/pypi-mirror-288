@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mmcfg
+Version: 0.1.0
+Summary: A standalone package for the configure file of MMEngine.
+Author: mzr1996
+Author-email: mzr1996@163.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: addict (>=2.4,<3.0)
+Description-Content-Type: text/markdown
+
+# MMEngine-style Config file
+
+A light-wight config file module come from MMEngine with some modificaiton.
+
