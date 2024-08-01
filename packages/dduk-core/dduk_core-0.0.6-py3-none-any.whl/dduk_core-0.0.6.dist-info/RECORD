@@ -1,0 +1,15 @@
+dduk/__init__.py,sha256=lF-XhEg8OcVUQUVBGD8G7jqK56quGRKhQPbDSKqaR8w,560
+dduk/__main__.py,sha256=lLSaDkpqxjaXyE-Ll3ithYrkqzzVgt2eOHCjzVLKGj0,783
+dduk/core/__init__.py,sha256=UNixGexsMqLHYkFfI9emPZb2j5aYvi-sVtIJNu6tbHg,701
+dduk/core/__main__.py,sha256=Ekgypt2Vxn5dtTTS6urI72__2YpClQI3ZU_L8eLQUI4,572
+dduk/core/platform.py,sha256=I57-ueTWNRUvNRXFgrBJMwshJcVhefCiwhArEVGPbD4,1232
+dduk/core/sharedclass.py,sha256=aytgUkBHW6MVQnN-tFBjTtKQrfsdVXv4bBEtXQQ8tNU,1630
+dduk/utils/__init__.py,sha256=WteeFMzwerrD-dd5bi5tBqXCfUnc-QErCdNAHdi3nKw,709
+dduk/utils/jsonutil.py,sha256=tWtCpdkgvi8rTZ4xhiT361A5tcUSwOMO1QGtaBYQN_Y,2179
+dduk/utils/moduleutil.py,sha256=2k9F3RgvZj6QYeeH64UcNBQ1xXEpmMf-V0BJoAbgI3I,6776
+dduk/utils/strutil.py,sha256=DnIzyQ_JM6c7cWdzgm-oSpAKfPLREK8O7sgTHpizCQQ,3218
+dduk_core-0.0.6.dist-info/LICENSE,sha256=AU8OrUcHYBTd6RuKzW0BQx6bM2ALTnqc8vRQwMcRIW0,1087
+dduk_core-0.0.6.dist-info/METADATA,sha256=utP_IttLYxn-OMaxmYsiDdTuR99T46xZfc7H5-pmncg,472
+dduk_core-0.0.6.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+dduk_core-0.0.6.dist-info/top_level.txt,sha256=9323yfNKXRVJxK6FKltPICtDJ0iQpbBE54kOEHJSsCU,5
+dduk_core-0.0.6.dist-info/RECORD,,
