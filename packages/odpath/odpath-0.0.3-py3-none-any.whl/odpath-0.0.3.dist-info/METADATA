@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: odpath
+Version: 0.0.3
+Summary: get files path and name
+Home-page: UNKNOWN
+Author: Guodong Wu
+Author-email: 461854822@qq.com
+License: MIT
+Keywords: file path
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm (>=4.48.2)
+Requires-Dist: cython
+Requires-Dist: opencv-python
+Requires-Dist: typing-extensions (==4.6.3)
+Requires-Dist: future
+Requires-Dist: tensorboard
+Requires-Dist: scikit-image
+Requires-Dist: pillow
+Requires-Dist: numpy (==1.24.0)
+Requires-Dist: loguru
+Requires-Dist: gevent
+Requires-Dist: matplotlib (==3.5.0)
+Requires-Dist: Flask (==2.2.0)
+Requires-Dist: requests (==2.28.1)
+Requires-Dist: flask-cors (==3.0.10)
+Requires-Dist: Werkzeug (==2.2.2)
+Requires-Dist: concurrent-log-handler (==0.9.20)
+
+UNKNOWN
+
+
