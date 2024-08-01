@@ -1,0 +1,129 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.2, pytest-4.6.9, py-1.8.1, pluggy-0.13.0
+rootdir: /d/home/jan/projects/adze
+collected 6 items
+
+test/test_split.py FFFFFF                                                [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_manual_tetrahedron[0] __________________________
+
+poly_order = 0
+
+    def test_manual_tetrahedron(poly_order):
+>       tet = build_tetrahedron([
+            [0,0,0],
+            [2,0,0],
+            [0,2,0],
+            [0,0,2]])
+E       NameError: name 'build_tetrahedron' is not defined
+
+test/test_split.py:20: NameError
+____________________ test_tetrahedrons_through_centroid[0] _____________________
+
+poly_order = 0
+
+    def test_tetrahedrons_through_centroid(poly_order):
+        """
+          Splits some tetrahedrons through their centroids and
+          checks if the two resulting volumes sum up to the original
+        """
+    
+        # Generate random tetrahedrons and clip planes
+        ntets = 100
+>       polys = [build_rand_tetrahedron() for _ in range(ntets)]
+
+test/test_split.py:57: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_split.py:57: in <listcomp>
+    polys = [build_rand_tetrahedron() for _ in range(ntets)]
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+min_volume = 1e-08
+
+    def build_rand_tetrahedron(min_volume: float = MIN_VOL):
+>       return build_tetrahedron(rand_tetrahedron_vertices())
+E       NameError: name 'build_tetrahedron' is not defined
+
+test/utils.py:42: NameError
+__________________________ test_manual_tetrahedron[1] __________________________
+
+poly_order = 1
+
+    def test_manual_tetrahedron(poly_order):
+>       tet = build_tetrahedron([
+            [0,0,0],
+            [2,0,0],
+            [0,2,0],
+            [0,0,2]])
+E       NameError: name 'build_tetrahedron' is not defined
+
+test/test_split.py:20: NameError
+____________________ test_tetrahedrons_through_centroid[1] _____________________
+
+poly_order = 1
+
+    def test_tetrahedrons_through_centroid(poly_order):
+        """
+          Splits some tetrahedrons through their centroids and
+          checks if the two resulting volumes sum up to the original
+        """
+    
+        # Generate random tetrahedrons and clip planes
+        ntets = 100
+>       polys = [build_rand_tetrahedron() for _ in range(ntets)]
+
+test/test_split.py:57: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_split.py:57: in <listcomp>
+    polys = [build_rand_tetrahedron() for _ in range(ntets)]
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+min_volume = 1e-08
+
+    def build_rand_tetrahedron(min_volume: float = MIN_VOL):
+>       return build_tetrahedron(rand_tetrahedron_vertices())
+E       NameError: name 'build_tetrahedron' is not defined
+
+test/utils.py:42: NameError
+__________________________ test_manual_tetrahedron[2] __________________________
+
+poly_order = 2
+
+    def test_manual_tetrahedron(poly_order):
+>       tet = build_tetrahedron([
+            [0,0,0],
+            [2,0,0],
+            [0,2,0],
+            [0,0,2]])
+E       NameError: name 'build_tetrahedron' is not defined
+
+test/test_split.py:20: NameError
+____________________ test_tetrahedrons_through_centroid[2] _____________________
+
+poly_order = 2
+
+    def test_tetrahedrons_through_centroid(poly_order):
+        """
+          Splits some tetrahedrons through their centroids and
+          checks if the two resulting volumes sum up to the original
+        """
+    
+        # Generate random tetrahedrons and clip planes
+        ntets = 100
+>       polys = [build_rand_tetrahedron() for _ in range(ntets)]
+
+test/test_split.py:57: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_split.py:57: in <listcomp>
+    polys = [build_rand_tetrahedron() for _ in range(ntets)]
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+min_volume = 1e-08
+
+    def build_rand_tetrahedron(min_volume: float = MIN_VOL):
+>       return build_tetrahedron(rand_tetrahedron_vertices())
+E       NameError: name 'build_tetrahedron' is not defined
+
+test/utils.py:42: NameError
+=========================== 6 failed in 2.42 seconds ===========================
