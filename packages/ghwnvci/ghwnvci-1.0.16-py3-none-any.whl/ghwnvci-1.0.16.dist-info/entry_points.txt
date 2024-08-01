@@ -1,0 +1,15 @@
+[console_scripts]
+conman=ghwnvci.conman:main
+get_branch_config=ghwnvci.get_branch_config:main
+ghwnvci=ghwnvci.main:cli
+nvci-asbtest=ghwnvci.nvci_asbtest:main
+nvci-delete=ghwnvci.nvci_delete:main
+nvci-migrate=ghwnvci.nvci_migrate:main
+nvci-snapshot=ghwnvci.nvci_snapshot:main
+rules_cl=ghwnvci.rules_cl:main
+site_path=ghwnvci.site_path:main
+wm_util=ghwnvci.wm_util:main
+workspace=ghwnvci.workspace.py:main
+xform=ghwnvci.xform:main
+ytt_parse=ghwnvci.ytt_parse:main
+
