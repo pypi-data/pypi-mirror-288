@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+dynamodb_fetch_provider.egg-info/PKG-INFO
+dynamodb_fetch_provider.egg-info/SOURCES.txt
+dynamodb_fetch_provider.egg-info/dependency_links.txt
+dynamodb_fetch_provider.egg-info/requires.txt
+dynamodb_fetch_provider.egg-info/top_level.txt
