@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: PySide6-DS
+Version: 4.5
+Summary: Qt Design Studio components for PySide6
+Author-email: Qt for Python Team <pyside@qt-project.org>
+License: Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+Project-URL: Homepage, https://pyside.org
+Project-URL: Documentation, https://doc.qt.io/qtforpython
+Project-URL: Repository, https://code.qt.io/cgit/pyside/pyside-setup.git/
+Project-URL: Changelog, https://code.qt.io/cgit/pyside/pyside-setup.git/tree/doc/changelogs
+Project-URL: Tracker, https://bugreports.qt.io/projects/PYSIDE
+Keywords: Qt
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Software Development :: Widget Sets
+Requires-Python: <3.13,>=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: PySide6 >=6.2
+
+# PySide6_DS
+
+This package provide the
+Qt Design Studio QML components for PySide6
+allowing to execute QtDS designs out of the box.
+
+## Install
+
+This considers that the repository main project was built
+and installed on an `install` directory at the root of the repository.
+
+While on the 'python' directory, the `configure.py` will configure and copy
+files before the packaging.
+
+For the packaging just run `python -m build -w` inside the 'python' directory
+(don't forget to `pip install -r requirements.txt` before)
+
+## Releases
+
+Due to the relation with QtDS development,
+the versions and release of this module are tied
+to QtDS and not to PySide6.
+Each PySide6_DS release will have a dependency
+of a certain PySide6 version.
+
+## Included files
+
+Depending on the platform, the binaries related to QuickStudio
+and components inside qml/QtQuick/Studio are included.
