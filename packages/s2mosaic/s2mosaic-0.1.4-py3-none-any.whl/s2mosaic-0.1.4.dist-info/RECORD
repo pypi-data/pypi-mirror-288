@@ -1,0 +1,9 @@
+s2mosaic/__init__.py,sha256=wVsjLsNgooagBz0wAtPWrG0CHhSRfu5kt6vOEEEEAhU,96
+s2mosaic/__version__.py,sha256=Wzf5T3NBDfhQoTnhnRNHSlAsE0XMqbclXG-M81Vas70,22
+s2mosaic/download.py,sha256=9U3c2t20XMocRUq1Cgv8ZVxrXJxCq2fzYCEqnXMw7-c,17583
+s2mosaic/S2_grid/sentinel_2_index.gpkg,sha256=oUC3OUo_7KugyhehNxVhGGrXe7f3T-hzc-edpKDTMpY,15630336
+s2mosaic-0.1.4.dist-info/LICENSE,sha256=PItRahN7HtLMUqxiLdvN-MdrH-7QwbeSaNA5BDS9Z8Q,1066
+s2mosaic-0.1.4.dist-info/METADATA,sha256=5RS_p8eI8ekVn_PXEbtkbjhCvq1QQ0OoF6k77NdQRKc,5395
+s2mosaic-0.1.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+s2mosaic-0.1.4.dist-info/top_level.txt,sha256=wb5XJ-MmiJbcnX8F7AqvyMsyQfa8Bg-Vmr-rfQStbF0,9
+s2mosaic-0.1.4.dist-info/RECORD,,
