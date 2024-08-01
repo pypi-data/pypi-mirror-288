@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: moveread-tnmt
+Version: 0.1.0
+Summary: Moveread for Tournaments, the API
+Author-email: Marcel Claramunt <marcel@moveread.com>
+Project-URL: repo, https://github.com/moveread/tnmt.git
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: lazy-loader
+Requires-Dist: sqlmodel
+Requires-Dist: sqltypes
+Requires-Dist: fastapi
+Requires-Dist: python-kv
+Requires-Dist: pure-cv
+Requires-Dist: aiohttp
+Requires-Dist: chess-pairings
+Requires-Dist: chess-scraping
+Requires-Dist: chess-utils
+
+# Moveread Tnmt
+
+> Moveread for Tournaments, the API
