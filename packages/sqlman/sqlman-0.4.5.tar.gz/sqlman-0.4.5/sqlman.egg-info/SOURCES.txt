@@ -1,0 +1,17 @@
+README.md
+setup.py
+sqlman/__init__.py
+sqlman/tools.py
+sqlman.egg-info/PKG-INFO
+sqlman.egg-info/SOURCES.txt
+sqlman.egg-info/dependency_links.txt
+sqlman.egg-info/not-zip-safe
+sqlman.egg-info/requires.txt
+sqlman.egg-info/top_level.txt
+sqlman/core/__init__.py
+sqlman/core/connector.py
+sqlman/core/controller.py
+sqlman/core/v2/__init__.py
+sqlman/core/v2/db.py
+sqlman/core/v2/table.py
+tests/test_sqlman.py
