@@ -1,0 +1,10 @@
+mwbot/__init__.py,sha256=0HygRJQBuSZ8hOPwV7S94fefu_qLQWgBI3Nmhgpcjss,112
+mwbot/arktool.py,sha256=5weO2nkOj0ipEcvR_BU7_wyEo8OAKffO5rp27IN0TXk,3729
+mwbot/arktool_internet.py,sha256=WQk8wTw3gWu_gAGtdGdTZZx6ffCyOuOIGCPXDrYkifo,5473
+mwbot/bot.py,sha256=NSpuge74hyrCciozmqY1CAqlpuKjpTWqdaCF86_gV0Q,16071
+mwbot/error.py,sha256=_NIGNDdBnQ8xQ8TT1x6e8a55D9-4-8tgKYfmP3L34b0,42
+mwbot/prototype.py,sha256=0EKAks9xJ3b3cJNt4KnXcWoipxVXaqj-v1s0bRwTAxg,1543
+mwbot/utils.py,sha256=Iw2_a4Fv86GQJd0bhT4bmT5AHIxa4nRSCBdv_RjlQvU,2016
+mwbot-1.0.37.dist-info/WHEEL,sha256=B19PGBCYhWaz2p_UjAoRVh767nYQfk14Sn4TpIZ-nfU,87
+mwbot-1.0.37.dist-info/METADATA,sha256=HMchiepX6GdNFukaaQKom4Koi3y-O6ypZ0axsEKQask,2459
+mwbot-1.0.37.dist-info/RECORD,,
