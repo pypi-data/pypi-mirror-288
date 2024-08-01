@@ -1,0 +1,15 @@
+b3integration_mig24/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+b3integration_mig24/admin.py,sha256=b5-tQNZK9ej2gl06V3PoG5nIYaYp2ThNOQpGyTegUa0,225
+b3integration_mig24/apps.py,sha256=BaZhlhuGe_N0g1MIXLr2dBLxibRdkb3uQqyP-FT4p9k,195
+b3integration_mig24/constants.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+b3integration_mig24/models.py,sha256=W14QNMcYp_rGxZl-9Sz6aRgD2ZGlcfnrt1aALJUJ_Jk,332
+b3integration_mig24/seeds.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+b3integration_mig24/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+b3integration_mig24/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+b3integration_mig24/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+b3integration_mig24/migrations/0001_initial.py,sha256=Abo-PxRMgOsLFocPkgYx-GUhpRcNVk5K-uuNTk8aeAU,867
+b3integration_mig24/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+big3_integration_mig24-0.1.dev1.dist-info/METADATA,sha256=5jVy0n_8fq4AzlTgtTOXFbQ3lRrdOtQdq3boFKHwUZ4,633
+big3_integration_mig24-0.1.dev1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+big3_integration_mig24-0.1.dev1.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+big3_integration_mig24-0.1.dev1.dist-info/RECORD,,
