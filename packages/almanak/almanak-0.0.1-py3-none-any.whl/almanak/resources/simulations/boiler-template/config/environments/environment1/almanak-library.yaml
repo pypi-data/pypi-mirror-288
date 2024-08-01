@@ -1,0 +1,20 @@
+name: "Super amazing environment"
+version: "1.0.0"
+type: "environment"
+author: "Almanak Blockchain Labs"
+description: ""
+license: "MIT"
+
+supported_chains:
+  - engine: 'evm'
+    chainId: '1' # Ethereum Mainnet
+    dependencies:
+      protocols:
+        - "library://almanak/protocols/aave-v3:1.0.0"
+  - engine: 'evm'
+    chainId: '17000' # Ethereum Holesky
+    dependencies:
+      protocols:
+        - "library://almanak/protocols/aave-v3:1.0.0"
+    settings:
+      uniswap_v3_usdc_pool: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
