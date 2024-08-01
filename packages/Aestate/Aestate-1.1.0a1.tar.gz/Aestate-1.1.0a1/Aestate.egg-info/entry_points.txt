@@ -1,0 +1,2 @@
+[console_scripts]
+aestate = aestate:start
