@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: dvt
+Version: 1.1.0
+Summary: Computational Analysis of Visual Culture
+Home-page: https://github.com/distant-viewing/dvt
+Author: Taylor Anold, Lauren Tilton
+Author-email: taylor@dvlab.io
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+
+The Distant Viewing Toolkit is a Python package designed to facilitate the
+computational analysis of visual culture. It contains low-level architecture
+for applying state-of-the-art computer vision algorithms to still and moving
+images. Extracted information can be visualized for search and discovery or
+aggregated and analyzed to find patterns across a corpus.

@@ -1,0 +1,15 @@
+README.md
+setup.py
+dvt/__init__.py
+dvt/detect.py
+dvt/embed.py
+dvt/face.py
+dvt/keypoint.py
+dvt/segmentation.py
+dvt/shots.py
+dvt/utils.py
+dvt.egg-info/PKG-INFO
+dvt.egg-info/SOURCES.txt
+dvt.egg-info/dependency_links.txt
+dvt.egg-info/requires.txt
+dvt.egg-info/top_level.txt
