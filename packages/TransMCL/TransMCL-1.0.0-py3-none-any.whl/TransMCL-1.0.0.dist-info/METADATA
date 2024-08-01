@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: TransMCL
+Version: 1.0.0
+Summary: Transcriptome assembly refinement tool
+Author: shenjingting
+Author-email: 20110700125@fudan.edu.cn
+License: GPLv3
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+TransMCL
+TransMCL is a tool which enables reconstruction of full-length transcriptome involved in phylogenetic research.
