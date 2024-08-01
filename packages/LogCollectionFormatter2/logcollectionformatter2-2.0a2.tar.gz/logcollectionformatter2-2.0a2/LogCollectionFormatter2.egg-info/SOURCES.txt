@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+LogCollectionFormatter2/__init__.py
+LogCollectionFormatter2/base_log.py
+LogCollectionFormatter2/insert_mq_tools.py
+LogCollectionFormatter2/main_log.py
+LogCollectionFormatter2.egg-info/PKG-INFO
+LogCollectionFormatter2.egg-info/SOURCES.txt
+LogCollectionFormatter2.egg-info/dependency_links.txt
+LogCollectionFormatter2.egg-info/requires.txt
+LogCollectionFormatter2.egg-info/top_level.txt
