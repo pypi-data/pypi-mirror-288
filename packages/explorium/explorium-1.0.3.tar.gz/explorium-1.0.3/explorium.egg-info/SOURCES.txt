@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+explorium/__init__.py
+explorium.egg-info/PKG-INFO
+explorium.egg-info/SOURCES.txt
+explorium.egg-info/dependency_links.txt
+explorium.egg-info/requires.txt
+explorium.egg-info/top_level.txt
