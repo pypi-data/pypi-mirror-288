@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: memoryscope
+Version: 0.1.0.4
+Summary: MemoryScope for LLM Agentic Application.
+License: MIT
+Keywords: Memory,LLM
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: dashscope (>=1.19.1)
+Requires-Dist: elasticsearch (>=8.14.0)
+Requires-Dist: fire (==0.6.0)
+Requires-Dist: llama-index (==0.10.45)
+Requires-Dist: llama-index-core (==0.10.44)
+Requires-Dist: llama-index-embeddings-dashscope (==0.1.3)
+Requires-Dist: llama-index-llms-dashscope (==0.1.2)
+Requires-Dist: llama-index-postprocessor-dashscope-rerank-custom (==0.1.0)
+Requires-Dist: llama-index-vector-stores-elasticsearch (==0.2.0)
+Requires-Dist: numpy (>=1.26.4)
+Requires-Dist: pydantic (>=2.7.1)
+Requires-Dist: pyfiglet (>=1.0.2)
+Requires-Dist: pyyaml (>=6.0.1)
+Requires-Dist: questionary (==2.0.1)
+Requires-Dist: termcolor (>=2.4.0)
+Description-Content-Type: text/markdown
+
+English | [**中文**](./README_ZH.md)
+
+# MemoryScope
+
+
+# 🚀 Installation
+
+## (1) Docker-Compose (Recommended)
+1. Clone the project and edit the config.
+
+    ```
+    git clone https://...
+    nano config/demo_config_cn.yaml
+    ```
+
+2. Edit `docker-compose.yml` to change environment variable.
+
+    ```
+    DASHSCOPE_API_KEY: "sk-0000000000"
+    ```
+
+3. Run `docker-compose up` to build and launch the memory-scope cli interface.
+
+
+## (2) Docker
+
+1. Clone the project and edit the config.
+
+    ```
+    git clone https://...
+    nano config/demo_config_cn.yaml
+    ```
+
+2. Build the `Dockerfile` with command:
+    ```
+    sudo docker build --network=host -t memoryscope .
+    ```
+
+3. Run `ElasticSearch` Container with command:
+    ```
+    docker run -p 9200:9200 \
+        -e "discovery.type=single-node" \
+        -e "xpack.security.enabled=false" \
+        -e "xpack.license.self_generated.type=trial" \
+        docker.elastic.co/elasticsearch/elasticsearch:8.13.2
+    ```
+
+4. Launch the built image with command:
+    ```
+    sudo docker run -it --rm --net=host memoryscope
+    ```
+
+# 💡 Contribute
+
+Contributions are always encouraged!
+
+We highly recommend install pre-commit hooks in this repo before committing pull requests.
+These hooks are small house-keeping scripts executed every time you make a git commit,
+which will take care of the formatting and linting automatically.
+```shell
+poetry install --with dev
+pre-commit install
+```
+
+
+
+# 📖 Citation
+
+Reference to cite if you use MemoryScope in a paper:
+
+```
+@software{MemoryScope,
+author = {},
+month = {08},
+title = {{MemoryScope}},
+url = {https://github.com/modelscope/MemoryScope},
+year = {2024}
+}
+```
