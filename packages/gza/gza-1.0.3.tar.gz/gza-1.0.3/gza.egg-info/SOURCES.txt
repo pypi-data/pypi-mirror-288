@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+gza/__init__.py
+gza.egg-info/PKG-INFO
+gza.egg-info/SOURCES.txt
+gza.egg-info/dependency_links.txt
+gza.egg-info/requires.txt
+gza.egg-info/top_level.txt
