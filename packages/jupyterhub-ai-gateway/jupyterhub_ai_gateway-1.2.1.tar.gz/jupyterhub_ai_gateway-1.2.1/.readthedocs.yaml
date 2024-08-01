@@ -1,0 +1,12 @@
+version: 2
+build:
+    os: ubuntu-lts-latest
+    tools:
+        python: mambaforge-latest
+    jobs:
+        pre_create_environment:
+          - git update-index --assume-unchanged environment.yaml docs/conf.py
+conda:
+    environment: environment.yaml
+sphinx:
+    configuration: docs/conf.py
