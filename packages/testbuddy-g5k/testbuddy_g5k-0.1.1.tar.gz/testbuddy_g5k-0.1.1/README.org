@@ -1,0 +1,27 @@
+* Testbuddy-g5k
+
+Testbuddy-g5k is a tool for declaratively defining experiments to be launched from a local computer into [[https://www.grid5000.fr/w/Grid5000:Home][Grid'5000]]'s clusters.
+
+It was created as part of the Google Summer of Code 2024 Debian project titled "[[https://summerofcode.withgoogle.com/programs/2024/projects/E9Jp7RUx][Benchmarking Parallel Performance of Numerical MPI Packages]]", mentored by Francesco Ballarin and Drew Parsons.
+
+** Source code
+
+The source code is contained in the ~testbuddy_g5k~ Python module directory. The ~fenicsx-tests-gsoc2024~ directory contains an example script that can be ran as an experiment, with its configuration in ~config/fenicsx-tests-gsoc2024.toml~; these files serve as a working example for those interested in using testbuddy-g5k for their own purposes.
+
+** Documentation
+
+The documentation can be read online [[https://_-.pages.debian.net/testbuddy-g5k][here]].
+
+The documentation can be found under ~docs~. It may be built either using the makefiles, e.g.
+
+#+begin_src sh
+  make clean html
+#+end_src
+
+or by using ~sphinx-build~, e.g.
+
+#+begin_src sh
+  sphinx-build -b html docs/source docs/build
+#+end_src
+
+The CI will update the GitLab Pages when the ~pages~ branch is merged with ~main~.
