@@ -1,0 +1,1649 @@
+[
+  { "stateMutability": "nonpayable", "type": "constructor", "inputs": [] },
+  { "type": "error", "inputs": [], "name": "ILimitTradeHandler_BadCalldata" },
+  { "type": "error", "inputs": [], "name": "ILimitTradeHandler_BadSizeDelta" },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "ILimitTradeHandler_BadSubAccountId"
+  },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "ILimitTradeHandler_IncorrectValueTransfer"
+  },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "ILimitTradeHandler_InsufficientExecutionFee"
+  },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "ILimitTradeHandler_InvalidAddress"
+  },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "ILimitTradeHandler_InvalidArraySize"
+  },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "ILimitTradeHandler_InvalidPriceForExecution"
+  },
+  { "type": "error", "inputs": [], "name": "ILimitTradeHandler_InvalidSender" },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "ILimitTradeHandler_LimitOrderConvertToMarketOrder"
+  },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "ILimitTradeHandler_MarketIsClosed"
+  },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "ILimitTradeHandler_MarketOrderNoUpdate"
+  },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "ILimitTradeHandler_MaxExecutionFee"
+  },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "ILimitTradeHandler_MaxPositionSize"
+  },
+  { "type": "error", "inputs": [], "name": "ILimitTradeHandler_MaxTradeSize" },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "ILimitTradeHandler_NonExistentOrder"
+  },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "ILimitTradeHandler_NotExecutionState"
+  },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "ILimitTradeHandler_NotWhitelisted"
+  },
+  { "type": "error", "inputs": [], "name": "ILimitTradeHandler_PriceSlippage" },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "ILimitTradeHandler_TriggerPriceAboveCurrentPrice"
+  },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "ILimitTradeHandler_TriggerPriceBelowCurrentPrice"
+  },
+  { "type": "error", "inputs": [], "name": "ILimitTradeHandler_Unauthorized" },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "ILimitTradeHandler_UnknownOrderType"
+  },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "ILimitTradeHandler_WrongSizeDelta"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "version",
+        "internalType": "uint8",
+        "type": "uint8",
+        "indexed": false
+      }
+    ],
+    "name": "Initialized"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "account",
+        "internalType": "address",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "subAccountId",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": true
+      },
+      {
+        "name": "orderIndex",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "marketIndex",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "sizeDelta",
+        "internalType": "int256",
+        "type": "int256",
+        "indexed": false
+      },
+      {
+        "name": "triggerPrice",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "triggerAboveThreshold",
+        "internalType": "bool",
+        "type": "bool",
+        "indexed": false
+      },
+      {
+        "name": "executionFee",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "reduceOnly",
+        "internalType": "bool",
+        "type": "bool",
+        "indexed": false
+      },
+      {
+        "name": "tpToken",
+        "internalType": "address",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "name": "LogCancelLimitOrder"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "account",
+        "internalType": "address",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "subAccountId",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": true
+      },
+      {
+        "name": "orderIndex",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "marketIndex",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "sizeDelta",
+        "internalType": "int256",
+        "type": "int256",
+        "indexed": false
+      },
+      {
+        "name": "triggerPrice",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "acceptablePrice",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "triggerAboveThreshold",
+        "internalType": "bool",
+        "type": "bool",
+        "indexed": false
+      },
+      {
+        "name": "executionFee",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "reduceOnly",
+        "internalType": "bool",
+        "type": "bool",
+        "indexed": false
+      },
+      {
+        "name": "tpToken",
+        "internalType": "address",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "name": "LogCreateLimitOrder"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "account",
+        "internalType": "address",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "subAccountId",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": true
+      },
+      {
+        "name": "orderIndex",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "marketIndex",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "sizeDelta",
+        "internalType": "int256",
+        "type": "int256",
+        "indexed": false
+      },
+      {
+        "name": "triggerPrice",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "triggerAboveThreshold",
+        "internalType": "bool",
+        "type": "bool",
+        "indexed": false
+      },
+      {
+        "name": "executionFee",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "executionPrice",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "reduceOnly",
+        "internalType": "bool",
+        "type": "bool",
+        "indexed": false
+      },
+      {
+        "name": "tpToken",
+        "internalType": "address",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "name": "LogExecuteLimitOrder"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "account",
+        "internalType": "address",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "subAccountId",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": true
+      },
+      {
+        "name": "orderIndex",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "marketIndex",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "sizeDelta",
+        "internalType": "int256",
+        "type": "int256",
+        "indexed": false
+      },
+      {
+        "name": "triggerPrice",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "triggerAboveThreshold",
+        "internalType": "bool",
+        "type": "bool",
+        "indexed": false
+      },
+      {
+        "name": "executionFee",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "reduceOnly",
+        "internalType": "bool",
+        "type": "bool",
+        "indexed": false
+      },
+      {
+        "name": "tpToken",
+        "internalType": "address",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "errMsg",
+        "internalType": "bytes",
+        "type": "bytes",
+        "indexed": false
+      }
+    ],
+    "name": "LogExecuteLimitOrderFail"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "account",
+        "internalType": "address",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "subAccountId",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": true
+      },
+      {
+        "name": "orderIndex",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "marketIndex",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "sizeDelta",
+        "internalType": "int256",
+        "type": "int256",
+        "indexed": false
+      },
+      {
+        "name": "triggerPrice",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "triggerAboveThreshold",
+        "internalType": "bool",
+        "type": "bool",
+        "indexed": false
+      },
+      {
+        "name": "executionFee",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "reduceOnly",
+        "internalType": "bool",
+        "type": "bool",
+        "indexed": false
+      },
+      {
+        "name": "tpToken",
+        "internalType": "address",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "errMsg",
+        "internalType": "bytes",
+        "type": "bytes",
+        "indexed": false
+      }
+    ],
+    "name": "LogExecuteMarketOrderFail"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "sender",
+        "internalType": "address",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "delegate",
+        "internalType": "address",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "name": "LogSetDelegate"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "isActive",
+        "internalType": "bool",
+        "type": "bool",
+        "indexed": false
+      }
+    ],
+    "name": "LogSetGuaranteeLimitPrice"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "oldValue",
+        "internalType": "bool",
+        "type": "bool",
+        "indexed": false
+      },
+      {
+        "name": "newValue",
+        "internalType": "bool",
+        "type": "bool",
+        "indexed": false
+      }
+    ],
+    "name": "LogSetIsAllowAllExecutor"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "oldValue",
+        "internalType": "uint64",
+        "type": "uint64",
+        "indexed": false
+      },
+      {
+        "name": "newValue",
+        "internalType": "uint64",
+        "type": "uint64",
+        "indexed": false
+      }
+    ],
+    "name": "LogSetMinExecutionFee"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "oldValue",
+        "internalType": "uint32",
+        "type": "uint32",
+        "indexed": false
+      },
+      {
+        "name": "newValue",
+        "internalType": "uint32",
+        "type": "uint32",
+        "indexed": false
+      }
+    ],
+    "name": "LogSetMinExecutionTimestamp"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "executor",
+        "internalType": "address",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "isAllow",
+        "internalType": "bool",
+        "type": "bool",
+        "indexed": false
+      }
+    ],
+    "name": "LogSetOrderExecutor"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "oldValue",
+        "internalType": "address",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "newValue",
+        "internalType": "address",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "name": "LogSetPyth"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "oldValue",
+        "internalType": "address",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "newValue",
+        "internalType": "address",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "name": "LogSetTradeService"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "account",
+        "internalType": "address",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "subAccountId",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": true
+      },
+      {
+        "name": "orderIndex",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "marketIndex",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "sizeDelta",
+        "internalType": "int256",
+        "type": "int256",
+        "indexed": false
+      },
+      {
+        "name": "triggerPrice",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "triggerAboveThreshold",
+        "internalType": "bool",
+        "type": "bool",
+        "indexed": false
+      },
+      {
+        "name": "reduceOnly",
+        "internalType": "bool",
+        "type": "bool",
+        "indexed": false
+      },
+      {
+        "name": "tpToken",
+        "internalType": "address",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "name": "LogUpdateLimitOrder"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "previousOwner",
+        "internalType": "address",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "newOwner",
+        "internalType": "address",
+        "type": "address",
+        "indexed": true
+      }
+    ],
+    "name": "OwnershipTransferred"
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [],
+    "name": "activeLimitOrdersCount",
+    "outputs": [{ "name": "", "internalType": "uint256", "type": "uint256" }]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [],
+    "name": "activeMarketOrdersCount",
+    "outputs": [{ "name": "", "internalType": "uint256", "type": "uint256" }]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [],
+    "name": "activeOrdersCount",
+    "outputs": [{ "name": "", "internalType": "uint256", "type": "uint256" }]
+  },
+  {
+    "stateMutability": "payable",
+    "type": "function",
+    "inputs": [
+      { "name": "_mainAccount", "internalType": "address", "type": "address" },
+      { "name": "_subAccountId", "internalType": "uint8", "type": "uint8" },
+      {
+        "name": "_cmds",
+        "internalType": "enum ILimitTradeHandler.Command[]",
+        "type": "uint8[]"
+      },
+      { "name": "_datas", "internalType": "bytes[]", "type": "bytes[]" }
+    ],
+    "name": "batch",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "_mainAccount", "internalType": "address", "type": "address" },
+      { "name": "_subAccountId", "internalType": "uint8", "type": "uint8" },
+      {
+        "name": "_orderIndices",
+        "internalType": "uint256[]",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "batchCancelOrders",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "_mainAccount", "internalType": "address", "type": "address" },
+      { "name": "_subAccountId", "internalType": "uint8", "type": "uint8" },
+      { "name": "_orderIndex", "internalType": "uint256", "type": "uint256" }
+    ],
+    "name": "cancelOrder",
+    "outputs": []
+  },
+  {
+    "stateMutability": "payable",
+    "type": "function",
+    "inputs": [
+      { "name": "_mainAccount", "internalType": "address", "type": "address" },
+      { "name": "_subAccountId", "internalType": "uint8", "type": "uint8" },
+      { "name": "_marketIndex", "internalType": "uint256", "type": "uint256" },
+      { "name": "_sizeDelta", "internalType": "int256", "type": "int256" },
+      { "name": "_triggerPrice", "internalType": "uint256", "type": "uint256" },
+      {
+        "name": "_acceptablePrice",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      {
+        "name": "_triggerAboveThreshold",
+        "internalType": "bool",
+        "type": "bool"
+      },
+      { "name": "_executionFee", "internalType": "uint256", "type": "uint256" },
+      { "name": "_reduceOnly", "internalType": "bool", "type": "bool" },
+      { "name": "_tpToken", "internalType": "address", "type": "address" }
+    ],
+    "name": "createOrder",
+    "outputs": []
+  },
+  {
+    "stateMutability": "payable",
+    "type": "function",
+    "inputs": [
+      { "name": "_subAccountId", "internalType": "uint8", "type": "uint8" },
+      { "name": "_marketIndex", "internalType": "uint256", "type": "uint256" },
+      { "name": "_sizeDelta", "internalType": "int256", "type": "int256" },
+      { "name": "_triggerPrice", "internalType": "uint256", "type": "uint256" },
+      {
+        "name": "_acceptablePrice",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      {
+        "name": "_triggerAboveThreshold",
+        "internalType": "bool",
+        "type": "bool"
+      },
+      { "name": "_executionFee", "internalType": "uint256", "type": "uint256" },
+      { "name": "_reduceOnly", "internalType": "bool", "type": "bool" },
+      { "name": "_tpToken", "internalType": "address", "type": "address" }
+    ],
+    "name": "createOrder",
+    "outputs": []
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [{ "name": "", "internalType": "address", "type": "address" }],
+    "name": "delegations",
+    "outputs": [{ "name": "", "internalType": "address", "type": "address" }]
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "vars",
+        "internalType": "struct LimitTradeHandler.ExecuteOrderVars",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "order",
+            "internalType": "struct ILimitTradeHandler.LimitOrder",
+            "type": "tuple",
+            "components": [
+              {
+                "name": "account",
+                "internalType": "address",
+                "type": "address"
+              },
+              {
+                "name": "tpToken",
+                "internalType": "address",
+                "type": "address"
+              },
+              {
+                "name": "triggerAboveThreshold",
+                "internalType": "bool",
+                "type": "bool"
+              },
+              { "name": "reduceOnly", "internalType": "bool", "type": "bool" },
+              {
+                "name": "sizeDelta",
+                "internalType": "int256",
+                "type": "int256"
+              },
+              {
+                "name": "subAccountId",
+                "internalType": "uint8",
+                "type": "uint8"
+              },
+              {
+                "name": "orderIndex",
+                "internalType": "uint256",
+                "type": "uint256"
+              },
+              {
+                "name": "marketIndex",
+                "internalType": "uint256",
+                "type": "uint256"
+              },
+              {
+                "name": "triggerPrice",
+                "internalType": "uint256",
+                "type": "uint256"
+              },
+              {
+                "name": "acceptablePrice",
+                "internalType": "uint256",
+                "type": "uint256"
+              },
+              {
+                "name": "executionFee",
+                "internalType": "uint256",
+                "type": "uint256"
+              },
+              {
+                "name": "createdTimestamp",
+                "internalType": "uint256",
+                "type": "uint256"
+              }
+            ]
+          },
+          {
+            "name": "subAccount",
+            "internalType": "address",
+            "type": "address"
+          },
+          {
+            "name": "positionId",
+            "internalType": "bytes32",
+            "type": "bytes32"
+          },
+          {
+            "name": "encodedVaas",
+            "internalType": "bytes32",
+            "type": "bytes32"
+          },
+          {
+            "name": "priceData",
+            "internalType": "bytes32[]",
+            "type": "bytes32[]"
+          },
+          {
+            "name": "publishTimeData",
+            "internalType": "bytes32[]",
+            "type": "bytes32[]"
+          },
+          {
+            "name": "feeReceiver",
+            "internalType": "address payable",
+            "type": "address"
+          },
+          {
+            "name": "orderIndex",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "minPublishTime",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          { "name": "positionIsLong", "internalType": "bool", "type": "bool" },
+          { "name": "isNewPosition", "internalType": "bool", "type": "bool" },
+          { "name": "isMarketOrder", "internalType": "bool", "type": "bool" },
+          { "name": "sizeDelta", "internalType": "int256", "type": "int256" }
+        ]
+      }
+    ],
+    "name": "executeLimitOrder",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "_accounts", "internalType": "address[]", "type": "address[]" },
+      {
+        "name": "_subAccountIds",
+        "internalType": "uint8[]",
+        "type": "uint8[]"
+      },
+      {
+        "name": "_orderIndexes",
+        "internalType": "uint256[]",
+        "type": "uint256[]"
+      },
+      {
+        "name": "_feeReceiver",
+        "internalType": "address payable",
+        "type": "address"
+      },
+      {
+        "name": "_priceData",
+        "internalType": "bytes32[]",
+        "type": "bytes32[]"
+      },
+      {
+        "name": "_publishTimeData",
+        "internalType": "bytes32[]",
+        "type": "bytes32[]"
+      },
+      {
+        "name": "_minPublishTime",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      { "name": "_encodedVaas", "internalType": "bytes32", "type": "bytes32" },
+      { "name": "_isRevert", "internalType": "bool", "type": "bool" }
+    ],
+    "name": "executeOrders",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "_accounts", "internalType": "address[]", "type": "address[]" },
+      {
+        "name": "_subAccountIds",
+        "internalType": "uint8[]",
+        "type": "uint8[]"
+      },
+      {
+        "name": "_orderIndexes",
+        "internalType": "uint256[]",
+        "type": "uint256[]"
+      },
+      {
+        "name": "_feeReceiver",
+        "internalType": "address payable",
+        "type": "address"
+      },
+      {
+        "name": "_priceData",
+        "internalType": "bytes32[]",
+        "type": "bytes32[]"
+      },
+      {
+        "name": "_publishTimeData",
+        "internalType": "bytes32[]",
+        "type": "bytes32[]"
+      },
+      {
+        "name": "_minPublishTime",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      { "name": "_encodedVaas", "internalType": "bytes32", "type": "bytes32" }
+    ],
+    "name": "executeOrders",
+    "outputs": []
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [
+      { "name": "_limit", "internalType": "uint256", "type": "uint256" },
+      { "name": "_offset", "internalType": "uint256", "type": "uint256" }
+    ],
+    "name": "getAllActiveOrders",
+    "outputs": [
+      {
+        "name": "_orders",
+        "internalType": "struct ILimitTradeHandler.LimitOrder[]",
+        "type": "tuple[]",
+        "components": [
+          { "name": "account", "internalType": "address", "type": "address" },
+          { "name": "tpToken", "internalType": "address", "type": "address" },
+          {
+            "name": "triggerAboveThreshold",
+            "internalType": "bool",
+            "type": "bool"
+          },
+          { "name": "reduceOnly", "internalType": "bool", "type": "bool" },
+          { "name": "sizeDelta", "internalType": "int256", "type": "int256" },
+          { "name": "subAccountId", "internalType": "uint8", "type": "uint8" },
+          {
+            "name": "orderIndex",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "marketIndex",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "triggerPrice",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "acceptablePrice",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "executionFee",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "createdTimestamp",
+            "internalType": "uint256",
+            "type": "uint256"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [
+      { "name": "_subAccount", "internalType": "address", "type": "address" },
+      { "name": "_limit", "internalType": "uint256", "type": "uint256" },
+      { "name": "_offset", "internalType": "uint256", "type": "uint256" }
+    ],
+    "name": "getAllActiveOrdersBySubAccount",
+    "outputs": [
+      {
+        "name": "_orders",
+        "internalType": "struct ILimitTradeHandler.LimitOrder[]",
+        "type": "tuple[]",
+        "components": [
+          { "name": "account", "internalType": "address", "type": "address" },
+          { "name": "tpToken", "internalType": "address", "type": "address" },
+          {
+            "name": "triggerAboveThreshold",
+            "internalType": "bool",
+            "type": "bool"
+          },
+          { "name": "reduceOnly", "internalType": "bool", "type": "bool" },
+          { "name": "sizeDelta", "internalType": "int256", "type": "int256" },
+          { "name": "subAccountId", "internalType": "uint8", "type": "uint8" },
+          {
+            "name": "orderIndex",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "marketIndex",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "triggerPrice",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "acceptablePrice",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "executionFee",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "createdTimestamp",
+            "internalType": "uint256",
+            "type": "uint256"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [
+      { "name": "_limit", "internalType": "uint256", "type": "uint256" },
+      { "name": "_offset", "internalType": "uint256", "type": "uint256" }
+    ],
+    "name": "getLimitActiveOrders",
+    "outputs": [
+      {
+        "name": "_orders",
+        "internalType": "struct ILimitTradeHandler.LimitOrder[]",
+        "type": "tuple[]",
+        "components": [
+          { "name": "account", "internalType": "address", "type": "address" },
+          { "name": "tpToken", "internalType": "address", "type": "address" },
+          {
+            "name": "triggerAboveThreshold",
+            "internalType": "bool",
+            "type": "bool"
+          },
+          { "name": "reduceOnly", "internalType": "bool", "type": "bool" },
+          { "name": "sizeDelta", "internalType": "int256", "type": "int256" },
+          { "name": "subAccountId", "internalType": "uint8", "type": "uint8" },
+          {
+            "name": "orderIndex",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "marketIndex",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "triggerPrice",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "acceptablePrice",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "executionFee",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "createdTimestamp",
+            "internalType": "uint256",
+            "type": "uint256"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [
+      { "name": "_subAccount", "internalType": "address", "type": "address" },
+      { "name": "_limit", "internalType": "uint256", "type": "uint256" },
+      { "name": "_offset", "internalType": "uint256", "type": "uint256" }
+    ],
+    "name": "getLimitActiveOrdersBySubAccount",
+    "outputs": [
+      {
+        "name": "_orders",
+        "internalType": "struct ILimitTradeHandler.LimitOrder[]",
+        "type": "tuple[]",
+        "components": [
+          { "name": "account", "internalType": "address", "type": "address" },
+          { "name": "tpToken", "internalType": "address", "type": "address" },
+          {
+            "name": "triggerAboveThreshold",
+            "internalType": "bool",
+            "type": "bool"
+          },
+          { "name": "reduceOnly", "internalType": "bool", "type": "bool" },
+          { "name": "sizeDelta", "internalType": "int256", "type": "int256" },
+          { "name": "subAccountId", "internalType": "uint8", "type": "uint8" },
+          {
+            "name": "orderIndex",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "marketIndex",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "triggerPrice",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "acceptablePrice",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "executionFee",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "createdTimestamp",
+            "internalType": "uint256",
+            "type": "uint256"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [
+      { "name": "_limit", "internalType": "uint256", "type": "uint256" },
+      { "name": "_offset", "internalType": "uint256", "type": "uint256" }
+    ],
+    "name": "getMarketActiveOrders",
+    "outputs": [
+      {
+        "name": "_orders",
+        "internalType": "struct ILimitTradeHandler.LimitOrder[]",
+        "type": "tuple[]",
+        "components": [
+          { "name": "account", "internalType": "address", "type": "address" },
+          { "name": "tpToken", "internalType": "address", "type": "address" },
+          {
+            "name": "triggerAboveThreshold",
+            "internalType": "bool",
+            "type": "bool"
+          },
+          { "name": "reduceOnly", "internalType": "bool", "type": "bool" },
+          { "name": "sizeDelta", "internalType": "int256", "type": "int256" },
+          { "name": "subAccountId", "internalType": "uint8", "type": "uint8" },
+          {
+            "name": "orderIndex",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "marketIndex",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "triggerPrice",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "acceptablePrice",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "executionFee",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "createdTimestamp",
+            "internalType": "uint256",
+            "type": "uint256"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [
+      { "name": "_subAccount", "internalType": "address", "type": "address" },
+      { "name": "_limit", "internalType": "uint256", "type": "uint256" },
+      { "name": "_offset", "internalType": "uint256", "type": "uint256" }
+    ],
+    "name": "getMarketActiveOrdersBySubAccount",
+    "outputs": [
+      {
+        "name": "_orders",
+        "internalType": "struct ILimitTradeHandler.LimitOrder[]",
+        "type": "tuple[]",
+        "components": [
+          { "name": "account", "internalType": "address", "type": "address" },
+          { "name": "tpToken", "internalType": "address", "type": "address" },
+          {
+            "name": "triggerAboveThreshold",
+            "internalType": "bool",
+            "type": "bool"
+          },
+          { "name": "reduceOnly", "internalType": "bool", "type": "bool" },
+          { "name": "sizeDelta", "internalType": "int256", "type": "int256" },
+          { "name": "subAccountId", "internalType": "uint8", "type": "uint8" },
+          {
+            "name": "orderIndex",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "marketIndex",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "triggerPrice",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "acceptablePrice",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "executionFee",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "createdTimestamp",
+            "internalType": "uint256",
+            "type": "uint256"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "_weth", "internalType": "address", "type": "address" },
+      { "name": "_tradeService", "internalType": "address", "type": "address" },
+      { "name": "_pyth", "internalType": "address", "type": "address" },
+      {
+        "name": "_minExecutionFee",
+        "internalType": "uint64",
+        "type": "uint64"
+      },
+      {
+        "name": "_minExecutionTimestamp",
+        "internalType": "uint32",
+        "type": "uint32"
+      }
+    ],
+    "name": "initialize",
+    "outputs": []
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [],
+    "name": "isAllowAllExecutor",
+    "outputs": [{ "name": "", "internalType": "bool", "type": "bool" }]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [],
+    "name": "isGuaranteeLimitPrice",
+    "outputs": [{ "name": "", "internalType": "bool", "type": "bool" }]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [
+      { "name": "", "internalType": "address", "type": "address" },
+      { "name": "", "internalType": "uint256", "type": "uint256" }
+    ],
+    "name": "limitOrders",
+    "outputs": [
+      { "name": "account", "internalType": "address", "type": "address" },
+      { "name": "tpToken", "internalType": "address", "type": "address" },
+      {
+        "name": "triggerAboveThreshold",
+        "internalType": "bool",
+        "type": "bool"
+      },
+      { "name": "reduceOnly", "internalType": "bool", "type": "bool" },
+      { "name": "sizeDelta", "internalType": "int256", "type": "int256" },
+      { "name": "subAccountId", "internalType": "uint8", "type": "uint8" },
+      { "name": "orderIndex", "internalType": "uint256", "type": "uint256" },
+      { "name": "marketIndex", "internalType": "uint256", "type": "uint256" },
+      { "name": "triggerPrice", "internalType": "uint256", "type": "uint256" },
+      {
+        "name": "acceptablePrice",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      { "name": "executionFee", "internalType": "uint256", "type": "uint256" },
+      {
+        "name": "createdTimestamp",
+        "internalType": "uint256",
+        "type": "uint256"
+      }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [{ "name": "", "internalType": "address", "type": "address" }],
+    "name": "limitOrdersIndex",
+    "outputs": [{ "name": "", "internalType": "uint256", "type": "uint256" }]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [],
+    "name": "limitTradeHelper",
+    "outputs": [
+      {
+        "name": "",
+        "internalType": "contract LimitTradeHelper",
+        "type": "address"
+      }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [],
+    "name": "minExecutionFee",
+    "outputs": [{ "name": "", "internalType": "uint64", "type": "uint64" }]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [],
+    "name": "minExecutionTimestamp",
+    "outputs": [{ "name": "", "internalType": "uint32", "type": "uint32" }]
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "data", "internalType": "bytes[]", "type": "bytes[]" }
+    ],
+    "name": "multicall",
+    "outputs": [
+      { "name": "results", "internalType": "bytes[]", "type": "bytes[]" }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [{ "name": "", "internalType": "address", "type": "address" }],
+    "name": "orderExecutors",
+    "outputs": [{ "name": "", "internalType": "bool", "type": "bool" }]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [],
+    "name": "owner",
+    "outputs": [{ "name": "", "internalType": "address", "type": "address" }]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [],
+    "name": "pyth",
+    "outputs": [
+      { "name": "", "internalType": "contract IEcoPyth", "type": "address" }
+    ]
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "_delegate", "internalType": "address", "type": "address" }
+    ],
+    "name": "setDelegate",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [{ "name": "isActive", "internalType": "bool", "type": "bool" }],
+    "name": "setGuaranteeLimitPrice",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "_limitTradeHelper",
+        "internalType": "address",
+        "type": "address"
+      }
+    ],
+    "name": "setLimitTradeHelper",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "_newMinExecutionFee",
+        "internalType": "uint64",
+        "type": "uint64"
+      }
+    ],
+    "name": "setMinExecutionFee",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "_newMinExecutionTimestamp",
+        "internalType": "uint32",
+        "type": "uint32"
+      }
+    ],
+    "name": "setMinExecutionTimestamp",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "_executor", "internalType": "address", "type": "address" },
+      { "name": "_isAllow", "internalType": "bool", "type": "bool" }
+    ],
+    "name": "setOrderExecutor",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "_pyth", "internalType": "address", "type": "address" }
+    ],
+    "name": "setPyth",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "_tradeService", "internalType": "address", "type": "address" }
+    ],
+    "name": "setTradeService",
+    "outputs": []
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [],
+    "name": "tradeService",
+    "outputs": [{ "name": "", "internalType": "address", "type": "address" }]
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "newOwner", "internalType": "address", "type": "address" }
+    ],
+    "name": "transferOwnership",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "_mainAccount", "internalType": "address", "type": "address" },
+      { "name": "_subAccountId", "internalType": "uint8", "type": "uint8" },
+      { "name": "_orderIndex", "internalType": "uint256", "type": "uint256" },
+      { "name": "_sizeDelta", "internalType": "int256", "type": "int256" },
+      { "name": "_triggerPrice", "internalType": "uint256", "type": "uint256" },
+      {
+        "name": "_acceptablePrice",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      {
+        "name": "_triggerAboveThreshold",
+        "internalType": "bool",
+        "type": "bool"
+      },
+      { "name": "_reduceOnly", "internalType": "bool", "type": "bool" },
+      { "name": "_tpToken", "internalType": "address", "type": "address" }
+    ],
+    "name": "updateOrder",
+    "outputs": []
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [],
+    "name": "weth",
+    "outputs": [{ "name": "", "internalType": "address", "type": "address" }]
+  },
+  { "stateMutability": "payable", "type": "receive" }
+]

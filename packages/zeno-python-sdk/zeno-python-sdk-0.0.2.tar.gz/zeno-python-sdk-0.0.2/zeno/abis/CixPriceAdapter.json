@@ -1,0 +1,223 @@
+[
+  { "type": "error", "inputs": [], "name": "CIXPriceAdapter_BadParams" },
+  { "type": "error", "inputs": [], "name": "CIXPriceAdapter_BadWeightSum" },
+  { "type": "error", "inputs": [], "name": "CIXPriceAdapter_COverDiff" },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "CIXPriceAdapter_MissingPriceFromBuildData"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "_cE8",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "_pythPriceIds",
+        "internalType": "bytes32[]",
+        "type": "bytes32[]",
+        "indexed": false
+      },
+      {
+        "name": "_weightsE8",
+        "internalType": "uint256[]",
+        "type": "uint256[]",
+        "indexed": false
+      },
+      {
+        "name": "_usdQuoteds",
+        "internalType": "bool[]",
+        "type": "bool[]",
+        "indexed": false
+      }
+    ],
+    "name": "LogSetConfig"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "_oldMaxCDiffBps",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "_newMaxCDiffBps",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "name": "LogSetMaxCDiffBps"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "_oldPyth",
+        "internalType": "address",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "_newPyth",
+        "internalType": "address",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "name": "LogSetPyth"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "previousOwner",
+        "internalType": "address",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "newOwner",
+        "internalType": "address",
+        "type": "address",
+        "indexed": true
+      }
+    ],
+    "name": "OwnershipTransferred"
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [],
+    "name": "config",
+    "outputs": [{ "name": "cE8", "internalType": "uint256", "type": "uint256" }]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [],
+    "name": "getConfig",
+    "outputs": [
+      {
+        "name": "_config",
+        "internalType": "struct ICIXPriceAdapter.CIXConfig",
+        "type": "tuple",
+        "components": [
+          { "name": "cE8", "internalType": "uint256", "type": "uint256" },
+          {
+            "name": "assetIds",
+            "internalType": "bytes32[]",
+            "type": "bytes32[]"
+          },
+          {
+            "name": "weightsE8",
+            "internalType": "uint256[]",
+            "type": "uint256[]"
+          },
+          { "name": "usdQuoteds", "internalType": "bool[]", "type": "bool[]" }
+        ]
+      }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "_buildDatas",
+        "internalType": "struct IEcoPythCalldataBuilder3.BuildData[]",
+        "type": "tuple[]",
+        "components": [
+          { "name": "assetId", "internalType": "bytes32", "type": "bytes32" },
+          { "name": "priceE8", "internalType": "int64", "type": "int64" },
+          {
+            "name": "publishTime",
+            "internalType": "uint160",
+            "type": "uint160"
+          },
+          { "name": "maxDiffBps", "internalType": "uint32", "type": "uint32" }
+        ]
+      }
+    ],
+    "name": "getPrice",
+    "outputs": [
+      { "name": "_priceE18", "internalType": "uint256", "type": "uint256" }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [
+      { "name": "priceE8s", "internalType": "uint256[]", "type": "uint256[]" }
+    ],
+    "name": "getPrice",
+    "outputs": [
+      { "name": "_priceE18", "internalType": "uint256", "type": "uint256" }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [],
+    "name": "maxCDiffBps",
+    "outputs": [{ "name": "", "internalType": "uint32", "type": "uint32" }]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [],
+    "name": "owner",
+    "outputs": [{ "name": "", "internalType": "address", "type": "address" }]
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "_cE8", "internalType": "uint256", "type": "uint256" },
+      { "name": "_assetIds", "internalType": "bytes32[]", "type": "bytes32[]" },
+      {
+        "name": "_weightsE8",
+        "internalType": "uint256[]",
+        "type": "uint256[]"
+      },
+      { "name": "_usdQuoteds", "internalType": "bool[]", "type": "bool[]" }
+    ],
+    "name": "setConfig",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "_maxCDiffBps", "internalType": "uint32", "type": "uint32" }
+    ],
+    "name": "setMaxCDiffBps",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "newOwner", "internalType": "address", "type": "address" }
+    ],
+    "name": "transferOwnership",
+    "outputs": []
+  }
+]

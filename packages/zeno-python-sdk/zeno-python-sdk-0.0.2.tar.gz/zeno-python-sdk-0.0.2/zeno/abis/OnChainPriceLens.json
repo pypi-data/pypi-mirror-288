@@ -1,0 +1,105 @@
+[
+  { "type": "error", "inputs": [], "name": "OnChainPriceLens_BadLength" },
+  { "type": "error", "inputs": [], "name": "OnChainPriceLens_BadPriceId" },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "priceId",
+        "internalType": "bytes32",
+        "type": "bytes32",
+        "indexed": false
+      },
+      {
+        "name": "priceAdapter",
+        "internalType": "address",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "name": "LogSetPriceAdapter"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "previousOwner",
+        "internalType": "address",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "newOwner",
+        "internalType": "address",
+        "type": "address",
+        "indexed": true
+      }
+    ],
+    "name": "OwnershipTransferred"
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [
+      { "name": "priceId", "internalType": "bytes32", "type": "bytes32" }
+    ],
+    "name": "getPrice",
+    "outputs": [
+      { "name": "price", "internalType": "uint256", "type": "uint256" }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [],
+    "name": "owner",
+    "outputs": [{ "name": "", "internalType": "address", "type": "address" }]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [
+      { "name": "priceId", "internalType": "bytes32", "type": "bytes32" }
+    ],
+    "name": "priceAdapterById",
+    "outputs": [
+      {
+        "name": "priceAdapter",
+        "internalType": "contract IPriceAdapter",
+        "type": "address"
+      }
+    ]
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "priceIds", "internalType": "bytes32[]", "type": "bytes32[]" },
+      {
+        "name": "priceAdapters",
+        "internalType": "contract IPriceAdapter[]",
+        "type": "address[]"
+      }
+    ],
+    "name": "setPriceAdapters",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "newOwner", "internalType": "address", "type": "address" }
+    ],
+    "name": "transferOwnership",
+    "outputs": []
+  }
+]

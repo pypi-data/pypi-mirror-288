@@ -1,0 +1,473 @@
+[
+  { "stateMutability": "nonpayable", "type": "constructor", "inputs": [] },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "IOracleMiddleware_InvalidMarketStatus"
+  },
+  { "type": "error", "inputs": [], "name": "IOracleMiddleware_InvalidValue" },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "IOracleMiddleware_MarketStatusUndefined"
+  },
+  { "type": "error", "inputs": [], "name": "IOracleMiddleware_OnlyUpdater" },
+  { "type": "error", "inputs": [], "name": "IOracleMiddleware_PriceStale" },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "version",
+        "internalType": "uint8",
+        "type": "uint8",
+        "indexed": false
+      }
+    ],
+    "name": "Initialized"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "oldPythAdapter",
+        "internalType": "address",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "newPythAdapter",
+        "internalType": "address",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "name": "LogSetAdapter"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "_assetId",
+        "internalType": "bytes32",
+        "type": "bytes32",
+        "indexed": true
+      },
+      {
+        "name": "_oldConfidenceThresholdE6",
+        "internalType": "uint32",
+        "type": "uint32",
+        "indexed": false
+      },
+      {
+        "name": "_newConfidenceThresholdE6",
+        "internalType": "uint32",
+        "type": "uint32",
+        "indexed": false
+      },
+      {
+        "name": "_oldTrustPriceAge",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "_newTrustPriceAge",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "_oldAdapter",
+        "internalType": "address",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "_newAdapter",
+        "internalType": "address",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "name": "LogSetAssetPriceConfig"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "_assetId",
+        "internalType": "bytes32",
+        "type": "bytes32",
+        "indexed": true
+      },
+      {
+        "name": "_status",
+        "internalType": "uint8",
+        "type": "uint8",
+        "indexed": false
+      }
+    ],
+    "name": "LogSetMarketStatus"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "oldValue",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "newValue",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "name": "LogSetMaxTrustPriceAge"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "_account",
+        "internalType": "address",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "_isActive",
+        "internalType": "bool",
+        "type": "bool",
+        "indexed": false
+      }
+    ],
+    "name": "LogSetUpdater"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "previousOwner",
+        "internalType": "address",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "newOwner",
+        "internalType": "address",
+        "type": "address",
+        "indexed": true
+      }
+    ],
+    "name": "OwnershipTransferred"
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [{ "name": "", "internalType": "bytes32", "type": "bytes32" }],
+    "name": "assetPriceConfigs",
+    "outputs": [
+      { "name": "trustPriceAge", "internalType": "uint32", "type": "uint32" },
+      {
+        "name": "confidenceThresholdE6",
+        "internalType": "uint32",
+        "type": "uint32"
+      },
+      { "name": "adapter", "internalType": "address", "type": "address" }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [
+      { "name": "_assetId", "internalType": "bytes32", "type": "bytes32" },
+      { "name": "_isMax", "internalType": "bool", "type": "bool" },
+      { "name": "_marketSkew", "internalType": "int256", "type": "int256" },
+      { "name": "_sizeDelta", "internalType": "int256", "type": "int256" },
+      {
+        "name": "_maxSkewScaleUSD",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      { "name": "_limitPriceE30", "internalType": "uint256", "type": "uint256" }
+    ],
+    "name": "getLatestAdaptivePrice",
+    "outputs": [
+      {
+        "name": "_adaptivePrice",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      { "name": "_lastUpdate", "internalType": "uint256", "type": "uint256" }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [
+      { "name": "_assetId", "internalType": "bytes32", "type": "bytes32" },
+      { "name": "_isMax", "internalType": "bool", "type": "bool" },
+      { "name": "_marketSkew", "internalType": "int256", "type": "int256" },
+      { "name": "_sizeDelta", "internalType": "int256", "type": "int256" },
+      {
+        "name": "_maxSkewScaleUSD",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      { "name": "_limitPriceE30", "internalType": "uint256", "type": "uint256" }
+    ],
+    "name": "getLatestAdaptivePriceWithMarketStatus",
+    "outputs": [
+      {
+        "name": "_adaptivePrice",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      { "name": "_lastUpdate", "internalType": "uint256", "type": "uint256" },
+      { "name": "_status", "internalType": "uint8", "type": "uint8" }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [
+      { "name": "_assetId", "internalType": "bytes32", "type": "bytes32" },
+      { "name": "_isMax", "internalType": "bool", "type": "bool" }
+    ],
+    "name": "getLatestPrice",
+    "outputs": [
+      { "name": "_price", "internalType": "uint256", "type": "uint256" },
+      { "name": "_lastUpdate", "internalType": "uint256", "type": "uint256" }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [
+      { "name": "_assetId", "internalType": "bytes32", "type": "bytes32" },
+      { "name": "_isMax", "internalType": "bool", "type": "bool" }
+    ],
+    "name": "getLatestPriceWithMarketStatus",
+    "outputs": [
+      { "name": "_price", "internalType": "uint256", "type": "uint256" },
+      { "name": "_lastUpdate", "internalType": "uint256", "type": "uint256" },
+      { "name": "_status", "internalType": "uint8", "type": "uint8" }
+    ]
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "_maxTrustPriceAge",
+        "internalType": "uint256",
+        "type": "uint256"
+      }
+    ],
+    "name": "initialize",
+    "outputs": []
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [{ "name": "", "internalType": "address", "type": "address" }],
+    "name": "isUpdater",
+    "outputs": [{ "name": "", "internalType": "bool", "type": "bool" }]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [{ "name": "", "internalType": "bytes32", "type": "bytes32" }],
+    "name": "marketStatus",
+    "outputs": [{ "name": "", "internalType": "uint8", "type": "uint8" }]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [],
+    "name": "owner",
+    "outputs": [{ "name": "", "internalType": "address", "type": "address" }]
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "_assetId", "internalType": "bytes32", "type": "bytes32" },
+      {
+        "name": "_confidenceThresholdE6",
+        "internalType": "uint32",
+        "type": "uint32"
+      },
+      { "name": "_trustPriceAge", "internalType": "uint32", "type": "uint32" },
+      { "name": "_adapter", "internalType": "address", "type": "address" }
+    ],
+    "name": "setAssetPriceConfig",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "_assetIds", "internalType": "bytes32[]", "type": "bytes32[]" },
+      {
+        "name": "_confidenceThresholdE6s",
+        "internalType": "uint32[]",
+        "type": "uint32[]"
+      },
+      {
+        "name": "_trustPriceAges",
+        "internalType": "uint32[]",
+        "type": "uint32[]"
+      },
+      { "name": "_adapters", "internalType": "address[]", "type": "address[]" }
+    ],
+    "name": "setAssetPriceConfigs",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "_assetId", "internalType": "bytes32", "type": "bytes32" },
+      { "name": "_status", "internalType": "uint8", "type": "uint8" }
+    ],
+    "name": "setMarketStatus",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "_maxTrustPriceAge",
+        "internalType": "uint256",
+        "type": "uint256"
+      }
+    ],
+    "name": "setMaxTrustPriceAge",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "_assetIds", "internalType": "bytes32[]", "type": "bytes32[]" },
+      { "name": "_statuses", "internalType": "uint8[]", "type": "uint8[]" }
+    ],
+    "name": "setMultipleMarketStatus",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "_account", "internalType": "address", "type": "address" },
+      { "name": "_isActive", "internalType": "bool", "type": "bool" }
+    ],
+    "name": "setUpdater",
+    "outputs": []
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      { "name": "newOwner", "internalType": "address", "type": "address" }
+    ],
+    "name": "transferOwnership",
+    "outputs": []
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [
+      { "name": "_assetId", "internalType": "bytes32", "type": "bytes32" },
+      { "name": "_isMax", "internalType": "bool", "type": "bool" },
+      { "name": "_marketSkew", "internalType": "int256", "type": "int256" },
+      { "name": "_sizeDelta", "internalType": "int256", "type": "int256" },
+      {
+        "name": "_maxSkewScaleUSD",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      { "name": "_limitPriceE30", "internalType": "uint256", "type": "uint256" }
+    ],
+    "name": "unsafeGetLatestAdaptivePrice",
+    "outputs": [
+      {
+        "name": "_adaptivePrice",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      { "name": "_lastUpdate", "internalType": "uint256", "type": "uint256" }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [
+      { "name": "_assetId", "internalType": "bytes32", "type": "bytes32" },
+      { "name": "_isMax", "internalType": "bool", "type": "bool" },
+      { "name": "_marketSkew", "internalType": "int256", "type": "int256" },
+      { "name": "_sizeDelta", "internalType": "int256", "type": "int256" },
+      {
+        "name": "_maxSkewScaleUSD",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      { "name": "_limitPriceE30", "internalType": "uint256", "type": "uint256" }
+    ],
+    "name": "unsafeGetLatestAdaptivePriceWithMarketStatus",
+    "outputs": [
+      {
+        "name": "_adaptivePrice",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      { "name": "_lastUpdate", "internalType": "uint256", "type": "uint256" },
+      { "name": "_status", "internalType": "uint8", "type": "uint8" }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [
+      { "name": "_assetId", "internalType": "bytes32", "type": "bytes32" },
+      { "name": "_isMax", "internalType": "bool", "type": "bool" }
+    ],
+    "name": "unsafeGetLatestPrice",
+    "outputs": [
+      { "name": "_price", "internalType": "uint256", "type": "uint256" },
+      { "name": "_lastUpdate", "internalType": "uint256", "type": "uint256" }
+    ]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [
+      { "name": "_assetId", "internalType": "bytes32", "type": "bytes32" },
+      { "name": "_isMax", "internalType": "bool", "type": "bool" }
+    ],
+    "name": "unsafeGetLatestPriceWithMarketStatus",
+    "outputs": [
+      { "name": "_price", "internalType": "uint256", "type": "uint256" },
+      { "name": "_lastUpdate", "internalType": "uint256", "type": "uint256" },
+      { "name": "_status", "internalType": "uint8", "type": "uint8" }
+    ]
+  }
+]
