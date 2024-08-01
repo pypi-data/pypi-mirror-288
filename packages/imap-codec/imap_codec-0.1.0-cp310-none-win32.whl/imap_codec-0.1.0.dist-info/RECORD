@@ -1,0 +1,7 @@
+imap_codec-0.1.0.dist-info/METADATA,sha256=ELXprbbqT0L7NDn0aMaZVsHQ2jdDrYgZ7kLKo2cEwK0,2664
+imap_codec-0.1.0.dist-info/WHEEL,sha256=U4wncjHGVx94sE2JsxnUTr0tXWD2AXq2J1h09ZXN3Q4,91
+imap_codec/__init__.py,sha256=f8hac7b88rby472pFEbDOJqImXmQpUa3kMsoJejT_oY,123
+imap_codec/__init__.pyi,sha256=zKg1yXN5ifn6ec4upDdgl9PDvgCR6oE1mFZ4KSGSyIk,9136
+imap_codec/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imap_codec/imap_codec.cp310-win32.pyd,sha256=nfA2qMlabrM1s92Eo6Q2-gfhgEKt3Rg4GZMrNa-l87o,2146816
+imap_codec-0.1.0.dist-info/RECORD,,
