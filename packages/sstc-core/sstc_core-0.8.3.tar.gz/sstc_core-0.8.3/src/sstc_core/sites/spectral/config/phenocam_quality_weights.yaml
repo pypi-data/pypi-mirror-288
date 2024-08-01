@@ -1,0 +1,30 @@
+default:
+  quality_index_weights_version: "0.7.4"  # refers to the github commited version
+  flag_brightness_weight: 0.1
+  flag_blur_weight: 0.1
+  flag_snow_weight: 0.1
+  flag_rain_weight: 0.1
+  flag_water_drops_weight: 0.1
+  flag_dirt_weight: 0.1
+  flag_obstructions_weight: 0.1
+  flag_glare_weight: 0.1
+  flag_fog_weight: 0.1
+  flag_rotation_weight: 0.1
+  flag_birds_weight: 0.1
+  flag_other_weight: 0.1
+
+Abisko:
+  P_BTH_1:
+    quality_index_weights_version: "0.7.4"  # refers to the github commited version
+    flag_brightness_weight: 0.1
+    flag_blur_weight: 0.1
+    flag_snow_weight: 0.1
+    flag_rain_weight: 0.1
+    flag_water_drops_weight: 0.1
+    flag_dirt_weight: 0.1
+    flag_obstructions_weight: 0.1
+    flag_glare_weight: 0.1
+    flag_fog_weight: 0.1
+    flag_rotation_weight: 0.1
+    flag_birds_weight: 0.1
+    flag_other_weight: 0.1
