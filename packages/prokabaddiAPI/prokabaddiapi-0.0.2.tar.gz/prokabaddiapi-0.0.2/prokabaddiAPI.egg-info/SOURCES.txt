@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+prokabaddiAPI.egg-info/PKG-INFO
+prokabaddiAPI.egg-info/SOURCES.txt
+prokabaddiAPI.egg-info/dependency_links.txt
+prokabaddiAPI.egg-info/requires.txt
+prokabaddiAPI.egg-info/top_level.txt
