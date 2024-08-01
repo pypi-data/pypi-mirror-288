@@ -1,0 +1,9 @@
+fastapi
+mysql-connector-python
+SQLAlchemy
+python-jose[cryptography]
+pydantic
+pydantic_core
+loguru
+bcrypt
+passlib
