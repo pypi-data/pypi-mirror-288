@@ -1,0 +1,4 @@
+[console_scripts]
+build-mucli=mucli.pyinstaller:install
+mucli=mucli.main:main
+

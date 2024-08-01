@@ -1,0 +1,10 @@
+mucli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mucli/_case.py,sha256=oeH221_xpU09MqpMAL3-IA7VCs0GnAkx4cDEyqTBtLA,5255
+mucli/_milvus.py,sha256=p8fsHU3EILn9k5YiEURDaDb4JKyj8C_u-4VsA6TaBUw,42377
+mucli/_option.py,sha256=f2LgcYyPQtzkL_-Ht1pRyjs15emTPTK3Yoqwe658RCs,5143
+mucli/main.py,sha256=kUqExiTGYL5X_ztYpwQnk3WkZeeBvS2Dmu-H0LNW4Q0,158
+mucli/pyinstaller.py,sha256=CNSu63NNd1cpmvucGbdtWX_GLNSTIp-XMknzCEbEXsc,406
+mucli-0.0.5.dist-info/METADATA,sha256=0bHyN8Yr6sAAUvxDC-oB_68KHm2WX0MdY191Sgfn-RY,582
+mucli-0.0.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+mucli-0.0.5.dist-info/entry_points.txt,sha256=_Nhqucz_7GYtHUYyN5L4WxL6BdjjvGkXhikndQEiyd0,79
+mucli-0.0.5.dist-info/RECORD,,
