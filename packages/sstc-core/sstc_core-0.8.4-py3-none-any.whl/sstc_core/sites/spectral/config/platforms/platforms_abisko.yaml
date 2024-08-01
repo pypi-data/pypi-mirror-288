@@ -1,0 +1,34 @@
+PhenoCams:
+  P_BTH_1:
+    aoi: Forest in Alpine Montain - Abiskojaure at Abisko National Park
+    backups:
+      aurora02_dirpath: /home/aurora02/data/SITES/Spectral/data/catalog/abisko/locations/BTH_FOR/platforms/PhenoCam/P_BTH_1/
+    description: Building H Top at ANS. Lars Eklundh custom optical camera.
+    ecosystem_of_interest: FOR
+    geolocation:
+      point:
+        epsg:3006:
+          x_coord: null
+          y_coord: null
+        epsg:4326:
+          latitude_dd: null
+          longitude_dd: null
+    height_in_meters_above_ground: 4
+    legacy_acronym: ANS-FOR-P01
+    location_id: BTH_FOR
+    mantainance_and_calibrations:
+      logs:
+      - event_date_YYYY-MM-DD: null
+        event_type: null
+      status: Active
+    phenocam_rois:
+      roi01: null
+      roi02: null
+      roi03: null
+    platform_id: P_BTH_1
+    platform_type: PhenoCam
+    records_count: 1367
+    sftp_dirpath: abisko/data/PhenoCam/ANS-FOR-P01/
+    station_acronym: ANS
+    station_name: Abisko
+    viewing_direction': West
