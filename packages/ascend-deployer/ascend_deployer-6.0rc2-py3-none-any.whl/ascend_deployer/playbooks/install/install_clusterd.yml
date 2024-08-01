@@ -1,0 +1,84 @@
+- hosts: localhost
+  tasks:
+    - name: Match component clusterd
+      find:
+        paths: "{{ resource_path }}/mindxdl/dlPackage/{{ ansible_architecture }}"
+        patterns: '*clusterd*'
+      register: clusterd_files
+
+    - name: message
+      debug:
+        msg: "failed to find clusterd in path: {{ resource_path }}/mindxdl/dlPackage/{{ ansible_architecture }}"
+      when: not clusterd_files.matched
+
+- hosts:
+    - master[0]
+    - other_build_image
+  name: build image for clusterd
+  tasks:
+    - name: build clusterd image
+      install_clusterd:
+        resources_dir: "{{ resource_path }}"
+        harbor_server: "{{ HARBOR_SERVER }}"
+        step: 'build'
+      when: hostvars['localhost']['clusterd_files'].matched
+
+    - name: fetch clusterd image
+      scp:
+        ip: "{{ inventory_hostname }}"
+        remote_user: "{{ ansible_ssh_user }}"
+        passwd: "{{ ansible_ssh_pass|default('') }}"
+        src: "{{ clusterd_images }}"
+        dest: "{{ resource_path }}/mindxdl/dlImages/{{ ansible_architecture }}/clusterd"
+        fetch: 'true'
+      delegate_to: localhost
+      when: hostvars['localhost']['clusterd_files'].matched
+
+- hosts:
+    - localhost
+  name: push clusterd image to harbor
+  tasks:
+    - name: push to harbor
+      push_image:
+        harbor_server: "{{ HARBOR_SERVER }}"
+        project_name: "mindx"
+        public: "{{ HARBOR_PUBLIC_PROJECT }}"
+        user: "{{ HARBOR_ADMIN_USER }}"
+        password: "{{ HARBOR_ADMIN_PASSWORD }}"
+        image_dir: "{{ resource_path }}/mindxdl/dlImages/"
+        component_name: "clusterd"
+      when: use_harbor and hostvars['localhost']['clusterd_files'].matched
+
+- hosts:
+    - master
+  name: install or upgrade clusterd
+  tasks:
+    - name: push images to remote
+      scp:
+        ip: "{{ inventory_hostname }}"
+        remote_user: "{{ ansible_ssh_user }}"
+        passwd: "{{ ansible_ssh_pass|default('') }}"
+        src: "{{ resource_path }}/mindxdl/dlImages/{{ ansible_architecture }}/clusterd/*"
+        dest: "{{ resource_path }}/mindxdl/dlImages/{{ ansible_architecture }}/clusterd/"
+      delegate_to: localhost
+      when: not use_harbor and hostvars['localhost']['clusterd_files'].matched
+
+    - name: install clusterd
+      install_clusterd:
+        resources_dir: "{{ resource_path }}"
+        harbor_server: "{{ HARBOR_SERVER }}"
+        step: 'install'
+      when: hostvars['localhost']['clusterd_files'].matched
+
+    - name: apply clusterd
+      throttle: 1
+      install_clusterd:
+        resources_dir: "{{ resource_path }}"
+        harbor_server: "{{ HARBOR_SERVER }}"
+        step: 'apply'
+        node_name: "{{ NODE_NAME }}"
+        master_node: "{{ inventory_hostname in groups['master'] }}"
+        worker_node: "{{ inventory_hostname in groups['worker'] }}"
+        labels: "{{ clusterd_labels }}"
+      delegate_to: "{{ groups['master'][0] }}"
+      when: hostvars['localhost']['clusterd_files'].matched

@@ -1,0 +1,12 @@
+{
+  "name": "DL",
+  "version": "6.0.RC2",
+  "default": true,
+  "required_soft": [
+    {
+      "name": "NPU",
+      "version": "24.1.RC2"
+    }
+  ],
+  "other": []
+}

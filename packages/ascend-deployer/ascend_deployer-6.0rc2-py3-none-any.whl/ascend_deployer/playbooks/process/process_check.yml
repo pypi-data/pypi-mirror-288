@@ -1,0 +1,45 @@
+- hosts: localhost
+  tags: always
+  tasks:
+    - name: check user
+      check_user:
+
+- hosts:
+    - master
+    - worker
+  tags: always
+  tasks:
+    - name: Check connectivity to target hosts
+      ping:
+
+    - name: collect info
+      generate_package_config:
+        ascend_deployer_work_dir: "{{ ascend_deployer_work_dir }}"
+      delegate_to: localhost
+
+    - name: check user compatibility npu cann dl ai_framework for installation
+      check_for_install:
+        tags: "{{ ansible_run_tags }}"
+        python_version: "{{ python_version }}"
+        force_upgrade_npu: "{{ force_upgrade_npu | default('false')}}"
+        npu_num: "{{ npu_num | default(-1)}}"
+        hosts_name: "{{ hosts_name | default('')}}"
+        group_names: "{{ group_names }}"
+        master_groups: "{{ groups['master'] }}"
+        worker_groups: "{{ groups['worker'] }}"
+        host_info: "{{ hostvars }}"
+        current_hostname: "{{ inventory_hostname }}"
+        kube_vip: "{{ KUBE_VIP }}"
+        k8s_api_server_ip: "{{ k8s_api_server_ip | default('') }}"
+        kube_interface: "{{ kube_interface | default('') }}"
+        pod_network_cidr: "{{ POD_NETWORK_CIDR }}"
+        ascend_deployer_work_dir: "{{ ascend_deployer_work_dir }}"
+        packages: "{{ packages }}"
+
+
+- hosts: hccn
+  tags: hccn
+  tasks:
+    - name: check hccn config
+      check_hccn:
+        device_ips: "{{ deviceip | default('') }}"
