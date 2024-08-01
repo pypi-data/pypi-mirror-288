@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+ZeroLogon/__init__.py
+ZeroLogon.egg-info/PKG-INFO
+ZeroLogon.egg-info/SOURCES.txt
+ZeroLogon.egg-info/dependency_links.txt
+ZeroLogon.egg-info/requires.txt
+ZeroLogon.egg-info/top_level.txt
