@@ -1,0 +1,5 @@
+aws4/__init__.py,sha256=iUQ8ZT7ww5kDV0LL2nXzXkR3gpI68LB7RnJMwZP92RU,19964
+aws4/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auth_aws4-0.1.4.dist-info/METADATA,sha256=uxkE4MT7tXRqIxMKzu3P6K4Zez6l-ggAc2u_egPs9kA,3078
+auth_aws4-0.1.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+auth_aws4-0.1.4.dist-info/RECORD,,
