@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: modulare
+Version: 0.0.35.dev0
+Summary: A simple framework for building complex microservices or basic web applications
+Author-email: André Vargas <andreorcldba@gmail.com>
+License: BSD-3-Clause
+Keywords: one,two
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: pydantic
+
+# install pip requirements
+    pip install -e .
+
+python3 -m build
+
+twine upload --repository modulare dist/*
+
+pip uninstall modulare
+
+pip install modulare
