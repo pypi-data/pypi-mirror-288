@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+orionix/__init__.py
+orionix.egg-info/PKG-INFO
+orionix.egg-info/SOURCES.txt
+orionix.egg-info/dependency_links.txt
+orionix.egg-info/requires.txt
+orionix.egg-info/top_level.txt
