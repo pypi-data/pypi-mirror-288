@@ -1,0 +1,2 @@
+[console_scripts]
+hpc-plotter = hpc_plotter.main:main
