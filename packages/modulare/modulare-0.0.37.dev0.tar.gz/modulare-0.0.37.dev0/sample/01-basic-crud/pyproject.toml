@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "basic-crud"
+version = "0.0.1"
+description = "A simple basic crud"
+authors = [
+    {name = "André Vargas", email = "andreorcldba@gmail.com"},
+]
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["one", "two"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "modulare"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
