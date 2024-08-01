@@ -1,0 +1,2 @@
+[console_scripts]
+showlbls = tools.visualize:main
