@@ -1,0 +1,21 @@
+# Protobuf Utilities Package
+
+This package provides utilities for dynamically loading and handling Protocol Buffers (protobuf) messages, including compiling `.proto` files, serializing and deserializing messages, and converting between protobuf messages and dictionaries.
+
+## Features
+
+- **Dynamic Protobuf Loading**: Load protobuf modules dynamically at runtime.
+- **Message Creation**: Create protobuf messages dynamically.
+- **Deserialization**: Deserialize compressed binary strings into protobuf messages.
+- **Proto Compilation**: Compile `.proto` files into Python modules with gRPC support.
+- **Dictionary Conversion**: Convert protobuf messages to and from dictionaries.
+- **Field Setting**: Set fields in a protobuf message from a dictionary, including handling nested JSON strings.
+
+## Installation
+
+To install the package, clone the repository and install the required dependencies:
+
+```bash
+git clone <repository-url>
+cd <repository-directory>
+pip install -r requirements.txt
