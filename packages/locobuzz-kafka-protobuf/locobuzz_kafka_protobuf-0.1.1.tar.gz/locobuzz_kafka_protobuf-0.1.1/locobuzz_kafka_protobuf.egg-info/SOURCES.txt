@@ -1,0 +1,12 @@
+README.md
+setup.py
+kafka_protobuf/__init__.py
+kafka_protobuf/consumer.py
+kafka_protobuf/producer.py
+locobuzz_kafka_protobuf.egg-info/PKG-INFO
+locobuzz_kafka_protobuf.egg-info/SOURCES.txt
+locobuzz_kafka_protobuf.egg-info/dependency_links.txt
+locobuzz_kafka_protobuf.egg-info/entry_points.txt
+locobuzz_kafka_protobuf.egg-info/requires.txt
+locobuzz_kafka_protobuf.egg-info/top_level.txt
+tests/__init__.py
