@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/llm_xs.egg-info/PKG-INFO
+src/llm_xs.egg-info/SOURCES.txt
+src/llm_xs.egg-info/dependency_links.txt
+src/llm_xs.egg-info/requires.txt
+src/llm_xs.egg-info/top_level.txt
+src/xs/setup.py
+src/xs/xs.py

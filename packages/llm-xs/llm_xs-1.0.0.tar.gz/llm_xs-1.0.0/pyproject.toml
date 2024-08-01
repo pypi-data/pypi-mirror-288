@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-xs"
+version = "1.0.0"
+description = "A module for creation of endpoint for the open-sourced LLMs"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+  {name = "Prabhudayal Vaishnav", email = "pradachan@tuta.io"}
+]
+dependencies = [
+  "flask",
+  "pyngrok",
+  "waitress"
+]
+
