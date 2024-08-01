@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: helixdam
+Version: 0.0.4
+Summary: A Python wrapper for Perforce Helix DAM REST API
+Author-email: Jase Lindgren <jclindgren@gmail.com>
+Project-URL: Homepage, https://github.com/jase-perf/helixdam
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# helixdam
+
+This is a Python wrapper around the Perforce Helix Dam REST API to make it easier
+and more pythonic to use.
+
+Some names of methods have been changed from the REST API to reflect the names
+of properties and fields in Helix DAM more closely, rather than the legacy Teamhub
+names that the REST API was built on top of.
+
+Currently a work in progress, so more documentation will be added here later!

@@ -1,0 +1,33 @@
+[project]
+name = "helixdam"
+version = "0.0.4"
+authors = [
+  { name="Jase Lindgren", email="jclindgren@gmail.com" },
+]
+description = "A Python wrapper for Perforce Helix DAM REST API"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["requests"]
+
+[project.urls]
+Homepage = "https://github.com/jase-perf/helixdam"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "--cov=helixdam --cov-report=term-missing --cov-report=xml:cov.xml"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["helixdam"]
+relative_files = true
+
+[tool.coverage.report]
+show_missing = true
