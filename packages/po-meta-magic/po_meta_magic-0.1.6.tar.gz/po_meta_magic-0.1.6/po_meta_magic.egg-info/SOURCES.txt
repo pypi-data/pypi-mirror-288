@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+po_meta_magic/__init__.py
+po_meta_magic/core.py
+po_meta_magic.egg-info/PKG-INFO
+po_meta_magic.egg-info/SOURCES.txt
+po_meta_magic.egg-info/dependency_links.txt
+po_meta_magic.egg-info/requires.txt
+po_meta_magic.egg-info/top_level.txt
