@@ -1,0 +1,143 @@
+Metadata-Version: 2.1
+Name: admetica
+Version: 1.3.1
+Summary: Admetica is a command-line tool for making ADMET (Absorption, Distribution, Metabolism, Excretion, and Toxicity) predictions using pre-trained models.
+Author: Oleksandra Serhiienko
+Author-email: oserhiienko@datagrok.ai
+Description-Content-Type: text/markdown
+Requires-Dist: aimsim_core==2.2.1
+Requires-Dist: aiohttp==3.9.5
+Requires-Dist: aiosignal==1.3.1
+Requires-Dist: astartes==1.2.2
+Requires-Dist: attrs==23.2.0
+Requires-Dist: blinker==1.8.2
+Requires-Dist: chemprop==2.0.0
+Requires-Dist: click==8.1.7
+Requires-Dist: ConfigArgParse==1.7
+Requires-Dist: dill==0.3.8
+Requires-Dist: filelock==3.15.4
+Requires-Dist: Flask==3.0.3
+Requires-Dist: frozenlist==1.4.1
+Requires-Dist: fsspec==2024.6.1
+Requires-Dist: idna==3.7
+Requires-Dist: itsdangerous==2.2.0
+Requires-Dist: Jinja2==3.1.4
+Requires-Dist: joblib==1.4.2
+Requires-Dist: lightning==2.3.3
+Requires-Dist: lightning-utilities==0.11.6
+Requires-Dist: MarkupSafe==2.1.5
+Requires-Dist: mhfp==1.9.6
+Requires-Dist: mordredcommunity==2.0.6
+Requires-Dist: mpmath==1.3.0
+Requires-Dist: multidict==6.0.5
+Requires-Dist: multiprocess==0.70.16
+Requires-Dist: networkx==3.3
+Requires-Dist: numpy==1.26.4
+Requires-Dist: packaging==24.1
+Requires-Dist: padelpy==0.1.16
+Requires-Dist: pandas==2.2.2
+Requires-Dist: pillow==10.4.0
+Requires-Dist: psutil==6.0.0
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: pytorch-lightning==2.3.3
+Requires-Dist: pytz==2024.1
+Requires-Dist: PyYAML==6.0.1
+Requires-Dist: rdkit==2024.3.3
+Requires-Dist: scikit-learn==1.5.1
+Requires-Dist: scipy==1.14.0
+Requires-Dist: setuptools==72.1.0
+Requires-Dist: six==1.16.0
+Requires-Dist: sympy==1.13.1
+Requires-Dist: tabulate==0.9.0
+Requires-Dist: threadpoolctl==3.5.0
+Requires-Dist: torch==2.4.0
+Requires-Dist: torchmetrics==1.4.0.post0
+Requires-Dist: tqdm==4.66.4
+Requires-Dist: typing_extensions==4.12.2
+Requires-Dist: tzdata==2024.1
+Requires-Dist: Werkzeug==3.0.3
+Requires-Dist: yarl==1.9.4
+
+# Admetica
+
+Admetica is a command-line tool for making ADMET (Absorption, Distribution, Metabolism, Excretion, and Toxicity) predictions using pre-trained models. This tool is part of the Admetica [project](https://github.com/datagrok-ai/admetica), which aims to improve ADMET prediction tools through a global, open-source collaboration.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Predicting](#predicting)
+
+## Installation
+
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/chemprop)](https://badge.fury.io/py/chemprop)
+[![Chemprop PyPI version](https://badge.fury.io/py/chemprop.svg)](https://badge.fury.io/py/chemprop)
+
+Admetica is a powerful tool for making ADMET predictions and can be easily installed on any operating system. You can install it using pip, and optionally, you can set up a conda environment for better package management.
+
+#### Creating a Conda Environment (Optional)
+
+To create a new conda environment and install Admetica, use the following commands:
+
+```bash
+conda create --name admetica-env python=3.11
+conda activate admetica-env
+```
+
+#### Installing Admetica
+
+To install Admetica, run:
+
+```bash
+pip install admetica==1.3
+```
+
+By default, the pip installation will include all necessary dependencies for making ADMET predictions.
+
+## Usage
+
+### Predicting
+
+Admetica provides a command-line interface to make predictions. To use it, run:
+
+```bash
+admetica_predict \
+    --dataset-path data.csv \
+    --smiles-column smiles \
+    --properties Caco2,PPBR \
+    --save-path predictions.csv
+```
+
+This command assumes the presence of a file named `data.csv` with SMILES strings in the column `smiles`. In addition, you should specify the properties to be calculated (e.g. `Caco2`). The predictions will be saved to `predictions.csv`.
+
+**Supported models are:**
+
+<div style="display: flex; justify-content: space-between;">
+
+<div style="width: 45%;">
+
+- Lipophilicity
+- Solubility
+- Caco2
+- PPBR
+- VDss
+- CL-Micro
+- CL-Hepa
+- Half-Life
+
+</div>
+
+<div style="width: 45%;">
+
+- CYP1A2-Inhibitor
+- CYP1A2-Substrate
+- CYP2C9-Inhibitor
+- CYP2C9-Substrate
+- CYP2C19-Inhibitor
+- CYP2C19-Substrate
+- CYP2D6-Inhibitor
+- CYP2D6-Substrate
+
+</div>
+
+</div>

@@ -1,0 +1,2 @@
+include admetica/Models/*
+include requirements.txt
