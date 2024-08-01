@@ -1,0 +1,1 @@
+chromeAPI library, supports users in browser automation with Selenium
