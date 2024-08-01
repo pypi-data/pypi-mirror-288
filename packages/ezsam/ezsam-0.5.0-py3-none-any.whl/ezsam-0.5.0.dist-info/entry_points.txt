@@ -1,0 +1,4 @@
+[console_scripts]
+ezsam = ezsam.cli.app:main
+ezsam-gui = ezsam.gui.app:main
+
