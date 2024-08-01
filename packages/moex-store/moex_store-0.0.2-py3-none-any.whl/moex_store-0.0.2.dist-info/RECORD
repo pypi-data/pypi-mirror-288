@@ -1,0 +1,10 @@
+moex_store/__init__.py,sha256=RXpxQjy9rop0v0kRScYfAghid78EZMQyMrzHVuIuULs,78
+moex_store/dns_client.py,sha256=0KU--l5Pnd4XYTDxBa5JNuWmo7mC0HUKtsMv6BlSiQE,2410
+moex_store/patch_aiohttp.py,sha256=PM69Gu7Q3ZdNffQ_5D8u_6JfrxJnPdzmVi5qxL5M2jc,983
+moex_store/store.py,sha256=O7lPK0-NLokatVF6SxTIA7irGHaP8dYtkLm6l-IzXtU,12319
+moex_store/tf.py,sha256=sT2B1ZpRe31rO737-c1OhNZyI0-LLHBt8pra3wqx0zo,3847
+moex_store-0.0.2.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+moex_store-0.0.2.dist-info/METADATA,sha256=BVN_F00yXfYwH1nBJ7pVnYYAJVSlPWhHszrRypYi40g,9773
+moex_store-0.0.2.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+moex_store-0.0.2.dist-info/top_level.txt,sha256=0PKgi2hHNKNoYULHnpmzzxF7UeyshJ8uclYIvhY9Nps,11
+moex_store-0.0.2.dist-info/RECORD,,
