@@ -1,0 +1,12 @@
+sid_provision/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sid_provision/config/nordic/nrf528xx_dk/config.yaml,sha256=LZMA5ZPlIFf0lXFlf9mXO0fFA0YbEwhyiwCsmTVwMfs,1909
+sid_provision/config/nordic/nrf528xx_dk/config_legacy.yaml,sha256=tAGVD7ODhgNqhQf4pORcSXdkJA88q90cma2au3LfJfs,2607
+sid_provision/config/ti/cc13x2_26x2/config.yaml,sha256=rz3sUKh3uyW9cwhSMFolpHFPyOGFidbiM-4GyNoSrKk,1894
+sid_provision/config/ti/cc13x2_26x2/config_legacy.yaml,sha256=z4p6emv7y3ohMatR7iQHYGdOgiGp4yjIW6nKrv61UT0,2647
+sid_provision/run.py,sha256=hsBNaElxfFNO8ugjq-ykBYi561Q-zUHSZDd_hvv_ZYw,60865
+sid_provision-0.2.3.dist-info/LICENSE,sha256=CeipvOyAZxBGUsFoaFqwkx54aPnIKEtm9a5u2uXxEws,10142
+sid_provision-0.2.3.dist-info/METADATA,sha256=Xps7aFfFaiP7OSfIuwOSRqRSXblFw-oUOhB5TB9WB2I,11029
+sid_provision-0.2.3.dist-info/NOTICE,sha256=1CkO1kwu3Q_OHYTj-d-yiBJA_lNN73a4zSntavaD4oc,67
+sid_provision-0.2.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sid_provision-0.2.3.dist-info/entry_points.txt,sha256=2ATeOX4R73qOiQV-6dxgMmiKOjPQVJdHiTElBK89uFM,56
+sid_provision-0.2.3.dist-info/RECORD,,

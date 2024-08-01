@@ -1,0 +1,3 @@
+[console_scripts]
+sid_provision=sid_provision.run:main
+
