@@ -1,0 +1,9 @@
+license.txt
+setup.py
+malaria.egg-info/PKG-INFO
+malaria.egg-info/SOURCES.txt
+malaria.egg-info/dependency_links.txt
+malaria.egg-info/top_level.txt
+yoltv8/__init__.py
+yoltv8/malaria_predict.py
+yoltv8/malaria_predict_test.py
