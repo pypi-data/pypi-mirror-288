@@ -1,0 +1,9 @@
+toldwords/__init__.py,sha256=8q46fx73tjWUa2CoYtN698gL1w63D6D6ukmaZF8_U0I,521
+toldwords/openai.py,sha256=eqhKTu1saAr9aakoIhmhMkULO96ahaIbk5lqUNAYmlg,1916
+toldwords/pretalx.py,sha256=EOd75hUB_VbLyebzL4pMnehqYln1DJHtNno6wlX-2Lg,8203
+toldwords/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+toldwords/utils.py,sha256=DqHBk2TZeNShPOi3123i01iV5CqdZLat0M6SslgzHWk,166
+toldwords-0.8.6.dist-info/LICENSE.txt,sha256=XhHqeZDJaMXAroulQjizMbfbqWq7BmtwvU9HiQa4M-o,1132
+toldwords-0.8.6.dist-info/METADATA,sha256=t7_FdIJp90w7NTmscuJJRRVINTS3JlqN8ErFH6cCTws,1232
+toldwords-0.8.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+toldwords-0.8.6.dist-info/RECORD,,
