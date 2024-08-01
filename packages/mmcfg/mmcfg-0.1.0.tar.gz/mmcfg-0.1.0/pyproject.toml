@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "mmcfg"
+version = "0.1.0"
+description = "A standalone package for the configure file of MMEngine."
+authors = ["mzr1996 <mzr1996@163.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+addict = "^2.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.yapf]
+based_on_style = "pep8"
+blank_line_before_nested_class_or_def = true
+split_before_expression_after_opening_paren = true
+split_penalty_import_names = 0
+split_penalty_after_opening_bracket = 800
+column_limit = 89
+
+[tool.isort]
+line_length = 89
+multi_line_output = 0
+known_first_party = "ddm"
+no_lines_before = ["STDLIB", "LOCALFOLDER"]
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
+
+[tool.pyright]
+reportRedeclaration = "none"
