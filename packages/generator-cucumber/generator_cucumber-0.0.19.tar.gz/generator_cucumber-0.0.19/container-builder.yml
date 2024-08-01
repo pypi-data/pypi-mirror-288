@@ -1,0 +1,17 @@
+steps:
+- name: gcr.io/cloud-builders/docker
+  args: [
+    "build",
+    "--build-arg",
+    "GITLAB_PIP_TOKEN=${_GITLAB_TOKEN}",
+    "-t",
+    "eu.gcr.io/$PROJECT_ID/my-application:latest",
+    "-f",
+    "Dockerfile"
+    "."
+  ]
+substitutions:
+  _GITLAB_TOKEN: azerty # default value
+timeout: 1800s
+images:
+- eu.gcr.io/$PROJECT_ID/my-application:latest
