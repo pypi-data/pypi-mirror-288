@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dduk-process
+Version: 0.0.6
+Summary: ddukbaek2's process library
+Home-page: https://ddukbaek2.com
+Author: ddukbaek2
+Author-email: ddukbaek2@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dduk-core
+Requires-Dist: psutil ==5.9.3
+
+# dduk-process
+- 파이썬 기반의 프로세스 기능.   
