@@ -1,0 +1,5 @@
+autorom[accept-rom-license]
+gymnasium[atari]
+numpy
+torch
+requests
