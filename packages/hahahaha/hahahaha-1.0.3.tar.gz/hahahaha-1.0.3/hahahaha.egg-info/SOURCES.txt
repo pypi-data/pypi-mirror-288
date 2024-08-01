@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+hahahaha/__init__.py
+hahahaha.egg-info/PKG-INFO
+hahahaha.egg-info/SOURCES.txt
+hahahaha.egg-info/dependency_links.txt
+hahahaha.egg-info/requires.txt
+hahahaha.egg-info/top_level.txt
