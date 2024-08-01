@@ -1,0 +1,12 @@
+clipassgen/__init__.py,sha256=Oe7nROzQpg0cIHW_fOeJlhPCQZzB_sObXWoJjq8AJNQ,527
+clipassgen/app.py,sha256=DYuBRdoJN0XW0DoAgBVzPl29paJC3hCmc-ctNkvVVF0,2149
+clipassgen/app_manager.py,sha256=Hii_2D51lNGumKlEKRb5TUCiRi5mHok1KFItW3jjsTU,3600
+clipassgen/config.py,sha256=a5EGS5Y4PQElnYeMiAumtcCpEHoL--8osMDBPOgTJYo,550
+clipassgen/smart_pass_gen.py,sha256=aWuKKmzDs_eccaQ018ovSl-5fINbclvYPKvppo1KF2g,4187
+clipassgen/smart_printer.py,sha256=zL0OG1ggR0Sr18t8RzwMEBFSA8GfGhyBdYki0uwBkXk,1942
+clipassgen-0.7.1.dist-info/LICENSE,sha256=rwgJXlOeiLJfDhsHd3vYUtM_ECgiPBnrvYb8dFmjTgo,1499
+clipassgen-0.7.1.dist-info/METADATA,sha256=9dlnfIz2jadLymQCWQYvoy-EcVk-rYAAdziEPU74dpQ,6224
+clipassgen-0.7.1.dist-info/WHEEL,sha256=Z4pYXqR_rTB7OWNDYFOm1qRk0RX6GFP2o8LgvP453Hk,91
+clipassgen-0.7.1.dist-info/entry_points.txt,sha256=Yz_GaMslQONC3or2n6gskVSCH8aCEzgIw3R1_5kNoHg,50
+clipassgen-0.7.1.dist-info/top_level.txt,sha256=agoQZpJmkhtEayoprAKKtVBwEELlWGilx6DXD4vnUng,11
+clipassgen-0.7.1.dist-info/RECORD,,
