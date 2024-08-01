@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+stranova/__init__.py
+stranova.egg-info/PKG-INFO
+stranova.egg-info/SOURCES.txt
+stranova.egg-info/dependency_links.txt
+stranova.egg-info/requires.txt
+stranova.egg-info/top_level.txt
