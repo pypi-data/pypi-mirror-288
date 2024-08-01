@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: shanmukh-package
+Version: 0.1
+Summary: A description of my package
+Author: SHANMUKHA Tanneeru
+Author-email: tanneeru.shanmukha@gmail.com
+License: BSD-3-Clause
+Keywords: graphs,data,charts
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+Just a package for testing
+
