@@ -1,0 +1,17 @@
+[Unit]
+Description=Hello World Python App Service by MW
+After=network.target
+
+[Service]
+Environment="APP_HOME={{APP_HOME}}"
+ExecStart={{APP_HOME}}/venv/bin/python {{APP_HOME}}/hello.py
+WorkingDirectory={{APP_HOME}}
+StandardOutput=append:{{APP_HOME}}/hello.log
+StandardError=append:{{APP_HOME}}/hello.log
+Restart=always
+RestartSec=5
+User={{USER}}
+Group={{USER}}
+
+[Install]
+WantedBy=multi-user.target

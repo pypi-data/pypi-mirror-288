@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+config/application.txt
+mwalas_skk_hello.egg-info/PKG-INFO
+mwalas_skk_hello.egg-info/SOURCES.txt
+mwalas_skk_hello.egg-info/dependency_links.txt
+mwalas_skk_hello.egg-info/entry_points.txt
+mwalas_skk_hello.egg-info/top_level.txt
+my_package_mwalas_skk/__init__.py
+my_package_mwalas_skk/hello.py
+service/hello.service.template

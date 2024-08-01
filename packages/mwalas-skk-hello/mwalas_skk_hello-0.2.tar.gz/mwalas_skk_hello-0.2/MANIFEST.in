@@ -1,0 +1,3 @@
+include my_package_mwalas_skk/hello.py
+include config/application.txt
+include service/hello.service.template
