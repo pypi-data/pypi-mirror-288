@@ -1,0 +1,15 @@
+AUTHORS
+LICENSE
+NOTICE
+README.md
+pyproject.toml
+spbessax/__init__.py
+spbessax/coefficients.py
+spbessax/functions.py
+spbessax/roots.py
+spbessax.egg-info/PKG-INFO
+spbessax.egg-info/SOURCES.txt
+spbessax.egg-info/dependency_links.txt
+spbessax.egg-info/requires.txt
+spbessax.egg-info/top_level.txt
+tests/test_functions.py
