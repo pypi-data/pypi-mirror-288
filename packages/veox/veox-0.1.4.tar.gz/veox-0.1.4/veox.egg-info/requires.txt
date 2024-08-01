@@ -1,0 +1,6 @@
+requests
+python-socketio
+numpy
+pandas
+scikit-learn
+cryptography
