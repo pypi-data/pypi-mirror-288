@@ -1,0 +1,10 @@
+kafka_protobuf/__init__.py,sha256=q_sQME77PsGasTHcgLukL8CSbGlKvVP-usfCRcxJ5Yg,282
+kafka_protobuf/consumer.py,sha256=8QMdL1WdKZTpZ4vPNVpvXQcZWEtZXgCKWRU52-iiq_g,2540
+kafka_protobuf/producer.py,sha256=A6tZn-5uphwWjaAwUSZjO-99XxieV5nrjZGMy9SB6V8,3357
+kafka_protobuf/utils.py,sha256=lpzmTirydO7-N2Gq1y8LxJ2aLsVvGzS6ua3Co31e5LQ,3355
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+locobuzz_kafka_protobuf-0.1.1.dist-info/METADATA,sha256=Tde722EtxYZNGqVvkkB17evvC3_bJgoo-p_cC8QQPFw,1918
+locobuzz_kafka_protobuf-0.1.1.dist-info/WHEEL,sha256=y4mX-SOX4fYIkonsAGA5N0Oy-8_gI4FXw5HNI1xqvWg,91
+locobuzz_kafka_protobuf-0.1.1.dist-info/entry_points.txt,sha256=vzKOQ3_8763zs6gIqMivCVJ9w7bhQ5XP5onlGtJ2vd4,64
+locobuzz_kafka_protobuf-0.1.1.dist-info/top_level.txt,sha256=dX2kUeer-OwEDsMOQdyKupOBEkyEqoWFO_lOX0JkfkM,21
+locobuzz_kafka_protobuf-0.1.1.dist-info/RECORD,,
