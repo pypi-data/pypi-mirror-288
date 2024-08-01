@@ -1,0 +1,12 @@
+spakky_fastapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spakky_fastapi/error.py,sha256=SWyNZk1kxbTCiy-tLxB8saLpX5rBxwvy7q7JRCtNQV0,1124
+spakky_fastapi/jwt_auth.py,sha256=Ug3DPEHQQn14gFb-j_o_NW0SUF-4NyfR67FLngjPCCQ,2822
+spakky_fastapi/middlewares/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spakky_fastapi/middlewares/error_handling.py,sha256=7tslQBKdh3y7oMNTyDbT4fp2WyR0Tt3SDy-VgHnVU40,1711
+spakky_fastapi/post_processor.py,sha256=M2fGXhAFvCy1wHKnGxymfPiR7kuy5Iw85AhKsGUpD3o,2968
+spakky_fastapi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spakky_fastapi/stereotypes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spakky_fastapi/stereotypes/api_controller.py,sha256=NM0gyTQfuHnENtvyfm5T9Y427gQdxdUcVYDzAXryF2M,19320
+spakky_fastapi-0.8.0.dist-info/METADATA,sha256=pdrDLGNdyOWhi_cJNWs5el4gD9NUCH_X7RMrAt1re8A,1701
+spakky_fastapi-0.8.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+spakky_fastapi-0.8.0.dist-info/RECORD,,
