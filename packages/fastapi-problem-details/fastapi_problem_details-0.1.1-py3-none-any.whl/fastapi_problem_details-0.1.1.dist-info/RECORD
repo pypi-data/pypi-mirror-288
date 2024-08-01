@@ -1,0 +1,8 @@
+fastapi_problem_details-0.1.1.dist-info/METADATA,sha256=Cd7FwofByvIWr5IYLRYTT_9fRid1NK6e_pSnHkP86tU,14559
+fastapi_problem_details-0.1.1.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+fastapi_problem_details-0.1.1.dist-info/licenses/LICENSE,sha256=Zq0bzI0zmcIMFrDDkBNXDDr-J8MaKB08j6UY6giawRI,1071
+fastapi_problem_details/__init__.py,sha256=i2f2WlTgqgLDbLgbb72jqwfGV4mD0IuZFyqtokknhyI,174
+fastapi_problem_details/error_handlers.py,sha256=WPsaHXMlMHksKqPW_9DQTPG5Xy58Hzsvv-52uVZcQe4,2620
+fastapi_problem_details/models.py,sha256=qI4cuG1g4HoqJkx6gwRCLP-mwOnQ8iQ_Ni29M8V3Qk0,5293
+fastapi_problem_details/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_problem_details-0.1.1.dist-info/RECORD,,
