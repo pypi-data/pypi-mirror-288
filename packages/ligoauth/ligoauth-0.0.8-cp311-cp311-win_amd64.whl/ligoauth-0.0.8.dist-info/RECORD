@@ -1,0 +1,8 @@
+ligoauth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ligoauth/ligoauth.c,sha256=sjn7juL8CqhRZu8wsFwPmemQ5jgZVnqFJPbWXP1LXYM,361272
+ligoauth/ligoauth.cp311-win_amd64.pyd,sha256=fuOxIhNVxqhmPDLCodIclwdAmp_02QQXHj6vHiwFBFY,58880
+ligoauth/ligoauth.py,sha256=eIO-pHYNHCHGCv9zIAfYqtK9DTu4F1Y3J307rwKpeNY,2220
+ligoauth-0.0.8.dist-info/METADATA,sha256=BWsL4kxuvv4-l0QgmPdc7qFnm73KCSgH2JOeNqLE0jw,245
+ligoauth-0.0.8.dist-info/WHEEL,sha256=nSybvzWlmdJnHiUQSY-d7V1ycwEVUTqXiTvr2eshg44,102
+ligoauth-0.0.8.dist-info/top_level.txt,sha256=Nr3Ttan10IPQlWC0HVdYOB-axnjD2BHbKb_iTWPlY5I,9
+ligoauth-0.0.8.dist-info/RECORD,,
