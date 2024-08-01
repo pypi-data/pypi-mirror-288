@@ -1,0 +1,37 @@
+Metadata-Version: 2.3
+Name: curripy
+Version: 0.1.0
+Summary: Curried / Point-free versions of the Python standard libraries functions and methods.
+Author-email: Lehmaning <60032845+Lehmaning@users.noreply.github.com>
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: classes>=0.4.1
+Requires-Dist: pydash>=8.0.1
+Requires-Dist: returns>=0.23.0
+Description-Content-Type: text/markdown
+
+# curripy
+
+Curried and point-free versions of the Python standard libraries functions and methods.
+
+## Features
+
+* A set of efficient functions corresponing to the built-in Python functions
+* Point-free functions and methods for better function composition
+* More convenient functions wrapped by Functor
+
+## Installation
+
+<!-- ```shell
+pip install curripy
+``` -->
+
+```shell
+rye 
+```
+
+## Main Dependencies
+
+* [dry-python/returns](https://github.com/dry-python/returns)
+* [dry-python/classes](https://github.com/dry-python/classes)
+* [dgilland/pydash](https://github.com/dgilland/pydash)
