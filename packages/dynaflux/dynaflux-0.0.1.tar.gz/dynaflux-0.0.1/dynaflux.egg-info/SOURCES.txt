@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+dynaflux/__init__.py
+dynaflux.egg-info/PKG-INFO
+dynaflux.egg-info/SOURCES.txt
+dynaflux.egg-info/dependency_links.txt
+dynaflux.egg-info/requires.txt
+dynaflux.egg-info/top_level.txt
