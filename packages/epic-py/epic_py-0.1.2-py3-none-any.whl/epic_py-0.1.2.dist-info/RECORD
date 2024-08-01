@@ -1,0 +1,7 @@
+epic_py/__init__.py,sha256=K1O0NFwwYZl5d3sOfbXPeqsCnAdcQgJAhbNcZTWqSWg,150
+epic_py/domain/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+epic_py/domain/pid.py,sha256=NvqkPHYEfJDBm0OA4eYQ2ZIQhFOU_FtfDBFLRtc2jkg,763
+epic_py/epic_api.py,sha256=Wn9rls0mnhfTRB5Wy7Q6fy7dw0OwNHuFaTwBSievBUY,5254
+epic_py-0.1.2.dist-info/METADATA,sha256=nGFz3wo7uuXmX1K0fDVJvPFguL71bu0jE3_Bozi60OY,4331
+epic_py-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+epic_py-0.1.2.dist-info/RECORD,,
