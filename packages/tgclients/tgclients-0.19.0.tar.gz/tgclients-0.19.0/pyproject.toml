@@ -1,0 +1,51 @@
+# SPDX-FileCopyrightText: 2022 Georg-August-Universität Göttingen
+#
+# SPDX-License-Identifier: CC0-1.0
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+exclude = [
+    "build",
+    "venv",
+    "src/tgclients/databinding",
+]
+
+line-length = 100
+
+[tool.ruff.lint]
+# Enable `pydocstyle` rules, in addition to the defaults.
+select = ["E4", "E7", "E9", "F", "D", "PL"]
+# ignore "Missing docstring in `__init__`" because its opposed to DOC301 from pydocstyle
+ignore = ["D107"]
+
+[tool.ruff.lint.per-file-ignores]
+# Ignore `D` rules everywhere except for the `src/` directory.
+"!src/**.py" = ["D"]
+# Allow magic numbers in tests
+"tests/**.py" = ["PLR2004"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.pydoclint]
+style = 'google'
+skip-checking-raises = true
+allow-init-docstring = true
+check-return-types = false # TODO: check auth.py zeep return types
+
+[tool.semantic_release]
+version_variables = ["src/tgclients/__init__.py:__version__"]
+major_on_zero = false
+#tag_format = "{version}"
+
+[tool.semantic_release.remote]
+type = "gitlab"
+
+[tool.semantic_release.changelog]
+exclude_commit_patterns = ["build", "chore", "ci", "docs", "perf", "style", "refactor", "test", "Conflicts", "Merge branch*", "Revert*"]
