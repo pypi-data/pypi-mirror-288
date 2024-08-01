@@ -1,0 +1,12 @@
+frametree/bids/__init__.py,sha256=Diu7F36e-GNkEVA1yBTYruTAxlFrVvag6arUiDISneE,86
+frametree/bids/_version.py,sha256=Jk2iAU7m-7Vx9XV1TtdD9ZoJraIncDq_4_Wd-qtUotg,411
+frametree/bids/cli.py,sha256=BjzAvuSj6ttBuQu7TQUDCokn6zYFoCVYfJfCXgZCzKM,993
+frametree/bids/store.py,sha256=Q7-2YhfajbDlsBQGZ5c8D_QXvnn01P83qokmcHOMx2o,23354
+frametree/bids/tasks.py,sha256=CYUmP-yBNnhpqnOybBC78NHUWo9WqdPkfxOJG5Yb864,14837
+frametree/bids/tests/test_cli.py,sha256=WNZVBtox3dvR4WJsI2BQA3oZtmxTVq1R48atbWlH7xs,4738
+frametree/bids/tests/test_data.py,sha256=gZt7NqHRD2fzIlyPnR-5Ow3PAnwOoIvvktfqlAGXlf4,7507
+frametree/bids/tests/test_tasks.py,sha256=kby_jHSSXoHaFc1gcyexa9D-KWEDeet4F_sry0YlZv4,2822
+frametree_bids-0.3.0.dist-info/METADATA,sha256=bAGa1vVJbA8P9d4bqzK84HJaIBafF3wAqG89NTAzykw,18477
+frametree_bids-0.3.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+frametree_bids-0.3.0.dist-info/licenses/LICENSE,sha256=s12hb9VeRlj1uxCx7NSbKwRGyTklVA7omWbTLyMhYIs,14222
+frametree_bids-0.3.0.dist-info/RECORD,,
