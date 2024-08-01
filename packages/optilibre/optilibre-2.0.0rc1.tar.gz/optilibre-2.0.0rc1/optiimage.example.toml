@@ -1,0 +1,12 @@
+# Configure Images
+version=2.0
+in_path="/IN_PATH"
+out_path="/PATH"
+src_on_success="move"  # keep, move (to src_on_success_dest), delete
+src_on_failure="keep"
+src_on_success_dest="/PATH/WHEN/SUCCESS"
+codec="jpeg"
+
+[jpeg]
+m=80
+
