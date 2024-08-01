@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+ai-data/__init__.py
+ai_data.egg-info/PKG-INFO
+ai_data.egg-info/SOURCES.txt
+ai_data.egg-info/dependency_links.txt
+ai_data.egg-info/requires.txt
+ai_data.egg-info/top_level.txt
