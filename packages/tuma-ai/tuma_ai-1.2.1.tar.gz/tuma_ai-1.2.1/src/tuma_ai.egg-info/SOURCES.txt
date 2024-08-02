@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/tuma_ai/AI.py
+src/tuma_ai/__init__.py
+src/tuma_ai/enums.py
+src/tuma_ai.egg-info/PKG-INFO
+src/tuma_ai.egg-info/SOURCES.txt
+src/tuma_ai.egg-info/dependency_links.txt
+src/tuma_ai.egg-info/top_level.txt
