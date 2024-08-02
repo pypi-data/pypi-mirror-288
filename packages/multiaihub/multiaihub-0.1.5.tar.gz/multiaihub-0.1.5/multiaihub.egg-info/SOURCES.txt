@@ -1,0 +1,9 @@
+LICENSE
+README.md
+multi_ai_hub.py
+setup.py
+multiaihub.egg-info/PKG-INFO
+multiaihub.egg-info/SOURCES.txt
+multiaihub.egg-info/dependency_links.txt
+multiaihub.egg-info/requires.txt
+multiaihub.egg-info/top_level.txt
