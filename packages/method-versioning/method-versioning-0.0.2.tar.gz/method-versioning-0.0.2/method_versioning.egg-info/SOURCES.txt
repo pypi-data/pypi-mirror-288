@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+method_versioning/__init__.py
+method_versioning/decorator.py
+method_versioning.egg-info/PKG-INFO
+method_versioning.egg-info/SOURCES.txt
+method_versioning.egg-info/dependency_links.txt
+method_versioning.egg-info/top_level.txt
