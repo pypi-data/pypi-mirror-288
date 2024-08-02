@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+./lmtranslator/__init__.py
+./lmtranslator/flores200.py
+./lmtranslator/lmtranslator.py
+lmtranslator.egg-info/PKG-INFO
+lmtranslator.egg-info/SOURCES.txt
+lmtranslator.egg-info/dependency_links.txt
+lmtranslator.egg-info/requires.txt
+lmtranslator.egg-info/top_level.txt
+tests/test_translator.py

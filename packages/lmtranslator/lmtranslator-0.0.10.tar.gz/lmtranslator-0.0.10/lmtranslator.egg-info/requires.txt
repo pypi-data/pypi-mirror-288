@@ -1,0 +1,10 @@
+transformers
+processors
+textlangid
+numpy
+torch
+pandas
+datasets
+openpyxl
+pyarrow
+tqdm
