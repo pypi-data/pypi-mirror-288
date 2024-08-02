@@ -1,0 +1,2 @@
+[console_scripts]
+usepolvo = usepolvo.cli:cli
