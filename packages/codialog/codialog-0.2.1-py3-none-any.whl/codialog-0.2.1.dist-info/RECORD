@@ -1,0 +1,11 @@
+codialog/__init__.py,sha256=-3oidDU9FZqJ49JO6mv8cZ1zeJsL-6gzfpEBc6gn4Z4,212
+codialog/app.py,sha256=ZEL4p6TLKnzIWj8sHVzswqOO1DWtY_Jc242phgmZu0U,533
+codialog/templates/index.html,sha256=TPZb1TBmjZpp2U-DJw55eh_EmQdEUeP3vy1BKssvVZc,134
+codialog/tests/test_basic.py,sha256=fuC942XgTB_sKnKCKA90-HbqYn76WJv-xucBOZ0pmkw,224
+react/node_modules/flatted/python/flatted.py,sha256=ke8FuEflns-WlphCcQ9CC0qJqWqX3zEEuak74o6rgE8,3879
+react/node_modules/flatted/python/test.py,sha256=uTOn6HJd7KeY_PTRvvufv60dmvON3KWp3nnqACj8IlA,2129
+codialog-0.2.1.dist-info/METADATA,sha256=LQuzH_EAnda_pTynwtHXN32E9f02g4uqMHoAA79wKLQ,112
+codialog-0.2.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+codialog-0.2.1.dist-info/entry_points.txt,sha256=X2KIWzHiNVTe3tOsDa9Tb1hm8jJgzfOAn6SKN2k_qeg,46
+codialog-0.2.1.dist-info/top_level.txt,sha256=PgCOxzNxWQ1z1Y5knifRhh7fRHHQNhiZCaLgSqhHYuY,15
+codialog-0.2.1.dist-info/RECORD,,
