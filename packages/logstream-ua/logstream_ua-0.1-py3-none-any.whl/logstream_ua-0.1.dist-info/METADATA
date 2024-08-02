@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: logstream-ua
+Version: 0.1
+Summary: Logger Tool
+Home-page: https://github.com/gods-created/logstream-ua
+Author: Bohdan Terskow
+Author-email: bohdanterskow@gmail.com
+Keywords: python,logs,loguru,log,logstream,error,debug,info,fatal,warning
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: loguru
+
+# logstream
+
+A package that allows you to create simple records of the results of your application\'s functionality, read them, and clean the file of all obsolete records when not needed.
+Developed by Bohdan Terskow (c) 2024
+
+## Examples of How To Use
+
+CLI: pip install logstream-ua
+
+```python
+from logstream import LogStream
+
+logfile_dir = './logs.txt'
+logstream = LogStream(logfile_dir)
+
+logstream(description='Test', level=3)
+# description - record description
+# level - level of record (5 - debug, 4 - info, 3 - warning, 2 - error, 1 - fatal)
+
+# Other Code
+
+read_logs = logstream.read()
+print(read_logs) # show text into logfile
+
+logstream.clear() # clear all file from records
+```
