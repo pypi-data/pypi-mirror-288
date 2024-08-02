@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+faust-streaming = "*"
+
+[dev-packages]
+setuptools = "*"
+twine = "*"
+pre-commit = "*"
+
+[requires]
+python_version = "3.9"
