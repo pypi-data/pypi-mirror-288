@@ -1,0 +1,42 @@
+/**
+ * Name: {{host_name | default(plugin_name)}}{{ ' - ' ~ scrape_category if scrape_category else ''}}
+ * Description: {{host_name | default(plugin_name)}}{{ ' - ' ~ scrape_category if scrape_category else ''}}
+ * PID: {{pid}} force
+ */
+
+const path = require('path');
+const { HttpCrawler, pq } = require('@vortex-ts-sdk/http-crawler');
+const { VtxLogger } = require('@vortex-ts-sdk/vtx-logger');
+const { sleep } = require('@vortex-ts-sdk/core');
+
+const baseURL = '{{base_url}}'
+const domainURL = '{{domain_url}}'
+let handler = new HttpCrawler();
+
+handler.dataSet.setPageName(path.parse(__filename).name + '_%s', [new Date().toISOString().split('T')[0]]);
+handler.dataSet.setColHeaders({{col_headers | default('[]')}});
+
+async function newSession() {
+    handler.request.resetRequestConfig()
+    handler.setHeaders('Accept-Encoding', 'gzip, deflate');
+    handler.setHeaders('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8');
+    handler.setHeaders('Accept-Language', 'en-US,en;q=0.5');
+    handler.setHeaders('Connection', 'keep-alive');
+    handler.setHeaders('Upgrade-Insecure-Requests', '1');
+    handler.setHeaders('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36');
+    await handler.enableProxy();
+}
+
+async function main() {
+    VtxLogger.info("Starting the crawler");
+    await newSession();
+
+    await handler.loadDocument(baseURL);
+
+    const arr = handler.dataSet.getEmptyRow();
+    handler.dataSet.addRow(arr);
+
+    handler.dataSet.finish();
+}
+
+main();
