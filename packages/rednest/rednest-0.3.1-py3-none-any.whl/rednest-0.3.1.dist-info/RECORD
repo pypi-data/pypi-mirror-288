@@ -1,0 +1,11 @@
+rednest/__init__.py,sha256=VbKswzJXRZvG625lN55Wg7VPUcLE24CfUq1IQg7I9lY,156
+rednest/array.py,sha256=Zox5ojRPkw16g7G6kPmo4pFYOURege0C5lVdgPn2y88,4451
+rednest/dictionary.py,sha256=HyhkH4H9se49DrJsIF64CM9VrSTrNvzN5nbpApU0OXM,6105
+rednest/encoder.py,sha256=MHXFodz4qArfX7EQSogo4_8Ovjjbk2qkldCtxh5aZaA,692
+rednest/nested.py,sha256=U6Kn-VIsHHipB3Xt4zPVEUT-P4hTsWsWFg2bWPAhb0g,2701
+rednest/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rednest-0.3.1.dist-info/LICENSE,sha256=QuuXMJetK3RMJRK8bKvDYMsm-3-J57aw1E97UxAsoo4,1069
+rednest-0.3.1.dist-info/METADATA,sha256=ShS-F80y61MA-5aPPdtTpFbKgl6U6JEE306OCDECWpE,2405
+rednest-0.3.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+rednest-0.3.1.dist-info/top_level.txt,sha256=HjGlhTl5jSwRkc_xXr-CFsS_E4-OmRAxMC6JFXwJJXo,8
+rednest-0.3.1.dist-info/RECORD,,
