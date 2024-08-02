@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/lazypimp/__init__.py
+src/lazypimp/setup.py
+src/lazypimp.egg-info/PKG-INFO
+src/lazypimp.egg-info/SOURCES.txt
+src/lazypimp.egg-info/dependency_links.txt
+src/lazypimp.egg-info/top_level.txt
