@@ -1,0 +1,2 @@
+microlearn-llm-factory >= 0.0.9
+json_repair == 0.*
