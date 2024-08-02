@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: passbolted
+Version: 0.2
+Summary: Password Reader by name using py-passbolt
+Author: Shamail Tayyab
+Author-email: tayyab.shamail@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: toml
+Requires-Dist: py-passbolt
+
+# Password Extractor by name using py-passbolt.
+
+
+
+# Build and Upload
+
+python setup.py sdist
+python setup.py bdist_wheel
+
+twine upload dist/\*

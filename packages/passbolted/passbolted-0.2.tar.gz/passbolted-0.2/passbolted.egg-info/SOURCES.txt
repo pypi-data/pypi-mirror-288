@@ -1,0 +1,8 @@
+README.md
+setup.py
+passbolted/__init__.py
+passbolted.egg-info/PKG-INFO
+passbolted.egg-info/SOURCES.txt
+passbolted.egg-info/dependency_links.txt
+passbolted.egg-info/requires.txt
+passbolted.egg-info/top_level.txt
