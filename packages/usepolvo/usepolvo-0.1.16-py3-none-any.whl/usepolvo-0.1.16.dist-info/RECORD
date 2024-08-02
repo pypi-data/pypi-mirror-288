@@ -1,0 +1,16 @@
+usepolvo/__init__.py,sha256=hWI0fsgKyh_TEDAsuhpEWi5F8__H7rRIq4IkJlvKLV4,324
+usepolvo/config.py,sha256=lO997GXRqBUaqS6xvxRY-ikXtM5-0XBt02oiglprsWs,316
+usepolvo/logger.py,sha256=lc-mWHpUUHhpuKJqxuOPB0w0EvjkViBINxvLEtLcsEM,101
+usepolvo/rate_limit.py,sha256=LRmPzEoiDLKmXvVFP-UU-UXTbiLRXdcVdIPFsno_tlQ,423
+usepolvo/schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+usepolvo/schemas/stripe_schemas.py,sha256=91oTCDAc2gYCyB_e_Z2cuxsHmsBoG1nJoKnaia9DxT4,784
+usepolvo/stripe/__init__.py,sha256=dWzPF56R6WsMQeEIcWSZPRFtfLEM7jeIwlRRv3Cx6rk,1145
+usepolvo/stripe/config.py,sha256=jqGZ2N9xkKslrS6Gu8rfSPFTucNSaEWmjvv4-8LvzoI,368
+usepolvo/stripe/customers.py,sha256=yb7IWBieyklSKfG_4fGP1V2FZEeVGBlf_x_n8QM8Zk8,4088
+usepolvo/stripe/exceptions.py,sha256=pS5I_kwsyx0cyVfCy41nhXUc0iK8bJy1S9zQ5UUdnlg,1139
+usepolvo/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+usepolvo/utils/transformations.py,sha256=H5J9Pvq8XH8z2TnAuX21Cryy6gOE2yV6PU5K981ihKo,677
+usepolvo-0.1.16.dist-info/METADATA,sha256=IvSsw6S20QEcjQsLWtaJIHav7sIxQpKdLwJH-TKXLFM,646
+usepolvo-0.1.16.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+usepolvo-0.1.16.dist-info/top_level.txt,sha256=zeVmbm7JdMrV_xngxi56yaiudBvJlNKEq63CjbNal5o,9
+usepolvo-0.1.16.dist-info/RECORD,,
