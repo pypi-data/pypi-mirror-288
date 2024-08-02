@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: modularl
+Version: 0.1.0
+Summary: A modular reinforcement learning library
+Home-page: https://github.com/zakaria-narjis/modularl
+Author: Zakaria Narjis
+Author-email: zakaria.narjis.97@gmail.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.24
+Requires-Dist: torch>=2.0
+Requires-Dist: torchrl>=0.4.0
+Requires-Dist: tensorboard>=2.17.0
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pytest>=6.2.5; extra == "dev"
+
+# ModulaRL
+<div align="center">
+  <img src="assets/modulaRL_logo.svg" alt="ModulaRL Logo">
+</div>
+
+<div align="center">
+  🚧 This library is still under construction. 🚧
+</div>
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![pytest](https://img.shields.io/badge/tested%20with-pytest-46a2f1.svg)](https://docs.pytest.org/en/stable/)
+
+ModulaRL is a highly modular and extensible reinforcement learning library built on PyTorch. It aims to provide researchers and developers with a flexible framework for implementing, experimenting with, and extending various RL algorithms.
+
+## Features
+
+- Modular architecture allowing easy component swapping and extension
+- Efficient implementations leveraging PyTorch's capabilities
+- Integration with TorchRL for optimized replay buffers
+- Clear documentation and examples for quick start
+- Designed for both research and practical applications in reinforcement learning
+
+## Installation
+
+```bash
+pip install modularl
+```
+## Algorithms Implemented
+
+| Algorithm | Type | Paper |
+|-----------|------|-------|
+| SAC (Soft Actor-Critic) | Off-policy | [Haarnoja et al. 2018](https://arxiv.org/abs/1801.01290) |
+
+
+## Citation
+```
+@software{modularl2024,
+  author = {zakaria narjis},
+  title = {ModulaRL: A Modular Reinforcement Learning Library},
+  year = {2024},
+  url = {https://github.com/zakaria-narjis/modularl}
+}
+```
