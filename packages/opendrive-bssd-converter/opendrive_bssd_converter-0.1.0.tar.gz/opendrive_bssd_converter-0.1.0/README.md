@@ -1,0 +1,61 @@
+﻿# OpenDRIVE_BSSD_Converter
+
+Tool for integrating BSSD-data into an existing OpenDRIVE-file (.xodr) with Version 1.4, 1.5, 1.6 or 1.7.
+
+<p align="center">
+  <img src="doc/screenshot_overview.jpg" width="500">
+</p>
+
+
+## Requirements
+
+ - Python (Tool has been tested with Python 3.7, 3.8 and 3.9)
+ - The following Python-modules are needed:
+	 - easygui==0.98.1
+	 - lxml==4.6.3
+	 - pandas==1.3.4
+	 - rich==10.16.2
+	 - scipy==1.7.1
+	 - tqdm==4.62.3
+   - importlib_resources
+
+The tool has been tested with the versions of the modules specified in the list above. It may also work with other module-versions, but the correct functionality can't be guaranteed in this case.
+
+**Hint**: Some parts of the visualiziation of the tool in the terminal are based on the python package [rich](https://rich.readthedocs.io/en/stable/introduction.html). In some terminals on Windows the full visualization of *rich* does not work properly (e.g. *PowerShell*, *cmd*). Nevertheless, everything will be displayed so that the correct functionality is guaranteed.
+
+In Windows for a full visualiziation with *rich*, the use of the  [Windows-Terminal](https://www.microsoft.com/de-de/p/windows-terminal/9n0dx20hk701) is recommended. In macOS (*Terminal*) and Linux (*Terminal*) the full visualization should work properly.
+
+
+## Installation
+### Using pip
+```bash
+pip install opendrive-bssd-converter
+```
+This will install the latest version of the OpenDRIVE-BSSD-Converter available in [PyPI](https://pypi.org/project/bssd/) to your environment.
+
+### Manual Installation
+
+1. Clone the Repository (with HTTPS or SSH)
+
+	a. HTTPS:
+
+	`git clone https://gitlab.com/tuda-fzd/scenery-representations-and-maps/opendrive-bssd-converter.git`
+
+	or
+
+	b. SSH:
+
+	`git clone git@gitlab.com:tuda-fzd/scenery-representations-and-maps/opendrive-bssd-converter.git`
+2. (Create & activate a virtual environment if you want to install the tool inside a virtual environment)
+3. Open a terminal window in the folder  `opendrive_bssd_converter`  and install the required packages as well as the tool itself with the command
+
+    `pip install -e .`
+
+## Usage
+1. Start the tool: Run
+```bash
+opendrive-bssd-converter
+```
+2. If the tool started successfully, you can choose your OpenDRIVE-file in the window, which opens immediately after executing.
+3. You will be able to modify the behaviour of the tool thoughout the process, therefore watch the terminal for prompts and provide your input.
+4. After successfully executing the tool, the modified OpenDRIVE-file will be stored in the same folder as the original OpenDRIVE-file with the same name plus the suffix "_BSSD".

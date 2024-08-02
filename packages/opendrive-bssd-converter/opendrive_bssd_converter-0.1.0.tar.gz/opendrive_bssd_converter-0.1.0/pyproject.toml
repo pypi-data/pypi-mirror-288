@@ -1,0 +1,41 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opendrive-bssd-converter"
+version = "0.1.0"
+description = "integrate_BSSD_into_OpenDRIVE reads in an OpenDRIVE-file and integrates a BSSD-structure into this OpenDRIVE-file"
+readme = "README.md"
+authors = [
+  { name = "Moritz Berghöfer", email = "moritz.berghoefer@web.de" },
+]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["bssd", "lanelet2", "osm"]
+dependencies = [
+    "easygui==0.98.1",
+    "lxml==4.6.3",
+    "pandas==1.3.4",
+    "rich==10.16.2",
+    "scipy==1.7.1",
+    "tqdm==4.62.3",
+    "importlib_resources"
+]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+opendrive-bssd-converter = "integrate_BSSD_into_OpenDRIVE.__main__:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"integrate_BSSD_into_OpenDRIVE.data" = ["*.xml", "*.xsd"]
