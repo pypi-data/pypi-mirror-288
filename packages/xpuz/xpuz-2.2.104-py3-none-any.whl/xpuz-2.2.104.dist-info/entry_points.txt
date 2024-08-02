@@ -1,0 +1,2 @@
+[gui_scripts]
+xpuz-ctk = xpuz.__main__:main
