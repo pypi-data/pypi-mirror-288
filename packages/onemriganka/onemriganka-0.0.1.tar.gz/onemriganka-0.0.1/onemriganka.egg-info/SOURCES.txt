@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+onemrigaka/__init__.py
+onemrigaka/hellomri.py
+onemriganka.egg-info/PKG-INFO
+onemriganka.egg-info/SOURCES.txt
+onemriganka.egg-info/dependency_links.txt
+onemriganka.egg-info/top_level.txt
