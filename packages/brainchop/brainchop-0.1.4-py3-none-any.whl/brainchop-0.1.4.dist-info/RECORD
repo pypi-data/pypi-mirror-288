@@ -1,0 +1,10 @@
+brainchop/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+brainchop/download.py,sha256=h6w5r0gDAFO2lAR2gWEc0c1TxLTu2vamy6hpOrZewmw,1589
+brainchop/main.py,sha256=tyRRfi8ke4rHKIW9eCKPSao8dfPfZ_yNXeVLuPxmD24,5663
+brainchop/model.py,sha256=-2-_srTBL_7VoVoaXZ68qqgI8PlBqyAyIhpmDXhiSjY,2858
+brainchop-0.1.4.dist-info/LICENSE,sha256=hxJPYExi_agShTqPFAn10IQfV9Jnr7nrSb4708_llY8,1066
+brainchop-0.1.4.dist-info/METADATA,sha256=rpyQnz_7BtPBOddlYLp_BYD5FRPE_rIFcEH60d5BUdo,1092
+brainchop-0.1.4.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+brainchop-0.1.4.dist-info/entry_points.txt,sha256=OtPeN3BNO5KV6lPYH_0yep4zcvwqbsCFQv4Oq4HqHBI,50
+brainchop-0.1.4.dist-info/top_level.txt,sha256=0DgLnatINxuyorbwVl_OR4FS-Sp8z3aQcZQRDD4nunM,10
+brainchop-0.1.4.dist-info/RECORD,,
