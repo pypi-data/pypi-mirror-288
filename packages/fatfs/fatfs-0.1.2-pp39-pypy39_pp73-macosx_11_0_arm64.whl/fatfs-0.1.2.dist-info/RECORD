@@ -1,0 +1,8 @@
+fatfs/wrapper.pypy39-pp73-darwin.so,sha256=A-MLQBGqBpTwnGJH5dtRra147JU5knMdDBabY7w2iG4,173008
+fatfs/__init__.py,sha256=_GAK2aWV4Jg-tlMMYodMW3UQsHId-M5I2YML8N-0gGo,93
+fatfs/diskio.py,sha256=L4Qpg7MzPG9IETEeamHJBEdziLozpzfoPsFkZcia4jQ,1716
+fatfs-0.1.2.dist-info/LICENSE.md,sha256=wKNdPRmo10626S178x3PXxYI8hj6Sdb-1Niae6yPd58,610
+fatfs-0.1.2.dist-info/RECORD,,
+fatfs-0.1.2.dist-info/WHEEL,sha256=gAndc3RwTmqSWBC8FDiMQK95V2QbDoGL8B8ss06ou4o,114
+fatfs-0.1.2.dist-info/top_level.txt,sha256=BoU8Kpx2CUlV8CM5cZuKNheIgqQ4s52PLUn4HasMKdM,14
+fatfs-0.1.2.dist-info/METADATA,sha256=rlkDrKMoM5cTgiA_yoPOyLZd_DSew1PMcLFMRuiQWr4,1035
