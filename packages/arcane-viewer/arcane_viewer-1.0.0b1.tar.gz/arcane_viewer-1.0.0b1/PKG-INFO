@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: arcane_viewer
+Version: 1.0.0b1
+Summary: A secure remote desktop application for Windows with the particularity of having a server entirely written in PowerShell and a cross-platform client (Python/QT6)
+Home-page: https://github.com/PhrozenIO/Arcane
+Author: Jean-Pierre LESUEUR
+Author-email: jplesueur@phrozen.io
+License: Apache License 2.0
+Keywords: remote desktop,remote control,remote access,remote administration,remote assistance,powershell
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: PyQt6
+Requires-Dist: setuptools
