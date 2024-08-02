@@ -1,0 +1,15 @@
+notifelect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notifelect/__main__.py,sha256=tneSE5WxTN0Zp5lSl-Fxb7MSvsu-fvWFczAF2rjByPM,170
+notifelect/_version.py,sha256=hB095avW4HuDZxn8qPHRG1UMzSSonb8ZDAsLxt9hmk8,411
+notifelect/cli.py,sha256=ER0HHnqw5GHJhvH3G6v7-f2UIbjS5hZm2WeOVPpOY_Q,4888
+notifelect/election_manager.py,sha256=RDcaXGJVJluUA5yiG3KkQrP9Z5Wpi0035IOmDQSQpgA,7571
+notifelect/logconfig.py,sha256=WQJF_ZM9um6ybjrpdWN4lgAckZ9pxpn2nungW0WLABM,223
+notifelect/models.py,sha256=Me5blxYEZk3eIo5WKYUU38WVpMuwwNjIn6dB5whJVX0,480
+notifelect/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notifelect/queries.py,sha256=Seeo0bSPaqMz7Q2bYY7zh13EDZtAeMrfRqG3ly7pyIA,2562
+notifelect/tm.py,sha256=X2CpBSpexK5dOX4A6A_XIAaS-U2DzicCCN31b7k7W_4,794
+notifelect-0.0.3.dist-info/LICENSE,sha256=0lCGUd5Pke2Up1Kqn1kRnHcwLlBz60E8xvR7WL4k_kE,1066
+notifelect-0.0.3.dist-info/METADATA,sha256=MHp_3ijzOcgxOlWjvnQq4t2mhtEL9azeh-i1meYP_Ts,4125
+notifelect-0.0.3.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+notifelect-0.0.3.dist-info/top_level.txt,sha256=p7SK2k-_HbiBKRoa9CZv36KwsqlWX4zpI5q562NG3o8,11
+notifelect-0.0.3.dist-info/RECORD,,
