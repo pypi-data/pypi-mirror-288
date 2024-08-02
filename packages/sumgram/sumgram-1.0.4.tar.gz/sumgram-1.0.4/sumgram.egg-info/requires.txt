@@ -1,0 +1,5 @@
+numpy
+requests
+scikit-learn
+NwalaTextUtils==0.0.5
+urllib3<2.0
