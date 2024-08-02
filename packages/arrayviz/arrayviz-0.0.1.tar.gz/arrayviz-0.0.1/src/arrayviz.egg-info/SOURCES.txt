@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/arrayviz/__init__.py
+src/arrayviz/animations.py
+src/arrayviz.egg-info/PKG-INFO
+src/arrayviz.egg-info/SOURCES.txt
+src/arrayviz.egg-info/dependency_links.txt
+src/arrayviz.egg-info/requires.txt
+src/arrayviz.egg-info/top_level.txt
