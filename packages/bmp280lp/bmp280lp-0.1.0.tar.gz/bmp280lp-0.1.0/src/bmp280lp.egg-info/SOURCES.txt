@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/bmp280lp/__init__.py
+src/bmp280lp/bmp280.py
+src/bmp280lp.egg-info/PKG-INFO
+src/bmp280lp.egg-info/SOURCES.txt
+src/bmp280lp.egg-info/dependency_links.txt
+src/bmp280lp.egg-info/requires.txt
+src/bmp280lp.egg-info/top_level.txt
