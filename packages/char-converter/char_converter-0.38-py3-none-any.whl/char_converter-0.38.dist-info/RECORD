@@ -1,0 +1,14 @@
+char_converter/__init__.py,sha256=7hTL70oUhHLMYhMO2njJS0kyVU25OpfaLLuRqYJC35g,36
+char_converter/converter.py,sha256=mcXxdaYEd-PwQ7j5VilIZU1TfQr8zToGouVuGQLPXeg,2331
+char_converter/__pycache__/__init__.cpython-310.pyc,sha256=_kQNwA_loPLEjfGcd2oK2tf_ZIsL9Vi5R0mpaRjqBXQ,181
+char_converter/__pycache__/converter.cpython-310.pyc,sha256=5p-QIAg01LKDFX1_ZKLsbdTBhfTVOU3aUKhN5khTjPc,2792
+char_converter/data/data_update.py,sha256=vD_cr5S52gEfphUnjoSrqkWVV2SWvbrk5S69z6nztWE,4488
+char_converter/data/v2s.json,sha256=UEJeiu_MGTRSxonMIDKxMLYnW8k5chKVxzCI3OJBZck,155240
+char_converter/data/v2s.msgpack,sha256=VFfl0IVXBy0LaieEDJw8nFZKIvD-vaO3V4xFawYORZU,61368
+char_converter/data/v2t.json,sha256=kzkVRrrZQ-IoaAZb_gNOYa6wOv-huLoBjzYZRAJqo0c,162228
+char_converter/data/v2t.msgpack,sha256=G2KBNNkwZ1niMYof2e7UH76lpSgPP1RLx3I-SJao_I4,64129
+char_converter-0.38.dist-info/LICENSE,sha256=f6toxW_byoaOLVMKsIx_LgY2IC3TTClAShVQ5ModQ9c,70
+char_converter-0.38.dist-info/METADATA,sha256=eE_N7cRWoz_N2tAdaSzqCgXXHjk1N3LbR2id8GQFu2k,3593
+char_converter-0.38.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+char_converter-0.38.dist-info/top_level.txt,sha256=SdiEyI3O2A5PIMSQIa4PFZXLacMIUBUFJjhRE1N9ocs,15
+char_converter-0.38.dist-info/RECORD,,
