@@ -1,0 +1,7 @@
+fastapi_request_limit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_request_limit/example.py,sha256=enFLMb0IUjCA2yB_0ktpv_YDfv2X6Y4tGhXl_j8k2A0,743
+fastapi_request_limit/fastapi_request_limit.py,sha256=xufyvTC_OdFuB0nqSsj07vX6aej4uobGoV5vz7iI3zM,2008
+fastapi_request_limit-0.1.1.dist-info/METADATA,sha256=saXVQe-Krq33r9ZBCKFICULf2fy49kxBfc3zRkyGIWM,467
+fastapi_request_limit-0.1.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+fastapi_request_limit-0.1.1.dist-info/top_level.txt,sha256=IHY_CJxNAc5_gRzgDuXLP4bbW_eVEtiefwgV9-vD4hY,22
+fastapi_request_limit-0.1.1.dist-info/RECORD,,
