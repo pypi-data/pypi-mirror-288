@@ -1,0 +1,16 @@
+greenlet
+bleak
+aio-databases[aiosqlite]
+aiosmtplib
+aiofiles
+peewee-aio
+quart
+quart-auth
+quart-wtforms
+pyyaml
+gpiozero
+marshmallow
+pyyaml
+python-daemon
+markupsafe
+cryptography
