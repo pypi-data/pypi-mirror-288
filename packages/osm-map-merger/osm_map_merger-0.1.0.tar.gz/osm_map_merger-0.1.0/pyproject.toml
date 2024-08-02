@@ -1,0 +1,34 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "osm-map-merger"
+version = "0.1.0"
+description = "This tool can be used to assign positive id's to all elements and add a \"version\" attribute if missing. If multiple OSM input files are selected the tool will merge them into a single OSM output file. It is also possible to remap negative id's without changing the positive id's. Elements with \"action\"=\"delete\" will be ignored. Use the --help command for more information."
+readme = "README.md"
+authors = [
+  { name = "Eric Krämer", email = "eric.kraemer@stud.tu-darmstadt.de" },
+]
+maintainers = [
+  { name = "Moritz Berghöfer", email = "moritz.berghoefer@web.de" }
+]
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["bssd", "map", "osm", "merge", "combine"]
+dependencies = [
+    "osmium>=3.2.0",
+    "lxml",
+    "beautifulsoup4",
+    "click"
+]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+osm-map-merger = "osm_map_merger.__main__:cmd"
