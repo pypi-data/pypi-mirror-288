@@ -1,0 +1,15 @@
+saturn_bot/__init__.py,sha256=3-6dsvVkwcRu5O4NJ7yz-wR1m_fDit-gJYcpuqRgVh0,322
+saturn_bot/plugin/__init__.py,sha256=qRPmzxZ9ET2MY0r3Hi45vqG0qvtLsWOhrW9oNHbS2Yw,201
+saturn_bot/plugin/grpc_controller_pb2.py,sha256=Oqz-bazuf5YhYes9C92y_BVQ7bU7Wa4GRwGVvk5SiAo,1814
+saturn_bot/plugin/grpc_controller_pb2.pyi,sha256=uSiRDt9MgKt2_Irkj7hiLvrEu8tWUeCakbP0ruZx00M,471
+saturn_bot/plugin/grpc_controller_pb2_grpc.py,sha256=HvocOsV2eq3tBFRWIAxsyyBemRfQZ1u9I1NcWiNANAU,2934
+saturn_bot/protocol/__init__.py,sha256=qRPmzxZ9ET2MY0r3Hi45vqG0qvtLsWOhrW9oNHbS2Yw,201
+saturn_bot/protocol/v1/__init__.py,sha256=qRPmzxZ9ET2MY0r3Hi45vqG0qvtLsWOhrW9oNHbS2Yw,201
+saturn_bot/protocol/v1/saturnbot_pb2.py,sha256=Ass777557HNMxREd9W_-LZnTeKPUYD1mPFLTyc9PHL4,8136
+saturn_bot/protocol/v1/saturnbot_pb2.pyi,sha256=AWaB4Kw6RYGDlK6JrtWZlEAxonHcTt-gNsO5GkYer74,6228
+saturn_bot/protocol/v1/saturnbot_pb2_grpc.py,sha256=ngQ4hzJZ2pGWcdXexrCioSDHCsuVjDAmeUhBcMm1oFE,11868
+saturn_bot/sdk.py,sha256=0RSdU14WcFt_QMhYM_tfQjmLzg4goN19ayqh98XLo20,7075
+saturn_bot-0.5.0.dist-info/LICENSE,sha256=Pz2eACSxkhsGfW9_iN60pgy-enjnbGTj8df8O3ebnQQ,16726
+saturn_bot-0.5.0.dist-info/METADATA,sha256=bj5frDmVTh7tFmNDazl5B01B77qFM_42pTtgidsxsT0,1148
+saturn_bot-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+saturn_bot-0.5.0.dist-info/RECORD,,
