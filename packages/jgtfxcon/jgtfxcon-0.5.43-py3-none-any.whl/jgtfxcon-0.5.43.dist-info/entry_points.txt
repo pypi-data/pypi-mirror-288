@@ -1,0 +1,4 @@
+[console_scripts]
+dkfxcli = jgtfxcon.dkfxcli:main
+fxreport = jgtfxcon.jgtfxreport:main
+jgtfxcli = jgtfxcon.jgtfxcli:main
