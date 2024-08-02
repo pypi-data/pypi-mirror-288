@@ -1,0 +1,2 @@
+[console_scripts]
+bornhack_sl400 = bornhack_sl400.bornhack_sl400:main
