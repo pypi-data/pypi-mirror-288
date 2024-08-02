@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: codialog
+Version: 0.1.8
+Requires-Dist: Flask ==3.0.3
+Requires-Dist: pytest ==8.2.2
+
