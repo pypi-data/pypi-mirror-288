@@ -1,0 +1,10 @@
+pyproject.toml
+setup.py
+auth_vpetrov.egg-info/PKG-INFO
+auth_vpetrov.egg-info/SOURCES.txt
+auth_vpetrov.egg-info/dependency_links.txt
+auth_vpetrov.egg-info/top_level.txt
+src/__init__.py
+src/exceptions.py
+src/middlewares.py
+src/schemas.py
