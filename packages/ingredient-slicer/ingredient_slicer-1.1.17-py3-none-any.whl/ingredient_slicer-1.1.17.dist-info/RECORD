@@ -1,0 +1,10 @@
+ingredient_slicer/__init__.py,sha256=YGWHFQYSQhB6yRrplC_Cl1ORdBn1FBYXJV7IzVQvmNc,1193
+ingredient_slicer/_constants.py,sha256=iEB58s2q010cOp3qvxyf1m7By6SwEY1Zfr_MDiUfhfw,135073
+ingredient_slicer/_ingredient_slicer.py,sha256=PSJ4qYiOxPAujV-xgDdqUpcc-tBky5s3WNddYXJjT6Q,90123
+ingredient_slicer/_regex_patterns.py,sha256=FSKvP0XeC6HBjT78UHEl_JB2n0_mfr1SoFCBscjyrrs,52065
+ingredient_slicer/_utils.py,sha256=2NCgv12HQtUegFhATmcTfJEYb2fncBPBCUwarvDaK8I,119518
+ingredient_slicer-1.1.17.dist-info/LICENSE,sha256=NiDLMsluMSFKXdxE8XMFmuAtJlrF9NFlZb_Ugwa75BI,1075
+ingredient_slicer-1.1.17.dist-info/METADATA,sha256=p-IQaYV_Wtf1XM8rILTEgqV7DCKJSI7_P5kJABRf4mk,3366
+ingredient_slicer-1.1.17.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+ingredient_slicer-1.1.17.dist-info/top_level.txt,sha256=TRvBaWzxg7ctSV75sP2sdXX-PLJM42WKB270Dpl_QHI,18
+ingredient_slicer-1.1.17.dist-info/RECORD,,
