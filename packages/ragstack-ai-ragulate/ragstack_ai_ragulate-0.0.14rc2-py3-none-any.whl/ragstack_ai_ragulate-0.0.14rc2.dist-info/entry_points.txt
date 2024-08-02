@@ -1,0 +1,5 @@
+[console_scripts]
+ragulate=ragstack_ragulate.cli:main
+test_integration=scripts.test_integration_runner:main
+test_unit=scripts.test_unit_runner:main
+
