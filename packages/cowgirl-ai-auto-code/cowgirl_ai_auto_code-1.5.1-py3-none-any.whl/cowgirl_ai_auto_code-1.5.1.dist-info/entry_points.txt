@@ -1,0 +1,10 @@
+[console_scripts]
+auto-code = cli.auto_code:main
+back_end = cli.back_end:main
+front_end = cli.front_end:main
+html = cli.html_css:main
+js = cli.java_script:main
+md = cli.md_bot:main
+network = cli.network:main
+qa = cli.qa:main
+script = cli.scripting_bot:main
