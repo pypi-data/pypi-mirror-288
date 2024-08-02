@@ -1,0 +1,11 @@
+ax-platform
+bcrypt
+Flask-Login
+Flask-Session
+Flask-SocketIO
+Flask-SQLAlchemy
+Flask-WTF
+mysqlclient==2.1.1
+SQLAlchemy-Utils
+openai
+python-dotenv
