@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: bash_wizard
+Version: 0.0.3b0
+Summary: An AI powered wizard to bash commands
+Maintainer-email: Alexandre Prates <ajfprates@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Alexandre Prates
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Source, https://github.com/alexandreprates/bash_wizard
+Keywords: bash,helper,script,ai,llama
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ollama >=0.3.0
+Requires-Dist: bashcolor >=1.1.1
+
+# Bash Wizard 🧙
+[![Test Bash Wizard](https://github.com/alexandreprates/bash_wizard/actions/workflows/test.yml/badge.svg)](https://github.com/alexandreprates/bash_wizard/actions/workflows/test.yml)
+
+`bash_wizard` is a command line wizard that helps you generate bash commands. It leverages the power of AI (llama3) to provide explanations and generate bash commands based on user queries.
+
+## Features
+
+- Generate bash commands based on natural language queries.
+- Provide explanations for bash commands.
+- Easy to use and integrate into your workflow.
+
+### Dependencies
+
+* [Ollama](https://github.com/ollama/ollama)
+Bash Wizard uses the Ollama endpoint to run the AI ​​model
+
+## Installation
+
+```sh
+pip install bash_wizard
+```
+
+## Usage
+
+To use `bash_wizard`, simply run the command with your query as an argument:
+
+```sh
+bash_wizard <task description>
+```
+
+### Arguments
+
+`<task description>`: describe what you want the command to do.
+
+
+## Example
+```sh
+bash_wizard remove all __pycache__ dir include subdirs
+```
+
+The bash_wizard will suggest the best command to perform the requested action.
+
+If the suggested command does not meet your needs, try changing the description to get a better answer.
+
+# Contributing
+Contributions are welcome! Please open an issue or submit a pull request.
+
+# License
+This project is licensed under the MIT License.
