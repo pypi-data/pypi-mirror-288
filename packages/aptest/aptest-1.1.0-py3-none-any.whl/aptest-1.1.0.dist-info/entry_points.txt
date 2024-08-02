@@ -1,0 +1,3 @@
+[console_scripts]
+apclusterv = aptest.mcl2map:main
+prepare = apclusterv.prepare_from_contig:main
