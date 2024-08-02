@@ -1,0 +1,11 @@
+jaraco/vcs/__init__.py,sha256=MtT7b71xMK_Six_aTkyBibWqMRYx8dHJSrwUNr4Xljw,212
+jaraco/vcs/base.py,sha256=oqjVQ7nkRRGC5VAvGv4ri_AslIjYd9o8jtfbU-UcA5Y,3716
+jaraco/vcs/cmd.py,sha256=4KFM4qakD8ZHOrffhYLN5L-UvU2Wn2eEkxBvFJgj_wo,7061
+jaraco/vcs/library.py,sha256=Jk5fE9v9sHRWXgKzPzK4RYrvwFgk8Dioy28uAWduw_I,702
+jaraco/vcs/reentry.py,sha256=xziWaELpgJJXuEK0v4PiVG0to9rWk4rHp6YsgclX140,1581
+jaraco/vcs/subprocess.py,sha256=44MFGSXx-sc72C5PM1Esli4aziMy5G567uW7RFIGMaY,980
+jaraco.vcs-2.3.1.dist-info/LICENSE,sha256=htoPAa6uRjSKPD1GUZXcHOzN55956HdppkuNoEsqR0E,1023
+jaraco.vcs-2.3.1.dist-info/METADATA,sha256=z10W9hcooczXOxrNnZFbSZdCIQpfHUu5J65qzs87NwI,4022
+jaraco.vcs-2.3.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+jaraco.vcs-2.3.1.dist-info/top_level.txt,sha256=0JnN3LfXH4LIRfXL-QFOGCJzQWZO3ELx4R1d_louoQM,7
+jaraco.vcs-2.3.1.dist-info/RECORD,,
