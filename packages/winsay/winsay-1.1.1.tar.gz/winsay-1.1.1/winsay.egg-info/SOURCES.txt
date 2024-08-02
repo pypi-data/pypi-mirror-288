@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tests/test_winsay.py
+winsay/__init__.py
+winsay/winsay.py
+winsay.egg-info/PKG-INFO
+winsay.egg-info/SOURCES.txt
+winsay.egg-info/dependency_links.txt
+winsay.egg-info/entry_points.txt
+winsay.egg-info/requires.txt
+winsay.egg-info/top_level.txt
