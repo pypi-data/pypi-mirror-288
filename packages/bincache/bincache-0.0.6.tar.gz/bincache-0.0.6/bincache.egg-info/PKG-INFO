@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bincache
+Version: 0.0.6
+Summary: binary runner with cache
+Home-page: https://github.com/simpx/bincache
+Author: simpx
+Author-email: simpxx@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: six
+
+# bincache
+
+bincache is a simple binary runner with cache.

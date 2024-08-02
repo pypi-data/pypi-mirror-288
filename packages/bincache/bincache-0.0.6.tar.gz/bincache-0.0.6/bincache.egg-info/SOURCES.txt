@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+.github/workflows/python-package.yml
+.github/workflows/python-publish.yml
+bincache/__init__.py
+bincache/cli.py
+bincache.egg-info/PKG-INFO
+bincache.egg-info/SOURCES.txt
+bincache.egg-info/dependency_links.txt
+bincache.egg-info/entry_points.txt
+bincache.egg-info/requires.txt
+bincache.egg-info/top_level.txt
+tests/__init__.py
+tests/test_cli.py
