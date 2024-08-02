@@ -1,0 +1,16 @@
+numpy
+pandas
+matplotlib
+astropy
+sncosmo
+extinction
+
+[:python_version < "3.10"]
+importlib_resources
+
+[docs]
+nbsphinx
+
+[tests]
+pytest
+coverage
