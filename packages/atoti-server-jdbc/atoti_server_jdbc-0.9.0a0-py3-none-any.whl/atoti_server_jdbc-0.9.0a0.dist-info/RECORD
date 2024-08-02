@@ -1,0 +1,9 @@
+_atoti_server_jdbc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+_atoti_server_jdbc/__resources__/plugin.jar,sha256=wt1tdGjggAUHA1I-tJvY-t9iRmCIUZY1RfKpcVEY9LA,45498899
+_atoti_server_jdbc/_plugin.py,sha256=Uxo9ryY8TqzTiGGECzYRWb6yvTKL_Z2C5scl-3t9FPs,808
+_atoti_server_jdbc/_resources_directory.py,sha256=kOOsXoN0C2-JZbbg3vJcW18ypPwrF0p-ELc2H6Dlo6k,88
+_atoti_server_jdbc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atoti_server_jdbc-0.9.0a0.dist-info/METADATA,sha256=TqdBiIixrGYHS3R3MmmsyUmzFVINaDFG-nTKekJ80fg,849
+atoti_server_jdbc-0.9.0a0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+atoti_server_jdbc-0.9.0a0.dist-info/entry_points.txt,sha256=53l5oNZs6zghNb7dRI09pHNtErnKwGjT_3DmKyuylrU,59
+atoti_server_jdbc-0.9.0a0.dist-info/RECORD,,
