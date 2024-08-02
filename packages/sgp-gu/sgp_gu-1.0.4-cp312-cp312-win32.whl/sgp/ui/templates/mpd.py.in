@@ -1,0 +1,81 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+from sgp.figure import FigureProperties
+from sgp.models.mpd import MPDConditionalResult
+
+# Variables that will be set in the context before running this script:
+props: FigureProperties = locals().get("props")  # Figure properties
+result: MPDConditionalResult = locals().get("result")  # MPD result
+
+fig, ax = plt.subplots()  # type: plt.Figure, plt.Axes
+
+# Unconditional probability density function
+ax.plot(
+    result.unconditioning.y0,
+    result.unconditioning.pdf,
+    color="black",
+    linestyle="dashed",
+    label=props.label_unconditional_pdf,
+)
+# Unconditional 95% confidence interval
+ax.fill_between(
+    result.unconditioning.bounds,
+    np.zeros_like(result.unconditioning.pdf_bounds),
+    result.unconditioning.pdf_bounds,
+    color="black",
+    alpha=0.1,
+    label=props.label_unconditional_bounds,
+)
+
+# Unconditional mean value
+pdf1 = result.unconditioning.rv.pdf(
+    result.unconditioning.rv.ppf(0.5, *result.unconditioning.args, **result.unconditioning.kwargs),
+    *result.unconditioning.args,
+    **result.unconditioning.kwargs,
+)
+ax.plot(
+    [result.unconditioning.mean, result.unconditioning.mean],
+    [0, pdf1],
+    color="black",
+    alpha=0.2,
+    linestyle="dashed",
+    label=props.label_unconditional_mean,
+)
+
+if result.conditioned_values:
+    # Conditional probability density function
+    ax.plot(
+        result.conditioning.y0,
+        result.conditioning.pdf,
+        color="red",
+        linestyle="solid",
+        label=props.label_conditional_pdf,
+    )
+    # Conditional 95% confidence interval
+    ax.fill_between(
+        result.conditioning.bounds,
+        np.zeros_like(result.conditioning.pdf_bounds),
+        result.conditioning.pdf_bounds,
+        color="red",
+        alpha=0.1,
+        label=props.label_conditional_bounds,
+    )
+
+    # Conditional mean value
+    pdf2 = result.conditioning.rv.pdf(
+        result.conditioning.rv.ppf(0.5, *result.conditioning.args, **result.conditioning.kwargs),
+        *result.conditioning.args,
+        **result.conditioning.kwargs,
+    )
+    ax.plot(
+        [result.conditioning.mean, result.conditioning.mean],
+        [0, pdf2],
+        color="red",
+        alpha=0.2,
+        linestyle="solid",
+        label=props.label_conditional_mean,
+    )
+
+# Set figure properties
+props.apply(fig, ax, show=True)
