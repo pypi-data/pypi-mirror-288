@@ -1,0 +1,10 @@
+opsys_integrating_sphere/__init__.py,sha256=6QtBAlVWFOcutAal8cX68lo_W0GAqShBu08120p0yGw,114
+opsys_integrating_sphere/artifex_controller.py,sha256=7XVq6K6BGGd1g3ZBU9Ppax85MFMZk87h9JTUMihEbec,2890
+opsys_integrating_sphere/i_sphere_abstract.py,sha256=8b3P7xBl43agdlRpMcyrijVLdF_3yU3XbjEUUddSl0Y,268
+opsys_integrating_sphere/i_sphere_controller.py,sha256=DAWI7_OBmvgaXwX19zuGaWrEDrEHF-iH71Fnk4wQfo0,1546
+opsys_integrating_sphere/ophir_controller.py,sha256=V83so4yn1i3lslV0t2gfaaoNQ49gcqR-eC_04HALRiU,2433
+opsys_integrating_sphere-0.0.2.dist-info/LICENSE,sha256=k1uUZ25Ne_mz5L4Wb-Wkt3ieMEaoetnGrYPV6EGJG9g,1091
+opsys_integrating_sphere-0.0.2.dist-info/METADATA,sha256=Rd9c4Xm4o-1xskpl0_OuL-2cFe8Nu0xPUqu833dDS9Y,402
+opsys_integrating_sphere-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+opsys_integrating_sphere-0.0.2.dist-info/top_level.txt,sha256=1y4lCdwgzn2JyHqHpfyT4W2D9fq5zsm2XiMD0BGDYtY,25
+opsys_integrating_sphere-0.0.2.dist-info/RECORD,,
