@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+julim_package.egg-info/PKG-INFO
+julim_package.egg-info/SOURCES.txt
+julim_package.egg-info/dependency_links.txt
+julim_package.egg-info/top_level.txt
+mypackage/__init__.py
+mypackage/mymodule.py
+tests/__init__.py
+tests/test_mymodule.py
