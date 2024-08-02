@@ -1,0 +1,13 @@
+autopkg_wrapper/__init__.py,sha256=LH37MkR079fO0oez0_vLvmySB5pH_U7FgoqJn5fRbuI,25
+autopkg_wrapper/autopkg_wrapper.py,sha256=7hi8QmQgAqX5LHlv89ongl06NIvznXo8Qqhy4srHXQw,13042
+autopkg_wrapper/notifier/__init__.py,sha256=ShXQBVjyiSOHxoQJS2BvNG395W4KZfqMxZWBAR0MZrE,22
+autopkg_wrapper/notifier/slack.py,sha256=nKHeSmgDaTaSUo19ZgnjjjKzeWgg34fMHUwNj9C5FMY,1982
+autopkg_wrapper/utils/__init__.py,sha256=ShXQBVjyiSOHxoQJS2BvNG395W4KZfqMxZWBAR0MZrE,22
+autopkg_wrapper/utils/args.py,sha256=5VyPP28DYHttuwBD6iPTLMWSy1IiJ11md01GpkIWt8s,4718
+autopkg_wrapper/utils/git_functions.py,sha256=zMMzwRG9V2VFaQk3y_o1H63_hzI1qohwBKaetNDS2mY,2975
+autopkg_wrapper/utils/logging.py,sha256=3knpMViO_zAU8WM5bSImQaz5M01vMFk_raB4lt1cbvo,324
+autopkg_wrapper-2024.8.1.dist-info/LICENSE,sha256=PpNOQjZGcsKFuA0wU16YU7PueVxqPX4OnyZ7TlLQlq4,1602
+autopkg_wrapper-2024.8.1.dist-info/METADATA,sha256=D5E6qm9B79Ezm6lEkJp0-ACksXweM8kFMN6kdecRwHw,2756
+autopkg_wrapper-2024.8.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+autopkg_wrapper-2024.8.1.dist-info/entry_points.txt,sha256=-whajEGfgetm2CroLN1IMolYlyM9QqUPM7oJZWQrVfE,72
+autopkg_wrapper-2024.8.1.dist-info/RECORD,,
