@@ -1,0 +1,8 @@
+README.md
+setup.py
+trialpack/__init__.py
+trialpack/tp.py
+trialpack.egg-info/PKG-INFO
+trialpack.egg-info/SOURCES.txt
+trialpack.egg-info/dependency_links.txt
+trialpack.egg-info/top_level.txt
