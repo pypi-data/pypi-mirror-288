@@ -1,0 +1,9 @@
+click
+requests
+setuptools
+twine
+pyOpenSSL
+wheel
+pymongo
+python-dotenv
+semantic-release
