@@ -1,0 +1,14 @@
+AUTHORS,sha256=UTt_lj2Owih3OEgb6mT2ZdrgWB6PIegoFsp82Y369JU,454
+README.md,sha256=wYv9bNmNYLkOODSFlsG1g52mF4wAsh14glnJAA7nT2o,10259
+bitmapist/__init__.py,sha256=babiW2wklnbwx_R0qzlspgKiymfSdAsJwakmcAEmDMI,22732
+bitmapist/cohort/__init__.py,sha256=XLcYjWcS9-8ni9-7GPSz_lgMWWHM8KzA6IKcNPveXVY,12478
+bitmapist/cohort/tmpl/form_data.mako,sha256=_hsfZh1SgGpmVLwx0OZX7etDF-w1XYbD43NZUvzJlho,4006
+bitmapist/cohort/tmpl/table_data.mako,sha256=D8GzTe3er0-83HWZVoYcN2yAaXnwGYsrMCTrskYyXY8,3284
+bitmapist/cohort/tmpl/table_data_csv.mako,sha256=8CWhjJ6HFrdWfd1tIJDK9BBIMlITb-5T1du7Ln8y0Kk,701
+bitmapist/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+static/bitmapist.png,sha256=kkwsiNwZUILYHBWit_NMENGO57Ky4GotMA5bS-PzdEY,21256
+static/bitmapist.svg,sha256=12knNeHWpEVBfQVlcMfK1AWfTueJXgpOdocywGPCbrw,11668
+bitmapist-3.113.dist-info/AUTHORS,sha256=UTt_lj2Owih3OEgb6mT2ZdrgWB6PIegoFsp82Y369JU,454
+bitmapist-3.113.dist-info/METADATA,sha256=o8vPYHDFexCrQrRYRjDukGJpymNTdDJyUyGsv0PqNVo,11441
+bitmapist-3.113.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+bitmapist-3.113.dist-info/RECORD,,
