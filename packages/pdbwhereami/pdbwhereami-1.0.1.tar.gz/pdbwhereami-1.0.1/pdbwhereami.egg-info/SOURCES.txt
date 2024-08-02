@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pdbwhereami.py
+setup.py
+pdbwhereami.egg-info/PKG-INFO
+pdbwhereami.egg-info/SOURCES.txt
+pdbwhereami.egg-info/dependency_links.txt
+pdbwhereami.egg-info/top_level.txt
