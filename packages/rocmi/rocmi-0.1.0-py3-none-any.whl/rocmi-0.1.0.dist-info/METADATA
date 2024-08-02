@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: rocmi
+Version: 0.1.0
+Summary: Pure Python implementation of ROCm metircs and management interfaces
+Home-page: https://github.com/mrodden/rocmi
+Author: Mathew Odden
+Author-email: matodden@amd.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# rocmi
+Pure Python implementation of ROCm metrics and management interfaces
+
+
