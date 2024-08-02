@@ -1,0 +1,11 @@
+README.md
+setup.py
+pbpaste_win.egg-info/PKG-INFO
+pbpaste_win.egg-info/SOURCES.txt
+pbpaste_win.egg-info/dependency_links.txt
+pbpaste_win.egg-info/entry_points.txt
+pbpaste_win.egg-info/requires.txt
+pbpaste_win.egg-info/top_level.txt
+pbpastesrc/__init__.py
+pbpastesrc/clipcon.py
+tests/test_clipon.py
