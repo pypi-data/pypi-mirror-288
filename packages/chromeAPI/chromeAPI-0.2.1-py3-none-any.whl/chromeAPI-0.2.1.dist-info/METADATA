@@ -1,0 +1,149 @@
+Metadata-Version: 2.1
+Name: chromeAPI
+Version: 0.2.1
+Author: Than Tuan Bao
+Author-email: thantuanbao66@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+
+# Chrome API Python Client
+
+Repository này chứa một bộ công cụ Python mạnh mẽ để tương tác với trình duyệt Chrome thông qua Selenium. Các công cụ bao gồm việc kết nối đến trình duyệt, kiểm soát các hành động tự động, xử lý proxy, và nhiều chức năng hữu ích khác liên quan đến việc tự động hóa trình duyệt.
+
+## Cài đặt
+
+Để sử dụng client này, bạn cần cài đặt các thư viện yêu cầu. Bạn có thể cài đặt chúng bằng `pip`:
+
+```bash
+pip install selenium requests colorama opencv-python
+```
+
+## Cấu hình
+
+Để sử dụng các hàm trong `chromeAPI.py`, bạn cần đảm bảo rằng bạn có sẵn ChromeDriver phù hợp với phiên bản Chrome của mình.
+
+Bạn có thể kết nối với trình duyệt Chrome như sau:
+
+```python
+from chromeAPI import ChromeAPI
+
+# Kết nối đến một phiên bản Chrome đang chạy trên cổng từ xa
+browser = ChromeAPI.connect('path/to/chromedriver', remotePort=9222)
+```
+
+## Chức năng
+
+### 1. Mở Chrome với Selenium
+
+**Chức năng:** Mở trình duyệt Chrome với một số tùy chọn cấu hình.
+
+```python
+from chromeAPI import open_chrome_selenium
+
+browser = open_chrome_selenium(userdatadir="path_to_user_data_dir", vi_tri=0, extensions="path_to_extension")
+```
+
+| Name         | Type   | Required | Description                                |
+|--------------|--------|----------|--------------------------------------------|
+| userdatadir  | string | yes      | Đường dẫn đến thư mục dữ liệu người dùng của Chrome |
+| vi_tri       | int    | yes      | Vị trí cửa sổ Chrome                       |
+| extensions   | string | no       | Đường dẫn đến các extension của Chrome     |
+
+### 2. Thao tác với trình duyệt
+
+**Chức năng:** Thực hiện các thao tác như tìm kiếm, đợi, và tương tác với các phần tử trên trang web.
+
+```python
+from chromeAPI import function_chrome
+from selenium.webdriver.common.by import By
+
+driver = function_chrome(browser)
+element = driver.wait_element(By.ID, "example_id")
+```
+
+| Name            | Type   | Required | Description                                      |
+|-----------------|--------|----------|--------------------------------------------------|
+| browser         | object | yes      | Đối tượng trình duyệt (webdriver.Chrome instance) |
+| vi_tri          | int    | no       | Vị trí cửa sổ Chrome                             |
+| delay           | int    | no       | Thời gian chờ đợi trước khi thao tác (mặc định: 10 giây) |
+
+**Các chức năng chính:**
+- `wait_element`: Đợi và tìm một phần tử trên trang web.
+- `find_element_by_text`: Tìm một phần tử theo văn bản.
+- `send_keys`: Gửi các ký tự vào một phần tử input.
+
+### 3. Sử dụng Proxy
+
+**Các loại proxy được hỗ trợ:**
+
+| Name       | Type  | Required | Description                    |
+|------------|-------|----------|--------------------------------|
+| tinsoft    | API   | yes      | API proxy của tinsoft          |
+| tmproxy    | API   | yes      | API proxy của tmproxy          |
+| wwproxy    | API   | yes      | API proxy của wwproxy          |
+| dtproxy    | API   | yes      | API proxy của dtproxy          |
+| proxyv6    | API   | yes      | API proxy của proxyv6          |
+
+### 4. Tạo Email tạm thời và nhận OTP
+
+**Chức năng:** Tạo email tạm thời và lấy mã OTP.
+
+```python
+from chromeAPI import mailtm
+
+email_service = mailtm()
+email, headers = email_service.creat_email()
+otp = email_service.get_otp(content="Your OTP is", otp=True)
+```
+
+| Name         | Type   | Required | Description                                      |
+|--------------|--------|----------|--------------------------------------------------|
+| dot          | string | no       | Domain sử dụng cho email tạm thời (mặc định: "gw") |
+| proxy        | string | no       | Địa chỉ proxy nếu sử dụng                        |
+| content      | string | yes      | Nội dung để tìm kiếm OTP trong email             |
+| otp          | bool   | no       | Trả về mã OTP là 4 hoặc 6 số (mặc định: True)    |
+
+**Các phương thức chính:**
+- `creat_email`: Tạo email tạm thời.
+- `get_otp`: Lấy mã OTP từ email.
+
+### 5. Xử lý File và Thư mục
+
+**Chức năng:** Xử lý file và thư mục như tạo, đọc, ghi và xóa file/thư mục.
+
+```python
+from chromeAPI import scr_file
+
+# Kiểm tra và tạo file nếu chưa tồn tại
+scr_file.check_exist('path_to_file')
+
+# Đọc nội dung file
+content = scr_file.read_file('path_to_file')
+```
+
+| Name           | Type   | Required | Description                                      |
+|----------------|--------|----------|--------------------------------------------------|
+| path_file      | string | yes      | Đường dẫn đến file để kiểm tra hoặc tạo mới      |
+| content        | string | yes      | Nội dung để ghi vào file                         |
+| mode           | string | no       | Chế độ mở file (mặc định: 'a+')                  |
+
+**Các chức năng chính:**
+- `check_exist`: Kiểm tra và tạo file.
+- `write`: Ghi dữ liệu vào file.
+- `read_file`: Đọc dữ liệu từ file.
+
+## Xử lý lỗi
+
+Nếu có bất kỳ lỗi nào xảy ra trong quá trình sử dụng các hàm, các lỗi sẽ được xử lý thông qua các thông báo lỗi chi tiết. Đảm bảo bạn kiểm tra kỹ log để biết nguyên nhân và cách khắc phục.
+
+## Giấy phép
+
+Dự án này được cấp phép theo Giấy phép MIT - xem tệp LICENSE để biết thêm chi tiết.
+
+## Liên hệ
+
+Đối với bất kỳ yêu cầu hoặc vấn đề nào, vui lòng liên hệ hỗ trợ tại [ChromeAPI Support](https://www.facebook.com/nguyendinhkhue1010/).
