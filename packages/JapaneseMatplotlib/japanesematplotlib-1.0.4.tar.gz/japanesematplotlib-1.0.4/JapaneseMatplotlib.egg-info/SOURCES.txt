@@ -1,0 +1,10 @@
+README.md
+setup.py
+JapaneseMatplotlib/__init__.py
+JapaneseMatplotlib/font_manager.py
+JapaneseMatplotlib.egg-info/PKG-INFO
+JapaneseMatplotlib.egg-info/SOURCES.txt
+JapaneseMatplotlib.egg-info/dependency_links.txt
+JapaneseMatplotlib.egg-info/requires.txt
+JapaneseMatplotlib.egg-info/top_level.txt
+JapaneseMatplotlib/fonts/ipaexg.ttf

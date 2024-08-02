@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: JapaneseMatplotlib
+Version: 1.0.4
+Summary: A package to support Japanese fonts for Matplotlib
+Author: kiendt
+Author-email: kiendt226@gmail.com
+License: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+
+## JapaneseForMatplotlib
