@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: sci_plot_style
+Version: 1.0.2
+Summary: SCI style
+Home-page: UNKNOWN
+Author: Feifeng Wu
+Author-email: wufeifeng_hust@163.com
+License: GPLv3
+Description: ### 自用的科研作图
+        - 安装方法
+        pip install sci_plot_style
+        - 使用方法
+        见example文件夹
+        
+Keywords: matplotlib
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
