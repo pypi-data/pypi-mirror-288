@@ -1,0 +1,15 @@
+neo4j
+praatio<=5.0
+textgrid
+conch_sounds
+librosa
+influxdb
+tqdm
+requests
+scipy<=1.12.0
+
+[:os_name == "nt"]
+pywin32
+
+[test]
+pytest
