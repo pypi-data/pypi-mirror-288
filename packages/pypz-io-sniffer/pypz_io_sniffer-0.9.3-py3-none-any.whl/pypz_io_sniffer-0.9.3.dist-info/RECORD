@@ -1,0 +1,11 @@
+pypz/sniffer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypz/sniffer/__main__.py,sha256=lw2i_8_rSJa8elt2IXJqUp49OUWHmJ_tTaFEn7dOwYM,1172
+pypz/sniffer/sniffer.py,sha256=5MQGQjCZWadjg9JFd8satD53YucKbjRRuoMrIcY1cNQ,6612
+pypz/sniffer/utils.py,sha256=ZpNo3IsFsV7DlPkZCN7eNgIe0GnTQUP6s6A5D02OCPQ,5699
+pypz/sniffer/viewer.py,sha256=LNLB9tS8TNp30v5g2p8VD5kXHK_N3DG4KnKDOm4JRtw,11827
+pypz/sniffer/views.py,sha256=aLuEtG1NqKlWhKcOefoQtckuCoV9wRl_vmV9Q6kdsdU,12307
+pypz_io_sniffer-0.9.3.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+pypz_io_sniffer-0.9.3.dist-info/METADATA,sha256=WsKO0M-X19wval0pZ03F04kRH7-1ANx2Fq3CLDvtvMc,1992
+pypz_io_sniffer-0.9.3.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+pypz_io_sniffer-0.9.3.dist-info/top_level.txt,sha256=mv8iAyQBK2h99c_wL1IvRogw1BLfLvk5smfZtgOnvw4,5
+pypz_io_sniffer-0.9.3.dist-info/RECORD,,
