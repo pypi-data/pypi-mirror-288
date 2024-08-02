@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "crucible-sdk"
+version = "1.0.0"
+description = "A simple tool for generating client libraries from OpenAPI schemas"
+authors = ["JHart96 <jordan.da.hart@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+crucible = "crucible_sdk:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
