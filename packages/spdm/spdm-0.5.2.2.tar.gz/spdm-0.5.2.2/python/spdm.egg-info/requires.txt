@@ -1,0 +1,11 @@
+f90nml
+h5py
+netcdf4
+pyyaml
+lxml
+numpy
+scipy
+scikit_image
+matplotlib
+networkx
+pygraphviz

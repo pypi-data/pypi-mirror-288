@@ -1,0 +1,30 @@
+@startuml 
+
+
+object Coordinates
+
+object Tokamak
+
+object Equilibrium 
+
+object RZMesh
+
+map Equilibrium {
+   psirz
+   boundary
+   limiter
+   coordinates  => RZMesh 
+}
+
+Coordinates --* Equilibrium
+
+object CoreProfile
+
+Tokamak --|> Graph
+Equilibrium --|> Graph
+CoreProfile --|> Graph
+
+Tokamak *-- Equilibrium
+Tokamak *-- CoreProfile
+
+@enduml
