@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "xqdata-rq"
+version = "0.1.6"
+description = ""
+authors = ["xuanqi <xuan.q@foxmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rqsdk = "^1.5.14"
+xqdata = {version = "^0.1.0", source = "txcloud"}
+
+
+[[tool.poetry.source]]
+name = "txcloud"
+url = "http://124.221.62.45:8080/"
+priority = "supplemental"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
