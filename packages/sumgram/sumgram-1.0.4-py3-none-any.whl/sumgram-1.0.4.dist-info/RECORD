@@ -1,0 +1,15 @@
+.DS_Store,sha256=KyGrLqcOkyARyZZcQU685fmWKgJ6lpcgVNCI0hoJnYE,6148
+ngramsum/__init__.py,sha256=miSsqPy2PFJ18TW9kocQJLcv4HFpkfQhcTzgAO-GTVE,22
+ngramsum/ngramsum.py,sha256=-0VcXyAbr00Iae5ySUGz6F3730Z4X47LDKyusDjmabA,40769
+ngramsum/util.py,sha256=vmMHAEechhr4aoK-tth9hV1csjxE6O8xHHbmZfFi5Y4,10688
+sumgram/__init__.py,sha256=thGZHY6pLPhJc6CwYBjUaQ6pGxLhwPMp_pjoYsiwvI4,22
+sumgram/scratch.py,sha256=JNTsYs4ySNrvclyGtDKseER6HCS-yz2IYzTYjTXQVDU,2407
+sumgram/sumgram.py,sha256=J6skgylhKwEWqXotSm_DyjnX0OYj9eQP0w_nZRkqGoI,71029
+sumgram/util.py,sha256=k6vJOksOXXzyuHaDHY7kRjz6AbppdH0FqGKtufLL_Vk,19612
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sumgram-1.0.4.dist-info/LICENSE,sha256=4IKb34Zd5pHW8NwqGMPXzJCfghg_jHD4GJZXt3a-0ro,1106
+sumgram-1.0.4.dist-info/METADATA,sha256=kF3xU1QYTIHJttetKQ9DC6HS8rfH8d6LuXK69T6h6kg,655
+sumgram-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sumgram-1.0.4.dist-info/entry_points.txt,sha256=HniSFEyAt7m05vZp1sBBrR6UzbTQqFs5NkpEsZlTHzQ,50
+sumgram-1.0.4.dist-info/top_level.txt,sha256=r5BBQAn-teP7i1Ae_uzMD8ae3SaRHyLppGY8PDnmjhI,8
+sumgram-1.0.4.dist-info/RECORD,,
