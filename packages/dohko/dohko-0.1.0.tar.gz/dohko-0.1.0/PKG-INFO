@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: dohko
+Version: 0.1.0
+Summary: zkGraph proving backend
+License: MIT
+Author: AE Studio
+Requires-Python: >3.11.0,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: dill (>=0.3.8,<0.4.0)
+Requires-Dist: onnx (>=1.16.1,<2.0.0)
+Requires-Dist: onnxruntime (>=1.18.1,<2.0.0)
+Requires-Dist: py-ecc (>=7.0.1,<8.0.0)
+Requires-Dist: pybind11 (>=2.13.1,<3.0.0)
+Requires-Dist: pydantic (>=2.8.0,<3.0.0)
+Requires-Dist: scikit-learn (>=1.5.1,<2.0.0)
+Requires-Dist: sympy (>=1.12.1,<2.0.0)
+Requires-Dist: torch (==2.2.0)
+Description-Content-Type: text/markdown
+
+# Dohko
+zkGraph's experimental ZKP backend
+
+
+
+## Introduction
+
+This codebase serves as base point for the zkGraph's distributed and low memory footprint zero knowledge proofs using the Libra protocol. 
+On this repo the following ideas are implemented:
+* Linear time Sumcheck and GKR protocols and it's zk extensions
+* Multilinear KZG and KZG10 protocols
+* Plookup lookup arguments protocol
+
+
+## Note
+The plookup implementation comes from https://github.com/NOOMA-42/pylookup
+
+
+## Install pybind11 and compile virgo bindings
+* export CPLUS_INCLUDE_PATH=/usr/local/Cellar//python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/include/python3.12/  
+* cmake .. -DPython=1 -DPYTHON_EXECUTABLE=/Users/lorenzotomaz/Library/Caches/pypoetry/virtualenvs/dohko-Rkwus1zB-py3.11/bin/python -DPYTHON_INCLUDE_DIRS=/Users/lorenzotomaz/Library/Caches/pypoetry/virtualenvs/dohko-Rkwus1zB-py3.11/lib/python3.11/

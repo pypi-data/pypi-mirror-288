@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "dohko"
+version = "0.1.0"
+description = "zkGraph proving backend"
+authors = ["AE Studio"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">3.11.0,<4.0"
+sympy = "^1.12.1"
+py-ecc = "^7.0.1"
+dill = "^0.3.8"
+pydantic = "^2.8.0"
+scikit-learn = "^1.5.1"
+pybind11 = "^2.13.1"
+torch = "2.2.0"
+onnx = "^1.16.1"
+onnxruntime = "^1.18.1"
+
+[tool.poetry.group.dev.dependencies]
+matplotlib = "^3.9.0"
+pytest = "^8.2.2"
+black = "^24.4.2"
+scalene = "^1.5.42.2"
+psutil = "^6.0.0"
+rich = "^13.7.1"
+line-profiler = "^4.1.3"
+graphviz = "^0.20.3"
+ipykernel = "^6.29.5"
+prettytable = "^3.10.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
