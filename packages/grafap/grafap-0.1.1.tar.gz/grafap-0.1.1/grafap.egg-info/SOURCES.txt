@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+grafap/__init__.py
+grafap/grafap.py
+grafap.egg-info/PKG-INFO
+grafap.egg-info/SOURCES.txt
+grafap.egg-info/dependency_links.txt
+grafap.egg-info/requires.txt
+grafap.egg-info/top_level.txt
