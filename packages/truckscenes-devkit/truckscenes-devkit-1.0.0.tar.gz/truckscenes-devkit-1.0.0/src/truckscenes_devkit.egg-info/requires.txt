@@ -1,0 +1,17 @@
+numpy
+pyquaternion>=0.9.5
+tqdm
+pypcd4
+
+[all]
+matplotlib
+jupyter
+open3d
+opencv-python
+Pillow>6.2.1
+
+[visu]
+matplotlib
+open3d
+opencv-python
+Pillow>6.2.1
