@@ -1,0 +1,17 @@
+cube_http/__init__.py,sha256=Kv6g4DOVYpMnMmU9l0-WQBAMzWPCJWsBjd-RtXdVcB8,78
+cube_http/_client.py,sha256=qshkaRSX2L3ohxtJnuS2RUAjYjpZXQlO77a4QrxXY0w,1496
+cube_http/_utils/serde.py,sha256=wRRul1VeZT6JVagbc-Pz_RDbSChwHh4-b2bBDIlkKOQ,566
+cube_http/exc.py,sha256=bYP-mHwLjiIVeITfN0YVa_DTHDsy_UCBcWwJGzg5-Wk,793
+cube_http/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cube_http/resources/_base.py,sha256=rrKhxtXMQQxo90j4AHFR3YkRbV9w6ZuomR8CUiFSnfw,292
+cube_http/resources/v1/__init__.py,sha256=ROG_2az2uuiYdjwJgEjLjIxKnv0X0cfTwe7NKFpNdn8,4310
+cube_http/resources/v1.py,sha256=AROclY-w2oVmX-6uNZy-BfR1UeAY1P8PV7Phx1xKhc4,4226
+cube_http/types/_client.py,sha256=4WJiYrLx2XCEFhy7YxZx1oeEkybu2Nx9XeI-kotgA1Q,914
+cube_http/types/v1/__init__.py,sha256=ZuCiYxzWQnfQYg6Ts14kOSaWWl5hSfTuo6l9UQuDvCo,279
+cube_http/types/v1/error.py,sha256=WviuANO3esUuWwAqsYNLhn05knRzCvfLhqPCraZJHKM,74
+cube_http/types/v1/load.py,sha256=wn0W0SHJ-kArs5uOXetMI4CipCuwYlQ0XbXcIULQFWc,5800
+cube_http/types/v1/meta.py,sha256=JymtfjjM8nPCqJu6_3j7M1I42lvkdYlndps-N4_Lepw,4775
+cube_http_client-0.1.7.dist-info/LICENSE,sha256=OoiP-SdgNqIjxbZIqPHLyM7oRIKPy8pNOA4ql3_FAU0,1058
+cube_http_client-0.1.7.dist-info/METADATA,sha256=62Lojyyob65__2I1pTCIV9pQOs8vViNFolvMmr-Rh3A,3239
+cube_http_client-0.1.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cube_http_client-0.1.7.dist-info/RECORD,,
