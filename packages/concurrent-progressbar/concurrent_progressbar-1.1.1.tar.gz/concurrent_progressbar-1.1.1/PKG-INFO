@@ -1,0 +1,63 @@
+Metadata-Version: 2.3
+Name: concurrent_progressbar
+Version: 1.1.1
+Summary: This package is used to track the processes executed in the program. It will show individual progress bar for each task alloted using this package. It runs each task in separate process.
+Author-email: "M. Rayyan Akhtar" <akhtar.rayyan@live.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Multiple Progressbars
+
+## Table of Contents
+
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Usage](#usage)
+
+## About <a name = "about"></a>
+
+This package is used to track the processes executed in the program. It will show individual progress bar for each task alloted using this package. It runs each task in separate process.
+
+## Getting Started <a name = "getting_started"></a>
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Installing
+
+pip install concurrent-progressbar
+
+## Usage <a name = "usage"></a>
+```
+import os
+from concurrent_progressbar.concurrent import Multithreading, MultiProcessing
+
+
+def target_1(i):
+    pass
+
+def target_2(j):
+    pass
+
+
+pool = Multithreading(
+                    num_workers=os.cpu_count(), 
+                    target=[target_1, target_2], 
+                    args=[[(i,) for i in range(1000)], [(j,) for j in range(100)]]
+    )
+
+pool.run()
+
+# OR
+
+pool = Multiprocessing(
+                    num_workers=os.cpu_count(), 
+                    target=[target_1, target_2], 
+                    args=[[(i,) for i in range(1000)], [(j,) for j in range(100)]]
+    )
+
+pool.run()
+```

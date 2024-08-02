@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "concurrent_progressbar"
+version = "1.1.1"
+authors = [
+  { name="M. Rayyan Akhtar", email="akhtar.rayyan@live.com" },
+]
+description = "This package is used to track the processes executed in the program. It will show individual progress bar for each task alloted using this package. It runs each task in separate process."
+readme = "README.md"
+install_requires=['tqdm']
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
