@@ -1,0 +1,9 @@
+numpy
+pyvista
+tqdm
+
+[extras]
+nest_asyncio
+trame
+trame_vuetify
+trame_vtk
