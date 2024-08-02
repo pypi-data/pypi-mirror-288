@@ -1,0 +1,3 @@
+[console_scripts]
+manage_simple_keys = scripts.manage_keys:main
+
