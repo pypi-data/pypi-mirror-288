@@ -1,0 +1,38 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "setuptools_scm[toml]>=6.2"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "optilibre"
+dynamic = ["dependencies", "version"]
+authors = [{name = "Sydney Gems, <sydney@gems.technology>"}]
+description = "Video and Image optimizer"
+#long_description = "file: README.md"
+#long_description_content_type = "text/markdown"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: POSIX :: Linux"
+    ]
+readme = "README.md"
+
+requires-python = ">= 3.8"
+
+
+[project.urls]
+Homepage = "https://gitlab.com/daufinsyd/optilibre"
+Issues = "https://gitlab.com/daufinsyd/optilibre/-/issues"
+
+[project.scripts]
+optilibre = "optilibre.__main__:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools_scm]
+write_to = "src/optilibre/_version.py"
+git_describe_command = "git describe --tags --match 'v*' --first-parent"

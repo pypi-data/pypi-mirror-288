@@ -1,0 +1,37 @@
+# Configure Videos
+version=2.0
+in_path="/IN_PATH"
+out_path="/PATH"
+src_on_success="move"
+src_on_failure="keep"
+src_on_success_dest="/PATH/WHEN/SUCCESS"
+container="mp4"  # desired container to pack the video and audio.
+
+[advanced_options]
+map_metadata=0
+
+[audio]
+enabled=true
+codec="aac"
+
+[audio.aac]
+# This provides supplementary configuration for the aac codec if chosen in the [audio] section
+
+[video]
+enabled=true
+codec="libx264"
+
+[video.libx264]
+# This provides supplementary configuration for the libx264 codec if chosen in the [video] section
+crf=23
+preset="medium"
+
+# Example h265
+#[video]
+#enabled=true
+#codec="libx265"
+#
+#[video.libx265]
+#crf=24
+#preset="medium"
+#pix_fmt="yuv420p"
