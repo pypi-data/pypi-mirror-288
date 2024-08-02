@@ -1,0 +1,10 @@
+setup.py
+r4isy/__init__.py
+r4isy/connect.py
+r4isy/r4isy.py
+r4isy.egg-info/PKG-INFO
+r4isy.egg-info/SOURCES.txt
+r4isy.egg-info/dependency_links.txt
+r4isy.egg-info/entry_points.txt
+r4isy.egg-info/requires.txt
+r4isy.egg-info/top_level.txt
