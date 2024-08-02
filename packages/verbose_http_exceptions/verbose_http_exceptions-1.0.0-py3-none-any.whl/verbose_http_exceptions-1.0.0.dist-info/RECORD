@@ -1,0 +1,13 @@
+verbose_http_exceptions-1.0.0.dist-info/METADATA,sha256=CjUnXq8SV7i7-SVVetXjVkW7IUaZvBEREjqr8WlFatE,2690
+verbose_http_exceptions-1.0.0.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+verbose_http_exceptions-1.0.0.dist-info/licenses/LICENSE,sha256=ulFFDJpb2nPaeXrqRZ0pfJcSD6F-9vaqhLzQL5_d8xo,1064
+verbose_http_exceptions/__init__.py,sha256=w3lv2RAyipmc9zk4qKuAj4BE35k4jLzrazrEjfUKXo0,818
+verbose_http_exceptions/constants.py,sha256=iGnuDvIfzRsyzDuZWqmJF1KBn5jiOfwq3lTEL5AeYwA,3471
+verbose_http_exceptions/exc.py,sha256=KqM14KXRr0XynFkBdecY0nzTfCT-8Koqq_qOqROWd4s,12148
+verbose_http_exceptions/ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verbose_http_exceptions/ext/fastapi/__init__.py,sha256=7ZOYTADTQU9Myqr8dRDBBvX1EygptN53Lto8tnvNwBk,300
+verbose_http_exceptions/ext/fastapi/handlers.py,sha256=sM1hC6-EkdIDlO2wOb_FYmILHAtrsW_eqY55POv-_M8,3791
+verbose_http_exceptions/ext/fastapi/openapi_override.py,sha256=_RRikm6OqCCCGdwJHWEeYkKWTlpiDCaXLlMmxfFMkbo,2162
+verbose_http_exceptions/ext/fastapi/schemas.py,sha256=6t9Sw7Ftbc-YrEFg-SYDSzD7S3BG08y6ru5B5rpX19c,2536
+verbose_http_exceptions/ext/fastapi/utils.py,sha256=bXIHf2ccAgFn7GVrKzXz3Zv0CKfry3NhtbonAjHdmyQ,1274
+verbose_http_exceptions-1.0.0.dist-info/RECORD,,
