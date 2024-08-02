@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: lume_py
+Version: 0.1.5
+Summary: An SDK to connect to the Lume API
+License: MIT
+Author: Aryan Panda
+Author-email: aryan@lume.ai
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: httpx (>=0.27.0,<0.28.0)
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Project-URL: repository, https://github.com/Lume-ai/lume_py
+Description-Content-Type: text/markdown
+
+# python-sdk
+
+# My SDK
+
+A Python SDK for interacting with Lume.
+
+## Installation
+<!-- 
+```bash
+pip install lume-py -->
+
