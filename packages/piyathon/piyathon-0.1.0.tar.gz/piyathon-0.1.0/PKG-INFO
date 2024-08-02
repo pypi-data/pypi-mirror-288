@@ -1,0 +1,59 @@
+Metadata-Version: 2.3
+Name: piyathon
+Version: 0.1.0
+Summary: A language-localized superset of Python with a bi-directional transformer to standard Python
+Project-URL: Homepage, https://github.com/piyawish/piyathon
+Project-URL: Bug Tracker, https://github.com/piyawish/piyathon/issues
+Author-email: Piyawish Piyawat <piyawishone@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Piyawish Piyawat
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# Piyathon
+
+## How Piyathon works
+
+```mermaid
+graph TD
+    A[Piyathon Source Code] --> B[Lexical Tokenization]
+    B --> C{Token Type}
+    C -->|Keyword| D[Translate to Python Keyword]
+    C -->|Other| E[Keep Original Token]
+    D --> F[Reassemble Tokens]
+    E --> F
+    F --> G[Python Source Code]
+    G --> H[Python Interpreter]
+    H --> I[Execution]
+
+    J[Python Source Code] --> K[Lexical Tokenization]
+    K --> L{Token Type}
+    L -->|Keyword| M[Translate to Thai Keyword]
+    L -->|Other| N[Keep Original Token]
+    M --> O[Reassemble Tokens]
+    N --> O
+    O --> P[Piyathon Source Code]
+```
