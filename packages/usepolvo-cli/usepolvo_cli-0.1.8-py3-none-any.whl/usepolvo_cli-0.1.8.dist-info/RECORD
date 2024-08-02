@@ -1,0 +1,9 @@
+usepolvo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+usepolvo/cli.py,sha256=rzGoLdAAcPF0aw6R5MuqpjjX-1jOR_h0zA5QwOYeXa4,620
+usepolvo/config.py,sha256=oLrt-fmomLzoWTYYGH3YZnE3e-MUlfQSzszS5IbFnqU,1024
+usepolvo/stripe.py,sha256=nwK-Og2FFS7oiGYH-OSp9vIQuXFqcRLcqsokIXaYS_c,1393
+usepolvo_cli-0.1.8.dist-info/METADATA,sha256=F6T8pBmJ8zw4iKouPIxkXWIYGJAf05BgGfhX-X6co20,567
+usepolvo_cli-0.1.8.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+usepolvo_cli-0.1.8.dist-info/entry_points.txt,sha256=rgQ3kgeTR62QpL6kEq4xhfZSiCWg91kss2X0PqvgwN4,46
+usepolvo_cli-0.1.8.dist-info/top_level.txt,sha256=zeVmbm7JdMrV_xngxi56yaiudBvJlNKEq63CjbNal5o,9
+usepolvo_cli-0.1.8.dist-info/RECORD,,
