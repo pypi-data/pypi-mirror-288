@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: MrAnalyticaOfficial
+Version: 0.7.552
+Summary: Uma biblioteca poderosa para análise de dados, incluindo o módulo PhoenixVision para reconhecimento facial.
+Home-page: https://github.com/seuusuario/MrAnalyticaOfficial
+Author: Seu Nome
+Author-email: seu.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: opencv-contrib-python
+Requires-Dist: numpy
+Requires-Dist: psutil
+
+# mranalyticaofficial
+ 
