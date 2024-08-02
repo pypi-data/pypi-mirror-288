@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+quickllm/__init__.py
+quickllm/chat.py
+quickllm/finetune.py
+quickllm/models.py
+quickllm/utils.py
+quickllm/visualize.py
+quickllm.egg-info/PKG-INFO
+quickllm.egg-info/SOURCES.txt
+quickllm.egg-info/dependency_links.txt
+quickllm.egg-info/requires.txt
+quickllm.egg-info/top_level.txt
