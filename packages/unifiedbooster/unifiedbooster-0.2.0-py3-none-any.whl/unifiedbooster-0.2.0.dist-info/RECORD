@@ -1,0 +1,9 @@
+unifiedbooster/__init__.py,sha256=urmH2DAkJ4e-idIh0oMZX9lP9rlqTPyZ-qHuNeJcEIc,137
+unifiedbooster/gbdt.py,sha256=9FHRy_haiZl6_7uH8RpWUlNiZwuLW_hLC3_BDOMtyug,2583
+unifiedbooster/gbdt_classification.py,sha256=326I7d70nF__uOlynMU7IrS-8cyez4xlMYDNJMTSL6Y,3277
+unifiedbooster/gbdt_regression.py,sha256=wOT1iigiXELzQ_lL_SjgdiP2pm7RgMVXY89QMLMkhYk,3229
+unifiedbooster-0.2.0.dist-info/METADATA,sha256=3C4Q-x4Zlf6_aXhj3u-wVkPsuUTCUX8VRNCzUbDDwl0,908
+unifiedbooster-0.2.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+unifiedbooster-0.2.0.dist-info/entry_points.txt,sha256=OVNTsCzMYnaJ11WIByB7G8Lym_dj-ERKZyQxWFUcW30,59
+unifiedbooster-0.2.0.dist-info/top_level.txt,sha256=gOMxxpRtx8_nJXTWsXJDFkNeCsjSJQPs6aUXKK5_nI4,15
+unifiedbooster-0.2.0.dist-info/RECORD,,
