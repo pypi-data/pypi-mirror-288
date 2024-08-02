@@ -1,0 +1,115 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "jupyter.lab.setting-icon": "double-sharp:icon",
+  "jupyter.lab.setting-icon-label": "Double Sharp",
+  "jupyter.lab.toolbars": {
+    "Notebook": [
+      {
+        "name": "inspector",
+        "command": "double-sharp:inspector"
+      },
+      {
+        "name": "run-all-cells",
+        "command": "double-sharp:run-all-cells"
+      }
+    ]
+  },
+  "title": "Double Sharp",
+  "description": "Double Sharp settings.",
+  "type": "object",
+  "properties": {
+    "execution": {
+      "title": "Execution",
+      "type": "object",
+      "properties": {
+        "cache": {
+          "title": "Execution Cache",
+          "type": "boolean",
+          "description": "Skip execution if the variables assigned in the cells (and also the imported modules) already exist in the kernel.\nThis option can be overridden with 'Execution Cache' config in '## Cell Inspector' panel or '##%cache' client-side magic command.\nThis behavior can be disabled by checking 'Disable Execution Cache'.",
+          "default": true
+        },
+        "autoDependency": {
+          "title": "Auto Dependency",
+          "type": "boolean",
+          "description": "Execute dependency cells if unresolved variables or modules of the cell are assigned in the cells above.\nThis option can be overridden with 'Auto Dependency' config in '## Cell Inspector' panel.\nThis behavior can be disabled by checking 'Disable Auto Dependency'.",
+          "default": true
+        },
+        "ignoreCacheSelected": {
+          "title": "Ignore Cache for Selected Cells",
+          "type": "boolean",
+          "description": "Ignore cache when executing selected cells, regardless of cache configuration.",
+          "default": true
+        },
+        "disableCache": {
+          "title": "Disable Execution Cache",
+          "type": "boolean",
+          "description": "Disable the cache feature completely, including 'Execution Cache' config and '##%cache' client-side magic command.",
+          "default": false
+        },
+        "disableAutoDependency": {
+          "title": "Disable Auto Dependency",
+          "type": "boolean",
+          "description": "Disable the auto dependency feature completely, including 'Auto Dependency' config.",
+          "default": false
+        },
+        "disableSkip": {
+          "title": "Disable Cell Execution Skip",
+          "type": "boolean",
+          "description": "Disable the skip feature completely, including 'Skip' config and '##%skip' client-side magic command.",
+          "default": false
+        }
+      },
+      "default": {
+        "cache": true,
+        "autoDependency": true,
+        "ignoreCacheSelected": true,
+        "disableCache": false,
+        "disableAutoDependency": false,
+        "disableSkip": false
+      },
+      "additionalProperties": false
+    },
+    "editor": {
+      "title": "Editor",
+      "type": "object",
+      "properties": {
+        "highlight": {
+          "title": "Highlight ## lines",
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "default": {
+        "highlight": true
+      },
+      "additionalProperties": false
+    },
+    "enableCSMagic": {
+      "title": "Enable Client-side Magic Command",
+      "type": "boolean",
+      "default": true
+    },
+    "verbose": {
+      "title": "Verbose (for debug)",
+      "type": "object",
+      "properties": {
+        "log": {
+          "title": "Log",
+          "type": "boolean",
+          "default": false
+        },
+        "metadata": {
+          "title": "Metadata",
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "default": {
+        "log": false,
+        "metadata": false
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

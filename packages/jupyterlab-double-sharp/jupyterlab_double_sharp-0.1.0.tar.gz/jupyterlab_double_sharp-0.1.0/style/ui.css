@@ -1,0 +1,123 @@
+/* Accordion */
+
+.jp-DoubleSharp-Accordion-trigger {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: var(--jp-input-background);
+  color: var(--jp-ui-font-color2);
+  border-bottom: 1px solid var(--jp-border-color2);
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.jp-DoubleSharp-Accordion-trigger-inner {
+  cursor: pointer;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.jp-DoubleSharp-Accordion-trigger.jp-mod-active {
+  background-color: var(--jp-layout-color2);
+  color: var(--jp-ui-font-color1);
+}
+
+.jp-DoubleSharp-Accordion-trigger:hover {
+  background-color: var(--jp-toolbar-active-background);
+}
+
+.jp-DoubleSharp-Accordion-trigger-chevron {
+  margin-left: 4px;
+  vertical-align: middle;
+  color: var(--jp-ui-font-color2);
+  transition: transform 0.2s ease-out;
+}
+
+.jp-DoubleSharp-Accordion-trigger.jp-mod-active
+  .jp-DoubleSharp-Accordion-trigger-chevron {
+  transform: rotate(90deg);
+}
+
+.jp-DoubleSharp-Accordion-content {
+  padding: 8px;
+}
+
+/* Collapsible */
+
+.jp-DoubleSharp-Collapsible {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Toolbar */
+
+.jp-DoubleSharp-Toolbar {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  background-color: transparent;
+}
+
+.jp-DoubleSharp-Toolbar-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+}
+
+.jp-DoubleSharp-Toolbar-button:hover {
+  background-color: var(--jp-layout-color2);
+}
+
+/* Group */
+
+.jp-DoubleSharp-Group {
+  margin: 0 0 16px;
+  padding: 0 0 6px 6px;
+  border-left: 6px solid var(--jp-border-color3);
+}
+
+.jp-DoubleSharp-Group-title {
+  color: var(--jp-ui-font-color2);
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-left: -12px;
+}
+
+.jp-DoubleSharp-Group-title::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 16px;
+  margin-right: 4px;
+  vertical-align: top;
+  background-color: var(--jp-border-color1);
+}
+
+/* Inline Block */
+
+.jp-DoubleSharp-InlineBlock {
+  display: inline;
+  color: var(--jp-inline-color);
+  background-color: var(--jp-inline-bg-color);
+  border: 1px solid var(--jp-inline-border-color);
+  border-radius: 4px;
+  padding: 1px 3px;
+}
+
+/* Icon */
+
+.jp-DoubleSharp-icon-inline {
+  display: flex;
+  margin-right: 4px;
+}
+
+.jp-DoubleSharp-icon-inline > svg {
+  height: 16px;
+  width: auto;
+}
