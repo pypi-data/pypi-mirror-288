@@ -1,0 +1,10 @@
+skinpy-0.0.4.dist-info/METADATA,sha256=Q8WR_-CrPnJQ8SsAYVPjYvy1eZUhwOuIokNYSKqcf00,4606
+skinpy-0.0.4.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+skinpy-0.0.4.dist-info/entry_points.txt,sha256=EZuxxYylv9tChJcQR4klf90mc9kRF9xWOg_fBZ0aeD0,48
+skinpy/__init__.py,sha256=e8pf6Z_9DVwCzR7sCHFC1Vu4X6bQXf1VLLONCumBBYo,813
+skinpy/__main__.py,sha256=4aSiG3zKH7jyIRKZvC7kS8yHiN9-k7vrpDS3-0gWv9E,1625
+skinpy/exception.py,sha256=H8s2VqM61WN1CetFuzzZqRqBJxluaQIm8DmBobaxglc,379
+skinpy/render.py,sha256=vis2kcjRNeQ7J6nYdYu37j_ipyLpsRS5XHYvKRO0bNo,5597
+skinpy/skin.py,sha256=JD4Hyvf4_pINZwZCu67Yt_O5_IQxCVpHPYHfwc10qZk,17061
+skinpy/types.py,sha256=xhuOisn7gR26HxAWc8SJ8xckJeWeURiSUkCu3XF0RxY,820
+skinpy-0.0.4.dist-info/RECORD,,
