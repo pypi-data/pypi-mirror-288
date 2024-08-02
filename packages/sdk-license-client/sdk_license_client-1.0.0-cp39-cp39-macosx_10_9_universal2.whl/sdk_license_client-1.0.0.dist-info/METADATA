@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: sdk_license_client
+Version: 1.0.0
+Summary: license client
+Home-page: https://github.com/al6nlee/sdk_license_client
+Author: alan
+Author-email: al6nlee@gmail.com
+License: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## ������������
+> CS���������������license������������������
