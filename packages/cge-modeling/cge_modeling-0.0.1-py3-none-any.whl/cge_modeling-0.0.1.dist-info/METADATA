@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: cge_modeling
+Version: 0.0.1
+Summary: A package for working with computable general equilibrium (CGE) models
+Home-page: https://github.com/jessegrabowski/cge_modeling
+Author: Jesse Grabowski
+Author-email: jessegrabowski@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: sympy <1.13
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: joblib
+Requires-Dist: pytensor
+Requires-Dist: latextable
+Requires-Dist: texttable
+Requires-Dist: sympytensor
+Requires-Dist: xarray
+Requires-Dist: arviz
+Requires-Dist: fastprogress
+Requires-Dist: numba-progress
+Requires-Dist: matplotlib
+
+# cge_modeling
+A package for working with CGE models in Python
