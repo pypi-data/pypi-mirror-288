@@ -1,0 +1,2 @@
+[console_scripts]
+gen_fake_term = gen_fake_term.main:main
