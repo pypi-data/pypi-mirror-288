@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: marearts-anpr
+Version: 0.1.5
+Summary: MareArts ANPR (Automatic Number Plate Recognition) library
+Home-page: https://www.marearts.com
+Author: MareArts
+Author-email: MareArts <hello@marearts.com>
+Project-URL: Homepage, https://github.com/marearts/marearts-anpr
+Project-URL: Bug Tracker, https://github.com/yourusername/marearts-anpr/issues
+Keywords: anpr,license plate recognition,computer vision
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: ==3.11.*
+Description-Content-Type: text/markdown
+Requires-Dist: numpy >=2.0.1
+Requires-Dist: opencv-python >=4.10.0.84
+Requires-Dist: requests >=2.32.3
+Requires-Dist: imageio >=2.34.2
+Requires-Dist: pillow >=10.4.0
+Requires-Dist: onnxruntime >=1.18.1
+Requires-Dist: PyYAML >=6.0.1
+Requires-Dist: dotmap >=1.3.30
+Requires-Dist: marearts-crystal
+Requires-Dist: tqdm >=4.66.4
+
+# marearts-anpr
