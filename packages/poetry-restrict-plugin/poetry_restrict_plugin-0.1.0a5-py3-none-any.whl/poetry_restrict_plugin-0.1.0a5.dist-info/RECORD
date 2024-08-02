@@ -1,0 +1,6 @@
+poetry_restrict_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_restrict_plugin/plugin.py,sha256=h_R65Gquywv5sPvqoESu03X4mI97Pp_wB8kuIp8y-YU,6416
+poetry_restrict_plugin-0.1.0a5.dist-info/METADATA,sha256=BRkW1U1bdyzIZ8gDJpp7EbH6I4o1IZW5nKqHUtiEaVY,2801
+poetry_restrict_plugin-0.1.0a5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+poetry_restrict_plugin-0.1.0a5.dist-info/entry_points.txt,sha256=vjMcXeLVG4_Mn_XaLHze3iPye_X_H4MzPjRNUCPaWS4,71
+poetry_restrict_plugin-0.1.0a5.dist-info/RECORD,,
