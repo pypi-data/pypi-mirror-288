@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atlas_rucio_policy_package"
+version = "0.0.2"
+authors = [
+    { name="ATLAS ADC DDM", email="atlas-adc-ddm@cern.ch" },
+]
+description = "Rucio policy package for the ATLAS experiment"
+requires-python = ">=3.9"
+classifiers = [
+   "Programming Language :: Python :: 3",
+   "Operating System :: OS Independent",
+]
