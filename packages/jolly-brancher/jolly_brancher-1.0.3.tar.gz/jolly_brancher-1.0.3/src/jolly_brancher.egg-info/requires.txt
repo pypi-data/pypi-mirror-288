@@ -1,0 +1,8 @@
+argparse==1.4.0
+prompt-toolkit==3.0.47
+pygithub==2.3.0
+
+[testing]
+setuptools
+pytest
+pytest-cov
