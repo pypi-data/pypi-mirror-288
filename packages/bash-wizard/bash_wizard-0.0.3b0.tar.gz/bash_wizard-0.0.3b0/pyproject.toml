@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bash_wizard"
+dynamic = ["version"]
+description = "An AI powered wizard to bash commands"
+readme = "README.md"
+license = {file = "LICENSE"}
+maintainers = [{name = "Alexandre Prates", email = "ajfprates@gmail.com"}]
+requires-python = ">=3.10"
+dependencies = [
+    "ollama>=0.3.0",
+    "bashcolor>=1.1.1"
+]
+keywords = ["bash", "helper", "script", "ai", "llama"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Source = "https://github.com/alexandreprates/bash_wizard"
+
+[project.scripts]
+bash_wizard = "bash_wizard:run"
+
+[tool.setuptools_scm]

@@ -1,0 +1,2 @@
+ollama==0.3.0
+bashcolor==1.1.1
