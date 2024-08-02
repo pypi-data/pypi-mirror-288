@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: what2
+Version: 0.3.3
+Summary: 
+Author: Marc Edwards
+Author-email: marc@mlwhat.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: invoke (>=2.2.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# What2
+
+A collection of my random dev tools and scripts.
+
