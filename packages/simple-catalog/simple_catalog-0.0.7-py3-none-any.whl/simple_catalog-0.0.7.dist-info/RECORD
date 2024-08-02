@@ -1,0 +1,12 @@
+simple_catalog/__init__.py,sha256=1kJLw6ZcbeEArGfIbJ_LorYpat5XSNdQ-9NFBVF92wY,72
+simple_catalog/__main__.py,sha256=xUhIuxdDrwgYiyj-Zo8MaeYpfWQdaEkUyk469sy-yEg,3036
+simple_catalog/client.py,sha256=HFAvCYkB8V0zo28jQkUNEGT3uYjZtPcbvvUdATr47VM,5802
+simple_catalog/database.py,sha256=PNkxrGy3ZvyUpZeZnBow-EW4kBTqxxQE2689qV2xBt0,871
+simple_catalog/extractor.py,sha256=Uq4AkNRCcce0I8Mih6j1XzhCa0sPY_SdRBbpt0w62dc,1526
+simple_catalog/hash.py,sha256=BVUKEtVwIzp-9CHjthz9_nO_khU8wdfWQqyA3vdE7xI,927
+simple_catalog-0.0.7.dist-info/LICENSE,sha256=wkFxBmf6NvSNK1oLu4JhhffKAOK6_be5hEEIpukddHA,1068
+simple_catalog-0.0.7.dist-info/METADATA,sha256=-6F-I676B5Ih0tRtw8hWDczT5fXfy0vo7izMUhFxOGA,2049
+simple_catalog-0.0.7.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+simple_catalog-0.0.7.dist-info/entry_points.txt,sha256=QoFPqQ5HvFXOsSgiyiehJ7moKKHsrDjKKremycv4zck,68
+simple_catalog-0.0.7.dist-info/top_level.txt,sha256=qyj4ffXH9zNmAsagfvgHpxiPoY9aXNPfvh1g9Y6TbI4,15
+simple_catalog-0.0.7.dist-info/RECORD,,
