@@ -1,0 +1,10 @@
+tifffile
+numpy
+opencv-python
+matplotlib
+scikit-image
+scipy
+shapely
+tqdm
+picassosr
+glob2
