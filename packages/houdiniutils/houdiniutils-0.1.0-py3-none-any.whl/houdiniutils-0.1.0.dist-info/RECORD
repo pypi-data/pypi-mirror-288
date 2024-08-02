@@ -1,0 +1,11 @@
+houdiniutils/README.md,sha256=tlizg9ky4pHdHb9AWSTo9xGkZHTWOqlvP_n4kPBlysU,2988
+houdiniutils/__init__.py,sha256=M0Pevvh7sN6INdWr7jLkubeCowNRjYTUNqGc9TKAt3k,100
+houdiniutils/textureTools/__init__.py,sha256=0pMaUSl6AwOwU2iEvtJ761mtdvA7YeKz8mmNrSzBvLE,146
+houdiniutils/textureTools/main.py,sha256=-6rAsohgAChYWfBnWFzceGxNz_u7oAR8HG8j_6BlS40,876
+houdiniutils/textureTools/renameTexture.py,sha256=103rvtyZNyItLlcFMxS7Tb8wg4_p_jPoSoqNDezIN7k,5626
+houdiniutils/textureTools/tex_id_manager.py,sha256=JOLZbfG_XUn_LnKhxOY9yXC6eU6BwmPKuGMJjvQGCR4,3149
+houdiniutils/textureTools/textureID.json,sha256=cKEm8d1lRci6Em0dfCf3SDmnyYO2cioknzjPoff7830,1018
+houdiniutils-0.1.0.dist-info/LICENSE,sha256=jbT3d-xrlLvC96t-a6tLbInAaNj_xcBCFSRp-0Z4kz4,1069
+houdiniutils-0.1.0.dist-info/METADATA,sha256=5G3x_k_MyWywak_AaMOBVTDh-yjTymPa2UuFfJuL-X0,3314
+houdiniutils-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+houdiniutils-0.1.0.dist-info/RECORD,,
