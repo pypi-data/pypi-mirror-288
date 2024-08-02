@@ -1,0 +1,9 @@
+README.md
+setup.py
+logscribe/__init__.py
+logscribe/logscribe.py
+logscribe.egg-info/PKG-INFO
+logscribe.egg-info/SOURCES.txt
+logscribe.egg-info/dependency_links.txt
+logscribe.egg-info/requires.txt
+logscribe.egg-info/top_level.txt
