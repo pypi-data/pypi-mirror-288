@@ -1,0 +1,8 @@
+numpy
+scipy
+pandas
+batman-package
+dynesty
+astropy
+rmfit
+tqdm
