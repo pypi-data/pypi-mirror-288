@@ -1,0 +1,10 @@
+basefunctions>=0.4.1
+requests>=2.31
+pandas>=2.1
+secretfunctions>=0.0.2
+stockstats>=0.6.2
+
+[dev]
+
+[test]
+pytest>=7.4
