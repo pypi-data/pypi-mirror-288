@@ -1,0 +1,15 @@
+LICENSE
+README.md
+README.srt
+setup.cfg
+setup.py
+./baeshade/__init__.py
+./baeshade/baeshade.py
+./baeshade/baeshadeapp.py
+./baeshade/baeshademath.py
+./baeshade/baeshadeutil.py
+baeshade.egg-info/PKG-INFO
+baeshade.egg-info/SOURCES.txt
+baeshade.egg-info/dependency_links.txt
+baeshade.egg-info/not-zip-safe
+baeshade.egg-info/top_level.txt

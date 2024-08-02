@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: baeshade
+Version: 0.0.1
+Summary: draw something in your terminal
+Author: baesky
+License: MIT
+Requires-Python: >=3.8
+License-File: LICENSE
+
+Draw something in your terminal
+more detail please check project repo: https://github.com/baesky/TerminalCanvas
