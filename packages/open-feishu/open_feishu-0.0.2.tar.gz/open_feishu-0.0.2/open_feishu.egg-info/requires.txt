@@ -1,0 +1,7 @@
+attrs
+chanfig
+lazy-imports
+pycryptodome
+pytz
+requests
+tzlocal
