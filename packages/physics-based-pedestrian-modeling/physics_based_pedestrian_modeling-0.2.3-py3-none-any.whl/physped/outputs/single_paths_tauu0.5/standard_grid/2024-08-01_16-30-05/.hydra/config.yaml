@@ -1,0 +1,303 @@
+params:
+  grid:
+    name: standard_grid
+    dimensions:
+    - x
+    - 'y'
+    - r
+    - theta
+    - k
+    spatial_cell_size: 0.2
+    x:
+      step: ${params.grid.spatial_cell_size}
+      min: -1
+      max: 1
+    'y':
+      step: ${params.grid.spatial_cell_size}
+      min: -0.6
+      max: 0.6
+    r:
+      list:
+      - 0
+      - 0.5
+      - 1
+      - 1.5
+      - 2
+      - 2.5
+      - 3
+    theta:
+      min_multiple_pi: -1.125
+      min: ${parse_pi:${params.grid.theta.min_multiple_pi}}
+      segments: 8
+    bins:
+      x: ${generate_linear_bins:${params.grid.x.min},${params.grid.x.max},${params.grid.x.step}}
+      'y': ${generate_linear_bins:${params.grid.y.min},${params.grid.y.max},${params.grid.y.step}}
+      r: ${cast_numpy_array:${params.grid.r.list}}
+      theta: ${generate_angular_bins:${params.grid.theta.min},${params.grid.theta.segments}}
+      k: ${cast_numpy_array:[0,1,100000000000]}
+  model:
+    dt: ${inv_prop:${params.fps}}
+    sigma: 0.9
+    slow_positions_algorithm: low_pass_filter
+    slow_velocities_algorithm: low_pass_filter
+    tauu: 0.5
+    taux: ${params.model.tauu}
+    minimum_fitting_threshold: 20
+  simulation:
+    ntrajs: 1000
+    start: 0
+    end: 3
+    step: ${inv_prop:${params.fps}}
+    sample_origins_from: trajectories
+    sample_state: 0
+  selection:
+    point:
+      x: 0.2
+      'y': -0.15
+      r: 1.1
+      theta: 3.2
+      k: 1.2
+      theta_periodic: ???
+      x_index: ???
+      y_index: ???
+      r_index: ???
+      theta_index: ???
+      k_index: ???
+      x_bounds: ???
+      y_bounds: ???
+      r_bounds: ???
+      theta_bounds: ???
+      k_bounds: ???
+    range:
+      x:
+      - -0.5
+      - -0.5
+      'y':
+      - 0.1
+      - 0.1
+      r:
+      - 0.9
+      - 0.9
+      theta:
+      - 0
+      - 0
+      k:
+      - 1.2
+      - 1.3
+      theta_periodic: ???
+      x_indices: ???
+      y_indices: ???
+      r_indices: ???
+      theta_indices: ???
+      k_indices: ???
+      x_bounds: ???
+      y_bounds: ???
+      r_bounds: ???
+      theta_bounds: ???
+      k_bounds: ???
+  trajectory_plot:
+    save_figure: true
+    figsize:
+    - 3.54
+    - 2.36
+    plot_title: true
+    y_title: 0.85
+    width_ratios:
+    - 2
+    - 1
+    xlims: ${params.default_xlims}
+    ylims: ${params.default_ylims}
+    N_trajs: 20
+    plot_cartesian_grid: true
+    plot_selection: false
+    plot_potential_cross_section: false
+    plot_walls: true
+    plot_intended_path: true
+    show_background: false
+    velocity_grid: polar
+    plot_polar_grid: true
+    grid_type: potential
+    truncate_trajectories: false
+    truncated_trajectory_length: 300
+    trajectory_alpha: 1
+    yticks:
+      custom: false
+    text_box:
+      show: true
+      x: 0.86
+      'y': 0.23
+    axis_labels:
+      polar:
+        x: $u\, [\mathrm{m\,s}^{-1}]$
+        'y': $v\, [\mathrm{m\,s}^{-1}]$
+    title: paths in a narrow corridor
+    yps:
+    - 0
+    ywalls:
+    - 0.6
+    - -0.6
+    customyticklabels:
+    - -0.6
+    - 0
+    - 0.6
+  histogram_plot:
+    xflims: ${params.default_xlims}
+    yflims: ${params.default_ylims}
+    uflims:
+    - -2
+    - 2
+    vflims:
+    - -2
+    - 2
+    rflims:
+    - 0
+    - 2
+    observables:
+    - xf
+    - yf
+    - uf
+    - vf
+    thetaflims:
+    - -3.1415
+    - 3.1415
+    subplot_grid:
+    - 1
+    - 4
+    recorded:
+      edgecolor: '#77AADD'
+      facecolor: '#77AADD'
+      marker: o
+      markersize: 8
+      label: Recordings
+    simulated:
+      edgecolor: k
+      facecolor: None
+      marker: o
+      markersize: 4
+      label: Simulations
+    xf:
+      xlabel: $x\;$[m]
+      ylabel:
+        counts: Count($x$)
+        PDF: $\mathbb{P}(x)$
+    yf:
+      xlabel: $y\;$[m]
+      ylabel:
+        counts: Count($y$)
+        PDF: $\mathbb{P}(y)$
+    uf:
+      xlabel: $u\;$[m/s]
+      ylabel:
+        counts: Count($u$)
+        PDF: $\mathbb{P}(u)$
+    vf:
+      xlabel: $v\;$[m/s]
+      ylabel:
+        counts: Count($v$)
+        PDF: $\mathbb{P}(v)$
+    rf:
+      xlabel: $r\;$[m/s]
+      ylabel:
+        counts: Count($r$)
+        PDF: $\mathbb{P}(r)$
+    thetaf:
+      xlabel: $\theta\;$[degrees]
+      ylabel:
+        counts: Count($\theta_f$)
+        PDF: $\mathbb{P}(\theta)$
+  force_field_plot:
+    figsize:
+    - 3.54
+    - 2
+    xlims: ${params.default_xlims}
+    ylims: ${params.default_ylims}
+    clip: 0
+    scale: 50
+    sparseness: 1
+    width_ratios:
+    - 2
+    - 1
+  grid_plot:
+    xlims: ${params.default_xlims}
+    ylims: ${params.default_ylims}
+    title:
+      figure: Discretization of the slow variables
+      position: Positions $(\vec{x} \mid \vec{x}_s,\, \vec{u}_s)$
+      velocity: Velocities $(\vec{u} \mid \vec{x}_s,\, \vec{u}_s)$
+    position:
+      xlabel: $x$ [m]
+      ylabel: $y$ [m]
+    highlight_selection: true
+    plot_trajs: true
+    N_trajs: 20
+    alpha: 0.5
+    subplot_width_ratio:
+    - 2
+    - 1
+    customyticklabels:
+    - -0.6
+    - 0
+    - 0.6
+  learn_piece_of_potential_plot:
+    xlimits:
+      x:
+      - -1.0
+      - 1.0
+      'y':
+      - -0.5
+      - 0.5
+      u:
+      - -1.5
+      - 1.5
+      v:
+      - -1.0
+      - 1.0
+    xlabel:
+      x: $(x \, |\, \vec{x}_s, \vec{u}_s)\, [\mathrm{m}]$
+      'y': $(y \, |\, \vec{x}_s, \vec{u}_s)\, [\mathrm{m}]$
+      u: $(u \, |\, \vec{x}_s, \vec{u}_s) \, [\mathrm{m\,s}^{-1}]$
+      v: $(v \, |\, \vec{x}_s, \vec{u}_s) \, [\mathrm{m\,s}^{-1}]$
+    ylabel:
+      x: $\mathbb{P}(x \, |\, \vec{x}_s, \vec{u}_s)$
+      'y': $\mathbb{P}(y \, |\, \vec{x}_s, \vec{u}_s)$
+      u: $\mathbb{P}(u \, |\, \vec{x}_s, \vec{u}_s)$
+      v: $\mathbb{P}(v \, |\, \vec{x}_s, \vec{u}_s)$
+  env_name: single_paths
+  data_source: 4tu
+  fps: 15
+  minimum_trajectory_length: 10
+  velocity_window_length: 10
+  input_ntrajs: ???
+  colnames:
+    xf: X_SG
+    yf: Y_SG
+    Pid: Pid
+    time: Rstep
+  plot_style: physped/conf/science.mplstyle
+  default_xlims:
+  - -1.1
+  - 1.1
+  default_ylims:
+  - -0.7
+  - 0.7
+read:
+  preprocessed_trajectories: false
+  piecewise_potential: false
+  simulated_trajectories: false
+save:
+  preprocessed_trajectories: false
+  piecewise_potential: false
+  simulated_trajectories: false
+filename:
+  preprocessed_trajectories: preprocessed_trajectories_with_tau${params.model.taux}.csv
+  piecewise_potential: piecewise_potential_with_${params.grid.name}.pickle
+  simulated_trajectories: simulated_trajectories_with_sigma${params.model.sigma}.csv
+plot:
+  preprocessed_trajectories: true
+  simulated_trajectories: true
+  histograms: true
+  grid: true
+  potential_at_selection: true
+root_dir: ${get_root_dir:}
+trajectory_data_dir: ${root_dir}/data/trajectories
+parameter_combinations: sigma${params.model.sigma}_${params.grid.name}
