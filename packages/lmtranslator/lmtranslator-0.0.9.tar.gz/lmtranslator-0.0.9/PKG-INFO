@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: lmtranslator
+Version: 0.0.9
+Summary: Translates text
+Home-page: https://github.com/tools4eu/translator
+Author: tools4eu
+Author-email: openeuro@proton.me
+Project-URL: Bug Tracker, https://github.com/tools4eu/translator/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: transformers
+Requires-Dist: processors
+Requires-Dist: textlangid
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: pandas
+Requires-Dist: datasets
+Requires-Dist: openpyxl
+Requires-Dist: pyarrow
+Requires-Dist: tqdm
+
+# Translator
+
+This repo contains wrapper code for the most performant translation model.
+
+Currently NLLB.
+
+## Features
+
+- Only translates unique sentences
+- Checks if input is not empty
+- Preprocesses sentences before translation
+- Postprocesses translations
+- Batch processing
+- Automatic language detection
+- Only translates sentences where the source language does not match the target language
