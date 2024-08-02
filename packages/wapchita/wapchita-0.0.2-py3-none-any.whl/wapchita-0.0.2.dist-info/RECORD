@@ -1,0 +1,16 @@
+wapchita/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wapchita/client.py,sha256=TaL6Scj0HHkXB35D292qtHyG9yBMgg8K6LWhnOax5-4,2799
+wapchita/headers.py,sha256=xe6CbEzMWtLvT8stBJAOIgI0DUMvSltXYrJbGfzehwk,208
+wapchita/request.py,sha256=3e2ODl1n2tRdM37n7Z8VPNqAqZ654FF8acNMdiE74n8,3471
+wapchita/url.py,sha256=1CmehYDPA0-fAV9tytlb8kWNBSS1d1EXfQLpEWV1WZ4,1056
+wapchita/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wapchita/models/chats.py,sha256=ntTfWrueht-F8WQddLBcolvH2ZkviOY06ZnrH_CbH_c,4826
+wapchita/models/device.py,sha256=2-KmRfQYkjZudhqYfOo26jlTZ_OvfyQWKwTnW_zcUKk,652
+wapchita/models/types.py,sha256=2no7AS8zaqZk_mzbLxP_27sI71q8NugkT_hG_iDRagc,162
+wapchita/models/user.py,sha256=nOgqq0M7MzXqmsXGeVLLi41g7YM2hB0NhSCieIuYmHI,675
+wapchita/models/webhook.py,sha256=NdK6k-vw9BoyHyOi9HqyuJzPO64J3TcL4IvWCG-X-mM,3910
+wapchita-0.0.2.dist-info/LICENSE,sha256=iHcNH4HWsDuIADzyzBbsJgrAaAUmUq5b7pJR39NzdRk,1075
+wapchita-0.0.2.dist-info/METADATA,sha256=kmYkqWsicWTUkjGK0uKTJvfL146n-0nm8K2VWNj0YEg,638
+wapchita-0.0.2.dist-info/WHEEL,sha256=Z4pYXqR_rTB7OWNDYFOm1qRk0RX6GFP2o8LgvP453Hk,91
+wapchita-0.0.2.dist-info/top_level.txt,sha256=ZNqizJ0yalPHNtDpDIwOez7hvG0Oy2rmKu1S7AdZqEk,9
+wapchita-0.0.2.dist-info/RECORD,,
