@@ -1,0 +1,9 @@
+subtitle_filter/__init__.py,sha256=uddKvrdf-RK18Y5ZoeDqyGdt4U-Z6-3aOxHvLbhFmls,52
+subtitle_filter/libs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+subtitle_filter/libs/subtitle.py,sha256=6eembNEV6GgrbjpFmFYYSDaE0-kM2e2qss4LFCNkRl8,12188
+subtitle_filter-1.5.0.data/scripts/filter-subtitles.py,sha256=0zDZBfKNCqadfmcUYwMsGMrqqdxyjphmRezi4lGeISM,2975
+subtitle_filter-1.5.0.dist-info/LICENSE,sha256=YpUxAdnDm7oDgNAllqEZi7wn2t61RPHRqZrhmqc_-gw,1061
+subtitle_filter-1.5.0.dist-info/METADATA,sha256=FYtJOOH5_GsGPNCPg4ktxVwDD_8WaGfncsmiXxGwUoc,3649
+subtitle_filter-1.5.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+subtitle_filter-1.5.0.dist-info/top_level.txt,sha256=jM_5ErvtWZ4W_5OpWbSI1XGTslyaM-nT37hTyq6zlB4,37
+subtitle_filter-1.5.0.dist-info/RECORD,,
