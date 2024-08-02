@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+PortScout/__init__.py
+PortScout/main.py
+PortScout.egg-info/PKG-INFO
+PortScout.egg-info/SOURCES.txt
+PortScout.egg-info/dependency_links.txt
+PortScout.egg-info/entry_points.txt
+PortScout.egg-info/requires.txt
+PortScout.egg-info/top_level.txt
