@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: zentra_api
+Version: 0.1.6
+Summary: A CLI tool for building FastAPI apps faster.
+Home-page: https://github.com/Achronus/zentra-api
+License: MIT
+Author: Ryan Partridge
+Author-email: rpartridge101@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Framework :: FastAPI
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Dist: bcrypt (>=4.2.0,<5.0.0)
+Requires-Dist: fastapi (>=0.111,<0.112)
+Requires-Dist: poetry (>=1.8.3,<2.0.0)
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Requires-Dist: sqlalchemy (>=2.0.31,<3.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: typer (>=0.12,<0.13)
+Project-URL: Repository, https://github.com/Achronus/zentra-api
+Project-URL: issues, https://github.com/Achronus/zentra-api/issues
+Description-Content-Type: text/markdown
+
+# Zentra API
+
+[![codecov](https://codecov.io/github/Achronus/zentra-api/graph/badge.svg?token=Y2G1RM4WFO)](https://codecov.io/github/Achronus/zentra-api)
+![Python Version](https://img.shields.io/pypi/pyversions/zentra-api)
+![License](https://img.shields.io/github/license/Achronus/zentra-api)
+![Issues](https://img.shields.io/github/issues/Achronus/zentra-api)
+![Last Commit](https://img.shields.io/github/last-commit/Achronus/zentra-api)
+
+
+🚧 _Under construction_ 🚧
+
+A CLI tool for building [FastAPI](https://fastapi.tiangolo.com/) projects faster.
+
+Read more about the Zentra stack on [GitHub](https://github.com/Achronus/zentra).
+
+To get started, install the package with:
+
+```bash
+pip install zentra_api
+```
+
+Then create a new project with:
+
+```bash
+zentra-api init <project_name>
+```
+
+With one command you'll have a working app in minutes with:
+
+- Built-in user authentication with JWT token protection
+- Preconfigured CORs middleware
+- A [SQLite](https://www.sqlite.org/) database configured with [Alembic](https://alembic.sqlalchemy.org/en/latest/) (_Alembic - coming soon!_)
+- Built-in templated route responses following best practices
+- And, a simple folder structure to make project navigation a breeze
+
+Read more about it in our [documentation](#) (_Coming soon!_).
+
