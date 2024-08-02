@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: opsys-temperature-logger
+Version: 0.0.2
+Summary: python package for temperature logging device control
+Home-page: https://bitbucket.org/opsys_tech/opsys-temperature-logger/src/master/
+Download-URL: https://bitbucket.org/opsys_tech/opsys-temperature-logger/src/master/
+Author: dmitry.borovensky
+Author-email: dmitry.borovensky@opsys-tech.com
+License-File: LICENSE

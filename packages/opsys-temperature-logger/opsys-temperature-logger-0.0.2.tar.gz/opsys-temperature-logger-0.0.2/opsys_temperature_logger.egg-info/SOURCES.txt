@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+opsys_temperature_logger/__init__.py
+opsys_temperature_logger/tc08usb.py
+opsys_temperature_logger/temperature_logger.py
+opsys_temperature_logger/temperature_logger_abstract.py
+opsys_temperature_logger/usbtc08.dll
+opsys_temperature_logger.egg-info/PKG-INFO
+opsys_temperature_logger.egg-info/SOURCES.txt
+opsys_temperature_logger.egg-info/dependency_links.txt
+opsys_temperature_logger.egg-info/not-zip-safe
+opsys_temperature_logger.egg-info/requires.txt
+opsys_temperature_logger.egg-info/top_level.txt
+test/test_temperature_logger.py
