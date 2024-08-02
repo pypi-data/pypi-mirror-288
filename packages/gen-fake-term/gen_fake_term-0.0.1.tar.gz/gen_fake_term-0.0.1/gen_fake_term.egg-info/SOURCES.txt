@@ -1,0 +1,8 @@
+README.md
+setup.py
+gen_fake_term.egg-info/PKG-INFO
+gen_fake_term.egg-info/SOURCES.txt
+gen_fake_term.egg-info/dependency_links.txt
+gen_fake_term.egg-info/entry_points.txt
+gen_fake_term.egg-info/requires.txt
+gen_fake_term.egg-info/top_level.txt
