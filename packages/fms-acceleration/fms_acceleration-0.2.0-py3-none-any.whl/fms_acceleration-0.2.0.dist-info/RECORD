@@ -1,0 +1,11 @@
+fms_acceleration/__init__.py,sha256=5fVqMrAXR_xeenKdwDlVASqrNe87kseyYzpZcJela8I,1069
+fms_acceleration/cli.py,sha256=ntEyjSq9lWI0nB-XADhqriaCzoscuRd9Z4sX_wJGRFc,7032
+fms_acceleration/constants.py,sha256=x8CELMP1dTBooB4UmqZPx2xPJrQbOBcMBrwKFgtkRqQ,927
+fms_acceleration/framework.py,sha256=XbvcB9Bn0lD0ikqYLpluZZtR6-MrIJ4kvGy1cQXif0o,9058
+fms_acceleration/framework_plugin.py,sha256=-JDy9zlbz8RdUpNsxvAnWlDaBGTBca3XtUY41kK9NxA,6046
+fms_acceleration/model_patcher.py,sha256=9Swh0Ukn-D0Gg4IEAGeX_xXnfxNi96inZKsBtu3OLSc,18615
+fms_acceleration/utils/__init__.py,sha256=Yx-8znSvBtoCeeR-rVAEWFdETuUZ7JHdC6eGme44lbk,700
+fms_acceleration/utils/test_utils.py,sha256=T57Uc3kH8oT5yyQxQqsRH8o-dBoEqejoWb6x6_aIiqY,6129
+fms_acceleration-0.2.0.dist-info/METADATA,sha256=qKlH7VwBFstOjJuZIQfjg2Ydh-ZgKXKpj8Lnc87VdUg,7079
+fms_acceleration-0.2.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+fms_acceleration-0.2.0.dist-info/RECORD,,
