@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "startfastapi"
+version = "0.1.2"
+description = "Managing FastAPI projects made easy."
+authors = ["hiyoung <hiyoungliu@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/hiyoung123/startfastapi"
+packages = [
+    { include = "startfastapi" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = ">=0.12.3"
+pydantic = ">=2.8.2"
+cookiecutter = ">=2.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+startfastapi = "startfastapi.main:app"
