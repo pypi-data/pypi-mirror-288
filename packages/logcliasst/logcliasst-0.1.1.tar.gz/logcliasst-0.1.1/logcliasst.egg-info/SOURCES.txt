@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+logcliasst/__init__.py
+logcliasst/logcliasst.py
+logcliasst.egg-info/PKG-INFO
+logcliasst.egg-info/SOURCES.txt
+logcliasst.egg-info/dependency_links.txt
+logcliasst.egg-info/top_level.txt
