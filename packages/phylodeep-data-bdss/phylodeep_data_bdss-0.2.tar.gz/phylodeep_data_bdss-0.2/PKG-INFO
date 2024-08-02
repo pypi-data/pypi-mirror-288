@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: phylodeep_data_bdss
+Version: 0.2
+Summary: Data needed for CI computation with Birth-Death model with superspreading (BDSS) in [PhyloDeep](https://github.com/evolbioinfo/phylodeep).
+Home-page: https://github.com/evolbioinfo/phylodeep_data_bdss
+Author: Jakub Voznica
+Author-email: jakub.voznica@pasteur.fr
+Maintainer: Anna Zhukova
+Maintainer-email: anna.zhukova@pasteur.fr
+Keywords: phylodeep,confidence intervals,birth-death with superspreading
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>=1.0.0
+
+# PhyloDeep Data BDSS
+
+This package contains data needed for CI computation with Birth-Death model with superspreading (BDSS)  
+ in [PhyloDeep](https://github.com/evolbioinfo/phylodeep).
