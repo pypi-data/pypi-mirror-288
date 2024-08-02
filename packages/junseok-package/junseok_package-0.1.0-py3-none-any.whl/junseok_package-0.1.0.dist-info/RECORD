@@ -1,0 +1,8 @@
+mypackage/__init__.py,sha256=CWWRj_cxSnn2TshwXhiiN551WoF4jJ-0N_z6eQ9QbDM,157
+mypackage/mymodule.py,sha256=rPEujRTmdZ-EJv6eqN9SsrrjV9Wl4fo0E7VgzBKiU7E,73
+tests/__init__.py,sha256=ytTDGcOyCg4A17KdEgmQZOymHmBtHXW--4kK2hhZdIU,81
+tests/test_mymodule.py,sha256=_lIdVIgHi98GSzotCBaxPI_ckIP_pAmNSCWWYvYCe9A,269
+junseok_package-0.1.0.dist-info/METADATA,sha256=oGwMAiYBM2_uy6qu9JNq1TStD9Z_0ZgWQk1NeHkyNCQ,438
+junseok_package-0.1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+junseok_package-0.1.0.dist-info/top_level.txt,sha256=EPaQ7bohfbQYpXluIecATfHFlNVEU6p7LxDTpUYjEV8,16
+junseok_package-0.1.0.dist-info/RECORD,,
