@@ -1,0 +1,8 @@
+asyncio
+attrs
+chanfig>=0.0.102
+httpx
+lazy-imports
+pycryptodome
+pytz
+tzlocal
