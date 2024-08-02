@@ -1,0 +1,126 @@
+Metadata-Version: 2.1
+Name: plusminus
+Version: 0.8.0
+Summary: +/- plusminus is a module that builds on the pyparsing infixNotation helper method to build easy-to-code and easy-to-use parsers for parsing and evaluating infix arithmetic expressions. plusminus's ArithmeticParser class includes separate parse and evaluate methods, handling operator precedence, override with parentheses, presence or absence of whitespace, built-in functions, and pre-defined and user-defined variables, functions, and operators.
+Author-email: Paul McGuire <ptmcg+pm@gmail.com>
+Project-URL: Homepage, https://github.com/pyparsing/plusminus
+Project-URL: Issues, https://github.com/pyparsing/plusminus/issues
+Project-URL: Documentation, https://github.com/pyparsing/plusminus/tree/master/doc
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyparsing >=2.4.7
+
+# plusminus
+
+The **plusminus** package provides a ready-to-run arithmetic parser and evaluator, 
+based on [`pyparsing`](https://pyparsing-docs.readthedocs.io/en/latest/index.html)'s 
+[`infix_notation`](https://pyparsing-docs.readthedocs.io/en/latest/pyparsing.html#pyparsing.infixNotation) 
+helper method.
+
+Strings containing 6-function arithmetic expressions can be parsed and evaluated using the 
+[`ArithmeticParser`](https://github.com/pyparsing/plusminus/blob/master/doc/arithmetic_parser.md#the-core-basicarithmeticparser):
+
+```python
+from plusminus import BaseArithmeticParser
+
+parser = BaseArithmeticParser()
+print(parser.evaluate("2+3/10"))
+```
+
+The parser can also return an Abstract Syntax Tree of `ArithNode` objects:
+
+```python
+parsed_elements = parser.parse("2+3/10")
+```
+
+Arithmetic expressions are evaluated following standard rules for operator precedence, allowing for use of parentheses to override:
+
+    ()
+    |x|
+    ∩ & ∪ | - ^ ∆ (set operations)
+    **
+    -
+    * / // × ÷ mod
+    + -
+    < > <= >= == != ≠ ≤ ≥
+    in ∈ ∉ (element in/not in set)
+    not
+    and ∧
+    or ∨
+    ? : (ternary)
+
+Functions can be called:
+
+    abs    ceil   max
+    round  floor  str
+    trunc  min    bool
+
+
+The `BaseArithmeticParser` also supports assignment of variables:
+
+    r = 5
+    area = π × r²
+
+
+This last expression could be assigned using  `@=` formula assignment:
+
+    area @= π × r²
+
+
+As `r` is updated, evaluating `area` will be reevaluated using the new value.
+
+
+An `ArithmeticParser` class is also defined, with more extensive operators, 
+including:
+
+    !     - factorial  
+    °     - degree-radian conversion
+    √ ⁿ√  - square root and n'th root (2-9)
+    ⁻¹  ⁰  ¹  ²  ³ - common exponents as superscripts
+
+and additional pre-defined functions:
+
+    sin    asin  rad    gcd
+    cos    acos  deg    lcm
+    tan    atan  ln     rnd
+    sgn    sinh  log    randint
+    gamma  cosh  log2
+    hypot  tanh  log10
+
+This parser class can be used in applications using algebra or trigonometry
+expressions.
+
+Custom expressions can be defined using a simple
+[`API`](https://github.com/pyparsing/plusminus/blob/master/doc/developer_api.md).
+Example parsers are included for other specialized applications
+and domains:
+
+- dice rolling (`"3d6 + d20"`)
+- time delta expressions (`"today() + 2d + 12h"`)
+- retail and business expressions (`"20% off of 19.99"`)
+- combinatoric expressions (`"6C2"` or `"5P3"` )
+ 
+
+These parsers can be incorporated into other
+applications to support the safe evaluation of user-defined domain-specific
+expressions.

@@ -1,0 +1,15 @@
+plusminus/__init__.py,sha256=Z1oYARD-37aLtkITRzHoNme2J_paQGCfYJD4POMhQCQ,60
+plusminus/plusminus.py,sha256=PByBfC66pkbT_PoI2zwkOmaxdUhs2k_KC8QQKo9vXHo,53982
+plusminus/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plusminus/examples/bottle_repl.py,sha256=gS3oOgsjG-aZRfLcmbTv9uyfM3A0yLAqamGQcHGsW9o,22071
+plusminus/examples/business_arithmetic_parser.py,sha256=9znpEUUDAQWviLw2IhjnkOEM7IZILgZNoProQmvIorY,2567
+plusminus/examples/combinatorics_arithmetic_parser.py,sha256=-LaHKqRjpYa4DZkS8ePL_1UKMlL67eDnkh7YLkHzMlw,1513
+plusminus/examples/console_repl.py,sha256=FYQVR9kh71lY63_JurrABTep7sZOcLu9XcMco4oSlNs,2150
+plusminus/examples/date_time_arithmetic_parser.py,sha256=h2WZu1y4SFqNsXAVG0GTbN67lnm1iPfVfJsO09TXdzA,1922
+plusminus/examples/dice_roll_parser.py,sha256=Iy128ywwHN8TcWM_H9LQxVyHefhVAlpYNSvx4NfWnL8,1499
+plusminus/examples/plusminus_demo.py,sha256=geryPnmCuLLJsHCWFL-sAIdP4eC5NvjnfpLmLdAmvzU,931
+plusminus-0.8.0.dist-info/LICENSE,sha256=6nXuhbOddwUk3TdccyO-JcA82U21ocekmNoxqnhkNdQ,1069
+plusminus-0.8.0.dist-info/METADATA,sha256=EwLBXlxwZDgF0KbTMHZPBy_Ti3WtAiQCC1M2ZwKRtss,4424
+plusminus-0.8.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+plusminus-0.8.0.dist-info/top_level.txt,sha256=3xC8I3sirAwbvd99SI3ka46VK4IhcT-MWkfoixbhEtQ,10
+plusminus-0.8.0.dist-info/RECORD,,
