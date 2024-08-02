@@ -1,0 +1,7 @@
+setup.py
+Rescore/__init__.py
+Rescore/logger.py
+rescore999.egg-info/PKG-INFO
+rescore999.egg-info/SOURCES.txt
+rescore999.egg-info/dependency_links.txt
+rescore999.egg-info/top_level.txt
