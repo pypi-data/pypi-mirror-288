@@ -1,0 +1,16 @@
+asyncpg
+pydantic>=2.0.0
+
+[dev]
+asyncpg
+asyncpg-stubs
+mypy-extensions
+mypy
+pytest-asyncio
+pytest
+ruff
+
+[docs]
+myst-parser
+sphinx
+sphinx-rtd-theme
