@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: data-droid-sdk
+Version: 0.0.1
+Summary: Data Factory Library from Doctor Droid to fetch data from various sources
+Author: Mohit Goyal
+Author-email: mohit.goyal@drdroid.io
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: bcrypt (==4.2.0)
+Requires-Dist: boto3 (==1.34.148)
+Requires-Dist: botocore (==1.34.148)
+Requires-Dist: cffi (==1.16.0)
+Requires-Dist: Command (==0.1.0)
+Requires-Dist: cryptography (==43.0.0)
+Requires-Dist: exceptiongroup (==1.2.2)
+Requires-Dist: grpc-tools (==0.0.1)
+Requires-Dist: grpcio (==1.65.1)
+Requires-Dist: grpcio-tools (==1.65.1)
+Requires-Dist: iniconfig (==2.0.0)
+Requires-Dist: jmespath (==1.0.1)
+Requires-Dist: mypy-protobuf (==3.6.0)
+Requires-Dist: packaging (==24.1)
+Requires-Dist: paramiko (==3.4.0)
+Requires-Dist: pluggy (==1.5.0)
+Requires-Dist: protobuf (==5.27.2)
+Requires-Dist: psycopg2-binary (==2.9.9)
+Requires-Dist: pycparser (==2.22)
+Requires-Dist: PyNaCl (==1.5.0)
+Requires-Dist: pytest (==8.3.1)
+Requires-Dist: python-dateutil (==2.9.0.post0)
+Requires-Dist: pytz (==2024.1)
+Requires-Dist: s3transfer (==0.10.2)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: tomli (==2.0.1)
+Requires-Dist: types-protobuf (==5.27.0.20240626)
+Requires-Dist: urllib3 (==1.26.19)
+
