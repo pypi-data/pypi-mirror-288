@@ -1,0 +1,2 @@
+gnuhealth_stock==4.4.1
+gnuhealth_surgery==4.4.1
