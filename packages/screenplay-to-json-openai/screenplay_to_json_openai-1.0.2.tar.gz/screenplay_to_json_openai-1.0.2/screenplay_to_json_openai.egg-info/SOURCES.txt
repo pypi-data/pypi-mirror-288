@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+screenplay_pdf_to_json/__init__.py
+screenplay_pdf_to_json/screenplay_pdf_to_json.py
+screenplay_to_json_openai.egg-info/PKG-INFO
+screenplay_to_json_openai.egg-info/SOURCES.txt
+screenplay_to_json_openai.egg-info/dependency_links.txt
+screenplay_to_json_openai.egg-info/requires.txt
+screenplay_to_json_openai.egg-info/top_level.txt
