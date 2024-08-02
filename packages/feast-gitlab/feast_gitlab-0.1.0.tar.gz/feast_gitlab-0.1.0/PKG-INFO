@@ -1,0 +1,477 @@
+Metadata-Version: 2.1
+Name: feast-gitlab
+Version: 0.1.0
+Summary: Python SDK for Feast. Custom modifications by Gitlab DS team
+Home-page: https://gitlab.com/jeanpeguero/feast-gitlab
+Author: Gitlab DS team
+License: Apache
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click<9.0.0,>=7.0.0
+Requires-Dist: colorama<1,>=0.3.9
+Requires-Dist: dill~=0.3.0
+Requires-Dist: mypy-protobuf>=3.1
+Requires-Dist: Jinja2<4,>=2
+Requires-Dist: jsonschema
+Requires-Dist: mmh3
+Requires-Dist: numpy<2,>=1.22
+Requires-Dist: pandas<3,>=1.4.3
+Requires-Dist: protobuf<5.0.0,>=4.24.0
+Requires-Dist: pyarrow>=4
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: pygments<3,>=2.12.0
+Requires-Dist: PyYAML<7,>=5.4.0
+Requires-Dist: requests
+Requires-Dist: SQLAlchemy[mypy]>1
+Requires-Dist: tabulate<1,>=0.8.0
+Requires-Dist: tenacity<9,>=7
+Requires-Dist: toml<1,>=0.10.0
+Requires-Dist: tqdm<5,>=4
+Requires-Dist: typeguard>=4.0.0
+Requires-Dist: fastapi>=0.68.0
+Requires-Dist: uvicorn[standard]<1,>=0.14.0
+Requires-Dist: gunicorn; platform_system != "Windows"
+Requires-Dist: dask[dataframe]>=2024.2.1
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: virtualenv==20.23.0; extra == "dev"
+Requires-Dist: cryptography<43,>=35.0; extra == "dev"
+Requires-Dist: ruff>=0.3.3; extra == "dev"
+Requires-Dist: grpcio-testing<2,>=1.56.2; extra == "dev"
+Requires-Dist: httpx>=0.23.3; extra == "dev"
+Requires-Dist: minio==7.1.0; extra == "dev"
+Requires-Dist: mock==2.0.0; extra == "dev"
+Requires-Dist: moto<5; extra == "dev"
+Requires-Dist: mypy>=1.4.1; extra == "dev"
+Requires-Dist: urllib3<3,>=1.25.4; extra == "dev"
+Requires-Dist: psutil==5.9.0; extra == "dev"
+Requires-Dist: py>=1.11.0; extra == "dev"
+Requires-Dist: pytest<8,>=6.0.0; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-xdist; extra == "dev"
+Requires-Dist: pytest-benchmark<4,>=3.4.1; extra == "dev"
+Requires-Dist: pytest-lazy-fixture==0.6.3; extra == "dev"
+Requires-Dist: pytest-timeout==1.4.2; extra == "dev"
+Requires-Dist: pytest-ordering~=0.6.0; extra == "dev"
+Requires-Dist: pytest-mock==1.10.4; extra == "dev"
+Requires-Dist: pytest-env; extra == "dev"
+Requires-Dist: Sphinx<7,>4.0.0; extra == "dev"
+Requires-Dist: testcontainers==4.4.0; extra == "dev"
+Requires-Dist: pre-commit<3.3.2; extra == "dev"
+Requires-Dist: assertpy==1.1; extra == "dev"
+Requires-Dist: pip-tools; extra == "dev"
+Requires-Dist: pybindgen; extra == "dev"
+Requires-Dist: types-protobuf~=3.19.22; extra == "dev"
+Requires-Dist: types-python-dateutil; extra == "dev"
+Requires-Dist: types-pytz; extra == "dev"
+Requires-Dist: types-PyYAML; extra == "dev"
+Requires-Dist: types-redis; extra == "dev"
+Requires-Dist: types-requests<2.31.0; extra == "dev"
+Requires-Dist: types-setuptools; extra == "dev"
+Requires-Dist: types-tabulate; extra == "dev"
+Requires-Dist: virtualenv<20.24.2; extra == "dev"
+Requires-Dist: google-api-core<3,>=1.23.0; extra == "dev"
+Requires-Dist: googleapis-common-protos<2,>=1.52.0; extra == "dev"
+Requires-Dist: google-cloud-bigquery[pandas]<4,>=2; extra == "dev"
+Requires-Dist: google-cloud-bigquery-storage<3,>=2.0.0; extra == "dev"
+Requires-Dist: google-cloud-datastore<3,>=2.16.0; extra == "dev"
+Requires-Dist: google-cloud-storage<3,>=1.34.0; extra == "dev"
+Requires-Dist: google-cloud-bigtable<3,>=2.11.0; extra == "dev"
+Requires-Dist: fsspec<=2024.1.0; extra == "dev"
+Requires-Dist: redis<5,>=4.2.2; extra == "dev"
+Requires-Dist: hiredis<3,>=2.0.0; extra == "dev"
+Requires-Dist: boto3<2,>=1.17.0; extra == "dev"
+Requires-Dist: fsspec<=2024.1.0; extra == "dev"
+Requires-Dist: aiobotocore<3,>2; extra == "dev"
+Requires-Dist: kubernetes<=20.13.0; extra == "dev"
+Requires-Dist: snowflake-connector-python[pandas]<4,>=3.7; extra == "dev"
+Requires-Dist: pyspark<4,>=3.0.0; extra == "dev"
+Requires-Dist: psycopg[binary,pool]<4,>=3.0.0; extra == "dev"
+Requires-Dist: pymysql; extra == "dev"
+Requires-Dist: types-PyMySQL; extra == "dev"
+Requires-Dist: trino<0.400.0,>=0.305.0; extra == "dev"
+Requires-Dist: regex; extra == "dev"
+Requires-Dist: great_expectations>=0.15.41; extra == "dev"
+Requires-Dist: happybase<3,>=1.2.0; extra == "dev"
+Requires-Dist: cassandra-driver<4,>=3.24.0; extra == "dev"
+Requires-Dist: azure-storage-blob>=0.37.0; extra == "dev"
+Requires-Dist: azure-identity>=1.6.1; extra == "dev"
+Requires-Dist: SQLAlchemy>=1.4.19; extra == "dev"
+Requires-Dist: pyodbc>=4.0.30; extra == "dev"
+Requires-Dist: pymssql; extra == "dev"
+Requires-Dist: rockset>=1.0.3; extra == "dev"
+Requires-Dist: hazelcast-python-client>=5.1; extra == "dev"
+Requires-Dist: ibis-framework<10,>=9.0.0; extra == "dev"
+Requires-Dist: ibis-substrait>=4.0.0; extra == "dev"
+Requires-Dist: grpcio<2,>=1.56.2; extra == "dev"
+Requires-Dist: grpcio-tools<2,>=1.56.2; extra == "dev"
+Requires-Dist: grpcio-reflection<2,>=1.56.2; extra == "dev"
+Requires-Dist: grpcio-health-checking<2,>=1.56.2; extra == "dev"
+Requires-Dist: ibis-framework[duckdb]<10,>=9.0.0; extra == "dev"
+Requires-Dist: deltalake; extra == "dev"
+Requires-Dist: elasticsearch>=8.13.0; extra == "dev"
+Requires-Dist: sqlite-vec==v0.0.1-alpha.10; extra == "dev"
+Requires-Dist: singlestoredb; extra == "dev"
+Provides-Extra: ci
+Requires-Dist: build; extra == "ci"
+Requires-Dist: virtualenv==20.23.0; extra == "ci"
+Requires-Dist: cryptography<43,>=35.0; extra == "ci"
+Requires-Dist: ruff>=0.3.3; extra == "ci"
+Requires-Dist: grpcio-testing<2,>=1.56.2; extra == "ci"
+Requires-Dist: httpx>=0.23.3; extra == "ci"
+Requires-Dist: minio==7.1.0; extra == "ci"
+Requires-Dist: mock==2.0.0; extra == "ci"
+Requires-Dist: moto<5; extra == "ci"
+Requires-Dist: mypy>=1.4.1; extra == "ci"
+Requires-Dist: urllib3<3,>=1.25.4; extra == "ci"
+Requires-Dist: psutil==5.9.0; extra == "ci"
+Requires-Dist: py>=1.11.0; extra == "ci"
+Requires-Dist: pytest<8,>=6.0.0; extra == "ci"
+Requires-Dist: pytest-cov; extra == "ci"
+Requires-Dist: pytest-xdist; extra == "ci"
+Requires-Dist: pytest-benchmark<4,>=3.4.1; extra == "ci"
+Requires-Dist: pytest-lazy-fixture==0.6.3; extra == "ci"
+Requires-Dist: pytest-timeout==1.4.2; extra == "ci"
+Requires-Dist: pytest-ordering~=0.6.0; extra == "ci"
+Requires-Dist: pytest-mock==1.10.4; extra == "ci"
+Requires-Dist: pytest-env; extra == "ci"
+Requires-Dist: Sphinx<7,>4.0.0; extra == "ci"
+Requires-Dist: testcontainers==4.4.0; extra == "ci"
+Requires-Dist: pre-commit<3.3.2; extra == "ci"
+Requires-Dist: assertpy==1.1; extra == "ci"
+Requires-Dist: pip-tools; extra == "ci"
+Requires-Dist: pybindgen; extra == "ci"
+Requires-Dist: types-protobuf~=3.19.22; extra == "ci"
+Requires-Dist: types-python-dateutil; extra == "ci"
+Requires-Dist: types-pytz; extra == "ci"
+Requires-Dist: types-PyYAML; extra == "ci"
+Requires-Dist: types-redis; extra == "ci"
+Requires-Dist: types-requests<2.31.0; extra == "ci"
+Requires-Dist: types-setuptools; extra == "ci"
+Requires-Dist: types-tabulate; extra == "ci"
+Requires-Dist: virtualenv<20.24.2; extra == "ci"
+Requires-Dist: google-api-core<3,>=1.23.0; extra == "ci"
+Requires-Dist: googleapis-common-protos<2,>=1.52.0; extra == "ci"
+Requires-Dist: google-cloud-bigquery[pandas]<4,>=2; extra == "ci"
+Requires-Dist: google-cloud-bigquery-storage<3,>=2.0.0; extra == "ci"
+Requires-Dist: google-cloud-datastore<3,>=2.16.0; extra == "ci"
+Requires-Dist: google-cloud-storage<3,>=1.34.0; extra == "ci"
+Requires-Dist: google-cloud-bigtable<3,>=2.11.0; extra == "ci"
+Requires-Dist: fsspec<=2024.1.0; extra == "ci"
+Requires-Dist: redis<5,>=4.2.2; extra == "ci"
+Requires-Dist: hiredis<3,>=2.0.0; extra == "ci"
+Requires-Dist: boto3<2,>=1.17.0; extra == "ci"
+Requires-Dist: fsspec<=2024.1.0; extra == "ci"
+Requires-Dist: aiobotocore<3,>2; extra == "ci"
+Requires-Dist: kubernetes<=20.13.0; extra == "ci"
+Requires-Dist: snowflake-connector-python[pandas]<4,>=3.7; extra == "ci"
+Requires-Dist: pyspark<4,>=3.0.0; extra == "ci"
+Requires-Dist: psycopg[binary,pool]<4,>=3.0.0; extra == "ci"
+Requires-Dist: pymysql; extra == "ci"
+Requires-Dist: types-PyMySQL; extra == "ci"
+Requires-Dist: trino<0.400.0,>=0.305.0; extra == "ci"
+Requires-Dist: regex; extra == "ci"
+Requires-Dist: great_expectations>=0.15.41; extra == "ci"
+Requires-Dist: happybase<3,>=1.2.0; extra == "ci"
+Requires-Dist: cassandra-driver<4,>=3.24.0; extra == "ci"
+Requires-Dist: azure-storage-blob>=0.37.0; extra == "ci"
+Requires-Dist: azure-identity>=1.6.1; extra == "ci"
+Requires-Dist: SQLAlchemy>=1.4.19; extra == "ci"
+Requires-Dist: pyodbc>=4.0.30; extra == "ci"
+Requires-Dist: pymssql; extra == "ci"
+Requires-Dist: rockset>=1.0.3; extra == "ci"
+Requires-Dist: hazelcast-python-client>=5.1; extra == "ci"
+Requires-Dist: ibis-framework<10,>=9.0.0; extra == "ci"
+Requires-Dist: ibis-substrait>=4.0.0; extra == "ci"
+Requires-Dist: grpcio<2,>=1.56.2; extra == "ci"
+Requires-Dist: grpcio-tools<2,>=1.56.2; extra == "ci"
+Requires-Dist: grpcio-reflection<2,>=1.56.2; extra == "ci"
+Requires-Dist: grpcio-health-checking<2,>=1.56.2; extra == "ci"
+Requires-Dist: ibis-framework[duckdb]<10,>=9.0.0; extra == "ci"
+Requires-Dist: deltalake; extra == "ci"
+Requires-Dist: elasticsearch>=8.13.0; extra == "ci"
+Requires-Dist: sqlite-vec==v0.0.1-alpha.10; extra == "ci"
+Requires-Dist: singlestoredb; extra == "ci"
+Provides-Extra: gcp
+Requires-Dist: google-api-core<3,>=1.23.0; extra == "gcp"
+Requires-Dist: googleapis-common-protos<2,>=1.52.0; extra == "gcp"
+Requires-Dist: google-cloud-bigquery[pandas]<4,>=2; extra == "gcp"
+Requires-Dist: google-cloud-bigquery-storage<3,>=2.0.0; extra == "gcp"
+Requires-Dist: google-cloud-datastore<3,>=2.16.0; extra == "gcp"
+Requires-Dist: google-cloud-storage<3,>=1.34.0; extra == "gcp"
+Requires-Dist: google-cloud-bigtable<3,>=2.11.0; extra == "gcp"
+Requires-Dist: fsspec<=2024.1.0; extra == "gcp"
+Provides-Extra: aws
+Requires-Dist: boto3<2,>=1.17.0; extra == "aws"
+Requires-Dist: fsspec<=2024.1.0; extra == "aws"
+Requires-Dist: aiobotocore<3,>2; extra == "aws"
+Provides-Extra: k8s
+Requires-Dist: kubernetes<=20.13.0; extra == "k8s"
+Provides-Extra: redis
+Requires-Dist: redis<5,>=4.2.2; extra == "redis"
+Requires-Dist: hiredis<3,>=2.0.0; extra == "redis"
+Provides-Extra: snowflake
+Requires-Dist: snowflake-connector-python[pandas]<4,>=3.7; extra == "snowflake"
+Provides-Extra: spark
+Requires-Dist: pyspark<4,>=3.0.0; extra == "spark"
+Provides-Extra: trino
+Requires-Dist: trino<0.400.0,>=0.305.0; extra == "trino"
+Requires-Dist: regex; extra == "trino"
+Provides-Extra: postgres
+Requires-Dist: psycopg[binary,pool]<4,>=3.0.0; extra == "postgres"
+Provides-Extra: azure
+Requires-Dist: azure-storage-blob>=0.37.0; extra == "azure"
+Requires-Dist: azure-identity>=1.6.1; extra == "azure"
+Requires-Dist: SQLAlchemy>=1.4.19; extra == "azure"
+Requires-Dist: pyodbc>=4.0.30; extra == "azure"
+Requires-Dist: pymssql; extra == "azure"
+Provides-Extra: mysql
+Requires-Dist: pymysql; extra == "mysql"
+Requires-Dist: types-PyMySQL; extra == "mysql"
+Provides-Extra: mssql
+Requires-Dist: ibis-framework[mssql]<10,>=9.0.0; extra == "mssql"
+Provides-Extra: ge
+Requires-Dist: great_expectations>=0.15.41; extra == "ge"
+Provides-Extra: hbase
+Requires-Dist: happybase<3,>=1.2.0; extra == "hbase"
+Provides-Extra: docs
+Requires-Dist: build; extra == "docs"
+Requires-Dist: virtualenv==20.23.0; extra == "docs"
+Requires-Dist: cryptography<43,>=35.0; extra == "docs"
+Requires-Dist: ruff>=0.3.3; extra == "docs"
+Requires-Dist: grpcio-testing<2,>=1.56.2; extra == "docs"
+Requires-Dist: httpx>=0.23.3; extra == "docs"
+Requires-Dist: minio==7.1.0; extra == "docs"
+Requires-Dist: mock==2.0.0; extra == "docs"
+Requires-Dist: moto<5; extra == "docs"
+Requires-Dist: mypy>=1.4.1; extra == "docs"
+Requires-Dist: urllib3<3,>=1.25.4; extra == "docs"
+Requires-Dist: psutil==5.9.0; extra == "docs"
+Requires-Dist: py>=1.11.0; extra == "docs"
+Requires-Dist: pytest<8,>=6.0.0; extra == "docs"
+Requires-Dist: pytest-cov; extra == "docs"
+Requires-Dist: pytest-xdist; extra == "docs"
+Requires-Dist: pytest-benchmark<4,>=3.4.1; extra == "docs"
+Requires-Dist: pytest-lazy-fixture==0.6.3; extra == "docs"
+Requires-Dist: pytest-timeout==1.4.2; extra == "docs"
+Requires-Dist: pytest-ordering~=0.6.0; extra == "docs"
+Requires-Dist: pytest-mock==1.10.4; extra == "docs"
+Requires-Dist: pytest-env; extra == "docs"
+Requires-Dist: Sphinx<7,>4.0.0; extra == "docs"
+Requires-Dist: testcontainers==4.4.0; extra == "docs"
+Requires-Dist: pre-commit<3.3.2; extra == "docs"
+Requires-Dist: assertpy==1.1; extra == "docs"
+Requires-Dist: pip-tools; extra == "docs"
+Requires-Dist: pybindgen; extra == "docs"
+Requires-Dist: types-protobuf~=3.19.22; extra == "docs"
+Requires-Dist: types-python-dateutil; extra == "docs"
+Requires-Dist: types-pytz; extra == "docs"
+Requires-Dist: types-PyYAML; extra == "docs"
+Requires-Dist: types-redis; extra == "docs"
+Requires-Dist: types-requests<2.31.0; extra == "docs"
+Requires-Dist: types-setuptools; extra == "docs"
+Requires-Dist: types-tabulate; extra == "docs"
+Requires-Dist: virtualenv<20.24.2; extra == "docs"
+Requires-Dist: google-api-core<3,>=1.23.0; extra == "docs"
+Requires-Dist: googleapis-common-protos<2,>=1.52.0; extra == "docs"
+Requires-Dist: google-cloud-bigquery[pandas]<4,>=2; extra == "docs"
+Requires-Dist: google-cloud-bigquery-storage<3,>=2.0.0; extra == "docs"
+Requires-Dist: google-cloud-datastore<3,>=2.16.0; extra == "docs"
+Requires-Dist: google-cloud-storage<3,>=1.34.0; extra == "docs"
+Requires-Dist: google-cloud-bigtable<3,>=2.11.0; extra == "docs"
+Requires-Dist: fsspec<=2024.1.0; extra == "docs"
+Requires-Dist: redis<5,>=4.2.2; extra == "docs"
+Requires-Dist: hiredis<3,>=2.0.0; extra == "docs"
+Requires-Dist: boto3<2,>=1.17.0; extra == "docs"
+Requires-Dist: fsspec<=2024.1.0; extra == "docs"
+Requires-Dist: aiobotocore<3,>2; extra == "docs"
+Requires-Dist: kubernetes<=20.13.0; extra == "docs"
+Requires-Dist: snowflake-connector-python[pandas]<4,>=3.7; extra == "docs"
+Requires-Dist: pyspark<4,>=3.0.0; extra == "docs"
+Requires-Dist: psycopg[binary,pool]<4,>=3.0.0; extra == "docs"
+Requires-Dist: pymysql; extra == "docs"
+Requires-Dist: types-PyMySQL; extra == "docs"
+Requires-Dist: trino<0.400.0,>=0.305.0; extra == "docs"
+Requires-Dist: regex; extra == "docs"
+Requires-Dist: great_expectations>=0.15.41; extra == "docs"
+Requires-Dist: happybase<3,>=1.2.0; extra == "docs"
+Requires-Dist: cassandra-driver<4,>=3.24.0; extra == "docs"
+Requires-Dist: azure-storage-blob>=0.37.0; extra == "docs"
+Requires-Dist: azure-identity>=1.6.1; extra == "docs"
+Requires-Dist: SQLAlchemy>=1.4.19; extra == "docs"
+Requires-Dist: pyodbc>=4.0.30; extra == "docs"
+Requires-Dist: pymssql; extra == "docs"
+Requires-Dist: rockset>=1.0.3; extra == "docs"
+Requires-Dist: hazelcast-python-client>=5.1; extra == "docs"
+Requires-Dist: ibis-framework<10,>=9.0.0; extra == "docs"
+Requires-Dist: ibis-substrait>=4.0.0; extra == "docs"
+Requires-Dist: grpcio<2,>=1.56.2; extra == "docs"
+Requires-Dist: grpcio-tools<2,>=1.56.2; extra == "docs"
+Requires-Dist: grpcio-reflection<2,>=1.56.2; extra == "docs"
+Requires-Dist: grpcio-health-checking<2,>=1.56.2; extra == "docs"
+Requires-Dist: ibis-framework[duckdb]<10,>=9.0.0; extra == "docs"
+Requires-Dist: deltalake; extra == "docs"
+Requires-Dist: elasticsearch>=8.13.0; extra == "docs"
+Requires-Dist: sqlite-vec==v0.0.1-alpha.10; extra == "docs"
+Requires-Dist: singlestoredb; extra == "docs"
+Provides-Extra: cassandra
+Requires-Dist: cassandra-driver<4,>=3.24.0; extra == "cassandra"
+Provides-Extra: hazelcast
+Requires-Dist: hazelcast-python-client>=5.1; extra == "hazelcast"
+Provides-Extra: grpcio
+Requires-Dist: grpcio<2,>=1.56.2; extra == "grpcio"
+Requires-Dist: grpcio-tools<2,>=1.56.2; extra == "grpcio"
+Requires-Dist: grpcio-reflection<2,>=1.56.2; extra == "grpcio"
+Requires-Dist: grpcio-health-checking<2,>=1.56.2; extra == "grpcio"
+Provides-Extra: rockset
+Requires-Dist: rockset>=1.0.3; extra == "rockset"
+Provides-Extra: ibis
+Requires-Dist: ibis-framework<10,>=9.0.0; extra == "ibis"
+Requires-Dist: ibis-substrait>=4.0.0; extra == "ibis"
+Provides-Extra: duckdb
+Requires-Dist: ibis-framework[duckdb]<10,>=9.0.0; extra == "duckdb"
+Provides-Extra: ikv
+Requires-Dist: ikvpy>=0.0.36; extra == "ikv"
+Provides-Extra: delta
+Requires-Dist: deltalake; extra == "delta"
+Provides-Extra: elasticsearch
+Requires-Dist: elasticsearch>=8.13.0; extra == "elasticsearch"
+Provides-Extra: sqlite-vec
+Requires-Dist: sqlite-vec==v0.0.1-alpha.10; extra == "sqlite-vec"
+Provides-Extra: singlestore
+Requires-Dist: singlestoredb; extra == "singlestore"
+
+This is a fork of the Feast project. Specifically of version 0.40. You can see the Readme for that version [here](https://github.com/feast-dev/feast/tree/v0.40-branch).
+
+This fork introduces a functionality that is useful for the Data Science team at Gitlab.
+
+This functionality is jinja templating for the SQL queries defined in the data sources.
+
+# Motivation
+
+Because Feast as of this moment does not support batch transformations we have been using the data sources SQL query definitions as a place to perform some aggregations and sliding windows transformations. The problem is that said transformations became not performant when we had high granularity data, as we need to create a table that contains all of the entities for all period of times.
+
+This is very compute heavy since we are creating records that will not be used.
+
+# Solution
+
+Add jinja templating to data source queries. This would let us access the `entity_dataframe` and go from queries like this:
+
+```sql
+WITH base AS (
+
+    SELECT *
+    FROM  prod.workspace_data_science.monthly_stage_usage_by_account
+
+), dim_date AS (
+
+    SELECT first_day_of_month AS snapshot_month
+    FROM prod.common.dim_date
+    WHERE date_actual <= CURRENT_DATE
+        AND date_actual >= '2021-02-01'::DATE
+
+), scaffold AS (
+
+    SELECT DISTINCT
+        base.dim_crm_account_id,
+        dim_date.snapshot_month 
+    FROM base 
+    CROSS JOIN dim_date
+)
+
+SELECT
+    a.dim_crm_account_id,
+    a.snapshot_month AS product_usage_date,
+    --number of all time features used
+    SUM(b.stage_create_alltime_features) AS stage_create_alltime_features_cnt,
+
+FROM scaffold a
+LEFT JOIN base b
+      ON a.dim_crm_account_id = b.dim_crm_account_id 
+      AND b.snapshot_month BETWEEN ADD_MONTHS(a.snapshot_month, -{period_unit}) AND a.snapshot_month
+GROUP BY 1, 2, 3
+```
+
+To queries like this:
+
+```sql
+-- USE_TEMPLATE_WORKFLOW
+WITH base AS (
+    SELECT *
+    FROM  prod.workspace_data_science.monthly_stage_usage_by_account
+    {% if validation %}
+    LIMIT 100
+    {% endif %}
+)
+SELECT
+    a.dim_crm_account_id,
+
+    {% if get_historical_features %} b."event_timestamp"::DATE {% endif %}
+    {% if validation %} '2024-05-01'::DATE {% endif %} -- just for validation, hardcore a date
+            AS snapshot_month,
+
+    --number of all time features used
+    SUM(a.stage_create_alltime_features) AS stage_create_alltime_features_cnt,
+
+FROM base a
+{% if get_historical_features %}
+INNER JOIN "entity_dataframe" b
+    ON a.dim_crm_account_id = b.dim_crm_account_id
+    AND a.snapshot_month BETWEEN DATE_TRUNC('month', ADD_MONTHS(b."event_timestamp"::DATE, -6)) AND DATE_TRUNC('month', ADD_MONTHS(b."event_timestamp"::DATE, -1))
+{% endif %}
+GROUP BY 1, 2
+```
+
+Notice how in the first query we need to create a scaffold of all combinations of the entity key (dim_crm_account_id).
+
+In the second query, we can access the `"entity_dataframe"` using the jinja variable `get_historical_features`. This part of the query will only be executed during feature retrieval. This way, we only calculate the transformation at feature retrieval time for the entities and timeframe we care about, speeding the query process. 
+
+We also introduce the `validation` variable. This is because when running `feast apply`, Feast needs to validate that the query can be built. With this we can add logic to make sure that the date key (snapshot_month) is present at validation time (as there is no entity_dataframe at validation time). Also, it let us select only a limited amount of rows in the `base` CTE to make the validation query even faster.
+
+To let feast know it needs to use this jinja workflow you need to add a comment to your SQL query, `-- USE_TEMPLATE_WORKFLOW`
+
+# Implementation details
+
+Changes to make this happen in the codebase are minimal. All the changes in the codebase are commented with `# GITLAB CHANGES` to make it easier to find them.
+
+Since this is a tool used by the Gitlab DS team, we forked the repository to Gitlab, however, this repository still points to the original Github repository so we can keep this up to date with the releases of the Feast package.
+
+This was done with the following steps:
+
+1. git clone https://github.com/feast-dev/feast.git
+1. cd feast
+1. git remote add gitlab https://gitlab.com/jeanpeguero/feast-gitlab.git
+1. git push gitlab master
+1. git remote add upstream https://github.com/feast-dev/feast.git
+
+To merge new releases from the main Github repository:
+
+1. git fetch upstream
+1. git checkout master
+1. git merge upstream/master
+1. git push gitlab master
+
+# Building this package
+
+Because this repository lives in Gitlab, we had to translate the Github workflow files to a .gitlab-ci.yml file. We only copied the necessary steps for building the wheels and pushing it to Pypi.
+
+There were some minimal changes performed to the `setup.py` as well. They were done to the how the `version` of the package is generated. Everything else should be the same.
+
+# Publishing changes
+
+To publish changes, first test that they work in testpypi. For this:
+
+1. Create a MR and make changes to the code
+1. Run the pipelines manually for building the wheels
+1. Run the manual job for publishing to test pipy `upload-to-pypi-test`
+1. Test the package
+
+Once you are comfortable with the changes:
+
+1. Create a new tag and release
+1. Let the pipelines run to publish the package to pypi

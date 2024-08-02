@@ -1,0 +1,124 @@
+# image: python:3.9
+
+# stages:
+#   - deploy
+
+# variables:
+#   ROOT_DIR: $CI_PROJECT_DIR
+
+# before_script:
+#   - pip install twine pip-tools
+#   - pip install --ignore-installed protobuf==4.24.0 "grpcio-tools>=1.56.2,<2" mypy-protobuf==3.1.0
+#   - pip install -r sdk/python/requirements/py3.9-requirements.txt
+#   - python setup.py sdist bdist_wheel
+#   - apt-get update -y
+#   - apt-get install -y curl gnupg
+#   - curl -sL https://deb.nodesource.com/setup_16.x | bash -
+#   - apt-get install -y nodejs
+#   - npm install -g yarn
+#   - cd $ROOT_DIR/sdk/python/feast/ui
+
+# deploy_staging:
+#   stage: deploy
+#   variables:
+#     TWINE_USERNAME: __token__
+#     TWINE_PASSWORD: $STAGING_TOKEN
+#   script:
+#     # - twine upload --repository testpypi dist/*
+#     - yarn upgrade @feast-dev/feast-ui --latest
+#     - yarn install
+#     - npm run build --omit=dev
+#     - twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+#   except:
+#     - tags
+
+image: python:3.9
+
+stages:
+  - build
+  - upload
+
+variables:
+  ROOT_DIR: $CI_PROJECT_DIR
+
+.install_build_dependencies:
+  before_script:
+    - echo "Installing dependencies"
+    - apt-get update -y
+    - apt-get install -y curl gnupg
+    - curl -sL https://deb.nodesource.com/setup_17.x | bash -
+    - apt-get install -y nodejs npm
+    - npm install -g yarn
+    - python -m pip install --upgrade pip setuptools wheel twine
+    - pip install --ignore-installed protobuf==4.24.0 "grpcio-tools>=1.56.2,<2" mypy-protobuf==3.1.0 # These are part of the make `build-ui` and `install-protoc-dependencies` make commands
+
+
+build-python-wheel:
+  extends:
+    - .install_build_dependencies
+  stage: build
+  script:
+    - cd $ROOT_DIR/sdk/python/feast/ui
+    - yarn upgrade @feast-dev/feast-ui --latest
+    - yarn install
+    - npm run build --omit=dev
+    - cd $ROOT_DIR
+    - python -m pip install build
+    - python -m build --wheel --outdir wheelhouse/
+  artifacts:
+    paths:
+      - wheelhouse/*.whl
+  rules:
+    - if: '$CI_COMMIT_TAG' # Run automatically if it's a tag
+    - when: manual # Otherwise, run manually
+
+
+build-source-distribution:
+  extends:
+    - .install_build_dependencies
+  stage: build
+  script:
+    - cd $ROOT_DIR/sdk/python/feast/ui
+    - yarn upgrade @feast-dev/feast-ui --latest
+    - yarn install
+    - npm run build --omit=dev
+    - cd $ROOT_DIR
+    - python3 setup.py sdist
+  artifacts:
+    paths:
+      - dist/*.tar.gz
+  rules:
+    - if: '$CI_COMMIT_TAG' # Run automatically if it's a tag
+    - when: manual # Otherwise, run manually
+
+
+upload-to-pypi-test:
+  stage: upload
+  variables:
+    TWINE_USERNAME: __token__
+    TWINE_PASSWORD: $STAGING_TOKEN
+  script:
+    - python -m pip install --upgrade pip twine
+    - python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/* wheelhouse/*
+  dependencies:
+    - build-python-wheel
+    - build-source-distribution
+  rules:
+    - if: '$CI_COMMIT_TAG'
+      when: never # Do not run on tags
+    - when: manual # Run manually otherwise
+
+
+upload-to-pypi-prod:
+  stage: upload
+  variables:
+    TWINE_USERNAME: __token__
+    TWINE_PASSWORD: $PRODUCTION_TOKEN
+  script:
+    - python -m pip install --upgrade pip twine
+    - python -m twine upload --repository pypi dist/* wheelhouse/*
+  dependencies:
+    - build-python-wheel
+    - build-source-distribution
+  only:
+    - tags
