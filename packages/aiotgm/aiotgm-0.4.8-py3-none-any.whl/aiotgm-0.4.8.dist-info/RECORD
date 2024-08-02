@@ -1,0 +1,13 @@
+aiotgm/__init__.py,sha256=O5I0ZTsZF6kpGL9_D7PtOSLYzmS65vnysDxq7x0K1Tw,320
+aiotgm/api.py,sha256=nQZIwXpmWble0w8wXBjRexUh5N_An6hsIj0hgXxM4mc,28562
+aiotgm/client.py,sha256=uUVNpbsL3Fg1Xjz21TVN989UE3I0JNkHg9-yRfG8OP8,303221
+aiotgm/constants.py,sha256=PAI5b7-gxWaq8aUIga-HbHVw-J6sVd3GuIHK9mIDObI,4176
+aiotgm/logging.py,sha256=yAU-i3GzzO2mqPDueH2F9eXoP9XvMzmtc6uv1g-uaE8,740
+aiotgm/types.py,sha256=bv5p_r_N9qqe5TM7FJCvOTzXP9D2qwGuKbQ9hKdGTCE,436220
+aiotgm/update_manager.py,sha256=lccfMFAVUaMC1qMA-8754M0XyFfyefi_ik5wH-0edKw,9152
+aiotgm/utils.py,sha256=cbXHzh78xCc7SphVsQN0cbpe_kEDYS7lGmwnd-tui9U,623
+aiotgm-0.4.8.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+aiotgm-0.4.8.dist-info/METADATA,sha256=aQf1qjZq_br2DzpfVdXxTxS28gp8_iXRFQLZ5FYkVL8,42072
+aiotgm-0.4.8.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+aiotgm-0.4.8.dist-info/top_level.txt,sha256=TbxqSVhPmmPlaQnU2vIx_7MaFNNvWYFHgepAw1UgCzI,7
+aiotgm-0.4.8.dist-info/RECORD,,
