@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: buff-package
+Version: 0.0.2
+Summary: Practice Package
+Home-page: https://github.com/buff91/python-practice
+Author: buff
+Author-email: buff@kakao.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mypackage
+
+This is a simple example package.
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install mypackage
+```
