@@ -1,0 +1,10 @@
+CHANGELOG.md,sha256=BndfZ9GwziBaey1q7tdoPHvDEEfwkrg00alZbeVg17k,1271
+lifefit/__init__.py,sha256=HnUK1x0uDaufQUqJHhkIme6ni0yvHO7LV5qgM9nSMZw,312
+lifefit/app/app.py,sha256=f31572x6GipfwaSM1s-Iq4Ijx3zP1K8_PdANbMwJfnc,21521
+lifefit/gui.py,sha256=F_3WF88vy4QTbNFdH3A3FBNv4uZY61ewwa2SRwKXkaA,163
+lifefit/tcspc.py,sha256=gfUj-MP8ONZeoBlEcfpCCXO7pBlGFVoxKpi4-nS8IIA,33744
+lifefit-1.0.7.dist-info/LICENSE,sha256=3zjpxbaGJFumF1cdxndas3V25BF3S--ZxoEwZjmVI7A,1070
+lifefit-1.0.7.dist-info/METADATA,sha256=5Bp1MVuTWhfvjQNgIcdmfGZlv0IfN0fGTWPwURIutbo,3085
+lifefit-1.0.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+lifefit-1.0.7.dist-info/entry_points.txt,sha256=xqkh_i3XJoI-eXQ0WkaZjQFnOCYP06F0AR481gkWeRI,48
+lifefit-1.0.7.dist-info/RECORD,,
