@@ -1,0 +1,10 @@
+just_bench_it/__init__.py,sha256=8RVwOims640Y5xEHWhDIaSrvNGV7LLElE83a2phTxyE,196
+just_bench_it/benchmarker.py,sha256=T6QuutgNrg-pezdqF8NBVTLiqrl57sIv_V06rPymJGQ,7822
+just_bench_it/cnn_example.py,sha256=zpsTTC6yycwrBUZx-azip3zteE_VwJeS1BgzQbJLtzQ,5363
+just_bench_it/envs.py,sha256=SW5irQ5DQyDSzpZr0-ANbLxEsD4mhjenETA1JbF_ptU,1077
+just_bench_it/rand_example.py,sha256=6Gv3TgwRlf2ONpUizgQtkoYHhVJoQTZzdDxLxoWGW7I,589
+just_bench_it/utils.py,sha256=DnJqP9tV6LVGfD91i8VUKEr2YGpm6ye2WUsCzD6XzPU,146
+just_bench_it-0.1.8.dist-info/METADATA,sha256=X-l6IIgjNiVkU0hqUk322VH-TSYDR7UoXJ0JbztJSbs,2895
+just_bench_it-0.1.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+just_bench_it-0.1.8.dist-info/top_level.txt,sha256=cpk0Fxcq7lLyMFH8V7xAIbeFd-QKXbiPLg6-u5x7vdk,14
+just_bench_it-0.1.8.dist-info/RECORD,,
