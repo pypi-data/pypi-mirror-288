@@ -1,0 +1,10 @@
+ciatta/__init__.py,sha256=OfbaiouL7TFKi_xqgwy_rn0qvBnE1YlP29sPFNuh044,105
+ciatta/ciatta.py,sha256=bZgBo9TtVzNXiHSTNC6CYZgH6kRQiFjTKhCF-beNiFc,484
+ciatta/files.py,sha256=qWqJCY7tQ1CYrmfE1XJap5R-2wascSRUx4QAjd3SYXw,3472
+ciatta/fit.py,sha256=_y-__Ph1-G-aRUuN73IA7al8lmLEjjQorJhY-3PcA4U,2988
+ciatta/paco.py,sha256=HP1iZsQkYUxUewPBltD1JRuLCBjkbW59GOOw_LGAIDY,82
+ciatta/plot.py,sha256=k6_lXqWeSXBDP7mvEhLo4Y5vzy5cIZzXqw2HYloNbm0,1216
+ciatta-1.1.3.dist-info/LICENSE,sha256=kBS3gdLf_Z0v3tTorPXF_VjnTnItzX30eDSgYSBOWik,1089
+ciatta-1.1.3.dist-info/METADATA,sha256=jTVieecAKX6KQ0FuomkQv63nKM13LOch11pxmaYD8WA,1717
+ciatta-1.1.3.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+ciatta-1.1.3.dist-info/RECORD,,
