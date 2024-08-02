@@ -1,0 +1,12 @@
+datastore/cassandra_util.py,sha256=zt5NMPNUE4d6_ZBBzEcSJErgqPZ6cPJY0G79VADzX9E,9255
+datastore/simple_cassandra_datastore.py,sha256=vRc9pRfURmhmaGWTtGdX3jrdJhWpTYTSfCjoXzxNr5E,17001
+fastastra/.idea/.gitignore,sha256=JlI1quxOYCOuFN9lx8BYP-449eNfkNN-U0zrMWB_nPs,239
+fastastra/.idea/cass_api.iml,sha256=0hgt7AaiWV75nxKLVAa6-N0GbJvps7S07oHf4XBa3jw,426
+fastastra/.idea/misc.xml,sha256=yQ9FQP-Uj_zijvsCqy1CmDPTIMLN6OjrTz6LQkqc97s,271
+fastastra/.idea/modules.xml,sha256=N_lM3Cet61lMg4tMlMW36Vd56GD7HrXC8Z51F3uE9Vk,268
+fastastra/.idea/vcs.xml,sha256=JpBk9bpzB9zTGgO1xpBpizRCwPACTBNYNhVC9J9VCa4,183
+fastastra/fastastra.py,sha256=lduUGK9EpmLAGvs5V9oIlaqxcSHOUzN-2nYWn6_pTcQ,12533
+fastastra-0.1.24.dist-info/METADATA,sha256=iLoSxMPiMjIUb6OClRcgYkYMVK2Y0Nwjahb2eL97PjA,2025
+fastastra-0.1.24.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fastastra-0.1.24.dist-info/entry_points.txt,sha256=rvQvKtsHEMDrRXq8xrriRRhdRr-ojh9NduTkbbaKdgk,69
+fastastra-0.1.24.dist-info/RECORD,,
