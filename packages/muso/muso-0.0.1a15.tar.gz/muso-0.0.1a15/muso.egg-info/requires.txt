@@ -1,0 +1,8 @@
+aiomysql
+apispec
+marshmallow
+orjson
+python-multipart
+starlette
+tzlocal
+uvicorn[standard]
