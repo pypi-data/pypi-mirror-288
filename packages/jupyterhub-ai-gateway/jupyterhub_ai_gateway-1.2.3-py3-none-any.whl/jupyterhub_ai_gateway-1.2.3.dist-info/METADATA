@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: jupyterhub-ai-gateway
+Version: 1.2.3
+Summary: AI gateway service for JupyterHub.
+Author-email: Danilo Peixoto Ferreira <danilopeixoto@outlook.com>
+License: Copyright (c) 2024, JupyterHub AI Gateway Developers. All rights reserved.
+        
+        Permission is hereby granted, free of charge, to any person obtaining
+        a copy of this software and associated documentation files (the
+        "Software"), to deal in the Software without restriction, including
+        without limitation the rights to use, copy, modify, merge, publish,
+        distribute, sublicense, and/or sell copies of the Software, and to
+        permit persons to whom the Software is furnished to do so, subject to
+        the following conditions:
+        
+        The above copyright notice and this permission notice shall be
+        included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+        NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+        LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+        OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+        WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Project-URL: Homepage, https://jupyterhub-ai-gateway.readthedocs.io
+Project-URL: Documentation, https://jupyterhub-ai-gateway.readthedocs.io
+Project-URL: Repository, https://github.com/danilopeixoto/jupyterhub-ai-gateway
+Project-URL: Issues, https://github.com/danilopeixoto/jupyterhub-ai-gateway/issues
+Project-URL: Changelog, https://jupyterhub-ai-gateway.readthedocs.io/en/stable/changelog.html
+Keywords: ai,gateway,jupyterhub,mlflow,service
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: fastapi
+Requires-Dist: python-multipart
+Requires-Dist: uvicorn[standard]
+Requires-Dist: pydantic
+Requires-Dist: pydantic-settings
+Requires-Dist: httpx
+Requires-Dist: mlflow[genai]
+Provides-Extra: development
+Requires-Dist: mypy ; extra == 'development'
+Requires-Dist: isort ; extra == 'development'
+Requires-Dist: black ; extra == 'development'
+Requires-Dist: pylint ; extra == 'development'
+Requires-Dist: pre-commit ; extra == 'development'
+Requires-Dist: pytest ; extra == 'development'
+Requires-Dist: sphinx ; extra == 'development'
+Requires-Dist: sphinx-autobuild ; extra == 'development'
+Requires-Dist: sphinx-book-theme ; extra == 'development'
+Requires-Dist: sphinx-favicon ; extra == 'development'
+Requires-Dist: myst-parser ; extra == 'development'
+Requires-Dist: build ; extra == 'development'
+Requires-Dist: twine ; extra == 'development'
+
+# JupyterHub AI Gateway
+
+AI gateway service for JupyterHub.
+
+![Overview](https://jupyterhub-ai-gateway.readthedocs.io/en/stable/_images/overview-light.png)
+
+## Prerequisites
+
+- [Python (>=3.10.0)](https://www.python.org)
+- [JupyterHub (>=4.0.0)](https://jupyter.org/hub)
+
+## Installation
+
+Install package:
+
+```console
+pip install jupyterhub-ai-gateway
+```
+
+## Documentation
+
+Please refer to the official [JupyterHub AI Gateway Documentation](https://jupyterhub-ai-gateway.readthedocs.io) for detailed usage instructions.
+
+## Changelog
+
+The [Releases](https://github.com/danilopeixoto/jupyterhub-ai-gateway/releases) page contains information about new features, improvements, and bug fixes for each release.
+
+## Contributing
+
+If you are interested in contributing to this project, please read the [Contributing Guide](https://jupyterhub-ai-gateway.readthedocs.io/en/stable/contributing.html) for development instructions and guidelines.
+
+## Copyright and license
+
+Copyright (c) 2024, JupyterHub AI Gateway Developers. All rights reserved.
+
+Project developed under a [MIT License](https://jupyterhub-ai-gateway.readthedocs.io/en/stable/license.html).
