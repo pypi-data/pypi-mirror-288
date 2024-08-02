@@ -1,0 +1,4 @@
+pyqt5
+paddleocr
+xlrd==2.0.1
+tqdm
