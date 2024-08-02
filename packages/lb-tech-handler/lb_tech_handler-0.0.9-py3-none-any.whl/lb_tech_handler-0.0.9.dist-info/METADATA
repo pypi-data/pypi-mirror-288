@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: lb_tech_handler
+Version: 0.0.9
+Summary: This package allows faster developement by allowing developer to focus on the core logic.
+Project-URL: Homepage, https://github.com/code-learnbasics/lb_tech_handler
+Project-URL: Issues, https://github.com/code-learnbasics/lb_tech_handler/issues
+Author-email: Johnson Rebeiro <rebeirojohnson@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# lb_tech_handler
+python -m build
+python -m twine upload --repository pypi dist/*
