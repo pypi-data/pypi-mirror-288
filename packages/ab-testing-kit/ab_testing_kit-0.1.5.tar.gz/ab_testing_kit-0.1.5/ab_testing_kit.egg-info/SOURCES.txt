@@ -1,0 +1,10 @@
+README.md
+setup.py
+ab_testing_kit.egg-info/PKG-INFO
+ab_testing_kit.egg-info/SOURCES.txt
+ab_testing_kit.egg-info/dependency_links.txt
+ab_testing_kit.egg-info/requires.txt
+ab_testing_kit.egg-info/top_level.txt
+ab_testing_kit/data_splitting/sample_size_calculation.py
+ab_testing_kit/exploration/data_exploration.py
+ab_testing_kit/testing/tests.py
