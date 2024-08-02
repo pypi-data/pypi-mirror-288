@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+codialog.egg-info/PKG-INFO
+codialog.egg-info/SOURCES.txt
+codialog.egg-info/dependency_links.txt
+codialog.egg-info/entry_points.txt
+codialog.egg-info/requires.txt
+codialog.egg-info/top_level.txt
+flask/__init__.py
+flask/app.py
