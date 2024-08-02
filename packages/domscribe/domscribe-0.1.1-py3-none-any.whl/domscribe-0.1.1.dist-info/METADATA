@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: domscribe
+Version: 0.1.1
+Summary: A Python library for converting HTML to semantic Markdown
+Author: Slava Vishnyakov
+Author-email: bomboze@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beautifulsoup4 (>=4.9.3,<5.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
