@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+opal_fetcher_test_dynamoDB/__init__.py
+opal_fetcher_test_dynamoDB/provider.py
+opal_fetcher_test_dynamodb.egg-info/PKG-INFO
+opal_fetcher_test_dynamodb.egg-info/SOURCES.txt
+opal_fetcher_test_dynamodb.egg-info/dependency_links.txt
+opal_fetcher_test_dynamodb.egg-info/requires.txt
+opal_fetcher_test_dynamodb.egg-info/top_level.txt
