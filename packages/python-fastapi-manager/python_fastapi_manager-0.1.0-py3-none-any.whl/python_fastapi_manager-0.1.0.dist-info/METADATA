@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: python-fastapi-manager
+Version: 0.1.0
+Summary: 
+Author: Chaliuk Vladyslav
+Author-email: chaliukvladyslav@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: alembic (>=1.13.2,<2.0.0)
+Requires-Dist: asyncpg (>=0.29.0,<0.30.0)
+Requires-Dist: fastapi (>=0.111.1,<0.112.0)
+Requires-Dist: sqlmodel (>=0.0.21,<0.0.22)
+Requires-Dist: typer (>=0.12.3,<0.13.0)
+Description-Content-Type: text/markdown
+
+
