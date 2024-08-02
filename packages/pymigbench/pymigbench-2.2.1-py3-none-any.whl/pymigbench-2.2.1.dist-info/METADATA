@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pymigbench
+Version: 2.2.1
+Summary: APIs to access the PyMigBench dataset
+Home-page: https://github.com/ualberta-smr/pymigbench
+Author: PyMigBench Team
+Author-email: mohayemin@ualberta.ca
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+License-File: LICENSE
+Requires-Dist: pyyaml ~=6.0
+
