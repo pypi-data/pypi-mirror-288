@@ -1,0 +1,8 @@
+classifierAgent/__init__.py,sha256=ykTEHltb0PVUJ_0cw_fXfa7yzInaY26VyfMEgYptkjE,43
+classifierAgent/classifierAgent.py,sha256=3DzHLmaVliwfDeqhtpUV6IRgzT6T8wa6kjQ6zDeZQmA,9363
+classifierAgent/cli.py,sha256=-LQ38mzQ23ykO78L2gNehwuPc6yDhFOq0HFYizLhX5k,282
+classifierAgent-1.0.5.dist-info/METADATA,sha256=O3gfQ4Pl7YYuyTcjbFy_HNbU31OTk4cmotHuE0FmbT0,7440
+classifierAgent-1.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+classifierAgent-1.0.5.dist-info/entry_points.txt,sha256=21CnYEPw2us1Mxm8QGOUoaYzS7Pz7Fu-dE6gI_MM4DU,61
+classifierAgent-1.0.5.dist-info/top_level.txt,sha256=duamlK8-wEaFQJ2DTghI7QdDcVkTrHp6hUuNjA0n2wE,16
+classifierAgent-1.0.5.dist-info/RECORD,,
