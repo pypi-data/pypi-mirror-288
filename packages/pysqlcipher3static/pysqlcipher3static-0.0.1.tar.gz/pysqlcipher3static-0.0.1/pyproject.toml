@@ -1,0 +1,78 @@
+[tool.rye.scripts]
+build = "python -m build"
+fmt = "rye fmt"
+lint = "rye lint --fix"
+check = "pyright"
+test = "pytest"
+all = { chain = ["fmt", "lint", "check", "test"] }
+
+[project]
+name = "pysqlcipher3static"
+version = "0.0.1"
+description = "Python 3 bindings for SQLCipher with SQLite statically linked "
+readme = "README.md"
+license = {text = "zlib/libpng"}
+requires-python = ">= 3.9"
+keywords = ["sqlite", "encryption"]
+
+authors = [
+    {name = "Chris Arderne", email="chris@rdrn.me"},
+]
+
+# dynamic = ["version"]
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: zlib/libpng License",
+  "Operating System :: MacOS :: MacOS X",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX",
+  "Programming Language :: C",
+  "Programming Language :: Python",
+  "Topic :: Database :: Database Engines/Servers",
+  "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+dependencies = []
+
+[tool.rye]
+managed = true
+generate-hashes = false
+dev-dependencies = [
+    "pyright",
+    "setuptools-scm~=8.1.0",
+    "build~=1.2.1",
+]
+
+[project.urls]
+homepage = "https://github.com/carderne/pysqlcipher3static"
+repository = "https://github.com/carderne/pysqlcipher3static"
+
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools_scm]
+
+[tool.ruff]
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["F", "E", "I", "U", "N", "E", "S", "T100", "A", "Q", "ANN"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["pysqlcipher3"]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+include = ["src"]
+reportMissingImports = true
+reportMissingParameterType = true
+reportUnnecessaryTypeIgnoreComment = true
+reportDeprecated = true
+pythonVersion = "3.9"

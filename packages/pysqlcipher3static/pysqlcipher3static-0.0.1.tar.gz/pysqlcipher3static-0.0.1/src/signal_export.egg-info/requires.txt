@@ -1,0 +1,5 @@
+beautifulsoup4~=4.11
+emoji~=2.0
+Markdown~=3.4
+typer[all]~=0.7
+pycryptodome~=3.20

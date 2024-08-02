@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pysqlcipher3static
+Version: 0.0.1
+Summary: Python 3 bindings for SQLCipher with SQLite statically linked 
+Author-email: Chris Arderne <chris@rdrn.me>
+License: zlib/libpng
+Project-URL: homepage, https://github.com/carderne/pysqlcipher3static
+Project-URL: repository, https://github.com/carderne/pysqlcipher3static
+Keywords: sqlite,encryption
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: zlib/libpng License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
