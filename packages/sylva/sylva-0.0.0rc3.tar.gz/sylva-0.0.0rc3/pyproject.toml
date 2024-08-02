@@ -1,0 +1,50 @@
+[project]
+name = "sylva"
+dynamic = []
+description = "Identity discovery simplified"
+authors = [
+    { name = "Paul Pfeister", email = "code@pfeister.dev" },
+]
+dependencies = [
+    "sherlock-project>=0.15.0",
+    "platformdirs>=4.2.2",
+    "requests>=2.32.0",
+    "pandas>=2.2.2",
+    "PGPy>=0.6.0",
+    "colorama>=0.4.6",
+    "phonenumbers>=8.13.40",
+    "tldextract>=5.1.2",
+    "BeautifulSoup4>=4.12.3",
+    "aiohttp>=3.9.5",
+    "flaresolverr>=3.3.21rc0",
+]
+requires-python = ">=3.10"
+readme = "docs/README.md"
+version = "0.0.0rc3"
+
+[project.license]
+text = "AGPL-3.0-or-later"
+
+[project.scripts]
+sylva = "sylva.console:interactive"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.version]
+source = "scm"
+write_to = "sylva/data/__scm_version__.py"
+write_template = "__version__ = '{}'"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=8.2.2",
+    "tox>=4.16.0",
+    "ruff>=0.5.1",
+]
