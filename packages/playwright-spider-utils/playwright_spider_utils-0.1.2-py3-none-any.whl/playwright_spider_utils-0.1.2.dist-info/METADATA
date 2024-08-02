@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: playwright-spider-utils
+Version: 0.1.2
+Summary: 
+License: MIT
+Author: Pony.Ma
+Author-email: mtf201013@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: playwright (>=1.40.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# playwright-spider-utils
+
+Playwright Spider Utils is a utility library for engineers using the Playwright framework to build web crawlers. 
+This project provides common web scraping functions,
+simplifying the process of crawler development and enhancing productivity.
+
+
+
+
