@@ -1,0 +1,5 @@
+pydantic_serializer/__init__.py,sha256=Jyhh37w-TzPEqyLaeGZBG8PhgmX-NpXL7Udv2IXQkeU,34
+pydantic_serializer/serializer.py,sha256=rHiuLCn1C4FdcKJ8VajKsYiSjHArnBl6ZVQNTkIkOLk,1056
+pydantic_serializer-0.1.0.dist-info/METADATA,sha256=pBsFPL6VLMslmfQJOvnaoyeTbSFE391jgyhp7FUGq2Y,1213
+pydantic_serializer-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pydantic_serializer-0.1.0.dist-info/RECORD,,
