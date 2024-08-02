@@ -1,0 +1,3 @@
+[console_scripts]
+manage_simple_keys = simple_keystore.scripts.manage_keys:main
+
