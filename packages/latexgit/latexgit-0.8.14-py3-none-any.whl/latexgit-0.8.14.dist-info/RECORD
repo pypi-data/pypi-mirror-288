@@ -1,0 +1,15 @@
+latexgit/__init__.py,sha256=E4q1BlTSQRYhhUm2-Rv9WOLPedO49po20lGilzscNB8,179
+latexgit/aux.py,sha256=jbUOVmtYkgssFdZtr0JZqeGYMEB4LdgjVES_2DB9vOU,12447
+latexgit/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+latexgit/version.py,sha256=dnZei-aiSnqkegAoFDpbCTtpmAC9-t-hP_FCAY6SSfQ,164
+latexgit/formatters/__init__.py,sha256=OSblevIEy9BH0GWB-xlEf6tcZfLeMOXN_-VofvDpA98,23
+latexgit/formatters/python.py,sha256=2AMtWND3ttbP1m5QRhsoTU8ExlqJjOlt7xnwD-P6S4M,12823
+latexgit/formatters/source_tools.py,sha256=erXhRm6KNQzmPPZJ_wf5hjOGqIIUMRwUhLIgyFF69c8,15674
+latexgit/repository/__init__.py,sha256=T8_JVj_NvajJUbAFrGZK39nF-ZPalcm2wseAsRXHmaE,35
+latexgit/repository/git.py,sha256=0fBbQyDYwlph5vhkHU6LAU2J69rGaZUbUG3jkVNxm00,8136
+latexgit/repository/gitmanager.py,sha256=siol112F6fDIK9PrKRUFerFEn7MztqIJPw3dH2qvBk0,3077
+latexgit/repository/processed.py,sha256=j48Z_3FXRTEd8nv9XfYuEArzQlQpE7eu89xK5f5-6BY,12798
+latexgit-0.8.14.dist-info/METADATA,sha256=QMoMor7akqnFDa0UCI7DpKgbEYm2IGNzjzdFm4Ypk8Q,7050
+latexgit-0.8.14.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+latexgit-0.8.14.dist-info/top_level.txt,sha256=eqcEENsdHeTtnhgXVUq3p6NGAJMSshpGHbKGbSvdsBk,9
+latexgit-0.8.14.dist-info/RECORD,,
