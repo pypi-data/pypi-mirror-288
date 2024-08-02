@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Swagger UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.17.14/swagger-ui.css" rel="stylesheet">
+    <style>
+        /* Custom CSS to hide the top bar */
+        .swagger-ui .topbar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="swagger-ui"></div>
+<script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.17.14/swagger-ui-bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.17.14/swagger-ui-standalone-preset.js"></script>
+<script>
+    async function getSwaggerUIConfig() {
+        const response = await fetch('/openapi_2.json', {
+            headers: {
+                'Authorization': `Bearer ${localStorage.getItem('authToken')}`
+            }
+        });
+        const spec = await response.json();
+
+        const ui = SwaggerUIBundle({
+            url: "/openapi_2.json",
+            spec: spec,
+            dom_id: '#swagger-ui',
+            presets: [
+                SwaggerUIBundle.presets.apis,
+                SwaggerUIStandalonePreset
+            ],
+            layout: "StandaloneLayout",
+            requestInterceptor: (req) => {
+                const token = localStorage.getItem('authToken');
+                if (token) {
+                    req.headers['Authorization'] = `Bearer ${token}`;
+                }
+                return req;
+            }
+        });
+    }
+
+    // Listen for login event and refresh the Swagger UI
+    document.addEventListener('login', async () => {
+
+        const token = localStorage.getItem('authToken');
+
+        // TODO support database picker
+        // Get databases
+        const getDatabasesResponse = await fetch('/get_databases', {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
+        });
+
+        if (!getDatabasesResponse.ok) {
+            throw new Error(`Error: ${getDatabasesResponse.statusText}`);
+        }
+
+        const databases = await getDatabasesResponse.json();
+        const firstDbId = databases[0]
+
+        // Login to the first database
+        const dbLoginResponse = await fetch('/db_login', {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({db_id: firstDbId})
+        });
+
+        console.log(dbLoginResponse)
+
+        responseJson = await dbLoginResponse.json()
+        alert(responseJson.msg)
+
+        getSwaggerUIConfig();
+    });
+
+    // Function to handle login
+    async function handleLogin() {
+        const token = document.getElementById('token').value;
+        localStorage.setItem('authToken', token);
+        document.dispatchEvent(new Event('login'));
+        document.getElementById('custom_login').style.display = 'none';
+    }
+</script>
+<div id="custom_login">
+    <input type="text" id="token" placeholder="AstraCS:">
+    <button onclick="handleLogin()">Login</button>
+</div>
+</body>
+</html>
