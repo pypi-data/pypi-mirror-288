@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: fastastra
+Version: 0.1.15
+Summary: 
+Author: seb
+Author-email: seb@datastax.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: astra-assistants (>=2.0.19,<3.0.0)
+Requires-Dist: cassandra-driver (>=3.28,<4.0)
+Requires-Dist: loguru (>=0.7.0,<0.8.0)
+Requires-Dist: numpy (>=1.24.2,<2.0.0)
+Requires-Dist: pydantic (>=2.7.4,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: tenacity (>=8.2.1,<9.0.0)
+Requires-Dist: uvicorn (>=0.30.3,<0.31.0)
+Description-Content-Type: text/markdown
+
+# cass-api
+
+    poetry run python -m cass_api.main
+
+
