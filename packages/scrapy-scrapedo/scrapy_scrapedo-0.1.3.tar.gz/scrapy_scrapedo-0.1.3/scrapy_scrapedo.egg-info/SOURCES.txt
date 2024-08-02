@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+scrapy_scrapedo.egg-info/PKG-INFO
+scrapy_scrapedo.egg-info/SOURCES.txt
+scrapy_scrapedo.egg-info/dependency_links.txt
+scrapy_scrapedo.egg-info/requires.txt
+scrapy_scrapedo.egg-info/top_level.txt
+scrapydo/__init__.py
+scrapydo/scrapedo.py
+scrapydo/scrapy.py
