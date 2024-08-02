@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/orgtbl/__init__.py
+src/orgtbl/__main__.py
+src/orgtbl.egg-info/PKG-INFO
+src/orgtbl.egg-info/SOURCES.txt
+src/orgtbl.egg-info/dependency_links.txt
+src/orgtbl.egg-info/requires.txt
+src/orgtbl.egg-info/top_level.txt
