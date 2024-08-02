@@ -1,0 +1,6 @@
+setup.py
+aidp/__init__.py
+aidp.egg-info/PKG-INFO
+aidp.egg-info/SOURCES.txt
+aidp.egg-info/dependency_links.txt
+aidp.egg-info/top_level.txt
