@@ -1,0 +1,11 @@
+click<9,>=7.1
+matplotlib<4,>=3
+msgpack<2,>=1
+psutil>=5.0.0
+numpy>=1.22
+qcg-pilotjob==0.13.1
+typing_extensions<5,>=4.4.0
+ymmsl<0.14,>=0.13.0
+
+[dev]
+tox
