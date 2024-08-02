@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: cronpulse
+Version: 0.1.0
+Summary: A simple monitor and wrap function for cron jobs
+Home-page: https://github.com/cronpulse-live/cronpulse-python.git
+Author: Amr Sobhy
+Author-email: team@cronpulse.live
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Cronpulse
+
+Cronpulse is a simple Python package to monitor and wrap cron jobs with state pings.
+
+## Installation
+
+```bash
+pip install cronpulse
+```
+
+## Using Monitor directly
+
+```python
+monitor = Monitor("your_job_key")
+monitor.ping("run")
+# Your job logic here
+monitor.ping("complete")
+```
+
+## Using wrap function
+
+```python
+async def example_job(): # Your job logic here
+
+wrapped_job = wrap("your_job_key", example_job)
+await wrapped_job()
+# cronpulse-python
+```
+
+
