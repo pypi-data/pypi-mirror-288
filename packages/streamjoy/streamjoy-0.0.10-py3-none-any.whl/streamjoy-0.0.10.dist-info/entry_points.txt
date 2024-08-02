@@ -1,0 +1,2 @@
+[console_scripts]
+streamjoy = streamjoy.cli:main
