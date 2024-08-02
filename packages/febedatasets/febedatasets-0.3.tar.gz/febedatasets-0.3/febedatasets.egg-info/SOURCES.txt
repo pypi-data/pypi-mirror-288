@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+FEB1004DATASETS/__init__.py
+FEB1004DATASETS/dataset_loader.py
+FEB1004DATASETS/data/station_origin_center_1_data.csv
+febedatasets.egg-info/PKG-INFO
+febedatasets.egg-info/SOURCES.txt
+febedatasets.egg-info/dependency_links.txt
+febedatasets.egg-info/requires.txt
+febedatasets.egg-info/top_level.txt
