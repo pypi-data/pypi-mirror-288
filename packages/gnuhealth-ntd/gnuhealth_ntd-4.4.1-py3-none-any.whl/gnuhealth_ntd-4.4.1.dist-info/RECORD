@@ -1,0 +1,13 @@
+trytond/modules/health_ntd/__init__.py,sha256=KflkU0LRWwp9O3GdP3__aopcyfo8uOY6u6zFF_6-kH8,786
+trytond/modules/health_ntd/health_ntd.py,sha256=RER5wK3T5VNIR2J3hbQUV_sKZpPJpaCafH4HjfcIBgY,809
+trytond/modules/health_ntd/tryton.cfg,sha256=G23ELOOeu61nMRCnAaEL4wPGANFXVbs4f9TU2Nd4caU,58
+trytond/modules/health_ntd/doc/index.rst,sha256=n5Rhc_r7kzaQlAEm6uUfvn3iox1ASWwpDJu1pAuDBmo,1124
+trytond/modules/health_ntd/locale/zh_CN.po,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trytond/modules/health_ntd/tests/__init__.py,sha256=pX7lrKlq2unRCFMkcN_8x_we-HLLVH8jGauipUhfiwE,230
+trytond/modules/health_ntd/tests/test_health_ntd.py,sha256=49hotyn9-wXxGMaxmH7WR8a9KoD5YH_WeejXK69tw58,580
+gnuhealth_ntd-4.4.1.dist-info/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+gnuhealth_ntd-4.4.1.dist-info/METADATA,sha256=pX7Qvuht9UPn0i1X9ITh8Q5CPXhYfmu-rNpyD0zAd3E,5787
+gnuhealth_ntd-4.4.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+gnuhealth_ntd-4.4.1.dist-info/entry_points.txt,sha256=txifJ8VTFKI09fpmhSXzpibZTsoSmDmw6ddj53HxUM0,58
+gnuhealth_ntd-4.4.1.dist-info/top_level.txt,sha256=1UNriCfRfjRjutJbJ_B8i13huVUoV_Otp9RlW3mCfw4,8
+gnuhealth_ntd-4.4.1.dist-info/RECORD,,
