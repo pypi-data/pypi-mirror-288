@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+MH410D/BaseSensor.py
+MH410D/MH410D.py
+MH410D/__init__.py
+MH410D.egg-info/PKG-INFO
+MH410D.egg-info/SOURCES.txt
+MH410D.egg-info/dependency_links.txt
+MH410D.egg-info/requires.txt
+MH410D.egg-info/top_level.txt
