@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: aigcfile
+Version: 0.0.3
+Summary: File renaming, path acquisition, folder creation, file indexing and other operations.
+Author-email: weiwenying <weiwenying520@gmail.com>
+Project-URL: Homepage, https://gitlab.com/nuvic/2024/aigcfile
+Project-URL: Issues, https://gitlab.com/nuvic/2024/aigcfile/-/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: opencv-python
+Requires-Dist: tqdm
+Requires-Dist: click
+
+# AIGC File
+
+## Abstract
+
+File renaming, path acquisition, folder creation, file indexing and other operations
+
+
+## Installation
+
+```bash 
+pip install aigcfile
+```
+
+## vscode config
+
+```json
+{
+    // 粘贴时，规范代码，自动帮你满足autopep8代码规范，需要vscode安装有autopep8插件
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    // python 解释器的路径
+    "python.defaultInterpreterPath": "/home/william/.conda/envs/aigcav/bin/python",
+    // 字数提示分割线，有多少个数，就有多少条分割线
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "python.languageServer": "Jedi",
+    "python.formatting.provider": "none"
+}
+
+```
+
+## build
+
+```bash
+python3 -m pip install --upgrade build
+python3 -m pip install --upgrade twine
+python3 -m build
+python3 -m twine upload dist/*
+```
