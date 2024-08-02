@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: atlas_rucio_policy_package
+Version: 0.0.2
+Summary: Rucio policy package for the ATLAS experiment
+Author-email: ATLAS ADC DDM <atlas-adc-ddm@cern.ch>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+
