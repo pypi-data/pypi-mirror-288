@@ -1,0 +1,2 @@
+include codialog/templates/*.html
+include requirements.txt

@@ -1,0 +1,7 @@
+build
+codialog
+dist
+frontend
+nodejs
+pytest-env
+react
