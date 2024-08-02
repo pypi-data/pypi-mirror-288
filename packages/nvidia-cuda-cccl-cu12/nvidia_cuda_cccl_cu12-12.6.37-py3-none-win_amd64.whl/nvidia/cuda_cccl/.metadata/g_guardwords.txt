@@ -1,0 +1,22 @@
+#
+# ** DO NOT EDIT and DO NOT CHECK THIS FILE IN **
+#
+# See https://wiki.nvidia.com/engwiki/index.php/Nvconfig
+#
+GUARDWORD { "IG00X" }
+GUARDWORD { "RUBIN" }
+GUARDWORD { "T264" falsePositiveFilters=codeSection,dataSection }
+GUARDWORD { "GB20X" }
+GUARDWORD { "GR10X" }
+GUARDWORD { "IG00X" }
+GUARDWORD { "GA10F" }
+GUARDWORD { "GB10B" }
+GUARDWORD { "GB202" }
+GUARDWORD { "GB202F" }
+GUARDWORD { "GB203" }
+GUARDWORD { "GB204" }
+GUARDWORD { "GB205" }
+GUARDWORD { "GB206" }
+GUARDWORD { "GB207" }
+GUARDWORD { "GR100" }
+GUARDWORD { "GR102" }
