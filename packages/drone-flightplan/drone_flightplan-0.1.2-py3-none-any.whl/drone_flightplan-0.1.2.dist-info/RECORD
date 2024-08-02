@@ -1,0 +1,10 @@
+drone_flightplan-0.1.2.dist-info/METADATA,sha256=5c6Ljld3XWKtDSOYCIfIPu-2NaVuCIUctASDoWdSrJI,3784
+drone_flightplan-0.1.2.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+drone_flightplan-0.1.2.dist-info/licenses/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+drone_flightplan/__init__.py,sha256=C5K0jlEnI-qP6apC0w3vxVmqKeZfTST3sCoVhR5w17c,102
+drone_flightplan/create_wpml.py,sha256=7x8K-E_1v3R0h_y-TjdpFo4O0vzuRbttzljOweUi8dQ,13609
+drone_flightplan/flightPlanWaypointGenerator.py,sha256=Zd2PPUEiVjeTZBfUIb3olKQi75ohWENA4CAdb0uD_FM,5022
+drone_flightplan/flightplan.py,sha256=lV6JU9iP5oimToESKsuutXbdkvDVxPMpr5kYtXgDTv0,3406
+drone_flightplan/sampleRasterAtPoints.py,sha256=1DNbSMSUFrbaX4CAcg0Z97yeHTSAnNySRIGuFIiYhr4,5175
+drone_flightplan/waypoints.py,sha256=-kwxcBxTBHJvKIwTtGqerwtXFqjniGbk7t7MzWCVqgw,20267
+drone_flightplan-0.1.2.dist-info/RECORD,,
