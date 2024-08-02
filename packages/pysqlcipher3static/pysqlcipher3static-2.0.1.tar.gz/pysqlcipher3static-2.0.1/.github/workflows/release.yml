@@ -1,0 +1,60 @@
+name: release
+
+on:
+  push:
+    tags:
+      - '*'
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: build ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: ["ubuntu-latest", "macos-latest"]
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build wheels
+        uses: pypa/cibuildwheel@v2.19.2
+        env:
+          CIBW_BUILD: "cp39-* cp310-* cp311-* cp312-*"
+          CIBW_SKIP: "macosx_universal2 *-win32 *-win_arm64 *i686 *s390x *ppc64le *musllinux*"
+          CIBW_ARCHS: native
+          CIBW_BEFORE_ALL_LINUX: yum install -y openssl-devel
+          CIBW_BEFORE_ALL_MACOS: brew install openssl
+          CIBW_ENVIRONMENT: MACOSX_DEPLOYMENT_TARGET=14.0 LDFLAGS="-L/opt/homebrew/opt/openssl@3/lib" CPPFLAGS="-I/opt/homebrew/opt/openssl@3/include"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cibw-wheels-${{ matrix.os }}
+          path: ./wheelhouse/*.whl
+
+  sdist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pipx run build --sdist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cibw-sdist
+          path: dist/*.tar.gz
+
+  upload:
+    needs: [build, sdist]
+    runs-on: ubuntu-latest
+    environment: release
+    if: startsWith(github.ref, 'refs/tags/v')
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: cibw-*
+          path: dist
+          merge-multiple: true
+
+      - uses: pypa/gh-action-pypi-publish@release/v1
