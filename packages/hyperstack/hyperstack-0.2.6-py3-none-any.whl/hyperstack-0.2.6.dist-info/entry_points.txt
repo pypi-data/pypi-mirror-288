@@ -1,0 +1,3 @@
+[console_scripts]
+hyperstack=hyperstack.cli:main
+
