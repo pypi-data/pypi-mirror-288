@@ -1,0 +1,8 @@
+README.txt
+setup.py
+incrdecrlib/__init__.py
+incrdecrlib/incrdecrnum.py
+incrdecrlib.egg-info/PKG-INFO
+incrdecrlib.egg-info/SOURCES.txt
+incrdecrlib.egg-info/dependency_links.txt
+incrdecrlib.egg-info/top_level.txt
