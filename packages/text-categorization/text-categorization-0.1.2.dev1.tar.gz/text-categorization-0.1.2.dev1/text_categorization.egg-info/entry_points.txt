@@ -1,0 +1,3 @@
+[console_scripts]
+text-categorizer = entrypoints.cli:main
+
