@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyhurl
+Version: 1.0.0
+Summary: A set of useful functions that I use in projects.
+Author: Rongliang Hu
+Author-email: hurongliang@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pymysql
+Requires-Dist: python-dotenv
+Requires-Dist: oss2
+Requires-Dist: openai
+Requires-Dist: ollama
+
+# pyhurl
+
+A set of useful functions that I use in projects.
