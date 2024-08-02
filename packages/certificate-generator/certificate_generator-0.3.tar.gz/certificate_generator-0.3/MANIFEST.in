@@ -1,0 +1,5 @@
+include certificate_generator/src/template2.png
+include certificate_generator/src/logo.png
+include certificate_generator/src/GreatVibes-Regular.ttf
+include README.md
+include LICENSE

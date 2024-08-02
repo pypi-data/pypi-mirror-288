@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+certificate_generator/__init__.py
+certificate_generator/generator.py
+certificate_generator.egg-info/PKG-INFO
+certificate_generator.egg-info/SOURCES.txt
+certificate_generator.egg-info/dependency_links.txt
+certificate_generator.egg-info/entry_points.txt
+certificate_generator.egg-info/requires.txt
+certificate_generator.egg-info/top_level.txt
+certificate_generator/src/GreatVibes-Regular.ttf
+certificate_generator/src/logo.png
+certificate_generator/src/template2.png
