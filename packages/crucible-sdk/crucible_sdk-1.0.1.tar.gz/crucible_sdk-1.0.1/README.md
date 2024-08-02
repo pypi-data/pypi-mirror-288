@@ -1,0 +1,104 @@
+# Crucible
+Crucible is a CLI tool for generating and updating SDKs from OpenAPI specifications. It automates the creation of SDKs and ensures they remain up-to-date with the latest API changes.
+
+## Features
+
+* Generate a new SDK project with a predefined structure.
+* Update the SDK codebase based on the latest OpenAPI specification.
+* Supports automatic updates via GitHub Actions.
+* Manages dependencies and packaging using Poetry.
+
+## Installation
+To install Crucible, you can use pipx:
+
+## Usage
+
+```bash
+pipx install crucible
+```
+
+### Create a New SDK Project
+To create a new SDK project:
+
+```bash
+crucible create_project my_sdk_project
+```
+
+This command will generate a new project with the following structure:
+
+```plaintext
+my_sdk_project/
+├── causadb/
+│   ├── __init__.py
+│   ├── ...
+├── tests/
+│   ├── __init__.py
+│   ├── test_example.py
+├── pyproject.toml
+├── README.md
+├── setup.cfg
+└── LICENSE
+```
+
+### Update the SDK Codebase
+To update the SDK codebase based on the latest OpenAPI specification:
+
+```bash
+crucible update_sdk crucible.yaml openapi.yaml causadb
+```
+
+This command will regenerate the code in the causadb/ directory while keeping other files like README, version, and tests persistent.
+
+### Integration with GitHub Actions
+You can automate the update process by integrating Crucible with GitHub Actions. Create a workflow file .github/workflows/generate_sdk.yml:
+
+```yaml
+name: Generate SDK
+
+on:
+  push:
+    paths:
+      - openapi.yaml
+
+jobs:
+  generate-sdk:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+
+    - name: Install Poetry
+      run: |
+        curl -sSL https://install.python-poetry.org | python3 -
+        export PATH="$HOME/.poetry/bin:$PATH"
+        poetry --version
+
+    - name: Install dependencies
+      run: |
+        export PATH="$HOME/.poetry/bin:$PATH"
+        poetry install
+
+    - name: Update SDK
+      run: |
+        export PATH="$HOME/.poetry/bin:$PATH"
+        crucible update_sdk crucible.yaml openapi.yaml causadb
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        git add causadb/
+        git commit -m 'Regenerate SDK from updated OpenAPI specification'
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
