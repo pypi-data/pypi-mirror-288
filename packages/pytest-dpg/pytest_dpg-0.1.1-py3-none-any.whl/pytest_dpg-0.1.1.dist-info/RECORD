@@ -1,0 +1,11 @@
+pytest_dpg/__init__.py,sha256=pEfB0M8y3VPY7HqB5Qy7YiF0upYD7pwJ6tibj95To94,31
+pytest_dpg/commands.py,sha256=Z6zQXY8EGrwxnbDNNWqoBhtgqzQBVDn0GU072cFs-YA,1999
+pytest_dpg/dpg_helpers.py,sha256=fxrBcLsN9gn04hAnj3DYN0n5-gTFKU9VZGSAtKis21w,5584
+pytest_dpg/invoker.py,sha256=ROgOseKOpMgStLeHCazqoDDefHBm80HqsUVhfo08I8I,2778
+pytest_dpg/plugin.py,sha256=XbIe0pyT0jM_J-xsCDf4PVbJEuzNDuhiybsnEWUTnQ4,853
+pytest_dpg/receiver.py,sha256=sFJ83IGU81i0ezetE3SDMw5ROfJO6IC_oITBYnZUl4s,3992
+pytest_dpg-0.1.1.dist-info/METADATA,sha256=7Z2wOnhPeiHEUSVlfYfKGgPmSY02DjiywzOzw8odclA,5772
+pytest_dpg-0.1.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pytest_dpg-0.1.1.dist-info/entry_points.txt,sha256=q47CzDiEhzdBRKBpoqIrZI6pK6GGd_N4Vcco-laQaEU,42
+pytest_dpg-0.1.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pytest_dpg-0.1.1.dist-info/RECORD,,
