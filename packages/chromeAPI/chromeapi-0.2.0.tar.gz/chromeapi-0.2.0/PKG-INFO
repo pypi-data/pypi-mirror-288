@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: chromeAPI
+Version: 0.2.0
+Author: Than Tuan Bao
+Author-email: thantuanbao66@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+# ChromeAPI
+**chromeAPI library, supports users in browser automation with Selenium**
+
+1. Get element on browser
+2. Get Telephone number
+3. Gen name for user
+4. Get Proxy
