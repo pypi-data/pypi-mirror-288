@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: brainchop
+Version: 0.1.4
+Summary: Portable and lightweight brain segmentation using tinygrad
+Home-page: https://github.com/neuroneural/brainchop-cli
+Author: Mike Doan
+Author-email: spikedoanz@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: tinygrad
+Requires-Dist: nibabel
+Requires-Dist: requests
+
+# BrainChop
+
+BrainChop is a lightweight tool for brain segmentation using tinygrad that runs on pretty much everything.
+
+---
+
+## Installation
+
+You can install BrainChop using pip:
+
+```
+pip install brainchop
+```
+
+## Usage
+
+To use BrainChop, run the following command:
+
+```
+brainchop input.nii.gz -o output.nii.gz
+```
+
+Where:
+- `input.nii.gz` is your input NIfTI file
+- `output.nii.gz` is the desired output file name
+
+## Requirements
+
+- Python 3.6+
+- numpy
+- tinygrad
+- nibabel
+
+## License
+
+This project is licensed under the MIT License.
