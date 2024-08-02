@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: dongjak_dash_components
+Version: 1.0.1
+Summary: Project Description
+Author: cruldra <cruldra@gmail.com>
+License: MIT
+Classifier: Framework :: Dash
+License-File: LICENSE
