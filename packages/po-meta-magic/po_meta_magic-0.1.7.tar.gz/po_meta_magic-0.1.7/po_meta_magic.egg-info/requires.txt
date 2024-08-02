@@ -1,0 +1,4 @@
+pillow
+fuzzywuzzy
+python-dateutil
+pytesseract
