@@ -1,0 +1,72 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "naturf"
+version = "1.0.4"
+description = 'The Neighborhood Adaptive Tissues for Urban Resilience Futures tool (NATURF) is a Python workflow that generates data readable by the Weather Research and Forecasting (WRF) model. The NATURF Python modules use shapefiles containing building footprint and height data as input to calculate 132 building parameters at any resolution and converts the parameters into a binary file format.'
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = []
+authors = [
+  { name="Em Rexer", email="emily.rexer@pnnl.gov" },
+  { name="Levi Sweet-Breu", email="levi_sweetbreu1@baylor.edu" },
+  { name="Melissa Allen-Dumas", email="allenmr@ornl.gov" },
+  { name="Chris Vernon", email="chris.vernon@pnnl.gov" },
+  { name="Stefan Krawczyk", email="stefan@dagworks.io" },
+]
+
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+  "fiona==1.8.19;python_version<'3.10'",
+  "fiona>=1.9.6;python_version>='3.10'",
+  "geocube==0.3.3;python_version<'3.10'",
+  "geocube>=0.5.2,<6;python_version>='3.10'",
+  "geopandas==0.10.2;python_version<'3.10'",
+  "geopandas>=0.14.4,<1;python_version>='3.10'",
+  "graphviz==0.20.3",
+  "joblib>=1.4.2",
+  "numpy==1.22.4;python_version<'3.10'",
+  "numpy>=1.26.4,<2;python_version>='3.10'",
+  "pandas>=2.2.2",
+  "pyproj>=3.0.1",
+  "rasterio>=1.3.10",
+  "rtree>=1.2.0",
+  "sf-hamilton[visualization]==1.64;python_version<'3.10'",
+  "sf-hamilton[visualization]>=1.64;python_version>='3.10'",
+  "shapely>=2.0.4",
+  "tqdm>=4.66.4",
+  "xarray==2022.3.0;python_version<'3.10'",
+  "xarray>=2024.5.0;python_version>='3.10'",
+]
+
+[project.optional-dependencies]
+docs = [
+  "Sphinx<=7.2.6",
+  "nbsphinx>=0.9.3",
+  "sphinx-rtd-theme>=2.0.0",
+  "sphinxcontrib-applehelp>=1.0.8",
+  "sphinxcontrib-devhelp>=1.0.6",
+  "sphinxcontrib-htmlhelp>=2.0.5",
+  "sphinxcontrib-jquery>=4.1",
+  "sphinxcontrib-jsmath>=1.0.1",
+  "sphinxcontrib-qthelp>=1.0.7",
+  "sphinxcontrib-serializinghtml>=1.1.10",
+  "sphinx_design>=0.5.0",
+  "sphinxcontrib.katex>=0.9.9",
+]
+
+[project.urls]
+Homepage = "https://immm-sfa.github.io/naturf/index.html"
+Repository = "https://github.com/IMMM-SFA/naturf"
+Issues = "https://github.com/IMMM-SFA/naturf/issues"
