@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "simple_salesforce_analytics"
+version = "0.0.1"
+authors = [
+  { name="Ryan Dowling", email="rdowlin3@jh.edu" },
+]
+description = "An extension of simple-salesforce that enables users to automate Salesforce reports and dashboards through the Salesforce Analytics API"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/JH-DAR-OAS/simple-salesforce-analytics"
+Issues = "https://github.com/JH-DAR-OAS/simple-salesforce-analytics/issues"
