@@ -1,0 +1,57 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cfatmos"
+dynamic = ["version"]
+description = ''
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Nico Lucarelli", email = "nlucarel@purdue.edu" },
+]
+classifiers = [
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = ["numpy>=1.20.0", "pandas>=1.0.0", "typing>=3.7.4"]
+
+[project.urls]
+Documentation = "https://github.com/nmlucarelli/cfatmos#readme"
+Issues = "https://github.com/nmlucarelli/cfatmos/issues"
+Source = "https://github.com/nmlucarelli/cfatmos"
+
+[tool.hatch.version]
+path = "src/cfatmos/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/cfatmos tests}"
+
+[tool.coverage.run]
+source_pkgs = ["cfatmos", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/cfatmos/__about__.py",
+]
+
+[tool.coverage.paths]
+cfatmos = ["src/cfatmos", "*/cfatmos/src/cfatmos"]
+tests = ["tests", "*/cfatmos/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+"src/cfatmos/data" = "cfatmos/data"
