@@ -1,0 +1,14 @@
+pysswordsz/__init__.py,sha256=NL2sp34WSKuAPJl_Wocr8ixokeuYCyd0BOfwjWL0UCo,7787
+pysswordsz/encrytool.py,sha256=WmaHSAimhNFf1zv2aVFkRb3HyS8IS8QQmpeDnfdCi-Q,7944
+pysswordsz/pwsmanager.py,sha256=S3w6n-hW9lTNh8ksgjGXLuxCmy6wn3My2ZSa8Lq-UNA,6077
+pysswordsz/pzsconfig.py,sha256=dw3TCuQNtqZ5tTFcShogzNxVN8hECbiP02rxpLTl5ig,3773
+pysswordsz/static/english.wordlist,sha256=t9YnZksq6dgmBrQdgV0vOt-c376LgNZbBpaLKHlhyEw,341427
+pysswordsz/static/german.wordlist,sha256=l6Z4bTYCjKgrd57iulHl6oUAXOmNukQw0LTRgNAUiTU,137059
+pysswordsz/static/mix.wordlist,sha256=qmVIZlKShZy5sXV5M5BIm0ReWMWxiGiWQ7nZSHBkuMQ,110422
+pysswordsz/static/pinyin.wordlist,sha256=Cv3sV9OzzzRM0Rnm-la-cBoCLWrK_DYH6uXR6LYXSXg,111071
+pysswordsz/static/spanish.wordlist,sha256=_vOymGVrv8W959wuPeixlIPPKBtR5PnFaCR0iiE1cys,1325290
+pysswordsz/static/wubi.wordlist,sha256=MmgNx-oW5I5nw-jxUsfLLdr3BbKyYw8-6g7IY4QVM8Y,98304
+pysswordsz-0.1.0.dist-info/METADATA,sha256=YMc8t9wRYXIHSx41593WU5sQ_OWHKj7VtZJN2vW7RwI,5216
+pysswordsz-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pysswordsz-0.1.0.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pysswordsz-0.1.0.dist-info/RECORD,,
