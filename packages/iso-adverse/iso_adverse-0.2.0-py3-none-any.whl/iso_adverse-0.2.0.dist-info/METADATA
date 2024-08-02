@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: iso-adverse
+Version: 0.2.0
+Summary: This package is designed to simulate adversarial on pre-trained language models (pre-LLM models)
+Home-page: https://github.com/iso-ai/isoadverse
+Author: Jazmia Henry
+Author-email: isojaz@isoai.co
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch (>=1.7.0)
+Requires-Dist: transformers (>=4.0.0)
+
+# IsoAdverse Documentation
+
+## Introduction
+
+Welcome to **IsoAdverse**, a Python package designed to simulate adversarial on pre-trained language models (pre-LLM models). This package implements a range of attacks as described in recent research to help secure your AI Agents and LLMs.
+
+## Installation
+
+To install the IsoAdverse package, you can use pip:
+
+```bash
+pip install iso-adverse
+```
+
+## Quickstart
+
+Here’s a quick example of how to use IsoAdverse to train a BERT model with adversarial training:
+
+```python
+import torch
+from isoadverse.utils.data_loader import get_data_loader
+from isoadverse.utils.model_loader import get_model_and_tokenizer
+
+# Load data and model
+texts = ["This is a positive sentence.", "This is a negative sentence."]
+labels = torch.tensor([1, 0])
+train_loader = get_data_loader(texts, labels, batch_size=2)
+
+model, tokenizer = get_model_and_tokenizer(model_name='bert-base-uncased')
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model.to(device)
+```
+
+## Attacks
+
+IsoAdverse implements several adversarial attacks on text data. Below are the details of each attack.
+
+### Fast Gradient Sign Method (FGSM)
+
+The FGSM attack perturbs the input text by leveraging the gradients of the loss with respect to the input.
+
+```python
+from isoadverse.attacks.text_fgsm import text_fgsm_attack
+print("Running FGSM Attack...")
+perturbed_text = text_fgsm_attack(model, tokenizer, texts[0], torch.tensor([labels[0]]), epsilon=0.3)
+print("Original Text:", texts[0])
+print("Perturbed Text:", tokenizer.decode(perturbed_text[0]))
+```
+
+### Projected Gradient Descent (PGD)
+
+The PGD attack is an iterative attack method that performs multiple steps of FGSM.
+
+```python
+from isoadverse.attacks.text_pgd import text_pgd_attack
+
+print("\nRunning PGD Attack...")
+perturbed_ids = text_fgsm_attack(model, tokenizer, texts[0], torch.tensor([labels[0]]), epsilon=0.3)
+print("Original Text:", texts[0])
+print("Perturbed Text:", tokenizer.decode(perturbed_ids[0]))
+```
+
+### TextBugger
+
+TextBugger perturbs the text by introducing character-level changes.
+
+```python
+from isoadverse.attacks.textbugger import textbugger_attack
+
+print("\nRunning TextBugger Attack...")
+perturbed_text = textbugger_attack(texts[0], num_bugs=5)
+print("Original Text:", texts[0])
+print("Perturbed Text:", perturbed_text)
+```
+
+### DeepWordBug
+
+DeepWordBug introduces word-level perturbations by modifying words in the text.
+
+```python
+from isoadverse.attacks.deepwordbug import deepwordbug_attack
+
+print("\nRunning DeepWordBug Attack...")
+perturbed_text = deepwordbug_attack(texts[0], num_bugs=5)
+print("Original Text:", texts[0])
+print("Perturbed Text:", perturbed_text)
+```
+
+
+## Utilities
+
+IsoAdverse includes utility functions for loading data and models, making it easier to integrate into your existing workflow.
+
+### Data Loader
+
+The data loader utility helps load and prepare text datasets for training and evaluation.
+
+```python
+from isoadverse.utils.data_loader import get_data_loader
+
+train_loader = get_data_loader(texts, labels, batch_size=2)
+```
+
+### Model Loader
+
+The model loader utility provides pre-trained models and tokenizers.
+
+```python
+from isoadverse.utils.model_loader import get_model_and_tokenizer
+
+model, tokenizer = get_model_and_tokenizer(model_name='bert-base-uncased')
+```
+
+
+
