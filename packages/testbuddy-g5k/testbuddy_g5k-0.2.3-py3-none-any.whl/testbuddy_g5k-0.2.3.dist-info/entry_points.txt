@@ -1,0 +1,3 @@
+[console_scripts]
+testbuddy-g5k=testbuddy_g5k.testbuddy_g5k:main
+
