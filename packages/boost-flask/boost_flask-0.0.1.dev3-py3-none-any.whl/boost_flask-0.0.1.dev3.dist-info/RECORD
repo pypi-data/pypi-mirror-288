@@ -1,0 +1,16 @@
+boostflask/__about__.py,sha256=OamXQOKDgYlcL1E1Eer8rZXTuVg9QEMMh8ioZkQfXAQ,52
+boostflask/__init__.py,sha256=T2MY2IqoZMTX0ihO_TpenkjT2sGnhQn-zrVBHtcN2y8,88
+boostflask/_utils.py,sha256=Fj1rqC_hPGu9Zca29wP-Fbz2G5Vdd9xfZZDbqkxI_EU,249
+boostflask/bootstrap.py,sha256=YolUM1aBdzu7Z7GGbvI9nLhISGIL3S-3NFQcYpK8cHE,3937
+boostflask/config.py,sha256=nZkUx_YEHcLEkkyYXPW81TF4RlhsYJeJ8Ax5ujmKI5M,789
+boostflask/pool.py,sha256=Iat0Sj8FSVxNIkffmCkOEuerRF4q7K-d2z9hgRETnIQ,3358
+boostflask/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+boostflask/view/__init__.py,sha256=rxSab4JliHN6iesnoaEMqmSn-q1CZyIoTVj7vdthoGY,172
+boostflask/view/base.py,sha256=2uTZVpqaQHhqaqiiO8zwJRMUhinHk-FzqKi0eUDbyIQ,2242
+boostflask/view/decorator.py,sha256=3C4LMZ_0J4DNMRBR-0pRZujwhTUVcAecvHXVincUowg,1786
+boostflask/view/renderer.py,sha256=p_ZLNzi85DAmdKtYWBQjgSso0EcTFW6MQZ5Qt-wqDJ0,1970
+boostflask/view/resolver.py,sha256=coKcNYvqDsVCnQoAaKzBaMuJYie4c73Lp84f8rg1M_o,4714
+boost_flask-0.0.1.dev3.dist-info/METADATA,sha256=lO6h0XNc2qeCpbHVlwjmczs1R9XlPThR9-maDUAqHGc,2692
+boost_flask-0.0.1.dev3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+boost_flask-0.0.1.dev3.dist-info/licenses/LICENSE,sha256=SSFDZ1GuoDvU8wy7-B2nikGLypMDRSN1yPedzSFvZUY,1069
+boost_flask-0.0.1.dev3.dist-info/RECORD,,
