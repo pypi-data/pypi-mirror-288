@@ -1,0 +1,5 @@
+include readme.md
+include pySingleFile/DrissionPage/_configs/configs.ini
+include pySingleFile/DrissionPage/*.pyi
+include pySingleFile/DrissionPage/*/*.py
+include pySingleFile/DrissionPage/*/*.pyi
