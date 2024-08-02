@@ -1,0 +1,19 @@
+{
+  "template": "https://github.com/ecmwf-projects/cookiecutter-conda-package",
+  "commit": "5c8a3dfc59e893134050fe4e355893dd1d08b2e7",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "cacholote",
+      "project_slug": "cacholote",
+      "project_short_description": "Efficiently cache calls to functions",
+      "copyright_holder": "B-Open Solutions srl",
+      "copyright_year": "2019",
+      "mypy_strict": "True",
+      "integration_tests": "True",
+      "pypi": true,
+      "_template": "https://github.com/ecmwf-projects/cookiecutter-conda-package"
+    }
+  },
+  "directory": null
+}
