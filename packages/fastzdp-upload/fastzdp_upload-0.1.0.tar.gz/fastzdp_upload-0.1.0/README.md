@@ -1,0 +1,48 @@
+# fastzdp_upload
+
+FastAPI文件上传下载的组件库。
+
+使用本组件库，你将一行代码轻松拥有如下接口：
+- 文件上传
+- 文件下载
+- 文件删除
+- 获取文件列表
+
+## 安装
+```bash
+pip install fastzdp_upload
+```
+
+## 使用
+```python
+import fastzdp_upload
+from fastapi import FastAPI
+from sqlmodel import SQLModel, Field, create_engine, Session
+
+# 创建数据库引擎
+sqlite_url = "mysql+pymysql://root:root@127.0.0.1:3306/test?charset=utf8mb4"
+engine = create_engine(sqlite_url, echo=True)
+
+# 确保表存在
+SQLModel.metadata.drop_all(engine)
+SQLModel.metadata.create_all(engine)
+
+
+def get_db():
+    db = Session(engine)
+    try:
+        yield db
+    finally:
+        db.close()
+
+
+app = FastAPI()
+
+app.include_router(fastzdp_upload.get_router(get_db))
+
+if __name__ == '__main__':
+    import uvicorn
+
+    uvicorn.run(app, host='0.0.0.0', port=8000)
+
+```
