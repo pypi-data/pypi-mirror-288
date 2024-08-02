@@ -1,0 +1,4 @@
+click==8.1.7
+python-dotenv==1.0.1
+usepolvo==0.1.16
+typing_extensions==4.12.2
