@@ -1,0 +1,14 @@
+sweights/__init__.py,sha256=9OYmbILMpcNKBXW3H6iXOLd-DOhwGByUddQGL1U5A80,497
+sweights/covariance.py,sha256=ObAF9Lk55JC2lUU83-LvmoPALuZCt4vqkuvTb3zUUx4,6199
+sweights/cow.py,sha256=WVZFPe9P8hpyV-2zrf-i_FjgaqE6b3RxN1kwI_IYP8M,7318
+sweights/experimental.py,sha256=FCrkbBGauCWsczJb28E_w_tDO0_MI1huyHdX2c9dgU4,12734
+sweights/independence.py,sha256=nTn3xNsocmVjOfuzgz-j2W4G5RIBOisfQMCESzMwzD8,2865
+sweights/sweight.py,sha256=OrsFdGVgEl3-PodM7lcg-k0hUd8EHvgpJDtpmOXrjzo,21954
+sweights/testing.py,sha256=kMaOW9MVzSIYOvqdAW_4MLaD76UhRGrhauTD86Ey2Ik,4195
+sweights/typing.py,sha256=7OqzWBAYAipn0TlUcDXUfYyr_vIc7url1cymKXZPCgc,984
+sweights/util.py,sha256=M8JhxPiLwrJScALIhRHaqZ5TPlzcCLb-RJ0g5eSJ6DU,16463
+sweights-1.5.0.dist-info/LICENSE,sha256=NVlGiVzjS0lDMiQ7LQv1vkQjwi2nxpbK_BKEQZ-_bM0,1071
+sweights-1.5.0.dist-info/METADATA,sha256=JdC7T7vhiFPXc4hTS3eD8rYbb-7GsNebOmR60pNAF5U,2767
+sweights-1.5.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+sweights-1.5.0.dist-info/top_level.txt,sha256=u7JXWP9YCnMxFKVJ8lZSGnwc8pELxYrQf5a3FEYoGCk,9
+sweights-1.5.0.dist-info/RECORD,,
