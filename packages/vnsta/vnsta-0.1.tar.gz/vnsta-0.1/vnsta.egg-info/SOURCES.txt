@@ -1,0 +1,7 @@
+README.md
+setup.py
+vnsta.egg-info/PKG-INFO
+vnsta.egg-info/SOURCES.txt
+vnsta.egg-info/dependency_links.txt
+vnsta.egg-info/requires.txt
+vnsta.egg-info/top_level.txt

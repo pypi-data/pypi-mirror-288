@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: vnsta
+Version: 0.1
+Summary: A simple tool for Instagram control, web scraping, and user Instagram interaction using requests.
+Home-page: https://github.com/Vermouth4/Vnsta
+Author: Vermouth
+Author-email: ver7mouth4@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: telebot
+Requires-Dist: beautifulsoup4
+Requires-Dist: instabot
+
+# vnata
+
+A simple tool for Instagram control, web scraping, and user Instagram interaction using requests.
+
+## Description
+
+This library provides a set of tools to interact with Instagram, perform web scraping, and control a Telegram bot. It includes features such as random number generation, HTTP requests, and more.
+
+## Installation
+
+You can install the required dependencies using the following command:
+
+```sh
+pip install requests telebot bs4 instabot
