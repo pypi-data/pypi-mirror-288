@@ -1,0 +1,257 @@
+Metadata-Version: 2.1
+Name: social-auth-fastapi
+Version: 0.1.6
+Summary: Default template for PDM package
+Author-Email: congpc <congpc1305@gmail.com>
+Requires-Python: >=3.11
+Requires-Dist: fastapi[all]==0.111.0
+Requires-Dist: httpx>=0.27.0
+Requires-Dist: passlib==1.7.4
+Requires-Dist: python-jose>=3.3.0
+Requires-Dist: uvicorn[standard]==0.29.0
+Requires-Dist: asgiref>=3.8.1
+Requires-Dist: asyncpg>=0.29.0
+Requires-Dist: python-dateutil>=2.9.0.post0
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: sqlmodel>=0.0.18
+Requires-Dist: requests>=2.32.3
+Description-Content-Type: text/markdown
+
+<h1 align="center"> FastAPI Social Service</h1>
+<p align="center">
+  <a href="">
+    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  </a>
+  <a href="https://fastapi.tiangolo.com">
+    <img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi" alt="FastAPI">
+  </a>
+  <a href="https://docs.pydantic.dev/2.4/">
+    <img src="https://img.shields.io/badge/Pydantic-E92063?logo=pydantic&logoColor=fff&style=for-the-badge" alt="Pydantic">
+  </a>
+  <a href="https://www.postgresql.org">
+    <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+  </a>
+<a href="https://www.mysql.com">
+    <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="PostgreSQL">
+</a>
+</p>
+
+## 0. Technology Stack and Features
+
+- ⚡ [**FastAPI**](https://fastapi.tiangolo.com) for the Python backend API.
+- 🧰 [SQLModel](https://sqlmodel.tiangolo.com) for the Python SQL database interactions (ORM).
+- 🔍 [Pydantic](https://docs.pydantic.dev), used by FastAPI, for the data validation and settings management.
+- 💾 [PostgreSQL](https://www.postgresql.org) as the SQL database.
+- 💾 [MySQL](https://www.postgresql.org) as the SQL database.
+- 🔒 Secure password hashing by default.
+- 🔑 JWT token authentication.
+- 📫 Email based password recovery.
+
+- 🎨 [PDM](https://pdm-project.org/latest/) is a modern Python package and dependency manager supporting the latest PEP
+  standards.
+
+## 1. Prerequisites
+
+### 1.0 Start
+
+Clone repository
+
+```sh
+git clone https://github.com/congpc130599/social-auth
+```
+
+### Environment Variables (.env)
+
+Then create a `.env` file in the `project` directory.
+
+
+<p> 
+    <img src="https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=red" alt="Google">
+</p>
+
+**Configure ENV Google:**
+
+- Create GOOGLE_CLIENT_ID , GOOGLE_CLIENT_SECRET.
+- Setting in file env
+
+   ```env
+   GOOGLE_CLIENT_ID  = my_client_id
+   GOOGLE_CLIENT_SECRET = my_client_secret
+   ```
+
+<p> 
+    <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white" alt="Github">
+</p>
+
+**Configure ENV Github:**
+
+- Create GITHUB_CLIENT_ID , GITHUB_CLIENT_SECRET.
+- Setting in file env
+
+   ```env
+    GITHUB_CLIENT_ID = my_client_id
+    GITHUB_CLIENT_SECRET = my_client_secret
+   ```
+
+<p> 
+    <img src="https://img.shields.io/badge/facebook-0866FF?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook">
+</p>
+
+**Configure ENV Facebook:**
+
+- Create FACEBOOK_CLIENT_ID , FACEBOOK_CLIENT_SECRET.
+- Setting in file env
+
+   ```env
+    FACEBOOK_CLIENT_ID = my_client_id
+    FACEBOOK_CLIENT_SECRET = my_client_secret
+   ```
+
+<p> 
+    <img src="https://img.shields.io/badge/fitbit-00B0B9?style=for-the-badge&logo=fitbit&logoColor=white" alt="fibit">
+</p>
+
+**Configure ENV Fibit:**
+
+- Create FIBIT_CLIENT_ID , FIBIT_CLIENT_SECRET.
+- Setting in file env
+
+   ```env
+    FIBIT_CLIENT_ID = my_client_id
+    FIBIT_CLIENT_SECRET = my_client_secret
+   ```
+
+<p> 
+    <img src="https://img.shields.io/badge/gitlab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white" alt="gitlab">
+</p>
+**Configure ENV GitLab:**
+
+- Create GITLAB_CLIENT_ID , GITLAB_CLIENT_SECRET, GITLAB_BASE_ENDPOINT_URL.
+- Setting in file env
+
+   ```env
+    GITLAB_CLIENT_ID = my_client_id
+    GITLAB_CLIENT_SECRET = my_client_secret
+    GITLAB_BASE_ENDPOINT_URL = url
+   ```
+
+<p> 
+    <img src="https://img.shields.io/badge/line-00C300?style=for-the-badge&logo=line&logoColor=white" alt="line">
+</p>
+**Configure ENV Line:**
+
+- Create LINE_CLIENT_ID , LINE_CLIENT_SECRET.
+- Setting in file env
+
+   ```env
+    LINE_CLIENT_ID = my_client_id
+    LINE_CLIENT_SECRET = my_client_secret
+   ```
+
+<p> 
+    <img src="https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin">
+</p>
+**Configure ENV Linkedin:**
+
+- Create LINKEDIN_CLIENT_ID , LINKEDIN_CLIENT_SECRET.
+- Setting in file env
+
+   ```env
+    LINKEDIN_CLIENT_ID = my_client_id
+    LINKEDIN_CLIENT_SECRET = my_client_secret
+   ```
+
+<p> 
+    <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white" alt="notion">
+</p>
+**Configure ENV Notion:**
+
+- Create LINKEDIN_CLIENT_ID , LINKEDIN_CLIENT_SECRET.
+- Setting in file env
+
+   ```env
+    NOTION_CLIENT_ID = my_client_id
+    NOTION_CLIENT_SECRET = my_client_secret
+   ```
+
+<p> 
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="twitter">
+</p>
+**Configure ENV Twitter:**
+
+- Create TWITTER_CLIENT_ID , TWITTER_CLIENT_SECRET.
+- Setting in file env
+
+   ```env
+    TWITTER_CLIENT_ID = my_client_id
+    TWITTER_CLIENT_SECRET = my_client_secret
+   ```
+
+### Integration
+Create user model
+
+   ```python
+#!/usr/bin/env python3
+
+from sqlalchemy import String
+from sqlalchemy.orm import Mapped, mapped_column
+
+from social_auth_fastapi.models.base import DataClassBase
+
+
+class Account(DataClassBase):
+    """User table"""
+
+    __tablename__ = 't_account'
+
+    id: Mapped[int] = mapped_column(primary_key=True, index=True, autoincrement=True, sort_order=-999,
+                                    comment='Primary key id')
+    name: Mapped[str] = mapped_column(String(255), comment='name')
+    email: Mapped[str] = mapped_column(String(255), comment='email')
+
+   ```
+
+
+For integrating the package into an existing FastAPI application
+
+   ```python
+from fastapi import FastAPI
+from contextlib import asynccontextmanager
+
+app = FastAPI(lifespan=register_init)
+
+
+@asynccontextmanager
+async def register_init(app: FastAPI):
+    """
+    Start initialization
+  
+    :return:
+    """
+    await register_auth_social_init(
+        app,
+        user_model=Account,  # model auth
+        sqlalchemy_database_uri=settings.SQLALCHEMY_DATABASE_URI,
+        google_client_id=settings.GOOGLE_CLIENT_ID,
+        github_client_secret=settings.GOOGLE_CLIENT_SECRET,
+        # ...
+    )
+
+    yield
+   ```
+
+### Install using pdm
+
+```sh
+curl -sSL https://pdm-project.org/install-pdm.py | python3 -
+pdm python install 3.11.7
+pdm install
+```
+
+### Scripts
+
+- `pdm dev`: Run server
+
+Ensuring it ran without any problem.
+
+
