@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+regexsolver/__init__.py
+regexsolver/details.py
+regexsolver.egg-info/PKG-INFO
+regexsolver.egg-info/SOURCES.txt
+regexsolver.egg-info/dependency_links.txt
+regexsolver.egg-info/requires.txt
+regexsolver.egg-info/top_level.txt
