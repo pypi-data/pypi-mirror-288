@@ -1,0 +1,77 @@
+[tool.poetry]
+name = "dask-memusage-gpus"
+version = "1.0.0"
+description = "A Dask Scheduler Plugin to monitor GPU memory usage for tasks"
+authors = ["Julio Faracco <jcfaracco@gmail.com>"]
+maintainers = ["Julio Faracco <jcfaracco@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/discovery-unicamp/dask-memusage-gpus"
+repository = "https://github.com/discovery-unicamp/dask-memusage-gpus"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Development Status :: 1 - Planning",
+    "Environment :: GPU :: NVIDIA CUDA",
+]
+readme="README.md"
+exclude = ["tests/*", "docs/*"]
+packages = [
+    { include = "dask_memusage_gpus" },
+    { include = "dask_memusage_gpus_plugin.py" },
+]
+
+[tool.poetry.dependencies]
+dask = "*"
+distributed = "*"
+lxml = "*"
+openpyxl = "*"
+pandas = "*"
+pyarrow = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+coverage = "*"
+flake8 = "*"
+interrogate = "*"
+isort = "*"
+mock = "*"
+mypy = "*"
+parameterized = "*"
+pytest = "*"
+pytest-cov = "*"
+xlsxwriter = "*"
+wheel = "*"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "*"
+sphinx-autoapi = "*"
+sphinx_rtd_theme = "*"
+nbsphinx = "*"
+pandoc = "*"
+
+[tool.isort]
+profile = "black"
+
+[tool.coverage.paths]
+source = ["dask-memusage-gpus", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["dask-memusage-gpus"]
+
+[tool.coverage.report]
+exclude_also = [
+    "except ImportError",
+    ]
+
+[build-system]
+requires = ["poetry-core>=1.1.10"]
+build-backend = "poetry.core.masonry.api"
