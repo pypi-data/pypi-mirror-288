@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: alig-seq-dist
+Version: 0.1
+Summary: A package for computing the distance of aligned sequences inside FASTA file
+Home-page: https://github.com/jcevall1/alig_seq_dist
+Author: IMSI2024
+Author-email: jcevall1@asu.edu
+License: MIT
+Description: 
+        # bioseq_analysis
+        
+        A package for biosequence analysis.
+        
+        ## Installation
+        
+        pip install git+https://github.com/jcevall1/alig_seq_dist.git
+        
+        
+        ## Usage
+        
+        ```python
+        from bioseq_analysis.analysis import get_dist_date_files
+        
+        input_pattern = "data/*.csv"
+        aligned_sequence_fasta_file = "sequences.fasta"
+        
+        get_dist_date_files(input_pattern, aligned_sequence_fasta_file)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

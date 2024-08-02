@@ -1,0 +1,7 @@
+README.md
+setup.py
+alig_seq_dist.egg-info/PKG-INFO
+alig_seq_dist.egg-info/SOURCES.txt
+alig_seq_dist.egg-info/dependency_links.txt
+alig_seq_dist.egg-info/requires.txt
+alig_seq_dist.egg-info/top_level.txt
