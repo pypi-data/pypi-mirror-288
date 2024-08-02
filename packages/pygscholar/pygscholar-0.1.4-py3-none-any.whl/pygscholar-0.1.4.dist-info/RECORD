@@ -1,0 +1,17 @@
+pygscholar/__init__.py,sha256=tRDVhlIujdPk4i4PWhLiYcWRilLn4gOkK44teut-nxo,704
+pygscholar/__main__.py,sha256=BBVadYnOFTWLy9PipUhyKjB8kd4Qqm-cNwCZjuAtEes,77
+pygscholar/author.py,sha256=SIfieIg2j2yJO8Euv7HW2EjZktHf4yQ3nIPRokKGOoc,2358
+pygscholar/cache.py,sha256=yVGH-RnvgGUTrH_37piEcqBDKrH5yt5Bh4CfVKtmWis,1634
+pygscholar/cli.py,sha256=9m-zkz7Hd3bGsztIuKjIfmg3ceZvjJMVGObcv8dirTE,13076
+pygscholar/config.py,sha256=aQG_ww2Lys_uY0rMSoiGNUIFXKi3g1hlj4CZcqcdLFk,241
+pygscholar/department.py,sha256=ggIEvaiVc2Vxqj91-5SmB6RxWgVl7Eil3f7gag4jh40,2867
+pygscholar/publication.py,sha256=AdD_TMzaWZD2215AY1-fDZJLG8mAmu1UIlhEY5PAxzY,2569
+pygscholar/api/__init__.py,sha256=S9wtLj5DsTJg9BUFfM5m-2N3Mdlbp2ewr4cwkhhbrmM,3104
+pygscholar/api/scholarly.py,sha256=qPFuh9-CkDg6KTMP3_k-jYYEgqa0ARDbsPWoZjkWDKs,3522
+pygscholar/api/scraper.py,sha256=S843zNXqI8MiJ8J0LeYoDUKKmXOL1qb2iO8oEcmPCSE,9157
+pygscholar-0.1.4.dist-info/LICENSE,sha256=7jzvZZKooZSMB1290zZBPzfQH2Ye7o2NiQ5i1GmrRYI,1072
+pygscholar-0.1.4.dist-info/METADATA,sha256=-Vg5xLGzv9gZ4mI0IoGTzi1JiiTBljYZXM2OncBmOTI,3672
+pygscholar-0.1.4.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+pygscholar-0.1.4.dist-info/entry_points.txt,sha256=inblgpD6tIQZHkgvB1Ehv924rY22KcH3NDJgwcMvEos,47
+pygscholar-0.1.4.dist-info/top_level.txt,sha256=QpLjushhGW4pswH0pPayiQWe9a3HonpItcIjAQwIlXw,11
+pygscholar-0.1.4.dist-info/RECORD,,
