@@ -1,0 +1,5 @@
+atoti_kafka/__init__.py,sha256=ephZVKU-3_eY84RN1bwSLNMArQgxHYT0otrTdsbOvYw,43
+atoti_kafka/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atoti_client_kafka-0.9.0a0.dist-info/METADATA,sha256=ZC7dqRhOUXK5BEaUi5kObGQ_mKvOAFGodVnXLJ2CRlE,939
+atoti_client_kafka-0.9.0a0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+atoti_client_kafka-0.9.0a0.dist-info/RECORD,,
