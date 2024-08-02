@@ -1,0 +1,17 @@
+buildbot_www_react/VERSION,sha256=X95warY7CEKqtnrNr35kGRZKr9OQgJk0vMthskfwWP0,5
+buildbot_www_react/__init__.py,sha256=D7FnR2d7Yu3JCV4BffuMk6AG33GM2YHyFR2ZFYLt2cA,858
+buildbot_www_react/static/browser-warning-list.js,sha256=_bsheJ0rr1iP5pDcrKXTEsPXEw5cm1xDZs_oqE3rYbA,756
+buildbot_www_react/static/browser-warning.css,sha256=Mm3m4pz324ncMrQlurQCkNK16V3i5tuJ8U1UCPoslI0,1411
+buildbot_www_react/static/browser-warning.js,sha256=e9G4pzcJTEPbVWxePoj-pTdxbXSRhdzizZldsvuBWYs,28827
+buildbot_www_react/static/icon.png,sha256=Nk-6w_0pGfCNNTplz-fz1GsLN0rToMrFo_RAHVJSMuQ,21460
+buildbot_www_react/static/icon.svg,sha256=P9wl9sU5ktMeOtYsyd-z4PUeSKKucg4tJU7gnVZAxBY,1180
+buildbot_www_react/static/index.html,sha256=EWvWcEwXVsE8I6Zo1BLjIjYP7y-uMShZwIpToudILfk,1986
+buildbot_www_react/static/manifest.json,sha256=mYai9kKd_BLAoc7ehptxaOjhEaTvvSuSKU6KfbqFySg,393
+buildbot_www_react/static/robots.txt,sha256=kNJLw79pisHhc3OVAimMzKcq3x9WT6sF9IS4xI0crdI,67
+buildbot_www_react/static/assets/index-2ca756c0.js,sha256=pveoW9OT76wpMHDaiQZ2-8Rr_mw-gZ6-4W3VMTz7_qU,858765
+buildbot_www_react/static/assets/index-342ec232.css,sha256=NC7CMuyX7jN0Uo_5I4oKtVvEsxnQ7Uxq1_kh9S6vXBY,206105
+buildbot_www_react-4.0.2.dist-info/METADATA,sha256=txZYRac6w-d00EW7TTXwLssy1nRPsscf1Hz2vfPnSN0,283
+buildbot_www_react-4.0.2.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+buildbot_www_react-4.0.2.dist-info/entry_points.txt,sha256=jsBR5v4KsgDicKzbewFV72uRV-5Q_7crYl5q2D1GiD8,50
+buildbot_www_react-4.0.2.dist-info/top_level.txt,sha256=LQ4a0Ot13KaNFIrxeUAJWq9JRZiUwjJOwTv0ro6Fgfg,19
+buildbot_www_react-4.0.2.dist-info/RECORD,,
