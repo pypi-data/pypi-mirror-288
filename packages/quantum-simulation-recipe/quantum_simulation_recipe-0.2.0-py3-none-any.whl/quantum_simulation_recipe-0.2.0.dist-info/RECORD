@@ -1,0 +1,15 @@
+quantum_simulation_recipe/__init__.py,sha256=3LY4aA5VUsIUovP4oGP_3K1wArWMQ8ZWTIcEDYCrvZY,221
+quantum_simulation_recipe/bounds.py,sha256=KtAvu84kNzQ_N-7D-buJLvJENWwNYcYf8KPutccumvc,22629
+quantum_simulation_recipe/fermion.py,sha256=q1t0W5myN_oBroaIuKaZO3f9kuN2qBZgcZ5zrRBT2H0,13004
+quantum_simulation_recipe/measure.py,sha256=bKsjdGTR6pdBrOKCx_ZHB6VKJLojNgXYZNXnt5JqlWg,9069
+quantum_simulation_recipe/plot_config.py,sha256=9v3wMCYRzo8bLfSdMvmNN_RiOdT6mnP-K00AYCz8p_4,9207
+quantum_simulation_recipe/spin.py,sha256=Pf03IQEVzWIx2-0rQg7SeI-7OoSn1lLzyEd_nNncgxI,6900
+quantum_simulation_recipe/trotter.py,sha256=dWL_uZ39wBoaLLK_bL-xsEVQ7Lt7YEiNjhcwMwnp6o0,7150
+quantum_simulation_recipe/utils.py,sha256=mxZ-owWc3qiXHxuuztKp5Fz0XZjSqJWo_vDzbf4b2WA,2496
+quantum_simulation_recipe/version.py,sha256=7k8WHs89v8UriEEQ-vpquqW0iNbHY4bK1P9i04oM8Fc,278
+quantum_simulation_recipe-0.2.0.dist-info/LICENSE,sha256=UqdcT5yeKnX9NNuB-V7NuKUYTfymi-gJNFbEI5iAlPM,1063
+quantum_simulation_recipe-0.2.0.dist-info/METADATA,sha256=gshLXcqLYOngfw-TqVgn47lSUxplGajLsN8bnSqZhqo,2556
+quantum_simulation_recipe-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+quantum_simulation_recipe-0.2.0.dist-info/entry_points.txt,sha256=YEuVzXOjKM7AOmxY0HPAyiWxDh3VPhw6o2dw8Z2MjMA,82
+quantum_simulation_recipe-0.2.0.dist-info/top_level.txt,sha256=dP6VFXcb_9y3R3sNW3QX7sFo6jhAo274SZYyGPgVpgw,26
+quantum_simulation_recipe-0.2.0.dist-info/RECORD,,
