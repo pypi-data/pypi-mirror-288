@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: babytalk
+Version: 1.0.1
+Summary: A library to simplify Python programming for young learners using natural language commands.
+Home-page: https://github.com/Mutaib-yye/babytalk
+Author: Mutaib
+Author-email: mutaibrather333@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# BabyTalk
+
+BabyTalk is a Python library designed to simplify Python programming using natural language commands. It is intended to make Python more accessible for young learners by allowing them to write code as if they are writing sentences in English.
+
+## Installation
+
+To install BabyTalk, use pip:
+
+```bash
+pip install babytalk
