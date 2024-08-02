@@ -1,0 +1,33 @@
+[project]
+name = "abvio"
+version = "0.0.1"
+description = "A Python package to simplify VASP input files"
+authors = [
+    { name="William Laderer", email="wtladerer@gmail.com"},
+]
+readme = "README.md"
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Chemistry",
+]
+
+dependencies = [
+    "numpy<2",
+    "pymatgen",
+    "mp_api",
+    "pydantic",
+    "rich",
+]
+
+[project.scripts]
+abvio = "abvio.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Documentation = "https://wladerer.github.io/abvio/"
+Issues = "https://github.com/wladerer/abvio/issues"
