@@ -1,0 +1,5 @@
+include *.txt
+include *.rst
+recursive-include zalando_aws_cli *.py
+recursive-include docs *.rst *.py
+recursive-include scripts *.sh
