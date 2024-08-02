@@ -1,0 +1,2 @@
+[console_scripts]
+dastyor = dastyor.cli:get_defaults

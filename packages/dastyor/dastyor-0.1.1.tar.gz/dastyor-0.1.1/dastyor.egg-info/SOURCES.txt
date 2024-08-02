@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+dastyor/__init__.py
+dastyor/cli.py
+dastyor/middleware.py
+dastyor/response.py
+dastyor/serve.py
+dastyor/wsgi.py
+dastyor.egg-info/PKG-INFO
+dastyor.egg-info/SOURCES.txt
+dastyor.egg-info/dependency_links.txt
+dastyor.egg-info/entry_points.txt
+dastyor.egg-info/requires.txt
+dastyor.egg-info/top_level.txt
