@@ -1,0 +1,7 @@
+atoti_directquery_synapse/__init__.py,sha256=m45NYYwGfJEMbZkCc04gf94VK16lEVX8Ep6uTUnWg1A,247
+atoti_directquery_synapse/connection_config.py,sha256=jdBsYmbQId3b6hUNdkrwJaJ2Yg5-pkTNgiDFt-Eo9ZA,2014
+atoti_directquery_synapse/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atoti_directquery_synapse/table_config.py,sha256=7CadjwF-k-7tHYTagkWNDNE4yWF0gkIy94zPxphHZsc,525
+atoti_client_directquery_synapse-0.9.0a0.dist-info/METADATA,sha256=PfF-j063Vk7kt9HtciFZS2zfaLXAHVi4IazKT5hW6ik,1004
+atoti_client_directquery_synapse-0.9.0a0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+atoti_client_directquery_synapse-0.9.0a0.dist-info/RECORD,,
