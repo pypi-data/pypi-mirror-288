@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: iterator_cacher
+Version: 1.0.2
+Summary: Decorate a python function to cache all subsets of iterable inputs
+Home-page: https://github.com/thiswillbeyourgithub/iterator_cacher
+License: GPLv3
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+License-File: LICENSE.md
+Requires-Dist: joblib>=1.4.2
+Requires-Dist: beartype>=0.19.0rc0
+
+Decorate a python function to cache all subsets of iterable inputs
