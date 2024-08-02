@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pythonasm/VM.py
+pythonasm/__init__.py
+pythonasm/asm.py
+pythonasm/main.py
+pythonasm.egg-info/PKG-INFO
+pythonasm.egg-info/SOURCES.txt
+pythonasm.egg-info/dependency_links.txt
+pythonasm.egg-info/requires.txt
+pythonasm.egg-info/top_level.txt
