@@ -1,0 +1,9 @@
+autorom[accept-rom-license]
+psutil
+dill
+tqdm
+colorama
+gymnasium[atari]
+numpy<2.0.0
+torch
+requests
