@@ -1,0 +1,7 @@
+aipkgs_requests/helpers.py,sha256=m8KBOqJGOhDLHQ6CDtBZRY7Y1kbPao5j0EoVJant2aI,2236
+aipkgs_requests/helpers_session.py,sha256=WpGsh4nyvBz6DipECFanbr0d-ClCkgfum6sSoGKW6UQ,3088
+aipkgs_requests/status.py,sha256=35JY2_UMt9xycV1cUk9JT6mgA9BN11FcKd-rmhyz_9g,2156
+aipkgs_requests-1.0.5.dist-info/LICENSE.md,sha256=oo2hmWWp-h0KgkfEZN9Pjlfll5kxOuK396Ud8WQfyHA,1058
+aipkgs_requests-1.0.5.dist-info/METADATA,sha256=rSHjIxjamXsREkVapM6ZBD8ikcWZAHo0_80djt3xDvE,553
+aipkgs_requests-1.0.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+aipkgs_requests-1.0.5.dist-info/RECORD,,
