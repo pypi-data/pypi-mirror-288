@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pixi_cli.egg-info/PKG-INFO
+pixi_cli.egg-info/SOURCES.txt
+pixi_cli.egg-info/dependency_links.txt
+pixi_cli.egg-info/entry_points.txt
+pixi_cli.egg-info/requires.txt
+pixi_cli.egg-info/top_level.txt
