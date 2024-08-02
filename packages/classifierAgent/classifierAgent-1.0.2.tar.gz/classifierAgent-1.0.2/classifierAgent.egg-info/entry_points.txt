@@ -1,0 +1,2 @@
+[console_scripts]
+classifierAgent = classifierAgent.__main__:main
