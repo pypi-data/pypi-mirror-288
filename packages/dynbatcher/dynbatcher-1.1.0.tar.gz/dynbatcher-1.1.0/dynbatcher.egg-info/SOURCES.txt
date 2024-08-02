@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+dynbatcher/__init__.py
+dynbatcher/data_processing.py
+dynbatcher/utils.py
+dynbatcher.egg-info/PKG-INFO
+dynbatcher.egg-info/SOURCES.txt
+dynbatcher.egg-info/dependency_links.txt
+dynbatcher.egg-info/requires.txt
+dynbatcher.egg-info/top_level.txt
+tests/test_main.py
+tests/test_training.py
