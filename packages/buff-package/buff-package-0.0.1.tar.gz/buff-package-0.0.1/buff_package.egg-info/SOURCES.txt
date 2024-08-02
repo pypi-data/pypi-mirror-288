@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+buff_package.egg-info/PKG-INFO
+buff_package.egg-info/SOURCES.txt
+buff_package.egg-info/dependency_links.txt
+buff_package.egg-info/top_level.txt
+mypackage/__init__.py
+mypackage/mymodule.py
+tests/__init__.py
+tests/test_mymodule.py
