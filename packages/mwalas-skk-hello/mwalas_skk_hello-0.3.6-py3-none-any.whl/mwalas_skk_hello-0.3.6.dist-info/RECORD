@@ -1,0 +1,10 @@
+mwalas_skk_hello/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mwalas_skk_hello/create_service.py,sha256=gCyMpOYoAHSR5o__9QEkUweuKt0W_0DSiPCu5mozgII,2163
+mwalas_skk_hello/hello.py,sha256=Z7KW8FfM72Wqn2m_sMm6428mG3X7YgEx_a2OxOUlfNo,8315
+mwalas_skk_hello/mwalas-skk-hello.service,sha256=Dlt3qGIWKG_h8vOTJ8Kb8NJ9745vdhZ9iQhPjtekH2k,622
+mwalas_skk_hello-0.3.6.data/scripts/create_service.py,sha256=gCyMpOYoAHSR5o__9QEkUweuKt0W_0DSiPCu5mozgII,2163
+mwalas_skk_hello-0.3.6.dist-info/METADATA,sha256=rCZ3hiu2toEmGZBPzq-PqT2ZEUG8PVMbPl8KZO5S36g,1772
+mwalas_skk_hello-0.3.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mwalas_skk_hello-0.3.6.dist-info/entry_points.txt,sha256=eIpQbvPo2HNL12NVEGlRsEx1XKPilt9aJPh4zdvaOr8,65
+mwalas_skk_hello-0.3.6.dist-info/top_level.txt,sha256=WpPmtJdGrxzcYK8KiWjpLI4ZL2qrfVcpHiUlh6QQipo,17
+mwalas_skk_hello-0.3.6.dist-info/RECORD,,
