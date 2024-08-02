@@ -1,0 +1,11 @@
+README.md
+setup.py
+classifierAgent/__init__.py
+classifierAgent/classifierAgent.py
+classifierAgent/cli.py
+classifierAgent.egg-info/PKG-INFO
+classifierAgent.egg-info/SOURCES.txt
+classifierAgent.egg-info/dependency_links.txt
+classifierAgent.egg-info/entry_points.txt
+classifierAgent.egg-info/requires.txt
+classifierAgent.egg-info/top_level.txt
