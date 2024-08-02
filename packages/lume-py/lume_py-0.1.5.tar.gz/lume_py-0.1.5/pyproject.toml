@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "lume_py"
+version = "0.1.5"
+description = "An SDK to connect to the Lume API"
+authors = ["Aryan Panda <aryan@lume.ai>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+httpx = "^0.27.0"
+pydantic = "^2.8.2"
+
+
+[tool.poetry.urls]
+repository = "https://github.com/Lume-ai/lume_py"
