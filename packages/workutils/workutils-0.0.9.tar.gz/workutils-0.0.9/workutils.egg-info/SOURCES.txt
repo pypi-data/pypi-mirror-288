@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+workutils/__init__.py
+workutils/workutils.py
+workutils.egg-info/PKG-INFO
+workutils.egg-info/SOURCES.txt
+workutils.egg-info/dependency_links.txt
+workutils.egg-info/entry_points.txt
+workutils.egg-info/requires.txt
+workutils.egg-info/top_level.txt
