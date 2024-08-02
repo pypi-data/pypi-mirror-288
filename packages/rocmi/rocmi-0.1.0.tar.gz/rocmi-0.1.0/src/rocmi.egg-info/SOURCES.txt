@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/rocmi.egg-info/PKG-INFO
+src/rocmi.egg-info/SOURCES.txt
+src/rocmi.egg-info/dependency_links.txt
+src/rocmi.egg-info/top_level.txt
