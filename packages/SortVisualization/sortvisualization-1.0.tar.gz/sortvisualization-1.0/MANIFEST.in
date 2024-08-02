@@ -1,0 +1,2 @@
+include src/SortingVisualizer/*.txt
+include src/SortingVisualizer/*.png
