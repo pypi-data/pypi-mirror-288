@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+phylodeep_data_bd/__init__.py
+phylodeep_data_bd.egg-info/PKG-INFO
+phylodeep_data_bd.egg-info/SOURCES.txt
+phylodeep_data_bd.egg-info/dependency_links.txt
+phylodeep_data_bd.egg-info/entry_points.txt
+phylodeep_data_bd.egg-info/requires.txt
+phylodeep_data_bd.egg-info/top_level.txt
+phylodeep_data_bd/../README.md
+phylodeep_data_bd/large/CNN_FULL_TREE.csv.xz
+phylodeep_data_bd/large/FFNN_SUMSTATS.csv.xz
+phylodeep_data_bd/large/target.csv.xz
+phylodeep_data_bd/small/CNN_FULL_TREE.csv.xz
+phylodeep_data_bd/small/FFNN_SUMSTATS.csv.xz
+phylodeep_data_bd/small/target.csv.xz
