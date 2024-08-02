@@ -1,0 +1,15 @@
+damply/__init__.py,sha256=27YY3zFpeaDh6JoC40AqkjBrn68SqFlsWZzjZtw5jwU,22
+damply/audit.py,sha256=uv6ndmpPcDuCL4sBSz5YOnvXTMC8_kLCdEp-psjUtXk,1687
+damply/metadata.py,sha256=3AUbF4dh_LVCntCNusbNxqvxov9vAyeClmvnGGJANIg,8497
+damply/plot.py,sha256=9zyHCD2w5YVIOE1ZDTOz44s6kzx_XUsEuV28xKja2po,4828
+damply/cli/main.py,sha256=q3zUfNtbTcaqQGQKsuu_lWEjCGSumFALQ-ueFS_6p0w,7148
+damply/utils/__init__.py,sha256=U3xBo9DuPT0MeVCYyfAAh3YlSX9B5vs2Pyvf_e-ZA3M,138
+damply/utils/alias_group.py,sha256=Rf-c3XTQ5a6nkbWrg3O1ug1N02t-178RwbSzInos49o,902
+damply/utils/byte_size.py,sha256=WPPkdZPiY8s9LWBy9R757pzR9Z2q0Xspv_3Nm4C6aL4,2571
+damply/utils/directory_list.py,sha256=H8oFIaZBqGtf86IPKPLvpQB-sJdv03nbLkwbR3ptvQ8,1271
+damply/utils/find_symlinks.py,sha256=Xd-EcmSCV7NcCNvjUCUlXCHai6peNTPpp6d-8Nz_WnE,2012
+damply/utils/whose.py,sha256=vmb2vEWc16M52kll3kMSjP-FVdNHPBudbKwYfkzr6eI,926
+damply-0.8.0.dist-info/METADATA,sha256=C7_7Rut_TV4VskAf11asPjQpebiCE9pQamoMLlGo3_w,4020
+damply-0.8.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+damply-0.8.0.dist-info/entry_points.txt,sha256=WA_aGnAEiEPo5JUL1JOBkAwzi0bQbNSzARPvf6ZY_iA,74
+damply-0.8.0.dist-info/RECORD,,
