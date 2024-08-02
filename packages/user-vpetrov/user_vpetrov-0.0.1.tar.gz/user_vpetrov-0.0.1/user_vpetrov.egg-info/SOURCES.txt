@@ -1,0 +1,13 @@
+pyproject.toml
+setup.py
+src/__init__.py
+src/config.py
+src/crud.py
+src/database.py
+src/models.py
+src/schemas.py
+src/validators.py
+user_vpetrov.egg-info/PKG-INFO
+user_vpetrov.egg-info/SOURCES.txt
+user_vpetrov.egg-info/dependency_links.txt
+user_vpetrov.egg-info/top_level.txt
