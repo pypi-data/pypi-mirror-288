@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: nshutils
+Version: 0.10.0
+Summary: 
+Author: Nima Shoghi
+Author-email: nimashoghi@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: extra
+Requires-Dist: beartype
+Requires-Dist: jaxtyping
+Requires-Dist: numpy
+Requires-Dist: pysnooper ; extra == "extra"
+Requires-Dist: typing-extensions
+Description-Content-Type: text/markdown
+
+
