@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "czthry"
+version = "0.1.2"
+authors = [
+  { name="thr", email="22227124@qq.com" },
+]
+description = "A small example package"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "progressbar==2.5",
+    "redis==4.3.4",
+    "SQLAlchemy==1.4.39",
+    "XlsxWriter==3.0.8",
+    "requests>=2.20.0",
+    "rsa==4.9",
+    "schedule==1.1.0",
+    "PyMySQL==1.0.2"
+]
+[project.urls]
+"Homepage" = "https://github.com/Taohr"
+"Bug Tracker" = "https://github.com/Taohr/private/tree/mypypi"

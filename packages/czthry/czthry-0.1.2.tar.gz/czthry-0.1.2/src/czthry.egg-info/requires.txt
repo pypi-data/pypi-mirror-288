@@ -1,0 +1,8 @@
+progressbar==2.5
+redis==4.3.4
+SQLAlchemy==1.4.39
+XlsxWriter==3.0.8
+requests>=2.20.0
+rsa==4.9
+schedule==1.1.0
+PyMySQL==1.0.2
