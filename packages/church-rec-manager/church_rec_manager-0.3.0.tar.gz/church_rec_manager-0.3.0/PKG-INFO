@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: church_rec_manager
+Version: 0.3.0
+Summary: python application to manage your records of the church
+Home-page: https://github.com/34ERAT/church_rec_manager.git
+Author: philip kanuti
+Author-email: kanutiphilip24@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: attrs==23.2.0
+Requires-Dist: autopep8==2.3.1
+Requires-Dist: Babel==2.15.0
+Requires-Dist: contextlib2==21.6.0
+Requires-Dist: CTkMessagebox==2.7
+Requires-Dist: CTkTable==1.1
+Requires-Dist: customtkinter==5.2.2
+Requires-Dist: darkdetect==0.8.0
+Requires-Dist: execnet==2.1.1
+Requires-Dist: greenlet==3.0.3
+Requires-Dist: iniconfig==2.0.0
+Requires-Dist: jsonschema==4.23.0
+Requires-Dist: jsonschema-specifications==2023.12.1
+Requires-Dist: mock==5.1.0
+Requires-Dist: msgpack==1.0.8
+Requires-Dist: mysql-connector-python==9.0.0
+Requires-Dist: packaging==24.1
+Requires-Dist: path==17.0.0
+Requires-Dist: path.py==12.5.0
+Requires-Dist: pillow==10.4.0
+Requires-Dist: pluggy==1.5.0
+Requires-Dist: psutil==6.0.0
+Requires-Dist: pycodestyle==2.12.0
+Requires-Dist: PyMySQL==1.1.1
+Requires-Dist: pynvim==0.5.0
+Requires-Dist: pytest==8.3.2
+Requires-Dist: pytest-shutil==1.7.0
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: referencing==0.35.1
+Requires-Dist: rpds-py==0.19.0
+Requires-Dist: six==1.16.0
+Requires-Dist: termcolor==2.4.0
+Requires-Dist: tk==0.1.0
+
+# Church_rec_manager
+This project is a simple yet powerful tool for managing church records, 
+including baptism, confirmation,
+death, and marriage data.
+It helps church administrators to efficiently keep track of important events and manage the records in an organized manner.
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+The things you need before installing the software.
+
+* you need mysql  server installed on your system and running 
+* And you also need python installed on you system
+* Oh, and don't forget this
+
+### Installation
+
+A step by step guide that will tell you how to  get the application up and running.
+
+**installing using pip**
+```
+$ pip install church-rec-manager 
+```
+
+**installing from git hub**
+```
+$ git clone https://github.com/34ERAT/church_rec_manager.git
+$ pip stepup.py install 
+```
+## Usage
+
+start the application using this
+```
+$ church_rec_manager
+```
+
