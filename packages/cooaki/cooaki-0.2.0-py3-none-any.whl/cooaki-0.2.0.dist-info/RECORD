@@ -1,0 +1,9 @@
+cooaki-0.2.0.dist-info/METADATA,sha256=OYQ7IiOvhIRSxscPf47PK6JP3FsF1jXjMehE6QADCJw,2680
+cooaki-0.2.0.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+cooaki-0.2.0.dist-info/licenses/LICENSE,sha256=FgRk_OWZ2NhWR9HRhUC9NhF2knljmKer-ew0H1pbhSQ,1069
+cooaki/__init__.py,sha256=1aOq8C9ndiWczXX0XmYXJbyRuqFLQEjST5KPA_NJf6Q,333
+cooaki/__main__.py,sha256=TN82aVO62A3HIyQoj9KJnF35Ks6kr7CioP3I8YXs3J4,3060
+cooaki/akinator.py,sha256=juvZwzCslhceFFiWTN_OGZnLqmqUAcQntAAUi-qKIds,6804
+cooaki/const.py,sha256=zn50mr6NKoXc_Bqpk3Kq-2L0jPh36WBMqcbeJjrCXgM,1389
+cooaki/errors.py,sha256=7Aeuxml6JRo_0GVXRGD_uzf9nhlsx4OlpSZ34PGs_QE,89
+cooaki-0.2.0.dist-info/RECORD,,
