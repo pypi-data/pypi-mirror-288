@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/PySerialNumberGenerator.egg-info/PKG-INFO
+src/PySerialNumberGenerator.egg-info/SOURCES.txt
+src/PySerialNumberGenerator.egg-info/dependency_links.txt
+src/PySerialNumberGenerator.egg-info/top_level.txt
+src/SerialNumberGenerator/__init__.py
+src/SerialNumberGenerator/main.py
