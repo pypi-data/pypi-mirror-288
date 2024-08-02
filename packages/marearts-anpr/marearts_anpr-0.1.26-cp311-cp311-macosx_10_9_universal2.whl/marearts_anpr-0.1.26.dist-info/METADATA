@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: marearts-anpr
+Version: 0.1.26
+Summary: MareArts ANPR (Automatic Number Plate Recognition) library
+Home-page: https://www.marearts.com
+Author: MareArts
+Author-email: MareArts <hello@marearts.com>
+Project-URL: Homepage, https://github.com/marearts/marearts-anpr
+Project-URL: Bug Tracker, https://github.com/yourusername/marearts-anpr/issues
+Keywords: anpr,license plate recognition,computer vision
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: ==3.11.*
+Description-Content-Type: text/markdown
+Requires-Dist: numpy ==1.23.5
+Requires-Dist: opencv-python ==4.10.0.84
+Requires-Dist: requests ==2.32.3
+Requires-Dist: imageio ==2.34.2
+Requires-Dist: pillow ==10.4.0
+Requires-Dist: onnxruntime ==1.18.1
+Requires-Dist: PyYAML ==6.0.1
+Requires-Dist: dotmap ==1.3.30
+Requires-Dist: marearts-crystal
+Requires-Dist: tqdm ==4.66.4
+
+
+# MareArts ANPR Library
+
+MareArts ANPR (Automatic Number Plate Recognition) is a library for detecting and recognizing license plates in images. This library leverages machine learning models to perform both detection and OCR (Optical Character Recognition) on number plates.
+
+## Features
+
+- **License Plate Detection**: Detects the location of license plates in images.
+- **OCR**: Recognizes the text from the detected license plates.
+- **Multiple Input Types**: Supports image inputs from file paths, OpenCV images, and PIL images.
+- **Configurable Models**: Choose between different model versions and configurations.
+
+## Installation
+
+
+```bash
+pip install marearts-anpr
+```
+
+
+## Usage
+
+Here is an example of how to use the MareArts ANPR library:
+
+```python
+#marearts_anpr.py
+import cv2
+from PIL import Image
+
+from marearts_anpr import ma_anpr_detector
+from marearts_anpr import ma_anpr_ocr
+from marearts_anpr import marearts_anpr_from_pil
+from marearts_anpr import marearts_anpr_from_image_file
+from marearts_anpr import marearts_anpr_from_cv2
+
+
+if __name__ == '__main__':
+
+    #################################
+    ##initiate marearts anpr
+    user_name = "your_email"
+    serial_key = "your_serial_key"
+    detector_model_version = "middle" #samll, large
+    ocr_model_version = "eu" #"kr"
+
+    #marearts anpr detector inference
+    anpr_d = ma_anpr_detector(detector_model_version, user_name, serial_key, conf_thres=0.3, iou_thres=0.5)
+    #marearts anpr ocr inference
+    anpr_r = ma_anpr_ocr(ocr_model_version, user_name, serial_key)
+    #################################
+
+    #################################
+    #Routine Task 1 - predict from file
+    image_path = './sample_images/eu_test1.jpg'
+    output = marearts_anpr_from_image_file(anpr_d, anpr_r, image_path)
+    print(output)
+
+    #Routine Task 2 - predict from cv2
+    img = cv2.imread(image_path)
+    output = marearts_anpr_from_cv2(anpr_d, anpr_r, img)
+    print(output)
+
+    #Routine Task 2 - predict from pillow
+    pil_img = Image.open(image_path)
+    output = marearts_anpr_from_pil(anpr_d, anpr_r, pil_img)
+    print(output)
+    #################################
+```
+
+## Key Components
+
+- **ma_anpr_detector**: The detection model for identifying license plates.
+- **ma_anpr_ocr**: The OCR model for reading text from detected license plates.
+- **Image Handling**: Supports images loaded via OpenCV and PIL, providing flexibility in input formats.
+
+## Configuration Options
+
+- **detector_model_version**: Select the model version for detection. Options include `"middle"`.
+- **ocr_model_version**: Choose the OCR model version, such as `"eu"` for European plates or `"kr"` for Korean plates.
+- **conf_thres**: Set the confidence threshold for detections.
+- **iou_thres**: Define the Intersection over Union threshold for detections.
+
+## Error Handling
+
+The library includes basic error handling for image loading. If an image fails to load, a `ValueError` is raised with a descriptive message.
+
+## License
+
+MareArts ANPR is licensed under [License Type].
+
+## Contact
+
+For support and inquiries, please contact MareArts at [hello@marearts.com](mailto:hello@marearts.com).
+
+```
