@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyside6-virtual-keyboard
+Version: 0.1.1
+Summary: A simple virtual keyboard module using PySide6
+Home-page: https://github.com/Yasin-Yildirim/PySide6VirtualKeyboard.git
+Author: Yasin Yildirim
+Author-email: yildirimyasin1204@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PySide6
+
