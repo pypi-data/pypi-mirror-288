@@ -1,0 +1,79 @@
+# --------------------------------------------------------------------
+# server.py
+#
+# Author: Lain Musgrove (lain.proliant@gmail.com)
+# Date: Friday February 17, 2023
+#
+# Distributed under terms of the MIT license.
+# --------------------------------------------------------------------
+
+import asyncio
+import logging
+import signal
+import sys
+import tracemalloc
+
+import waterlog
+from bivalve.agent import BivalveAgent
+from bivalve.aio import Connection
+
+# --------------------------------------------------------------------
+tracemalloc.start()
+log = waterlog.get(__name__)
+
+
+# --------------------------------------------------------------------
+class ExampleServer(BivalveAgent):
+    def __init__(self, host="", port=0):
+        super().__init__()
+        self.host = host
+        self.port = port
+
+    def ctrlc_handler(self, *_):
+        log.critical("Ctrl+C received.")
+        self.shutdown()
+
+    async def run(self):
+        signal.signal(signal.SIGINT, self.ctrlc_handler)
+        if self.host and self.port:
+            await self.serve(host=self.host, port=self.port)
+        await super().run()
+
+    def on_connect(self, conn: Connection):
+        self.schedule(conn.send("echo", "Hello, there!"))
+
+    def fn_add(self, conn: Connection, *argv):
+        return sum([int(s) for s in argv])
+
+    async def cmd_echo(self, conn: Connection, msg: str):
+        await conn.send("echo", msg)
+
+    async def cmd_quit(self, conn: Connection):
+        self.disconnect(conn)
+
+    async def on_unrecognized_function(self, conn: Connection, fn_name: str, *argv):
+        if fn_name == "multiply":
+            x = 1
+            for val in argv:
+                x *= int(val)
+            return x
+        else:
+            raise NotImplementedError()
+
+
+# --------------------------------------------------------------------
+def main():
+    waterlog.setup()
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+
+    if "--debug" in sys.argv:
+        waterlog.set_level(logging.DEBUG)
+
+    server = ExampleServer("localhost", 9595)
+    loop.run_until_complete(server.run())
+
+
+# --------------------------------------------------------------------
+if __name__ == "__main__":
+    main()
