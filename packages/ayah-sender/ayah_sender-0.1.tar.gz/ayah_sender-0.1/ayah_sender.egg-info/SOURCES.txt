@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ayah_sender/__init__.py
+ayah_sender/main.py
+ayah_sender/reciter.py
+ayah_sender/reciters.csv
+ayah_sender.egg-info/PKG-INFO
+ayah_sender.egg-info/SOURCES.txt
+ayah_sender.egg-info/dependency_links.txt
+ayah_sender.egg-info/requires.txt
+ayah_sender.egg-info/top_level.txt
