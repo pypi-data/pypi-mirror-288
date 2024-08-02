@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: bionty
+Version: 0.47.0
+Summary: Registries for basic biological entities, coupled to public ontologies.
+Author-email: Lamin Labs <laminlabs@gmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: lamindb
+Requires-Dist: filelock
+Requires-Dist: requests
+Requires-Dist: pyyaml
+Requires-Dist: pronto>=2.5.4, <2.5.6
+Requires-Dist: laminci ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: requests ; extra == "dev"
+Requires-Dist: pytest>=6.0 ; extra == "dev"
+Requires-Dist: pytest-cov ; extra == "dev"
+Requires-Dist: nbproject-test ; extra == "dev"
+Requires-Dist: bioregistry ; extra == "dev"
+Requires-Dist: sqlalchemy ; extra == "dev"
+Requires-Dist: mysqlclient ; extra == "dev"
+Requires-Dist: mysql-connector-python ; extra == "dev"
+Project-URL: Home, https://github.com/laminlabs/bionty
+Provides-Extra: dev
+
+# bionty: Basic biological entities
+
+bionty is documented & tested within lamindb: github.com/laminlabs/lamindb.
+
+See [docs](https://lamin.ai/docs/bionty).
+
