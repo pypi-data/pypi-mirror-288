@@ -1,0 +1,7 @@
+#!/bin/bash
+# command: 
+#     label-push-task
+
+git add .
+git commit -m update
+git push
