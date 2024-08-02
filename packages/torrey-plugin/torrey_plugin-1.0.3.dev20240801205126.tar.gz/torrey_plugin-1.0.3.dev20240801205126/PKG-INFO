@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: torrey-plugin
+Version: 1.0.3.dev20240801205126
+Summary: Inference plugin for Torrey SDK
+Home-page: https://www.torrey.com
+License: Apache-2.0
+Author: Torrey Systems, Inc.
+Author-email: support@torrey.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pinecone-plugin-interface (>=0.0.7,<0.0.8)
+Project-URL: Documentation, https://torrey.com/docs
+Description-Content-Type: text/markdown
+
+Nothing to see here.
+
