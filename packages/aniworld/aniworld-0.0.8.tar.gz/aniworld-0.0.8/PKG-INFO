@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: aniworld
+Version: 0.0.8
+Summary: Command line tool designed to download and stream content from aniworld.to
+Author-email: Phoenixthrush UwU <contact@phoenixthrush.com>
+Project-URL: Homepage, https://github.com/phoenixthrush/Aniworld-Downloader
+Project-URL: Issues, https://github.com/phoenixthrush/Aniworld-Downloader/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: bs4
+Requires-Dist: npyscreen
+Requires-Dist: windows-curses; platform_system == "Windows"
+
+# AniWorld Downloader
+
+## Description
+
+AniWorld Downloader is a command-line tool designed to download and stream content from aniworld.to.
+It offers various features, including fetching single episodes, downloading entire seasons, organizing downloads into structured directories, and supporting multiple operating systems.
+
+Windows is currently not supported as npyscreen does not work on Windows due to the curses module.
+I will switch from npyscreen to another library that is maintained and supports Windows.
+
+## Usage
+
+> Install from pypi
+```shell
+pip install -U aniworld
+```
+
+> Run
+```shell
+aniworld
+```
+
+## Contributing
+
+Contributions to AniWorld Downloader are welcome!
+Feel free to submit bug reports, feature requests, or pull requests to help improve the project.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
