@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+logstream/__init__.py
+logstream/logstream.py
+logstream/test.py
+logstream_ua.egg-info/PKG-INFO
+logstream_ua.egg-info/SOURCES.txt
+logstream_ua.egg-info/dependency_links.txt
+logstream_ua.egg-info/requires.txt
+logstream_ua.egg-info/top_level.txt
