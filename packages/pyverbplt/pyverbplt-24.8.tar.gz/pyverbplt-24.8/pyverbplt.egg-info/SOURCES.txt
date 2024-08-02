@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pyverbplt.egg-info/PKG-INFO
+pyverbplt.egg-info/SOURCES.txt
+pyverbplt.egg-info/dependency_links.txt
+pyverbplt.egg-info/requires.txt
+pyverbplt.egg-info/top_level.txt
