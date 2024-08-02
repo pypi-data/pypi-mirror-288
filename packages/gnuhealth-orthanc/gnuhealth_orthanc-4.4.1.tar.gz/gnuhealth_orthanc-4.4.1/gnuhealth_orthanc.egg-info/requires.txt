@@ -1,0 +1,4 @@
+pendulum
+beren==0.7.0
+pydicom
+gnuhealth_imaging==4.4.1
