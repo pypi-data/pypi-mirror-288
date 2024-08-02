@@ -1,0 +1,12 @@
+aiida_uppasd2/UppASD_BaseWorkflow.py,sha256=qQNEbxJW1lPxdsqW23vzurV7tcxH-XWb_3X-Z54qNfM,9372
+aiida_uppasd2/UppASD_Calculations.py,sha256=cdkkg0jqeRKglrWaV9noTKs0n3W2vO9QRaH3_67YTXg,3704
+aiida_uppasd2/UppASD_Clis.py,sha256=gPMTB_1S7rcr_NyjPc-r3sACqCqANp1CtOCTzfqtb58,4457
+aiida_uppasd2/UppASD_GenericLoopWorkflow.py,sha256=qfXj-jICiUZ3dHr_YhC2hdLaMPYIDScYtaeh3R1FEZs,8120
+aiida_uppasd2/UppASD_Parsers.py,sha256=NL4qh3SST0t3Tmbb-3ux_hn0SVNFnV_1Sjztba6Zw-k,5400
+aiida_uppasd2/__init__.py,sha256=sO2Kfl1IZlDx6t9YEBTRzbytZZxmffsQAlwPeOrJ30s,84
+aiida_uppasd2-2.0.0.dist-info/LICENSE,sha256=HWhuNZia-DguDRRvV0EPN7NMLf3NDAzVYShsXzLhAKQ,35112
+aiida_uppasd2-2.0.0.dist-info/METADATA,sha256=UdOXqj0CkJrtq7FEEu59-PH6cebriWlAo_cW7yw2ZGM,42294
+aiida_uppasd2-2.0.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+aiida_uppasd2-2.0.0.dist-info/entry_points.txt,sha256=n-F_aRIDS0M3yYu8z_8446fd4-WDQBo810JSkdoNlKg,419
+aiida_uppasd2-2.0.0.dist-info/top_level.txt,sha256=tfpcSnH1-rpccVZdjmnBWdzgADTV-4VoUd6hUBYwC88,14
+aiida_uppasd2-2.0.0.dist-info/RECORD,,
