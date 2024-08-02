@@ -1,0 +1,78 @@
+---
+source: crates/uv-resolver/src/lock.rs
+expression: result
+---
+Ok(
+    Lock {
+        version: 1,
+        fork_markers: None,
+        requires_python: None,
+        resolution_mode: Highest,
+        prerelease_mode: IfNecessaryOrExplicit,
+        exclude_newer: None,
+        distributions: [
+            Distribution {
+                id: DistributionId {
+                    name: PackageName(
+                        "anyio",
+                    ),
+                    version: "4.3.0",
+                    source: Direct(
+                        Url {
+                            scheme: "https",
+                            cannot_be_a_base: false,
+                            username: "",
+                            password: None,
+                            host: Some(
+                                Domain(
+                                    "burntsushi.net",
+                                ),
+                            ),
+                            port: None,
+                            path: "/",
+                            query: None,
+                            fragment: None,
+                        },
+                        DirectSource {
+                            subdirectory: None,
+                        },
+                    ),
+                },
+                sdist: None,
+                wheels: [],
+                fork_markers: None,
+                dependencies: [],
+                optional_dependencies: {},
+                dev_dependencies: {},
+            },
+        ],
+        by_id: {
+            DistributionId {
+                name: PackageName(
+                    "anyio",
+                ),
+                version: "4.3.0",
+                source: Direct(
+                    Url {
+                        scheme: "https",
+                        cannot_be_a_base: false,
+                        username: "",
+                        password: None,
+                        host: Some(
+                            Domain(
+                                "burntsushi.net",
+                            ),
+                        ),
+                        port: None,
+                        path: "/",
+                        query: None,
+                        fragment: None,
+                    },
+                    DirectSource {
+                        subdirectory: None,
+                    },
+                ),
+            }: 0,
+        },
+    },
+)
