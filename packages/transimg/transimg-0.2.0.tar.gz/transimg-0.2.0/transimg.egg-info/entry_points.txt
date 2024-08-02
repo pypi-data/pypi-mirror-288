@@ -1,0 +1,2 @@
+[console_scripts]
+transimg = transimg:main

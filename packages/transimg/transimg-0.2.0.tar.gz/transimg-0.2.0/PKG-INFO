@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: transimg
+Version: 0.2.0
+Summary: A script to convert images to different formats using FFmpeg
+Home-page: https://x.com/Lanaev0li
+Author: Avinion
+Author-email: shizofrin@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Transmogrify
+
+**Transmogrify** is a Python script for converting images from one format to another using FFmpeg. It supports converting images to various formats such as jpg, png, gif, webp, and bmp.
+
+## Installation
+
+You can install the script using pip:
+
+```sh
+pip install transimg
+
+Usage
+To run the script, use the following command in your terminal:
+
+transimg
+
+
+
+Features
+Convert images to different formats (jpg, png, gif, webp, bmp)
+Language selection between English and Russian
+Clears console output for a clean user interface
+Automatically renames files if converting in the same directory to prevent overwriting
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
