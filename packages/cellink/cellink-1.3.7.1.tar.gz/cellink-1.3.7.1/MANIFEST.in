@@ -1,0 +1,3 @@
+include cellink/README.md
+include cellink/LICENSE
+recursive-include cellink/assets/imgs *
