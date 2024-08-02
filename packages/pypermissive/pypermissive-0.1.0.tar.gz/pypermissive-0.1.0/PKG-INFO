@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pypermissive
+Version: 0.1.0
+Summary: 
+Author: kaliv0
+Author-email: kaloyan.ivanov88@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: twine (>=5.1.1,<6.0.0)
+Description-Content-Type: text/markdown
+
+# PyPermissive
