@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: suzaku_framework
+Version: 0.0.14
+Summary: A package for koala's project
+Home-page: https://github.com/phailin/suzaku_framework
+Author: phailin
+Author-email: phailin791@hotmail.com
+License: MIT
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: mysql-connector-python
+Requires-Dist: SQLAlchemy
+Requires-Dist: python-jose[cryptography]
+Requires-Dist: pydantic
+Requires-Dist: pydantic_core
+Requires-Dist: loguru
+Requires-Dist: bcrypt
+Requires-Dist: passlib
+
+# Summary
+This is a common package for koala's project, which backend server is developed via fastapi.
