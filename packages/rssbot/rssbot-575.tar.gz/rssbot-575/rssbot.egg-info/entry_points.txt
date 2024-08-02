@@ -1,0 +1,3 @@
+[console_scripts]
+rssbot = rssbot.__main__:main
+rssbotd = rssbot.daemon:main
