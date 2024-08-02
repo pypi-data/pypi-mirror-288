@@ -1,0 +1,2 @@
+[console_scripts]
+gingerjs = gingerjs.create_app.main:cli
