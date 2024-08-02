@@ -1,0 +1,7 @@
+LICENCE
+README.md
+setup.py
+bokpdf.egg-info/PKG-INFO
+bokpdf.egg-info/SOURCES.txt
+bokpdf.egg-info/dependency_links.txt
+bokpdf.egg-info/top_level.txt
