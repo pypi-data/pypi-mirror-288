@@ -1,0 +1,10 @@
+certbot_dns_selectel_api_v2/__init__.py,sha256=9xfYQDfBTYcWSlBZVeAQilNjoGBuBF3oT_l8J4grSH8,2684
+certbot_dns_selectel_api_v2/dns_selectel_api_v2.py,sha256=o16LS9dLuO2JJCeE3pI4tbjV3NDI-SDiaM6FLgr-8E8,7713
+certbot_dns_selectel_api_v2/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+certbot_dns_selectel_api_v2/tests/dns_selectel_api_v2_test.py,sha256=AEXfJnKcSD6hct_iInjHBZU1JlPuwKbF6rZpNj-WqWw,4019
+certbot_dns_selectel_api_v2-0.1.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+certbot_dns_selectel_api_v2-0.1.0.dist-info/METADATA,sha256=uoDEcq0BVfKPMLgyFZFLFfK7J1TWVP04XT4004AR6QI,3846
+certbot_dns_selectel_api_v2-0.1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+certbot_dns_selectel_api_v2-0.1.0.dist-info/entry_points.txt,sha256=t__j112E_iFJSZ-biu54TQqV3GEfPlNk31UkycWBjFU,102
+certbot_dns_selectel_api_v2-0.1.0.dist-info/top_level.txt,sha256=DmFuC-cHWHvOKC8Lnf-3EShsgf6Udz_R-5Qr-tJIvQ4,28
+certbot_dns_selectel_api_v2-0.1.0.dist-info/RECORD,,
