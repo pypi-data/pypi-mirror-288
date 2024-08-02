@@ -1,0 +1,7 @@
+LICENSE.rst,sha256=qhQyavx0SN9nB1wUrnfi5uHVP5vNWtJ7YITw_5L_xzk,1066
+static_delivery/__init__.py,sha256=ZEYfLgFjBkt35abxzRm5vIhYEewlfPRmXAiTGqye0aQ,227
+static_delivery/middleware.py,sha256=QEjVrratai2nUQvAqIW_XwAp7hpSRjro_uACSL7_r80,5003
+django_static_delivery-0.0.4.dist-info/LICENSE.rst,sha256=qhQyavx0SN9nB1wUrnfi5uHVP5vNWtJ7YITw_5L_xzk,1066
+django_static_delivery-0.0.4.dist-info/METADATA,sha256=33AUXPluPtFP0ht3EkZfGDPBRIR_7lkrOMEEJuzmtgo,2618
+django_static_delivery-0.0.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_static_delivery-0.0.4.dist-info/RECORD,,
