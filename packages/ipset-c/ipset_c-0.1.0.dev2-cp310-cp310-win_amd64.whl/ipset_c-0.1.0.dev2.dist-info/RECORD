@@ -1,0 +1,6 @@
+ipset_c/__init__.py,sha256=R2W2yMKA13cHx2Z2YUBzYXGaVG4njiCzR-YuyE9ii3g,31
+ipset_c/__init__.pyi,sha256=2eNEkqdZYgy-9i-YrwRRVx1T8g7n7jTaX1tGJTdqFh0,1183
+ipset_c_ext.cp310-win_amd64.pyd,sha256=tXL5-U07Be_GqVerv05S5hy2usjMggVni6mOg6yHvUs,20992
+ipset_c-0.1.0.dev2.dist-info/METADATA,sha256=YOo98eoVRI5Zu6-vrgb5gVISW8DgRfkJprlM4zF-7hs,2435
+ipset_c-0.1.0.dev2.dist-info/WHEEL,sha256=Jr_qyVDoEAnAI5RcZqNdiGEGsXCke4YuTFjHKZdYyb4,98
+ipset_c-0.1.0.dev2.dist-info/RECORD,,
