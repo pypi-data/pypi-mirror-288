@@ -1,0 +1,8 @@
+cocomltools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cocomltools/coco_ops.py,sha256=Q-PYpauctomiEsu3r_pP27HhBnW2xFHxHd51v12Xpo8,3637
+cocomltools/models/base.py,sha256=seVzDI_NYLPAV4jJGBo1AkJnJ461LaZLuIY-x7IYOL0,524
+cocomltools/models/coco.py,sha256=HWXMbkstNNF1Vf6Xci4HeL1ZeutQL2tbEjFwBBDbxCs,6401
+cocomltools/utils.py,sha256=cwK7khIMsHQfgZluFjTvxKYZachwLfVPFr0p7cw1x_g,2286
+cocomltools-0.1.3.dist-info/METADATA,sha256=OxwtZFrZZqA39Pxayo0vWUOJ7ZY8f3hJJ_7bIZXnK-E,2968
+cocomltools-0.1.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cocomltools-0.1.3.dist-info/RECORD,,
