@@ -1,0 +1,11 @@
+README.md
+setup.py
+ultimatePSUR/__init__.py
+ultimatePSUR/manager.py
+ultimatePSUR/rotator.py
+ultimatePSUR/scraper.py
+ultimatePSUR.egg-info/PKG-INFO
+ultimatePSUR.egg-info/SOURCES.txt
+ultimatePSUR.egg-info/dependency_links.txt
+ultimatePSUR.egg-info/requires.txt
+ultimatePSUR.egg-info/top_level.txt
