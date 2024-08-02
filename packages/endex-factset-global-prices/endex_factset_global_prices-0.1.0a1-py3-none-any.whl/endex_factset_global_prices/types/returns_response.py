@@ -1,0 +1,44 @@
+# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+
+import datetime
+from typing import List, Optional
+
+from pydantic import Field as FieldInfo
+
+from .._models import BaseModel
+
+__all__ = ["ReturnsResponse", "Data"]
+
+
+class Data(BaseModel):
+    currency: Optional[str] = None
+    """Currency ISO code.
+
+    For more details, visit
+    [Online Assistant Page #1470](https://oa.apps.factset.com/pages/1470).
+    """
+
+    date: Optional[datetime.date] = None
+    """End date of the return.
+
+    Date in YYYY-MM-DD format. Depending on Frequency and Calendar settings, this
+    could represent the entire return period requested.
+    """
+
+    fsym_id: Optional[str] = FieldInfo(alias="fsymId", default=None)
+    """FactSet Permanent Identifier.
+
+    Six alpha-numeric characters, excluding vowels, with an -R suffix (XXXXXX-R) or
+    a -L Suffix (XXXXXX-L).
+    """
+
+    request_id: Optional[str] = FieldInfo(alias="requestId", default=None)
+    """Identifier that was used for the request."""
+
+    total_return: Optional[float] = FieldInfo(alias="totalReturn", default=None)
+    """Returns the data for the given input parameters."""
+
+
+class ReturnsResponse(BaseModel):
+    data: Optional[List[Data]] = None
+    """Array of Returns Objects"""
