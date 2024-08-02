@@ -1,0 +1,1 @@
+include *requirements.txt python/cic/* python/cic/runnable/* LICENSE README* 

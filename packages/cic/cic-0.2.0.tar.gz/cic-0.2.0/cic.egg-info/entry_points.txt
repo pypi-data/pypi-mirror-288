@@ -1,0 +1,5 @@
+[console_scripts]
+cic-abilist = cic.runnable.abilist:main
+cic-abimerge = cic.runnable.mergeabis:main
+cic-eip165 = cic.runnable.calculate_eip165:main
+cic-reduce = cic.runnable.reduce_to_methods:main
