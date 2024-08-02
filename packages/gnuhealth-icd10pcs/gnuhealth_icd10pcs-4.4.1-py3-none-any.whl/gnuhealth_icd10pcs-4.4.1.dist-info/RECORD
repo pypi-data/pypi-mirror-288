@@ -1,0 +1,15 @@
+trytond/modules/health_icd10pcs/__init__.py,sha256=r-JYPlciwdRFE_TYpg3qnwnSHSroX3XZbqhBFTGVrLM,786
+trytond/modules/health_icd10pcs/health_icd10pcs.py,sha256=_XXHcuicNp_VwbzU4Ew33Vp_7AUYCNJIFNvuvypT3sQ,787
+trytond/modules/health_icd10pcs/tryton.cfg,sha256=m0XKsdHEciS7rIQhzHcOze2zAnOzyXN_Pj3Mezi70x4,153
+trytond/modules/health_icd10pcs/data/icd_10_pcs_2009_part1.xml,sha256=8HNZG8TvUzYEKvXsg0hQHOgM70y12d9nu698vgN8OVw,5102915
+trytond/modules/health_icd10pcs/data/icd_10_pcs_2009_part2.xml,sha256=sCktPUFwDrHjnUkZqU8AM9x2_AKkegupIbgFWeDdaaE,5102219
+trytond/modules/health_icd10pcs/data/icd_10_pcs_2009_part3.xml,sha256=l191hAms2v2ZZYwBhrw6-gc1krHPdBoBhW_qu1QHLR0,4556139
+trytond/modules/health_icd10pcs/doc/index.rst,sha256=MkJ10l0fqiDNgaQwYTpOBbNftlS9xKyDPC2orkodvOs,1221
+trytond/modules/health_icd10pcs/tests/__init__.py,sha256=0i_akRB3w8bg3AfA3RNCJvi4JAp5cSPADG1zr0UBlTk,235
+trytond/modules/health_icd10pcs/tests/test_health_icd10pcs.py,sha256=pL5Nww-epjiSrxqR3QjqESfzcJ2I7UGkKDXnYK6V4Ks,600
+gnuhealth_icd10pcs-4.4.1.dist-info/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+gnuhealth_icd10pcs-4.4.1.dist-info/METADATA,sha256=UnBalFhAgvo69EAEYFy8x02n56sU7rzsgMoy0Xlddvk,5763
+gnuhealth_icd10pcs-4.4.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+gnuhealth_icd10pcs-4.4.1.dist-info/entry_points.txt,sha256=4t3Fm6tOvkVb_rR756ZVNHrcELbQoQmFFPXXVQdLLgg,68
+gnuhealth_icd10pcs-4.4.1.dist-info/top_level.txt,sha256=1UNriCfRfjRjutJbJ_B8i13huVUoV_Otp9RlW3mCfw4,8
+gnuhealth_icd10pcs-4.4.1.dist-info/RECORD,,
