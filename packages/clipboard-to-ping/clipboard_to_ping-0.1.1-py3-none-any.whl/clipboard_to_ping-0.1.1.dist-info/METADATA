@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: clipboard-to-ping
+Version: 0.1.1
+Summary: A simple skript that copies selected text and opens a ping shell.
+Author-Email: Julius Koenig <info@bastelquartier.de>
+License: GPL-3.0
+Requires-Python: >=3.12
+Requires-Dist: wiederverwendbar>=0.3.1
+Requires-Dist: keyboard>=0.13.5
+Requires-Dist: pystray>=0.19.5
+Description-Content-Type: text/markdown
+
+# clipboard-to-ping

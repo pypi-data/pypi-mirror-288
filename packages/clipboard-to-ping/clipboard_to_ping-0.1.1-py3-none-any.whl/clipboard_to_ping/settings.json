@@ -1,0 +1,20 @@
+{
+    "commands": {
+        "ping": {
+            "hotkey": "alt+p",
+            "open": [
+                "cmd.exe",
+                "/c",
+                "ping -t {{clipboard}}"
+            ]
+        },
+        "tracert": {
+            "hotkey": "alt+t",
+            "open": [
+                "cmd.exe",
+                "/c",
+                "tracert {{clipboard}}"
+            ]
+        }
+    }
+}

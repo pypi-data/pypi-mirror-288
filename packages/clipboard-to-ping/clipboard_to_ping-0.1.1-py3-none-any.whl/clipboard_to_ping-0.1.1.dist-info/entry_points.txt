@@ -1,0 +1,3 @@
+[console_scripts]
+clipboard-to-ping = clipboard_to_ping.__main__:main
+
