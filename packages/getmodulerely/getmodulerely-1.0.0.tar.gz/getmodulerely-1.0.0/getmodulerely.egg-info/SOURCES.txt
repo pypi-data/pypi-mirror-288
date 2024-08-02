@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+getmodulerely/__init__.py
+getmodulerely/__main__.py
+getmodulerely.egg-info/PKG-INFO
+getmodulerely.egg-info/SOURCES.txt
+getmodulerely.egg-info/dependency_links.txt
+getmodulerely.egg-info/top_level.txt
