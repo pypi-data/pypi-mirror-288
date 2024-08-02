@@ -1,0 +1,9 @@
+_atoti_server_kafka/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+_atoti_server_kafka/__resources__/plugin.jar,sha256=6lTWnoKrlKidrBULRgJwc248AiutczFbBTZf41TDEbw,8322896
+_atoti_server_kafka/_plugin.py,sha256=Bz991FKOf_SR4vSLUL5kTFXkwfICwAA0EmGuzfpNKg0,812
+_atoti_server_kafka/_resources_directory.py,sha256=kOOsXoN0C2-JZbbg3vJcW18ypPwrF0p-ELc2H6Dlo6k,88
+_atoti_server_kafka/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atoti_server_kafka-0.9.0a0.dist-info/METADATA,sha256=lIrdzwqIQE7eNIzzvHdewfItRC7Dvn_E_k4hklchwjM,841
+atoti_server_kafka-0.9.0a0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+atoti_server_kafka-0.9.0a0.dist-info/entry_points.txt,sha256=3CXAVfdtvu5tYE9vzK5_ToeaSiBlHKiBkCQk76EnI8E,63
+atoti_server_kafka-0.9.0a0.dist-info/RECORD,,
