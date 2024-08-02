@@ -1,0 +1,12 @@
+
+[dev]
+mypy
+ipdb
+autopep8
+coverage
+python-can
+
+[test]
+mypy
+coverage
+python-can
