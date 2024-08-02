@@ -1,0 +1,14 @@
+joblib
+segments
+attrs>=18.1
+dlinfo
+typing-extensions
+
+[doc]
+sphinx
+sphinx_rtd_theme
+
+[test]
+pytest>=6.0
+pytest-cov
+coverage[toml]
