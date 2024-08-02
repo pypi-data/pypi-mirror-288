@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "testbuddy-g5k"
+version = "0.2.2"
+description = "Testbuddy-g5k provides declarative tests for Grid'5000."
+authors = ["Nikolaos Chatzikonstantinou <nchatz314@gmail.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+include = ["COPYING", "config", "docs", "fenicsx-tests-gsoc2024"]
+repository = "https://salsa.debian.org/_-/testbuddy-g5k"
+documentation = "https://_-.pages.debian.net/testbuddy-g5k"
+
+[tool.poetry.scripts]
+testbuddy-g5k = "testbuddy_g5k.testbuddy_g5k:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.7"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+sphinx = "^7.3.7"
+sphinx-rtd-theme = "^2.0.0"
+
+[tool.poetry.group.fenicsx-tests-gsoc2024.dependencies]
+pandas = "^2.2.2"
+jinja2 = "^3.1.4"
+plotly = "^5.23.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
