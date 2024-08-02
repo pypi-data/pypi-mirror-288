@@ -1,0 +1,13 @@
+macos_pkg_builder/__init__.py,sha256=fILewjN9o7-XqVXIK4GvEfbeilSkuJ8xiZJWrrI_f7Y,1202
+macos_pkg_builder/core.py,sha256=m26ykH3_0o3oEn8ZKAqs_iMujEv7LpnaS4P_DwdVENA,8838
+macos_pkg_builder/distribution_pkg.py,sha256=GPJpjvXOFR94qSuVLtNdhcAbA6vH6wPPw2N0mrL9moM,7938
+macos_pkg_builder/flat_pkg.py,sha256=DcyiwoTFqd0XPvIGcXhfCAd7H4_8LT5LUde_ph7yg1Y,8762
+macos_pkg_builder/utilities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+macos_pkg_builder/utilities/copy.py,sha256=aXciuX7nwW0s7IOGjrT-UIM9Uo2LEi4tuj1bZR_duGY,4303
+macos_pkg_builder/utilities/signing.py,sha256=0yX9uR_b4dRhyDg6HX2Dbh2jyvl30Dnv6iOSh0NorPw,1866
+macos_pkg_builder/utilities/subprocess_wrapper.py,sha256=jJyh2D_oTVAWUUBMHPUdF6YYA0vycRZGch3Z3SwCX2A,2747
+macos_pkg_builder-2.2.0.dist-info/LICENSE.txt,sha256=tW-ijE6sf_337xzSn96h8X_puWWPc2LyUDfLMhqMrms,1505
+macos_pkg_builder-2.2.0.dist-info/METADATA,sha256=PQwftXM-UBeDCa5AnBQb5BqLs8MfvM5Z9nIBGIufN30,8501
+macos_pkg_builder-2.2.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+macos_pkg_builder-2.2.0.dist-info/top_level.txt,sha256=bQR8DTKmm4DzHeH3KB62AWXUwQwcWBwyUcn3wmlvOgQ,18
+macos_pkg_builder-2.2.0.dist-info/RECORD,,
