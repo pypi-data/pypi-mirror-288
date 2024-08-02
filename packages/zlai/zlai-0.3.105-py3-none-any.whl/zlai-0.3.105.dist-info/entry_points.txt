@@ -1,0 +1,5 @@
+[console_scripts]
+zlai_agent=zlai.streamlit.web.run:run_streamlit_app
+zlai_chat=zlai.streamlit.web.run:run_streamlit_app
+zlai_models=zlai.models.app:models
+
