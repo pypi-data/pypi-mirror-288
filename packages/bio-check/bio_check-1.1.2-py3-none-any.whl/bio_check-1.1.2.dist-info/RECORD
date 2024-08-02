@@ -1,0 +1,9 @@
+bio_check/.VERSION,sha256=zFL2eISLgUNzdXtGA4O_YZYOSUPCA3Na3eCjULPlCYk,6
+bio_check/__init__.py,sha256=Vn5ROo-T42ldSyuhI5VhZkARekGbBtWeQdA3_8CpsrE,41
+bio_check/processing_tools.py,sha256=OgqZR5dC7lkxo3V9a8CQMEz-dcivcM9I1vUHonmB8rc,651
+bio_check/tests.py,sha256=gzA_qcU9ROUOkNsuU8nWhbNQBWQBnBP3_d0wsQD0Xd0,103
+bio_check/verifier.py,sha256=z0dzLa0MSnvneP6SROy5VYLqvHCunsRgdU1WpJA29Yg,15327
+bio_check-1.1.2.dist-info/LICENSE,sha256=sF9SV-O54AFkJTMLiJaQw0Ngd4QC7nAkzLV3QBIYnC0,11358
+bio_check-1.1.2.dist-info/METADATA,sha256=a19p-6s-sOBKfQmXpeYXScaiUJOK8JFQK6EMJckdyfU,3385
+bio_check-1.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+bio_check-1.1.2.dist-info/RECORD,,
