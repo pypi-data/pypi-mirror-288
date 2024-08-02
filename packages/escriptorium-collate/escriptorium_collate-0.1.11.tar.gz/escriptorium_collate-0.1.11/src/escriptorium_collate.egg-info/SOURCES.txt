@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/escriptorium_collate/__about__.py
+src/escriptorium_collate/__init__.py
+src/escriptorium_collate/collate.py
+src/escriptorium_collate/transcription_layers.py
+src/escriptorium_collate.egg-info/PKG-INFO
+src/escriptorium_collate.egg-info/SOURCES.txt
+src/escriptorium_collate.egg-info/dependency_links.txt
+src/escriptorium_collate.egg-info/requires.txt
+src/escriptorium_collate.egg-info/top_level.txt
+src/escriptorium_collate/__assets__/collatex-tools-1.7.1.jar
+src/tests/__init__.py
+src/tests/tests.py
