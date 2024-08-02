@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+gfmscraper/__init__.py
+gfmscraper/scraper.py
+gfmscraper.egg-info/PKG-INFO
+gfmscraper.egg-info/SOURCES.txt
+gfmscraper.egg-info/dependency_links.txt
+gfmscraper.egg-info/requires.txt
+gfmscraper.egg-info/top_level.txt
