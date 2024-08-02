@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "coolify-cli"
+version = "0.1.0"
+description = ""
+authors = ["dhinogz <davidhinojosagzz@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+coolify-cli = "coolify_cli.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+typer = {extras = ["all"], version = "^0.12.3"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
