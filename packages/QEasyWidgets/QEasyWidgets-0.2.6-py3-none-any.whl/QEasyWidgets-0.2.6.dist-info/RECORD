@@ -1,0 +1,16 @@
+QEasyWidgets/QTasks.py,sha256=h9jwDojCgH4FpEWhxiiwmm3UZOtQoRDmjRpTwoYQuZ0,4435
+QEasyWidgets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QEasyWidgets/Common/QFunctions.py,sha256=05VN5Tp7wEQ_zWmP5nP359ul6Y8xuncsj5Ogq9r91i0,17505
+QEasyWidgets/Common/Utils.py,sha256=lZB95pEoSCXaz2piBhx5ibhuduxb8Heu6LPdOCvzwx8,29880
+QEasyWidgets/Common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QEasyWidgets/Components/ComponentsCustomizer.py,sha256=hTv7WEZxN75rk5wfYb4Gzgj_gxMXpO_JS0kz-Zq9sN0,37025
+QEasyWidgets/Components/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QEasyWidgets/Resources/Sources.py,sha256=iDpx61USP3HGMfxPi--dKtMJoOjTv_uS7cpxMzK3R50,86405
+QEasyWidgets/Resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QEasyWidgets/Windows/WindowCustomizer.py,sha256=5c2Sdq2ptQgASfY2IFYKwiTHq_1zJbkBBIwFTrhrufc,23782
+QEasyWidgets/Windows/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QEasyWidgets-0.2.6.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+QEasyWidgets-0.2.6.dist-info/METADATA,sha256=BQQhDRut_NdBjhRV9PX1ExVHYQi-8jPqfK4CCxTQJZo,1908
+QEasyWidgets-0.2.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+QEasyWidgets-0.2.6.dist-info/top_level.txt,sha256=iQhIIVQ-4Q_v-Uk8wiRLhxwyBpvPARAvYpAjGwtdRmM,13
+QEasyWidgets-0.2.6.dist-info/RECORD,,
