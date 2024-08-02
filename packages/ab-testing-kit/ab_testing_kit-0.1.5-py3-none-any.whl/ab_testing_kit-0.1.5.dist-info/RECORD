@@ -1,0 +1,7 @@
+ab_testing_kit/data_splitting/sample_size_calculation.py,sha256=at8flsvDxHixg24Q-eztWocTiwBik2SFYFBcjf_Eb6U,4325
+ab_testing_kit/exploration/data_exploration.py,sha256=uWv7jweApHAcccNqAGLSy6C2fWHWYKXb1pTqs-XCztc,4011
+ab_testing_kit/testing/tests.py,sha256=TNoeHfg0K2Aa44Ghp6ydba9kVRs5wMXynEqfq0RZ3O4,3987
+ab_testing_kit-0.1.5.dist-info/METADATA,sha256=gjfgnSSfH_AZMDnve6lqO1u2pmCFDn60eOXcQqxVDn4,2053
+ab_testing_kit-0.1.5.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+ab_testing_kit-0.1.5.dist-info/top_level.txt,sha256=xat88KNDUQVko1YjQvF8kqDgkj1VHIXQ12yWu7iNMK0,15
+ab_testing_kit-0.1.5.dist-info/RECORD,,
