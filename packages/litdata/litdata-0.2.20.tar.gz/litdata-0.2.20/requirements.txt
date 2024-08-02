@@ -1,0 +1,6 @@
+torch
+filelock
+numpy
+boto3
+requests
+s5cmd
