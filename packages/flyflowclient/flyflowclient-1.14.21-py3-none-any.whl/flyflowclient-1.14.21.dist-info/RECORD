@@ -1,0 +1,9 @@
+flyflow_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flyflow_client/client.py,sha256=Rqk7x0eFwq-Vmc5PHqaExjj4eVNS5t5-09JpxZfJquM,3647
+flyflowclient/__init__.py,sha256=IJORz09IG4G18Y1JQbcB1hn6uf3RYBKAkK6edtplMOU,27
+flyflowclient/client.py,sha256=aTr8ejJ58_bzwI9Lh4Lqaov6nNdVWGlwS6XHVR_jYds,4482
+flyflowclient-1.14.21.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+flyflowclient-1.14.21.dist-info/METADATA,sha256=shW5GuZQMW81jLZm-N8_G42U2kzyAoZOe0NBul3vVCc,4011
+flyflowclient-1.14.21.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+flyflowclient-1.14.21.dist-info/top_level.txt,sha256=xzEHeRmjdQuM5wWifajoitz--RdistFiIM8nP6BI9wA,14
+flyflowclient-1.14.21.dist-info/RECORD,,
