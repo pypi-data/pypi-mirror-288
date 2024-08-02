@@ -1,0 +1,4 @@
+ServiceDiscovery
+paho-mqtt
+psutil
+pyroute2
