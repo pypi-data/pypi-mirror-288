@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tuma-ai
+Version: 1.0
+Summary: 适合编程教学学习使用的AI库
+Home-page: https://gitee.com/tangyuqi-code/tuma-ai
+Author: Tangyuqi
+Author-email: 644853320@qq.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# tuma-ai
+`tuma-ai`对AI大模型的API做了适合编程教学的封装，
+用户只需要使用调用API，几行代码便能实现对AI大模型的调用。
+支持单轮互动、多轮互动、流式输出大模型响应内容、自定义提示词模版和场景拼接、
+可自己配置AI的交互风格
+
+功能特点：
+
+- 支持多轮互动
+- 支持流式输出
+- 支持自定义配置AI的回复风格以及回复语气
+- 支持自定义配置AI的智能等级
