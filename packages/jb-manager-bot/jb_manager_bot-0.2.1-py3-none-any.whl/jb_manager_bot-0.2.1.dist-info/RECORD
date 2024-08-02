@@ -1,0 +1,12 @@
+jb_manager_bot/__init__.py,sha256=XC9AZeQAj6qIS9y1BIHnjbTcKwPaDbXYaGHmYiBFKXM,103
+jb_manager_bot/abstract_fsm.py,sha256=PlF0UOJXEFF2kqQKj0_-i18yF8ja7lcHLTYgEK3p6ZE,23091
+jb_manager_bot/data_models.py,sha256=VZQqybCJ5sCP9eMa0zILcwv5LvlC0eEo75QYITS2sRc,6783
+jb_manager_bot/parsers/__init__.py,sha256=L4tnT8bCQI6qHr_yXL3s08pvb51TjkPSA7z-QGmXLcE,107
+jb_manager_bot/parsers/option_parser/__init__.py,sha256=CCrMVqvAmVVaSQlMxAXdIUbcpFIVasOzlpD9fm0liY0,4524
+jb_manager_bot/parsers/utils.py,sha256=zH6VCOK721fFL7YoPOQwJ-iaumxE9Giawtjp_UnYXJI,5074
+jb_manager_bot/tests/neocarwash.py,sha256=2MWJbnFX71TWEvlYf5ibMpODmWvlxMkb-IcXQB9YUxs,21997
+jb_manager_bot/tests/test_abstractfsm.py,sha256=fkusG4TsFGWrzVgFEyKdBtVaQcfE4EDeV-Gr3aOawg4,5947
+jb_manager_bot/tests/test_parser.py,sha256=TXn3jwgit1wC4oGLYvc3mMhNk0-7_uoVqqMO_YHZIKE,3968
+jb_manager_bot-0.2.1.dist-info/METADATA,sha256=Bva248mqtblHnpxINeoIn3tJ-xWZefVmlZZbMW0XMRY,597
+jb_manager_bot-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+jb_manager_bot-0.2.1.dist-info/RECORD,,
