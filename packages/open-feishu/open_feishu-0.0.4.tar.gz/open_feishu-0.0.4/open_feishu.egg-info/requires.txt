@@ -1,0 +1,7 @@
+attrs
+chanfig>=0.0.102
+lazy-imports
+pycryptodome
+pytz
+requests
+tzlocal
