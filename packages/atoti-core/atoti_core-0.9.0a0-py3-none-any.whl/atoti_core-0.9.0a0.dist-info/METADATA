@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: atoti-core
+Version: 0.9.0a0
+Summary: Code required by both client and server Atoti packages
+Home-page: https://www.atoti.io
+Author: ActiveViam
+Author-email: dev@atoti.io
+Requires-Python: >=3.10
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: Free To Use But Restricted
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Java
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Project-URL: Bug Tracker, https://github.com/atoti/atoti/issues
