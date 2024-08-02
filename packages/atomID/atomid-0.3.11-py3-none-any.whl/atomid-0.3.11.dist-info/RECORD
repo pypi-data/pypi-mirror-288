@@ -1,0 +1,10 @@
+atomid/__init__.py,sha256=8sY1Y1Qe2hbuNQQvJ0U-Dy2aGuRXx0OaNMtAuokKqoE,22
+atomid/annotate.py,sha256=IYVE84g5DUGI-QONPLCCDpuHreAf2sCnV_0yoCKPwjM,14310
+atomid/annotate_crystals.py,sha256=y28abCQXDmVg9MVCxwL8J4qiJIQbq7TzCs-G1io-59k,6449
+atomid/crystal/structure_identification.py,sha256=VGGJyTj4QjBaD1Xkk04DNrfY0Jtt8VrUt60vFen7NYI,1942
+atomid/line_defect_analysis/dislocation_extraction.py,sha256=3apaxkk-DgMyG5wdDQMCMLGBs5Q3XntQiLVKpJ74U44,746
+atomid/plane_defect_analysis/grain_segmentation.py,sha256=9qzrz-rMtxXcp2h_3-1y_8nsyh06pYVgDjVeyEtjdjw,1724
+atomid/point_defect_analysis/wigner_seitz_method.py,sha256=392JiJZ_CrQU4kIFuhmykirtY6fqadj8XKiIWs8GwG8,4697
+atomid-0.3.11.dist-info/METADATA,sha256=v3OoGpTQ0igQS2Jsfd14qDSLLDyD4sTDyfYCoveWqbo,3559
+atomid-0.3.11.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+atomid-0.3.11.dist-info/RECORD,,
