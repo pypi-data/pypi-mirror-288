@@ -1,0 +1,11 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fuzzy-ml"
+version = "0.0.0"
+authors = [
+  { name="John Wesley Hostetter", email="jhostetter16@gmail.com" },
+]
+description = "Coming soon."
