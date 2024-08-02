@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: pycodemetrics
+Version: 0.0.8
+Summary: Python code metrics tool
+Home-page: https://github.com/mmocchi
+License: MIT
+Author: mmocchi
+Author-email: akihiro.matsumoto.exe@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: cognitive-complexity (>=1.3.0,<2.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: pandas-stubs (>=2.2.2.240603,<3.0.0.0)
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Requires-Dist: radon (>=6.0.1,<7.0.0)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Requires-Dist: tqdm (>=4.66.4,<5.0.0)
+Requires-Dist: types-tabulate (>=0.9.0.20240106,<0.10.0.0)
+Requires-Dist: types-tqdm (>=4.66.0.20240417,<5.0.0.0)
+Project-URL: Repository, https://github.com/mmocchi/pycodemetrics
+Description-Content-Type: text/markdown
+
+# PyCodeMetrics
+
+PyCodeMetricsは、Pythonプロジェクトのコードメトリクスを収集および解析するためのツールです。
+
+## 概要
+
+このプロジェクトは、Pythonコードの複雑さ、品質、およびその他のメトリクスを評価するためのツールを提供します。以下の機能を含みます：
+
+- Gitリポジトリからのログ解析
+- コードの認知的複雑度の計算
+- 各種メトリクスの収集とレポート生成
+
+## for Users
+
+### Install
+
+### Usage
+
+
+## for Contributers
+### Setup
+
+このプロジェクトはPoetryを使用して管理されています。以下の手順でインストールしてください：
+
+1. リポジトリをクローンします。
+
+    ```sh
+    git clone <repository-url>
+    cd pycodemetrics
+    ```
+
+2. Poetryを使用して依存関係をインストールします。
+
+    ```sh
+    poetry install
+    ```
+
+### Usage
+
+#### CLI
+
+`main.py`を実行して、メトリクスを収集および解析します。
+
+```sh
+poetry run pycodemetrics analyze --dir_path .
