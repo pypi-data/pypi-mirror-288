@@ -1,0 +1,10 @@
+pyproject.toml
+setup.cfg
+setup.py
+src/mlops_mongodb_connect/__init__.py
+src/mlops_mongodb_connect/mongo_crud.py
+src/mlops_mongodb_connect.egg-info/PKG-INFO
+src/mlops_mongodb_connect.egg-info/SOURCES.txt
+src/mlops_mongodb_connect.egg-info/dependency_links.txt
+src/mlops_mongodb_connect.egg-info/requires.txt
+src/mlops_mongodb_connect.egg-info/top_level.txt
