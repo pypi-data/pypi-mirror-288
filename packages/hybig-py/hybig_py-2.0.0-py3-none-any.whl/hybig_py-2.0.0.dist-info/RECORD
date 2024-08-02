@@ -1,0 +1,11 @@
+hybig/__init__.py,sha256=8WEdw4RIgs5A9NKvD4C3yLSFadOCCz5KYLtG1NEZGEg,137
+hybig/browse.py,sha256=vkFVcAEnknvGgITbGvTfEjLXcSX_3q7iTNleDEs6rQE,17797
+hybig/browse_utility.py,sha256=Q0bMeugVXF7oZIyUxqNqJEJOsLTqwV99fxO5ZZF5LCU,1047
+hybig/color_utility.py,sha256=EF-ehRGbc2y0VwXxU7rC-kLtWnf3OivS7XKhd61f4Y0,4561
+hybig/crs.py,sha256=csSb5mI80TY6YK-J45P4uNXSPOdJqoOw-NyKRIxWU5A,3915
+hybig/exceptions.py,sha256=ANyKcTH_B19VXNNpUke0lJSwHaq9pqm9cQmA0s1Mwu4,445
+hybig/sizes.py,sha256=lkD1CSud3JplE8rF354cQdfWoF6uV_DXZQ0HbUZHeH0,14693
+hybig_py-2.0.0.dist-info/METADATA,sha256=VMB-Y4onLue7BKUiNoRHFkRtHcwZ1j1DNLQddwNOVS0,20515
+hybig_py-2.0.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+hybig_py-2.0.0.dist-info/licenses/LICENSE,sha256=9BIXPEumOc_qbH1x_hLV5zpHj4rXhfWkfIC_sXrVbpQ,9768
+hybig_py-2.0.0.dist-info/RECORD,,
