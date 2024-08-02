@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: hubmap-ome-utils
+Version: 0.3.4
+Summary: OME-XML utility functions for HuBMAP computational pipelines
+Home-page: https://github.com/hubmapconsortium/ome-utils
+Author: Matt Ruffalo
+Author-email: mruffalo@cs.cmu.edu
+License: GPLv3
+Keywords: ometiff
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: aicsimageio
+Requires-Dist: pint
+Requires-Dist: tifffile
+
+OME-XML utilities
+=================
+
+Overview
+--------
+
+This package provides convenience functions for OME-XML parsing and manipulation, which
+have been useful in multiple pipelines.
+
+Installation
+------------
+
+Run ``python3 -m pip install git+https://github.com/hubmapconsortium/ome-utils``.
