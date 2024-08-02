@@ -1,0 +1,12 @@
+oso_cloud/__init__.py,sha256=wYvQ6XCwn69NY3Tsya6Y5ECEztE9ra_9lNEzxzCVdmo,350
+oso_cloud/api.py,sha256=EmuIoAem7POxpP8oyMn5ou9-IyLA6G9kI2ZWhzdyAlI,13584
+oso_cloud/helpers.py,sha256=-boY_TZg3dJlc-TVIpKMW-byWkCThV17bd7Jt8xku5Q,3274
+oso_cloud/oso.py,sha256=4Iwe4RdJY2pUTLQ2KPsqtZCbQKVXNoPSxGFt_bxeegQ,8374
+oso_cloud/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oso_cloud/query.py,sha256=Pph-o5QI384OVy3-ajhzKjYvPmWDWpS_qWYEfVDvnKo,11340
+oso_cloud/types.py,sha256=tb_mFGFGIUkBmOF2cF6ACfT-qXpUPBiOB7i84a9OhRc,1893
+oso_cloud/version.py,sha256=iNPVziu6P8LeENArY5I0d9oWWkZWVu-YKfqgiPVC80o,27
+oso_cloud-2.0.0rc0.dist-info/METADATA,sha256=QkpgSLgFKrKgfImnkokPMOuO0Wja0BJTrji0ajAS0J8,3467
+oso_cloud-2.0.0rc0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+oso_cloud-2.0.0rc0.dist-info/top_level.txt,sha256=pzOq04dOQpqHFKR4eDR1MMZ23BacelJsh7LKlSdFnmw,10
+oso_cloud-2.0.0rc0.dist-info/RECORD,,
