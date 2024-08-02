@@ -1,0 +1,17 @@
+[build-system]
+requires = ["flit_core"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "convertion"
+authors = [{name = "calcuis", email = "info@calcu.io"}]
+description = "convert all .doc/.docx, .xls/.xlsx, and .ppt/.pptx files to PDF(s) at once"
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version"]
+dependencies = ["pywin32"]
+
+[project.urls]
+Homepage = "https://github.com/calcuis/convertion"
+Issues = "https://github.com/calcuis/convertion/issues"
