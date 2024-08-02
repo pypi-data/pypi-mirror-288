@@ -1,0 +1,8 @@
+admob_ssv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+admob_ssv/conf.py,sha256=GAQRBDLh2JIq-GUmu500D1b18-RYk3IOuDwXxzBuxes,745
+admob_ssv/signals.py,sha256=6tyhRcLww_IxUObE5MZ0t2SnBa2EZ24gMBlXpSEvz_w,67
+admob_ssv/views.py,sha256=9axc3Tp1Btz35oAp6hsaVjk75Y54edOWa0rJvYwBsko,4159
+django_admob_ssv-2.2.1.dist-info/LICENSE,sha256=u1GIEd1qw7oC29Eg8sAci0voILRyUN43IMkfifTQrXg,1054
+django_admob_ssv-2.2.1.dist-info/METADATA,sha256=1hucfRNggfZHWO2InX665SkQ9jX6YwgM1Rv3yox4i8M,7624
+django_admob_ssv-2.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_admob_ssv-2.2.1.dist-info/RECORD,,
