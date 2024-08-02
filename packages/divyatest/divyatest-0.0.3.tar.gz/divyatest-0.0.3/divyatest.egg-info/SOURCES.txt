@@ -1,0 +1,10 @@
+setup.py
+directory1/__init__.py
+directory1/addition.py
+directory2/__init__.py
+directory2/multiplication.py
+directory2/substraction.py
+divyatest.egg-info/PKG-INFO
+divyatest.egg-info/SOURCES.txt
+divyatest.egg-info/dependency_links.txt
+divyatest.egg-info/top_level.txt
