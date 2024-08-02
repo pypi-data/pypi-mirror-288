@@ -1,0 +1,29 @@
+Metadata-Version: 2.3
+Name: mev-commit-sdk-py
+Version: 0.2.0
+Summary: mev-commit python sdk for on-chain data retrieval for mev-commit chain
+Author-email: Evan K <evan@primev.xyz>
+Requires-Python: >=3.12
+Requires-Dist: bump2version>=1.0.1
+Requires-Dist: git-changelog>=2.5.2
+Requires-Dist: hvplot>=0.9.2
+Requires-Dist: hypersync>=0.7.14
+Requires-Dist: polars>=1.0.0
+Requires-Dist: pyarrow>=16.0.0
+Requires-Dist: python-dotenv>=1.0.1
+Description-Content-Type: text/markdown
+
+# mev-commit-sdk-py
+
+## Introduction
+This is a python based SDK to grab data from mev-commit chain powered by [Envio's](https://envio.dev/) hypersync indexer.
+
+## Installation
+Install with `pip install mev-commit-sdk-py`
+
+This library uses `rye` as the project manager. First install [rye](https://rye.astral.sh/guide/installation/). Then clone the repository and run `rye sync` to install the dependencies and get setup. Current Python version is 3.10.12. Once installed, add a .env file with the variable `RPC='endpoint'` where endpoint is the url of the rpc server you want to connect to, this is for cryo. 
+
+The hypersync endpoint is `https://mev-commit.hypersync.xyz` and currently is not passed in as an .env variable
+
+## Usage
+There are various things you can do with the SDK.....to be written up in more detail. For now check the tests and examples for basic idea how to run the code
