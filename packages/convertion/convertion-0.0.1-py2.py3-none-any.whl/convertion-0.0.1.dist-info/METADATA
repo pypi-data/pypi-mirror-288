@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: convertion
+Version: 0.0.1
+Summary: convert all .doc/.docx, .xls/.xlsx, and .ppt/.pptx files to PDF(s) at once
+Author-email: calcuis <info@calcu.io>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pywin32
+Project-URL: Homepage, https://github.com/calcuis/convertion
+Project-URL: Issues, https://github.com/calcuis/convertion/issues
+
+### convertion
+
+Convert all .doc, .docx, .xls, .xlsx, .ppt, and .pptx files to PDF(s) in the current directory.
+
+#### install it via (pip/pip3):
+```
+pip install convertion
+```
+
+#### execute the conversion by (python/python3):
+```
+python -m convertion
+```
