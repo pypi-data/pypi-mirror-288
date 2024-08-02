@@ -1,0 +1,10 @@
+simpleccx/__init__.py,sha256=rlZLKyhoTaPWZhbq9H3gTClN7onxJA84BMzg8heMEOY,49
+simpleccx/calculix.py,sha256=5cIcjfkj5NQ6JNshAFWESLmueYZ68BayF7Uu1FBbqRo,6870
+simpleccx/frdreader.py,sha256=reb6noH3jZKyKdcF9QRkUjQvyx8-Db6hKfX8J2i9PiY,6581
+simpleccx/simpleccx.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simpleccx/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simpleccx-0.0.4.dist-info/LICENSE,sha256=RBhg5hIyHCQyj9Hd6pdx4QVzRdIfplLdnbuNB0fm2H4,1093
+simpleccx-0.0.4.dist-info/METADATA,sha256=Q2vDD9fSg4MtIqq4cm_3s5jVPN2_j4CteKng7HsvMd8,719
+simpleccx-0.0.4.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+simpleccx-0.0.4.dist-info/top_level.txt,sha256=ntRozU-RXyCLthz-vXI7vEDCNQzuB6RhZY4D7CyRRSY,10
+simpleccx-0.0.4.dist-info/RECORD,,
