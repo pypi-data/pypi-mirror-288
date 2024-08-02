@@ -1,0 +1,21 @@
+[project]
+name = "fritool"
+version = "1.0.0"
+authors = [
+  { name="Anton Shishkin", email="ashishkin@5sigma.co" },
+]
+dependencies = [
+    'requests >= 2.32.3'
+]
+description = "finance resilence tool package"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/5SigmaInc/frtool"
+Issues = "https://github.com/5SigmaInc/frtool/issues"

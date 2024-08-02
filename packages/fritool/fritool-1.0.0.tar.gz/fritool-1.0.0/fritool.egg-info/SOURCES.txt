@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+fritool.egg-info/PKG-INFO
+fritool.egg-info/SOURCES.txt
+fritool.egg-info/dependency_links.txt
+fritool.egg-info/requires.txt
+fritool.egg-info/top_level.txt
+frtool/__init__.py
+frtool/apiclient.py
