@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: recovery
+Version: 0.2.8
+Summary: Checks recovery phone numbers against login page on yahoo
+Author: Yob Reggin
+Author-email: demaebteg@reggin.yob>
+Keywords: recovery,checker,recover,check,yahoo,list
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama
+Requires-Dist: httpx
+Requires-Dist: requests
+Requires-Dist: tls-client
+Requires-Dist: psutil
+
+
+# Recovery
+### Overview
+Recovery is a Python package designed to verify and recover contact information. It checks a list of email addresses and phone numbers against Yahoo's API to identify and validate entries associated with Yahoo domains.
+
+### Features
+- Verifies email addresses with Yahoo domains.
+- Checks phone numbers against Yahoo's database.
+
+## Installation
+You can install the package using pip:
+```bash
+pip install recovery
+```
+
+## Usage
+To use the package, follow these steps:
+
+Import the package in your Python script:
+```python
+import recovery
+# Example usage check documentation and examples for more!
+recovery.check()
+```
+### API Documentation
+For detailed information on the available methods and parameters, please refer to the API Documentation.
+
+### Contributing
+If you'd like to contribute to the development of this package, please follow these steps:
+
+- Fork the repository on GitHub.
+- Create a feature branch for your changes.
+- Submit a pull request with a clear description of the changes.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+## Contact
+For any questions or support, please reach out to demaebteg@reggin.yob.
+
+***Feel free to adjust any specifics, such as the API documentation link, license details, or contact information, to fit your actual project and preferences.***
