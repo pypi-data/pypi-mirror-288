@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: spbessax
+Version: 0.1.2
+Summary: spherical Bessel functions for JAX
+Keywords: Spherical Bessel functions,Bessel,JAX
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+License-File: AUTHORS
+Requires-Dist: jax
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: scipy; extra == "dev"
+Requires-Dist: matplotlib; extra == "dev"
+
+# spbessax
+
+This repository contains a JAX implementation of spherical bessel functions that
+is fully compatible with jax.jit and jax.grad. It is based on the implementation
+by @sousaw in [NeuralIL](https://github.com/Madsen-s-research-group/neuralil-public-releases).
