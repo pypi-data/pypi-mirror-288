@@ -1,0 +1,11 @@
+WdSql/MySQL.py,sha256=J1rtigZQKaf8VOWCuiJKju30JgRq0xGtU7hlC1_bvRE,1967
+WdSql/SQLserver.py,sha256=NbMhTVhDaFlLxNL2kVw49K1gWV5YQD3GtpnijHAsAwg,1092
+WdSql/__init__.py,sha256=hhQFl1VtM3s2WIR6lbLtS2HX-c1ymrKNRKW8aojU_8g,102
+WdSql/error.py,sha256=wlRmYM9P1ULFrlxHhH-yGLETyj10PMAK-0imU4IX924,877
+WdSql/objects.py,sha256=NHwoCjzBRTn1-S7kM0gjotnHs-Gnnix7rvGavUNyiQU,200
+WdSql/utils.py,sha256=nuUd2nSX20gJG1uP8iOu6RgoMP40VcxGx892g6agAys,319
+WdSql-0.0.4.dist-info/LICENSE,sha256=2ZB0B1-wsdFOG6LDG_6eb6iAB4XPVqxNtGWPWdRAn1w,1029
+WdSql-0.0.4.dist-info/METADATA,sha256=BSeL1h16XFidHo7N4PUsD1i2XW08NGEeG-AwKvcoXQc,443
+WdSql-0.0.4.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+WdSql-0.0.4.dist-info/top_level.txt,sha256=WLGot-MC0GMRSrD5P3YPuCFwChBd9tLEDRMyvCl3hnM,6
+WdSql-0.0.4.dist-info/RECORD,,

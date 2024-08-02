@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: WdSql
+Version: 0.0.4
+Summary: Funciones basicas para bases de datos relacionales
+Home-page: https://gitwell.gwldx.com:2443/python_libraries/wsql
+Author: Pedro Jesús Pérez Hernández
+Author-email: pedrojesus.perez@welldex.mx
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mysql-connector
+Requires-Dist: pyodbc
+Requires-Dist: wellog
+
