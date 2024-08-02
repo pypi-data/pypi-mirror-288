@@ -1,0 +1,9 @@
+marearts_anpr-0.1.5.data/purelib/marearts_anpr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+marearts_anpr-0.1.5.data/purelib/marearts_anpr/image_processor.py,sha256=5N_dojVV5ca-CP3gFsifbj6PWwjgGyf-f-HSTOOQIqE,3176
+marearts_anpr-0.1.5.data/purelib/marearts_anpr/marearts_anpr.py,sha256=l6P8aIMiQ-9KkkDPc2wDecWr9RjnmC2ZuuiNW3zDz-U,3148
+marearts_anpr-0.1.5.data/purelib/marearts_anpr/tokenizer.py,sha256=7bVgAcFQImvZp5XyTXaWDFSQkdG2sJgASXPV1zkTtQ4,6493
+marearts_anpr-0.1.5.data/purelib/marearts_anpr/utils.py,sha256=rZtiCwFdIPztccJLMQztUuTqoYv29Y6TiuxkNj7g_LI,4762
+marearts_anpr-0.1.5.dist-info/METADATA,sha256=BZIRGMTlOqN8HYtaH_d0_RKggKTH8wJ4JofAmd-EqD8,979
+marearts_anpr-0.1.5.dist-info/WHEEL,sha256=fIsFnrmiYoqUaoo3-7_V2WbzMX1uS5gUjuUAPxBpV7o,105
+marearts_anpr-0.1.5.dist-info/top_level.txt,sha256=DX3y7nst7V7YBYS7dHQIIZxROhrheWGRsl2aCOLErEA,14
+marearts_anpr-0.1.5.dist-info/RECORD,,
