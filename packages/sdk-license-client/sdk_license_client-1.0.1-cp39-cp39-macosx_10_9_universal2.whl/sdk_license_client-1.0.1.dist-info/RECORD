@@ -1,0 +1,11 @@
+sdk_license_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdk_license_client/client.cpython-39-darwin.so,sha256=LDDuBjPEHxycOvMQVwMaoBeMe6oUXKeAQlSDdVCA-Os,180768
+sdk_license_client/s.cpython-39-darwin.so,sha256=MRtiGImsQGV73d-nmO0HeGK_ltpN_Lf7Ye0sdJytIVI,181640
+sdk_license_client/protobuf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdk_license_client/protobuf/license_pb2.cpython-39-darwin.so,sha256=81Ta7E-G5I9nAIAOkXkc9cA1cmesGLQhErXW5lquw8M,124776
+sdk_license_client/protobuf/license_pb2_grpc.cpython-39-darwin.so,sha256=g25dGXI9-hcsM0rgZR3kqS9122Pp77vlb_5Ej2nPHJo,270216
+sdk_license_client-1.0.1.dist-info/LICENSE,sha256=lJOflcQK1Yr3nBaYleuKrnNFUT-twOj5BWl2DaJ2zo4,1060
+sdk_license_client-1.0.1.dist-info/METADATA,sha256=fVSIN7R8t641C9KwKNRbbwlBatdjYPH1Bk3QTjoddxE,631
+sdk_license_client-1.0.1.dist-info/WHEEL,sha256=T7cc3Fgb4WcdZPEAzILyAjF1Pe1sLtzTnDnAgrChruE,112
+sdk_license_client-1.0.1.dist-info/top_level.txt,sha256=4tlBRUIP1wHr5PcwU7ovpXXYPDrn14CeldN15z84Tug,19
+sdk_license_client-1.0.1.dist-info/RECORD,,
