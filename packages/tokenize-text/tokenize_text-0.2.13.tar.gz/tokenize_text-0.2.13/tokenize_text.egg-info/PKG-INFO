@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tokenize-text
+Version: 0.2.13
+Summary: Tokenizing and processing text inputs with transformer models
+Author: Urdu NLTK
+Author-email: urdu-nltk@uts.rf.gd
+Keywords: tokenization,text-processing,nlp,transformers
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: transformers
+Requires-Dist: textblob
+Requires-Dist: requests
+Requires-Dist: json5
+
+A package that provides functionalities for tokenizing and processing text inputs using transformer models and other NLP tools.
