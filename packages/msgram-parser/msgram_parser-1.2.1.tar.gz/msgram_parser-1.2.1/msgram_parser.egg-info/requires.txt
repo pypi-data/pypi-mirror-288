@@ -1,0 +1,9 @@
+requests>=2.32
+numpy>=2.0
+pandas>=2.2
+
+[dev]
+pytest
+pytest-cov
+setuptools
+wheel
