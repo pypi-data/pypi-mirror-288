@@ -1,0 +1,11 @@
+certificate_generator/__init__.py,sha256=89hGwL9_IDXFMThlf_4kXaHwo-fy_5qGdux4pKdHMxA,44
+certificate_generator/generator.py,sha256=UU9tBiZKBS55dVs5vXZBSycK-PJhMvOrBO3VncFOpMA,2556
+certificate_generator/src/GreatVibes-Regular.ttf,sha256=9hhm3pIFM5URLJWfh0Wfa-g14yFKAleEJLPPABwrDTA,105980
+certificate_generator/src/logo.png,sha256=flOVdRwyH-VRGVwx_C2IsnCnOUPX8B46FxDH5Wb7_BQ,19794
+certificate_generator/src/template2.png,sha256=WPUym_bus6IQyPR2WTr9UXq_IzG1TmWDxcEToSDR8tY,269879
+certificate_generator-0.3.dist-info/LICENSE,sha256=xjFitryQoVkgrXISxHmvHingWZBAeSKM-Nz_WFuvnx8,1084
+certificate_generator-0.3.dist-info/METADATA,sha256=v7lq8HD4iZKGGrh9u4sOcr8ZHvOClPndakZ6GtUegK8,2576
+certificate_generator-0.3.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+certificate_generator-0.3.dist-info/entry_points.txt,sha256=oJB5aWeu6u-g8CwJWKTsejOLDUZp5JlJtxwSultwO4Y,79
+certificate_generator-0.3.dist-info/top_level.txt,sha256=B2-vYLyRJZnEoQeFeTmgiIfoif9m4ecyK1bqTqYPEyQ,22
+certificate_generator-0.3.dist-info/RECORD,,
