@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Triangle_calculations_yes/Triangle.py
+Triangle_calculations_yes/__init__.py
+triangle_calculations_yes.egg-info/PKG-INFO
+triangle_calculations_yes.egg-info/SOURCES.txt
+triangle_calculations_yes.egg-info/dependency_links.txt
+triangle_calculations_yes.egg-info/requires.txt
+triangle_calculations_yes.egg-info/top_level.txt
