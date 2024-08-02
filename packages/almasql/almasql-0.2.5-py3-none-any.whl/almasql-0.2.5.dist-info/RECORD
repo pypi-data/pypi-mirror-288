@@ -1,0 +1,14 @@
+almasql/__init__.py,sha256=58QcU6MFA6saxn6HtIqTAj4Kbo2NDAW9mjareEeHdIE,385
+almasql/_directives_.py,sha256=5NRCBuZIDlNwewEnVprm1Q8j6BpdTLwkgkEB_7kKieI,1100
+almasql/_post_join_.py,sha256=45-PGnplANBOR4lU8sprboFebR4PUijTeXjQbceFlTg,1918
+almasql/_query_.py,sha256=dsh39v3-nt9fUCf8xxG4eLpWHVfeoRjY84Z298JeuMU,1139
+almasql/_testing/_my_/__init__.py,sha256=PSEqwU7AEfwOPSjZ1cTtDl_3qXKaZQD7l7_JA-Jd4Ms,135
+almasql/_testing/_my_/_almasql_assert_.py,sha256=Wt7Yyv12cocX3PPYoCoLfyyl_e1ciktnlGrN1xlmZBg,538
+almasql/_testing/_my_/_settings_.py,sha256=jg06nCzaxgIyGOhC5hhw44t_n4oiY_5bxrx2KZkXtBk,84
+almasql/_testing/test_queries.py,sha256=JfxnJMU8S-j2Y7VL0tCs6tTSGUgHZJLCQnfw8xGRfm0,2232
+almasql/_transaction_.py,sha256=ZlNsUuFZWvTyF5QwvF851Z9QrLcfrT_TMvGaa9yQVV8,2498
+almasql/_transactions_chain_.py,sha256=twrJRpcf8Om4vfV5qfPuEfnMcjmU9aMYtAIXTvswIDU,1174
+almasql-0.2.5.dist-info/LICENSE.txt,sha256=Rj_GygYQ3lyNHjwEsqQWwRQIun3PaX3RW1JvdKaw9xw,1071
+almasql-0.2.5.dist-info/METADATA,sha256=tZEWxVyt3-M7zhC-V21UZKQJKD-h3umWT2YmXJ2_JlY,1764
+almasql-0.2.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+almasql-0.2.5.dist-info/RECORD,,
