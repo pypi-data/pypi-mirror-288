@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+lematools.egg-info/PKG-INFO
+lematools.egg-info/SOURCES.txt
+lematools.egg-info/dependency_links.txt
+lematools.egg-info/requires.txt
+lematools.egg-info/top_level.txt
