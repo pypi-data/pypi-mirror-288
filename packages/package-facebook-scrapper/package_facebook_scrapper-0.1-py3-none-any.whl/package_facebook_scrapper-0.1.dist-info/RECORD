@@ -1,0 +1,17 @@
+mypackage/Scrap_and_predict_accounts.py,sha256=N-4FuZLmKIBTZcSedXJSvnNdSgIzWLDjgV4N13xKPfk,7217
+mypackage/__init__.py,sha256=QyWkkZPMLy18Yumrupq4lZ2-68VlguRB0UhWxS3hTIA,188
+mypackage/classfication.py,sha256=4PPXYtJ4PBWxqzDAczuULCi_WMP3d-QOoKgLbKQrMMU,4336
+mypackage/config.py,sha256=oRVvMK30Xo-caCmDX-WURNgPh7KVx8K2UcfOp5_3VlE,236
+mypackage/data_processing.py,sha256=DAHKN4OkNR_u2PLbdlBkH5hgNJp1bNVdrnyhPloFA7c,3386
+mypackage/facebook_scraping.py,sha256=N05Mety7Uh_Z3zzoJQDD16pZlk_iG4h11l0-K6Rnk_c,7288
+mypackage/useful_function.py,sha256=-3Vusg8-RNkSOGsQeyh-DlzwAZwD_yhsTpYkXqdYcU8,1827
+mypackage/pages/Train_Model.py,sha256=oDGjf7qnqWxiKa5aE0-tK3ILz4PjXv_XEwj2nWmQsRg,8841
+mypackage/pages/__init__.py,sha256=w5xKFjrH8-1PbwlOZCjkzT5WTPWMlYoDj67qNT_fYic,28
+tests/__init__.py,sha256=bPQVYtUoXBFlAw8NVkXt4qvcHO52tPKltZsiNO8s4Kk,65
+tests/classfication.py,sha256=4PPXYtJ4PBWxqzDAczuULCi_WMP3d-QOoKgLbKQrMMU,4336
+tests/test_classfication.py,sha256=WUSGIRt0SoFZ4WjU0z2pLSo5kkpSwbh1W2Xk-WaNfys,4185
+package_facebook_scrapper-0.1.dist-info/LICENSE.txt,sha256=oaprBZWSt82-QjAMksEIsTAIJ8WuhD6_0t1mGjuiFAc,1087
+package_facebook_scrapper-0.1.dist-info/METADATA,sha256=OK2Jycf3mQEEj4mGo4-gFyE8eaeQg5z4SSLPtdw3vcM,4099
+package_facebook_scrapper-0.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+package_facebook_scrapper-0.1.dist-info/top_level.txt,sha256=EPaQ7bohfbQYpXluIecATfHFlNVEU6p7LxDTpUYjEV8,16
+package_facebook_scrapper-0.1.dist-info/RECORD,,
