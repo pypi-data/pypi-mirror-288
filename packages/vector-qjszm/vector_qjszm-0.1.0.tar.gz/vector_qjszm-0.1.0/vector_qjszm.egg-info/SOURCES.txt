@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+test/__init__.py
+test/test_vector.py
+vector/__init__.py
+vector/vector.py
+vector_qjszm.egg-info/PKG-INFO
+vector_qjszm.egg-info/SOURCES.txt
+vector_qjszm.egg-info/dependency_links.txt
+vector_qjszm.egg-info/top_level.txt
