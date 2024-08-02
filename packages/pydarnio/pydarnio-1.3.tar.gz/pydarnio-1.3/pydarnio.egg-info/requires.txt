@@ -1,0 +1,4 @@
+pyyaml
+numpy
+h5py>=3.11.0
+pathlib2
