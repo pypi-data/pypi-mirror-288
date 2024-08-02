@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fenicio
+Version: 0.0.8
+Summary: Python SDK para la API de Fenicio https://fenicio.io/.
+Home-page: https://pypi.org/project/fenicio/
+Author: Alejo Prieto Dávalos
+Author-email: alejoprietodavalos@gmail.com
+Project-URL: Source, https://github.com/AlejoPrietoDavalos/fenicio/
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests >=2.32
+Requires-Dist: pydantic >=2.8
+
+### Python SDK para la API de Fenicio
+
+- `Carrito Abandonado:` Parece que luego de 30min se marca como abandonado.
