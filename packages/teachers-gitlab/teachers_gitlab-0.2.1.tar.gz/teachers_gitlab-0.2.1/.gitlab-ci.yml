@@ -1,0 +1,20 @@
+
+# Smoke test that installation works and we can at least print help
+print-help:
+  image: python:${PYTHON_VERSION}
+  parallel:
+    matrix:
+      - PYTHON_VERSION: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+  script:
+    - python3 --version
+    - pip install .
+    - teachers-gitlab help
+
+# Basic run of pytest-based tests
+pytest:
+  image: python:3.12
+  script:
+    - python3 --version
+    - pip install -r requirements.txt
+    - pip install -r requirements-dev.txt
+    - env PYTHONPATH=src pytest -vvv tests/
