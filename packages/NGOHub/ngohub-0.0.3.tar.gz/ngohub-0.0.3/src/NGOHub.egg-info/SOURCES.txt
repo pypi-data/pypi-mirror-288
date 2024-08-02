@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/NGOHub.egg-info/PKG-INFO
+src/NGOHub.egg-info/SOURCES.txt
+src/NGOHub.egg-info/dependency_links.txt
+src/NGOHub.egg-info/top_level.txt
+src/ngohub/__init__.py
+src/ngohub/core.py
