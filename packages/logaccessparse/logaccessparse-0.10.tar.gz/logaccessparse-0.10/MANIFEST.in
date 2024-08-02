@@ -1,0 +1,7 @@
+include logaccessparse/requirements.txt
+include logaccessparse/thirdparty.json
+include logaccessparse/ac.apk
+include logaccessparse/LICENSE
+include logaccessparse/LICENSEAPK
+include logaccessparse/NOTICE.html
+include logaccessparse/README.MD
