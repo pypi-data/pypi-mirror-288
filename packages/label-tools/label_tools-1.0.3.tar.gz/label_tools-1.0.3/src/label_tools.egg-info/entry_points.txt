@@ -1,0 +1,3 @@
+[console_scripts]
+label-merge-branches = label_tools.label_merge_branches.cli:entry
+labelme-count-label = label_tools.labelme_stats.cli:entry
