@@ -1,0 +1,70 @@
+# If you want to run multiple experiments of a single tested program
+# with a single set of parameters, you can use this configuration
+# file. To run different kind of experiments with different tested
+# programs and different parameters, use multiple configuration files,
+# one per logical group of experiments.
+
+# SSH login name to Grid'5000.
+login = "nchatzik"
+# In Grid'5000, assets will be stored under
+# fenicsx-tests/gsoc2024. Importantly, `project` and `name` do not
+# refer to Grid'5000's concept of project and name (which is, for
+# them, a way for the job scheduler to attach metadata to a job.) For
+# us, these variables help us keep directories organized in a
+# hierarchical structure in the Grid'5000 servers so that different
+# experiment do not stomp on each other's assets and results.
+project = "fenicsx-tests"
+name = "gsoc2024"
+
+[sync]
+# The local directory where the result tarballs will be stored after
+# synchronizing. It will be created if it does not exist, but the
+# parent directory must exist.
+results_dir = "./www/results"
+
+[launch]
+# Global configuration options
+# Options specified in `experiments` will shadow them.
+
+# Any directory listed here is recursively copied into
+# project/name. Single files are also copied. Rsync syntax applies, so
+# `./foo/` copies the contents of foo, while `./foo` copies the foo
+# directory itself as well.
+assets = [
+  "./fenicsx-tests-gsoc2024/entrypoint.bash",
+  "./fenicsx-tests-gsoc2024/entrypoint.py"
+]
+
+# The entrypoint script that is going to run on one of the allocated
+# hosts. Its path is relative to `project/name`. It can be any kind of
+# shebang script. It should store its results in a tarball under the
+# directory `project/name/results`.
+entrypoint = "./entrypoint.bash"
+
+# The Grid'5000 kaenv3 environment to use. See
+# <https://www.grid5000.fr/w/Advanced_Kadeploy#What_is_an_Environment?>
+# for more information.
+grd_environment = "debiantesting-nfs"
+
+# Extra arguments to pass to the entrypoint script. Implicitly
+# testbuddy-g5k will pass the source directory in `--src-dir`. The
+# arguments in `script_args` are additional long options using the `=`
+# style, e.g. `--option=value`. By default, this is empty. The arguments
+# must be strings; whitespace, etc, is allowed.
+script_args = ["--dof=500000,1000000"]
+
+# An element of this array is a single experiment. A site/cluster
+# combination can be repeated more than once.
+#
+# The `grd_options` key contains the argument to grd bootstrap
+# --resources. See grd bootstrap --help a description of the
+# syntax. As of July 2024, it follows oarsub's --resource syntax,
+# which is SQL with additional simplifications available, for which
+# simplifications more information is available here:
+# <https://www.grid5000.fr/w/OAR_Syntax_simplification>.
+experiments = [
+  { site = "rennes", cluster = "paravance", grd_options = "host=8" },
+  { site = "luxembourg", cluster = "petitprince", grd_options = "host=4" },
+  { site = "nantes", cluster = "econome", grd_options = "host=2" },
+  { site = "lyon", cluster = "nova", grd_options = "host=1" }
+]
