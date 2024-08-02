@@ -1,0 +1,7 @@
+atoti_directquery_jdbc/__init__.py,sha256=Zq8pdsr1xxaFaoouHNwfseiMokSRycDUMTGtHDE52vk,402
+atoti_directquery_jdbc/connection_config.py,sha256=XfrCa8hK-G8Qtm1xFZMQ3-bu38SK3QjLxH9QVMQJJAU,1807
+atoti_directquery_jdbc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atoti_directquery_jdbc/table_config.py,sha256=p-ZTGjghRwFw3W-guO_4JMwFCwaLE1DC9zgUoQAGt-k,514
+atoti_client_directquery_jdbc-0.9.0a0.dist-info/METADATA,sha256=RAWGp_POdkok4mExNwJwMT5JF1ISxdv9y4N3EdsssA0,981
+atoti_client_directquery_jdbc-0.9.0a0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+atoti_client_directquery_jdbc-0.9.0a0.dist-info/RECORD,,
