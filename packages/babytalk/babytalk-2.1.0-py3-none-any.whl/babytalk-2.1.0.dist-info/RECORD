@@ -1,0 +1,14 @@
+babytalk/__init__.py,sha256=y_EqlTgAgtjVyYugtKRp6haFC1wX5jl6zqkoD6LNOsI,2087
+babytalk/advanced_control_structures.py,sha256=rfoYUh-0CHgO1o5S8j4EyTRcSsnJb4u5L9FqCaMh08I,1484
+babytalk/arithmetic.py,sha256=1fc9gNCDUSz1Z7ozAboz1bOZHf0AQ4J3Ip94OmgNHu8,1264
+babytalk/control_structures.py,sha256=xlvCkqi5uPsT-nmvwuP69Lh3kOmExvEApEAG_Ox_aAM,1249
+babytalk/data_structures.py,sha256=dSz5cQwDJmqr8OkTArRWrf8b2G_rt3OfVEQWAIMOQXY,3087
+babytalk/error_handling.py,sha256=tOnt5hOjD6iYPwv0_b3wymklfVwzcWe8eQg3GOaMM6c,1018
+babytalk/file_io.py,sha256=CDo24gcm_PpxvvwZk9pAZRFjyBHmx3Cjms-s4Zs5ZnE,1069
+babytalk/functions_and_pointers.py,sha256=pWLNFz1VANwP441elt0qgT7CXOQ5nPuqJ0pqv31TVGU,1037
+babytalk/gui.py,sha256=HUMsPbVlvy8iS7pMe9ZcGcNGELuAnVT_wNpzBZHslYM,1282
+babytalk-2.1.0.dist-info/LICENSE,sha256=nQm2xXH-2cGnFtA5Vvfoj52ebIVOrt1PyD4xg6y2A2U,1088
+babytalk-2.1.0.dist-info/METADATA,sha256=SOWfi96hVgu9C2taa9gRUicChn-lxLeJWXG1Tjs9DnY,1434
+babytalk-2.1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+babytalk-2.1.0.dist-info/top_level.txt,sha256=ZgqrcMMTGjaLihoHB3vPVxYqG4LO8J5l_pKtxQPG-Ls,9
+babytalk-2.1.0.dist-info/RECORD,,
