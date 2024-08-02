@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: impeller
+Version: 0.1.1
+Summary: Impeller is a package for spatial transcriptomics imputation using path-based graph neural networks.
+Home-page: https://github.com/aicb-ZhangLabs/Impeller
+Author: Ziheng Duan
+Author-email: duanziheng1206@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: gdown
+Requires-Dist: scanpy
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: dgl
+
+# Impeller
+
+Impeller is a sophisticated package designed for imputing spatial transcriptomics data using path-based graph neural networks. It supports a variety of datasets and integrates powerful processing and machine learning techniques.
+
+## Installation
+
+Install the Impeller package using pip with the following command:
+
+```bash
+pip install Impeller
+```
+
+## Usage
+The Impeller package simplifies the process of downloading, processing, and training models on spatial transcriptomics data. Follow the steps below to utilize the package effectively.
+
+### Download Example Data
+The package supports three datasets: '10XVisium', 'Stereoseq', and 'SlideseqV2'. Begin by downloading the dataset of your choice:
+
+```python
+from Impeller import download_example_data
+
+# Replace '10XVisium' with 'Stereoseq' or 'SlideseqV2' to download other datasets
+download_example_data('10XVisium')
+```
+
+### Load and Process Data
+Once the data is downloaded, you can load and process it for analysis:
+```python 
+from Impeller import load_and_process_example_data
+
+# Ensure to specify the same dataset you downloaded
+data, val_mask, test_mask, x, original_x = load_and_process_example_data('10XVisium')
+```
+
+### Train Model
+After loading and processing the data, you can initialize the model's arguments and start training:
+```python 
+from Impeller import create_args, train
+
+args = create_args()
+test_l1_distance, test_cosine_sim, test_rmse = train(args, data, val_mask, test_mask, x, original_x)
+print(f"Final L1 distance: {test_l1_distance}, Cosine similarity: {test_cosine_sim}, RMSE: {test_rmse}.")
+
+```
+
