@@ -1,0 +1,2 @@
+[console_scripts]
+auto3d = Auto3D.auto3Dcli:cli
