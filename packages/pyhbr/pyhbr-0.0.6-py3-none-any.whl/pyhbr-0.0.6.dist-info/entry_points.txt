@@ -1,0 +1,6 @@
+[console_scripts]
+report-generator = pyhbr.tools.generate_report:main
+run-model = pyhbr.tools.run_model:main
+
+[gui_scripts]
+codes-editor = pyhbr.clinical_codes.codes_editor.codes_editor:run_app
