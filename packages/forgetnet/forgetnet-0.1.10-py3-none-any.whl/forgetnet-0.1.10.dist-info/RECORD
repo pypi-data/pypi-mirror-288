@@ -1,0 +1,12 @@
+forgetnet/__init__.py,sha256=Hkg0NYMAGSFF-3dLSmKkngvU4osF7kSPbAJKqvUKv3M,148
+forgetnet/core.py,sha256=TOLbhxD2xCOA4Qz14knzQ5I91IXZwAo5DD7V3p_DMTI,327
+forgetnet/dpweights.py,sha256=ZxV-LgGUks2zU4p5KLFVLFaQNQZDPAJvOTry01m-pWQ,2525
+forgetnet/trainer.py,sha256=uPSu_06evwtZiZHvvjwpIofB5z1vEpWAFCXUS0ha8DI,2220
+forgetnet/dp/__init__.py,sha256=R94CNZrJZFTB3Ot4HUJ9hrWzRGolF4Yd_4R4chtNtXo,76
+forgetnet/dp/dp_shuffle.py,sha256=bkILmI_OUvIjnSo77JhHsAyCn2ZfRhPtSbU8_KcdICs,5652
+forgetnet-0.1.10.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+forgetnet-0.1.10.dist-info/METADATA,sha256=6vkbSASSzotP5bpBP6wb2ODUq4-sGPmY7wRfWaIje1U,3478
+forgetnet-0.1.10.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+forgetnet-0.1.10.dist-info/entry_points.txt,sha256=NCL_k9rScrjOl_nXLItEOkGusKAqBJOOa0-7RcnEVL4,86
+forgetnet-0.1.10.dist-info/top_level.txt,sha256=-FFvVRWaW5dHkWFAfNludx_crGxHrZdzamTln_AngjA,10
+forgetnet-0.1.10.dist-info/RECORD,,
