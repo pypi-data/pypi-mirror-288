@@ -1,0 +1,12 @@
+duck_chat/__init__.py,sha256=RBo1sr9IUbiKnDDKY98bJYh2IGqTf4509B7_btf0occ,95
+duck_chat/__main__.py,sha256=XXlC4Ol0wZRbV30BZAqpmLpbrNR1T_sVmoghdQeDEl0,102
+duck_chat/api.py,sha256=0upLL9FUpFdHltRQSX1HIozSdIoSRD0t76BOWNRM9V0,5075
+duck_chat/cli.py,sha256=IZkCTPz56bqO0ylI9JlOrMCRqYItsMvwzv4bSU6QcoA,5407
+duck_chat/exceptions.py,sha256=GqLGKFU_4ioYFaSORh7z8pvUjSkpo11IlodX0jhOPHU,363
+duck_chat/models.py,sha256=rFFtORd8YYU6th4xFI_TblegOSAwyWxRmsbgd2CUumY,703
+duck_chat/py.typed,sha256=dcrsqJrcYfTX-ckLFJMTaj6mD8aDe2u0tkQG-ZYxnEg,26
+duck_chat-1.2.1.dist-info/METADATA,sha256=_4Aer5bp1WXICvgXMJg9cF4ewyS_R-17VwChRiJ0qgc,4165
+duck_chat-1.2.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+duck_chat-1.2.1.dist-info/entry_points.txt,sha256=RRcC4Nn4g9ILf4Ai3XIleY0_HbqmVvTCz3gR6OoJVTU,61
+duck_chat-1.2.1.dist-info/licenses/LICENSE,sha256=nEXJ6-WTclemGPj0kRYunIFsmEVbmHz2JcpNLzxlXvo,1070
+duck_chat-1.2.1.dist-info/RECORD,,
