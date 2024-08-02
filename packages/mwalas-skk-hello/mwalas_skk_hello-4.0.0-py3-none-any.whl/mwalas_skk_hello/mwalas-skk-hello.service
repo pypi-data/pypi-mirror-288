@@ -1,0 +1,17 @@
+[Unit]
+Description=Hello World Python App Service by MW
+After=network.target
+
+[Service]
+EnvironmentFile=/etc/mwalas_skk_hello_env
+ExecStart={{VENV_PYTHON}} -m mwalas_skk_hello.hello
+WorkingDirectory={{APP_HOME}}
+StandardOutput=append:{{LOG_FILE}}
+StandardError=append:{{LOG_FILE}}
+Restart=always
+RestartSec=5
+User={{USER}}
+Group={{GROUP}}
+
+[Install]
+WantedBy=multi-user.target
