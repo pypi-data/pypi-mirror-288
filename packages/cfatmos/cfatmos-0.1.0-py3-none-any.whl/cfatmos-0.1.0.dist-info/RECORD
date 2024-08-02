@@ -1,0 +1,8 @@
+cfatmos/__about__.py,sha256=SAX3QeoisjKY-zmkikCwRCzMcEVgC8n0c9OxBoygTK4,131
+cfatmos/__init__.py,sha256=YpOTnuU4vSNrMpSLbEmE7VVw8QFpIGHHcflPw0Yam3U,164
+cfatmos/core.py,sha256=pX7j409a-OSfpet5lkMprK-oNyVQyyeCKmOEDR8WFIo,13003
+cfatmos/data/tabulated_data.bin,sha256=lTg-Seytb_w6U1MhNOxehwNNAnvmNhHZ4GMPilOsXXE,41328
+cfatmos-0.1.0.dist-info/METADATA,sha256=Gb4buFELWqh7xiAB_lMW6-PJVXe0Q5C52jsNHlsSe4E,1861
+cfatmos-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+cfatmos-0.1.0.dist-info/licenses/LICENSE,sha256=FCgLJvEAwOjQVCXKC3zPnnkleOWlTHsmENt_IN4aS3c,1068
+cfatmos-0.1.0.dist-info/RECORD,,
