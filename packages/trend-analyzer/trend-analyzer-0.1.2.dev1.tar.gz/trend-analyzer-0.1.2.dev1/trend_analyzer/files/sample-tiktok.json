@@ -1,0 +1,141 @@
+{
+  "results": {
+    "date": "2024-01-01",
+    "type": "Tiktok trends",
+    "data": [
+	{"region": "United States",
+      "trends": {
+	  "health-tiktok-us": {
+	    "old_impressions": 1,
+	    "new_impressions": 2,
+	    "growth": 100
+	  },
+	  "pets-tiktok-us": {
+	    "old_impressions": 2,
+	    "new_impressions": 1,
+	    "growth": -100
+	  },
+	  "fitness-tiktok-us": {
+	    "old_impressions": 100,
+	    "new_impressions": 1000,
+	    "growth": 10
+	  },
+	  "cartoons-tiktok-us": {
+	    "old_impressions": 1000,
+	    "new_impressions": 100,
+	    "growth": -90
+	  },
+	  "news-tiktok-us": {
+	    "old_impressions": 1,
+	    "new_impressions": 1,
+	    "growth": 0
+	  },
+	  "sports-tiktok-us": {
+	    "old_impressions": 2,
+	    "new_impressions": 2,
+	    "growth": 0
+	  },
+	  "yoga-tiktok-us": {
+	    "old_impressions": 1000,
+	    "new_impressions": 2000,
+	    "growth": 50
+	  },
+	  "gym-tiktok-us": {
+	    "old_impressions": 1000,
+	    "new_impressions": 10000,
+	    "growth": 10
+	  }
+      }
+      },
+      { "region": "Canada",
+      "trends": {
+	  "health-tiktok-canada": {
+	    "old_impressions": 1,
+	    "new_impressions": 2,
+	    "growth": 100
+	  },
+	  "pets-tiktok-canada": {
+	    "old_impressions": 2,
+	    "new_impressions": 1,
+	    "growth": -100
+	  },
+	  "fitness-tiktok-canada": {
+	    "old_impressions": 100,
+	    "new_impressions": 1000,
+	    "growth": 10
+	  },
+	  "cartoons-tiktok-canada": {
+	    "old_impressions": 1000,
+	    "new_impressions": 100,
+	    "growth": -90
+	  },
+	  "news-tiktok-canada": {
+	    "old_impressions": 1,
+	    "new_impressions": 1,
+	    "growth": 0
+	  },
+	  "sports-tiktok-canada": {
+	    "old_impressions": 2,
+	    "new_impressions": 2,
+	    "growth": 0
+	  },
+	  "yoga-tiktok-canada": {
+	    "old_impressions": 1000,
+	    "new_impressions": 2000,
+	    "growth": 50
+	  },
+	  "gym-tiktok-canada": {
+	    "old_impressions": 1000,
+	    "new_impressions": 10000,
+	    "growth": 10
+	  }
+      }
+      },
+      {
+      "region": "Saudi Arabia",
+      "trends": {
+	  "health-tiktok-ksa": {
+	    "old_impressions": 1,
+	    "new_impressions": 2,
+	    "growth": 100
+	  },
+	  "pets-tiktok-ksa": {
+	    "old_impressions": 2,
+	    "new_impressions": 1,
+	    "growth": -100
+	  },
+	  "fitness-tiktok-ksa": {
+	    "old_impressions": 100,
+	    "new_impressions": 1000,
+	    "growth": 10
+	  },
+	  "cartoons-tiktok-ksa": {
+	    "old_impressions": 1000,
+	    "new_impressions": 100,
+	    "growth": -90
+	  },
+	  "news-tiktok-ksa": {
+	    "old_impressions": 1,
+	    "new_impressions": 1,
+	    "growth": 0
+	  },
+	  "sports-tiktok-ksa": {
+	    "old_impressions": 2,
+	    "new_impressions": 2,
+	    "growth": 0
+	  },
+	  "yoga-tiktok-ksa": {
+	    "old_impressions": 1000,
+	    "new_impressions": 2000,
+	    "growth": 50
+	  },
+	  "gym-tiktok-ksa": {
+	    "old_impressions": 1000,
+	    "new_impressions": 10000,
+	    "growth": 10
+	  }
+      }
+      }
+    ]
+  }
+}
