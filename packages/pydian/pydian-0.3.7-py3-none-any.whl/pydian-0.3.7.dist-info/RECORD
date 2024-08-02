@@ -1,0 +1,13 @@
+pydian/__init__.py,sha256=qQN6UmKuYhMo2BP5x4pdkWmkzOPaCy2vKOKMFdm-gdc,133
+pydian/dataframes.py,sha256=s9Pcbaq7KXzg9Vc51eOxTPCEjb7ORkv-c7-zuSWH8uA,18760
+pydian/dicts.py,sha256=sm5bZPh6TVP-2Xu4za8m4EqUx2YLaYnnF_b6xXxWSug,7633
+pydian/globs.py,sha256=T5BKl8ecxFPHS4WTcC28XJDgjTByKpqKHLpOU_ds21I,1591
+pydian/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydian/lib/types.py,sha256=Qk-XSScW0iNEg9NmaBOZKxrN6HSTubP0R2j7uTZ3ILk,1360
+pydian/lib/util.py,sha256=TozMkNdkJb1QW5-nizU4AudXDpDDqo4EimlXVpyHcVQ,3000
+pydian/mapper.py,sha256=z4psoIe8SOC7DKuRkwPeIF1AJhMbEUDEZW-SUbh_MvY,2257
+pydian/partials.py,sha256=bSSDISSd9ynrBXWEpXkrdUlwEgdTi2T631q8Lgaa34I,3718
+pydian-0.3.7.dist-info/LICENSE.md,sha256=vxedHub2gy9bIeU07gj8KKBkQUGjFQYiBmDaDs7sOyo,1067
+pydian-0.3.7.dist-info/METADATA,sha256=7ZpidOSP1zD6XlnsC7lDQf1um_aIEeqNBZ2uURrum2w,464
+pydian-0.3.7.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+pydian-0.3.7.dist-info/RECORD,,
