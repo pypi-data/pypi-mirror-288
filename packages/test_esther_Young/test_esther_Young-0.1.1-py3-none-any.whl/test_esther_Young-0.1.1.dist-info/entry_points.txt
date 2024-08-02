@@ -1,0 +1,3 @@
+[console_scripts]
+Young-banner = test_esther_Young.icebreaking:show
+Young-pic = test_esther_Young.icebreaking:pic
