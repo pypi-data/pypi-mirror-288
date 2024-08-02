@@ -1,0 +1,9 @@
+directory1/__init__.py,sha256=WeMENoYVatLdVSdaECRfWaUS1cWYQ1jZalsNIAL6NVY,43
+directory1/addition.py,sha256=Zh5XZsuOfYv6U4ZcTQCN7eeKTcI9AKybz9xcvIxZD-o,41
+directory2/__init__.py,sha256=Pwu2vN_x2apcXkTqZwqLD9Mtp_gjayIiNtqwDq6rVYM,100
+directory2/multiplication.py,sha256=mBI8ShPH3-ZOjiUixBjuf-O1aWaKvO4dgQQhvfj0syk,43
+directory2/substraction.py,sha256=R_SpV061sy_JY52nq-8r2URsdvBNPqpxXK9Nk3j5dsY,43
+divyatest-0.0.3.dist-info/METADATA,sha256=16j6OVefM9jWxhlwJB20iggNTo7sbw_S1J0nWDTt8mU,567
+divyatest-0.0.3.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+divyatest-0.0.3.dist-info/top_level.txt,sha256=K3tsMdfuzU8lkYaRyeR_8KvGXVaYVBHloQMX9kKHK4Y,22
+divyatest-0.0.3.dist-info/RECORD,,
