@@ -1,0 +1,15 @@
+README.md
+setup.py
+babytalk/__init__.py
+babytalk/advanced_control_structures.py
+babytalk/arithmetic.py
+babytalk/control_structures.py
+babytalk/data_structures.py
+babytalk/error_handling.py
+babytalk/file_io.py
+babytalk/functions_and_pointers.py
+babytalk/gui.py
+babytalk.egg-info/PKG-INFO
+babytalk.egg-info/SOURCES.txt
+babytalk.egg-info/dependency_links.txt
+babytalk.egg-info/top_level.txt
