@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "django-sage-contact"
+version = "0.1.1"
+description = "Django package to handle user contact information and contact form."
+authors = ["Sepehr Akbarzadeh <sa.goldeneagle@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+packages = [
+    { include = "sage_contact" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+django = ">=4.2,<6.0"
+django-phonenumber-field = {extras = ["phonenumbers"], version = "^8.0.0"}
+django-countries = "^7.6.1"
+django-polymorphic = "^3.1.0"
+geoip2 = "^4.8.0"
+
+[tool.poetry.group.dev.dependencies]
+black = ">=23.3.0"  
+isort = ">=5.10.1"  
+mypy = ">=0.800"  
+pytest = ">=6.2.5" 
+flake8 = ">=3.8.4"
+tox = ">=3.20.0" 
+coverage = ">=5.5"  
+pre-commit = ">=2.13.0"
+sphinx = ">=3.5.4" 
+pylint = ">=2.6.0" 
+pytest-cov = ">=2.12.1" 
+sphinx-rtd-theme = ">=0.5.2" 
+commitizen = ">=2.15.0" 
+docformatter = ">=1.4" 
+types-setuptools = ">=57.0.0"  
+codecov = ">=2.1.0"  
+setuptools = ">=50.0.0"  
+wheel = ">=0.36.2"
+twine = ">=3.4.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
