@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# command: 
+#     label-pull-task 3 user
+
+task=$1
+
+if [ -z "$2" ]
+then
+    user=$LABEL_USER
+else
+    user=$2
+fi
+
+if [ -z "$user" ]
+then
+    echo ERROR: \$LABEL_USER is not set. 1>&2
+    exit 1
+fi
+
+echo pull label task.
+echo user: ${user}
+echo task: ${task}
+
+
+branch_name=label/${user}/${task}
+echo pull branch from origin: ${branch_name}
+
+set -e #exit on failure
+set -x #echo on
+
+git checkout ${branch_name} || git checkout -b ${branch_name}
+git pull --set-upstream origin ${branch_name}

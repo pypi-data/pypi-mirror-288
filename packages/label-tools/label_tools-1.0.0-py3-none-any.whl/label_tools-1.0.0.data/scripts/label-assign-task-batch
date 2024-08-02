@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# command: 
+#     label-assign-task source subdir 200 user 3
+
+# this will move [200] file from [source/subdir] directory to current directory's [subdir]
+# and create branch with name: `label/[user]/[3]`
+# add, commit and push to the remote origin repository
+
+source=$1
+subdir=$2
+file_count=$3
+user=$4
+task_start=$5
+task_count=$6
+let task_end=$task_start+$task_count-1
+
+set -e #exit on failure
+
+for (( i = $task_start; i <= $task_end; i++ ))
+do
+    label-assign-task ${source} ${subdir} ${file_count} ${user} $i
+done
