@@ -1,0 +1,2 @@
+[console_scripts]
+pbpaste = pbpastesrc.clipcon:get_clipboard_content_tkinter
