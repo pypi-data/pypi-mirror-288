@@ -1,0 +1,2 @@
+[console_scripts]
+drakpdb = drakpdb.main:main
