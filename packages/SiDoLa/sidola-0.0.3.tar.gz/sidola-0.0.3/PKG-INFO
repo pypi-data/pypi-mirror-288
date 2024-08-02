@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: SiDoLa
+Version: 0.0.3
+Summary: SiDoLa (prounounced like Do Re Mi) is short for 'Simulate Don't Label'. These are a set of tools to create nervous system simulations and used the resulting models to extract image-based features from biological sections of nervous system tissue.
+Author-email: William Buchser <wbuchser@wustl.edu>, Lina Ali <linakali@wustl.edu>
+Project-URL: Homepage, https://gitlab.com/buchserlab/sidola-ns
+Project-URL: Issues, https://gitlab.com/buchserlab/sidola-ns/-/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+![Image about SiDoLa Nervous Sytem Concept](Figure1.png)
+# SiDoLa-NS
+SiDoLa (prounounced like Do Re Mi) is short for "Simulate Don't Label". These are a set of tools to create nervous system simulations and used the resulting models to extract image-based features from biological sections of nervous system tissue.
+
+## Citation
+BioArxiv coming soon
+
+## Getting started
+Open the "SiDoLa-NS Training and Inference.ipynb" file for more information and instructions.
+
+## Authors and acknowledgment
+William Buchser and Lina Mohammed Ali
+
+## License
+AGPL3.0

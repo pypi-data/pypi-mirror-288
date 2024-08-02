@@ -1,0 +1,19 @@
+[project]
+name = "SiDoLa"
+version = "0.0.3"
+authors = [
+  { name="William Buchser", email="wbuchser@wustl.edu" },
+  { name="Lina Ali", email="linakali@wustl.edu" },
+]
+description = "SiDoLa (prounounced like Do Re Mi) is short for 'Simulate Don't Label'. These are a set of tools to create nervous system simulations and used the resulting models to extract image-based features from biological sections of nervous system tissue."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/buchserlab/sidola-ns"
+Issues = "https://gitlab.com/buchserlab/sidola-ns/-/issues"
