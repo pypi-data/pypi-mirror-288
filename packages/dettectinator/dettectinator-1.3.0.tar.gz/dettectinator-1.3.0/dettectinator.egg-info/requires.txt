@@ -1,0 +1,12 @@
+requests
+ruamel.yaml
+attackcti
+python-dateutil
+msal
+stix2
+openpyxl
+suricataparser
+addonfactory-splunk-conf-parser-lib
+pandas
+anyascii
+pypdf
