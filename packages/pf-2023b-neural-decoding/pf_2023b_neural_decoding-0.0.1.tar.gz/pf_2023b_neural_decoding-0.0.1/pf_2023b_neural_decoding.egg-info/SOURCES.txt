@@ -1,0 +1,8 @@
+setup.py
+eeg_templates/__init__.py
+eeg_templates/ep_template.py
+pf_2023b_neural_decoding.egg-info/PKG-INFO
+pf_2023b_neural_decoding.egg-info/SOURCES.txt
+pf_2023b_neural_decoding.egg-info/dependency_links.txt
+pf_2023b_neural_decoding.egg-info/requires.txt
+pf_2023b_neural_decoding.egg-info/top_level.txt

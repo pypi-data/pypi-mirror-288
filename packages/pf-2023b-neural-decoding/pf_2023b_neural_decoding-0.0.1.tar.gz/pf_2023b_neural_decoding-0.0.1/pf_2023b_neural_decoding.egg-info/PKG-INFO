@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pf-2023b-neural-decoding
+Version: 0.0.1
+Summary: A package containing all exported artifacts from the pf-2023b-neural-decoding final graduate project.
+Home-page: https://bitbucket.org/itba/pf-2023b-neural-decoding/
+Author: Gonzalo Beade, Mila Langone, Santiago Hadad
+Author-email: gbeade@itba.edu.ar, mlangone@itba.edu.ar, shadad@itba.edu.ar
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+
+UNKNOWN
+
