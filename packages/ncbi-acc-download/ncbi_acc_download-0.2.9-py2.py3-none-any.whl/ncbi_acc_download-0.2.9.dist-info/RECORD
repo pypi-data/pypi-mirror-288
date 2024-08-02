@@ -1,0 +1,13 @@
+ncbi_acc_download/__init__.py,sha256=bd8hlxKMc0Fh_2w5GWfqBtuwa8uTepTMjT8w7F-EKvY,22
+ncbi_acc_download/__main__.py,sha256=hDo0o5s2gjAk0Z8SCKzKXxNkkhRYzTuPsFnbOiKJfpc,3445
+ncbi_acc_download/core.py,sha256=i8gzY3kA-6LVY8FVwNx5GQUzWbAwjOIVfiY5DaJQzO4,5846
+ncbi_acc_download/download.py,sha256=EyARyBbktFFdjpg5fzdJddYkfdBfdiXT1KoyNLS3BkE,4308
+ncbi_acc_download/errors.py,sha256=Crt9p8gVJfJwi6umy_MRWxADNUat2Jsf0v1sEEAvFGU,1480
+ncbi_acc_download/validate.py,sha256=DvecX4vqjAAMLcUVL4_MijZjyNaz4EWO7wRvoowxnIg,1939
+ncbi_acc_download/wgs.py,sha256=5-5akHtFE8w2yZmw8EMXa-DxMX9_dhVI8Dx-3h_Yle4,6312
+ncbi_acc_download-0.2.9.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+ncbi_acc_download-0.2.9.dist-info/METADATA,sha256=B7otnYj_CiXcRwpfjDP6qyVeOS7sf-eBV5J1DwOgABI,4097
+ncbi_acc_download-0.2.9.dist-info/WHEEL,sha256=XRxW4r1PNiVhMpP4bT9oWtu3HyndxpJ84SkubFgzp_Y,109
+ncbi_acc_download-0.2.9.dist-info/entry_points.txt,sha256=NI8CyyvVHijr-fuWGA1FQWsRJGeG6orkjWeh3-0aiv8,108
+ncbi_acc_download-0.2.9.dist-info/top_level.txt,sha256=_SV_tNLr9GLGAPDaT_oMHzM-L7L-f2nWS6iH15q1PMg,18
+ncbi_acc_download-0.2.9.dist-info/RECORD,,
