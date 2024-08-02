@@ -1,0 +1,6 @@
+numpy
+cupy-cuda12x
+pydub
+soundfile
+mutagen
+scipy
