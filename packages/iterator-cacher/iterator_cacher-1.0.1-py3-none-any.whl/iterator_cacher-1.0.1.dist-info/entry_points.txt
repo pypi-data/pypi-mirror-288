@@ -1,0 +1,2 @@
+[console_scripts]
+iterator_cacher = iterator_cacher.__init__:cli_launcher
