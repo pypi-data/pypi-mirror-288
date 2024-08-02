@@ -1,0 +1,3 @@
+[console_scripts]
+incremental-backup = incremental_backup.cli:cli_entrypoint
+incremental_backup = incremental_backup.cli:cli_entrypoint
