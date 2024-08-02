@@ -1,0 +1,29 @@
+CVXPY
+Minimize
+  x
+Subject To
+ 72: x + y == 1.0
+Bounds
+ x free
+ y free
+End
+----------------------------------------
+AFTER COMPILATION
+Minimize
+  C0
+Subject To
+ R0: C0 + C1 = 1
+Bounds
+ C0 free
+ C1 free
+End
+----------------------------------------
+GUROBI
+Minimize
+  x
+Subject To
+ 72: x + y = 1
+Bounds
+ x free
+ y free
+End

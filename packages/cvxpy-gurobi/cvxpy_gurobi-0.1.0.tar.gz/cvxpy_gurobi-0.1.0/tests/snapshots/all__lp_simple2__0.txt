@@ -1,0 +1,23 @@
+CVXPY
+Minimize
+  x + x
+Subject To
+Bounds
+ x free
+End
+----------------------------------------
+AFTER COMPILATION
+Minimize
+  2 C0
+Subject To
+Bounds
+ C0 free
+End
+----------------------------------------
+GUROBI
+Minimize
+  2 x
+Subject To
+Bounds
+ x free
+End
