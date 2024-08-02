@@ -1,0 +1,2 @@
+[console_scripts]
+roh-ytd = roh_ytd.downloader:main
