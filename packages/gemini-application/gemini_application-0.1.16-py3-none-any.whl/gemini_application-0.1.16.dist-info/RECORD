@@ -1,0 +1,10 @@
+gemini_application/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gemini_application/application_abstract.py,sha256=7u42zJD7DNfGWxfBkLfCajGo3_1JupB-9WvXWmteTzY,1270
+gemini_application/injectionwell/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gemini_application/injectionwell/injectionwell_monitoring.py,sha256=wMDV9N0Djad0ZCD6R2VJa6xo5mW70mfIpSuS1ndiBYw,11702
+gemini_application/productionwell/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gemini_application/productionwell/productionwell_performance.py,sha256=qoeNY16cKbFCbUKTwYl0BDKMDXXSBm5J8aXXhUQrCnQ,10266
+gemini_application-0.1.16.dist-info/LICENSE,sha256=Y_zDMUosI56de95GVglpC19GilDg_0qu5kgmy4XiwKE,33092
+gemini_application-0.1.16.dist-info/METADATA,sha256=UVy-U7svGA04Vxb5pYYOqTrlu8gLw65JN4XKu0EGDVE,2937
+gemini_application-0.1.16.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+gemini_application-0.1.16.dist-info/RECORD,,
