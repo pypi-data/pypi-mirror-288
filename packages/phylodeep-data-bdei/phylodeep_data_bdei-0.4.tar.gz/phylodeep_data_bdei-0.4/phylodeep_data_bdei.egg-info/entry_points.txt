@@ -1,0 +1,2 @@
+[console_scripts]
+bdei_ci_paths = phylodeep_data_bdei:main
