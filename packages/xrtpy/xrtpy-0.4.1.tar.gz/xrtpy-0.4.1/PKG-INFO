@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: xrtpy
+Version: 0.4.1
+Summary: For analyzing data from the X-Ray Telescope (XRT) on the Hinode spacecraft.
+Author: Will Barnes, Stuart Mumford
+Author-email: Joy Velasquez <joy.velasquez@cfa.harvard.edu>, Jonathan Slavin <jslavin@cfa.harvard.edu>, Nick Murpy <namurphy@cfa.harvard.edu>
+License: BSD 2-Clause License
+        
+        Copyright (c) 2021–2023, XRTpy contributors
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Documentation, https://xrtpy.readthedocs.io
+Project-URL: Repository, https://github.com/HinodeXRT/xrtpy
+Project-URL: Issues, https://github.com/HinodeXRT/xrtpy/issues
+Project-URL: Changelog, https://xrtpy.readthedocs.io/en/stable/changelog/index.html
+Keywords: solar physics
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: astropy>=5.1
+Requires-Dist: cached-property>=1.5.2
+Requires-Dist: matplotlib>=3.5.0
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: requests>=2.28.0
+Requires-Dist: scikit-image>=0.19.0
+Requires-Dist: scipy>=1.8.0
+Requires-Dist: setuptools; python_version >= "3.12"
+Requires-Dist: sunpy[map]>=4.0.0
+Provides-Extra: dev
+Requires-Dist: nox>=2022.8.7; extra == "dev"
+Requires-Dist: pre-commit>=3.6.0; extra == "dev"
+Provides-Extra: tests
+Requires-Dist: pytest>=8.0.0; extra == "tests"
+Requires-Dist: pytest-allclose>=1.0.0; extra == "tests"
+Requires-Dist: pytest-xdist>=3.6.1; extra == "tests"
+Provides-Extra: docs
+Requires-Dist: docutils>=0.19; extra == "docs"
+Requires-Dist: imageio>=2.20.0; extra == "docs"
+Requires-Dist: ipykernel>=6.20.0; extra == "docs"
+Requires-Dist: ipython>=8.4.0; extra == "docs"
+Requires-Dist: ipywidgets>=8.1.0; extra == "docs"
+Requires-Dist: jinja2!=3.1,>=3.0.0; extra == "docs"
+Requires-Dist: nbconvert<7.14,>=7.7.0; extra == "docs"
+Requires-Dist: nbsphinx>=0.9; extra == "docs"
+Requires-Dist: numpydoc>=1.5.0; extra == "docs"
+Requires-Dist: pillow>=9.1.0; extra == "docs"
+Requires-Dist: pygments>=2.12.0; extra == "docs"
+Requires-Dist: sphinx>=7.3.0; extra == "docs"
+Requires-Dist: sphinx-changelog>=1.5.0; extra == "docs"
+Requires-Dist: sphinx-codeautolink>=0.15.2; extra == "docs"
+Requires-Dist: sphinx-copybutton>=0.5.2; extra == "docs"
+Requires-Dist: sphinx-gallery>=0.16.0; extra == "docs"
+Requires-Dist: sphinx-hoverxref>=1.4.0; extra == "docs"
+Requires-Dist: sphinx-issues>=4.1.0; extra == "docs"
+Requires-Dist: sphinx_automodapi>=0.17.0; extra == "docs"
+Requires-Dist: sphinx_rtd_theme>=2.0.0; extra == "docs"
+Requires-Dist: sphinxcontrib-bibtex>=2.6.2; extra == "docs"
+Requires-Dist: sunpy[net]>=4.0.0; extra == "docs"
+Requires-Dist: towncrier>=23.11.0; extra == "docs"
+
+# XRTpy
+
+[![License](https://img.shields.io/badge/License-BSD%202--Clause-blue.svg)](./LICENSE)
+[![GitHub Actions — CI](https://github.com/HinodeXRT/xrtpy/workflows/CI/badge.svg)](https://github.com/HinodeXRT/xrtpy/actions?query=workflow%3ACI+branch%3Amain)
+[![Read the Docs Status](https://readthedocs.org/projects/xrtpy/badge/?version=latest&logo=twitter)](http://xrtpy.readthedocs.io/en/latest/?badge=latest)
+[![astropy](http://img.shields.io/badge/powered%20by-AstroPy-orange.svg?style=flat&logo=astropy)](http://www.astropy.org/)
+
+XRTpy is a Python package being developed for the analysis of observations
+made by the X-Ray Telescope (XRT) on the *Hinode* spacecraft.
+
+## Acknowledgements
+
+The development of XRTpy is supported by NASA contract NNM07AB07C to the
+Smithsonian Astrophysical Observatory.
