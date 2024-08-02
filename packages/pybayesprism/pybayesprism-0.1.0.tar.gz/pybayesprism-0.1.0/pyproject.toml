@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=72.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project]
+name = "pybayesprism"
+version = "0.1.0"
+dependencies = [
+  "pandas",
+  "numpy",
+  "scipy",
+  "xarray",
+  "tqdm"
+]
+authors = [
+  { name="Zilu Wang", email="zw427@cornell.edu" },
+]
+description = "Python implementation of BayesPrism"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/ziluwang829/pyBayesPrism"
+Issues = "https://github.com/ziluwang829/pyBayesPrism/issues"
