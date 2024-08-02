@@ -1,0 +1,51 @@
+import os
+import threading
+import time
+
+
+def get_all_file_paths(directory):
+    # 存储所有文件的绝对路径
+    file_paths = []
+
+    # 遍历目录
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            # 获取文件的绝对路径
+            file_path = os.path.abspath(os.path.join(root, file))
+            if file_path.endswith(".docx") or file_path.endswith(".pdf") or file_path.endswith(".pptx"):
+                file_paths.append(file_path)
+
+    return file_paths
+def create_dict_from_kwargs(**kwargs):
+    """
+    将关键字参数包装成一个字典并返回。
+
+    :param kwargs: 关键字参数
+    :return: 包含所有关键字参数的字典
+    """
+    return {key: value for key, value in kwargs.items()}
+
+class spin:
+    """
+    用于显示等待的转圈
+    """
+    def start_spinner(self):
+        # self.spinner_thread = threading.Thread(target=self.spinner)
+        # self.spinner_thread.start()
+        pass
+
+    def stop_spinner(self):
+        # if self.spinner_thread:
+        #     self.spinner_thread.join()
+        #     # 清除指示器文本
+        #     print('\r' + ' ' * 30 , end='')
+        #     print("\n")
+        #     self.spinner_thread = None
+        pass
+
+    def spinner(self):
+        """显示不断转圈的斜杠指示器"""
+        while True:
+            for cursor in '|/-\\':
+                print(f'\r{cursor} 操作进行中...', end='')
+                time.sleep(0.2)
