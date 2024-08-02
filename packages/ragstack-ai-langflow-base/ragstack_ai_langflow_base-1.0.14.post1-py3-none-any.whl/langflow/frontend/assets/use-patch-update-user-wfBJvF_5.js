@@ -1,0 +1,1 @@
+import{U as o,a as n,g as u}from"./index-DYkSp9FA.js";const i=t=>{const{mutate:s}=o();async function e({user_id:a,user:r}){return(await n.patch(`${u("USERS")}/${a}`,r)).data}return s(["useUpdateUser"],e,t)};export{i as u};
