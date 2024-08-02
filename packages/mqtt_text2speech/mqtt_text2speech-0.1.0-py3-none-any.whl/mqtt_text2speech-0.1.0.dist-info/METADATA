@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: mqtt_text2speech
+Version: 0.1.0
+Summary: A simple MQTT audio client for synthesizing text messages published to an MQTT broker
+Author: SimonThimm
+Author-email: 2023463@stud.hs-mannheim.de
+Requires-Python: >=3.10.12,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: paho-mqtt (>=2.1.0,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: pyttsx3 (>=2.90,<3.0)
+Description-Content-Type: text/markdown
+
+## Simple MQTT Text2Speech Client 
+
+Dieser MQTT Client subscribed ein 'OutputTopic', wo Textnachrichten published werden können, die der Client dann anschließend mit pyttsx3 ausgibt. 
+Der Beginn der Sprachausgabe durch den MQTT Client wird unter dem 'StartedTopic' signalisiert. 
+Sobald die Sprachausgabe beendet wurde, signalisiert der MQTT Client dies unter dem 'FinishedTopic'.  
+
+## Environment Variables
+
+The parameters of the MQTT Text2Speech client are read as environment variables from a `.env` file. 
+The following environment variables need to be defined inside the `.env` file:
+
+```
+OUTPUT_TOPIC = "/output-topic-msgs-are-published-to"
+STARTED_TOPIC = "/started-topic"
+FINISHED_TOPIC = "/finished-topic"
+
+MQTT_BROKER_HOST = "host-ip-address"
+MQTT_BROKER_PORT = "1883"
+MQTT_BROKER_USERNAME = "mqtt-broker-username"
+MQTT_BROKER_PASSWORD = "mqtt-broker-password"
+
+RATE = 150 
+VOLUME = 1.0 
+VOICE = 0
+```
+
+## Starting the MQTT Text2SpeechClient
+
+```python
+import logging
+from mqtt_text2speech.client import Text2SpeechClient
+
+# Logging configuration to see output (optional)
+logging.basicConfig(format='%(asctime)s %(levelname)-8s %(message)s',
+                    level=logging.INFO,
+                    datefmt='%Y-%m-%d %H:%M:%S')
+
+# Start MQTT Text2SpeechClient with environment variables configured in .env file
+client = Text2SpeechClient()
+client.start()
+
+# Do stuff (Loop to keep main thread busy)
+while True: 
+    pass
+
+# Connection to MQTT Broker will be closed if main thread ends
+client.stop()
+```
+
+
