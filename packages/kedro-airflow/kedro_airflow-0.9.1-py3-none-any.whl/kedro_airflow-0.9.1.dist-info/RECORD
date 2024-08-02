@@ -1,0 +1,9 @@
+kedro_airflow/__init__.py,sha256=5dnqr36IJH0hxlL_sFsakVMyFnQk9KpKWgrxy_ktnLY,78
+kedro_airflow/airflow_dag_template.j2,sha256=wA1AxYVwc4OOrwDWBduSOCCcvP6bCvcNZaG9DIaQunU,3179
+kedro_airflow/grouping.py,sha256=wtisl6egNx7NiYrcO7vX7r3mewvXU6qL6onfD3Yp0jo,4183
+kedro_airflow/plugin.py,sha256=-tF9mtqfUE_pHwseFlQ1MLW27pk4qlSs4pOKJUhy6EQ,7921
+kedro_airflow-0.9.1.dist-info/METADATA,sha256=XGCpoEbHUn_yvs-lyP25rjf8VXW8m8htuADheru5XEU,10575
+kedro_airflow-0.9.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+kedro_airflow-0.9.1.dist-info/entry_points.txt,sha256=AAmoJsZRgb4tG0WeptLbvvjjmbEDF_1JcsxQVKypT20,65
+kedro_airflow-0.9.1.dist-info/top_level.txt,sha256=qnSLh-V5c3yVXYcKflrXSLyrWkeGZKEMSgLz3Nq2_2c,14
+kedro_airflow-0.9.1.dist-info/RECORD,,
