@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> OMERO Vitessce</title>
+
+	</head>
+		</body>
+			{% if json_configs %}
+				<div class="right_tab_inner">
+					<p>Please select an attached config file from the list below:</p>
+					{% for file, url in json_configs.items%}
+						<a href={{url}} target="_blank"> {{file}}</a>
+					{% endfor %}
+				</div>
+			{% else %}
+				<div class="right_tab_inner">
+					<p> There are no config files attached! </p>
+					<p> Either attach a config file or click below to autogenerate one:</p>
+					<button type="button">
+						<a href="{% url 'generate_config' %}/{{obj_type}}/{{obj_id}}";>Generate Config File</a>
+					</button>
+
+				</div>
+			{% endif %}
+		</body>
+</html>
