@@ -1,0 +1,16 @@
+setuptools
+numba
+numpy
+sympy<1.13
+scipy
+pandas
+joblib
+pytensor
+latextable
+texttable
+sympytensor
+xarray
+arviz
+fastprogress
+numba-progress
+matplotlib
