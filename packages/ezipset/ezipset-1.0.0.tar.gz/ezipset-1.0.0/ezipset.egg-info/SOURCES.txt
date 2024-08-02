@@ -1,0 +1,17 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ezipset/CHANGELOG.md
+ezipset/README.md
+ezipset/__init__.py
+ezipset/ezipset.py
+ezipset/ezipset_min.py
+ezipset/ipset.man.html
+ezipset/test_ezipset.py
+ezipset.egg-info/PKG-INFO
+ezipset.egg-info/SOURCES.txt
+ezipset.egg-info/dependency_links.txt
+ezipset.egg-info/not-zip-safe
+ezipset.egg-info/top_level.txt
