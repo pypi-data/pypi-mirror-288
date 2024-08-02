@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: flaminkit
+Version: 0.0.5
+Summary: A toolkit for the FLAMINGO simulation suite
+Home-page: https://github.com/cristobal-sifon/flaminkit/
+Author: Cristobal Sifon
+Author-email: cristobal.sifon@pucv.cl
+License: UNKNOWN
+Description: Flaminkit
+        =========
+        
+        A toolkit for the FLAMINGO cosmological hydrodynamical simulation suite
+        
+        Installation
+        ------------
+        
+        Flaminkit can be installed through ``pip``: ::
+            
+            pip install flaminkit
+Platform: UNKNOWN
+Requires-Python: >=3.7,<3.12
+Description-Content-Type: text/x-rst
