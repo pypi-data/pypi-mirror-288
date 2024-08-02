@@ -1,0 +1,3 @@
+include src/SortVisualization/*.txt
+include src/SortVisualization/*.png
+include src/SortVisualization/*.md
