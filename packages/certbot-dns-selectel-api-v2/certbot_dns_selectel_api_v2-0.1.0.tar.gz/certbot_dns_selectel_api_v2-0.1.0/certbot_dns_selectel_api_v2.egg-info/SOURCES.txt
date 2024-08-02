@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.py
+certbot_dns_selectel_api_v2/__init__.py
+certbot_dns_selectel_api_v2/dns_selectel_api_v2.py
+certbot_dns_selectel_api_v2.egg-info/PKG-INFO
+certbot_dns_selectel_api_v2.egg-info/SOURCES.txt
+certbot_dns_selectel_api_v2.egg-info/dependency_links.txt
+certbot_dns_selectel_api_v2.egg-info/entry_points.txt
+certbot_dns_selectel_api_v2.egg-info/requires.txt
+certbot_dns_selectel_api_v2.egg-info/top_level.txt
+certbot_dns_selectel_api_v2/tests/__init__.py
+certbot_dns_selectel_api_v2/tests/dns_selectel_api_v2_test.py
