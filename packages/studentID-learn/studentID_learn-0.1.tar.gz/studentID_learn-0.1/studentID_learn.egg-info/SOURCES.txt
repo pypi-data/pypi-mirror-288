@@ -1,0 +1,12 @@
+README.md
+setup.py
+s1300017_learn/__init__.py
+s1300017_learn/statistics/__init__.py
+s1300017_learn/statistics/itemFrequencies.py
+s1300017_learn/visualization/__init__.py
+s1300017_learn/visualization/heatMap.py
+studentID_learn.egg-info/PKG-INFO
+studentID_learn.egg-info/SOURCES.txt
+studentID_learn.egg-info/dependency_links.txt
+studentID_learn.egg-info/requires.txt
+studentID_learn.egg-info/top_level.txt
