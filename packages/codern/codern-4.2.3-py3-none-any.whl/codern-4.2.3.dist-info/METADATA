@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: codern
+Version: 4.2.3
+Summary: Codern Team Library from api free O - > api-free.ir
+Home-page: https://github.com/Mahditerorist/
+Author: Mahdi Ahmadi
+Author-email: mahdiahmadi.1208@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: httpx
+Requires-Dist: bs4
+Requires-Dist: pycryptodome
+
+# api , rubino , Email , client
