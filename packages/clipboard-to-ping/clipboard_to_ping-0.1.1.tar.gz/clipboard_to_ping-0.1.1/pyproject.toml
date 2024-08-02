@@ -1,0 +1,34 @@
+[project]
+name = "clipboard-to-ping"
+dynamic = []
+description = "A simple skript that copies selected text and opens a ping shell."
+authors = [
+    { name = "Julius Koenig", email = "info@bastelquartier.de" },
+]
+dependencies = [
+    "wiederverwendbar>=0.3.1",
+    "keyboard>=0.13.5",
+    "pystray>=0.19.5",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+version = "0.1.1"
+
+[project.license]
+text = "GPL-3.0"
+
+[project.scripts]
+clipboard-to-ping = "clipboard_to_ping.__main__:main"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.version]
+source = "file"
+path = "src/clipboard_to_ping/__init__.py"
