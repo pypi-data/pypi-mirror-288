@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: content-view
+Version: 0.1.0
+Summary: A short description of your Tkinter package
+Author: Dawei Wang
+Author-email: wangdawei1104@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 项目名称  
+  
+## 简介  
+  
+简短介绍你的项目是做什么的，它的主要功能和目标是什么。  
+  
+## 安装  
+  
+### 依赖项  
+  
+列出你的项目依赖的外部库或工具（对于Tkinter项目，通常只需要Python）。  
+  
+- Python 3.x（推荐Python 3.6及以上版本）  
+  
+### 安装步骤  
+  
+1. 确保你的系统上安装了Python。  
+2. 克隆或下载本项目到你的本地计算机。  
+3. 使用你喜欢的Python IDE（如PyCharm、VS Code等）打开项目，或者通过命令行运行项目中的主Python脚本。  
+  
+## 使用说明  
+  
+### 启动程序  
+  
+描述如何启动你的Tkinter GUI应用程序。  
+  
+- 打开项目根目录下的主Python脚本（如`main.py`）。  
+- 运行该脚本，GUI应用程序将启动并显示窗口。  
+  
+### 交互操作  
+  
+说明用户如何与你的GUI应用程序进行交互。  
+  
+- 使用提供的按钮、文本框、菜单等控件执行操作。  
+- 详细描述每个控件的功能和用途。  
+  
+### 退出程序  
+  
+说明如何关闭或退出你的GUI应用程序。  
+  
+- 可以通过GUI提供的退出按钮或菜单项来关闭程序。  
+- 也可以直接在命令行中按Ctrl+C来中断Python脚本的运行（如果你是从命令行启动的）。  
+  
+## 许可证  
+  
+本项目采用[MIT许可证](LICENSE)。你可以自由地使用、修改和分发本项目的代码，但需遵守MIT许可证的条款和条件。  
+  
+## 联系方式  
+  
+如果你有任何问题、建议或反馈，请通过以下方式与我们联系：  
+ 
+- 电子邮件：[你的电子邮件地址]  
+  
+## 感谢  
+  
+感谢所有为该项目做出贡献的人，以及使用并支持该项目的用户。
