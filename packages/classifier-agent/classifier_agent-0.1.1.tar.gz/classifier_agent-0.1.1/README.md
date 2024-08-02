@@ -1,0 +1,80 @@
+# Machine Learning Classification Python Package
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
+## Overview
+
+This Python package provides a simple way to perform classification using several popular machine learning algorithms. It reads a dataset, trains multiple classifiers, and returns a summary of their performance.
+
+## Features
+
+1. **Classification Algorithms**:
+   - Logistic Regression
+   - K-Nearest Neighbors
+   - Decision Tree
+   - Random Forest
+   - Gradient Boosting
+   - Support Vector Classifier
+   - Gaussian Naive Bayes
+   - Bernoulli Naive Bayes
+   - Multinomial Naive Bayes
+
+2. **Results**: 
+   - Returns a DataFrame with model names, accuracy, and F1-score on the test data.
+
+## Parameters
+
+The package takes the following parameters as input:
+- `dataset_path`: Path to the CSV or Excel dataset.
+- `output_column`: Name of the output column containing the target variable.
+- `train_test_ratio`: Ratio in which the dataset is divided into train and test splits.
+
+## Installation
+
+Make sure you have Python installed on your system. You can install the package using pip:
+
+```sh
+pip install classifier_agent
+```
+
+## Usage
+
+Here's an example of how to use the package:
+
+```python
+from classifier_agent import classifier_agent
+
+dataset_path = "diabetes.csv"
+output_column = "Outcome"
+train_test_ratio = 0.25
+
+results = classifier_agent(dataset_path, output_column, train_test_ratio)
+print(results)
+```
+
+## Example Output
+
+The output is a DataFrame that looks like this:
+
+| Classifier              | Accuracy | F1-Score |
+|-------------------------|----------|----------|
+| KNeighborsClassifier    | 0.78     | 0.76     |
+| LogisticRegression      | 0.80     | 0.79     |
+| DecisionTreeClassifier  | 0.72     | 0.70     |
+| RandomForestClassifier  | 0.85     | 0.84     |
+| GradientBoostingClassifier | 0.83 | 0.82     |
+| SVC                     | 0.81     | 0.80     |
+| GaussianNB              | 0.75     | 0.73     |
+| BernoulliNB             | 0.73     | 0.72     |
+| MultinomialNB           | 0.74     | 0.73     |
+
+## Notes
+
+- The package is currently in an early stage and is under active development.
+- The project is developed with Python version `3.7.7` and pip version `19.2.3`.
+- If you encounter any issues, feel free to contact me on [LinkedIn](https://www.linkedin.com/in/adnan-karol-aa1666179/).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
