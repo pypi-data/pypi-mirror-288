@@ -1,0 +1,10 @@
+README.md
+setup.py
+silence_cutter/__init__.py
+silence_cutter/main.py
+silencecutpy.egg-info/PKG-INFO
+silencecutpy.egg-info/SOURCES.txt
+silencecutpy.egg-info/dependency_links.txt
+silencecutpy.egg-info/entry_points.txt
+silencecutpy.egg-info/requires.txt
+silencecutpy.egg-info/top_level.txt
