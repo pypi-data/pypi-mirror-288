@@ -1,0 +1,2 @@
+[console_scripts]
+bash_wizard = bash_wizard:run
