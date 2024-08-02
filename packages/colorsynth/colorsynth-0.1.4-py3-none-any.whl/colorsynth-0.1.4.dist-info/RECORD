@@ -1,0 +1,9 @@
+colorsynth/__init__.py,sha256=G_2weHDHg1mq8Y8UYK9kOMPFodL2NF9zTb_qhdut2kc,27
+colorsynth/_colorsynth.py,sha256=emzK9N1XsOLEWDJiFaCDQqxZJ5z8_iAxwAdBnaz2Z5g,30635
+colorsynth/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+colorsynth/_tests/test_colorsynth.py,sha256=i39G7B5SCKpN3A2lpcbzfExIESTD5xQkADNOLvcJqTo,5293
+colorsynth/data/std65.txt,sha256=1EIY0GpjLiNkgsv54-GgvC5La5K3f-4dL_kgrm6Hv-0,1408
+colorsynth-0.1.4.dist-info/METADATA,sha256=vBWIOV2wd1M5AZmvH1P9WFXv9B2Ww880q3sWqDWb0Fc,2466
+colorsynth-0.1.4.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+colorsynth-0.1.4.dist-info/top_level.txt,sha256=nv5Uer-rjkYVXHG3vW7_16DW-98l0O3XCBtqFAH3vaw,11
+colorsynth-0.1.4.dist-info/RECORD,,
