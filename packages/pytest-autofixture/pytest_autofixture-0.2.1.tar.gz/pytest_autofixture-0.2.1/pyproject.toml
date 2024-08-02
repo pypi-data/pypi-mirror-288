@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools >= 61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytest-autofixture"
+authors = [{name = "Daniel Pepper"}]
+dynamic = ["version"]
+description = "simplify pytest fixtures"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+classifiers = [
+  # https://pypi.python.org/pypi?%3Aaction=list_classifiers
+  "Framework :: Pytest",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Software Development :: Testing"
+]
+requires-python = ">= 3"
+dependencies = ["pytest >= 8"]
+
+[project.entry-points.pytest11]
+autofixture = "pytest_autofixture"
+
+[project.optional-dependencies]
+test = [
+  "isort >= 5.13",
+  "setuptools >= 61",
+]
+
+[project.urls]
+Homepage = "https://github.com/dpep/pytest-autofixture"
+
+[tool.setuptools]
+packages = ["pytest_autofixture"]
+
+[tool.setuptools.dynamic]
+version = {attr = "pytest_autofixture.__version__"}
