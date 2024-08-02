@@ -1,0 +1,12 @@
+poetry_python_downgrader/__init__.py,sha256=dwfh7ZqZgMuLK6lcVlKHR0c9Rj3_sto6ga_THIZ-GG8,284
+poetry_python_downgrader/cli.py,sha256=liLIuUQSe4VP-16IfX6Dj0FybOho9OHwFVCo9bK5lbg,5713
+poetry_python_downgrader/downgrader.py,sha256=a8A0lMPuh89b9V9acA72IjD9oFRfocUbVjz2JNe7NMk,3406
+poetry_python_downgrader/gh_actions_cli.py,sha256=upkQLueLAchrHpkQbHy9V8MxFNzy1Efn5eK46DqMQY0,1632
+poetry_python_downgrader/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_python_downgrader/pypi.py,sha256=kGV0xKUq_jILUGjj3rMibgiHcyw_uPwC18D2D7LkW-U,2864
+poetry_python_downgrader/read_toml.py,sha256=981L5vWsxNsNbEU4DIeyG2P7kLa_PSwRZCE_GfMjlI4,478
+poetry_python_downgrader-0.1.6.dist-info/LICENSE,sha256=4r4Zb_t81cvqfQ8cX1lCaW34KvNAdBpDzBV-QlbHlXA,1065
+poetry_python_downgrader-0.1.6.dist-info/METADATA,sha256=CjaOSSg6EBszWFBPcu1AWNdIAZFsBg8BxzFpBnl6t7w,5310
+poetry_python_downgrader-0.1.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+poetry_python_downgrader-0.1.6.dist-info/entry_points.txt,sha256=k3h9j82mRNS4pStO2BI0ejcil6kWorCEvk0Lo-S7wAE,84
+poetry_python_downgrader-0.1.6.dist-info/RECORD,,

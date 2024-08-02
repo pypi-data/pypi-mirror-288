@@ -1,0 +1,3 @@
+[console_scripts]
+downgrade-pyproject-for-python=poetry_python_downgrader.cli:main
+
