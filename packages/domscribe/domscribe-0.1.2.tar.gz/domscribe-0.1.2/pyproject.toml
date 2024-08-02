@@ -1,0 +1,36 @@
+[project]
+name = "domscribe"
+version = "0.1.2"
+description = "A Python library for converting HTML to semantic Markdown"
+authors = [
+    {name = "Slava Vishnyakov", email = "bomboze@gmail.com"},
+]
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry]
+name = "domscribe"
+version = "0.1.2"
+description = "A Python library for converting HTML to semantic Markdown"
+authors = ["Slava Vishnyakov <bomboze@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+beautifulsoup4 = "^4.9.3"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.3"
+black = "^21.5b1"
+isort = "^5.8.0"
+mypy = "^0.812"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
