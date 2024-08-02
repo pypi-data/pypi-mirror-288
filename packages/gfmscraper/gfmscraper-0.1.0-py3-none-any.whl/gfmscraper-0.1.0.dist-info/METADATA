@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: gfmscraper
+Version: 0.1.0
+Summary: A small library to scrap GoFundMe campaigns.
+Home-page: https://github.com/PalestinianVoices/GoFundMeScrapper
+Author: Ziad A. & Essam W.
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: bs4
+Requires-Dist: re
+Requires-Dist: json
+
+# GoFundMeScrapper
+A small library to scrap GoFundMe campaigns. 
+
+To install
+```
+pip insall gofundmescraper
+```
+
+
+Use as follows:
+```python
+
+from scraper import GoFundMeScraper
+
+urls = [
+    "https://gofund.me/5ac19b38",
+    "https://gofund.me/c53cf071",
+    "https://gofund.me/5ac19b38",
+    "https://gofund.me/474eed77",
+    "https://gofund.me/ceef5eae"
+]
+
+scraper = GoFundMeScraper(class_values = {
+                "title": "p-campaign-title",
+                "description": "p-campaign-description",
+                "progress": "progress-meter_progressMeter",
+                "hero_image": "campaign-hero_image",
+                "creation_date": "m-campaign-byline-created"
+            },
+            json_filename="campaigns.json"
+            )
+
+scraper.get_many_gofundme_details(urls)
+
+```
