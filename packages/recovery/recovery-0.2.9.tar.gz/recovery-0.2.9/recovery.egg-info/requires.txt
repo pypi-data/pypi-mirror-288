@@ -1,0 +1,5 @@
+colorama
+httpx
+requests
+tls-client
+psutil
