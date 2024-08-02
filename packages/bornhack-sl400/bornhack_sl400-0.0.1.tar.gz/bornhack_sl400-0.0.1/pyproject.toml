@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bornhack_sl400"
+version = "0.0.1"
+authors = [
+  { name="Eloy", email="mail@eloydegen.com" },
+]
+description = "Convert the BornHack phonebook to vCard for the Gigaset SL400"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+  'vobject',
+  'requests',
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bornhack_sl400"]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
+
+[project.scripts]
+bornhack_sl400 = "bornhack_sl400.bornhack_sl400:main"
