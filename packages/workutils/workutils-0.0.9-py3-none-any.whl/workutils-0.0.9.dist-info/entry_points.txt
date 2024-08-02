@@ -1,0 +1,2 @@
+[console_scripts]
+workutils = workutils.workutils:main
