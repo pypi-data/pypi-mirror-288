@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: fracenca
+Version: 0.1
+Summary: A simple fraction class for Python, containing standard fraction operations
+Home-page: https://github.com/Encapy/stuff
+Author: Encapy
+Author-email: alexsiebert98@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+
