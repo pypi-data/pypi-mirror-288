@@ -1,0 +1,13 @@
+qfc/__init__.py,sha256=MvfYvlK7kXUUl_u9_yaB7AgpWNDmMZ441SX4QrW3qDk,283
+qfc/codecs/QFCCodec.py,sha256=DIDvwPZM593snTjuIkCy_8ERzyuNVrcm67V0_9-GnSo,6831
+qfc/codecs/QTCCodec.py,sha256=4Rqp29p_eaqfh7u5yEQpYpdd1qf0i4evH8bWVmpnskA,5867
+qfc/codecs/QWCCodec.py,sha256=fsg-D0-OtbgrJmIvzkS5bkF_94m1dNRGv2Chf_IjCqE,7641
+qfc/codecs/__init__.py,sha256=MpzYgAM81yyoYt1rhU96G1z3gUtyC23dXJhbCB-D01U,117
+qfc/internal/qfc_compress.py,sha256=jmfhnk_G4CemYDu_Ka4YlgC-oAeQWhTSC9U3CT_skoE,8948
+qfc/internal/qfc_multi_segment_compress.py,sha256=7GjEvFTbWbSMbYIWBcB3c-OLs0xH-z-q4CaViyjCDjk,6544
+qfc/internal/qtc_compress.py,sha256=cbTDU-2m_d-KFFpnuMs1VFotk_-CwXQ1ErjHTYmQGh0,5702
+qfc/internal/qwc_compress.py,sha256=wSxXstbjK0r0P4lDHk2E-Dpw5HRdYWvtUUQVt2KdMOA,3823
+qfc/internal/qwc_multi_segment_compress.py,sha256=QeNsKxxJ8IWK0RaESOU5pNwsTH-4OUVlvg3OG5U-F6U,11249
+qfc-0.3.4.dist-info/METADATA,sha256=VWuCE1wn0xFD7EYi-lzOeK01V9juY02iF-ltUPYbjS8,5832
+qfc-0.3.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+qfc-0.3.4.dist-info/RECORD,,
