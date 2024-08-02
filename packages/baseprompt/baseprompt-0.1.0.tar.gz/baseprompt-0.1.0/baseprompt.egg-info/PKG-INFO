@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: baseprompt
+Version: 0.1.0
+Summary: Baseprompt - Collaboration tool and secure storage for LLM chain prompts.
+Author: Arsen Kylyshbek
+Author-email: arsen@baseprompt.dev
+Requires-Python: >=3.7
