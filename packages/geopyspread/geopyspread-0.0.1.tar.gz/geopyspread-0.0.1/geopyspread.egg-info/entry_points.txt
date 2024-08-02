@@ -1,0 +1,2 @@
+[console_scripts]
+geopyspread = geopyspread.cli:main

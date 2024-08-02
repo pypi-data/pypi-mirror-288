@@ -1,0 +1,7 @@
+numpy
+
+[all]
+geopyspread[extra]
+
+[extra]
+pandas
