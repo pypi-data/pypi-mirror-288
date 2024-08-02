@@ -1,0 +1,14 @@
+README.md,sha256=CHhD9Bqmh-20cwhh4qLdiedY4Vqqiw-u7FyywrEHbP0,183
+phylodeep_data_bdei/__init__.py,sha256=pbSBBPkj_U9izzajYLGdI8muvm7YZFE-wWPpCUZKdDE,2915
+phylodeep_data_bdei/large/CNN_FULL_TREE.csv.xz,sha256=2bKIdLLkYHqVLaOF1-IwYVloOOKLKfkHWBbQXVhvdaY,10212260
+phylodeep_data_bdei/large/FFNN_SUMSTATS.csv.xz,sha256=cDLen3uyIBWpCB8sKrTpDBQTR4B3V6FlMbO5n3kQmOs,10210780
+phylodeep_data_bdei/large/target.csv.xz,sha256=W6bTtcT9B0Vqw-5ukuA7K7Pf9At3Uv9HkF3sCI6jgJw,14184328
+phylodeep_data_bdei/small/CNN_FULL_TREE.csv.xz,sha256=2k9APnw7dWASuOOR1be_Q_k45eUvX_NLybjIONq80hI,10164868
+phylodeep_data_bdei/small/FFNN_SUMSTATS.csv.xz,sha256=-TKAoauaG1LQ1EconMm84nj-_TwkGZVOYm3PPAjb-js,10182420
+phylodeep_data_bdei/small/target.csv.xz,sha256=yT7w3zFUnzkDeiXaxsauiJMsCWYIn5_ckx8GmfVDXoM,14879424
+phylodeep_data_bdei-0.4.dist-info/LICENSE,sha256=HOphbyEHcc48591JryHVA3kczhtScDV0HRN2O67tpx8,36773
+phylodeep_data_bdei-0.4.dist-info/METADATA,sha256=OObV3EbGkBUHtNBmCTP-BhyECLkmhottR7bNM_NqVM8,1225
+phylodeep_data_bdei-0.4.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+phylodeep_data_bdei-0.4.dist-info/entry_points.txt,sha256=CbXTh3DulKfb_j1SJkxdfwssma4ht197gZRA6poMY2Q,59
+phylodeep_data_bdei-0.4.dist-info/top_level.txt,sha256=5zF7m0mgoulPWg4ggdRm4MMf1oQP0nndI2dXlkBKRAU,20
+phylodeep_data_bdei-0.4.dist-info/RECORD,,
