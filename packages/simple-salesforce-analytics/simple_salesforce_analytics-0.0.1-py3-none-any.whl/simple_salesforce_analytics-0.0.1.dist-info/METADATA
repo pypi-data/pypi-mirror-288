@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: simple_salesforce_analytics
+Version: 0.0.1
+Summary: An extension of simple-salesforce that enables users to automate Salesforce reports and dashboards through the Salesforce Analytics API
+Project-URL: Homepage, https://github.com/JH-DAR-OAS/simple-salesforce-analytics
+Project-URL: Issues, https://github.com/JH-DAR-OAS/simple-salesforce-analytics/issues
+Author-email: Ryan Dowling <rdowlin3@jh.edu>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
