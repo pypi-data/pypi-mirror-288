@@ -1,0 +1,12 @@
+wavify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wavify/stt.py,sha256=ygS5T_Bn18ptUoziuH1bxX7SSUk86Kh-LpDY5pGRSbo,5818
+wavify/lib/aarch64-apple-darwin/libtensorflowlite_c.dylib,sha256=W0iB3er6tk7WhIqROD8CFkb4UDMfiRbi2gAilrOdhqU,3669192
+wavify/lib/aarch64-apple-darwin/libwavify_core.dylib,sha256=wiqQT-uuxfnZv14F0kvbgy3F0KCmQN_FhIXVMokf4_M,10522680
+wavify/lib/x86_64-pc-windows-gnu/tensorflowlite_c.dll,sha256=XyfPUF8RvY7U2VQxbNABxa0Z9N9EV--Ck0PeHktqZ-Q,3019264
+wavify/lib/x86_64-pc-windows-gnu/wavify_core.dll,sha256=m6grRUL_Fc9kFwbCfvk9MNxNEgbcAKeKe6HCtx46XGU,25034162
+wavify/lib/x86_64-unknown-linux-gnu/libtensorflowlite_c.so,sha256=BG-bSURfx8sZM6i4h2YA2zmvBfZHcuAs1r8fiBa7KLQ,3448880
+wavify/lib/x86_64-unknown-linux-gnu/libwavify_core.so,sha256=PePq-TSUNM0YffhB_K8HG0LtSWYD3yFgpEroJYXW2Os,17219544
+wavify-0.0.12.dist-info/METADATA,sha256=k65fmkInAO6es-Qn-HwJHMWMgD0MkbsZdu_C1MPDsJY,13543
+wavify-0.0.12.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+wavify-0.0.12.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+wavify-0.0.12.dist-info/RECORD,,
