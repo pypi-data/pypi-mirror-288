@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+wcao_first_package/Binomialdistribution.py
+wcao_first_package/Gaussiandistribution.py
+wcao_first_package/Generaldistribution.py
+wcao_first_package/__init__.py
+wcao_first_package.egg-info/PKG-INFO
+wcao_first_package.egg-info/SOURCES.txt
+wcao_first_package.egg-info/dependency_links.txt
+wcao_first_package.egg-info/not-zip-safe
+wcao_first_package.egg-info/top_level.txt
