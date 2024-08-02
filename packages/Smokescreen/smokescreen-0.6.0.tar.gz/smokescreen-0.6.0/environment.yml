@@ -1,0 +1,23 @@
+name: desc_smokescreen
+channels:
+  - conda-forge
+dependencies:
+    - python>=3.9
+    - numpy
+    - ipykernel
+    - scipy
+    - cosmosis >=2.5
+    - astropy >=5.3.0
+    - pytest
+    - pip
+    - numcosmo
+    - firecrown>=1.7.5
+    - fitsio
+    - pyccl >=3.0.2
+    - pip:
+      - argparse
+      - flake8
+      - sacc
+      #- git+https://github.com/LSSTDESC/firecrown.git@master
+    - cosmosis 
+    - cosmosis-build-standard-library
