@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cobroswap
+Version: 0.0.1
+Summary: Python wrapper for CobrosWap.
+Home-page: https://pypi.org/project/cobroswap/
+Author: Alejo Prieto Dávalos
+Author-email: alejoprietodavalos@gmail.com
+Project-URL: Source, https://github.com/AlejoPrietoDavalos/cobroswap/
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests >=2.32.0
+
+### Python wrapper for CobrosWap.
