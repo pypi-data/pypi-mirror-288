@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: sgp-gu
+Version: 1.0.4
+Summary: Shanghai Geotechnical Parameters
+Author-Email: Hangyu Liu <liuhangyu@tongji.edu.cn>, Hailin Wang <wanghailin@tongji.edu.cn>
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Project-URL: Homepage, https://github.com/haiiliin/sgp/
+Project-URL: Documentation, https://haiiliin.github.io/sgp/
+Requires-Python: <3.13,>=3.9
+Requires-Dist: cachetools
+Requires-Dist: cryptography
+Requires-Dist: eval_type_backport
+Requires-Dist: matplotlib
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pydantic
+Requires-Dist: pyqtgraph
+Requires-Dist: python-dotenv
+Requires-Dist: qtconsole
+Requires-Dist: qtpy
+Requires-Dist: scipy
+Requires-Dist: sympy
+Requires-Dist: typing_extensions
+Requires-Dist: sgp[PySide6,io,optimize]; extra == "full"
+Requires-Dist: sgp[PyQt5,io,optimize]; extra == "full-pyqt5"
+Requires-Dist: sgp[PyQt6,io,optimize]; extra == "full-pyqt6"
+Requires-Dist: sgp[PySide2,io,optimize]; extra == "full-pyside2"
+Requires-Dist: sgp[PySide6,io,optimize]; extra == "full-pyside6"
+Requires-Dist: pyyaml; extra == "io"
+Requires-Dist: tomli; python_version < "3.11" and extra == "io"
+Requires-Dist: tomli_w; extra == "io"
+Requires-Dist: scikit-opt; extra == "optimize"
+Requires-Dist: PyQt5; extra == "pyqt5"
+Requires-Dist: PyQt6; extra == "pyqt6"
+Requires-Dist: PySide2; python_version < "3.11" and extra == "pyside2"
+Requires-Dist: PySide6; python_version >= "3.11" and extra == "pyside2"
+Requires-Dist: PySide6; extra == "pyside6"
+Requires-Dist: mkdocs; extra == "docs"
+Requires-Dist: mkdocs-bibtex; extra == "docs"
+Requires-Dist: mkdocs-coverage; extra == "docs"
+Requires-Dist: mkdocs-gen-files; extra == "docs"
+Requires-Dist: mkdocs-git-revision-date-localized-plugin; extra == "docs"
+Requires-Dist: mkdocs-literate-nav; extra == "docs"
+Requires-Dist: mkdocs-macros-plugin; extra == "docs"
+Requires-Dist: mkdocs-material; extra == "docs"
+Requires-Dist: mkdocstrings[python]; extra == "docs"
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: pytest-cov; extra == "tests"
+Requires-Dist: pytest-html; extra == "tests"
+Requires-Dist: pytest-qt; extra == "tests"
+Requires-Dist: jinja2; extra == "installer"
+Requires-Dist: pynsist; extra == "installer"
+Requires-Dist: requirements-parser; extra == "installer"
+Requires-Dist: black; extra == "lint"
+Requires-Dist: isort; extra == "lint"
+Requires-Dist: pre-commit; extra == "lint"
+Requires-Dist: ruff; extra == "lint"
+Requires-Dist: pdm; extra == "env"
+Requires-Dist: tox; extra == "env"
+Provides-Extra: full
+Provides-Extra: full-pyqt5
+Provides-Extra: full-pyqt6
+Provides-Extra: full-pyside2
+Provides-Extra: full-pyside6
+Provides-Extra: io
+Provides-Extra: optimize
+Provides-Extra: pyqt5
+Provides-Extra: pyqt6
+Provides-Extra: pyside2
+Provides-Extra: pyside6
+Provides-Extra: docs
+Provides-Extra: tests
+Provides-Extra: installer
+Provides-Extra: lint
+Provides-Extra: env
+Description-Content-Type: text/markdown
+
+# SGP: Shanghai Geotechnical Parameters
+
+![splash](sgp/ui/images/splash.png)
+
+Geotechnical database for Shanghai clay by Prof. Gu's research group
+
+- Homepage: [https://github.com/haiiliin/sgp/](https://github.com/haiiliin/sgp/)
+- Documentation: [https://haiiliin.github.io/sgp/](https://haiiliin.github.io/sgp/)
+
+## Supported Python and PyQt/PySide versions
+
+| [Python][py] |   [PyQt5][PyQt5]   |   [PyQt6][PyQt6]   | [PySide2][PySide2] | [PySide6][PySide6] |
+| :----------: | :----------------: | :----------------: | :----------------: | :----------------: |
+|     3.9      | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+|     3.10     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+|     3.11     | :white_check_mark: | :white_check_mark: |      :x: [^1]      | :white_check_mark: |
+|     3.12     | :white_check_mark: | :white_check_mark: |      :x: [^1]      |      :x: [^2]      |
+
+[py]: https://www.python.org/
+[PyQt5]: https://pypi.org/project/PyQt5/
+[PyQt6]: https://pypi.org/project/PyQt6/
+[PySide2]: https://pypi.org/project/PySide2/
+[PySide6]: https://pypi.org/project/PySide6/
+
+[^1]: PySide2 does not support Python 3.11+.
+[^2]: https://wiki.qt.io/Qt_for_Python_Development_Notes.
