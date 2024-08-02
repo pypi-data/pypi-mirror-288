@@ -1,0 +1,9 @@
+joblib
+numpy
+pandas
+scikit-learn
+scipy
+selenium
+streamlit
+webdriver-manager
+matplotlib
