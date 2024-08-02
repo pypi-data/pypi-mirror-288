@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: usepolvo-cli
+Version: 0.1.6
+Summary: An all-in-one integration CLI package.
+Author-email: Caio Pizzol <caio@usepolvo.com>
+License: MIT
+Project-URL: homepage, https://github.com/usepolvo/usepolvo-cli
+Project-URL: repository, https://github.com/usepolvo/usepolvo-cli
+Project-URL: documentation, https://github.com/usepolvo/usepolvo-cli
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: click==8.1.7
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: usepolvo==0.1.17
