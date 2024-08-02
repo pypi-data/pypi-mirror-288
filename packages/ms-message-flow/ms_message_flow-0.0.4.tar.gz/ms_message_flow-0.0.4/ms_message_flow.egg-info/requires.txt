@@ -1,0 +1,4 @@
+msal==1.28.0
+requests==2.31.0
+pymsteams==0.2.2
+urllib3==2.2.1
