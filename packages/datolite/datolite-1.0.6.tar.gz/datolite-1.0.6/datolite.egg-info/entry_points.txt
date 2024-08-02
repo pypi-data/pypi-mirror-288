@@ -1,0 +1,2 @@
+[console_scripts]
+datolite = datolite.__main__:main
