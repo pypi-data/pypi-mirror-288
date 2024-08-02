@@ -1,0 +1,14 @@
+basefunctions/__init__.py,sha256=kUc2dLeLRKIXzoU8mH1ybRDCp3xaGfAOAnB6Ui68jDI,3613
+basefunctions/config_handler.py,sha256=FL3_GkmTxsvQk1jiS0qAYy_WFLg7ZpU6Eg-MSUxEeh0,5079
+basefunctions/database_handler.py,sha256=mwDWPUe1yjXvz8_qF6gCjaNhRyPdEMGyWDCEEKevF9E,5159
+basefunctions/filefunctions.py,sha256=-X-aXhSKQrX-kQxxW7bp6n9ut6o3EmzRebC4w60OA20,14712
+basefunctions/observer.py,sha256=CejG-I9uADxMOQpfjUHQByYQDVGuSeVQvkqetHztOgM,2806
+basefunctions/singleton.py,sha256=B1Ql4TPmYsyp0gsqBWggTEJBLEGefqOoYCUY4TrTbqU,1853
+basefunctions/threadpool.py,sha256=0tEKy3LNCp4R87Y3-nbMXX1ad1SO6q5GBO8QIG17aFg,17740
+basefunctions/utils.py,sha256=b_ZvTRe10WsljNJKJvXOzJ8mQQ79tilp63chIH7E45Q,1671
+basefunctions/database_connectors/database_connector_postgresql.py,sha256=H0DEqcSIirEk57b3FaEidXHIzMp9QEoe-3sTaoBwDIM,3520
+basefunctions/database_connectors/database_connector_sqlite3.py,sha256=hDfBYOl0kOJZ-FxaVIeIx-V9QcyoWinYo7OA4rZob3U,3007
+basefunctions-0.4.2.dist-info/METADATA,sha256=Hj8PteqPzSAf4YIVNSNW3LQ6clNHLys9FdQ4uHEVWhI,8743
+basefunctions-0.4.2.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+basefunctions-0.4.2.dist-info/top_level.txt,sha256=NVj1fe5ixe1-nCqPKnd3BJncMFdT_dPo8LJ9wh8NNjg,14
+basefunctions-0.4.2.dist-info/RECORD,,
