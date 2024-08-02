@@ -1,0 +1,35 @@
+[build-system]
+requires = ["maturin>=1.6,<2.0"]
+build-backend = "maturin"
+
+[project.urls]
+Repository = "https://github.com/Asempere123123/lootbox"
+
+[project]
+name = "py-lootbox"
+description = "Python versions and dependency management made easy."
+readme = "README.md"
+authors = [
+  {name = "Alejandro Sempere", email = "asempere158@gmail.com"}
+]
+maintainers = [
+  {name = "Alejandro Sempere", email = "asempere158@gmail.com"}
+]
+license = "Apache-2.0"
+keywords = ["packaging", "lootbox", "loot", "cli"]
+
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dynamic = ["version"]
+dependencies = [
+  "python-resolver>=0.0.2",
+  "packaging>=20.1",
+  "setuptools>=60.1.0"
+]
+
+[tool.maturin]
+bindings = "bin"
