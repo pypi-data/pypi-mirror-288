@@ -1,0 +1,10 @@
+fastrpa/__init__.py,sha256=pYu2_Ch3ECesdS-3J9wQj7LOBwNTvk733PFu7QhFcAM,200
+fastrpa/app.py,sha256=NFA5c2outOsANDoD9qYAKGrymyU0WLV2orq5P9Ilbko,2967
+fastrpa/commons.py,sha256=iYgS2nYerK6U81WSDDU8XiUYZQI3Ue_O9-iijjN3dLU,3015
+fastrpa/dataclasses.py,sha256=8s6nchxY0UF7zAd0r16Om08n4A24WKIhmj_aZspXotE,171
+fastrpa/elements/form.py,sha256=B1bkizGUAM_dSq0fnapOmBVj-Ugg-StMuydoe1tDIeI,3566
+fastrpa/exceptions.py,sha256=5AE5YkAuTOIICjihod1PzrHBaTsYGI_pxlQzIlNyplw,212
+fastrpa/types.py,sha256=2NYYIjtl2tqrErR5iyQOxad7ukF5g0wVP_dKzwa5HqU,366
+fastrpa-0.1.0.dist-info/METADATA,sha256=ceCGbkXzayPU5cdnz6hllSPPOeGhZYqIDNNQXJ_Xor8,5160
+fastrpa-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fastrpa-0.1.0.dist-info/RECORD,,
