@@ -1,0 +1,3 @@
+[console_scripts]
+my-command = manage_keys.py:main
+
