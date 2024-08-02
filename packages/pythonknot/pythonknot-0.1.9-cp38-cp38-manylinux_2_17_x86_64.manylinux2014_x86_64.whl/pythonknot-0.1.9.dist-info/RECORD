@@ -1,0 +1,9 @@
+pythonknot-0.1.9.dist-info/METADATA,sha256=vaeRV5gJfJBselGOa0LvSVludw5YpV2hXaJEeMJlwak,475
+pythonknot-0.1.9.dist-info/RECORD,,
+pythonknot-0.1.9.dist-info/WHEEL,sha256=L0ABBnxO_xKRR_wTzM7WWWX8RRfdKRK-fZ5a3ZEhDqQ,148
+pythonknot-0.1.9.dist-info/top_level.txt,sha256=qFU8P2xZFLCfmfNZ2QjuyHYn-zeiSUD6znlWAPA9KXw,11
+pythonknot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pythonknot/rmsd.py,sha256=OULTpTxUWUTIJexqbHbYiZxObFyVlY4BVRillPgOzTs,755
+pythonknot/xyz.py,sha256=PADMH8Yq7-srmVnsecmGdAqVxZlwQ10KA8E99jXF13Q,697
+pythonknot/alexander_poly.cpython-38-x86_64-linux-gnu.so,sha256=2YP2Or7lbCAT0jNZfYhtQTi_muI5tkquxDb8ixmONEM,5599392
+pythonknot/polymer.py,sha256=ugRUocla2YXaQOG2mRjXpgrtKSEfCC1rHtNPog7-yl4,2084
