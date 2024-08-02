@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: modelasv
+Version: 0.2
+Summary: ModelASV: Analyze, Simulate and Visulize the Performance of Large Neural Network Models
+Home-page: https://github.com/hahnyuan/ModelASV
+Author: Zhihang Yuan
+Author-email: hahnyuan@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: transformers
+Requires-Dist: diffusers
+
