@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: incrdecrlib
+Version: 0.1
+Summary: A custom number library with increment and decrement methods
+Home-page: https://github.com/peBBle1s/incdeclib.git
+Author: PeBBle1s
+Author-email: pebble1s.official@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
