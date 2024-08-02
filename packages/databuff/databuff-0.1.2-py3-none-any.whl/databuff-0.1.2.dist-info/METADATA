@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: databuff
+Version: 0.1.2
+Summary: 
+Author: tekritesh
+Author-email: ritesh.tekriwal03@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: ipykernel (>=6.29.3,<7.0.0)
+Requires-Dist: pandas (>=2.2.1,<3.0.0)
+Requires-Dist: pytest (>=8.1.1,<9.0.0)
+Description-Content-Type: text/markdown
+
+# databuff
+
+Python Lib for data analysis
+
+## Features
+
+| Feature                 | Status            |
+| ----------------------- | ----------------- |
+| Verify Dataframe        | &#9745; Completed |
+| Verify Column           | &#9745; Completed |
+| Max value of a column   | &#9745; Completed |
+| Min value of a column   | &#9745; Completed |
+| First value of a column | &#9745; Completed |
+| Last value of a column  | &#9745; Completed |
+| Mean value of a column  | &#9745; Completed |
+| Delta Time Computation  | &#9745; Completed |
+| Timeseries Integration  | &#9745; Completed |
+| Cumulative Sum          | &#9745; Completed |
+| Integration Multiplier  | &#9745; Completed |
+| Manipulate a Column     | &#9745; Completed |
+| Standard Deviation of a column  | &#9745; Completed     |
+| 'X' Quantile of a column  | &#9745; Completed     |
+| Conditional Filtering   | &#9745; Completed     |
+| Timeseries Subsampling  | &#9745; Completed     |
+
+
+
+
+## Contributing
+
+...
