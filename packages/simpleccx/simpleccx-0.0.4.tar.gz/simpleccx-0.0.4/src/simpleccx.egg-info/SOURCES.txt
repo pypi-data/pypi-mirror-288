@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/simpleccx/__init__.py
+src/simpleccx/calculix.py
+src/simpleccx/frdreader.py
+src/simpleccx/simpleccx.py
+src/simpleccx.egg-info/PKG-INFO
+src/simpleccx.egg-info/SOURCES.txt
+src/simpleccx.egg-info/dependency_links.txt
+src/simpleccx.egg-info/requires.txt
+src/simpleccx.egg-info/top_level.txt
+src/simpleccx/templates/__init__.py
