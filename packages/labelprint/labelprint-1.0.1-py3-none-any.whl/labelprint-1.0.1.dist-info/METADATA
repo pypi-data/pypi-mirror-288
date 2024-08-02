@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: labelprint
+Version: 1.0.1
+Summary: Automated barcode label generation and printing in Python
+Author-email: Pecacheu <3608878+Pecacheu@users.noreply.github.com>
+Project-URL: Homepage, https://github.com/Pecacheu/LabelPrint
+Project-URL: Issues, https://github.com/Pecacheu/LabelPrint/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# LabelPrint
+### Automated barcode label generation and printing in Python
+
+Note: Detailed usage coming soon.
+
+## Warning
+
+This package only works on Windows at the moment. With some minor rework, it could work on Linux too, that's just not a priority for my purposes at the moment.
