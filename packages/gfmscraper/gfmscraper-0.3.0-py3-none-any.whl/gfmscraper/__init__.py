@@ -1,0 +1,1 @@
+from gfmscraper.scraper import GoFundMeScraper
