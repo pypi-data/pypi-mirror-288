@@ -1,0 +1,15 @@
+dir_assistant/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dir_assistant/config.py,sha256=ux4nOyHFlNUPlrBHbPZEE-4MO3caIcyK0QrAkh3F1yg,3088
+dir_assistant/file_watcher.py,sha256=90cVjh0qQdqC1B8sWciZRtc9er2LfJnQT6IBM22Sj3s,1913
+dir_assistant/index.py,sha256=hektZIzOgz9tT83q1-2Pr3cl2IKFierLb-DE_AeNKsQ,7034
+dir_assistant/main.py,sha256=KrFq__BNA7bVkyB-radgyvKltSBnP3KoEJkS0i89tVM,5016
+dir_assistant/model_runners.py,sha256=DUtUR0eZrmBM7HeMl2oBtJXUWv-2ZZqGNuTv7QAWEQQ,10597
+dir_assistant/models.py,sha256=vwSoi0yU2vlZKggwhvM0JTV6Sxh8hTrc5fxAIXH_zy0,1919
+dir_assistant/platform_setup.py,sha256=_O_o0ZFFIAu6ksnEdV1K-dtDvwRiG7M5Z3zeiXcQbi8,1391
+dir_assistant/start.py,sha256=Xr-TU1JbpBW6yXAP3ecoylbfm6wATpeMbVtaazb7bUM,5801
+dir_assistant-1.0.0.dist-info/LICENSE,sha256=JDMbxehjWV6A_0DHR0Zu1Ceu2cehg8S5Y_AX1Sen-oI,1066
+dir_assistant-1.0.0.dist-info/METADATA,sha256=3PwYwJFXkwxdf1fvXG35BS60n8LdR7g2ZGBC9QTedPc,6535
+dir_assistant-1.0.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+dir_assistant-1.0.0.dist-info/entry_points.txt,sha256=A9I48hQ7wNPsLdjeXGnYGapdD4pYxL5XG9bKFPcQT2c,58
+dir_assistant-1.0.0.dist-info/top_level.txt,sha256=Hp6oe9EzvaNdeQ-wCcgaGSkDdFr_dUY_etmYyFgtlB4,14
+dir_assistant-1.0.0.dist-info/RECORD,,
