@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+iterator_cacher/__init__.py
+iterator_cacher/iterator_cacher.py
+iterator_cacher.egg-info/PKG-INFO
+iterator_cacher.egg-info/SOURCES.txt
+iterator_cacher.egg-info/dependency_links.txt
+iterator_cacher.egg-info/entry_points.txt
+iterator_cacher.egg-info/requires.txt
+iterator_cacher.egg-info/top_level.txt
