@@ -1,0 +1,12 @@
+greydata/__init__.py,sha256=H8qwEbPhTVBPf5DUzP3gu7L4wqh1PgLPUmVi-5hJHZo,49
+greydata/arguments.py,sha256=xetKGCDWb_QcFpW7xhc5r5EE-PHNkVh_CFcmNmQWgvc,1726
+greydata/cli.py,sha256=gUaA19FEkyxrnYiPIAPOXV8gYo-tXGtEJIzMwQNb9Nw,764
+greydata/module1.py,sha256=hbCiChCEG0KUJ9gwVMwz7mLuc7X--6_9Bq5Vci1mD5o,118
+greydata/module2.py,sha256=fRiUEArtAACxLVt6U73q_ioXp11t-4uCbFEEhQdsG6o,21
+greydata/welcome.py,sha256=BZdeJk0mWOInoz8gAl_zeuWgjHwfdhnmyG6xHXzlgDE,74
+greydata-0.1.5.dist-info/LICENSE,sha256=Hd3IAxt-SsF9Iu-fxBJNFfTLvAEvGaxrl6DCb_r6DV0,951
+greydata-0.1.5.dist-info/METADATA,sha256=SqQ_CdKSsvz-iv8FknEBzwtl8qp7g0z6saDCK7wOLU0,3133
+greydata-0.1.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+greydata-0.1.5.dist-info/entry_points.txt,sha256=GKrdq6UO-Z_ydh-rFkoCLDlSVmZdolAxfE5F0MPIgrw,47
+greydata-0.1.5.dist-info/top_level.txt,sha256=vCXa5T7bAeFf6RdKd010pH4SbF_xNDUrmvuDzWqAkCg,9
+greydata-0.1.5.dist-info/RECORD,,
