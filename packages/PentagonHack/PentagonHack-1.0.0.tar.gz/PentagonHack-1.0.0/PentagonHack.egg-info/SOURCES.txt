@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+PentagonHack.egg-info/PKG-INFO
+PentagonHack.egg-info/SOURCES.txt
+PentagonHack.egg-info/dependency_links.txt
+PentagonHack.egg-info/requires.txt
+PentagonHack.egg-info/top_level.txt
+pentagon/__init__.py
+pentagon/hack.py

@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: PentagonHack
+Version: 1.0.0
+Summary: Library for hacking the Pentagon.
+Author: ALhorm
+Author-email: gladkoam@gmail.com
+Keywords: hack hacking pentagon python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Hacking the Pentagon:
+```py
+import pentagon
+
+pentagon.hack()
+```
