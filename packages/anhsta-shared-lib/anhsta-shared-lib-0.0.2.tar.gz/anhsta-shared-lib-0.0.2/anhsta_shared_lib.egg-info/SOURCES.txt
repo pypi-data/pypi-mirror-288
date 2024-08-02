@@ -1,0 +1,9 @@
+README.md
+setup.py
+./anhsta-shared-lib/testing_module.c
+anhsta-shared-lib/testing_module.c
+anhsta_shared_lib.egg-info/PKG-INFO
+anhsta_shared_lib.egg-info/SOURCES.txt
+anhsta_shared_lib.egg-info/dependency_links.txt
+anhsta_shared_lib.egg-info/requires.txt
+anhsta_shared_lib.egg-info/top_level.txt
