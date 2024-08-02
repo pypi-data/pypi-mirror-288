@@ -1,0 +1,2 @@
+heaserver~=1.8.3
+aiostream~=0.5.1
