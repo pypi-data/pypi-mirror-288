@@ -1,0 +1,3 @@
+[harlequin.adapter]
+exasol=exasol.harlequin:Exasol
+

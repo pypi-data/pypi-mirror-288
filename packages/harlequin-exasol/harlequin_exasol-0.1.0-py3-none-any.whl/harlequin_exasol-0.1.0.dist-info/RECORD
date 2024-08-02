@@ -1,0 +1,11 @@
+exasol/harlequin/__init__.py,sha256=Ucj9iMlyJmc4CsSDfjy62qOkmhokkKJUkLP9Ouf0ezo,93
+exasol/harlequin/_adapter.py,sha256=oTuXk6zJMltPYWDsvHqAkoDTrzAtmfNZaeBGQuD1m6A,8260
+exasol/harlequin/_catalog.py,sha256=Nmx0O7vlXqc8YQ6kA8x8xROuYNAUdWCJ8xaCHaYSfVo,4890
+exasol/harlequin/_completions.py,sha256=_l_o6qyzR68Cx6f4LCN_Vgwe6payc4q6i3MVE7Y5Ozc,1173
+exasol/harlequin/_options.py,sha256=7RYvHg1r6f8TMd1LY4_FBnCN9kOttNOs1M8h65MoPkg,1616
+exasol/harlequin/version.py,sha256=4nqSPlb5zgkyYIODu1QrqRckkyoRUBp7vS7rvymvQ0k,404
+harlequin_exasol-0.1.0.dist-info/LICENSE,sha256=yPqMjiDT7uCnCx3M6IKoEbMPQ8oTolKYju8YqMNYzBo,1063
+harlequin_exasol-0.1.0.dist-info/METADATA,sha256=eNeEkVdpxC2Bhg8ztVU0ruuh0QK3Y__qZVDFwxjKT1g,3909
+harlequin_exasol-0.1.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+harlequin_exasol-0.1.0.dist-info/entry_points.txt,sha256=25Z-aAmuPlnaRh_jJIPuEFFO8HJ5fOK8HXymv2sPzmo,52
+harlequin_exasol-0.1.0.dist-info/RECORD,,
