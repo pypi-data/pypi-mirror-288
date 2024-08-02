@@ -1,0 +1,14 @@
+jolly_brancher/__init__.py,sha256=pH5i4Fj1tbXLqLtTVIdoojiplZssQn0nnud8-HXodRE,577
+jolly_brancher/config.py,sha256=hOy-Tj_QQr7tD4Hm1Bv8dMv0ry5y0RPfO3Ht9qno53o,2474
+jolly_brancher/git.py,sha256=jzsYAxvPBXpkLNZ7kt23dBqy8AACcJ77icbvtlLeVn4,10093
+jolly_brancher/input.py,sha256=SAybS6llZ0Btv3rui7zD_X0ZFnviWqVsjB2KCQ-IQWA,1538
+jolly_brancher/issues.py,sha256=ckYdz8_wx1SdmYfRUhLVANamBsgHPUrhAIWP_Z9knwA,4869
+jolly_brancher/log.py,sha256=CSnCeNQ2HAiqIyOV6P5ExM97DaThxRWuv_idEIdT5cQ,691
+jolly_brancher/main.py,sha256=KitBfr3_VwYMzrpSdtHtdgAxFbPNbkdjUz9UEt8G6xU,7755
+jolly_brancher/user_input.py,sha256=9Ch1eokU4Zn4t1Yy3Ci21ynnYEgF6HzqDxGkIQ1dSoQ,3414
+jolly_brancher-1.0.3.dist-info/AUTHORS.rst,sha256=WNakfq6tRS5aK3RtDUBNpoJBmfbcV14_eLSxSShF_NU,128
+jolly_brancher-1.0.3.dist-info/LICENSE.txt,sha256=g1pFbZ7AHD1JpmDLMM_n0mMzrcZOjM9htxYz5Lj8ibw,1086
+jolly_brancher-1.0.3.dist-info/METADATA,sha256=9m9raIB15KlUvk5U50tkCSl8-8X3yMXj6lArQPAgw4g,803
+jolly_brancher-1.0.3.dist-info/WHEEL,sha256=XRxW4r1PNiVhMpP4bT9oWtu3HyndxpJ84SkubFgzp_Y,109
+jolly_brancher-1.0.3.dist-info/top_level.txt,sha256=6HzqhfEV1r1iMbnRLgXJonKB417Uk_StRjAWY8TV2Iw,15
+jolly_brancher-1.0.3.dist-info/RECORD,,

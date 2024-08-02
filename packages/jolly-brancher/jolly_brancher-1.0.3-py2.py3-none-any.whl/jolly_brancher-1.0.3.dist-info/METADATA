@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: jolly-brancher
+Version: 1.0.3
+Summary: A sweet branch creation suite
+Home-page: https://github.com/ahonnecke/jolly-brancher
+Author: Ashton Von Honnecke
+Author-email: Ashton Honnecke <public@pixelstub.com>
+License: MIT
+Platform: Linux
+Platform: Mac
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+Requires-Dist: argparse ==1.4.0
+Requires-Dist: prompt-toolkit ==3.0.47
+Requires-Dist: pygithub ==2.3.0
+Provides-Extra: testing
+Requires-Dist: setuptools ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
