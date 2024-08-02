@@ -1,0 +1,606 @@
+<!-- 
+    This is the base HTML template file for the InstructScore Visualizer application.
+    It defines the basic structure and styling of the web page.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Styles -->
+    <style>
+        /* General styling for the page */
+        body {
+            /* Background image
+            background-image: url('../static/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; */
+            /* Center content vertically and horizontally */
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-size: 20px;
+        }
+
+        /* Fixed header */
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        /* Content holder */
+        .content-holder {
+            height: 100vh;
+            margin-top: 20vh;
+        }
+
+        /* Description text */
+        .description {
+            font-size: 20px;
+            color: #000;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            
+        }
+
+        /* Custom text */
+        .custom-text {
+            font-size: 40px;
+            font-weight: bold;
+            color: #000;
+            justify-content: center;
+            
+        }
+
+        /* Container */
+        .container {
+            text-align: center;
+            flex-direction: row;
+            background-color: #fff;
+            color: #fff;
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin-bottom: 60px;
+            opacity: 0.95;
+            margin-top: 10vh;
+            z-index: 1;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .container-with-shadow {
+            text-align: center;
+            background-color: #fff;
+            color: #fff;
+            border-radius: 10px;
+            padding: 30px 30px;
+            margin: 10px;
+            opacity: 0.95;
+            z-index: 1;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .manual-container {
+            text-align: left;
+            background-color: #fff;
+            color: #fff;
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            opacity: 0.95;
+            z-index: 1;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .top-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .circle-button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #3f51b5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin-left: 10px;
+            margin-right: 10px;
+            transition: background-color 0.3s, transform 0.2s;
+            color: white;
+            border: none;
+            font-size: 30px;
+            margin-top: 15px;
+        }
+
+        .circle-button:hover {
+            background-color: #3f51b5;
+            transform: scale(1.05);
+        }
+
+        /* Tooltip */
+        .tooltip {
+            position: fixed;
+            background-color: #3f51b5;
+            color: #fff;
+            border-radius: 10px;
+            padding: 10px 20px;
+            z-index: 2;
+            display: none;
+            
+            opacity: 1;
+        }
+
+        /* Input form */
+        .input-form {
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Input field */
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            color: black
+        }
+
+        .input-field-editable {
+            min-width: 100%;
+            max-width: 100%;
+            width: 90vh;
+            height: auto;
+            overflow: hidden;
+            resize: horizontal;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: black
+        }
+
+        .input-field-editable:focus {
+            border-color: #66afe9;
+            outline: 0;
+            box-shadow: 0 0 8px rgba(102, 175, 233, .6);
+        }
+
+        /* Submit button wrapper */
+        .submit-button-wrapper {
+            display: flex;
+            flex-direction: row;
+            padding: 5px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            padding: 10px;
+        }
+
+        /* Submit button */
+        .submit-button {
+            display: block;
+            background-color: #3f51b5;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        /* Submit button hover */
+        .submit-button:hover {
+            background-color: #3f51b5;
+            transform: scale(1.05);
+        }
+        
+        /* Submit button */
+        .remove-button {
+            background-color: #B53F51;
+            color: white;
+            padding: 5px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 15px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        /* Submit button hover */
+        .remove-button:hover {
+            background-color: #3f51b5;
+            transform: scale(1.05);
+        }
+
+        /* Prediction reference */
+        .pred-ref {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+            text-align: left;
+            
+        }
+
+        /* Orange text */
+        .orange-text {
+            color: #c27f03;
+            cursor: pointer;
+            
+        }
+
+        .red-text {
+            color: rgb(142, 33, 35);
+            cursor: pointer;
+            
+        }
+
+        .blue-text {
+            color: rgb(33, 33, 142);
+            cursor: pointer;
+            
+        }
+
+        /* Orange text */
+        .green-text {
+            color: #33ff33;
+            
+        }
+
+        .field-description-text {
+            color: #000;
+            
+            width: 99%;
+            padding-bottom: 0.75%;
+            padding-top: 0.75%;
+            text-align: left;
+        }
+
+        /* Help circle */
+        .help-circle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #3f51b5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        /* Help tooltip */
+        .help-tooltip {
+            position: fixed;
+            background-color: #3f51b5;
+            color: #fff;
+            border-radius: 10px;
+            padding: 10px 20px;
+            z-index: 100000;
+            display: none;
+            
+            opacity: 1;
+            max-width: 35vw;
+        }
+
+        .help-tooltip-description {
+            color: #fff;
+        }
+
+        /* Question mark icon */
+        .question-mark {
+            font-size: 25px;
+            color: #fff;
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+
+        .pagination-text {
+            color: black;
+            
+        }
+
+        /* Pagination button */
+        .pagination-button {
+            display: block;
+            background-color: #3f51b5;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            max-width: 25vw;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        /* Pagination button hover */
+        .pagination-button:hover {
+            background-color: #3f51b5;
+            transform: scale(1.05);
+        }
+
+        /* Stats circle */
+        .stats-circle {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #3f51b5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        /* Stats circle image */
+        .stats-circle-image {
+            object-fit: contain;
+            width: 75%;
+            height: 75%;
+            border-radius: 50%;
+        }
+
+        /* Stats tooltip */
+        .stats-tooltip {
+            position: fixed;
+            background-color: #3f51b5;
+            color: #fff;
+            border-radius: 10px;
+            padding: 10px 20px;
+            z-index: 100000;
+            display: none;
+            
+            opacity: 1;
+            max-width: 35vw;
+        }
+
+        .editor-text-container {
+            text-align: center;
+            background-color: #fff;
+            color: #fff;
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin-bottom: 0px;
+            opacity: 0.95;
+            margin-top: 10vh;
+            z-index: 1;
+            position: relative;
+        }
+
+        .editor {
+            width:50%;
+            height: 100%;
+            text-align: left;
+            margin-right: 0.5%;
+            border-radius: 5px;
+        }
+
+        .editor-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            height: 100vh;
+            width: 99vw;
+            margin-top: 1%;
+            margin-bottom: 2%;
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+
+        .editor-right {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 100%;
+            margin-left: 0.5%;
+            border-radius: 5px;
+        }
+
+        .editor-half {
+            width: 100%;
+            height: 50%;
+            text-align: left;
+        }
+
+        .terminal-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            height: 10vh;
+            width: 100vw;
+        }
+
+
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .editor-buttons {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .terminal-window {
+            background-color: black;
+            color: white;
+            font-family: monospace;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100vh;
+            height: 10vh;
+            overflow-y: auto;
+            padding-left: 1%;
+            padding-right: 1%;
+            margin-left: 0.5%;
+            margin-right: 0.5%;
+            font-size: 15px;
+        }
+
+
+        .banner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 9%;
+            padding-left: 30px;
+            background-color: #3f51b5;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            z-index: 1000;
+        }
+
+        .banner img {
+            max-height: 30%;
+            max-width: 30%;
+            border-radius: 40%;
+        }
+
+        .bar-chart {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <!-- Content goes here -->
+    </div>
+</body>
+</html>
+    <div class="banner">
+        <a href="{{ url_for('index') }}">
+            <img src="{{ url_for('static', filename='owl_logo.png') }}" alt="Logo">
+        </a>
+
+
+    </div>
+
+        {% block content %}
+        {% endblock %}
+
+    <!-- <div class="help-circle">
+        <span class="question-mark">?</span>
+    </div>
+    <span class="help-tooltip">
+        {% for key,value in help_text.items()%}
+            {% if value == "None"%}
+                <span class="help-tooltip-description">{{ key }}</span>
+            {% else %}
+                <span class={{ value }}>{{ key }}</span>
+            {% endif %}
+        {% endfor %}
+    </span> -->
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // JavaScript code to make tooltips appear on hover
+        const tooltips = document.querySelectorAll('.tooltip');
+        tooltips.forEach((tooltip) => {
+            const parent = tooltip.previousElementSibling;
+            parent.addEventListener('mouseover', (e) => {
+                document.body.appendChild(tooltip);
+                tooltip.style.display = 'block';
+                tooltip.style.left = `${e.clientX}px`;
+                tooltip.style.top = `${e.clientY}px`;
+            });
+            parent.addEventListener('mouseout', () => {
+                tooltip.style.display = 'none';
+                document.body.removeChild(tooltip);
+            });
+        });
+
+        // JavaScript code to make help-tooltips appear on hover
+        const help_tooltips = document.querySelectorAll('.help-tooltip');
+        const helpCircle = document.querySelector('.help-circle');
+        help_tooltips.forEach((help_tooltip) => {
+            const parent = help_tooltip.previousElementSibling;
+            parent.addEventListener('mouseover', (e) => {
+                help_tooltip.style.display = 'block';
+                const tooltipWidth = help_tooltip.offsetWidth;
+                const tooltipHeight = help_tooltip.offsetHeight;
+                help_tooltip.style.left = `${helpCircle.offsetLeft - 1.05 * tooltipWidth}px`;
+                help_tooltip.style.top = `${helpCircle.offsetTop}px`;
+            });
+            parent.addEventListener('mouseout', () => {
+                help_tooltip.style.display = 'none';
+            });
+        });
+
+    });
+</script>
+
+</body>
+</html>
