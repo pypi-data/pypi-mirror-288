@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "mirapolis-virtualroom"
+version = "0.1.7"
+description = "Python API Client for Mirapolis VirtualRoom. Based on original documentation. Uses Pydantic and aiohttp."
+authors = ["gulyaeve <gulyaev.e@icloud.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiohttp = "^3.9.3"
+pydantic = "^2.6.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "mirapolis-virtualroom"
+version = "0.1.7"
+authors = [
+  { name="Eugene Gulyaev", email="gulyaev.e@icloud.com" },
+]
+description = "Python API Client for Mirapolis VirtualRoom. Based on original documentation. Uses Pydantic and aiohttp."
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/gulyaeve/mirapolis_virtualroom"
+Issues = "https://github.com/gulyaeve/mirapolis_virtualroom/issues"
