@@ -1,0 +1,2 @@
+[console_scripts]
+bench-suite = benchmark_llm_serving.bench_suite:main
