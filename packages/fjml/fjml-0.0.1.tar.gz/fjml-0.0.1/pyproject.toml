@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fjml"
+version = "0.0.1"
+authors = [
+  { name="loafthecomputerphile", email="loafdcomputerphile@gmail.com" },
+]
+description = "A JSON based markup language which translates JSON files into Flet UI "
+readme = "README.md"
+keywords = ["flet", "gui", "markup language"]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+  "flet>=0.22.0",
+  "typing_extensions>=4.11.0",
+  "dill>=0.3.8"
+]
+
+[project.scripts]
+fjml = "fjml.cli_tooling:main"
+
+[project.urls]
+Homepage = "https://github.com/loafthecomputerphile/fjml"
+Issues = "https://github.com/loafthecomputerphile/fjml/issues"
