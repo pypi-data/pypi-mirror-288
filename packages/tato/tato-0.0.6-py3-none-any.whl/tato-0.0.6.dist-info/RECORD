@@ -1,0 +1,11 @@
+tato/__about__.py,sha256=QiiYsv0kcJaB8wCWyT-FnI2b6be87HA-CrrIUn8LQhg,22
+tato/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tato/_node.py,sha256=_Y160T7Io8kbXL3hro6UvDyOHoMP0zsAdfuMHUmv1gI,3459
+tato/_section.py,sha256=mZVIRz_eUs3wOI25MfTQC9zUN3Jlv2QRGxVJTbgQmjc,2155
+tato/cli.py,sha256=Qcv_eE9o-JGoQ4j2t9AB1MeMhqGrz12FMwnCr1jLXIQ,163
+tato/tato.py,sha256=rC9b8QslPWnqHHpynVgI8lPRK9uRPU0JGrpSOqigzN4,6719
+tato-0.0.6.dist-info/METADATA,sha256=0m5HktwVbUCHv7q6_1RpEwXq3Ww3MfDivnjkqBX9Iv4,4343
+tato-0.0.6.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+tato-0.0.6.dist-info/entry_points.txt,sha256=P7CKg9Umv2QTovUC_bpgxDjZ-Orrel7EpsACKSqsjOs,39
+tato-0.0.6.dist-info/licenses/LICENSE.txt,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+tato-0.0.6.dist-info/RECORD,,
