@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+PythonDSA/__init__.py
+PythonDSA.egg-info/PKG-INFO
+PythonDSA.egg-info/SOURCES.txt
+PythonDSA.egg-info/dependency_links.txt
+PythonDSA.egg-info/top_level.txt
