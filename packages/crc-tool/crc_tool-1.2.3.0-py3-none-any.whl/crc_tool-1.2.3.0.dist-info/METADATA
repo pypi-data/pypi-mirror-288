@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: crc_tool
+Version: 1.2.3.0
+Author: Oslo Tools team
+Author-email: i.hovind@ti.com
+License-File: LICENSE.txt
+Requires-Dist: lief ==0.12.3
+Requires-Dist: pyinstaller ==5.6.2
+Requires-Dist: cffi ==1.15.1
+Requires-Dist: pywin32-ctypes
+Requires-Dist: mypy
+Requires-Dist: pylint
+Requires-Dist: pytest
+
