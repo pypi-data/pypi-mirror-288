@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: feishuconnector
+Version: 0.1.12
+Summary: connect feishu content franchise
+Home-page: http://www.puyuan.tech
+Author: Changhao Jiang
+Author-email: jch@puyuan.tech
+License: MIT License
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Feishu Document Connector
+
+## Installation
+
+```bash
+pip install feishuconnector
+```
+
+## Code Usage
+
+```python
+from feishuconnector import FeishuConnector
+
+fc = FeishuConnector()
+fc.init("user***", "pass***")
+```
+
+## Actual Usage Process
+
+On the edit page of the Bitable, the URL is generally like this: `https://puyuan.feishu.cn/wiki/wikcnlBvPJ8xoTSfVtQwGBkrUWc?table=tblGZPQYMzrwRMeo&view=vewWhDJdAM`. Note to extract `node_token=wikcnlBvPJ8xoTSfVtQwGBkrUWc` and `table_id=tblGZPQYMzrwRMeo`.
+
+## API Usage
+
+```python
+from feishuconnector import FeishuConnector
+
+fc = FeishuConnector()
+fc.init("user***", "pass***")
+
+# Get all records from the Bitable
+records = fc.get_bitable_records('wikcnlBvPJ8xoTSfVtQwGBkrUWc', 'tblGZPQYMzrwRMeo')
+
+# Insert records into the Bitable
+fc.insert_bitable_records('wikcnlBvPJ8xoTSfVtQwGBkrUWc', 'tblGZPQYMzrwRMeo', records)
+
+# Get all data in a specific range of a standard spreadsheet, values is a list(rows) of list(cols)
+values = fc.get_sheet_data("wikcnQgBgZCWUx7w6ZpzzLXX3bc", "e792af")
+
+# Append data to a standard spreadsheet
+fc.append_sheet_data("wikcnQgBgZCWUx7w6ZpzzLXX3bc", "e792af", values)
+```
