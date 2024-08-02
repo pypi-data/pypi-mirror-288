@@ -1,0 +1,52 @@
+{
+    "commands": {
+        "ping": {
+            "hotkey": "alt+p",
+            "open": [
+                "cmd.exe",
+                "/c",
+                "ping -t {{clipboard}}"
+            ]
+        },
+        "tracert": {
+            "hotkey": "alt+t",
+            "open": [
+                "cmd.exe",
+                "/c",
+                "tracert {{clipboard}} & pause"
+            ]
+        },
+        "nslookup": {
+            "hotkey": "alt+l",
+            "open": [
+                "cmd.exe",
+                "/c",
+                "nslookup {{clipboard}} & pause"
+            ]
+        },
+        "ipconfig": {
+            "hotkey": "alt+i",
+            "open": [
+                "cmd.exe",
+                "/c",
+                "ipconfig & pause"
+            ]
+        },
+        "arp": {
+            "hotkey": "alt+a",
+            "open": [
+                "cmd.exe",
+                "/c",
+                "arp -a & pause"
+            ]
+        },
+        "mstsc": {
+            "hotkey": "alt+m",
+            "open": [
+                "mstsc.exe",
+                "/v:{{clipboard}}",
+                "/admin"
+            ]
+        }
+    }
+}
