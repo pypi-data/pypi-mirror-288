@@ -1,0 +1,3 @@
+[console_scripts]
+swcr2 = swcr2.swcr2:main
+
