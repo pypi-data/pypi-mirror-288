@@ -1,0 +1,9 @@
+[console_scripts]
+haven_config = haven._iconfig:print_config_value
+
+[gui_scripts]
+firefly = firefly.launcher:main
+firefly_cameras = firefly.launcher:cameras
+
+[pydm.data_plugin]
+HavenPlugin = firefly.pydm_plugin:HavenPlugin
