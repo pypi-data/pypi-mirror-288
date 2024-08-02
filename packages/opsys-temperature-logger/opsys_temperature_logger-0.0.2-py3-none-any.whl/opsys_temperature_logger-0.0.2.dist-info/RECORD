@@ -1,0 +1,10 @@
+opsys_temperature_logger/__init__.py,sha256=z5WkH14NsSpOrKsjlHoQOrezwzW2VXXnnvcbx7XlAyM,113
+opsys_temperature_logger/tc08usb.py,sha256=aBO5QbQvvONry-BSvPOg6yv5guOkdyRsv6-GO1Za68Q,4033
+opsys_temperature_logger/temperature_logger.py,sha256=wxCIIu5IGK45V2Fs8JBJIr1J7D1YwZMp8J-vKX3-Bk8,1372
+opsys_temperature_logger/temperature_logger_abstract.py,sha256=0mqYtFCWUhdUBAJhKT2ga-Z7sfJgRsofd27mkEIE2DE,305
+opsys_temperature_logger/usbtc08.dll,sha256=cLhenu-9GSZpvoBNrxE8anZjsVprX1wl2F23TvnhRLY,311104
+opsys_temperature_logger-0.0.2.dist-info/LICENSE,sha256=k1uUZ25Ne_mz5L4Wb-Wkt3ieMEaoetnGrYPV6EGJG9g,1091
+opsys_temperature_logger-0.0.2.dist-info/METADATA,sha256=WgW-oDdhVWDbSEAIOGuSBE1N0zEgcrPJ2TQYxDLQp2Y,402
+opsys_temperature_logger-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+opsys_temperature_logger-0.0.2.dist-info/top_level.txt,sha256=kvdvf715pK27gRM9cLdIButOZmUbXq-BgO3ATK4xUYg,25
+opsys_temperature_logger-0.0.2.dist-info/RECORD,,
