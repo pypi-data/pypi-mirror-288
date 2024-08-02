@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+gxkent/GXKent.py
+gxkent/__init__.py
+gxkent/gxkent.py
+gxkent.egg-info/PKG-INFO
+gxkent.egg-info/SOURCES.txt
+gxkent.egg-info/dependency_links.txt
+gxkent.egg-info/requires.txt
+gxkent.egg-info/top_level.txt
