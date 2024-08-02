@@ -1,0 +1,30 @@
+{
+  "total_records": 2,
+  "max_records": 10000,
+  "issues": [
+    {
+      "issue_id": "10",
+      "issue_jira_id": "100",
+      "jcfv_values": [
+        {
+          "id": "20",
+          "field_id": "200",
+          "field_key": "customfield_300",
+          "value_scalar": "'{\"name\":\"T1\"}'"
+        }
+      ]
+    },
+    {
+      "issue_id": "11",
+      "issue_jira_id": "101",
+      "jcfv_values": [
+        {
+          "id": "21",
+          "field_id": "201",
+          "field_key": "customfield_301",
+          "value_scalar": "'{\"name\":\"T2\"}'"
+        }
+      ]
+    }
+  ]
+}
