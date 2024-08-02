@@ -1,0 +1,2 @@
+[console_scripts]
+vesuvius.accept_terms = vesuvius.setup.accept_terms:main

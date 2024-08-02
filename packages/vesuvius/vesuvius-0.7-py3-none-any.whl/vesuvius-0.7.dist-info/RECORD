@@ -1,0 +1,16 @@
+vesuvius/__init__.py,sha256=b3DJBpPMt8Q4wbGH1POaNke1G_G1RoZCx4wwJ-AtnKU,1528
+vesuvius/volume.py,sha256=Ifb0GwzKN4bTiBnpbw44wKBIYRIf2-wM6OV7Acp3R9w,16995
+vesuvius/configs/cubes.yaml,sha256=b7_FP-Q9zYcoOiWDMwaP2odtzZyQVUl2vjCZt1OZHJU,167
+vesuvius/configs/scrolls.yaml,sha256=26UWatnbm6ZIwQMuu9NNzQ0IW1ACO4Oe9caModuTpWM,4
+vesuvius/paths/__init__.py,sha256=JSVmR5HfCec7x_3xT4RQn_uAAd7Z1qTqeWG1nJ8mpRg,109
+vesuvius/paths/fetcher.py,sha256=eG3MA4eILx_DdMPbTik3Mq4eq8sD_4T1AQGhwTSh0-c,329
+vesuvius/paths/parser.py,sha256=anB4-wCEzGDvl7echDNBovGBfVXHE3I4UxUQP5hqagM,5692
+vesuvius/paths/utils.py,sha256=gWhU6dNTswDDwQpLTBSqqiww89g4wOTPVVCVfU-WntE,3875
+vesuvius/setup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vesuvius/setup/accept_terms.py,sha256=AYmWf-4ZoFG5Pl-yYl2buRMUCdu5o_NsMNEHXOxm2kk,3659
+vesuvius-0.7.dist-info/LICENSE,sha256=E6b_ZB4iPhE2aF_D6tBO3_JATUJxVw8Y0xJ7RfceU30,1096
+vesuvius-0.7.dist-info/METADATA,sha256=0NLiTP1a1f-SIF-v8GJvWscktqaiS-l10fN6pP6qxwg,488
+vesuvius-0.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+vesuvius-0.7.dist-info/entry_points.txt,sha256=OzvbMM1ozPvq-UpsQRcAoK-Ela-bbnXwzde1Z3kQb9s,75
+vesuvius-0.7.dist-info/top_level.txt,sha256=NkPeHUxk3JjAY-q0N_xnaIoqTR6JFdkG59hElAhpu0s,9
+vesuvius-0.7.dist-info/RECORD,,
