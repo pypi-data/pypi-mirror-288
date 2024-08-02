@@ -1,0 +1,6 @@
+typing-extensions>=4.1.0
+
+[test]
+beartype>=0.10.4
+pytest>=3.8
+hypothesis>=6.28.0
