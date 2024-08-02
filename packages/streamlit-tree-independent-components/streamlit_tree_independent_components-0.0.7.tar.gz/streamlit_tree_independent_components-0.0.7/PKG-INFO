@@ -1,0 +1,142 @@
+Metadata-Version: 2.1
+Name: streamlit_tree_independent_components
+Version: 0.0.7
+Home-page: https://github.com/SGTANYIHAO
+Author: TAN YI HAO
+Author-email: 
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit>=0.63
+Provides-Extra: devel
+Requires-Dist: wheel; extra == "devel"
+Requires-Dist: pytest==7.4.0; extra == "devel"
+Requires-Dist: playwright==1.39.0; extra == "devel"
+Requires-Dist: requests==2.31.0; extra == "devel"
+Requires-Dist: pytest-playwright-snapshot==1.0; extra == "devel"
+Requires-Dist: pytest-rerunfailures==12.0; extra == "devel"
+
+# streamlit tree independent components
+
+Component is React component designed to render a hierarchical tree view with checkboxes, integrated with Streamlit for use within Streamlit applications. It allows users to navigate and select items in a nested structure, with customizable icons and state management features.
+
+## Features
+
+Hierarchical Tree Structure:
+
+Renders a nested tree structure using TreeView and TreeItem from Material-UI.
+Nodes can have multiple child nodes, creating a multi-level hierarchy.
+Checkbox Selection:
+
+## Each node includes a checkbox for selection.
+
+The component manages the selection state, ensuring it reflects the user's choices.
+Node Icon Customization:
+
+> Nodes can display different icons based on their type **(folder, settings, document, or a default file icon)**.
+
+### Icons are determined using the determineIcon function.
+
+> Disabled Nodes: Nodes can be marked as disabled using the disable property.
+> Disabled nodes are visually distinct (grayed out) and cannot be selected.
+> The component skips these nodes when managing state changes and rendering.
+> Parent-Child Relationship Management:
+
+Includes functions (getChildById and findParentById) to manage selection states across parent and child nodes.
+
+### Ensures consistent selection/deselection of parent and child nodes.
+
+> State Management: Manages the state using selected (to track selected nodes) and setSelected.
+> State updates occur whenever a user interacts with the component.
+
+### Integration with Streamlit:
+
+Uses StreamlitComponentBase and the Streamlit API for seamless integration with Streamlit apps.
+Sends updated state back to the Streamlit environment for dynamic interactions.
+Recursive Rendering:
+
+> The renderTree method handles recursive rendering of the tree structure, ensuring all child nodes are displayed correctly.
+
+> Expandable Nodes: Includes icons for expanding (ExpandMoreIcon) and collapsing (ChevronRightIcon) nodes, enhancing navigation through the tree.
+
+## Installation instructions
+
+```sh
+pip pip install -i https://test.pypi.org/simple/ streamlit-tree-independent-components
+```
+
+## Usage instructions
+
+```python
+import streamlit as st
+from streamlit_tree_independent_components import tree_independent_components
+
+st.subheader("Component with input args")
+
+treeItems =  {
+  "id": "0",
+  "name": "Parent",
+  "icon":"folder",
+  'disable':False,
+  "children": [
+    {
+      "id": "1",
+      "name": "Child - 1",
+      "icon":"folder",
+    },
+    {
+      "id": "2",
+      "name": "Child - 2",
+      "icon":"document",
+      'disable':False,
+      "children": [
+        {
+          "id": "3",
+          "name": "Child - 3",
+          "icon":"document",
+          "children": [
+            {
+              "id": "4",
+              "name": "Child - 4",
+              "icon":"settings",
+            },
+            {
+              "id": "5",
+              "name": "Child - 5",
+              "icon":"folder",
+              "children": [
+                {
+                  "id": "6",
+                  "name": "Child - 6",
+                  "icon":"settings",
+                  "disable":False
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      "id": "7",
+      "name": "Child - 7",
+      "icon":"folder",
+      'disable': True,
+      "children": [
+        {
+          "id": "8",
+          "name": "Child - 8",
+          "icon":"folder",
+          'disable': False
+        },
+      ],
+    },
+  ],
+}
+checkItems = ["0","1","2","3","4","5","6","7"]
+
+result = tree_independent_components(treeItems, checkItems, expandItems=checkItems)
+
+st.write(result)
+
+```
