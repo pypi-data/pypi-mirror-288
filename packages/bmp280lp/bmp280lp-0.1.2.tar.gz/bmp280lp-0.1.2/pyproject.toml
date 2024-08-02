@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bmp280lp"
+version = "0.1.2"
+description = "A library to use BMP280 sensor with bus and address settings"
+readme = { file = "README.md", content-type = "text/markdown", charset = "UTF-8" }
+authors = [
+    { name="Laurent Pastor", email="l.pastor@free.fr" }
+]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["smbus2","time"]
+requires-python = ">=3.6"
+
+[project.urls]
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
