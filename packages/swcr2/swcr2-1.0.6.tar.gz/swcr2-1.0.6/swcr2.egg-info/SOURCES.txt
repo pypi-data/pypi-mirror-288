@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+swcr2/__init__.py
+swcr2/swcr2.py
+swcr2/template.docx
+swcr2.egg-info/PKG-INFO
+swcr2.egg-info/SOURCES.txt
+swcr2.egg-info/dependency_links.txt
+swcr2.egg-info/entry_points.txt
+swcr2.egg-info/requires.txt
+swcr2.egg-info/top_level.txt
