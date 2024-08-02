@@ -1,0 +1,7 @@
+atoti_directquery_clickhouse/__init__.py,sha256=rrUxnq9VHe4vrd091_egBSPVDl-_iS8trldXI9OPhcE,196
+atoti_directquery_clickhouse/connection_config.py,sha256=tHYutX4407uxra5ab54lJE2p5l34tOPZlb6mKNMvkLg,1172
+atoti_directquery_clickhouse/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atoti_directquery_clickhouse/table_config.py,sha256=gkD2Tn64mJH08tkIL79lPrhKoZzDwScJu2sh3jIGJgQ,455
+atoti_client_directquery_clickhouse-0.9.0a0.dist-info/METADATA,sha256=pKSW8ECRNBX_Cw-Xm3W17leH2rOTtuTOavQj9QYKGYc,1000
+atoti_client_directquery_clickhouse-0.9.0a0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+atoti_client_directquery_clickhouse-0.9.0a0.dist-info/RECORD,,
