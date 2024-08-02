@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: dastyor
+Version: 0.1.0
+Summary: Python web framework built for learning purposes.
+Home-page: https://github.cmirolimcoder@gmail.com
+Author: Mirolimjon Turgunov
+Author-email: mirolimcoder@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click==8.1.7
+Requires-Dist: Jinja2==3.1.4
+Requires-Dist: parse==1.20.1
+Requires-Dist: requests==2.32.3
+Requires-Dist: requests-wsgi-adapter==0.4.1
+Requires-Dist: waitress==3.0.0
+Requires-Dist: WebOb==1.8.7
+Requires-Dist: whitenoise==6.7.0
+
+
+# dastyor
+python web framework
