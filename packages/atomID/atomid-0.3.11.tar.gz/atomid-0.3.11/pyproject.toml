@@ -1,0 +1,109 @@
+[tool.poetry]
+name = "atomID"
+version = "0.3.11"
+description = "Python package to identify and annotate crystal structure data files"
+authors = ["Ninad Bhat"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0.0"
+annoy = "^1.17.3"
+scikit-learn = "^1.5.1"
+rdflib = "^7.0.0"
+atomrdf = "^0.9.7"
+boto3 = "*"
+urllib3 = "<2"
+numpy = "1.26.4"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.3.5"
+pre-commit = "^3.7.0"
+mypy = "^1.9.0"
+poethepoet = "^0.25.1"
+pytest = "^8.2.2"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.6.0"
+mkdocs-material = "^9.5.25"
+mkdocs-literate-nav = "^0.6.1"
+mkdocs-section-index = "^0.3.9"
+mkdocs-macros-plugin = "^1.0.5"
+mkdocstrings = {extras = ["python"], version = "^0.25.1"}
+markdown-exec = "^1.8.3"
+mike = "^2.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+
+# NOTE: You can run the following with "poetry poe TASK"
+[tool.poe.tasks]
+init-dev = { shell = "pre-commit install" }
+lint = "pre-commit run"  # pass --all-files to check everything
+docs = "mkdocs build"  # run this to generate local documentation
+test = "pytest"
+
+[tool.ruff]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+
+line-length = 88
+indent-width = 4
+
+
+[tool.ruff.lint]
+extend-select = ["B", "D", "I", "S"]
+ignore = ["D203", "D213", "D407", "B008", "S101", "D102", "D103"]
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+quote-style = "double"
+
+indent-style = "space"
+
+skip-magic-trailing-comma = false
+
+line-ending = "auto"
+
+
+docstring-code-format = true
+
+docstring-code-line-length = 80
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
