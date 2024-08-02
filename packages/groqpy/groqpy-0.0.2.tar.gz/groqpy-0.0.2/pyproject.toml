@@ -1,0 +1,15 @@
+[build-system]
+requires = [ "setuptools", "wheel",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "groqpy"
+version = "0.0.2"
+description = "A Python package."
+authors = []
+readme = "README.md"
+keywords = []
+dynamic = [ "dependencies",]
+
+[tool.setuptools.dynamic.dependencies]
+file = [ "requirements.txt",]
