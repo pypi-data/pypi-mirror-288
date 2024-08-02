@@ -1,0 +1,12 @@
+dumas/__about__.py,sha256=3cITxVFvh4pLV91pLzzGCIXx0lhnXD5fbqF6kXaCYC4,134
+dumas/__init__.py,sha256=HGD3vFad4tgokTbrfSnxrtnJibMoM0PMoCIMwcHeCgA,112
+dumas/__main__.py,sha256=yD4PYsvq1sRW-SvPofvRDRevR5nshU6fBHPHIfEvjOw,206
+dumas/cli/__init__.py,sha256=pNUA9xrkeafEgQ8wYHxvshnuTP8g-hC27UnC2oEYTkk,1888
+dumas/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dumas/lib/interpreters.py,sha256=FxCm_MFHDmnXl9W8lOxwZ_wSoEWwHrKbVKZchlV-of4,5356
+dumas/lib/renderer.py,sha256=1Qp_lSdoiNa34eCNavlAocrdpCVEZhIqbzSAt2Nwf3M,3555
+dumas-0.0.6.dist-info/METADATA,sha256=L4ctoe9wfcZi0AAnbSk96jzpNVgp-Tc1nsiti3jo4Qk,3708
+dumas-0.0.6.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+dumas-0.0.6.dist-info/entry_points.txt,sha256=kKV7RsgK7nkRL-FHI0_eIT0oYM4bILpcOMaWb_edBAE,42
+dumas-0.0.6.dist-info/licenses/LICENSE.txt,sha256=4iwKZ66wODQasFWQIOBiu1RcZsynj9D1jGSV8d_TkjE,1104
+dumas-0.0.6.dist-info/RECORD,,
