@@ -1,0 +1,3 @@
+[console_scripts]
+washika=amebo:execute
+
