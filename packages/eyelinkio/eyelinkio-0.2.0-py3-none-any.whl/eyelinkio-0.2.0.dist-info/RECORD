@@ -1,0 +1,13 @@
+eyelinkio/__init__.py,sha256=wSN5BNjgPpwbDd3JVw56Sv32X0bdSl6f2clB-Cvg_NU,335
+eyelinkio/edf/README.txt,sha256=bM_m_twKoGv5OcsTbodvcTqEE58Sp74Q4xPiaQJ0oPg,1722
+eyelinkio/edf/__init__.py,sha256=jRwFRCWnE6_NQIk3baEMKaBggYkuOyJkXfXVkrJqDIo,61
+eyelinkio/edf/_defines.py,sha256=tXauPRThh4KaqQRLnTyG-dV1czWxOvYS6EIGQDpCw8M,8467
+eyelinkio/edf/_edf2py.py,sha256=jUBmBOPkSzfVksGUo1j531Sp3MEjmrPDpufgeHs3F-4,12285
+eyelinkio/edf/read_edf.py,sha256=6sYqmbe4QdlOlQAA1ixwlzVf73759T7pUs2QxTFv6Ak,20403
+eyelinkio/utils/__init__.py,sha256=WIhXWPCf1xW9SCgn9nxyzYSX_ajOsI8tH5ElN_5T0fQ,90
+eyelinkio/utils/check.py,sha256=BKxDFiuEpLVLNIDYJvtZuvyMR6H7fm2EqpMqENBkIus,2092
+eyelinkio/utils/utils.py,sha256=yRzmq-E95971LClwizRz8s46NPBU-AirHZIVXDUnI3o,6345
+eyelinkio-0.2.0.dist-info/METADATA,sha256=2uL235GqkWwre4_BJErvoZMd8LJ1vSnCTpnV4LcfWws,4587
+eyelinkio-0.2.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+eyelinkio-0.2.0.dist-info/licenses/LICENSE,sha256=8CXXqYCdawyQFONYlpPpTJNEPvym1xvi4oFXW3T4IkE,1500
+eyelinkio-0.2.0.dist-info/RECORD,,
