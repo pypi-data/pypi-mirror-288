@@ -1,0 +1,3 @@
+[console_scripts]
+vbart=vbart.__main__:main
+
