@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+fenicio/__init__.py
+fenicio/_etc.py
+fenicio/client.py
+fenicio/orders.py
+fenicio/request.py
+fenicio/url.py
+fenicio.egg-info/PKG-INFO
+fenicio.egg-info/SOURCES.txt
+fenicio.egg-info/dependency_links.txt
+fenicio.egg-info/requires.txt
+fenicio.egg-info/top_level.txt
