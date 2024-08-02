@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "packageuser20"
+version = "0.1.5"
+description = ""
+authors = ["Hojae <lhj2894@naver.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
