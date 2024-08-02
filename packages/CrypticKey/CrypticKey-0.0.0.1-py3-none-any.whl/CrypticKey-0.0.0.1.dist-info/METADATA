@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: CrypticKey
+Version: 0.0.0.1
+Summary: A custom module that generates a random password for you.
+Home-page: https://github.com/NINJAGAMING107/CrypticKey
+Author: Sidharth (NINJA)
+Author-email: sidharthsnair357@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# CripticKey Package
+
+This a custom module that generates a random password for you.
+
+## Installation
+
+You can install this package using pip:
+
+```bash
+pip install cryptickey
