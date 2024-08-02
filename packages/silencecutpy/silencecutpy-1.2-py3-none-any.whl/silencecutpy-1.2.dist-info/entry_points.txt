@@ -1,0 +1,3 @@
+[console_scripts]
+silencecutpy = silence_cutter.main:main
+
