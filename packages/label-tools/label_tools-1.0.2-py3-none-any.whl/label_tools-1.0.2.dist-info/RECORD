@@ -1,0 +1,12 @@
+label_tools-1.0.2.data/scripts/label-assign-task,sha256=7hG1FT_2MPcyv6vFATciZ4LoTe5IaYIvyd9bfzg-yGY,715
+label_tools-1.0.2.data/scripts/label-assign-task-batch,sha256=OyIu6CV9Xm0QTN6YOisbEuZqziyi5frKxNzmeyCYzQo,529
+label_tools-1.0.2.data/scripts/label-clone-repo,sha256=l-rFSiJK7nlpavybuHE4ZHktq6VjW-9FmBkYH3xZB-0,236
+label_tools-1.0.2.data/scripts/label-pull-task,sha256=fWoaQHrK-lm1YuqlMoGhPj4OAth0V5miqInhtaaoKNs,521
+label_tools-1.0.2.data/scripts/label-push-task,sha256=mAeBnfKLOYdpwl9PA9JadoZOdSP5i5HWBIeDDinu3jY,87
+label_tools-1.0.2.data/scripts/label-reassign-task,sha256=RtG_xQrVZ7okbAz1Pa79g3tdhPtI2xP968XIG59evzo,668
+labelme_stats/cli.py,sha256=zFW7Y10yi4CSSVg0wXn476Ar_wJGHARs6LzY2Ybt2KI,1861
+label_tools-1.0.2.dist-info/METADATA,sha256=d_5922yoqhyv36gLGgxpcIQ7u2IW3jGItLLeDF_T6uw,578
+label_tools-1.0.2.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+label_tools-1.0.2.dist-info/entry_points.txt,sha256=tIFQQwf86uUclQHABCXppvVSJO8UJNAPeyuE3XKeVgs,64
+label_tools-1.0.2.dist-info/top_level.txt,sha256=zKA6XYtG-TQfM3-6jubqeJM4aM6JW_meTLbFfF926dY,14
+label_tools-1.0.2.dist-info/RECORD,,

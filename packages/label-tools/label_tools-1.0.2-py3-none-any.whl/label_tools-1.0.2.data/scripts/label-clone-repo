@@ -1,0 +1,16 @@
+#!/bin/bash
+# command: 
+#     label-clone-repo foobar
+
+repo=$1
+
+if [ -z "$repo" ]
+then
+    echo ERROR: label-clone-repo name 1>&2
+    exit 1
+fi
+
+set -e #exit on failure
+set -x #echo on
+
+git clone --single-branch --branch master ${repo}
