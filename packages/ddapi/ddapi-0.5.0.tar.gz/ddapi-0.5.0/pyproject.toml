@@ -1,0 +1,28 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ddapi"
+version = "0.5.0"
+description = "ddapi"
+readme = "README.md"
+authors = [{ name = "ByFox" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["feed", "reader", "tutorial"]
+dependencies = [
+    "pydantic",
+    "aiohttp"
+]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = ["pydantic", "aiohttp", "orjson", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/ByFox213/ddapi"

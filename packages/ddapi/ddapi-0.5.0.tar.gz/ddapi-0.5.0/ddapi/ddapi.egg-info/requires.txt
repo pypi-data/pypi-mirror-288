@@ -1,0 +1,9 @@
+pydantic
+aiohttp
+
+[dev]
+pydantic
+aiohttp
+orjson
+pip-tools
+pytest
