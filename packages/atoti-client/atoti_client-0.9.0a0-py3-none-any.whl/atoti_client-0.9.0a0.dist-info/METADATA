@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: atoti-client
+Version: 0.9.0a0
+Summary: Code to interact with an Atoti session
+Home-page: https://www.atoti.io
+Author: ActiveViam
+Author-email: dev@atoti.io
+Requires-Python: >=3.10
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: Free To Use But Restricted
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Typing :: Typed
+Provides-Extra: aws
+Provides-Extra: azure
+Provides-Extra: directquery-bigquery
+Provides-Extra: directquery-clickhouse
+Provides-Extra: directquery-databricks
+Provides-Extra: directquery-jdbc
+Provides-Extra: directquery-mssql
+Provides-Extra: directquery-redshift
+Provides-Extra: directquery-snowflake
+Provides-Extra: directquery-synapse
+Provides-Extra: gcp
+Provides-Extra: jdbc
+Provides-Extra: jupyterlab
+Requires-Dist: atoti-client-aws (==0.9.0a0) ; extra == "aws"
+Requires-Dist: atoti-client-azure (==0.9.0a0) ; extra == "azure"
+Requires-Dist: atoti-client-directquery-bigquery (==0.9.0a0) ; extra == "directquery-bigquery"
+Requires-Dist: atoti-client-directquery-clickhouse (==0.9.0a0) ; extra == "directquery-clickhouse"
+Requires-Dist: atoti-client-directquery-databricks (==0.9.0a0) ; extra == "directquery-databricks"
+Requires-Dist: atoti-client-directquery-jdbc (==0.9.0a0) ; extra == "directquery-jdbc"
+Requires-Dist: atoti-client-directquery-mssql (==0.9.0a0) ; extra == "directquery-mssql"
+Requires-Dist: atoti-client-directquery-redshift (==0.9.0a0) ; extra == "directquery-redshift"
+Requires-Dist: atoti-client-directquery-snowflake (==0.9.0a0) ; extra == "directquery-snowflake"
+Requires-Dist: atoti-client-directquery-synapse (==0.9.0a0) ; extra == "directquery-synapse"
+Requires-Dist: atoti-client-gcp (==0.9.0a0) ; extra == "gcp"
+Requires-Dist: atoti-client-jdbc (==0.9.0a0) ; extra == "jdbc"
+Requires-Dist: atoti-client-kafka (==0.9.0a0)
+Requires-Dist: atoti-core (==0.9.0a0)
+Requires-Dist: atoti-jupyterlab (==0.9.0a0) ; extra == "jupyterlab"
+Requires-Dist: httpx (>=0.27.0)
+Requires-Dist: numpy (>=2.0.1)
+Requires-Dist: pandas (>=2.2.2)
+Requires-Dist: py4j (>=0.10.9.7)
+Requires-Dist: pyarrow (>=17.0.0)
+Requires-Dist: pydantic (>=2.6.0)
+Requires-Dist: typing-extensions (>=4.6.1)
+Project-URL: Bug Tracker, https://github.com/atoti/atoti/issues
+Project-URL: Documentation, https://docs.atoti.io/0.9.0a0/api/atoti.html
