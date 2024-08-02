@@ -1,0 +1,2 @@
+[console_scripts]
+translation-canvas-start = translation_canvas.cli:start_server
