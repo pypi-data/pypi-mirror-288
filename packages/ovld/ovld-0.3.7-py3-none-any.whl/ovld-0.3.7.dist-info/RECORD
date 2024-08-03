@@ -1,0 +1,9 @@
+ovld/__init__.py,sha256=Wa7MHfDw0_AV7jwSwepntCeXzZheELkb8paxVnjp58Q,85
+ovld/core.py,sha256=B5j-k5SRPFd1l_zM6XkIK-jWN9FCtQVhtj4URI4oepQ,33210
+ovld/mro.py,sha256=Dof3wj-BLcV-T-Jm9tK6zqptp_JGo5lxgyRq99AvY1k,5006
+ovld/utils.py,sha256=8kINtHrWdC0bNVccxYIkHBaGFk_YFpjtnjAa9GyXNmA,3861
+ovld/version.py,sha256=vQ5YERPWCl1LkgKK8gROTeKmhCPA_uiJJdf7RhPFNXA,18
+ovld-0.3.7.dist-info/METADATA,sha256=dKi-I6cdJNB78-Gof7SnJXddWM4UJofVGJ2dEPpK6AA,9006
+ovld-0.3.7.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+ovld-0.3.7.dist-info/licenses/LICENSE,sha256=cSwNTIzd1cbI89xt3PeZZYJP2y3j8Zus4bXgo4svpX8,1066
+ovld-0.3.7.dist-info/RECORD,,
