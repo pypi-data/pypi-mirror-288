@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: resource_lock
+Version: 0.2.0
+Summary: Python module to lock an arbitary resource
+Home-page: https://github.com/robertblackwell/resource_lock
+Author: robertblackwell
+Author-email: 
+License: BSD 2-clause
+
