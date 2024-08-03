@@ -1,0 +1,13 @@
+ogidn/__init__.py,sha256=8E51FOTIAKfCdmVpvGQWE25TGYVP3kyajwBHfehTvU8,241
+ogidn/calibrate.py,sha256=qlzdhrP-ZmV5kMSkHenQszO0aJ44qt3WIv_tPNntjzU,3303
+ogidn/constants.py,sha256=5KBr8V4CkWm3CbfoVG0EV7JBaZMnr1---AXmeYj8fZk,14460
+ogidn/income.py,sha256=BOY5B2txm5DA8pdhyAh37InDUP0L0edqWN2JepF4FGc,18683
+ogidn/input_output.py,sha256=9p8jJGjWvo0mBhR2g9lnPzS3RGLMEMUz689Np8rYAcM,2677
+ogidn/macro_params.py,sha256=7YWBJnxvUGu-M3RlXWJBhMN1vDfEYyEBlb6WyUWPlPY,7162
+ogidn/ogidn_default_parameters.json,sha256=_sgQwRTiRmLzn4S8nzwTSDmxkjaItsvAVdq2ksvm_DA,2094567
+ogidn/utils.py,sha256=hQe1-GGSLZcOoPVCHiJhrsUd91BwktgUwozkbNgSZsE,1261
+ogidn-0.0.2.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+ogidn-0.0.2.dist-info/METADATA,sha256=dxSIelsL8p0XrsdSf96Mhbl3h9K619Hd_-xdPm-Dm60,7850
+ogidn-0.0.2.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+ogidn-0.0.2.dist-info/top_level.txt,sha256=O6K4Tk-aE-eyWPzLFYW_Lq198lxLRgavBHshJlOE9LE,6
+ogidn-0.0.2.dist-info/RECORD,,
