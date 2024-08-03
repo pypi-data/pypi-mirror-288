@@ -1,0 +1,13 @@
+pycgdescent/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycgdescent/_cg_descent.cp39-win_amd64.dll.a,sha256=yHZJ_fygjQqLhhGIr5Z6L5s6_CCvoSP0Kt2V193YLlM,1774
+pycgdescent/_cg_descent.cp39-win_amd64.pyd,sha256=uxzdn9s9R3mV2jt8hAgJcsb2o4lyMXo87JuBlgTgRnA,542806
+pycgdescent/_cg_descent.pyi,sha256=ymArgLAe2MhoOcTPJ-Om6c9_DuZX1AFQOprRXQfgUvU,2999
+pycgdescent/__init__.py,sha256=RqsiMiW5YCf_QOonLSm7R1vec7fdhEsMCFpX_TT9Vlc,23789
+pycgdescent-0.9.0.dist-info/DELVEWHEEL,sha256=O4sIVjlBXAClH_vZIcZN0dd_mpXHYOupM2LV0qWIa7U,398
+pycgdescent-0.9.0.dist-info/METADATA,sha256=z1AIm_lOcKeqQx8HtEqactKQGBfhCPIeeB2TbWa4AW0,2884
+pycgdescent-0.9.0.dist-info/RECORD,,
+pycgdescent-0.9.0.dist-info/WHEEL,sha256=8AdrFzOtKQ6LLJ-VyqCU3y1iN8N--fMXYqrdkeTKDn0,83
+pycgdescent.libs/.load-order-pycgdescent-0.9.0,sha256=_0KqQTgvjcEcQ2d6Ctc1uUBEk7CFXszgcXsY8fqDkYg,154
+pycgdescent.libs/libgcc_s_seh-1-8596168b188af1d2430aad9a4ed04b3e.dll,sha256=gacN68Hke3O3_-x_oInrArlMI5UtjD8YWR3K-o3ttJI,101376
+pycgdescent.libs/libstdc++-6-d551ea342580df56932cf870950ac133.dll,sha256=ugxv4kNnYttPfoWoOlrJfpK99tBDWKX4aDZa6kQnoNk,2020352
+pycgdescent.libs/libwinpthread-1-524aaf767e85adef3166b8436315049e.dll,sha256=4BuOhf1nwrhh9k1MzH32B1m1iapBAACij6K4SiCJF1s,54784
