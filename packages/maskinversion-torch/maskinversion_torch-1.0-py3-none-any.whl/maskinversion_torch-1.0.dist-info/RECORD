@@ -1,0 +1,7 @@
+maskinversion/__init__.py,sha256=lpdIdfemAL9Veq3vyfGSAy2XTeBqBU9T8nOyOKIKM34,49
+maskinversion/maskinversion.py,sha256=5nZLtiefcFCClZRP0di6LbJOoTGfEPk7Vgo9OLnfCuA,4995
+maskinversion/utils.py,sha256=ENtA3fVbpx8_D8OKsAOD-KaHqEkYHFa17WgtylnlzaU,2304
+maskinversion_torch-1.0.dist-info/METADATA,sha256=O36VlyfU_RqjCxk85106c5nEWXSxOsVbhXNFb1ME8rw,9829
+maskinversion_torch-1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+maskinversion_torch-1.0.dist-info/top_level.txt,sha256=Juj9rIY79-5Tgb3T02CC6wjsFiFXubhjbM4WoxtxoTE,14
+maskinversion_torch-1.0.dist-info/RECORD,,
