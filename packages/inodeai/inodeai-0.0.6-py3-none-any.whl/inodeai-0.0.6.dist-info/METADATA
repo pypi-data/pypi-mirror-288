@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: inodeai
+Version: 0.0.6
+Summary: The IndoeAi.com helper package
+Home-page: https://github.com/Inode-ai/Inode-ai
+Author: IndoeAi.com
+Author-email: support@inode-ai.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Cython ==3.0.10
+Requires-Dist: Jinja2 ==2.11.3
+Requires-Dist: MarkupSafe ==1.1.1
+Requires-Dist: asyncio ==3.4.3
+Requires-Dist: attrs ==23.2.0
+Requires-Dist: cloudpickle ==3.0.0
+Requires-Dist: eli5 ==0.11.0
+Requires-Dist: graphviz ==0.20.3
+Requires-Dist: joblib ==1.4.2
+Requires-Dist: llvmlite ==0.43.0
+Requires-Dist: numba ==0.60.0
+Requires-Dist: numpy ==1.26.4
+Requires-Dist: packaging ==24.1
+Requires-Dist: pandas ==2.2.2
+Requires-Dist: pathlib ==1.0.1
+Requires-Dist: python-dateutil ==2.9.0.post0
+Requires-Dist: pytz ==2024.1
+Requires-Dist: scikit-learn ==1.2.0
+Requires-Dist: scipy ==1.14.0
+Requires-Dist: shap ==0.46.0
+Requires-Dist: six ==1.16.0
+Requires-Dist: slicer ==0.0.8
+Requires-Dist: tabulate ==0.9.0
+Requires-Dist: threadpoolctl ==3.5.0
+Requires-Dist: tqdm ==4.66.4
+Requires-Dist: tzdata ==2024.1
+Requires-Dist: websockets ==10.4
+Requires-Dist: wget ==3.2
+
+
+This package includes helper scripts for interfacing your machine learning code with the IndoeAi.com  containerization code.
+
+
+
+## How to implement
+
+```
+from inodeai import inodeai
+
+# transform input data against your  model (or whatever you want)
+# If an error occured please thwor an error message
+
+def modify_data(inputdataPath,outputdataPath):
+    
+    # take data from inputdataPath
+    # Transform that data data via your required model
+    # to save data write outputdataPath
+    # Return None if no error come.
+    # return an error msg if any error ocuured .
+
+
+please intialize your model or other thing before using wait_for_request
+
+inodeai.wait_for_requests(process_data)
+
+```
+
+
+
+run via command line arguments
+
+python test.py serve input.csv output.csv
+
+usage: test.py [-h] {run} ...
+
+options:
+  -h, --help  show this help message and exit
+
+subcommands:
+  {run}       commands to choose from
+    run       run this model once from the command line
+
+
+
+
