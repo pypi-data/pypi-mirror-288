@@ -1,0 +1,5 @@
+pandas
+numpy
+
+[mnist]
+tensorflow>=2.14
