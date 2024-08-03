@@ -1,0 +1,7 @@
+sourcegraph/__init__.py,sha256=8zk3v_XTrx3jenxA2kHO-6ibZnQ_TXgReFyy5WLjXwE,36
+sourcegraph/source_graph.py,sha256=HAU2GYO3KZ_sh4_kUpyRG9D7w5a27GCctxUZF70mxGY,2694
+sourcegraph/utils.py,sha256=-OybcxlrqEU7zVPsbdZ4YSdeEEcwTfK_a6Bv_PsdBWk,7048
+sourcegraph-0.0.5.dist-info/METADATA,sha256=bZQzT94pKtviS04Pt1nS-HqvX0qRAYHWw5HrlRDe9ks,1981
+sourcegraph-0.0.5.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+sourcegraph-0.0.5.dist-info/licenses/LICENSE,sha256=4WoHvBCqK0QJAA91EZRQCEangMMWUSD2iXZqAMokgW8,1076
+sourcegraph-0.0.5.dist-info/RECORD,,
