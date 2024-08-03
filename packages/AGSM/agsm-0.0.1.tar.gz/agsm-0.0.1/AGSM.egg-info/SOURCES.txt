@@ -1,0 +1,6 @@
+README.md
+setup.py
+AGSM.egg-info/PKG-INFO
+AGSM.egg-info/SOURCES.txt
+AGSM.egg-info/dependency_links.txt
+AGSM.egg-info/top_level.txt
