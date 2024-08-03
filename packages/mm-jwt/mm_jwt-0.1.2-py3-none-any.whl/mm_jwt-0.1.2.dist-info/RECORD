@@ -1,0 +1,16 @@
+mm_jwt/admin.py,sha256=p6xop1PuuDG2Uwv3G_aRfldxOfBzTRfMaoZmORVkqyU,66
+mm_jwt/apps.py,sha256=S2jOniwKxy7QCr-5pt198DKHKMYm2cjTAiDXHCFXE6c,150
+mm_jwt/models.py,sha256=gWOSJM6j0s-pW-gqwscQ7L9kik3i9nXWvJ3H0TgZNYw,4437
+mm_jwt/permissions.py,sha256=FZBjmuBzG342nt_o7Xq17ybfNnDI20iPCKAfPg2X3-0,542
+mm_jwt/tests.py,sha256=2uDafv3Ns6f7Vy1ekUtgYxCZEi1KRyesZDTAFhYcX-E,63
+mm_jwt/urls.py,sha256=gsHJMBT6R_teIWz1AYLknjUo1E2UZLhUIJW7sfUSb3c,72
+mm_jwt/utils.py,sha256=vN0DadXnpJ7tnRmrSRErBoY95fDlk2vgFRDFh5-1TEI,727
+mm_jwt/views.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mm_jwt/migrations/0001_initial.py,sha256=dk2Gl_MTWa-lmL1nRxkyI6BuR_UpMXRxjKC44UO9a-Y,957
+mm_jwt/migrations/0002_alter_customtoken_expire_date_and_more.py,sha256=-Vmx2f0r06xLL7fTwPOhuLANprUnLEX784I6i7ljePk,671
+mm_jwt/migrations/0003_customtoken_created_at_alter_customtoken_expire_date.py,sha256=EKTRISgFfH08K1HzGUdR5dnKjhQwWkjJqvL756xlgqY,771
+mm_jwt/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mm_jwt-0.1.2.dist-info/METADATA,sha256=3WDTeEeKTeHA0p5xsr_JCn9EQfkOxykV_AqUSBBqmbs,539
+mm_jwt-0.1.2.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+mm_jwt-0.1.2.dist-info/top_level.txt,sha256=YrXE9nwW1bXpKdMaiBRLQhJndz354YYkWD8afshEhkY,25
+mm_jwt-0.1.2.dist-info/RECORD,,
