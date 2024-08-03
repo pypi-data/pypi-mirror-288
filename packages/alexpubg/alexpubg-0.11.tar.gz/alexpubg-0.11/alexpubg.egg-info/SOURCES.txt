@@ -1,0 +1,8 @@
+setup.py
+alexpubg/__init__.py
+alexpubg/operation.py
+alexpubg.egg-info/PKG-INFO
+alexpubg.egg-info/SOURCES.txt
+alexpubg.egg-info/dependency_links.txt
+alexpubg.egg-info/not-zip-safe
+alexpubg.egg-info/top_level.txt
