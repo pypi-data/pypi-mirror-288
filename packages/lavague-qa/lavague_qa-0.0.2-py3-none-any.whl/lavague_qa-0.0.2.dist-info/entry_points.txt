@@ -1,0 +1,3 @@
+[console_scripts]
+lavague-qa=lavague.qa.cli:cli
+
