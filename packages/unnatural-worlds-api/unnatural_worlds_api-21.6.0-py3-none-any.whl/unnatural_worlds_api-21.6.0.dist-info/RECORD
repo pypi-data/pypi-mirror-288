@@ -1,0 +1,12 @@
+uw/__init__.py,sha256=UbpDQ6800yDKBW9YKUjIR8xHgtXjYaj1aUU2fN4Z-2o,133
+uw/bots.h,sha256=pXkmqNT5c3Yx_OgePKj7tDZczzZOargfnBgGUQ16rqQ,20761
+uw/commands.py,sha256=lDlFtpZsX0EpWXy_C9ySsvp1kxsw_9rzb9aKFL5DgSM,2712
+uw/game.py,sha256=9JtxSKaELgjt2ZEoo-Aw1pSNGvlMSUcn7bSEqJwBtL0,7093
+uw/helpers.py,sha256=_e93v8BsNwNVeiypHxO2taKejy6vPQh0Rt5XaSdtE2w,2826
+uw/map.py,sha256=naVRXyxSdRdsR4tLOHb0Kdlat-nPqLzpq1bIBJ3N8eE,5473
+uw/prototypes.py,sha256=fXkjm5ia-o0sgIDNja5ptvTUBnqE9u8fTSkiXsfE7Yc,3362
+uw/world.py,sha256=0jRSad5pxGpKLL1n_NsBQw91DkWcJa6AJC0hEzRBXc0,4782
+unnatural_worlds_api-21.6.0.dist-info/METADATA,sha256=tANk0zcUq7V7apPGzfBss3nD0onm3Nqj33zxYJQNFx0,266
+unnatural_worlds_api-21.6.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+unnatural_worlds_api-21.6.0.dist-info/top_level.txt,sha256=wAohpCcxhr2d-CS5FFJ_7xjRaQuLxXfhm9w1lE5FgDQ,3
+unnatural_worlds_api-21.6.0.dist-info/RECORD,,
