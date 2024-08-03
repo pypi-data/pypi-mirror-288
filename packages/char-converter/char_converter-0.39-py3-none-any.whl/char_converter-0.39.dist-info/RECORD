@@ -1,0 +1,14 @@
+char_converter/__init__.py,sha256=7hTL70oUhHLMYhMO2njJS0kyVU25OpfaLLuRqYJC35g,36
+char_converter/converter.py,sha256=mcXxdaYEd-PwQ7j5VilIZU1TfQr8zToGouVuGQLPXeg,2331
+char_converter/__pycache__/__init__.cpython-310.pyc,sha256=_kQNwA_loPLEjfGcd2oK2tf_ZIsL9Vi5R0mpaRjqBXQ,181
+char_converter/__pycache__/converter.cpython-310.pyc,sha256=5p-QIAg01LKDFX1_ZKLsbdTBhfTVOU3aUKhN5khTjPc,2792
+char_converter/data/data_update.py,sha256=vD_cr5S52gEfphUnjoSrqkWVV2SWvbrk5S69z6nztWE,4488
+char_converter/data/v2s.json,sha256=Hy9y_ENj02DkTfWq1gF8REgVYI4H1NE_xPVX-9xxuGA,155218
+char_converter/data/v2s.msgpack,sha256=OMGd9jr-aUlmLb2Ocuz8TDI5fsgHaAAD2Ncbt9ENlw0,61356
+char_converter/data/v2t.json,sha256=2iwu1TOYdHomD2IxN4CHnGQq87afBLCS3JsLfwILqPw,162096
+char_converter/data/v2t.msgpack,sha256=l4QRUaKd3BOsjUvqNGWQrbhM0KjS14q_dmKjdIvlPRg,64072
+char_converter-0.39.dist-info/LICENSE,sha256=f6toxW_byoaOLVMKsIx_LgY2IC3TTClAShVQ5ModQ9c,70
+char_converter-0.39.dist-info/METADATA,sha256=9O--R3KZOkPQUEZN9z6MnH13oA1ZdGxuV_HuWZxmaPQ,3593
+char_converter-0.39.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+char_converter-0.39.dist-info/top_level.txt,sha256=SdiEyI3O2A5PIMSQIa4PFZXLacMIUBUFJjhRE1N9ocs,15
+char_converter-0.39.dist-info/RECORD,,
