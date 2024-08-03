@@ -1,0 +1,12 @@
+pydivsufsort/divsufsort.py,sha256=7emkCwZyVBResDpqf-hiJf8YL4BkYQ6uZr_nNBCegO8,6297
+pydivsufsort/wonderstring.py,sha256=7104hUHtvqmCyczR7GjsCYXVplgnr6-36IOQvlFE4i0,4756
+pydivsufsort/libdivsufsort.3.0.1.dylib,sha256=H44KlK4rj3rxLif1ghd-_wjUGqzJB6uePRysgZ2p3hI,67416
+pydivsufsort/__init__.py,sha256=NdYU7xSmmpEt9CPdmMk9EJknaNFISufH_wiywze17LM,717
+pydivsufsort/dll.py,sha256=lAjEbD_avE-Y8EfC0hKORZzjOa9d0BPiVEgazyYl29A,522
+pydivsufsort/stringalg.cpython-311-darwin.so,sha256=TpRusjgfQrwlOcGhJ4ZW4F8prUvvLl2EtqIifI8JdxM,947056
+pydivsufsort/libdivsufsort64.3.0.1.dylib,sha256=zo86qfv6GRAXJrCxS31cFWuT5xO1twspPSW-kyKzDoI,67464
+pydivsufsort-0.0.17.dist-info/RECORD,,
+pydivsufsort-0.0.17.dist-info/LICENSE,sha256=VqjR5IgqAvu8mkb-DS-vhvQfyDUAvshijUHIk0wf3SA,1054
+pydivsufsort-0.0.17.dist-info/WHEEL,sha256=sieEctgmsyAnWfDYOiunmkigyyjGmYuUaApm_YItwoI,110
+pydivsufsort-0.0.17.dist-info/top_level.txt,sha256=WT8xN9DXFjOdNpKxhEkWhzhmNqHoDZAl7BX6mV6Rz3s,13
+pydivsufsort-0.0.17.dist-info/METADATA,sha256=f2Y9udgqsjZ4xl8b8AgG8qMySqUHnMTIucl79d-SBMQ,7203
