@@ -1,0 +1,9 @@
+vkmusix/__init__.py,sha256=1BErDZc9zIOwxITasFANJj8Stx5XLzyTFcTz4R2HT5I,17447
+vkmusix/config.py,sha256=p4OYEuup0o-77dxuxKXAdFt1DsezverilPk8TRWA7BM,1240
+vkmusix/cookies.py,sha256=BnI1xCjiGQptrpJ1sszhp7V0lFL7SS4gUxmGZgfCoRw,5738
+vkmusix/errors.py,sha256=PQ1jIY1iLwj3ch0_sAezZ-L91-vo9omucyx2hitjfqw,7980
+vkmusix/models.py,sha256=-RQjxpMxNKuf3CbtE9YcIbjpSwFYDm7chlWEIcr722w,15086
+vkmusix-0.1.1.dist-info/METADATA,sha256=NIHPHEDEKqkJhhdyeqwLWaej773WoWgTlAOChV50G_M,695
+vkmusix-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vkmusix-0.1.1.dist-info/top_level.txt,sha256=TMUpoF24QjsELIFMpKalpQ_qwcVW0U5wtTs5O3BpmDM,8
+vkmusix-0.1.1.dist-info/RECORD,,
