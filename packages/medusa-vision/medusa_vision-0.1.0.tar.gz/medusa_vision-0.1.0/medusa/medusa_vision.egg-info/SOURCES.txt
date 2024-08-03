@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+medusa/medusa_vision.egg-info/PKG-INFO
+medusa/medusa_vision.egg-info/SOURCES.txt
+medusa/medusa_vision.egg-info/dependency_links.txt
+medusa/medusa_vision.egg-info/top_level.txt
