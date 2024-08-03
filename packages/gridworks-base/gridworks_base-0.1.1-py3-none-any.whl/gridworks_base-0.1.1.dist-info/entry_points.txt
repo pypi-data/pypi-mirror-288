@@ -1,0 +1,3 @@
+[console_scripts]
+gridworks-base=gwbase.__main__:main
+
