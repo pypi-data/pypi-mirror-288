@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: baseprompt
+Version: 0.2.0
+Summary: Baseprompt - No-code platform to build safe & fast AI applications
+Author: Arsen Kylyshbek
+Author-email: arsen@baseprompt.dev
+Requires-Python: >=3.7

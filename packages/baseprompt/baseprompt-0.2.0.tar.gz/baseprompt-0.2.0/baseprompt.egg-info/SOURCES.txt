@@ -1,0 +1,9 @@
+setup.py
+baseprompt/__init__.py
+baseprompt/client.py
+baseprompt/config.py
+baseprompt.egg-info/PKG-INFO
+baseprompt.egg-info/SOURCES.txt
+baseprompt.egg-info/dependency_links.txt
+baseprompt.egg-info/top_level.txt
+tests/test_client.py
