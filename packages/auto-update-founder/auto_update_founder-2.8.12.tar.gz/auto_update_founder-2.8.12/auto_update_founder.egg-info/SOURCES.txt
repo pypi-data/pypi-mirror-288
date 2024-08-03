@@ -1,0 +1,7 @@
+MANIFEST.in
+README.md
+setup.py
+auto_update_founder.egg-info/PKG-INFO
+auto_update_founder.egg-info/SOURCES.txt
+auto_update_founder.egg-info/dependency_links.txt
+auto_update_founder.egg-info/top_level.txt
