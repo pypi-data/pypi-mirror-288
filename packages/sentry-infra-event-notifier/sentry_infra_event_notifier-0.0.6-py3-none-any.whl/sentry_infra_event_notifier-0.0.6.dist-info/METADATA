@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: sentry_infra_event_notifier
+Version: 0.0.6
+Summary: Package to send notifications to various backends (datadog/slack/jira)
+Project-URL: Homepage, https://github.com/getsentry/infra-event-notifier
+Project-URL: Issues, https://github.com/getsentry/infra-event-notifier/issues
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# infra-event-notifier
+Generic Python package used by infra tools to send notifications to Slack and Datadog events when changes are made.
