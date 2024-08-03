@@ -1,0 +1,10 @@
+mpypip/__about__.py,sha256=s_cm3Vb0ulMn1fnHhAC-eMhBNzV2IJEt7_nXQJzp1ZM,140
+mpypip/__init__.py,sha256=ZujPZE5wObrWcSW_-pLWwVcYB0tvRxdsLMyDyk8b3A0,118
+mpypip/cli.py,sha256=E-k1volcjoxJ5F9yKzx9sHV1v2I4nkLDV-6wKvfGm1Y,10028
+mpypip/create.py,sha256=M_IOm6cAFDljO9vLeWAw9XAmBCBZqrIE2bbbX9kmaNc,9770
+mpypip/pypip.py,sha256=dxrf7UYNObhSgjLbGxmOe9YdcuiigPQApHJh3sAHMZ4,18985
+mpypip-0.0.1.dist-info/METADATA,sha256=h_HQgaO8O7ECGFWwH2Uv8of4WyA3-EQBaZ0lm5C0qtY,2454
+mpypip-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+mpypip-0.0.1.dist-info/entry_points.txt,sha256=bHiaAvKOZ58WaUUiKofctTieNtZsD-l3zlEkBQ2FMOo,41
+mpypip-0.0.1.dist-info/licenses/LICENSE,sha256=ufv7fH68SJM3IBc79lq9_jbu9jq8YtkuzYWO9P3AuU8,1062
+mpypip-0.0.1.dist-info/RECORD,,
