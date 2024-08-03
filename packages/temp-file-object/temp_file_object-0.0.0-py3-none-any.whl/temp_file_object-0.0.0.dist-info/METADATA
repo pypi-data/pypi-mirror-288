@@ -1,0 +1,151 @@
+Metadata-Version: 2.1
+Name: temp-file-object
+Version: 0.0.0
+Summary: A tool that handles large files, such as audio, as objects in memory.
+Home-page: https://github.co.jp/
+Author: bib_inf
+Author-email: contact.bibinf@gmail.com
+License: CC0 v1.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Description-Content-Type: text/markdown
+Requires-Dist: ezpip
+Requires-Dist: sout (>=1.2.1)
+Requires-Dist: relpath
+Requires-Dist: fies (>=1.4.0)
+
+## `temp_file_object` Documentation
+
+### Table of Contents
+
+1. [Introduction](#introduction)
+2. [Installation](#installation)
+3. [Key Features](#key-features)
+4. [Usage](#usage)
+   - [Creating Temporary File Objects](#creating-temporary-file-objects)
+   - [Reading and Writing Audio Files](#reading-and-writing-audio-files)
+   - [Combining Audio Files](#combining-audio-files)
+   - [Saving Temporary Files](#saving-temporary-files)
+5. [Customization and Configuration](#customization-and-configuration)
+6. [Comparison with Other Tools](#comparison-with-other-tools)
+7. [Conclusion](#conclusion)
+
+---
+
+## Introduction
+
+`temp_file_object` is a Python library designed to handle large files, such as audio files, as in-memory objects. It provides a seamless way to manage intermediate data without the need to explicitly name or store temporary files on disk. This tool allows developers to treat large multimedia data like memory-based objects, simplifying the process of handling files in memory while offering customization options for storage and garbage collection.
+
+`temp_file_object`は、大きなファイル（音声ファイルなど）をメモリ上のオブジェクトとして扱うためのPythonライブラリです。このツールは、中間データをディスク上に明示的に名前を付けて保存する必要をなくし、メモリベースのオブジェクトのように大きなマルチメディアデータを扱うためのシームレスな方法を提供します。ファイルのメモリ内管理を簡素化し、ストレージとガベージコレクションのカスタマイズオプションを提供します。
+
+## Installation
+
+To install the `temp_file_object` package, use pip:
+
+```bash
+pip install temp_file_object
+```
+
+`temp_file_object` パッケージをインストールするには、以下のコマンドを使用します:
+
+```bash
+pip install temp_file_object
+```
+
+## Key Features
+
+- **Memory-Like Object Handling:** Treats large files as memory objects, allowing easy manipulation without explicit naming.
+- **Automatic Garbage Collection:** Intermediate data is automatically removed by the garbage collector, reducing HDD usage.
+- **Customizable Storage:** Configure storage locations like databases or memory, with project-wide settings.
+- **File Compatibility:** Easily integrates with libraries that handle file I/O directly.
+- **Flexible Deletion Behavior:** Customize the deletion process to retain files under specific conditions.
+- **Simplified Input/Output Management:** Distinctly separate input and output processes, avoiding confusion.
+
+### 主な特徴
+
+- **メモリライクなオブジェクト操作:** 大きなファイルをメモリオブジェクトとして扱い、明示的な命名を必要とせずに簡単に操作可能。
+- **自動ガベージコレクション:** 中間データがガベージコレクタによって自動的に削除され、HDD容量を削減。
+- **カスタマイズ可能なストレージ:** データベースやメモリなどのストレージ場所をプロジェクト全体で設定可能。
+- **ファイル互換性:** ファイルの入出力を直接扱うライブラリと容易に統合。
+- **柔軟な削除動作:** 特定の条件下でファイルを保持するように削除プロセスをカスタマイズ。
+- **簡略化された入出力管理:** 入力と出力プロセスを明確に区別し、混乱を回避。
+
+## Usage
+
+### Creating Temporary File Objects
+
+To create a temporary file object, instantiate the `TempFileObject` class with the desired file format and optional source file path.
+
+```python
+import temp_file_object as tfo
+
+# Create a temporary file object from an existing file
+sound_1_tfo = tfo.TempFileObject("wav", "./test_file/test_1.wav")
+sound_2_tfo = tfo.TempFileObject("wav", "./test_file/test_2.wav")
+```
+
+一時ファイルオブジェクトを作成するには、`TempFileObject` クラスを目的のファイル形式とオプションのソースファイルパスでインスタンス化します。
+
+### Reading and Writing Audio Files
+
+Use the `open` method to read and write audio files.
+
+```python
+import wave
+
+def read_sound_tfo(arg_tfo):
+    with arg_tfo.open("rb") as f:
+        with wave.open(f, "rb") as wav_obj:
+            frames = wav_obj.readframes(wav_obj.getnframes())
+            params = wav_obj.getparams()
+    return frames, params
+```
+
+音声ファイルを読み書きするには、`open` メソッドを使用します。
+
+### Combining Audio Files
+
+To output a combination of multiple audio files, an anonymous temporary file object is first created. The file storing the data is then manipulated using the `with` statement, and the data is written to it. In this process, the `f` variable in the `as` clause automatically contains a file handler object that allows file input and output, just like the usual `with open()`.
+
+```python
+def concat_sounds(sound_1_tfo, sound_2_tfo):
+    frames_1, params_1 = read_sound_tfo(sound_1_tfo)
+    frames_2, params_2 = read_sound_tfo(sound_2_tfo)
+    
+    res_tfo = tfo.TempFileObject("wav")
+    with res_tfo.open("wb") as f:
+        with wave.open(f, "wb") as wav_obj:
+            wav_obj.setparams(params_1)
+            wav_obj.writeframes(frames_1)
+            wav_obj.writeframes(frames_2)
+    return res_tfo
+
+# Combine two sound files
+res_tfo = concat_sounds(sound_1_tfo, sound_2_tfo)
+```
+
+複数の音声ファイルを結合したものを出力するために、まず無名の一時ファイルオブジェクトを作り、with文でそのデータを保管したファイルを操作し、データを書き込んでいます。
+この際、as節のf変数は、通常の`with open()`と同じようにファイル入出力が可能なファイルのハンドラオブジェクトが自動的に格納されます。
+
+### Saving Temporary Files
+
+To save the content of a temporary file object to disk, use the `save` method.
+
+```python
+# Save the combined sound to a file
+res_tfo.save("output.wav")
+```
+
+一時ファイルオブジェクトの内容をディスクに保存するには、`save` メソッドを使用します。
+
+## Comparison with Other Tools
+
+While other libraries offer in-memory handling of multimedia data, they often lack the flexibility and integration capabilities of `temp_file_object`. This tool provides a unified interface for managing large files without the overhead of file naming and manual deletion, making it suitable for complex projects requiring streamlined file operations.
+
+他のライブラリもマルチメディアデータのメモリ内処理を提供していますが、`temp_file_object` ほどの柔軟性や統合能力はありません。このツールは、ファイル命名や手動削除の負担なしに大きなファイルを管理するための統一インターフェースを提供し、複雑なプロジェクトでのスムーズなファイル操作に適しています。
+
+## Conclusion
+
+`temp_file_object` is a powerful and flexible tool for managing large multimedia files as in-memory objects. Its automatic garbage collection, customizable storage options, and seamless integration with existing file I/O libraries make it an essential tool for developers handling complex file operations in Python projects.
+
+`temp_file_object` は、大きなマルチメディアファイルをメモリオブジェクトとして管理するための強力で柔軟なツールです。その自動ガベージコレクション、カスタマイズ可能なストレージオプション、既存のファイルI/Oライブラリとのシームレスな統合により、Pythonプロジェクトでの複雑なファイル操作を扱う開発者にとって不可欠なツールです。
