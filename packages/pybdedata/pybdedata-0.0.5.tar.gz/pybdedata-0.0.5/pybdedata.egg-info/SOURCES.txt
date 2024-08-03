@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pybdedata/__init__.py
+pybdedata/query.py
+pybdedata.egg-info/PKG-INFO
+pybdedata.egg-info/SOURCES.txt
+pybdedata.egg-info/dependency_links.txt
+pybdedata.egg-info/not-zip-safe
+pybdedata.egg-info/requires.txt
+pybdedata.egg-info/top_level.txt
