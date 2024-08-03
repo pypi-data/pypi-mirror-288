@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: infomark-cli
+Version: 1.1.1
+Summary: Financial Markets Data Terminal for Educational Use
+Home-page: https://infomark.co
+License: AGPL-3.0-only
+Author: Infomark
+Author-email: hello@infomark.co
+Requires-Python: >=3.9,<3.13
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: infomark[all] (>=4.3.0,<5.0.0)
+Requires-Dist: openpyxl (>=3.1.2,<4.0.0)
+Requires-Dist: prompt-toolkit (>=3.0.16,<4.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: rich (>=13,<14)
+Project-URL: Documentation, https://docs.infomark.co/cli
+Project-URL: Repository, https://github.com/Infomark-Terminal
+Description-Content-Type: text/markdown
+
+### Infomark Terminal

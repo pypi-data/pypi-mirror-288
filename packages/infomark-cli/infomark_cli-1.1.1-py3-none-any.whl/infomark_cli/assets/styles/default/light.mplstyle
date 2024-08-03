@@ -1,0 +1,92 @@
+# Updated cool hackerman style with a touch of modern aesthetics
+
+# LINES
+lines.linewidth: 1.1
+lines.color: #0d0887
+lines.linestyle: -
+lines.marker: None
+lines.markeredgewidth: 0.5
+lines.markersize: 4
+lines.dash_joinstyle: miter
+lines.dash_capstyle: butt
+lines.solid_joinstyle: miter
+lines.solid_capstyle: projecting
+lines.antialiased: True
+
+patch.edgecolor: #2a3f5f
+patch.facecolor: #d8576b
+patch.linewidth: 1
+
+# TEXT
+font.family: sans-serif
+font.sans-serif: Consolas, Deja Vu Sans, Arial, Helvetica
+font.style: normal
+font.variant: normal
+font.weight: medium
+font.stretch: normal
+font.size: 13
+
+text.color: #0d0887
+
+axes.spines.left: true
+axes.spines.bottom: true
+axes.spines.top: true
+axes.spines.right: true
+axes.linewidth: 0.2
+
+axes.labelsize: small
+axes.titlelocation: left
+
+axes.facecolor: white
+axes.edgecolor: #0d0887
+axes.labelcolor: #0d0887
+axes.grid: true
+axes.grid.which: major
+
+axes.prop_cycle: cycler('color', ['#0d0887', '#46039f', '#7201a8', '#9c179e', '#bd3786', '#d8576b', '#ed7953', '#fb9f3a', '#fdca26', '#f0f921', '#c80000', '#00aaff'])
+
+xtick.color: #0d0887
+ytick.color: #0d0887
+
+xtick.major.size: 2
+xtick.minor.size: 1
+xtick.labelsize: small
+
+ytick.major.size: 2
+ytick.minor.size: 1
+ytick.labelsize: small
+xtick.alignment: center
+
+ytick.left: False
+ytick.labelleft: False
+ytick.right: True
+ytick.labelright: True
+
+grid.color: #0d0887
+grid.linewidth: 0.4
+grid.linestyle: :
+
+legend.framealpha: 0.6
+legend.frameon: true
+legend.facecolor: white
+legend.edgecolor: white
+legend.scatterpoints: 3
+legend.fontsize: small
+legend.loc: best
+
+figure.facecolor: white
+figure.edgecolor: white
+figure.subplot.hspace: 0.2
+
+savefig.facecolor: white
+savefig.edgecolor: white
+
+### Boxplots
+boxplot.boxprops.color: #0d0887
+boxplot.capprops.color: #0d0887
+boxplot.flierprops.color: #0d0887
+boxplot.flierprops.markeredgecolor: #0d0887
+boxplot.whiskerprops.color: #0d0887
+boxplot.medianprops.color: #0d0887
+boxplot.meanprops.markeredgecolor: #0d0887
+boxplot.meanprops.color: #0d0887

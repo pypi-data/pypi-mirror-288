@@ -1,0 +1,102 @@
+{
+    "data": {
+        "candlestick": [
+            {
+                "decreasing": {
+                    "fillcolor": "#FF4C4C",
+                    "line": {
+                        "color": "#FF4C4C"
+                    }
+                },
+                "increasing": {
+                    "fillcolor": "#4CAF50",
+                    "line": {
+                        "color": "#4CAF50"
+                    }
+                },
+                "type": "candlestick"
+            }
+        ]
+    },
+    "layout": {
+        "annotationdefaults": {
+            "showarrow": false
+        },
+        "autotypenumbers": "strict",
+        "colorway": [
+            "#FFB74D",
+            "#64B5F6",
+            "#4DB6AC",
+            "#FFD54F",
+            "#E57373",
+            "#7986CB",
+            "#A5D6A7",
+            "#DCE775",
+            "#FF8A65",
+            "#CE93D8",
+            "#81C784",
+            "#64B5F6"
+        ],
+        "dragmode": "pan",
+        "font": {
+            "family": "Roboto Mono",
+            "size": 16
+        },
+        "hoverlabel": {
+            "align": "left"
+        },
+        "mapbox": {
+            "style": "light"
+        },
+        "hovermode": "x",
+        "legend": {
+            "bgcolor": "rgba(255, 255, 255, 0.7)",
+            "x": 0.02,
+            "xanchor": "left",
+            "y": 0.95,
+            "yanchor": "top",
+            "font": {
+                "size": 14
+            }
+        },
+        "paper_bgcolor": "#F5F5F5",
+        "plot_bgcolor": "#FFFFFF",
+        "xaxis": {
+            "automargin": true,
+            "autorange": true,
+            "rangeslider": {
+                "visible": false
+            },
+            "showgrid": true,
+            "showline": true,
+            "tickfont": {
+                "size": 12
+            },
+            "zeroline": false,
+            "tick0": 1,
+            "title": {
+                "standoff": 15
+            },
+            "linecolor": "#E0E0E0",
+            "mirror": true,
+            "ticks": "outside"
+        },
+        "yaxis": {
+            "anchor": "x",
+            "automargin": true,
+            "fixedrange": false,
+            "zeroline": false,
+            "showgrid": true,
+            "showline": true,
+            "side": "right",
+            "tick0": 0.5,
+            "title": {
+                "standoff": 15
+            },
+            "gridcolor": "#B0BEC5",
+            "linecolor": "#E0E0E0",
+            "mirror": true,
+            "ticks": "outside"
+        }
+    }
+}
