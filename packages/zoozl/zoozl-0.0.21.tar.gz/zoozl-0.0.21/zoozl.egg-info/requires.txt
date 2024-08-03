@@ -1,0 +1,2 @@
+rapidfuzz==2.11.1
+membank>=0.4.1
