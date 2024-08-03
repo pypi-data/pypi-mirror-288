@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: e2hbaseapi
+Version: 0.1.8
+Summary: A Python package for interacting with E2hbaseapi and extracting specific information.
+Author: E2H
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: elasticsearch
+Requires-Dist: regex
+Requires-Dist: urllib3
+Requires-Dist: tenacity
+Requires-Dist: pydantic
+Requires-Dist: pydantic[email]
+
+# e2hapi
+
+e2hapi est un package Python concu pour interagir avec E2HBASE et extraire des informations specifiques telles que les emails, les numeros de telephone, les licences FiveM et les identifiants Steam.
+
+## Table des Matieres
+
+- Installation
+- Utilisation
+  - Configuration du Client
+  - Recherche de Documents
+  - Extraction d'Informations
+  - Formatage des Numeros de Telephone
+- Gestion des Erreurs
+- Assistance
+- Licence
+
+## Installation
+
+Pour installer le package, utilisez `pip` :
+
+    pip install e2hbaseapi
+
+## Utilisation
+
+### Configuration du Client
+
+Avant d'utiliser le client, vous devez fournir une cle API valide pour acceder au Serveur E2HBASE. Voici comment configurer le client :
+
+    from e2hbaseapi.client import E2hApiClient
+
+    client = E2hApiClient(api_key="votre_cle_api")
+
+### Recherche de Documents
+
+Pour faire une recherche globale et donner toute les lignes contenant le string rechercher dans E2HBASE, utilisez la methode : `search_documents`
+
+    results = search_documents("terme_de_recherche")
+
+### Recherche de d'infos precises
+
+Pour recuperer des informations specifiques, utilisez la methode `extracted_search`. Voici un exemple :
+
+    search_results = client.process_search_results(results)
+
+### Extraction d'Informations
+
+La methode `extracted_search` extrait les informations suivantes des documents trouves :
+
+- Emails : Adresses email trouvees dans le texte.
+- Telephones : Numeros de telephone formates.
+- Licences FiveM : Licences FiveM trouvees dans le texte.
+- Identifiants Steam : Identifiants Steam trouves dans le texte.
+
+Voici comment acceder aux resultats extraits :
+
+    print("Emails trouvés :", extracted_info.emails)
+    print("Numéros de téléphone trouvés :", extracted_info.phones)
+    print("Licences FiveM trouvées :", extracted_info.fivem_licenses)
+    print("Identifiants Steam trouvés :", extracted_info.steam_ids)
+
+### Formatage des Numeros de Telephone
+
+Les numeros de telephone sont formates dans le format (XXX) XXX-XXXX pour une meilleure lisibilite.
+
+## Gestion des Erreurs
+
+Le package gere plusieurs types d'erreurs :
+
+- RequestError : Erreurs liees aux requetes E2HBASE.
+- JSONDecodeError : Erreurs de decodage JSON lorsque le contenu ne peut pas etre transforme en JSON.
+- TypeError : Erreurs liees aux types de donnees lors du traitement du contenu.
+
+Les erreurs sont signalees avec des messages clairs pour faciliter le debogage.
+
+## Assistance
+
+Pour toute aide ou question, veuillez rejoindre notre serveur Discord : https://discord.gg/6jAaqjpJ3x
+
+## Licence
+
+Ce projet est sous licence MIT.
