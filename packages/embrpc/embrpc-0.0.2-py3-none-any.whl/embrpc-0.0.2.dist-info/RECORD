@@ -1,0 +1,10 @@
+embrpc/__about__.py,sha256=ZkJ4YFnqff5CwHnqUupPsAVatqD4aozkrh1u-iQrvMc,21
+embrpc/__init__.py,sha256=Ao_1SbMg--W8AZUpqavJE5Fiyv9R_NKlKoPPe0wqqmc,40
+embrpc/main.py,sha256=CBQNaBDiaPMDBEWKFtrBI7rgpeBWr7llz47x5VUGKq4,103
+embrpc/rpc.py,sha256=JC7_vsQl7rdIGl5GqLtWjSK5uv53Wu4iNnRAAavCInE,3534
+embrpc/rpcscp.py,sha256=JfAh-Z3p-394VOooHSSnjGQzqvrhYNup_o0mjX5fCiU,4455
+embrpc-0.0.2.dist-info/METADATA,sha256=JPPutuRDFfSdqEy_06YSlfJGh_RAH-uY2UWq6oLAPOw,1965
+embrpc-0.0.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+embrpc-0.0.2.dist-info/entry_points.txt,sha256=WIzOTHvg_0yxnVe4GGHwhQTVtFp833TgjTC18hc2veg,38
+embrpc-0.0.2.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+embrpc-0.0.2.dist-info/RECORD,,
