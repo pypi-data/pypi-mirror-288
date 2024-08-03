@@ -1,0 +1,10 @@
+README.md
+setup.py
+cinagu.egg-info/PKG-INFO
+cinagu.egg-info/SOURCES.txt
+cinagu.egg-info/dependency_links.txt
+cinagu.egg-info/requires.txt
+cinagu.egg-info/top_level.txt
+tests/__init__.py
+tests/test_chess_detection.py
+tests/test_shooting_detection.py
