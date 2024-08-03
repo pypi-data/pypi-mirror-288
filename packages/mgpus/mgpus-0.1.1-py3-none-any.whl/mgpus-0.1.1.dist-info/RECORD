@@ -1,0 +1,10 @@
+mgpus/README.md,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mgpus/__about__.py,sha256=8oAxKUG747GUokmxjkrWejyJa5yPNEsoJDlXxoedxTw,21
+mgpus/__init__.py,sha256=zTXb381txFhoPc-gDbk22yJCW6YON_ROAj7j0Wk4ykc,40
+mgpus/main.py,sha256=UbuXwsAHNgsl0tpDRy24L8mzN7VcFFAlKhu0Qlc6evU,2555
+mgpus/requirements.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mgpus-0.1.1.dist-info/METADATA,sha256=DTssl8JKoT7DNdpocjiNfA1AiBhtpjBseCr39HnZsjQ,989
+mgpus-0.1.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+mgpus-0.1.1.dist-info/entry_points.txt,sha256=7BINAIUAlf3yOLZiL6xEfaYeyzqVbo-eebVjP8fMQ38,41
+mgpus-0.1.1.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mgpus-0.1.1.dist-info/RECORD,,
