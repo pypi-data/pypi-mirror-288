@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pystats19"
+version = "0.1.0"
+description = "Python package for working with open road traffic casualty data from Great Britain"
+authors = [
+    { name = "Jinshuai Ma", email = "j.ma23@lse.ac.uk" },
+    { name = "Xiaowei Gao", email = "ucesxwg@ucl.ac.uk" }
+]
+maintainers = [
+    { name = "Jinshuai Ma", email = "j.ma23@lse.ac.uk" },
+    { name = "Xiaowei Gao", email = "ucesxwg@ucl.ac.uk" }
+]
+dependencies = [
+    "pandas",
+    "geopandas",
+    "shapely"
+]
+readme = "README.md"
+license = { file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/Mayazure/py-stats19"
+
+[tool.setuptools.packages.find]
+include = ["pystats19"]
+
+[tool.setuptools.package-data]
+pystats19 = ["data/*.pkl"]
