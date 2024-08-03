@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: ami-push
+Version: 0.1.1
+Summary: Daemon that makes a bridge to listen Asterisk Management Interface (AMI) Events and send HTTP requests
+License: MIT
+Author: Osvaldo Santana Neto
+Author-email: amipush@osantana.me
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.10.0,<4.0.0)
+Requires-Dist: panoramisk (>=1.4,<2.0)
+Description-Content-Type: text/x-rst
+
+ami-push
+========
+
+Daemon that makes a bridge to listen Asterisk Management Interface (AMI) Events
+and send HTTP requests.
+
+
+Requirements
+------------
+
+* Python 3.4+
+
+
+Installation
+------------
+
+.. code-block:: sh
+
+    pip install ami-push
+

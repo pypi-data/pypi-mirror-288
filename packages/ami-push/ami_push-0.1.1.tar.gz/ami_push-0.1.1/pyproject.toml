@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "ami-push"
+version = "0.1.1"
+description = "Daemon that makes a bridge to listen Asterisk Management Interface (AMI) Events and send HTTP requests"
+authors = ["Osvaldo Santana Neto <amipush@osantana.me>"]
+license = "MIT"
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+panoramisk = "^1.4"
+aiohttp = "^3.10.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+pytest-asyncio = "^0.23.8"
+pytest-timeout = "^2.3.1"
+pytest-cache = "^1.0"
+pytest-pep8 = "^1.0.6"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra"
+testpaths = [
+    "tests",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
