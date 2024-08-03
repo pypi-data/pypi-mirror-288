@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.py
+package/__init__.py
+package/build.py
+package/install_dev.py
+package/install_git.py
+package/publish.py
+python_micro_script_template.egg-info/PKG-INFO
+python_micro_script_template.egg-info/SOURCES.txt
+python_micro_script_template.egg-info/dependency_links.txt
+python_micro_script_template.egg-info/entry_points.txt
+python_micro_script_template.egg-info/requires.txt
+python_micro_script_template.egg-info/top_level.txt
