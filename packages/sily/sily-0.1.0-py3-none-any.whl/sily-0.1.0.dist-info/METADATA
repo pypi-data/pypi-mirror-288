@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sily
+Version: 0.1.0
+Summary: 
+Author: Vineet Tiruvadi
+Author-email: virati@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# sily
+Silly rewriting of simple functions as neural networks so your work becomes "AI-powered"
+
