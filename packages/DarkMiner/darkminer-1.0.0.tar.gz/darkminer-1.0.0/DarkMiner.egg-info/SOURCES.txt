@@ -1,0 +1,8 @@
+README.md
+setup.py
+DarkMiner.egg-info/PKG-INFO
+DarkMiner.egg-info/SOURCES.txt
+DarkMiner.egg-info/dependency_links.txt
+DarkMiner.egg-info/entry_points.txt
+DarkMiner.egg-info/requires.txt
+DarkMiner.egg-info/top_level.txt
