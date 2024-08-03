@@ -1,0 +1,11 @@
+pystats19/__init__.py,sha256=enP28CPC3F6upNfpHKX515JaYvsV6-RsdJHfPxJqqOQ,1456
+pystats19/format.py,sha256=V2CivVjh-0oJ1-eEDAC9--zSqNp19js6epLzBA9AlRk,4222
+pystats19/read.py,sha256=uuEno5muPVYG_QK-ou-5vX-n8ichdyUwllJ-zWx5l_k,3928
+pystats19/source.py,sha256=2FPwz1FmZUUDBvFKIjpjgvK0aNbD2n1245QJENiVNoU,1019
+pystats19/utils.py,sha256=RYjr0a4WXntgpklVNBxChLXSlxQ7ZN26YztBA4F6bHM,490
+pystats19/data/pystats19_prebuilt_schema.pkl,sha256=2V2-ADNEyQ9fpWcXqS2LVuIuvi6bExzoTwUWVYHhsU0,91466
+pystats19-0.1.2.dist-info/LICENSE,sha256=Q-OUL1G2DeL0zo3UAuM0TObRNU-8k2m3C6BTq01EWpI,1089
+pystats19-0.1.2.dist-info/METADATA,sha256=hQ37Y8pLrD-KqoyUtc6CH1hFbxgl37ktSvJkM4igTUI,7206
+pystats19-0.1.2.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+pystats19-0.1.2.dist-info/top_level.txt,sha256=fIurzOm-6BvneLSqI4MvEzgYjQhHSTshlZmQJpl2Eos,10
+pystats19-0.1.2.dist-info/RECORD,,
