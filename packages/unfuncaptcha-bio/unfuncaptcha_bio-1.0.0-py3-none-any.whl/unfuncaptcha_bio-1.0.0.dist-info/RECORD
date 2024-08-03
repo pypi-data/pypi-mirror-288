@@ -1,0 +1,11 @@
+unfuncaptcha_bio/__init__.py,sha256=nRk6nobMSDcr72gwXO-MGaOBmQoVkuPzJMP3fIQ9CZk,108
+unfuncaptcha_bio/event.py,sha256=m8OnhQUgj5ObxkNqvH7L14lVAcwXH1SK_1b2iqdrJb4,2349
+unfuncaptcha_bio/points.py,sha256=bbnfNUIcNhApsmk4aSpCWnCloXQxaH3SPaGe7f_JSYU,6358
+unfuncaptcha_bio/bio/kbio.py,sha256=4EJoJvykRSRnw1LMsuKla2zjPsyHKuK1C1YvQFeZN7A,4218
+unfuncaptcha_bio/bio/mbio.py,sha256=KBYGw1w4Weuu1j8J65ecxgHOaJhtslmcVYGiXqV4_mE,5409
+unfuncaptcha_bio/bio/tbio.py,sha256=oXfWxns2hyXJZ4nNyKiY-XobJeCgcyt3SM21WD64dfU,3793
+unfuncaptcha_bio-1.0.0.dist-info/LICENSE,sha256=-BeIbua7Ze0wmKeYex6XgWU9FccfhVic4NKvZjxm03M,34888
+unfuncaptcha_bio-1.0.0.dist-info/METADATA,sha256=i1xCQv_EVCtuADTwTg9KhF-U9uWc9FqeDReCC3tj8BM,2330
+unfuncaptcha_bio-1.0.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+unfuncaptcha_bio-1.0.0.dist-info/top_level.txt,sha256=1ykh14xflrwPqyjHjKeDd4pjOrEDLj29p78M96otekU,17
+unfuncaptcha_bio-1.0.0.dist-info/RECORD,,
