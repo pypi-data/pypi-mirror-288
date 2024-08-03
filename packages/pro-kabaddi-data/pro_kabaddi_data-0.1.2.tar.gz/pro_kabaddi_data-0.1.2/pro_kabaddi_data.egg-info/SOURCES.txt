@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pro_kabaddi_data.egg-info/PKG-INFO
+pro_kabaddi_data.egg-info/SOURCES.txt
+pro_kabaddi_data.egg-info/dependency_links.txt
+pro_kabaddi_data.egg-info/requires.txt
+pro_kabaddi_data.egg-info/top_level.txt
+prokabaddidata/__init__.py
+prokabaddidata/main.py
+prokabaddidata/original_code.py
+prokabaddidata/prokabaddidata.py
