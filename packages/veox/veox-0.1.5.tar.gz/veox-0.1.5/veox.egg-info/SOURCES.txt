@@ -1,0 +1,9 @@
+README.md
+setup.py
+veox/__init__.py
+veox/client.py
+veox.egg-info/PKG-INFO
+veox.egg-info/SOURCES.txt
+veox.egg-info/dependency_links.txt
+veox.egg-info/requires.txt
+veox.egg-info/top_level.txt
