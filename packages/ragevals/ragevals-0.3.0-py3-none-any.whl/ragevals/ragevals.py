@@ -1,0 +1,110 @@
+import torch
+from sacrebleu import corpus_bleu
+from rouge_score import rouge_scorer
+from bert_score import score
+from transformers import GPT2LMHeadModel, GPT2Tokenizer, pipeline
+import nltk
+from nltk.util import ngrams
+
+
+
+class RAGevals:
+    def __init__(self):
+        self.gpt2_model, self.gpt2_tokenizer = self.load_gpt2_model()
+        self.bias_pipeline =  pipeline("zero-shot-classification", model = "Hate-speech-CNERG/dehatebert-mono-english")
+
+    def load_gpt2_model(self):
+        model = GPT2LMHeadModel.from_pretrained('gpt2')
+        tokenier = GPT2Tokenizer.from_pretrained('gpt2')
+        return model,tokenier
+
+    def evaluate_bleu_rouge(self,candidates,references):
+        bleu_score = corpus_bleu(candidates, [references]).score
+        scorer = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeL'], use_stemmer=True)
+        rouge_scores = [scorer.score(ref, cand) for ref, cand in zip(references, candidates)]
+        rouge1 = sum([score['rouge1'].fmeasure for score in rouge_scores]) / len(rouge_scores)
+        return bleu_score, rouge1
+
+    def evaluate_bert_score(self, candidates, references):
+        if isinstance(candidates, str):
+            candidates = [candidates]
+        if isinstance(references, str):
+            references = [references]
+        
+        P, R, F1 = score(candidates, references, lang="en", model_type="bert-base-multilingual-cased")
+        return P.mean().item(), R.mean().item(), F1.mean().item()
+
+    def evaluate_perplexity(self, text):
+        encodings = self.gpt2_tokenizer(text, return_tensors= "pt")
+        max_length = self.gpt2_model.config.n_positions
+        stride = 512
+        lls = []
+        for i in range(0, encodings.input_ids.size(1), stride):
+            begin_loc = max(i + stride - max_length, 0)
+            end_loc = min(i + stride, encodings.input_ids.size(1))
+            trg_len = end_loc - i
+            input_ids = encodings.input_ids[:, begin_loc:end_loc]
+            target_ids = input_ids.clone()
+            target_ids[:, :-trg_len] = -100
+            with torch.no_grad():
+                outputs = self.gpt2_model(input_ids, labels=target_ids)
+                log_likelihood = outputs[0] * trg_len
+            lls.append(log_likelihood)
+        ppl = torch.exp(torch.stack(lls).sum() / end_loc)
+        return ppl.item()
+
+    def evaluate_diversity(self, texts):
+        all_tokens = [tok for text in texts for tok in text.split()]
+        unique_bigrams = set(ngrams(all_tokens, 2))
+        diversity_score = len(unique_bigrams) / len(all_tokens) if all_tokens else 0
+        return diversity_score
+    
+    def evaluate_racial_bias(self, text):
+        results = self.bias_pipeline([text], candidate_labels=["hate speech", "not hate speech"])
+        bias_score = results[0]['scores'][results[0]['labels'].index('hate speech')]
+        return bias_score
+        
+
+    def evaluate_all(self, question, response, reference):
+        candidates = [response]
+        references = [reference]
+        bleu, rouge1 = self.evaluate_bleu_rouge(candidates, references)
+        bert_p, bert_r, bert_f1 = self.evaluate_bert_score(candidates, references)
+        perplexity = self.evaluate_perplexity(response)
+        diversity = self.evaluate_diversity(candidates)
+        racial_bias = self.evaluate_racial_bias(response)
+        return {
+            "BLEU": {
+                "score": bleu,
+                "description": " Range (0-100), BLEU (BiLingual Evaluation Understudy) measures the overlap between the generated output and reference text based on n-grams. Higher scores indicate better match."
+            },
+            "ROUGE-1": {
+                "score": rouge1,
+                "description": "Range (0-1), ROUGE-1 (Recall-Oriented Understudy for Gisting Evaluation)measures the overlap of unigrams between the generated output and reference text. Higher scores indicate better match."
+            },
+            "BERT P": {
+                "score": bert_p,
+                "description": "Range (0-1), BERT Precision measures the accuracy of the generated text against the reference. Higher scores indicate better match."
+            },
+            "BERT R": {
+                "score": bert_r,
+                "description": " Range (0-1), BERT Recall measures the completeness of the generated text against the reference using BERT embeddings. Higher scores indicate better match."
+            },
+            "BERT F1": {
+                "score": bert_f1,
+                "description": "Range (0-1), BERT F1 combines precision and recall of the generated text against the reference using BERT embeddings. Higher scores indicate better match."
+            },
+            "Perplexity": {
+                "score": perplexity,
+                "description": "Range (1-∞), Perplexity measures how well a language model predicts the text. Lower values indicate better fluency and coherence."
+            },
+            "Diversity": {
+                "score": diversity,
+                "description": "Range (0-1), Diversity measures the uniqueness of bigrams in the generated text. Higher scores indicate more diverse content."
+            },
+            "Racial Bias": {
+                "score": racial_bias,
+                "description": "Range (0-1), Racial Bias measures the presence of hate speech or biased language in the generated text. Lower scores indicate less bias."
+            }
+        }
+
