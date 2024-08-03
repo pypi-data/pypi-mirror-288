@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: trulens-core
+Version: 1.0.1a0
+Summary: Library to systematically track and evaluate LLM based applications.
+Home-page: https://trulens.org/
+License: MIT
+Author: Snowflake Inc.
+Author-email: ml-observability-wg-dl@snowflake.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: snowflake
+Requires-Dist: alembic (>=1.11,<2.0)
+Requires-Dist: dill (>=0.3,<0.4)
+Requires-Dist: merkle-json (>=1.0,<2.0)
+Requires-Dist: munch (>=3.0,<4.0)
+Requires-Dist: nest-asyncio (>=1.5,<2.0)
+Requires-Dist: numpy (>=1.23,<2.0)
+Requires-Dist: psutil (>=5.9,<6.0)
+Requires-Dist: pydantic (>=2,<3)
+Requires-Dist: python-dotenv (>=1.0,<2.0)
+Requires-Dist: snowflake-connector-python (>=3.11.0,<4.0.0) ; (python_version < "3.12") and (extra == "snowflake")
+Requires-Dist: snowflake-core (>=0.9.0,<0.10.0) ; (python_version < "3.12") and (extra == "snowflake")
+Requires-Dist: snowflake-snowpark-python (>=1.20.0,<2.0.0) ; (python_version < "3.12") and (extra == "snowflake")
+Requires-Dist: snowflake-sqlalchemy (>=1.6,<2.0) ; (python_version < "3.12") and (extra == "snowflake")
+Requires-Dist: sqlalchemy (>=2.0,<3.0)
+Requires-Dist: tqdm (>=4.66,<5.0)
+Requires-Dist: typing_extensions (>=4.9,<5.0)
+Project-URL: Documentation, https://trulens.org/trulens/getting_started/
+Project-URL: Repository, https://github.com/truera/trulens
+Description-Content-Type: text/markdown
+
+# trulens-core
+
