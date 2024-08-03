@@ -1,0 +1,4 @@
+[console_scripts]
+flaskapp=cdh_lava_core.app:app
+generatechangelog=npxconventional-changelog-pangular-iCHANGELOG.md-s
+
