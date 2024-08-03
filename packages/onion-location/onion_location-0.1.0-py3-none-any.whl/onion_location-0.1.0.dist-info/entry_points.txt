@@ -1,0 +1,2 @@
+[console_scripts]
+onion-location = onion_location:main
