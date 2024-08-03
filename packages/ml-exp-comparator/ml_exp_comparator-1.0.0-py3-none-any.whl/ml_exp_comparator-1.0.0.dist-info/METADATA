@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: ml_exp_comparator
+Version: 1.0.0
+Summary: Compare ML experiments
+Author-email: Max Kalganov <maksim.kalganov@gmail.com>
+License: The MIT License (MIT)
+        Copyright © 2024 <copyright holders>
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Project-URL: repository, https://github.com/max-kalganov/ml_exp_comparator
+Keywords: ML,DS,Machine Learning,Data Science,Experiments,Compare
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Provides-Extra: mnist
+Requires-Dist: tensorflow >=2.14 ; extra == 'mnist'
+
+# ML experiments comparator
+
+ML experiments comparator is an easy tool for comparing different ML experiments.
+
+## Installation
+
+TBU
+
+## How to use
+
+```
+# 1. create or select ModelRunner for your experiments
+# 2. load trained experimental models into model runners 
+
+model_runner1, model_runner2 = get_model_runners(...)
+
+# 3. create or select DatasetStore containing your dataset
+dataset_store = get_dataset_store(...)
+
+# 4. create or select MetricRunner for your dataset
+metrics_runners = get_metrics_runners(...)
+
+# 5. create or select ResultsAggregator for collecting metrics
+results_aggregator = get_results_aggregator(...)
+
+# 6. init ExperimentRunner
+exp_runner = ExperimentsRunner(exp_name='exp_name', 
+                               storage_folder='storage_folder', 
+                               batch_size=100,
+                               exp_models_runners=[model_runner1, model_runner2],
+                               dataset_store=dataset_store,
+                               metrics_runners=metrics_runners,
+                               result_aggregator=results_aggregator)
+
+# 7. run comparison and store the results 
+exp_runner.run_and_store()
+```
+Examples: `examples/.`
+
+## Modules
+
+### Experiments runner 
+
+`from ml_exp_comparator.experiments_runner import ExperimentsRunner`
+
+Runs experimental models on the provided dataset using selected metrics.
+
+### Dataset stores
+
+`from ml_exp_comparator.dataset_stores.dataset_store import DatasetStore`
+
+Dataset wrapper. Yields batches of a specific dataset.
+
+### Metrics runners
+
+`from ml_exp_comparator.metrics_runners.metric_runner import MetricRunner`
+
+Calculates metrics for each output based on true and pred outputs. Aggregates calculated metrics.
+
+### Models runners
+
+`from ml_exp_comparator.models_runners.model_runner import ModelRunner`
+
+Runs trained model on dataset true_input batches.
+
+### Results aggregator
+
+`from ml_exp_comparator.results_aggregators.results_aggregator import ResultsAggregator`
+
+Collects single and aggregated metrics results. Dumps metric results into a local storage.
+
+
