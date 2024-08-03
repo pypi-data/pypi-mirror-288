@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: reduced_fraction
+Version: 0.0.1
+Summary: 计算最简分数的库
+Home-page: https://github.com/longliangzhe/reduced_fraction
+Author: LightingLong
+Author-email: 17818883308@139.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0.1
+License-File: LICENSE.txt
+
+计算最简分数：reduced_fraction(分数：str型)

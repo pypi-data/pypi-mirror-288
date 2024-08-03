@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+reduced_fraction.egg-info/PKG-INFO
+reduced_fraction.egg-info/SOURCES.txt
+reduced_fraction.egg-info/dependency_links.txt
+reduced_fraction.egg-info/top_level.txt
