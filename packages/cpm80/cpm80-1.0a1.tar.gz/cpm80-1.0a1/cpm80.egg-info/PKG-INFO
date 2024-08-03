@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: cpm80
+Version: 1.0a1
+Summary: CP/M-80 emulator
+Home-page: https://github.com/kosarev/cpm80
+Author: Ivan Kosarev
+Author-email: mail@ivankosarev.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Education
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Emulators
+Classifier: Topic :: System :: Operating System
+License-File: LICENSE
+
+UNKNOWN
+
