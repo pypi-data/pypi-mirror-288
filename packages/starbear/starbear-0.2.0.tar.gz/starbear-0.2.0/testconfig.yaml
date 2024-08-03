@@ -1,0 +1,10 @@
+starbear:
+  server:
+    port: 9123
+    host: 0.0.0.0
+    plugins:
+    - class: starbear.server.plugins.oauth:OAuth
+      name: google
+  # debug: true
+  # twix:
+  #   twix: false
