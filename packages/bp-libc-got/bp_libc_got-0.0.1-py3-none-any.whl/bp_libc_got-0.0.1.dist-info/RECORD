@@ -1,0 +1,8 @@
+bp_libc_got/__init__.py,sha256=8V_4XszdrFQf3VFVJMKAzHY9bLX-ZnySCSH-eaJlzTA,25
+bp_libc_got/main.py,sha256=I10nrIdPbXUQYQwT-i5tPPj9drUSfIWsBwxiEGZEjxM,1190
+bp_libc_got/util.py,sha256=i87BOPYxQwY0RDgSt4VVnNB1ZJmv_pjXdVT-roAdsUI,1139
+bp_libc_got-0.0.1.dist-info/LICENSE,sha256=NluSLHyk4_sLbO3epJc_YCMZiRTzq_wqjoShVlCityU,1066
+bp_libc_got-0.0.1.dist-info/METADATA,sha256=L16BMBaDUdXadmLsxRNDkitMPK4uZh78fqHsNoihuJQ,1089
+bp_libc_got-0.0.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+bp_libc_got-0.0.1.dist-info/top_level.txt,sha256=1On1fh1kveWtlPt9Cc00Euu8g7Pzx-jjsISAHk40Wkw,12
+bp_libc_got-0.0.1.dist-info/RECORD,,
