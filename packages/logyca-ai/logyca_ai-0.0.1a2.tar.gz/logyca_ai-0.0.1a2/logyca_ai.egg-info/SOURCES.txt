@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+logyca_ai/__init__.py
+logyca_ai.egg-info/PKG-INFO
+logyca_ai.egg-info/SOURCES.txt
+logyca_ai.egg-info/dependency_links.txt
+logyca_ai.egg-info/requires.txt
+logyca_ai.egg-info/top_level.txt
+logyca_ai/utils/__init__.py
+logyca_ai/utils/helpers/__init__.py
+logyca_ai/utils/helpers/azure_openai_chatgpt.py
+logyca_ai/utils/helpers/content_loaders.py
