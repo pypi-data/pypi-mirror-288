@@ -1,0 +1,13 @@
+inquirer
+Jinja2
+mxdev>=4.0.2
+pyyaml
+
+[docs]
+myst-parser
+sphinx-conestack-theme==1.0.1
+Sphinx
+sphinxcontrib-mermaid
+
+[test]
+zope.testrunner
