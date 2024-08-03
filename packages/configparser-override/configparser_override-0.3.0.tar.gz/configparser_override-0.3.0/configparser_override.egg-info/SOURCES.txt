@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+configparser_override/__init__.py
+configparser_override/configparser_override.py
+configparser_override.egg-info/PKG-INFO
+configparser_override.egg-info/SOURCES.txt
+configparser_override.egg-info/dependency_links.txt
+configparser_override.egg-info/requires.txt
+configparser_override.egg-info/top_level.txt
+tests/test_configenvparser.py
