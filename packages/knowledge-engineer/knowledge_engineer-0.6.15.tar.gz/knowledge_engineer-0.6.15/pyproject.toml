@@ -1,0 +1,41 @@
+[tool.setuptools]
+packages = ["knowledge_engineer"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+knowledge_engineer = ["*.md"]
+
+[project]
+name = "knowledge_engineer"
+version = "0.6.15"
+authors = [
+    { name = "Jerry Westrick", email = "jerry@westrick.com" },
+]
+description = "Engineer GPT Knowledge within a project"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "rich",
+    "openai",
+    "mistralai",
+    "python-dotenv",
+    "aiohttp",
+    "anthropic",
+    "groq",
+    "lark",
+    "databases",
+    "aioconsole",
+    "knowledge_engineer",
+    "prompt-toolkit",
+    "ansi2html",
+    "bs4"
+]
+
+[project.scripts]
+knowledge-engineer = "knowledge_engineer.ke:main"
+
