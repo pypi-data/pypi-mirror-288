@@ -1,0 +1,7 @@
+
+[test]
+mypy==1.11.1
+pytest
+pytest-cov
+pytest-asyncio
+ruff==0.5.6
