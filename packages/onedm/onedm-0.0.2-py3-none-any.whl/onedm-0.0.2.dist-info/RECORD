@@ -1,0 +1,13 @@
+onedm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+onedm/sdf/__init__.py,sha256=EdXTIjL_-Va7MKrbZCRAGxe2CljfXmj7wJsITRZzW9k,980
+onedm/sdf/common.py,sha256=kijoa0gol3wi8yaAWSIsY2uUNqQjaD1Ln3CIafjmFrQ,548
+onedm/sdf/data.py,sha256=H8y0zMBoGcQs_6p5v1s9Fjyf3v09v5C7sj4DIp0QqZA,7222
+onedm/sdf/definitions.py,sha256=LLSMVYAD6fOIqmsewFzlhXLHEO-HcofjYlhPvPYPFTI,2353
+onedm/sdf/document.py,sha256=92yxigD6W0uaAvk7DmYz5OMt38of2rr-MyHs0spAHTY,1105
+onedm/sdf/from_type.py,sha256=74Gav6r9VH-6kvpb1loKA0mdXGvKfTtqfwZQUUCFnwI,2589
+onedm/sdf/loader.py,sha256=MKWF7-oZa1gETe3wbVy9Rwrsj1qzI6C0Dt0bkGpBiO0,2969
+onedm-0.0.2.dist-info/LICENSE,sha256=w0Q7bQhjzbmZKAgz6FzpANRv-R3B0eQl0wL7L93M0Ys,1075
+onedm-0.0.2.dist-info/METADATA,sha256=o1eWLhedDdNOckkQr9hzFHUbdGu1VzLP8T7JwQdB4sE,2883
+onedm-0.0.2.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+onedm-0.0.2.dist-info/top_level.txt,sha256=u_Ztol0QNDlzfM4nJpAKxjbpfCKngYe3kBUPOs_QYI4,6
+onedm-0.0.2.dist-info/RECORD,,
