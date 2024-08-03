@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+cututil/cututil.py
+cututil.egg-info/PKG-INFO
+cututil.egg-info/SOURCES.txt
+cututil.egg-info/dependency_links.txt
+cututil.egg-info/top_level.txt
