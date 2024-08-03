@@ -1,0 +1,11 @@
+qibo_client/__init__.py,sha256=OuPSB1KdWrqiJjRJuX5vmj14z4YpgfdsxgkbOkhqQDY,188
+qibo_client/config_logging.py,sha256=Jln4y4PmQU0KMInaBal_B2hzDtoWedMr7Paxy5M2t8U,257
+qibo_client/constants.py,sha256=t3wRcOX-26QED58n1-YRgbMgKdW5Uj9FJ4bAro_pq5E,245
+qibo_client/exceptions.py,sha256=qck1s2J9aaOsNx_BOjTVm6XwKNWGxmnJUXYKtX0jd2k,1035
+qibo_client/qibo_client.py,sha256=NkIh17u-rJtIGnsmD2g42vIjOdOQ-ib2PSjktygO_ek,5630
+qibo_client/qibo_job.py,sha256=GdWpPxu-RJQP98SQTvfdNYX4YPvaD6h0fSrvF0tklWE,6960
+qibo_client/utils.py,sha256=sRv6Z2BUUDxMflQd-ztXM-DKfD3vrgIuGHndeLnchWM,2096
+qibo_client-0.0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+qibo_client-0.0.8.dist-info/METADATA,sha256=Fc6ZQFeFWo9lp1ASJ4SA5WacVfkZCepDpp7O107lJGA,2160
+qibo_client-0.0.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+qibo_client-0.0.8.dist-info/RECORD,,
