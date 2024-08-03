@@ -1,0 +1,139 @@
+name: Build
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+env:
+  NAME: cemu
+  REPO: hugsy/cemu
+  VERSION: 0.8.0
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-2019, windows-2022, ubuntu-22.04, ubuntu-24.04, macos-13]
+        python-version: ['3.10', '3.11', '3.12']
+    name: ${{ matrix.os }} / ${{ matrix.python-version }}
+    runs-on: ${{ matrix.os }}
+    outputs:
+      windows-2019-3-10: ${{ join(steps.*.outputs.windows-2019-3-10,'') }}
+      windows-2019-3-11: ${{ join(steps.*.outputs.windows-2019-3-11,'') }}
+      windows-2019-3-12: ${{ join(steps.*.outputs.windows-2019-3-12,'') }}
+      ubuntu-22-04-3-10: ${{ join(steps.*.outputs.ubuntu-22-04-3-10,'') }}
+      ubuntu-22-04-3-11: ${{ join(steps.*.outputs.ubuntu-22-04-3-11,'') }}
+      ubuntu-22-04-3-12: ${{ join(steps.*.outputs.ubuntu-22-04-3-12,'') }}
+      macos-13-3-10: ${{ join(steps.*.outputs.macos-13-3-10,'') }}
+      macos-13-3-11: ${{ join(steps.*.outputs.macos-13-3-11,'') }}
+      macos-13-3-12: ${{ join(steps.*.outputs.macos-13-3-12,'') }}
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: "Install Pre-requisite"
+      uses: eifinger/setup-rye@v4
+      with:
+        version: 'latest'
+
+    - name: "Install Pre-requisite (Linux)"
+      if: startsWith(matrix.os, 'ubuntu')
+      shell: bash
+      run: |
+        sudo apt update
+        sudo apt install -y build-essential libegl1
+
+    - run: rye fmt
+    - run: rye lint
+    - run: rye test
+    - run: rye build --wheel --out ./build
+
+    - name: Publish artifact
+      id: publish_artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ env.NAME }}_${{ env.VERSION }}_${{ matrix.os }}_py${{ matrix.python-version }}_${{ github.sha }}
+        path: build/
+
+    - name: Populate the successful output (Windows)
+      id: output_success_windows
+      if: ${{ startsWith(matrix.os, 'windows') &&  success() }}
+      shell: pwsh
+      run: |
+        $osVersion = "${{ matrix.os }}" -replace "\.", "-"
+        $pyVersion = "${{ matrix.python-version }}" -replace "\.", "-"
+        echo "${osVersion}-$pyVersion=✅ ${{ matrix.os }} ${{ matrix.python-version }}" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+
+    - name: Populate the successful output (Other)
+      id: output_success_other
+      if: ${{startsWith(matrix.os, 'windows') == false && success() }}
+      shell: bash
+      run: |
+        osVersion="$(echo -n ${{ matrix.os }} | tr . -)"
+        pyVersion="$(echo -n ${{ matrix.python-version }} | tr . -)"
+        echo "${osVersion}-${pyVersion}=✅ ${{ matrix.os }} ${{ matrix.python-version }}" >> $GITHUB_OUTPUT
+
+    - name: Populate the failure output (Windows)
+      id: output_failure_windows
+      if: ${{startsWith(matrix.os, 'windows') && failure() }}
+      shell: pwsh
+      run: |
+        $osVersion = "${{ matrix.os }}" -replace "\.", "-"
+        $pyVersion = "${{ matrix.python-version }}" -replace "\.", "-"
+        echo "${osVersion}-${pyVersion}=❌ ${{ matrix.os }} ${{ matrix.python-version }}" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+
+    - name: Populate the failure output (Other)
+      id: output_failure_other
+      if: ${{startsWith(matrix.os, 'windows') && failure() }}
+      shell: bash
+      run: |
+        osVersion="$(echo -n ${{ matrix.os }} | tr . -)"
+        pyVersion="$(echo -n ${{ matrix.python-version }} | tr . -)"
+        echo "${osVersion}-$pyVersion=❌ ${{ matrix.os }} ${{ matrix.python-version }}" >> $GITHUB_OUTPUT
+
+  notify:
+    env:
+      DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+    runs-on: 'ubuntu-22.04'
+    needs: build
+    steps:
+    - name: Send Discord notification
+      env:
+        COMMIT_URL: "https://github.com/${{ env.REPO }}/commit/${{ github.sha }}"
+        RUN_URL: "https://github.com/${{ env.REPO }}/actions/runs/${{ github.run_id }}"
+        BRANCH_URL: "https://github.com/${{ env.REPO }}/tree/${{ github.ref_name }}"
+        AUTHOR_URL: "https://github.com/${{ github.actor }}"
+      uses: sarisia/actions-status-discord@v1.14.5
+      with:
+        nodetail: true
+        title: 🚧 🚧 Summary of Build `${{ github.sha }}` for `${{ env.REPO }}` 🚧 🚧
+        description: |
+          [Job #${{ github.run_number }}](${{ env.RUN_URL }}): CI build `${{ github.sha }}` initiated by [${{ github.actor }}](${{ env.AUTHOR_URL }}):
+          ● Commit [${{ github.sha }}](${{ env.COMMIT_URL }})
+          ● Branch [`${{ github.ref_name }}`](${{ env.BRANCH_URL }})
+          ● [Detail Page](${{ env.RUN_URL }})
+
+          ${{ needs.build.outputs.windows-2019-3-10 }}
+          ${{ needs.build.outputs.windows-2019-3-11 }}
+          ${{ needs.build.outputs.windows-2019-3-12 }}
+          ${{ needs.build.outputs.ubuntu-22-04-3-10 }}
+          ${{ needs.build.outputs.ubuntu-22-04-3-11 }}
+          ${{ needs.build.outputs.ubuntu-22-04-3-12 }}
+          ${{ needs.build.outputs.macos-13-3-10 }}
+          ${{ needs.build.outputs.macos-13-3-11 }}
+          ${{ needs.build.outputs.macos-13-3-12 }}
+
+
+        color: 0x0000ff
+        username: ${{ github.actor }} via GithubBot
+        avatar_url: "https://github.com/hugsy/cemu/blob/dev/cemu/img/new_logo.png?raw=true"

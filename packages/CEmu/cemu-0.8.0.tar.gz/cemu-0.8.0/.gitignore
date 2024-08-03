@@ -1,0 +1,15 @@
+.benchmarks
+.pytest_cache
+.vscode
+.vs
+*.pyc
+*.egg-info
+__pycache__
+.ruff_cache
+.coverage*
+build
+dist
+.idea
+.venv
+CEmu.egg-info
+htmlcov
