@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ditdml
+Version: 0.0.9
+Summary: Data Interfaces for Triplet-based Distance Metric Learning.
+Home-page: https://github.com/greenfieldvision/ditdml
+Author: Radu Dondera
+License: MIT License
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: more-itertools
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: Pillow
+Requires-Dist: psiz ==0.5.1
+
