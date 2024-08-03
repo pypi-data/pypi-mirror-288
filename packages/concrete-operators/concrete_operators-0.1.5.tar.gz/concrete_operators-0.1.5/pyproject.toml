@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "concrete-operators"
+version = "0.1.5"
+description = "AI Agent Orchestration Platform"
+authors = ["Abstract Operators <hello@abstractoperators.ai>"]
+readme = "README.md"
+packages = [
+    {include = "concrete"},
+]
+
+
+[tool.poetry.dependencies]
+python = "==3.11.9"
+python-dotenv = "==1.0.1"
+openai = "==1.35.14"
+astroid = "==3.2.3"
+astor = "==0.8.1"
+
+[tool.poetry.group.webapp.dependencies]
+gunicorn = "==22.0.0"
+uvicorn = "==0.30.4"
+fastapi = "==0.111.1"
+flask = "==3.0.3"
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "==4.2.4"
+pytest = "==8.2.2"
+black = "==24.4.2"
+flake8 = "==7.1.0"
+isort = "==5.13.2"
+bandit = "==1.7.9"
+pre-commit = "==3.7.1"
+mypy = "==1.11.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.bandit]
+exclude_dirs = ["tests", "path/to/file"]
+tests = ["B201", "B301"]
+skips = ["B101", "B601"]
