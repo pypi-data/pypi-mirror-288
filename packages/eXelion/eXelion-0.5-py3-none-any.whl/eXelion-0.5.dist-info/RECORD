@@ -1,0 +1,10 @@
+corex/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+corex/crawlex.py,sha256=iXHGPQuUefsE5WbtKRaWriDKaPTogi1gEgjtbNtvCno,4872
+corex/eXelion.py,sha256=7pTislExz2aIYRhkrxTosdULir_3NJwWflK3hb_g2c8,12205
+corex/templax.py,sha256=A-lt2g8cz7c9cZfpZJLvAyiNHacHMmH3ZVAt-fjxT3I,2126
+eXelion-0.5.dist-info/LICENSE,sha256=kPm1inBAZ7kGmAEWmbEBRkEUZBPmx-q8XoNKWZJByy8,1082
+eXelion-0.5.dist-info/METADATA,sha256=kVWhbbeglJkrXXFUxA3DLOJiPbwwKhACSSPSxgy3itw,490
+eXelion-0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+eXelion-0.5.dist-info/entry_points.txt,sha256=p_Jix36BTgMAc5G69jq8nmh5MqDyt5OE68cojHa7B_I,41
+eXelion-0.5.dist-info/top_level.txt,sha256=5R-4qt0GI3nfQsMXS97r7zhr5JbE2WzMe21jsyJymrY,6
+eXelion-0.5.dist-info/RECORD,,
