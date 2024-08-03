@@ -1,0 +1,5 @@
+[airflow.plugins]
+airflow_priority_aws_cloudwatch = airflow_priority.plugins.aws:AWSCloudWatchPriorityPlugin
+airflow_priority_datadog = airflow_priority.plugins.datadog:DatadogPriorityPlugin
+airflow_priority_newrelic = airflow_priority.plugins.newrelic:NewRelicPriorityPlugin
+airflow_priority_slack = airflow_priority.plugins.slack:SlackPriorityPlugin
