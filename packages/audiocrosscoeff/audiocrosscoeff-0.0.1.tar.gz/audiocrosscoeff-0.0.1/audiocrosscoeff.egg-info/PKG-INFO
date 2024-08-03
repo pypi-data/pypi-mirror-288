@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: audiocrosscoeff
+Version: 0.0.1
+Summary: The Pearson correlation coefficient (PCC) for 2 audio signals
+Author-email: Anton van A'dams <ci3xxx@ya.ru>
+Project-URL: Homepage, https://github.com/tonypithony/audiocrosscoeff
+Project-URL: Issues, https://github.com/tonypithony/audiocrosscoeff/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12.3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# How to install
+
+```bash
+pip install audiocrosscoeff
+```
+
+![](https://raw.githubusercontent.com/tonypithony/audiocrosscoeff/main/justcorr/formula6.png)
+
+
+# How to use
+
+```bash
+python audiocrosscoeff.py -a1 tests/611.wav -a2 tests/611wm.wav
+```
+
+# Output
+
+### Pearsons correlation: 0.999710
+
+
+# Help
+
+```bash
+python audiocrosscoeff.py -h
+```
+
+## Requirements
+
+* pandas==2.2.2
+* scipy==1.13.0
+* numpy==1.26.3
+* librosa==0.10.1
+
+# Read more
+
+* [Pearson Correlation Test Between Two Variables](https://www.geeksforgeeks.org/python-pearson-correlation-test-between-two-variables/)
+* [Visualize data from CSV file in Python](https://www.geeksforgeeks.org/visualize-data-from-csv-file-in-python/)

@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+audiocrosscoeff.egg-info/PKG-INFO
+audiocrosscoeff.egg-info/SOURCES.txt
+audiocrosscoeff.egg-info/dependency_links.txt
+audiocrosscoeff.egg-info/top_level.txt
