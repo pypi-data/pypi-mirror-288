@@ -1,0 +1,10 @@
+
+[dev]
+wheel
+build
+twine
+
+[test]
+pytest
+pytest-cov
+coverage
