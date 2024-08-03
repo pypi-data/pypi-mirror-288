@@ -1,0 +1,11 @@
+SSIS_Operator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SSIS_Operator/models/SqlQueryParameters.py,sha256=O6LiD8m4JvphsXKYM8ITuaAQ-Ao6CttsqmiwpG2M5cg,426
+SSIS_Operator/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SSIS_Operator/operators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SSIS_Operator/operators/ssis_package_operator.py,sha256=L6jLHPqVD2LG9XfGdF6pwwh1wqcSBJpAhTaNuWI0rIs,4583
+SSIS_Operator/sensors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SSIS_Operator/sensors/ssis_package_sensor.py,sha256=8FcbffMr5F4f9Iw-QUHBOWZg-MH2WyR_lrI8ofLBFVI,3009
+airflow_ssis_provider-1.0.8.dist-info/METADATA,sha256=iVAgmzLW9hhBa3UD2Obo0ehTq6szRjP5j_nSbMKcrwY,905
+airflow_ssis_provider-1.0.8.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+airflow_ssis_provider-1.0.8.dist-info/licenses/LICENSE,sha256=wScutQv9C_Pu82bn0I-j0rzcjS_3UuBnLQzsadtOOJk,1192
+airflow_ssis_provider-1.0.8.dist-info/RECORD,,
