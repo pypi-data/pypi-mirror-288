@@ -1,0 +1,3 @@
+prune website
+
+global-exclude empm/_internal/web/frontend/node_modules/**
