@@ -1,0 +1,20 @@
+{
+  "type": "AssayedFusion",
+  "structure": [
+    {
+      "type": "GeneElement",
+      "gene": {
+        "type": "Gene",
+        "label": "EWSR1",
+        "id": "hgnc:3508"
+      }
+    },
+    {
+      "type": "UnknownGeneElement"
+    }
+  ],
+  "causativeEvent": {
+    "type": "CausativeEvent",
+    "eventType": "rearrangement"
+  }
+}

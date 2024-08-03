@@ -1,0 +1,23 @@
+{
+  "type": "CategoricalFusion",
+  "regulatoryElement": {
+    "type": "RegulatoryElement",
+    "regulatoryClass": "enhancer",
+    "associatedGene": {
+      "type": "Gene",
+      "label": "IGH",
+      "id": "hgnc:5477"
+    },
+    "featureId": "EH38E3121735"
+  },
+  "structure": [
+    {
+      "type": "GeneElement",
+      "gene": {
+        "type": "Gene",
+        "label": "MYC",
+        "id": "hgnc:7553"
+      }
+    }
+  ]
+}
