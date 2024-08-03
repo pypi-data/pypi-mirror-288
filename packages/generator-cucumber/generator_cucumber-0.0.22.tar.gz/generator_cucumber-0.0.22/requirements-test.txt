@@ -1,0 +1,5 @@
+allure-pytest==2.13.5
+pytest==7.0.1
+pytest-bdd==5.0.0
+python-dotenv==1.0.1
+# generator-cucumber==0.0.20
