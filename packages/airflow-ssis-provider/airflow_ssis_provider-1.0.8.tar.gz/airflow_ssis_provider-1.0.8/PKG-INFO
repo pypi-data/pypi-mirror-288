@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: airflow-ssis-provider
+Version: 1.0.8
+Summary: A provider package for Apache Airflow to run SSIS Packages
+Project-URL: Homepage, https://github.com/gschuurman/airflow-ssis-provider
+Project-URL: Issues, https://github.com/gschuurman/airflow-ssis-provider/issues
+Author-email: Glenn Schuurman <info@schuurman-it.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: apache-airflow-providers-microsoft-mssql>=3.6.1
+Requires-Dist: apache-airflow>=2.8.0
+Description-Content-Type: text/markdown
+
+# Apache Airflow SSIS Connector
+## Description
+This is an operator and sensor that allows you to connect to SSIS and execute packges via Apache Airflow 2.8.0 or higher
+
+## Special Thanks
+- mike-hosseini [Original Work](https://github.com/mike-hosseini/airflow-sql-server-plugin)
