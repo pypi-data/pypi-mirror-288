@@ -1,0 +1,10 @@
+corpora
+data
+deployment
+dist
+docs
+metricaltree
+notebooks
+prosodic
+syllabiphon
+tests
