@@ -1,0 +1,13 @@
+setup.py
+unnatural_worlds_api.egg-info/PKG-INFO
+unnatural_worlds_api.egg-info/SOURCES.txt
+unnatural_worlds_api.egg-info/dependency_links.txt
+unnatural_worlds_api.egg-info/top_level.txt
+uw/__init__.py
+uw/bots.h
+uw/commands.py
+uw/game.py
+uw/helpers.py
+uw/map.py
+uw/prototypes.py
+uw/world.py
