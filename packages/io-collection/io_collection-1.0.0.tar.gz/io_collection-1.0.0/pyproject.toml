@@ -1,0 +1,105 @@
+[tool.poetry]
+name = "io-collection"
+version = "1.0.0"
+description = "Collection of tasks for I/O."
+authors = [
+    "Jessica S. Yu <jesyu@uw.edu>"
+]
+license = "BSD-3-Clause"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+prefect = "^2.8.2"
+boto3 = "^1.24.59"
+numpy = "^1.24.2"
+pandas = "^1.5.3"
+quilt3 = "^5.0.0"
+matplotlib = "^3.7.0"
+s3fs = "^2023.1.0"
+pillow = "^10.3.0"
+bioio = { version = "^1.0.0", optional = true }
+bioio-ome-tiff = { version = "^1.0.0", optional = true }
+bioio-tifffile = { version = "^1.0.0", optional = true }
+
+[tool.poetry.extras]
+images = ["bioio", "bioio-ome-tiff", "bioio-tifffile"]
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.3.0"
+isort = "^5.12.0"
+mypy = "^1.10.0"
+pylint = "^2.16.2"
+pytest = "^7.3.0"
+pytest-cov = "^4.0.0"
+pytest-subtests = "^0.11.0"
+sphinx = "^7.0.1"
+furo = "^2023.5.20"
+myst-parser = "^2.0.0"
+sphinx-copybutton = "^0.5.2"
+tox = "^4.5.1"
+moto = {extras = ["s3"], version = "^5.0.11"}
+pyfakefs = "^5.6.0"
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint.messages_control]
+disable = [
+    "missing-module-docstring",
+]
+good-names = ["i", "j", "k", "x", "y", "z"]
+
+[tool.pylint.design]
+max-args = 10 # maximum number of arguments for function / method
+
+[tool.pylint.similarities]
+min-similarity-lines = 10 # minimum lines number of a similarity
+
+[tool.mypy]
+mypy_path = "src"
+explicit_package_bases = true
+namespace_packages = true
+
+[[tool.mypy.overrides]]
+module = [
+    "boto3.*",
+    "botocore.*",
+    "matplotlib.*",
+    "pandas.*",
+    "PIL.*",
+    "quilt3.*",
+    "ruamel.*",
+    "bioio_tifffile.*"
+]
+ignore_missing_imports = true
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = True
+envlist = py{39,310}, format, lint, typecheck
+skipsdist=True
+
+[testenv]
+allowlist_externals = poetry
+commands =
+    poetry run pytest --cov-report html --cov=src/ tests/
+
+[testenv:format]
+commands =
+    poetry run black -l 100 src/ tests/
+    poetry run isort -l 100 src/ tests/
+
+[testenv:lint]
+commands =
+    poetry run pylint --ignore-patterns=test.*?py src/ tests/ --fail-under=9.0
+
+[testenv:typecheck]
+commands =
+    poetry run mypy --disallow-untyped-calls --disallow-untyped-defs --disallow-incomplete-defs src
+"""
