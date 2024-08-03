@@ -1,0 +1,138 @@
+#-*- coding:utf-8 -*-
+# __license__ = "BSD-3-Clause"
+
+# This config holds specifications for a venco.py run that can be configured by the user.
+
+global:
+  dataset: MiD17 # options are MiD08, MiD17, VF, KiD
+  debug: True
+  number_lines_debug: 5000
+  run_label: "" #_PutYourRunLabelBetweenUnderscores_
+  write_output_to_disk:
+      parse_output: False
+      grid_output: False
+      flex_output: False
+      diary_output: False
+      aggregator_output: True
+      processor_output:
+        absolute_annual_profiles: True
+        normalised_annual_profiles: True
+
+  absolute_path:
+      MiD08: PATH_TO_DATA_FOLDER
+      MiD17: PATH_TO_DATA_FOLDER  # e.g. C:/MiD/proprietary/B2/STATA
+      KiD: PATH_TO_DATA_FOLDER
+      vencopy_root: USER_FOLDER_ROOT
+
+
+dataparsers:
+  encryption_password: "PW"
+  split_overnight_trips: True
+  location_park_before_first_trip:
+    MiD08: "HOME"
+    MiD17: "HOME"
+    KiD: "HOME"
+    VF: "HOME"
+  subset_vehicle_segment: True
+  vehicle_segment:
+      KiD: "Car" # options: "Light motorised vehicle", "Car", "Van", "Truck", "Tractor unit", "Coach", "Other tractor unit", "Agriculture and forestry tractor unit", "Other"
+
+
+gridmodellers:
+  minimum_parking_time: 900 # charging power is set to zero if parking time lower than <minimum_parking_time> in seconds
+  grid_model: "simple" # Options are "simple" and "probability"
+  losses: True # Take into account charging station losses
+  force_last_trip_home: True # Require that all last trips end home
+  rated_power_simple: 11
+  charging_infrastructure_mappings: # Simple grid model: Explicit mapping given for each location aka parking purpose
+      "DRIVING": False
+      "HOME": True
+      "WORK": True
+      "SCHOOL": False
+      "SHOPPING": True
+      "LEISURE": True
+      "OTHER": False
+      "NA": False
+      # KiD additional purposes below
+      "PEOPLE_MOBILITY": False
+      "TRANSPORT": False
+      "SERVICES": False
+  grid_availability_distribution: # Grid model 3: Probabilities given for each location aka trip purpose and capacity
+      "DRIVING":
+          0: 1
+          #0.005: 75
+          #0.005: 150
+      "HOME":
+          3.6: 0.2
+          11: 0.2 #0.25 (0.75 - 0.50) probability of finding a charging station
+          22: 0 #0.05 (0.80 - 0.75) probability of finding a charging station
+          0: 0.6 #0.2 (1- 0.80) probability of finding a charging station
+      "WORK":
+          11: 0.2
+          22: 0.2
+          0: 0.6
+      "SCHOOL":
+          11: 0
+          22: 0
+          0: 1
+      "SHOPPING":
+          11: 0.2
+          22: 0.2
+          0: 0.6
+      "LEISURE":
+          11: 0.2
+          22: 0.2
+          0: 0.6
+      "OTHER":
+          11: 0.2
+          22: 0.2
+          0: 0.6
+      "0.0":
+          0: 1
+      # KiD additional purposes below
+      "PEOPLE_MOBILITY":
+          11: 0.2
+          22: 0.2
+          0: 0.6
+      "TRANSPORT":
+          11: 0.2
+          22: 0.2
+          0: 0.6
+      "SERVICES":
+          11: 0.2
+          22: 0.2
+          0: 0.6
+  loss_factor: # Gives the power that is being lost per rated capacity. See gridModeler for detailed usage.
+      rated_power_0: 0
+      rated_power_3.6: 0.1
+      rated_power_11: 0.1
+      rated_power_22: 0.1
+      rated_power_50: 0.2
+
+
+flexestimators:
+  filter_fuel_need: True # Should activity chains that require fuel for trip distance satisfaction be filtered out?
+  battery_capacity: 50 # in kWh, input assumption for battery capacity
+  electric_consumption: 18.0 # in kWh/100km, input assumption for specific electric consumption
+  fuel_consumption: 1.0 # in l/100km, input assumption for specific fuel consumption for auxiliary fuel
+  start_soc: 0.5 # State-of-charge between 0 and 1 at beginning of activity chain
+  maximum_soc: 0.97 # in %
+  minimum_soc: 0.03 # in %
+  max_iterations: 10  # Technical parameter --> not to user config
+  epsilon_battery_level: 0.0001  # Iterations stop once the difference between start and end battery level have decreased to this share of fleet battery level
+
+
+diarybuilders:
+  time_resolution: 15
+  is_week_diary: False # Determine if the activity data set comprises weekly activity chains (synthesized by WeekDiaryBuilder)
+
+
+profileaggregators:
+  aggregation_timespan: weekly # options are: daily, weekly
+  weight_flow_profiles: False # Currently only used for flow profile aggregation
+  alpha: 10 # Only used for state profile aggregation
+
+
+postprocessor:
+  start_weekday: 1 # 1=Monday
+
