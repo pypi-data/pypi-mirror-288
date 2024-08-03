@@ -1,0 +1,3 @@
+[console_scripts]
+tmconfpy=tmconfpy.cli:cli
+
