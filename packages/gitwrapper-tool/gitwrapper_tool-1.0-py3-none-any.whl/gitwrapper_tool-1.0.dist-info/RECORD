@@ -1,0 +1,12 @@
+gitwrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitwrapper/main.py,sha256=6pgV7hWCcm6SJyOkV41J-8G8LnhJFeIyNfgxayGnpXo,224
+gitwrapper/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitwrapper/modules/argshandler.py,sha256=etoO2AaO9-W4klDgNEy5TrqolIXh9kmqF7vuehBd_IU,157
+gitwrapper/modules/listrepo.py,sha256=GlciEEe4KBcoyICzczWXWI02rwK3gZQ6oo4-KLY0kZ0,89
+gitwrapper/modules/login.py,sha256=ml24OpJcrizafQytpnUgpZdvGD827Q54nk0gtvQElt4,80
+gitwrapper_tool-1.0.dist-info/LICENCE,sha256=mMvN55hN_Ab6WPorPIJixamsWzQrQLnYIRJWORvNZLA,1086
+gitwrapper_tool-1.0.dist-info/METADATA,sha256=WwN3yM2X1DtuQpPG8jXRVlJjcSmCRRW8b-sz0O0vJqs,282
+gitwrapper_tool-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gitwrapper_tool-1.0.dist-info/entry_points.txt,sha256=ebiMP-DFgskARzhkbYaRc3R4-nEvU58cuTVn1z6Se8Q,53
+gitwrapper_tool-1.0.dist-info/top_level.txt,sha256=i-ioeqQrozfQ4mAlGXU910kajLEug3c71vi3nubt3aU,11
+gitwrapper_tool-1.0.dist-info/RECORD,,
