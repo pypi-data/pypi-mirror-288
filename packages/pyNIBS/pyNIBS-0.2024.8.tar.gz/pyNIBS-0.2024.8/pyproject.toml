@@ -1,0 +1,29 @@
+[project]
+name = "pyNIBS"
+dynamic = ["version", "dependencies", "urls", "requires-python"]
+authors = [
+  {name = "Konstantin Weise", email = "weise@cbs.mpg.de"},
+  {name = "Ole Numssen", email = "numssen@cbs.mpg.de"},
+  {name = "Benjamin Kallock", email = "kalloch@cbs.mpg.de"},
+]
+maintainers = [
+  {name = "Konstantin Weise", email = "weise@cbs.mpg.de"},
+  {name = "Ole Numssen", email = "numssen@cbs.mpg.de"}
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+description = "A python toolbox to conduct non-invasive brain stimulation (NIBS) experiments."
+classifiers = ["Development Status :: 3 - Alpha",
+                   "Intended Audience :: Science/Research",
+                   "Topic :: Scientific/Engineering",
+                   "Topic :: Software Development :: Build Tools",
+                   "Programming Language :: Python :: 3",
+                   "Programming Language :: Python :: 3.7",
+                   "Programming Language :: Python :: 3.9",]
+keywords= ["NIBS", "non-invasive brain stimulation", "TMS", "FEM"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.pytest.ini_options]
+filterwarnings = ["ignore::UserWarning",]

@@ -1,0 +1,42 @@
+# This configuration file contains settings and parameters for the application of the network detection algorithm.
+
+# BINARIZATION
+# binarization threshold is calculated as follows: method(response) * bin_factor
+bin_method: 'mean'           # mean, median or slope
+bin_factor: 1.0
+
+# SCORING
+scoring_method: 'clf'         # dual network expected: 'clf' or 'regression', single hotspot expected: 'regress_data' or 'mi'
+scoring_emag_thr: 0           # elements with `max(e_mag) > scoring_emag_thr` are scored
+scoring_interval: 22          # subsampling resolution: `1/scoring_interval' of all elements are scored
+
+# DETECTION
+acc_thr: 0.70                  # accuracy threshold for hotspot elements (lower bound)
+corr_thr: 0.5                 # correlation(hot0, hot1) threshold for hotspot pairs (upper bound)
+
+# ADDITIONAL INFO
+note: 'MI_score mapping reasons'     # arbitrary string    # NO COMMAS
+fn_flag: 'testrun_11'              # mentioned in the file name
+subject_id: '35357.53'          #'09440.22' # '13061.30' 35334.2b
+response_spec: 'FDI'            # specification (if any) to retrieve the response
+efield_spec: 'E_mag'            # E_mag, E_tan, E_norm
+
+
+####################################################
+# The following is not saved in the evaluation sheet:
+####################################################
+
+save_files: True                # whether to save experimental data & hotspot score data as hdf5
+write_effect_map: True          # whether to create effect map which can be used during validation
+fn_results: 'evaluation_template'             # file name of the .csv to save the results in
+
+# EFFECT
+# parameters used to create effect map - depends on e-field data and does not influence mapping result
+effect_full: 42             # at what e-field magnitude the desired effect is expected to manifest fully
+effect_saturation: 70       # at what e-mag the desired effect should saturate
+
+# PLOTTING of the found data (not in evaluation sheet)
+plot_std: True                # plot e-mag hotspot0 x emag hotspot1 x response
+plot_bin: True                # plot e-mag hotspot0 x emag hotspot1 x binarized response
+plot_curves: True             # plot e-mag hotspot0 x response and e-mag hotspot1 x response
+
