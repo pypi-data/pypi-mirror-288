@@ -1,0 +1,13 @@
+debugActivity/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+debugActivity/main.py,sha256=KFvVZOaMc0UuMX-VfDfTjS8p0a3RV4aanfa0J8rq2Qc,3369
+debugActivity/apksigner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+debugActivity/apksigner/apksigner.jar,sha256=QpXvCFwN5cvV2OTHMSbpSOINMSbbJqT2ASWGTBX4uMs,960647
+debugActivity/apksigner/pareto.jks,sha256=ee1uSRXyFwuJsA2GJ34I75evTXMwCu1obOCNs4Xe2ug,2233
+debugActivity/lldbtools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+debugActivity/lldbtools/lldb-server,sha256=xcb5vwhcwHm2jsCKJ2S9WnUxnXYCE3VUb66YhSi7pFs,18579808
+debugActivity/lldbtools/lldbtools.py,sha256=CyIj5Qavl66wctyLS7GMJsmGLwfE8f7dY6_tPtenMvY,1974
+debugActivity-1.0.6.dist-info/METADATA,sha256=PC-DQX6eFTjgEA4KceVm-PQnppqQH89E7M9DuoAK7M8,1343
+debugActivity-1.0.6.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+debugActivity-1.0.6.dist-info/entry_points.txt,sha256=_4UhID_mOuzpSJN-GjBy-agT34CRUpCxJGypFBCQZtA,59
+debugActivity-1.0.6.dist-info/top_level.txt,sha256=VO4mVowtzIJbO1BAVrmYobRRWUF6juk-L3G1AG1LBAA,14
+debugActivity-1.0.6.dist-info/RECORD,,
