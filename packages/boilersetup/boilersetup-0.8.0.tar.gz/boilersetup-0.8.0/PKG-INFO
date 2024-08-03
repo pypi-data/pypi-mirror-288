@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: boilersetup
+Version: 0.8.0
+Summary: Template Boilerplate Setup for Python projects
+License: MIT
+Author: Stephen Singer
+Author-email: stephen.singer.098@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# boilersetup
+Template Boilerplate Setup for Python projects
+
