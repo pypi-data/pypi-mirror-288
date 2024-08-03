@@ -1,0 +1,6 @@
+README.md
+setup.py
+guardbench.egg-info/PKG-INFO
+guardbench.egg-info/SOURCES.txt
+guardbench.egg-info/dependency_links.txt
+guardbench.egg-info/top_level.txt
