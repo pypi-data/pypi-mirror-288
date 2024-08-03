@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: lambda_app_common
+Version: 1.0.0
+Summary: Common resources for lambda apps
+Project-URL: Homepage, https://github.com/birkoff/lambda_app_common
+Project-URL: Bug Tracker, https://github.com/birkoff/lambda_app_common/issues
+Author-email: Hector Reyes Aleman <hector.reyes@junctionnet.ai>
+License: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: boto3
+Requires-Dist: botocore
+Description-Content-Type: text/markdown
+
+# lambda_app_common
+
+```
+pip install hatchling
+
+```
