@@ -1,0 +1,9 @@
+__init__.py,sha256=KnKNh6dC9a2aJ_bDu25cmrDRiR_SWpfzTtv9r96vkfE,119
+manage_simple_keys.py,sha256=CFCD_UpJzPKsu_jly1PmvGVexanbrnTkQmcLUPeWyps,6670
+simple_keystore-0.2.5.dist-info/METADATA,sha256=ALGaa7oMaWJlgEqv6mp1WX8SF348MoxEfUkdBmVUMFY,462
+simple_keystore-0.2.5.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+simple_keystore-0.2.5.dist-info/entry_points.txt,sha256=y_Zsxa6X13lKD-x6ZCygh1S9-NPwK1sTE6iXZ3DS5Mk,64
+simple_keystore-0.2.5.dist-info/licenses/LICENSE,sha256=o29enGbFMuKPMFtrVQgJWiaaAaJOMgxTXVU2ju5VX7w,1070
+simple_keystore.py,sha256=7-WmkNQutZ1JM4F0nquT_2fDQSw-K68gPnPopHAOTQc,23946
+test_simple_keystore.py,sha256=ClcMJ-eTBoPXV_QiL_h6tG6oDtuD8lqVXa9lWLvh4Fc,23633
+simple_keystore-0.2.5.dist-info/RECORD,,
