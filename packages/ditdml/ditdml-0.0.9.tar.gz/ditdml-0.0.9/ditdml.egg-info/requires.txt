@@ -1,0 +1,6 @@
+more-itertools
+numpy
+scipy
+scikit-learn
+Pillow
+psiz==0.5.1
