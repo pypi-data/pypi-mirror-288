@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: karnaf_tools
+Version: 0.0.6
+Summary: Useful scripts that can be used in every project
+Author-email: elishamod <elishamod@gmail.com>
+Project-URL: Homepage, https://github.com/elishamod/karnaf_tools
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# karnaf_tools
+Python functions useful for multiple projects
