@@ -1,0 +1,11 @@
+parametro/__init__.py,sha256=XZ-TjpVnhn8VCPlpDjViYB3qouL5KAdeqC2vPLNfR7c,32
+parametro/__main__.py,sha256=Jo4cHgCcV_eWIhF420SREYNFrVoEojTBN5Pd_MJYdco,269
+parametro/file_export.py,sha256=L8sS20w7MsQ7BnJ7O6tF8w4Lgs-D-4jw9uSV-pLTjDU,804
+parametro/file_import.py,sha256=wtrVahmkEC7Fe1d3ncs5l4gthuit-1AKsrkuKn5RM2M,661
+parametro/file_utils.py,sha256=9lDLgZQQEX8dIbEvSu_ZhgDJIvAu3Wrsxxu6DkguW1M,300
+parametro-0.1.0.dist-info/LICENSE.txt,sha256=uyjEjj4HgWbpHPwrbbf_67iglzueI7PfBgVhKS2Naew,10140
+parametro-0.1.0.dist-info/METADATA,sha256=LNQh3RvW-ijdQy3T-eZVUMgVrNN-ecpG30IOSDbWDII,255
+parametro-0.1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+parametro-0.1.0.dist-info/entry_points.txt,sha256=r-BKOy4-XLt1JKvFx1yImFyq5ekiu5tiZIh1bGbZKvU,44
+parametro-0.1.0.dist-info/top_level.txt,sha256=xHjPDwDXRK4Ck5CIbRw51fQH5xKMZP6ZEM32E7FgGw8,10
+parametro-0.1.0.dist-info/RECORD,,
