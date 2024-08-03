@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "fgpyo"
+version = "0.5.0"
+description = "Python bioinformatics and genomics library"
+authors = ["Nils Homer", "Tim Fennell", "Nathan Roach"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/fulcrumgenomics/fgpyo"
+repository = "https://github.com/fulcrumgenomics/fgpyo"
+keywords = ["bioinformatics"]
+classifiers = [
+	"Development Status :: 3 - Alpha",
+	"Environment :: Console",
+	"Intended Audience :: Developers",
+	"Intended Audience :: Science/Research",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python :: 3",
+	"Topic :: Scientific/Engineering :: Bio-Informatics",
+	"Topic :: Software Development :: Documentation",
+	"Topic :: Software Development :: Libraries :: Python Modules",
+]
+include = ["LICENSE"]
+
+[tool.poetry.dependencies]
+python = ">=3.8.0,<4.0"
+attrs = ">=19.3.0"
+pysam = ">=0.22.0"
+pytest = ">=7.4.0"
+sphinx = { version = "4.3.1", optional = true }
+sphinx_rtd_theme = { version = "^1.3.0", optional = true }
+typing_extensions = { version = ">=3.7.4", python = "<3.12" }
+
+[tool.poetry.extras]
+docs = ["sphinx", "sphinx_rtd_theme"]
+
+[tool.poetry.dev-dependencies]
+ruff = "0.4.8"
+mypy = ">=1.7.0"
+pytest = ">=5.4.2"
+pytest-cov = ">=2.8.1"
+setuptools = ">=68.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length    = 100
+target-version = "py38"
+output-format  = "full"
+
+[tool.ruff.lint]
+select    = ["C901", "B", "E", "F", "I", "W", "Q"]
+ignore    = ["E203", "E701"]
+unfixable = ["B"]
+
+[tool.ruff.lint.isort]
+force-single-line = true
