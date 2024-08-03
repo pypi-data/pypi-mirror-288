@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+foundation/__init__.py
+foundation/foundation.py
+teleology_foundation.egg-info/PKG-INFO
+teleology_foundation.egg-info/SOURCES.txt
+teleology_foundation.egg-info/dependency_links.txt
+teleology_foundation.egg-info/requires.txt
+teleology_foundation.egg-info/top_level.txt
