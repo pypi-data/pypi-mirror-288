@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/halflife/__init__.py
+src/halflife.egg-info/PKG-INFO
+src/halflife.egg-info/SOURCES.txt
+src/halflife.egg-info/dependency_links.txt
+src/halflife.egg-info/top_level.txt
