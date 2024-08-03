@@ -1,0 +1,13 @@
+xenusia/NNWrappers.py,sha256=IfVogdE8xZsuHNKCf929OpUYEk1PcIcFYTcDMc0qtRY,8107
+xenusia/models.py,sha256=C4I8hYyMoOEWA38hSTK3OE3fq8hwJOzMd_TLDU-eSd8,3961
+xenusia/run_prediction.py,sha256=R396EDcw2tLGlkjhY9PgD0BZgBmuSHvUBuvykcapPEk,752
+xenusia/utils.py,sha256=HO6hVIKezk6WVMRf0SngA1mRMinYjx7RnzU7zY2hSDg,2137
+xenusia/vector_gen.py,sha256=59HpfwYffYmXVdOxlE8HoATc3wYt2ONr_8X8j4OQRPs,8200
+xenusia/models/nn4_final_state_dict_contact.mtorch,sha256=pNPZ9WtiaaTBxiG8jIN35xdJc5Fr_bhALEWctffe6kU,29338
+xenusia/models/nn4_final_state_dict_domain.mtorch,sha256=yEz5qXzojx_DA81tyeVtMnPNYOpaoLoaRU9_S4sx860,26247
+xenusia-0.0.1.data/scripts/xenusia_standalone,sha256=j_jnyqvBwF4iP77RQx6eCVGGyQOhuWFOM710H_U3ROg,2136
+xenusia-0.0.1.dist-info/LICENSE,sha256=frbqw4SFMa1PqtNvrAWhDhZybivskjWKcu23APvOa8s,8976
+xenusia-0.0.1.dist-info/METADATA,sha256=iazueLOpXmqvUI3Ll8eAXP_oC6Fxgn8j8EHXvjRxloU,2866
+xenusia-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+xenusia-0.0.1.dist-info/top_level.txt,sha256=pL0AVnSzc2iNYwY2euBcfy9IPCEN26ecy4YikKaptVI,8
+xenusia-0.0.1.dist-info/RECORD,,
