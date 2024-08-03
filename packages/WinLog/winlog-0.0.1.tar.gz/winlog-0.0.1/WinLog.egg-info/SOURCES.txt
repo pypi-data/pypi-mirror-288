@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+winlog.py
+WinLog.egg-info/PKG-INFO
+WinLog.egg-info/SOURCES.txt
+WinLog.egg-info/dependency_links.txt
+WinLog.egg-info/entry_points.txt
+WinLog.egg-info/requires.txt
+WinLog.egg-info/top_level.txt
+tests/test_winlog.py

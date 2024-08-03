@@ -1,0 +1,2 @@
+[console_scripts]
+winlog = winlog:main
