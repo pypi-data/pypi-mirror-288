@@ -1,0 +1,2 @@
+[console_scripts]
+seiryu = seiryu.main:main
