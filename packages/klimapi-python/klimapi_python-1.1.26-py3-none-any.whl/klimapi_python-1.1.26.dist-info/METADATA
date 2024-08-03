@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: klimapi-python
+Version: 1.1.26
+Summary: KlimAPI - Calculation &amp; Compensation API
+Home-page: https://pypi.org/p/klimapi-python
+Author: KlimAPI Team
+Author-email: tech@klimapi.com
+Keywords: klimapi
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: urllib3 <2.1.0,>=1.25.3
+Requires-Dist: python-dateutil
+Requires-Dist: pydantic >=2
+Requires-Dist: typing-extensions >=4.7.1
+
+    This API offers you the possibility to calculate and offset emissions, create checkout links, get statistics and much more.
+    
