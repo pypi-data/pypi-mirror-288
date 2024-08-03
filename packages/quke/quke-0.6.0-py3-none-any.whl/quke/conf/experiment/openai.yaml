@@ -1,0 +1,5 @@
+# @package _global_
+defaults:
+  - override /llm: gpt4o
+  - override /embedding: openai
+  - override /question: eps
