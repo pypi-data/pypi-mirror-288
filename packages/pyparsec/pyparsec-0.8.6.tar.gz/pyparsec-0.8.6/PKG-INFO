@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: pyparsec
+Version: 0.8.6
+Summary: Parsec From Haskell Python 3 Portable
+Home-page: https://github.com/Dwarfartisan/pyparsec
+Author: marsliu
+Author-email: mars.liu@outlook.com
+License: MIT
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyParsec
+
+PyParsec is a Haskell combinator library, PyParsec is a parsec library for python 3+
+
+## Installation
+
+```
+pip install pyparsec 
+```
+
+## Usage
+
+Just like this:
+
+```
+>>> from parsec.state import BasicState
+>>> from parsec.combinator import many
+>>> from parsec.atom import eq
+>>> simple = "It is a simple string."
+>>> st = BasicState(simple)
+>>> p = eq("I").many
+>>> p(st)
+['I']
+```
+
+## What's New
+
+### 0.6.1
+
+ - add built in combinators decorator
+ - add ahead
+
+### 0.7.0
+
+ - add result class
+
+### 0.7.2
+
+ - document
+
+### 0.7.3
+ - documents
+ - fixed bugs builtin combinators
+
+
+### 0.7.4
+ - uniform result status checker
+
+### 0.7.5
+ - typo
+
+### 0.7.6
+ - fixed bug in ahead
+
+### 0.8.0
+ - uniform functions as python style
+
+### 0.8.1 ~ 0.8.4
+- uniform functions as python style
+- fixed buildin methods name
+- add sep_xxx methods to builtin
+
+### 0.8.5
+
+fixed bug in skip parser
+
+### 0.8.6
+
+add chunks function
