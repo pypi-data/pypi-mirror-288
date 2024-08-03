@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: chilo_api
+Version: 1.0.0b0
+Summary: Chilo is a lightweight, form-meets-function, opinionated (yet highly configurable) api framework.
+Home-page: https://github.com/dual/chilo.git
+Author: Paul Cruse III
+Author-email: paulcruse3@gmail.com
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: art
+Requires-Dist: icecream
+Requires-Dist: jsonref
+Requires-Dist: jsonschema
+Requires-Dist: msgspec
+Requires-Dist: openapi-spec-validator
+Requires-Dist: pydantic
+Requires-Dist: pyyaml
+Requires-Dist: Werkzeug
+Requires-Dist: xmltodict
+
+# Chilo
+
+Chilo, short for _chilorhinophis_ (meaning two headed snake), is a lightweight, form-meets-function, opinionated (yet highly configurable) api framework. 
