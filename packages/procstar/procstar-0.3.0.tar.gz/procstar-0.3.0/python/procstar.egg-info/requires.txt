@@ -1,0 +1,12 @@
+orjson>=3
+msgpack>=1
+websockets>=10
+
+[dev]
+build
+httpx
+pytest
+pytest-asyncio
+bump-my-version
+sphinx
+sphinx-rtd-theme
