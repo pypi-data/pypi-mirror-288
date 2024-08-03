@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: eXelion
+Version: 0.5
+Summary: Tools for XXE/XEE Payloads and Crawling
+Home-page: https://github.com/K3res/eXelion
+Author: K3res
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
