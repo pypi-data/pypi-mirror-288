@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/Database_Automation/__init__.py
+src/Database_Automation/mongo_crud.py
+src/Database_Automation_MongoDB_By_NikhilDSouza.egg-info/PKG-INFO
+src/Database_Automation_MongoDB_By_NikhilDSouza.egg-info/SOURCES.txt
+src/Database_Automation_MongoDB_By_NikhilDSouza.egg-info/dependency_links.txt
+src/Database_Automation_MongoDB_By_NikhilDSouza.egg-info/requires.txt
+src/Database_Automation_MongoDB_By_NikhilDSouza.egg-info/top_level.txt
