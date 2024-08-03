@@ -1,0 +1,11 @@
+cvtease/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cvtease/cli.py,sha256=BcAO7P3SZ_9M4jKxFzUo3Y5XPtDq3m85LW6Uosh9hlQ,310
+cvtease/game.py,sha256=-TaXnFF7yA43n9N0HYnsRR8SdPmyGtTYz3VtoY9_6_8,3270
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cli.py,sha256=8h6IswyIyWGQS_uMVebxYJLkZ1QgvyLeJquActgl8qw,290
+cvtease-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cvtease-0.1.0.dist-info/METADATA,sha256=6WFdJqlvvHXuF3a0coCoKbnK13R5DlwXGVJXg8pgU40,1101
+cvtease-0.1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+cvtease-0.1.0.dist-info/entry_points.txt,sha256=EAgvhvy9tZmPYz_lodDbsjMHssVjhyYR0fy5FEZ3Tu4,45
+cvtease-0.1.0.dist-info/top_level.txt,sha256=DpQphdxvunxBc2BP5MHJlnQC8Ci11HCPmaGhyLGaob0,14
+cvtease-0.1.0.dist-info/RECORD,,
