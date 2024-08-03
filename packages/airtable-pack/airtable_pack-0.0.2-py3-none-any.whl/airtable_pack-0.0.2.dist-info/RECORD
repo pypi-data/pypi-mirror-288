@@ -1,0 +1,9 @@
+airtable_pack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airtable_pack/client.py,sha256=GQ5lgPyjonTMtx45fSj63E5dzAlugaf_qru7JOhgBAM,650
+airtable_pack/operations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airtable_pack/operations/get_record.py,sha256=dc54G2u51aVN_OaI2b5G1dg2bCGD-PlkCD564DXEnXw,292
+airtable_pack-0.0.2.dist-info/LICENSE,sha256=iHcNH4HWsDuIADzyzBbsJgrAaAUmUq5b7pJR39NzdRk,1075
+airtable_pack-0.0.2.dist-info/METADATA,sha256=a8gC46YBl_C24m9gB5Iu5k1S-iAAY6H61gfljcND5tw,954
+airtable_pack-0.0.2.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+airtable_pack-0.0.2.dist-info/top_level.txt,sha256=DWSeBUignqarvUyrMpJKxR2Z_a1tMHd1NCenKwIjJng,14
+airtable_pack-0.0.2.dist-info/RECORD,,
