@@ -1,0 +1,3 @@
+[console_scripts]
+lavague-test=lavague.tests.cli:cli
+

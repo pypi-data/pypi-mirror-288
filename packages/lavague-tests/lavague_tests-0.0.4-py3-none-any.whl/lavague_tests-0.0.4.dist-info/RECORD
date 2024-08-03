@@ -1,0 +1,12 @@
+contexts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+contexts/default_context.py,sha256=0mRCw2AZIrb2KrhCsc5kn6iTGncvTlU4ezjshlTcfN0,631
+lavague/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lavague/tests/cli.py,sha256=vrdpMdyUoyFscBlkiFmPbase8QtbHS86RDyj01GzWYM,2833
+lavague/tests/config.py,sha256=vBog1mCXOQriCIgvh6si_UnohFkd8SMKsL4KtGyIUCQ,2027
+lavague/tests/runner.py,sha256=IvwsSNQ84B1xtSt9Ae82JlfNVhiQ5QwKceArLj5dCrg,6127
+lavague/tests/setup.py,sha256=0kXCsUUivJ9Yt_ZI7VGFVHMI2s6Zgs3M3RR1f-2joBo,1252
+lavague/tests/test.py,sha256=uXlAD35eo89yLkkRTS-zZiXzDufqcprLTRT1d4LClo8,1742
+lavague_tests-0.0.4.dist-info/METADATA,sha256=wjavdrgjIKDxdExMiQfAODCk69g9ogDnUPq_K546Pno,5512
+lavague_tests-0.0.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+lavague_tests-0.0.4.dist-info/entry_points.txt,sha256=Z0Cdo0TiQAj5_1G10wGkBBcL5VQi-M-u9MDvCkNCzoo,54
+lavague_tests-0.0.4.dist-info/RECORD,,
