@@ -1,0 +1,24 @@
+combination_map:
+  description: list
+  cast_output: list
+  cast_arguments: list
+  checks: list
+  patches: list
+  exclude_methods: list
+  include_methods: list
+  environment: dict
+  arguments: dict
+  spies: list
+  setup: list
+  # Choose low level if not null else high level
+  function: low_or_high
+  function_name: low_or_high
+  # Choose high level
+  project_path: high
+  module: high
+  module_route: high
+  yaml: high
+  key: low
+  # Choose low level
+  tests: low
+  phase_: low

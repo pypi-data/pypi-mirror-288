@@ -1,0 +1,173 @@
+environment:
+  ROOT_DIR: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}
+  DEBUG: ${YAML_TESTING_FRAMEWORK_DEBUG}
+
+
+function_output_fields:
+- result
+- exception
+
+
+cast_groups:
+- arguments
+- result
+
+
+module_extensions:
+- .py
+
+
+exclude_lines: []
+
+
+exclude_files:
+- .venv
+- .eggs
+- build
+- __pycache__
+- resource
+- resources
+- .ignore
+- .artifacts
+
+
+locations:
+- module
+- yaml
+
+
+empty_values:
+- None
+- null
+- '[]'
+- []
+- ''
+- '{}'
+- {}
+
+
+test_kinds:
+- function
+
+
+# Order of operations for testing functions
+# and the fields/values of an object that are
+# required to run functions
+operations:
+  run_test_for_functions:
+  - SETUP.process_setup
+  - handle_id
+  - get_module.main
+  - environment.main
+  - patches.main
+  - casts.process_cast_arguments
+  - spies.main
+  - get_function
+  - methods.call.main
+  - casts.process_cast_output
+  - checks.main
+  - SETUP.process_teardown
+  run_tests:
+  - SETUP.process_setup
+  - nodes.main
+  - run_test_handler
+  - SETUP.process_teardown
+  main:
+  - SETUP.process_setup
+  - locations.main
+  - add_entrypoint
+  - run_tests
+  - remove_added_entrypoint
+  - SETUP.process_teardown
+  - SETUP.teardown_all
+
+
+unpack_kinds:
+- iterable
+- dict
+- list
+- tuple
+
+
+schema:
+  App:
+    description: Store data used by the functions in a module
+    fields:
+    - name: project_path
+      type: str
+      description: >
+        The directory containing files to test or path to a module or
+        YAML file to test
+    - name: exclude_files
+      type: str | list
+      description: Patterns to match to files for excluding files from testing
+      default: null
+    - name: include_files
+      type: str | list
+      description: Patterns to match to files for including files from testing
+      default: null
+    - name: exclude_methods
+      type: str | list
+      description: Functions to exclude from testing
+      default: null
+    - name: include_methods
+      type: str | list
+      description: Functions to filter or include for testing
+      default: null
+    - name: yaml_suffix
+      type: str
+      description: Suffix for YAML files containing tests
+      default: null
+    - name: timestamp
+      type: str | list
+      description: Seconds since epoch
+      default: null
+    - name: locations
+      type: dict
+      description: The locations of modules, YAML files, and resources
+      default: null
+    - name: logging_flag
+      type: bool
+      description: Flag to enable or disable logging
+      default: False
+    - name: setup
+      type: list
+      default: null
+      description: >
+        Definitions for setting up of tearing down objects during testing
+        phases
+    - name: phase_
+      description: Current phase of the testing process
+      default: global
+      type: str
+
+
+entrypoint: test_entrypoint.py
+
+
+entrypoint_source_code: |
+  # -*- coding: utf-8 -*-
+
+
+  from types import ModuleType
+  from types import SimpleNamespace as sns
+
+  import pytest
+
+
+  def get_test_id(val) -> str:
+    if hasattr(val, 'id'):
+      return val.id
+
+
+  def get_yaml_tests(pytest: ModuleType) -> list:
+    return getattr(pytest, 'yaml_tests', None) or []
+
+
+  @pytest.mark.parametrize(
+    argnames='test',
+    ids=get_test_id,
+    argvalues=get_yaml_tests(pytest=pytest), )
+  def test_(test: sns) -> None:
+    # trunk-ignore(bandit/B101)
+    assert test.expected == test.output

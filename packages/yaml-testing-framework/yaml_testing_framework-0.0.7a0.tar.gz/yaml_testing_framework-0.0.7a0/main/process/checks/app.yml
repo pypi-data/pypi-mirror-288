@@ -1,0 +1,104 @@
+environment:
+  ROOT_DIR: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}
+  DEBUG: ${YAML_TESTING_FRAMEWORK_DEBUG}
+
+
+empty_values:
+- []
+- {}
+- null
+- ''
+- None
+- '[]'
+- '{}'
+
+
+convert_fields_to_yaml:
+- expected
+- output
+
+
+add_check_fields:
+- output
+- module
+- id
+- id_short
+
+
+schema:
+  Main:
+    description: Store data needed to process an check form a test
+    fields:
+    - name: output
+      type: Any
+      description: Output from the function to verify
+      default: null
+    - name: id
+      description: >
+        A unique ID for each test consisting of the route to the function, the
+        tests unique key or number, and a description of the test
+      type: str
+      default: ''
+    - name: id_short
+      description: The route to the function
+      type: str
+      default: ''
+    - name: module
+      type: ModuleType | str
+      description: >
+        The module containing the function to test or the module's location
+      default: null
+    - name: resource
+      type: str
+      description: Resource or module objects to use during tests
+      default: ''
+    - name: spies_
+      type: dict
+      default: null
+      description: Stores spy objects placed on methods
+    - name: setup_
+      type: dict
+      default: null
+      description: Stores setup or teardown objects
+    - name: setup
+      type: list
+      default: null
+      description: >
+        Definitions for setting up of tearing down objects during testing
+        phases
+    - name: phase_
+      description: Current phase of the testing process
+      default: check
+      type: str
+    - name: method
+      type: str
+      description: The check method
+      default: null
+    - name: field
+      type: str
+      description: Dot-delimited path to an attribute or key of the result
+      default: null
+    - name: expected
+      type: Any
+      default: null
+      description: Expected value
+    - name: cast_output
+      type: list
+      description: Casts to perform on the output before verifying expected output
+      default: null
+    - name: passed
+      type: bool
+      default: false
+      description: Flag indicating whether a test was passed or not
+
+
+operations:
+  main:
+  - SETUP.process_setup
+  - get_check_method
+  - reset_output_value
+  - casts.process_cast_expected
+  - get_check_result
+  - handle_failed_check
+  - post_processing
+  - SETUP.process_teardown

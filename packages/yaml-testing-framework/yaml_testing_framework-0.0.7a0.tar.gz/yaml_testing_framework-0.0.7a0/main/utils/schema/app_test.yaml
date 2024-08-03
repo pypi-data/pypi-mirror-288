@@ -1,0 +1,98 @@
+resources:
+- &CHECKS
+  resource: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/checks/app.py
+- &RESOURCE
+  ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/utils/schema/resources/app.py
+- &YAML
+  ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/utils/schema/app.yaml
+  
+
+tests:
+- function: main
+  description: Returns models from schema defined in YAML files
+  tests:
+  - description: >
+      Undefined arguments. Return schema defined in this modules associated
+      YAML file
+    arguments:
+      module: null
+      yaml: null
+    checks:
+    - method: check_type
+      << : *CHECKS
+      expected: SimpleNamespace
+  - description: YAML is defined
+    arguments:
+      module: null
+      yaml: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/utils/schema/resources/app.yaml
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      field: Example_1
+      expected:
+        integer: 1
+        string: ''
+    - method: check_sns
+      << : *CHECKS
+      field: Example_2
+      expected:
+        list: []
+        dictionary: {}
+  - description: Module is defined and simple name space model flag is true
+    arguments:
+      module: *RESOURCE
+      yaml: null
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      field: Example_1
+      expected:
+        integer: 1
+        string: ''
+    - method: check_sns
+      << : *CHECKS
+      field: Example_2
+      expected:
+        list: []
+        dictionary: {}
+- function: get_yaml_location
+  description: >
+    Returns the location of a specified YAML file, a YAML file associated with
+    a module, or this module's associated YAML file.
+  tests:
+  - description: Arguments are undefined
+    arguments:
+      module: null
+      yaml: null
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        location: *YAML
+  - description: YAML is defined
+    arguments:
+      module: null
+      yaml: YAML
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        location: YAML
+  - description: Module is defined
+    arguments:
+      module: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/utils/schema/app.py
+      yaml: null
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        location: *YAML
+  - description: Content is defined
+    arguments:
+      content:
+        key: value
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: __dict__
+      expected: {}

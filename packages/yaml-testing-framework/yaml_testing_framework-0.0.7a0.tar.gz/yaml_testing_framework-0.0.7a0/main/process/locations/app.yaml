@@ -1,0 +1,63 @@
+environment:
+  ROOT_DIR: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}
+  DEBUG: ${YAML_TESTING_FRAMEWORK_DEBUG}
+
+
+exclude_files:
+- .venv
+- .eggs
+- build
+- .ignore
+- __pycache__
+- .pyc
+- .trunk
+
+
+yaml_suffix: _test
+
+
+exclude_methods: []
+
+
+yaml_extensions:
+- .yaml
+- .yml
+
+
+module_extensions:
+- .py
+
+
+root_locations:
+- .
+- ./
+- /
+- //
+- ''
+- None
+- null
+
+
+empty_values:
+- null
+- None
+- ''
+- 0
+- '0'
+- False
+- 'false'
+- 'False'
+
+
+operations:
+  main:
+  - format_project_path
+  - set_path_metadata
+  - format_yaml_suffix
+  - format_inclusion_and_exclusion_patterns
+  - handle_path
+  - post_processing
+  handle_directory:
+  - get_files
+  - filter_files
+  - set_modules

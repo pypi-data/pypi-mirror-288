@@ -1,0 +1,142 @@
+resources:
+- &RESOURCE
+  resource: &RESOURCE_PATH ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/process/spies/resource.py
+- &CHECKS
+  resource: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/checks/app.py
+- &GLOBAL_RESOURCE
+  resource: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/resources/app.py
+
+
+tests:
+- function: main
+  description: >
+    Returns a module with spied on methods. SPIES are stored in a dictionary
+    in the module, and the key for spy on a method is the route to the method
+    from the module of the function being tested.
+  cast_arguments:
+  - method: wrapper_get_module
+    << : *GLOBAL_RESOURCE
+    field: module
+  tests:
+  - description: No spies defined
+    arguments:
+      spies: null
+      module: *RESOURCE_PATH
+    checks:
+    - method: check_type
+      << : *CHECKS
+      expected: SimpleNamespace
+    - method: check_module
+      << : *CHECKS
+      field: module
+      expected:
+        location: *RESOURCE_PATH
+  - description: Spies defined
+    arguments:
+      spies:
+      - add
+      - subtract
+      module: *RESOURCE_PATH
+    checks:
+    - method: check_type
+      << : *CHECKS
+      expected: SimpleNamespace
+    - method: check_function
+      << : *CHECKS
+      field: module.add
+      expected:
+        location: *RESOURCE_PATH
+        name: add
+    - method: check_equals
+      << : *CHECKS
+      field: module.subtract.__method__
+      expected: spy
+- function: do_nothing
+  description: Returns a null object
+  arguments: {}
+  checks:
+  - method: check_equals
+    << : *CHECKS
+    expect: null
+- function: spy_on_method
+  description: >
+    Wraps a method in a module in a spy to tell if the method was called
+    and what it was called with. Then adds spy to the module store of spies.
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: module
+      expected: null
+  - cast_arguments:
+      field: module
+      method: wrapper_get_module
+      << : *GLOBAL_RESOURCE
+    tests:
+    - description: Method does not exist in module
+      arguments:
+        module: *RESOURCE_PATH
+        route: method_does_not_exist
+      checks:
+      - method: check_module
+        << : *CHECKS
+        field: module
+        expected:
+          location: *RESOURCE_PATH
+      - method: check_function
+        << : *CHECKS
+        field: module.method_does_not_exist
+        expected:
+          name: do_nothing
+          location: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/process/spies/app.py
+    - description: Method exists in module
+      arguments:
+        module: *RESOURCE_PATH
+        route: add
+      checks:
+      - method: check_function
+        << : *CHECKS
+        field: module.add
+        expected:
+          name: add
+          location: *RESOURCE_PATH
+      - method: check_function
+        << : *CHECKS
+        field: module.add.__wrapped__
+        expected:
+          name: add
+          location: *RESOURCE_PATH
+      - method: check_equals
+        << : *CHECKS
+        field: module.add.__method__
+        expected: spy
+    # # TODO: Can this test be resolved?
+    # - description: Call spied on method
+    #   arguments:
+    #     module: *RESOURCE_PATH
+    #     route: add
+    #   checks:
+    #   - method: check_spies
+    #     << : *CHECKS
+    #     cast_output:
+    #     - method: call_spy
+    #       << : *RESOURCE
+    #     expected:
+    #       add:
+    #         called: True
+    #         called_with:
+    #           a: 1
+    #           b: 1
+- function: get_store
+  description: >
+    Returns a simple name space containing a dictionary that spies are stored in
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        spies_: {}

@@ -1,0 +1,96 @@
+environment:
+  ROOT_DIR: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}
+
+
+options:
+- args: project-path
+  options:
+    action: store
+    help: Directory containing python files to test.
+    required: false
+    dest: project_path
+    default: .
+- args: exclude-methods
+  options:
+    action: store
+    help: &help_em List of patterns to match to methods to exclude
+    default: []
+    nargs: +
+    dest: exclude_methods
+    required: false
+  help: *help_em
+- args: include-methods
+  options:
+    action: store
+    help: &help_im List of patterns to match to methods to include
+    default: []
+    nargs: +
+    dest: include_methods
+    required: false
+  help: *help_im
+- args: exclude-files
+  options:
+    action: store
+    help: &help_ef List of patterns to match to files to exclude
+    default:
+    - .venv
+    - .eggs
+    - build
+    - __pycache__
+    nargs: +
+    dest: exclude_files
+    required: false
+  help: *help_ef
+- args: include-files
+  options:
+    action: store
+    help: &help_if List of patterns to match to files to include
+    default: []
+    nargs: +
+    dest: include_files
+    required: false
+    # type: str
+  help: *help_if
+- args: yaml-suffix
+  options:
+    action: store
+    help: >
+      he suffix at the end of YAML filename that's used to identify test files
+    default: _test
+    dest: yaml_suffix
+    required: false
+  help: >
+    A string. The suffix at the end of YAML filename that's used to identify
+    test files
+- args: logging-flag
+  options:
+    action: store
+    help: &HELP_LF >
+      A boolean. The suffix at the end of YAML filename that's used to identify
+      test files
+    default: true
+    dest: logging_flag
+    required: false
+  help: *HELP_LF
+- args: setup
+  options:
+    action: store
+    help: &HELP_S >
+      List of object definitions for objects to setup or teardown during testing phases
+    default: []
+    dest: setup
+    required: false
+  help: *HELP_S
+
+
+
+root_paths:
+- .
+- ''
+- null
+- None
+
+
+null_types:
+- nonetype
+- notsettype

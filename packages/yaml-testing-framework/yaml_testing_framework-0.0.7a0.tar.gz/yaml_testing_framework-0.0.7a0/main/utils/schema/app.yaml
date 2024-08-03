@@ -1,0 +1,140 @@
+Test: &TEST
+  description: Contains all of the fields needed to collate and run a test
+  fields:
+  - name: exclude_methods
+    type: str | list
+    description:  List of patterns to match to methods to exclude
+    default: []
+  - name: include_methods
+    type: str | list
+    description: List of patterns to match to methods to include
+    default: []
+  - name: module
+    type: Any
+    description: A module or the location to a module in the file system
+    default: null
+  - name: function
+    type: str
+    description: Name of the function to test
+    default: ''
+  - name: function_name
+    type: str
+    description: Name of the function to test
+    default: ''
+  - name: cast_arguments
+    description: Cast whole or parts of a function's arguments
+    type: List[dict | Cast]
+    default: null
+  - name: cast_output
+    description: Cast whole or parts of a function's result
+    type: List[dict | Cast]
+    default: null
+  - name: description
+    type: str
+    description: Description for a module, test, or case
+    default: ''
+  - name: patches
+    type: List[dict]
+    description: List containing info on objects to patch
+    default: null
+  - name: environment
+    type: dict
+    default: {}
+    description: Environment variables to use for tests
+  - name: arguments
+    type: dict
+    default: {}
+    description: Keyword arguments to pass to functions
+  - name: unpack
+    type: bool
+    default: true
+    description: >
+      Indicates whether to unpack arguments when pass them to function to test
+  - name: checks
+    type: List[dict]
+    default: []
+    description: >
+      A list of checks and expected results to verify against
+      the actual result
+  - name: yaml
+    type: str
+    description: Path to a YAML test file
+  - name: output
+    type: Any
+    default: null
+    description: Store results of running the function
+  - name: id
+    type: str
+    default: null
+    description: Unique long ID assigned to each tests
+  - name: id_long
+    type: str
+    default: ''
+    description: Unique short ID assigned to each tests
+  - name: id_short
+    type: str
+    default: ''
+    description: Unique ID assigned to each tests
+  - name: module_route
+    type: str
+    description: Location of a module in the file system
+    default: ''
+  - name: tests
+    type: list
+    description: Store collated, individual tests
+    default: null
+  - name: key
+    type: str
+    description: ey or unique identifier for a test
+    default: null
+  - name: spies
+    type: list | str
+    description: >
+      A list of methods to spy, where each item in the list is the dot
+      delimited route to a method
+    default: null
+  - name: phase_
+    type: list | str
+    description: Current phase of the testing prices
+    default: function
+
+
+Logger:
+  description: Data needed to call the the logger
+  fields:
+  - name: directory
+    type: str
+    description: Directory to store logs in
+    default: null
+  - name: data
+    type: Any
+    description: Data to log
+    default: null
+  - name: format
+    type: str
+    description: Format for the log - `json` or `yaml`
+    default: yaml
+  - name: standard_output
+    type: bool
+    description: Flag for outputting to terminal
+    default: false
+  - name: location
+    type: str
+    description: Location of a log file
+    default: ''
+  - name: timestamp
+    type: int
+    description: Timestamp, seconds past epoch
+    default: null
+  - name: level
+    type: str
+    description: Logging level
+    default: debug
+  - name: status
+    type: str
+    description: Status of logging data - success or fail
+    default: success
+  - name: enabled
+    type: bool
+    description: Enable or disable logging
+    default: true

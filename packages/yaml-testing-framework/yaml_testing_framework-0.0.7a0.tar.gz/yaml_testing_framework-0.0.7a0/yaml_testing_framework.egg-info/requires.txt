@@ -1,0 +1,4 @@
+pytest
+pyyaml>=6.0.0
+nest-asyncio
+pebble
