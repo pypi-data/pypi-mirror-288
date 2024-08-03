@@ -1,0 +1,12 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: onion-location
+Upstream-Contact: Frederik “Freso” S. Olesen <archlinux@freso.dk>
+Source: https://codeberg.org/Freso/python-onion-location
+
+Files: *
+Copyright: 2024 Frederik “Freso” S. Olesen <https://freso.dk/>
+License: AGPL-3.0-or-later
+
+Files: .gitignore
+Copyright: 2023 github/gitignore contributors <https://github.com/github/gitignore>
+License: CC0-1.0

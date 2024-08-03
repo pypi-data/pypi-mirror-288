@@ -1,0 +1,52 @@
+Metadata-Version: 2.3
+Name: onion-location
+Version: 0.1.0
+Summary: Discover advertised Onion-Location for given URLs
+Project-URL: Homepage, https://codeberg.org/Freso/python-onion-location
+Project-URL: Issues, https://codeberg.org/Freso/python-onion-location/issues
+Project-URL: Repository, https://codeberg.org/Freso/python-onion-location.git
+Author: Frederik “Freso” S. Olesen
+License-Expression: AGPL-3.0-or-later
+License-File: LICENSES/AGPL-3.0-or-later.md
+License-File: LICENSES/CC0-1.0.txt
+Keywords: Onion-Location,Tor
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Requires-Dist: bs4
+Requires-Dist: lxml
+Description-Content-Type: text/x-rst
+
+.. SPDX-FileCopyrightText: © 2024 Frederik “Freso” S. Olesen
+.. SPDX-License-Identifier: AGPL-3.0-or-later
+
+================
+ Onion-Location
+================
+
+Python library for discovering `Onion-Location`_ HTTP headers.
+
+.. _`Onion-Location`: https://community.torproject.org/onion-services/advanced/onion-location/
+
+-------
+ Usage
+-------
+
+>>> from onion_location import get_onion_location
+>>> get_onion_location("https://www.torproject.org/")
+'http://2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion/index.html'

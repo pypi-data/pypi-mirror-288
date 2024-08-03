@@ -1,0 +1,112 @@
+# SPDX-FileCopyrightText: © 2024 Frederik “Freso” S. Olesen
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "onion-location"
+dynamic = ["version"]  # dynamic version assignment via hatch-vcs
+description = "Discover advertised Onion-Location for given URLs"
+readme = "README.rst"
+license = "AGPL-3.0-or-later"
+license-files = { globs = ["LICENSES/*"] }
+authors = [
+  { name = "Frederik “Freso” S. Olesen" },
+]
+requires-python = ">= 3.9"
+dependencies = [
+  "bs4",
+  "lxml",
+]
+keywords = ["Tor", "Onion-Location"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Security",
+  "Topic :: Utilities",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://codeberg.org/Freso/python-onion-location"
+Issues = "https://codeberg.org/Freso/python-onion-location/issues"
+Repository = "https://codeberg.org/Freso/python-onion-location.git"
+
+[project.scripts]
+onion-location = "onion_location:main"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.targets.wheel]
+packages = ["onion_location.py"]
+
+[tool.ruff]
+preview = true
+fix = true
+unsafe-fixes = true
+
+[tool.ruff.lint]
+select = [
+  "F", # Pyflakes
+  "E", "W", # pycodestyle
+  "C90", # mccabe
+  "I", # isort
+  "N", # pep8-naming
+  "D", # pydocstyle
+  "UP", # pyupgrade
+  "YTT", # flake8-2020
+  "ANN", # flake8-annotations
+  "S", # flake8-bandit
+  "BLE", # flake8-blind-except
+  "FBT", # flake8-boolean-trap
+  "B", # flake8-bugbear
+  "A", # flake8-builtins
+  "COM", # flake8-commas
+  "CPY", # flake8-copyright
+  "C4", # flake8-comprehensions
+  "DTZ", # flake8-datetimez
+  "T10", # flake8-debugger
+  "EM", # flake8-errmsg
+  "EXE", # flake8-executable
+  "FA", # flake8-future-annotations
+  "ISC", # flake8-implicit-str-concat
+  "ICN", # flake8-import-conventions
+  "PIE", # flake8-pie
+  "T20", # flake8-print
+  "PYI", # flake8-pyi
+  "Q", # flake8-quotes
+  "RSE", # flake8-raise
+  "RET", # flake8-return
+  "SIM", # flake8-simplify
+  "ARG", # flake8-unused-arguments
+  "PTH", # flake8-use-pathlib
+  "TD", # flake8-todos
+  "ERA", # eradicate
+  "PL", # Pylint
+  "TRY", # tryceratops
+  "FLY", # flynt
+  "PERF", # Perflint
+  "FURB", # refurb
+  "DOC", # pydoclint
+  "RUF", # Ruff
+]
+ignore = ["EXE001", "TD002", "TD003"]
+allowed-confusables = ["’"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "pep257"
