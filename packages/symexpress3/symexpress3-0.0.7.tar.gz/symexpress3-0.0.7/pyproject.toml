@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/symexpress3/version.py"
+
+[project]
+name = "symexpress3"
+dynamic = ['version']
+authors = [
+  { name="Gien van den Enden", email="swvandenenden@gmail.com" },
+]
+maintainers = [
+  {name = "Gien van den Enden", email="swvandenenden@gmail.com"}
+]
+description = "A Python module for symbolic calculations"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Intended Audience :: Science/Research"
+]
+license = {file = "LICENSE"}
+keywords = ["math", "symbolic", "calculator"]
