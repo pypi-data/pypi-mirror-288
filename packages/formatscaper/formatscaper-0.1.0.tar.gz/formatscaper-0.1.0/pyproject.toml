@@ -1,0 +1,67 @@
+[project]
+name = "formatscaper"
+version = "0.1.0"
+description = "Tool for building an overview of the file format landscape in a research data repository."
+authors = [
+    {name = "Maximilian Moser", email = "maximilian.moser@tuwien.ac.at"}
+]
+readme = "README.md"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Topic :: File Formats",
+    "Topic :: Utilities",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: POSIX :: Linux",
+]
+dependencies = [
+    "PyYAML >= 6.0.1",
+    "progressbar2 >= 4.4.2",
+    "urwid >= 2.6.9",
+    "SQLAlchemy >= 2.0",
+]
+
+[project.urls]
+Repository = "https://gitlab.tuwien.ac.at/fairdata/formatscaper"
+
+[project.optional-dependencies]
+dev = [
+    "black >= 24.2.0",
+    "isort >= 5.13.2",
+    "ipython >= 8.22.2",
+    "flake8 >= 7.0",
+    "flake8-pyproject >= 1.2.3",
+]
+tests = [
+    "pytest >= 8.3",
+    "pytest-black >= 0.3",
+    "pytest-cov >= 5.0",
+    "pytest-isort >= 4.0",
+]
+
+[project.scripts]
+formatscaper = "formatscaper.cli:run_formatscaper_cli"
+resultman = "formatscaper.cli:run_resultman_cli"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "E704"]
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+addopts = '--black --isort --doctest-glob="*.rst" --doctest-modules --cov=formatscaper --cov-report=term-missing'
+
+[tool.coverage.run]
+omit = [
+    "formatscaper/cli/resultman.py"
+]

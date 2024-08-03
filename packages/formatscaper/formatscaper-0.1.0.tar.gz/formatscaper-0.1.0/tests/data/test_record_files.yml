@@ -1,0 +1,19 @@
+- filename: hosts
+  uri: /etc/hosts
+  record: 1234-abcd
+
+- filename: environment
+  uri: /etc/environment
+  record: 1234-abcd
+
+- filename: FS Table
+  uri: /etc/fstab
+  record: 1234-abcd
+
+- filename: original_name.pdf
+  uri: /home/mmoser/Documents/renamed.pdf
+  record: different-record
+
+- filename: invenio-upload.zip
+  uri: /mnt/data/uploaded_data/12/34/56/data
+  record: qwer-5678

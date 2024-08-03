@@ -1,0 +1,8 @@
+exclude .gitlab-ci.yml
+exclude *.sqlite
+exclude *.log
+exclude *.yml
+
+include MANIFEST.in
+include LICENSE
+recursive-include tests *.py *.yml

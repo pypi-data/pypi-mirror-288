@@ -1,0 +1,92 @@
+- puid: x-fmt/111
+  name: Plain Text File
+  mime: text/plain
+  risk: 1
+- puid: x-fmt/263
+  name: ZIP Format
+  mime: application/zip
+  risk: 2
+- puid: UNKNOWN
+  name: null
+  mime: null
+  risk: 5
+- puid: fmt/818
+  name: YAML
+  mime: null
+  risk: 1
+- puid: fmt/938
+  name: Python Source Code File
+  mime: null
+  risk: 3
+- puid: fmt/1149
+  name: Markdown
+  mime: text/markdown
+  risk: 1
+- puid: fmt/43
+  name: JPEG File Interchange Format
+  mime: image/jpeg
+  risk: 1
+- puid: fmt/615
+  name: Gimp Image File Format
+  mime: null
+  risk: 3
+- puid: x-fmt/390
+  name: Exchangeable Image File Format (Compressed)
+  mime: image/jpeg
+  risk: 1
+- puid: fmt/12
+  name: Portable Network Graphics
+  mime: image/png
+  risk: 1
+- puid: fmt/1639
+  name: Adobe InDesign Document
+  mime: null
+  risk: 2
+- puid: fmt/13
+  name: Portable Network Graphics
+  mime: image/png
+  risk: 2
+- puid: fmt/11
+  name: Portable Network Graphics
+  mime: image/png
+  risk: 2
+- puid: fmt/276
+  name: Acrobat PDF 1.7 - Portable Document Format
+  mime: application/pdf
+  risk: 1
+- puid: fmt/215
+  name: Microsoft Powerpoint for Windows
+  mime: application/vnd.openxmlformats-officedocument.presentationml.presentation
+  risk: 2
+- puid: fmt/412
+  name: Microsoft Word for Windows
+  mime: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+  risk: 2
+- puid: fmt/199
+  name: MPEG-4 Media File
+  mime: application/mp4
+  risk: 2
+- puid: x-fmt/391
+  name: Exchangeable Image File Format (Compressed)
+  mime: image/jpeg
+  risk: 1
+- puid: fmt/471
+  name: Hypertext Markup Language
+  mime: text/html
+  risk: 1
+- puid: fmt/92
+  name: Scalable Vector Graphics
+  mime: image/svg+xml
+  risk: 1
+- puid: fmt/4
+  name: Graphics Interchange Format
+  mime: image/gif
+  risk: 1
+- puid: x-fmt/224
+  name: Cascading Style Sheet
+  mime: text/css
+  risk: 1
+- puid: fmt/20
+  name: Acrobat PDF 1.6 - Portable Document Format
+  mime: application/pdf
+  risk: 1
