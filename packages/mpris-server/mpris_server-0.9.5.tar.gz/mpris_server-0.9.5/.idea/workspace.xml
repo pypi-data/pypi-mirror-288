@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3973fa06-8acf-48c4-937e-5d9fa7dcce0d" name="Changes" comment="Bump version" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="master" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="before" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="KEEP" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
+  ]
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:alexdelorenzo/mpris_server.git&quot;,
+    &quot;accountId&quot;: &quot;9c7736f5-966e-4476-89b1-f7c64679ad1c&quot;
+  }
+}</component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="5m2ko18n" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2HkQty4a8OZeCy0fg2dyZGZLRbV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alex/Projects/Self/Python/limiter&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="mpris_server" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="mpris_server" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/base.py" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PY-242.20224.25" />
+        <option value="bundled-python-sdk-fa459bfafed0-77d8f034812c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.20224.25" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3973fa06-8acf-48c4-937e-5d9fa7dcce0d" name="Changes" comment="" />
+      <created>1668826819627</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668826819627</updated>
+      <workItem from="1668826820927" duration="487000" />
+      <workItem from="1668827315856" duration="1353000" />
+      <workItem from="1697345368282" duration="7907000" />
+      <workItem from="1697435689817" duration="427000" />
+      <workItem from="1697785352743" duration="390000" />
+      <workItem from="1698123745416" duration="239000" />
+      <workItem from="1698137556048" duration="1941000" />
+      <workItem from="1698140389203" duration="72000" />
+      <workItem from="1698217077554" duration="4404000" />
+      <workItem from="1698289360412" duration="1759000" />
+      <workItem from="1698448755601" duration="618000" />
+      <workItem from="1698631810398" duration="366000" />
+      <workItem from="1698721591520" duration="226000" />
+      <workItem from="1698721824203" duration="1797000" />
+      <workItem from="1698820140442" duration="2982000" />
+      <workItem from="1698904901556" duration="13597000" />
+      <workItem from="1698973834861" duration="13000" />
+      <workItem from="1699596643187" duration="943000" />
+      <workItem from="1699597597867" duration="3374000" />
+      <workItem from="1699601402662" duration="608000" />
+      <workItem from="1699602181938" duration="2831000" />
+      <workItem from="1699669883871" duration="7446000" />
+      <workItem from="1699694948060" duration="4803000" />
+      <workItem from="1699748423389" duration="2576000" />
+      <workItem from="1699768920831" duration="1708000" />
+      <workItem from="1699779312126" duration="747000" />
+      <workItem from="1699846481749" duration="2721000" />
+      <workItem from="1700028197284" duration="2742000" />
+      <workItem from="1700035896119" duration="3015000" />
+      <workItem from="1700300351422" duration="2763000" />
+      <workItem from="1700455398224" duration="894000" />
+      <workItem from="1700475738649" duration="149000" />
+      <workItem from="1700483413485" duration="2184000" />
+      <workItem from="1700981289642" duration="410000" />
+      <workItem from="1701384371526" duration="1239000" />
+      <workItem from="1701402520491" duration="53000" />
+      <workItem from="1701451898041" duration="628000" />
+      <workItem from="1701452537968" duration="268000" />
+      <workItem from="1701457671647" duration="6793000" />
+      <workItem from="1701467493239" duration="1958000" />
+      <workItem from="1701470799002" duration="286000" />
+      <workItem from="1701471172205" duration="123000" />
+      <workItem from="1701734692202" duration="59000" />
+      <workItem from="1702081456497" duration="803000" />
+      <workItem from="1702265797929" duration="2562000" />
+      <workItem from="1703945946555" duration="145000" />
+      <workItem from="1707548422647" duration="2104000" />
+      <workItem from="1707645313297" duration="1337000" />
+      <workItem from="1707882545798" duration="79000" />
+      <workItem from="1707882631947" duration="886000" />
+      <workItem from="1708034176253" duration="19000" />
+      <workItem from="1717522047509" duration="244000" />
+      <workItem from="1717540361538" duration="1838000" />
+      <workItem from="1719966746843" duration="419000" />
+      <workItem from="1719984461342" duration="563000" />
+      <workItem from="1721197500516" duration="828000" />
+    </task>
+    <task id="LOCAL-00003" summary="Remove `Decimal` suffix from `Decimal` aliases, add accurate annotations to constant definitions">
+      <created>1669174970609</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669174970609</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Bake units into type aliases, use type aliases accordingly to replace primitives, break `PlaylistEntry` into aliases instead of just `str`">
+      <created>1669175969296</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669175969296</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Use `Self` in `Method` annotation instead of `Any`">
+      <created>1669176366048</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669176366048</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Use generic versions of built in containers instead of the ones from `Typing`">
+      <created>1669176426007</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669176426007</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Bump version with API change for aliases">
+      <created>1669176526839</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669176526839</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Use `setuptools.find_packages()`">
+      <created>1669176609353</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669176609353</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Use rich type aliases">
+      <created>1669180162885</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669180162885</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Introduce D-Bus property enum, add playback properties to player properties list, use rich type aliases">
+      <created>1669180476165</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669180476165</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Use assignment expression for clarity">
+      <created>1669180492844</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669180492844</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add a debug statement">
+      <created>1669184862798</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669184862798</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Works correctly. Fix metadata parsing bug, add a debug statement, really reconsider `zip()`ing two iterables whose orders matter but aren't guaranteed by sorting">
+      <created>1669184977488</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669184977488</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Upgrade `emoji` dep">
+      <created>1669185178605</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1669185178605</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add logging and use apt names">
+      <created>1669190911912</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1669190911912</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add logging and use apt names">
+      <created>1669190944616</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669190944616</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add rich decorate annotations">
+      <created>1669190978157</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1669190978157</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Optimize imports, formatting">
+      <created>1669191000596</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1669191000596</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Annotate class variables correctly">
+      <created>1669191197928</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1669191197928</updated>
+    </task>
+    <task id="LOCAL-00020" summary="`int` -&gt; `float`">
+      <created>1669262860010</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1669262860010</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Use consistent names for metadata and break public API, ensure order of declared attributes doesn't matter for building D-Bus metadata, implement `.sorted()` and `.to_dict()` for `MetadataEntries` and `MetadataObj`, optimize imports">
+      <created>1669264186120</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1669264186120</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Add `xesam:asText` support">
+      <created>1669264361961</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1669264361961</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Add `xesam:audioBPM` support">
+      <created>1669264595856</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1669264595856</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Add `xesam:autoRating` support">
+      <created>1669264768164</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1669264768164</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Add `xesam:composer` support">
+      <created>1669264858880</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1669264858880</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Add `xesam:contentCreated` support">
+      <created>1669265026811</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1669265026811</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Add `xesam:firstUsed` support">
+      <created>1669265160560</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1669265160560</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Add `xesam:genre` support">
+      <created>1669265257121</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1669265257121</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Add `xesam:lastUsed` support">
+      <created>1669265603199</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1669265603199</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Add `xesam:lyricist` support">
+      <created>1669265743701</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1669265743701</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Finish implementing MPRIS metadata completely">
+      <created>1669266113979</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1669266113979</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Add debug logging to indicate failed and ignored metadata conversion">
+      <created>1669266816398</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1669266816398</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Add `DATETIME` alias, add sanity check assertion, use apt names">
+      <created>1669267679047</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1669267679047</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Add `NoTrack` as per MPRIS v2.2 spec, make it available to `adapters` and `tracklist` modules, add `NoTrack` support for `TrackList` interface">
+      <created>1669268715701</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1669268715701</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Add `py.typed`">
+      <created>1669269432981</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1669269432981</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Bump version">
+      <created>1675847360166</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1675847360166</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Use constants">
+      <created>1675851915057</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1675851915057</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Use constants">
+      <created>1675851933644</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1675851933645</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Test">
+      <created>1675852453167</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1675852453167</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Python docstrings must be string literals, not f-strings">
+      <created>1675853147817</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1675853147817</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Add more type annotations">
+      <created>1675853929960</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1675853929960</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Export user facing code in top module">
+      <created>1675854627741</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1675854627741</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Refactor exported API">
+      <created>1675857591527</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1675857591527</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Use correct annotations, use enums instead of literals, add more enums">
+      <created>1675921696478</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1675921696478</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Add `CanEditTracks` property, add `Ordering`, define constants using defined types,">
+      <created>1676762933570</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1676762933570</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Use `Ordering`">
+      <created>1676762953114</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1676762953114</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Use `Property` annotation, give all adapters uniform interfaces, make `emit_changes()` static">
+      <created>1676763008123</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1676763008123</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Use `Property`, refactor, pull out constants and functions,">
+      <created>1676763062369</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1676763062369</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Use `Property`">
+      <created>1676763082192</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1676763082192</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Remove unused import">
+      <created>1676763171779</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1676763171779</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Optimize imports, export public API">
+      <created>1676811887616</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1676811887616</updated>
+    </task>
+    <option name="localTasksCounter" value="190" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fix circular import" />
+    <MESSAGE value="Refactor metadata conversion, remove unused constants" />
+    <MESSAGE value="Ensure thread starts and is removed when stopped" />
+    <MESSAGE value="Move metadata creation logic to `metadata`, give key functions detailed names, give constants detailed names" />
+    <MESSAGE value="Remove duplicate method definition in ABC" />
+    <MESSAGE value="Handle different numerical value types as `Volume` input" />
+    <MESSAGE value="`val` -&gt; `value`" />
+    <MESSAGE value="Use full names, not abbreviations" />
+    <MESSAGE value="Casefold artists names" />
+    <MESSAGE value="Handle missing `Track`" />
+    <MESSAGE value="Use correct parameter annotation" />
+    <MESSAGE value="`artists` should be `list[str]` and not `tuple`, as `tuple` will be filtered out &#10;during metadata conversion" />
+    <MESSAGE value="Bump Python" />
+    <MESSAGE value="`disc_no` -&gt; `disc_number`" />
+    <MESSAGE value="`track_no` -&gt; `track_number`" />
+    <MESSAGE value="Ensure functions return bools and not just truthy values" />
+    <MESSAGE value="Use `Sequence` and `Mapping` instead of concrete types" />
+    <MESSAGE value="Dynamically convert values to `Compatible` types instead of relying on users to be correct" />
+    <MESSAGE value="Add `Metadata` to length assertion" />
+    <MESSAGE value="`CanEditTracks` is not a `Playlists` property, `playlists` should reflect the interface name `Playlists`" />
+    <MESSAGE value="Optimize imports" />
+    <MESSAGE value="`Interfaces` enum -&gt; `Interface`" />
+    <MESSAGE value="Remove unused code" />
+    <MESSAGE value="Add `comments` to `Track`" />
+    <MESSAGE value="Bump version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bump version" />
+  </component>
+</project>
