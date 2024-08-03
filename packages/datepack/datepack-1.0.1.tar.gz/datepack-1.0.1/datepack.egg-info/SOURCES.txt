@@ -1,0 +1,8 @@
+setup.py
+datepack/__init__.py
+datepack.egg-info/PKG-INFO
+datepack.egg-info/SOURCES.txt
+datepack.egg-info/dependency_links.txt
+datepack.egg-info/top_level.txt
+datepack/multi/__init__.py
+datepack/multi/anyprogram.py
