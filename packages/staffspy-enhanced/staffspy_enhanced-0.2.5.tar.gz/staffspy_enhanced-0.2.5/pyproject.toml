@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "staffspy_enhanced"
+version = "0.2.5"
+description = "Staff scraper library for LinkedIn, customized for specific needs. Original author: Cullen Watson <cullen@bunsly.com>. GitHub: https://github.com/cullenwatson/StaffSpy Do not use this if you do not need enhanced functionality."
+authors = ["Kha333n <kha333n@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "staffspy", from = "." }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.7.2"
+pandas = "^2.2.2"
+requests = "^2.32.3"
+tldextract = "^5.1.2"
+selenium = { version = "^4.3.0", optional = true }
+tenacity = "^8.5.0"
+python-dateutil = "^2.9.0.post0"
+beautifulsoup4 = "^4.12.3"
+
+[tool.poetry.extras]
+browser = ["selenium"]
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.1"
+black = "^24.4.2"
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
