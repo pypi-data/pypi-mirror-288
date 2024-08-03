@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cututil
+Version: 0.0.2
+Summary: Redesigned the cut command to be more convenient.
+Home-page: https://github.com/ntk01/command-util
+Author: ntk01
+Author-email: n.taku.law@gmail.com
+License: MIT
+Keywords: python,cut,command,utility
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## cut-util
+This software is released under the MIT License, see LICENSE.
