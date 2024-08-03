@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: liquidkit
+Version: 0.0.1
+Summary: Liquid AI API
+Author-email: "Liquid AI, Inc" <support@liquid.ai>
+Project-URL: Homepage, https://liquid.ai
+Keywords: liquidai
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pygame
+
