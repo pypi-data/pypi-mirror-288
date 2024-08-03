@@ -1,0 +1,10 @@
+awq_cli/__init__.py,sha256=iUhBrcHng6im05abPxyfF5KNLVjdqZqjv79tUQYFoJk,137
+awq_cli/__main__.py,sha256=ZEsN_vlweHl8oQC4nbLxEYc1Iqbn93m14G76qGPtN0w,4635
+awq_cli/inference.py,sha256=AUBDi9db8r5SBnDPz-I8KsNC2ErqQ2dMs_FlWa9_ltY,169
+awq_cli/quantize.py,sha256=HuC1LSr9YGQe76I8kVgrIMtf6c6a0yMpZ07M7I4jpSs,2558
+awq_cli-0.1.0.dist-info/LICENSE,sha256=mkipzoVFlZOelSQbiV7m23h-T0mdbLUQF6CZuVE8Yhk,1073
+awq_cli-0.1.0.dist-info/METADATA,sha256=TRfv9-vD2HZrEEMfoTjNbu2OfDHlbMgxcxub3i2yssM,1242
+awq_cli-0.1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+awq_cli-0.1.0.dist-info/entry_points.txt,sha256=_kSUYlaM3EHI3YvNHPc74kTC9UNHOK7sOhIG7Ay5A04,50
+awq_cli-0.1.0.dist-info/top_level.txt,sha256=meqgmJeRoUtb-vcwlwij-xUx1K9VKI6xqJS0EPv1OsA,8
+awq_cli-0.1.0.dist-info/RECORD,,
