@@ -1,0 +1,10 @@
+LICENSE.lic
+README.md
+setup.py
+kandinskylib/__init__.py
+kandinskylib/kandinskylib.py
+kandinskylib.egg-info/PKG-INFO
+kandinskylib.egg-info/SOURCES.txt
+kandinskylib.egg-info/dependency_links.txt
+kandinskylib.egg-info/requires.txt
+kandinskylib.egg-info/top_level.txt
