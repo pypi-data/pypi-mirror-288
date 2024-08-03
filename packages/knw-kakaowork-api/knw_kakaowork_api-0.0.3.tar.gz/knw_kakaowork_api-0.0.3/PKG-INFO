@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: knw_kakaowork_api
+Version: 0.0.3
+Summary: # 케이앤웍스 카카오워크 API
+Home-page: https://github.com/daumsong/kakaowork_api
+Author: archon.oh
+Author-email: archon.oh@knworks.co.kr
+Keywords: knw,kakaowork,kakaoworkapi,work,kakao,pypi
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
