@@ -1,0 +1,9 @@
+setup.py
+directory1/__init__.py
+directory1/anyprogram.py
+directory2/__init__.py
+directory2/anyprogram.py
+mathpack.egg-info/PKG-INFO
+mathpack.egg-info/SOURCES.txt
+mathpack.egg-info/dependency_links.txt
+mathpack.egg-info/top_level.txt
