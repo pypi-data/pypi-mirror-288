@@ -1,0 +1,151 @@
+[
+    {
+        "name": "OdishaTV",
+        "url": "https://odishatv.in",
+        "rules": {
+            "title": {
+                "selector": "h1::text"
+            },
+            "published": {
+                "selector": "ul.article-author:nth-child(3) > li:nth-child(1)::text" 
+            },
+            "img": {
+                "selector": "div#storymultiimg div.article-featured > img::attr(data-src)"
+            },
+            "content": {
+                "selector": "div.article-content > p::text"
+            }
+        }
+    },
+    {
+        "name": "TechSpot",
+        "url": "https://www.techspot.com",
+        "rules": {
+            "title": {
+                "selector": "h1::text"
+            },
+            "content": {
+                "selector": "div.articleBody > :not(div.subDriveRevBot):not(.twitter-tweet):not(div.related-news):not(style) *::text"
+            }
+        }
+    },
+    {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com",
+        "rules": {
+            "title": {
+                "selector": "h1::text"
+            },
+            "img": {
+                "selector": "img.attachment-post-thumbnail::attr(srcset)"
+            },
+            "content": {
+                "selector": "div.wp-block-post-content > p::text"
+            }
+        }
+    },
+    {
+        "name": "XDA",
+        "url": "https://www.xda-developers.com",
+        "rules": {
+            "title": {
+                "selector": "h1:not(.hide)::text"
+            },
+            "img": {
+                "selector": ".heading_image img::attr(data-img-url)"
+            },
+            "content": {
+                "selector": "div.content-block-regular > p::text"
+            }
+        }
+    },
+    {
+        "name": "TheVerge",
+        "url": "https://www.theverge.com",
+        "rules": {
+            "prepare": "script[type='application/ld+json']::text",
+            "title": {
+                "jmespath": "headline"
+            },
+            "img": {
+                "jmespath": "thumbnailUrl"
+            },
+            "content": {
+                "jmespath": "articleBody"
+            }
+        }
+    },
+    {
+        "name": "Wired",
+        "url": "https://www.wired.com",
+        "rules": {
+            "prepare": "script[type='application/ld+json']::text",
+            "title": {
+                "jmespath": "headline"
+            },
+            "img": {
+                "jmespath": "thumbnailUrl"
+            },
+            "content": {
+                "jmespath": "articleBody"
+            }
+        }
+    },
+    {
+        "name": "APNews",
+        "url": "https://www.apnews.com",
+        "rules": {
+            "title": {
+                "selector": "h1::text"
+            },
+            "content": {
+                "selector": "div.Page-storyBody > .RichTextBody > p *::text"
+            }
+        }
+    },
+    {
+        "name": "EnGadget",
+        "url": "https://www.engadget.com",
+        "rules": {
+            "title": {
+                "selector": "h1::text"
+            },
+            "img": {
+                "selector": "div.caas-img-container > img.caas-img::attr(data-src)"
+            },
+            "content": {
+                "selector": "div.caas-body > p *::text"
+            }
+        }
+    },
+    {
+        "name": "GeekWire",
+        "url": "https://www.geekwire.com",
+        "rules": {
+            "title": {
+                "selector": "h1::text"
+            },
+            "img": {
+                "selector": "figure.wp-block-image > img::attr(srcset)"
+            },
+            "content": {
+                "selector": "div.entry-content > :not(figure) *::text"
+            }
+        }
+    },
+    {
+        "name": "ArsTechnica",
+        "url": "https://arstechnica.com",
+        "rules": {
+            "title": {
+                "selector": "h1::text"
+            },
+            "img": {
+                "selector": "figure.intro-image > img::attr(src)"
+            },
+            "content": {
+                "selector": "div.article-content > :not(aside):not(figure) *::text"
+            }
+        }
+    }
+]

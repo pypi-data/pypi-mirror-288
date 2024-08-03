@@ -1,0 +1,11 @@
+httpx
+parsel
+
+[dev]
+nbweb[formatter,test]
+
+[formatter]
+black
+
+[test]
+pytest
