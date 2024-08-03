@@ -1,0 +1,10 @@
+jaziw/__init__.py,sha256=UlVZnybzCE-w4s-oSZMFbHBxl656VnIWPNkYMPFtOZY,100
+jaziw/normalize.py,sha256=F1WaBpDAS3jnWgjVBsZIWZD3A5VkHQ_J3tKiTxfRgQg,231
+jaziw/sentenize.py,sha256=j2-0iM-DVg0-qxBkR8IqHtaQ4eDTjmMoaNngkoA1q8k,502
+jaziw/substring.py,sha256=1s7tmufNQt6jNKRrrvIS4WnXBOfqrtvb9sFxQQoTBcs,111
+jaziw/tokenize.py,sha256=nluR1qtb7Qrr-IxOa3_EKqaM2JMTzqBPPThvWBAAT7k,351
+jaziw-0.0.2.dist-info/LICENSE,sha256=Bwhpk6Hm8lE9i70_X9JqXzicXodoytPl5IYV78xDexM,1096
+jaziw-0.0.2.dist-info/METADATA,sha256=7su1bqllPq5OoVLiSInh4zUCYazzer7I0TDUY-NHY8E,3152
+jaziw-0.0.2.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+jaziw-0.0.2.dist-info/top_level.txt,sha256=wnExBPxbBN5XzCot_D1Gxzw_6cAONmrYkWqdRCSOAks,6
+jaziw-0.0.2.dist-info/RECORD,,
