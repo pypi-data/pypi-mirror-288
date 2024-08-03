@@ -1,0 +1,38 @@
+query getFanPointsTransaction(
+    $userId: String!
+    $purchaseId: String!
+    $partnerId: String!
+) {
+    getFanPointsTransaction: get_fan_points_transaction(
+        user_id: $userId
+        purchase_id: $purchaseId
+        partner_id: $partnerId
+    ) {
+        result {
+            purchaseId: purchase_id
+            userId: user_id
+            transactionType: transaction_type
+            purchaseItems: purchase_items {
+                purchaseItemId: purchase_item_id
+                partnerId: partner_id
+                title
+                description
+                price
+                currency
+                amount
+                rateLabel: rate_label
+                date
+                hasBeenUndone: has_been_undone
+                hasBeenSettled: has_been_settled
+            }
+        }
+        errors {
+            unknownUserError: unknown_user_error {
+                _empty
+            }
+            transactionNotFoundError: transaction_not_found_error {
+                _empty
+            }
+        }
+    }
+}
