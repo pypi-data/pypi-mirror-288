@@ -1,0 +1,9 @@
+dbsys/__init__.py,sha256=0Vv7XR9wl2N3PunOwOuqeGCSIStoePWUUwzIzzZ6w08,230
+dbsys/dbsys.py,sha256=bLLJ-Kp22WJhsaOeyGFKEOBkCoKWw70C8TMGhcpNL9o,12454
+dbsys/dbsys.pyi,sha256=VrWyBObGXG9Jk1aOnh7QDRBuOhTmJSpbuJ1riI1cNeo,1180
+dbsys/py.typed,sha256=SjEinszJd-mvYbuPEDYGDKHhe7hxMRz9883ND-UvFOA,91
+dbsys-0.1.7.dist-info/LICENSE,sha256=1Du83dlrTbRRSYRjfzDanR1C8UZN47VuaPo5DH5X4jc,1063
+dbsys-0.1.7.dist-info/METADATA,sha256=99i8J0xqeDc6M21bDdLcqPlAoQ6KrA6_ks5Z37gr2XI,5206
+dbsys-0.1.7.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+dbsys-0.1.7.dist-info/top_level.txt,sha256=zDNytMONTozUk-ImSM6kruL16KyXFwoN1hX3FAvL9f0,6
+dbsys-0.1.7.dist-info/RECORD,,
