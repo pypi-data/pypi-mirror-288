@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+proxy/__init__.py
+proxy/proxy.py
+proxy/py.typed
+tests/__init__.py
+tests/test_proxy.py
+typed_proxy.egg-info/PKG-INFO
+typed_proxy.egg-info/SOURCES.txt
+typed_proxy.egg-info/dependency_links.txt
+typed_proxy.egg-info/requires.txt
+typed_proxy.egg-info/top_level.txt
