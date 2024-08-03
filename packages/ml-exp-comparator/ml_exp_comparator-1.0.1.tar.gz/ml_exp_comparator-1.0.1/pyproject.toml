@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ml_exp_comparator"
+version = "1.0.1"
+description = "Compare ML experiments"
+readme = "README.md"
+authors = [{ name = "Max Kalganov", email = "maksim.kalganov@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["ML", "DS", "Machine Learning", "Data Science", "Experiments", "Compare"]
+dependencies = ["pandas", "numpy"]
+requires-python = ">=3.7"
+
+    [project.optional-dependencies]
+    mnist = ["tensorflow>=2.14"]
+
+    [project.urls]
+    repository = "https://github.com/max-kalganov/ml_exp_comparator"
