@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "infomark-cli"
+version = "1.1.1"
+description = "Financial Markets Data Terminal for Educational Use"
+authors = ["Infomark <hello@infomark.co>"]
+packages = [{ include = "infomark_cli" }]
+license = "AGPL-3.0-only"
+readme = "README.md"
+homepage = "https://infomark.co"
+repository = "https://github.com/Infomark-Terminal"
+documentation = "https://docs.infomark.co/cli"
+
+[tool.poetry.scripts]
+infomark = 'infomark_cli.cli:main'
+
+[tool.poetry.dependencies]
+python = "^3.9,<3.13"
+
+# Infomark dependencies
+infomark = { version = "^4.3.0", extras = ["all"] }
+
+# CLI dependencies
+prompt-toolkit = "^3.0.16"
+rich = "^13"
+python-dotenv = "^1.0.0"
+openpyxl = "^3.1.2"
+
+[build-system]
+requires = ["setuptools<65.5.0", "poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

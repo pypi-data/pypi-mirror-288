@@ -1,0 +1,89 @@
+lines.linewidth: 1.5
+lines.color: #F5EFF3
+lines.linestyle: -
+lines.marker: None
+lines.markeredgewidth: 0.5
+lines.markersize: 4
+lines.dash_joinstyle: miter
+lines.dash_capstyle: butt
+lines.solid_joinstyle: miter
+lines.solid_capstyle: projecting
+lines.antialiased: True
+
+patch.edgecolor: #F5EFF3
+patch.facecolor: #00A3E0
+patch.linewidth: 1
+
+font.family: sans-serif
+font.sans-serif: Consolas, Deja Vu Sans, Arial, Helvetica
+font.style: normal
+font.variant: normal
+font.weight: medium
+font.stretch: normal
+font.size: 16
+
+text.color: #F5EFF3
+
+axes.spines.left: true
+axes.spines.bottom: true
+axes.spines.top: true
+axes.spines.right: true
+axes.linewidth: 0.4
+
+axes.labelsize: small
+axes.titlelocation: left
+
+axes.facecolor: #000000
+axes.edgecolor: #F5EFF3
+axes.labelcolor: #F5EFF3
+axes.grid: true
+axes.grid.which: major
+
+axes.prop_cycle: cycler('color', ['#F5C21F', '#F4B831', '#E4003A', '#C13246', '#822661', '#48277C', '#005CA9', '#00A3E0', '#9B30D9', '#AF005F', '#5F00AF', '#AF87FF'])
+
+xtick.color: #F5EFF3
+ytick.color: #F5EFF3
+
+xtick.major.size: 2
+xtick.minor.size: 1
+xtick.labelsize: small
+xtick.alignment: center
+xtick.major.width: 0.2
+
+ytick.major.size: 2
+ytick.minor.size: 1
+ytick.labelsize: small
+
+ytick.left: False
+ytick.labelleft: False
+ytick.right: True
+ytick.labelright: True
+ytick.major.width: 0.2
+
+grid.color: #F5EFF3
+grid.linewidth: 0.4
+grid.linestyle: :
+
+legend.framealpha: 0.6
+legend.frameon: true
+legend.facecolor: #000000
+legend.edgecolor: #000000
+legend.scatterpoints: 3
+legend.fontsize: small
+legend.loc: upper left
+
+figure.facecolor: #000000
+figure.edgecolor: #000000
+figure.subplot.hspace: 0.2
+
+savefig.facecolor: #000000
+savefig.edgecolor: #000000
+
+boxplot.boxprops.color: #F5EFF3
+boxplot.capprops.color: #F5EFF3
+boxplot.flierprops.color: #F5EFF3
+boxplot.flierprops.markeredgecolor: #F5EFF3
+boxplot.whiskerprops.color: #F5EFF3
+boxplot.medianprops.color: #F5EFF3
+boxplot.meanprops.markeredgecolor: #F5EFF3
+boxplot.meanprops.color: #F5EFF3
