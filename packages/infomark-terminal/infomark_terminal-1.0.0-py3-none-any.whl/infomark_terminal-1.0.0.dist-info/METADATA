@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: infomark-terminal
+Version: 1.0.0
+Summary: Infomark Terminal: A Financial Markets Data terminal for educational use
+Home-page: https://github.com/kcelestinomaria/infomark-terminal
+Author: CK127
+Author-email: kcelestinomaria127@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: plotly
+Requires-Dist: dash
+Requires-Dist: streamlit
+Requires-Dist: scikit-learn
+Requires-Dist: sqlalchemy
+
+## Informark Terminal
