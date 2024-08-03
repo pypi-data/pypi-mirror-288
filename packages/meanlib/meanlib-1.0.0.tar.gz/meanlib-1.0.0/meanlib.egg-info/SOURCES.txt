@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+meanlib/__init__.py
+meanlib/meanlib.py
+meanlib.egg-info/PKG-INFO
+meanlib.egg-info/SOURCES.txt
+meanlib.egg-info/dependency_links.txt
+meanlib.egg-info/entry_points.txt
+meanlib.egg-info/requires.txt
+meanlib.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+meanlib = meanlib.__main__:main
