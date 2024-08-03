@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+seiryu.egg-info/PKG-INFO
+seiryu.egg-info/SOURCES.txt
+seiryu.egg-info/dependency_links.txt
+seiryu.egg-info/entry_points.txt
+seiryu.egg-info/requires.txt
+seiryu.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+numpy
+argon2
+argon2-cffi
+bcrypt
+passlib
+siphashc
+spookyhash
+uuid
+xxhash
+argon2-cffi-bindings
+cffi
