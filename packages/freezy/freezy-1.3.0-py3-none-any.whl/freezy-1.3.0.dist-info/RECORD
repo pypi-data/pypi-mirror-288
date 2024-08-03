@@ -1,0 +1,10 @@
+freezy/__init__.py,sha256=_Wlu0O-EfRP4dOIGdI1NwruGikrzJjWdegYHz86dBtU,588
+freezy/extractor.py,sha256=vW2nJJVnwZ5ZWCFFTytnUrt1YWO1849U6SNld0yXK1A,1425
+freezy/filter.py,sha256=JfYpOyniBldwDS00XZUqrGzBAvXY1uhV5bb3JI0Pxo0,3482
+freezy/freeze.py,sha256=FTQW7M14OfzHS1yUvcDQJf-J83-yEsLwxdJXb8h54ok,2310
+freezy/speed.py,sha256=zCBPNr5dx6oQcJv3fuqQqs5zueKkQ4zgK607DQDkOJ8,2050
+freezy-1.3.0.dist-info/LICENSE,sha256=BtOULBhyirABto-_ryBYCactdWv8Gn8GqFp47_Kaksw,1069
+freezy-1.3.0.dist-info/METADATA,sha256=NV9Bf7chYZn-reKAOz5mkoB87OQOC1URFNuy8T-uE3w,360
+freezy-1.3.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+freezy-1.3.0.dist-info/top_level.txt,sha256=xn9PGnF-G6sJ6NQ0a_Sy6845k66wN363zPhkX0cv9SQ,7
+freezy-1.3.0.dist-info/RECORD,,
