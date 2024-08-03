@@ -1,0 +1,66 @@
+{
+    "geometry": [
+        632612,
+        634112,
+        5739607,
+        5741107,
+        250
+    ],
+    "predictors": {
+        "predictor_1.csv": {
+            "predictor_type": "elevation",
+            "unit": "m",
+            "std_deviation": true,
+            "constant": true,
+            "nan_value": ""
+        },
+        "predictor_2.csv": {
+            "predictor_type": "variable predictor",
+            "unit": "u",
+            "std_deviation": true,
+            "constant": false,
+            "nan_value": "0.0"
+        },
+        "predictor_3.csv": {
+            "predictor_type": "pred_3",
+            "unit": "u",
+            "std_deviation": true,
+            "constant": true,
+            "nan_value": ""
+        },
+        "predictor_4.csv": {
+            "predictor_type": "pred_4",
+            "unit": "u",
+            "std_deviation": true,
+            "constant": true,
+            "nan_value": ""
+        },
+        "predictor_5.csv": {
+            "predictor_type": "pred_5",
+            "unit": "u",
+            "std_deviation": true,
+            "constant": true,
+            "nan_value": "NaN"
+        }
+    },
+    "soil_moisture_data": "crn_soil-moisture.csv",
+    "monte_carlo_soil_moisture": false,
+    "monte_carlo_predictors": false,
+    "monte_carlo_iterations": 10,
+    "predictor_qmc_sampling": false,
+    "compute_slope": true,
+    "compute_aspect": true,
+    "past_prediction_as_feature": true,
+    "reset_when_rain_occured": false,
+    "average_measurements_over_time": true,
+    "allow_nan_in_training": false,
+    "what_to_plot": {
+        "predictors": true,
+        "pred_correlation": true,
+        "day_measurements": true,
+        "day_predictor_importance": true,
+        "day_prediction_map": true,
+        "alldays_predictor_importance": true
+    },
+    "save_results": true
+}
