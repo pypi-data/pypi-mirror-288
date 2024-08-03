@@ -1,0 +1,2 @@
+[peakrdl.exporters]
+beam = peakrdl_beam.__peakrdl__:Exporter
