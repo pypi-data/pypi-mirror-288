@@ -1,0 +1,4 @@
+requests
+tuspy
+argparse
+tqdm
