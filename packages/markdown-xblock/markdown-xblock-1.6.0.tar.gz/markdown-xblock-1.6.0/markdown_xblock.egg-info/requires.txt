@@ -1,0 +1,8 @@
+markdown2>=2.3.9
+Pygments>=2.0.1
+
+[:python_version < "3.9"]
+XBlock<2
+
+[:python_version >= "3.9"]
+XBlock<5
