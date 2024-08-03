@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: log95
+Version: 1.2
+Summary: Simple logger
+Home-page: https://flerken.zapto.org:1115/kuba/log95
+Author: kuba201
+Project-URL: Source, https://flerken.zapto.org:1115/kuba/log95
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Development Status :: 5 - Production/Stable
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: colorama
+
+# log95
+Log95 is a simple logger which does colors with `colorama`, rest is stdlib
