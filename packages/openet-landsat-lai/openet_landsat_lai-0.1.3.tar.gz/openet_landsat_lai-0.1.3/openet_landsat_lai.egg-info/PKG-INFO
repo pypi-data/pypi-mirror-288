@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: openet-landsat-lai
+Version: 0.1.3
+Summary: Earth Engine based Landsat LAI functions
+Home-page: https://github.com/Open-ET/openet-landsat-lai
+Download-URL: https://github.com/Open-ET/openet-landsat-lai/archive/v0.1.3.tar.gz
+Author: Yanghui Kang
+Author-email: ykang38@wisc.edu
+License: Apache
+Keywords: Earth Engine Landsat LAI
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: earthengine-api
+
+README.md
