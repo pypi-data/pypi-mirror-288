@@ -1,0 +1,188 @@
+Metadata-Version: 2.1
+Name: fw-gear-fhir-bundle-exporter
+Version: 0.1.4
+Summary: Export FHIR Bundles as json files 
+Home-page: https://gitlab.com/flywheel-io/scientific-solutions/gears/fhir-bundle-exporter
+License: MIT
+Keywords: Flywheel,Gears
+Author: Flywheel
+Author-email: support@flywheel.io
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: bson (>=0.5.10,<0.6.0)
+Requires-Dist: deepdiff (>=6.3.1,<7.0.0)
+Requires-Dist: fhir-resources (>=7.0.2,<8.0.0)
+Requires-Dist: flywheel-gear-toolkit (>=0.6,<0.7)
+Requires-Dist: flywheel-sdk (>=17.0.0,<18.0.0)
+Requires-Dist: fw-file (>=2.3.0,<3.0.0)
+Requires-Dist: pandas (>=2.0.3,<3.0.0)
+Project-URL: Repository, https://gitlab.com/flywheel-io/scientific-solutions/gears/fhir-bundle-exporter
+Description-Content-Type: text/markdown
+
+# FHIR Bundle Exporter <!-- omit in toc -->
+
+Export Flywheel Subjects as FHIR Bundles in json files.
+
+- [Overview](#overview)
+  - [Summary](#summary)
+  - [License](#license)
+  - [Classification](#classification)
+- [Usage](#usage)
+  - [Requirements](#requirements)
+  - [Inputs](#inputs)
+  - [Config](#config)
+  - [Outputs](#outputs)
+    - [FHIR Bundle Contents](#fhir-bundle-contents)
+    - [Validating FHIR Bundles](#validating-fhir-bundles)
+- [Contributing](#contributing)
+- [Disclaimer](#disclaimer)
+
+## Overview
+
+### Summary
+
+Export Flywheel Subjects as FHIR Bundles in json files. See below for details on the
+Flywheel Hierarchy to FHIR mapping.
+
+### License
+
+_License:_ MIT
+
+### Classification
+
+_Category:_ Analysis
+
+_Gear Level:_
+
+- [x] Project
+- [x] Subject
+- [ ] Session
+- [ ] Acquisition
+- [ ] Analysis
+
+## Usage
+
+The FHIR Bundle Exporter gear is executed over a single subject or all subjects of a
+project. The output is a `json` file for each subject as output to both the gear and as
+an attachment to the corresponding Flywheel subject container. This `json` file is known as a
+[FHIR Bundle](https://build.fhir.org/bundle.html). Each FHIR Bundle is a collection of
+resources that can be used to group and transmit resources across API requests.
+
+Each exported FHIR Bundle maps concepts from the Flywheel Hierarchy (e.g. Subjects,
+Sessions, Acquisitions) to a collection of FHIR Resources (e.g.
+[Patient](https://build.fhir.org/patient.html),
+[Encounter](https://build.fhir.org/encounter.html),
+[Imaging Study](https://build.fhir.org/imagingstudy.html)
+) and encoded references to specific file types.
+
+Details of the Flywheel->FHIR Resource mapping are given in the linked
+[FHIR Bundle Contents](./docs/fhir_bundle_contents.md) document.
+
+This gear is intended to be used in conjunction with a
+[project export process](https://docs.flywheel.io/User_Guides/user_project_exports)
+within same the project that this gear was/will be run. File paths in the
+[Document Reference](./docs/fhir_bundle_contents.md#document-reference-resources)
+resources of the FHIR Bundle are relative to the project export directory.
+
+### Requirements
+
+For the FHIR Bundle Exporter gear to produce a sufficiently representative FHIR Bundle,
+the following requirements should be met.
+
+- A valid Flywheel `subject` birthday OR non-Null `age_days` attribute for each Flywheel session
+  - Creating `age_days` attribute for each session can be performed with a
+    curation script ([example](https://gitlab.com/flywheel-io/scientific-solutions/tutorials/hierarchy-curator-scripts/fhir-curation-script>))
+    using the
+    [hierarchy curator gear](https://gitlab.com/flywheel-io/scientific-solutions/gears/hierarchy-curator).
+- DICOM Tags are required or need to be de-identified before this gear is run
+  - [Required DICOM Tags](docs/requirements.md)
+  - [De-identification](docs/de-identification.md)
+- To export with references to NIfTI files, `json` sidecars, and other artifacts--with
+  identifiable facial features removed--the following gears are recommended:
+  - `dcm-qc`
+  - `dcm2niix`
+  - `mriqc`
+  - `pydeface`
+  - `nifti2dicom`
+
+Satisfying the above requirements will ensure that a representative FHIR Bundle is
+produced with references to the following file types:
+
+- Compressed DICOMs (e.g. `{file_name}.dcm.zip`)
+- NIfTI Files (e.g. `{file_name}.nii.gz`)
+- JSON Sidecars (e.g. `{file_name}.json`)
+- bvec/bval files
+
+For details on how each required Flywheel container attribute or DICOM Tag is encoded
+into the FHIR Bundle, see the [FHIR Bundle Contents](./docs/fhir_bundle_contents.md)
+document.
+
+### Inputs
+
+This gear has no file input. The FHIR Bundle Exporter gear is executed over a single
+subject or all subjects of a project.
+
+### Config
+
+- _debug_
+  - **Type**: _boolean_
+  - **Description**: _Log debug messages_
+  - **Default**: _False_
+- _include_encounter_resource_
+  - **Type**: _boolean_
+  - **Description**: _Include Encounter Resources in FHIR Bundle_
+  - **Default**: _False_
+- _include_body_structure_resource_
+  - **Type**: _boolean_
+  - **Description**: _Include BodyStructure Resources in FHIR Bundle_
+  - **Default**: _False_
+
+### Outputs
+
+The outputs are FHIR Bundles encoded in `json` files. There is a FHIR Bundle for each
+subject both within the gear output and as an attachment to the corresponding Flywheel
+subject container. The resources contained in each FHIR Bundle are described below.
+
+#### FHIR Bundle Contents
+
+Each Subject-Oriented FHIR Bundle contains the resources listed below. For more details
+please see the linked documentation.
+
+- [Patient Resource](./docs/fhir_bundle_contents.md#patient-resource)
+- [Encounter Resources](./docs/fhir_bundle_contents.md#encounter-resources)
+- [Imaging Study Resources](./docs/fhir_bundle_contents.md#imaging-study-resources)
+- [Body Structure Resources](./docs/fhir_bundle_contents.md#body-structure-resources)
+- [Device Resources](./docs/fhir_bundle_contents.md#device-resources)
+- [Document Reference Resources](./docs/fhir_bundle_contents.md#document-reference-resources)
+
+#### Validating FHIR Bundles
+
+The FHIR Bundle Exporter gear does not perform a rigorous validation of the FHIR
+Bundle. Only a basic validation of the FHIR Bundle structure is performed. Before
+relying on the FHIR Bundle for any purpose, it is recommended that the FHIR Bundle be
+validated using available resources, such as the
+[Inferno Resource Validator](https://fhir.healthit.gov/validator/). Other resources
+for validating FHIR Bundles can be found at the HL7
+[FHIR Validating Resources](https://www.hl7.org/fhir/validation.html) page.
+
+## Contributing
+
+For more information about how to get started contributing to that gear,
+checkout [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Disclaimer
+
+Please note that this is an early version of the FHIR Bundle Exporter. It is currently
+in its initial development phase and as such, may not have all the features fully
+implemented or may contain bugs. We are actively working on adding more functionality
+and improving its performance and stability. We appreciate your patience and
+understanding during this phase. Please use this software with caution and feel free to
+report any issues or suggestions you may have to help us improve it.
+

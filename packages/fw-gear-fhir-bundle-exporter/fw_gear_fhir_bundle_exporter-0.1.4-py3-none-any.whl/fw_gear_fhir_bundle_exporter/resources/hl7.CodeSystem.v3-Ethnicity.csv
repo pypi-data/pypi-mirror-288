@@ -1,0 +1,45 @@
+# This code system http://terminology.hl7.org/CodeSystem/v3-Ethnicity defines the following codes:",,,,,
+Lvl,Code,Display,Definition,internalId,status
+1,"2135-2","Hispanic or Latino",,15837,active
+2,"2137-8",Spaniard,,15838,active
+3,"2138-6",Andalusian,,15839,active
+3,"2139-4",Asturian,,15840,active
+3,"2140-2",Castillian,,15841,active
+3,"2141-0",Catalonian,,15842,active
+3,"2142-8","Belearic Islander",,15843,active
+3,"2143-6",Gallego,,15844,active
+3,"2144-4",Valencian,,15845,active
+3,"2145-1",Canarian,,15846,active
+3,"2146-9","Spanish Basque",,15847,active
+2,"2148-5",Mexican,,15848,active
+3,"2149-3","Mexican American",,15849,active
+3,"2150-1",Mexicano,,15850,active
+3,"2151-9",Chicano,,15851,active
+3,"2152-7","La Raza",,15852,active
+3,"2153-5","Mexican American Indian",,15853,active
+2,"2155-0","Central American",,15854,active
+3,"2156-8","Costa Rican",,15855,active
+3,"2157-6",Guatemalan,,15856,active
+3,"2158-4",Honduran,,15857,active
+3,"2159-2",Nicaraguan,,15858,active
+3,"2160-0",Panamanian,,15859,active
+3,"2161-8",Salvadoran,,15860,active
+3,"2162-6","Central American Indian",,15861,active
+3,"2163-4","Canal Zone",,15862,active
+2,"2165-9","South American",,15863,active
+3,"2166-7",Argentinean,,15864,active
+3,"2167-5",Bolivian,,15865,active
+3,"2168-3",Chilean,,15866,active
+3,"2169-1",Colombian,,15867,active
+3,"2170-9",Ecuadorian,,15868,active
+3,"2171-7",Paraguayan,,15869,active
+3,"2172-5",Peruvian,,15870,active
+3,"2173-3",Uruguayan,,15871,active
+3,"2174-1",Venezuelan,,15872,active
+3,"2175-8","South American Indian",,15873,active
+3,"2176-6",Criollo,,15874,active
+2,"2178-2","Latin American",,15875,active
+2,"2180-8","Puerto Rican",,15876,active
+2,"2182-4",Cuban,,15877,active
+2,"2184-0",Dominican,,15878,active
+1,"2186-5","Not Hispanic or Latino","Note that this term remains in the table for completeness, even though within HL7, the notion of ""not otherwise coded"" term is deprecated.",15879,active
