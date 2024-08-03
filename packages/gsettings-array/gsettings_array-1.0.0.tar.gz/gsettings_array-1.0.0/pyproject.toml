@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "gsettings-array"
+version = "1.0.0"
+description = "Manipulate GSettings arrays."
+authors = ["Jan Chren <dev.rindeal@gmail.com>"]
+license = "GPL-2.0-only OR GPL-3.0-only"
+readme = "README.md"
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Environment :: Console',
+    'Intended Audience :: Developers',
+    'Intended Audience :: System Administrators',
+    'License :: OSI Approved :: GNU General Public License v2 (GPLv2)',
+    'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+    'Operating System :: POSIX :: Linux',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Topic :: Desktop Environment :: Gnome',
+    'Topic :: System :: Systems Administration',
+    'Topic :: Utilities',
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pygobject = "^3.42.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+pytest-cov = "^5.0.0"
+pyright = "^1.1.374"
+ruff = "^0.5.6"
+mypy = "^1.11.1"
+pygobject-stubs = "^2.11.0"
+
+[tool.poetry.scripts]
+gsettings-array = "gsettings_array:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff.lint]
+ignore = ["E402", "E702"]
