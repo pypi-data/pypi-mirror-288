@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/waylay/services/queries/api/__init__.py
+src/waylay/services/queries/api/execute_api.py
+src/waylay/services/queries/api/manage_api.py
+src/waylay/services/queries/api/py.typed
+src/waylay/services/queries/api/status_api.py
+src/waylay/services/queries/service/__init__.py
+src/waylay/services/queries/service/py.typed
+src/waylay/services/queries/service/service.py
+src/waylay_sdk_queries.egg-info/PKG-INFO
+src/waylay_sdk_queries.egg-info/SOURCES.txt
+src/waylay_sdk_queries.egg-info/dependency_links.txt
+src/waylay_sdk_queries.egg-info/entry_points.txt
+src/waylay_sdk_queries.egg-info/requires.txt
+src/waylay_sdk_queries.egg-info/top_level.txt
