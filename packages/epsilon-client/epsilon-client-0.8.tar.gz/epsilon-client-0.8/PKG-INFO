@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: epsilon-client
+Version: 0.8
+Summary: A package for reading data from CSV or XLS files and publishing to Apache Atlas.
+Home-page: https://github.com/khajievN/test-python/tree/release
+Author: xxx
+Author-email: xxxx@example.com
+Keywords: epsilon epsilon_atlas client,apache epsilon_atlas
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: python-dotenv
