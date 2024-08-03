@@ -1,0 +1,2 @@
+[console_scripts]
+infomark-terminal = infomark_terminal.__main__:main

@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "Infomark Terminal"
+version = "1.0.0"
+description = "Financial Markets Data Terminal for Educational Use"
+authors = ["CK127"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.26.0"
+numpy = "^1.21.2"
+# Add other dependencies here
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
