@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: emon_worker_m8
+Version: 0.0.1
+Summary: VeMonitor_m8 EmonCmsWorker Package
+Home-page: https://github.com/vemonitor/emon_worker_m8
+Author: Eli Serra
+Author-email: eli.serra173@gmail.com
+License: Apache
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: vemonitor-m8
+Requires-Dist: ve-utils
+Provides-Extra: test
+Requires-Dist: pytest >=7.1.2 ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+# emon_worker_m8
+VeMonitor_m8 EmonCmsWorker Package
