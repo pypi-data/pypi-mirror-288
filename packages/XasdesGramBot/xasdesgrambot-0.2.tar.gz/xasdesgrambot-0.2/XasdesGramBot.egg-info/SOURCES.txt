@@ -1,0 +1,10 @@
+README.md
+setup.py
+XasdesGramBot.egg-info/PKG-INFO
+XasdesGramBot.egg-info/SOURCES.txt
+XasdesGramBot.egg-info/dependency_links.txt
+XasdesGramBot.egg-info/requires.txt
+XasdesGramBot.egg-info/top_level.txt
+tests/test_bot.py
+xasdesgrambot/__init__.py
+xasdesgrambot/bot.py
