@@ -1,0 +1,11 @@
+pyUnfoldedCircleRemote/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyUnfoldedCircleRemote/const.py,sha256=dp2zAUlY7mhLNnbRFsT_q1wBLgAAsOZfq_lsG8x4JFQ,783
+pyUnfoldedCircleRemote/dock.py,sha256=YwtQRFky6O9Ov-jHy_ffFcQMXkxM7vbJI7TeYEvhJZg,18496
+pyUnfoldedCircleRemote/dock_websocket.py,sha256=uuWFCB0FKyz5VxXLOlmhbMEeD0e0BhhKHPd7cPodlfM,3557
+pyUnfoldedCircleRemote/remote.py,sha256=7erVzzl0qp4aUqEq4gEI5Gkkxptd32VD2GoEx1eFTM8,83448
+pyUnfoldedCircleRemote/remote_websocket.py,sha256=Z52KYUYsxrg84i8nqCYL1blWqXB7rfvUOmKcU4rWDfQ,5980
+pyUnfoldedCircleRemote/websocket.py,sha256=ooB9fty3_8uVLfzlmAnJ4RHd1TWqKaPxYUmCVEnVFMo,4934
+pyunfoldedcircleremote-0.11.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+pyunfoldedcircleremote-0.11.0.dist-info/METADATA,sha256=GaREQO9GDVN5d7rN1GArTXLApSXlUfhcSIyboYO2_EE,814
+pyunfoldedcircleremote-0.11.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pyunfoldedcircleremote-0.11.0.dist-info/RECORD,,
