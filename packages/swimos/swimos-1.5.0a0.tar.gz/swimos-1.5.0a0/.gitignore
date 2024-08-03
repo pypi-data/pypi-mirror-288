@@ -1,0 +1,10 @@
+.DS_Store
+*.DS_Store
+.idea
+.gradle
+.vscode
+build
+out
+venv
+dist
+*.egg-info
