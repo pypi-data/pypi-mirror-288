@@ -1,0 +1,9 @@
+helper_i18n/__init__.py,sha256=E2NejURfXjKT8N82nXLcoTUN4LYUcxMuI2k-xmzW96Q,746
+helper_i18n/handler/docs_handler.py,sha256=pR__6xf93fvwluWIe9PAJ5nKO5gpmJaOiFneYK4doeU,1748
+helper_i18n/handler/exception_handler.py,sha256=jQf3lcZyRdGAQ7Hhp3IA9F7bwA67cGSEhYcqadCCdws,2554
+helper_i18n/handler/i18n_handler.py,sha256=5V5QuKWPvRi6ncPzz6byqM7BHphPCpcqX207soUUmqs,1266
+helper_i18n/typing.py,sha256=yzjmGIBEdSAw6I08xQYYUvU_Wu9MXA9xlm--oKeDWK4,147
+helper_i18n/utils.py,sha256=5rwQRN0a9ZDtRZ22ys-4k2AyD42PsxWC1iGlhYRb-9k,810
+i18n_fastapi_helper-0.1.0.dist-info/METADATA,sha256=Zh3-UjLzKd0nN2XdHmYm_bJlweCEWV0E9CHGd_0tbVw,288
+i18n_fastapi_helper-0.1.0.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+i18n_fastapi_helper-0.1.0.dist-info/RECORD,,

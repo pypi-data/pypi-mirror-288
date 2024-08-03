@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: i18n_fastapi_helper
+Version: 0.1.0
+Summary: Default template for PDM package
+Author-Email: lucas alves <lucasal072@gmail.com>
+License: MIT
+Requires-Python: ==3.11.*
+Requires-Dist: fastapi>=0.111.1
+Description-Content-Type: text/markdown
+
+# i18n_fastapi_helper
