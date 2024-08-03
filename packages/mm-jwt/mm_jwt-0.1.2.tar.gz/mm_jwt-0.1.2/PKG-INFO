@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mm_jwt
+Version: 0.1.2
+Summary: Django rest framework token authentication
+Home-page: https://github.com/mahdi2000musa/MM_JWT/
+Author: Mahdi Musa Semnani, Mohammad Mahdi Nejati, Omidreza Nabavi
+Author-email: mahdi.2000musa@gmail.com, mmehdi2022@gmail.com, omidrezanabavi@gmail.com
+Keywords: django,rest framework,token,authentication
+Requires-Dist: pytz
+Requires-Dist: djangorestframework
+Requires-Dist: django
+
+An open source project created by a group of three just in case you want custom tokens
