@@ -1,0 +1,15 @@
+docsman/__init__.py,sha256=2Q0xu8WJDgYSaZB31jyh8d0fF70RVWtZfmCR5_2j6C4,32
+docsman/_file_util.py,sha256=1OeMLAAQYpAqL1Y6erXoo19l1TzbJuguGtFCUaxzedw,454
+docsman/read.py,sha256=3aGkArLsr97uH8BzZgPRkhPaIsoOID1trGfWmJjFGQ0,941
+docsman/docs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docsman/docs/jsonschema.py,sha256=QM6zUjQTeWHfitWW55GkNJYU3IjDPKVok3YeRrP2qqk,9228
+docsman/docs/main.py,sha256=_qPZWeACbtPOtjjNPwOvdpuhS9PonAgQRrabBXq24tk,13974
+docsman/docs/markdown.py,sha256=gPKN7T4eI8IahzcgFxC8bbSLbeoc4sZQkqGVBDL4sgI,2364
+docsman/docs/text.py,sha256=IYVRbKGLnRFCARJqDj3LyQ3G184SYMWrT5wbW_kNOQY,480
+docsman/write/__init__.py,sha256=1lPJIcMYKMqH18FyLv43QXAqL-2RSWcm3nHjMxiEUVo,50
+docsman/write/badge.py,sha256=qkUZU5-plwgJAE9VEug4ghxBcHucm7Kgk3nDqCPqx5Y,9161
+docsman/write/readme.py,sha256=vPnaYblOmKp9h0tk5pcjcYZZEQEhY5xXW4OL6z2sCCY,14706
+DocsMan-0.0.0.dev5.dist-info/METADATA,sha256=8vfYBNB-BERudUIEsYbrMgRUFHrwH6Oty12PCTEhlTA,225
+DocsMan-0.0.0.dev5.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+DocsMan-0.0.0.dev5.dist-info/top_level.txt,sha256=gJGGxZEj-a670de4M7B4loaeFw2dsaZ7SxKmGja8i44,8
+DocsMan-0.0.0.dev5.dist-info/RECORD,,
