@@ -1,0 +1,49 @@
+name: napari-kld
+display_name: Kernel Learning Deconvolution
+# use 'hidden' to remove plugin from napari hub search results
+visibility: public
+# see https://napari.org/stable/plugins/manifest.html for valid categories
+categories: ["Image Processing"]
+contributions:
+  commands:
+    - id: napari-kld.get_reader
+      python_name: napari_kld._reader:napari_get_reader
+      title: Open data with Kernel Learning Deconvolution
+    - id: napari-kld.write_multiple
+      python_name: napari_kld._writer:write_multiple
+      title: Save multi-layer data with Kernel Learning Deconvolution
+    - id: napari-kld.write_single_image
+      python_name: napari_kld._writer:write_single_image
+      title: Save image data with Kernel Learning Deconvolution
+    - id: napari-kld.make_sample_data
+      python_name: napari_kld._sample_data:make_sample_data
+      title: Load sample data from Kernel Learning Deconvolution
+
+    - id: napari-kld.rldwidget
+      python_name: napari_kld:RLDwidget
+      title: RL Deconvolution
+
+    - id: napari-kld.kldwidget
+      python_name: napari_kld:KLDwidget
+      title: KL Deconvolution
+
+  readers:
+    - command: napari-kld.get_reader
+      accepts_directories: false
+      filename_patterns: ['*.npy']
+  writers:
+    - command: napari-kld.write_multiple
+      layer_types: ['image*','labels*']
+      filename_extensions: []
+    - command: napari-kld.write_single_image
+      layer_types: ['image']
+      filename_extensions: ['.npy']
+  sample_data:
+    - command: napari-kld.make_sample_data
+      display_name: Kernel Learning Deconvolution
+      key: unique_id.1
+  widgets:
+    - command: napari-kld.rldwidget # same as command.id above
+      display_name: RL Deconvolution # widget name
+    - command: napari-kld.kldwidget
+      display_name: KL Deconvolution
