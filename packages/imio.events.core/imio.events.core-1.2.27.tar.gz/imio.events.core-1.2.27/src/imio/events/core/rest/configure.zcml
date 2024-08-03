@@ -1,0 +1,44 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone">
+
+  <plone:service
+      name="@events"
+      method="GET"
+      accept="application/json"
+      for="zope.interface.Interface"
+      factory=".endpoint.EventsEndpointGet"
+      permission="zope2.View"
+      layer="imio.events.core.interfaces.IImioEventsCoreLayer"
+      />
+
+  <plone:service
+      method="GET"
+      for="zope.interface.Interface"
+      factory=".endpoint.SearchFiltersGet"
+      name="@search-filters"
+      permission="zope2.View"
+      layer="imio.events.core.interfaces.IImioEventsCoreLayer"
+      />
+
+  <plone:service
+      name="@odwb"
+      method="GET"
+      accept="application/json"
+      for="zope.interface.Interface"
+      factory=".odwb_endpoint.OdwbEndpointGet"
+      permission="zope2.View"
+      layer="imio.events.core.interfaces.IImioEventsCoreLayer"
+      />
+
+  <plone:service
+      name="@odwb_entities"
+      method="GET"
+      accept="application/json"
+      for="zope.interface.Interface"
+      factory=".odwb_endpoint.OdwbEntitiesEndpointGet"
+      permission="zope2.View"
+      layer="imio.events.core.interfaces.IImioEventsCoreLayer"
+      />
+
+</configure>
