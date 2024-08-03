@@ -1,0 +1,124 @@
+Metadata-Version: 2.1
+Name: playgroundutils
+Version: 0.1.1
+Summary: Helper functions for the ConfidentialMind stack, primarily for Streamlit apps
+Author-email: confidentialmind <info@confidentialmind.com>
+License: Apache-2.0
+Project-URL: Homepage, https://www.confidentialmind.com/
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: pydantic >=2.2
+Requires-Dist: websockets >=12.0
+Requires-Dist: requests >=2.32.2
+Requires-Dist: Pillow >=9.5.0
+Requires-Dist: streamlit >=1.26.0
+Requires-Dist: sseclient-py >=1.8.0
+Requires-Dist: pyjwt >=2.8.0
+
+# ConfidentialMind App / Playgroundutils
+
+## Overview
+
+The ConfidentialMind App package (also known as playgroundutils) is a Python library designed to simplify the development of secure generative AI applications on the ConfidentialMind stack. It provides utility functions and components for building Streamlit-based front-end applications that interact with Large Language Models (LLMs) and other services within the ConfidentialMind ecosystem.
+
+## Features
+
+- Streamlit application initialization and configuration
+- Tool selector for managing multiple tools within a single application
+- Chat UI component for interacting with LLMs
+- Streaming handler for real-time LLM responses
+- User authentication and token management
+- LLM API interaction helpers
+
+## Installation
+
+To install the package, add the following to your `requirements.txt` file:
+
+```
+pip install playgroundutils
+```
+
+
+
+## Usage
+
+### Initializing a Streamlit App
+
+```python
+from playgroundutils.app import init_streamlit_app
+
+def main():
+    APP_NAME = "My ConfidentialMind App"
+    init_streamlit_app(APP_NAME)
+
+    # Your app code here
+
+if __name__ == "__main__":
+    main()
+```
+
+### Creating a Tool Selector
+
+```python
+from playgroundutils.app import tool_selector
+from confidentialmindserver.config_manager import BaseToolConfig
+
+def parse_tools_config(tools):
+    # Your tool parsing logic here
+    pass
+
+tools = [BaseToolConfig(...), BaseToolConfig(...)]
+tool_selector(tools, parse_tools_config, APP_NAME)
+```
+
+### Implementing a Chat UI
+
+```python
+from playgroundutils.components import chat_ui
+
+LLM_CONFIG_ID = "your_llm_config_id"
+chat_ui(LLM_CONFIG_ID, system_prompt="You are a helpful assistant.")
+```
+
+### Handling LLM API Requests
+
+```python
+from playgroundutils.llm_api_helpers import LLMAPIHandler, ChatMessage
+from playgroundutils.streaming import StreamHandler
+
+llm_api_handler = LLMAPIHandler(LLM_CONFIG_ID)
+stream_handler = StreamHandler(st.empty())
+
+messages = [ChatMessage(role="user", content="Hello, AI!")]
+response = llm_api_handler.handle_query(messages, stream_handler, temperature=0.7, stream=True)
+```
+
+## Components
+
+- `app.py`: Contains functions for initializing Streamlit apps and managing tool selection.
+- `components.py`: Provides UI components like the chat interface.
+- `llm_api_helpers.py`: Handles interactions with LLM APIs.
+- `streaming.py`: Manages streaming responses from LLMs.
+- `user.py`: Handles user authentication and token management.
+
+## Configuration
+
+The package works in conjunction with the ConfidentialMind server package to manage configurations and connectors. Make sure to set up your `ConfigManager` and define necessary connectors as described in the main ConfidentialMind SDK documentation.
+
+## Local Development
+
+To run your Streamlit application locally using this package:
+
+```bash
+export CONFIDENTIAL_MIND_LOCAL_CONFIG="True"
+export CONFIDENTIAL_MIND_LOCAL_DEV="True"
+streamlit run your_app.py
+```
+
+## Note
+
+This package is designed to work within the ConfidentialMind ecosystem. Make sure you have the necessary permissions and access to the ConfidentialMind stack before using this package.
+
+For more detailed information on the ConfidentialMind SDK and its capabilities, please refer to the main SDK documentation.
