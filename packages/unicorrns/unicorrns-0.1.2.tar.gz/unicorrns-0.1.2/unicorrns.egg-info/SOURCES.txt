@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+unicorrns/ErrorsBigList.dat
+unicorrns/__init__.py
+unicorrns/bf4b.txt
+unicorrns/chain4b.txt
+unicorrns/unicorn.py
+unicorrns.egg-info/PKG-INFO
+unicorrns.egg-info/SOURCES.txt
+unicorrns.egg-info/dependency_links.txt
+unicorrns.egg-info/not-zip-safe
+unicorrns.egg-info/top_level.txt
