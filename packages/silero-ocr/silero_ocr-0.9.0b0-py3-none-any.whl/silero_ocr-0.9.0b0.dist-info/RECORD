@@ -1,0 +1,9 @@
+silero_ocr/__init__.py,sha256=y3sWMF6uVuf7OU09nXm4RBRGbqx9mozeMc3YQdOenho,182
+silero_ocr/model.py,sha256=dYVuRmoonRFLA2Ew__NEq23DUu6_xoHbmXCRzUTtvwo,1337
+silero_ocr/utils.py,sha256=EhEOs6q0Vzzvv3pFcBYtjz1MIopvpxwuy-eGOFWKra8,13621
+silero_ocr/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+silero_ocr/data/word_symbols_vocab.txt,sha256=p_847yUWTkwISzfOj7LEeJvVj438JbuOIh0Xppv8-q0,283
+silero_ocr-0.9.0b0.dist-info/METADATA,sha256=Z8qjZKgLIArZbl_FH147cGbDnTbuvXyDUaxFU71sKpA,1188
+silero_ocr-0.9.0b0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+silero_ocr-0.9.0b0.dist-info/licenses/LICENSE,sha256=MA5ySCA8I767VVN35EoiCigBtlRWICpTmJKt-WS7ilg,1073
+silero_ocr-0.9.0b0.dist-info/RECORD,,

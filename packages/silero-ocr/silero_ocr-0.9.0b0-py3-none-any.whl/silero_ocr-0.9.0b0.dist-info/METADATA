@@ -1,0 +1,30 @@
+Metadata-Version: 2.3
+Name: silero-ocr
+Version: 0.9.0b0
+Summary: Simple optical character recognition (OCR) by Silero
+Project-URL: Homepage, https://github.com/snakers4/silero-ocr
+Project-URL: Issues, https://github.com/snakers4/silero-ocr/issues
+Author-email: Silero Team <hello@silero.ai>
+License-File: LICENSE
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Requires-Dist: matplotlib>=3.6.0
+Requires-Dist: onnxruntime>=1.18.0
+Requires-Dist: opencv-python>=4.10.0
+Requires-Dist: requests
+Requires-Dist: scikit-image>=0.20.0
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+Silero OCR
