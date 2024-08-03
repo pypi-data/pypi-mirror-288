@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyeasing
+Version: 0.1
+Summary: A library for various easing functions.
+Home-page: https://github.com/StrimnikButAdmin/PyEasing
+Author: Strimnik
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: tox; extra == "dev"
+
+# PyEasing
+A library for various easing functions.

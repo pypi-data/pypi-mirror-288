@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+PyEasing/__init__.py
+PyEasing/easing.py
+pyeasing.egg-info/PKG-INFO
+pyeasing.egg-info/SOURCES.txt
+pyeasing.egg-info/dependency_links.txt
+pyeasing.egg-info/requires.txt
+pyeasing.egg-info/top_level.txt
