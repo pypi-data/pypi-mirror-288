@@ -1,0 +1,104 @@
+# Flytekit Custom Plugins
+
+This repository contains multiple custom Flytekit plugins for demonstrating user-defined tasks.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Development Installation](#development-installation)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+- [Development Workflow](#development-workflow)
+- [Testing](#testing)
+
+## Introduction
+
+This project demonstrates how to create custom plugins for Flytekit using Python. Flytekit is a Python SDK for defining, deploying, and managing data and ML workflows on Flyte. The custom plugins in this repository extend Flytekit's capabilities by adding new tasks.
+
+## Installation
+
+To install the package and its dependencies, use the following command:
+
+```bash
+pip install .
+```
+### Development Installation
+
+```bash
+pip install .[dev]
+```
+## Project Structure
+
+flytekit-custom-plugins/
+├── README.md
+├── pyproject.toml
+├── src/
+│   ├── __init__.py
+│   ├── plugin_one/
+│   │   ├── __init__.py
+│   │   ├── custom_task_one.py
+│   ├── plugin_two/
+│   │   ├── __init__.py
+│   │   ├── custom_task_two.py
+└── tests/
+    ├── __init__.py
+    ├── test_plugin_one.py
+    ├── test_plugin_two.py
+
+### File overview
+1. README.md: Project documentation.
+2. pyproject.toml: Configuration file for project metadata, dependencies, and build system.
+3. src/: Source code directory.
+4. plugin_one/: Contains the first custom plugin.
+5. custom_task_one.py: Implementation of the first custom task.
+6. plugin_two/: Contains the second custom plugin.
+7. custom_task_two.py: Implementation of the second custom task.
+8. tests/: Test suite directory.
+9. test_plugin_one.py: Tests for the first custom plugin.
+10. test_plugin_two.py: Tests for the second custom plugin.
+
+## Usage
+
+```python
+from plugin_one.custom_task_one import MyCustomTaskOne
+from plugin_two.custom_task_two import MyCustomTaskTwo
+
+task_one = MyCustomTaskOne(name="example_one", some_parameter="value")
+result_one = task_one.execute()
+print(result_one)
+
+task_two = MyCustomTaskTwo(name="example_two", another_parameter="value")
+result_two = task_two.execute()
+print(result_two)
+```
+
+## Development Workflow
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+
+pip install .[dev]
+```
+
+## Adding a New Plugin
+
+```bash
+mkdir src/plugin_three
+touch src/plugin_three/__init__.py
+```
+
+Implement a new plugin.
+
+Register the pluging in the toml file.
+
+## Testing
+
+Ensure to write the tests for the plugins implmenented in the tests folder.
+
+Run pytest in the console.
+
+
+
+

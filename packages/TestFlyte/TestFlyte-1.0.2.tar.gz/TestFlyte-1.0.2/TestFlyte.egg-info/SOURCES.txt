@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+TestFlyte.egg-info/PKG-INFO
+TestFlyte.egg-info/SOURCES.txt
+TestFlyte.egg-info/dependency_links.txt
+TestFlyte.egg-info/requires.txt
+TestFlyte.egg-info/top_level.txt

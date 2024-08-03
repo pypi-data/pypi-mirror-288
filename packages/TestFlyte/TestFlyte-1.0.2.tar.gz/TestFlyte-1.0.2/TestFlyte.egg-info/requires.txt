@@ -1,0 +1,6 @@
+flytekit>=0.16.0
+pandas
+numpy
+pytest
+flake8
+black
