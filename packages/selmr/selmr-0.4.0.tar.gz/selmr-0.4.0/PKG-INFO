@@ -1,0 +1,30 @@
+Metadata-Version: 2.3
+Name: selmr
+Version: 0.4.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: Package to create and use Simple Explainable Language Multiset Representations
+Home-Page: https://github.com/wjwillemse/selmr
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/wjwillemse/selmr
+
+This crate provides a library for generating and using simple text data structures
+that work like language models. The data structures do not use real-valued vector
+embeddings; instead they use the mathematical concept of multisets and are derived
+directly from plain text data.
+
+The data structures are named Simple Explainable Language Multiset Representations
+(SELMRs) and consist of multisets created from all multi-word expressions and all
+multi-word-context combinations contained in a collection of documents given some
+contraints. The multisets can be used for downstream NLP tasks like text classifications
+and searching, in a similar manner as real-valued vector embeddings.
+
+SELMRs produce explainable results without any randomness and enable explicit links
+with lexical, linguistical and terminological annotations. No model is trained and no
+dimensionality reduction is applied.
+
+For information on how to use this package, please look [here](https://www.mangosaurus.nl/posts/introduction-to-selmr/).
+
