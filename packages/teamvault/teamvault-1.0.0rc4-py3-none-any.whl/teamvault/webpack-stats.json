@@ -1,0 +1,111 @@
+{
+  "status": "done",
+  "assets": {
+    "1458587c0aa7cd06b82b.woff": {
+      "name": "1458587c0aa7cd06b82b.woff",
+      "path": "/home/mreinhardt/projects/teamvault/teamvault/static/bundled/1458587c0aa7cd06b82b.woff",
+      "publicPath": "/static/bundled/1458587c0aa7cd06b82b.woff",
+      "sourceFilename": "node_modules/@fontsource/poppins/files/poppins-latin-400-normal.woff"
+    },
+    "21cb8f55d8e0c5b89751.woff2": {
+      "name": "21cb8f55d8e0c5b89751.woff2",
+      "path": "/home/mreinhardt/projects/teamvault/teamvault/static/bundled/21cb8f55d8e0c5b89751.woff2",
+      "publicPath": "/static/bundled/21cb8f55d8e0c5b89751.woff2",
+      "sourceFilename": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2"
+    },
+    "3555e897caceedb85c78.woff": {
+      "name": "3555e897caceedb85c78.woff",
+      "path": "/home/mreinhardt/projects/teamvault/teamvault/static/bundled/3555e897caceedb85c78.woff",
+      "publicPath": "/static/bundled/3555e897caceedb85c78.woff",
+      "sourceFilename": "node_modules/@fontsource/poppins/files/poppins-latin-300-normal.woff"
+    },
+    "455ea818179b4def0c43.woff2": {
+      "name": "455ea818179b4def0c43.woff2",
+      "path": "/home/mreinhardt/projects/teamvault/teamvault/static/bundled/455ea818179b4def0c43.woff2",
+      "publicPath": "/static/bundled/455ea818179b4def0c43.woff2",
+      "sourceFilename": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2"
+    },
+    "4d986b00ff9ca3828fbd.woff2": {
+      "name": "4d986b00ff9ca3828fbd.woff2",
+      "path": "/home/mreinhardt/projects/teamvault/teamvault/static/bundled/4d986b00ff9ca3828fbd.woff2",
+      "publicPath": "/static/bundled/4d986b00ff9ca3828fbd.woff2",
+      "sourceFilename": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2"
+    },
+    "5165a96db616b820c773.woff": {
+      "name": "5165a96db616b820c773.woff",
+      "path": "/home/mreinhardt/projects/teamvault/teamvault/static/bundled/5165a96db616b820c773.woff",
+      "publicPath": "/static/bundled/5165a96db616b820c773.woff",
+      "sourceFilename": "node_modules/@fontsource/poppins/files/poppins-latin-900-normal.woff"
+    },
+    "60127e352b7a11f7f1bc.ttf": {
+      "name": "60127e352b7a11f7f1bc.ttf",
+      "path": "/home/mreinhardt/projects/teamvault/teamvault/static/bundled/60127e352b7a11f7f1bc.ttf",
+      "publicPath": "/static/bundled/60127e352b7a11f7f1bc.ttf",
+      "sourceFilename": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf"
+    },
+    "9432de654f2ae9e9bc21.woff": {
+      "name": "9432de654f2ae9e9bc21.woff",
+      "path": "/home/mreinhardt/projects/teamvault/teamvault/static/bundled/9432de654f2ae9e9bc21.woff",
+      "publicPath": "/static/bundled/9432de654f2ae9e9bc21.woff",
+      "sourceFilename": "node_modules/@fontsource/poppins/files/poppins-latin-100-normal.woff"
+    },
+    "bacd5de623fb563b961a.ttf": {
+      "name": "bacd5de623fb563b961a.ttf",
+      "path": "/home/mreinhardt/projects/teamvault/teamvault/static/bundled/bacd5de623fb563b961a.ttf",
+      "publicPath": "/static/bundled/bacd5de623fb563b961a.ttf",
+      "sourceFilename": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf"
+    },
+    "c0dcdaeaab8caa158cb9.woff": {
+      "name": "c0dcdaeaab8caa158cb9.woff",
+      "path": "/home/mreinhardt/projects/teamvault/teamvault/static/bundled/c0dcdaeaab8caa158cb9.woff",
+      "publicPath": "/static/bundled/c0dcdaeaab8caa158cb9.woff",
+      "sourceFilename": "node_modules/@fontsource/poppins/files/poppins-latin-600-normal.woff"
+    },
+    "c85b4172ef8cea3d563d.woff": {
+      "name": "c85b4172ef8cea3d563d.woff",
+      "path": "/home/mreinhardt/projects/teamvault/teamvault/static/bundled/c85b4172ef8cea3d563d.woff",
+      "publicPath": "/static/bundled/c85b4172ef8cea3d563d.woff",
+      "sourceFilename": "node_modules/@fontsource/poppins/files/poppins-latin-800-normal.woff"
+    },
+    "cd04c2ad00870c9ceebf.woff": {
+      "name": "cd04c2ad00870c9ceebf.woff",
+      "path": "/home/mreinhardt/projects/teamvault/teamvault/static/bundled/cd04c2ad00870c9ceebf.woff",
+      "publicPath": "/static/bundled/cd04c2ad00870c9ceebf.woff",
+      "sourceFilename": "node_modules/@fontsource/poppins/files/poppins-latin-700-normal.woff"
+    },
+    "e8456c67c82fc38f40c6.woff": {
+      "name": "e8456c67c82fc38f40c6.woff",
+      "path": "/home/mreinhardt/projects/teamvault/teamvault/static/bundled/e8456c67c82fc38f40c6.woff",
+      "publicPath": "/static/bundled/e8456c67c82fc38f40c6.woff",
+      "sourceFilename": "node_modules/@fontsource/poppins/files/poppins-latin-200-normal.woff"
+    },
+    "eb0d4c666d17c3ab1848.woff": {
+      "name": "eb0d4c666d17c3ab1848.woff",
+      "path": "/home/mreinhardt/projects/teamvault/teamvault/static/bundled/eb0d4c666d17c3ab1848.woff",
+      "publicPath": "/static/bundled/eb0d4c666d17c3ab1848.woff",
+      "sourceFilename": "node_modules/@fontsource/poppins/files/poppins-latin-500-normal.woff"
+    },
+    "eb91f7b948a42799f678.ttf": {
+      "name": "eb91f7b948a42799f678.ttf",
+      "path": "/home/mreinhardt/projects/teamvault/teamvault/static/bundled/eb91f7b948a42799f678.ttf",
+      "publicPath": "/static/bundled/eb91f7b948a42799f678.ttf",
+      "sourceFilename": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf"
+    },
+    "main-9c72873e6524cdd1f8dc.js": {
+      "name": "main-9c72873e6524cdd1f8dc.js",
+      "path": "/home/mreinhardt/projects/teamvault/teamvault/static/bundled/main-9c72873e6524cdd1f8dc.js",
+      "publicPath": "/static/bundled/main-9c72873e6524cdd1f8dc.js"
+    },
+    "main-9c72873e6524cdd1f8dc.js.LICENSE.txt": {
+      "name": "main-9c72873e6524cdd1f8dc.js.LICENSE.txt",
+      "path": "/home/mreinhardt/projects/teamvault/teamvault/static/bundled/main-9c72873e6524cdd1f8dc.js.LICENSE.txt",
+      "publicPath": "/static/bundled/main-9c72873e6524cdd1f8dc.js.LICENSE.txt"
+    }
+  },
+  "chunks": {
+    "main": [
+      "main-9c72873e6524cdd1f8dc.js"
+    ]
+  },
+  "publicPath": "/static/bundled/"
+}
