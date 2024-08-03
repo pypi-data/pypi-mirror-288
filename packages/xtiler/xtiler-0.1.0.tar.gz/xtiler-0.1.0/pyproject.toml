@@ -1,0 +1,58 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "xtiler"
+dynamic = ["version"]
+description = 'Coordinate system for tiling with hexagons.'
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = ["hexagon", "tiling", "coordinate", "grid"]
+authors = [
+  { name = "Tom Bricaud" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = []
+
+[project.urls]
+Documentation = "https://github.com/LordPatate/hexa-tiling#readme"
+Issues = "https://github.com/LordPatate/hexa-tiling/issues"
+Source = "https://github.com/LordPatate/hexa-tiling"
+
+[tool.hatch.version]
+path = "xtiler.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "images/*"
+]
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:xtiler.py}"
+
+[tool.coverage.run]
+branch = true
+parallel = true
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
