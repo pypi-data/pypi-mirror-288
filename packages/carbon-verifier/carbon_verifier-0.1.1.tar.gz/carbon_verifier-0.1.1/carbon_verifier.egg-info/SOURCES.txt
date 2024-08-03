@@ -1,0 +1,9 @@
+README.md
+setup.py
+carbon_verifier/__init__.py
+carbon_verifier/main.py
+carbon_verifier.egg-info/PKG-INFO
+carbon_verifier.egg-info/SOURCES.txt
+carbon_verifier.egg-info/dependency_links.txt
+carbon_verifier.egg-info/requires.txt
+carbon_verifier.egg-info/top_level.txt
