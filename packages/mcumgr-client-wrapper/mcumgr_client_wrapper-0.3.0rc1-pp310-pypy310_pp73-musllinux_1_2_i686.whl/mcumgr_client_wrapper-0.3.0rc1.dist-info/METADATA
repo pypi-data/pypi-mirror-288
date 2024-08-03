@@ -1,0 +1,43 @@
+Metadata-Version: 2.3
+Name: mcumgr-client-wrapper
+Version: 0.3.0rc1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: Python bindings for the rust library mcumgr-client
+Author: Adrien Bruant, Baptiste Cluzel
+License: Apache-2.0
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Repository, https://github.com/comap-smart-home/mcumgr-client-wrapper
+
+# mcumgr-client-wrapper
+
+Python bindings for the rust library [mcumgr-client](https://github.com/vouch-opensource/mcumgr-client).
+This allows sending MCUmgr commands to a device connected to a serial port from Python.
+
+# How to use
+
+```
+import mcumgr_client as mcu
+
+s = mcu.SerialSession(device='/dev/ttyUSB0', baudrate=576000)
+# Get a list of dicts containing image properties 
+l = s.list()
+print(l)
+
+# Upload image to device
+s.upload('/path/to/image/bin')
+
+# Set the pending flag on the uploaded image
+img_hash = [34, 33, 245]
+s.test(img_hash)
+
+# Delete image
+s.delete(slot=1)
+
+# Reset the device
+s.reset()
+```
+
+see `help(mcumgr_client)` for more
