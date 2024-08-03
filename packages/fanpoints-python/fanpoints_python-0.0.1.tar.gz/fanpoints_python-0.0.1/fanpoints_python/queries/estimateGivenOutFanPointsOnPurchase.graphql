@@ -1,0 +1,16 @@
+query estimateGivenOutFanPointsOnPurchase(
+    $partnerId: String!
+    $purchaseItems: [PurchaseItemPriceInput!]!
+) {
+    estimateGivenOutFanPointsOnPurchase: estimate_given_out_fan_points_on_purchase(
+        partner_id: $partnerId
+        purchase_items: $purchaseItems
+    ) {
+        errors {
+            invalidRateLabelError: invalid_rate_label_error {
+                _empty
+            }
+        }
+        result
+    }
+}

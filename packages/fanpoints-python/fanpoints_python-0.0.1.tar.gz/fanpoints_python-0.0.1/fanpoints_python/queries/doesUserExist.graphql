@@ -1,0 +1,11 @@
+query does_user_exist(
+    $partner_id: String!
+    $user_id: String!
+) {
+    does_user_exist(
+        partner_id: $partner_id
+        user_id: $user_id
+    ) {
+        result
+    }
+}
