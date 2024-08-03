@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reservationScriptTest"
+version = "0.0.1a1"
+description = "Reserved by xavvvv"
+readme = "README.md"
+authors = [{ name = "xavvvv", email = "xav@xavvvv.xyz" }]
