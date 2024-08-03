@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: w3crack
+Version: 0.1.0
+Summary: Web3 Wallet bruteforce using CPU and GPU
+Author: PepeIC
+Project-URL: Homepage, https://github.com/pepeic/w3crack_driver
+Keywords: web3,wallet,recovery,restore,bruteforce,bitcoin,ethereum,metamask,trust,trustwallet,brave,bravewallet
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# W3crack
+
+W3crack is driver implementation of [W3recovery](https://github.com/pepeic/W3recovery) project used to recover web3 wallets. It tries to crack wallets (test many passwords for a wallet) using both CPU and GPU (if possible and not spicified otherwise). It also written in Rust to provide better performance and ABI stability.
+
+> **IMPORTANT**: GPU cracking is not available on AMD GPU's! You MUST specify cpu_only option if you use AMD GPU. Only NVidia GPU's are supported!
+
+### Which wallets are supported?
+
+For now the driver supports only these:
+
+* MetaMask like wallets (MetaMask, Ronin, Binance Chain, etc.)
+* Brave Wallet
+* Trust Wallet (requires good GPU to perform GPU bruteforce)
+
+### So little?
+
+The project is in early stage of development. These wallets were implemented first as they are the most popular and because main project targets wallets from chromium browsers, however more wallets may be added in the future (if the project will be popular enough).
+If you need usage examples, you can check [the main project](https://github.com/pepeic/W3recovery) which is very small so it should be easy to figure stuff out.
+
+> **NOTE**: This project is under development and may contain bugs, you can report them if you find any, however it is not supposed to be used by third parties yet and actually part of the [W3recovery](https://github.com/pepeic/W3recovery) project.
