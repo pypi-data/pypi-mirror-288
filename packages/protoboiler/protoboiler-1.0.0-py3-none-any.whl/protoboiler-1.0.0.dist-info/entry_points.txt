@@ -1,0 +1,3 @@
+[console_scripts]
+protoc-gen-protoboiler=protoboiler:main
+
