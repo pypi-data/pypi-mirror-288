@@ -1,0 +1,11 @@
+interfaces_to/__init__.py,sha256=1x-hFumFcsmgra534yqW6lcxIJFnQ8GaskaGhcEKPVw,637
+interfaces_to/bases.py,sha256=ypLQZvOOnOFkcJHQOLuP10fTbm2lcD0Ixg9MPE-G7o0,386
+interfaces_to/tools/notion.py,sha256=omlaY8KQAEeRnZz8MZjQ4evtMXJ_CW1Sv7Nmm5oyGxs,9378
+interfaces_to/tools/openai.py,sha256=6DESn1yo84oE3DvXeWKD1Jn84353vaK3nz2d_bIXRm8,4363
+interfaces_to/tools/self.py,sha256=MJ0x0qBZlj0SX-f3SK1LXrFPk2S4QfPD4kLi2zT1JKQ,1599
+interfaces_to/tools/slack.py,sha256=tFqJtYzq0C_IbzJ5lqQ-vg9Rc95rqA8F5gUjVsBt5pc,7532
+interfaces_to/utils.py,sha256=iGY-IMchLFbS8sllujqDVmsdfCy27CYQ8qxObQ9Lmq4,6627
+interfaces_to-0.2.10.dist-info/LICENSE,sha256=basW1hzsyRhx7ZCivJMcWJhxDWCIjaRaa6h1uQS95eI,1068
+interfaces_to-0.2.10.dist-info/METADATA,sha256=rHgjai6Oab7keyi3XrgfleOftTxLPpV3mxwEPLyrKlE,12693
+interfaces_to-0.2.10.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+interfaces_to-0.2.10.dist-info/RECORD,,
