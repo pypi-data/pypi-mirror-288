@@ -1,0 +1,12 @@
+minimum_jerk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minimum_jerk/get_terms.py,sha256=jMkWNzQO5mn1pNlRbrHqju2UxS868iGJ6VEBGb8vigs,8941
+minimum_jerk/minjerk.py,sha256=RprD4fJK4t_caohcYy1ardmufqE7eNK0taEM-DKswjQ,2918
+minimum_jerk/minjerk_analytic.py,sha256=VerS9WG-3Ors5ZWeE9fat8LkWGp_XoMbld2ulMzH_YQ,8584
+minimum_jerk/minjerk_penalty.py,sha256=QKE8GvfZEv4mW3_ynghCMMj-LvdaULqKjVwvaRBc6Oc,4571
+minimum_jerk/mytypes.py,sha256=hm8d21go1nQDPhpQoq3h4zleoblyM7gyiGjMsrE280g,428
+minimum_jerk/utils.py,sha256=236-UxS4Ulqw3lAH9mn4IHXF9vZkreeYUW8uip9Vt0I,1180
+minimum_jerk-0.1.0.dist-info/LICENSE,sha256=Q_Pi-NwwWLVFkbpBOafwCnVyl7pd5iH791TB7HdPlso,1060
+minimum_jerk-0.1.0.dist-info/METADATA,sha256=yQI-TIC1GS4iBnM3N_Zs5i78lTXnvXL1OfZQfPhNVzI,491
+minimum_jerk-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+minimum_jerk-0.1.0.dist-info/top_level.txt,sha256=JLdg8Ii60MWRY7a-SIKcYoHrxRX4-m1my92Qdy-9PiE,13
+minimum_jerk-0.1.0.dist-info/RECORD,,
