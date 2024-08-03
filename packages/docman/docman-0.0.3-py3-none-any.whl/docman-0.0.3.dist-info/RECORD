@@ -1,0 +1,10 @@
+docman/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docman/__main__.py,sha256=CArUui3cQEwcfLZmqRt8jgQSB5_QlLmxNVFncwRqC6o,44
+docman/console.py,sha256=e3ObPC3zwpYuV3U6gyN7Dm_NsxEHPyRjnG1hyFfCHZM,297
+docman/filemanager.py,sha256=yRUBA64uWftC-pUiL-vxN06tp2TUU8aK2fk3zWQmZX4,12263
+docman-0.0.3.dist-info/LICENSE.txt,sha256=NNU6nk_p5hw3JOheall1DSejte8mVBoIB-IIz7yqjSg,1074
+docman-0.0.3.dist-info/METADATA,sha256=ofO_2UyM6WGnEFrsU-TMfSz56xnGnlt5pDUYmWGF1hY,3815
+docman-0.0.3.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+docman-0.0.3.dist-info/entry_points.txt,sha256=L3gn0pd6h6mN4JormDHkJemuuLx9K-FYUPAQy7PFFIc,51
+docman-0.0.3.dist-info/top_level.txt,sha256=dmupLsFi8ButqIk966BhHniR4JwN4dk4-BMk-xXbyAA,7
+docman-0.0.3.dist-info/RECORD,,
