@@ -1,0 +1,97 @@
+name: Build and Publish
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build_wheels:
+    name: Build wheels on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.11
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install setuptools wheel cython build setuptools_scm
+      - name: Build wheels
+        run: python -m build --wheel
+      - name: Build sdist (only on Linux)
+        if: runner.os == 'Linux'
+        run: python -m build --sdist
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: dist-${{ matrix.os }}
+          path: dist/*
+
+  build_amazon_linux:
+    name: Build wheel for Amazon Linux
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+      - name: Build in Amazon Linux
+        run: |
+          docker run --rm -v ${{ github.workspace }}:/workspace \
+            --platform linux/amd64 \
+            amazonlinux:2 \
+            /bin/bash -c "
+              cd /workspace
+              yum update -y
+              yum install -y python3 python3-devel gcc gcc-c++ make git
+              python3 -m ensurepip --upgrade
+              python3 -m pip install --upgrade pip
+              pip3 install setuptools wheel cython build setuptools_scm
+              python3 -m build --wheel
+            "
+      - uses: actions/upload-artifact@v2
+        with:
+          name: dist-amazonlinux
+          path: dist/*
+
+  publish:
+    needs: [build_wheels, build_amazon_linux]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.11
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install twine
+      - name: Download all artifacts
+        uses: actions/download-artifact@v2
+        with:
+          path: ./all-artifacts
+      - name: Prepare distribution files
+        run: |
+          mkdir dist
+          find ./all-artifacts -type f \( -name "*.whl" -o -name "*.tar.gz" \) -exec cp {} dist/ \;
+          # Ensure only one sdist is present
+          ls dist/*.tar.gz | sort | tail -n +2 | xargs rm -f
+      - name: List files in dist directory
+        run: ls -l dist/
+      - name: Publish to PyPI
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+        run: |
+          twine upload --verbose dist/*

@@ -1,0 +1,12 @@
+include README.md
+include LICENSE
+include pyproject.toml
+global-include marearts_crystal/*.so
+global-include marearts_crystal/*.pyd
+global-exclude *.py[cod]
+global-exclude *.pyx
+global-exclude *.pxd
+global-exclude *.cpp
+global-exclude *.c
+global-exclude __pycache__
+global-exclude .gitignore
