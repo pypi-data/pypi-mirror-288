@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/__init__.py
+src/ofig.py
+src/ofunc.py
+src/oplot.py
+src/ograph.egg-info/PKG-INFO
+src/ograph.egg-info/SOURCES.txt
+src/ograph.egg-info/dependency_links.txt
+src/ograph.egg-info/requires.txt
+src/ograph.egg-info/top_level.txt

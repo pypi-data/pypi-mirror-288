@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ograph
+Version: 0.1
+Summary: Experimental Matplotlib API
+Author-email: Lyodine <lyodine@github.com>
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Natural Language :: English  
+Classifier: Topic :: Software Development :: Libraries :: Python Modules 
+Classifier: Typing :: Typed
+Requires-Python: >=3.12.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: matplotlib>=3.8.4
+
+This is README.
