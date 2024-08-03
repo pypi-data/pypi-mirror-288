@@ -1,0 +1,3 @@
+[sqlalchemy.dialects]
+denodo = denodo.sqlalchemy:dialect
+denodo.psycopg2 = denodo.sqlalchemy:dialect
