@@ -1,0 +1,3 @@
+[console_scripts]
+lscealice=lscealice:startUI
+
