@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sgnl
+Version: 0.0.1
+Summary: Streaming Graph Navigator - LIGO.
+Author-email: Becca Ewing <ree55@psu.edu>, Chad Hanna <crh184@psu.edu>
+Project-URL: Homepage, https://git.ligo.org/greg/sgn-ligo
+Project-URL: Issues, https://git.ligo.org/greg/sgn-ligo/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# sgn-ligo
+
+Adds LIGO sub classes to sgn.
