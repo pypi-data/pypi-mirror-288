@@ -1,0 +1,11 @@
+
+[extras]
+numpy
+pillow
+
+[test]
+numpy
+pillow
+torch
+torchvision
+matplotlib
