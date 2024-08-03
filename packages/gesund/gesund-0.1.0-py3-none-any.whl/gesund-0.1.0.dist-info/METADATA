@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: gesund
+Version: 0.1.0
+Summary: Open source SDK for Gesund.ai platform
+Home-page: https://github.com/yourusername/gesund
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Gesund SDK
+
+The Gesund SDK is an open source library for interacting with the Gesund.ai platform.
+
+## Installation
+
+You can install the library using pip:
+
+```bash
+pip install gesund
+```
+
+## Usage
+
+Here's an example of how to use the Gesund SDK:
+
+```python
+from gesund import GesundSDK
+
+sdk = GesundSDK(api_key="your_api_key")
+sdk.connect()
+data = sdk.get_data()
+print(data)
+```
