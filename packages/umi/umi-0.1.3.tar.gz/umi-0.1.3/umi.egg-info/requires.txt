@@ -1,0 +1,6 @@
+siliconcompiler>=0.26.0
+lambdalib<0.2.10,>=0.2.9
+
+[test]
+switchboard-hw>=0.2.14
+flake8==7.1.0
