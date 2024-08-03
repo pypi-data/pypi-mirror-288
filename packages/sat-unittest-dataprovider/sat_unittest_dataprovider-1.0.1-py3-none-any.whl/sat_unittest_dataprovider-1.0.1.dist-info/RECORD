@@ -1,0 +1,10 @@
+sat_unittest_dataprovider/__init__.py,sha256=EpkkUq-B_IXFmQtqxOIvJ9LRh17myTncmuDs5DSRA9o,1783
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/data_providers.py,sha256=Iz6jLbe_JFs4tBsKE4hAjYhmaJ3NOIefasJREjkGbBo,641
+tests/real_world_example.py,sha256=UUR8p8V2l63_k-185AR4qCftC4lMhmnnhDANY7sBlCs,1040
+tests/test_data_provider.py,sha256=uYnGDsYXLNVL32H9FMaayADk4NXQ-5CGBafRNQLogzY,1613
+tests/test_readme_examples.py,sha256=EqgLTYlfVq-ILf5y6zNe6cPC-Pv7nk5rPzbuAJzi_fw,4958
+sat_unittest_dataprovider-1.0.1.dist-info/METADATA,sha256=wNSIg8gkR0cyUKJenjs8XOnVavTXqwi1bPZUQQ7_Brg,15206
+sat_unittest_dataprovider-1.0.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+sat_unittest_dataprovider-1.0.1.dist-info/top_level.txt,sha256=g5gYz7VXiDG4gUbiXxP-3GU-9b534pwVXIC5sflLNus,32
+sat_unittest_dataprovider-1.0.1.dist-info/RECORD,,
