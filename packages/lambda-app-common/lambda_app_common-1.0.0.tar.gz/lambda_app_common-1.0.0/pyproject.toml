@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lambda_app_common"
+version = "1.0.0"
+description = "Common resources for lambda apps"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  { name="Hector Reyes Aleman", email="hector.reyes@junctionnet.ai" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "boto3",
+    "botocore"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/birkoff/lambda_app_common"
+"Bug Tracker" = "https://github.com/birkoff/lambda_app_common/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["lambda_app_common"]
