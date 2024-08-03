@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+pystats19/__init__.py
+pystats19/format.py
+pystats19/read.py
+pystats19/source.py
+pystats19/utils.py
+pystats19.egg-info/PKG-INFO
+pystats19.egg-info/SOURCES.txt
+pystats19.egg-info/dependency_links.txt
+pystats19.egg-info/requires.txt
+pystats19.egg-info/top_level.txt
+pystats19/data/pystats19_prebuilt_schema.pkl
