@@ -1,0 +1,14 @@
+QCut/__init__.py,sha256=RC2vzZsnTcHTMeFQcFjtEFfxskH17DRKcOYcnDxt7v0,740
+QCut/backend_utility.py,sha256=eRUqrs-flwSpFUXRn_BS4O7g2GoBNMjYdmcL6PDIrR8,3825
+QCut/helper.py,sha256=KkGlQA9_mzlo3ZiqtvatNPQTUMD9aFxFctXljiXDYYI,1533
+QCut/identity_qpd.py,sha256=P2BYEXrPfZ54Q_OlSWbb4fGjPZzZt7AhIlmaFOlDzeU,659
+QCut/qpd_gates.py,sha256=V3MO28Vxc4HPwAlUZTrlgYUqZvW6wiEBNVcDqsz60A0,1156
+QCut/wirecut.py,sha256=IbRvel5gU3YJ5t-RNx5sl9Sz-FaCGApJQD5X0M3jUT0,33090
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/solutions.py,sha256=oVLUGSh6VM5frWLNpf9Bq1SpcYhpXQIimnQq3U1j_4c,344491
+tests/test_QCut.py,sha256=yI9pTuvrGKi_L31V7BUGsdXN_pznOMhO72dxmcTLpKs,4638
+QCut-0.0.9.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+QCut-0.0.9.dist-info/METADATA,sha256=DbzG__t7aYAWafJAjw_Nh8hwLwTPo6h5W2zLidqznmw,7321
+QCut-0.0.9.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+QCut-0.0.9.dist-info/top_level.txt,sha256=jfZafpPR-f30SwZm37kPbowJ1T4ovAhwHzb3MhnBVPo,11
+QCut-0.0.9.dist-info/RECORD,,
