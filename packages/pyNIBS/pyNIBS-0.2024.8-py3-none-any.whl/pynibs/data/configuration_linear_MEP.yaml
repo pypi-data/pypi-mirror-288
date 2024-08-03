@@ -1,0 +1,61 @@
+########################################################################################################################
+# This configuration file can be used to set values in pynibs.Element() that influence the regression.                 #
+# The values in this version are optimized for MEP data.                                                     #
+########################################################################################################################
+#
+#
+############################################## General regression concept ##############################################
+# While trying to find the best fit, many possible regression functions are calculated and the best one is picked.
+# Usually, that is the one that explains the most noise, meaning that the data points have a minimal distance to the
+# regression function. With linear regression, this function always looks like the following term, with varying
+# coefficients m and n:
+##     y = m*x + n
+##     (m is the slope)
+##     (n is the intercept with the y-axis)
+
+# The usual approach is to start with a function described by some initial values (init_vals) for m and n and try out
+# many other values within the value limits (limits), minimizing the distance between regression function and real data.
+# During refitting, different initial vales (calculated within the random_vals_init_range) are used to see whether a
+# better result can be achieved.
+
+############################################### Picking suitable values ################################################
+# Initial values for the regression coefficients:
+init_vals:
+  m: 0.3
+  n: -1
+# Strategy: Pick the values you may expect the result to have, or that are not far-fetched. Picking reasonable initial
+# values can speed up the fitting procedure.
+
+# Values that limit all possible regression coefficients:
+limits:
+  m:
+  - -100
+  - 100
+  n:
+  - -100
+  - 100
+# Strategy: Rather wide range recommended, since a few points could have very extreme values and therefore be
+# approximated by a function very different from the expected values. E.g. a multiple of the presented data range.
+# (Note: This should not be used to factor out outliers, since an approximation will still be calculated, but with too
+# narrow limits it will just be a very bad one.)
+
+# Value range for the calculation of new initial values for refits:
+random_vals_init_range:
+  m:
+  - 0
+  - 100
+  n:
+  - 0
+  - 0.3
+# Strategy: During refitting, new initial values are calculated by picking a random number between these lower and upper
+# bounds, so the range should be a lot smaller than 'limits' and somewhat symmetrical around the 'init_vals'.
+
+
+# Example usage:
+##
+##        configfile = configuration_linear_MEP.yaml
+##        with open(configfile, "r") as yamlfile:
+##            config = yaml.load(yamlfile, Loader=yaml.FullLoader)
+##
+##        pynibs.regress_data(...,
+##                           **configfile)

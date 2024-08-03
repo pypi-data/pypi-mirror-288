@@ -1,0 +1,43 @@
+# This configuration file contains settings and parameters for the testing of the network detection algorithm
+# by generating response data and then test the algorithm on it.
+
+# ARTIFICIAL DATA GENERATION
+hotspot_elm0: 8797            # hotspot element 0
+hotspot_elm1: 5334            # hotspot element 1
+sample_size: 300              # number of data manifestations (i.e. trials / coil configurations / ...)
+rn_seed: 44               # random seed used in multiple places
+distribution_type: 'normal'   # 'normal', 'logistic' are implemented
+network_type: 'SH_0'           # \in ['NO', 'AND', '1_INH_0', 'SH_0', '0_INH_1', 'SH_1', 'XOR', 'OR']
+effect_full: 0.9              # at what e-field magnitude the desired effect is expected to manifest fully
+effect_saturation: 1.2       # effect \in [0, effect_upper_bound) (at what e-mag the desired effect should saturate)
+jitter_ratio: 0.05            # percentage of data that gets assigned random response values within observed range
+jitter_scale: 0.2             # gets multiplied with the mean value to calculate distribution deviation:
+                              ##   scale = loc * jitter_scale (smaller -> less noise)
+
+# BINARIZATION
+# binarization threshold is calculated as follows: method(response) * bin_factor
+bin_method: 'mean'
+bin_factor: 1.0
+
+# SCORING
+scoring_method: 'clf'         # dual network expected: 'clf' or 'regression', single hotspot expected: 'regress_data' or 'mi'
+scoring_emag_thr: 0           # elements with max(e_mag) > scoring_emag_thr are scored
+scoring_interval: 22          # subsampling resolution: `1/scoring_interval' of all elements are scored
+
+# DETECTION
+acc_thr: 0.70                  # accuracy threshold for hotspot elements (lower bound)
+corr_thr: 0.75                 # correlation(hot0, hot1) threshold for hotspot pairs (upper bound)
+note: 'PLOTTING'                  # arbitrary string  # NO COMMAS
+
+
+####################################################
+# The following is not saved in the evaluation sheet:
+####################################################
+
+save_files: True               # whether to save hotspot scores and scoremaps as hdf5
+fn_results: 'eval_final_tests'    #  file name of the .csv to save the results and evaluation in
+
+# PLOTTING of the generated data (not in evaluation sheet)
+plot_std: True                # plot e-mag hotspot0 x emag hotspot1 x response
+plot_bin: True                # plot e-mag hotspot0 x emag hotspot1 x binarized response
+plot_curves: True             # plot e-mag hotspot0 x response and e-mag hotspot1 x response

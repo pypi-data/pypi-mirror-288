@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InstrumentMarkerList coordinateSpace="RAS">
+    <!--All positions are saved in the coordinate system of the corresponding medical data.
+NIfTI image data are recommended using RAS system (x-axis increases from the left hand side to the right hand side of the patient,
+y-axis increases from the posterior side to the anterior side of the patient and z-axis increases from the feet toward the head of the patient).-->
+    <InstrumentMarker alwaysVisible="false" index="0" selected="true">
+        <Marker additionalInformation="" color="#ff0000" description="test" set="true">
+            <Matrix4D data00="0.9013614031176984"
+                data01="0.2983920094889285" data02="-0.3138959024047658"
+                data03="-71.18429093438886" data10="0.38530408399367894"
+                data11="-0.8834528036471245"
+                data12="0.26659466328018544" data13="-79.95375674706612"
+                data20="-0.1977604402582455"
+                data21="-0.3612397546019023"
+                data22="-0.9112724377855788" data23="38.69342634326524"
+                data30="0.0" data31="0.0" data32="0.0" data33="1.0"/>
+        </Marker>
+    </InstrumentMarker>
+</InstrumentMarkerList>
