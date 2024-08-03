@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: xasdesbotapi
+Version: 0.1
+Summary: Managing Xasdes Bot commands
+Author: Xasdes
+Author-email: xasdestest@gmail.com
+Requires-Python: >=3.6
+Requires-Dist: requests

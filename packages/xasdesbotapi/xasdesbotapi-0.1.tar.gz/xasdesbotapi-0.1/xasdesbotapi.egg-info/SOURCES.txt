@@ -1,0 +1,10 @@
+README.md
+setup.py
+tests/test_chatbot_api.py
+xasdesbotapi/__init__.py
+xasdesbotapi/xasdesbotapi.py
+xasdesbotapi.egg-info/PKG-INFO
+xasdesbotapi.egg-info/SOURCES.txt
+xasdesbotapi.egg-info/dependency_links.txt
+xasdesbotapi.egg-info/requires.txt
+xasdesbotapi.egg-info/top_level.txt
