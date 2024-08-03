@@ -1,0 +1,2 @@
+dagster==1.7.16
+slack_sdk
