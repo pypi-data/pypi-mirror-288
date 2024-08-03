@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: trulens-dashboard
+Version: 1.0.1a0
+Summary: Library to systematically track and evaluate LLM based applications.
+Author-email: "Snowflake Inc." <ml-observability-wg-dl@snowflake.com>
+License: MIT License
+Project-URL: Changelog, https://github.com/truera/trulens/blob/main/RELEASES.md
+Project-URL: Documentation, https://trulens.org/trulens/getting_started/
+Project-URL: Homepage, https://trulens.org
+Project-URL: Issues, https://github.com/truera/trulens/issues
+Project-URL: Repository, https://github.com/truera/trulens
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: !=3.9.7,<4.0,>=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: humanize >=4.6
+Requires-Dist: ipywidgets >=8.1.3
+Requires-Dist: jupyter >=1
+Requires-Dist: millify >=0.1.1
+Requires-Dist: rich >=13.6
+Requires-Dist: streamlit >=1.33
+Requires-Dist: streamlit-aggrid ==0.3.4
+Requires-Dist: streamlit-extras >=0.4
+Requires-Dist: streamlit-pills >=0.3
+Requires-Dist: traitlets >=5.0.5
+Requires-Dist: trulens-core >=1.0.0
+Provides-Extra: dev
+Requires-Dist: build >=1.2.1 ; extra == 'dev'
+Requires-Dist: ipython >=7.25 ; extra == 'dev'
+
+# trulens-dashboard
+
+## Install Node.js
+
+See [the Node.js website](https://nodejs.org/en/download/package-manager) for details
+
+## Building
+
+Build with `python -m build`
