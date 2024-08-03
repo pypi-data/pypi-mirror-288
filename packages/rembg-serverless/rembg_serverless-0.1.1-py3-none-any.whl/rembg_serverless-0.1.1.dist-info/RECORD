@@ -1,0 +1,12 @@
+rembg_serverless/__init__.py,sha256=_H6rtp_OBRGSfL0nF9_98s4Kn2KLMsTxBv3Yp-eXCwI,138
+rembg_serverless/_version.py,sha256=C11a95XD50Sv3emuXi2mZtcT33Ag-wpEMY8iC2WelLE,23164
+rembg_serverless/bg.py,sha256=WA8aqkq2FcJXtvUJleo49poL_9QpzdiLMP7ZATrNzG8,5467
+rembg_serverless/session_base.py,sha256=wowDTTUhNmusNP1FHNbg8W7CmTC_LKKCUW0yPdBMVq8,1203
+rembg_serverless/session_factory.py,sha256=ppfEay334ao2uwuJSQX77XJZXAIRP0ptcpoNbVy23SM,1126
+rembg_serverless/session_simple.py,sha256=ImSK2dMbBo39laQ7EczPdCB4CljVKJ6MWDzADizM0qY,741
+rembg_serverless/u2net.onnx,sha256=MJyEaSWN2nQnk9zg6-qObdOTF0-Jk0cz7MixTHb03dg,4574861
+rembg_serverless-0.1.1.dist-info/LICENSE.txt,sha256=gUAcLa_jrEHc5BZJKWmnut5UQ6fKHp3jwp_JKuHzER0,1099
+rembg_serverless-0.1.1.dist-info/METADATA,sha256=JCUtnDKnzCVQjAEV4zZBE050Xs1E89GI-ABlIXXxfMU,8740
+rembg_serverless-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+rembg_serverless-0.1.1.dist-info/top_level.txt,sha256=xCQIubVGMDOCPGF-Tii45htZwyirkkc0vlJy_8tfPyA,17
+rembg_serverless-0.1.1.dist-info/RECORD,,
