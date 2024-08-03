@@ -1,0 +1,7 @@
+setup.py
+s1300231_learn/__init__.py
+s1300231_learn.egg-info/PKG-INFO
+s1300231_learn.egg-info/SOURCES.txt
+s1300231_learn.egg-info/dependency_links.txt
+s1300231_learn.egg-info/requires.txt
+s1300231_learn.egg-info/top_level.txt
