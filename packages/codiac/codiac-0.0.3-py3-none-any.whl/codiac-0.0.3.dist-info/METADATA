@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: codiac
+Version: 0.0.3
+Summary: CoDIAC: COmprehensive Domain Interface Anlysis of Contacts
+Home-page: https://github.com/NaegleLab/CoDIAC
+Author: Naegle Lab
+Author-email: kmn4mj@virginia.edu
+License: GNU General Public License v3
+Project-URL: Documentation, https://naeglelab.github.io/CoDIAC/index.html
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: statsmodels
+Requires-Dist: biopython
+Requires-Dist: requests
+
