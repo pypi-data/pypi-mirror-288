@@ -1,0 +1,2 @@
+[console_scripts]
+modem-info = modem_info.__main__:main
