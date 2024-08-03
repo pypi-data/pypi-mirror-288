@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "hypothesis-testing-tool"
+version = "0.1.2"
+description = "A tool for doing hypothesis testing"
+authors = ["Alexandros Vamvakaris-Skrivanos <vamvas@outlook.com.gr>"]
+readme = "description/README.md"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+scipy = "^1.14.0"
+matplotlib = "^3.9.1"
+
+[tool.poetry.group.tests.dependencies]
+black = "^24.4.2"
+mypy = "^1.11.0"
+pytest = "^8.3.1"
+
+[tool.poetry.group.precommithooks.dependencies]
+pre-commit = "^3.7.1"
+
+[tool.black]
+line-length = 150
+
+[tool.mypy]
+ignore_missing_imports = true
