@@ -1,0 +1,10 @@
+{% load i18n %}
+
+<h3>{% translate "Enter the MathJax markup" %}</h3>
+
+<textarea name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
+{% if widget.value %}{{ widget.value }}{% endif %}</textarea>
+
+<h3>{% translate "Preview" %}</h3>
+<div id="MathPreview-{{ widget.attrs.id }}"></div>
+<div id="MathBuffer-{{ widget.attrs.id }}" style="visibility:hidden;"></div>
