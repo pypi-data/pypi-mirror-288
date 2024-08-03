@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: cf_data_tracker
+Version: 0.3.5
+Summary: A package for managing raw and clean data tracker operations
+Author: Rami, R. K
+Author-email: your-email@example.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: python-dotenv
+Requires-Dist: beautifulsoup4
+Requires-Dist: botocore
+Requires-Dist: bs4
+Requires-Dist: certifi
+Requires-Dist: charset-normalizer
+Requires-Dist: idna
+Requires-Dist: jmespath
+Requires-Dist: python-dateutil
+Requires-Dist: requests
+Requires-Dist: s3transfer ==0.10.0
+Requires-Dist: six
+Requires-Dist: soupsieve
+Requires-Dist: urllib3
+
+# CF Data Tracker
+## Purpose
+This packages ensembles all the functions required to manage the raw and clean files loaded in the raw and clean pipelines at CF.
+
+## Set up
+To run the package, please ensure to have the following env variables in your environment. Either you can load them using dotenv by stuffing them .env or you can set directly from terminal.
+
+```
+AWS_DEST_BUCKET_RAW=s3 bucket to save the raw data json tracker
+AWS_REGION_NAME= AWS Region to connect s3
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+```
