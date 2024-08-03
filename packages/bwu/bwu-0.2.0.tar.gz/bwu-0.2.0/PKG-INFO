@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: bwu
+Version: 0.2.0
+Summary: bitwarden utils
+Author-email: ZackaryW <36378555+ZackaryW@users.noreply.github.com>
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: click>=8.1.7
+Requires-Dist: keyring>=25.2.1
+Requires-Dist: pathvalidate>=3.2.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: toml>=0.10.2
+Description-Content-Type: text/markdown
+
+# bwu
+bitwarden utils
+
+docs WIP

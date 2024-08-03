@@ -1,0 +1,36 @@
+[project]
+name = "bwu"
+version = "0.2.0"
+description = "bitwarden utils"
+authors = [
+    { name = "ZackaryW", email = "36378555+ZackaryW@users.noreply.github.com" }
+]
+
+readme = "README.md"
+requires-python = ">= 3.8"
+dependencies = [
+    "click>=8.1.7",
+    "requests>=2.32.3",
+    "toml>=0.10.2",
+    "pathvalidate>=3.2.0",
+    "keyring>=25.2.1",
+]
+
+[project.scripts]
+bwu = "bwu_cli.__init__:cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "zrcl>=0.4.5",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bwu", "src/bwu_cli"]
