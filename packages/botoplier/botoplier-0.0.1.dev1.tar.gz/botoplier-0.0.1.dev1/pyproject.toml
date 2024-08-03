@@ -1,0 +1,210 @@
+[build-system]
+build-backend = "hatchling.build"
+
+requires = [
+  "hatch-vcs",
+  "hatchling",
+]
+
+[project]
+name = "botoplier"
+description = "A powerful yet simple way to use AWS APIs, built on boto3"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Elie Bleton", email = "elie.bleton@manomano.com" },
+]
+requires-python = ">=3.9"
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: ISC License (ISCL)",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Utilities",
+  "Typing :: Typed",
+]
+dynamic = [
+  "version",
+]
+
+dependencies = [
+  "boto3>=1.34.139",
+  "jq>=1.7",
+  "treelib>=1.7",
+]
+urls.Repository = "https://github.com/ManoManoTech/botoplier"
+
+[tool.pdm]
+distribution = true
+
+plugins = [
+  "sync-pre-commit-lock",
+]
+
+[tool.pdm.scripts]
+fmt = { cmd = "ruff format .", help = "Run ruff formatter" }
+lint-mypy = { cmd = "mypy -p botoplier", help = "Run mypy type checker" }
+lint-ruff = { cmd = "ruff check .", help = "Run ruff linter" }
+test-cov = { cmd = "pytest --junitxml=junit/test-results.xml --cov --cov-report=xml --cov-report=html --cov-report=term-missing", help = "Run tests with coverage" }
+
+[tool.pdm.dev-dependencies]
+dev = [
+  "ruff>=0.5.1",
+  "moto[all,ec2,s3]>=5.0.11",
+  "pytest>=8.2.2",
+  "pytest-cov>=5.0.0",
+  "boto3-stubs[boto3,ec2,s3]>=1.34.151",
+  "mypy>=1.11.1",
+  "types-python-dateutil>=2.9.0.20240316",
+  "tox-gh>=1.3.1",
+  "tox-pdm>=0.7.2",
+  "tox>=4.14.2",
+  "tox-uv>=1.7.0",
+]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/botoplier/_version.py"
+
+[tool.ruff]
+line-length = 160
+respect-gitignore = true
+
+lint.select = [
+  "ALL",
+]
+lint.ignore = [
+  "A001",   # Variable `X` is shadowing a python builtin
+  "A002",   # Argument `X` is shadowing a python builtin
+  "A003",   # Class attribute is shadowing a python builtin - Too many false positive and no way to exclude (yet?)
+  "ANN",    # XXX Enable later
+  "ANN101", # Missing type annotation for `self` in method
+  "ANN102", # Missing type annotation for `cls` in classmethod
+  "ANN401", # Dynamically typed expressions (typing.Any) are disallowed
+  "ARG001", # XXX Enable later - No way to specify which args to ignore
+  "COM",    # Trailing commas
+  #  Disable all `Missing docstring`
+  "D100",
+  "D101",
+  "D102",
+  "D103",
+  "D104",
+  "D105",
+  "D106",
+  "D107",
+  "D205",    # 1 blank line required between summary line and description
+  "D401",    # First line of docstring should be in imperative mood
+  "EM101",   # Exceptions should not use a string literal but a variable
+  "EM102",   # Exception message should be a variable
+  "FIX",
+  "G004",    # Logging statement uses f-string
+  "ISC001",  # Checks for implicitly concatenated strings on a single line.
+  "PLE1205", # Too many arguments for `logging` format string - we are using loguru
+  "PLR2004", # Checks for the use of unnamed numerical constants ("magic") values in comparisons.
+  "PTH111",  # os.path is legit
+  "PTH118",  # os.path is legit
+  "S101",    # Use of assert detected.
+  "SLF001",  # Private member accessed
+  "TD",      # T0DO
+  "TRY003",  # Avoid specifying long messages outside the exception class
+  "TRY201",  # Use `raise` without specifying exception name
+  "TRY300",  # Consider moving this statement to an `else` block
+]
+lint.per-file-ignores."__init__.py" = [
+  "F401",
+]
+lint.per-file-ignores."_version.py" = [
+  "ALL",
+]
+lint.per-file-ignores."tests/**/*" = [
+  "ANN",
+  "D",
+  "DTZ005",
+  "INP",
+  "PLR2004",
+  "S101",
+  "TCH",
+]
+
+# Allow unused variables when underscore-prefixed.
+lint.dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+lint.external = [
+  # Bandit
+  "S104",
+  "WPS440",
+]
+lint.flake8-annotations.allow-star-arg-any = true
+lint.flake8-annotations.mypy-init-return = true
+lint.flake8-annotations.suppress-dummy-args = true
+lint.flake8-comprehensions.allow-dict-calls-with-keyword-arguments = true
+# Disallow all relative imports.
+lint.flake8-tidy-imports.ban-relative-imports = "all"
+lint.flake8-type-checking.exempt-modules = [
+  "collections.abc",
+  "typing",
+  "typing.Any",
+  "typing_extensions",
+]
+lint.flake8-type-checking.strict = false
+lint.flake8-unused-arguments.ignore-variadic-names = true
+# required-imports = ["from __future__ import annotations"]
+lint.isort.known-first-party = [
+  "ezsre",
+]
+lint.mccabe.max-complexity = 15
+lint.pycodestyle.ignore-overlong-task-comments = true
+lint.pydocstyle.convention = "google"
+lint.pylint.max-args = 15
+lint.pylint.max-branches = 15
+lint.pylint.max-returns = 10
+
+[tool.pytest.ini_options]
+testpaths = [
+  "tests",
+]
+# markers = [{unit="tests that are isolated from the db, external api calls and other mockable internal code."}]
+norecursedirs = "*.egg .eggs dist build docs .tox .git __pycache__ .venv"
+# Ignore deprecation warnings from libs
+filterwarnings = [
+  'ignore: datetime.datetime.utcnow():DeprecationWarning:botocore.auth',
+]
+
+[tool.coverage.run]
+branch = true
+source = [
+  "src/botoplier",
+]
+omit = [
+  "*/tests/*",
+  "*/dist/*",
+  "docs/*",
+  ".*",
+  "_version.py",
+]
+[tool.coverage.report]
+fail_under = 50.0
+show_missing = true
+
+exclude_lines = [
+  "def __repr__",
+  "if TYPE_CHECKING:",
+  "if settings.DEBUG",
+  "raise AssertionError",
+  "raise NotImplementedError",
+  "if __name__ == .__main__.:",
+  'class .*\bProtocol\):',
+  '@(abc\.)?abstractmethod]',
+]
+
+[tool.pyright]
+pythonVersion = "3.9"
+venvPath = "."
+venv = ".venv"
