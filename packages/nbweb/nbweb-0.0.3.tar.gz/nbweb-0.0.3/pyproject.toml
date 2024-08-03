@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nbweb"
+dynamic = ["version"]
+authors = [
+    { name="Subrat Lima", email="subrat.k.lima@protonmail.com" }
+]
+description = "an application to simplify web data"
+readme = "README.md"
+dependencies = ["httpx", "parsel", "fake-useragent"]
+requires-python = ">= 3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest"
+]
+formatter = [
+    "black"
+]
+dev = [
+    "nbweb[test,formatter]",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "nbweb.__VERSION__"}
+
+[project.urls]
+Homepage = "https://github.com/subrat-lima/nbweb"
+Issues = "https://github.com/subrat-lima/nbweb/issues"
+
+[project.scripts]
+nbweb = "nbweb.cli:cli"

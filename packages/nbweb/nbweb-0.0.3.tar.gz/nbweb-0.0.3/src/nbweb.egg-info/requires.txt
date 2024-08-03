@@ -1,0 +1,12 @@
+httpx
+parsel
+fake-useragent
+
+[dev]
+nbweb[formatter,test]
+
+[formatter]
+black
+
+[test]
+pytest
