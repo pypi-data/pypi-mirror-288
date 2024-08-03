@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "prism-abstract-library"
+version = "0.1.1"
+description = "Base classes and shared API endpoints for PRISM"
+authors = ["Isaac <isummers@bastiansolutions.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlalchemy = "^2.0.31"
+fastapi = "^0.111.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
