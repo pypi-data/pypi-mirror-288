@@ -1,0 +1,6 @@
+click==8.1.7
+paramiko==3.4.0
+scp==0.15.0
+pydantic==2.8.2
+rich==13.7.1
+backoff==2.2.1
