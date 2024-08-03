@@ -1,0 +1,8 @@
+detecteff_python-0.1.dist-info/METADATA,sha256=bpm1tcP0K3y5OuvDOKWVJZNVftwpBbnOu4_D4rb-Mfg,3259
+detecteff_python-0.1.dist-info/WHEEL,sha256=b1dgqR9GJBT8bsiih-7Y55_-sPGc5MG-sUXj3y2MXf0,104
+detecteff_python-0.1.dist-info/entry_points.txt,sha256=tYZ2cE4QHT_XTBjPjgi8vpwe6P6iQDUp-1FdWmogZe8,45
+detecteff_python-0.1.dist-info/license_files/LICENSE,sha256=S4rDwZvYPJR0ElFfB7WJFdYclKHHcWjEnl8rmul28FE,1074
+detecteff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+detecteff/core.py,sha256=hUJjUe100lCmoull6PCA_xcc-n7tGiQe-dtJKeCaZnE,2713
+detecteff/rust.cpython-312-darwin.so,sha256=h8_Ds2NXG7jXtLiahC57K6Z9nUxccwGVxq6WFWxy2EM,620232
+detecteff_python-0.1.dist-info/RECORD,,

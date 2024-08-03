@@ -1,0 +1,2 @@
+[console_scripts]
+detectf=detecteff:core.run
