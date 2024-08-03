@@ -1,0 +1,9 @@
+README.md
+setup.py
+UzbekistanWeather/__init__.py
+UzbekistanWeather/weather.py
+UzbekistanWeather.egg-info/PKG-INFO
+UzbekistanWeather.egg-info/SOURCES.txt
+UzbekistanWeather.egg-info/dependency_links.txt
+UzbekistanWeather.egg-info/requires.txt
+UzbekistanWeather.egg-info/top_level.txt
