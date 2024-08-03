@@ -1,0 +1,159 @@
+Metadata-Version: 2.1
+Name: py_utility_scripts
+Version: 1.2.1
+Summary: A collection of utility scripts for working with files, Excel, logging, and database connections.
+Home-page: https://github.com/hirushiharan/python-utility-functions.git
+Author: Hirushiharan
+Author-email: hirushiharant@gmail.com
+License: Apache 2.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: xlsxwriter
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: python-dotenv
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: twine>=4.0.2; extra == "dev"
+
+# Python Utils
+
+Welcome to the Python Utils repository! This project contains a collection of utility scripts written in Python for various purposes. Each script focuses on specific functionalities that can be reused across different projects. Below is a detailed description of the project's structure and its components.
+
+### Dependancies: 
+    
+- pandas
+- xlsxwriter
+- python-dotenv
+
+## Requirements
+
+Make sure to install the required packages:
+
+    pip install py-utility-scripts
+
+## Components
+
+### [`excel_functions.py`](python_utils/src/excel_functions.py)
+
+This script provides functionalities for reading from and writing to Excel files using the `pandas` and `xlsxwriter` libraries.
+
+#### Classes:
+- **ExcelReader**: Reads data from an Excel file.
+- **WriteToExcel**: Writes data to an Excel file.
+
+#### Usage:
+1. **ExcelReader**: Instantiate with the path to the Excel file and optional columns to select. Use `read_excel()` to read the file and `iterate_rows()` to get the data as a list of dictionaries.
+2. **WriteToExcel**: Instantiate with the path to the Excel file. Use `createWorkbook()`, `createWorksheet()`, `defineRowColumn()`, and `closeWorkbook()` to manage and write data to the workbook.
+
+#### Example
+
+    from python_utils import ExcelReader, WriteToExcel
+
+    # Write Score data to example.xlsx Excel file
+    
+    file_path = "example.xlsx"
+    
+    # Define headers and data
+    headers = ['name','age', 'score']
+    scores = [
+        ['ankit',12, 1000],
+        ['rahul',13, 100],
+        ['priya',12, 300],
+        ['harshita',12, 50],
+    ]
+
+    # Create an instance of WriteToExcel
+    excel = WriteToExcel(file_path)
+
+    # Write data to the Excel file
+    excel.write_data_to_excel(file_path, "sheet_1", 0, 0, headers, scores)
+    
+
+    # Read Score data from example.xlsx Excel file
+
+    excel_columns = ExcelReader('example.xlsx', selected_columns=['name', 'score'])
+    excel_columns.read_excel()
+    values = excel_columns.iterate_rows()
+
+    for row_data in values:
+        print(row_data)
+
+### [`file_functions.py`](python_utils/src/file_functions.py)
+
+This script renames all files in a specified directory to a sequentially numbered format with a user-defined prefix and format.
+
+#### Class:
+- **FileRenamer**: Handles the file renaming process within a specified directory.
+
+#### Usage:
+- Create an instance of `FileRenamer` with the desired path, prefix, and format. Use `rename_files()` to apply the renaming.
+
+#### Example
+
+    from python_utils import FileRenamer
+
+    prefix = 'desktop-wallpaper'
+    count = 0
+    path = r'D:\images\Walpapers'
+
+    file_renamer = FileRenamer(path, prefix=prefix, name_format="{prefix}-{count:03d}")
+    file_renamer.rename_files()
+
+### [`log_message.py`](python_utils/src/log_message.py)
+
+This script provides a flexible logging mechanism that supports logging messages with dynamic log levels to both the console and a log file in JSON format. It also includes log file rotation. Check if the current log file exceeds the predefined maximum size. If it does, the function renames the current log file to include a timestamp in its name and retains it as an old log file. The timestamp format used is 'YYYYMMDD_HHMMSS' to ensure uniqueness and chronological sorting of old log files.
+
+#### Class:
+- **Logger**: Handles logging messages with support for dynamic log levels and file rotation.
+
+#### Usage:
+- Create an instance of `Logger` and use `log()` to log messages. Use `add_log_level()` and `remove_log_level()` to manage log levels.
+
+#### Example
+
+    from python_utils import Logger
+
+    # Constants for log levels
+    INFO = "INFO"
+    WARNING = "WARNING"
+    ERROR = "ERROR"
+
+    logger = Logger()
+    logger.log("This is an info message.", INFO)
+    logger.log("This is a warning message.", WARNING)
+    logger.log("This is an error message.", ERROR)
+    
+    # Add a new log level and log a message with it
+    logger.add_log_level("DEBUG")
+    logger.log("This is a debug message.", "DEBUG")
+
+    # Remove an existing log level
+    logger.remove_log_level("DEBUG")
+
+### [`src/project_structure_generator.py`](src/project_structure_generator.py)
+
+This script provides a project structure generatoe mechanism to print the given path directory structure.
+
+#### Class:
+- **ProjectStructure**: Handles generating project structure for a given directory.
+
+#### Usage:
+- Create an instance of `ProjectStructure` and use `generate()` to generate the project structure of a given directory.
+
+#### Example
+
+    from python_utils import ProjectStructure
+    import os
+
+    root_path = r'D:\repos\python-utility-functions'
+    gitignore_file = os.path.join(root_path, '.gitignore')
+
+    project_structure = ProjectStructure(root_path, gitignore_file)
+    project_structure.generate()
+            
