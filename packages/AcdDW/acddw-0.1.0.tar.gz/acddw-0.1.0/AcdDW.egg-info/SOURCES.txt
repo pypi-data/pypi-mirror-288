@@ -1,0 +1,8 @@
+README.md
+setup.py
+AcdDW/__init__.py
+AcdDW/example.py
+AcdDW.egg-info/PKG-INFO
+AcdDW.egg-info/SOURCES.txt
+AcdDW.egg-info/dependency_links.txt
+AcdDW.egg-info/top_level.txt
