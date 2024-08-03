@@ -1,0 +1,13 @@
+starmap_client/__init__.py,sha256=Ov-s9QJG-79wAg6kk40UDX82SSBn7wgRl2VnDsXKrHM,106
+starmap_client/client.py,sha256=yMk3_qeNDHUzYwE7F9uLwzNFdqXh4kqful3fQIMoKQo,7881
+starmap_client/models.py,sha256=CGDWBVdnoyBWSVy2XvMXdkts-1RQBEj2L5_1lcw5gIs,8194
+starmap_client/session.py,sha256=jBWLwtiQ27gGiJEKlTA-RReNIpA5gU-IFz0Px5ZqePs,4789
+starmap_client/providers/__init__.py,sha256=WEV9BOR4hrLvYEoLvFT0mcZDDpua2WKW57NuPqsR4QA,194
+starmap_client/providers/base.py,sha256=bvoW9Z0oQvzPrXbS2GhBN9gL0iFqr8eGE4S5Gw3HFU4,1055
+starmap_client/providers/memory.py,sha256=FG3pTgVyGNDuMNG3bMmDixa8fQu-ti0ZFsXZPME-xi0,2540
+starmap_client/providers/utils.py,sha256=W4YLzpcIv__ghvzJZ5azF6i3AvAeM2lMnNzQn60W_jA,2107
+starmap_client-1.4.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+starmap_client-1.4.1.dist-info/METADATA,sha256=8krrodszsW_j6K4jaayAKf7t-WfQ-uIFr69UCa6NLZQ,717
+starmap_client-1.4.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+starmap_client-1.4.1.dist-info/top_level.txt,sha256=t_Qx0cURF6Uq1SxsnIuAzk5RgbT0Is2VAlOSiylU4O4,15
+starmap_client-1.4.1.dist-info/RECORD,,
