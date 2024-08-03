@@ -1,0 +1,384 @@
+resources:
+- &MODULE
+  ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/process/casts/app.py
+- &CHECKS
+  resource: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/checks/app.py
+- &RESOURCE
+  resource: &RESOURCE_PATH ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/process/casts/resource.py
+- &GLOBAL_RESOURCE
+  resource: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/resources/app.py
+
+
+tests:
+- function: process_cast_arguments
+  description: Handles casting arguments used to call test function
+  cast_arguments:
+  - method: wrapper_get_module
+    << : *GLOBAL_RESOURCE
+    field: module
+  tests:
+  - description: Undefined arguments
+    arguments:
+      cast_arguments: null
+      module: null
+      arguments: null
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        arguments: null
+  - description: Cast arguments is empty
+    arguments:
+      cast_arguments: []
+      module: *RESOURCE_PATH
+      arguments: arguments
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        arguments: arguments
+  - description: Cast string arguments as integer
+    arguments:
+      cast_arguments:
+      - method: __builtins__.int
+        << : *RESOURCE
+      module: *RESOURCE_PATH
+      arguments: '0000'
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        arguments: 0
+  - description: Cast specific key/value in dictionary
+    arguments:
+      cast_arguments:
+      - method: __builtins__.int
+        << : *RESOURCE
+        field: key
+      arguments:
+        key: '0000'
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        arguments:
+          key: 0
+- function: process_cast_output
+  description: Handles casting the output from calling the function to test
+  cast_arguments:
+  - method: wrapper_get_module
+    << : *GLOBAL_RESOURCE
+    field: module
+  tests:
+  - description: Undefined arguments
+    arguments:
+      cast_output: null
+      module: null
+      output: null
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        output: null
+  - description: Cast output is an empty list
+    arguments:
+      cast_output: []
+      module: *RESOURCE_PATH
+      output: output
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        output: output
+  - description: Cast output as a string
+    arguments:
+      cast_output:
+      - method: __builtins__.str
+        << : *RESOURCE
+      output: 1
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        output: '1'
+  - description: Cast specific field in output of type simple name space
+    cast_arguments:
+    - method: sns
+      unpack: true
+      field: output
+    arguments:
+      cast_output:
+      - method: __builtins__.int
+        << : *RESOURCE
+        field: key
+      module: *RESOURCE_PATH
+      output:
+        key: '0000'
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      field: output
+      expected:
+        key: 0
+- function: process_cast_expected
+  description: Handles casting `expected` value during a check
+  cast_arguments:
+  - method: wrapper_get_module
+    << : *GLOBAL_RESOURCE
+    field: module
+  tests:
+  - description: Undefined arguments
+    arguments:
+      cast_expected: null
+      module: null
+      expected: null
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        expected: null
+  - description: Cast expected is an empty list
+    arguments:
+      cast_expected: []
+      module: *RESOURCE_PATH
+      expected: expected
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        expected: expected
+  - description: Cast expected as a string
+    arguments:
+      cast_expected:
+      - method: __builtins__.str
+        << : *RESOURCE
+      expected: 1
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        expected: '1'
+  - description: Cast specific field in expected of type simple name space
+    cast_arguments:
+    - method: sns
+      unpack: true
+      field: expected
+    arguments:
+      cast_expected:
+      - method: __builtins__.int
+        << : *RESOURCE
+        field: key
+      module: *RESOURCE_PATH
+      expected:
+        key: '0000'
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      field: expected
+      expected:
+        key: 0
+- function: main
+  description: Returns the resulting of casting an object
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        object: null
+  - cast_arguments:
+    - method: wrapper_get_module
+      << : *GLOBAL_RESOURCE
+      field: module
+    tests:
+    - description: Cast string as integer
+      arguments:
+        module: *RESOURCE_PATH
+        casts:
+        - method: __builtins__.int
+          << : *RESOURCE
+        object: '1111'
+      checks:
+      - method: check_sns
+        << : *CHECKS
+        expected:
+          object: 1111
+    - description: Cast dict as simple name space
+      arguments:
+        module: *RESOURCE_PATH
+        casts:
+        - method: cast_dict_as_sns
+          << : *RESOURCE
+        object:
+          key: value
+      checks:
+      - method: check_equals
+        << : *CHECKS
+        field: object.key
+        expected: value
+    - description: Cast list into string with unpacking
+      arguments:
+        module: *RESOURCE_PATH
+        casts:
+        - method: cast_list_to_string
+          << : *RESOURCE
+          unpack: true
+        object: [a, b, c]
+      checks:
+      - method: check_sns
+        << : *CHECKS
+        expected:
+          object: abc
+- function: method_does_not_exist
+  description: Return a method that does nothing when called
+  arguments:
+    method: method
+  checks:
+  - << : *CHECKS
+    method: check_function
+    expected:
+      name: method_does_not_exist_inner
+      location: *MODULE
+- function: get_method
+  description: >
+    Returns a casting method and name if the method exists in a module.
+    Otherwise, returns the name and a log
+  cast_arguments:
+  - field: module
+    << : *GLOBAL_RESOURCE
+    method: wrapper_get_module
+  tests:
+  - description: Default
+    arguments:
+      module: null
+      resource: ''
+      method: ''
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        method: null
+  - description: Return the str class from builtins
+    arguments:
+      method: __builtins__.str
+      << : *RESOURCE
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: method.__name__
+      expected: str
+  - description: Return the int class from builtins
+    arguments:
+      method: __builtins__.int
+      << : *RESOURCE
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: method.__name__
+      expected: int
+  - description: >
+      Return function sh`pass_through` from the module sh`resources.py` in the
+      resources directory
+    arguments:
+      method: pass_through
+      << : *RESOURCE
+    checks:
+    - method: check_function
+      << : *CHECKS
+      field: method
+      expected:
+        name: pass_through
+        location: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/process/casts/resource.py
+  - description: Method not in module
+    arguments:
+      method: does_not_exist
+      << : *RESOURCE
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        method: null
+- function: get_object
+  description: Handles retrieving and casting an object
+  cast_arguments:
+  - method: get_resource
+    << : *RESOURCE
+    field: method
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        temp: null
+  - description: Object is defined
+    arguments:
+      object: '1111'
+      field: ''
+      unpack: False
+      method: cast_as_int
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        temp: 1111
+  - description: Object and field are defined
+    arguments:
+      object:
+        key: '12345'
+      field: key
+      unpack: False
+      method: cast_as_int
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        temp: 12345
+- function: reset_object
+  description: Sets temp object as the object or a field within the object
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        None: null
+  - description: Set object as temp object
+    arguments:
+      temp: temp
+      object: object
+      field: null
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        object: temp
+        temp: null
+  - description: Set object a non-existing field as temp object
+    arguments:
+      temp: temp
+      object: {}
+      field: key
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        object:
+          key: temp
+        temp: null
+  - description: Set object an existing field as temp object
+    arguments:
+      temp: temp
+      object:
+        key: value
+      field: key
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        object:
+          key: temp
+        temp: null

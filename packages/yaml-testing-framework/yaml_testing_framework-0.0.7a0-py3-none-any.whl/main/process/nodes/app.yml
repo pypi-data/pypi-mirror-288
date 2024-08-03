@@ -1,0 +1,21 @@
+environment:
+  ROOT_DIR: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}
+  DEBUG: ${YAML_TESTING_FRAMEWORK_DEBUG}
+
+
+empty_values:
+- ''
+- None
+- '[]'
+- '{}'
+- null
+- []
+- {}
+
+
+operations:
+  main:
+  - get_content
+  - get_roots
+  - expand_nodes
+  - remove_expanded

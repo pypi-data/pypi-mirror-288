@@ -1,0 +1,881 @@
+help:
+- https://stackoverflow.com/questions/5218895/python-nested-functions-variable-scoping
+
+
+resources:
+- &CHECKS
+  resource: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/checks/app.py
+- &RESOURCE_YAML
+  ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/utils/independent/resource.yaml
+- &RESOURCE
+  resource: &RESOURCE_PATH ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/utils/independent/resource.py
+
+
+tests:
+- function: convert_string_to_list
+  description: Converts a list in YAML string format to a list object
+  tests:
+  - description: Empty string
+    arguments:
+      string: ''
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: null
+  - description: String in YAML list format
+    arguments:
+      string: |
+        - a
+        - b
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected:
+      - a
+      - b
+  - description: List object
+    arguments:
+      string:
+      - 1
+      - 2
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected:
+      - 1
+      - 2
+- function: get_yaml_loader
+  description: >
+    Returns a YAML Loader (Base, Safe, or Full). Safe is default and can set the
+    environment variable YAML_TESTING_FRAMEWORK_YAML_LOADER to a loader to use
+  tests:
+  - description: SafeLoader is default
+    arguments: {}
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: __class__.__name__
+      expected: type
+    - method: check_equals
+      << : *CHECKS
+      cast_output:
+      - method: __builtins__.str
+        << : *RESOURCE
+      expected: "<class 'yaml.loader.SafeLoader'>\n..."
+  - description: Environment variable set to loader that doesn't exist
+    patches:
+    - method: value
+      route: CONFIG.environment.YAML_LOADER
+      resource: *RESOURCE_PATH
+      value: DOES_NOT_EXIST
+    arguments: {}
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      cast_output:
+      - method: __builtins__.str
+        << : *RESOURCE
+      expected: "<class 'yaml.loader.SafeLoader'>\n..."
+  - description: Environment variable set to Full
+    patches:
+    - method: value
+      route: CONFIG.environment.YAML_LOADER
+      resource: *RESOURCE_PATH
+      value: Full
+    arguments: {}
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      cast_output:
+      - method: __builtins__.str
+        << : *RESOURCE
+      expected: "<class 'yaml.loader.FullLoader'>\n..."
+- function: get_yaml_content
+  description: >
+    Returns content from a YAML file or an empty dictionary if the file does
+    not exist
+  tests:
+  - description: Location is undefined
+    arguments:
+      location: null
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: content
+      expected: {}
+  - description: Location does not exist
+    arguments:
+      location: location_does_not_exist
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: content
+      expected: {}
+  - description: Location is an existing YAML file
+    arguments:
+      location: *RESOURCE_YAML
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: content
+      expected:
+        hello: world
+  - description: Content is defined
+    arguments:
+      content: content
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: __dict__
+      expected: {}
+- function: get_decorated_function_from_wrapped
+  description: >
+    Returns the original method from a decorated by accessing the `__wrapped__` attribute of the decorated function
+  tests:
+  - description: Undefined arguments
+    arguments:
+      function: null
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: null
+  - cast_arguments:
+    - method: get_function
+      << : *RESOURCE
+      field: function
+    tests:
+    - description: Regular function
+      arguments:
+        function: awaitable
+      checks:
+      - method: check_function
+        << : *CHECKS
+        expected:
+          name: awaitable
+          location: *RESOURCE_PATH
+    - description: Function decorated and `__wrapped__` attribute is set
+      arguments:
+        function: awaitable_decorated_wrapped
+      checks:
+      - method: check_function
+        << : *CHECKS
+        expected:
+          name: awaitable_decorated_wrapped
+          location: *RESOURCE_PATH
+      - method: check_equals
+        << : *CHECKS
+        field: __wrapped__
+        expected: null
+    - description: Function decorated and `__wrapped__` attribute is not set
+      arguments:
+        function: awaitable_decorated_closure
+      checks:
+      - method: check_function
+        << : *CHECKS
+        expected:
+          name: awaitable_decorated_closure
+          location: *RESOURCE_PATH
+- function: get_decorated_function
+  description: >
+    Returns the original method for a decorated function or an undecorated
+    function
+  cast_arguments:
+  - method: get_function
+    << : *RESOURCE
+    field: function
+  tests:
+  - description: Undefined arguments
+    arguments:
+      function: null
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: null
+  - description: Function is not decorated
+    arguments:
+      function: callable
+    checks:
+    - method: check_function
+      << : *CHECKS
+      expected:
+        name: callable
+        location: *RESOURCE_PATH
+  - description: Function decorated. Original function accessible through __wrapped__.
+    arguments:
+      function: callable_decorated_wrapped
+    checks:
+    - method: check_function
+      << : *CHECKS
+      expected:
+        name: callable_decorated_wrapped
+        location: *RESOURCE_PATH
+  - description: Function decorated and decorated. Original function accessible through closure.
+    arguments:
+      function: callable_decorated_closure
+    checks:
+    - method: check_function
+      << : *CHECKS
+      expected:
+        name: callable_decorated_closure
+        location: *RESOURCE_PATH
+  - description: Awaitable function decorated. Original function accessible through __wrapped__.
+    arguments:
+      function: awaitable_decorated_wrapped
+    checks:
+    - method: check_function
+      << : *CHECKS
+      expected:
+        name: awaitable_decorated_wrapped
+        location: *RESOURCE_PATH
+  - description: Awaitable function decorated. Original function accessible through closure.
+    arguments:
+      function: awaitable_decorated_closure
+    checks:
+    - method: check_function
+      << : *CHECKS
+      expected:
+        name: awaitable_decorated_closure
+        location: *RESOURCE_PATH
+- function: get_decorated_function_from_closure
+  description: >
+    Returns the original method from a decorated function by searching through closure
+  tests:
+  - description: Undefined arguments
+    arguments:
+      function: null
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: null
+  - cast_arguments:
+    - method: get_function
+      << : *RESOURCE
+      field: function
+    tests:
+    - description: Regular function
+      arguments:
+        function: awaitable
+      checks:
+      - method: check_function
+        << : *CHECKS
+        expected:
+          name: awaitable
+          location: *RESOURCE_PATH
+    - description: Decorated function
+      arguments:
+        function: awaitable_decorated_closure
+      checks:
+      - method: check_function
+        << : *CHECKS
+        expected:
+          name: awaitable_decorated_closure
+          location: *RESOURCE_PATH
+- function: get_function_parameters
+  description: Returns a list of the names of parameters for a function
+  tests:
+  - description: Returns the parameters for a method
+    arguments: {}
+    checks:
+    - method: check_error
+      << : *CHECKS
+      expected: AttributeError
+  - description: Returns the parameters for a method
+    cast_arguments:
+    - << : *RESOURCE
+      method: get_function
+      field: function
+    arguments:
+      function: callable_function
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected:
+      - parameter_a
+  - description: Returns the parameters for a decorated method
+    cast_arguments:
+    - << : *RESOURCE
+      method: get_function
+      field: function
+    arguments:
+      function: decorated_callable
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected:
+      - parameter_a
+      - parameter_b
+      - parameter_c
+  - description: Returns the parameters for an awaitable method
+    cast_arguments:
+    - << : *RESOURCE
+      method: get_function
+      field: function
+    arguments:
+      function: awaitable_function
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected:
+      - parameter_a
+      - parameter_b
+  - description: Returns the parameters for a decorated awaitable method
+    cast_arguments:
+    - << : *RESOURCE
+      method: get_function
+      field: function
+    arguments:
+      function: decorated_awaitable
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected:
+      - parameter_a
+      - parameter_b
+      - parameter_c
+- function: get_function_arguments
+  description: >
+    Returns a dictionary containing the arguments for a function. The values for
+    the arguments are pulled from an object (dict, SimplenameSpace, etc) if they
+    exist, otherwise the value for a parameter is set to null
+  tests:
+  - description: Undefined arguments
+    tests:
+    - arguments: {}
+      checks:
+      - method: check_error
+        << : *CHECKS
+        expected: AttributeError
+  - cast_arguments:
+    - field: function
+      << : *RESOURCE
+      method: get_function
+    tests:
+    - description: Data contains function parameter
+      tests:
+      - arguments:
+          function: callable_function
+          data:
+            parameter_a: parameter_a
+        checks:
+        - method: check_equals
+          << : *CHECKS
+          expected:
+            parameter_a: parameter_a
+    - description: Data does not contain function parameter
+      tests:
+      - arguments:
+          function: callable_function
+          data: {}
+        checks:
+        - method: check_equals
+          << : *CHECKS
+          expected:
+            parameter_a: null
+- function: format_output_as_dict
+  description: Formats output from performing an operation as a dictionary
+  tests:
+  - description: Output is undefined
+    arguments:
+      output: null
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: {}
+  - description: Output is a dict
+    arguments:
+      output:
+        key: value
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected:
+        key: value
+  - description: Output is a simple name space
+    cast_arguments:
+    - method: sns
+      << : *RESOURCE
+      unpack: true
+      field: output
+    arguments:
+      output:
+        field: value
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected:
+        field: value
+- function: get_timestamp
+  description: Returns a timestamp; seconds past epoch
+  tests:
+  - description: Kind is undefined
+    arguments:
+      kind: null
+    checks:
+    - method: check_type
+      << : *CHECKS
+      expected: float
+  - description: Kind is defined as a integer
+    arguments:
+      kind: int
+    checks:
+    - method: check_type
+      << : *CHECKS
+      expected: int
+- function: get_runtime_in_ms
+  description: Returns a dict containing start,end, and run times
+  cast_arguments:
+  - field: timestamps
+    << : *RESOURCE
+    method: sns
+    unpack: True
+  tests:
+  - description: Undefined arguments
+    arguments:
+      timestamps: {}
+    checks:
+    - method: check_error
+      << : *CHECKS
+      expected: AttributeError
+  - description: End and run times should be integers
+    arguments:
+      timestamps:
+        start: 0
+    checks:
+    - method: check_type
+      << : *CHECKS
+      field: end
+      expected: float
+    - method: check_type
+      << : *CHECKS
+      field: runtime_ms
+      expected: float
+  - patches:
+    - route: get_timestamp
+      resource: *RESOURCE_PATH
+      method: callable
+      value: 2
+    description: End and run times should be integers
+    arguments:
+      timestamps:
+        start: 0
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        start: 0
+        end: 2
+        runtime_ms: 2000
+- function: update_data
+  description: >
+    Updates fields in a data object with values from a dictionary type
+  cast_arguments:
+  - field: data
+    << : *RESOURCE
+    method: sns
+    unpack: true
+  tests:
+  - description: Output and data are empty dictionaries
+    arguments:
+      output: {}
+      data: {}
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: __dict__
+      expected: {}
+  - description: Output is a non-empty dictionary
+    arguments:
+      output:
+        a: A
+        b: B
+      data: {}
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        a: A
+        b: B
+  - description: Output is a non-empty dictionary and data is a simplenamespace
+    arguments:
+      output:
+        c: C
+        d: D
+      data: {}
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: __dict__
+      expected:
+        c: C
+        d: D
+- function: process_operations
+  description: >
+    Performs a list of operations on data that can be represented as a
+    dictionary
+  cast_arguments:
+  - method: get_locals
+    field: functions
+    << : *RESOURCE
+  tests:
+  - description: Undefined arguments
+    arguments:
+      operations: null
+      data: null
+      functions: null
+    checks:
+    - method: check_error
+      << : *CHECKS
+      expected: TypeError
+  - description: Perform operations on a dictionary
+    arguments:
+      operations:
+      - add
+      - subtract
+      - multiply
+      data:
+        a: 0
+        b: 0
+        c: 0
+      functions: null
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected:
+        a: 0
+        b: 0
+        c: 0
+  - cast_arguments:
+    - method: sns
+      field: data
+      << : *RESOURCE
+      unpack: true
+    description: Perform operations on a simple name space
+    arguments:
+      operations:
+      - add
+      - subtract
+      - multiply
+      data:
+        a: 1
+        b: 2
+        c: 3
+      functions: null
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        a: 6
+        b: 2
+        c: 3
+  - description: An exception occurs during an operation
+    arguments:
+      operations:
+      - add
+      - subtract
+      - multiply
+      data:
+        a: '0'
+        b: 1
+        c: '2'
+      functions: null
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      cast_output:
+      - method: get_exception_name
+        << : *RESOURCE
+        field: c
+      expected:
+        a: '0'
+        b: 1
+        c: TypeError
+  - description: Operations do not exist in dictionary of functions
+    arguments:
+      operations:
+      - does_not_exist_a
+      data: {}
+      functions: null
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: __class__.__name__
+      expected: AttributeError
+- function: format_module_defined_config
+  description: >
+    Returns SimpleNamespace containing configurations defined in a module
+  tests:
+  - description: Undefined
+    arguments: {}
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        config: null
+        environment: null
+        operations: null
+    - method: check_equals
+      << : *CHECKS
+      field: schema.__dict__
+      expected: {}
+  - description: Config is an empty dict
+    arguments:
+      config: {}
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        environment: null
+        operations: null
+    - method: check_equals
+      << : *CHECKS
+      field: schema.__dict__
+      expected: {}
+  - description: Config is a non-empty dict
+    arguments:
+      config:
+        environment:
+          A: A
+          B: B
+        operations:
+          main:
+          - a
+          - b
+        schema:
+          description: description
+          field:
+          - name: name
+            description: description
+            type: type
+            default: default
+        other: other
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        operations: null
+        environment: null
+    - method: check_equals
+      << : *CHECKS
+      field: schema.__dict__
+      expected: {}
+- function: get_path_of_yaml_associated_with_module
+  description: >
+    Returns the path to a YAML file associated with a module or null if no YAML
+    file exists
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_error
+      << : *CHECKS
+      expected: TypeError
+  - cast_arguments:
+    - field: extensions
+      method: sns
+      << : *RESOURCE
+      unpack: True
+    tests:
+    - description: Undefined arguments
+      arguments:
+        module: module/does/not/exist.py
+        extensions:
+          module:
+          - .py
+          yaml:
+          - .yaml
+          - .yml
+      checks:
+      - method: check_equals
+        << : *CHECKS
+        expected: null
+    - description: Module and YAML files exist
+      arguments:
+        module: *RESOURCE_PATH
+        extensions:
+          module:
+          - .py
+          yaml:
+          - .yaml
+          - .yml
+      checks:
+      - method: check_equals
+        << : *CHECKS
+        expected: *RESOURCE_YAML
+- function: get_model
+  description: Returns a model based on a defined schema and available data
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: __dict__
+      expected: {}
+  - description: Available data is an empty dictionary
+    arguments:
+      schema:
+        a: a
+        b: b
+      data: {}
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        a: a
+        b: b
+  - description: Available data is non-empty dictionary
+    arguments:
+      schema:
+        a: a
+        b: b
+        d: d
+      data:
+        a: A
+        b: B
+        c: C
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        a: A
+        b: B
+        d: d
+  - description: Schema is a simple name space object
+    cast_arguments:
+    - method: sns
+      << : *RESOURCE
+      field: schema
+      unpack: true
+    arguments:
+      schema:
+        a: A
+        b: B
+        c: C
+      data:
+        a: 1
+        b: 2
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        a: 1
+        b: 2
+        c: C
+- function: get_model_from_scheme
+  description: Returns a scheme formatted as a model or dictionary
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_error
+      << : *CHECKS
+      expected: TypeError
+  - description: Scheme with defined fields
+    arguments:
+      scheme:
+        fields: []
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: __dict__
+      expected: {}
+  - description: Scheme with defined fields
+    arguments:
+      scheme:
+        fields:
+        - name: a
+          default: a
+        - name: b
+          default: b
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        a: a
+        b: b
+- function: format_config_schema
+  description: Parses schema key in YAML content to create models for a schema
+  tests:
+  - description: Content is empty
+    arguments:
+      content: {}
+      location: location
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: models.__dict__
+      expected: {}
+  - description: Defined schema as dictionary
+    arguments:
+      content:
+        Scheme: &SCHEME
+          description: Example scheme
+          fields:
+          - name: field_a
+            description: String field
+            type: str
+            default: ''
+          - name: field_b
+            description: Integer field
+            type: int
+            default: 0
+          - name: field_c
+            description: List field
+            type: list
+            default: []
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      field: models.Scheme
+      expected:
+        field_a: ''
+        field_b: 0
+        field_c: []
+  - description: Defined schema as simple name space
+    arguments:
+      content:
+        Scheme: *SCHEME
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      field: models.Scheme
+      expected:
+        field_a: ''
+        field_b: 0
+        field_c: []
+- function: pass_through
+  description: Returns the `content` argument passed into the function
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: null
+  - description: Content is a string
+    arguments:
+      content: content
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: content
+  - description: Content is a list
+    arguments:
+      content:
+      - a
+      - b
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected:
+      - a
+      - b
+- function: get_packages_directory
+  description: Returns the directory this package is installed
+  tests:
+  - description: Undefined
+    arguments: {}
+    checks:
+    - << : *CHECKS
+      method: check_type
+      expected: str

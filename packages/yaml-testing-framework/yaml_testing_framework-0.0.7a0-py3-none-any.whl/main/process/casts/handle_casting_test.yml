@@ -1,0 +1,332 @@
+resources:
+- &CHECKS
+  resource: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/checks/app.py
+- &RESOURCE
+  resource: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/process/casts/resource.py
+
+
+tests:
+- function: main
+  description: Return the result of casting an object using a method
+  cast_arguments:
+  - method: get_method
+    << : *RESOURCE
+    field: method
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        objects: null
+  - description: Cast as string
+    arguments:
+      method: cast_as_str
+      object: null
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        object: None
+        method: null
+  - description: Cast as integer
+    arguments:
+      method: cast_as_int
+      object: '1'
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        object: 1
+        method: null
+  - description: Cast as list
+    arguments:
+      method: cast_as_split
+      object: a.b.c
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        object:
+        - a
+        - b
+        - c
+        method: null
+- function: cast_do_nothing
+  description: Returns the data passed into the function
+  tests:
+  - description: Data is undefined
+    arguments: {}
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: null
+  - description: Data is a string
+    arguments:
+      object: object
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: object
+- function: cast_dict_unpacked
+  description: Unpacks a dictionary into a method
+  cast_arguments:
+  - method: get_method
+    << : *RESOURCE
+    field: method
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_error
+      << : *CHECKS
+      expected: TypeError
+  - description: Unpack dict into casting method
+    arguments:
+      object:
+        a: a
+        b: b
+        c: c
+      method: cast_list_to_string
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: abc
+  - description: Unpack dict into casting method
+    arguments:
+      object:
+        a: 1
+        b: 2
+      method: add
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: 3
+- function: cast_dict_packed
+  description: Unpacks a list into a method
+  cast_arguments:
+  - method: get_method
+    << : *RESOURCE
+    field: method
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_error
+      << : *CHECKS
+      expected: TypeError
+  - description: Call casting method with packed dict
+    arguments:
+      object:
+        a: 1
+        b: 1
+      method: add_dict
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: 2
+  - description: Convert dict to sns
+    arguments:
+      object:
+        a: 2
+        b: 2
+      method: cast_dict_as_sns
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        a: 2
+        b: 2
+- function: cast_nonetype_packed
+  description: >
+    Calls a casting method with a null object or unpacked empty dict
+  cast_arguments:
+  - method: get_method
+    << : *RESOURCE
+    field: method
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: null
+  - description: Undefined arguments
+    arguments:
+      method: pack_nonetype
+      object: null
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: output
+- function: cast_nonetype_unpacked
+  description: >
+    Calls a casting method with a null object or unpacked empty dict
+  cast_arguments:
+  - method: get_method
+    << : *RESOURCE
+    field: method
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_error
+      << : *CHECKS
+      expected: TypeError
+  - description: Undefined arguments
+    arguments:
+      method: unpack_nonetype
+      object: null
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: output
+- function: cast_list_unpacked
+  description: Unpacks a list into a method
+  cast_arguments:
+  - method: get_method
+    << : *RESOURCE
+    field: method
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_error
+      << : *CHECKS
+      expected: TypeError
+  - description: Unpack list into add method
+    arguments:
+      object: [2, 3]
+      method: add
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: 5
+  - description: Unpack list into add method
+    arguments:
+      object: [2, 3]
+      method: add
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: 5
+  - description: Unpack list into method
+    arguments:
+      object: [a, b, c]
+      method: cast_list_to_string
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: abc
+- function: cast_list_packed
+  description: Calls a casting method with a packed list
+  cast_arguments:
+  - method: get_method
+    << : *RESOURCE
+    field: method
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_error
+      << : *CHECKS
+      expected: TypeError
+  - description: Sum list of numbers
+    arguments:
+      object: [0, 0]
+      method: add_list
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: 0
+- function: cast_any_packed
+  description: Pass packed data to calling method
+  cast_arguments:
+  - method: get_method
+    << : *RESOURCE
+    field: method
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_error
+      << : *CHECKS
+      expected: TypeError
+  - description: Inverse of number
+    arguments:
+      object: 1
+      method: inverse
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: 1
+  - description: Negate number
+    arguments:
+      object: 2
+      method: negate
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: -2
+- function: cast_any_unpacked
+  description: Pass packed data to calling method
+  cast_arguments:
+  - method: get_method
+    << : *RESOURCE
+    field: method
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_error
+      << : *CHECKS
+      expected: TypeError
+  - description: Temp object is a dict with correct keyword arguments
+    arguments:
+      object: 1
+      method: inverse
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: 1
+  - description: Temp object is a dict with incorrect keyword arguments
+    arguments:
+      object:
+        a: 1
+      method: inverse
+    checks:
+    - method: check_error
+      << : *CHECKS
+      expected: TypeError
+  - description: Temp object is an simple name space object
+    cast_arguments:
+    - method: sns
+      unpack: true
+      field: object
+    arguments:
+      object:
+        a: 1
+      method: inverse
+    checks:
+    - method: check_error
+      << : *CHECKS
+      expected: TypeError
+  - description: Temp object is a list with nested dict
+    arguments:
+      object:
+      - {}
+      method: negate
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: []
+  - description: Temp object is a list
+    arguments:
+      object:
+      - 1
+      method: negate
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: []

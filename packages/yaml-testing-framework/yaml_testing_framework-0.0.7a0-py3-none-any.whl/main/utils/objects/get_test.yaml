@@ -1,0 +1,240 @@
+help:
+- https://www.w3schools.com/python/ref_func_slice.asp
+
+
+resources:
+- &CHECKS
+  resource: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/checks/app.py
+- &RESOURCE
+  resource: &RESOURCE_PATH ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/utils/objects/resource.py
+- &GLOBAL_RESOURCE
+  resource: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/resources/app.py
+
+
+tests:
+- function: main
+  description: >
+    Retrieves a child object from a parent object given the dot delimited route
+    to the object
+  tests:
+  - description: Parent is undefined
+    arguments: {}
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: null
+  - description: Name is not a string
+    arguments:
+      parent: parent
+      route: []
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: parent
+  - description: Parent is a module and child is route to builtins function str
+    cast_arguments:
+    - method: wrapper_get_module
+      << : *GLOBAL_RESOURCE
+      field: parent
+    arguments:
+      parent: *RESOURCE_PATH
+      route: __builtins__.str
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: __name__
+      expected: str
+  - description: Return default when child does not exist in parent
+    arguments:
+      parent: {}
+      route: does_not_exist
+      default: default
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: default
+- function: get_child_from_iterable
+  description: Returns a slice of an iterable
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_error
+      << : *CHECKS
+      expected: TypeError
+  - description: Parent is an string. Return char at index 1
+    arguments:
+      parent: parent
+      route: 1
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: p
+  - description: Parent is an string. Return chars from index to ending
+    arguments:
+      parent: parent
+      route: 2|
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: rent
+  - description: Parent is a list. Return items between indices 2 and 3
+    arguments:
+      parent:
+      - a
+      - b
+      - c
+      - d
+      route: 1|3
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected:
+      - b
+      - c
+- function: get_parent_kind
+  description: |
+    Return type of an object from a list of defined types: dict, none, iterable, any
+  tests:
+  - description: Parent is undefined
+    arguments: {}
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: none
+  - description: Parent is a list
+    arguments:
+      parent: []
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: iterable
+  - description: Parent is a dict
+    arguments:
+      parent: {}
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: dict
+  - description: Parent is a module
+    cast_arguments:
+    - method: wrapper_get_module
+      << : *GLOBAL_RESOURCE
+      field: parent
+    arguments:
+      parent: *RESOURCE_PATH
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: any
+- function: get_child_from_dict
+  description: >
+    Returns the value associated with a key in dictionary if the key/value
+    exists, otherwise returns a default value
+  tests:
+  - description: Key exists
+    arguments:
+      parent:
+        route: value
+      route: route
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: value
+  - description: Key does not exist
+    arguments:
+      parent:
+        route: value
+      route: does_not_exist
+      default: default
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: default
+- function: get_child_from_none
+  description: Return `None`
+  arguments: {}
+  checks:
+  - method: check_equals
+    << : *CHECKS
+    expected: null
+- function: get_child_from_any
+  description: >
+    Returns the value of an attribute if it exists in object or a default value
+    if it does not exist
+  tests:
+  - description: Object is a simple name space
+    cast_arguments:
+    - method: sns
+      field: parent
+      unpack: true
+    tests:
+    - description: Attribute does not exist in object
+      arguments:
+        parent: {}
+        route: route
+        default: default
+      checks:
+      - method: check_equals
+        << : *CHECKS
+        expected: default
+    - description: Attribute does exists in object
+      arguments:
+        parent:
+          route: value
+        route: route
+        default: default
+      checks:
+      - method: check_equals
+        << : *CHECKS
+        expected: value
+  - description: Attribute exists in a module
+    cast_arguments:
+    - method: wrapper_get_module
+      << : *GLOBAL_RESOURCE
+      field: parent
+    arguments:
+      parent: *RESOURCE_PATH
+      route: PARENT
+      default: default
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: PARENT
+  - description: Key exists does not exist in dictionary
+    arguments:
+      parent:
+        key: value
+      route: route
+      default: default
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: default
+- function: get_child
+  description: >
+    Handles getting the value of a child object at a route in a parent object
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: null
+  - description: Parent is an string. Return char at index 1
+    arguments:
+      parent: parent
+      route: 1
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: p
+  - description: Parent is a dict
+    arguments:
+      parent:
+        key: value
+      route: key
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: value

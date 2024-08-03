@@ -1,0 +1,439 @@
+resources:
+- &RESOURCE_RESOURCE
+  ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/process/nodes/resources/resource.py
+- &RESOURCE_TEST_YAML
+  ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/process/nodes/resources/app_test.yml
+- &RESOURCE
+  resource: &RESOURCE_PATH ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/process/nodes/resources/app.py
+- &CHECKS
+  resource: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/checks/app.py
+
+
+tests:
+- function: main
+  description: >
+    Returns a list of tests from data collected from data in YAML files
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        tests: []
+  - description: Defined arguments
+    arguments:
+      yaml: *RESOURCE_TEST_YAML
+      module: *RESOURCE_PATH
+      module_route: *RESOURCE_PATH
+    cast_output:
+    - method: check_equals
+      << : *CHECKS
+      expected:
+        tests:
+        - arguments: {}
+          checks: []
+          cast_arguments: []
+          cast_output: []
+          description:
+          - description_a
+          environment: {}
+          exclude_methods: []
+          include_methods: []
+          function: null
+          function_name: null
+          id: null
+          id_long: null
+          id_short: null
+          key: null
+          module: *RESOURCE_PATH
+          module_route: *RESOURCE_PATH
+          output: null
+          patches: []
+          phase_: function
+          spies: []
+          tests: null
+          yaml: *RESOURCE_TEST_YAML
+        - arguments: {}
+          checks: []
+          cast_arguments: []
+          cast_output: []
+          description:
+          - description_b
+          - description_b0
+          environment: {}
+          exclude_methods: []
+          include_methods: []
+          function: null
+          function_name: null
+          id: null
+          id_long: null
+          id_short: null
+          key: '0.0'
+          module: *RESOURCE_PATH
+          module_route: *RESOURCE_PATH
+          output: null
+          patches: []
+          phase_: function
+          spies: []
+          tests: null
+          yaml: *RESOURCE_TEST_YAML
+        - arguments: {}
+          checks: []
+          cast_arguments: []
+          cast_output: []
+          description:
+          - description_b
+          - description_b1
+          environment: {}
+          exclude_methods: []
+          include_methods: []
+          function: null
+          function_name: null
+          id: null
+          id_long: null
+          id_short: null
+          key: '0.1'
+          module: *RESOURCE_PATH
+          module_route: *RESOURCE_PATH
+          output: null
+          patches: []
+          phase_: function
+          spies: []
+          tests: null
+          yaml: *RESOURCE_TEST_YAML
+- function: get_content
+  description: Returns content from a YAML file. Expands settings to the content
+  tests:
+  - description: YAML does not exist
+    arguments:
+      yaml: does_not_exist
+      module: module
+      module_route: module_route
+      setup: setup
+    checks:
+    - << : *CHECKS
+      method: check_sns
+      expected:
+        content:
+          yaml: does_not_exist
+          module: module
+          module_route: module_route
+          setup: setup
+  - description: YAML exists
+    arguments:
+      yaml: *RESOURCE_TEST_YAML
+      module: module
+      module_route: module_route
+      setup: []
+    checks:
+    - << : *CHECKS
+      method: check_sns
+      expected:
+        content:
+          setup: []
+          yaml: *RESOURCE_TEST_YAML
+          module: module
+          module_route: module_route
+          tests:
+          - description: description_a
+            tests:
+            - description: description_a1
+          - description: description_b
+            tests:
+            - description: description_b0
+- function: get_roots
+  description: >
+    Returns root nodes or tests defined in YAML files. Returns the nodes
+    in a dictionary with keys being the index of the node in the list.
+    Content settings are expanded out to the nodes.
+  tests:
+  - description: No roots
+    arguments:
+      content:
+        a: a
+    checks:
+    - << : *CHECKS
+      method: check_sns
+      expected:
+        roots: {}
+  - description: Cast output
+    cast_output:
+    - field: roots
+      method: sns_to_dict
+      << : *RESOURCE
+    tests:
+    - description: One root
+      arguments:
+        content:
+          tests:
+          - description: root_0
+      checks:
+      - << : *CHECKS
+        method: check_sns
+        expected:
+          roots:
+            '0':
+              arguments: {}
+              cast_arguments: null
+              cast_output: null
+              checks: []
+              description:
+              - root_0
+              environment: {}
+              exclude_methods: []
+              function: ''
+              function_name: ''
+              id: null
+              id_long: ''
+              id_short: ''
+              include_methods: []
+              key: '0'
+              module: null
+              module_route: ''
+              output: null
+              patches: null
+              phase_: function
+              spies: null
+              tests: null
+              unpack: true
+              yaml: null
+    - description: Two roots
+      arguments:
+        content:
+          tests:
+          - description: root_0
+          - description: root_1
+      checks:
+      - << : *CHECKS
+        method: check_sns
+        expected:
+          roots:
+            '0':
+              arguments: {}
+              cast_arguments: null
+              cast_output: null
+              checks: []
+              description:
+              - root_0
+              environment: {}
+              exclude_methods: []
+              function: ''
+              function_name: ''
+              id: null
+              id_long: ''
+              id_short: ''
+              include_methods: []
+              key: '0'
+              module: null
+              module_route: ''
+              output: null
+              patches: null
+              phase_: function
+              spies: null
+              tests: null
+              unpack: true
+              yaml: null
+            '1':
+              arguments: {}
+              cast_arguments: null
+              cast_output: null
+              checks: []
+              description:
+              - root_1
+              environment: {}
+              exclude_methods: []
+              function: ''
+              function_name: ''
+              id: null
+              id_long: ''
+              id_short: ''
+              include_methods: []
+              key: '1'
+              module: null
+              module_route: ''
+              output: null
+              patches: null
+              phase_: function
+              spies: null
+              tests: null
+              unpack: true
+              yaml: null
+- function: expand_nodes
+  description: >
+    Expands nodes and there settings out to nested nodes.
+    Returns the nodes without those that were expanded, and a list
+    of nodes that were expanded
+  tests:
+  - description: No roots
+    arguments:
+      roots: {}
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: __dict__
+      expected:
+        nodes: {}
+        expanded: {}
+  - description: Roots without nested tests
+    cast_arguments:
+    - method: dict_dict_to_dict_sns
+      << : *RESOURCE
+      field: roots
+    cast_output:
+    - method: sns_to_dict
+      << : *RESOURCE
+      field: nodes
+    arguments:
+      roots:
+        '1':
+          description: description_1
+          key: '1'
+          tests:
+          - description: description_1a
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: __dict__
+      expected:
+        expanded:
+          '1': 1
+        nodes:
+          '1':
+            description: description_1
+            key: '1'
+            tests:
+            - description: &id001
+              - description_1a
+              - description_1
+              key: null
+              tests: null
+          1|0:
+            arguments: {}
+            cast_arguments: null
+            cast_output: null
+            checks: []
+            description: *id001
+            environment: {}
+            exclude_methods: []
+            function: ''
+            function_name: ''
+            id: null
+            id_long: ''
+            id_short: ''
+            include_methods: []
+            key: 1|0
+            module: null
+            module_route: ''
+            output: null
+            patches: null
+            phase_: function
+            spies: null
+            tests: null
+            unpack: true
+            yaml: null
+- function: get_nested_nodes
+  description: Returns a nodes nested nodes
+  cast_arguments:
+  - field: node
+    method: sns
+    unpack: true
+    << : *RESOURCE
+  tests:
+  - description: No nested nodes
+    arguments:
+      node: {}
+    checks:
+    - << : *CHECKS
+      method: check_equals
+      expected: {}
+  - description: One nested node
+    arguments:
+      node:
+        key: key
+        tests:
+        - {}
+    checks:
+    - &ONE_NODE_CHECK
+      << : *CHECKS
+      method: check_equals
+      field: key|0.__dict__
+      expected:
+        arguments: {}
+        cast_arguments: null
+        cast_output: null
+        checks: []
+        description: ''
+        environment: {}
+        exclude_methods: []
+        function: ''
+        function_name: ''
+        id: null
+        id_long: ''
+        id_short: ''
+        include_methods: []
+        key: key|0
+        module: null
+        module_route: ''
+        output: null
+        patches: null
+        phase_: function
+        spies: null
+        tests: null
+        unpack: true
+        yaml: null
+  - description: two nested node
+    arguments:
+      node:
+        key: key
+        tests:
+        - description: description
+        - description: description
+    checks:
+    - << : *CHECKS
+      method: check_equals
+      field: key|1.key
+      expected: key|1
+    - << : *CHECKS
+      method: check_equals
+      field: key|0.key
+      expected: key|0
+- function: remove_expanded
+  description: Removes nodes that have been expanded from the store
+  tests:
+  - description: Empty arguments
+    arguments:
+      nodes: {}
+      expanded: []
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        nodes: []
+  - description: Two expanded nodes
+    arguments:
+      nodes:
+        0: node_0
+        1: node_1
+        2: node_2
+      expanded: [0]
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        nodes:
+        - node_1
+        - node_2
+  - description: One expanded node
+    arguments:
+      nodes:
+        a: a
+        b: b
+      expanded:
+      - b
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        nodes:
+        - a

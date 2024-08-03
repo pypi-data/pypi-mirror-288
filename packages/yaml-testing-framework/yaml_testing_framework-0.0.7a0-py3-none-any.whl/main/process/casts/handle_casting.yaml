@@ -1,0 +1,9 @@
+environment:
+  DEBUG: ${YAML_TESTING_FRAMEWORK_DEBUG}
+
+
+kind_map:
+  dict: dict
+  tuple: list
+  list: list
+  NoneType: nonetype

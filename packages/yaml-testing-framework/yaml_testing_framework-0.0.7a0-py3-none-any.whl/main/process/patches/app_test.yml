@@ -1,0 +1,461 @@
+todos:
+- TODO: come up with more robust way of testing functions that create patches
+
+
+help:
+- https://stackoverflow.com/questions/9572833/using-break-in-a-list-comprehension
+
+
+resources:
+- &RESOURCE
+  resource: &RESOURCE_PATH ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/process/patches/resources/app.py
+- &CHECKS
+  resource: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/checks/app.py
+- &GLOBAL_RESOURCE
+  resource: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/resources/app.py
+
+
+tests:
+- function: main
+  description: >
+    Patches an object within the module to test or modules used as resources
+    during testing
+  cast_arguments:
+  - method: wrapper_get_module
+    << : *GLOBAL_RESOURCE
+    field: module
+  tests:
+  - description: No defined patches
+    arguments:
+      patches: null
+      module: *RESOURCE_PATH
+    checks:
+    - method: check_module
+      << : *CHECKS
+      field: module
+      expected:
+        location: *RESOURCE_PATH
+  - description: Patch a non-existing object using value method
+    arguments:
+      patches:
+      - method: value
+        value: patched_value
+        route: .does_not_exist
+      module: *RESOURCE_PATH
+    checks:
+    - method: check_module
+      << : *CHECKS
+      field: module
+      expected:
+        location: *RESOURCE_PATH
+    - method: check_equals
+      << : *CHECKS
+      field: module.does_not_exist
+      expected: patched_value
+  - description: Patch existing object using callable method
+    arguments:
+      patches:
+      - method: callable
+        value: callable_output
+        route: add
+      module: *RESOURCE_PATH
+    checks:
+    - method: check_module
+      << : *CHECKS
+      field: module
+      expected:
+        location: *RESOURCE_PATH
+    - method: check_function
+      << : *CHECKS
+      field: module.add
+      expected:
+        name: add
+        location: *RESOURCE_PATH
+- function: pre_processing
+  description: Returns patch model containing module and timestamp
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        route: None
+        method: null
+        module: null
+        value: null
+    - method: check_type
+      << : *CHECKS
+      field: timestamp
+      expected: float
+  - description: Defined arguments. Resource is a module
+    arguments:
+      route: route
+      resource: *RESOURCE_PATH
+      module: module
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        original: module
+        route: route
+    - method: check_type
+      << : *CHECKS
+      field: timestamp
+      expected: float
+    - method: check_equals
+      << : *CHECKS
+      field: resource.__file__
+      expected: *RESOURCE_PATH
+  - description: Defined arguments. Resource is not a module
+    cast_arguments:
+    - << : *GLOBAL_RESOURCE
+      field: module
+      method: wrapper_get_module
+    arguments:
+      route: add
+      resource: null
+      module: *RESOURCE_PATH
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        route: add
+    - method: check_type
+      << : *CHECKS
+      field: original
+      expected: function
+    - method: check_type
+      << : *CHECKS
+      field: timestamp
+      expected: float
+    - method: check_equals
+      << : *CHECKS
+      field: resource.__file__
+      expected: *RESOURCE_PATH
+- function: get_patch_method
+  description: Returns the method to use for patching
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: value
+      expected: null
+  - description: Value method
+    arguments:
+      method: value
+      value: value
+      timestamp: 0
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        value: value
+  - description: Callable method
+    cast_arguments:
+    - method: wrapper_get_module
+      << : *GLOBAL_RESOURCE
+      field: resource
+    arguments:
+      resource: *RESOURCE_PATH
+      callable_route: add
+      method: callable
+      value: value
+      timestamp: 0
+      original: original
+    checks:
+    - method: check_type
+      << : *CHECKS
+      field: value
+      expected: function
+    - method: check_equals
+      << : *CHECKS
+      field: value.__method__
+      expected: callable
+    - method: check_equals
+      << : *CHECKS
+      field: value.__wrapped__
+      expected: original
+    - method: check_function
+      << : *CHECKS
+      field: value
+      expected:
+        name: add
+        location: *RESOURCE_PATH
+  - description: Side effect list method
+    arguments:
+      value:
+      - a
+      - b
+      timestamp: 0
+      method: side_effect_list
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected: {}
+    - method: check_function
+      << : *CHECKS
+      field: value
+      expected:
+        name: patch
+        location: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/process/patches/app.py
+  - description: Side effect dict method
+    arguments:
+      value:
+        a: a
+        b: b
+      timestamp: 0
+      method: side_effect_dict
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected: {}
+    - method: check_function
+      << : *CHECKS
+      field: value
+      expected:
+        name: patch
+        location: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/process/patches/app.py
+  - description: Method does not exist
+    arguments:
+      method: method_does_not_exist
+      value: value
+      timestamp: 0
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        value: null
+- function: do_nothing
+  description: Returns a none type object
+  tests:
+  - description: Undefined arguments
+    arguments:
+      value: null
+      timestamp: null
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: null
+  - description: Defined arguments
+    arguments:
+      value: value
+      timestamp: timestamp
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: null
+- function: get_value_patch_method
+  description: Returns a value patch
+  tests:
+  - description: Patch value is a string
+    arguments:
+      value: patch_value
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: patch_value
+  - description: Patch value is a integer
+    arguments:
+      value: 1
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: 1
+- function: get_callable_patch_method
+  description: Returns callable patch
+  checks:
+  - method: check_function
+    << : *CHECKS
+    expected:
+      name: patch
+      location: ${PWD}/main/process/patches/app.py
+  tests:
+  - description: Returns a function
+    arguments:
+      value: value
+      timestamp: timestamp
+    checks:
+    # Use caster to call the patch and verify output
+    - method: check_equals
+      << : *CHECKS
+      expected: value
+      cast_output:
+      - method: get_patch_for_callable_cast_output
+        << : *RESOURCE
+    - method: check_equals
+      << : *CHECKS
+      field: __method__
+      expected: callable
+  - description: Returns the function `callable_patch`
+    arguments:
+      value: value
+      timestamp: timestamp
+    checks:
+    # Use caster to call the patch and verify output
+    - method: check_equals
+      << : *CHECKS
+      expected: value
+      cast_output:
+      - method: get_patch_for_callable_cast_output
+        << : *RESOURCE
+  - description: Returns the value when the patch is called
+    arguments:
+      value: patch_value
+      timestamp: timestamp
+    checks:
+    - method: check_function
+      << : *CHECKS
+      expected:
+        name: patch
+        location: ${PWD}/main/process/patches/app.py
+    - method: check_function_output
+      << : *CHECKS
+      expected:
+        arguments:
+        - {}
+        output:
+        - patch_value
+- function: get_side_effect_list_patch_method
+  description: Sets the patch for a side effect list
+  checks:
+  - method: check_function
+    << : *CHECKS
+    expected:
+      name: patch
+      location: ${PWD}/main/process/patches/app.py
+  - method: check_equals
+    << : *CHECKS
+    field: __method__
+    expected: side_effect_list
+  tests:
+  - description: Return a side effect list patch
+    arguments:
+      value:
+      - value_a
+      - value_b
+      - value_c
+      timestamp: timestamp
+    checks:
+    # Using a caster to call patch until
+    # we get back to the first value
+    - method: check_equals
+      << : *CHECKS
+      expected:
+      - value_a
+      - value_b
+      - value_c
+      - value_a
+      cast_output:
+      - method: get_patch_for_side_effect_list_cast_output
+        << : *RESOURCE
+  - description: Name of function should contain sh`side_effect_list_patch`
+    arguments:
+      value:
+      - 0
+      - 1
+      timestamp: timestamp
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected:
+      - 0
+      - 1
+      - 0
+      cast_output:
+      - method: get_patch_for_side_effect_list_cast_output
+        << : *RESOURCE
+- function: get_side_effect_dict_patch_method
+  description: Sets the patch for a side effect dict
+  checks:
+  - method: check_function
+    << : *CHECKS
+    expected:
+      name: patch
+      location: ${PWD}/main/process/patches/app.py
+  - method: check_equals
+    << : *CHECKS
+    field: __method__
+    expected: side_effect_dict
+  tests:
+  - description: Return a side effect dict patch
+    arguments:
+      value:
+        key_0: value_0
+        key_1: value_1
+        key_2: value_2
+      timestamp: timestamp
+    checks:
+    - method: check_function_output
+      << : *CHECKS
+      expected:
+        arguments:
+        - key_0: null
+        - key_1: null
+        - key_2: null
+        - key_3: value_3
+        output:
+        - key_0: value_0
+        - key_1: value_1
+        - key_2: value_2
+        - key_3: value_3
+  - description: Name of function is correct
+    arguments:
+      value:
+        a: 2
+        b: 1
+        c: 0
+      timestamp: timestamp
+    checks:
+    # Using caster to call patch with the keys used to set it
+    - method: check_function_output
+      << : *CHECKS
+      expected:
+        arguments:
+        - a: null
+        - b: null
+        - c: null
+        - d: d
+        output:
+        - a: 2
+        - b: 1
+        - c: 0
+        - d: d
+- function: patch_module
+  description: Returns a module with a patched object
+  cast_arguments:
+  - method: wrapper_get_module
+    << : *GLOBAL_RESOURCE
+    field: module
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        module: null
+  - description: Do nothing flag is true
+    arguments:
+      module: *RESOURCE_PATH
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected: {}
+    - method: check_module
+      << : *CHECKS
+      field: module
+      expected:
+        location: *RESOURCE_PATH
+  - description: Patch object in module
+    arguments:
+      value: value
+      route: route
+      module: *RESOURCE_PATH
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: module.route
+      expected: value

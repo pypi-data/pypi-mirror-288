@@ -1,0 +1,359 @@
+todos:
+- TODO: Add support for user defined logic (example, run_test_for_*) following the example for checks
+- TODO: Add logic for testing APIs
+- TODO: Make timestamps a list and append timestamp at each logical operation
+- TODO: Add wrapper logic back in for external libraries
+- TODO: add logic to run tests for specified functions only
+
+
+help:
+- https://stackoverflow.com/questions/5067604/determine-function-name-from-within-that-function-without-using-traceback
+
+
+resources:
+- &CHECKS
+  resource: &CHECKS_PATH ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/checks/app.py
+- &RESOURCE
+  resource: &RESOURCE_PATH ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/app/resources/app.py
+- &ADD_PATH
+  ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/app/resources/add.py
+- &ADD_TEST_PATH
+  ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/app/resources/add_test.yaml
+- &GLOBAL_RESOURCE
+  resource: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/resources/app.py
+- &ROOT
+  ${YAML_TESTING_FRAMEWORK_ROOT_DIR}
+- &ENTRYPOINT
+  ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/test_entrypoint.py
+
+
+tests:
+- function: main
+  description: >
+    Main module of this application. Returns the results of running tests
+  cast_output:
+  - method: list_sns_to_list_dict
+    << : *RESOURCE
+  tests:
+  - description: Results from running tests associated with a module
+    arguments:
+      project_path: *ADD_PATH
+      yaml_suffix: _test
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected:
+      - expected: 0
+        id: ' .main.app.resources.add.add - 0|2 - Return the result of adding two integers '
+        id_short: .main.app.resources.add.add
+        method: check_equals
+        output: 0
+        passed: true
+      - expected: 0
+        id: ' .main.app.resources.add.add - 0|1 - Return the result of adding two integers '
+        id_short: .main.app.resources.add.add
+        method: check_equals
+        output: 0
+        passed: true
+      - expected: 3
+        id: ' .main.app.resources.add.add - 0|0 - Return the result of adding two integers '
+        id_short: .main.app.resources.add.add
+        method: check_equals
+        output: 3
+        passed: true
+- function: add_entrypoint
+  description: >
+    Adds `test_entrypoint.py` file to a project's root directory if it doesn't already exist
+  cast_output:
+  # Tear down temp directory after each test
+  - method: remove_temp_directory
+    << : *RESOURCE
+  tests:
+  - description: Undefined. Check root directory for this project
+    arguments: {}
+    checks:
+    - << : *CHECKS
+      method: check_sns
+      expected:
+        _: entrypoint exists
+        entrypoint: *ENTRYPOINT
+  - description: Entrypoint exists
+    arguments:
+      root: *ROOT
+      entrypoint: .entrypoint
+    cast_arguments:
+    - method: temp_directory_with_entrypoint
+      << : *RESOURCE
+      unpack: true
+    checks:
+    - << : *CHECKS
+      method: check_sns
+      expected:
+        _: entrypoint exists
+    - << : *CHECKS
+      method: check_type
+      field: entrypoint
+      expected: str
+  - description: Entrypoint does not exist
+    arguments:
+      root: *ROOT
+      entrypoint: test_entrypoint.py
+    cast_arguments:
+    - method: temp_directory_without_entrypoint
+      << : *RESOURCE
+      unpack: true
+    checks:
+    - << : *CHECKS
+      method: check_sns
+      expected:
+        _: entrypoint added
+    - << : *CHECKS
+      method: check_type
+      field: entrypoint
+      expected: str
+- function: handle_id
+  description: Returns the ID of a test
+  tests:
+  - description: Undefined arguments
+    arguments: {}
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        id: ' None.None - None '
+        id_short: None.None
+    - method: check_type
+      << : *CHECKS
+      expected: SimpleNamespace
+  - description: Defined arguments
+    arguments:
+      function: function
+      module_route: module_route
+      description:
+      - description_a
+      - description_b
+      key: key
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        id: ' module_route.function - key - description_b '
+        id_short: module_route.function
+- function: get_function
+  description: Returns an existing function to test
+  cast_arguments:
+  - method: wrapper_get_module
+    << : *GLOBAL_RESOURCE
+    field: module
+  tests:
+  - description: Function does not exist in module
+    arguments:
+      function: does_not_exist
+      module: *RESOURCE_PATH
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        function: null
+        function_name: does_not_exist
+  - description: Function exists in module
+    arguments:
+      function: multiply
+      module: *RESOURCE_PATH
+    checks:
+    - method: check_function
+      << : *CHECKS
+      field: function
+      expected:
+        name: multiply
+        location: *RESOURCE_PATH
+- function: run_test_for_function
+  description: >
+    Returns checks from performing operations needed to process a test for a function
+  cast_arguments:
+  - method: sns
+    field: test
+    unpack: true
+  cast_output:
+  - method: list_sns_to_list_dict
+    << : *RESOURCE
+  tests:
+  - description: Undefined test results in empty list
+    arguments: {}
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected: []
+  - description: Defined test returns a list containing checks
+    arguments:
+      test:
+        project_path: *ADD_PATH
+        module: *ADD_PATH
+        yaml: *ADD_TEST_PATH
+        function: add
+        function_name: add
+        module_route: .main.resources.add.app
+        key: 0.0
+        unpack: true
+        arguments:
+          a: 0
+          b: 11
+        checks:
+        - method: check_equals
+          << : *CHECKS
+          expected: 11
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      expected:
+      - expected: 11
+        id: ' .main.resources.add.app.add - 0.0 '
+        id_short: .main.resources.add.app.add
+        method: check_equals
+        output: 11
+        passed: true
+- function: run_test_handler
+  description: Handles running tests of various kinds
+  cast_arguments:
+  - method: list_dict_to_list_sns
+    << : *RESOURCE
+    field: tests
+    unpack: false
+  tests:
+  - description: Tests is undefined
+    arguments:
+      tests: null
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        tests: []
+  - description: Tests is defined
+    arguments:
+      tests:
+      - module: *ADD_PATH
+        function: add
+        description: Return the result of adding two integers
+        unpack: True
+        arguments:
+          a: 1
+          b: 1
+        checks:
+        - method: check_equals
+          << : *CHECKS
+          expected: 2
+        yaml: *ADD_TEST_PATH
+        project_path: *ADD_PATH
+        module_route: app.add.app
+        key: 0.0
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      cast_output:
+      - method: list_sns_to_list_dict
+        << : *RESOURCE
+        field: tests
+      expected:
+        tests:
+        - expected: 2
+          id: ' app.add.app.add - 0.0 - Return the result of adding two integers '
+          id_short: app.add.app.add
+          method: check_equals
+          output: 2
+          passed: true
+- function: run_tests
+  description: >
+    Performs a number of operations to process content or tests defined in
+    YAML files provided the locations of a YAML, module, and resource files
+  cast_arguments:
+  - method: list_dict_to_list_sns
+    << : *RESOURCE
+    field: locations
+  tests:
+  - description: Locations is an empty dictionary
+    arguments:
+      locations: []
+    checks:
+    - method: check_equals
+      << : *CHECKS
+      field: __dict__
+      expected:
+        tests: []
+  - description: Location of files associated with an "add" module
+    arguments:
+      locations:
+      - module: *ADD_PATH
+        module_route: add.app.app
+        yaml: *ADD_TEST_PATH
+        project_path: ${YAML_TESTING_FRAMEWORK_ROOT_DIR}/main/app/resources/add/resources_folder_name/app.py
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      cast_output:
+      - field: tests
+        method: list_sns_to_list_dict
+        << : *RESOURCE
+      expected:
+        tests:
+        - expected: 0
+          id: ' add.app.app.add - 0|2 - Return the result of adding two integers '
+          id_short: add.app.app.add
+          method: check_equals
+          output: 0
+          passed: true
+        - expected: 0
+          id: ' add.app.app.add - 0|1 - Return the result of adding two integers '
+          id_short: add.app.app.add
+          method: check_equals
+          output: 0
+          passed: true
+        - expected: 3
+          id: ' add.app.app.add - 0|0 - Return the result of adding two integers '
+          id_short: add.app.app.add
+          method: check_equals
+          output: 3
+          passed: true
+- function: remove_added_entrypoint
+  description: >
+    Removes the entrypoint file added to root directory of the project
+  cast_arguments:
+  - method: remove_temp_directory
+    << : *RESOURCE
+  tests:
+  - description: Undefined
+    arguments:
+      flags:
+        entrypoint: 0
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        _: nothing to do
+        entrypoint: ''
+  - description: Entrypoint was added
+    cast_arguments:
+    - method: temp_directory_with_entrypoint_wrapper
+      << : *RESOURCE
+      unpack: true
+    arguments:
+      entrypoint: test_entrypoint.py
+      flags:
+        entrypoint: 1
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        _: entrypoint removed
+    - method: check_type
+      << : *CHECKS
+      field: entrypoint
+      expected: str
+  - description: Entrypoint was not added
+    arguments:
+      flags:
+        entrypoint_added: 0
+    checks:
+    - method: check_sns
+      << : *CHECKS
+      expected:
+        _: nothing to do
