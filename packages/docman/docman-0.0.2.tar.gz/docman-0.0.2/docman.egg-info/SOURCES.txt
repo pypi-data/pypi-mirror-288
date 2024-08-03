@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+docman/__init__.py
+docman/__main__.py
+docman/console.py
+docman/filemanager.py
+docman.egg-info/PKG-INFO
+docman.egg-info/SOURCES.txt
+docman.egg-info/dependency_links.txt
+docman.egg-info/entry_points.txt
+docman.egg-info/requires.txt
+docman.egg-info/top_level.txt

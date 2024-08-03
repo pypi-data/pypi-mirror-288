@@ -1,0 +1,2 @@
+[console_scripts]
+docman = docman.filemanager:main

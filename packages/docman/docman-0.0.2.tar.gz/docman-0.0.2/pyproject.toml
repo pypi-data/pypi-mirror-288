@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=40.8.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docman"
+version = "0.0.2"
+description = "Document Manager"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+requires-python = ">=3.11"
+dependencies = [
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Natural Language :: English",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Utilities"
+]
+authors = [
+  {name = "David", email = "c0d3@gpobox.net"},
+]
+maintainers = [
+  {name = "David", email = "c0d3@gpobox.net"}
+]
+keywords = ["documents"]
+
+[project.urls]
+"Homepage" = "https://github.com/bbc6502/docman"
+"Bug Tracker" = "https://github.com/bbc6502/docman/issues"
+
+[project.scripts]
+docman = "docman.filemanager:main"
+
+[project.optional-dependencies]
+dev = [
+    "wheel", "build", "twine"
+]
+test = [
+    "pytest", "pytest-cov", "coverage"
+]
+
+[tool.setuptools]
+packages = ["docman"]
