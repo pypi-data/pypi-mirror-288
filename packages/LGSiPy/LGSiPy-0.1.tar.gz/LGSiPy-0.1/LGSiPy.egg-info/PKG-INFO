@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: LGSiPy
+Version: 0.1
+Summary: This library is designed to simulate logic circuits, such as: wire, NOT, OR, AND, XOR,..
+Author: salahpikoop
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Android
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.txt
