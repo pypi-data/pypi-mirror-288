@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color:lightgrey">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>File share</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bulma.css') }}">
+    
+    <!--- socketio client -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf-8">
+        var socket = io();
+        socket.on('connect', function() {
+            console.log('Connected to socekt server');
+        });
+
+        socket.on('disconnect', function() {
+            console.log('Disconnected from socket server');
+        });
+    </script>
+</head>
+<body>
+<nav class="navbar" role="navigation" aria-label="main navigation" style="background-color: rgb(94, 126, 123);">
+    <div class="navbar-brand">
+        <a class="nav-item">
+            <img src="{{ url_for('static', filename='icon.png') }}" alt="Domov">
+        </a>
+    </div>
+
+    <div class="navbar-start">
+        <a class="navbar-item" href="{{ url_for('list_dirs')}}">
+          {{ _('Home')}}
+        </a>
+
+        {% if admin %}
+            <a class="navbar-item" href="{{ url_for('admin_view') }}">Admin</a>
+        {% endif %}
+    </div>
+    
+    <div class="navbar-end">
+        <p class="navbar-item">{{ _('Select language') }}</p>
+        {% for lang in supported_languages %}
+            <a class="navbar-item" href="{{ url_for('set_language', language=lang) }}">{{ lang }}</a>
+        {% endfor %}
+
+        {% if require_name_id %}
+            <p class="navbar-item" style="background-color: lightgray;"">
+                {{ client.selected_name }}, {{client.selected_id}} ({{ client.address }})
+            </p>
+        {% else %}
+            <p class="navbar-item" style="background-color: lightgray;"">
+                {{client.selected_id}} ({{ client.address }})
+            </p>
+        {% endif %}
+    </div>
+</nav>
+
+<section class="section">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+
+    {% if permanent_messages %}
+        {% for message in permanent_messages %}
+            {% if message.message %}
+                <div class="notification is-{{ message.category }} is-light" id="message{{ message.id }}">
+                    {{ message.message | safe}}
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    {% if messages %}
+        {% for category, message in messages %}
+        <div class="notification is-{{ category }}" id="flash{{ index }}">
+            <button class="delete" onclick="document.getElementById('flash{{ index }}').style.display='none'"></button>
+            {{ message }}
+        </div>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+    <section class="section">
+    {% block content %}{% endblock %}
+    </section>
+
+</section>
+
+<footer style="bottom: 1em;">
+    <div class="content has-text-centered">
+    <p><a style="color:gray" href="https://github.com/domengorjup/netfshare">netfshare</a>, {{ _('Author') }}: <a style="color:gray" href="https://github.com/domengorjup/">domengorjup</a></p>
+    </div>
+</footer> 
+
+</body>
+</html>
