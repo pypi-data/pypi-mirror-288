@@ -1,0 +1,5 @@
+mcumgr_client_wrapper-0.3.0rc1.dist-info/METADATA,sha256=JhtKo5z1akgPb-L-MWzp8cFQY4yNXtTI6PsVUSC51tE,1193
+mcumgr_client_wrapper-0.3.0rc1.dist-info/WHEEL,sha256=3mJ1jke4-BwjL3c9_37e0prv522zNS1zRiTZ61o3NaY,129
+mcumgr_client/__init__.py,sha256=TKqsgChskA6hPZR5SlebSKfm6FsUZE5-5VMRL__EqSU,135
+mcumgr_client/mcumgr_client.cpython-311-x86_64-linux-gnu.so,sha256=MmtX4Y15tEnYPXiopvVZz6rhKum7qrsdJB7Qu6V3bgE,1344536
+mcumgr_client_wrapper-0.3.0rc1.dist-info/RECORD,,
