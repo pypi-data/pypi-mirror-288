@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+found_update.egg-info/PKG-INFO
+found_update.egg-info/SOURCES.txt
+found_update.egg-info/dependency_links.txt
+found_update.egg-info/top_level.txt
+myenv/__init__.py
+myenv/found_update.py
+myenv/setup.py
