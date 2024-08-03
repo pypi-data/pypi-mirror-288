@@ -1,0 +1,2 @@
+[console_scripts]
+clipmake = clipmake.clipmake:main

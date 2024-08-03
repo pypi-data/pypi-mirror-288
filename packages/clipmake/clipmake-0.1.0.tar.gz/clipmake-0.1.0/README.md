@@ -1,0 +1,25 @@
+# clipmake
+
+`clipmake` is a Python script for creating video clips from random segments of a video. You can specify the desired output duration and the number of segments to concatenate.
+
+## Installation
+
+To install `clipmake`, you can use pip:
+
+```bash
+pip install clipmake
+
+Usage
+After installation, you can run the script with the command:
+
+clipmake
+
+
+
+You will be prompted to choose the language (English or Russian) and provide the input video file path, output video file path, desired output duration, and the number of segments. The script will generate a new video by concatenating random segments from the original video.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Author
+Avinion - Telegram: @akrim

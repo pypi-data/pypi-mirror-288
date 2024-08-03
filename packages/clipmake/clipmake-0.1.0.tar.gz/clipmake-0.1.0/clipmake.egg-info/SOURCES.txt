@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+clipmake/__init__.py
+clipmake/clipmake.py
+clipmake.egg-info/PKG-INFO
+clipmake.egg-info/SOURCES.txt
+clipmake.egg-info/dependency_links.txt
+clipmake.egg-info/entry_points.txt
+clipmake.egg-info/top_level.txt
