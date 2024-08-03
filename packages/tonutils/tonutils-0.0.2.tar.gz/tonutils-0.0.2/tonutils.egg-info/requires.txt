@@ -1,0 +1,5 @@
+aiohttp~=3.9.5
+pytoniq-core~=0.1.36
+
+[pytoniq]
+pytoniq~=0.1.39
