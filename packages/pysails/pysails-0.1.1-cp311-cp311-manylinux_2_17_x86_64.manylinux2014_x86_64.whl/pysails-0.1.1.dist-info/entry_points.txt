@@ -1,0 +1,4 @@
+[console_scripts]
+pysails = sails.main:run_python
+sails = sails.main:run_cli
+sails-snfg = sails.snfg:run
