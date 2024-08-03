@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: docman
+Version: 0.0.2
+Summary: Document Manager
+Author-email: David <c0d3@gpobox.net>
+Maintainer-email: David <c0d3@gpobox.net>
+License: Copyright © 2024 David <c0d3@gpobox.net>
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+        associated documentation files (the “Software”), to deal in the Software without restriction,
+        including without limitation the rights to use, copy, modify, merge, publish, distribute,
+        sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or
+        substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+        BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+        NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+        DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/bbc6502/docman
+Project-URL: Bug Tracker, https://github.com/bbc6502/docman/issues
+Keywords: documents
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Utilities
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Provides-Extra: dev
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+
+# DocMan - Document Manager
+
+    DocMan is a simple text based document manager.
+    It currently has zero dependencies on other packages.
+
+## Be aware
+
+If you think this is a normal file manager you will be disappointed.
+It is designed as a recursive document manager based on files and links.
+It provides the appearance of a hierarchy while having a shallow directory tree.
+This is so that multiple associations can easily be created to the same folder.
+
+A database contains folders and files.
+A folder can contain references to other folders.
+A folder can contain files.
+
+All folders are stored in the **Database/** directory on the file system as a directory per folder.
+All references to folders are created as symbolic links in the directory.
+All files in the folder are stored in the directory for the folder.
+
+A database does not support creating references to files.
+
+## Commands
+
+The following commands are supported:
+
+    MENU
+    LIST
+    LIST LIKE <pattern>...
+    LIST LINKS
+    LIST LINKS LIKE <pattern>...
+    LIST AGAIN
+    LIST LINKS AGAIN
+    VIEW <index>
+    OPEN <index>
+    RENAME <index> TO <new-name>
+    GO TO <index>
+    GOTO <index>
+    GO BACK
+    RETURN
+    DELETE <index>
+    HELP <command>
+    QUIT
+    EXIT
+
+## PROJECT STATUS
+
+    This project is just starting and is alpha status. 
+    It is subject to change.
+    Please keep this in mind if you intend using it.
+
+## LICENSE
+
+    MIT License
