@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: DarkMiner
+Version: 1.0.0
+Summary: Uses computer down time to do useful operations
+Home-page: https://github.com/Luke-Larsen/DarkMiner
+Author: Luke Larsen
+Author-email: luke@lukehanslarsen.com
+Project-URL: Bug Reports, https://github.com/Luke-Larsen/DarkMiner/issues
+Project-URL: Funding, https://lukehanslarsen.com/donate
+Project-URL: Source, https://github.com/Luke-Larsen/DarkMiner
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+Requires-Dist: easygui
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+# DarkMiner
+
+DarkMiner est un projet qui utilise le temps d'inactivité de l'ordinateur pour effectuer des opérations utiles. 
+
+## Installation
+
+Utilisez `pip install -e .` pour installer le projet en mode développement.
+
+## Utilisation
+
+Décrivez ici comment utiliser votre application.
