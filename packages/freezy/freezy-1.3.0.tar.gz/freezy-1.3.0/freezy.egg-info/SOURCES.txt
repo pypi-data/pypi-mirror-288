@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+freezy/__init__.py
+freezy/extractor.py
+freezy/filter.py
+freezy/freeze.py
+freezy/speed.py
+freezy.egg-info/PKG-INFO
+freezy.egg-info/SOURCES.txt
+freezy.egg-info/dependency_links.txt
+freezy.egg-info/top_level.txt
