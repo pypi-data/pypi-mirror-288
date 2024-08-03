@@ -1,0 +1,3 @@
+[console_scripts]
+zycli=zyjared_cli.main:app
+
