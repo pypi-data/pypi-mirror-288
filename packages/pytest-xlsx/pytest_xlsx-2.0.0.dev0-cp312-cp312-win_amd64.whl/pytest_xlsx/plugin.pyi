@@ -1,0 +1,13 @@
+from . import settings as settings
+from .templates import add_globals as add_globals
+from _pytest.config import Config as Config
+from _typeshed import Incomplete
+from pathlib import Path
+from pytest_xlsx.file import XlsxFile as XlsxFile
+
+logger: Incomplete
+
+def pytest_addhooks(pluginmanager) -> None: ...
+def pytest_addoption(parser) -> None: ...
+def pytest_configure(config: Config): ...
+def pytest_collect_file(parent, file_path: Path): ...
