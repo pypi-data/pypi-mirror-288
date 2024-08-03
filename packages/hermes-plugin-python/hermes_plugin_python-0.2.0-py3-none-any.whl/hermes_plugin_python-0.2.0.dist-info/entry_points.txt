@@ -1,0 +1,2 @@
+[hermes.harvest]
+toml = hermes_toml.harvest:TomlHarvestPlugin
