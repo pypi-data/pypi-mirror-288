@@ -1,0 +1,29 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "andvaranaut"
+version = "1.0.0"
+authors = [
+  {name = "Andrew Angus", email = "andrewangus27@gmail.com"},
+]
+description = "Predictive modelling and UQ suite."
+readme = "README.md"
+license = {file="LICENSE"}
+requires-python = '>=3.8'
+dependencies = [
+  "pymc <= 5.9.2",
+  "numpy",
+  "scipy",
+  "dask",
+  "distributed",
+  "scikit-learn",
+  "seaborn",
+  "cloudpickle",
+  "netCDF4",
+  "tqdm"
+]
+
+[project.urls]
+Repository = "https://github.com/andrew-angus/andvaranaut.git"
