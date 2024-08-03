@@ -1,0 +1,7 @@
+README.md
+setup.py
+vkmusix.egg-info/PKG-INFO
+vkmusix.egg-info/SOURCES.txt
+vkmusix.egg-info/dependency_links.txt
+vkmusix.egg-info/requires.txt
+vkmusix.egg-info/top_level.txt
