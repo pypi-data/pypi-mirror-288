@@ -1,0 +1,9 @@
+picarta/__init__.py,sha256=8j7OqyVDTRbPJf9uTIFPt5t_CS3BtL8yqsm5ytPF-NM,29
+picarta/picarta.py,sha256=i6S9dBWv4E8MIfMeJ5SyUB1ySSFAa_ojujjSDXdop7M,1394
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_picarta.py,sha256=NnuJZZk7MoHpQLnerOybz1xJ637fzg-V1xX_u2_yuGw,771
+picarta-0.1.dist-info/METADATA,sha256=yfUATHOE3UrAvATlJ_hfA0C0hTTAH9YRYrLeuxfapic,612
+picarta-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+picarta-0.1.dist-info/entry_points.txt,sha256=vfJc75l2HrbCOKwKxB0gq-rRA6mQ0eS4gneaU-vtgT8,57
+picarta-0.1.dist-info/top_level.txt,sha256=Bfbv0JW0vh4serES-2RwM-RIQRhnZNYelvB3Oc1vFsA,14
+picarta-0.1.dist-info/RECORD,,
