@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+inodeai.egg-info/PKG-INFO
+inodeai.egg-info/SOURCES.txt
+inodeai.egg-info/dependency_links.txt
+inodeai.egg-info/requires.txt
+inodeai.egg-info/top_level.txt
