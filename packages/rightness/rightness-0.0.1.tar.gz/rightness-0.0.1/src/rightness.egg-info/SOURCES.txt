@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+src/rightness/__init__.py
+src/rightness.egg-info/PKG-INFO
+src/rightness.egg-info/SOURCES.txt
+src/rightness.egg-info/dependency_links.txt
+src/rightness.egg-info/top_level.txt
