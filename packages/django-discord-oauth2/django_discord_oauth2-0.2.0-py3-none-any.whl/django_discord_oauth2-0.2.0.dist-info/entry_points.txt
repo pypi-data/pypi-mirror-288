@@ -1,0 +1,2 @@
+[console_scripts]
+django-discord-oauth2 = discord_oauth2:main
