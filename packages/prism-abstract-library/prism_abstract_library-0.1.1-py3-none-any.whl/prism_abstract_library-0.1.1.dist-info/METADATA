@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: prism-abstract-library
+Version: 0.1.1
+Summary: Base classes and shared API endpoints for PRISM
+Author: Isaac
+Author-email: isummers@bastiansolutions.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fastapi (>=0.111.1,<0.112.0)
+Requires-Dist: sqlalchemy (>=2.0.31,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Introduction 
+Welcome! This abstract library contains base classes for PRISM. 
+Below is a guide for getting everything up and running on your system. To begin, ensure that Poetry is 
+installed and up to date on your machine. 
+
+## Adding to a project
+To pull the library into a project, cd to the relevant project from the command line and enter the command 
+```poetry add prism_abstract_library```.
+
+## Contributing
+All interaction with this module should be done through a virtual environment. If your project doesn't 
+automatically start in the Poetry shell, run the command```poetry shell```. Once Poetry is installed, 
+up to date, and you're in the virtual environment, run ```poetry install``` to nab the dependencies.
+
+## Dependencies
+- ### Python https://www.python.org/
+
+- ### SQLAlchemy https://www.sqlalchemy.org/
+
+- ### FastAPI https://fastapi.tiangolo.com/
+
+
+
+
+
