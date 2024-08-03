@@ -1,0 +1,42 @@
+[project]
+dynamic = ["version"]
+
+name = "empm"
+authors = [
+  { name = "paopaozhi", email = "paopaozhi@hotmail.com" },
+  { name = "hymn", email = "hexinyi136@139.com" },
+]
+dependencies = ["typer", "toml", "requests", "fastapi"]
+description = "embedded pack manage"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+  "Programming Language :: Python :: 3.9",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+]
+
+[project.scripts]
+empm = "empm._internal.cli.main:app"
+
+[project.urls]
+"Homepage" = "https://github.com/paopaozhi/cepack"
+"Bug Tracker" = "https://github.com/paopaozhi/cepack/issues"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "" = "." }
+
+[tool.setuptools.dynamic]
+version = {attr = "empm.__version__"}
+
+######################################################################################
+# coverage
+#
+
+[tool.coverage.run]
+branch = true
+omit = ["test/*","empm/_internal/command/home.py"]
