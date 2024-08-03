@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+demo/Chinook.db
+sql_sanity_checks.egg-info/PKG-INFO
+sql_sanity_checks.egg-info/SOURCES.txt
+sql_sanity_checks.egg-info/dependency_links.txt
+sql_sanity_checks.egg-info/top_level.txt
+tests/test_connector_postgres.py
+tests/test_connector_sqlite.py
+tests/test_sanity_check.py
+tests/test_sanity_tests_default_output.py
+tests/test_slack_output.py
