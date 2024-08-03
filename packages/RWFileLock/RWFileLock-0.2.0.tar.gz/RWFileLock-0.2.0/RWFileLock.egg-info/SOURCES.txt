@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+RWFileLock/__init__.py
+RWFileLock/py.typed
+RWFileLock/rw_file_lock.py
+RWFileLock.egg-info/PKG-INFO
+RWFileLock.egg-info/SOURCES.txt
+RWFileLock.egg-info/dependency_links.txt
+RWFileLock.egg-info/top_level.txt
