@@ -1,0 +1,32 @@
+# Script parameters
+destination: "./"
+num_runs: 1
+
+# Architecture-specific parameters
+arch:
+  arm64-gracehopper: &arch_config
+    # SBATCH parameters
+    nodes: 1
+    partition: "gracehopper"
+    gres: "gpu:1"
+    account: "ccv-gh200-gcondo"
+    ntasks_per_node: 1
+    memory: "40G"
+    time: "01:00:00"
+    error_file_name: "%j.err"
+    output_file_name: "%j.out"
+    # Apptainer image path
+    container_image: "/oscar/data/shared/eval_gracehopper/container_images/MLPerf/arm64/mlperf-resnet-50-tf-arm64"
+
+# Model-specific CM parameters
+model:
+  resnet50: &model_config
+    hw_name: "default"
+    implementation: "reference"
+    device: "cuda"
+    scenario: "Offline"
+    adr.compiler.tags: "gcc"
+    target_qps: 1
+    category: "edge"
+    division: "open"
+    data_path: "/oscar/data/ccvinter/mstu/gracehopper_eval/data/imagenet/ILSVRC2012/val"

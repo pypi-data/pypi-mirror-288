@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "oscar_benchmarking"
+version = "0.1.0"
+license-files = { paths = ["LICENSE"] }
+authors = [
+  { name="Michael Tu", email="michael_s_tu@brown.edu" },
+  { name="Prithvi Takur", email="prithvi_thakur@brown.edu" },
+  { name="Ashok Ragavendran", email="ashok_ragavendran@brown.edu" }
+]
+description = "A package for submitting benchmarking scripts on OSCAR."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "matplotlib>=3.9.1",
+  "pandas>=2.2.2",
+  "pytest>=8.2.2",
+  "PyYAML>=6.0.1"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/oscar_benchmarking"]
+

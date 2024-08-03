@@ -1,0 +1,121 @@
+Metadata-Version: 2.3
+Name: oscar_benchmarking
+Version: 0.1.0
+Summary: A package for submitting benchmarking scripts on OSCAR.
+Author-email: Michael Tu <michael_s_tu@brown.edu>, Prithvi Takur <prithvi_thakur@brown.edu>, Ashok Ragavendran <ashok_ragavendran@brown.edu>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: matplotlib>=3.9.1
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: pytest>=8.2.2
+Requires-Dist: pyyaml>=6.0.1
+Description-Content-Type: text/markdown
+
+# SlurmJobSubmitter Python Package
+
+## Overview
+
+This Python package submits jobs to a Slurm scheduler. The general configuration for jobs reside in `config.yaml`, whereas run-to-run configuration resides in `run_config.csv`.
+
+## Running MLPerf Jobs
+
+### 1. General Job Configuration
+
+Configure the job parameters you need for the specific MLPerf job in `config.yaml`. You can set configurations for several model, benchmark, backend, and architecture combinations. You need to specify:
+
+- SBATCH parameters
+- Path to the Apptainer image container
+- CM-command parameters
+- Path to the dataset
+
+The following diagram is the structure of the `config.yaml` file.
+
+```yaml
+# General script parameters
+
+# Architecture-specific parameters
+arch: 
+    arch-1:
+        # SBATCH parameters
+        param-1:
+        param-2:
+        ...
+
+        # Apptainer image path
+        container_image:
+    arch-2:
+
+# Model-specific parameters
+model:
+    resnet50:
+        # CM parameters
+        cm-param-1:
+        cm-param-2:
+        ...
+
+        # Path to dataset
+        data_path: 
+```
+
+#### Example
+
+Here is an example of a valid YAML configuration.
+
+```yaml
+# General script parameters
+destination: "./"
+num_runs: 1
+
+# Architecture-specific parameters
+arch:
+  arm64-gracehopper: &arch_config
+    # SBATCH parameters
+    nodes: 1
+    partition: "gracehopper"
+    gres: "gpu:1"
+    account: "ccv-gh200-gcondo"
+    ntasks_per_node: 1
+    memory: "40G"
+    time: "01:00:00"
+    error_file_name: "%j.err"
+    output_file_name: "%j.out"
+
+    # Apptainer image path
+    container_image: "/oscar/data/shared/eval_gracehopper/container_images/MLPerf/arm64/mlperf-resnet-50-tf-arm64"
+
+# Model-specific CM parameters
+model:
+  resnet50: &model_config
+    # CM parameters
+    hw_name: "default"
+    implementation: "reference"
+    device: "cuda"
+    scenario: "Offline"
+    adr.compiler.tags: "gcc"
+    target_qps: 1
+    category: "edge"
+    division: "open"
+
+    # Path to dataset
+    data_path: "/oscar/data/ccvinter/mstu/gracehopper_eval/data/imagenet/ILSVRC2012/val"
+```
+
+### 2. Run-Specific Parameters
+
+You can set run-specific parameters (run ID, model, benchmark, backend, architecture, gpu node) for each MLPerf benchmark configuration you want to run.
+
+```csv
+RUN_ID,BENCHMARK,MODEL,BACKEND,ARCH,NODE
+1,MLPerf-Inference,resnet50,tf,arm64-gracehopper,gpu2701
+```
+
+### 3. Calling the Package
+
+
+
+## Developers
+
+If you are developing to add features for a new kind of Slurm job, you should write a derived class from the ABC for both script generation and job submitting.

@@ -1,0 +1,16 @@
+pyenv/
+CM/
+inference/
+.ipynb_checkpoints/
+data/
+python-scripts/__pycache__/
+venv/
+
+# Ignore slurm outputs
+*.err
+*.out
+
+# Ignore `.json` and `.yaml` files from top level directory
+#*.json
+#*.yaml
+#*.yml
