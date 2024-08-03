@@ -1,0 +1,7 @@
+openai
+groq
+anthropic
+instructor
+pyyaml
+posthog
+pydantic
