@@ -1,0 +1,1774 @@
+# Bumblebee Networks SDK
+
+## Purpose:
+* This is a Python package that simplifies interaction with the Bumblebee Networks controller API by streamlining the steps of making API requests and handling responses.
+
+## Getting Started:
+### Installation/Setup Steps:
+1. Set up and activate your virtual environment
+    - On macOS/Linux:
+        - python3 -m venv <virtual-environment-name>
+        - source venv/bin/activate
+    - On Windows:
+        - python -m venv venv
+        - venv\Scripts\activate
+2. Install the package using pip
+    - pip install bumblebee-sdk-test
+3. Install the required packages listed in requirements.txt: pip install -r requirements.txt
+4. Configure your env variables by creating an .env file in the root directory and listing your login information as following:
+    - username="your-email"
+    - password="your-password"
+5. Import the required classes/methods
+    - import bbt
+
+## API Reference:
+### The bbt class
+The bbt class is used to simplify interactions with the Bumblebee Networks controller API by providing methods that manage accounts, IAM users, SAML SSO, service node groups, service nodes, app services, endpoint node groups, endpoint nodes, endpoints, user agents. It also provides methods to manage the database, get messages, download OVA files, get stats, billing, and contact information.
+
+### Initialization:
+- `get_bt(api_url, access_key_id, access_key_secret, verbose)`
+    - Initializes the Bt client
+    - Parameters:
+        - `api_url` (string) - base URL of the API
+        - `access_key_url` (string) - email/username for login and authentication
+        - `access_key_secret` (string) - password for login and authentication
+        - `verbose` (boolean) - set to `True`
+    - Returns:
+        - an instance of the `Bt` class
+    ```
+    bt = get_bt(api_url="https://apiurl.com",
+        access_key_id="access_key_id",
+        access_key_secret="access_key_secret"
+    )
+    ```
+
+### Methods:
+- `auth_header()`
+    - Returns the authorization header required for making API requests
+    - Parameters:
+        - None
+    - Returns:
+        - The authorization header required for making API requests
+        - Response structure: `dict` if authorization successful, `None` if unsuccessful
+    ```
+    headers = bt.auth_header()
+    ```
+
+#### Account methods:
+- `create_account(username, password, headers=None)`
+    - Creates a new account with the inputted username and password
+    - Parameters:
+        - `username` (string): email/username for the new account
+        - `password` (string): password for the new account
+        - `headers` (string): headers for making the request (optional)
+    - Returns:
+        - An `Account` object that represents the newly created account if account creation is successful
+        - `None` if the account creation is unsuccessful
+        - Error message (dict) if error in account creation
+    ```
+    account, error = bt.create_account(username="new_email@gmail.com", password="new_password")
+    if error:
+        print(f"Error creating account: {error}")
+    else:
+        print(f"Account created: {account}")
+    ```
+
+- `get_account(username=None)`
+    - Retrieves account information for the inputted username
+    - Parameters:
+        - `username` (string): username to retrieve account information for (optional)
+    - Returns:
+        - a list of `Account` objects representing a list of the retrieved accounts
+        - `None` if the account retrieval fails
+        - Error message (dict) if error in account retrieval
+    ```
+    accounts, error_msg = bt.get_account(username="new_email@gmail.com")
+    assert error_msg == None, f"Account get failed, error = {error_msg}"
+    for act in accounts:
+        print("\nAccount Information: ", act.to_dict())
+    ```
+
+- `remove_account(username)`
+    - Removes the account with the inputted username
+    - Parameters:
+        - `username` (string): username of the account to be removed
+    - Returns:
+        - Response JSON (dict) if account removal is successful
+        - `None` if account removal unsuccessful
+        - Error message (dict) if error in account removal
+    ```
+    removal_response, error = bt.remove_account(username="new_email@gmail.com")
+    if error:
+        print(f"Error removing account: {error}")
+    else:
+        print(f"Successful account removal: {removal_response}")
+    ```
+
+- `clean_account_resources(target_account_id)`
+    - Cleans up the account resources associated with the inputted account ID
+    - Parameters:
+        - `target_account_id` (string): the ID of the account that will have its resources cleaned up
+    - Returns:
+        - Response JSON (dict) if account clean up is successful
+        - `None` if account clean up unsuccessful
+        - Error message (dict) if error in account clean up
+    ```
+    cleanup_response, error = bt.clean_account_resources(target_account_id='account_id')
+    if error:
+        print(f"Error cleaning account resources: {error}")
+    else:
+        print(f"Successful account clean-up: {cleanup_response}")
+    ```
+
+- `enable_account_trial(target_account_id, trial_period_days)`
+    - Enables a trial period for the account associated with the inputted account ID
+    - Parameters:
+        - `target_account_id` (string): the ID of the account to enable the trial for
+        - `trial_period_days` (string): the number of days the trial period should last
+    - Returns:
+        - Response JSON (dict) if account trial is successfully enabled
+        - `None` if enabling account trial fails
+        - Error message (dict) if error in enabling account trial
+    ```
+    enable_response, error = bt.enable_account_trial(target_account_id="account_id", trial_period_days="10")
+    if error:
+        print(f"Error enabling account trial: {error}")
+    else:
+        print(f"Successfully enabled account trial: {enable_response}")
+    ```
+
+- `disable_account_trial(target_account_id)`
+    - Disables the trial period for the account associated with the inputted account ID
+    - Parameters:
+        - `target_account_id` (str): the ID of the account to disable the trial for
+    - Returns:
+        - Response JSON (dict) if account trial is successfully disabled
+        - `None` if disabling account trial fails
+        - Error message (dict) if error in disabling account trial
+    ```
+    disable_response, error = bt.disable_account_trial(target_account_id="account_id")
+    if error:
+        print(f"Error disabling account trial: {error}")
+    else:
+        print(f"Successfully disabled account trial: {disable_response}")
+    ```
+
+#### IAM User methods:
+- `create_iam_user(account_id, username, role)`
+    - Creates a new IAM user with the inputted account ID, username, and role
+    - Parameters:
+        - `account_id` (string): the ID of the IAM user account
+        - `username` (string): the username/email for the new IAM user
+        - `role` (string): the role of the new IAM user
+    - Returns:
+        - JSON response (dict) if the IAM user creation is successful
+        - `None` if IAM user creation fails
+        - Error message (dict) if error in creating IAM user
+    ```
+    iam_creation_response, error = bt.create_iam_user(account_id="account_id", username="username@gmail.com", role="role")
+    if error:
+        print(f"Error creating IAM user: {error}")
+    else:
+        print(f"Successful IAM user creation: {iam_creation_response}")
+    ```
+
+-  `get_iam_users(username)`
+    - Retrieves IAM user information for the inputted username
+    - Parameters:
+        -  `username` (string): the username/email for the new IAM user
+    - Returns:
+        - JSON response (dict) if the IAM user retrieval is successful
+        - `None` if IAM users retrieval fails
+        - Error message (dict) if error in retrieving IAM user information
+    ```
+    get_response, error = bt.get_iam_users(username="existing_email@gmail.com")
+    if error:
+        print(f"Error retrieving IAM users: {error}")
+    else:
+        print(f"Successful IAM users retrieval: {get_response}")
+    ```
+
+- `set_new_iam_user_password(iam_user_token, password)`
+    - Sets a new password for the IAM user associated with the inputted IAM user token
+    - Parameters:
+        - `iam_user_token` (string): the user token that is associated with the IAM user
+        - `password` (string): the new password you want to set for the IAM user
+    - Returns:
+        - JSON response (dict) if setting the new IAM password is successful
+        - `None` if setting the new IAM user password fails
+        - Error message (dict) if error in setting new IAM user password
+    ```
+    new_password_response, error = bt.set_new_iam_user_password(iam_user_token="user_token", password="password")
+    if error:
+        print(f"Error setting new IAM user password: {error}")
+    else:
+        print(f"New IAM user password successfully set: {new_password_response}")
+    ```
+
+- `update_iam_user(name, email, address, phone, password)`
+    - Updates the IAM user information (name, email, address, phone, password) with the inputted values
+    - Parameters:
+        - `name` (string): the new name for the IAM user (optional)
+        - `email` (string): the new email for the IAM user (optional)
+        - `address` (string): the new address for the IAM user (optional)
+        - `phone` (string): the new phone for the IAM user (optional)
+        - `password` (string): the new password for the IAM user (optional)
+    - Returns:
+        - JSON response (dict) if updating the new IAM information is successful
+        - `None` if updating the new IAM information fails
+        - Error message (dict) if error in updating new IAM user information
+    ```
+    update_response, error = bt.update_iam_user(name="new_name", email="new_email@example.com", address="new_address", phone="new_phone", password="new_password")
+    if error:
+        print(f"Error updating IAM user information: {error}")
+    else:
+        print(f"IAM user successfully updated: {update_response}")
+    ```
+
+-  `iam_user_enable_mfa(type)`
+    - Enabales MFA (multi-factor authentication) for the IAM user
+    - Parameters:
+        - `type` (string): the type of MFA to enable (optional)
+    - Returns:
+        - JSON response (dict) if enabling the MFA type is successful
+        - `None` if enabling the MFA type fails
+        - Error message (dict) if error in enabling the MFA type
+    ```
+    MFA_response, error = bt.iam_user_enable_mfa(type="MFA_type")
+    if error:
+        print(f"Error enabling MFA: {error}")
+    else:
+        print(f"MFA successfully enabled: {MFA_response}")
+    ```
+
+- `iam_user_disable_mfa()`
+    - Disables MFA (multi-factor authentication) for the IAM user
+    - Parameters:
+        - None
+    - Returns:
+        - JSON response (dict) if disabling the MFA type is successful
+        - `None` if disabling the MFA type fails
+        - Error message (dict) if error in disabling the MFA type
+    ```
+    MFA_response, error = bt.iam_user_disable_mfa()
+    if error:
+        print(f"Error disabling MFA: {error}")
+    else:
+        print(f"MFA successfully disabled: {MFA_response}")
+    ```
+
+- `iam_user_update_role(new_role, iam_user_id)`
+    - Updates the role of the IAM user to the inputted new role
+    - Parameters:
+        - `new_role` (string): the updated new role of the IAM user
+        - `iam_user_id` (string): the ID of the IAM user to update
+    - Returns:
+        - JSON response (dict) if updating the IAM user role is successful
+        - `None` if updating the IAM user role fails
+        - Error message (dict) if error in updating the IAM user role
+    ```
+    update_role_response, error = bt.iam_user_update_role(new_role="new_role", iam_user_id="user_id")
+    if error:
+        print(f"Error updating IAM user role: {error}")
+    else:
+        print(f"IAM user role successfully updated: {update_role_response}")
+    ```
+
+#### SAML SSO methods:
+- `create_account_idp(idp_name, entity_id, issuer, sso_url, certificate)`
+    - Creates a new IDP (identity provider) for the account with the inputted values
+    - Parameters:
+        - `idp_name` (string): the name of the IDP
+        - `entity_id` (string): the entity ID of the IDP
+        - `issuer` (string): the issuer of the IDP
+        - `sso_url` (string): the SSO (single sign-on) URL of the IDP
+        - `certificate` (string): the certificate of the IDP
+    - Returns:
+        - JSON response (dict) if creating the IDP is successful
+        - `None` if creating the IDP fails
+        - Error message (dict) if error in creating the IDP
+    ```
+    creation_response, error = bt.create_account_idp(idp_name="ExampleIDP",entity_id="entity_id", issuer="issuer", sso_url="https://ssoexample.com", certificate="certificate")
+    if error:
+        print(f"Error creating account IDP: {error}")
+    else:
+        print(f"Account IDP successfully created: {creation_response}")
+    ```
+
+- `get_account_idp()`
+    - Retrieves the IDP information of the account
+    - Parameters:
+        - None
+    - Returns:
+        - JSON response (dict) if retrieving the IDP account information is successful
+        - `None` if retrieving the IDP account information fails
+        - Error message (dict) if error in retrieving the IDP account information
+    ```
+    get_IDP_response, error = bt.get_account_idp()
+    if error:
+        print(f"Error retrieving account IDP: {error}")
+    else:
+        print(f"Account IDP information: {get_IDP_response}")
+    ```
+
+- `remove_account_idp`
+    - Removes the account IDP
+    - Parameters:
+        - None
+    - Returns:
+        - JSON response (dict) if removing account IDP is successful
+        - `None` if removing account IDP fails
+        - Error message (dict) if error in removing account IDP
+    ```
+    remove_IDP_response, error = bt.get_account_idp()
+    if error:
+        print(f"Error removing account IDP: {error}")
+    else:
+        print(f"Remove account IDP successful: {remove_IDP_response}")
+    ```
+
+- `update_account_idp(idp_name, entity_id, issuer, sso_url, certificate)`
+    - Updates the IDP details for the account with the inputted information
+    - Parameters:
+        - `idp_name` (string): the new name of the IDP (optional)
+        - `entity_id` (string): the new entity ID of the IDP (optional)
+        - `issuer` (string): the new issuer of the IDP (optional)
+        - `sso_url` (string): the new SSO URL of the IDP (optional)
+        - `certificate` (string): the new certificate of the IDP (optional)
+    - Returns:
+        - JSON response (dict) if updating the IDP account information is successful
+        - `None` if updating the IDP account information fails
+        - Error message (dict) if error in updating the IDP account information
+    ```
+    update_idp_response, error = bt.update_account_idp(idp_name="NewExampleIDP",entity_id="new_entity_id", issuer="new_issuer", sso_url="https://newssoexample.com", certificate="new_certificate")
+    if error:
+        print(f"Error updating account IDP: {error}")
+    else:
+        print(f"Account IDP successfully updated: {update_idp_response}")
+    ```
+
+#### Serivce Node methods:
+- `create_service_node(service_node_group_id, service_node_name, new_service_node_group, service_node_group_name)`
+    - Creates a new service node with the inputted parameters
+    - Parameters:
+        - `service_node_group_id` (string): the service node group ID of the new service node
+        - `service_node_name`(string): the name of the service node
+        - `new_service_node_group` (boolean): boolean representing if a new service node group should be created (optional). default status is set as False
+        - `service_node_group_name` (string): the name of the new service node group (optional: if `new_service_node_group` is True, then `service_node_group_name` is required)
+    - Returns:
+        - an instance of the `ServiceNode` class if the creation is successful
+        - `None` if service node creation fails
+        - Error message (dict) if error in service node creation
+    ```
+    creation_response, error = bt.create_service_node(service_node_group_id="existing_group_id",service_node_name="NewServiceNode", new_service_node_group=False)
+    if error:
+        print(f"Error creating service node: {error}")
+    else:
+        print(f"Service node successfully created: {creation_response}")
+    ```
+
+- `get_service_node(service_node_group_id, service_node_name)`
+    - Retrieves the service node information
+    - Parameters:
+        - `service_node_group_id` (string): the ID of the service node group
+        - `service_node_name` (string): the service node name (optional)
+    - Returns:
+        - a list of `ServiceNode` instances if the service node retrieval is successful
+        - `None` if the service node retrieval fails
+        - Error message (dict) if error in service node retrieval
+    ```
+    SN_retrieval_response, error = bt.get_service_node(service_node_group_id="group_id")
+    if error:
+        print(f"Error retrieving service node: {error}")
+    else:
+        print(f"Service nodes: {SN_retrieval_response}")
+    ```
+
+- `remove_service_node(service_node_id)`
+    - Removes the service node associated to the inputted service node ID
+    - Parameters:
+        - `service_node_id` (string): the ID of the service node to remove
+    - Returns:
+        - JSON response (dict) if service node removal is successful
+        - `None` if the service node removal fails
+        - Error message if error in service node removal
+    ```
+    SN_removal_response, error = bt.remove_service_node(service_node_id="node_id")
+    if error:
+        print(f"Error removing service node: {error}")
+    else:
+        print(f"Service node successfully removed: {SN_removal_response}")
+    ```
+
+- `get_service_node_details(service_node_id)`
+    - Retrieves the details of the service node associated with the inputted service node ID
+    - Parameters:
+        - `service_node_id` (string): the ID of the service node to retrieve information of
+    - Returns:
+        - JSON response (dict) if service node details retrieval is successful
+        - `None` if service node details retrieval fails
+        - Error message if error in service node details retrieval
+    ```
+    SN_details_response, error = bt.get_service_node_detail(service_node_id="service_node_id")
+    if error:
+        print(f"Error retrieving service node details: {error}")
+    else:
+        print(f"Service node details: {response}")
+    ```
+
+- `set_service_node_form_factor(service_node_id, form_factor, shipping_addr)`
+    - Sets the form factor and shipping address (optional) for the service node associated with the inputted service node ID
+    - Parameters:
+        - `service_node_id` (string): the ID of the service node
+        - `form_factor` (string): the form factor of the service node
+        - `shipping_addr` (string): the shipping address of the service node
+    - Returns:
+        - JSON response (dict) if setting service node form factor is successful
+        - `None` if the setting service node form factor fails
+        - Error message if error in setting service node form factor
+    ```
+    response, error = bt.set_service_node_form_factor(service_node_id="service_node_id", form_factor="new_form_factor", shipping_addr="1234 Shipping Address St")
+    if error:
+        print(f"Error setting service node form factor: {error}")
+    else:
+        print(f"Service node form factor successfully set: {response}")
+    ```
+
+#### App Service methods:
+- `create_app_service(app_service_name, location, region, cloud_endpoint_service_name, service_node_group_id, fqdn, proto, port, network_mode_enabled, real_subnets, address_translation_enabled, virtual_subnet_pools, bgp_enabled, bgp_local_asn, bgp_peer_asn, bgp_peer_ip)`
+    - Creates a new app service with the inputted parameters
+    - Parameters:
+        - `app_service_name` (string): the name of the app service
+        - `location` (string): the location of the app service (aws, azure, or onprem)
+        - `region` (string): the region for the app service (required for aws and azure)
+        - `cloud_endpoint_service_name` (string): the cloud endpoint service name (required for aws and azure)
+        - `service_node_group_id` (string): the service node group ID (required for onprem)
+        - `fqdn` (string): the FQDN (fully qualified domain name) for the app service (required for onprem)
+        - `proto` (string): the protocol for the app service (required)
+        - `port` (string): the port number for the application service (required)
+        - `network_mode_enabled` (boolean): a boolean representing if network mode is enabled (required for onprem). default status is set as False.
+        - `real_subnets` (string): the real subnets for the app service (required for onprem)
+        - `address_translation_enabled` (boolean): a boolean representing if address translation is enabled (required for onprem). default status is set as False.
+        - `virtual_subnet_pools` (string): the virtual subnet pools for the app service (required for onprem)
+        - `bgp_enabled` (boolean): a boolean representing if BGP is enabled (required for onprem). default status is set as False
+        - `bgp_local_asn` (string): the BGP local ASN (required for onprem if `bgp_enabled` is True)
+        - `bgp_peer_asn` (string): the BGP peer ASN (required for onprem if `bgp_enabled` is True)
+        - `bgp_peer_ip` (string): the BGP peer IP (required for onprem if `bgp_enabled` is True)
+    - Returns:
+        - an instance of the `AppService` class if app service creation is successful
+        - `None` if app service creation fails
+        - Error message (dict) if error in app service creation.
+    ```
+    AS_creation_response, error = bt.create_app_service(
+        app_service_name="ExampleAppService",
+        location="aws",
+        region="us-west-2",
+        cloud_endpoint_service_name="cloud_service_name",
+        service_node_group_id=None,
+        fqdn=None,
+        proto="https",
+        port="443")
+
+    if error:
+        print(f"Error creating app service: {error}")
+    else:
+        print(f"App service successfully created: {AS_creation_response}")
+    ```
+
+- `get_app_service(app_service_name)`
+    - Retrieves the app service with the inputted name
+    - Parameters:
+        - `app_service_name` (string): the name of the app service
+    - Returns:
+        - a list of `AppService` instances if app service retrieval is successful
+        - `None` if the app service retrieval fails
+        - Error message (dict) if error in app service retrieval
+    ```
+    response, error = bt.get_app_service(app_service_name="example-app-service")
+
+    if error:
+        print(f"Error retrieving app service: {error}")
+    else:
+        print(f"App service: {response}")
+    ```
+
+- `remove_app_service(app_service_id)`
+    - Removes the app service associated with the inputted app service ID
+    - Parameters:
+        - `app_service_id` (string): the ID of the app service to remove
+    - Returns:
+        - JSON response (dict) if the app service removal is successful
+        - `None` if the app service removal fails
+        - Error message (dict) if error in app service removal
+    ```
+    AS_removal_response, error = bt.remove_app_service(app_service_id="service_id")
+
+    if error:
+        print(f"Error removing app service: {error}")
+    else:
+    print(f"App service successfully removed: {AS_removal_response}")
+    ```
+
+- `get_app_service_detail(app_service_id)`
+    - Retrieves details of the app service associated with the inputted app service ID
+    - Parameters:
+        - `app_service_id` (string): the ID of the app service that will have its details retrieved
+    - Returns:
+        - JSON response (dict) if the app service details retrieval is successful
+        - `None` if the app service details retrieval fails
+        - Error message (dict) if error in app service details retrieval
+    ```
+    AS_details_response, error = bt.get_app_service_detail(app_service_id="service_id")
+    if error:
+        print(f"Error retrieving app service details: {error}")
+    else:
+        print(f"App service details: {AS_details_response}")
+    ```
+
+- `add_app_service_hosting(app_service_id, location, region, cloud_endpoint_service_name, service_node_group_id, fqdn)`
+    - Adds inputted hosting details to the app service associated with the inputted app service ID
+    - Parameters:
+        - `app_service_id` (string): the ID of the app service
+        - `location` (string): the hosting location of the app service (aws, azure, or onprem)
+        - `region` (string): the region for the hosting location (required for aws and azure)
+        - `cloud_endpoint_service_name` (string): the cloud endpoint service name (required for aws and azure)
+        - `service_node_group_id` (string): the service node group ID (required for onprem)
+        - `fqdn` (string): the FQDN (fully qualified domain name) for the app service (required for onprem)
+    - Returns:
+        - an instance of the `AppService` class if adding hosting to the app service is successful
+        - `None` if adding hosting to the app service fails
+        - Error message (dict) if error in adding hosting to the app service
+    ```
+    response, error = bt.add_app_service_hosting(
+    app_service_id="app_service_id",
+    location="aws",
+    region="us-west-2",
+    cloud_endpoint_service_name="cloud_service_name",
+    service_node_group_id=None,
+    fqdn=None)
+
+    if error:
+        print(f"Error adding app service hosting: {error}")
+    else:
+        print(f"App service hosting successfully added: {response}")
+    ```
+
+- `get_app_service_hosting(app_service_id, hosting_type)`
+    - Retrieves hosting details for the app service associated with the inputted app service ID
+    - Parameters:
+        - `app_service_id` (string): the app service ID that will have its hosting details retrieved
+        - `hosting_type` (string): the type of hosting to retrieve (optional)
+    - Returns:
+        - JSON response (dict) if the app service hosting retrieval is successful
+        - `None` if the app service hosting retrieval fails
+        - Error message (dict) if error in app service hosting
+    ```
+    response, error = bt.get_app_service_hosting(app_service_id="app_service_id")
+    if error:
+        print(f"Error retrieving app service hosting: {error}")
+    else:
+        print(f"App service hosting: {response}")
+    ```
+
+- `remove_app_service_hosting(app_service_id, hosting_id)`
+    - Removes hosting details from the app service associated with the inputted app service ID
+    - Parameters:
+        - `app_service_id` (string): the app service ID that will have its hosting details removed
+        - `hosting_id` (string): the ID of the hosting to remove
+    - Returns:
+        - an instance of the `AppService` class if hosting removal from the app service is successful
+        - `None` if hosting removal from the app service fails
+        - Error message (dict) if error in hosting removal from the app service
+    ```
+    response, error = bt.remove_app_service_hosting( app_service_id="app_service_id", hosting_id="hosting_id")
+
+    if error:
+        print(f"Error removing app service hosting: {error}")
+    else:
+        print(f"App service hosting successfully removed: {response}")
+    ```
+
+- `resize_app_service(app_service_id, hosting_id, direction)`
+    - Changes the throughput of the app service associated with the inputted app service ID by the inputted direction (up or down)
+    - Parameters:
+        - `app_service_id` (string): the app service ID that will be resized
+        - `hosting_id` (string): the ID of the hosting
+        - `direction` (string): the direction to resize (e.g. `up` or `down`)
+            - `up`: increases the throughput of the app service, thereby handling more endpoints
+            - `down`: reduces the throghput of the app service, thereby handling less endpoints 
+    - Returns:
+        - JSON response (dict) if the app service hosting resizing is successful
+        - `None` if app service resizing fails
+        - Error message (dict) if error in app service resizing
+    ```
+    response, error = bt.resize_app_service(app_service_id="app_service_id", hosting_id="hosting_id", direction="up")
+    if error:
+        print(f"Error resizing app service: {error}")
+    else:
+        print(f"App service successfully resized: {response}")
+    ```
+
+- `update_app_service_contacts(app_service_id, primary_contact_id, secondary_contact_id)`
+    - Updates the primary and secondary contact details for the app service associated with the inputted app service ID
+    - Parameters:
+        - `app_service_id` (string): the app service ID that will have its contacts updated
+        - `primary_contact_id` (string): the ID of the primary contact (optional)
+        - `secondary_contact_id` (string): the ID of the secondary contact (optional)
+    - Returns:
+        - a boolean representing if updating the contact details is successful
+        - `None` if updating the contact details fails
+        - Error message (dict) if error in updating the contact details 
+    ```
+    success, error = bt.update_app_service_contacts(app_service_id="app_service_id", primary_contact_id="primary_contact_id", secondary_contact_id="secondary_contact_id")
+    
+    if not success:
+        print(f"Error updating app service contacts: {error}")
+    else:
+        print("App service contacts successfully updated.")
+    ```
+
+#### Endpoint Node Group methods:
+- `create_ep_node_group(ep_node_group_name, ep_node_name)`
+    - Creates a new endpoint node group with the inputted parameters
+    - Parameters:
+        - `ep_node_group_name` (string): the endpoint node group name
+        - `ep_node_name` (string): the endpoint node name (optional)
+    - Returns:
+        - an instance of the `EpNodeGroup` class if endpoint node group creation is successful
+        - `None` if endpoint node group creation fails
+        - Error message (dict) if error in endpoint node group creation
+    ```
+    EP_node_group_response, error = bbt.create_ep_node_group(ep_node_group_name="example_ep_node_group_name", ep_node_name="example_ep_node_name")
+
+    if error:
+        print(f"Error creating endpoint node group: {error}")
+    else:
+        print(f"Endpoint node group successfully created: {EP_node_group_response}")
+    ```
+
+- `get_ep_node_groups(ep_node_group_name)`
+    - Retrieves a list of endpoint node groups
+    - Parameters:
+        - `ep_node_group_name` (string): the endpoint node group name to filter by
+    - Returns:
+        - a list of `EpNodeGroup` instances if endpoint node group retrieval is successful
+        - `None` if endpoint node group retrieval fails
+        - Error message (dict) if error in endpoint node group retrieval
+    ```
+    ep_node_groups, error = bt.get_ep_node_groups(ep_node_group_name="group_name")
+    
+    if error:
+        print(f"Error retrieving endpoint node groups: {error}")
+    else:
+        print(f"Endpoint node groups: {ep_node_groups}")
+    ```
+
+- `remove_ep_node_group(ep_node_group_id)`
+    - Removes the endpoint node group associated with the inputted endpoint group ID
+    - Parameters:
+        - `ep_node_group_id` (string): the endpoint node group ID to remove
+    - Returns:
+        - JSON response (dict) if the endpoint node group removal is successful
+        - `None` if endpoint node group removal fails
+        - Error message (dict) if error in endpoint node group removal
+    ```
+    response, error = bt.remove_ep_node_group(ep_node_group_id="ep_node_group_id")
+    
+    if error:
+        print(f"Error removing endpoint node group: {error}")
+    else:
+        print(f"Endpoint node group successfully removed: {response}")
+    ```
+
+#### Endpoint Node methods
+- `create_ep_node(ep_node_group_id, ep_node_name)`
+    - Creates a new endpoint node with its endpoint node group as the specified endpoint node group
+    - Parameters:
+        - `ep_node_group_id` (string): the endpoint node group ID to identify the endpoint node group that the new endpoint would fall under
+        - `ep_node_name` (string): the name of the new endpoint node to be created
+    - Returns:
+        - an instance of the `EpNode` class if endpoint node creation is successful
+        - `None` if endpoint node creation fails
+        - Error message (dict) if error in endpoint node creation
+    ```
+    ep_node, error = bt.create_ep_node(ep_node_group_id="ep_node_group_id", ep_node_name="ep_node_name")
+    
+    if error:
+        print(f"Error creating endpoint node: {error}")
+    else:
+        print(f"Endpoint node successfully created: {ep_node}")
+    ```
+
+- `get_ep_nodes(ep_node_group_id, ep_node_name)`
+    - Retrieves a list of endpoint nodes in the specified endpoint node group
+    - Parameters:
+        - `ep_node_group_id` (string): the endpoint node group ID
+        - `ep_node_name` (string): the name of the endpoint node to filter by (optional)
+    - Returns:
+        - a list of `EpNode` instances if endpoint nodes retrieval is successful
+        - `None` if endpoint nodes retrieval fails
+        - Error message (dict) if error in endpoint nodes retrieval
+    ```
+    ep_nodes, error = bt.get_ep_nodes(ep_node_group_id="ep_node_group_id", ep_node_name="ep_node_name")
+    
+    if error:
+        print(f"Error retrieving endpoint nodes: {error}")
+    else:
+        print(f"Endpoint nodes: {ep_nodes}")
+    ```
+
+- `remove_ep_node(ep_node_group_id, ep_node_id)`
+    - Removes the specified endpoint node from the endpoint node group
+    - Parameters:
+        - `ep_node_group_id` (string): the ID of the endpoint node group
+        - `ep_node_id` (string): the ID of the endpoint node to remove from the endpoint node group
+    - Returns:
+        - JSON response if the endpoint node removal is successful
+        - `None` if the endpoint node removal fails
+        - Error message (dict) if error in endpoint node removal
+    ```
+    response, error = bt.remove_ep_node(ep_node_group_id="ep_node_group_id", ep_node_id="ep_node_id")
+
+    if error:
+        print(f"Error removing endpoint node: {error}")
+    else:
+        print(f"Endpoint node removed: {response}")
+    ```
+
+- `get_endpoint_node_detail(ep_node_id)`
+    - Retrieves the endpoint node details of the endpoint associated with the inputted endpoint node ID
+    - Parameters:
+        -  `ep_node_id` (string): the endpoint node ID of the endpoint node that will have its details retrieved
+    - Returns:
+        - JSON response if the endpoint node details retrieval is successful
+        - `None` if the endpoint node details retrieval fails
+        - Error message (dict) if error in endpoint node details retrieval
+    ```
+    endpoint_node_details, error = bt.get_endpoint_node_detail(ep_node_id="ep_node_id")
+    
+    if error:
+        print(f"Error retrieving endpoint node detail: {error}")
+    else:
+        print(f"Endpoint node detail: {endpoint_node_details}")
+    ```
+
+- `add_endpoint_node_secondary_ips(ep_node_id, secondary_ips)`
+    - Adds secondary IPs to the endpoint node associated with the inputted endpoint node ID
+    - Parameters:
+        - `ep_node_id` (string): the ID of the endpoint node that will have secondary IPs added to it
+        - `secondary_ips` (string): the secondary IPs to add to the endpoint node
+    - Returns:
+        - JSON response if adding the secondary IPs to the endpoint node is successful
+        - `None` if adding the secondary IPs to the endpoint node fails
+        - Error message (dict) if error in adding the secondary IPs to the endpoint node
+    ```
+    response, error = bt.add_endpoint_node_secondary_ips(ep_node_id="ep_node_id", secondary_ips="192.123.1.2, 192.123.1.3")
+    
+    if error:
+        print(f"Error adding secondary IPs: {error}")
+    else:
+        print(f"Secondary IPs successfully added: {response}")
+    ```
+
+- `set_endpoint_node_form_factor(ep_node_id, form_factor, shipping_addr)`
+    - Sets the form factor for the endpoint node associated with the inputted endpoint node ID
+    - Parameters:
+        - `ep_node_id` (string): the ID of the endpoint node that will have its form factor set up
+        - `form_factor` (string): the form factor to set to the endpoint node
+        - `shipping_addr` (string): the shipping address (optional)
+    - Returns:
+        - JSON response if setting up the form factor for the endpoint node is successful
+        - `None` if the endpoint node form factor setup fails
+        - Error message (dict) if error in endpoint node form factor setup
+
+#### Endpoint methods
+- `create_ep(create_ep(app_service_id, ep_node_group_id, ep_node_id, ep_name, ep_deployment, region, consumer_principle, verbose, real_subnets, bgp_enabled, bgp_local_asn, bgp_peer_asn, bgp_peer_ip)`
+    - Creates a new endpoint with the inputted parameters
+    - Parameters:
+        - `app_service_id` (string): the app service's ID
+        - `ep_node_group_id` (string): the endpoint node group ID
+        - `ep_node_id` (string): the endpoint node ID
+        - `ep_name` (string): the name of the endpoint to be created
+        - `ep_deployment` (string): the deployment type of the endpoint (agent, onprem, or aws)
+        - `region` (string): the region for AWS deployment (required for AWS)
+        - `consumer_principle` (string): the allowed principal principle (required for AWS)
+        - `verbose` (boolean): a boolean representing whether the input data should be printed (optional). default status is set as False
+        - `real_subnets` (string): the real subnets (required for onprem)
+        - `bgp_enabled` (boolean): a boolean indicating if BGP is enabled (required for onprem)
+        - `bgp_local_asn` (string): the local ASN for BGP (required for onprem)
+        - `bgp_peer_asn` (string): the peer ASN for BGP (required for onprem)
+        - `bgp_peer_ip` (string): the peer IP for BGP (required for onprem)
+    - Returns:
+        - an instance of the `Ep` class if the endpoint creation is successful 
+        - `None` if the endpoint creation fails
+        - Error message (dict) if error in endpoint creation
+    ```
+    response, error = bt.create_ep(
+        app_service_id="app_service_id",
+        ep_node_group_id="ep_node_group_id",
+        ep_node_id="ep_node_id",
+        ep_name="ep_name",
+        ep_deployment="onprem",
+        real_subnets="192.168.1.0/24",
+        bgp_enabled=True,
+        bgp_local_asn="65101",
+        bgp_peer_asn="65102",
+        bgp_peer_ip="192.168.1.1")
+    if error:
+        print(f"Error creating EP: {error}")
+    else:
+        print(f"Successfully created EP: {response}")
+    ```
+
+- `get_eps(app_service_id, ep_node_id, ep_name, verbose)`
+    - Retrieves a list of endpoints based on inputted filters
+    - Parameters:
+        - `app_service_id` (string): the app service ID to filter the retrieval by (optional)
+        - `ep_ndoe_id` (string): the endpoint node ID to filter the retrieval by (optional)
+        - `ep_name` (string): the endpoint name to filter the retrieval by (optional)
+        - `verbose` (boolean): a boolean representing if each item in the result should be printed (optional). default status is set as True
+    - Returns:
+        - a list of `Ep` objects representing a list of the retrieved endpoints if the endpoint retrieval is successful
+        - `None` if the endpoint retrieval fails
+        - Error message (dict) if error in retrieving the endpoints
+    ```
+    eps, error = bt.get_eps(app_service_id="app_service_id", ep_node_id="ep_node_id", verbose=True)
+    
+    if error:
+        print(f"Error retrieving EPs: {error}")
+    else:
+        print(f"Successfully retrieved EPs: {eps}")
+    ```
+
+- `remove_ep(ep_id)`
+    - Removes the endpoint associated with the inputted endpoint ID
+    - Parameters:
+        - `ep_id` (string): the endpoint ID to be removed
+    - Returns:
+        - JSON response (dict) if the endpoint removal is successful
+        - `None` if the endpoint removal fails
+        - Error message (dict) if error in endpoint removal
+    ```
+    response, error = bt.remove_ep(ep_id="endpoint_id")
+    if error:
+        print(f"Error removing EP: {error}")
+    else:
+        print(f"Successfully removed EP: {response}")
+    ```
+
+- `approve_ep(ep_id)`
+    - Approves the endpoint associated with the inputted endpoint ID
+    - Parameters:
+        - `ep_id` (string): the endpoint ID to be approved
+    - Returns:
+        - JSON response (dict) if the endpoint approval is successful
+        - `None` if the endpoint approval fails
+        - Error message (dict) if error in endpoint approval
+    ```
+    response, error = bt.approve_ep(ep_id="endpoint_id")
+    if error:
+        print(f"Error approving EP: {error}")
+    else:
+        print(f"Successfully approved EP: {response}")
+    ```
+
+- `reject_ep(ep_id)`
+    - Rejects the endpoint associated with the inputted endpoint ID
+    - Parameters:
+        - `ep_id` (string): the endpoint ID to be rejected
+    - Returns:
+        - JSON response (dict) if the endpoint rejection is successful
+        - `None` if the endpoint rejection fails
+        - Error message (dict) if error in endpoint rejection
+    ```
+    response, error = bt.reject_ep(ep_id="endpoint_id")
+    if error:
+        print(f"Error rejecting EP: {error}")
+    else:
+        print(f"Rejected EP: {response}")
+    ```
+
+- `get_endpoint_detail(ep_id)`
+    - Retrieves details of the endpoint associated with the inputted endpoint ID
+    - Parameters:
+        - `ep_id` (string): the endpoint ID to have its details retrieved
+    - Returns:
+        - JSON response (dict) containing endpoint details if the endpoint details retrieval is successful
+        - `None` if the endpoint details retrieval fails
+        - Error message (dict) if error in endpoint details retrieval
+    ```
+    details, error = bt.get_endpoint_detail(ep_id="endpoint_id")
+    if error:
+        print(f"Error retrieving endpoint details: {error}")
+    else:
+        print(f"Endpoint details: {details}")
+    ```
+
+- `resize_endpoint_throughput(ep_id, direction)`
+    - Resizes the throughput of the endpoint associated with the inputted endpoint ID by the inputted direction (up or down)
+    - Parameters:
+        - `ep_id` (string): the endpoint ID of the endpoint that will be resized
+        - `direction` (string): the direction to resize (e.g. `up` or `down`)
+            - `up`: increases the throughput of the endpoint
+            - `down`: reduces the throghput of the endpoint
+    - Returns:
+        - JSON response (dict) if the endpoint hosting resizing is successful
+        - `None` if endpoint resizing fails
+        - Error message (dict) if error in endpoint resizing
+    ```
+    response, error = bt.resize_endpoint_throughput(ep_id="endpoint_id", direction="up")
+    
+    if error:
+        print(f"Error resizing endpoint throughput: {error}")
+    else:
+        print(f"Successfully resized endpoint throughput: {response}")
+    ```
+
+- `update_endpoint_contacts(ep_id, primary_contact_id, secondary_contact_id)`
+    - Updates the primary and secondary contact details for the endpoint associated with the inputted endpoint ID
+    - Parameters:
+        - `ep_id` (string): the endpoint ID that will have its contacts updated
+        - `primary_contact_id` (string): the ID of the primary contact (optional)
+        - `secondary_contact_id` (string): the ID of the secondary contact (optional)
+    - Returns:
+        - a boolean representing if updating the contact details is successful
+        - `None` if updatingn the contact details fails
+        - Error message (dict) if error in updating the contact details
+    ```
+    response, error = bt.update_endpoint_contacts(ep_id="endpoint_id", primary_contact_id="primary_contact", secondary_contact_id="secondary_contact")
+    
+    if error:
+        print(f"Error updating endpoint contacts: {error}")
+    else:
+        print(f"Updated endpoint contacts: {response}")
+    ```
+
+#### User Agent methods
+- `create_user_agent(name, email, description, ep_id)`
+    - Creates a new user agent with the inputted parameters
+    - Parameters:
+        - `name` (string): name of the new user agent
+        - `email` (string): email of the new user agent
+        - `description` (string): description of the new user agent (optional)
+        - `ep_id` (string): the endpoint ID associated with the user agent (optional)
+    - Returns:
+        - an instance of the `UserAgent` class if the user agent creation is successful
+        - `None` if user agent creation fails
+        - Error message (dict) if error in creating the user agent
+    ```
+    response, error = bt.create_user_agent(name="John Doe", email="johndoe@gmail.com", description="Example user agent", ep_id="endpoint_id")
+
+    if error:
+        print(f"Error creating user agent: {error}")
+    else:
+        print(f"Successfully created user agent: {response}")
+    ```
+
+- `get_user_agents(email)`
+    - Retrieves a list of user agents associated with the inputted email
+    - Parameters:
+        - `email` (string): the email to filter the retrieval of user agents by
+    - Returns:
+        - a list of `UserAgent` objects if the user agents retrieval is successful
+        - `None` if the user agents retrieval fails
+        - Error message (dict) if the user agents retrieval fails
+    ```
+    user_agents, error = bt.get_user_agents(email="johndoe@gmail.com")
+
+    if error:
+        print(f"Error retrieving user agents: {error}")
+    else:
+        print(f"Successfully retrieved user agents: {user_agents}")
+    ```
+
+- `remove_user_agent(user_agent_id)`
+    - Removes the user agent associated with the inputted user agent ID
+    - Parameters:
+        - `user_agent_id` (string): the user agent ID to filter the user agent removal
+    - Returns:
+        - JSON response (dict) if the user agent removal is successful
+        - `None` if the user agent removal fails
+        - Error message (dict) if error in the user agent removal
+    ```
+    response, error = bt.remove_user_agent(user_agent_id="agent_id")
+
+    if error:
+        print(f"Error removing user agent: {error}")
+    else:
+        print(f"Successfully removed user agent: {response}")
+    ```
+
+- `attach_user_agent_to_ep(user_agent_id, ep_id)`
+    - Attaches a user agent to an endpoint ID
+    - Parameters:
+        - `user_agent_id` (string): the user agent ID for the attachment
+        - `ep_id` (string): the endpoint ID for the attachment
+    - Returns:
+        - JSON response (dict) if the user agent to endpoint attachment is successful
+        - `None` if the user agent to endpoint attachment fails
+        - Error message (dict) if error in the user agent to endpoint attachment
+    ```
+    response, error = bt.attach_user_agent_to_ep(user_agent_id="user_agent_id", ep_id="endpoint_id")
+
+    if error:
+        print(f"Error attaching user agent to EP: {error}")
+    else:
+        print(f"Successfully ttached user agent to EP: {response}")
+    ```
+
+- `detach_user_agent_from_ep(user_agent_id, ep_id)`
+    - Detaches a user agent from an endpoint ID
+    - Parameters:
+        - `user_agent_id` (string): the user agent ID for the detachment
+        - `ep_id` (string): the endpoint ID for the detachment
+    - Returns:
+        - JSON response (dict) if the user agent to endpoint detachment is successful
+        - `None` if the user agent to endpoint detachment fails
+        - Error message (dict) if error in the user agent to endpoint detachment
+    ```
+    response, error = bt.detach_user_agent_from_ep(user_agent_id="user_agent_id", ep_id="endpoint_id")
+    
+    if error:
+        print(f"Error detaching user agent from EP: {error}")
+    else:
+        print(f"Successfully detached user agent from EP: {response}")
+    ```
+
+- `get_linked_user_agent_ep(user_agent_id)`
+    - Retrieves the linked endpoint for the user agent associated with the inputted user agent ID
+    - Parameters:
+        - `user_agent_id` (string): the user agent ID
+    - Returns:
+        -  JSON response (dict) containing linked endpoint details if the retrieval is successful
+        - `None` if the linked endpoint retrieval fails
+        - Error message (dict) if error in the linked endpoint retrieval
+    ```
+    response, error = bt.get_linked_user_agent_ep(user_agent_id="user_agent_id")
+
+    if error:
+        print(f"Error retrieving linked endpoint: {error}")
+    else:
+        print(f"Linked endpoint: {response}")
+    ```
+
+- `get_unlinked_user_agent_ep(user_agent_id)`
+    - Retrieves the unlinked endpoint for the user agent associated with the inputted user agent ID
+    - Parameters:
+        - `user_agent_id` (string): the user agent ID
+    - Returns:
+        -  JSON response (dict) containing unlinked endpoint details if the retrieval is successful
+        - `None` if the unlinked endpoint retrieval fails
+        - Error message (dict) if error in the unlinked endpoint retrieval
+    ```
+    response, error = bt.get_linked_user_agent_ep(user_agent_id="user_agent_id")
+
+    if error:
+        print(f"Error retrieving unlinked endpoint: {error}")
+    else:
+        print(f"Unlinked endpoint: {response}")
+
+#### Database Utils methods
+- `remove_table_content(table_name)`
+    - Removes all content from a specific table in the database
+    - Parameters:
+        - `table_name` (string): the name of the table to have all its content removed
+    - Returns:
+        - JSON response (dict) if the table removal is successful
+        - `None` if the table removal fails
+        - Error message (dict) if error in the table removal
+    ```
+    response, error = bt.remove_table_content(table_name="example_table")
+    
+    if error:
+        print(f"Error removing table content: {error}")
+    else:
+        print(f"Successfully removed content from table: {response}")
+    ```
+
+- `remove_all_table_content()`
+    - Removes all content from all tables in the database
+    - Parameters:
+        - None
+    - Returns:
+        - JSON response (dict) if the content removal from all tables is successful
+        - `None` if the content removal from all tables fails
+        - Error message (dict) if error in the content removal from all tables
+    ```
+    response, error = bt.remove_all_table_content()
+    
+    if error:
+        print(f"Error removing all table content: {error}")
+    else:
+        print(f"Successfully removed all table content: {response}")
+    ```
+
+#### Message methods
+- `get_latest_message(target_id, last_seen_msg_id)`
+    - Retrieves the latest messages that have been posted since the inputted last seen message ID for an inputted target ID (e.g. user or conversation)
+    - Parameters:
+        - `target_id` (string): the ID of the target (e.g. user or conversation) to retrieve the latest messages for
+        - `last_seen_msg_id` (int): the ID of the latest message seen by the client so that all messages posted since this message will be retrieved
+    - Returns:
+        - JSON response (dict) if the latest message retrieval is successful
+        - `None` if the latest message retrieval fails
+        - Error message (dict) if error in the latest message retrieval
+    ```
+    response, error = bt.get_latest_message(target_id="example_user", last_seen_msg_id=100)
+
+    if error:
+        print(f"Error retrieving latest messages: {error}")
+    else:
+        print(f"Latest messages: {response}")
+    ```
+
+#### Download OVA methods
+- `get_filename_from_cd(cd)`
+    - Retrieves filename from inputted content-disposition
+    - Parameters:
+        - `cd`: the content-disposition header value to retrieve filename from
+    - Returns:
+        - the extracted filename if present in the content-disposition header (string)
+        - `None` if the filename is not present in the content-disposition header
+    ```
+    example_cd = 'attachment; filename="filename.jpg"'
+    filename = bt.get_filename_from_cd(cd=example_cd)
+    if filename:
+        print(f"Retrieved filename: {filename}")
+    else:
+        print("No filename found in content-disposition header")
+    ```
+
+- `prepare_ep_node_vm(ep_node_id, filename)`
+    - Prepares a VM (virtual machine) for an endpoint node by retrieving an OVA file that is a package containing the files describe the virtual machine
+    - Parameters:
+        - `ep_node_id` (string): the ID of the endpoint node for which the VM is to be prepared
+        - `filename` (string): the name of the file to save the OVA (optional)
+    - Returns:
+        - JSON response containing details about the prepared VM if the preparation is successful
+        - `None` if the VM preparation fails
+        - Error message (dict) if error in preparing the VM for the endpoint node
+    ```
+    response, error = bt.prepare_ep_node_vm(ep_node_id="ep_node_id", filename="ep_node.ova")
+
+    if error:
+        print(f"Error preparing endpoint node VM: {error}")
+    else:
+        print(f"Successfully prepared endpoint node VM: {response}")
+    ```
+
+- `prepare_service_node_vm(ep_node_id, filename)`
+    - Prepares a VM (virtual machine) for a service node by retrieving an OVA file that is a package containing the files describe the virtual machine
+    - Parameters:
+        - `service_node_id` (string): the ID of the service node for which the VM is to be prepared
+        - `filename` (string): the name of the file to save the OVA (optional)
+    - Returns:
+        - JSON response containing details about the prepared VM if the preparation is successful
+        - `None` if the VM preparation fails
+        - Error message (dict) if error in preparing the VM for the service node
+    ```
+    response, error = bt.prepare_service_node_vm(service_node_id="service_node_id", filename="service_node.ova")
+
+    if error:
+        print(f"Error preparing service node VM: {error}")
+    else:
+        print(f"Successfully prepared service node VM: {response}")
+    ```
+
+#### Get Stats methods
+- `get_net_stats(id_list, start_time, end_time, appservice_id)`
+    - Retrieves network statistics for a list of IDs within a specified time range
+    - Parameters:
+        - `id_list` (list): a list of IDs for which to retrieve the network statistics
+        - `start_time` (string): the start time of the time range for the networks statistics retrieval
+        - `end_time` (string): the end time of the time range for the networks statistics retrieval
+        - `appservice_id` (string): the app service ID to filter the network statistics by, if provided (optional)
+    - Returns:
+        - JSON response containing the network statistics if the retrieval is successful
+        - `None` if the networks statistics retrieval fails
+        - Error message (dict) if error in networks statistics retrieval
+    ```
+    response, error = bt.get_net_stats(id_list=["example_id1", "example_id2"], start_time="2023-01-01T00:00:00Z", end_time="2023-01-01T23:59:59Z")
+
+    if error:
+        print(f"Error retrieving network statistics: {error}")
+    else:
+        print(f"Network statistics: {response}")
+    ```
+
+- `run_health_check(node_id)`
+    - Runs a health check on the inputted node/gateway
+    - Parameters:
+        - `node_id` (string): the ID of the node/gateway to run the health check on
+    - Returns:
+        - JSON response containing the health check results if the health check run is successful
+        - `None` if the health check run fails
+        - Error message (dict) if error in health check run
+    ```
+    response, error = bt.run_health_check(node_id="node_id")
+    if error:
+        print(f"Error running health check: {error}")
+    else:
+        print(f"Health check results: {response}")
+    ```
+
+- `gen_cloud_init_data(node_id)`
+    - Generates cloud-init data for a node/gateway
+    - Parameters:
+        - `node_id` (string): the ID of the node/gateway to generate cloud-init data for
+    - Returns:
+        - JSON response containing the generated cloud-init data if successful
+        - `None` if generating the cloud-init data fails
+        - Error message (dict) if error in generating the cloud-init data
+    ```
+    response, error = bt.gen_cloud_init_data(node_id="node_id")
+    if error:
+        print(f"Error generating cloud-init data: {error}")
+    else:
+        print(f"Cloud-init data: {response}")
+    ```
+
+- `upload_diag(node_id)`
+    - Requests a node/gateway to upload diagnostics information
+    - Parameters:
+        - `node_id` (string): the ID of the node/gateway to upload diagnostics information
+    - Returns:
+        - JSON response confirming the upload request if successful
+        - `None` if requesting the node/gateway to upload diagnostics information fails
+        - Error message (dict) if error in requesting the node/gateway to upload diagnostics information
+    ```
+    response, error = bt.upload_diag(node_id="node_id")
+    if error:
+        print(f"Error requesting diagnostics upload: {error}")
+    else:
+        print(f"Upload request confirmation: {response}")
+    ```
+
+- `measure_ep_latency(ep_id)`
+    - Measures the latency of the endpoint associated with the inputted endpoint ID
+    - Parameters:
+        - `ep_id` (string): the ID of the endpoint to measure latency for
+    - Returns:
+        - JSON response containing the endpoint latency measurements if successful
+        - `None` if the endpoint latency measurement fails
+        - Error message (dict) if error in endpoint latency measurement
+    ```
+    response, error = bt.measure_ep_latency(ep_id="ep_id")
+    if error:
+        print(f"Error measuring endpoint latency: {error}")
+    else:
+        print(f"Endpoint latency: {response}")
+    ```
+
+- `measure_app_service_latency(app_service_id)`
+    - Measures the latency of the app service associated with the inputted app service ID
+    - Parameters:
+        - `app_service_id` (string): the ID of the app service to measure latency for
+    - Returns:
+        - JSON response containing the app service latency measurements if successful
+        - `None` if the app service latency measurement fails
+        - Error message (dict) if error in app service latency measurement
+    ```
+    response, error = bt.measure_ep_latency(app_service_id="AS_id")
+    if error:
+        print(f"Error measuring app service latency: {error}")
+    else:
+        print(f"App service latency: {response}")
+    ```
+
+- `reset_ep(ep_id)`
+    - Resets the endpoint associated with the inputted endpoint ID
+    - Parameters:
+        - `ep_id` (string): the ID of the endpoint to reset
+    - Returns:
+        - JSON response confirming the endpoint reset if successful
+        - `None` if the endpoint reset fails
+        - Error message (dict) if error in endpoint reset
+    ```
+    response, error = bt.reset_ep(ep_id="ep_id")
+    if error:
+        print(f"Error resetting endpoint: {error}")
+    else:
+        print(f"Endpoint reset confirmation: {response}")
+    ```
+
+- `upgrade_node(node_id, url)`
+    - Upgrades a node/gateway
+    - Parameters:
+        - `node_id` (string): the ID of the node/gateway to upgrade
+    - Returns:
+        - JSON response confirming the node upgrade if successful
+        - `None` if the node upgrade fails
+        - Error message (dict) if error in node upgrade
+    ```
+    response, error = bt.upgrade_node(node_id="node_id", url="http://examplenodeupgradeurl.com")
+
+    if error:
+        print(f"Error upgrading node: {error}")
+    else:
+        print(f"Node upgrade confirmation: {response}")
+    ```
+
+- `reset_node(node_id, hard)`
+    - Resets a node/gateway
+    - Parameters:
+        - `node_id` (string): the ID of the node/gateway to reset
+        - `hard` (boolean): a boolean representing whether a hard reset should be performed (optional). default value is set as False
+    - Returns:
+        - JSON response confirming the node reset if successful
+        - `None` if the node reset fails
+        - Error message (dict) if error in node reset
+    ```
+    response, error = bt.reset_node(node_id="node_id", hard=True)
+    if error:
+        print(f"Error resetting node: {error}")
+    else:
+        print(f"Node reset confirmation: {response}")
+    ```
+
+- `enable_remote_access(node_id)`
+    - Enables remote access on a node/gateway
+    - Parameters:
+        - `node_id` (string): the ID of the node/gateway to enable remote access for
+    - Returns:
+        - JSON response confirming the enabling remote access if successful
+        - `None` if the enabling remote access fails
+        - Error message (dict) if error in enabling remote access
+    ```
+    response, error = bt.enable_remote_access(node_id="node_id")
+    if error:
+        print(f"Error enabling remote access: {error}")
+    else:
+        print(f"Remote access successfully enabled: {response}")
+    ```
+
+- `disable_remote_access(node_id)`
+    - Disables remote access on a node/gateway
+    - Parameters:
+        - `node_id` (string): the ID of the node/gateway to disable remote access for
+    - Returns:
+        - JSON response confirming the disabling remote access if successful
+        - `None` if the disabling remote access fails
+        - Error message (dict) if error in disabling remote access
+    ```
+    response, error = bt.disable_remote_access(node_id="node_id")
+    if error:
+        print(f"Error disabling remote access: {error}")
+    else:
+        print(f"Remote access successfully disabled: {response}")
+    ```
+
+- `get_connected_endpoints(node_id)`
+    - Retrieves the connected endpoints for a node/gateway
+    - Parameters:
+        - `node_id` (string): the ID of the node/gateway to retrieve connected endpoints for
+    - Returns:
+        - JSON response containing the list of connected endpoints if retrieval is successful
+        - `None` if the retrieval of connected endpoints fails
+        - Error message (dict) if error in retrieval of connected endpoints
+    ```
+    response, error = bt.get_connected_endpoints(node_id="node_id")
+    if error:
+        print(f"Error retrieving connected endpoints: {error}")
+    else:
+        print(f"Connected endpoints: {response}")
+    ``
+
+- `get_endpoint_sessions(ep_id)`
+    - Retrieves the sessions for the endpoints associated with the inputted endpoint ID
+    - Parameters:
+        - `ep_id` (string): the ID of the endpoint to retrieve sessions for
+    - Returns:
+        - JSON response containing the endpoint sessions if retrieval is successful
+        - `None` if the retrieval of endpoint sessions fails
+        - Error message (dict) if error in retrieval of endpoint sessions
+    ```
+    response, error = bt.get_endpoint_sessions(ep_id="ep_id")
+    if error:
+        print(f"Error retrieving endpoint sessions: {error}")
+    else:
+        print(f"Endpoint sessions: {response}")
+    ```
+
+- `get_top_talker(app_service_id, start_time, end_time)`
+    - Retrieves the top talker for an app service within the specified time range
+    - Parameters:
+        - `app_service_id` (string): the ID of the app service to retrieve the top talker from
+        - `start_time` (string): the start time of the time range for the top talker retrieval
+        - `end_time` (string): the end time of the time range for the top talker retrieval
+    - Returns:
+        - JSON response containing the top talker if the retrieval is successful
+        - `None` if the top talker retrival fails
+        - Error message (dict) if error in the top talker retrieval
+    ```
+    response, error = bt.get_top_talker(app_service_id="AS_id", start_time="2024-01-01T00:00:00Z", end_time="2024-01-01T23:59:59Z")
+
+    if error:
+        print(f"Error retrieving top talker: {error}")
+    else:
+        print(f"Top talker: {response}")
+    ```
+
+- `get_ep_sessions(ep_id, start_time, end_time)`
+    - Retrieves the sessions for an endpoint within the specified time range
+    - Parameters:
+        - `ep_id` (string); the ID of the endpoint to retrieve sessions for
+        - `start_time` (string): the start time of the time range for the endpoint sessions retrieval
+        - `end_time` (string): the end time of the time range for the endpoint sessions retrieval
+    - Returns:
+        - JSON response containing the endpoint sessions if the retrieval is successful
+        - `None` if the endpoint sessions retrieval fails
+        - Error message (dict) if error in retrieving the endpoint sessions
+    ```
+    response, error = bt.get_ep_sessions(ep_id="ep_id", start_time="2023-01-01T00:00:00Z", end_time="2023-01-01T23:59:59Z")
+
+    if error:
+        print(f"Error retrieving endpoint sessions: {error}")
+    else:
+        print(f"Endpoint sessions: {response}")
+    ```
+
+#### Billing
+- `get_stripe_publishable_key()`
+    - Retrieves the Stripe publishable key
+    - Parameters:
+        - None
+    - Returns:
+        - JSON response containing the Stripe publishable key if retrieval is successful
+        - `None` if Stripe publishable key retrieval fails
+        - Error message (dict) if error in retrieving Stripe publishable key
+    ```
+    response, error = bt.get_stripe_publishable_key()
+    if error:
+        print(f"Error retrieving Stripe publishable key: {error}")
+    else:
+        print(f"Stripe publishable key: {response}")
+    ```
+
+- `get_billings`
+    - Retrieves the billing information
+    - Parameters:
+        - None
+    - Returns:
+        - JSON response containing the billing information if retrieval is successful
+        - `None` if billing information retrieval fails
+        - Error message (dict) if error in retrieving billing information
+    ```
+    response, error = bt.get_stripe_publishable_key()
+    if error:
+        print(f"Error retrieving billing information: {error}")
+    else:
+        print(f"Billing information: {response}")
+    ```
+
+- `create_payment_method(payment_type, card_number, exp_month, exp_year, cvc, name, email, phone, street_addr_1, street_addr_2, city, state, postal_code, country)`
+    - Creates a new payment method with the inputted parameters
+    - Parameters:
+        - `payment_type` (string): the type of payment
+        - `card_number` (string): the card number
+        - `exp_month` (int): the expiration month
+        - `exp_year` (int): the expiration year
+        - `cvc` (int): the card verification code (cvc)
+        - `name` (string): the name the card is under
+        - `email` (string): the email address
+        - `phone` (string): the phone number
+        - `street_addr_1` (string): the primary street address
+        - `street_addr_2` (string): the secondary street address
+        - `city` (string): the city
+        - `state` (string): the state
+        - `postal_code` (string): the postal code
+        - `country` (string): the country
+    - Returns:
+        - JSON response containing the payment method information if the payment method creation is successful
+        - `None` if the payment method creation fails
+        - Error message (dict) if error in creating the payment method
+    ```
+    response, error = bt.create_payment_method(
+        payment_type="card",
+        card_number="1231231231231231",
+        exp_month=1,
+        exp_year=2025,
+        cvc=123,
+        name="John Doe",
+        email="johndoe@gmail.com",
+        phone="1234567890",
+        street_addr_1="123 Example St",
+        street_addr_2="456 Practice St",
+        city="San Francisco",
+        state="CA",
+        postal_code="94106",
+        country="United States of America"
+    )
+    if error:
+        print(f"Error creating payment method: {error}")
+    else:
+        print(f"Payment method successfully created: {response}")
+    ```
+
+- `setup_strip_subscription(payment_type, card_number, exp_month, exp_year, cvc, name, email, phone, street_addr1, street_addr_2, city, state, postal_code, county)`
+    - Sets up a Stripe subscription with the inputted parameters
+    - Parameters:
+        - `payment_type` (string): the type of payment
+        - `card_number` (string): the card number
+        - `exp_month` (int): the expiration month
+        - `exp_year` (int): the expiration year
+        - `cvc` (int): the card verification code (cvc)
+        - `name` (string): the name the card is under
+        - `email` (string): the email address
+        - `phone` (string): the phone number
+        - `street_addr_1` (string): the primary street address
+        - `street_addr_2` (string): the secondary street address
+        - `city` (string): the city
+        - `state` (string): the state
+        - `postal_code` (string): the postal code
+        - `country` (string): the country
+    - Returns:
+        - JSON response containing the Stripe subscription information if the setup is successful
+        - `None` if the Stripe subscription setup fails
+        - Error message (dict) if error in the Stripe subscription setup
+    ```
+    response, error = bt.setup_stripe_subscription(
+        payment_type="card",
+        card_number="1231231231231231",
+        exp_month=1,
+        exp_year=2025,
+        cvc=123,
+        name="John Doe",
+        email="johndoe@gmail.com",
+        phone="1234567890",
+        street_addr_1="123 Example St",
+        street_addr_2="456 Practice St",
+        city="San Francisco",
+        state="CA",
+        postal_code="94106",
+        country="United States of America"
+    )
+    if error:
+        print(f"Error setting up Stripe subscription: {error}")
+    else:
+        print(f"Stripe subscription successfully set up: {response}")
+    ```
+
+- `remove_stripe_subscription()`
+    - Removes the Stripe subscription
+    - Parameters:
+        - None
+    - Returns:
+        - JSON response containing confirmation of the Stripe subscription removal if removal is successful
+        - `None` if the Stripe subscription removal fails
+        - Error message (dict) if error in removing the Stripe subscription
+    ```
+    response, error = bt.remove_strip_subscription()
+    if error:
+        print(f"Error removing Stripe subscription: {error}")
+    else:
+        print(f"Stripe subscription succesfully removed: {response}")
+    ```
+
+- `set_preferred_billing_provider(provider)`
+    - Sets up the perferred billing provider
+    - Parameters:
+        - `provider` (string): the billing provider to set as the preferred
+    - Returns:
+        - JSON response confirming the preferred billing provider setup if setup is successful
+        - `None` if the preferred billing provider setup fails
+        - Error message (dict) if error in setting up the preferred billing provider
+    ```
+    response, error = bt.set_preferred_billing_provider(provider="Stripe")
+    if error:
+        print(f"Error setting up preferred billing provider: {error}")
+    else:
+        print(f"Preferred billing provider successfully set up: {response}")
+    ```
+
+- `edit_app_service(app_service_id, app_service_name, fqdn, proto, port, service_down_timeout)`
+    - Edits the app service associated with the app service ID with the inputted parameters
+    - Parameters:
+        - `app_service_id` (string): the app service ID to be editted (optional)
+        - `app_service_name` (string): the new name of the app service (optional)
+        - `fqdn` (string): the new fully qualified domain name (FQDN) (optional)
+        - `proto` (string): the new protocol (optional)
+        - `port` (string): the new port (optional)
+        - `service_down_timeout` (integer): the timeout time for monitoring the app server (optional)
+    - Returns:
+        - JSON response confirming the app service edit if edit is successful
+        - `None` if the app service edit fails
+        - Error message (dict) if error in app service edit
+    ```
+    response, error = bt.edit_app_service(
+        app_service_id="app_service_id",
+        app_service_name="app_service_name",
+        fqdn="example.com",
+        proto="https",
+        port="8080",
+        service_down_timeout=300)
+    if error:
+        print(f"Error editing application service: {error}")
+    else:
+        print(f"Application service successfully edited: {response}")
+    ```
+    
+#### Contact methods
+- `create_contact(email, first_name, last_name, phone, address, company_name)`
+    - Creates a new contact with the inputted parameters
+    - Parameters:
+        - `email` (string): the email of the contact
+        - `first_name` (string): the first name of the contact (optional)
+        - `last_name` (string): the last name of the contact (optional)
+        - `phone` (string): the phone number of the contact (optional)
+        - `address` (string): the address of the contact (optional)
+        - `company_name` (string): the company name of the contact (optional)
+    - Returns:
+        - JSON response with the contact information if contact creation is successful
+        - `None` if the contact creation fails
+        - Error message (dict) if error in contact creation
+    ```
+    response, error = bt.create_contact(email="johndoe@gmail.com",
+        first_name="John",
+        last_name="Doe",
+        phone="1234567890",
+        address="123 Example St",
+        company_name="Company Name")
+    if error:
+        print(f"Error creating new contact: {error}")
+    else:
+        print(f"New contact information: {response}")
+    ```
+
+- `get_contact(email)`
+    - Retrieves the contact associated with the inputted email
+    - Parameters:
+        - `email` (string): the email address of the contact to retrieve
+    - Returns:
+        - JSON response containing the contact details if retrieval is successful
+        - `None` if contact retrieval fails
+        - Error message (dict) if error in retrieving contact details
+    ```
+    response, error = bt.get_contact(email="johndoe@gmail.com")
+    if error:
+        print(f"Error retrieving contact: {error}")
+    else:
+        print(f"Contact details: {response}")
+    ```
+
+- `get_contact_by_ep_id(ep_id)`
+    - Retrieves contact details by endpoint ID
+    - Parameters:
+        - `ep_id` (string): the endpoint Id of the contact to retrieve
+    - Returns:
+        - JSON response containing the contact details if retrieval is successful
+        - `None` if contact by endpoint ID retrieval fails
+        - Error message (dict) if error in retrieving contact details by endpoint ID
+    ```
+    response, error = bt.get_contact_by_ep_id(ep_id="ep_id")
+    if error:
+        print(f"Error retrieving contact by endpoint ID: {error}")
+    else:
+        print(f"Contact details: {response}")
+    ```
+
+- `remove_contact(email)`
+    - Removes the contact with the inputted email
+    - Parameters:
+        - `email` (string): the email address of the contact to remove
+    - Returns:
+        - JSON response containing the remaining contacts after the specified contact has been removed, if the contact removal is successful
+        - `None` if removing the contact fails
+        - Error message (dict) if error in removing the contact
+    ```
+    response, error = bt.remove_contact(email="johndoe@gmail.com")
+    if error:
+        print(f"Error removing contact: {error}")
+    else:
+        print(f"Remaining contacts: {response}")
+    ```
+
+- `update_contact(contact_id, email, first_name, last_name, phone, address, company_name)`
+    - Updates the contact details of the contact associated with the inputted contact ID with the other inputted parameters
+    - Parameters:
+        - `contact_id` (string): the ID of the contact to update
+        - `email` (string): the new email address of the contact (optional)
+        - `first_name` (string): the new first name of the contact (optional)
+        - `last_name` (string): the new last name of the contact (optional)
+        - `phone` (string): the new phone number of the contact (optional)
+        - `address` (string): the new address of the contact (optional)
+        - `company_name` (string): the new company name of the contact (optional)
+    - Returns:
+        - JSON response containing the updated contact information if the update is successful
+        - `None` if updating the contact information fails
+        - Error message (dict) if error in updating the contact information
+    ```
+    response, error = bt.update_contact(
+        contact_id="contact_id",
+        email="newjohndoeemail@gmail.com",
+        first_name="John Doe"
+    )
+    if error:
+        print(f"Error updating contact: {error}")
+    else:
+        print(f"Successfully updated contact details: {response}")
+    ```
+
+- `configure_node_lan_interface(node_id, enable, primary_ipv4_address, secondary_ipv4_address)`
+    - Configures the LAN interface of the node associated with the inputted node ID
+    - Parameters:
+        - `node_id` (string): the ID of the node to configure
+        - `enable` (boolean): a boolean representing whether the LAN interface should be enabled or disabled
+        - `primary_ipv4_address` (string): the primary IPv4 address (optional)
+        - `secondary_ipv4_address` (string): the secondary IPv4 address (optional)
+    - Returns:
+        - JSON response containing the LAN configuration details if the configuration is successful
+        - `None` if configuration of the LAN interface fails
+        - Error message (dict) if error in configuration of the LAN interface
+    ```
+    response, error = bt.configure_node_lan_interface(
+        node_id="node_id",
+        enable=True,
+        primary_ipv4_address="192.123.1.2"
+    )
+    if error:
+        print(f"Error configuring LAN interface: {error}")
+    else:
+        print(f"LAN interface configuration: {response}")
+    ```
+
+- `configure_dhcp_relay(node_group_id, enable, server_ip)`
+    - Configures the DHCP (dynamic host configuration protocol) relay for the specified node group
+    - Parameters:
+        - `node_group_id` (string): the ID of the node group to configure
+        - `enable` (boolean): a boolean representing if the DHCP relay should be enabled or disabled
+        - `server_ip` (string): the server IP address (optional)
+    - Returns:
+        - JSON response containing the DHCP relay configuration details if the configuration is successful
+        - `None` if configuration of the DHCP relay fails
+        - Error message (dict) if error in configuration of the DHCP relay
+    ```
+    response, error = bt.configure_dhcp_relay(
+        node_group_id="node_gorup_id",
+        enable=True,
+    )
+    if error:
+        print(f"Error configuring DHCP relay: {error}")
+    else:
+        print(f"DHCP relay configuration: {response}")
+    ```
+
+- `configure_vrrp(node_group_id, enable, virtual_ip)`
+    - Configures the VRRP (virtual router redundancy protocol)
+    - Parameters:
+        - `node_group_id` (string): the ID of the node group to configure
+        - `enable` (boolean): a boolean representing if the VRRP should be enabled or disabled
+        - `virtual_ip` (string): the virtual IP address (optional)
+    - Returns:
+        - JSON response containing the VRRP configuration details if the configuration is successful
+        - `None` if configuration of the VRRP fails
+        - Error message (dict) if error in configuration of the VRRP
+    ```
+    response, error = bt.configure_vrrp(
+        node_group_id="node_group_id",
+        enable=True,
+    )
+    if error:
+        print(f"Error configuring VRRP: {error}")
+    else:
+        print(f"VRRP configuration: {response}")
+    ```
