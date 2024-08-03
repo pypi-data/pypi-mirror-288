@@ -1,0 +1,11 @@
+seamm_ase/__init__.py,sha256=7wZdZm8KoooQAqY9StQadL9X2EPpZpHF8FzfOSVteuM,162
+seamm_ase/_version.py,sha256=McEerUdkXzC30XV1ZrcjZqTSF-xlQ_81uxPjjABBJ_k,25
+seamm_ase/py.typed,sha256=o_skYYOgBqbwMt-5lUZDunyM7CcemHaJt2k9MsSACeY,61
+seamm_ase/seamm_ase.py,sha256=FcuXcn_cT1762y4rHLjaWipnxCWNTIECOGr6vErKrq8,2659
+tests/__init__.py,sha256=nRKPWsTbB025bJRfX6ZOZayBVXMs3HMdd_JXUPpjWnA,113
+tests/test_seamm_ase.py,sha256=eBsZJccDSNDoWXUXrvyjlUE7Z1Ch6oVvE2w4q45v5B4,339
+seamm_ase-2024.8.2.dist-info/LICENSE.txt,sha256=M_I_yWf50N8VfUL-m6c9ondz0-aXoB5Xg423ePPvf4Q,1513
+seamm_ase-2024.8.2.dist-info/METADATA,sha256=x22grf9x4sAHSaKdxQcOg2SQqIZTzRhqfHGK-kcpsSk,560
+seamm_ase-2024.8.2.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+seamm_ase-2024.8.2.dist-info/top_level.txt,sha256=A7TEaMpvfBDWp-nC0tsFqU6eCdBclYF9X6uovEG1fWE,16
+seamm_ase-2024.8.2.dist-info/RECORD,,
