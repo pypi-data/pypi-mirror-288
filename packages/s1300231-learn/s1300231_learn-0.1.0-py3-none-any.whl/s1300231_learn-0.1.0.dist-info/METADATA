@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: s1300231-learn
+Version: 0.1.0
+Summary: A short description of your package
+Home-page: https://github.com/s1300231/s1300231_learn.git
+Author: Akari Moriya
+Author-email: s1300231@u-aizu.ac.jp
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: pami
+
+UNKNOWN
+
