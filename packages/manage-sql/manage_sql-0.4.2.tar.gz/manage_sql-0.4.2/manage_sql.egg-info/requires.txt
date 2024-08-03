@@ -1,0 +1,5 @@
+deprecated
+dataclasses
+mysql-connector
+mysql-connector-python
+pandas
