@@ -1,0 +1,3 @@
+pydantic>=2.5
+openai>=1.37.1
+logyca>=0.1.17
