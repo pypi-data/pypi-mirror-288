@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/ZJountries/ZJountries.py
+src/ZJountries/__init__.py
+src/ZJountries/data.json
+src/ZJountries_py.egg-info/PKG-INFO
+src/ZJountries_py.egg-info/SOURCES.txt
+src/ZJountries_py.egg-info/dependency_links.txt
+src/ZJountries_py.egg-info/top_level.txt
+tests/tests.py
