@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/example_package_n7fintech/__Init__.py
+src/example_package_n7fintech/example.py
+src/example_package_n7fintech.egg-info/PKG-INFO
+src/example_package_n7fintech.egg-info/SOURCES.txt
+src/example_package_n7fintech.egg-info/dependency_links.txt
+src/example_package_n7fintech.egg-info/top_level.txt
+tests/test_face_recognition.py
