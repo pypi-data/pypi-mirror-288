@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: pysces
+Version: 1.2.2
+Summary: The Python Simulator for Cellular Systems - simulation and analysis tools for modelling biological systems
+Keywords: computational systems biology,modelling,simulation,systems biology
+Home-page: https://pysces.github.io
+Author-Email: Brett Olivier <pysces@googlegroups.com>, Johann Rohwer <pysces@googlegroups.com>
+Maintainer-Email: Brett Olivier <pysces@googlegroups.com>, Johann Rohwer <pysces@googlegroups.com>
+License: BSD 3-Clause
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Development Status :: 6 - Mature
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Fortran
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Project-URL: Homepage, https://pysces.github.io
+Project-URL: Documentation, https://pyscesdocs.readthedocs.io
+Project-URL: Source, https://github.com/PySCeS/pysces
+Project-URL: Download, https://github.com/PySCeS/pysces/releases
+Project-URL: Tracker, https://github.com/PySCeS/pysces/issues
+Requires-Python: >=3.9
+Requires-Dist: numpy>=1.23.5
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: ipyparallel; extra == "parscan"
+Requires-Dist: multiprocessing_on_dill; extra == "parscan"
+Requires-Dist: assimulo; extra == "cvode"
+Requires-Dist: python_libsbml; extra == "sbml"
+Requires-Dist: ipyparallel; extra == "all"
+Requires-Dist: multiprocessing_on_dill; extra == "all"
+Requires-Dist: assimulo; extra == "all"
+Requires-Dist: python_libsbml; extra == "all"
+Provides-Extra: parscan
+Provides-Extra: cvode
+Provides-Extra: sbml
+Provides-Extra: all
+Description-Content-Type: text/markdown
+
+# PySCeS - the Python Simulator for Cellular Systems
+
+PySCeS was originally developed by the Triple-J Group for Molecular 
+Cell Physiology at Stellenbosch University in order to try to model and understand the 
+complex processes and systems which make up the living cell. The project is 
+maintained by Brett Olivier (AIMMS, Vrije Universiteit Amsterdam) and Johann Rohwer 
+(Laboratory for Molecular Systems Biology, Stellenbosch University).
+
+PySCeS features, amongst other things:
+- A text-based model description language.
+- A structural analysis module.
+- Integrators for time simulation.
+- Non-linear solvers for steady-state analysis.
+- A module for performing Metabolic Control Analysis.
+- A bifurcation module for systems which exhibit multiple steady states.
+- A variety of extra utilities for parameter scans, data output and plotting.
+- A dynamic module loading framework.
+- Systems Biology Markup Language (SBML) import and export capability.
