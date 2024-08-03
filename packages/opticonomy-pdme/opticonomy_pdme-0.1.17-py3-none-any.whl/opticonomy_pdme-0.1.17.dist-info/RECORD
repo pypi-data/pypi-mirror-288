@@ -1,0 +1,14 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/pdme_arena.py,sha256=d1hRA1tqjAdjKzHu6QB9mx5j45gRx0cWWdTs3QatwcQ,20294
+examples/pdme_coding_demo.py,sha256=CHAiVWSuipDzox-2M4gCP5k8HS7wzwwLcayTEqgrc6I,9452
+opti_pdme/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opti_pdme/model_utils.py,sha256=sYFcF2oZ3vR4tyXuyrkyPpQa4Mfbo6jpBHsHKXP8fF4,1902
+opti_pdme/opticonomy_pdme.py,sha256=SEQsmgS5KS-i2fkvMAOPKlEe_4AakwLeaLGQ1vpfDv8,16309
+pdme/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdme/evaluate.py,sha256=PkoyDIUw_whUTC_ezt0n3_AtQTuIblseErfMZgjBK2o,10325
+pdme/generate_bootstrap_prompts.py,sha256=kViPUSDh_cc8ztFmAAUPvlOmqZ3M_7v6fxP_LGyx5Sw,501
+opticonomy_pdme-0.1.17.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+opticonomy_pdme-0.1.17.dist-info/METADATA,sha256=DvoSDy6puHIYkNHdrz74Usvmp_p5jDPfU_MqmCYs6iA,7382
+opticonomy_pdme-0.1.17.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+opticonomy_pdme-0.1.17.dist-info/top_level.txt,sha256=ieNZ-8_HLOtpOCu6gYA8QhDNsWiz5G3qFc0uNgZ_afY,14
+opticonomy_pdme-0.1.17.dist-info/RECORD,,
