@@ -1,0 +1,18 @@
+[project]
+name = "drf-around"
+version = "0.0.1"
+authors = [
+  { name="Vitalii Korniichuk", email="iamkorniichuk@gmail.com" },
+]
+description = "A helper for small features that your project needs."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/iamkorniichuk/drf-around"
+"Bug Tracker" = "https://github.com/iamkorniichuk/drf-around/issues"
