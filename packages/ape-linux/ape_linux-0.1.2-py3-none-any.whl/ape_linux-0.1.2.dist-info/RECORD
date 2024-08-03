@@ -1,0 +1,8 @@
+ape/__init__.py,sha256=KJJ5wxvn0U2TzD9o0-eSkT-YNWzBbkED29WB5wWvln0,29
+ape/cli.py,sha256=90oF8AlSzBfNVPAZvb554GJphcVRUIPcCo2FUQ6EbV4,1492
+ape/llm.py,sha256=jk0tb_LjQhi8HC5c-nqmSSmAWsBtiuIESphViWdKt2E,2090
+ape_linux-0.1.2.dist-info/LICENSE,sha256=qEiuw01rkSrWJjnjUb--8CmLaxsBhWHEsS8mThnZ254,1051
+ape_linux-0.1.2.dist-info/METADATA,sha256=PjOjHnQoRhXblJvON7nUIeGaFg8DCaA4NG-jShlc0gI,2523
+ape_linux-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+ape_linux-0.1.2.dist-info/entry_points.txt,sha256=nrgK6S77ZFF--hcHOCuz90ewm1DEXW5uwiWmxcv6pwA,35
+ape_linux-0.1.2.dist-info/RECORD,,
