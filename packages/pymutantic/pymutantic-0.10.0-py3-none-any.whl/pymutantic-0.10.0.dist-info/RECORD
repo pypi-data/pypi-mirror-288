@@ -1,0 +1,12 @@
+pymutantic/DETAILS.md,sha256=-HzNDP9EE3m5Shx4xrHSvwYrYSWKTsXq5HdalvHVcto,3653
+pymutantic/__init__.py,sha256=yJM0FaVOJoESvrPpPjfaatmT9WUvBOluTLL77SX7iqU,201
+pymutantic/_json_path.py,sha256=xTjX95RolxcWkj-wVZfQ7DwHGqx33vmhneQjuOTPJOo,3370
+pymutantic/_migrate.py,sha256=rR5JuKViMwCf_vYhGVw2x5Pf-SKw6UpaJTuOHTIUJeU,1368
+pymutantic/_mutant.py,sha256=xHAKc4l8s7wkdb2KNP2v0fKnAhZjL4c7q4AnXXJdTlo,5899
+pymutantic/test_json_path.py,sha256=zcKD9c7yXMDYjIg8SS4Qwo2UcyopsVNReX-Q8W_cXXo,12169
+pymutantic/test_migrate.py,sha256=TmIZ-BdBHgUQvPI-SCGsr6pfbx6wNc36LrQDrwL6sjY,5172
+pymutantic/test_mutant.py,sha256=ynBjsfVXd2q8nTiEd-pxMWT7hkrmEVCcO__BFS-pbq0,12648
+pymutantic-0.10.0.dist-info/LICENSE,sha256=wiECdMmtvYck4IPQCncuqDWIlwGrSdPO41SW0GE-lF4,1494
+pymutantic-0.10.0.dist-info/METADATA,sha256=JpqDM2IKl2vVnr154-myBt5ubKG_wuy6RV2hnuCsnN4,7157
+pymutantic-0.10.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pymutantic-0.10.0.dist-info/RECORD,,
