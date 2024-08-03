@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: s1280238-learn
+Version: 0.1
+Summary: A learning package
+Home-page: https://github.com/yuuuuuuuuri/s1280238_learn
+Author: yuuuuuuuuri
+Author-email: yuuri0406@icloud.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: pami
+
+UNKNOWN
+
