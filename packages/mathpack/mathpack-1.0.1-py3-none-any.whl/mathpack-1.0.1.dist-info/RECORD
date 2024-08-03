@@ -1,0 +1,9 @@
+mathpack/__init__.py,sha256=MlbMIN7eiNtzH3fMXI-pai2V_R-ltYV6Kz1TzcfLi2o,66
+mathpack/directory1/__init__.py,sha256=GNqqcY5Zu9-YSobjZiSNKhATXM1UepnWOSSOKrdG08E,45
+mathpack/directory1/anyprogram1.py,sha256=__F6-osIECk7LWdx2ePtAinN-FqXX85R0dLzh_qwIL0,38
+mathpack/directory2/__init__.py,sha256=SuiANB0hdd4RT_dJt_NlgZP-gPtG2vmQVCZA0j9rDes,47
+mathpack/directory2/anyprogram2.py,sha256=3hA_wQ2M3_n8ZgH5c3m2JoMJnCTTnnR-k_N_f0lX-FA,39
+mathpack-1.0.1.dist-info/METADATA,sha256=7yGEJC628Lt8tAK2qE1_P0p2wyB3N4Xq5LHzvNbG6Io,554
+mathpack-1.0.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+mathpack-1.0.1.dist-info/top_level.txt,sha256=r1YVtx2MR5ICPp3tFyZh5FF7lARVCTq0F2xAoD-d5Xg,9
+mathpack-1.0.1.dist-info/RECORD,,
