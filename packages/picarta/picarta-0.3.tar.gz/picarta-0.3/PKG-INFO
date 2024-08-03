@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: picarta
+Version: 0.3
+Summary: A package to geolocate images from URL or local files using Picarta AI
+Home-page: https://picarta.ai
+Author: Picarta
+Author-email: info@picarta.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Picarta
+
+A Python package to geolocate images from URL or local files using Picarta AI.
+
+## Installation
+
+```bash
+pip install picarta
+
+
