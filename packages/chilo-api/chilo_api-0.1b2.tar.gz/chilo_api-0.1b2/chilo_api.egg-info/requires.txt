@@ -1,0 +1,10 @@
+art
+icecream
+jsonref
+jsonschema
+openapi-spec-validator
+pydantic
+pyyaml
+simplejson
+Werkzeug
+xmltodict
