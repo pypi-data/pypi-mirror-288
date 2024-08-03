@@ -1,0 +1,6 @@
+[console_scripts]
+my_console_script_name = script.main:main
+py_build = package.build:main
+py_install_dev = package.install_dev:main
+py_install_git = package.install_git:main
+py_publish = package.publish:main

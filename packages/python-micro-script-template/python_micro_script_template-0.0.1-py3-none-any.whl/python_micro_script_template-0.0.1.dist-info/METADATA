@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: python-micro-script-template
+Version: 0.0.1
+Summary: Template for a small installable script
+Home-page: https://github.com/markuspeitl/python_micro_script_template
+Author: Markus Peitl
+Author-email: office@markuspeitl.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pyperclip
+Requires-Dist: twine
+
+# Title for a simple script
+
+### Usage
+
+```

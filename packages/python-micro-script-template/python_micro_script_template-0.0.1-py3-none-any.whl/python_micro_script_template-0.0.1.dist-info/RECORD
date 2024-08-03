@@ -1,0 +1,11 @@
+package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package/build.py,sha256=JggGclBINs7p0uIQHVv7KiVuhLKreqLu_pDXU7htEK0,1154
+package/install_dev.py,sha256=3VKv4BIjusjRi3wYKJEIFF2PpSU0no0YKZaPm4pbNZ0,991
+package/install_git.py,sha256=CYlo6vZUohNNefmxAI-dBY-15sgyhZ4JjMtUlLR-dCY,2634
+package/publish.py,sha256=YMgH6wCTsN-WztHmW9gg5yiPXfEYmXmhWD2qmGoM1M0,1310
+python_micro_script_template-0.0.1.dist-info/LICENSE.txt,sha256=bq6gox7Kt9Hwt4PfzcpxfIvovtwfI55dn_PlNDTm0zM,1069
+python_micro_script_template-0.0.1.dist-info/METADATA,sha256=qV0av3wsItPqUYZrpYvliRjgAHvu8GeOvJpJEuoVkKc,653
+python_micro_script_template-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+python_micro_script_template-0.0.1.dist-info/entry_points.txt,sha256=-yHHkYPyn6NHbHeyLGEJN2mgWvCKlx-5xFfUbgvM5BA,208
+python_micro_script_template-0.0.1.dist-info/top_level.txt,sha256=TpQW7893uEAT8mPh-QCMZWhhKYvlqryC9Fjm5Hxg2f8,8
+python_micro_script_template-0.0.1.dist-info/RECORD,,
