@@ -1,0 +1,32 @@
+Metadata-Version: 2.3
+Name: mdstream
+Version: 0.2.6
+Summary: None
+Project-URL: Documentation, https://github.com/mbodiai/mdstream#readme
+Project-URL: Issues, https://github.com/mbodiai/mdstream/issues
+Project-URL: Source, https://github.com/mbodiai/mdstream
+Author: mbodiai
+License-Expression: Apache-2.0
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: pyproject-pip==0.1.25
+Requires-Dist: rich
+Description-Content-Type: text/markdown
+
+# mdstream
+
+
+
+## Installation
+
+```bash
+pip install mdstream
+```
