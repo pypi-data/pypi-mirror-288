@@ -1,0 +1,5 @@
+selmr-0.4.0.dist-info/METADATA,sha256=8OpMjwqRvVmUwJDgml0uGjcrpNbBTv5kHWWiE-ygiec,1565
+selmr-0.4.0.dist-info/WHEEL,sha256=WdQznVppN7z1Vmr3uommICdFQ8BTH-_snRK0jTnZY7g,95
+selmr/__init__.py,sha256=RUd1wNrPF1LTMzG1E5M8dcmJeFHCRGSaqXRk-zrGOV0,103
+selmr/selmr.cp310-win_amd64.pyd,sha256=j2qNkKvGtXL6EUkUftFFI2joeAEKDFHBkev4MMRMkds,3565568
+selmr-0.4.0.dist-info/RECORD,,
