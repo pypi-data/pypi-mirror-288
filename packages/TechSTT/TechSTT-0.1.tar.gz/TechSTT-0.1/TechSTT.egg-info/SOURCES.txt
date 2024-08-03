@@ -1,0 +1,5 @@
+setup.py
+TechSTT.egg-info/PKG-INFO
+TechSTT.egg-info/SOURCES.txt
+TechSTT.egg-info/dependency_links.txt
+TechSTT.egg-info/top_level.txt
