@@ -1,0 +1,35 @@
+Metadata-Version: 2.3
+Name: lambda_app_common
+Version: 1.0.1
+Summary: Common resources for lambda apps
+Project-URL: Homepage, https://github.com/birkoff/lambda_app_common
+Project-URL: Bug Tracker, https://github.com/birkoff/lambda_app_common/issues
+Author-email: Hector Reyes Aleman <hector.reyes@junctionnet.ai>
+License: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: boto3
+Requires-Dist: botocore
+Description-Content-Type: text/markdown
+
+# lambda_app_common
+
+```
+pip install lambda-app-common
+```
+
+## Usage
+
+```python
+from lambda_app_common import Organization
+api_handler = Organization.ApiRequestHandler('Application', 'Service')
+
+event = Organization.OrganizationEvent('Application', 'Service')
+
+api_handler.event = {}
+api_handler.context = {}
+api_handler.organization = 'Organization'
+
+```
