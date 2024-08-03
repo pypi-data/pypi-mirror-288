@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+cvtease/__init__.py
+cvtease/cli.py
+cvtease/game.py
+cvtease.egg-info/PKG-INFO
+cvtease.egg-info/SOURCES.txt
+cvtease.egg-info/dependency_links.txt
+cvtease.egg-info/entry_points.txt
+cvtease.egg-info/requires.txt
+cvtease.egg-info/top_level.txt
+tests/__init__.py
+tests/test_cli.py

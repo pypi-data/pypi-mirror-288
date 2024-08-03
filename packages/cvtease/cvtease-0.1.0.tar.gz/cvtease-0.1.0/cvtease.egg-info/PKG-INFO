@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: cvtease
+Version: 0.1.0
+Summary: A CLI tool for computer vision that is under development. Includes a space shooter game using ASCII art.
+Home-page: https://github.com/w3cdpass/cvtease
+Author: w3cdpass
+Author-email: w3cdpass <kupasva663@gmail.com>
+Project-URL: Homepage, https://github.com/w3cdpass/cvtease
+Project-URL: Bug Tracker, https://github.com/w3cdpass/cvtease/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: colorama
+
+# Funny Face
+
+A CLI tool for computer vision that is under development. Includes a space shooter game using ASCII art.
+
+## Installation
+
+```sh
+pip install funny-face
+# funny-face
