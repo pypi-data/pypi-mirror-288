@@ -1,0 +1,13 @@
+okrolearn/__about__.py,sha256=bloUd0P5EJBrmN4JYhHq_qKWjvuG0gmGUobhk1o-7iA,832
+okrolearn/__innit__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+okrolearn/dataloader.py,sha256=vhc3FJ5GLhhXszp7bBA-fZBpAgeWu9DFR50Ts1KAArc,2584
+okrolearn/dataset.py,sha256=eJxXDLRSxaZJyjewKzff9UrVHZ75FzO2QPTN8adb76I,1819
+okrolearn/okrolanalysis.py,sha256=bBtGVhg-XY2M1Tl0R52OQBnsjIzibcBvYgYHDfHgZg4,11353
+okrolearn/okrolearn.py,sha256=fsFHvhjYJ6pxTbI9el4QtyGiB5DRX9lhY3SwVHFoCaM,115381
+okrolearn/okroltext.py,sha256=Ja60OT-nfT0P2VjaxI9-fVtMgkiyOywNFPCr0-92Kv4,1474
+okrolearn/okrolvision.py,sha256=bKdmhtyVfCpNFNnL_pS3A4HCErRPA94bKDZqtn-xFbM,15450
+okrolearn/tensor.py,sha256=Aq2Xa9QFICKcFD8YydTwRtvJD97-JnENPH2CTbBFCrs,39861
+okrolearn-2.5.0.dist-info/METADATA,sha256=CHaC0bJsmfC3AljNf5t_-DtcV48Sp0SMSMQV6ytFm8I,2014
+okrolearn-2.5.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+okrolearn-2.5.0.dist-info/licenses/LICENSE,sha256=mQcIJ4E-jP6i_qBHDF4WajiCgtoskjDwXtGbIxjrwZU,1082
+okrolearn-2.5.0.dist-info/RECORD,,
