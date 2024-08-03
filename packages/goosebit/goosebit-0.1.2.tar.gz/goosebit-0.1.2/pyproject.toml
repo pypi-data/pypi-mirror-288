@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "goosebit"
+version = "0.1.2"
+description = ""
+authors = ["Upstream Data <brett@upstreamdata.ca>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["uvicorn"], version = "^0.111.0"}
+python-multipart = "^0.0.9"
+jinja2 = "^3.1.4"
+itsdangerous = "^2.2.0"
+tortoise-orm = "^0.21.4"
+aerich = "^0.7.2"
+aiofiles = "^24.1.0"
+websockets = "^12.0"
+argon2-cffi = "^23.1.0"
+joserfc = "^1.0.0"
+semver = "^3.0.2"
+libconf = "^2.0.1"
+opentelemetry-distro = "^0.47b0"
+opentelemetry-instrumentation-fastapi = "^0.47b0"
+opentelemetry-exporter-prometheus = "^0.47b0"
+aiocache = "^0.12.2"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13.2"
+black = "^24.2.0"
+pre-commit = "^3.6.2"
+flake8 = "7.1.0"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.6.0"
+mkdocs-material = "^9.5.29"
+
+[tool.poetry.group.tests.dependencies]
+pytest = "^8.3.1"
+pytest-asyncio = "^0.23.8"
+httpx = "^0.27.0"
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 120
+
+[tool.aerich]
+tortoise_orm = "goosebit.db.TORTOISE_CONF"
+location = "./migrations"
+src_folder = "./."
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
