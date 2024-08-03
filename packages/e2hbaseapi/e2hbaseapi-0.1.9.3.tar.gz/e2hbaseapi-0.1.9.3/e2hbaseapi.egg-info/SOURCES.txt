@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+e2hbaseapi/__init__.py
+e2hbaseapi/client.py
+e2hbaseapi.egg-info/PKG-INFO
+e2hbaseapi.egg-info/SOURCES.txt
+e2hbaseapi.egg-info/dependency_links.txt
+e2hbaseapi.egg-info/requires.txt
+e2hbaseapi.egg-info/top_level.txt
