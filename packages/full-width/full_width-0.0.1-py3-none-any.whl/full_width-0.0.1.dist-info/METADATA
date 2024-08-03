@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: full-width
+Version: 0.0.1
+Summary: ASCII [A-Za-z] to full-width character converter
+Project-URL: Homepage, https://github.com/d3987ef8/full-width
+Project-URL: Issues, https://github.com/d3987ef8/full-width/issues
+Author-email: Jack Murray <contact@jackmurray.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# full-width
+
+This is a Python package that provides a CLI script `full-width`
+
+It reads from stdin and converts [A-Za-z] ASCII characters to full-width characters.
+
+The result is printed to stdout.
+
+## Installation
+
+    pip install full-width
