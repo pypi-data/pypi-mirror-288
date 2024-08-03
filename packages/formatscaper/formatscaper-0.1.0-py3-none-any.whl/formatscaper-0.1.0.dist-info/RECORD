@@ -1,0 +1,12 @@
+formatscaper/__init__.py,sha256=XpinQAjtd-c2pol3p3B_SVORJAqNsyGBLBCExUDcoRE,189
+formatscaper/models.py,sha256=Ge-BjU0SnNx0jAlN4w99tbMOhJfbVuwEUT83tg4ceNg,3762
+formatscaper/utils.py,sha256=KK8dbXois0Sbya64_0M0UKw9zMCU9ZP10X14Cvd1LTE,5008
+formatscaper/cli/__init__.py,sha256=I_hWmMOAt7-3SvwRYhYKgIfACdmXQib1FKilq3nIOYU,195
+formatscaper/cli/formatscaper.py,sha256=wqfcv8U04u_2QTfbA9Lcizpz-hOD1hSCyEvIHrrhGqM,9972
+formatscaper/cli/resultman.py,sha256=tELWJ3sLmqi7ZcWn8u5hxfBfqeSqb3iZ-rOp5E8onfg,8834
+formatscaper-0.1.0.dist-info/LICENSE,sha256=3fZgjSarIuLSNVv6ZZFZHAfzOx9VFoFR0-HA5uLm9k8,1065
+formatscaper-0.1.0.dist-info/METADATA,sha256=z-75AeLcNpY3Uzpwtg7kvpbIU3P-qOINaSHRh4OWN-E,10669
+formatscaper-0.1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+formatscaper-0.1.0.dist-info/entry_points.txt,sha256=OM8SL3I1aJ6Ts8CLkM71TIVE510OELm99O-l4EeIbeA,118
+formatscaper-0.1.0.dist-info/top_level.txt,sha256=x7NjKbVKsFclLG24U97eaJ9pp-eJbKsEwb8tKzpGPCY,13
+formatscaper-0.1.0.dist-info/RECORD,,

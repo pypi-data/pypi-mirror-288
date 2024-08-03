@@ -1,0 +1,3 @@
+[console_scripts]
+formatscaper = formatscaper.cli:run_formatscaper_cli
+resultman = formatscaper.cli:run_resultman_cli
