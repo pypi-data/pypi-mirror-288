@@ -1,0 +1,2 @@
+[console_scripts]
+bwu = bwu_cli.__init__:cli
