@@ -1,0 +1,11 @@
+wfctl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wfctl/help.py,sha256=o-sSMYn7CmlBW75JR3oR3k8nCtFdBGEVGTLMWdjnqUI,3295
+wfctl/ipc.py,sha256=BTIM0kH63GIRpqZO4ZW7ubdTBeJM9pDbgpO12L4yqPE,2933
+wfctl/main.py,sha256=s0ozzIQcmvfLn_8xcwN2iPIPYykD0nJQjiWjIje4IxU,294
+wfctl/utils.py,sha256=ct5gsqzYLn-5Q4lUDSMcKXe8imR4j_TrIn73DObZ8_8,473
+wfctl-0.8.0.dist-info/LICENSE,sha256=45xRVvBK6qCx7OLx1uhhRh_l2c0E56Fx1AWjY-jWkpE,1064
+wfctl-0.8.0.dist-info/METADATA,sha256=2xIGXqa_hch2WRmO5bKxvO4_7UNoAiO8y1gj_s2IGtI,1761
+wfctl-0.8.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+wfctl-0.8.0.dist-info/entry_points.txt,sha256=7HX1JhAAn5_Pm-uWQbUCIwem-BhVWxN36UE0HZZKs6g,42
+wfctl-0.8.0.dist-info/top_level.txt,sha256=et9z9-Imu24ulDPNiCcpqH9mhKvEFscsheyc0rkKlUw,6
+wfctl-0.8.0.dist-info/RECORD,,
