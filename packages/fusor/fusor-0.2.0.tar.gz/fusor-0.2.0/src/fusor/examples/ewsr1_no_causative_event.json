@@ -1,0 +1,23 @@
+{
+  "type": "AssayedFusion",
+  "structure": [
+    {
+      "type": "GeneElement",
+      "gene": {
+        "type": "Gene",
+        "label": "EWSR1",
+        "id": "hgnc:3508"
+      }
+    },
+    {
+      "type": "UnknownGeneElement"
+    }
+  ],
+  "assay": {
+    "type": "Assay",
+    "methodUri": "pmid:33576979",
+    "assayId": "obi:OBI_0003094",
+    "assayName": "fluorescence in-situ hybridization assay",
+    "fusionDetection": "inferred"
+  }
+}
