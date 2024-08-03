@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: llmcompiler
+Version: 1.0.1
+Summary: LLMCompiler
+Home-page: https://github.com/crazyyanchao/llmcompiler
+Author: Yc-Ma
+Author-email: yanchaoma@foxmail.com
+License: UNKNOWN
+Keywords: LLMCompiler,Agent,Natural Language Processing,LLM,Machine Learning,AI,Compiler
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# LLMCompiler
+
+&emsp;LLMCompiler is an Agent Architecture designed to speed up the execution of agent tasks by executing them quickly
+in the DAG. It also saves the cost of redundant token use by reducing the number of calls to the LLM. The realization
+inspiration comes from An LLM Compiler for Parallel Function Calling.
+
+
