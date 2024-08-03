@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: kandinskylib
+Version: 0.1.0
+Summary: A library for interacting with Kandinsky AI image generation API
+Home-page: https://github.com/Read1dno/kandinskylib
+Author: Read1dno
+Author-email: ef8ser@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+License-File: LICENSE.lic
+Requires-Dist: requests
+Requires-Dist: Pillow
+
