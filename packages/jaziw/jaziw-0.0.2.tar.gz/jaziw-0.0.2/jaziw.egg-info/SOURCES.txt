@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+jaziw/__init__.py
+jaziw/normalize.py
+jaziw/sentenize.py
+jaziw/substring.py
+jaziw/tokenize.py
+jaziw.egg-info/PKG-INFO
+jaziw.egg-info/SOURCES.txt
+jaziw.egg-info/dependency_links.txt
+jaziw.egg-info/top_level.txt
