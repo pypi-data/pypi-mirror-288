@@ -1,0 +1,9 @@
+flask_sqlalchemy_qs/__init__.py,sha256=7M3B5i1HotkuENmGivlYyWCdt1cRKM_SlSl5oHDe5xw,118
+flask_sqlalchemy_qs/qs_parser/main.py,sha256=3wrQnuXLRPRzsF1dJnbau5GNs-y4EF6U4upwhoIYjgY,3752
+flask_sqlalchemy_qs/query/constants.py,sha256=ZXK2YNoIlte6lwbNd0kwitXQ6hvMuRNtwNMWp4p-1Qs,1356
+flask_sqlalchemy_qs/query/model.py,sha256=dXFx3aYpgoRkGKIT3ongcrZ-ZiMnsOxJHehNATnmB40,11565
+flask_sqlalchemy_qs-1.1.5.dist-info/LICENSE,sha256=ft2ISBntCSFjsgXZJyb2tUmeZJkasY7gPSgO9RHCcUM,1083
+flask_sqlalchemy_qs-1.1.5.dist-info/METADATA,sha256=-KCWzboSq9tnIX2vua88PSEU19gqG7UqMagJ0UZz9Rk,6339
+flask_sqlalchemy_qs-1.1.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+flask_sqlalchemy_qs-1.1.5.dist-info/top_level.txt,sha256=CoLOrTsbzQPB2fkNa3bfEYDUADFpqH3SwQYAfmZED6Y,20
+flask_sqlalchemy_qs-1.1.5.dist-info/RECORD,,
