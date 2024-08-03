@@ -1,0 +1,17 @@
+jlab_homepage/__init__.py,sha256=REJQFH4608rGMU8312yCuvCUwNn5HDXAENVBhLq6ZuM,1104
+jlab_homepage/_version.py,sha256=Uyc4YmZWVdT13MJj9qVV8JUb5V6Th2tm56_Z2ZsIOhk,172
+jlab_homepage/handlers.py,sha256=5wqYX0Xhj1AxklgY-y9A6dzcsGz6Hzs2EZj49kpqUAA,2224
+jlab_homepage/tests/__init__.py,sha256=N1VLOHlz4ESIfNHj1haYaKMeQEt_d_1Sy9PC7K77_es,43
+jlab_homepage/tests/test_handlers.py,sha256=D8-hXtfjo1M3n6geOA8jnWNU6296wymnldBL7QcBBUw,301
+jlab_homepage-0.1.12.data/data/etc/jupyter/jupyter_server_config.d/jlab_homepage.json,sha256=OatOHWDhz-Hj2JUO4j80O7dvaW4VR-hK2Q__J-t_K_I,88
+jlab_homepage-0.1.12.data/data/share/jupyter/labextensions/jlab_homepage/package.json,sha256=b_gieAN9L4ayoFCMSC8j4PGsUMnYGfPwP1JgcZcrMt4,6058
+jlab_homepage-0.1.12.data/data/share/jupyter/labextensions/jlab_homepage/static/689.d2e25739aa3019261ee1.js,sha256=0uJXOaowGSYe4elcTwQJiXi1y2UHkOpY5QpFP6RpSxE,5563
+jlab_homepage-0.1.12.data/data/share/jupyter/labextensions/jlab_homepage/static/728.5104f4f0a064c3478043.js,sha256=UQT08KBkw0eAQ221Ghfu1Cc1qXTsl3ZfB9zStokrdgQ,7360
+jlab_homepage-0.1.12.data/data/share/jupyter/labextensions/jlab_homepage/static/remoteEntry.a86fe399701890d6d318.js,sha256=qG_jmXAYkNbTGPx4bejhzH4dLhD-JAXInYxTzZi0Arw,6713
+jlab_homepage-0.1.12.data/data/share/jupyter/labextensions/jlab_homepage/static/style.js,sha256=N0vovDYxCLz4aPWO9DZr9b5tpx3UQGkVHIYHpAH4BjA,156
+jlab_homepage-0.1.12.data/data/share/jupyter/labextensions/jlab_homepage/static/third-party-licenses.json,sha256=W6N2sSD7tQihMqQk64F9xMd1Flfr2KO97esAiHUOYdM,2453
+jlab_homepage-0.1.12.data/data/share/jupyter/labextensions/jlab_homepage/install.json,sha256=82HEWzr_cRMI5R5PyHickp44eyprbDQ7FRvEMVczq84,187
+jlab_homepage-0.1.12.dist-info/METADATA,sha256=X9xLhqPlbNbsnuHYt8663KK89ZjZ8uTX1AHIjYH__Kw,7447
+jlab_homepage-0.1.12.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+jlab_homepage-0.1.12.dist-info/licenses/LICENSE,sha256=kQg4wJG56De2J2AZyvxmdAonpQFDp5z5ubcm0zpw21k,1518
+jlab_homepage-0.1.12.dist-info/RECORD,,
