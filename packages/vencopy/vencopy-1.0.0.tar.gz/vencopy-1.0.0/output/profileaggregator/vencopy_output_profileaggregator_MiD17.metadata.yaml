@@ -1,0 +1,78 @@
+name: vencopy_output_profileaggregator_MiD17.csv
+title: Discetised timeseries with venco.py output profiles at fleet level
+id: https://gitlab.com/dlr-ve/esy/vencopy/vencopy
+description: Time discrete profile at fleet level.
+language:
+- en-GB
+subject:
+- name: energy
+  path: https://openenergy-platform.org/ontology/oeo/OEO_00000150
+- name: demand
+  path: https://openenergy-platform.org/ontology/oeo/placeholder
+- name: mobility
+  path: https://openenergy-platform.org/ontology/oeo/placeholder
+- name: battery electric vehicle
+  path: https://openenergy-platform.org/ontology/oeo/OEO_00010024
+context:
+  homepage: _project_homepage_
+  documentation: https://gitlab.com/dlr-ve/esy/vencopy/vencopy
+  sourceCode: https://gitlab.com/dlr-ve/esy/vencopy/vencopy
+  contact: vencopy@dlr.de
+sources:
+- title: MiD17
+  description: Mobilität in Deutschland (MiD) 2017
+  path: https://daten.clearingstelle-verkehr.de/279/
+  licenses:
+  - path: https://daten.clearingstelle-verkehr.de/279/
+    attribution: Bundesministerium für Verkehr und digitale Infrastruktur
+    instruction: Für die Nutzung der Daten ist die Unterzeichnung eines Nutzungsvertrags
+      notwendig, der Ihnen nach einer Prüfung Ihrer Bestellung durch das BMDV von
+      der Clearingstelle Verkehr zur Verfügung gestellt wird.
+licenses:
+- name: CC BY 4.0
+  title: Attribution 4.0 International
+  path: https://creativecommons.org/licenses/by/4.0
+  attribution: Copyright (c) 2024 German Aerospace Center (DLR)
+  instruction: You are free to copy and redistribute the material in any medium or
+    format. You are free to remix, transform, and build upon the material for any
+    purpose, even commercially.
+resources:
+- name: vencopy_output_profileaggregator_MiD17
+  path: vencopy_output_profileaggregator_MiD17.csv
+  format: csv
+  encoding: utf-8
+  schema:
+    fields:
+    - name: uncontrolled_charging
+      type: float
+      description: Uncontrolled charging profile in kWh, representing a demand for
+        an as soon as possible charging strategy.
+      isAbout:
+      - name: electricity demand
+        path: http://openenergy-platform.org/ontology/oeo/OEO_00320062/
+    - name: charging_power
+      type: float
+      description: Available power for charging in kW.
+      isAbout:
+      - name: charging
+        path: http://openenergy-platform.org/ontology/oeo/OEO_00320064
+      - name: power
+        path: http://openenergy-platform.org/ontology/oeo/OEO_00000333
+    - name: drain
+      type: float
+      description: Electricity drain from the vehicle battery in kWh.
+      isAbout:
+      - name: electricity demand
+        path: http://openenergy-platform.org/ontology/oeo/OEO_00320062/
+    - name: max_battery_level
+      type: float
+      description: Maximum battery level of the vehicle battery in kWh.
+      isAbout:
+      - name: energy storage content
+        path: http://openenergy-platform.org/ontology/oeo/OEO_00330012/
+    - name: min_battery_level
+      type: float
+      description: Minimum battery level of the vehicle battery in kWh.
+      isAbout:
+      - name: energy storage content
+        path: http://openenergy-platform.org/ontology/oeo/OEO_00330012/
