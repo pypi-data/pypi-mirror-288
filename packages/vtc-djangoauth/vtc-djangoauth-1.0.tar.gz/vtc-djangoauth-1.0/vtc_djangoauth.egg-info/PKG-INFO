@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: vtc-djangoauth
+Version: 1.0
+Summary: A Django app for authentication with jwt token
+Home-page: https://github.com/Thamaraiselvan5960/vtc_djangoauth
+Author: Thamarai selvan
+Author-email: Thamarai.pmp@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP
