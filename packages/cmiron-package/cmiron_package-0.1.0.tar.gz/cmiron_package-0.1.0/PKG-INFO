@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: cmiron-package
+Version: 0.1.0
+Summary: python-repo-practice
+Home-page: https://github.com/cmiron/python-study
+Author: cmiron
+Author-email: cmiron@naver.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mypackage
+This is a simple example package.
+## Installation
+You can install the package using pip:
+```bash
+pip install mypackage
+```
+
+## Usage
+from mypackage.mymodule import hello_world
+print(hello_world())
