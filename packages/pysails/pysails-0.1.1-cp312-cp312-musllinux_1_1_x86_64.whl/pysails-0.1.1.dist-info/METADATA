@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pysails
+Version: 0.1.1
+Summary: Sails: Software for the Automated Identification of Linked Sugars
+Author-email: Jordan Dialpuri <jordan.dialpuri@york.ac.uk>
+Project-URL: Homepage, https://github.com/Dialpuri/Sails
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm
+Requires-Dist: gemmi
+Requires-Dist: numpy <2.0.0
+Requires-Dist: typing-extensions
+Requires-Dist: graphviz
+
+# Sails - Software for the Automated Identification of Linked Sugars
+
+## Overview
+
+Sails is a software package for automatic addition of glycans to protein models obtained through X-ray crystallography.
+
+## Authors
+
+Jordan Dialpuri - York Structural Biology Laboratory, University of York
+
+
+## Documentation
+[Link to Documentation](https://dialpuri.github.io/Sails/sails.html)
