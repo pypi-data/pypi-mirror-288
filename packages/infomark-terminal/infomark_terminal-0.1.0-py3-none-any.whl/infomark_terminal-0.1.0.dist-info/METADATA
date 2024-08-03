@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: infomark_terminal
+Version: 0.1.0
+Summary: Infomark Terminal - An advanced trading and data analytics platform
+Home-page: https://github.com/yourusername/infomark_terminal
+Author: CK127
+Author-email: kcelestinomaria127@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: plotly
+Requires-Dist: dash
+Requires-Dist: streamlit
+Requires-Dist: scikit-learn
+Requires-Dist: sqlalchemy
+Requires-Dist: sqlite
+Requires-Dist: pytest
+Requires-Dist: twine
+Requires-Dist: prompt-toolkit
+Requires-Dist: beautifulsoup4
+Requires-Dist: lxml
+Requires-Dist: jupyter
+Requires-Dist: black
+Requires-Dist: isort
+Requires-Dist: pytest-cov
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+
