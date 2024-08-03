@@ -1,0 +1,19 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "detecteff-python"
+version = "0.1"
+description = "Find and delete duplicate files!"
+dependencies = ["argpi"]
+
+[tool.maturin]
+python-source = "pysrc"
+module-name = "detecteff.rust"
+
+[project.scripts]
+detectf = "detecteff:core.run"
+
+[project.urls]
+GitHub = "https://github.com/d33pster/detecteff-python"
