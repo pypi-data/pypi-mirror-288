@@ -1,0 +1,240 @@
+Metadata-Version: 2.1
+Name: samexporter
+Version: 0.4.0
+Summary: Exporting Segment Anything models ONNX format
+Author-email: Viet Anh Nguyen <vietanh.dev@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Viet Anh Nguyen
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/vietanhdev/samexporter
+Project-URL: Bug Tracker, https://github.com/vietanhdev/samexporter/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: onnx ==1.16.2
+Requires-Dist: onnxruntime ==1.16.3
+Requires-Dist: opencv-python ==4.7.0.72
+Requires-Dist: segment-anything ==1.0
+Requires-Dist: torch ==2.4.0
+Requires-Dist: torchvision
+Requires-Dist: timm ==0.9.2
+Requires-Dist: onnxsim ==0.4.36
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+
+# SAM Exporter - Now with Segment Anything 2!~~
+
+Exporting [Segment Anything](https://github.com/facebookresearch/segment-anything), [MobileSAM](https://github.com/ChaoningZhang/MobileSAM), and [Segment Anything 2](https://github.com/facebookresearch/segment-anything-2) into ONNX format for easy deployment.
+
+[![PyPI version](https://badge.fury.io/py/samexporter.svg)](https://badge.fury.io/py/samexporter)
+[![Downloads](https://pepy.tech/badge/samexporter)](https://pepy.tech/project/samexporter)
+[![Downloads](https://pepy.tech/badge/samexporter/month)](https://pepy.tech/project/samexporter)
+[![Downloads](https://pepy.tech/badge/samexporter/week)](https://pepy.tech/project/samexporter)
+
+**Supported models:**
+
+- Segment Anything 2 (Tiny, Small, Base, Large) - **Note:** Experimental. Only image input is supported for now.
+- Segment Anything (SAM ViT-B, SAM ViT-L, SAM ViT-H)
+- MobileSAM
+
+## Installation
+
+Requirements:
+
+- Python 3.10+
+
+From PyPi:
+
+```bash
+pip install torch==2.4.0 torchvision --index-url https://download.pytorch.org/whl/cpu
+pip install samexporter
+```
+
+From source:
+
+```bash
+pip install torch==2.4.0 torchvision --index-url https://download.pytorch.org/whl/cpu
+git clone https://github.com/vietanhdev/samexporter
+cd samexporter
+pip install -e .
+```
+
+## Convert Segment Anything, MobileSAM to ONNX
+
+- Download Segment Anything from [https://github.com/facebookresearch/segment-anything](https://github.com/facebookresearch/segment-anything).
+- Download MobileSAM from [https://github.com/ChaoningZhang/MobileSAM](https://github.com/ChaoningZhang/MobileSAM).
+
+```text
+original_models
+   + sam_vit_b_01ec64.pth
+   + sam_vit_h_4b8939.pth
+   + sam_vit_l_0b3195.pth
+   + mobile_sam.pt
+   ...
+```
+
+- Convert encoder SAM-H to ONNX format:
+
+```bash
+python -m samexporter.export_encoder --checkpoint original_models/sam_vit_h_4b8939.pth \
+    --output output_models/sam_vit_h_4b8939.encoder.onnx \
+    --model-type vit_h \
+    --quantize-out output_models/sam_vit_h_4b8939.encoder.quant.onnx \
+    --use-preprocess
+```
+
+- Convert decoder SAM-H to ONNX format:
+
+```bash
+python -m samexporter.export_decoder --checkpoint original_models/sam_vit_h_4b8939.pth \
+    --output output_models/sam_vit_h_4b8939.decoder.onnx \
+    --model-type vit_h \
+    --quantize-out output_models/sam_vit_h_4b8939.decoder.quant.onnx \
+    --return-single-mask
+```
+
+Remove `--return-single-mask` if you want to return multiple masks.
+
+- Inference using the exported ONNX model:
+
+```bash
+python -m samexporter.inference \
+    --encoder_model output_models/sam_vit_h_4b8939.encoder.onnx \
+    --decoder_model output_models/sam_vit_h_4b8939.decoder.onnx \
+    --image images/truck.jpg \
+    --prompt images/truck_prompt.json \
+    --output output_images/truck.png \
+    --show
+```
+
+![truck](https://raw.githubusercontent.com/vietanhdev/samexporter/main/sample_outputs/truck.png)
+
+```bash
+python -m samexporter.inference \
+    --encoder_model output_models/sam_vit_h_4b8939.encoder.onnx \
+    --decoder_model output_models/sam_vit_h_4b8939.decoder.onnx \
+    --image images/plants.png \
+    --prompt images/plants_prompt1.json \
+    --output output_images/plants_01.png \
+    --show
+```
+
+![plants_01](https://raw.githubusercontent.com/vietanhdev/samexporter/main/sample_outputs/plants_01.png)
+
+```bash
+python -m samexporter.inference \
+    --encoder_model output_models/sam_vit_h_4b8939.encoder.onnx \
+    --decoder_model output_models/sam_vit_h_4b8939.decoder.onnx \
+    --image images/plants.png \
+    --prompt images/plants_prompt2.json \
+    --output output_images/plants_02.png \
+    --show
+```
+
+![plants_02](https://raw.githubusercontent.com/vietanhdev/samexporter/main/sample_outputs/plants_02.png)
+
+
+**Short options:**
+
+- Convert all Segment Anything models to ONNX format:
+
+```bash
+bash convert_all_meta_sam.sh
+```
+
+- Convert MobileSAM to ONNX format:
+
+```bash
+bash convert_mobile_sam.sh
+```
+
+## Convert Segment Anything 2 to ONNX
+
+- Download Segment Anything 2 from [https://github.com/facebookresearch/segment-anything-2.git](https://github.com/facebookresearch/segment-anything-2.git). You can do it by:
+
+```bash
+cd original_models
+bash download_sam2.sh
+```
+
+The models will be downloaded to the `original_models` folder:
+
+```text
+original_models
+    + sam2_hiera_tiny.pt
+    + sam2_hiera_small.pt
+    + sam2_hiera_base_plus.pt
+    + sam2_hiera_large.pt
+   ...
+```
+
+- Install dependencies:
+
+```bash
+pip install git+https://github.com/facebookresearch/segment-anything-2.git
+```
+
+- Convert all Segment Anything models to ONNX format:
+
+```bash
+bash convert_all_meta_sam2.sh
+```
+
+- Inference using the exported ONNX model (only image input is supported for now):
+
+```bash
+python -m samexporter.inference \
+    --encoder_model output_models/sam2_hiera_tiny.encoder.onnx \
+    --decoder_model output_models/sam2_hiera_tiny.decoder.onnx \
+    --image images/plants.png \
+    --prompt images/truck_prompt_2.json \
+    --output output_images/plants_prompt_2_sam2.png \
+    --sam_variant sam2 \
+    --show
+```
+
+![truck_sam2](sample_outputs/sam2_truck.png)
+
+## Tips
+
+- Use "quantized" models for faster inference and smaller model size. However, the accuracy may be lower than the original models.
+- SAM-B is the most lightweight model, but it has the lowest accuracy. SAM-H is the most accurate model, but it has the largest model size. SAM-M is a good trade-off between accuracy and model size.
+
+## AnyLabeling
+
+This package was originally developed for auto labeling feature in [AnyLabeling](https://github.com/vietanhdev/anylabeling) project. However, you can use it for other purposes.
+
+[![AnyLabeling](https://user-images.githubusercontent.com/18329471/236625792-07f01838-3f69-48b0-a12e-30bad27bd921.gif)](https://youtu.be/5qVJiYNX5Kk)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## References
+
+- ONNX-SAM2-Segment-Anything: [https://github.com/ibaiGorordo/ONNX-SAM2-Segment-Anything](https://github.com/ibaiGorordo/ONNX-SAM2-Segment-Anything).
