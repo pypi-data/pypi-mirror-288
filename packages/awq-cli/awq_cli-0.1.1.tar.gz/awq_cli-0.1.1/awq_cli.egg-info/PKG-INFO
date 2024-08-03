@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: awq-cli
+Version: 0.1.1
+Summary: Command-line interface for AutoAWQ
+Home-page: https://github.com/peakji/awq-cli
+Author: Yichao 'Peak' Ji
+Author-email: pj@ieee.org
+Keywords: autoawq,awq,llm,quantization
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: GPU
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.8
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 12
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 12 :: 12.1
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9, <4
+License-File: LICENSE
+Requires-Dist: autoawq
+Requires-Dist: transformers
+
+Command-line interface for AutoAWQ
