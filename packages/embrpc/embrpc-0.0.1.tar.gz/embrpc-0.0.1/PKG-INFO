@@ -1,0 +1,37 @@
+Metadata-Version: 2.3
+Name: embrpc
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/mbodiai/embrpc#readme
+Project-URL: Issues, https://github.com/mbodiai/embrpc/issues
+Project-URL: Source, https://github.com/mbodiai/embrpc
+Author: mbodiai
+License-Expression: Apache-2.0
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: click==8.1.7
+Requires-Dist: paramiko==3.4.0
+Requires-Dist: pydantic
+Requires-Dist: scp
+Description-Content-Type: text/markdown
+
+# rpc
+
+
+
+## Installation
+
+```bash
+pip install rpc
+```
+
+## Usage
+
+```python
+from embrpc.scpcom import SCPServer, SCPClient
