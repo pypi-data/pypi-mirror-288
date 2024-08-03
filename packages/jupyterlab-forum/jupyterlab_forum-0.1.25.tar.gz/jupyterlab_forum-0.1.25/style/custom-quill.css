@@ -1,0 +1,26 @@
+.quill-editor {
+  height: 400px; /* Adjust height as needed */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ql-toolbar {
+  border-radius: 5px 5px 0 0;
+}
+
+.ql-container {
+  border-radius: 0 0 5px 5px;
+}
+
+/* Customize Quill heading sizes */
+.ql-editor h1 {
+  font-size: 1.25em; /* Adjust as needed */
+}
+
+.ql-editor h2 {
+  font-size: 1.18em; /* Adjust as needed */
+}
+
+.ql-editor h3 {
+  font-size: 1.1em; /* Adjust as needed */
+}
