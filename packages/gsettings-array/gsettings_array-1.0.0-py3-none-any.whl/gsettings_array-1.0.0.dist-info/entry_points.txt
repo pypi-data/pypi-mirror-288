@@ -1,0 +1,3 @@
+[console_scripts]
+gsettings-array=gsettings_array:main
+
