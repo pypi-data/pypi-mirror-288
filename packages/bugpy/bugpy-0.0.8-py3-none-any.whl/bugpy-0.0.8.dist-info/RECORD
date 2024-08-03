@@ -1,0 +1,10 @@
+bugpy/__init__.py,sha256=KOJuijUpdWKcGAugGkIEk-MU1mZmbu0WyhFMvqc8PRw,168
+bugpy/db_manager.py,sha256=tnbUlUoQxFjX1jP9MJ1AvxF1LOdlKonx0CQKEStnghI,3751
+bugpy/utils/__init__.py,sha256=dF2r_kkqX9_SS58V0jGdjKARAooradzkHvloo_VhF-0,98
+bugpy/utils/sqlformatter.py,sha256=Tf-V0T_J0wVkfJ5y4ki2Nh20o-QPIIJDE3qvJ1iGrMQ,2332
+bugpy/utils/tools.py,sha256=n2LXXcxVIxZpPJodXF0E1EkFrk5YKgs3NnuYLzCzgf4,4633
+bugpy-0.0.8.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+bugpy-0.0.8.dist-info/METADATA,sha256=wy3Ge23Yy9FXQDpUeZD-oibNJf_tCd8QhbwaUkktWRY,843
+bugpy-0.0.8.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+bugpy-0.0.8.dist-info/top_level.txt,sha256=8kXixZaiApsqETWXeoH9TG7j12tfpSJGO0_y-AECkuo,6
+bugpy-0.0.8.dist-info/RECORD,,
