@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+epsilon_atlas_client.egg-info/PKG-INFO
+epsilon_atlas_client.egg-info/SOURCES.txt
+epsilon_atlas_client.egg-info/dependency_links.txt
+epsilon_atlas_client.egg-info/entry_points.txt
+epsilon_atlas_client.egg-info/requires.txt
+epsilon_atlas_client.egg-info/top_level.txt
