@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: web3-proxy
+Version: 0.0.1
+Summary: SOCKS5 & more proxy providers for web3py.
+License: Apache 2.0
+Author: BlackCatDevel0per
+Author-email: bcdev@mail.ru
+Requires-Python: >=3.8.1,<4.0
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Dist: aiohttp (>=3.10.0,<4.0.0)
+Requires-Dist: aiohttp-socks (>=0.9.0,<0.10.0)
+Requires-Dist: pysocks (>=1.7.1,<2.0.0)
+Requires-Dist: web3 (>=6.20.1,<7.0.0)
+Requires-Dist: websockets (>=12.0,<13.0)
+Project-URL: Documentation, https://github.com/BlackCatDevel0per/web3-proxy
+Project-URL: Homepage, https://github.com/BlackCatDevel0per/web3-proxy
+Project-URL: Repository, https://github.com/BlackCatDevel0per/web3-proxy
+Description-Content-Type: text/markdown
+
+## Usage:
+
+```python
+from __future__ import annotations
+
+import asyncio
+import sys
+from os import environ as os_env
+
+from python_socks import ProxyType
+from web3 import AsyncWeb3
+
+from web3_proxy import AdvAsyncHTTPProvider
+
+
+async def main() -> None:
+	# NOTE: You can parse using func from `aiohttp_socks` lib
+	addr = os_env['PADDR']
+	logpass = os_env['PLOGPASS']
+
+	phost, pport = addr.split(':')
+	puser, ppasswd = logpass.split(':')
+
+	print('Connecting to:', phost, pport, puser, ppasswd)
+	provider = AdvAsyncHTTPProvider(
+		endpoint_uri='https://eth.drpc.org',
+		proxy_conn_kwargs={
+			# 'proxy_type': ProxyType.HTTP,
+			'proxy_type': ProxyType.SOCKS5,
+			'host': phost,
+			'port': pport,
+			'username': puser,
+			'password': ppasswd,
+		},
+	)
+
+	w3 = AsyncWeb3(provider)
+
+	block_number = await w3.eth.get_block_number()
+	print(f'Block number is {block_number}')
+
+	# NOTE: You can have warning of unclosed session after execution end
+	#       due internal proxy connector..
+
+
+if __name__ == '__main__':
+	async_loop = asyncio.get_event_loop()
+	async_loop.run_until_complete(main())
+
+	print('Complete!')
+
+```
