@@ -1,0 +1,6 @@
+typer
+python-dotenv
+unstructured
+langchain-community
+langchain-openai
+langchain-ollama

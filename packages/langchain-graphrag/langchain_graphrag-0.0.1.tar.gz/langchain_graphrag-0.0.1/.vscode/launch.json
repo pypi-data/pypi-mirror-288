@@ -1,0 +1,44 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "sophisticated-app-indexing",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/examples/sophisticated-app/app/main.py",
+            "justMyCode": false,
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "args": [
+                "indexing/experiment=azure_openai_gpt4o"
+            ]
+        },
+        {
+            "name": "simple-app-indexing",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/examples/simple-app/app/main.py",
+            "justMyCode": false,
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "args": [
+                "indexer",
+                "--input-dir",
+                "${workspaceFolder}/examples/input-data",
+                "--output-dir",
+                "${workspaceFolder}/temp",
+                "--prompts-dir",
+                "${workspaceFolder}/examples/prompts",
+                "--cache-dir",
+                "${workspaceFolder}/tmp/cache"
+            ]
+        }
+    ]
+}
