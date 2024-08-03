@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/python-publish.yaml
+src/libmercury/__main__.py
+src/libmercury.egg-info/PKG-INFO
+src/libmercury.egg-info/SOURCES.txt
+src/libmercury.egg-info/dependency_links.txt
+src/libmercury.egg-info/requires.txt
+src/libmercury.egg-info/top_level.txt
