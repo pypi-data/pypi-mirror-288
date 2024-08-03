@@ -1,0 +1,5 @@
+rusty_polygon_geohasher-0.1.4.dist-info/METADATA,sha256=WQrBCfiQp3ezltAkCL1w39bCry30lNYNBOlwjftbRNk,1481
+rusty_polygon_geohasher-0.1.4.dist-info/WHEEL,sha256=nspbVsepfzEmApW1dzIM5QdXtEZOcndQFVNtMpkVdfM,91
+geohash_polygon/__init__.py,sha256=0OWx9P4T7NFoYsE515J0fY0k4O0inwDxmMVfjfXxcwE,143
+geohash_polygon/geohash_polygon.pyd,sha256=gxBW7O8n2gyagSHYWMmqve4bwBBJI_TZfeVqT3xLpf4,378880
+rusty_polygon_geohasher-0.1.4.dist-info/RECORD,,
