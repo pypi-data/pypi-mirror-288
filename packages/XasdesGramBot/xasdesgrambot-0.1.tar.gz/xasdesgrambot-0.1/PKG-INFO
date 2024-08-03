@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: XasdesGramBot
+Version: 0.1
+Summary: Эта библиотека созданная разработчиком Xasdes для создания телеграм ботов
+Author: Xasdes
+Author-email: xasdestest@gmail.com
+Requires-Python: >=3.6
+Requires-Dist: requests
