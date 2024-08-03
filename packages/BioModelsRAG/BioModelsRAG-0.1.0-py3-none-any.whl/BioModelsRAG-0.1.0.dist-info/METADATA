@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: BioModelsRAG
+Version: 0.1.0
+Summary: BioModelsRAG is a tool to analyze the wide repository of BioModels that are available on the internet and ask specific questions about the BioModels. It is created to be an assistant to system biology researchers.
+Home-page: https://github.com/TheBobBob/BioModelsRAG
+Author: Bhavyahshree Navaneetha Krishnan
+Author-email: bhavyak7@uw.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: ollama
+Requires-Dist: langchain
+Requires-Dist: chromadb
+Requires-Dist: sentence-transformers
+Requires-Dist: langchain-text-splitters
+
