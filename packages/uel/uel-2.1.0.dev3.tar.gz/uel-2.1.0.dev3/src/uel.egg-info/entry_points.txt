@@ -1,0 +1,2 @@
+[console_scripts]
+uel = uel.main:console_main
