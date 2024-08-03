@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/imports/__init__.py
+src/imports/analyze.py
+src/smart_pip/__init__.py
+src/smart_pip_magic.egg-info/PKG-INFO
+src/smart_pip_magic.egg-info/SOURCES.txt
+src/smart_pip_magic.egg-info/dependency_links.txt
+src/smart_pip_magic.egg-info/requires.txt
+src/smart_pip_magic.egg-info/top_level.txt
+tests/test_smart_pip.py
