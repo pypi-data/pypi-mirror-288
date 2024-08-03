@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["torch_xla2/*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "torch_xla2.__version__"}
+
+[project]
+name = "hantoshi"
+dynamic = ["version"]
+
+authors = [{name = "Foo Bar"}]
+license = {text = "Apache 2.0"}
+description = "A library to execute PyTorch on TPU"
+readme = "README.md"
+requires-python = ">=3.10"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: POSIX :: Linux",
+]
+dependencies = [
+    "absl-py",
+    "immutabledict",
+    "pytest",
+    "tensorflow-cpu",
+    # Developers should install `dev-requirements.txt` first
+    "torch>=2.3.0",
+]
+
+[project.optional-dependencies]
+cpu = ["jax[cpu]>=0.4.30", "jax[cpu]"]
+# Add libtpu index `-f https://storage.googleapis.com/libtpu-releases/index.html`
+tpu = ["jax[cpu]>=0.4.30", "jax[tpu]"]
+cuda = ["jax[cpu]>=0.4.30", "jax[cuda12]"]
+
+[project.urls]
+Homepage = "https://example.com"
+
+
+[tool.pytest.ini_options]
+addopts="-n auto"
+
+[tool.ruff]
+line-length = 80
+indent-width = 2

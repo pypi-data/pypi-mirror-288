@@ -1,0 +1,17 @@
+absl-py
+immutabledict
+pytest
+tensorflow-cpu
+torch>=2.3.0
+
+[cpu]
+jax[cpu]>=0.4.30
+jax[cpu]
+
+[cuda]
+jax[cpu]>=0.4.30
+jax[cuda12]
+
+[tpu]
+jax[cpu]>=0.4.30
+jax[tpu]
