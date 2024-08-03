@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: amarillo-enhancer
+Version: 2.0.0
+License-File: LICENSE
+Requires-Dist: amarillo
+Requires-Dist: amarillo-stops
+Requires-Dist: watchdog
+Requires-Dist: schedule ==1.2.1
+
