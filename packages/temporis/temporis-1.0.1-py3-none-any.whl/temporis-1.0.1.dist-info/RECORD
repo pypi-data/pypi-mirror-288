@@ -1,0 +1,10 @@
+temporis-1.0.1.dist-info/METADATA,sha256=3OvOoaYtVN70vAvDC2isMHGNbj0IDu6RlxtqOa3WVhM,3379
+temporis-1.0.1.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+temporis-1.0.1.dist-info/licenses/LICENSE,sha256=MR9zUd2DSgMtQqg5FOoh0k1cI0TH_BVX4R_YkoqsHaA,1089
+temporis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+temporis/format.py,sha256=JrQeAzDZXykKXNTikR57b0KPkVpAHt6jIZgSzRzzesE,1330
+temporis/references.py,sha256=wEmTjZ-sYolclCn8ntSLZaD0cSRpomIiw7POdUQ4Yq0,2218
+temporis/temporis.py,sha256=rYWmfabf4Nfzw9HCD2AKLEb-_jt46FIspZn25kkooPs,3387
+temporis/timezone.py,sha256=I6i_cAc4ko1bcJWtpQ00sLQZNLuSLe8gy1K6BM-kBbQ,515
+temporis/zones.py,sha256=-gGwBke-Mr59-FiejSfcZLPUCt3C7pMiHbebxuWcB6E,23850
+temporis-1.0.1.dist-info/RECORD,,
