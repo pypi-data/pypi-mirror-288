@@ -1,0 +1,11 @@
+record_and_play_pynput/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+record_and_play_pynput/cli.py,sha256=y3lOcq5YtS44AQILYwD9xNHGiX5xYklD8Kw1csAbI-w,1173
+record_and_play_pynput/config.py,sha256=jQHW9cNGAdqNRpitlb_-xUu3Q7AgfdkLF7jU_Ss4Y_w,1441
+record_and_play_pynput/play.py,sha256=tVmEsIuucnkrMDHT1wDVaJTeXSVEGo-MK1twwYYWqio,3837
+record_and_play_pynput/record.py,sha256=7kxI5SwVIhgty1l_CfXcJlB0SW-b_5mHGshoD4yJtvc,4302
+record_and_play_pynput/utils.py,sha256=QyJkXcQI0jP1SWSm1XwlTY4vvvELEfgYRPI96DW_o78,896
+record_and_play_pynput-0.1.1.dist-info/LICENSE,sha256=DxdYn9Vy6BJ-kJk3ghX4OyWWdKAfoYuxy7GRDH44Q8o,1075
+record_and_play_pynput-0.1.1.dist-info/METADATA,sha256=pMUyQW9gv-m3QnAJqeG9UbrYpptp6T_M7rrtSqpI5Zs,3078
+record_and_play_pynput-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+record_and_play_pynput-0.1.1.dist-info/entry_points.txt,sha256=5962bth0IKjSJl0Nx5UQF97h_f_Gj2ljt5SZd2WbBA4,67
+record_and_play_pynput-0.1.1.dist-info/RECORD,,
