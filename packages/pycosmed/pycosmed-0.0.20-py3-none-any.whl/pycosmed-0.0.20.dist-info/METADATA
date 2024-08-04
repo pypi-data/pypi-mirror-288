@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: pycosmed
+Version: 0.0.20
+Summary: an OCP interface to send commands and recieve using Omnia control protocol
+Home-page: https://github.com/ahmeds0s/ocp_package
+Author: Ahmed M. Hesham
+Author-email: ah.hesham3333@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Manufacturing
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Topic :: System :: Hardware :: Hardware Drivers
+Classifier: Topic :: System :: Monitoring
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Topic :: Text Processing :: Markup :: XML
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: xmltodict >=0.13.0
+Requires-Dist: dicttoxml2 >=2.1.0
+Provides-Extra: dev
+Requires-Dist: twine ; extra == 'dev'
+
+## About
+This is package is create to interface with COSMED Omnia *(created by Â©1996-2024 [COSMED](https://www.cosmed.com/en/) srl)* using OCP (Omnia control protocol) it Could be used to send any command from the OCP and get the result as a python dictionary by first creating the command as an xml send it and receive the response and process it to get a python dictionary to all easy Integration with python.
+
+
+## to get started with OCP using python follow the following steps:-
+
+1. normally install COSMED Omnia.
+
+2. run the regedit.reg file provided to configure the OCP.
+
+3. then normally start COMSED OMNIA.
+
+4. then you can use the python module ocp.py to send commands to the software.
+
+  
+  
+### steps to install and use the OCP package:
+1. clone the package.
+2. run setup.py using (pip install .) while on the same directory as the setup.py.
+
+
+
+
+```
+from OCP import OCP #import the OCP main class
+
+
+ocp = OCP()  # to creates an OCP object
+ocp.connect() # to initiate a TCP connection with COSMED Omnia
+# to login and notice COSMED omnia needs to be running and replace the username and password with  username and password created on COMED Omnia 
+ocp.login("username", "password")
+
+
+
+
+```
+
+
+you can then send any command and get the result in python as the OCP interface and you can find a
+method for every command on the OCP to send that command and receive a response
+
+
+
+
+
+
+
+
+
+
+

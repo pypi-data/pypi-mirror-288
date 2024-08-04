@@ -1,0 +1,11 @@
+OCP/__init__.py,sha256=sZb1F7o-2ZNuu4g5TttHRzxLeMmP4_n9gD0wZqCHm6Q,97
+OCP/src/Client.py,sha256=R73ueu0nHatz6syV2MlkjOcRZtl0tAXwwlJSyL34uEE,1921
+OCP/src/Commander.py,sha256=wfLi4e3aFXjyEJVHWgSU9myf8fDI6z3bpHyJZYUU_fs,11435
+OCP/src/OCP.py,sha256=NUqobPgP4rZMm6vUNauVnwcGXjjaVKbLW20h_PpnZts,1111
+OCP/src/__init__.py,sha256=rqUtJyMLicobcyhmr74TepjmUQAEmlazKT3vjV_n3aA,6
+OCP/src/__main__.py,sha256=qJN-jAO2Dhr_1kveveV7hLChDEPst3HDrnifJjXwaIk,37
+pycosmed-0.0.20.dist-info/LICENSE.txt,sha256=rwd2s9Gn_9TiWpB3huZs7QEinsYgtKpl4BdmuoK10po,1102
+pycosmed-0.0.20.dist-info/METADATA,sha256=ZPlnpZkAfKb6eI6I4I-IcEeUwAhJUtX8U5okt8z1NEs,2743
+pycosmed-0.0.20.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+pycosmed-0.0.20.dist-info/top_level.txt,sha256=KCIZGxm20nBUoGbVW_tjD4TTpPjKCWvN4SAw3Cwu7X8,4
+pycosmed-0.0.20.dist-info/RECORD,,
