@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/gai_sdk.egg-info/PKG-INFO
+src/gai_sdk.egg-info/SOURCES.txt
+src/gai_sdk.egg-info/dependency_links.txt
+src/gai_sdk.egg-info/entry_points.txt
+src/gai_sdk.egg-info/requires.txt
+src/gai_sdk.egg-info/top_level.txt
