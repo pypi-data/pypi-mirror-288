@@ -1,0 +1,62 @@
+name: Pipeline
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  check:
+    name: Check
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install Rye
+      uses: eifinger/setup-rye@v4
+    - name: Install Momba
+      run: |
+        rye sync
+    - name: Check Format
+      run: |
+        rye fmt --all --check
+    - name: Run Linter 
+      run: |
+        rye lint --all
+    - name: Check Types
+      run: |
+        rye run check-types
+  
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Rye
+        uses: eifinger/setup-rye@v4
+      - name: Install Momba
+        run: |
+          rye sync --all-features
+      - name: Run Tests
+        run: |
+          rye run run-tests
+
+  docs:
+    name: Docs
+    needs: [check, test]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Rye
+        uses: eifinger/setup-rye@v4
+      - name: Install Momba
+        run: |
+          rye sync --all-features
+      - name: Run Tests
+        run: |
+          rye run build-docs
+      - name: Create CNAME file
+        run: |
+          echo "momba.dev" > build/docs/CNAME
+      - name: Deploy documentation
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build/docs

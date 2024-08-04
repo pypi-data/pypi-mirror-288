@@ -1,0 +1,23 @@
+[workspace]
+resolver = "2"
+members = [
+    "engine",
+    "engine/crates/clock-zones",
+    "engine/crates/momba-explore",
+    "engine/crates/momba-sidekick",
+    "engine/crates/momba-diagnosis",
+    "engine/crates/pyo3-generic-wrap",
+    "engine/crates/pyo3-generic-wrap/example",
+    "engine/crates/robust-diagnosis",
+    "engine/crates/momba-simulator",
+    "engine/crates/vts-synth",
+]
+exclude = ["private"]
+
+[profile.release]
+opt-level = 3
+debug = false
+debug-assertions = false
+overflow-checks = false
+lto = true
+panic = 'abort'

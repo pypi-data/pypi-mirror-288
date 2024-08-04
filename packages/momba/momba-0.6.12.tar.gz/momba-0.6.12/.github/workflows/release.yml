@@ -1,0 +1,112 @@
+name: Release
+
+on:
+  create:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Rye
+        uses: eifinger/setup-rye@v4
+      - name: Install Momba
+        run: |
+          rye sync
+      - name: Check
+        run: |
+          rye fmt --all --check
+          rye lint --all
+          rye run check-types
+      - name: Build
+        run: |
+          rye build -p momba
+          rye build -p momba_engine --sdist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: packages
+          path: |
+            ./dist/*.tar.gz
+            ./dist/*.whl
+
+  build_engine_wheels_linux:
+    name: Build Linux Engine Wheel (${{ matrix.target }})
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        target: ["x86_64", "aarch64", "armv7"]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Wheel
+        uses: messense/maturin-action@v1
+        with:
+          target: ${{ matrix.target }}
+          manylinux: auto
+          args: --release --out dist -m engine/Cargo.toml
+      - uses: actions/upload-artifact@v4
+        with:
+          name: packages-linux-${{ matrix.target }}
+          path: ./dist/*.whl
+  
+  build_engine_wheels_windows:
+    name: Build Windows Engine Wheel (${{ matrix.target }})
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        target: ["x86_64"]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Wheel
+        uses: messense/maturin-action@v1
+        with:
+          target: ${{ matrix.target }}
+          args: --release --out dist -m engine/Cargo.toml
+      - uses: actions/upload-artifact@v4
+        with:
+          name: packages-windows-${{ matrix.target }}
+          path: ./dist/*.whl
+  
+  build_engine_wheels_macos:
+    name: Build MacOS Engine Wheel (${{ matrix.target }})
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        target: ["x86_64", "aarch64"]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Wheel
+        uses: messense/maturin-action@v1
+        with:
+          target: ${{ matrix.target }}
+          args: --release --out dist -m engine/Cargo.toml
+      - uses: actions/upload-artifact@v4
+        with:
+          name: packages-macos-${{ matrix.target }}
+          path: ./dist/*.whl
+
+  publish:
+    name: Publish to PyPI
+    runs-on: ubuntu-latest
+    environment: pypi
+    needs:
+    - build
+    - build_engine_wheels_linux
+    - build_engine_wheels_windows
+    - build_engine_wheels_macos
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: packages*
+          merge-multiple: true
+          path: dist
+      - name: Display Files
+        run: ls -l dist
+      - name: Publish Package to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        if: github.event_name == 'create' && startsWith(github.ref, 'refs/tags/v')
+        with:
+          user: __token__
+          verify_metadata: false
+          password: ${{ secrets.PYPI_API_TOKEN }}
