@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "klein-bottle"
+version = "0.0.1"
+authors = [
+  { name="Jack Murray", email="contact@jackmurray.com" },
+]
+description = "A simple HTTPS server and website framework designed to used by people who are new to coding."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "make-professional-website",
+]
+
+[project.urls]
+Homepage = "https://github.com/d3987ef8/klein-bottle"
+Issues = "https://github.com/d3987ef8/klein-bottle/issues"
