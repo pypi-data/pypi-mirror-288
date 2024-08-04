@@ -1,0 +1,12 @@
+whistling_duck/__init__.py,sha256=sj9wIm70R-WOoeYuJaJ_kGbbvofyK2yRnv_sNflJPCQ,23
+whistling_duck/main.py,sha256=D60mD5qV0I42AGYON8zbtqWaDAaLXNCAxfhc9GZwgGI,47
+whistlingduck/__init__.py,sha256=TBI5-c2Wu09kl7fqnGOK_CaZOGwP5QYcuQiqERgCHkw,123
+whistlingduck/main.py,sha256=D60mD5qV0I42AGYON8zbtqWaDAaLXNCAxfhc9GZwgGI,47
+whistlingduck/documentation/csv_into_table_doc.py,sha256=syH7DGVHRCWOhQdclaq8ISIIooSLa3rML3Zuokk3B34,941
+whistlingduck/read/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whistlingduck/read/csv_into_table.py,sha256=zhzby4NuIuDW5omAEZ5B8S6M2WCILJhlZc0PVHxSGQU,2682
+whistlingduck-0.2.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+whistlingduck-0.2.dist-info/METADATA,sha256=V9RO8ISSqfKoL78K2_YFNEFgVPOE6YgocPxOYTv5TBc,1828
+whistlingduck-0.2.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+whistlingduck-0.2.dist-info/top_level.txt,sha256=-Ee0krue7Oxp5MUif5Z0JRURqq65Lwq6Bu3r4HFASr0,14
+whistlingduck-0.2.dist-info/RECORD,,
