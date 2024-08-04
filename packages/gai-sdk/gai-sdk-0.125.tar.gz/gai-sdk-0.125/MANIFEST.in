@@ -1,0 +1,2 @@
+include VERSION
+requirements_dev.txt
