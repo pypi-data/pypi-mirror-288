@@ -1,0 +1,3 @@
+[console_scripts]
+hovercraft-api=hovercraft_api:cli
+
