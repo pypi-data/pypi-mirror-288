@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: yagni
+Version: 0.0.3
+Summary: You are probably gonna need it: a collection of useful Python utilities aggregated over many years of development.
+Requires-Python: >=3.8
+License-File: LICENSE

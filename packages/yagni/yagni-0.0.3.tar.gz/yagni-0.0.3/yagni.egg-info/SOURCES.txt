@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+yagni/__init__.py
+yagni.egg-info/PKG-INFO
+yagni.egg-info/SOURCES.txt
+yagni.egg-info/dependency_links.txt
+yagni.egg-info/top_level.txt
+yagni/pydantic/__init__.py
+yagni/pydantic/types.py
+yagni/time/__init__.py
