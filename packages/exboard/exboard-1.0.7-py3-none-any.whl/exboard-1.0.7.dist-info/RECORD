@@ -1,0 +1,8 @@
+exboard/__init__.py,sha256=nWsJNnrcDcJItmA0cuvKrHCAT_WJarMyvCmjOW6RvFI,1013
+exboard/jetson.py,sha256=AOm7hYnR7GNc3QUGAGNs38_6FBxA9VW_NEkxCTm-r0c,37172
+exboard/rk3390.py,sha256=6ajPLQYoSoHTVxyfXDH_oLQyu7BS1gTcujHpkI_Z3kc,8825
+exboard-1.0.7.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+exboard-1.0.7.dist-info/METADATA,sha256=W_MC5iRGeMqq_9uIDroYNNjeYyFZfZdyFs1-F7SYtiE,11185
+exboard-1.0.7.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+exboard-1.0.7.dist-info/top_level.txt,sha256=MDpQAt-ymrTTaLu1kHJdiFMYfBCkrjYp6nGX6LAIRCw,8
+exboard-1.0.7.dist-info/RECORD,,
