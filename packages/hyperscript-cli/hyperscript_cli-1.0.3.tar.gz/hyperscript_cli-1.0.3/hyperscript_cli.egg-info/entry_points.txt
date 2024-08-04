@@ -1,0 +1,2 @@
+[console_scripts]
+hyperscript = hyperscript_cli.__main__:main
