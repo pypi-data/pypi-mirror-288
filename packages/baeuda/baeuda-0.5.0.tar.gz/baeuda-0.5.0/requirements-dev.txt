@@ -1,0 +1,6 @@
+-r requirements.txt
+pytest
+flake8
+tox
+pipdeptree
+
