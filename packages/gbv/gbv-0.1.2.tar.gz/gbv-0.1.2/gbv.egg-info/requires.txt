@@ -1,0 +1,17 @@
+beautifulsoup4
+bs4
+certifi
+charset-normalizer
+colorama
+fileid
+idna
+loguru
+lxml
+requests
+rookiepy
+setuptools
+soupsieve
+tqdm
+urllib3
+uuid
+win32-setctime

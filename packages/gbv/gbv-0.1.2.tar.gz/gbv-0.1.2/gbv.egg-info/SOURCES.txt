@@ -1,0 +1,17 @@
+setup.py
+gbv/CookiesCache.py
+gbv/FavoriteCrawling.py
+gbv/GenerateHeaders.py
+gbv/GetBilibiliCookies.py
+gbv/GetBilibiliVideo.py
+gbv/bvid_aid.py
+gbv/gbv.py
+gbv/methods.py
+gbv/requirements.py
+gbv/terminal.py
+gbv.egg-info/PKG-INFO
+gbv.egg-info/SOURCES.txt
+gbv.egg-info/dependency_links.txt
+gbv.egg-info/entry_points.txt
+gbv.egg-info/requires.txt
+gbv.egg-info/top_level.txt
