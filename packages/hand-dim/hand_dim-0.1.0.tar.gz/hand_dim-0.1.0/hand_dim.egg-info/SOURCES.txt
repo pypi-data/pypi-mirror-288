@@ -1,0 +1,8 @@
+README.md
+setup.py
+hand_dim/__init__.py
+hand_dim/hand_dim.py
+hand_dim.egg-info/PKG-INFO
+hand_dim.egg-info/SOURCES.txt
+hand_dim.egg-info/dependency_links.txt
+hand_dim.egg-info/top_level.txt
