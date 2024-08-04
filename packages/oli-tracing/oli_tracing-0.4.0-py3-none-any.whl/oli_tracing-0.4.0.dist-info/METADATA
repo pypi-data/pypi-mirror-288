@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: oli-tracing
+Version: 0.4.0
+Summary: This is the tracing library for Oli.
+Author: Olimind Inc
+Author-email: hello@olimind.com
+Requires-Python: >=3.10,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: openinference-instrumentation (>=0.1.12,<1.0.0)
+Requires-Dist: openinference-instrumentation-dspy (>=0.1.10,<1.0.0)
+Requires-Dist: openinference-instrumentation-langchain (>=0.1.26,<1.0.0)
+Requires-Dist: openinference-instrumentation-openai (>=0.1.12,<1.0.0)
+Requires-Dist: opentelemetry-exporter-otlp (>=1.26.0,<2.0.0)
+Requires-Dist: opentelemetry-sdk (>=1.26.0,<2.0.0)
