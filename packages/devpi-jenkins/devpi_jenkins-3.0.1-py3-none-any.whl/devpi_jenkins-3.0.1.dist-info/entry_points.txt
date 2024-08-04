@@ -1,0 +1,2 @@
+[devpi_server]
+devpi-jenkins = devpi_jenkins.main
