@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+docker_image_sync/__init__.py
+docker_image_sync/image.py
+docker_image_sync/local.py
+docker_image_sync/remote.py
+docker_image_sync.egg-info/PKG-INFO
+docker_image_sync.egg-info/SOURCES.txt
+docker_image_sync.egg-info/dependency_links.txt
+docker_image_sync.egg-info/requires.txt
+docker_image_sync.egg-info/top_level.txt
