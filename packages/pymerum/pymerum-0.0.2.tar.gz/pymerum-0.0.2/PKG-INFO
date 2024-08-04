@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pymerum
+Version: 0.0.2
+Summary: Hor library
+License: GPLv3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/x-rst
+Requires-Dist: olconv
+Requires-Dist: deprecated
+Requires-Dist: importlib_metadata; python_version < "3.8"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-benchmark; extra == "test"
+Requires-Dist: pytest-pep8; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: pytest-profiling; extra == "test"
+Requires-Dist: coverage[toml]>=5.2; extra == "test"
+Requires-Dist: py-cpuinfo; extra == "test"
+Provides-Extra: docs
+Requires-Dist: sphinx>=1.8; extra == "docs"
+Requires-Dist: sphinx-intl; extra == "docs"
+Requires-Dist: sphinx-py3doc-enhanced-theme; extra == "docs"
+Requires-Dist: sphinx_rtd_theme; extra == "docs"
+Provides-Extra: check
+Requires-Dist: mypy==0.770; extra == "check"
+Requires-Dist: mypy_extensions==0.4.3; extra == "check"
+Requires-Dist: docutils; extra == "check"
+Requires-Dist: check-manifest; extra == "check"
+Requires-Dist: flake8; extra == "check"
+Requires-Dist: flake8-black; extra == "check"
+Requires-Dist: flake8-deprecated; extra == "check"
+Requires-Dist: readme-renderer; extra == "check"
+Requires-Dist: pygments; extra == "check"
+Requires-Dist: isort; extra == "check"
+Requires-Dist: twine; extra == "check"
