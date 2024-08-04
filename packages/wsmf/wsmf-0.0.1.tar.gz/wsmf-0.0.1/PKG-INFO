@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: wsmf
+Version: 0.0.1
+Summary: Package with encoder-based approaches to warm-starting Bayesian Hyperparameter Optimization.
+Author-email: Antoni Zajko <antoni.zajko.1@gmail.com>
+Project-URL: Homepage, https://github.com/azoz01/wsmf
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: dataset2vec>=1.0.0
+Requires-Dist: openml>=0.14.2
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: optuna>=3.6.1
+Requires-Dist: xgboost>=2.0.3
+Requires-Dist: scikit-learn>=1.4.2
+Requires-Dist: pytest>=8.2.1
+Requires-Dist: pymfe>=0.4.3
+Requires-Dist: seaborn>=0.13.2
+Requires-Dist: tensorboard>=2.17.0
+Requires-Dist: numpy>=1.26.4
+
+## Running code
+### Setup
+```
+pip install -r requirements.txt
+export PYTHONPATH=`pwd`
+```
+### Loading data
+```
+python bin/load_data.py
+```
+
+### Release
+```
+python -m build
+```
