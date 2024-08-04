@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: factorial_tb
+Version: 0.0.1
+Summary: A small factorial package
+Author-email: Thomas Brumbaugh <thomas.william.brumbaugh@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/factorial_tb
+Project-URL: Issues, https://github.com/pypa/factorial_tb/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Factorial Package
+
+This is a simple factorial package. 
+
+# Importing
+
+You can import the factorial package by:
+``` 
+import factorial_tb as factorial
+```
+
+# Using Factorial
+
+You can use the factorial command using:
+```
+factorial.factorial(3)
+```
+which will output 6.

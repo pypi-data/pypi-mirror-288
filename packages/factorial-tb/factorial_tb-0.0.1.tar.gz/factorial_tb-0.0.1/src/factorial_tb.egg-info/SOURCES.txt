@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/factorial_tb/__init__.py
+src/factorial_tb/factorial.py
+src/factorial_tb.egg-info/PKG-INFO
+src/factorial_tb.egg-info/SOURCES.txt
+src/factorial_tb.egg-info/dependency_links.txt
+src/factorial_tb.egg-info/top_level.txt
