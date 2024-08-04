@@ -1,0 +1,332 @@
+"""
+DirectAdmin API Client Module
+
+This module provides the `DirectAdminAPIClient` class, which offers an interface for interacting with the DirectAdmin API.
+The class extends the `BaseDirectAdminAPIClient` and provides methods to manage and query resellers, admins, users, and
+their associated configurations and statistics.
+
+Main Class:
+    - DirectAdminAPIClient: A client for performing operations with the DirectAdmin API.
+
+Usage:
+    This module should be used as a part of a Python application that needs to interface with the DirectAdmin API.
+    To use the `DirectAdminAPIClient`, create an instance of the class and call its methods to perform operations
+    such as querying for resellers, admins, users, packages, and more.
+
+    Example:
+        from directadmin_client import DirectAdminAPIClient
+
+        client = DirectAdminAPIClient(server="https://your.directadmin.server", ssl=True)
+        resellers = client.get_all_resellers
+        admin_stats = client.get_admin_stats
+        # Perform other operations as needed
+
+Note:
+    Ensure that you handle exceptions and errors properly when making API requests, and validate input parameters
+    where applicable.
+
+"""
+
+from typing import Dict, Any
+from commons import BaseDirectAdminAPIClient
+import endpoints
+
+
+class DirectAdminAPIClient(BaseDirectAdminAPIClient):
+    """
+        A client for interacting with the DirectAdmin API.
+
+        This class provides methods to interact with the DirectAdmin API endpoints,
+        allowing you to manage resellers, admins, users, and their related configurations
+        and statistics.
+
+        Properties:
+            get_all_resellers (list): Fetches a list of all resellers.
+            get_all_admins (list): Fetches a list of all admins.
+            get_all_users (list): Fetches a list of all users.
+            get_all_reseller_packages (list): Fetches a list of all reseller packages.
+            get_all_user_packages (list): Fetches a list of all user packages.
+            get_reseller_ip_list (list): Fetches a list of IP addresses associated with resellers.
+            get_admin_stats (Dict[str, Any]): Fetches statistics about the admin.
+
+        Methods:
+            get_reseller_package(package_name: str) -> Dict[str, Any]:
+                Fetches details about a specific reseller package.
+
+            get_user_package(package_name: str) -> Dict[str, Any]:
+                Fetches details about a specific user package.
+
+            get_user_config(username: str) -> Dict[str, Any]:
+                Fetches configuration details for a specific user.
+
+            get_user_usage(username: str) -> Dict[str, Any]:
+                Fetches usage statistics for a specific user.
+
+            get_user_domain(username: str) -> Dict[str, Any]:
+                Fetches domain information for a specific user.
+
+            create_admin_account(username: str, email: str, passwd: str, notify: str) -> Dict[str, Any]:
+                Creates a new admin account with the specified details.
+
+            create_reseller_account(username: str, email: str, passwd: str, notify: str,
+                                    ip: str, package: str, domain: str) -> Dict[str, Any]:
+                Creates a new reseller account with the specified details.
+
+            create_user_account(username: str, email: str, passwd: str, notify: str, ip: str,
+                                package: str, domain: str) -> Dict[str, Any]:
+                Creates a new user account with the specified details.
+        """
+
+    @property
+    def get_all_resellers(self) -> list:
+        """
+        Fetches a list of all resellers.
+
+        Returns:
+            list: A list of all resellers.
+        """
+        return self._make_request(endpoints.GET_ALL_RESELLERS)
+
+    @property
+    def get_all_admins(self) -> list:
+        """
+        Fetches a list of all admins.
+
+        Returns:
+            list: A list of all admins.
+        """
+        return self._make_request(endpoints.GET_ALL_ADMINS)
+
+    @property
+    def get_all_users(self) -> list:
+        """
+        Fetches a list of all admins.
+
+        Returns:
+            list: A list of all admins.
+        """
+        return self._make_request(endpoints.GET_ALL_USERS)
+
+    @property
+    def get_all_reseller_packages(self) -> list:
+        """
+        Fetches a list of all reseller packages.
+
+        Returns:
+            list: A list of all reseller packages.
+        """
+        return self._make_request(endpoints.GET_RESELLER_PACKAGES)
+
+    @property
+    def get_all_user_packages(self) -> list:
+        """
+        Fetches a list of all user packages.
+
+        Returns:
+            list: A list of all user packages.
+        """
+        return self._make_request(endpoints.GET_USER_PACKAGES)
+
+    @property
+    def get_reseller_ip_list(self) -> list:
+        """
+        Fetches a list of IP addresses associated with resellers.
+
+        Returns:
+            list: A list of IP addresses associated with resellers.
+        """
+        return self._make_request(endpoints.GET_RESELLER_IP_LIST)
+
+    @property
+    def get_admin_stats(self) -> Dict[str, Any]:
+        """
+        Fetches statistics about the admin.
+
+        Returns:
+            Dict[str, Any]: A dictionary containing admin statistics.
+        """
+        return self._make_request(endpoints.GET_ADMIN_STATS)
+
+    def get_reseller_package(self, package_name: str) -> Dict[str, Any]:
+        """
+        Fetches details about a specific reseller package.
+
+        Args:
+            package_name (str): The name of the reseller package.
+
+        Returns:
+            Dict[str, Any]: A dictionary containing details of the reseller package.
+        """
+        params = {"package": package_name}
+        return self._make_request(
+            endpoint=endpoints.GET_RESELLER_PACKAGES, params=params
+        )
+
+    def get_user_package(self, package_name: str) -> Dict[str, Any]:
+        """
+        Fetches details about a specific user package.
+
+        Args:
+            package_name (str): The name of the user package.
+
+        Returns:
+            Dict[str, Any]: A dictionary containing details of the user package.
+        """
+        params = {"package": package_name}
+        return self._make_request(endpoint=endpoints.GET_USER_PACKAGES, params=params)
+
+    def get_user_config(self, username: str) -> Dict[str, Any]:
+        """
+        Fetches configuration details for a specific user.
+
+        Args:
+            username (str): The username of the user.
+
+        Returns:
+            Dict[str, Any]: A dictionary containing configuration details of the user.
+        """
+        params = {"user": username}
+        return self._make_request(endpoint=endpoints.GET_USER_CONFIG, params=params)
+
+    def get_user_usage(self, username: str) -> Dict[str, Any]:
+        """
+        Fetches usage statistics for a specific user.
+
+        Args:
+            username (str): The username of the user.
+
+        Returns:
+            Dict[str, Any]: A dictionary containing usage statistics of the user.
+        """
+        params = {"user": username}
+        return self._make_request(endpoint=endpoints.GET_USER_USAGE, params=params)
+
+    def get_user_domain(self, username: str) -> Dict[str, Any]:
+        """
+        Fetches domain information for a specific user.
+
+        Args:
+            username (str): The username of the user.
+
+        Returns:
+            Dict[str, Any]: A dictionary containing domain information of the user.
+        """
+
+        params = {"user": username}
+        return self._make_request(endpoint=endpoints.GET_USER_DOMAIN, params=params)
+
+    def create_admin_account(
+            self, username: str, email: str, passwd: str, notify: str
+    ) -> Dict[str, Any]:
+        """
+        Creates a new admin account with the specified details.
+
+        Args:
+            username (str): The username for the new admin account.
+            email (str): The email address associated with the new admin account.
+            passwd (str): The password for the new admin account.
+            notify (str): Notification preferences.
+
+        Returns:
+            Dict[str, Any]: A dictionary containing the result of the account creation.
+        """
+        params = {
+            "action": "create",
+            "username": username,
+            "email": email,
+            "passwd": passwd,
+            "passwd2": passwd,
+            "notify": notify,
+        }
+        return self._make_request(
+            endpoint=endpoints.CREATE_ADMIN_ACCOUNT, params=params
+        )
+
+    def create_reseller_account(
+            self,
+            username: str,
+            email: str,
+            passwd: str,
+            notify: str,
+            ip: str,
+            package: str,
+            domain: str,
+    ) -> Dict[str, Any]:
+        """
+        Creates a new reseller account with the specified details.
+
+        Args:
+            username (str): The username for the new reseller account.
+            email (str): The email address associated with the new reseller account.
+            passwd (str): The password for the new reseller account.
+            notify (str): Notification preferences.
+            ip (str): IP address assignment options. Must be one of "shared", "sharedreseller", or "assign".
+            package (str): The package to assign to the new reseller account.
+            domain (str): The domain for the new reseller account.
+
+        Returns:
+            Dict[str, Any]: A dictionary containing the result of the account creation.
+
+        Raises:
+            ValueError: If the provided IP address option is invalid.
+        """
+        ip_allowed_options = ["shared", "sharedreseller", "assign"]
+        if ip not in ip_allowed_options:
+            raise ValueError(
+                f"Invalid IP address. IP should be one of {ip_allowed_options}"
+            )
+
+        params = {
+            "action": "create",
+            "add": "submit",
+            "username": username,
+            "email": email,
+            "passwd": passwd,
+            "passwd2": passwd,
+            "domain": domain,
+            "package": package,
+            "ip": ip,
+            "notify": notify,
+        }
+        return self._make_request(
+            endpoint=endpoints.CREATE_RESELLER_ACCOUNT, params=params
+        )
+
+    def create_user_account(
+            self,
+            username: str,
+            email: str,
+            passwd: str,
+            notify: str,
+            ip: str,
+            package: str,
+            domain: str,
+    ) -> Dict[str, Any]:
+        """
+        Creates a new user account with the specified details.
+
+        Args:
+            username (str): The username for the new user account.
+            email (str): The email address associated with the new user account.
+            passwd (str): The password for the new user account.
+            notify (str): Notification preferences.
+            ip (str): IP address for the new user account.
+            package (str): The package to assign to the new user account.
+            domain (str): The domain for the new user account.
+
+        Returns:
+            Dict[str, Any]: A dictionary containing the result of the account creation.
+        """
+        params = {
+            "action": "create",
+            "add": "submit",
+            "username": username,
+            "email": email,
+            "passwd": passwd,
+            "passwd2": passwd,
+            "domain": domain,
+            "package": package,
+            "ip": ip,
+            "notify": notify,
+        }
+        return self._make_request(endpoint=endpoints.CREATE_USER_ACCOUNT, params=params)
