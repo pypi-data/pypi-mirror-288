@@ -1,0 +1,6 @@
+setup.py
+app/websockethost.egg-info/PKG-INFO
+app/websockethost.egg-info/SOURCES.txt
+app/websockethost.egg-info/dependency_links.txt
+app/websockethost.egg-info/requires.txt
+app/websockethost.egg-info/top_level.txt
