@@ -1,0 +1,9 @@
+distbackup/**
+dist/**
+dist/ircConnector_edog0049a-0.0.4.tar.gz
+dist/ircConnector-0.0.4-py3-none-any.whl
+.secret
+.vscode/**
+.VSCodeCounter/**
+.env/**
+*.bat

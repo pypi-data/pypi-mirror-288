@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: IrcConnector_Edog0049a
+Version: 0.1.0
+Summary: Irc Client
+Project-URL: Source code, https://github.com/eli-reid/IrcConnector
+Author-email: Eli Reid <Elir@elireid.com>
+License-Expression: Apache-2.0 OR MIT
+Keywords: Edog0049a,Eli Reid,EventHandler-Edog0049a,asyncio,client,irc
+Requires-Python: >=3.10
+Requires-Dist: eventhandler-edog0049a>=0.1.97
+Description-Content-Type: text/markdown
+
+# `IRC Connector`
+ "Basic IRC Client"
