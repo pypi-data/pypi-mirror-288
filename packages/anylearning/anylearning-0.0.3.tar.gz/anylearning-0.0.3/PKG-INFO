@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: anylearning
+Version: 0.0.3
+Summary: Train your own AI models with ease
+Author-email: Viet Anh Nguyen <vietanh.dev@gmail.com>
+Project-URL: Homepage, https://github.com/vietanhdev/anylearning
+Project-URL: Bug Tracker, https://github.com/vietanhdev/anylearning/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python==4.10.0.84
+Requires-Dist: numpy==2.0.1
+Requires-Dist: scikit-learn==1.5.1
+Requires-Dist: scipy==1.14.0
+Provides-Extra: dev
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+
+# AnyLearning
+
+Train your own AI models with ease.
+
+## Installation
+
+```bash
+pip install anylearning
+```
+
+## Usage
+
+- Train object detection model with YOLOv10: [https://github.com/vietanhdev/anylearning/blob/main/notebooks/yolov10-object-detection.ipynb](https://github.com/vietanhdev/anylearning/blob/main/notebooks/yolov10-object-detection.ipynb).

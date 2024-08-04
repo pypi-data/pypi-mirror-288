@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+anylearning/__init__.py
+anylearning/anylabeling2yolo.py
+anylearning/converter.py
+anylearning.egg-info/PKG-INFO
+anylearning.egg-info/SOURCES.txt
+anylearning.egg-info/dependency_links.txt
+anylearning.egg-info/requires.txt
+anylearning.egg-info/top_level.txt
