@@ -1,0 +1,11 @@
+gluex.hddm_r-2.1.29.dist-info/RECORD,,
+gluex.hddm_r-2.1.29.dist-info/top_level.txt,sha256=1sy7WrgDAbSW3qpacdhWOOk2sU_moRx_P9UXnotF4m8,77
+gluex.hddm_r-2.1.29.dist-info/LICENSE,sha256=guNhQjgEXYGAl4Nghfk09_ps1QJs-mwri2sFQcz2878,1070
+gluex.hddm_r-2.1.29.dist-info/WHEEL,sha256=rbVfYZzJiOCEiiKDVkaog3MWj3SC9SfTJ-H92vzqnHY,112
+gluex.hddm_r-2.1.29.dist-info/METADATA,sha256=I87T_3I3EgeudrRm2bB86i8g8Fih4TaQLdWLHspQ20A,2397
+gluex/hddm_r.cpython-36m-x86_64-linux-gnu.so,sha256=TuSu9UAMawPcnEMRqlj7C8dQbv2jduT4bX7qHsvRfMY,52384537
+gluex/hddm_r/rest.xml,sha256=137x7i4W_rRHYohrOQ9JVuyBmvFbAsErfPL9i7o5uIk,11117
+gluex/hddm_r/sharedlibs.tar.gz,sha256=bYAXDiAD1rfHjHh3anO7zh4Wthjd7OXgW6T-bit2R-E,56226376
+gluex/xrootd_client/__init__.py,sha256=PZekT8k2mKAhJ8Q5RlhQ0mS2fKDXybaK3sVDEqZDoHA,1368
+gluex.hddm_r.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
+gluex.hddm_r.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257
