@@ -1,0 +1,2 @@
+[console_scripts]
+nut_report = nut_report:cli.main
