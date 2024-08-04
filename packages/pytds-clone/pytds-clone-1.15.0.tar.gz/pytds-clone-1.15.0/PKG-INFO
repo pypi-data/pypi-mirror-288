@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pytds-clone
+Version: 1.15.0
+Summary: pytds-clone
+Author: G Reich
+License: MIT
+Classifier: Programming Language :: Python
+License-File: LICENSE.txt
