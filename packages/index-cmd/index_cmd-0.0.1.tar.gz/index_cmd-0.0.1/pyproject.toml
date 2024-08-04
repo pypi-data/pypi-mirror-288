@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "index_cmd"
+version = "0.0.1"
+authoers = [
+    {name="сорока алексей", email="no"}
+]
+descirpton = "It's empty here!!!"
+readme = "README.md"
+requires-python = ">=3.12.4"
+classifiers = [
+   "Programming Language :: Python :: 3",
+   "License :: OSI Approved :: MIT License",
+   "Operating System :: OS Independent",
+]
