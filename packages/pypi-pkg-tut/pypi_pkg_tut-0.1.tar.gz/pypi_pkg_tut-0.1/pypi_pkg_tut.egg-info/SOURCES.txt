@@ -1,0 +1,8 @@
+README.md
+setup.py
+pypi_pkg_tut/__init__.py
+pypi_pkg_tut/main.py
+pypi_pkg_tut.egg-info/PKG-INFO
+pypi_pkg_tut.egg-info/SOURCES.txt
+pypi_pkg_tut.egg-info/dependency_links.txt
+pypi_pkg_tut.egg-info/top_level.txt
