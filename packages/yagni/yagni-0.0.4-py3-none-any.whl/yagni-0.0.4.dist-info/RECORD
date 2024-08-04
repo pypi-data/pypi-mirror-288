@@ -1,0 +1,9 @@
+yagni/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yagni/pydantic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yagni/pydantic/types.py,sha256=VrIhOu89L-VM-dXbyFVsTXU2tdjSBwVtG06dW8wpreI,5654
+yagni/time/__init__.py,sha256=hoNso_YNd-SYAdSvpxL95lHWfA66O2HcIvG4Yq-95r4,977
+yagni-0.0.4.dist-info/LICENSE,sha256=9iaixI9lx99aOxxPiCPoUBc7Du-s6N6e4F-Vmhd-r5w,1069
+yagni-0.0.4.dist-info/METADATA,sha256=rwo7uvJUhgoQrX5VI51SJOYrG6M3zy96DBvDYNcBAYc,473
+yagni-0.0.4.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+yagni-0.0.4.dist-info/top_level.txt,sha256=g9-nZJlidj5DsCuYlzXa9k2zNYMu5mH3OPFZOtl7bDg,6
+yagni-0.0.4.dist-info/RECORD,,
