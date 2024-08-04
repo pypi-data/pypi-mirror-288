@@ -1,0 +1,106 @@
+# Synthetic SDTM (ssdtm)
+
+This library provides a collection functions to create synthetic CDISC SDTM data. It is largely done using intelligent sequence generators powered by domain knowledge. 
+
+## Background
+
+The dummy or low-fidelity synthetic SDTM data would be very valuable in multiple scenarios. A few use cases listed below:
+
+### Testing and Validation of Systems:
+    System Configuration: Using dummy data allows for thorough testing and configuration of data management systems before real data is collected, ensuring that systems are correctly set up and can handle the expected data formats and volumes .
+    Software Validation: Dummy data is essential for validating the software tools used for data capture, processing, and analysis, ensuring they work correctly under various scenarios and edge cases.
+
+### Training and Education:
+    Staff Training: Dummy data provides a safe and realistic way to train clinical staff, data managers, and statisticians on data entry, management, and analysis processes without risking patient confidentiality or data integrity .
+    Protocol Familiarization: It could help the study team familiarize themselves with the study protocols and data collection methods, improving overall preparedness and efficiency.
+
+### Protocol Development and Refinement:
+    CRF and Protocol Testing: Dummy data can be used to test and refine clinical trial protocols and case report forms (CRFs) before actual patient data is collected, identifying potential issues and making necessary adjustments early in the process .
+    Scenario Simulation: Simulating various scenarios using fake data helps in identifying and mitigating risks, ensuring the protocol is robust and ready for real-world application.
+
+### Quality Control:
+    Error Detection: By using dummy data, potential data entry errors, inconsistencies, and system flaws can be identified and corrected before the actual trial begins, enhancing data quality and reliability .
+    Process Optimization: It allows for the optimization of data collection and processing workflows, ensuring they are efficient and capable of handling real data smoothly.
+
+### Regulatory Compliance:
+    Compliance Testing: Ensures that all data handling and processing systems comply with regulatory standards and guidelines by testing with dummy data first, reducing the risk of non-compliance during the actual trial .
+
+### Confidentiality and Security:
+    Safe Testing Environment: Using fake data protects patient confidentiality and adheres to privacy regulations during system testing and staff training, minimizing the risk of data breaches and ethical issues .
+    Security Assessment: Dummy data can be used to test the security measures of data management systems, ensuring they are robust enough to protect sensitive patient information when real data is collected.
+
+### Shorter study startup time
+    Test and validate the data pipelines: Having access to realistic dummy data allows to test and validate the data entry and data transfer pipelines before the First-Patient-In milestone of a study. This results in a shorter study startup time.
+
+
+* Free software: MIT license
+
+
+## Tutorial
+--------
+
+
+### How to install
+
+```sh
+$ pip install ssdtm
+```
+
+### Basic Usage
+
+```sh
+import ssdtm as sd
+
+	
+# Generate synthetic single-domain (adverse events) data for 5 patients
+ae = sd.get_adverse_events(5)
+
+# Generate synthetic single-domain (concomitant medication) data 5 patients
+cm = sd.get_conmeds(5)
+
+# Generate synthetic single-domain (adverse events) data 5 patients
+dm = sd.get_demographics(5)
+
+# Generate synthetic single-domain (adverse events) data 5 patients
+ex = sd.get_exposure(5)
+
+# Generate lab anbalytes dataset for 8 patients, where each patient has data for 4 visits.
+lb = sd.get_lab_analytes(8,4)
+
+# Generate vital signs dataset for 8 patients, where each patient has data for 4 visits.
+vs = sd.get_vital_signs(8,4)
+
+# Generates CDISC SDTM data for 6 domains (ae, cm, dm, ex, lb, and vs)
+data = sd.get_sdtm_data(8,4)
+# Then you can access individual domain-specific dataframes as follows
+data['cm']
+data['dm']
+data['vs']
+
+# This generates and saves the SDTM data for 6 common SDTM domains in the local directory
+sd.save_sdtm_data(8,4)
+
+# Generate vital signs dataset for 8 patients, assuming 5 visits per patient.
+rs = sd.get_response(8)
+
+# Generate vital signs dataset for 8 patients, where each patient can have 1 to 5 tumors.
+tu = sd.get_tumor_identification(8)
+
+# Generate tumor results dataset for 8 patients, where each patient can have 1 to 5 tumors.
+tr = sd.get_tumor_results(8)
+
+# Generates CDISC SDTM data for 6 generic domains (ae, cm, dm, ex, lb, and vs) and additional therapeutic area specific domains (e.g. for 'oncology' we would have rs, tu and tr)
+data = sd.get_sdtm_data(8,4, 'oncology')
+# Then you can access individual domain-specific dataframes as follows
+data['cm']
+data['dm']
+data['vs']
+# And TA-specific individual domain dataframes as follows
+data['rs']
+data['tu']
+data['tr']
+
+# This generates and saves the SDTM data for 6 common SDTM domains and 3 therapeutic area specific domains in the local directory
+sd.save_sdtm_data(8,4, 'oncology')
+
+```

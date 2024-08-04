@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+ssdtm/__init__.py
+ssdtm/__main__.py
+ssdtm/cli.py
+ssdtm.egg-info/PKG-INFO
+ssdtm.egg-info/SOURCES.txt
+ssdtm.egg-info/dependency_links.txt
+ssdtm.egg-info/requires.txt
+ssdtm.egg-info/top_level.txt
