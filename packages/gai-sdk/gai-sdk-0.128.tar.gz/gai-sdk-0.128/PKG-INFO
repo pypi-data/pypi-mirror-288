@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: gai-sdk
+Version: 0.128
+Summary: Refer to https://gai-labs.github.io/gai for more information
+Author: kakkoii1337
+Author-email: kakkoii1337@gmail.com
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch==2.2.0
+Requires-Dist: torchaudio==2.2.0
+Requires-Dist: tokenizers
+Requires-Dist: torchvision==0.17.0
+Requires-Dist: fastapi
+Requires-Dist: pillow==10.2
+Requires-Dist: markdownify
+Requires-Dist: httpx
+Requires-Dist: openai
+Requires-Dist: python-dotenv
+Requires-Dist: colorlog==6.8.2
+Requires-Dist: termcolor
+Requires-Dist: rich
+Requires-Dist: accelerate==0.30.1
+Requires-Dist: bitsandbytes
+Requires-Dist: openai==1.32.0
+Requires-Dist: fastapi
+Requires-Dist: jsonschema==4.22.0
+Requires-Dist: lm-format-enforcer==0.10.2
+Requires-Dist: pillow==10.2.0
+Requires-Dist: pydantic
+Requires-Dist: python-dotenv
+Requires-Dist: transformers
+Requires-Dist: uvicorn
+Requires-Dist: pynvml
+Requires-Dist: nats-py
+Provides-Extra: svr
+
+Refer to https://gai-labs.github.io/gai for more information
