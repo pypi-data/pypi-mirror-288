@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: firmpriori
+Version: 0.1.1
+Summary: A simple package that prints hello
+Home-page: https://github.com/yourusername/hello_package
+Author: SeabirdShore
+Author-email: 3220105728@zju.edu.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# My Package
+
+This is a simple example package.
+
+## Installation
+
+```bash
+pip install firmpriori
