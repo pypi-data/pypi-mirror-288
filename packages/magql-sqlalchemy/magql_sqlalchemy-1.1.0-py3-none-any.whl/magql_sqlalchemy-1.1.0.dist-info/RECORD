@@ -1,0 +1,14 @@
+magql_sqlalchemy/__init__.py,sha256=3tXsTx8sW-LJtzXvIFvnFT3WzpQEy-Bh1GHTtiO4pPQ,117
+magql_sqlalchemy/check_delete.py,sha256=tRUWT86tVvR90OS-3kCKkbkPosEr8xfZ3o7gHoYP2yQ,3951
+magql_sqlalchemy/filters.py,sha256=xCLT6VGt84_KeSk-Vwws0D1MlhxzdAJIaqqo5K70mU4,3132
+magql_sqlalchemy/group.py,sha256=YlbAuvbHilEqs9UZ39POh9lQYMBUO3HbnDgVRJG9SKA,3035
+magql_sqlalchemy/manager.py,sha256=evuavdpwem5cNvo3EAX72rQ4B1w1PL3mlGxcPYCP9Ug,17980
+magql_sqlalchemy/pagination.py,sha256=twPVPbqi78X2GIguzcWH42trUpTCwBQtHBAf8QBFrF8,969
+magql_sqlalchemy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magql_sqlalchemy/resolvers.py,sha256=hCQ36iXQzGvbSkb3X2vpolMlbME7TCFh5KvgIyV36vU,21256
+magql_sqlalchemy/search.py,sha256=GgC1v5fImBkmz45cYLOKy34zgLiShj3u1BbpKYd1ukQ,1874
+magql_sqlalchemy/validators.py,sha256=n4ofWrd4RvueH2ASZQOV3SIkUz9OOJXQ2jnEhH8lnSo,5802
+magql_sqlalchemy-1.1.0.dist-info/LICENSE.txt,sha256=OJ8jzVOD-7wzu_SkiPWGhQg7k_1G4R2FBn6tMdDe5qw,1064
+magql_sqlalchemy-1.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+magql_sqlalchemy-1.1.0.dist-info/METADATA,sha256=3g3dEZOIqCsiMdo4WQBvf2LNrnbDuFSgHsd3e0eAQKc,1761
+magql_sqlalchemy-1.1.0.dist-info/RECORD,,
