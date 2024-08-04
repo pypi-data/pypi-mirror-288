@@ -1,0 +1,11 @@
+cinagu/__init__.py,sha256=szkD_tZIaQ-Ecy2xcF3UJpHhylzKr_Qjobnv-oAia2Y,207
+cinagu/chess_detection.py,sha256=DXkF03PqrwFJZwW1U8KCYM3Nv2xJphhleK-Sn2MjfNI,1471
+cinagu/game_integration.py,sha256=TqB3WzKm4BRQp7zlbRgpD6HmKSGpjhrNrc5Qryvxfyw,1544
+cinagu/shooting_detection.py,sha256=KLraI2SgLDmVj3KamLKhGEDtxFoeZSQ_5I-37WlVEHQ,1183
+cinagu/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cinagu/tests/test_chess_detection.py,sha256=UgRyXMQAwaGGXvHrAO9cjG6yrYDuv0H8yOo07XkqnJk,2303
+cinagu/tests/test_shooting_detection.py,sha256=GXkPIrxxwuD-wkQA6dYenh_RJo_nrnjJUKNU2ZNZwbA,745
+cinagu-0.1.4.dist-info/METADATA,sha256=L1ptUN6ELYwPXOCz4InSWwKfKAmCZ2bxnlYxW9MnJy8,6689
+cinagu-0.1.4.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+cinagu-0.1.4.dist-info/top_level.txt,sha256=3EXKVJomVOxNpC2l8M0YuXC5eDy97BUcu859-Wy10wo,7
+cinagu-0.1.4.dist-info/RECORD,,
