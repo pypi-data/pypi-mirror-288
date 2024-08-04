@@ -1,0 +1,2 @@
+[console_scripts]
+momba-moml = momba.moml.__main__:main
