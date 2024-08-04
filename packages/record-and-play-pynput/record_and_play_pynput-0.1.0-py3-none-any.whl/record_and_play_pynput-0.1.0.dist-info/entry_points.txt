@@ -1,0 +1,3 @@
+[console_scripts]
+record-and-play=record_and_play_pynput.cli:main
+
