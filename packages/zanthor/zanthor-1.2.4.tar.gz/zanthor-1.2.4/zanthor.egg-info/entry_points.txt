@@ -1,0 +1,2 @@
+[console_scripts]
+zanthor = zanthor.main:main
