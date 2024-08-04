@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+helloscript/__init__.py
+helloscript/pdf2image.py
+helloscript/pdf2text.py
+helloscript.egg-info/PKG-INFO
+helloscript.egg-info/SOURCES.txt
+helloscript.egg-info/dependency_links.txt
+helloscript.egg-info/top_level.txt
