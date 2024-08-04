@@ -1,0 +1,11 @@
+ultrastarparser/__init__.py,sha256=SYOPBjjXlVsZ1okJHaKbavaMnN3yfh4GqOP2tFEpLnI,131
+ultrastarparser/audio.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ultrastarparser/io.py,sha256=rhJ72JM1ME8RKTUOYpmvwJI08KbQO_XIKl4Afyaomrw,2012
+ultrastarparser/library.py,sha256=TQRZan-_p52u5BG_i2NqJjFmG4soayerdZMjMNCNBCM,4017
+ultrastarparser/song.py,sha256=wgCfOfo6vgmleDNU8bYjNA7TQTlDHzee6gtsgcAnpjc,5042
+ultrastarparser/transform_funcs.py,sha256=Zy-wCzpk2Nvn7Fu66Lhuc-xwDmgwdZNSYgqISBHiLvk,82
+ultrastarparser/versions.py,sha256=WXY-eP4IdH96EzLcUICvo4ztVxAdg1HBBR0g_X6axRI,16349
+ultrastarparser-0.6.6.dist-info/LICENCE,sha256=0OvRkpKCIvzwsiz0UKB4ELUPq3p6xint2W23FoXwMlI,1059
+ultrastarparser-0.6.6.dist-info/METADATA,sha256=GR-SjsothTqSU-7uJlRkRTr0nafzcmeuJcIKAtGCc5Q,3077
+ultrastarparser-0.6.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+ultrastarparser-0.6.6.dist-info/RECORD,,
