@@ -1,0 +1,13 @@
+olconv/__init__.py,sha256=QuVXKgBOjU-77PNRTPuPWKWdcYdV4unptgTAKoR5tYo,984
+olconv/__init__.pyi,sha256=4oiRHXXPoVWB27N-RykkVvZUcRJSGDQeyoiwnQPFK3o,726
+olconv/compat.py,sha256=2edmAm5qps2GkapYy6HF7l5JAtM9JShd4_P8EZKOCuU,179
+olconv/compat.pyi,sha256=5oj7cCnpb_cEk6hDXmuhjfbUYuwcTjFKUScrTq3NscA,185
+olconv/conv_table.py,sha256=7h2u47N6vTw45pJ_FLLCweMBvcoMOk8HkgtfKESQ638,6736
+olconv/conv_table.pyi,sha256=38DWl3Wb_BDA3MxL1weFSlAKLWEaFWOI5Sfha-VA3Mk,504
+olconv/olconv.py,sha256=2GQKSpKfORUdQW1K6I9Rq38IVCxBP5_eic5JRanDEo8,19228
+olconv/olconv.pyi,sha256=tC7x0B9BjMNFB-F6LKIQqgUDOfaXNdWKVhsddGKSrKo,1465
+olconv/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+olconv-0.0.1.dist-info/METADATA,sha256=RbmAH5mBqoFnmbGRRz2xXBgP9I_QYzA6msBenRZiKVc,1043
+olconv-0.0.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+olconv-0.0.1.dist-info/top_level.txt,sha256=NW_z0bRb8IQboTrjZa-j2HxCBDwGbwLwXRIkAknUJe8,7
+olconv-0.0.1.dist-info/RECORD,,
