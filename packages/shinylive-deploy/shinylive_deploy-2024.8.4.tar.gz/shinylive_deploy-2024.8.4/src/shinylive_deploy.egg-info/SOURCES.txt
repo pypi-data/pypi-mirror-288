@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/shinylive_deploy/app.py
+src/shinylive_deploy/config.py
+src/shinylive_deploy.egg-info/PKG-INFO
+src/shinylive_deploy.egg-info/SOURCES.txt
+src/shinylive_deploy.egg-info/dependency_links.txt
+src/shinylive_deploy.egg-info/entry_points.txt
+src/shinylive_deploy.egg-info/requires.txt
+src/shinylive_deploy.egg-info/top_level.txt
+src/shinylive_deploy/process/__init__.py
+src/shinylive_deploy/process/base.py
+src/shinylive_deploy/process/local.py
+src/shinylive_deploy/process/server.py

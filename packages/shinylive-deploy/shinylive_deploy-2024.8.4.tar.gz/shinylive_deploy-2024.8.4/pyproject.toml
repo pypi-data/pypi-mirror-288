@@ -1,0 +1,51 @@
+[project]
+name = "shinylive-deploy"
+version = "2024.8.4"
+authors = [
+  {name="darrida", email="darrida.py@gmail.com"}
+]
+description = "CLI utility to help deploy py-shinylive apps to hosted webservers via SSH."
+readme = "README.md"
+
+dependencies = [
+  'shiny',
+  'shinylive',
+  'gitpython',
+  'paramiko',
+  'pydantic < 2.0',
+]
+
+[project.optional-dependencies]
+tests = [
+  'fastapi',
+  'pytest',
+  'loguru',
+  'pyfetch_mimic == 2024.06.14',
+  'httpx',
+  'pytest',
+  'shinyswatch',
+]
+
+[project.scripts]
+shinylive_deploy = "shinylive_deploy.app:cli"
+shinylive-manage = "shinylive_deploy.app:cli"
+
+[project.urls]
+Homepage = "https://github.com/darrida/py-shinylive-deploy-webserver"
+Issues = "https://github.com/darrida/py-shinylive-deploy-webserver/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 120
+extend-exclude = [".venv", "*.robot"]
+
+[tool.ruff.lint]
+extend-select = ["S", "I"]  # bandit (S), isort (I)
+
+[tool.ruff.lint.isort]
+extra-standard-library = []
+known-first-party = []
+known-third-party = []
