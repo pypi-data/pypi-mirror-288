@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+quantastica/encoder_decoder/__init__.py
+quantastica/encoder_decoder/encoder_decoder.py
+quantastica_encoder_decoder.egg-info/PKG-INFO
+quantastica_encoder_decoder.egg-info/SOURCES.txt
+quantastica_encoder_decoder.egg-info/dependency_links.txt
+quantastica_encoder_decoder.egg-info/namespace_packages.txt
+quantastica_encoder_decoder.egg-info/top_level.txt
