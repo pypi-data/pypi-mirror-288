@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: multi_notifier
+Version: 0.5.0
+Summary: notify multiple recipients on multiple protocols
+Author: Seuling N.
+License: Apache License 2.0
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: redmail~=0.6.0
+Requires-Dist: requests~=2.32.0
+Requires-Dist: pydantic<3.0.0,>=2.6.0
+Requires-Dist: pyyaml~=6.0
+
+notify multiple recipients on multiple protocols
