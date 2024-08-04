@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta name="dtb:uid" content="unknown"/>
+    <meta name="dtb:depth" content="3"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>Nested Dictionary Tools</text>
+  </docTitle>
+  <navMap>    
+    <navPoint id="navPoint1" playOrder="1">
+      <navLabel>
+        <text>Overview</text>
+      </navLabel>
+      <content src="index.xhtml" />  
+    </navPoint>
+    <navPoint id="navPoint2" playOrder="2">
+      <navLabel>
+        <text>Installation</text>
+      </navLabel>
+      <content src="install.xhtml" />  
+      <navPoint id="navPoint3" playOrder="2">
+        <navLabel>
+          <text>Installation</text>
+        </navLabel>
+        <content src="install.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint4" playOrder="3">
+        <navLabel>
+          <text>Command line</text>
+        </navLabel>
+        <content src="install.xhtml#command-line" />  
+      </navPoint>
+      <navPoint id="navPoint5" playOrder="4">
+        <navLabel>
+          <text>From github</text>
+        </navLabel>
+        <content src="install.xhtml#from-github" />  
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint6" playOrder="5">
+      <navLabel>
+        <text>Usage</text>
+      </navLabel>
+      <content src="usage.xhtml" />  
+      <navPoint id="navPoint7" playOrder="5">
+        <navLabel>
+          <text>Usage</text>
+        </navLabel>
+        <content src="usage.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint8" playOrder="6">
+        <navLabel>
+          <text>Principle</text>
+        </navLabel>
+        <content src="usage.xhtml#principle" />  
+      </navPoint>
+      <navPoint id="navPoint9" playOrder="7">
+        <navLabel>
+          <text>Behavior</text>
+        </navLabel>
+        <content src="usage.xhtml#behavior" />  
+      </navPoint>
+      <navPoint id="navPoint10" playOrder="8">
+        <navLabel>
+          <text>Examples</text>
+        </navLabel>
+        <content src="usage.xhtml#examples" />  
+      </navPoint>
+      <navPoint id="navPoint11" playOrder="9">
+        <navLabel>
+          <text>Class attributes and methods</text>
+        </navLabel>
+        <content src="usage.xhtml#module-ndict_tools" />  
+        <navPoint id="navPoint12" playOrder="9">
+          <navLabel>
+            <text>Class attributes and methods</text>
+          </navLabel>
+          <content src="usage.xhtml#module-ndict_tools" />  
+        </navPoint>
+        <navPoint id="navPoint13" playOrder="10">
+          <navLabel>
+            <text>NestedDictionary</text>
+          </navLabel>
+          <content src="usage.xhtml#ndict_tools.NestedDictionary" />  
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint14" playOrder="11">
+      <navLabel>
+        <text>Package reference</text>
+      </navLabel>
+      <content src="api.xhtml" />  
+      <navPoint id="navPoint15" playOrder="11">
+        <navLabel>
+          <text>Package reference</text>
+        </navLabel>
+        <content src="api.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint16" playOrder="12">
+        <navLabel>
+          <text>Exceptions</text>
+        </navLabel>
+        <content src="api.xhtml#module-ndict_tools.exception" />  
+        <navPoint id="navPoint17" playOrder="12">
+          <navLabel>
+            <text>Exceptions</text>
+          </navLabel>
+          <content src="api.xhtml#module-ndict_tools.exception" />  
+        </navPoint>
+        <navPoint id="navPoint18" playOrder="13">
+          <navLabel>
+            <text>StackedAttributeError</text>
+          </navLabel>
+          <content src="api.xhtml#ndict_tools.exception.StackedAttributeError" />  
+        </navPoint>
+        <navPoint id="navPoint19" playOrder="14">
+          <navLabel>
+            <text>StackedDictionaryError</text>
+          </navLabel>
+          <content src="api.xhtml#ndict_tools.exception.StackedDictionaryError" />  
+        </navPoint>
+        <navPoint id="navPoint20" playOrder="15">
+          <navLabel>
+            <text>StackedKeyError</text>
+          </navLabel>
+          <content src="api.xhtml#ndict_tools.exception.StackedKeyError" />  
+        </navPoint>
+        <navPoint id="navPoint21" playOrder="16">
+          <navLabel>
+            <text>NestedDictionaryException</text>
+          </navLabel>
+          <content src="api.xhtml#ndict_tools.exception.NestedDictionaryException" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint22" playOrder="17">
+        <navLabel>
+          <text>Tools</text>
+        </navLabel>
+        <content src="api.xhtml#module-ndict_tools.tools" />  
+        <navPoint id="navPoint23" playOrder="17">
+          <navLabel>
+            <text>Tools</text>
+          </navLabel>
+          <content src="api.xhtml#module-ndict_tools.tools" />  
+        </navPoint>
+        <navPoint id="navPoint24" playOrder="18">
+          <navLabel>
+            <text>unpack_items()</text>
+          </navLabel>
+          <content src="api.xhtml#ndict_tools.tools.unpack_items" />  
+        </navPoint>
+        <navPoint id="navPoint25" playOrder="19">
+          <navLabel>
+            <text>from_dict()</text>
+          </navLabel>
+          <content src="api.xhtml#ndict_tools.tools.from_dict" />  
+        </navPoint>
+        <navPoint id="navPoint26" playOrder="20">
+          <navLabel>
+            <text>_StackedDict</text>
+          </navLabel>
+          <content src="api.xhtml#ndict_tools.tools._StackedDict" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint27" playOrder="21">
+        <navLabel>
+          <text>Core</text>
+        </navLabel>
+        <content src="api.xhtml#module-ndict_tools.core" />  
+        <navPoint id="navPoint28" playOrder="21">
+          <navLabel>
+            <text>Core</text>
+          </navLabel>
+          <content src="api.xhtml#module-ndict_tools.core" />  
+        </navPoint>
+        <navPoint id="navPoint29" playOrder="22">
+          <navLabel>
+            <text>NestedDictionary</text>
+          </navLabel>
+          <content src="api.xhtml#ndict_tools.core.NestedDictionary" />  
+        </navPoint>
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Overview</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/epub.css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="overview">
+<h1>Overview</h1>
+<p><strong>Nested Dictionary Tools (NDT)</strong> is a simple toolbox to manage nested dictionaries.</p>
+<p>Nested dictionaries are present in Python without necessarily being managed. For example,
+to access the keys of nested dictionaries in Python, you have to browse the dictionaries.
+In contrast, this toolbox provides access to all keys. So you can check that a key is
+present in all the keys, or count its occurrences.</p>
+<div class="toctree-wrapper compound" id="maintoc">
+<p class="caption" role="heading"><span class="caption-text">Content</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.xhtml">1. Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.xhtml#command-line">1.1. Command line</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.xhtml#from-github">1.2. From github</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="usage.xhtml">2. Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage.xhtml#principle">2.1. Principle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.xhtml#behavior">2.2. Behavior</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.xhtml#examples">2.3. Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.xhtml#module-ndict_tools">2.4. Class attributes and methods</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.xhtml">3. Package reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api.xhtml#module-ndict_tools.exception">3.1. Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.xhtml#module-ndict_tools.tools">3.2. Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.xhtml#module-ndict_tools.core">3.3. Core</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="concept">
+<h2>Concept</h2>
+<p>Nested dictionaries are allowed in Python since the value of a key can be a dict. Nevertheless,
+keys in a nested dictionary are not manageable from the main dictionary. A NestedDictionary is one of
+the implementation to do so.</p>
+<section id="differences-from-dict">
+<h3>Differences (from dict)</h3>
+<p>A NestedDictionary inherits from defaultdict. It has the same properties, except that items, keys
+and values can be de-nested.</p>
+<section id="classical-dictionary">
+<h4>Classical dictionary</h4>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nv">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>dict<span class="o">([(</span><span class="s1">&#39;first&#39;</span>,<span class="w"> </span><span class="m">1</span><span class="o">)</span>,<span class="w"> </span><span class="o">(</span><span class="s1">&#39;third&#39;</span>,<span class="w"> </span><span class="m">3</span><span class="o">)]</span>,<span class="w"> </span><span class="nv">second</span><span class="o">={</span><span class="s1">&#39;first&#39;</span>:<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="s1">&#39;second&#39;</span>:2<span class="o">})</span>
+<span class="gp">$ </span>d
+<span class="go">{&#39;first&#39;: 1, &#39;third&#39;: 3, &#39;second&#39;: {&#39;first&#39;: 1, &#39;second&#39;: 2}}</span>
+
+<span class="go">d= {dict:3}</span>
+<span class="go">   &#39;first&#39; = {int} 1</span>
+<span class="go">   &#39;third&#39; = {int} 3</span>
+<span class="go">   &#39;second&#39; = {dict:2}</span>
+<span class="go">      &#39;first&#39; = {int} 1</span>
+<span class="go">      &#39;second&#39; = {int} 2</span>
+<span class="go">      __len__ = {int} 2</span>
+<span class="go">   __len__ = {int} 3</span>
+
+<span class="go">d&#39;s keys are :</span>
+<span class="go">[&#39;first&#39;, &#39;third&#39;, &#39;second&#39;]</span>
+
+<span class="gp">$ </span>d.keys<span class="o">()</span>
+<span class="go">dict_keys([&#39;first&#39;, &#39;third&#39;, &#39;second&#39;])</span>
+</pre></div>
+</div>
+</section>
+<section id="nested-dictionary">
+<h4>Nested dictionary</h4>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>from<span class="w"> </span>ndict<span class="w"> </span>import<span class="w"> </span>NestedDictionary
+<span class="gp">$ </span><span class="nv">nd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>NestedDictionary<span class="o">([(</span><span class="s1">&#39;first&#39;</span>,<span class="w"> </span><span class="m">1</span><span class="o">)</span>,<span class="w"> </span><span class="o">(</span><span class="s1">&#39;third&#39;</span>,<span class="w"> </span><span class="m">3</span><span class="o">)]</span>,<span class="w"> </span><span class="nv">second</span><span class="o">={</span><span class="s1">&#39;first&#39;</span>:<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="s1">&#39;second&#39;</span>:2<span class="o">})</span>
+<span class="gp">$ </span>nd
+<span class="go">NestedDictionary(&lt;class &#39;ndict_tools.core.NestedDictionary&#39;&gt;, {&#39;first&#39;: 1, &#39;third&#39;: 3, &#39;second&#39;: NestedDictionary(&lt;class &#39;ndict_tools.core.NestedDictionary&#39;&gt;, {&#39;first&#39;: 1, &#39;second&#39;: 2})})</span>
+
+<span class="go">nd = {NestedDictionary:3}</span>
+<span class="go">   default_factory = {type} &lt;class &#39;ndict_tools.core.NestedDictionary&gt;</span>
+<span class="go">   indent = {int} 0</span>
+<span class="go">   &#39;first&#39; = {int} 1</span>
+<span class="go">   &#39;third&#39; = {int} 3</span>
+<span class="go">   &#39;second&#39; = {NestedDictionary:2}</span>
+<span class="go">      default_factory = {type} &lt;class &#39;ndict_tools.core.NestedDictionary&gt;</span>
+<span class="go">      indent = {int} 0</span>
+<span class="go">      &#39;first&#39; = {int} 1</span>
+<span class="go">      &#39;second&#39; = {int} 2</span>
+<span class="go">      __len__ = {int} 2</span>
+<span class="go">   __len__ = {int} 3</span>
+
+<span class="go">nd&#39;s keys are</span>
+<span class="go">[(&#39;first&#39;,), (&#39;third&#39;,), (&#39;second&#39;, &#39;first&#39;), (&#39;second&#39;, &#39;second&#39;)]</span>
+
+<span class="gp">$ </span>nd.keys<span class="o">()</span><span class="w"> </span>--<span class="w"> </span>keep<span class="w"> </span>the<span class="w"> </span>same<span class="w"> </span>behavior<span class="w"> </span>as<span class="w"> </span>classical<span class="w"> </span>dictionary<span class="w"> </span>--
+<span class="go">dict_keys([&#39;first&#39;, &#39;third&#39;, &#39;second&#39;])</span>
+<span class="gp">$ </span>nd.key_list<span class="o">(</span><span class="s1">&#39;second&#39;</span><span class="o">)</span>
+<span class="go">[(&#39;second&#39;, &#39;first&#39;), (&#39;second&#39;, &#39;second&#39;)]</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables</h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.xhtml"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.xhtml"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.xhtml"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>
