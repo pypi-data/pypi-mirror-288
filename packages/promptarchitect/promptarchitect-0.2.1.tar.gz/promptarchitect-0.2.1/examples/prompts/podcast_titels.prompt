@@ -1,0 +1,14 @@
+---
+model: gpt-4o-mini
+prompt_version: 1.0
+temperature: 0.9
+input: examples/inputs/podcast_titels/beschrijving.txt
+output: title.txt
+test_path: examples/tests/podcast_titels
+tests:
+    test_01: >
+        Controleer of de titels in de lijst in "normal casing" zijn geschreven. Dit betekent dat alleen het eerste woord van de titel en eventuele eigennamen of acroniemen met een hoofdletter beginnen. Woorden na een dubbele punt hoeven geen hoofdletter te hebben, tenzij het eigen namen of acroniemen betreft. Antwoord met JA/NEE of alle titels correct zijn geschreven volgens dit principe. Indien NEE, leg uit waarom niet. 
+    test_02: COUNT(LINES) == 5
+---
+
+Genereer 5 titels voor een AI podcast.

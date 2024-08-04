@@ -1,0 +1,55 @@
+{
+    "test_id": "test_01",
+    "test_prompt": "Controleer of de titels in de lijst in \"normal casing\" zijn geschreven. Dit betekent dat alleen het eerste woord van de titel en eventuele eigennamen of acroniemen met een hoofdletter beginnen. Woorden na een dubbele punt hoeven geen hoofdletter te hebben, tenzij het eigen namen of acroniemen betreft. Antwoord met JA/NEE of alle titels correct zijn geschreven volgens dit principe. Indien NEE, leg uit waarom niet. \n",
+    "test_completion": "NEE\n\nHier is de uitleg voor de titels:\n\n1. **\"AI in Actie: MLOps en de Toekomst van Bedrijfsintelligentie\"** - \"MLOps\" en \"AI\" zijn acroniemen en mogen met een hoofdletter. De rest van de titel is correct, maar \"Actie\" zou met een kleine letter moeten zijn: \"actie\".\n\n2. **\"Uitlegbaarheid in AI: Het Ontsleutelen van Beslissingen\"** - \"AI\" is een acroniem en mag met een hoofdletter. De rest van de titel is correct.\n\n3. **\"De Kracht van Grote Talen: Hoe Large Language Models Bedrijven Transformeren\"** - \"Large Language Models\" zijn eigennamen en mogen met een hoofdletter. De rest van de titel is correct, maar \"Grote\" zou met een kleine letter moeten zijn: \"grote\".\n\n4. **\"Van Data naar Inzicht: MLOps en Explainable AI voor Succesvolle Implementatie\"** - \"MLOps\" en \"AI\" zijn acroniemen en mogen met een hoofdletter. De rest van de titel is correct.\n\n5. **\"AI voor Besluitvormers: Navigeren door MLOps, Uitlegbaarheid en Taalmodellen\"** - \"AI\" en \"MLOps\" zijn acroniemen en mogen met een hoofdletter. De rest van de titel is correct.\n\nSamenvattend, de titels bevatten enkele woorden die niet correct zijn geschreven volgens de \"normal casing\" regels.",
+    "passed": false,
+    "completion": {
+        "system_role": "Je bent een prompt tester.",
+        "model": "gpt-4o-mini",
+        "parameters": {
+            "temperature": 0.2
+        },
+        "cost": 0.00023564999999999998,
+        "is_json": false,
+        "test_path": "",
+        "response_message": "NEE\n\nHier is de uitleg voor de titels:\n\n1. **\"AI in Actie: MLOps en de Toekomst van Bedrijfsintelligentie\"** - \"MLOps\" en \"AI\" zijn acroniemen en mogen met een hoofdletter. De rest van de titel is correct, maar \"Actie\" zou met een kleine letter moeten zijn: \"actie\".\n\n2. **\"Uitlegbaarheid in AI: Het Ontsleutelen van Beslissingen\"** - \"AI\" is een acroniem en mag met een hoofdletter. De rest van de titel is correct.\n\n3. **\"De Kracht van Grote Talen: Hoe Large Language Models Bedrijven Transformeren\"** - \"Large Language Models\" zijn eigennamen en mogen met een hoofdletter. De rest van de titel is correct, maar \"Grote\" zou met een kleine letter moeten zijn: \"grote\".\n\n4. **\"Van Data naar Inzicht: MLOps en Explainable AI voor Succesvolle Implementatie\"** - \"MLOps\" en \"AI\" zijn acroniemen en mogen met een hoofdletter. De rest van de titel is correct.\n\n5. **\"AI voor Besluitvormers: Navigeren door MLOps, Uitlegbaarheid en Taalmodellen\"** - \"AI\" en \"MLOps\" zijn acroniemen en mogen met een hoofdletter. De rest van de titel is correct.\n\nSamenvattend, de titels bevatten enkele woorden die niet correct zijn geschreven volgens de \"normal casing\" regels.",
+        "latency": 5.763971583000966,
+        "completion_type": "OpenAICompletion"
+    },
+    "engineered_prompt": {
+        "prompt_file_path": "examples/prompts/podcast_titels.prompt",
+        "output_path": "examples/completions/podcast_titels/beschrijving",
+        "input_file": "examples/tests/podcast_titels/beschrijving.txt",
+        "input_text": "",
+        "latency": 2.9435376250003173,
+        "cost": 0.00010485,
+        "errors": {
+            "errors": [],
+            "duplicates": 0
+        },
+        "completion": {
+            "system_role": "You are a helpful assistant.",
+            "model": "gpt-4o-mini",
+            "parameters": {
+                "model": "gpt-4o-mini",
+                "prompt_version": 1.0,
+                "temperature": 0.9,
+                "input": "examples/inputs/podcast_titels/beschrijving.txt",
+                "output": "title.txt",
+                "test_path": "examples/tests/podcast_titels"
+            },
+            "cost": 0.00010485,
+            "is_json": false,
+            "test_path": "",
+            "response_message": "Hier zijn vijf titels voor je AI-podcast gericht op businessmensen met een IT-achtergrond:\n\n1. **\"AI in Actie: MLOps en de Toekomst van Bedrijfsintelligentie\"**\n\n2. **\"Uitlegbaarheid in AI: Het Ontsleutelen van Beslissingen\"**\n\n3. **\"De Kracht van Grote Talen: Hoe Large Language Models Bedrijven Transformeren\"**\n\n4. **\"Van Data naar Inzicht: MLOps en Explainable AI voor Succesvolle Implementatie\"**\n\n5. **\"AI voor Besluitvormers: Navigeren door MLOps, Uitlegbaarheid en Taalmodellen\"**\n\nHopelijk inspireren deze titels je voor de podcast!",
+            "latency": 2.9435376250003173
+        },
+        "completion_type": "OpenAICompletion",
+        "response_message": "Hier zijn vijf titels voor je AI-podcast gericht op businessmensen met een IT-achtergrond:\n\n1. **\"AI in Actie: MLOps en de Toekomst van Bedrijfsintelligentie\"**\n\n2. **\"Uitlegbaarheid in AI: Het Ontsleutelen van Beslissingen\"**\n\n3. **\"De Kracht van Grote Talen: Hoe Large Language Models Bedrijven Transformeren\"**\n\n4. **\"Van Data naar Inzicht: MLOps en Explainable AI voor Succesvolle Implementatie\"**\n\n5. **\"AI voor Besluitvormers: Navigeren door MLOps, Uitlegbaarheid en Taalmodellen\"**\n\nHopelijk inspireren deze titels je voor de podcast!"
+    },
+    "last_run": "2024-07-30 12:44:16",
+    "errors": {
+        "errors": [],
+        "duplicates": 0
+    }
+}
