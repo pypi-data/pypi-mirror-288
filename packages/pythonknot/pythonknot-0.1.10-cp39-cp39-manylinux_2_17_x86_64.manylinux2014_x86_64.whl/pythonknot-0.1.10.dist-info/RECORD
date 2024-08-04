@@ -1,0 +1,10 @@
+pythonknot-0.1.10.dist-info/METADATA,sha256=3ECRc9xXvM0_Q2J_jzF6OLbQ4KxZyNtJNMjnTGXtxz4,475
+pythonknot-0.1.10.dist-info/RECORD,,
+pythonknot-0.1.10.dist-info/WHEEL,sha256=rY0Y6THYM7EImsHfF-zs67o8pQciAsMw9_YuSvftjrQ,148
+pythonknot-0.1.10.dist-info/top_level.txt,sha256=qFU8P2xZFLCfmfNZ2QjuyHYn-zeiSUD6znlWAPA9KXw,11
+pythonknot.libs/libgmp-afec2dd4.so.10.2.0,sha256=MNTiOnu9DKH49DN5Kmd9OeJIpS85qZGJKY__Hy3KWQ0,515857
+pythonknot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pythonknot/rmsd.py,sha256=OULTpTxUWUTIJexqbHbYiZxObFyVlY4BVRillPgOzTs,755
+pythonknot/xyz.py,sha256=PADMH8Yq7-srmVnsecmGdAqVxZlwQ10KA8E99jXF13Q,697
+pythonknot/alexander_poly.cpython-39-x86_64-linux-gnu.so,sha256=QhP3KABqplim7h1fmC9x6q2bqbgKwE911E5XdzJfjGA,7384737
+pythonknot/polymer.py,sha256=ugRUocla2YXaQOG2mRjXpgrtKSEfCC1rHtNPog7-yl4,2084
