@@ -1,0 +1,18 @@
+query getPriceInFanPoints(
+    $partnerId: String!
+    $price: Float!
+    $currency: Currency!
+) {
+    getPriceInFanPoints: get_price_in_fan_points(
+        partner_id: $partnerId
+        price: $price
+        currency: $currency
+    ) {
+        errors {
+            InvalidRewardAmountError: invalid_reward_amount_error {
+                _empty
+            }
+        }
+        result
+    }
+}

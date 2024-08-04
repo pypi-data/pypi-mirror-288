@@ -1,0 +1,55 @@
+mutation payPurchaseWithFanPoints(
+    $userId: String!
+    $partnerId: String!
+    $purchaseItems: [PurchaseItemInput!]!
+    $customPurchaseId: String
+) {
+    payPurchaseWithFanPoints: pay_purchase_with_fan_points(
+        user_id: $userId
+        partner_id: $partnerId
+        purchase_items: $purchaseItems
+        custom_purchase_id: $customPurchaseId
+    ) {
+        errors {
+            unknownUserError: unknown_user_error {
+                _empty
+            }
+            invalidRewardAmountError: invalid_reward_amount_error {
+                _empty
+            }
+            tooFewAvailableError: too_few_available_error {
+                _empty
+            }
+            invalidTransactionIdError: invalid_transaction_id_error {
+                _empty
+            }
+            invalidRateLabelError: invalid_rate_label_error {
+                _empty
+            }
+            alreadyExecutedError: already_executed_error {
+                _empty
+            }
+            nonUniquePurchaseItemIdsError: non_unique_purchase_item_ids_error {
+                _empty
+            }
+        }
+        result {
+            purchaseId: purchase_id
+            userId: user_id
+            transactionType: transaction_type
+            purchaseItems: purchase_items {
+                purchaseItemId: purchase_item_id
+                partnerId: partner_id
+                title
+                description
+                price
+                currency
+                amount
+                rateLabel: rate_label
+                date
+                hasBeenUndone: has_been_undone
+                hasBeenSettled: has_been_settled
+            }
+        }
+    }
+}

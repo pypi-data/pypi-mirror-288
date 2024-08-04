@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: fanpoints-python
+Version: 0.0.2
+Summary: This SDK allows you to interact with the Fanpoints API.
+Home-page: https://fanpoints.ch
+Author: Tobia Ochsner
+Author-email: tobia.ochsner@fanpoints.ch
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pre-commit (>=3.8.0,<4.0.0)
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Requires-Dist: pyright (>=1.1.374,<2.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: ruff (>=0.5.5,<0.6.0)
+Project-URL: Documentation, https://docs.fanpoints.ch
+Description-Content-Type: text/markdown
+
+# Fanpoints Python SDK
+
+This SDK allows you to interact with the Fanpoints API.

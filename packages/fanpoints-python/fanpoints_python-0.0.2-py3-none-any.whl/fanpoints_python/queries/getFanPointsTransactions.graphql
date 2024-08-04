@@ -1,0 +1,37 @@
+query getFanPointsTransactions(
+    $partnerId: String!
+    $userId: String
+    $limit: Int
+    $earlierThan: String
+) {
+    getFanPointsTransactions: get_partner_fan_points_transactions(
+        partner_id: $partnerId
+        user_id: $userId
+        earlier_than: $earlierThan
+        limit: $limit
+    ) {
+        result {
+            purchaseId: purchase_id
+            userId: user_id
+            transactionType: transaction_type
+            purchaseItems: purchase_items {
+                purchaseItemId: purchase_item_id
+                partnerId: partner_id
+                title
+                description
+                price
+                currency
+                amount
+                rateLabel: rate_label
+                date
+                hasBeenUndone: has_been_undone
+                hasBeenSettled: has_been_settled
+            }
+        }
+        errors {
+            unknownUserError: unknown_user_error {
+                _empty
+            }
+        }
+    }
+}

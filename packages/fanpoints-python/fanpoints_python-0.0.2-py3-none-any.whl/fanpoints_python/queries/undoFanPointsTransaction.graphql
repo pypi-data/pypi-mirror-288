@@ -1,0 +1,52 @@
+mutation undoFanPointsPurchase(
+    $userId: String!
+    $partnerId: String!
+    $purchaseId: String!
+    $purchaseItemId: String!
+) {
+    undoFanPointsPurchase: undo_fan_points_transaction(
+        user_id: $userId
+        partner_id: $partnerId
+        purchase_id: $purchaseId
+        purchase_item_id: $purchaseItemId
+    ) {
+        result {
+            purchaseId: purchase_id
+            userId: user_id
+            transactionType: transaction_type
+            purchaseItems: purchase_items {
+                purchaseItemId: purchase_item_id
+                partnerId: partner_id
+                title
+                description
+                price
+                currency
+                amount
+                rateLabel: rate_label
+                date
+                hasBeenUndone: has_been_undone
+                hasBeenSettled: has_been_settled
+            }
+        }
+        errors {
+            unknownUserError: unknown_user_error {
+                _empty
+            }
+            invalidRewardAmountError: invalid_reward_amount_error {
+                _empty
+            }
+            tooFewAvailableError: too_few_available_error {
+                _empty
+            }
+            transactionNotFoundError: transaction_not_found_error {
+                _empty
+            }
+            invalidTransactionIdError: invalid_transaction_id_error {
+                _empty
+            }
+            alreadyExecutedError: already_executed_error {
+                _empty
+            }
+        }
+    }
+}
