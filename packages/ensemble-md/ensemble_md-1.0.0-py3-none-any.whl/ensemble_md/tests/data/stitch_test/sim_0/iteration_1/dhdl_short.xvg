@@ -1,0 +1,45 @@
+# This file was created Sat Jul 16 01:25:52 2022
+# Created by:
+#                :-) GROMACS - gmx mdrun, 2021.4-plumed-2.8.0 (-:
+# 
+# Executable:   /usr/local/gromacs/bin/gmx
+# Data prefix:  /usr/local/gromacs
+# Working dir:  /Users/Wei-TseHsu/Documents/Life_in_CU_Bouler/Research_in_Shirts_Lab/EEXE_experiments/Devop/gmxapi.commandline.cli7_i0_1
+# Command line:
+#   gmx mdrun -s /Users/Wei-TseHsu/Documents/Life_in_CU_Bouler/Research_in_Shirts_Lab/EEXE_experiments/Devop/sim_1/iteration_3/sys_EE.tpr
+# gmx mdrun is part of G R O M A C S:
+#
+# Gyas ROwers Mature At Cryogenic Speed
+#
+@    title "dH/d\xl\f{} and \xD\f{}H"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "dH/d\xl\f{} and \xD\f{}H (kJ/mol [\xl\f{}]\S-1\N)"
+@TYPE xy
+@ subtitle "T = 298 (K) "
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Thermodynamic state"
+@ s1 legend "Total Energy (kJ/mol)"
+@ s2 legend "dH/d\xl\f{} coul-lambda = 0.7500"
+@ s3 legend "dH/d\xl\f{} vdw-lambda = 0.0000"
+@ s4 legend "\xD\f{}H \xl\f{} to (0.2500, 0.0000)"
+@ s5 legend "\xD\f{}H \xl\f{} to (0.5000, 0.0000)"
+@ s6 legend "\xD\f{}H \xl\f{} to (0.7500, 0.0000)"
+@ s7 legend "\xD\f{}H \xl\f{} to (1.0000, 0.0000)"
+@ s8 legend "\xD\f{}H \xl\f{} to (1.0000, 0.2500)"
+@ s9 legend "\xD\f{}H \xl\f{} to (1.0000, 0.5000)"
+3.0000    2 -27183.803 10.516105 13.521134 -5.2580582 -2.6290312 0.0000000 2.6290303 7.1515537 13.055855
+3.0200    2 -27221.084 0.41716814 8.4614964 -0.20857564 -0.10429342 0.0000000 0.10429342 3.7821021 9.3263354
+3.0400    5 -27183.082 -4.4711275 24.005161 -5.3917155 -6.5094562 -7.6272396 -8.7450239 -5.4172277 0.0000000
+3.0600    3 -27127.293 -6.2822499 -1.7345515 4.7116767 3.1411275 1.5705642 0.0000000 2.1322230 7.1679130
+3.0800    5 -27120.609 -11.479121 24.465910 -0.26040173 -3.1301939 -5.9999746 -8.8697543 -5.5118531 0.0000000
+3.1000    3 -27072.283 -8.9043903 11.397145 6.6782796 4.4521921 2.2260958 0.0000000 4.2344080 10.156946
+3.1200    4 -27080.754 -2.8122802 22.595055 -2.7055469 -3.4086149 -4.1116854 -4.8147559 0.0000000 6.1591214
+3.1400    2 -27105.982 -5.3729453 12.808243 2.6864837 1.3432401 0.0000000 -1.3432391 3.0961764 9.1022059
+3.1600    4 -27149.816 -7.0674615 22.181530 0.65443790 -1.1124147 -2.8792765 -4.6461379 0.0000000 6.1002359
+3.1800    3 -27163.477 -1.1390572 12.978476 0.85430387 0.56952431 0.28476192 0.0000000 4.5176700 10.618920
+3.2000    3 -27115.473 -6.8955512 18.906580 5.1716784 3.4477856 1.7238926 0.0000000 5.5223709 12.073246
