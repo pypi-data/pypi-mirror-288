@@ -1,0 +1,11 @@
+configparser_override/__init__.py,sha256=es11aPwCDq-PTV0CL0txSjTnwWG_UiFraE--bUF7K18,230
+configparser_override/configparser_override.py,sha256=OuF-1cpMMvPJJgRFWBNRh9SaLV2Y8RHUFmgpYqxmLKQ,6021
+configparser_override/exceptions.py,sha256=ICk-iNtL4apb0yWDbm9ML9oqrp9hEx9GU66n7-QTmy8,399
+configparser_override/override_strategy.py,sha256=K_Jagdupe9WNzR16AZ2CrRSD-k3gjI1yTXfq7J4lbxw,12211
+configparser_override/strategy_factory.py,sha256=tBXaZfskbgxtXkZ8MIVVJFx76l3K6bYXj_luhUpy04Q,3307
+configparser_override/types.py,sha256=xL6Xx-U6TJ4aHjr-GG0AV3IPz2-hDmyZS-Bxb8uTT_0,134
+configparser_override-0.3.1.dist-info/LICENSE,sha256=me4YQSSmlsvbfBGePEOAmTKGZPB-8-aaNl_KtuDwrDs,1076
+configparser_override-0.3.1.dist-info/METADATA,sha256=9ktMvkAYISkH5f-Q885R24RQVuNW3lY2PdorjBGnTUI,6898
+configparser_override-0.3.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+configparser_override-0.3.1.dist-info/top_level.txt,sha256=n-p0GiUSnEmxp1v7LEtuJIPgQjA83Wkjx3v--GxCmE0,22
+configparser_override-0.3.1.dist-info/RECORD,,
