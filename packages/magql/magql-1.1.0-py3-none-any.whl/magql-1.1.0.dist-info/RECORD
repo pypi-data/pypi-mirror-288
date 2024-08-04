@@ -1,0 +1,14 @@
+magql/__init__.py,sha256=rJj45WpzFReCVElwrv5WzyueX9x-N-UQagjV9eyRsq8,1003
+magql/check_delete.py,sha256=EeSgFvCBV861Yi5upNdYdFfTu9H0uc8U52hZvZeXrFE,4072
+magql/filters.py,sha256=6tTrPs2ga0xSOCRmbZ2Zzh17G7LaNSWWDZjr3EPAJqc,606
+magql/nodes.py,sha256=XLEEOJLOidoJ71IKaaWj8Z--uEmyyhg9Al4UfryImdI,39688
+magql/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magql/scalars.py,sha256=i4z7fXooA6mLm7UOi0aEseHA_5ACwIZ-89ukLYsyZX4,4174
+magql/schema.py,sha256=IQan6PveO3C4z5jPfjlCrS-XQqwySXkjg0I1bLuy5wU,8341
+magql/search.py,sha256=Nk_YOUzjsXdxXRIf7z9E_x5kkQb3Z83p67n1OqHLAec,3529
+magql/testing.py,sha256=H0BaEpq8CwR9vpOeLFTfP61HyZzeO9wAdZOKQZuxMdk,2391
+magql/validators.py,sha256=sc4k6F4bdUgOxv3E88uIZXu-UHQtSCAUWEIbSYLZ-rY,3779
+magql-1.1.0.dist-info/LICENSE.txt,sha256=OJ8jzVOD-7wzu_SkiPWGhQg7k_1G4R2FBn6tMdDe5qw,1064
+magql-1.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+magql-1.1.0.dist-info/METADATA,sha256=vWu_ncRb7xP2hw50Q1roATgTTgL_K4-RK-McGZhxCQk,1163
+magql-1.1.0.dist-info/RECORD,,
