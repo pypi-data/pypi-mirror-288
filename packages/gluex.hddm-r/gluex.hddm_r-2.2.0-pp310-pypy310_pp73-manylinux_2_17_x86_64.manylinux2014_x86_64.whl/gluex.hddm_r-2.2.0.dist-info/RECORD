@@ -1,0 +1,9 @@
+gluex/hddm_r.pypy310-pp73-x86_64-linux-gnu.so,sha256=9_9ukASb9tObTwCC8S_pgCFDZ_vHUUr_I8CKkjiYnXY,19610224
+gluex/hddm_r/rest.xml,sha256=137x7i4W_rRHYohrOQ9JVuyBmvFbAsErfPL9i7o5uIk,11117
+gluex/hddm_r/sharedlibs.tar.gz,sha256=oCkQ7WmrZfUxukkiUJZQ--oCECqMTHNIPQANLDmq1pA,53652284
+gluex/xrootd_client/__init__.py,sha256=PZekT8k2mKAhJ8Q5RlhQ0mS2fKDXybaK3sVDEqZDoHA,1368
+gluex.hddm_r-2.2.0.dist-info/RECORD,,
+gluex.hddm_r-2.2.0.dist-info/top_level.txt,sha256=1sy7WrgDAbSW3qpacdhWOOk2sU_moRx_P9UXnotF4m8,77
+gluex.hddm_r-2.2.0.dist-info/LICENSE,sha256=guNhQjgEXYGAl4Nghfk09_ps1QJs-mwri2sFQcz2878,1070
+gluex.hddm_r-2.2.0.dist-info/WHEEL,sha256=68G6E_rqJCZJfFsaGw2jfWrbzmr9mJQXY1pZoqvWqT0,165
+gluex.hddm_r-2.2.0.dist-info/METADATA,sha256=3ds7G2w_3pM1QSvqGUiuzGVEtUuhJzhzzsdYgIFyCNo,3001
