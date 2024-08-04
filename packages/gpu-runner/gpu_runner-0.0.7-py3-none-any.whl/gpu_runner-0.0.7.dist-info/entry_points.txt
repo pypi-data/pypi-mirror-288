@@ -1,0 +1,2 @@
+[console_scripts]
+grun = grun.__main__:main
