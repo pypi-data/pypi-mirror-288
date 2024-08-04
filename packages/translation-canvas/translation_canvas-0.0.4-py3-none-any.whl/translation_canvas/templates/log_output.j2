@@ -1,0 +1,28 @@
+<!--
+This HTML template file is used to display a log output page in the Translation Canvas application.
+
+The file extends the "base.html" template and contains the following blocks:
+- title: Specifies the title of the page.
+- content: Contains the main content of the page.
+
+The content block includes a container div that displays a custom text and a description. The description includes multiple paragraphs with information about the processing of a user's request. It also includes links and placeholders for dynamic values.
+
+The template uses Flask's url_for function to generate URLs dynamically.
+-->
+{% extends "base.html" %}
+
+{% block title %}
+Translation Canvas
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="custom-text">
+        Your request is being processed
+    </div>
+    <div class="description">
+        You can check on the status of your request at the home page. Click here to go back to the <a href="{{ url_for('index') }}">home page</a>.
+    </div>
+</div>
+{% endblock %}
+
