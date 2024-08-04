@@ -1,0 +1,2 @@
+[console_scripts]
+nakdimon = main:main
