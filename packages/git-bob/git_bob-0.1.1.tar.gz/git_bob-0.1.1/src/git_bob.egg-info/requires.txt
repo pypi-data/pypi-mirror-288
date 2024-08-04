@@ -1,0 +1,9 @@
+anthropic
+openai
+pygithub
+blablado>=0.2.2
+
+[testing]
+tox
+pytest
+pytest-cov
