@@ -1,0 +1,76 @@
+[tool.poetry]
+name = "dataset-handler"
+version = "0.1.0"
+description = "Utility package for managing dataset"
+authors = ["onlinejudge95 <onlinejudge95@gmail.com>", "Shreshtth <shreshtthpersonal@gmail.com>"]
+readme = "README.md"
+packages = [{include = "src/dataset_handler"}]
+
+[tool.poetry.scripts]
+datasets = "src.dataset_handler.entrypoint:cli"
+
+[tool.poetry.dependencies]
+python = "^3.9 || ^ 3.10 || ^3.11 || ^3.12"
+click = "8.1.7"
+httpx = "0.27.0"
+opencv-python-headless = "4.10.0.84"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+ruff = "0.5.2"
+mypy = {extras = ["reports"], version = "1.10.1"}
+pytest = "8.2.2"
+pytest-cov = "5.0.0"
+pytest-mock = "3.14.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+include = ["*.py"]
+line-length = 120
+output-format = "grouped"
+respect-gitignore = true
+src = ["src"]
+
+[tool.ruff.format]
+docstring-code-format = true
+line-ending = "native"
+quote-style = "double"
+skip-magic-trailing-comma = true
+
+[tool.mypy]
+files = "**/*.py"
+
+disallow_any_unimported = true
+
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+
+allow_untyped_globals = false
+allow_redefinition = false
+
+show_error_context = true
+pretty = true
+color_output = true
+error_summary = true
+
+html_report = "./reports/mypy/"
+
+[tool.coverage.run]
+branch = true
+omit = ["src/dataset_handler/entrypoint.py"]
+
+[tool.coverage.report]
+fail_under = 35.00
+precision = 2
+
+[tool.pytest.ini_options]
+addopts = "--cov-config pyproject.toml --cov src/dataset_handler --cov-report html:reports/pytest --cov-report xml:reports/coverage.xml --cov-report term-missing"
+console_output_style = "progress"
+required_plugins = "pytest-cov pytest-mock"
+tmp_path_retention_policy = "none"
+testpaths = ["tests"]
