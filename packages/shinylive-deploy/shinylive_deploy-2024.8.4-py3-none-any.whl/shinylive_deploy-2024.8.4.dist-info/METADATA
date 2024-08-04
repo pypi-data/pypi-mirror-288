@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: shinylive-deploy
+Version: 2024.8.4
+Summary: CLI utility to help deploy py-shinylive apps to hosted webservers via SSH.
+Author-email: darrida <darrida.py@gmail.com>
+Project-URL: Homepage, https://github.com/darrida/py-shinylive-deploy-webserver
+Project-URL: Issues, https://github.com/darrida/py-shinylive-deploy-webserver/issues
+Description-Content-Type: text/markdown
+Requires-Dist: shiny
+Requires-Dist: shinylive
+Requires-Dist: gitpython
+Requires-Dist: paramiko
+Requires-Dist: pydantic <2.0
+Provides-Extra: tests
+Requires-Dist: fastapi ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: loguru ; extra == 'tests'
+Requires-Dist: pyfetch-mimic ==2024.06.14 ; extra == 'tests'
+Requires-Dist: httpx ; extra == 'tests'
+Requires-Dist: shinyswatch ; extra == 'tests'
+
+shinylive export ./src_dev/app2 ./staging/app2 && rm -r ./src_test_webserver/shinyapps/app2 && mv ./staging/app2 ./src_test_webserver/shinyapps/
+
+### Separate Commands
+- Fresh deploy
+```shell
+shinylive export ./src_dev/app2 ./staging/app2
+mv ./staging/app2 ./src_test_webserver/shinyapps/
+```
+
+- Redeploy
+```shell
+shinylive export ./src_dev/app2 ./staging/app2
+rm -r ./src_test_webserver/shinyapps/app2
+mv ./staging/app2 ./src_test_webserver/shinyapps/
+```
+
+### Single Commands
+- Fresh deploy
+```shell
+shinylive export ./src_dev/app2 ./staging/app2 && \
+mv ./staging/app2 ./src_test_webserver/shinyapps/
+```
+
+- Redeploy
+```shell
+shinylive export ./src_dev/app2 ./staging/app2 && \
+rm -r ./src_test_webserver/shinyapps/app2 && \
+mv ./staging/app2 ./src_test_webserver/shinyapps/
+```
+
+### SSH/SFTP/PSCP
+- Copy directory and contents using Putty PSCP
+```
+pscp -r -i staging\app1\ user@host:/homes/user/docker_volumes/shinyapps/
+```

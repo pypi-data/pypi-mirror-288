@@ -1,0 +1,11 @@
+shinylive_deploy/app.py,sha256=hYawKrxY6YiHgLveoeSH53HpZA7k4npya0AhgIp7PV4,674
+shinylive_deploy/config.py,sha256=RNit3-r1proVQpbD2nCF30vHlq2-U9IhZBnRgSWvceI,1442
+shinylive_deploy/process/__init__.py,sha256=EoF98fUKS8VBhRgVnTPLQF7Vjr7-vbjmrVlM_4zKJLc,1313
+shinylive_deploy/process/base.py,sha256=ZK6gduIImgmIdlihKF0Gn5ovl3HErBMlFcR6Zyxj1dQ,3187
+shinylive_deploy/process/local.py,sha256=HY94YaXdokx_nidNa5JZFA1yfcHsGOepOAnLJylfdzM,4886
+shinylive_deploy/process/server.py,sha256=N4enI8rYFAfaKkb_XxPIIfw8dFuP0A8kv_9kimkk9kc,6485
+shinylive_deploy-2024.8.4.dist-info/METADATA,sha256=6xXNgeff_FaOtUb2QlP4GxFWU6ge4-hll3deMOVVSNY,1744
+shinylive_deploy-2024.8.4.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+shinylive_deploy-2024.8.4.dist-info/entry_points.txt,sha256=EtZs4vjak6pt34d-bSCL8eHMkalonIONWquwU55fR9U,106
+shinylive_deploy-2024.8.4.dist-info/top_level.txt,sha256=b6cou13vrGr7xWMRusoRbO2387Q9uj9PwY4Cbss-ocs,17
+shinylive_deploy-2024.8.4.dist-info/RECORD,,

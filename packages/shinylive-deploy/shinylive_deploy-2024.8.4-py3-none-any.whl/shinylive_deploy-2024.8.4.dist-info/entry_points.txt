@@ -1,0 +1,3 @@
+[console_scripts]
+shinylive-manage = shinylive_deploy.app:cli
+shinylive_deploy = shinylive_deploy.app:cli
