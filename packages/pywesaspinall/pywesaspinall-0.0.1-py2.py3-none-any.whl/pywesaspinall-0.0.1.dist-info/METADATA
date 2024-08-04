@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pywesaspinall
+Version: 0.0.1
+Summary: a package that for wes aspinall
+Requires-Python: >=3.8
+Requires-Dist: requirements.txt
+
