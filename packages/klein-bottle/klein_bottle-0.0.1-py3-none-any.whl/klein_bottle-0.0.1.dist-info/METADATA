@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: klein-bottle
+Version: 0.0.1
+Summary: A simple HTTPS server and website framework designed to used by people who are new to coding.
+Project-URL: Homepage, https://github.com/d3987ef8/klein-bottle
+Project-URL: Issues, https://github.com/d3987ef8/klein-bottle/issues
+Author-email: Jack Murray <contact@jackmurray.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: make-professional-website
+Description-Content-Type: text/markdown
+
+# klein-bottle
+
+Klein Bottle is a project for creating professional websites inspired by the simplicity of Flask.
