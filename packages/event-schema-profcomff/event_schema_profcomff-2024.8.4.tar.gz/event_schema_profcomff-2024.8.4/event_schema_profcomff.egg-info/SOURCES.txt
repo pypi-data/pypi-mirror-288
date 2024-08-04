@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+event_schema/__init__.py
+event_schema/base.py
+event_schema/auth/__init__.py
+event_schema/auth/user_login.py
+event_schema_profcomff.egg-info/PKG-INFO
+event_schema_profcomff.egg-info/SOURCES.txt
+event_schema_profcomff.egg-info/dependency_links.txt
+event_schema_profcomff.egg-info/requires.txt
+event_schema_profcomff.egg-info/top_level.txt
