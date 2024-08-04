@@ -1,0 +1,13 @@
+colorama
+requests>=2.31.0
+websocket-client
+websockets==11.0.3
+flask_restful
+cheroot
+flask
+lucit-licensing-python>=1.8.2
+ujson
+psutil
+PySocks
+typing_extensions
+Cython
