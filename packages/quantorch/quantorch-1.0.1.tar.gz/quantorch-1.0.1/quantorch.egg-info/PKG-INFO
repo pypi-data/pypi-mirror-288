@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: quantorch
+Version: 1.0.1
+Summary: High-Performance Torch Library for Derivatives Pricing
+Home-page: https://github.com/jialuechen/quantorch
+Author: Jialue Chen
+Author-email: jialuechen@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
