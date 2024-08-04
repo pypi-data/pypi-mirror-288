@@ -1,0 +1,12 @@
+harlequin_databricks/__init__.py,sha256=KQ_KtrnDnAdUtCCetjKRI4M_qlrdhjbQRuhNNTxGk3A,110
+harlequin_databricks/adapter.py,sha256=i_-HMzzkHzZzfC7vEhN_ZGXrFij74XbfCeiimouBPSw,14648
+harlequin_databricks/cli_options.py,sha256=QhAYVv7_2oE-xZMAE_DnNkspFq7mt4N8asCilWBxbAE,2269
+harlequin_databricks/completions.py,sha256=3N8hkodvLZmyVlXAq9i1nGU_LVFfJbqlyoRv_hwle6M,1264
+harlequin_databricks/functions.csv,sha256=f0SxiRcjpgAddIwN6JrT_H-2-r9h3lASK5oKoYS41CE,43482
+harlequin_databricks/keywords.csv,sha256=2CIqjHuTjx5oR4Oa9yI-wFtMMlH6Zas-BFNaOOOo6P4,814
+harlequin_databricks/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+harlequin_databricks-0.3.1.dist-info/LICENSE,sha256=ZlhE94EhT77YdaEiuNAom6iaPU5M-IRUUNmIYsfaMsg,1089
+harlequin_databricks-0.3.1.dist-info/METADATA,sha256=mpz8XMGuIPWuqup3XX3WIQSE_o2UCC_onS7ZGDgEYN8,5735
+harlequin_databricks-0.3.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+harlequin_databricks-0.3.1.dist-info/entry_points.txt,sha256=sf-qIcJekE4cn3XN18z3h8ZzA5Wj72ZOC-756UOtU18,80
+harlequin_databricks-0.3.1.dist-info/RECORD,,
