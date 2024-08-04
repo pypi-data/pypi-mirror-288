@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: helix-beta
+Version: 1.0.2024.post3
+Summary: So simple, its criminal
+Home-page: https://github.com/Zero-th/Zero-th
+Author: Izaiyah Stokes
+Author-email: zeroth.bat@gmail.com
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pygame-ce
+Requires-Dist: Swarm-ECS
+Requires-Dist: moderngl
+Requires-Dist: glfw
+Requires-Dist: numpy
+Requires-Dist: Pyglm
+
+Noyr

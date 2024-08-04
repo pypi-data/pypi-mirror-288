@@ -1,0 +1,6 @@
+pygame-ce
+Swarm-ECS
+moderngl
+glfw
+numpy
+Pyglm
