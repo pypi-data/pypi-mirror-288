@@ -1,0 +1,10 @@
+[pygcloud.events]
+after_deploy = pygcloud.events:dummy
+after_police = pygcloud.events:dummy
+before_deploy = pygcloud.events:dummy
+before_police = pygcloud.events:dummy
+end_deploy = pygcloud.events:dummy
+end_policer = pygcloud.events:dummy
+ref = pygcloud.events:dummy
+start_deploy = pygcloud.events:dummy
+start_policer = pygcloud.events:dummy
