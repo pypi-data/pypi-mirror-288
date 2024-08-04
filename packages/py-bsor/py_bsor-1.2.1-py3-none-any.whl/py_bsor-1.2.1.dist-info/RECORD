@@ -1,0 +1,15 @@
+main.py,sha256=doMMNxGkwFVt0QVKHON1c-i-q_vDB8OUBB1Bnn9Ojk4,1610
+bsor/Bsor.py,sha256=9CxYDbpcQQ-oTbzH13ilpKLTkXTnLf8CXJgSgOmHTyo,17959
+bsor/BsorUtil.py,sha256=VgF1v_cmoW7STx3ZM1iqXU2g6OQxAe9CZq_nEcSExmc,6472
+bsor/Bsor_Main.py,sha256=sJmcIoiknWAVGrtUoAXj1Nmk1fZHM9AbiZAPl-ETQOM,5726
+bsor/Decoder.py,sha256=7v6P0nCVrpkrmdy4jMRicOA0bA68qXFmb_NMOg_DIMM,1391
+bsor/EncodeDecodeTest.py,sha256=Jn_3SbSWg9QL3uZJP0WTkgCA72A4cynbxcp7uQX7PLs,2165
+bsor/Encoder.py,sha256=G3_bIdMs0NPFyFk9aTaGBquxEGyKSZ_gRBghzFa4P40,705
+bsor/Scoring.py,sha256=IfLzskEZs51x7m19MWXMaC_7JlUma2IdwkWX6jdTJ4I,5998
+bsor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_bsor-1.2.1.dist-info/LICENSE,sha256=HtByMB4LjhewBu9lpFx2majOuyboh8edzeOasblpH_g,1095
+py_bsor-1.2.1.dist-info/METADATA,sha256=UZjbapMeNW7zT3fI-mBJo8Vlvk9jC5saBs4exWEQm5o,2874
+py_bsor-1.2.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+py_bsor-1.2.1.dist-info/top_level.txt,sha256=FElA1iK_OTVsWzVhwP-AgG9r5GFYI43k16TLlAfhBok,15
+py_bsor-1.2.1.dist-info/RECORD,,
