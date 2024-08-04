@@ -1,0 +1,9 @@
+vg_beat_detectors/__init__.py,sha256=9pZ_FngJcIxFq4zvwvv4X1yBky7h8ezGMmzYo5G_3Iw,158
+vg_beat_detectors/fast_nvg.py,sha256=j-sbZZ96WFiv-Sl7NmC1S0LF_S9pOfAYCf9-77qEunM,1032
+vg_beat_detectors/fast_whvg.py,sha256=HrnES8UIUJJfF7CriOUXKj3ow87qgn0P_BwdjFSoWSA,1041
+vg_beat_detectors/vg_detector.py,sha256=EgdChz9MfjD2i-n2M-ITqBXT-ocY1suue9uuDpthgyU,13959
+vg_beat_detectors-0.0.13.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+vg_beat_detectors-0.0.13.dist-info/METADATA,sha256=B0af8B68mwVe_snxIT2YCGNMBH55A32wsDJ9kx7Lz1Q,50894
+vg_beat_detectors-0.0.13.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+vg_beat_detectors-0.0.13.dist-info/top_level.txt,sha256=qnKb4foyCdi93hcZKkgkAmf_MwQqlVxuMPZAyH1c_Qs,18
+vg_beat_detectors-0.0.13.dist-info/RECORD,,
