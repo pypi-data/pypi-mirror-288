@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tfq-finance
+Version: 1.0.1
+Summary: A quantum machine learning library for quantitative finance built on top of TensorFlow Quantum
+Home-page: https://github.com/jialuechen/tfq-finance
+Author: jialuechen
+Author-email: jialuechen@outlook.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
