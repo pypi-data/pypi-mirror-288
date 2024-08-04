@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: amarillo-gtfs-generator
+Version: 2.0.0
+License-File: LICENSE
+Requires-Dist: amarillo
+Requires-Dist: schedule
+Requires-Dist: watchdog
