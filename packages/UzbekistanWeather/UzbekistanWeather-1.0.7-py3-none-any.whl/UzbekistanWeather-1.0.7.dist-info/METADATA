@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: UzbekistanWeather
+Version: 1.0.7
+Home-page: https://github.com/sinofarmonovzfkrvjl
+Author: Sino
+Author-email: farmonovsino@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
+this is python package to get current weather forecast in Uzbekistan Country
+
+documentations and tutorials will be available soon
