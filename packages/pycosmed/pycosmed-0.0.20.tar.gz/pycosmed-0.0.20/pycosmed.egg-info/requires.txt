@@ -1,0 +1,5 @@
+xmltodict>=0.13.0
+dicttoxml2>=2.1.0
+
+[dev]
+twine
