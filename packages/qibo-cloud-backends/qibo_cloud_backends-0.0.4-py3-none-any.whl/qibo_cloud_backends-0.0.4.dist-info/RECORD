@@ -1,0 +1,7 @@
+qibo_cloud_backends/__init__.py,sha256=UWtm1Bwii2KiBKilyydevZbY8jFkiUA8ekOlcgPnt_Y,2459
+qibo_cloud_backends/qibo_client.py,sha256=iIBMvb0q6xpD37G1r7vewMf7Q7j2nbvKrntDUEDfQc4,1975
+qibo_cloud_backends/qiskit_client.py,sha256=IJ-BbfdomvXvv7-cVxPgIm1ilqmJ10WXJUzCzDCBj5s,2587
+qibo_cloud_backends-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+qibo_cloud_backends-0.0.4.dist-info/METADATA,sha256=Cx0IOXERQsoIUqOhiN-J9ORWm5Izoy9qdo1iN1qRLPk,2600
+qibo_cloud_backends-0.0.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+qibo_cloud_backends-0.0.4.dist-info/RECORD,,
