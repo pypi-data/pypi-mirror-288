@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "hlang"
+version = "0.1.0"
+description = ""
+authors = ["avmametev <mametevalex@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "^2.4.0"
+sentence-transformers = "^3.0.1"
+openai = "^1.38.0"
+chromadb = "^0.5.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
