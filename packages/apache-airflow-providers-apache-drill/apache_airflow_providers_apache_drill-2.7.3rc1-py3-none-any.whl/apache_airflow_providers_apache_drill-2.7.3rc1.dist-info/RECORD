@@ -1,0 +1,11 @@
+airflow/providers/apache/drill/LICENSE,sha256=FFb4jd2AXnOOf7XLP04pQW6jbdhG49TxlGY6fFpCV1Y,13609
+airflow/providers/apache/drill/__init__.py,sha256=GdTVyAlnpebvF2tAUth_DMlcra6P6ucwow_AYxRFaYc,1499
+airflow/providers/apache/drill/get_provider_info.py,sha256=cADgQfLuwdKYdTND3ex1UzIY5oW9reh6Dae6t1duNpg,3015
+airflow/providers/apache/drill/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/apache/drill/hooks/drill.py,sha256=tm1kB_YnRKzqZp716QMeGNCdNzwQsC3IBARMLoff6kY,4154
+airflow/providers/apache/drill/operators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/apache/drill/operators/drill.py,sha256=OtrTDs6CAm1Og3Sokf0v42ad1Um8-qvDsGpJou9UYZg,2133
+apache_airflow_providers_apache_drill-2.7.3rc1.dist-info/entry_points.txt,sha256=kneyMMXBF1Q3TO-6u3L5pidPlPngW6c6D5lfLSMt7cQ,108
+apache_airflow_providers_apache_drill-2.7.3rc1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_apache_drill-2.7.3rc1.dist-info/METADATA,sha256=vzQpx7u1X3kDfu9u5EnijOFGUUy8QD1rAwssjd3wecI,6208
+apache_airflow_providers_apache_drill-2.7.3rc1.dist-info/RECORD,,
