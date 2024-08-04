@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: discord-user-bots
+Version: 1.0
+Home-page: https://github.com/CCCProo/discord_user_bot
+Author: Ваше Имя
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic
+Requires-Dist: requests
+Requires-Dist: aiohttp
+Requires-Dist: cachetools
+Requires-Dist: pyclean
+
+# discord_user_bot
+
+Discord library that will allow you to send messages or make events on these messages
+
+# Installation:
+```pip
+pip install discord_user_bot
+```
+
+# Usage example
+
+```python
+from ds import Bot, Interaction
+
+bots = Bot("user-token")
+
+@bots.event(user_id=1234567890, event="message_new")
+async def hello_world(inter: Interaction):
+    print(inter.message.content)
+
+bots.run()
+```

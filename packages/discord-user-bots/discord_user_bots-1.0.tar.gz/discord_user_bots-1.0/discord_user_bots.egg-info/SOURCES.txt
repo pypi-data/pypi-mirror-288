@@ -1,0 +1,13 @@
+README.md
+setup.py
+discord_user_bots.egg-info/PKG-INFO
+discord_user_bots.egg-info/SOURCES.txt
+discord_user_bots.egg-info/dependency_links.txt
+discord_user_bots.egg-info/requires.txt
+discord_user_bots.egg-info/top_level.txt
+ds/__init__.py
+ds/bot.py
+ds/inter.py
+ds/labeler.py
+ds/error/token.py
+ds/type/message.py
