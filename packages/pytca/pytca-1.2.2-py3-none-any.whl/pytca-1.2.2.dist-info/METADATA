@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pytca
+Version: 1.2.2
+Summary: Python Library for Transaction Cost Analysis
+Home-page: https://github.com/jialuechen/pytca
+Author: Jialue Chen
+Author-email: jialuechen@outlook.com
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: plotly
+Requires-Dist: bokeh
+Requires-Dist: dash
+Requires-Dist: flask
+Requires-Dist: pybind11
+Requires-Dist: numpy
+Requires-Dist: geopandas
+Requires-Dist: scikit-learn
+Requires-Dist: textblob
+Requires-Dist: requests
+Requires-Dist: web3
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
