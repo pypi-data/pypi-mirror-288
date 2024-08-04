@@ -1,0 +1,6 @@
+recursive-include dongjak_dash_components/** *.js *.css *.json *.html
+include dongjak_dash_components/theme/*
+prune tests
+include README.md
+include LICENSE
+include package.json

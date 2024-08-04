@@ -1,0 +1,265 @@
+# AUTO GENERATED FILE - DO NOT EDIT
+
+from dash.development.base_component import Component, _explicitize_args
+
+
+class StepperStep(Component):
+    """A StepperStep component.
+pperStep
+
+Keyword arguments:
+
+- children (a list of or a singular dash component, string or number; optional)
+
+- id (string; optional):
+    Unique ID to identify this component in Dash callbacks.
+
+- allowStepClick (boolean; optional):
+    Set to False to disable clicks on step.
+
+- allowStepSelect (boolean; optional):
+    Should step selection be allowed.
+
+- aria-* (string; optional):
+    Wild card aria attributes.
+
+- bd (string | number; optional):
+    border.
+
+- bg (boolean | number | string | dict | list; optional):
+    background, theme key: theme.colors.
+
+- bga (boolean | number | string | dict | list; optional):
+    backgroundAttachment.
+
+- bgp (string | number; optional):
+    backgroundPosition.
+
+- bgr (boolean | number | string | dict | list; optional):
+    backgroundRepeat.
+
+- bgsz (string | number; optional):
+    backgroundSize.
+
+- bottom (string | number; optional)
+
+- c (boolean | number | string | dict | list; optional):
+    color.
+
+- className (string; optional):
+    Class added to the root element, if applicable.
+
+- classNames (dict; optional):
+    Adds class names to Mantine components.
+
+- color (boolean | number | string | dict | list; optional):
+    Key of `theme.colors`, by default controlled by Stepper component.
+
+- completedIcon (a list of or a singular dash component, string or number; optional):
+    Step icon displayed when step is completed.
+
+- darkHidden (boolean; optional):
+    Determines whether component should be hidden in dark color scheme
+    with `display: none`.
+
+- data-* (string; optional):
+    Wild card data attributes.
+
+- description (a list of or a singular dash component, string or number; optional):
+    Step description.
+
+- display (boolean | number | string | dict | list; optional)
+
+- ff (boolean | number | string | dict | list; optional):
+    fontFamily.
+
+- flex (string | number; optional)
+
+- fs (boolean | number | string | dict | list; optional):
+    fontStyle.
+
+- fw (boolean | number | string | dict | list; optional):
+    fontWeight.
+
+- fz (number; optional):
+    fontSize, theme key: theme.fontSizes.
+
+- h (string | number; optional):
+    height, theme key: theme.spacing.
+
+- hiddenFrom (boolean | number | string | dict | list; optional):
+    Breakpoint above which the component is hidden with `display:
+    none`.
+
+- icon (a list of or a singular dash component, string or number; optional):
+    Step icon, defaults to step index + 1 when rendered within
+    Stepper.
+
+- iconPosition (a value equal to: 'left', 'right'; optional):
+    Icon position relative to step body, controlled by Stepper
+    component.
+
+- iconSize (number; optional):
+    Icon wrapper size.
+
+- inset (string | number; optional)
+
+- label (a list of or a singular dash component, string or number; optional):
+    Step label, render after icon.
+
+- left (string | number; optional)
+
+- lh (number; optional):
+    lineHeight, theme key: lineHeights.
+
+- lightHidden (boolean; optional):
+    Determines whether component should be hidden in light color
+    scheme with `display: none`.
+
+- loading (boolean; optional):
+    Indicates loading state of the step.
+
+- lts (string | number; optional):
+    letterSpacing.
+
+- m (number; optional):
+    margin, theme key: theme.spacing.
+
+- mah (string | number; optional):
+    maxHeight, theme key: theme.spacing.
+
+- maw (string | number; optional):
+    maxWidth, theme key: theme.spacing.
+
+- mb (number; optional):
+    marginBottom, theme key: theme.spacing.
+
+- me (number; optional):
+    marginInlineEnd, theme key: theme.spacing.
+
+- mih (string | number; optional):
+    minHeight, theme key: theme.spacing.
+
+- miw (string | number; optional):
+    minWidth, theme key: theme.spacing.
+
+- ml (number; optional):
+    marginLeft, theme key: theme.spacing.
+
+- mod (string; optional):
+    Element modifiers transformed into `data-` attributes, for
+    example, `{ 'data-size': 'xl' }`, falsy values are removed.
+
+- mr (number; optional):
+    marginRight, theme key: theme.spacing.
+
+- ms (number; optional):
+    marginInlineStart, theme key: theme.spacing.
+
+- mt (number; optional):
+    marginTop, theme key: theme.spacing.
+
+- mx (number; optional):
+    marginInline, theme key: theme.spacing.
+
+- my (number; optional):
+    marginBlock, theme key: theme.spacing.
+
+- opacity (boolean | number | string | dict | list; optional)
+
+- orientation (a value equal to: 'vertical', 'horizontal'; optional):
+    Component orientation.
+
+- p (number; optional):
+    padding, theme key: theme.spacing.
+
+- pb (number; optional):
+    paddingBottom, theme key: theme.spacing.
+
+- pe (number; optional):
+    paddingInlineEnd, theme key: theme.spacing.
+
+- pl (number; optional):
+    paddingLeft, theme key: theme.spacing.
+
+- pos (boolean | number | string | dict | list; optional):
+    position.
+
+- pr (number; optional):
+    paddingRight, theme key: theme.spacing.
+
+- progressIcon (a list of or a singular dash component, string or number; optional):
+    Step icon displayed when step is in progress.
+
+- ps (number; optional):
+    paddingInlineStart, theme key: theme.spacing.
+
+- pt (number; optional):
+    paddingTop, theme key: theme.spacing.
+
+- px (number; optional):
+    paddingInline, theme key: theme.spacing.
+
+- py (number; optional):
+    paddingBlock, theme key: theme.spacing.
+
+- right (string | number; optional)
+
+- state (a value equal to: 'stepInactive', 'stepProgress', 'stepCompleted'; optional):
+    Step state, controlled by Stepper component.
+
+- step (number; optional):
+    Step index, controlled by Stepper component *.
+
+- style (optional):
+    Inline style added to root component element, can subscribe to
+    theme defined on MantineProvider.
+
+- styles (boolean | number | string | dict | list; optional):
+    Mantine styles API.
+
+- ta (boolean | number | string | dict | list; optional):
+    textAlign.
+
+- tabIndex (number; optional):
+    tab-index.
+
+- td (string | number; optional):
+    textDecoration.
+
+- top (string | number; optional)
+
+- tt (boolean | number | string | dict | list; optional):
+    textTransform.
+
+- unstyled (boolean; optional):
+    Remove all Mantine styling from the component.
+
+- variant (string; optional):
+    variant.
+
+- visibleFrom (boolean | number | string | dict | list; optional):
+    Breakpoint below which the component is hidden with `display:
+    none`.
+
+- w (string | number; optional):
+    width, theme key: theme.spacing.
+
+- withIcon (boolean; optional):
+    Determines whether the icon should be displayed."""
+    _children_props = ['icon', 'completedIcon', 'progressIcon', 'label', 'description']
+    _base_nodes = ['icon', 'completedIcon', 'progressIcon', 'label', 'description', 'children']
+    _namespace = 'dongjak_dash_components'
+    _type = 'StepperStep'
+    @_explicitize_args
+    def __init__(self, children=None, step=Component.UNDEFINED, state=Component.UNDEFINED, color=Component.UNDEFINED, withIcon=Component.UNDEFINED, icon=Component.UNDEFINED, completedIcon=Component.UNDEFINED, progressIcon=Component.UNDEFINED, label=Component.UNDEFINED, description=Component.UNDEFINED, iconSize=Component.UNDEFINED, iconPosition=Component.UNDEFINED, loading=Component.UNDEFINED, allowStepClick=Component.UNDEFINED, allowStepSelect=Component.UNDEFINED, orientation=Component.UNDEFINED, className=Component.UNDEFINED, style=Component.UNDEFINED, hiddenFrom=Component.UNDEFINED, visibleFrom=Component.UNDEFINED, lightHidden=Component.UNDEFINED, darkHidden=Component.UNDEFINED, mod=Component.UNDEFINED, m=Component.UNDEFINED, my=Component.UNDEFINED, mx=Component.UNDEFINED, mt=Component.UNDEFINED, mb=Component.UNDEFINED, ms=Component.UNDEFINED, me=Component.UNDEFINED, ml=Component.UNDEFINED, mr=Component.UNDEFINED, p=Component.UNDEFINED, py=Component.UNDEFINED, px=Component.UNDEFINED, pt=Component.UNDEFINED, pb=Component.UNDEFINED, ps=Component.UNDEFINED, pe=Component.UNDEFINED, pl=Component.UNDEFINED, pr=Component.UNDEFINED, bd=Component.UNDEFINED, bg=Component.UNDEFINED, c=Component.UNDEFINED, opacity=Component.UNDEFINED, ff=Component.UNDEFINED, fz=Component.UNDEFINED, fw=Component.UNDEFINED, lts=Component.UNDEFINED, ta=Component.UNDEFINED, lh=Component.UNDEFINED, fs=Component.UNDEFINED, tt=Component.UNDEFINED, td=Component.UNDEFINED, w=Component.UNDEFINED, miw=Component.UNDEFINED, maw=Component.UNDEFINED, h=Component.UNDEFINED, mih=Component.UNDEFINED, mah=Component.UNDEFINED, bgsz=Component.UNDEFINED, bgp=Component.UNDEFINED, bgr=Component.UNDEFINED, bga=Component.UNDEFINED, pos=Component.UNDEFINED, top=Component.UNDEFINED, left=Component.UNDEFINED, bottom=Component.UNDEFINED, right=Component.UNDEFINED, inset=Component.UNDEFINED, display=Component.UNDEFINED, flex=Component.UNDEFINED, id=Component.UNDEFINED, tabIndex=Component.UNDEFINED, classNames=Component.UNDEFINED, styles=Component.UNDEFINED, unstyled=Component.UNDEFINED, variant=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'id', 'allowStepClick', 'allowStepSelect', 'aria-*', 'bd', 'bg', 'bga', 'bgp', 'bgr', 'bgsz', 'bottom', 'c', 'className', 'classNames', 'color', 'completedIcon', 'darkHidden', 'data-*', 'description', 'display', 'ff', 'flex', 'fs', 'fw', 'fz', 'h', 'hiddenFrom', 'icon', 'iconPosition', 'iconSize', 'inset', 'label', 'left', 'lh', 'lightHidden', 'loading', 'lts', 'm', 'mah', 'maw', 'mb', 'me', 'mih', 'miw', 'ml', 'mod', 'mr', 'ms', 'mt', 'mx', 'my', 'opacity', 'orientation', 'p', 'pb', 'pe', 'pl', 'pos', 'pr', 'progressIcon', 'ps', 'pt', 'px', 'py', 'right', 'state', 'step', 'style', 'styles', 'ta', 'tabIndex', 'td', 'top', 'tt', 'unstyled', 'variant', 'visibleFrom', 'w', 'withIcon']
+        self._valid_wildcard_attributes =            ['data-', 'aria-']
+        self.available_properties = ['children', 'id', 'allowStepClick', 'allowStepSelect', 'aria-*', 'bd', 'bg', 'bga', 'bgp', 'bgr', 'bgsz', 'bottom', 'c', 'className', 'classNames', 'color', 'completedIcon', 'darkHidden', 'data-*', 'description', 'display', 'ff', 'flex', 'fs', 'fw', 'fz', 'h', 'hiddenFrom', 'icon', 'iconPosition', 'iconSize', 'inset', 'label', 'left', 'lh', 'lightHidden', 'loading', 'lts', 'm', 'mah', 'maw', 'mb', 'me', 'mih', 'miw', 'ml', 'mod', 'mr', 'ms', 'mt', 'mx', 'my', 'opacity', 'orientation', 'p', 'pb', 'pe', 'pl', 'pos', 'pr', 'progressIcon', 'ps', 'pt', 'px', 'py', 'right', 'state', 'step', 'style', 'styles', 'ta', 'tabIndex', 'td', 'top', 'tt', 'unstyled', 'variant', 'visibleFrom', 'w', 'withIcon']
+        self.available_wildcard_properties =            ['data-', 'aria-']
+        _explicit_args = kwargs.pop('_explicit_args')
+        _locals = locals()
+        _locals.update(kwargs)  # For wildcard attrs and excess named props
+        args = {k: _locals[k] for k in _explicit_args if k != 'children'}
+
+        super(StepperStep, self).__init__(children=children, **args)
