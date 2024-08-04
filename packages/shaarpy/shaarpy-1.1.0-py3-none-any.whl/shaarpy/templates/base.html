@@ -1,0 +1,109 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<!doctype html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{{ SHAARPY_NAME }}{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="author" content="{% block author %}{{ SHAARPY_AUTHOR }}{% endblock %}">
+    <meta name="description" content="{% block description %}{{ SHAARPY_DESCRIPTION }}{% endblock %}">
+    {% block keywords %}{% endblock %}
+    <meta name="robots" content="{% block robots %}{{ SHAARPY_ROBOT }}{% endblock %}">
+    <link href="{% url 'feed' %}" type="application/atom+xml" rel="alternate"  title="{{ SHAARPY_DESCRIPTION }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ SHAARPY_NAME }}">
+    <meta property="og:locale" content="{{ LANGUAGE_CODE }}">
+    <meta property="og:url" content="{{ request.build_absolute_uri }}">
+    <meta property="og:title" content="{% block og_title %}{{ SHAARPY_NAME }}{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}{{ SHAARPY_DESCRIPTION }}{% endblock %}">
+    {% block og_image %}{% endblock %}
+</head>
+<body {% if edit_link %} onload="document.my_form.id_text.focus();"{% elif add_link %} onload="document.my_form.id_url.focus();"{% endif %}>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="{% static 'shaarpy.png' %}" alt="ShaarPy Snake" width="48" height="43">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="navbar-brand" href="{% url 'home' %}" title="Home">
+                  <span class="menu-collapsed">{{ SHAARPY_NAME }}</span>
+                </a>
+                </li>
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                  <a class="nav-link fab fa-python link-opacity-50-hover" href="{% url 'link_create' %}" title="{% trans 'Add a thought, a link, an idea, a note' %}">ShaarPy</a>
+                </li>
+                {% endif %}
+                <li class="nav-item">
+                  <a class="nav-link fas fa-tags link-opacity-50-hover" href="{% url 'tags_list' %}" title="{% trans 'Tags Cloud' %}"> {% trans 'Tags Cloud' %}</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fas fa-calendar-day link-opacity-50-hover" href="{% url 'daily' %}" title="{% trans 'Daily links' %}"> {% trans 'Daily links' %}</a>
+                </li>
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                  <a class="nav-link fas fa-user-secret" href="{% url 'link_private' %}" title="{% trans 'Privates Links' %}"> {% trans 'Privates Links' %}</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fas fa-universal-access" href="{% url 'link_public' %}" title="{% trans 'Publics Links' %}"> {% trans 'Publics Links' %}</a>
+                </li>
+                {% endif %}
+                <li class="nav-item">
+                  <a class="nav-link fas fa-rss" href="{% url 'feed' %}"> Feeds</a>
+                </li>
+              </ul>
+              {% if form_search %}
+              {% include 'shaarpy/search.html' %}
+              {% endif %}
+              <ul class="navbar-nav">
+                {% if user.is_authenticated %}
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle far fa-user" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item fas fa-user" href="{% url 'me' %}" title="{% trans 'Profile' %}"> {% trans 'Profile' %}</a></li>
+                    {% if user.is_staff %}
+                    <li><a class="dropdown-item fas fa-plus" href="javascript:(function(){var%20url%20=%20location.href;var%20title%20=%20document.title%20||%20url;window.open('{{ hostname }}/new/?post='%20+%20encodeURIComponent(url)+'&title='%20+%20encodeURIComponent(title)+'&source=bookmarklet','_blank','menubar=no,height=390,width=600,toolbar=no,scrollbars=no,status=no,dialog=1');})();" title="{% trans 'drag this link to your bookmark bar to use the bookmarklet' %}"> ShaarPy Link</a></li>
+                    <li><a class="dropdown-item fas fa-user-cog" href="{% url 'admin:login' %}" title="{% trans 'Open the admin panel' %}"> {% trans 'Admin' %}</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    {% endif %}
+                    <li>
+                      <form id="logout-form" method="post" action="{% url 'admin:logout' %}">
+                        {% csrf_token %}
+                        <button class="dropdown-item fas fa-sign-out-alt" type="submit">{% translate "Log out" %}</button>
+                      </form>
+                    </li>
+                  </ul>
+                </li>
+                  {% else %}
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'me' %}"><i class="far fa-user"> {% trans 'Login' %}</i></a>
+                  </li>
+                  {% endif %}
+              </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+        <!-- container -->
+        {% block content %}
+        {% endblock %}
+        <!--/.container-->
+        </div>
+    </div>
+    <hr>
+    <div class="footer d-flex align-items-center justify-content-center">
+      {% block footer %}
+      <p class="fs-6"> <a class="fab fa-python" href="https://github.com/foxmask/shaarpy" title="{% trans 'ShaarPy project homepage' %}"> ShaarPy</a> - share thoughts, ideas, links, notes - <a title="Shaarpy Documentation" href="https://github.com/foxmask/shaarpy/src/branch/main/README.md">{% trans 'documentation' %}</a></p>
+      {% endblock %}
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
