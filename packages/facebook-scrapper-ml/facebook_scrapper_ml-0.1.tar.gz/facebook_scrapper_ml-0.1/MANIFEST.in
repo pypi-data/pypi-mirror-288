@@ -1,0 +1,4 @@
+graft package_facebook_scrapper
+include setup.py
+include LICENSE.txt
+include README.md
