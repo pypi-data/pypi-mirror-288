@@ -1,0 +1,3 @@
+[console_scripts]
+adi-build = adilib.scripts.adi_build:main_program
+adi-build-sql = adilib.scripts.adi_build_sql:main_program

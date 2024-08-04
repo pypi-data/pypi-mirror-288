@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: adilib
+Version: 0.13
+Summary: Application Data Interface (ADI) library
+Author-email: James Mathews <mathewj2@mskcc.org>
+Project-URL: Documentation, https://adiframework.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pandas ==1.5.3
+Requires-Dist: Jinja2 ==3.1.2
+Requires-Dist: toml ==0.10.2
+Requires-Dist: oyaml ==1.0
+
+This repository contains a library, `adilib`, that comprises a partial implementation of a data-oriented software design pattern that may be called the *Application Data Interface*.
+
+Note that Python package `setuptools>=63` is required.
+
+### Build the package
+
+```sh
+make package
+```
+
+### Release the package to a private Python package index
+
+Define environment variables `adiframework_username` and `adiframework_hostname`, or supply these on the command line call below using prepending.
+
+Make sure the host has granted this user SSH upload access to `/home/<username>/private_pypi/pypi`, so that your `.ssh` contains credentials that the host accepts for the given user.
+
+Then use:
+
+```sh
+make release-package
+```
+
+The output:
+```txt
+Building/packaging adilib.
+Trying credentials for <username>@adiframework.com ... 
+Credentials are valid.
+Pushing adilib to private Python package index.
+adilib-0.3-py3-none-any.whl                      100%   30KB   1.5MB/s   00:00
+```
+
+### Install the package
+
+Assuming the package index server is setup at `adiframework.com/pypi`, create file `~/.pip/pip.conf`:
+
+```
+[global]
+extra-index-url = https://adiframework.com/pypi
+trusted-host = adiframework.com
+```
+
+Also create file `~/.netrc`:
+
+```txt
+machine adiframework.com
+login <username>
+password <password>
+```
+
+Then use `pip` in the normal way:
+
+```sh
+python -m pip install adilib
+```
+
+Check it was installed:
+```sh
+python -m pip freeze | grep adilib
+
+...
+
+adilib==0.3
+```
