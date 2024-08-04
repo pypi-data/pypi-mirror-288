@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+pywesaspinall/Tools.py
+pywesaspinall/__init__.py
+pywesaspinall.egg-info/PKG-INFO
+pywesaspinall.egg-info/SOURCES.txt
+pywesaspinall.egg-info/dependency_links.txt
+pywesaspinall.egg-info/requires.txt
+pywesaspinall.egg-info/top_level.txt
