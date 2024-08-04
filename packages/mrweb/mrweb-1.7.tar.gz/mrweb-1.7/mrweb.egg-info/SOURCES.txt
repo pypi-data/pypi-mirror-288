@@ -1,0 +1,15 @@
+setup.cfg
+setup.py
+mrweb/__init__.py
+mrweb/ai.py
+mrweb/api.py
+mrweb/exceptions.py
+mrweb/fakemail.py
+mrweb/hashcheck.py
+mrweb/tron.py
+mrweb.egg-info/PKG-INFO
+mrweb.egg-info/SOURCES.txt
+mrweb.egg-info/dependency_links.txt
+mrweb.egg-info/not-zip-safe
+mrweb.egg-info/requires.txt
+mrweb.egg-info/top_level.txt
