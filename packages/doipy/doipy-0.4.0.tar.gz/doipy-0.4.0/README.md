@@ -1,0 +1,270 @@
+# DOIPY
+
+DOIPY is a Python wrapper for communication using the Digital Object Interface Protocol (DOIP) in its current
+[specification v2.0](https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf).
+
+It supports three main functionalities:
+
+1. Receive the IP and port of a DOIP service by supplying the service ID (see `get_connection`).
+2. All basic DOIP operations to handle digital objects (DOs): `hello`, `list_operations`, `create`, `update`, `delete`, 
+   `retrieve`, and `search`. Extended operations implemented by specific repository software are and will be included in 
+    the future.
+3. Some FDO-Manager functionality to handle FAIR digital objects (FDOs): Create an FDO (see `create_fdo`) that complies
+   with configuration type 14, which is expressed by a combination of DOIP basic operations, validation steps and
+   communication with the data type registry (DTR).
+
+## Install
+
+Simply run
+
+```shell
+$ pip install doipy
+```
+
+## Usage (Python Code)
+
+To use the `doipy` package in the Python code simply import it and call the exposed methods. The package has several
+methods. Please use `doipy --help` to list all available methods.
+
+### 1. Get the IP and Port of a DOIP Service
+
+The service ID is a handle which identifies a DOIP service. For example, `21.T11967/service` is the service ID
+identifying the Cordra instance in the FDO One Testbed. Starting with the service ID, one receives the IP and port of
+the DOIP service by applying the `get_connection` function.
+
+```python
+from doipy import get_connection
+
+# get the IP and port of a DOIP service
+service_id, ip, port = get_connection('21.T11967/service')
+```
+
+### 2. Basic DOIP Operations
+
+To communicate with a DOIP service, one has to supply a target ID as well as the IP and port of the desired service. For
+the operations `hello`, `create`, and `search`, the target ID is equal to the service ID. For `retrieve`, `delete`,
+and `update`, the target ID corresponds to the PID of a DO. For `list_operations`, the target ID might be either a
+service ID or a DO PID. Below is demonstrated how to apply operations where the service ID is required.
+
+```python
+from doipy import get_connection, hello, list_operations, create, search
+from pathlib import Path
+
+# get the IP and port of a DOIP service
+service_id, ip, port = get_connection(service='21.T11967/service')
+
+# say hello to the data service
+response_hello = hello(target_id=service_id, ip=ip, port=port)
+
+# list all available operations at the data service
+response_list_operations = list_operations(target_id=service_id, ip=ip, port=port)
+
+# create a DO at the data service
+metadata = {'key1': 'value1', 'key2': 'value2'}
+username = ''
+password = ''
+# possibilities for authentication: provide either (username, password) or (client_id, password) or (token). The 
+# authentication credentials are the credentials to authenticate the user at the DOIP service.
+response_create = create(target_id=service_id, ip=ip, port=port, bitsq=Path('file.txt'), metadata=metadata, 
+                         username=username, password=password)
+
+# call the search operation
+response_search = search(target_id=service_id, ip=ip, port=port, query='type:Document', username=username, password=password)
+```
+
+For the operations `list_operations`, `retrieve`, `delete`, and `update`, the target ID corresponds to a PID identifying
+a DO. As an example, we take the PID `21.T11967/35463c4d5e1cf0449a31` which identifies a DO at the Cordra instance of
+the FDO One Testbed. To run those operations in the Python code, one can follow the lines below.
+
+```python
+from doipy import get_connection, list_operations, retrieve, delete
+
+# get the IP and port of a DOIP service
+_, ip, port = get_connection('21.T11967/service')
+
+do = '21.T11967/35463c4d5e1cf0449a31'
+username = ''
+password = ''
+
+# list all available operations on the given DO
+response_list_operations = list_operations(target_id=do, ip=ip, port=port, username=username, password=password)
+
+# retrieve a DO
+response_retrieve = retrieve(target_id=do, ip=ip, port=port, username=username, password=password)
+
+# download a bit-sequence of a DO. The file must be the id of the bit-sequence to be downloaded.
+response_download = retrieve(target_id=do, ip=ip, file='031c09fd-d45d-48b0-acab-57ec049bb6c8', port=port, username=username, password=password)
+
+# delete a DO
+response_delete = delete(target_id=do, ip=ip, port=port, username=username, password=password)
+
+# call the update operation (todo)
+```
+
+### 3. FDO Manager
+
+To create an FDO in the Python code, one needs to supply a Python dictionary which follows the structure of the schema 
+defined at https://typeapi.lab.pidconsortium.net/v1/types/schema/21.T11969/6e36f6c0de5fcab4a425 as input to 
+`create_fdo`.
+
+The `create_fdo` function supports FDOs following configuration type 14, i.e., which consist of multiple data DOs and 
+multiple metadata DOs.
+
+Each item in `FDO_Data_and_Metadata` is a data bit-sequence `data_bitsq` and its corresponding metadata bit-sequence
+`metadata_bitsq`. One DO is generated for the data bit-sequence and one DO is generated for the metadata bit-sequence.
+The content of `data_values` is written into the PID record of the data DO. The content of `metadata_values` is written
+into the PID record of the metadata DO.
+
+Use `create_fdo` to register an FDO with specified (meta)data bit-sequences:
+
+```python
+from doipy import create_fdo
+
+user_input = {
+  "FDO_Service_Ref": "21.T11969/01370800d56a0d897dc1",
+  "FDO_Profile_Ref": "21.T11969/141bf451b18a79d0fe66",
+  "FDO_Authentication": {
+    "username": "",
+    "password": ""
+  },
+  "FDO_Type_Ref": "21.1/thisIsAnFdoType",
+  "FDO_Rights_Ref": "21.1/thisIsAnFdoRightsSpecification",
+  "FDO_Genre_Ref": "21.1/thisIsAnFdoGenre",
+  "FDO_Data_and_Metadata": [
+    {
+      "data_bitsq": "data_bitsq_1.txt",
+      "data_values": "data_values_1.json",
+      "metadata_bitsq": "metadata_bitsq_1.json",
+      "metadata_values": "metadata_values_1.json"
+    },
+    {
+      "data_bitsq": "data_bitsq_2.txt",
+      "data_values": "data_values_2.json",
+      "metadata_bitsq": "metadata_bitsq_2.json",
+      "metadata_values": "metadata_values_2.json"
+    }
+  ]
+}
+
+# create an FDO
+response_create_fdo = create_fdo(user_input)
+```
+
+### Authentication
+
+If authentication credentials need to be provided, then the user has several options to authenticate:
+
+1. `username` and `password`
+2. `client_id` and `password`
+3. `token`
+
+Authentication credentials must be provided for the DOIP functions: `create`, `delete`, and `update`. Depending on 
+the rights for read access, authentication credentials might be necessary for `list_operations` of a DO, `retrieve`, and
+`search` as well. Authentication credentials must be provided for the FDO-Manager functions: `create_fdo`. Note that not 
+all data services accept all three options of authentication credentials.
+
+## Usage (Command Line Interface)
+
+### 1. Get the IP and port of a DOIP service
+
+Starting with the service ID, receive the IP and port of the DOIP service by applying the `get_connection` function.
+
+```shell
+# get the IP and port of a DOIP service
+$ doipy get_connection '21.T11967/service'
+```
+
+### 2. Basic DOIP Operations
+
+We demonstrate how to apply operations `hello`, `list_operations`, `create`, and `search` on the DOIP service which is
+identified by the service ID.
+Additional to the service ID, IP and port, the `create` operation has more parameters: The `do_type` refers to the type
+of the DO at the data service, which is `Document` in Cordra. `bitsq` is a path to a file which contains the data of the
+DO. `metadata` is a path to a JSON file containing the metadata. The key-value pairs from the JSON file are written into
+the handle record of the DO at generation. `username` and `password`are the authentication credentials of a user at
+the data service.
+
+```shell
+# get information from the DOIP service
+$ doipy hello '21.T11967/service' '141.5.106.77' 9000
+
+# list all available operations at the DOIP service
+$ doipy list_operations '21.T11967/service' '141.5.106.77' 9000
+
+# create a DO at the DOIP service
+$ doipy create '21.T11967/service' '141.5.106.77' 9000 --do-type 'Document' --do-name 'my_DO' --bitsq 'data.txt' --metadata 'metadata.json' --username '' --password ''
+
+# search in the DOIP service for a DO (todo)
+$ doipy search '21.T11967/service' '141.5.106.77' 9000 'type:Document' --username '' --password ''
+```
+
+Apply the functions `list_operations` , `retrieve`, `delete`, and `update` on the DO which is identified by the PID
+`"21.T11967/35463c4d5e1cf0449a31`.
+
+```shell
+# List all available operations of a DO
+$ doipy list_operations '21.T11967/35463c4d5e1cf0449a31' '141.5.106.77' 9000 --username '' --password ''
+
+# retrieve a DO 
+$ doipy retrieve '21.T11967/35463c4d5e1cf0449a31' '141.5.106.77' 9000 --username '' --password ''
+
+# download a bit-sequence of a DO. The file must be the id of the bit-sequence to be downloaded.
+$ doipy retrieve '21.T11967/35463c4d5e1cf0449a31' '141.5.106.77' 9000 --file '031c09fd-d45d-48b0-acab-57ec049bb6c8' --username '' --password ''
+
+# delete a DO
+$ doipy delete '21.T11967/35463c4d5e1cf0449a31' '141.5.106.77' 9000 --username '' --password ''
+
+# update a DO (todo)
+```
+
+### 3. FDO Manager
+
+To create an FDO on the CLI, first create a JSON file (called input.json), whose content follows
+the schema defined at https://typeapi.lab.pidconsortium.net/v1/types/schema/21.T11969/6e36f6c0de5fcab4a425
+
+An example JSON file could look like this:
+
+```json
+{
+  "FDO_Service_Ref": "21.T11969/01370800d56a0d897dc1",
+  "FDO_Profile_Ref": "21.T11969/141bf451b18a79d0fe66",
+  "FDO_Authentication": {
+    "username": "",
+    "password": ""
+  },
+  "FDO_Type_Ref": "21.1/thisIsAnFdoType",
+  "FDO_Rights_Ref": "21.1/thisIsAnFdoRightsSpecification",
+  "FDO_Genre_Ref": "21.1/thisIsAnFdoGenre",
+  "FDO_Data_and_Metadata": [
+    {
+      "data_bitsq": "data_bitsq_1.txt",
+      "data_values": "data_values_1.json",
+      "metadata_bitsq": "metadata_bitsq_1.json",
+      "metadata_values": "metadata_values_1.json"
+    },
+    {
+      "data_bitsq": "data_bitsq_2.txt",
+      "data_values": "data_values_2.json",
+      "metadata_bitsq": "metadata_bitsq_2.json",
+      "metadata_values": "metadata_values_2.json"
+    }
+  ]
+}
+```
+
+Use `create_fdo` to register an FDO with specified (meta)data bit-sequences:
+
+```shell
+$ doipy create_fdo input.json
+```
+
+## For developer
+
+The project is managed by [Poetry](https://python-poetry.org/). Therefore, make sure that Poetry is installed in your
+system. Then run
+
+```shell
+$ poetry install
+```
+
+to install all dependencies. With this command, Poetry also installs the package in editable mode.
