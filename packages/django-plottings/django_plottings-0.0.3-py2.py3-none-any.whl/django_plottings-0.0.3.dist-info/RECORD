@@ -1,0 +1,8 @@
+plottings/__init__.py,sha256=JKc3z3v3Ncf7MErKTSMqJjpQx833TC9KdcIrBPcRRRs,1066
+plottings/base.py,sha256=ftt51gXuyOwF_DojPj333Al29qPHB1jO4Rg4pyEu-lc,4274
+plottings/file.py,sha256=H2EPtpITPGtKb7m1j74rT21lTw8OJnSOnrcRC8OwX6U,1402
+plottings/value.py,sha256=BTZZ2fq_IIViquGAGnPthIb51ho6BvPJW6Qkyl3yizY,2750
+plottings/views.py,sha256=E6cVb_4ZE7kJo6Mu0sYhgKkZDqCLm3ZgFVkhFJ5vz9I,4323
+django_plottings-0.0.3.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+django_plottings-0.0.3.dist-info/METADATA,sha256=nX1fUR7qekgGehMArNwCPDv545lmTMW9W0zwKBQRWmM,2871
+django_plottings-0.0.3.dist-info/RECORD,,
