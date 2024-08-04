@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pathenv/__init__.py
+pathenv/pathenv.py
+pathenv.egg-info/PKG-INFO
+pathenv.egg-info/SOURCES.txt
+pathenv.egg-info/dependency_links.txt
+pathenv.egg-info/top_level.txt
