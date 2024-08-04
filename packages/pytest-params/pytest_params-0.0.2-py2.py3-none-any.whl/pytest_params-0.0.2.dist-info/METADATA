@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pytest-params
+Version: 0.0.2
+Summary: Simplified pytest test case parameters.
+Author: Joao Coelho
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Framework :: Pytest
+Requires-Dist: pytest>=7.0.0
+Project-URL: Home, https://github.com/joaonc/pytest_params
+
+# pytest-params
+
+[![image](https://img.shields.io/pypi/v/pytest_params.svg)](https://pypi.python.org/pypi/pytest_params)
+
+Simplified pytest test case parameters.
+
+## Features
+
+**TODO**
+
+### Similar projects
+
+* [parametrization](https://github.com/singular-labs/parametrization)
+* [pytest-parametrized](https://github.com/coady/pytest-parametrized)
+
+The similarly named project [pytest-param](https://github.com/cr3/pytest-param) (no 's') is around
+pytest parametrization, but not about making parameters easier to declare.
+
