@@ -1,0 +1,16 @@
+xgenius/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xgenius/cli.py,sha256=VFZeD6LZG_6m8B0O23ZqXK6Jkz4DQUmcWyqg1As9KO0,4748
+xgenius/sbatch_templates/slurm_account_template.sbatch,sha256=-i7dgA2V6lwvWSIVaRYgY73tA1tUroGWcRFT5VTxzlQ,670
+xgenius/sbatch_templates/slurm_partition_template.sbatch,sha256=v1Vjk-9h_bHIUWSMjAV5cesUa0TSiD9osvycyICz8dM,598
+xgenius/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xgenius/scripts/build_image.py,sha256=xuzPGhldW3t9yp3qJa4snIMXEH55EXChTZsn8iw8ZBo,2285
+xgenius/scripts/cancel_jobs.py,sha256=TK7N3wiYGCI9Fp4WdlcsWiZQKQ51PYFrWmZ31KiP_dI,1164
+xgenius/scripts/check_jobs.py,sha256=6-nvRareN2JO5cFkluWULb0iQ5OTTtOElxk5XM21jmA,2059
+xgenius/scripts/generate_run_config.py,sha256=8dB4GEW0dQIVHNuUIU2GRtV1ilmxQAydPJfT6o1jq8M,2095
+xgenius/scripts/pull_results.py,sha256=BNaR3j-TCJARhjS2QiAUA8-Zg0Nn2CXzPQ_-1l_19wM,1839
+xgenius/scripts/setup_clusters.py,sha256=7GbbeSVkSPPc9AQk5ctHT-UeMvqq4kZnCd9Dq_jhXSM,3028
+xgenius-0.1.8.dist-info/METADATA,sha256=Ob9tdCEw8rjf3nXt_pAoYNMmyg6pziAPtdvWL_RUXjk,6269
+xgenius-0.1.8.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+xgenius-0.1.8.dist-info/entry_points.txt,sha256=uPK3NiXFtfSSaSvuE6px8JvuJ1LRc2WXy8TUROedKZI,388
+xgenius-0.1.8.dist-info/top_level.txt,sha256=rE5TT3emxeE1-_x1FLbF1R-hFNIZ-qPZxNvUXy__byk,8
+xgenius-0.1.8.dist-info/RECORD,,
