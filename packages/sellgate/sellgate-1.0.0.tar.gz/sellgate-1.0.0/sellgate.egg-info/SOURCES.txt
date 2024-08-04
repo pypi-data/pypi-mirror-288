@@ -1,0 +1,8 @@
+README.md
+setup.py
+sellgate/__init__.py
+sellgate.egg-info/PKG-INFO
+sellgate.egg-info/SOURCES.txt
+sellgate.egg-info/dependency_links.txt
+sellgate.egg-info/requires.txt
+sellgate.egg-info/top_level.txt
