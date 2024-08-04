@@ -1,0 +1,35 @@
+Metadata-Version: 2.3
+Name: s3py
+Version: 0.0.1
+Summary: A Parameters Library in steroids! For building Space Systems.
+Project-URL: Homepage, https://gitlab.com/s3space/libs3py
+Project-URL: Issues, https://gitlab.com/s3space/libs3py/-/issues
+Author-email: Olman Quiros Jimenez <olman@flight-software.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Space Systems Software Library - Python Edition (libs3py)
+Note: this is a work in progress.  Very (very!) unstable.
+
+
+
+## Build from source
+
+1. Install build dependencies.
+~~~~
+python -m pip install --upgrade build
+~~~~
+
+2. Build package.
+~~~~
+python -m build
+~~~~
+
+3. Install package locally.
+~~~
+pip install dist/s3py-.....whl
+~~~

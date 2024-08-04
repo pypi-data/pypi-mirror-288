@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "s3py"
+version = "0.0.1"
+authors = [
+  { name="Olman Quiros Jimenez", email="olman@flight-software.com" },
+]
+description = "A Parameters Library in steroids! For building Space Systems."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/s3space/libs3py"
+Issues = "https://gitlab.com/s3space/libs3py/-/issues"
+
