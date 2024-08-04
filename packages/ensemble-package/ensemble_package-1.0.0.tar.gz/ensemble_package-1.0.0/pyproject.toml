@@ -1,0 +1,14 @@
+[ensemble_package]
+name = "esemble_package_flomo"
+version = "1.0.0"
+authors = [
+  { name="Florian Meier", email="Meier@esemble.com" },
+]
+description = "A small esemble package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
