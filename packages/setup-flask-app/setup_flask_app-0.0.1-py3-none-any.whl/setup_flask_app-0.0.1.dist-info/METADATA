@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: setup-flask-app
+Version: 0.0.1
+Summary: A CLI to setup a flask app with just one command
+Author: Saqib Tanveer
+Author-email: <elven5055@gmail.com>
+Keywords: python,flask,setup-flask-app,auto setup
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a CLI tool which setup a flask app with just one command. This is to ease devs. They just have to write setup-flask-app and every thing require to stat adding value to their app will be setup automatically.

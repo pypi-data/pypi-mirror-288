@@ -1,0 +1,10 @@
+setup_flask_app/__init__.py,sha256=6tPOCVvU_A5y31QJc3Yl-XmOi3gSxRMHdqrEpO-kbvk,20
+setup_flask_app/cli.py,sha256=PX9gF9Bh-h2PUtH1O-1iKY8hVMWUO_0zwCwoBOEZHQE,1422
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cli.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+setup_flask_app-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+setup_flask_app-0.0.1.dist-info/METADATA,sha256=Fp6E-m1MyF2ktferS-XwICMjXHxroRfsgeD8cVp5bbg,781
+setup_flask_app-0.0.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+setup_flask_app-0.0.1.dist-info/entry_points.txt,sha256=-KwfcN3BSZuv5fqvhF9OF2PjjLudmvmHILhLucdJ-Y8,60
+setup_flask_app-0.0.1.dist-info/top_level.txt,sha256=2F00XDUXO40kMckEAH-W7KHZA33gKbgzTqwC_2pJdDg,22
+setup_flask_app-0.0.1.dist-info/RECORD,,
