@@ -1,0 +1,19 @@
+.pdf-page--1 {
+    background-color: #a0bbff;
+}
+
+.pdf-page--2 {
+    background-color: #fda3aa;
+}
+
+.pdf-page--3 {
+    background-color: #bdfda3;
+}
+
+.pdf-example__wrapper {
+    padding: 90px;
+}
+
+.page-example__text {
+    font-size: 24px;
+}
