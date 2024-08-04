@@ -1,0 +1,13 @@
+zoozl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zoozl/__main__.py,sha256=m2PTVnHSJEEi7HaJBArpe61lpzx_f65KmMmC3_gOjtk,969
+zoozl/server.py,sha256=vj1x8v2ty7oUuuZjKWSpeD1CNs5nRbK1Up425Emab2E,3852
+zoozl/websocket.py,sha256=QpHRD7wbn6UKxhLGYkg-3Cau0PMCeIsFJ0saqjP_ZOs,3102
+zoozl/chatbot/__init__.py,sha256=PAZRxHNSzjswc996U3zczZUidvoT_Wuu8piMT5BWWdY,447
+zoozl/chatbot/api.py,sha256=Zwfxk9NkBeScyeqfvQ5PgAjbSUCftXIneWMxgzk6E-I,1835
+zoozl/chatbot/interface.py,sha256=fTflfBNy_CU2LOMLqnPQqeS6B2ztV5qKrG9tXqdEk3o,6687
+zoozl/plugins/helpers.py,sha256=26Q4wW9iFE5ITJSpWrE1ywK_KdNIVifpjYGybvKsXBs,3450
+zoozl-0.0.22.dist-info/LICENSE,sha256=1HBxnHlhfO_4Izb7ZhucavwsD9g4IBOn0nJbXXL-V5U,1513
+zoozl-0.0.22.dist-info/METADATA,sha256=QHtzhIIit1mArLeWVcxM6Wlg051DymR6Rz6eN55RrYs,1375
+zoozl-0.0.22.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+zoozl-0.0.22.dist-info/top_level.txt,sha256=8oMjuTU-WgyyrOePtAJ5ii9-YDLI0qrMkHBRsWZAnJA,6
+zoozl-0.0.22.dist-info/RECORD,,
