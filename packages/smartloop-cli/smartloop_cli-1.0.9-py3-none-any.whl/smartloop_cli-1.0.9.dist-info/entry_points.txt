@@ -1,0 +1,2 @@
+[console_scripts]
+smartloop-cli = main:bootstrap
