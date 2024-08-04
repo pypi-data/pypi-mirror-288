@@ -1,0 +1,3 @@
+[console_scripts]
+optimodel-guard = optimodel_guard.cli:main
+optimodel-server = optimodel_server.cli:main
