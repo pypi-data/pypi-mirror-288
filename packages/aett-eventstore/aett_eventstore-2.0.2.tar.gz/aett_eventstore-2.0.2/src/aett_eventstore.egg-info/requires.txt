@@ -1,0 +1,6 @@
+pydantic>=2.8.2
+
+[dev]
+pip-tools
+pytest
+behave
