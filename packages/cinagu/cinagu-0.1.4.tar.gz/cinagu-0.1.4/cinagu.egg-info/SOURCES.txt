@@ -1,0 +1,14 @@
+README.md
+setup.py
+cinagu/__init__.py
+cinagu/chess_detection.py
+cinagu/game_integration.py
+cinagu/shooting_detection.py
+cinagu.egg-info/PKG-INFO
+cinagu.egg-info/SOURCES.txt
+cinagu.egg-info/dependency_links.txt
+cinagu.egg-info/requires.txt
+cinagu.egg-info/top_level.txt
+cinagu/tests/__init__.py
+cinagu/tests/test_chess_detection.py
+cinagu/tests/test_shooting_detection.py
