@@ -1,0 +1,4 @@
+[console_scripts]
+publisher=runespreader.publisher:main
+spreader=runespreader.spreaderfinder:main
+
