@@ -1,0 +1,23 @@
+
+[dev]
+mypy
+pyright
+flake8
+black
+ruff
+pytest
+coverage
+pymarkdownlnt
+
+[local]
+werkzeug
+cryptography
+
+[local:python_version < "3.13"]
+eventlet
+gevent
+
+[pub]
+build
+wheel
+twine
