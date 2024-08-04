@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: adilib
+Version: 1.0.0
+Summary: Application Data Interface (ADI) library
+Author-email: James Mathews <mathewj2@mskcc.org>
+Project-URL: Documentation, https://adiframework.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pandas ==1.5.3
+Requires-Dist: Jinja2 ==3.1.2
+Requires-Dist: toml ==0.10.2
+Requires-Dist: oyaml ==1.0
+
+This repository contains a library, `adilib`, that comprises a partial implementation of a data-oriented software design pattern that may be called the *Application Data Interface*.
+

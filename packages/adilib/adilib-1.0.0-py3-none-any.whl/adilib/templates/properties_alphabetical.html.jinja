@@ -1,0 +1,45 @@
+
+<table class="properties_table">
+<tr>
+<th></th>
+<th>Applies to</th>
+<th>Definition</th>
+<th>Values</th>
+</tr>
+{%- for property in properties %}
+<tr id="{{ property.tag }}">
+<td>
+<b>
+{%- if (property.values_tag != "") %}
+<a href="{{ domain_token }}_values.html#{{ property.values_tag }}">{{ property.label }}</a>
+{%- else %}
+{{ property.label }}
+{% endif %}
+</b>
+<br>
+<i>{{ property.tag }}</i>
+</td>
+<td>
+{% if (property.applies_to_entity_tag != "") %}
+<a href="{{ domain_token }}_entities_alphabetical.html#{{ property.applies_to_entity_tag }}">{{ property.applies_to_entity }}</a>
+{% else %}
+{{ property.applies_to_entity }}
+{% endif %}
+</td>
+<td>
+{{ property.definition }}
+{%- if property.definition_reference|length %}
+{%- if (property.crid_url != "") %}
+(<a href="{{ property.crid_url }}">{{ property.definition_reference }}</a>)
+{%- else %}
+({{ property.definition_reference }})
+{% endif %}
+{% endif %}
+</td>
+<td>
+{% if (property.values_type == "Entity") %}<a href="{{ domain_token }}_entities_alphabetical.html#{{ property.related_entity_tag }}">{{ property.related_entity }}</a>{% else %}{{ property.values_type }}{% endif %}
+</td>
+</tr>
+{%- endfor %}
+</table>
+<br>

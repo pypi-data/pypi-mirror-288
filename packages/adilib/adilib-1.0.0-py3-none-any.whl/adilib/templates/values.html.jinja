@@ -1,0 +1,31 @@
+
+{%- for property_values in values %}
+<table class="values_table" id="{{ property_values.property_tag }}">
+
+{%- for value in property_values.value_items %}
+
+{% if loop.first %}
+<tr>
+<th><a href="{{ domain_token }}_properties_alphabetical.html#{{ value.parent_property_tag }}">{{ value.parent_property_label }}</a></th>
+<th>Definition</th>
+</tr>
+
+{% else %}
+<tr id="{{ value.tag }}">
+<td><b>{{ value.label }}</b><br><i>{{ value.tag }}</i></td>
+<td>{{ value.definition }}
+{%- if value.definition_reference|length %}
+{%- if (value.crid_url != "") %}
+(<a href="{{ value.crid_url }}">{{ value.definition_reference }}</a>)
+{%- else %}
+({{ value.definition_reference }})
+{% endif %}
+{% endif %}
+</td>
+</tr>
+{% endif %}
+
+{%- endfor %}
+</table>
+<br>
+{%- endfor %}
