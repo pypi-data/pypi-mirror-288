@@ -1,0 +1,13 @@
+myao/__init__.py,sha256=CTygy6DT6OHliKQ_DV_uQoOFoovoNOWThxyxnXJtqsg,1559
+myao/containers.py,sha256=-G2FZeZyp4I3RnomrKn4V064k_DEBu_AXxGdQa2D6ks,889
+myao/errors.py,sha256=bwTaUpz_FX279yDXu87JAM9Z2XDUden3Xw8vVQONdSI,686
+myao/extractors.py,sha256=fi0jvTZLl714AzOI4HYl0Lg3wfb6fMMlmeWKU5PIpos,10038
+myao/magnets.py,sha256=ugKzDic79gunbq-6P5s-WLS3ChN90yDTdxduZcEu138,590
+myao/parameters.py,sha256=AVFyPtxbUo_6LFMtPhFG_5aloWNVaw_WYEgv40taNMc,4196
+myao/sites.py,sha256=BIc2kMuAQ8uSitYrGAqGAsWcssJ1Wg30rYlENWsQrJ0,426
+myao/urls.py,sha256=tFCt_xo7zwZrGvOXrdDHf_BiD3nRRbbASoSVOu_6c04,5869
+myao/utils.py,sha256=7xIQt4axz2hTHZq-reFUn2AanAOsEzd-8EM69kGlpFo,203
+myao-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+myao-0.0.1.dist-info/METADATA,sha256=1nRayhG_jwM1YAYCcX7A9A-9eA-7KX3k4nFOb4w96n4,2779
+myao-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+myao-0.0.1.dist-info/RECORD,,
