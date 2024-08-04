@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pytca
+Version: 1.2.2
+Summary: Python Library for Transaction Cost Analysis
+Home-page: https://github.com/jialuechen/pytca
+Author: Jialue Chen
+Author-email: jialuechen@outlook.com
+Provides-Extra: testing
+License-File: LICENSE
