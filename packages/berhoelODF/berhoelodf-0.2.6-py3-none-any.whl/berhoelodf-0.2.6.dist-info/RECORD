@@ -1,0 +1,11 @@
+berhoel/__init__.py,sha256=D5SM5QBBjhK5Rmd6eH8wPaUq9a2DniDXObEO062flwc,364
+berhoel/odf/__init__.py,sha256=SKBtAYNUEdpdC4Zcn8Cilu5GjWgB_-6c329etK85__4,2409
+berhoel/odf/ods.py,sha256=GbaaNUS3wRjQsC8GsU9WOUBdjAtJJ9Rc-tv2H3YRQ0I,6753
+berhoel/odf/tests/.ruff.toml,sha256=6lXB31zOR12agaQY0ERjeEHcxTTKY02sQj2lRXu6-oY,36
+berhoel/odf/tests/conftest.py,sha256=1cEKlb1GQCYeEQqU1ddp7dfXFJLs-GwmIpnEkT8oPao,922
+berhoel/odf/tests/test_odf_base.py,sha256=6NLSCGeDDc0L-qb_x0nsyI7HK0kQshzj9joXsp8D83Y,369
+berhoel/odf/tests/test_ods.py,sha256=7mOAif5kT4Yr3eDN7xaOrYmDXSzSP18kra01LDcvr6w,3529
+berhoelodf-0.2.6.dist-info/LICENSE,sha256=o47z1n3hlcyH9huZlb0ctLSClqxYQDhwx30Jbfs7hC8,1064
+berhoelodf-0.2.6.dist-info/METADATA,sha256=eRylYGolavs3BWBHZx1HzCODe6t4lsyz54iUZxzcqkM,1747
+berhoelodf-0.2.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+berhoelodf-0.2.6.dist-info/RECORD,,
