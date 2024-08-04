@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: gp-git
+Version: 0.0.1
+Summary: An alternative to your standard git, built using Python
+Author: Tomasz Sadowy
+Author-email: tomaszsadowypriv@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
