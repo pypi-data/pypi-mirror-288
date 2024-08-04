@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: networkip_project
+Version: 0.0.1
+Summary: A ip viewer to reset show and release your computer ip adress
+Home-page: https://github.com/lamalice20/Tuto-ytb
+Author: lamalice20
+Author-email: discord974a@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.12.4
+Requires-Dist: bson >=0.5.10
+Provides-Extra: dev
+Requires-Dist: vidstream ; extra == 'dev'
+Requires-Dist: pyscreeze ; extra == 'dev'
+Requires-Dist: pillow ; extra == 'dev'
+
