@@ -1,0 +1,12 @@
+database_handler/DatabaseHandler.py,sha256=oosOCRnCqsN3N5vkze0qVuD6XCwaFsFZv0CHEBIAX00,5684
+database_handler/__init__.py,sha256=Syq3n29nqu0UzQsYYx_I-6xvnuYBnoJCyXpGfwcJJDs,66
+google_drive/__init__.py,sha256=FhLo0hurrHbZQ3rzgKrVsUUjleE0GJXFCvHd3UAxnvg,89
+google_drive/build_service.py,sha256=4ZWyfDd_lMZl82IkdTw_NB72IpRnjdfVmIL1dZdevBo,930
+google_drive/worker.py,sha256=f8-q5vcLLNrs8OiIwpnUEy0368aB_7ClDbkLlKdwzp0,7294
+send_mail/SendMail.py,sha256=pM8Y_K4oQLF1OARw1gcvevntmrBbQ7FR4wPerai5Lw0,4182
+send_mail/__init__.py,sha256=XBqUESOK4OxlKtRm7FxLeeTXpPhDqzXYVv1RiHM-ank,39
+helper_scripts-0.4.0.dist-info/LICENSE,sha256=WPaSNBtrJ2sVCgIPZ4Ei8N9mo7oPfwK7nBLR-6APU2E,1076
+helper_scripts-0.4.0.dist-info/METADATA,sha256=t-OcCitqoPey-zxHVLk42wYpROQq-De-kKsnHAj7DlA,10008
+helper_scripts-0.4.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+helper_scripts-0.4.0.dist-info/top_level.txt,sha256=yCB4jKizsqDVrzD-M14Bpa3js0ueKWWLlGkkeSRtiCg,40
+helper_scripts-0.4.0.dist-info/RECORD,,
