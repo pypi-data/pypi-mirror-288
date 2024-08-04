@@ -1,0 +1,3 @@
+[console_scripts]
+lk = lumberkid.__main__:app
+lumberkid = lumberkid.__main__:app
