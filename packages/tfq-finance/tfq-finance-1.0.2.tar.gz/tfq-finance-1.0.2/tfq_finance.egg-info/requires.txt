@@ -1,0 +1,9 @@
+tensorflow
+tensorflow-quantum
+cirq
+numpy
+sympy
+scipy
+pandas
+matplotlib
+scikit-learn
