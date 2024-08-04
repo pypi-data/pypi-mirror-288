@@ -1,0 +1,9 @@
+quantastica_encoder_decoder-0.1.1-py3.11-nspkg.pth,sha256=p3lUkxQeaITkL9noRZHPwywH5LnTQq6Cn9tbiQK2jbM,564
+quantastica/encoder_decoder/__init__.py,sha256=kPM2TjH-qcN3qR3jzyO-Ca6WC-OJh5RiEXAp7Aa976Q,590
+quantastica/encoder_decoder/encoder_decoder.py,sha256=_amsNs3QBE-krtvN4W4oVdOVVCxIWsSbrCIKitYnbjE,6395
+quantastica_encoder_decoder-0.1.1.dist-info/LICENSE,sha256=-ZRnlqilvVmBVlFC-kLjsMw2rvb4Doa-r1kFs8D-8bU,11361
+quantastica_encoder_decoder-0.1.1.dist-info/METADATA,sha256=Bs4ArtvQ0SQsketLTtHo-UT-965k5UW_rSQtzi1o49M,8744
+quantastica_encoder_decoder-0.1.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+quantastica_encoder_decoder-0.1.1.dist-info/namespace_packages.txt,sha256=RVPTJvDEHMqmQsKjXPyvPZid65gHTI1ZpjdHtihbE2M,12
+quantastica_encoder_decoder-0.1.1.dist-info/top_level.txt,sha256=RVPTJvDEHMqmQsKjXPyvPZid65gHTI1ZpjdHtihbE2M,12
+quantastica_encoder_decoder-0.1.1.dist-info/RECORD,,
