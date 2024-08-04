@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ramannoodle
+Version: 1.0.0a0
+Summary: Raman spectra from first principles calculations.
+Author: Willis O'Leary
+Author-email: wolearyc@gmail.com
+License: MIT
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: spglib
+
+Raman spectra from first principles calculations. Supports VASP.
