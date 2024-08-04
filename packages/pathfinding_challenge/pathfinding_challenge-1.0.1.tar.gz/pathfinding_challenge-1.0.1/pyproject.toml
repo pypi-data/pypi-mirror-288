@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "pathfinding_challenge"
+version = "1.0.1"
+description = "Fuel Efficiency Pathfinding System Challenge"
+authors = ["Lucas S. Althoff"]
+readme = "README.md"
+packages = [{include = "pathfinding_challenge"}]
+classifiers = [
+    "Topic :: Scientific/Engineering",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable"
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.10.4"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.5.5"
+pytest = "^8.3.2"
+pytest-cov = "^5.0.0"
+taskipy = "^1.13.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 79
+extend-exclude = ['migrations']
+
+[tool.ruff.lint]
+preview = true
+select = ['I','F','E','W','PL','PT']
+
+[tool.ruff.format]
+preview = true
+quote-style = 'single'
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = '-p no:warnings'
+
+[tool.taskipy.tasks]
+pre_test = 'task lint'
+test = 'pytest -s -x --cov=pathfinding_challenge -vv'
+post_test = 'coverage html'
+lint = 'ruff check . ; ruff check . --diff'
+format = 'ruff check . --fix ; ruff format .'
+
+[tool.poetry.urls]
+Homepage = "https://github.com/lucas-althoff/BeesDataChallenge_ML/"
+Issues = "https://github.com/lucas-althoff/BeesDataChallenge_ML/issues"
+
