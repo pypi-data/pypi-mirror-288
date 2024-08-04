@@ -1,0 +1,8 @@
+finlogic-0.6.3.dist-info/METADATA,sha256=Qmh2TxtcOZTKSR-Q-06CwkLiPOZaSFj0VdLGC7Aet8E,14095
+finlogic-0.6.3.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+finlogic-0.6.3.dist-info/licenses/LICENSE,sha256=S7KB7HYpiMuFUovhFsai1sK03EaOnDkZbpkjB8pRwUs,1072
+finlogic/__init__.py,sha256=f4m36fqGeobSlwJq2o49yPMGT7giXyIDGLYDXr9lq2I,378
+finlogic/company.py,sha256=8DSG_SUIawSgzkk2jaNbBtrzTZfP-qBysoKkEEQxXl4,20404
+finlogic/data.py,sha256=VDYxcJJnMntYqUmD0mi9MvYDxlsjZ_VwI94wvJ0GuO0,7765
+finlogic/indicators.py,sha256=MXrwABtmwsH5LLYKhbVKw1FUAyZjp3YTSrlRfIvzxE8,7984
+finlogic-0.6.3.dist-info/RECORD,,
