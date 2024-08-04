@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/super_easypypi.egg-info/PKG-INFO
+src/super_easypypi.egg-info/SOURCES.txt
+src/super_easypypi.egg-info/dependency_links.txt
+src/super_easypypi.egg-info/entry_points.txt
+src/super_easypypi.egg-info/top_level.txt
+src/supereasypypi/__init__.py
+src/supereasypypi/__main__.py
+src/supereasypypi/cli.py
+src/supereasypypi/template.py
