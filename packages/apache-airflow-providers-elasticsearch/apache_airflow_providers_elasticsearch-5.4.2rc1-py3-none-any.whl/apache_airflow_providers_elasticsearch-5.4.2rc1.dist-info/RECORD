@@ -1,0 +1,13 @@
+airflow/providers/elasticsearch/LICENSE,sha256=FFb4jd2AXnOOf7XLP04pQW6jbdhG49TxlGY6fFpCV1Y,13609
+airflow/providers/elasticsearch/__init__.py,sha256=xJF95bkvWN5ceAwHxd9wuVHhtHdJ2QEiNPYEe4vD-oc,1500
+airflow/providers/elasticsearch/get_provider_info.py,sha256=P8yqsKLGrqrEcHPP0_uqPLIwTijfuzcBuu0IWwAi-i8,8529
+airflow/providers/elasticsearch/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/elasticsearch/hooks/elasticsearch.py,sha256=gAsy9Zj2GUIGNBawDCD6kaWA4Xh9rEtVArtto-Cgg5g,6330
+airflow/providers/elasticsearch/log/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/elasticsearch/log/es_json_formatter.py,sha256=DwWPDJtZLr_6Mdae1-XVEgmE1XErFIanSzxWovs50ig,1796
+airflow/providers/elasticsearch/log/es_response.py,sha256=tEFz1pAUzIg6Zw43ZjiHFTOB72kNP-czbEwMbymUZ88,6037
+airflow/providers/elasticsearch/log/es_task_handler.py,sha256=gSbETwbWwv0HvPXZGqqDmyiFoP-keOGuJPPZwJSn5dY,26249
+apache_airflow_providers_elasticsearch-5.4.2rc1.dist-info/entry_points.txt,sha256=jpgAUVmTsdtWQ4nru2FJQKP9JBN4OPHK-ybfYc3_BOs,109
+apache_airflow_providers_elasticsearch-5.4.2rc1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_elasticsearch-5.4.2rc1.dist-info/METADATA,sha256=269AV64YIgS0gVbsvCo2HE9quLUVzGunGZ3SY8OjDZ4,6232
+apache_airflow_providers_elasticsearch-5.4.2rc1.dist-info/RECORD,,
