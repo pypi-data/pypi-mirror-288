@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "fanpoints-python"
+version = "0.0.2"
+description = "This SDK allows you to interact with the Fanpoints API."
+authors = ["Tobia Ochsner <tobia.ochsner@fanpoints.ch>", "Marc Padrutt <marc.padrutt@fanpoints.ch>"]
+readme = "README.md"
+homepage = "https://fanpoints.ch"
+documentation = "https://docs.fanpoints.ch"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ruff = "^0.5.5"
+pyright = "^1.1.374"
+pre-commit = "^3.8.0"
+pydantic = "^2.8.2"
+requests = "^2.32.3"
+
+[tool.poetry.group.dev.dependencies]
+ariadne-codegen = "^0.14.0"
+ipykernel = "^6.29.5"
+watchdog = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ariadne-codegen]
+remote_schema_url = "https://jdb5iouccjaatkttxjgrrph2by.appsync-api.eu-central-1.amazonaws.com/graphql"
+queries_path = "fanpoints_python/queries"
+target_package_name = "types"
+target_package_path = "fanpoints_python"
+
+[tool.ariadne-codegen.remote_schema_headers]
+x-api-key = "da2-b5gwgtyborbztkw7oqnfurlinm"
+
+[tool.pyright]
+ignore = ["fanpoints_python/types"]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
