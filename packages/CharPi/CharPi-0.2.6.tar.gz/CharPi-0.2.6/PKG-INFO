@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: CharPi
+Version: 0.2.6
+Summary: Alpha version. This module is a driver for HD4480 and HD4480-like LCDs.
+Home-page: https://www.github.com/iCMDdev/CharPi
+Author: github.com/iCMDdev
+Keywords: HD44780,I2C,LCD,display,character
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Hardware
+Requires: RPi.GPIO
+Requires: smbus
+License-File: LICENSE

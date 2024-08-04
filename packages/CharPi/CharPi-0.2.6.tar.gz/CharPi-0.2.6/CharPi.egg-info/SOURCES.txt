@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+CharPi/LCDcontrol.py
+CharPi/__init__.py
+CharPi.egg-info/PKG-INFO
+CharPi.egg-info/SOURCES.txt
+CharPi.egg-info/dependency_links.txt
+CharPi.egg-info/top_level.txt
