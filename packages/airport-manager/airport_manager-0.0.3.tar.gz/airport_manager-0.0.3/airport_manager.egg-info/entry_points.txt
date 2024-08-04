@@ -1,0 +1,2 @@
+[console_scripts]
+airport-manager = airport_manager.cli:cli
