@@ -1,0 +1,9 @@
+xync_bot/__init__.py,sha256=tSeU8EGq6Y20rUwIChevYXcfO6JdtQT5aG3vPVGNmuQ,1152
+xync_bot/shared.py,sha256=MlKkTrsT29l7fF6-qAN9FO14cSuXuOuYxbNY5F4S2w4,137
+xync_bot/handlers/__init__.py,sha256=lGPndTeEl1oLFMzFMtKNG2XLL8IecUFj1YIGzkZ55M8,78
+xync_bot/handlers/main.py,sha256=AfWoTjBk_kzZCkR_7XfWYzWT2KV9ni_7TguRiJzxGcg,5757
+xync_bot/handlers/vpn.py,sha256=qKK55UrjEZeDvu7ljWXNUFBFgXTPTIEaCT2OAmKWky4,2219
+xync_bot-0.2.8.dist-info/METADATA,sha256=7uIiSoftRCmeba4cMyVi8PvgjyyP_w0ceL1BeDolp0Q,478
+xync_bot-0.2.8.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+xync_bot-0.2.8.dist-info/top_level.txt,sha256=O2IjMc1ryAf0rwIXWohSNT5Kzcs9johgKRDz8lCC0rs,9
+xync_bot-0.2.8.dist-info/RECORD,,
