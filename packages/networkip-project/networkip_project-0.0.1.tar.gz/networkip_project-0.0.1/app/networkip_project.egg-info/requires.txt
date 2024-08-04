@@ -1,0 +1,6 @@
+bson>=0.5.10
+
+[dev]
+vidstream
+pyscreeze
+pillow
