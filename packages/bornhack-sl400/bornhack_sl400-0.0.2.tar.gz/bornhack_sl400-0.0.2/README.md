@@ -1,0 +1,18 @@
+# SL400 BornHack 2024 phonebook converter
+Convert the BornHack 2024 phonebook JSON to vCard for the Gigaset SL400 DECT handset. It probably also works with the handsets that have been tested with QuickSync4Linux and other Gigaset handsets that have USB.
+
+## Dependencies
+* requests
+* vobject
+* QuickSync4Linux
+
+## Install 
+```
+pip3 install bornhack_sl400
+```
+It writes to the `stdout`, which can be used as `stdin` for `QuickSync4Linux`. 
+
+## Run
+```
+bornhack_sl400 | quicksync createcontacts --file - 
+```

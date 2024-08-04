@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bornhack_sl400"
+version = "0.0.2"
+authors = [
+  { name="Eloy", email="mail@eloydegen.com" },
+]
+description = "Convert the BornHack phonebook to vCard for the Gigaset SL400"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+  'vobject',
+  'requests',
+  'QuickSync4Linux',
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bornhack_sl400"]
+
+[project.urls]
+Homepage = "https://codeberg.org/eloy/bornhack_sl400/"
+Issues = "https://codeberg.org/eloy/bornhack_sl400/issues"
+
+[project.scripts]
+bornhack_sl400 = "bornhack_sl400.bornhack_sl400:main"
