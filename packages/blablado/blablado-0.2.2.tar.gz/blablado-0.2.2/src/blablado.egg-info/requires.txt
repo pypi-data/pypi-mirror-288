@@ -1,0 +1,9 @@
+numpy
+openai>=1.12.0
+langchain>=0.1.8
+langchain-openai>=0.0.6
+
+[testing]
+tox
+pytest
+pytest-cov
