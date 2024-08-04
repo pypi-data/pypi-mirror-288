@@ -1,0 +1,140 @@
+Metadata-Version: 2.1
+Name: cf_data_tracker
+Version: 0.3.11
+Summary: A package for managing raw and clean data tracker operations
+Author: Rami, R. K
+Author-email: your-email@example.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: python-dotenv
+Requires-Dist: beautifulsoup4
+Requires-Dist: boto3
+Requires-Dist: botocore
+Requires-Dist: bs4
+Requires-Dist: certifi
+Requires-Dist: charset-normalizer
+Requires-Dist: idna
+Requires-Dist: jmespath
+Requires-Dist: python-dateutil
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+Requires-Dist: s3transfer==0.10.0
+Requires-Dist: six
+Requires-Dist: soupsieve
+Requires-Dist: urllib3
+
+# CF Data Tracker
+## Purpose
+This packages ensembles all the functions required to manage the raw and clean files loaded in the raw and clean pipelines at CF.
+
+## Set up
+To run the package, please ensure to have the following env variables in your environment. Either you can load them using dotenv by stuffing them .env or you can set directly from terminal.
+
+```
+AWS_DEST_BUCKET_RAW=s3 bucket to save the raw data json tracker
+AWS_REGION_NAME= AWS Region to connect s3
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+```
+
+
+# Raw Version Tracker Documentation
+
+The version tracker is a system designed to maintain a consistent and accurate record of file versions stored in an Amazon S3 bucket. It ensures that each file is uniquely identified within a specific table and time period, avoiding duplicate entries and maintaining a clear version history.
+
+## Schema Structure
+
+The version tracker organizes file versions into a hierarchical structure:
+
+1. **Schema**: The top-level grouping, typically representing a data source or domain.
+2. **Table**: A subset within a schema, often corresponding to a specific type of data.
+3. **File Name**: Represents a particular time period (e.g., fiscal year or month) within a table.
+4. **Versions**: Individual file entries for a specific file name, each representing a unique upload.
+
+## Key Concepts
+
+### File Name and File
+
+- **File Name**: Represents a specific time period (e.g., fiscal year or month) within a table.
+- **File**: The actual filename of the uploaded file, which should be unique for each version within a file name entry.
+
+### Version Tracking
+
+The tracker maintains version information for each file, including:
+
+- Version number
+- Timestamp
+- File size
+- S3 location
+- Fiscal year
+- Upload date
+
+## Core Functions
+
+### 1. Checking Existing Entries
+
+- `check_file_name_entry`: Checks if a file name entry exists in a table.
+- `check_file_exists`: Verifies if a specific file already exists within a file name entry.
+
+### 2. Creating and Updating Entries
+
+- `create_file_name_entry`: Creates a new file name entry with the first version of a file.
+- `add_file_version`: Adds a new version to an existing file name entry.
+- `update_table_entry`: Updates the table entry with new or updated file information.
+
+### 3. Main Update Process
+
+- `update_file_info`: Coordinates the process of updating file information in the version tracker.
+- `update_version_tracker`: The main function to update the version tracker, handling the entire process from reading existing information to writing updated data.
+
+## Update Process
+
+When a new file is processed:
+
+1. The system checks if a file name entry exists for the given time period.
+2. If it exists, it checks if the specific file (actual filename) already exists in the versions.
+3. If the file doesn't exist:
+   - For a new file name entry: A new entry is created with version 1.
+   - For an existing file name entry: A new version is added, incrementing the version number.
+4. If the file already exists: The upload is skipped to avoid duplicates.
+
+## Usage in Pipelines
+
+To use the version tracker in data pipelines:
+
+1. Import necessary functions from the `raw_tracker` module.
+2. Before uploading a file:
+   - Check if the file name entry exists.
+   - If it exists, check if the specific file already exists in its versions.
+   - Only proceed with the upload if the file doesn't exist.
+3. If uploading, call `update_version_tracker` with the required information.
+
+Example:
+
+```python
+file_entry = check_file_name_entry(table_entry, file_name)
+if file_entry and check_file_exists(file_entry, file):
+    print(f"File {file} already exists in {file_name}. Skipping upload.")
+else:
+    # Proceed with file upload
+    upload_to_s3(file_path, bucket_name, s3_key)
+    # Then update the version tracker
+    update_version_tracker(schema_name, table_name, file_name, file, file_size, s3_location)
+```
+
+## Benefits
+
+- Prevents duplicate uploads and entries
+- Maintains clear version history for each time period
+- Allows for efficient processing and reduced S3 costs
+- Provides flexibility for different data schemas and tables
+- Enables easy tracking and management of file versions in the S3 bucket
+
+By adhering to this structure and utilizing the version tracker effectively, you can ensure the integrity and consistency of file versions stored in the S3 bucket, avoiding duplicate entries and maintaining a clear version history across different schemas and tables.
