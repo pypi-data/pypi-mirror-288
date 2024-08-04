@@ -1,0 +1,39 @@
+# fs-rclone
+# pyproject.toml
+
+[project]
+name = "fs.rclonefs"
+version = "0.5.1"
+authors = [
+    { name="Raygan Henley", email="raygan@raygan.com" },
+]
+description = "Pyfilesystem interface to control rclone remotes."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "fs~=2.4.12"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.urls]
+Homepage = "https://github.com/element0/fs.rclonefs"
+Issues = "https://github.com/element0/fs.rclonefs/issues"
+
+
+[tool.hatch.version]
+path = "src/fs.rclonefs/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fs"]
+exclude = [
+    "*.ipynb",
+    "tests.py"
+]
