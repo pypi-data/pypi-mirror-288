@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+xgenius/__init__.py
+xgenius/cli.py
+xgenius.egg-info/PKG-INFO
+xgenius.egg-info/SOURCES.txt
+xgenius.egg-info/dependency_links.txt
+xgenius.egg-info/entry_points.txt
+xgenius.egg-info/requires.txt
+xgenius.egg-info/top_level.txt
+xgenius/scripts/__init__.py
+xgenius/scripts/build_image.py
+xgenius/scripts/generate_run_config.py
+xgenius/scripts/setup_clusters.py
