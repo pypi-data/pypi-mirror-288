@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.py
+LGSiPy.egg-info/PKG-INFO
+LGSiPy.egg-info/SOURCES.txt
+LGSiPy.egg-info/dependency_links.txt
+LGSiPy.egg-info/top_level.txt
+code/__init__.py
