@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: english-ipa
+Version: 0.1.1
+Summary: 
+Author: adaxiang
+Author-email: adaxiang3104@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beautifulsoup4 (>=4.12.3,<5.0.0)
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# English IPA
+a python package for getting the IPA of an given English word
+
+## Usage
+```python
+from english_ipa.cambridge import CambridgeDictScraper
+
+scraper = CambridgeDictScraper()
+ipa_in_dict = scraper.get_ipa_in_dict("hello")
+# returned value
+# {'word': 'hello', 'ipas': [{'region': 'uk', 'ipas': ['/heˈləʊ/']}, {'region': 'us', 'ipas': ['/heˈloʊ/']}]}
+
+ipa_in_json = scraper.get_ipa_in_json("hello")
+# returned value
+# {"word":"hello","ipas":[{"region":"uk","ipas":["/heˈləʊ/"]},{"region":"us","ipas":["/heˈloʊ/"]}]}
+```

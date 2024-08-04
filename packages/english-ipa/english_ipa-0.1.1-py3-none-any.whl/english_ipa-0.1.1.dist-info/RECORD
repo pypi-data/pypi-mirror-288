@@ -1,0 +1,8 @@
+english_ipa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+english_ipa/cambridge.py,sha256=y0nwddleuBf19YgkDUyodK4EtXrCC3t9eBFV9cLUiZQ,2734
+english_ipa/model/IPA.py,sha256=NO9LhpHkSqgUZrdlgPJQbN9xVv-q9lQFxIjyY61SXEU,203
+english_ipa/model/region.py,sha256=vWSG0s3BvU37YbY_bPKxpGO71lkDqRjeW-SaYlPHC5g,77
+english_ipa/model/word.py,sha256=sN329dn5Z6Xz4wOUuvDTepLXfLuHeO55WhJmQnBQuMI,129
+english_ipa-0.1.1.dist-info/METADATA,sha256=7xvN8QVVyy4rHMvBC90kCmsACAguCPPXV0BmLX2HQqI,957
+english_ipa-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+english_ipa-0.1.1.dist-info/RECORD,,
