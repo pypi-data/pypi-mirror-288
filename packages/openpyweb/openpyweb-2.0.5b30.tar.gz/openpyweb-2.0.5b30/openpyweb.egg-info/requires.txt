@@ -1,0 +1,5 @@
+Pillow
+colorama
+cx-Oracle
+mysql-connector-python
+psycopg2-binary
