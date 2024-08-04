@@ -1,0 +1,77 @@
+[betty.command]
+clear-caches = betty.cli.commands.clear_caches:clear_caches
+config = betty.cli.commands.config:config
+demo = betty.cli.commands.demo:demo
+docs = betty.cli.commands.docs:docs
+generate = betty.cli.commands.generate:generate
+new = betty.cli.commands.new:new
+new-translation = betty.cli.commands.new_translation:new_translation
+serve = betty.cli.commands.serve:serve
+serve-nginx-docker = betty.extension.nginx._cli:serve_nginx_docker
+update-translations = betty.cli.commands.update_translations:update_translations
+
+[betty.dev.command]
+dev-new-translation = betty.cli.commands.dev_new_translation:dev_new_translation
+dev-update-translations = betty.cli.commands.dev_update_translations:dev_update_translations
+
+[betty.entity_type]
+citation = betty.ancestry:Citation
+enclosure = betty.ancestry:Enclosure
+event = betty.ancestry:Event
+file = betty.ancestry:File
+note = betty.ancestry:Note
+person = betty.ancestry:Person
+person-name = betty.ancestry:PersonName
+place = betty.ancestry:Place
+presence = betty.ancestry:Presence
+source = betty.ancestry:Source
+
+[betty.event_type]
+adoption = betty.ancestry.event_type:Adoption
+baptism = betty.ancestry.event_type:Baptism
+birth = betty.ancestry.event_type:Birth
+burial = betty.ancestry.event_type:Burial
+conference = betty.ancestry.event_type:Conference
+confirmation = betty.ancestry.event_type:Confirmation
+correspondence = betty.ancestry.event_type:Correspondence
+cremation = betty.ancestry.event_type:Cremation
+death = betty.ancestry.event_type:Death
+divorce = betty.ancestry.event_type:Divorce
+divorce-announcement = betty.ancestry.event_type:DivorceAnnouncement
+emigration = betty.ancestry.event_type:Emigration
+engagement = betty.ancestry.event_type:Engagement
+funeral = betty.ancestry.event_type:Funeral
+immigration = betty.ancestry.event_type:Immigration
+marriage = betty.ancestry.event_type:Marriage
+marriage-announcement = betty.ancestry.event_type:MarriageAnnouncement
+missing = betty.ancestry.event_type:Missing
+occupation = betty.ancestry.event_type:Occupation
+residence = betty.ancestry.event_type:Residence
+retirement = betty.ancestry.event_type:Retirement
+unknown = betty.ancestry.event_type:UnknownEventType
+will = betty.ancestry.event_type:Will
+
+[betty.extension]
+cotton-candy = betty.extension.cotton_candy:CottonCandy
+demo = betty.extension.demo:Demo
+deriver = betty.extension.deriver:Deriver
+gramps = betty.extension.gramps:Gramps
+http-api-doc = betty.extension.http_api_doc:HttpApiDoc
+maps = betty.extension.maps:Maps
+nginx = betty.extension.nginx:Nginx
+privatizer = betty.extension.privatizer:Privatizer
+trees = betty.extension.trees:Trees
+webpack = betty.extension.webpack:Webpack
+wikipedia = betty.extension.wikipedia:Wikipedia
+
+[betty.presence_role]
+attendee = betty.ancestry.presence_role.Attendee
+beneficiary = betty.ancestry.presence_role.Beneficiary
+celebrant = betty.ancestry.presence_role.Celebrant
+organizer = betty.ancestry.presence_role.Organizer
+speaker = betty.ancestry.presence_role.Speaker
+subject = betty.ancestry.presence_role.Subject
+witness = betty.ancestry.presence_role.Witness
+
+[console_scripts]
+betty = betty.cli:main

@@ -1,0 +1,7 @@
+betty.model.graph module
+========================
+
+.. automodule:: betty.model.graph
+   :members:
+   :undoc-members:
+   :show-inheritance:

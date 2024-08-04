@@ -1,0 +1,7 @@
+betty.test\_utils.attr module
+=============================
+
+.. automodule:: betty.test_utils.attr
+   :members:
+   :undoc-members:
+   :show-inheritance:

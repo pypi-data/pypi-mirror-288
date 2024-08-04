@@ -1,0 +1,10 @@
+betty.test\_utils.plugin package
+================================
+
+Module contents
+---------------
+
+.. automodule:: betty.test_utils.plugin
+   :members:
+   :undoc-members:
+   :show-inheritance:
