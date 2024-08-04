@@ -1,0 +1,11 @@
+Metadata-Version: 2.3
+Name: index_cmd
+Version: 0.0.1
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12.4
+Description-Content-Type: text/markdown
+
+This library is not that useful. Perhaps someday it will become great.
