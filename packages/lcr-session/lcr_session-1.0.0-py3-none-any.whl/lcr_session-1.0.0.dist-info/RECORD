@@ -1,0 +1,8 @@
+lcr_session/__init__.py,sha256=32dvDQCiJBY01RABVURG9GMwtDjAGuE4LFiWw6Q3d48,157
+lcr_session/session.py,sha256=3FczpoHVUeERH4p7fDDWeI-4vgp8o6Prsoweewyojoo,9509
+lcr_session/urls.py,sha256=t7Rotx7NXV3BWN-2kjmiDY4LJQp0H_RV9Xla7Z76XtI,2327
+lcr_session/utils.py,sha256=AZlII2FvpoRuaZtgm8X8as269TNrZr2fWg1Ig0Txj7Y,1660
+lcr_session-1.0.0.dist-info/LICENSE,sha256=sjnKWs1kDzRl7ypdszjvSGoSp235Z7x1FAHqgR8CQtg,1068
+lcr_session-1.0.0.dist-info/METADATA,sha256=YjEczERANVQKUiJT3NA0shmUtAaJK7p6dK4Zk2WB1QU,5118
+lcr_session-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+lcr_session-1.0.0.dist-info/RECORD,,
