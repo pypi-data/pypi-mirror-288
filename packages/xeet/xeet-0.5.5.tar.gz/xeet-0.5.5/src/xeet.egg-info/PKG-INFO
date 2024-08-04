@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: xeet
+Version: 0.5.5
+Summary: Xfstests inspired End to End Test suite
+Author-email: Omer Caspi <omer.caspi@gmail.com>
+Project-URL: Homepage, https://github.com/omercsp/xeet
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: <4,>=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: argcomplete>=2.0.0
+Requires-Dist: jsonschema>=3.2.0
