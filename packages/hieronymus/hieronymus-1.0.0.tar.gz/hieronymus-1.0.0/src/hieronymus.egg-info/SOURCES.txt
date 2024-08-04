@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/hieronymus/__init__.py
+src/hieronymus/__main__.py
+src/hieronymus/_progs.py
+src/hieronymus.egg-info/PKG-INFO
+src/hieronymus.egg-info/SOURCES.txt
+src/hieronymus.egg-info/dependency_links.txt
+src/hieronymus.egg-info/requires.txt
+src/hieronymus.egg-info/top_level.txt
+src/hieronymus/drafts/gitignore.txt
+src/hieronymus/drafts/init.txt
+src/hieronymus/drafts/license.txt
+src/hieronymus/drafts/main.txt
