@@ -1,0 +1,12 @@
+frame_sdk/__init__.py,sha256=fugdknP4WAGn6IUR_dC18ipb9ebMsuhPovt8Rm1ioyo,203
+frame_sdk/bluetooth.py,sha256=8wjrt_jZE1nCe4q30s3_YedxxojkANUBXn-Df_XIidM,18756
+frame_sdk/camera.py,sha256=zxh2TxlXU-FzmZeCJBkKXW4o207a1_nmGTec5p_KX_U,5009
+frame_sdk/display.py,sha256=SQnrhGEv5QoETv6rXkyP14G-zcj1aa7WAt9L6r-xf2A,19146
+frame_sdk/files.py,sha256=0_ZKTxwthwWIohkamyVadyLnPJkqZ_GxGPoSrEoNKhI,4478
+frame_sdk/frame.py,sha256=N9WVw7d9YpXalV7GnancroyN4CvdwGiii6zzb1Fn0Gk,13648
+frame_sdk/library_functions.py,sha256=V2hXvJZZw9saz3CJmxJthcwtywmCfKrb5SfGHdDMuNg,7570
+frame_sdk/microphone.py,sha256=Q_3cFwVVDtPabXVAAmETmPC-4zlZQIu5mHmkiB3gj4M,12084
+frame_sdk/motion.py,sha256=kB_G33KKaKXHkSGcF1F1cQQCYPzs1bS7TXV7WHT91jk,7064
+frame_sdk-1.2.1.dist-info/METADATA,sha256=RTnBcjG2bCjnR3b_wSMg3VYRU_7MDX-VdCrrqPJkrF0,10565
+frame_sdk-1.2.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+frame_sdk-1.2.1.dist-info/RECORD,,
