@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: enki-database
+Version: 0.1.0
+Summary: Python wrapper for reduced size english wikidata/wikipedia instance.
+Home-page: https://github.com/harttraveller/enki-database
+Author: Hart Traveller
+Author-email: ruling_fiction.0b@icloud.com
+Requires-Python: >3.9.7,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: sqlmodel (>=0.0.18,<0.0.19)
+Project-URL: Repository, https://github.com/harttraveller/enki-database
+Description-Content-Type: text/markdown
+
+# enki-database
+Python wrapper for reduced size english wikidata/wikipedia instance.
+
