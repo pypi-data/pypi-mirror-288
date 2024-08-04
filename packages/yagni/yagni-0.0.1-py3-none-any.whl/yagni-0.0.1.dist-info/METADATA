@@ -1,0 +1,24 @@
+Metadata-Version: 2.3
+Name: yagni
+Version: 0.0.1
+Summary: You are probably gonna need it: a collection of useful Python utilities aggregated over many years of development.
+Project-URL: Documentation, https://github.com/Andrew Dunai/yagni#readme
+Project-URL: Issues, https://github.com/Andrew Dunai/yagni/issues
+Project-URL: Source, https://github.com/Andrew Dunai/yagni
+Author-email: Andrew Dunai <a@dun.ai>
+License-Expression: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# yagni
+
+You are probably gonna need it: a collection of useful Python utilities aggregated over many years of development.
