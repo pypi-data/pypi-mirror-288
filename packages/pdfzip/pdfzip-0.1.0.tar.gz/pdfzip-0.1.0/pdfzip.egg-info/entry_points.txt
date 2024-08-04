@@ -1,0 +1,3 @@
+[console_scripts]
+pdfzip = pdfzip.compressor:main
+

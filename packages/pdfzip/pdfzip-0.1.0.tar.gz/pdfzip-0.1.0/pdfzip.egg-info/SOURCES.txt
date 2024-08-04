@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pdfzip/__init__.py
+pdfzip/compressor.py
+pdfzip.egg-info/PKG-INFO
+pdfzip.egg-info/SOURCES.txt
+pdfzip.egg-info/dependency_links.txt
+pdfzip.egg-info/entry_points.txt
+pdfzip.egg-info/top_level.txt
+tests/__init__.py
+tests/test_compressor.py
