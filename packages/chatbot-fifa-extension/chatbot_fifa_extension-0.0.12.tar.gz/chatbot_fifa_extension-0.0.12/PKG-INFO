@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: chatbot_fifa_extension
+Version: 0.0.12
+Summary: FIFA World Cup chatbot extension
+Home-page: https://github.com/Kolumbs/chatbot-fifa-extension
+Author: Juris Kaminskis
+Author-email: juris@zoozl.net
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: zoozl>=0.0.22
+Requires-Dist: membank>=0.4.1
+
+# chatbot-fifa-extension
+Extension for zoozl chatbot on FIFA World Cup betting game
+
+## Usage
+This module is an extension module for zoozl chatbot

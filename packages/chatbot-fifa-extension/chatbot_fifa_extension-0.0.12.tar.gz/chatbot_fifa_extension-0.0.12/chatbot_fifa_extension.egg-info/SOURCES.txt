@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+chatbot_fifa_extension/__init__.py
+chatbot_fifa_extension/euro2024.py
+chatbot_fifa_extension/exceptions.py
+chatbot_fifa_extension/fifa.py
+chatbot_fifa_extension/memories.py
+chatbot_fifa_extension.egg-info/PKG-INFO
+chatbot_fifa_extension.egg-info/SOURCES.txt
+chatbot_fifa_extension.egg-info/dependency_links.txt
+chatbot_fifa_extension.egg-info/requires.txt
+chatbot_fifa_extension.egg-info/top_level.txt
