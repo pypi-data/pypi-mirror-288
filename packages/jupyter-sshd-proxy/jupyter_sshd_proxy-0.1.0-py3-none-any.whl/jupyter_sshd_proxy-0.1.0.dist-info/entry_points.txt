@@ -1,0 +1,2 @@
+[jupyter_serverproxy_servers]
+sshd = jupyter_sshd_proxy:setup_sshd
