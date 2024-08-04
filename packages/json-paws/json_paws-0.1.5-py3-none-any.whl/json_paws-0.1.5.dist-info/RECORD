@@ -1,0 +1,11 @@
+jsonpaws/__init__.py,sha256=4DFNPuzbRYotkydejcDiVJ8k2YbnIeRMwDYd5DDS0ig,368
+jsonpaws/content_generator.py,sha256=JBmU5zg6ZY1w4wX9GJfT-xQ8syeA9RHC9kLSy2ZLLAM,6927
+jsonpaws/json_processor.py,sha256=OCqVq4Wt6rkSKQ-DyjOYVoswiHVmi-cl_SD9w4K9v3w,6628
+jsonpaws/prompt_generator.py,sha256=RAXIoWDTMwsMYT-Z2XF1xQf3872APfG3Rso2alM5bn0,3219
+jsonpaws/schema_parser.py,sha256=bvsikAUM0tBxqdjcn5fqAPgfC1D2AF9x6gSv8iwrIw4,295
+jsonpaws/utils.py,sha256=46iX2crrHxJPmkCXJzjnOYbVR1F_rPlJBHBdROtFsMc,1706
+json_paws-0.1.5.dist-info/LICENSE,sha256=6xjPchay0-zCUlqRz13daTOevjATuDsNOLEn4TaNKCM,1068
+json_paws-0.1.5.dist-info/METADATA,sha256=JmAoPEUHE5EODs27P-ctEN1QanfGmd53I4w8Ow-4EFI,11337
+json_paws-0.1.5.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+json_paws-0.1.5.dist-info/top_level.txt,sha256=v7esohW9R6uuA4L9b83XN8eWVtkNPUC5NMO_KocNeEA,9
+json_paws-0.1.5.dist-info/RECORD,,
