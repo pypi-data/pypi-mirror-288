@@ -1,0 +1,28 @@
+
+{%- for table in tables %}
+{{ table.name|stripquote }} {
+    shape: sql_table
+{%- for field in table.fields %}
+    {%- if not field.is_foreign_key %}
+    {{ field.name|stripquote}}:
+    {%- if (field.entity_or_property == "property") %}
+        {%- if field.has_predefined_values %} string
+        {%- else %}
+        {%- if (field.value_type == "String") %} string{%- endif %}
+        {%- if (field.value_type == "Entity") %} string{%- endif %}
+        {%- if (field.value_type == "Float") %} numeric{%- endif %}
+        {%- endif %}
+    {%- endif %}
+    {%- if (field.entity_or_property == "entity") %} string{% endif %}
+    {%- if field.is_primary_key %} {constraint: primary_key}{% endif %}
+    {%- else %}
+    {{ field.name|stripquote }}: string {constraint: foreign_key}{% endif %}
+    {%- endfor %}
+}
+{% endfor %}
+
+{%- for field in fields %}
+{%- if field.is_foreign_key %}
+{{ field.table }}.{{ field.name|stripquote }} -> {{ field.foreign_table_normalized|stripquote }}.{{ field.foreign_key_normalized|stripquote }}
+{%- endif -%}
+{% endfor %}

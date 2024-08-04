@@ -1,0 +1,91 @@
+<!DOCTYPE Ontology [
+   <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+   <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+   <!ENTITY iao "http://purl.obolibrary.org/obo/IAO_" >
+   <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+   <!ENTITY {{ domain_prefix }} "http://adiframework.com/owl/{{ domain_prefix | quote }}#" >
+]>
+<Ontology ontologyIRI="http://adiframework.com/owl/{{ domain_prefix }}/{{ version }}.owl">
+<Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+<Prefix name="iao" IRI="http://purl.obolibrary.org/obo/IAO_"/>
+<Prefix name="{{ domain_prefix }}" IRI="http://adiframework.com/owl/{{ domain_prefix | quote }}#"/>
+
+<Import>http://purl.obolibrary.org/obo/iao.owl</Import>
+
+{% for entity in entities %}
+<Declaration>
+  <Class IRI="{{ entity.iri }}"/>
+</Declaration>
+
+<AnnotationAssertion>
+  <AnnotationProperty IRI="&rdfs;label"/>
+  <IRI>{{ entity.iri }}</IRI>
+  <Literal>{{ entity.textual_name | lowercase }}</Literal>
+</AnnotationAssertion>
+
+<AnnotationAssertion>
+  <AnnotationProperty IRI="&iao;0000115"/>
+  <IRI>{{ entity.iri }}</IRI>
+  <Literal>{{ entity.definitional_annotation }}</Literal>
+</AnnotationAssertion>
+
+{% if entity.known_type is defined %}
+<AnnotationAssertion>
+  <AnnotationProperty IRI="&rdfs;seeAlso"/>
+  <IRI>{{ entity.iri }}</IRI>
+  <Literal>{{ entity.known_type.iri }}</Literal>
+</AnnotationAssertion>
+{% endif %}
+{% endfor %}
+
+{% for property in properties %}
+<Declaration>
+  <ObjectProperty IRI="{{ property.iri }}"/>
+</Declaration>
+
+<AnnotationAssertion>
+  <AnnotationProperty IRI="&rdfs;label"/>
+  <IRI>{{ property.iri }}</IRI>
+  <Literal>has {{ property.textual_name | lowercase }}</Literal>
+</AnnotationAssertion>
+
+<AnnotationAssertion>
+  <AnnotationProperty IRI="&iao;0000115"/>
+  <IRI>{{ property.iri }}</IRI>
+  <Literal>{{ property.definitional_annotation }}</Literal>
+</AnnotationAssertion>
+
+{% if property.known_type is defined %}
+<AnnotationAssertion>
+  <AnnotationProperty IRI="&rdfs;seeAlso"/>
+  <IRI>{{ property.iri }}</IRI>
+  <Literal>{{ property.known_type.iri }}</Literal>
+</AnnotationAssertion>
+{% endif %}
+{% endfor %}
+
+{% for property in entity_like_properties %}
+<Declaration>
+  <ObjectProperty IRI="{{ property.iri }}"/>
+</Declaration>
+
+<AnnotationAssertion>
+  <AnnotationProperty IRI="&rdfs;label"/>
+  <IRI>{{ property.iri }}</IRI>
+  <Literal>{{ property.textual_name | lowercase }}</Literal>
+</AnnotationAssertion>
+{% endfor %}
+
+{% for table in tables %}
+{% for relation in table.implied_functional_relations %}
+<SubClassOf>
+  <Class IRI="{{ table.entity.iri }}"/>
+  <ObjectSomeValuesFrom>
+    <ObjectProperty IRI="{{ relation.property.iri }}"/>
+    <Class IRI="{{ relation.target_iri }}"/>
+  </ObjectSomeValuesFrom>
+</SubClassOf>
+{% endfor %}
+{% endfor %}
+
+</Ontology>

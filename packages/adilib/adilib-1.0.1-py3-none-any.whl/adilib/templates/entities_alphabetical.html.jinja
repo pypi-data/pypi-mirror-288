@@ -1,0 +1,23 @@
+
+<table class="entities_table">
+<tr>
+<th></th>
+<th>Definition</th>
+</tr>
+{%- for entity in entities %}
+<tr id="{{ entity.tag }}">
+<td><b>{{ entity.label }}</b><br><i>{{ entity.tag }}</i></td>
+<td>
+{{ entity.definition }}
+{%- if entity.definition_reference|length %}
+{%- if (entity.crid_url != "") %}
+(<a href="{{ entity.crid_url }}">{{ entity.definition_reference }}</a>)
+{%- else %}
+({{ entity.definition_reference }})
+{% endif %}
+{% endif %}
+</td>
+</tr>
+{%- endfor %}
+</table>
+<br>

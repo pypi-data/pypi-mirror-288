@@ -1,0 +1,32 @@
+
+{%- for table in tables %}
+CREATE TABLE IF NOT EXISTS {{ table.name }} (
+{%- for field in table.fields %}
+    {%- if not field.is_foreign_key %}
+    {{ field.name }}
+    {%- if (field.entity_or_property == "property") %}
+        {%- if field.has_predefined_values %} VARCHAR(512)
+        {%- else %}
+        {%- if (field.value_type == "String") %} VARCHAR{%- endif %}
+        {%- if (field.value_type == "Entity") %} VARCHAR(512){%- endif %}
+        {%- if (field.value_type == "Float") %} NUMERIC{%- endif %}
+        {%- if (field.value_type == "Integer") %} INTEGER{%- endif %}
+        {%- endif %}
+    {%- endif %}
+    {%- if (field.entity_or_property == "entity") %} VARCHAR(512){% endif %}
+    {%- if field.is_primary_key %} PRIMARY KEY{% endif %}
+    {%- else %}
+    {{ field.name }} VARCHAR(512) REFERENCES {{ field.foreign_table_normalized }}({{ field.foreign_key_normalized }}) ON DELETE CASCADE {% endif %}
+    {%- if not loop.last%},{% endif %}{%- endfor %}
+    {%- if unique_rows %},
+    UNIQUE({% for field in table.fields %}{{ field.name }}
+    {%- if not loop.last%},{% endif %}{% endfor %}){% endif %}
+);
+COMMENT ON TABLE {{ table.name }} IS '{{ table.entity.definition }}{%- if table.entity.definitional_reference|length > 1 %} ({{ table.entity.definitional_reference }}){%- endif %}';
+{%- for field in table.fields %}
+COMMENT ON COLUMN {{ table.name}}.{{ field.name }} IS '{{ field.definition }}{%- if field.definitional_reference|length > 1 %} ({{ field.definitional_reference }}){%- endif %}';
+{%- endfor %}
+{% endfor %}
+{%- for statement in reference_table_statements %}
+{{ statement }}
+{% endfor %}

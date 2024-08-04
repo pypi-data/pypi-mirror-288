@@ -1,0 +1,70 @@
+
+<h2>Tables and fields</h2>
+
+{%- for specification in table_specifications %}
+<table class="tables_fields_syntax_overview" id="{{ specification[0].tag }}">
+{%- for row in specification %}
+{%- if loop.first %}
+<tr>
+<th>
+<b>
+{{ row.label }}
+</b>
+</th>
+<th>{{ row.definition }}
+(<a href="{{ domain_token }}_entities_alphabetical.html#{{ row.entity_type_tag }}"><i>{{ row.entity_type_label }}</i></a>)
+</th>
+</tr>
+{%- else %}
+<tr>
+<td>
+{% if (row.foreign_key_anchor != "") %}
+<a href="#{{ row.foreign_key_anchor }}">{{ row.label }}</a>
+{% else %}
+{{ row.label }}
+{% endif %}
+</td>
+<td>{{ row.definition }} (<i><a href="{{ domain_token }}_{{ row.target_page }}.html#{{ row.property_type_tag }}">{{ row.property_type_label }}</a></i>)</td>
+</tr>
+{%- endif %}
+{%- endfor %}
+</table>
+{{ specification[0].verbalization }}
+<br>
+<br>
+<br>
+{%- endfor %}
+
+<h2>External item references</h2>
+
+There is about {{ ontology_summary.percent_coverage }}&#37; coverage over the schema by controlled external ontologies. References may not be a perfect fit for the entity, property, or value.
+
+<table class="ontosummary">
+<tr>
+<th>
+{{ ontology_summary.header[0] }}
+</th>
+<th>
+{{ ontology_summary.header[1] }}
+</th>
+<th>
+{{ ontology_summary.header[2] }}
+</th>
+<th>
+</th>
+</tr>
+{% for record in ontology_summary.records %}
+<tr>
+<td>
+<a href="{{ record.registry_url }}"><b>{{ record.registry_symbol }}</b></a>
+</td>
+<td>
+{{ record.registry_name }}
+</td>
+<td>
+<span class="measurebar">{%- for entry in record.reference_placeholders %}&nbsp;{%- endfor %}</span>
+</td>
+<td class="rightcell">{{ record.reference_count }} / {{ ontology_summary.total_items_count }}</td>
+</tr>
+{% endfor %}
+</table>
