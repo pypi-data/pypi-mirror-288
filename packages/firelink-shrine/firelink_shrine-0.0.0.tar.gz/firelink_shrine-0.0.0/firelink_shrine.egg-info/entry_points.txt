@@ -1,0 +1,2 @@
+[console_scripts]
+tune = firelink._cli.tune:main

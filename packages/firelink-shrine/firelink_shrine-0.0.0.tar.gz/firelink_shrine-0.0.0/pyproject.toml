@@ -1,0 +1,85 @@
+# ---- All project specifications ---- #
+[project]
+name = "firelink-shrine"
+description = "A library for reproducible model training"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+    { name = "Randy Ardywibowo", email = "ardywibowo.randy@gmail.com" },
+]
+keywords = ["pytorch", "finetuning", "reproducibility"]
+dependencies = [
+
+    # Hugging Face integrations
+    "datasets",
+    "huggingface_hub",
+    "safetensors",
+
+    # Tokenization
+    "sentencepiece",
+    "tiktoken",
+    "blobfile>=2",
+
+    # Miscellaneous
+    "numpy<=1.26.4", # Pin here until https://github.com/tensorflow/tensorboard/issues/6869 is addressed
+    "tqdm",
+    "omegaconf",
+
+    # Quantization
+    "torchao",
+]
+dynamic = ["version"]
+
+[project.urls]
+GitHub = "https://github.com/ardywibowo/firelink"
+# Documentation = "-"
+Issues = "https://github.com/ardywibowo/firelink/issues"
+
+[project.scripts]
+tune = "firelink._cli.tune:main"
+
+[project.optional-dependencies]
+dev = [
+    "bitsandbytes>=0.43.0",
+    "pre-commit",
+    "pytest==7.4.0",
+    "pytest-cov",
+    "pytest-mock",
+    "pytest-integration",
+    "tensorboard",
+    "wandb",
+    "expecttest",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "firelink.__version__"}
+
+
+# ---- Explicit project build information ---- #
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = [""]
+include = ["firelink*", "recipes*"]
+
+[tool.setuptools.package-data]
+recipes = ["configs/*.yaml", "configs/*/*.yaml", "configs/*/*/*.yaml"]
+
+
+# ---- Tooling specifications ---- #
+[tool.usort]
+first_party_detection = false
+
+[tool.black]
+target-version = ["py38"]
+
+[tool.pydoclint]
+style = 'google'
+check-return-types = 'False'
+exclude = 'tests/firelink/models/(\w+)/scripts/'
+
+[tool.pytest.ini_options]
+addopts = ["--showlocals", "--import-mode=prepend", "--without-integration", "--without-slow-integration"]
