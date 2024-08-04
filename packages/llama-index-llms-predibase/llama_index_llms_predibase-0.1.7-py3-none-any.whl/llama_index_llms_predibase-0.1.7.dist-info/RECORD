@@ -1,0 +1,5 @@
+llama_index/llms/predibase/__init__.py,sha256=gCbZNgcJwatcRyAtdwKghpizzZTDaQ0Z1fyvEUtwyok,85
+llama_index/llms/predibase/base.py,sha256=IC0Ja3Tp2IKe-FkN8teOHXDj5CZS3XYmzNjkl0zsvlU,12927
+llama_index_llms_predibase-0.1.7.dist-info/METADATA,sha256=QMqkjLUF3naAs9bo51qvSqRXqQwuirCacMzhCqUt40U,645
+llama_index_llms_predibase-0.1.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_llms_predibase-0.1.7.dist-info/RECORD,,
