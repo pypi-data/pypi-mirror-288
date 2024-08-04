@@ -1,0 +1,12 @@
+quality_prompts/__init__.py,sha256=XdTjTtAQw5ULt3BNhlepVdq-khvtgWegWzV7xurChrM,106
+quality_prompts/exemplars.py,sha256=KWXD6V3k0Iu2KWt0U6tQdsh5WnQAFutkDEjGh4PFZYU,3517
+quality_prompts/prompt.py,sha256=REEJJ8lRQJonmZQAg5rrIt9DxsrLmX-FEIuyZGEMX44,12908
+quality_prompts/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quality_prompts/utils/llm.py,sha256=5-vMZbCnArz0hVDc9cprnRcQrIxGr5GMqpbVsfdLG8A,601
+quality_prompts/utils/prompt_postprocessing.py,sha256=X2GGr-KOfRqs1w-YKHvL0CHM-cXq5c5JogFVR4FpAZM,355
+quality_prompts/utils/prompting_techniques_system_prompts.py,sha256=aVY-sbg3nxituQ9yYklYmf7a6sDvOPVpi-lIzHjNBn0,9820
+quality_prompts-0.0.5.dist-info/LICENSE,sha256=fyQfQOHYNDL751rS7m2pnXeHAdzh0pW2WsrzLd-Fx1g,1058
+quality_prompts-0.0.5.dist-info/METADATA,sha256=jdFHryGNZhDut0I9K-5ILEA4R-3d66nvlynv2ZBWPUM,2226
+quality_prompts-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+quality_prompts-0.0.5.dist-info/top_level.txt,sha256=g59siO14Uq26ZPZ1vihhpmAuDqCHHzUycQYhY40o43c,16
+quality_prompts-0.0.5.dist-info/RECORD,,
