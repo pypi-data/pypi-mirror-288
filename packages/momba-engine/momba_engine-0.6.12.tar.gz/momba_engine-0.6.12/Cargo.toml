@@ -1,0 +1,12 @@
+[workspace]
+resolver = "2"
+members = ["engine"]
+exclude = ["private"]
+
+[profile.release]
+opt-level = 3
+debug = false
+debug-assertions = false
+overflow-checks = false
+lto = true
+panic = 'abort'
