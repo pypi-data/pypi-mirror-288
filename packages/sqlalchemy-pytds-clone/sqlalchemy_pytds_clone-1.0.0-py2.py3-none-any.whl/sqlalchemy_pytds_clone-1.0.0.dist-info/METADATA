@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: sqlalchemy-pytds-clone
+Version: 1.0.0
+Summary: sqlalchemy-pytds-clone
+License: MIT
+Platform: any
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: pytds-clone
+Requires-Dist: SQLAlchemy >=2.0
+
+A Microsoft SQL Server TDS connector for SQLAlchemy.
