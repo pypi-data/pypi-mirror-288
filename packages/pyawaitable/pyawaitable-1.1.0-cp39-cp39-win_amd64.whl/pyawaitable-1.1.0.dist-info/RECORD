@@ -1,0 +1,10 @@
+_pyawaitable.cp39-win_amd64.pyd,sha256=keixKXTh-4IBNbz8iLTCuzcl1vnCoKqCBEc4L79ALok,19968
+pyawaitable/__init__.py,sha256=GxBHiR15OPq4ZRrekMAz9H9zoNB2qXrP2Rw3EQpe0i8,539
+pyawaitable/abi.py,sha256=Gjn9eNyAok0ragokicRlxpQRC9c0MBd3tJ-u1e1nSnY,67
+pyawaitable/bindings.py,sha256=Hz1DkXitFvGV3-Y0pyhirr8ecJrDcZL6CN-7PXTItM4,2883
+pyawaitable/pyawaitable.h,sha256=cL79bYcnxiDadEL-YbKKF6qNgdH4zGDAgblE0KzIC50,3636
+pyawaitable-1.1.0.dist-info/LICENSE,sha256=TLAVQqZV28ExKnA6CHEMwAPn629YqAugdmYqfikcYGI,1091
+pyawaitable-1.1.0.dist-info/METADATA,sha256=KxFrYwWMQhxhR8Hau1Jbu0vXgNpIOaiA-yVDggeVDew,4333
+pyawaitable-1.1.0.dist-info/WHEEL,sha256=DmZ7B4aiAganfWOCUyjXG_z2uvUu-tkD3rVXMivgyOM,99
+pyawaitable-1.1.0.dist-info/top_level.txt,sha256=PXAbPz3-IVCEA7V8stWbz1QV-MqJfxJz18buTUhpq9M,25
+pyawaitable-1.1.0.dist-info/RECORD,,
