@@ -1,0 +1,12 @@
+milesianpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+milesianpy/common_operators.py,sha256=HZdgkuRfLGHtF7-vOsoZJPymtOTmCzPcA7JWYXmso-U,357
+milesianpy/calculations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+milesianpy/calculations/no_variable_calculation.py,sha256=RaU1rmJYuvQQTukDSoCt0-nmW8oHSvvWA45fB1dS_JA,4892
+milesianpy/parsers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+milesianpy/parsers/basic_parser.py,sha256=LJeWo2uv7HVZYcEFWcL4ZWomuKeJfn1JELxDIOKxthM,4192
+milesianpy/parsers/number_parser.py,sha256=I3021PkcxTaWCqld_PdUuJe3lseh5XRFdDTAsNEU8UU,1264
+milesianpy/parsers/operator_parser.py,sha256=sHMk2EV8gcatFMKp3q0cNzzoR33f6tfUjz5r6zCCT9E,629
+milesianpy-0.0.8.dist-info/METADATA,sha256=YN0cWJu5Q1ugQs3eCD9uasXk_NemUqLR9YcKUZHAKsY,974
+milesianpy-0.0.8.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+milesianpy-0.0.8.dist-info/top_level.txt,sha256=tXG19EmmyeJnaxiV6j4HcuHNMVFcMKlo0T12iLalt7k,11
+milesianpy-0.0.8.dist-info/RECORD,,
