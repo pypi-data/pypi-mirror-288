@@ -1,0 +1,3 @@
+[console_scripts]
+apclusterv = apclusterv.cluster_from_prot:main
+prepare = apclusterv.prepare_from_contig:main

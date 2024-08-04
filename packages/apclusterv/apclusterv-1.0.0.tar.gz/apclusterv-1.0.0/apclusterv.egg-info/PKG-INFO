@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: apclusterv
+Version: 1.0.0
+Home-page: https://github.com/hbyaoherbert/Apclusterv.git
+Author: haobinherbert
+Author-email: haobinherbert@163.com
+License: Apache
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Apclusterv: Clustering viral genomes with Affinity Propagation
+This software works in Python3.<br>
+## Dependencies:<br>
+   python>=3.7<br>
+   pandas<br>
+   numpy<br>
+   networkx >= 2.8.4 <br>
+   scipy >=1.8.1<br>
+   scikit-learn >= 1.1.2<br>
+   MCL <br>
+   diamond >= 0.9.34 <br>
+   prodigal >= 2.6.3<br>
+   R>=3.6.1<br>
+   
+## Installation: <br>
+   Suppose you are in a conda environment, you need to install MCL, prodigal (for ORF prediction),diamond (for alignment) and R(if not already installed, we just need stats library in r-base)
+   ```bash
+   conda install diamond -c bioconda 
+   conda install mcl -c bioconda
+   conda install prodigal -c bioconda
+   conda install r-base 
+   
+   pip install apclusterv 
+   ```
+## Getting Started:<br>
+
+   step1. preduct ORFs from the DNA file with the following command:  <br>
+   ```bash
+   prepare contig_dna_fasta 
+   ```
+   (contig_dna_fasta is the path to the dna sequences for clustering)
+   
+   step2. execute clustering with the following command:
+   ```bash
+   apclusterv contig_dna_fasta 
+   ```
+## Results <br>
+   The program will create tmp/ directory. The clustering result is tmp/cluster_result.I.A.csv
+   (cluster_result.3.10.csv by default)
+
