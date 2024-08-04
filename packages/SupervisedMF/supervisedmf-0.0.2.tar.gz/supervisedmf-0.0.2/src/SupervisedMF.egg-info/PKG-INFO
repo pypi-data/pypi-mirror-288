@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: SupervisedMF
+Version: 0.0.2
+Summary: A package for various supervised matrix factorization methods
+Author-email: Agam Goyal <agamg2@illinois.edu>, Yi Wei <ywei224@wisc.edu>, Hanbaek Lyu <hlyu@math.wisc.edu>
+Maintainer-email: Agam Goyal <agamg2@illinois.edu>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Keywords: supervised matrix factorization,matrix factorization,dimensionality reduction,low-rank compression,classification
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=2.0.0
+Requires-Dist: scipy>=1.13.0
+Requires-Dist: scikit-learn>=1.5.1
+Requires-Dist: matplotlib>=3.9.0
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: seaborn>=0.13.0
+Requires-Dist: tqdm>=4.66.4
+
+# Supervised Matrix Factorization
+
+This Python package contains source codes for algorithms for Supervised Matrix Factorization (SMF) in the following papers: 
+
+[1] Joowon Lee, Hanbaek Lyu, Weixin Yao
+[*"Exponentially Convergent Algorithms for Supervised Matrix Factorization*"](https://papers.nips.cc/paper_files/paper/2023/hash/f2c80b3c9cf8102d38c4b21af25d9740-Abstract-Conference.html) (NeurIPS 2023)
+
+[2] Joowon Lee, Hanbaek Lyu, Weixin Yao
+[*"Supervised Matrix Factorization: Local Landscape Analysis and Applications*"](https://arxiv.org/abs/2102.06984) (ICML 2024)
