@@ -1,0 +1,7 @@
+README.md
+setup.py
+app/networkip_project.egg-info/PKG-INFO
+app/networkip_project.egg-info/SOURCES.txt
+app/networkip_project.egg-info/dependency_links.txt
+app/networkip_project.egg-info/requires.txt
+app/networkip_project.egg-info/top_level.txt
