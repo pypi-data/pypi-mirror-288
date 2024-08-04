@@ -1,0 +1,153 @@
+Metadata-Version: 2.1
+Name: hosts-manager
+Version: 0.1.0
+Summary: A script to manage the /etc/hosts file.
+Author-email: Friedjof Noweck <git@noweck.info>
+License: MIT
+Project-URL: Homepage, https://github.com/Friedjof/hosts
+Project-URL: Documentation, https://github.com/Friedjof/hosts/blob/main/README.md
+Project-URL: Source, https://github.com/Friedjof/hosts
+Project-URL: Tracker, https://github.com/Friedjof/hosts/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools>=72.1.0
+Requires-Dist: validators>=0.33.0
+
+# Hosts File Manager
+
+This script manages the `/etc/hosts` file, allowing you to add, delete, list, update, backup, and restore entries.
+
+## Installation
+
+Ensure Python 3.x is installed.
+
+```sh
+git clone https://github.com/your-repo/hosts-manager.git
+cd hosts-manager
+pip install -r requirements.txt
+```
+
+## Usage
+
+The script supports various commands to facilitate the management of the hosts file. Each command has its own parameters and options.
+
+### Commands
+
+- **add**: Adds an IP address and one or more hostnames to the hosts file.
+- **del**: Deletes an IP address or hostname from the hosts file.
+- **clear**: Clears all entries from the hosts file.
+- **list**: Lists all entries from the hosts file.
+- **update**: Updates an existing entry in the hosts file.
+- **backup**: Backs up the hosts file and offers options to restore or remove backups.
+
+### Options
+
+- **--file**: The path to the hosts file (default: `hosts`).
+
+### Examples
+
+#### Add an IP address and hostname to the hosts file
+
+```sh
+python python ./hosts/main.py add 10.10.10.5 raspi-1.local
+python python ./hosts/main.py add 10.10.10.4 raspi-2.local raspi-3.local raspi-4.local
+```
+
+#### Update an entry in the hosts file
+
+```sh
+python python ./hosts/main.py update raspi-1.local --ip 10.10.10.1
+python python ./hosts/main.py update 10.10.10.1 --hostname raspi-10.local
+python python ./hosts/main.py update 10.10.10.* --ip 10.10.10.10
+python python ./hosts/main.py update raspi-.*.local --hostname raspi-10.local --ip 10.10.10.10
+```
+
+#### Delete an IP address or hostname from the hosts file
+
+```sh
+python python ./hosts/main.py del 10.10.10.5
+python python ./hosts/main.py del raspi-1.local
+python python ./hosts/main.py del 10.10.10.*
+python python ./hosts/main.py del raspi-.*.local
+```
+
+#### Clear all entries from the hosts file
+
+```sh
+python python ./hosts/main.py clear
+```
+
+#### List all entries from the hosts file
+
+```sh
+python python ./hosts/main.py list
+python python ./hosts/main.py list --section
+python python ./hosts/main.py list --section --sort-by hostname
+python python ./hosts/main.py list 10.10.10.* -s -b hostname
+```
+
+#### Backup the hosts file
+
+```sh
+python python ./hosts/main.py backup
+python python ./hosts/main.py backup --file /etc/hosts --dir ~/.local/share/hosts
+python python ./hosts/main.py backup --list 5
+python python ./hosts/main.py backup --restore
+python python ./hosts/main.py backup -r hosts-1631533200.bak
+python python ./hosts/main.py backup --remove last
+python python ./hosts/main.py backup -x oldest
+python python ./hosts/main.py backup -x hosts-1631533200.bak
+python python ./hosts/main.py backup --remove all
+```
+
+## Parameters
+
+### General Parameters
+
+- **--file**: The path to the hosts file (default: `/etc/hosts`).
+
+### `add` Command
+
+- **ip**: The IP address to add.
+- **hosts**: The hostnames to add (separate multiple hostnames with spaces).
+
+### `del` Command
+
+- **identifier**: The IP address or hostname to delete. Supports regex patterns (e.g., `192.168.*` or `raspi-.*.com`).
+
+### `clear` Command
+
+- No additional parameters.
+
+### `list` Command
+
+- **--section**, `-s`: Only list entries from the managed section.
+- **--sort-by**, `-b`: Sort the entries by IP address or hostname (default: `ip`).
+- **identifier**: The IP address or hostname to list (optional).
+
+### `update` Command
+
+- **identifier**: The IP address or hostname to update.
+- **--ip**: The new IP address.
+- **--hostname**: The new hostname.
+
+### `backup` Command
+
+- **--dir**: The directory to store the backups (default: `HostsFile.BACKUP_DIR`).
+- **--file**: The path to the hosts file (default: `HostsFile.HOST_FILE`).
+
+Mutually exclusive options:
+- **--list**, `-l`: List backups.
+- **--restore**, `-r`: Restore a backup file (optional: specific file).
+- **--remove**, `-x`: Remove a backup file (optional: specific file or `oldest`, `last`, `all`).
+
+## More Information
+
+For detailed information on using each command and available parameters, run the script with the `--help` parameter:
+
+```sh
+python python ./hosts/main.py --help
+```
