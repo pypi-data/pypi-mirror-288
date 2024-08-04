@@ -1,0 +1,15 @@
+aiohttp
+aiokafka
+aiolimiter
+brd-client
+click
+click-loglevel
+fastapi
+orjson
+parse
+pendulum
+pydantic==1.10
+python-dotenv
+plantable
+redis[hiredis]
+serpapi-client

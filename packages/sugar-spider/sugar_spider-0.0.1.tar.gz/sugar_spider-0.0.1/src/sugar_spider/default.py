@@ -1,0 +1,1 @@
+DEFAULT_REDIS_DB = 3

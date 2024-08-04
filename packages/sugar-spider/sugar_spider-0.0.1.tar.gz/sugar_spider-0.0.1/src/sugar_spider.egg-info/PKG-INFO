@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sugar_spider
+Version: 0.0.1
+Author: Woojin Cho
+Author-email: w.cho@cj.net
+License: CJCJ Internal Only
+Requires-Python: >=3.9
+Requires-Dist: aiohttp
+Requires-Dist: aiokafka
+Requires-Dist: aiolimiter
+Requires-Dist: brd-client
+Requires-Dist: click
+Requires-Dist: click-loglevel
+Requires-Dist: fastapi
+Requires-Dist: orjson
+Requires-Dist: parse
+Requires-Dist: pendulum
+Requires-Dist: pydantic==1.10
+Requires-Dist: python-dotenv
+Requires-Dist: plantable
+Requires-Dist: redis[hiredis]
+Requires-Dist: serpapi-client
