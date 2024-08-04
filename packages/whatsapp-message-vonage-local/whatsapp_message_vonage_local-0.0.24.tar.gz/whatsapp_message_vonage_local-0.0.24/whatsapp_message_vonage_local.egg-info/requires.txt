@@ -1,0 +1,6 @@
+vonage>=3.11.0
+message-local>=0.0.123
+logger-local>=0.0.135
+database-mysql-local>=0.0.290
+api-management-local>=0.0.61
+python-sdk-remote>=0.0.93
