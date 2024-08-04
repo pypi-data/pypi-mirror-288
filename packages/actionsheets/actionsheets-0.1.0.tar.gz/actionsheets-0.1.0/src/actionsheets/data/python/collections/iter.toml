@@ -1,0 +1,317 @@
+language = "python"
+parent = "python.collections"
+name = "iter"
+title = "Iterators"
+keywords = ["iterable"]
+
+[create]
+section = "Create"
+
+[create.counter]
+action = "Indefinite counter"
+code = "itertools.count()"
+
+[create.counter.start]
+action = "Create counter starting from _n_"
+code = "itertools.count(n)"
+
+[create.counter.start-step]
+action = "Create counter starting from _n_ with step size _s_"
+code = "itertools.count(n, s)"
+
+[create.counter.range]
+action = "Create limited counter from _n_ to _m_"
+code = "?"
+
+[create.constant.len]
+action = "Repeat constant value _v_ by _n_ times"
+code = "itertools.repeat(v, n)"
+
+[create.grid]
+action = "2D coordinates grid from (0, 0) to (_n - 1_, _m - 1_ )"
+code = "itertools.product(range(n), range(m))"
+
+[create.str]
+action = "From string (over chars)"
+code = "iter(str)"
+
+[create.list]
+action = "From list"
+code = "iter(lst)"
+
+[create.list.enum]
+action = "Enumeration pairs (index, element) from list"
+code = "enumerate(lst)"
+
+[create.dict]
+action = "Key-value pairs from dict"
+code = "enumerate(dct)"
+
+[create.list.cycle]
+action = "From list, indefinitely"
+code = "itertools.cycle(lst)"
+
+[create.list.repeat]
+action = "From list, _n_ times"
+code = "itertools.product(lst, n)"
+
+[create.list.concat]
+action = "Concatenate lists"
+code = "itertools.chain(lst1, lst2)"
+
+[create.repeat]
+action = "Create _n_ copies of iterable"
+code = "itertools.tee(x, 2)"
+
+[create.repeat.assign]
+code = "x1, x2 = itertools.tee(x)"
+
+
+[usage]
+section = "Usage"
+
+[usage.for]
+action = "Loop over iterator"
+code = """
+for i in iter:
+    print(i)
+"""
+
+
+[test]
+section = "Test"
+description = "Note that all tests consume."
+
+[test.'true'.all]
+action = "All elements are true"
+code = "all(bool_iter)"
+
+[test.'true'.any]
+action = "Any element is true"
+code = "any(bool_iter)"
+
+[test.'false'.all]
+action = "All elements are false"
+code = "not any(bool_iter)"
+
+[test.'false'.any]
+action = "Any element is false"
+code = "not all(bool_iter)"
+
+[test.equal.all]
+action = "All elements are equal"
+code = """
+g = groupby(x)
+next(g, True) and not next(g, False)
+"""
+
+[test.cond.all]
+action = "All elements are true conditional on function"
+code = "all(map(boolFun, iter))"
+
+
+[extract]
+section = "Extract"
+description = "Operations (partially) consume the iterable unless mentioned otherwise."
+
+[extract.len]
+action = "Get remaining length"
+code = "sum(1 for _ in iter)"
+details = "Fully consumes"
+
+[extract.elem.next]
+action = "Next element"
+code = "next(iter)"
+
+[extract.elem.next.default]
+action = "Get next element with default if depleted"
+code = "next(iter, 0)"
+
+[extract.elem.n]
+action = "Get _n_ th element"
+code = "next(itertools.islice(x, n, None), default)"
+
+[extract.elem.cond]
+action = "Get first element according to criterion"
+code = "next(e for e in x if e == 1)"
+
+[extract.elem.cond.filter]
+code = "next(filter(lambda e: e == 1, x))"
+
+[extract.'true'.index]
+action = "Get index of first true element"
+code = "?"
+
+[extract.'false'.index]
+action = "Get index of first false element"
+code = "?"
+
+
+[update]
+section = "Update"
+
+[update.shrink.clear]
+action = "Clear (consume fully)"
+code = "collections.deque(x, maxlen=0)"
+
+
+[derive]
+section = "Derive"
+
+
+[derive.transform]
+section = "Transform iterable"
+description = "Using the derived iterable consumes the original one as well."
+
+[derive.transform.expr]
+action = "Transform elements by expression"
+code = "x + 1 for x in iter"
+
+[derive.transform.elem.fun]
+action = "Map elements with function"
+code = "map(fun, iter)"
+
+[derive.transform.bool.not]
+action = "Invert boolean iterator"
+code = "map(lambda x: not x, bool_iter)"
+
+[derive.transform.bool.not.map]
+code = "map(operator.not_, bool_iter)"
+
+[derive.transform.cumsum]
+action = "Cumulative sum"
+code = "itertools.accumulate(iter)"
+
+[derive.transform.cum]
+action = "Accumulate function (reduce() with keeping all results)"
+code = "itertools.accumulate(iter, fun)"
+
+
+
+[derive.grow]
+section = "Grow"
+
+[derive.grow.append.iter]
+action = "Append iterable"
+code = "itertools.chain(iter, append_iter)"
+
+[derive.grow.prepend.iter]
+action = "Prepend iterable"
+code = "itertools.chain(prepend_iter, iter)"
+
+[derive.grow.cartesian]
+action = "Cartesian product of two or more iterables"
+code = "itertools.product(x, y, ...)"
+
+[derive.grow.cycle]
+action = "Repeat iterable indefinitely"
+code = "itertools.cycle(x)"
+
+[derive.grow.repeat]
+action = "Repeat iterable _n_ times"
+code = "itertools.repeat(x, n)"
+
+[derive.grow.elem.repeat]
+action = "Repeat each element of iterable _n_ times"
+code = "itertools.chain.from_iterable(itertools.repeat(tuple(x), n))"
+
+
+[derive.update.shrink]
+section = "Shrink"
+
+[derive.shrink.head]
+action = "First _n_ items of iterable"
+code = "itertools.islice(x, n)"
+
+[derive.shrink.tail]
+action = "Last _n_ items of iterable"
+code = "iter(collections.deque(x, maxlen = n))"
+
+[derive.shrink.drop.head]
+action = "Drop first _n_ items of iterable"
+code = "itertools.islice(x, start=n)"
+
+[derive.shrink.slice]
+action = "Slice based on (index) integer iterable"
+code = "?"
+
+[derive.shrink.filter.fun]
+action = "Filter based on boolean function"
+code = "filter(bool_fun, iterable)"
+
+[derive.shrink.filter.iter]
+action = "Filter based on boolean iterable"
+code = "itertools.compress(x, mask_iter)"
+
+[derive.shrink.filter.iter.negate]
+action = "Inverse filter iterable based on a boolean iterable"
+code = "itertools.filterfalse(mask, x)"
+
+[derive.shrink.iters.filter2.fun]
+action = "Filter iterables based on boolean function"
+code = "filter(lambda x: x[0] != x[1], zip(iter1, iter2))"
+
+[derive.shrink.filter.while.'true']
+action = "Take while predicate is true"
+code = "itertools.takewhile(lambda x: x < 5, x)"
+
+[derive.shrink.drop.while.'true']
+action = "Drop while predicate is true"
+code = "itertools.dropwhile(lambda x: x < 5, x)"
+
+
+[derive.combine]
+section = "Combine iterables"
+
+[derive.combine.concat]
+action = "Chain iterables (concatenate)"
+code = "itertools.chain.from_iterable(x, y, ...)"
+
+[derive.combine.tuple.shortest]
+action = "Combine iterable elements as tuple, stop on shortest iterable"
+code = "zip(x, y, ...)"
+
+[derive.combine.tuple.equal]
+action = "Combine iterable elements as tuple, expect equal length"
+code = "zip(x, y, ..., strict=True)"
+details = "Throws error if an iterable is depleted prematurely"
+
+[derive.combine.tuple.longest]
+action = "Combine iterable elements as tuple until all iterables are exhausted, with default value for depleted iterables"
+code = "itertools.zip_longest(x, y, ..., fillvalue = None)"
+
+[derive.combine.tuple.combinations.pairs]
+action = "Create combinations of pairs"
+code = "itertools.combinations(x, 2)"
+
+[derive.combine.tuple.combinations.group]
+action = "Create combinations of size _n_"
+code = "itertools.combinations(x, n)"
+
+[derive.combine.tuple.combinations.replacement]
+action = "Create combinations of pairs with replacement (so including pairs of (A, A))"
+code = "itertools.combinations_with_replacement(x, 2)"
+
+[derive.combine.tuple.combinations.group.replacement]
+action = "Create combinations of size n with replacement"
+code = "itertools.combinations_with_replacement(x, n)"
+
+[derive.combine.tuple.perm]
+action = "Create permutations"
+code = "itertools.permutations(x)"
+
+
+[convert]
+section = "Convert"
+
+[convert.list]
+action = "List"
+code = "list(iter)"
+
+[convert.tuple]
+action = "Tuple"
+code = "tuple(iter)"
+
+[convert.dict]
+action = "Dict"
+code = "dict(zip(key_iter, value_iter))"

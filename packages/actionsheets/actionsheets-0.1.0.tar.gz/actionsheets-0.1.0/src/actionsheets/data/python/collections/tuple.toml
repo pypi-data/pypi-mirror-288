@@ -1,0 +1,236 @@
+language = "python"
+parent = "python.collections"
+name = "tuple"
+keywords = ["pair", "immutable"]
+title = "Tuple"
+description = "An ordered immutable collection of elements."
+
+[create]
+section = "Create"
+
+[create.empty]
+action = "Empty tuple"
+code = "()"
+
+[create.scalar]
+action = "Define with single element"
+code = "(1,)"
+details = "Comma is important"
+
+[create.multiple]
+action = "Define with multiple elements"
+code = "(1, 2, 3)"
+
+[create.assign]
+action = "Define with elements via multiple assignment"
+code = "x = 1, 2, 3"
+
+[create.iter]
+action = "From iterator"
+code = "tuple(a)"
+
+[create.iter.unpack]
+action = "From iterator by unpacking"
+code = "(*a,)"
+
+[create.comprehension]
+action = "From comprehension"
+code = "tuple(v * 2 for v in a)"
+
+
+[test]
+section = "Test"
+
+[test.empty]
+action = "Empty"
+code = "not x"
+
+[test.nempty]
+action = "Not empty"
+code = "x"
+
+[test.contains.value]
+action = "Contains value _v_"
+code = "v in x"
+
+[test.ncontains.value]
+action = "Does not contain value _v_"
+code = "v not in x"
+
+[test.contains.duplicate]
+action = "Contains duplicate values"
+code = "len(v) != len(set(v))"
+
+[test.'true'.all]
+action = "All elements are `True`"
+code = "all(x)"
+
+[test.'true'.any]
+action = "Any element is `True`"
+code = "any(x)"
+
+[test.'true'.none]
+action = "No elements are `True`"
+code = "not any(x)"
+
+
+[extract]
+section = "Extract"
+
+[extract.length]
+action = "Length"
+code = "len(x)"
+
+[extract.hash]
+action = "Hash"
+code = "hash(x)"
+
+[extract.value.index]
+action = "Value at index _i_ (_i_th value)"
+code = "x[i]"
+
+[extract.value.endindex]
+action = "Value from end index _j_" 
+code = "x[-j]"
+
+[extract.value.count]
+action = "Count occurrences of value _v_"
+code = "x.count(v)"
+
+[extract.index.value.first]
+action = "First index of value _v_"
+code = "x.index(v)"
+details = "Error if missing"
+
+[extract.index.value.inrange.first]
+action = "First index of value _v_ between index range [ _n_, _m_ ]"
+code = "x.index(v, n, m)"
+details = "Error if missing in range"
+
+
+[extract.aggregate]
+section = "Aggregate"
+
+[extract.aggregate.sum]
+action = "Sum elements"
+code = "sum(x)"
+
+[extract.aggregate.min]
+action = "Min of elements"
+code = "min(x)"
+
+[extract.aggregate.max]
+action = "Max of elements"
+code = "max(x)"
+
+
+[update]
+section = "Update"
+description = "Although tuples are immutable, it's possible to update the tuple stored in a variable in-place"
+
+[update.grow]
+section = "Grow"
+
+[update.grow.append.value]
+action = "Append element"
+code = "x += (1,)"
+
+[update.grow.append.values]
+action = "Append elements"
+code = "x += (1, 2)"
+
+
+[update.combine]
+section = "Combine"
+
+[update.combine.append.tuple]
+action = "Append tuple _y_"
+code = "x += y"
+
+[update.combine.append.list]
+action = "Append elements of list _y_"
+code = "x += tuple(y)"
+
+
+[derive]
+section = "Derive"
+details = "Creates a new immutable copy"
+
+
+[derive.order]
+section = "Order"
+
+[derive.order.reverse]
+action = "Reverse"
+code = "x[::-1]"
+
+[derive.order.reverse.reversed]
+code = "tuple(reversed(x))"
+details = "Much slower in all cases"
+
+[derive.order.sort.asc]
+action = "Sort ascendingly"
+code = "tuple(sorted(x))"
+
+[derive.order.shuffle]
+action = "Shuffle"
+code = "tuple(random.sample(x, k=len(x)))"
+
+
+[derive.grow]
+section = "Grow"
+
+[derive.grow.repeat]
+action = "Replicate elements _n_ times"
+code = "x * n"
+
+
+[derive.shrink]
+section = "Shrink"
+
+[derive.shrink.slice]
+action = "Slice between [ _n_, _m_ ] (subset)"
+code = "x[n:m]"
+
+[derive.shrink.head]
+action = "First _n_ elements"
+code = "x[:n]"
+
+[derive.shrink.tail]
+action = "Last _n_ elements"
+code = "x[-n:]"
+
+
+[derive.combine]
+section = "Combine"
+
+[derive.combine.concat]
+action = "Concatenate tuples"
+code = "x + y + z"
+
+
+[convert]
+section = "Convert"
+
+[convert.assign]
+action = "Multiple assignment"
+code = "a, b = x"
+details = "Number of variables must match tuple length"
+
+[convert.string]
+action = "Comma-separated string"
+code = "str(x)"
+
+[convert.list]
+action = "List"
+code = "list(x)"
+
+[convert.list.unpack]
+code = "[*x]"
+
+[convert.set]
+action = "Set"
+code = "set(x)"
+
+[convert.set.unpack]
+code = "{*x}"
