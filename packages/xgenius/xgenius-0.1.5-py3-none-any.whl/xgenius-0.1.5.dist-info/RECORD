@@ -1,0 +1,13 @@
+xgenius/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xgenius/cli.py,sha256=VFZeD6LZG_6m8B0O23ZqXK6Jkz4DQUmcWyqg1As9KO0,4748
+xgenius/sbatch_templates/slurm_account_template.sbatch,sha256=1ueWUXQLiFQlR9LqlGT44_XgihK87o8se26JCfRGI7M,699
+xgenius/sbatch_templates/slurm_partition_template.sbatch,sha256=CrJI8vpDL_sArblrujxDKSRes-xkBo8ImGuguDcdvgg,627
+xgenius/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xgenius/scripts/build_image.py,sha256=xuzPGhldW3t9yp3qJa4snIMXEH55EXChTZsn8iw8ZBo,2285
+xgenius/scripts/generate_run_config.py,sha256=8-yT9Gt3pSWv8r5OyWqLbg_YnVrxgrOm-VfgczdblAg,2028
+xgenius/scripts/setup_clusters.py,sha256=7GbbeSVkSPPc9AQk5ctHT-UeMvqq4kZnCd9Dq_jhXSM,3028
+xgenius-0.1.5.dist-info/METADATA,sha256=pJDh43m_QPjoMgU9CZNTizZv-rNVT4kDKR52mceArOk,5923
+xgenius-0.1.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+xgenius-0.1.5.dist-info/entry_points.txt,sha256=nac3RBWYq2UcwUx3O_A6Hisr94qxd-52MaF0wOcBrMc,223
+xgenius-0.1.5.dist-info/top_level.txt,sha256=rE5TT3emxeE1-_x1FLbF1R-hFNIZ-qPZxNvUXy__byk,8
+xgenius-0.1.5.dist-info/RECORD,,
