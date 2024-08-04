@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68.2.2"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "pltwal"
+version = "0.0.1"
+authors = [
+  { name="Sebastian Wohlrab", email="sebastian.wohlrab@wohlrab.de" },
+]
+description = "Uses pywal colorscheme for pyplot rcParams"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = {file = "LICENSE"}
+
+[project.urls]
+Homepage = "https://github.com/snwohlrab/pltwal"
+Issues = "https://github.com/snwohlrab/pltwal/issues"
