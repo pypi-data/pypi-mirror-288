@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "juniordev"
+version = "0.1.0"
+description = ""
+authors = ["santoshdahal2016 <webtutor2016@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+agency-swarm = "^0.2.6"
+selenium-stealth = "^1.0.6"
+webdriver-manager = "^4.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
