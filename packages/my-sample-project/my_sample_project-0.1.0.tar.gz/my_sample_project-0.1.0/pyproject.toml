@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "my-sample-project"
+version = "0.1.0"
+description = ""
+authors = ["Jing-yilin <yilin.jing.ai@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "my_sample_project"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
