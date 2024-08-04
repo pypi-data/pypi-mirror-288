@@ -1,0 +1,6 @@
+[console_scripts]
+pysails = sails.main:run_python
+sails = sails.main:run_cli
+sails-compare = sails.compare:run
+sails-find = sails.find:run
+sails-snfg = sails.snfg:run
