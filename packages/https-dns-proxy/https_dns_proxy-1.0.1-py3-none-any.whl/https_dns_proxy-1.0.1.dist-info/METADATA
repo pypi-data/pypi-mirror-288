@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: https_dns_proxy
+Version: 1.0.1
+Summary: Proxies UDP DNS requests to Google DNS over HTTPS Service
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: configparser ==7.0.0
+Requires-Dist: requests ==2.19.0
+Requires-Dist: dnslib ==0.9.25
+
+Proxies UDP DNS requests to Google DNS over HTTPS Service
