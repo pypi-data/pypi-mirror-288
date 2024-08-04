@@ -1,0 +1,2 @@
+[console_scripts]
+docsai = docsai._cli:app

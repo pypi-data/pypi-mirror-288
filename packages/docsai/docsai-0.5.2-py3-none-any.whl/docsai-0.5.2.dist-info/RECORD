@@ -1,0 +1,11 @@
+docsai/__init__.py,sha256=hCqF6g3NrXmK_og9G6oUewYMxKw_b7Mv3EGKSTS8uJU,179
+docsai/__main__.py,sha256=PBQsHqVGG4RGAOf43ia7HcA8vTcLABQYw8Qw-o8XrXo,29
+docsai/_about.py,sha256=sianPhZiJd4gePK8Q4gsHOMCJ1MTETFofIhne7DsIfg,124
+docsai/_cli.py,sha256=KaMenBcilz9JiagNYZrT02m8sLkhVdqLMTV6YkhMbXE,2262
+docsai/generation.py,sha256=Sw88G1a-a853jC6UaQc4xryjCzXdZphEz9cNMlGXt70,40040
+docsai-0.5.2.dist-info/LICENSE,sha256=d6pPLwqDHo-w3S48t7xrVjn3dqYKMnrqQWc1sH8xTfE,1072
+docsai-0.5.2.dist-info/METADATA,sha256=DzOvuZqBPzkcK1ovQLPDEspopqNk2p7xpzNacejP_NQ,14761
+docsai-0.5.2.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+docsai-0.5.2.dist-info/entry_points.txt,sha256=fUfs-hcGWRdtYLqf8To_s2_eYMEO9VJRLIG3b70Virg,43
+docsai-0.5.2.dist-info/top_level.txt,sha256=fwcAl9m3ZD-p-B9ZDkkRk4mBpjPCZSeeiKQjsVESztQ,7
+docsai-0.5.2.dist-info/RECORD,,
