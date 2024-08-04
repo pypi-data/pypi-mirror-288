@@ -1,0 +1,2 @@
+[console_scripts]
+termapod = termapod.termapod:main

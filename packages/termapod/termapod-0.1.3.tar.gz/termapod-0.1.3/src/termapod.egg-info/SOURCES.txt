@@ -1,0 +1,17 @@
+.gitignore
+.nvimrc
+LICENSE
+README.md
+pyproject.toml
+pyrightconfig.json
+requirements.txt
+setup.py
+src/termapod/__init__.py
+src/termapod/_version.py
+src/termapod/termapod.py
+src/termapod.egg-info/PKG-INFO
+src/termapod.egg-info/SOURCES.txt
+src/termapod.egg-info/dependency_links.txt
+src/termapod.egg-info/entry_points.txt
+src/termapod.egg-info/requires.txt
+src/termapod.egg-info/top_level.txt
