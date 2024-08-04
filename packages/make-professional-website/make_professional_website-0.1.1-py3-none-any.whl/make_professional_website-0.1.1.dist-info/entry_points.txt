@@ -1,0 +1,2 @@
+[console_scripts]
+make-professional-website = make_professional_website.make_professional_website:make_professional_website
