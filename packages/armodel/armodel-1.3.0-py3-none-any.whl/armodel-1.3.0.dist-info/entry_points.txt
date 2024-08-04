@@ -1,0 +1,4 @@
+[console_scripts]
+arxml-dump = armodel.cli.arxml_dump_cli:cli_main
+swc-list = armodel.cli.swc_list_cli:main
+
