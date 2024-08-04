@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+tzero.py
+etc/PKG-README.md
+tzero.egg-info/PKG-INFO
+tzero.egg-info/SOURCES.txt
+tzero.egg-info/dependency_links.txt
+tzero.egg-info/entry_points.txt
+tzero.egg-info/top_level.txt
