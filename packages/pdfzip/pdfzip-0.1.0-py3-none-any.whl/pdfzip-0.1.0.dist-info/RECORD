@@ -1,0 +1,10 @@
+pdfzip/__init__.py,sha256=XkP9Oh71C63eY4MJLggPq7uevF37nuGB00nOttgv4Hw,37
+pdfzip/compressor.py,sha256=UaCbQz2APH6RXP6mQCvO6jUm706wC89zEDwibC0hOmQ,5796
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_compressor.py,sha256=Nt9_f_i4zYOLeIyEJ8MwvObB57vzQnWYnv3y2H1LmrU,2663
+pdfzip-0.1.0.dist-info/LICENSE,sha256=L4RlUYbeD9vcje-v17wIvYgn9b7ABfXjcOUlQ_YDsd4,1072
+pdfzip-0.1.0.dist-info/METADATA,sha256=aRvJ0tKnyUW4jxYRXXKNBfiLYyK_J1kbJ8Q8Fp8TiFg,5034
+pdfzip-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pdfzip-0.1.0.dist-info/entry_points.txt,sha256=Yb0NowyXSAATsTcZ7G7tZhsmsIBKP340TYvgoio2BH0,51
+pdfzip-0.1.0.dist-info/top_level.txt,sha256=5Gq-gmU6Hpsrd-lRWXce0t5uZMxPprbDCnqJeWsjzoo,13
+pdfzip-0.1.0.dist-info/RECORD,,
