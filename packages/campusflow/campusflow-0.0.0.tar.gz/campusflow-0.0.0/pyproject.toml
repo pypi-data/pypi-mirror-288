@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "campusflow.worker"
+version = "1.0.0"
+description = ""
+authors = ["Codigy Gmbh <info@codigy.de>"]
+license = "PROPRIETARY"
+readme = "README.md"
+packages = [{ include = "campusflow", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.111.1"
+ortools = "^9.10.4067"
+uvicorn = { extras = ["standard"], version = "^0.30.1" }
+gunicorn = "^22.0.0"
+pydantic = "^2.8.2"
+email-validator = "^2.2.0"
+pydantic-settings = "^2.3.4"
+python-dotenv = "^1.0.1"
+joserfc = "^1.0.0"
+requests = "^2.32.3"
+pendulum = "^3.0.0"
+pydantic-extra-types = "^2.9.0"
+celery = { extras = ["auth", "redis"], version = "^5.4.0" }
+typer = "^0.12.3"
+reserver = "^0.2"
+
+[tool.ruff]
+line-length = 120
+src = ["src"]
+
+[tool.ruff.lint]
+extend-select = ["D", "SIM", "UP", "B"]
+extend-ignore = ["D100", "D104"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

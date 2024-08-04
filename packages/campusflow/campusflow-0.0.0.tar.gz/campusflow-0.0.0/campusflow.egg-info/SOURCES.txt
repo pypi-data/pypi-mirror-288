@@ -1,0 +1,8 @@
+README.md
+campusflow_setup.py
+pyproject.toml
+campusflow/__init__.py
+campusflow.egg-info/PKG-INFO
+campusflow.egg-info/SOURCES.txt
+campusflow.egg-info/dependency_links.txt
+campusflow.egg-info/top_level.txt
