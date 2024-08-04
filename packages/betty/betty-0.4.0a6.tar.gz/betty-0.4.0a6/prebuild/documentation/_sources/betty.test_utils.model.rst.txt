@@ -1,0 +1,18 @@
+betty.test\_utils.model package
+===============================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 999
+
+   betty.test_utils.model.event_type
+
+Module contents
+---------------
+
+.. automodule:: betty.test_utils.model
+   :members:
+   :undoc-members:
+   :show-inheritance:

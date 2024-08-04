@@ -1,0 +1,225 @@
+[build-system]
+requires = [
+    'setuptools ~= 72.1',
+]
+build-backend = 'setuptools.build_meta'
+
+[project]
+dynamic = [
+    'version',
+]
+name = 'betty'
+description = 'Betty helps you visualize and publish your family history by building interactive genealogy websites out of your Gramps and GEDCOM family trees'
+readme = 'README.md'
+license = {file = 'LICENSE.txt'}
+authors = [
+  {name = 'Bart Feenstra', email = 'bar@bartfeenstra.com'},
+]
+requires-python = '~= 3.11'
+dependencies = [
+    'aiofiles ~= 24.1',
+    'aiohttp ~= 3.9',
+    'babel ~= 2.15',
+    'basedtyping ~= 0.1.4',
+    'click ~= 8.1',
+    'docker ~= 7.1',
+    'furo == 2024.7.18',
+    'geopy ~= 2.4',
+    'html5lib ~= 1.1',
+    'jinja2 ~= 3.1',
+    'jsonschema ~= 4.23',
+    'langcodes ~= 3.4',
+    'markupsafe ~= 2.1',
+    'multidict ~= 6.0',
+    'pdf2image ~= 1.17',
+    'polib ~= 1.2',
+    'Pillow ~= 10.4',
+    'pyyaml ~= 6.0',
+    'referencing ~= 0.35',
+    'sphinx ~= 7.4',
+    'sphinx-design ~= 0.6',
+    'typing_extensions ~= 4.12',
+]
+classifiers = [
+    'Environment :: Console',
+    'Intended Audience :: Developers',
+    'Intended Audience :: End Users/Desktop',
+    'Intended Audience :: Science/Research',
+    'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
+    'Programming Language :: JavaScript',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Lua',
+    'Programming Language :: JavaScript',
+    'Programming Language :: Unix Shell',
+    'Operating System :: MacOS :: MacOS X',
+    'Operating System :: POSIX :: Linux',
+    'Operating System :: Microsoft :: Windows',
+    'Topic :: Internet',
+    'Topic :: Scientific/Engineering :: Visualization',
+    'Topic :: Sociology :: Genealogy',
+    'Topic :: Sociology :: History',
+    'Topic :: Software Development :: Code Generators',
+    'Natural Language :: Dutch',
+    'Natural Language :: English',
+    'Natural Language :: French',
+    'Natural Language :: German',
+    'Natural Language :: Ukrainian',
+    'Typing :: Typed ',
+]
+
+[project.urls]
+Documentation = 'https://betty.readthedocs.io'
+Github = 'https://github.com/bartfeenstra/betty'
+Twitter = 'https://twitter.com/BettyProject'
+X = 'https://twitter.com/BettyProject'
+
+[project.entry-points.'console_scripts']
+betty = 'betty.cli:main'
+
+[project.entry-points.'betty.command']
+'clear-caches' = 'betty.cli.commands.clear_caches:clear_caches'
+'config' = 'betty.cli.commands.config:config'
+'demo' = 'betty.cli.commands.demo:demo'
+'docs' = 'betty.cli.commands.docs:docs'
+'generate' = 'betty.cli.commands.generate:generate'
+'new' = 'betty.cli.commands.new:new'
+'new-translation' = 'betty.cli.commands.new_translation:new_translation'
+'serve' = 'betty.cli.commands.serve:serve'
+'serve-nginx-docker' = 'betty.extension.nginx._cli:serve_nginx_docker'
+'update-translations' = 'betty.cli.commands.update_translations:update_translations'
+
+[project.entry-points.'betty.dev.command']
+'dev-new-translation' = 'betty.cli.commands.dev_new_translation:dev_new_translation'
+'dev-update-translations' = 'betty.cli.commands.dev_update_translations:dev_update_translations'
+
+[project.entry-points.'betty.entity_type']
+'citation' = 'betty.ancestry:Citation'
+'enclosure' = 'betty.ancestry:Enclosure'
+'event' = 'betty.ancestry:Event'
+'file' = 'betty.ancestry:File'
+'note' = 'betty.ancestry:Note'
+'person' = 'betty.ancestry:Person'
+'person-name' = 'betty.ancestry:PersonName'
+'presence' = 'betty.ancestry:Presence'
+'place' = 'betty.ancestry:Place'
+'source' = 'betty.ancestry:Source'
+
+[project.entry-points.'betty.event_type']
+'adoption' = 'betty.ancestry.event_type:Adoption'
+'baptism' = 'betty.ancestry.event_type:Baptism'
+'birth' = 'betty.ancestry.event_type:Birth'
+'burial' = 'betty.ancestry.event_type:Burial'
+'conference' = 'betty.ancestry.event_type:Conference'
+'confirmation' = 'betty.ancestry.event_type:Confirmation'
+'correspondence' = 'betty.ancestry.event_type:Correspondence'
+'cremation' = 'betty.ancestry.event_type:Cremation'
+'death' = 'betty.ancestry.event_type:Death'
+'divorce' = 'betty.ancestry.event_type:Divorce'
+'divorce-announcement' = 'betty.ancestry.event_type:DivorceAnnouncement'
+'emigration' = 'betty.ancestry.event_type:Emigration'
+'engagement' = 'betty.ancestry.event_type:Engagement'
+'funeral' = 'betty.ancestry.event_type:Funeral'
+'immigration' = 'betty.ancestry.event_type:Immigration'
+'marriage' = 'betty.ancestry.event_type:Marriage'
+'marriage-announcement' = 'betty.ancestry.event_type:MarriageAnnouncement'
+'missing' = 'betty.ancestry.event_type:Missing'
+'occupation' = 'betty.ancestry.event_type:Occupation'
+'residence' = 'betty.ancestry.event_type:Residence'
+'retirement' = 'betty.ancestry.event_type:Retirement'
+'unknown' = 'betty.ancestry.event_type:UnknownEventType'
+'will' = 'betty.ancestry.event_type:Will'
+
+[project.entry-points.'betty.extension']
+'cotton-candy' = 'betty.extension.cotton_candy:CottonCandy'
+'demo' = 'betty.extension.demo:Demo'
+'deriver' = 'betty.extension.deriver:Deriver'
+'gramps' = 'betty.extension.gramps:Gramps'
+'http-api-doc' = 'betty.extension.http_api_doc:HttpApiDoc'
+'maps' = 'betty.extension.maps:Maps'
+'nginx' = 'betty.extension.nginx:Nginx'
+'privatizer' = 'betty.extension.privatizer:Privatizer'
+'trees' = 'betty.extension.trees:Trees'
+'webpack' = 'betty.extension.webpack:Webpack'
+'wikipedia' = 'betty.extension.wikipedia:Wikipedia'
+
+[project.entry-points.'betty.presence_role']
+'attendee' = 'betty.ancestry.presence_role.Attendee'
+'beneficiary' = 'betty.ancestry.presence_role.Beneficiary'
+'celebrant' = 'betty.ancestry.presence_role.Celebrant'
+'organizer' = 'betty.ancestry.presence_role.Organizer'
+'speaker' = 'betty.ancestry.presence_role.Speaker'
+'subject' = 'betty.ancestry.presence_role.Subject'
+'witness' = 'betty.ancestry.presence_role.Witness'
+
+[project.optional-dependencies]
+setuptools = [
+    'setuptools ~= 72.1',
+    'twine ~= 5.1',
+    'wheel ~= 0.43',
+]
+test = [
+    'aioresponses ~= 0.7',
+    'basedmypy ~= 2.5',
+    'coverage ~= 7.6',
+    'lxml ~= 5.2; sys.platform != "win32"',
+    'packaging ~= 24.1',
+    'pip-licenses ~= 5.0',
+    'pytest ~= 8.3',
+    'pytest-aioresponses ~= 0.2',
+    'pytest-asyncio ~= 0.23',
+    'pytest-mock ~= 3.14',
+    'ruff ~= 0.5',
+    'types-aiofiles ~= 24.1',
+    'types-babel ~= 2.11',
+    'types-click ~= 7.1',
+    'types-html5lib ~= 1.1',
+    'types-jsonschema ~= 4.23',
+    'types-lxml >= 2024.4.14',
+    'types-polib ~= 1.2',
+    'types-pyyaml ~= 6.0',
+    'types-requests ~= 2.32',
+    'types-setuptools ~= 71.0',
+    'virtualenv ~= 20.26',
+    'betty[setuptools]',
+]
+development = [
+    'pytest-repeat ~= 0.9',
+    'betty[test]',
+]
+ci = [
+    'codecov ~= 2.1',
+    'betty[test]',
+]
+
+[tool.setuptools.dynamic]
+version = {file = ['betty/assets/VERSION']}
+
+[tool.setuptools.packages.find]
+where = ['.']
+exclude = [
+    'betty.tests',
+    'betty.tests.*',
+]
+
+[tool.setuptools.package-data]
+betty = [
+    'py.typed',
+
+    # Assets.
+    'assets/**',
+    'extension/*/assets/**',
+
+    # Webpack.
+    '../.browserslistrc',
+    '../tsconfig.json',
+    'extension/*/webpack/**',
+
+    # Prebuilt assets.
+    '../prebuild/**',
+]
+
+[tool.setuptools.exclude-package-data]
+betty = [
+    '__pycache__',
+]

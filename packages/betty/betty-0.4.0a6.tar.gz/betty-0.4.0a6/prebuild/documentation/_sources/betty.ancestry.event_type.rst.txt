@@ -1,0 +1,7 @@
+betty.ancestry.event\_type module
+=================================
+
+.. automodule:: betty.ancestry.event_type
+   :members:
+   :undoc-members:
+   :show-inheritance:
