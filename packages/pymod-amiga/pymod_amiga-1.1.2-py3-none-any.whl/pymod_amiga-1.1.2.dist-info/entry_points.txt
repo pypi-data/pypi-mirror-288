@@ -1,0 +1,2 @@
+[console_scripts]
+pymod = pymod.__main__:main
