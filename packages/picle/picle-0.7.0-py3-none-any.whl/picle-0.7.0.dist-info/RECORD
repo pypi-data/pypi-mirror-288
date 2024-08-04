@@ -1,0 +1,9 @@
+picle/__init__.py,sha256=F1trX-rcOz1CxTD6xdKD7ljnCofPpLEwjcFLe1F-S90,80
+picle/cache.py,sha256=A0hucSEUUbnvuZ99FECfe8YUauVg4-EUrIbhPC4ffaU,4531
+picle/models.py,sha256=zT3G32o9qdMFNsjTSTaE3M2GbDXxALb9QgWRfUaOIOk,6675
+picle/picle.py,sha256=eG3TawKmDOzzqpQ9PFQKwFDhTTv2YqLb1iCDoEBjXhk,39643
+picle/utils.py,sha256=7543oPd1kwP3agZEN0YMS1I8cZUkWtV44FLPQ3BHITc,355
+picle-0.7.0.dist-info/LICENSE,sha256=01MGprk4-d9BtxV8ZBNfkz0k19Mj0o-kwjExmHhxfFU,1071
+picle-0.7.0.dist-info/METADATA,sha256=KGjAf40cfEQ21auCbQ5Fk1bbZsEA_gcEjLrFaI0w7U4,2816
+picle-0.7.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+picle-0.7.0.dist-info/RECORD,,
