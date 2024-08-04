@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+src/milesianpy/common_operators.py
+src/milesianpy.egg-info/PKG-INFO
+src/milesianpy.egg-info/SOURCES.txt
+src/milesianpy.egg-info/dependency_links.txt
+src/milesianpy.egg-info/top_level.txt
+src/milesianpy/calculations/no_variable_calculation.py
+src/milesianpy/parsers/basic_parser.py
+src/milesianpy/parsers/number_parser.py
+src/milesianpy/parsers/operator_parser.py
