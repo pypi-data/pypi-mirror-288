@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+stone_in_waiting/__init__.py
+stone_in_waiting/stone_in_waiting.py
+stone_in_waiting.egg-info/PKG-INFO
+stone_in_waiting.egg-info/SOURCES.txt
+stone_in_waiting.egg-info/dependency_links.txt
+stone_in_waiting.egg-info/requires.txt
+stone_in_waiting.egg-info/top_level.txt

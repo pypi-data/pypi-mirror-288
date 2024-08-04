@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: stone_in_waiting
+Version: 0.0.1
+Summary: Please refer to the paper for details.
+Home-page: https://gitee.com/beastsenior/stone_in_waiting.git
+Author: Shuai Zeng
+Author-email: maillinger@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# stone_in_waiting
+
+Please refer to the paper for details.
+
+## Installation
+
+pip install stone_in_waiting
+
+
