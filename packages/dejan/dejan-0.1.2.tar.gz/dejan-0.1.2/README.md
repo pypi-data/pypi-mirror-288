@@ -1,0 +1,104 @@
+## Dejan: SEO Machine Learning Utilities
+
+Dejan is a growing collection of SEO-related machine learning utilities designed to assist with various tasks in the field of search engine optimization. This repository will be continuously updated with new tools and features aimed at helping SEO professionals streamline their workflows using advanced ML techniques.
+
+### Installation
+
+You can install the package using pip:
+
+```bash
+pip install dejan
+```
+
+### Current Utilities
+
+#### 1. dirtree
+
+**Purpose:** Generates an ASCII representation of the directory tree structure from any given root directory, including all subdirectories and files.
+
+**Usage:** This tool can be particularly useful for visualizing file structures in complex projects, making it easier to manage and navigate large SEO datasets.
+
+**Example Usage:**
+
+```python
+from dejan import generate_ascii_tree
+
+# Generate and print the directory tree for the current directory
+generate_ascii_tree()
+```
+
+#### 2. roo
+
+**Purpose:** Fetches and processes data from the Algoroo API, providing insights into search engine fluctuations.
+
+**Search Engine Options:**
+
+* 2: Google.com (Desktop)
+* 3: Google.com.au (Desktop)
+* 4: Google.com (Mobile)
+* 5: Google.com.au (Mobile)
+
+**Output:** The data can be returned either as a raw JSON object or as a pandas DataFrame for further analysis.
+
+**Example Usage:**
+
+```python
+from dejan import get_roo
+
+# Fetch data for Google.com (Desktop) and return it as a pandas DataFrame
+data_df = get_roo(2, as_dataframe=True)
+print(data_df.head())
+
+# Fetch raw JSON data for Google.com.au (Mobile)
+data_json = get_roo(5, as_dataframe=False)
+print(data_json)
+```
+
+#### 3. linkbert
+
+**Purpose:** Uses the LinkBERT model to predict link tokens in the provided text, useful for analyzing link placement within content.
+
+**Grouping Modes:**
+
+* `subtoken`: Returns individual subword tokens classified as links.
+* `token`: Merges any subtokens into whole tokens (words).
+* `phrase`: Groups predictions into phrases, treating the entire phrase as a link if any part of it is classified as a link.
+
+**Example Usage:**
+
+```python
+from dejan import LinkBERTInference
+
+# Initialize the LinkBERTInference model
+linkbert = LinkBERTInference()
+
+text = "LinkBERT is a model developed by Dejan Marketing designed to predict natural link placement within web content."
+
+# Group by subtoken
+links_subtoken = linkbert.predict_link_tokens(text, group="subtoken")
+print(f"Predicted link tokens (subtoken): {links_subtoken}")
+
+# Group by token
+links_token = linkbert.predict_link_tokens(text, group="token")
+print(f"Predicted link tokens (token): {links_token}")
+
+# Group by phrase
+links_phrase = linkbert.predict_link_tokens(text, group="phrase")
+print(f"Predicted link tokens (phrase): {links_phrase}")
+```
+
+### Planned Features
+
+* **Keyword Clustering:** Automated clustering of keywords based on semantic similarity using machine learning algorithms.
+* **Content Optimization:** Tools to analyze and optimize content for SEO, including keyword density checks, readability scoring, and more.
+* **Link Analysis:** Utilities to analyze internal and external links, helping to optimize site architecture and link distribution.
+
+Stay tuned as more utilities are added to this package, transforming it into a powerful toolkit for any SEO professional working with machine learning.
+
+### Contributing
+
+Contributions are welcome! If you have any ideas for features, improvements, or bug fixes, feel free to open an issue or submit a pull request.
+
+### License
+
+This project is licensed under the MIT License - see the LICENSE file for details. 
