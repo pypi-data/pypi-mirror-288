@@ -1,0 +1,2 @@
+pytds-clone
+SQLAlchemy>=2.0
