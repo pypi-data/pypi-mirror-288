@@ -1,0 +1,10 @@
+LICENSE.txt
+setup.py
+pylibupdator.egg-info/PKG-INFO
+pylibupdator.egg-info/SOURCES.txt
+pylibupdator.egg-info/dependency_links.txt
+pylibupdator.egg-info/entry_points.txt
+pylibupdator.egg-info/requires.txt
+pylibupdator.egg-info/top_level.txt
+pythonlibupdate/__init__.py
+pythonlibupdate/pylibupdator.py
