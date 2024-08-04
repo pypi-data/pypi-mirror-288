@@ -1,0 +1,14 @@
+pydantic>=2
+kbnf>=0.2.1
+
+[exllamav2]
+exllamav2
+
+[rwkv]
+rwkv
+
+[transformers]
+transformers
+
+[vllm]
+vllm
