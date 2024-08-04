@@ -1,0 +1,9 @@
+autoflake
+fastapi
+pydantic
+pydantic_settings
+pytest
+setuptools
+aiohttp
+flask
+apache-airflow
