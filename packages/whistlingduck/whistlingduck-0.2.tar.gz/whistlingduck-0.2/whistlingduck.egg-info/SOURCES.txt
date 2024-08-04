@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+whistlingduck/__init__.py
+whistlingduck.egg-info/PKG-INFO
+whistlingduck.egg-info/SOURCES.txt
+whistlingduck.egg-info/dependency_links.txt
+whistlingduck.egg-info/requires.txt
+whistlingduck.egg-info/top_level.txt
+whistlingduck/documentation/csv_into_table_doc.py
+whistlingduck/read/__init__.py
+whistlingduck/read/csv_into_table.py
