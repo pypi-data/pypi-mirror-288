@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/combinatorics_tb/__init__.py
+src/combinatorics_tb/combinatorics.py
+src/combinatorics_tb.egg-info/PKG-INFO
+src/combinatorics_tb.egg-info/SOURCES.txt
+src/combinatorics_tb.egg-info/dependency_links.txt
+src/combinatorics_tb.egg-info/top_level.txt

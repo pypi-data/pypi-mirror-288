@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: combinatorics_tb
+Version: 0.0.1
+Summary: A simple combinatorics package which offers combinations and permutations functions
+Author-email: Thomas Brumbaugh <thomas.william.brumbaugh@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/combinatorics_tb
+Project-URL: Issues, https://github.com/pypa/combinatorics_tb/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Combinatorics Package
+
+This is a simple combinatorics package which offers combinations and permutations functions. 
+
+# Importing
+
+You can import the factorial package by:
+``` 
+from combinatorics_tb import combinatorics
+```
+
+# Using Combinatorics
+
+You can use the combinations (where order doesn't matter) command using:
+```
+combinatorics.combinations(52, 2)
+```
+which will output 1326.
+
+You can use the permutations (where order does matter) command using:
+```
+combinatorics.permutations(52, 2)
+```
+which will output 2652.
