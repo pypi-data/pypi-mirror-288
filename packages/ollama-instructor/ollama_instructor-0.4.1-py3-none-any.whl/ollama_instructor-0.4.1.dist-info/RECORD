@@ -1,0 +1,9 @@
+ollama_instructor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ollama_instructor/cleaner.py,sha256=U96ijidki5LUEKAn93gEFUZkMfLapAb7GWntCZhtxuE,4800
+ollama_instructor/ollama_instructor_client.py,sha256=zNk-sNLBn_Q8C-w1UUMCb5l3XfLTwON5JaJRM3oWXu8,27564
+ollama_instructor/prompt_manager.py,sha256=yGv60qNJzRgPi6WlXrxzXrtuNYXbzJ19NjCoBhXQ1AA,6676
+ollama_instructor/validation_manager.py,sha256=LeaUaWj63wbahm6KsZ8KaL9ocpcVI1-TP3x2P9zfoKg,7077
+ollama_instructor-0.4.1.dist-info/LICENSE,sha256=ccCZ8J7VVLx4YDHU-f7gGrjHEslviXTZqM854rsiEa8,1072
+ollama_instructor-0.4.1.dist-info/METADATA,sha256=59_qswX_V9MvVQ9M901HMK7Ovk4fKhJJlIlPCThIKlI,10825
+ollama_instructor-0.4.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+ollama_instructor-0.4.1.dist-info/RECORD,,
