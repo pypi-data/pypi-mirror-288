@@ -1,0 +1,8 @@
+# Development Requirements - linting, formatting, etc.
+
+pre-commit
+black
+mypy
+flake8
+flake8-builtins
+flake8-pep585
