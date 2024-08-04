@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.py
+bindings/python/tree_sitter_muttrc/__init__.py
+bindings/python/tree_sitter_muttrc/__init__.pyi
+bindings/python/tree_sitter_muttrc/binding.c
+bindings/python/tree_sitter_muttrc/py.typed
+bindings/python/tree_sitter_muttrc.egg-info/PKG-INFO
+bindings/python/tree_sitter_muttrc.egg-info/SOURCES.txt
+bindings/python/tree_sitter_muttrc.egg-info/dependency_links.txt
+bindings/python/tree_sitter_muttrc.egg-info/not-zip-safe
+bindings/python/tree_sitter_muttrc.egg-info/requires.txt
+bindings/python/tree_sitter_muttrc.egg-info/top_level.txt
+src/parser.c
+src/tree_sitter/alloc.h
+src/tree_sitter/array.h
+src/tree_sitter/parser.h
