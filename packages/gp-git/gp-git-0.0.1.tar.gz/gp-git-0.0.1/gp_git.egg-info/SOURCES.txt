@@ -1,0 +1,17 @@
+.DS_Store
+.gitignore
+README.md
+base.py
+compare.py
+editor.py
+files.py
+gpgit.py
+remote.py
+setup.py
+.vscode/settings.json
+gp_git.egg-info/PKG-INFO
+gp_git.egg-info/SOURCES.txt
+gp_git.egg-info/dependency_links.txt
+gp_git.egg-info/entry_points.txt
+gp_git.egg-info/top_level.txt
+tests/test.py
