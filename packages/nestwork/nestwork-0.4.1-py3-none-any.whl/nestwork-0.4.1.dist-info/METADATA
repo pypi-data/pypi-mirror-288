@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: nestwork
+Version: 0.4.1
+Summary: NN model drafts.
+Author: apehex
+Author-email: apehex@protonmail.com
+Requires-Python: >=3.10,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: mlable (>=0.7)
+Requires-Dist: tensorflow (>=2.15)
+Requires-Dist: tensorflow-datasets (>=4.9)
+Description-Content-Type: text/markdown
+
+# MLable
+
+NN model drafts:
+
+- GPM: stateless password manager, with LLM generation
+- GPT: learning projects on the transformer arch
+- makemore: learning project similar to makemore
+- sold: solidity (de)compiler
+- tokun: neural tokenizer, covers the whole Unicode space
+
+## TODO
+
+See [TODO](TODO.md).
+
+## License
+
+Licensed under the [aGPLv3](LICENSE.md).
+
+[code-micrograd]: https://github.com/karpathy/micrograd
+[video-karpathy]: https://www.youtube.com/@AndrejKarpathy/videos
+
