@@ -1,0 +1,3 @@
+[console_scripts]
+budgetize=budgetize.console:run
+
