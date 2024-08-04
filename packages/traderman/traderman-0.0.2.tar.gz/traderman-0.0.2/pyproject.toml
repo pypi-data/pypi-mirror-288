@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools", "setuptools-rust"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "traderman"
+version = "0.0.2"
+description = "Python SDK to build, train, and deploy trading systems"
+
+requires-python = ">=3.10"
+dependencies = ["attrs", "numpy", "pandas", "torch", "requests", "toml"]
+
+authors = [
+  {name = "iteralabs"},
+]
+maintainers = [
+  {name = "J.Francisco Munoz", email = "if.francisco.me@gmail.com"}
+]
+
+readme = "README.md"
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+]
+keywords = ["python3", "trading", "sdk", "defi", "hft"]
+
+[project.optional-dependencies]
+dev = ["pre-commit"]
+test = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/iteralabs/traderman"
+Issues = "https://github.com/iteralabs/traderman/issues"
+
+[project.scripts]
+sample = "sample:main"
+
+[tool.setuptools]
+package-data = {"sample" = ["*.dat"]}
