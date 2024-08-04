@@ -1,0 +1,10 @@
+numpy
+python-dotenv
+websockets
+fastapi
+nltk
+tqdm
+beautifulsoup4
+
+[openai]
+openai
