@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: num2devanagari
+Version: 0.22.0
+Summary: A simple python library for converting integers to their corresponding Devanagari word representations.
+Author-email: Aananda Giri <aanandaprashadgiri@gmail.com>
+Project-URL: Homepage, https://github.com/Aananda-giri/Num2Devanagari
+Project-URL: Issues, https://github.com/Aananda-giri/Num2Devanagari/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Num2Devanagari
+* Convert numbers to Devanagari words.
+
+
+### Example Usage
+```
+from Num2Devanagari import Num2Word
+
+num = 123456789
+num2word = Num2Word()
+word = num2word.convert(num)
+print(word)
+# output: "बाह्र करोड चौँतिस लाख छपन्न हजार सात सय उनान्नब्बे2
+```
+
+# References:
+* [Numbers_in_Nepali_language](https://en.wikipedia.org/wiki/Numbers_in_Nepali_language)
+* [large-nepali-numbers-lakh-karod-arab-kharab](http://www.nepaliclass.com/large-nepali-numbers-lakh-karod-arab-kharab/)
+* [nepali-number-to-words](https://sajanmaharjan.com.np/nepali-number-to-words/)

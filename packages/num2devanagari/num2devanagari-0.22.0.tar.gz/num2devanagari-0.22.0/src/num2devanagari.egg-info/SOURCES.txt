@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init_.py
+src/num2devanagari.py
+src/num2devanagari.egg-info/PKG-INFO
+src/num2devanagari.egg-info/SOURCES.txt
+src/num2devanagari.egg-info/dependency_links.txt
+src/num2devanagari.egg-info/top_level.txt

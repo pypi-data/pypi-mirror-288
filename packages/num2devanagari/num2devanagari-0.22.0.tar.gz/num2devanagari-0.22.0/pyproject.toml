@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "num2devanagari"
+version = "0.22.0"
+authors = [
+  { name="Aananda Giri", email="aanandaprashadgiri@gmail.com" },
+]
+description = "A simple python library for converting integers to their corresponding Devanagari word representations."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/Aananda-giri/Num2Devanagari"
+Issues = "https://github.com/Aananda-giri/Num2Devanagari/issues"
