@@ -1,0 +1,3 @@
+[console_scripts]
+WDoc = WDoc.__init__:cli_launcher
+wdoc = WDoc.__init__:cli_launcher
