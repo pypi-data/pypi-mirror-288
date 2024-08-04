@@ -1,0 +1,2 @@
+[console_scripts]
+quicksync = QuickSync4Linux.quicksync:main
