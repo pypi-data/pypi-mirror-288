@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+svg2png/__init__.py
+svg2png/svg2png.py
+svg2png.egg-info/PKG-INFO
+svg2png.egg-info/SOURCES.txt
+svg2png.egg-info/dependency_links.txt
+svg2png.egg-info/top_level.txt
