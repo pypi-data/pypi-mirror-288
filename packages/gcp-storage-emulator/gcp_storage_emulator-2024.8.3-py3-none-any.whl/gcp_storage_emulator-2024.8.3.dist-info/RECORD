@@ -1,0 +1,15 @@
+gcp_storage_emulator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gcp_storage_emulator/__main__.py,sha256=ZQiLXudTJ9yv0D48hQuvVQ1Pi2hnUSxdYk5sE7EsN4o,3757
+gcp_storage_emulator/exceptions.py,sha256=OnasMDrxfC6hMINwWD-DmWr5rwauup13kfR6jUKmdUI,74
+gcp_storage_emulator/server.py,sha256=np4vpyMR3sX_V-nRH-HrUk34j1P60_R7HhzoIaqL39c,13530
+gcp_storage_emulator/settings.py,sha256=tudGeLHRjcW5m36ulktMPgX-SzXTiDmKYr98njPuMAw,350
+gcp_storage_emulator/storage.py,sha256=m3SgghZahRxgSP7oT4uBP8_P5JT-07nlBZfBf4dReZY,14240
+gcp_storage_emulator/handlers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gcp_storage_emulator/handlers/buckets.py,sha256=z-mAKeUUYsmzcGxGckaTNYu0Li43_OdpVckDsliBnkc,3204
+gcp_storage_emulator/handlers/objects.py,sha256=Bc_4dVBGP9CXsAso7s7c_kHLwOgy1U_LFsLeIL_zEOE,18131
+gcp_storage_emulator-2024.8.3.dist-info/LICENCE.md,sha256=YqwKSMl7w-2I_sTnzAGiOjIH-HivS2QbjAFaP68U-v8,1629
+gcp_storage_emulator-2024.8.3.dist-info/METADATA,sha256=kInHrZV3MdQxq74pnKMMirTS6j0dGqwTicjR6NvO9lc,5355
+gcp_storage_emulator-2024.8.3.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+gcp_storage_emulator-2024.8.3.dist-info/entry_points.txt,sha256=AIydyKdGduguQ9uNzunr7UtJgPedmI1-ErX5YvlQJmo,76
+gcp_storage_emulator-2024.8.3.dist-info/top_level.txt,sha256=NmfGitp1L_dS8wkX_WyHud5WFQjulxNhFVCLP6v-sTE,21
+gcp_storage_emulator-2024.8.3.dist-info/RECORD,,
