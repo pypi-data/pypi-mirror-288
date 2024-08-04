@@ -1,0 +1,14 @@
+LICENCE
+README.md
+setup.py
+gitwrapper/__init__.py
+gitwrapper/main.py
+gitwrapper/modules/__init__.py
+gitwrapper/modules/argshandler.py
+gitwrapper/modules/listrepo.py
+gitwrapper/modules/login.py
+gitwrapper_tool.egg-info/PKG-INFO
+gitwrapper_tool.egg-info/SOURCES.txt
+gitwrapper_tool.egg-info/dependency_links.txt
+gitwrapper_tool.egg-info/entry_points.txt
+gitwrapper_tool.egg-info/top_level.txt

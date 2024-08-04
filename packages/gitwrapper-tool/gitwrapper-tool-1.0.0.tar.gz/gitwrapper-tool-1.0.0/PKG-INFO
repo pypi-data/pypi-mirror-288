@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: gitwrapper-tool
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: smit patel
+Author-email: smit.dpatel9924@gmail.com
+Maintainer: smit patel
+Maintainer-email: smit.dpatel9924@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Version Control
+License-File: LICENCE
+
+UNKNOWN
+
