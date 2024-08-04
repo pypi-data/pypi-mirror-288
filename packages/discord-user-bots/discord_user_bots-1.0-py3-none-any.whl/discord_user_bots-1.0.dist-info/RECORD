@@ -1,0 +1,10 @@
+ds/__init__.py,sha256=1ZVxrz56pKbuOl_xV7aeMJ20SG1b5iTnrUHuFyGm-VE,85
+ds/bot.py,sha256=SjgEhuqUv_177SBrITfyTlxuQjnQov8bhar3inPRZHI,7202
+ds/inter.py,sha256=0RwGbhbaK_zAkM_bnfNulD5BFVzuQ4zOmpg0gQakl-M,4994
+ds/labeler.py,sha256=Sh2SmAh_wJDSmGIdrwALeHefdC60aMX0u-IbKyKWPic,2445
+ds/error/token.py,sha256=zmC9Uq07jCY7xEQTLueKXc4hkhYkFrAIVD2RexJ5g_M,147
+ds/type/message.py,sha256=-O9SCSuSNHSGvpqKG7wFtP9661390ZRxXWM7Ywe3eHU,2915
+discord_user_bots-1.0.dist-info/METADATA,sha256=tCyiebbhXGNuMR-QYKuBDzV7dktyz9YcA0QQtysadtU,877
+discord_user_bots-1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+discord_user_bots-1.0.dist-info/top_level.txt,sha256=6m-FY1f1w1EQbckHM3aJi5UwREJQRXo6CYTDxjvrRRA,3
+discord_user_bots-1.0.dist-info/RECORD,,
