@@ -1,0 +1,9 @@
+fs/rclonefs/__init__.py,sha256=pmAejYUNg6GTsvK6ESk5rHuGArMSCChsa5vsK2nrQMM,372
+fs/rclonefs/_version.txt,sha256=jzR6dTEkRUvsIdgn9MBhKkIGmoYjaaprAVbpJfXsk1w,5
+fs/rclonefs/file.py,sha256=acELZj9EmKDoYuhvjJRcbkZ-OmMuPI_spoef0c5h6C4,2581
+fs/rclonefs/rclone.py,sha256=eRdo4-T90d6Xm906pmvC5yah7YfeWLHnRXWs-9CCLtQ,2475
+fs/rclonefs/rclonefs.py,sha256=gRARO5_NTxgdDr6vSSQQ7LDued5q5suef8SLig44Ap4,8615
+fs_rclonefs-0.5.1.dist-info/METADATA,sha256=cu2fNeioyJj83glV2BsU9HMLhHuoaGTOHye4DSOLReo,4208
+fs_rclonefs-0.5.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+fs_rclonefs-0.5.1.dist-info/licenses/LICENSE,sha256=plt8jdutLNq0x9c_MoJHgCGwBtKLq3JCDwvddU9uq4U,1056
+fs_rclonefs-0.5.1.dist-info/RECORD,,
