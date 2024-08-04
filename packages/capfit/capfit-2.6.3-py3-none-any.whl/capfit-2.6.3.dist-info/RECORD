@@ -1,0 +1,13 @@
+capfit/CHANGELOG.rst,sha256=EQ2u36HbCpK8ZJr4nhbszMSOShbIrj7p-h4_LT-OfCU,4199
+capfit/LICENSE.txt,sha256=536LZU0KBlQWSovUGxmqzfBNsDxDyweazW8_Uew7CaI,406
+capfit/README.rst,sha256=mf0NMQI9mXpKn_X71YoVAb3XOCa392byLvr8vkRzzFk,2394
+capfit/__init__.py,sha256=uJ6TLK18jhCrL0aclBja7NzlAGLAyZjVpX-gq3d461k,22
+capfit/capfit.py,sha256=iE2dMNL5xIT8aarvo0rrc7wB7KTo73R9OO_pwr5zNG8,36639
+capfit/examples/__init__.py,sha256=77O9eqP2EaWMNejGjPJCahtv6vLkbtVj0hG4FT4V0fA,36
+capfit/examples/capfit_examples.py,sha256=F6N9UdcGLEEEvlRoMiPQfBoGEDUj4sPo_jC5uPBoX1Q,2768
+capfit/examples/capfit_reference_output.txt,sha256=8vqXXP1w9j8Z_U24SinscSIVD1tiGgJuzli3d9EecVM,7042
+capfit-2.6.3.dist-info/METADATA,sha256=Lc9_T-aJSQvfT1axVR86fAR67q3pKcbbCn10PtM7jpw,21970
+capfit-2.6.3.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+capfit-2.6.3.dist-info/top_level.txt,sha256=xrS9bSuj48JHfNXdmuvd40N-pwy5J2JzYgIvH19nKpc,7
+capfit-2.6.3.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+capfit-2.6.3.dist-info/RECORD,,
