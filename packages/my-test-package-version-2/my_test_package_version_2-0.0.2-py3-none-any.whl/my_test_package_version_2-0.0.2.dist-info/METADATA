@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: my-test-package-version-2
+Version: 0.0.2
+Summary: A small example package
+Author: Arjuth Prasad
+Author-email: arjuthprasad75@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: requests
+
+This is a sample example package
