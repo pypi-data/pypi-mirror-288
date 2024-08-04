@@ -1,0 +1,9 @@
+_pyawaitable.cpython-36m-i386-linux-gnu.so,sha256=mW8StJOJOZW0-f4WCcnji5KDh4NFq07kclRM5Stv1SE,90680
+pyawaitable/bindings.py,sha256=lT1YUane4eQ26ZbCEMkYlNrVTgKKp5RktiIPXB3a0DA,2799
+pyawaitable/abi.py,sha256=t97hiPV9E6ou6kH0VWPVdh3iKW3R5bRHx218c-nqIuA,62
+pyawaitable/__init__.py,sha256=CNhxOJhtqP2K-UrJcLkT6ZNU8MUos2B4guKYPelQj8o,515
+pyawaitable-1.1.0.dist-info/RECORD,,
+pyawaitable-1.1.0.dist-info/top_level.txt,sha256=PXAbPz3-IVCEA7V8stWbz1QV-MqJfxJz18buTUhpq9M,25
+pyawaitable-1.1.0.dist-info/LICENSE,sha256=nQOiyZXFgfEmgjp288uxuS8VkpH-qGLiqd0dmUuNRPo,1070
+pyawaitable-1.1.0.dist-info/WHEEL,sha256=fi4cVfpey3xcdlS41G0BGLav86L8eWRKj9oEclxTRG0,213
+pyawaitable-1.1.0.dist-info/METADATA,sha256=Xq89DVTgfwHAJEksLy3ETAxm_lzx4qPAtbvY7y4GXkg,154
