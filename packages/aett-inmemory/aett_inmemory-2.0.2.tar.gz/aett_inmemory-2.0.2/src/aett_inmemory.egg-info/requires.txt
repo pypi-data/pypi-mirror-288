@@ -1,0 +1,6 @@
+aett-domain>=2.0.2
+
+[dev]
+pip-tools
+pytest
+behave
