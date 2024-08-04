@@ -1,0 +1,14 @@
+build/lib/geotz/__init__.py,sha256=mxNAvtTnfKz_ZkjGf-Con3UF71l3r6o7XKpHCMw5Alg,3332
+build/lib/geotz/geolookup.py,sha256=10es0Wj1wWXtCVgaW9OSUdvnIJ9zgHJgAJ38p8cBmbY,4275
+build/lib/geotz/tzlookup.py,sha256=8o9ZC8CMz01zxZqz3FKJ94-j-MtrsZSG9j4FmKT6GYc,3146
+build/lib/geotz/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geotz/__init__.py,sha256=mxNAvtTnfKz_ZkjGf-Con3UF71l3r6o7XKpHCMw5Alg,3332
+geotz/geolookup.py,sha256=10es0Wj1wWXtCVgaW9OSUdvnIJ9zgHJgAJ38p8cBmbY,4275
+geotz/tzlookup.py,sha256=8o9ZC8CMz01zxZqz3FKJ94-j-MtrsZSG9j4FmKT6GYc,3146
+geotz/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geotz/data/geonames_all_countries_sorted.tsv,sha256=OKGbMJdAcQ0k2f7XJg8Dqqti7yJgk53DGnkIZAcyGoI,120781013
+geotz-0.0.2b0.dist-info/LICENSE,sha256=BeKQc_aYvOBgDCsBrEind2FZrm99Osb6wjRl2VlyvwQ,2109
+geotz-0.0.2b0.dist-info/METADATA,sha256=zNRk_pRqQk_5IesweQc26MAnPmT4A4SdvPt0F7lENFo,6549
+geotz-0.0.2b0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+geotz-0.0.2b0.dist-info/top_level.txt,sha256=uo2CqtBG4Vpv-0cTZqqZukCrPcdvjG-bZLu2xHC3amk,17
+geotz-0.0.2b0.dist-info/RECORD,,
