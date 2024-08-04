@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+safibase.egg-info/PKG-INFO
+safibase.egg-info/SOURCES.txt
+safibase.egg-info/dependency_links.txt
+safibase.egg-info/requires.txt
+safibase.egg-info/top_level.txt
