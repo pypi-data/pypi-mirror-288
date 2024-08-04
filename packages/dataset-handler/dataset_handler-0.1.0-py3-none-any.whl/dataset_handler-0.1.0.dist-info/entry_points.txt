@@ -1,0 +1,3 @@
+[console_scripts]
+datasets=src.dataset_handler.entrypoint:cli
+
