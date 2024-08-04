@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "nmass"
+version = "0.1.1"
+description = "A python3 library that makes it easier to use nmap and masscan"
+authors = ["4shen0ne <4shen.01@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+pydantic-xml = "^2.11.0"
+aiofiles = "^24.1.0"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+
+[tool.ruff]
+line-length = 100
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
