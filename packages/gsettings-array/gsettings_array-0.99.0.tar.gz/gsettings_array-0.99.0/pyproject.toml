@@ -1,0 +1,55 @@
+[tool.poetry]
+name        = "gsettings-array"
+version     = "v0.99.0"
+description = "Manipulate GSettings arrays."
+authors     = ["Jan Chren (rindeal)"]
+readme      = "README.md"
+homepage    = "https://github.com/rindea/gsettings-array"
+repository  = "https://github.com/rindea/gsettings-array"
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Environment :: Console',
+    'Intended Audience :: Developers',
+    'Intended Audience :: System Administrators',
+    'License :: OSI Approved :: GNU General Public License v2 (GPLv2)',
+    'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+    'Operating System :: POSIX :: Linux',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.11',
+    'Topic :: Desktop Environment :: Gnome',
+    'Topic :: System :: Systems Administration',
+    'Topic :: Utilities',
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pygobject = "^3.42.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+pytest-cov = "^5.0.0"
+pyright = "^1.1.374"
+ruff = "^0.5.6"
+mypy = "^1.11.1"
+pygobject-stubs = "^2.11.0"
+reuse = "^4.0.3"
+
+
+[tool.poetry.group.script-update-metadata.dependencies]
+loguru = "^0.7.2"
+tomlkit = "^0.13.0"
+
+[tool.poetry.scripts]
+gsettings-array = "gsettings_array:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff.lint]
+ignore = [
+    "E402",
+    "E702",
+    "E701", # Multiple statements on one line (colon)
+]
