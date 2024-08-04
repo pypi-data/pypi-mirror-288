@@ -1,0 +1,2 @@
+[console_scripts]
+colab_toolbox = colab_toolbox.colabtool:main
