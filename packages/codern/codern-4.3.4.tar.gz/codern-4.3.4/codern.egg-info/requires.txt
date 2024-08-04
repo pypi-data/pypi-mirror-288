@@ -1,0 +1,5 @@
+requests
+httpx
+bs4
+pycryptodome
+pillow
