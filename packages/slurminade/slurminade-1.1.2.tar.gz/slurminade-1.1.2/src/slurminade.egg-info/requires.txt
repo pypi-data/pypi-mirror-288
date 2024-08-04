@@ -1,0 +1,2 @@
+simple_slurm>=0.2.6
+click
