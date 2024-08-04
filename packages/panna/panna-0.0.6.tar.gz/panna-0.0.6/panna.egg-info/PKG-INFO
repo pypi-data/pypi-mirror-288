@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: panna
+Version: 0.0.6
+Summary: PANNA
+Home-page: https://github.com/asahi417
+Author: Asahi Ushio
+Author-email: asahi1992ushio@gmail.com
+License: MIT
+Keywords: machine-learning,computational-art
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# PANNA
+PANNA is a collection of image/video models with a unified interface.
+
+```shell
+pip install panna
+```
+
+
