@@ -1,0 +1,9 @@
+langchain>=0.2.12
+
+[test]
+pytest
+langchain-community>=0.2.11
+langchain-ollama
+litellm
+xmltodict
+duckduckgo_search
