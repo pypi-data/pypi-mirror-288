@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: playpy23
+Version: 1.0.1
+Summary: PlayPy23 is a beginner friendly python library for making games. It is written on top of the pygame library, and with it you can create fully functional games in a matter of seconds. Like pygame, it is highly portable and customizable.
+Author: Angel Ventura
+Author-email: angyv2861@gmail.com
+Requires-Python: >=3.10,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pygame (>=2.6.0,<3.0.0)
