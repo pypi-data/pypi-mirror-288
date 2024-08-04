@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+firmpriori/__init__.py
+firmpriori/hello.py
+firmpriori.egg-info/PKG-INFO
+firmpriori.egg-info/SOURCES.txt
+firmpriori.egg-info/dependency_links.txt
+firmpriori.egg-info/top_level.txt
