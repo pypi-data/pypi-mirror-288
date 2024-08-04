@@ -1,0 +1,10 @@
+fbxloader/__init__.py,sha256=y7NMJgSJ6C7epdovmO56dXqDfHrh0JV6FBBAzb8YQM8,17983
+fbxloader/converter.py,sha256=CXQ66EymiFv0069Ov2J92dRiUrtr-SNs_qPB8ShVBzQ,450
+fbxloader/nodes.py,sha256=gKYq1bPYb7QtmFL7sbq5JxE91iC40vI_lNAlRfXSSBc,2036
+fbxloader/utils.py,sha256=RzS8SNyU18P5sKaAlkUWj6j4WlVhwYL6ESNZ72WOqnw,3873
+fbxloader-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fbxloader-0.0.1.dist-info/METADATA,sha256=vaCJ3vKbpMqWGwld6d7tAHHJSrv5AfGBtTlFTcpKzmg,1848
+fbxloader-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+fbxloader-0.0.1.dist-info/entry_points.txt,sha256=TMt-aN1Iyhcbdeq0G9myUlbqr_esU1lrye6ci1LI6ds,58
+fbxloader-0.0.1.dist-info/top_level.txt,sha256=ehOhzd_iGP_oXdLqCCtOvG48sZKqRkBOrGOiy8mNjIo,10
+fbxloader-0.0.1.dist-info/RECORD,,
