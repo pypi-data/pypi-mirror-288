@@ -1,0 +1,31 @@
+language = "python"
+parent = "python"
+name = "collections"
+title = "Collections"
+code = "import collections"
+description = """
+For an overview of the abstract classes provided by the collections module, see [here](https://docs.python.org/3/library/collections.abc.html#collections-abstract-base-classes).
+"""
+
+[test]
+section = "Test"
+
+[test.is.collection]
+action = "Is collection"
+code = "isinstance(x, collections.abc.Collection)"
+details = "e.g., `str`, `tuple`, `list`, `set`, `dict`"
+
+[test.is.seq]
+action = "Is sequence (defined ordering of elements)"
+code = "isinstance(x, collections.abc.Sequence)"
+details = "e.g., `str`, `tuple`, `list`"
+
+[test.is.mapping]
+action = "Is mapping"
+code = "isinstance(x, collections.abc.Mapping)"
+details = "e.g., `dict`"
+
+[test.is.set]
+action = "Is set"
+code = "isinstance(x, collections.abc.Set)"
+details = "e.g., `set`"
