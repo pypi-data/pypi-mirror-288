@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: yagni
+Version: 0.0.4
+Summary: You are probably gonna need it: a collection of useful Python utilities aggregated over many years of development.
+Requires-Python: >=3.8
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: radon; extra == "dev"
+Requires-Dist: xenon; extra == "dev"

@@ -1,0 +1,8 @@
+
+[dev]
+black
+isort
+pytest
+pytest-cov
+radon
+xenon
