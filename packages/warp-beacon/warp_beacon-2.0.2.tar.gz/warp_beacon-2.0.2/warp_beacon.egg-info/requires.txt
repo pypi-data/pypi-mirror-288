@@ -1,0 +1,10 @@
+ffmpeg-python
+uvloop
+tgcrypto
+pyrogram
+pytubefix
+av
+urlextract
+pillow
+pymongo
+instagrapi==2.0.0
