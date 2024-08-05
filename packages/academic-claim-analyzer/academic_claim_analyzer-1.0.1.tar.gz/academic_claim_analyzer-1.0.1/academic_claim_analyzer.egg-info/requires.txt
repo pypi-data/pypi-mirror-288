@@ -1,0 +1,16 @@
+aiohttp
+anthropic
+google-generativeai
+openai
+python-dotenv
+tiktoken
+asyncio
+beautifulsoup4
+PyMuPDF
+playwright==1.36.0
+fake-useragent
+async-llm-handler
+
+[dev]
+pytest
+pytest-asyncio

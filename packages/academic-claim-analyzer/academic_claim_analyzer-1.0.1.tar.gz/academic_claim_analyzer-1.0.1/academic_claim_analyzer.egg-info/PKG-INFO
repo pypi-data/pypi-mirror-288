@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: academic-claim-analyzer
+Version: 1.0.1
+Summary: A tool for analyzing academic claims
+Home-page: https://github.com/BryanNsoh/async_llm_handler
+Author: Bryan Nsoh
+Author-email: bryan.anye.5@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: anthropic
+Requires-Dist: google-generativeai
+Requires-Dist: openai
+Requires-Dist: python-dotenv
+Requires-Dist: tiktoken
+Requires-Dist: asyncio
+Requires-Dist: beautifulsoup4
+Requires-Dist: PyMuPDF
+Requires-Dist: playwright==1.36.0
+Requires-Dist: fake-useragent
+Requires-Dist: async-llm-handler
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"
