@@ -1,0 +1,52 @@
+[project]
+name = "mergr"
+dynamic = []
+description = "Objects merging utility"
+authors = [
+    { name = "alxevvv", email = "alxevvv@gmail.com" },
+]
+dependencies = []
+requires-python = ">=3.10"
+readme = "README.md"
+keywords = [
+    "python",
+]
+version = "v0.2.0"
+
+[project.license]
+text = "MIT"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.version]
+source = "scm"
+write_to = "mergr/_version.py"
+write_template = "__version__ = \"{}\"\n"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "covdefaults>=2.3.0",
+    "mypy>=1.10.0",
+    "pre-commit>=3.7.1",
+    "pytest>=8.2.1",
+    "pytest-cov>=5.0.0",
+    "pytest-emoji>=0.2.0",
+    "ruff>=0.4.5",
+    "tox>=4.16.0",
+]
+
+[tool.pdm.build]
+package-dir = "."
+includes = [
+    "mergr/",
+]
+excludes = [
+    "./**/.git",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
