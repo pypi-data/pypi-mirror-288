@@ -1,0 +1,3 @@
+[console_scripts]
+tune8 = tune8.app:run_app
+

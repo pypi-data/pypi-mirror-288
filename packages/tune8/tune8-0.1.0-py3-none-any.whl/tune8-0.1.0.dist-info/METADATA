@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: tune8
+Version: 0.1.0
+Summary: A dashboard to work with Fine-tune JSONL
+Home-page: https://github.com/naserjamal/tune8
+Author: Naser Jamal
+Author-email: naser.dll@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask
+
+# Tune8
+
+Tune8 is a tool for managing prompts in JSONL format.
+
+## Installation
+
+```python
+pip install tune8
+```
+
+## Usage
+
+After installation, you can run the application by typing:
+
+```python
+tune8
+```
+
+This will start a Flask server, and you can access the application by opening a web browser and navigating to `http://localhost:5000`.
+
