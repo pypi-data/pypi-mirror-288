@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: jbisect
+Version: 0.1.0
+Summary: A python package for binary search
+Home-page: https://github.com/jesnie/jbisect
+License: MIT
+Author: Jesper Nielsen
+Author-email: jespernielsen1982+jbisect@gmail.com
+Requires-Python: >=3.12,<4
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Project-URL: Repository, https://github.com/jesnie/jbisect
+Description-Content-Type: text/markdown
+
+# jbisect
