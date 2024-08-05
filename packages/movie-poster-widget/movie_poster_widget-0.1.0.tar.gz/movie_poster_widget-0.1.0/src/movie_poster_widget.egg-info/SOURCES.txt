@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/movie_poster_widget/__init__.py
+src/movie_poster_widget/widget.py
+src/movie_poster_widget.egg-info/PKG-INFO
+src/movie_poster_widget.egg-info/SOURCES.txt
+src/movie_poster_widget.egg-info/dependency_links.txt
+src/movie_poster_widget.egg-info/requires.txt
+src/movie_poster_widget.egg-info/top_level.txt
