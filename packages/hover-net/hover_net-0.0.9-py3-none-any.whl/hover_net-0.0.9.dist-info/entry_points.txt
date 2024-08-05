@@ -1,0 +1,3 @@
+[console_scripts]
+hover-net-infer = hover_net.run_infer:main
+hover-net-train = hover_net.run_train:main
