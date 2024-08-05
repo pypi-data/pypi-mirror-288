@@ -1,0 +1,8 @@
+README.md
+setup.py
+amisha_star.egg-info/PKG-INFO
+amisha_star.egg-info/SOURCES.txt
+amisha_star.egg-info/dependency_links.txt
+amisha_star.egg-info/top_level.txt
+practice/__init__.py
+practice/assignment_star_printer.py
