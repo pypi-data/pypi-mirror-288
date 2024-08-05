@@ -1,0 +1,31 @@
+Metadata-Version: 2.3
+Name: movie_poster_widget
+Version: 0.0.1
+Summary: A PySide6 widget for displaying movie posters
+Project-URL: Homepage, https://github.com/Ghoufrane-Kadri/movie_poster_widget
+Project-URL: Issues, https://github.com/Ghoufrane-Kadri/movie_poster_widget/issues
+Author-email: Ghoufrane Kadri <ghoufrane.kadri@enis.tn>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: pyside6
+Description-Content-Type: text/markdown
+
+# Movie Poster Widget
+
+A Python package for displaying movie posters in a GUI application using PySide6. This widget can adjust the size of movie posters based on the width of the container and supports adding movies to a grid layout.
+
+## Features
+
+- Display movie posters with adjustable sizes.
+- Automatically arranges posters in a grid layout.
+- Responsive design based on container width.
+
+## Installation
+
+You can install this package from PyPI using pip:
+
+```bash
+pip install movie_poster_widget
