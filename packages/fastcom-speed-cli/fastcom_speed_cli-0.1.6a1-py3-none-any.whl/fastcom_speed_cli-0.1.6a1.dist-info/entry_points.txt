@@ -1,0 +1,2 @@
+[console_scripts]
+fast-cli = fast_speedtest.cli:main
