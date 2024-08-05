@@ -1,0 +1,3 @@
+[console_scripts]
+mcs-manager=mcs_manager.main:run
+
