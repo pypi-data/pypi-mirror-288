@@ -1,0 +1,82 @@
+FROM python:3.11 as extract
+
+VOLUME /tmp
+
+ARG GID=10001
+ARG APPGROUPNAME=appgroup
+ARG UID=10001
+ARG APPUSERNAME=appuser
+ARG APPDIR=/app
+ARG APPEXTRACTDIR=$APPDIR/extracted
+ARG APPNAME=app
+ARG APPWHEELDIR=dist
+ARG APPWHEEL=$APPNAME-py3-none-any.whl
+
+RUN addgroup --gid "${GID}" "${APPGROUPNAME}" \
+&& adduser \
+    --disabled-password \
+    --gecos "" \
+    --home "/nonexistent" \
+    --shell "/sbin/nologin" \
+    --no-create-home \
+    --uid "${UID}" \
+    --gid "${GID}" \
+    "${APPUSERNAME}" \
+&& mkdir -m 700 -p "${APPDIR}" "${APPEXTRACTDIR}" \
+&& chown "${APPUSERNAME}:${APPGROUPNAME}" "${APPDIR}" "${APPEXTRACTDIR}"
+
+USER $APPUSERNAME:$APPGROUPNAME
+
+WORKDIR $APPDIR
+
+COPY --chown=$APPUSERNAME:$APPGROUPNAME ${APPWHEELDIR}/${APPWHEEL} ./
+
+RUN cd "${APPEXTRACTDIR}" \
+&& wheel unpack "${APPDIR}/${APPWHEEL}" \
+&& rm -rf "${APPEXTRACTDIR}/${APPNAME}/${APPNAME}.dist-info" \
+&& mv "${APPEXTRACTDIR}/${APPNAME}"/* ./ \
+&& rm -rf "${APPEXTRACTDIR}/${APPNAME}"
+
+FROM python:3.11 AS final
+
+VOLUME /tmp
+
+ARG GID=10001
+ARG APPGROUPNAME=appgroup
+ARG UID=10001
+ARG APPUSERNAME=appuser
+ARG APPDIR=/app
+ARG APPEXTRACTDIR=$APPDIR/extracted
+ARG APPENTRYPOINT=entrypoint.sh
+ARG APPENTRYPOINTDIR=scripts
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+RUN addgroup --gid "${GID}" "${APPGROUPNAME}" \
+&& adduser \
+    --disabled-password \
+    --gecos "" \
+    --home "/nonexistent" \
+    --shell "/sbin/nologin" \
+    --no-create-home \
+    --uid "${UID}" \
+    --gid "${GID}" \
+    "${APPUSERNAME}" \
+&& mkdir -m 700 -p "${APPDIR}" \
+&& chown "${APPUSERNAME}:${APPGROUPNAME}" "${APPDIR}"
+
+WORKDIR $APPDIR
+
+RUN --mount=type=cache,target=/root/.cache/pip \
+    --mount=type=bind,source=requirements.txt,target=requirements.txt \
+    python -m pip install -r requirements.txt
+
+USER $APPUSERNAME:$APPGROUPNAME
+
+COPY --chown=$APPUSERNAME:$APPGROUPNAME --chmod=700 $APPENTRYPOINTDIR/$APPENTRYPOINT ./
+
+COPY --from=extract --chown=$APPUSERNAME:$APPGROUPNAME $APPEXTRACTDIR/ ./
+
+EXPOSE 8000
+
+ENTRYPOINT ["/app/entrypoint.sh"]
