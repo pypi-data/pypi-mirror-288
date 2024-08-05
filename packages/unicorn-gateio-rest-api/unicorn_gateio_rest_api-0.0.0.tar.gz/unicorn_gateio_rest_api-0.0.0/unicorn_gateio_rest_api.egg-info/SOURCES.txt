@@ -1,0 +1,8 @@
+README.md
+setup.py
+dummy/__init__.py
+dummy/package.py
+unicorn_gateio_rest_api.egg-info/PKG-INFO
+unicorn_gateio_rest_api.egg-info/SOURCES.txt
+unicorn_gateio_rest_api.egg-info/dependency_links.txt
+unicorn_gateio_rest_api.egg-info/top_level.txt
