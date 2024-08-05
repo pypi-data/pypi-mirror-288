@@ -1,0 +1,13 @@
+test.py,sha256=3MtWcuc5A4oW9zstFG3Hr84WwkCW0lPrruxJ0k5KB2U,1420
+cfw_proxy/__init__.py,sha256=hAXxOfwhNBgH7RyuENJggfHa-1XJNscoiy-uGhSYAuw,45
+cfw_proxy/certmgr.py,sha256=9Mo_v29mPQgqo6sHwJkptZcyn0Z21BCrS6RjFAmwz4U,9847
+cfw_proxy/cf_proxy.py,sha256=c5qVke4OBKtDhztlr1umcGiGBga4rVmfiXoclTfzvT0,11096
+cfw_proxy/cli.py,sha256=aNEGn_NULXwjM7XsTyTxFVkmQCqamOGDURtlsZPDna8,4336
+cfw_proxy/http_conn.py,sha256=-L3PoIfvqrJ19l2bo1BWW8dbEzEgiNgbiEbpQ-wlmtw,15151
+cfw_proxy/http_proxy.py,sha256=hDqnpjUT8Ud2zv4AgMpWLLg5SKPaTV08htFGSHIfkWs,4852
+cfw_proxy/logconfig.py,sha256=8ab-WCUR5_OdxHuOi2ZZp3SRQZtgdhZnTAuZ6jdqC5I,508
+cfw_proxy-1.1.5.dist-info/METADATA,sha256=_dZfMzb-gfc9QXAolnpd-ofUR9pwDs2C6um6bJ2rWWI,486
+cfw_proxy-1.1.5.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+cfw_proxy-1.1.5.dist-info/entry_points.txt,sha256=g99jgd0PIHQUI65Lcl1nHjEah4MPjk6d22bioQPyWk4,44
+cfw_proxy-1.1.5.dist-info/top_level.txt,sha256=3h6lM4C13di3pV8kHmp64OIxUVEqid_QNvjfMWYxxGE,15
+cfw_proxy-1.1.5.dist-info/RECORD,,
