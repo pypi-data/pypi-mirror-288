@@ -1,0 +1,10 @@
+xlsxwriter
+openpyxl
+python-dotenv
+pydantic-settings
+mysql-connector-python
+fastapi
+
+[dev]
+pytest
+twine

@@ -1,0 +1,216 @@
+Metadata-Version: 2.1
+Name: py_utility_scripts
+Version: 1.4.0
+Summary: A collection of utility scripts for working with files, Excel, logging, and database connections.
+Home-page: https://github.com/hirushiharan/python-utility-functions.git
+Author: Hirushiharan
+Author-email: hirushiharant@gmail.com
+License: Apache 2.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: xlsxwriter
+Requires-Dist: openpyxl
+Requires-Dist: python-dotenv
+Requires-Dist: pydantic-settings
+Requires-Dist: mysql-connector-python
+Requires-Dist: fastapi
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+# Python Utils
+
+Welcome to the Python Utils repository! This project contains a collection of utility scripts written in Python for various purposes. Each script focuses on specific functionalities that can be reused across different projects. Below is a detailed description of the project's structure and its components.
+
+### Dependancies: 
+    
+- Excel Class Dependancies
+    - xlsxwriter
+    - python-dotenv
+
+- Environment Variables Dependancies
+    - python-dotenv
+
+- MySQL Dependancies
+    - pydantic-settings
+    - mysql-connector-python
+
+- API Dependancies
+    - fastapi
+
+## Requirements
+
+Make sure to install the required packages:
+
+    pip install py-utility-scripts
+
+## Components
+
+### [`excel_functions.py`](python_utils/src/excel_functions.py)
+
+This script provides functionalities for reading from and writing to Excel files using the `pandas` and `xlsxwriter` libraries.
+
+#### Classes:
+- **ExcelReader**: Reads data from an Excel file.
+- **WriteToExcel**: Writes data to an Excel file.
+
+#### Usage:
+1. **ExcelReader**: Instantiate with the path to the Excel file and optional columns to select. Use `read_excel()` to read the file and `iterate_rows()` to get the data as a list of dictionaries.
+2. **WriteToExcel**: Instantiate with the path to the Excel file. Use `createWorkbook()`, `createWorksheet()`, `defineRowColumn()`, and `closeWorkbook()` to manage and write data to the workbook.
+
+#### Example
+
+    from python_utils import ExcelReader, WriteToExcel
+
+    # Write Score data to example.xlsx Excel file
+    
+    file_path = "example.xlsx"
+    
+    # Define headers and data
+    headers = ['name','age', 'score']
+    scores = [
+        ['ankit',12, 1000],
+        ['rahul',13, 100],
+        ['priya',12, 300],
+        ['harshita',12, 50],
+    ]
+
+    # Create an instance of WriteToExcel
+    excel = WriteToExcel(file_path)
+
+    # Write data to the Excel file
+    excel.write_data_to_excel(file_path, "sheet_1", 0, 0, headers, scores)
+    
+
+    # Read Score data from example.xlsx Excel file
+
+    excel_columns = ExcelReader('example.xlsx', selected_columns=['name', 'score'])
+    excel_columns.read_excel()
+    values = excel_columns.iterate_rows()
+
+    for row_data in values:
+        print(row_data)
+
+### [`file_functions.py`](python_utils/src/file_functions.py)
+
+This script renames all files in a specified directory to a sequentially numbered format with a user-defined prefix and format.
+
+#### Class:
+- **FileRenamer**: Handles the file renaming process within a specified directory.
+
+#### Usage:
+- Create an instance of `FileRenamer` with the desired path, prefix, and format. Use `rename_files()` to apply the renaming.
+
+#### Example
+
+    from python_utils import FileRenamer
+
+    prefix = 'desktop-wallpaper'
+    count = 0
+    path = r'D:\images\Walpapers'
+
+    file_renamer = FileRenamer(path, prefix=prefix, name_format="{prefix}-{count:03d}")
+    file_renamer.rename_files()
+
+### [`log_message.py`](python_utils/src/log_message.py)
+
+This script provides a flexible logging mechanism that supports logging messages with dynamic log levels to both the console and a log file in JSON format. It also includes log file rotation. Check if the current log file exceeds the predefined maximum size. If it does, the function renames the current log file to include a timestamp in its name and retains it as an old log file. The timestamp format used is 'YYYYMMDD_HHMMSS' to ensure uniqueness and chronological sorting of old log files.
+
+#### Class:
+- **Logger**: Handles logging messages with support for dynamic log levels and file rotation.
+
+#### Usage:
+- Create an instance of `Logger` and use `log()` to log messages. Use `add_log_level()` and `remove_log_level()` to manage log levels.
+
+#### Example
+
+    from python_utils import Logger
+
+    # Constants for log levels
+    INFO = "INFO"
+    WARNING = "WARNING"
+    ERROR = "ERROR"
+
+    logger = Logger()
+    logger.log("This is an info message.", INFO)
+    logger.log("This is a warning message.", WARNING)
+    logger.log("This is an error message.", ERROR)
+    
+    # Add a new log level and log a message with it
+    logger.add_log_level("DEBUG")
+    logger.log("This is a debug message.", "DEBUG")
+
+    # Remove an existing log level
+    logger.remove_log_level("DEBUG")
+
+### [`src/project_structure_gen.py`](src/project_structure_gen.py)
+
+This script provides functionalities for establishing a connection to a MySQL database, executing SQL queries, and managing the database connection. It uses the mysql-connector-python library and supports environment variable management using the python-dotenv library.
+
+#### Class:
+- **LoggingMiddleware**: Middleware for logging HTTP request and response details. This class logs details about incoming HTTP requests and outgoing responses, which is helpful for monitoring and debugging purposes.
+- **Settings**: A configuration class for loading environment variables for MySQL database configuration. Uses Pydantic's BaseSettings to load configuration details from environment variables, ensuring secure and configurable database connections.
+- **SqlConnection**: Provides a robust mechanism for managing database connections, including retry logic and connection pooling.
+- **SqlResponse**: Standardizes the response format for SQL operations, ensuring consistent handling of success and error cases.
+- **SqlExecution**: Encapsulates the logic for executing SQL queries and managing transactions, which simplifies database interactions.
+- **execute_with_handling**: Handles asynchronous function execution with standard exception handling. Ensures consistent error handling and response formatting for asynchronous operations, enhancing the reliability of the application.
+
+#### Usage:
+- The module can be used in a FastAPI application to manage MySQL database connections and execute SQL queries with robust error handling. The middleware and utility functions provided streamline logging and response formatting, making the application more maintainable and easier to debug.
+
+#### Example
+
+    from python_utils import LoggingMiddleware, SqlConnection, SqlExecution, SqlHandler, Logger
+    from fastapi import HTTPException, status, Query
+    from fastapi import FastAPI, Depends
+    from fastapi.responses import JSONResponse
+    import uvicorn
+
+    # Constants for log levels
+    INFO = "INFO"
+    WARNING = "WARNING"
+    ERROR = "ERROR"
+
+    logger = Logger()
+
+    def fetch_user_by_email(email: str, db_conn) -> dict:
+        try:
+            query = "SELECT * FROM user WHERE email = %s"
+            result = SqlExecution.execute_single_query(db_conn, query, (email,))
+            if not result:
+                raise HTTPException(status_code=404, detail="User not found")
+            logger.log(f"Fetched data for '{email}' from user table", INFO)
+            return result
+        except Exception as e:
+            logger.log(f"Error fetching user by email '{email}': {str(e)}", ERROR)
+            raise HTTPException(status_code=500, detail="Error fetching user")
+
+    # Initialize FastAPI app
+    app = FastAPI()
+    app.add_middleware(LoggingMiddleware)
+
+    # Fetch User
+    async def get_user_handler(email: str, db_conn) -> JSONResponse:
+        data = fetch_user_by_email(email, db_conn)
+        return JSONResponse(content=data, status_code=status.HTTP_200_OK)
+
+    @app.get("/user", response_description="Retrieve user data by email")
+    async def get_user(email: str = Query(...), db_conn=Depends(SqlConnection().get_db_connection)) -> JSONResponse:
+        return await SqlHandler.execute_with_handling(get_user_handler, email, db_conn)
+
+    def main():
+        try:
+            # Run the Uvicorn server
+            uvicorn.run('main:app', host='0.0.0.0', port=8000)
+        except Exception as e:
+            logger.log(f"Error running the application: {e}", level=ERROR)
+            raise
+
+    if __name__ == '__main__':
+        main()
+            
