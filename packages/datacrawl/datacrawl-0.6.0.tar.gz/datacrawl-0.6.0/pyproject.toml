@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "datacrawl"
+version = "0.6.0"
+description = "A simple and efficient web crawler in Python."
+authors = ["Indrajith Indraprastham <indr4jith@gmail.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+homepage = "http://github.com/DataCrawl-AI/datacrawl"
+repository = "http://github.com/DataCrawl-AI/datacrawl"
+documentation = "http://github.com/DataCrawl-AI/datacrawl"
+packages = [
+    { include = "datacrawl", from = "src" }
+]
+
+[tool.poetry.scripts]
+post_install = "scripts:post_install"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+validators = "^0.28.3"
+beautifulsoup4 = "^4.12.3"
+lxml = "^5.2.2"
+colorama = "^0.4.6"
+requests = "^2.32.3"
+aiohttp = "^3.10.0"
+
+[tool.poetry.group.dev.dependencies]
+responses = "^0.13.4"
+mypy = "^1.10.0"
+pytest-cov = "^5.0.0"
+requests-mock = "^1.12.1"
+pre-commit = ">=2.15,<3.0"
+pytest-asyncio = "^0.23.8"
+pytest = "^8.3.2"
+aioresponses = "^0.7.6"
+black = "^24.8.0"
+ruff = "^0.5.6"
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "N"]
+
+[tool.black]
+line-length = 100
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
