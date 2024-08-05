@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: pwdf
+Version: 0.0.1
+Summary: A terminal command (Python module) to get the path of a file (pwd for files instead of directories).
+Home-page: https://github.com/rynstwrt/pwdf
+Author: Ryan Stewart
