@@ -1,0 +1,10 @@
+dm_mac/__init__.py,sha256=_uuRQaFFpWBEakxBpf-SjspfrT7arO1YWQOWGSOO1cU,256
+dm_mac/machine_state.py,sha256=yzIGjqebHa_M-fg4rOff9MggccO91LgsIZUFOZ1jRJI,2810
+dm_mac/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dm_mac/views/__init__.py,sha256=U79DC2wZ9YQSJJfdwuS5Ben45AIvO-oPHpinq39KNwQ,30
+dm_mac/views/api.py,sha256=InNokuWIV_C7GxsNNN2MkFL_yTpzkR8ouvaQytYpCUA,215
+dm_mac/views/machine.py,sha256=mMUcc1l4kEhKbTC73A7hM3pik9TGThw46wYvigDBSmA,1251
+machine_access_control-0.1.0.dist-info/LICENSE,sha256=TeKo6ThhJh4LJ9xJziWpGNKpBA2Ojnweppy0rzaRbDw,1069
+machine_access_control-0.1.0.dist-info/METADATA,sha256=lN0V-osN4I588WZTPGEu9Q6EH3Ne7Kxnvha2LgbhmQw,4416
+machine_access_control-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+machine_access_control-0.1.0.dist-info/RECORD,,
