@@ -1,0 +1,44 @@
+Metadata-Version: 2.3
+Name: rpa-test
+Version: 0.1.0
+Summary: test yingdao rpa installation python package
+Project-URL: Documentation, https://github.com/unknown/rpa-test-zhang#readme
+Project-URL: Issues, https://github.com/unknown/rpa-test-zhang/issues
+Project-URL: Source, https://github.com/unknown/rpa-test-zhang
+Author-email: zhang <428162626@qq.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: requests==2.27.1
+Description-Content-Type: text/markdown
+
+# rpa_test_zhang
+
+[![PyPI - Version](https://img.shields.io/pypi/v/rpa-test-zhang.svg)](https://pypi.org/project/rpa-test-zhang)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/rpa-test-zhang.svg)](https://pypi.org/project/rpa-test-zhang)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install rpa-test-zhang
+```
+
+## License
+
+`rpa-test-zhang` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
