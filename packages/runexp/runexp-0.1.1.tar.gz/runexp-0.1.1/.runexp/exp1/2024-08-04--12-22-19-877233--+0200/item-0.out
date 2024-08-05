@@ -1,0 +1,11 @@
+{'choice': 'first',
+ 'flag': False,
+ 'float': 0.1,
+ 'lst': [80, 120],
+ 'option': False,
+ 'other_string': 'a value',
+ 'sc': 2.72,
+ 'sf': True,
+ 'string': 'a bc',
+ 'target': 'target'}
+env.execution_key()='2024-08-04--12-22-19-877233--+0200--1'

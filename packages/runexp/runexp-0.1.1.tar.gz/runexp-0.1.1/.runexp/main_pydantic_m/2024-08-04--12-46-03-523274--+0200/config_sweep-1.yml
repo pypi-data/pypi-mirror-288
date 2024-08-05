@@ -1,0 +1,9 @@
+base_config:
+  learning_rate: 0.001
+  num_epochs: 50
+  scheduler:
+    cooldown: 30
+    factor: 0.3
+    mode: max
+  tags:
+  - a

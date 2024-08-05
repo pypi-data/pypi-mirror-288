@@ -1,0 +1,6 @@
+sys.argv=['examples/config_file/main.py', '/home/maxime/repos/runexp/.runexp/main_pydantic_m/2024-08-04--12-46-03-523274--+0200/config_sweep-5.yml', '--runexp-no-dry-run']
+p.num_epochs=5
+p.learning_rate=0.0001
+p.tags=['b']
+p.scheduler=PlateauSched(mode='max', factor=0.3, cooldown=30)
+env.execution_key()='2024-08-04--12-46-03-523274--+0200--5'
