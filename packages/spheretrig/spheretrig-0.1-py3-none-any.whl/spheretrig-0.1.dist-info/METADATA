@@ -1,0 +1,187 @@
+Metadata-Version: 2.1
+Name: spheretrig
+Version: 0.1
+Summary: spheretrig es un módulo de Python que proporciona clases y funciones para trabajar con trigonometría esférica.
+Home-page: https://gitlab.com/pinpacho/Final_FCI
+Author: Santiago Julio Davila, Julian Francisco Pinchao Ortiz, Andres Felipe Riaño Quintanilla
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mpmath
+Requires-Dist: numpy
+Requires-Dist: packaging
+Requires-Dist: plotly
+Requires-Dist: sympy
+Requires-Dist: tenacity
+
+# spheretrig
+
+
+## Descripción
+
+`spheretrig` es un módulo de Python que proporciona clases y funciones para trabajar con trigonometría esférica. Incluye clases para representar ángulos en diferentes unidades y para manipular trigonometría esférica, además de métodos para graficar estos triángulos en una esfera unitaria utilizando Plotly.
+
+## Contenido
+
+- [Requisitos](#requisitos)
+- [Uso](#uso)
+  - [Clase `angle`](#clase-angle)
+  - [Clase `sphtriangle`](#clase-sphtriangle)
+  - [Funciones trigonométricas](#funciones-trigonométricas)
+- [Ejemplos](#ejemplos)
+
+## ¿Cómo instalarlo?
+
+Para utilizar este módulo, puedes instalarlo utilizando: 
+
+```bash
+pip install spheretrig
+``` 
+
+## Uso
+
+### Clase `angle`
+
+La clase `angle` permite representar ángulos en grados, radianes o en grados-minutos-segundos (DMS).
+
+#### Métodos de inicialización:
+
+```python
+angle(x, 'deg')  # Ángulo en grados
+angle(x, 'rad')  # Ángulo en radianes
+angle((d, m, s), 'dms')  # Ángulo en grados-minutos-segundos
+```
+
+#### Atributos:
+
+- `unit`: Unidad del ángulo.
+- `deg`: Valor del ángulo en grados.
+- `rad`: Valor del ángulo en radianes.
+- `dms`: Ángulo en grados-minutos-segundos.
+
+#### Operaciones soportadas:
+
+- Suma (`+`)
+- Resta (`-`)
+- Multiplicación por un escalar (`*` y `__rmul__`)
+- Funciones seno, coseno y tangente de `numpy`.
+
+### Clase `sphtriangle`
+
+La clase `sphtriangle` permite representar y manipular triángulos esféricos.
+
+#### Métodos de inicialización:
+
+```python
+sphtriangle(angles, sides)
+
+```
+
+- `angles`: Tupla de ángulos del triángulo esférico.
+- `sides`: Tupla de lados del triángulo esférico.
+
+#### Atributos:
+
+- `angles`: Ángulos del triángulo esférico.
+- `sides`: Lados del triángulo esférico.
+- `anglesdeg`: Ángulos del triángulo en grados.
+- `sidesdeg`: Lados del triángulo en grados.
+- `sphexcess`: Exceso esférico del triángulo, útil para calcular el área.
+
+#### Métodos:
+
+- `plot()`: Grafica el triángulo en una esfera unitaria.
+
+### Funciones trigonométricas
+
+- `Arcsin(x)`: Calcula los valores del ángulo cuyo seno es `x` en el intervalo [0°, 360°).
+- `Arccos(x)`: Calcula los valores del ángulo cuyo coseno es `x` en el intervalo [0°, 360°).
+- `Arctan(x)`: Calcula los valores del ángulo cuya tangente es `x` en el intervalo [0°, 360°).
+
+#### Teoremas de la trigonometría esférica
+
+- `sin_th(A, a, B, b, symbolic=False)`: Resuelve el elemento faltante usando el teorema del seno.
+- `sidecos_th(a, b, c, A, name_angle, symbolic=False)`: Resuelve el elemento faltante usando el teorema del coseno para lados.
+- `anglecos_th(A, B, C, a, name_side, symbolic=False)`: Resuelve el elemento faltante usando el teorema del coseno para ángulos.
+
+#### Resolución de triángulos esféricos
+
+- `solve_triang(angles, sides)`: Resuelve el triángulo esférico dado tres de sus elementos utilizando los teoremas de la trigonometría esférica.
+
+## Ejemplos
+
+### Ejemplo de uso de la clase `angle`
+
+```python
+from spheretrig import angle
+
+a1 = angle(30, 'deg')
+a2 = angle((30, 0, 0), 'dms')
+a3 = angle(np.pi / 6, 'rad')
+
+print(a1.deg, a1.rad, a1.dms)
+print(a2.deg, a2.rad, a2.dms)
+print(a3.deg, a3.rad, a3.dms)
+```
+
+### Ejemplo de uso de la clase `sphtriangle`
+
+```python
+from spheretrig import angle, sphtriangle
+
+A = angle(60, 'deg')
+B = angle(60, 'deg')
+C = angle(60, 'deg')
+
+a = angle(90, 'deg')
+b = angle(90, 'deg')
+c = angle(90, 'deg')
+
+triangle = sphtriangle((A, B, C), (a, b, c))
+triangle.plot()
+```
+
+### Ejemplo de uso de las funciones trigonométricas
+
+```python
+from spheretrig import angle, sin_th
+
+A = angle(30, 'deg')
+a = angle(45, 'deg')
+B = angle(60, 'deg')
+b = None
+
+result = sin_th(A, a, B, b)
+print(result)
+```
+
+### Test.py
+
+El archivo `test.py` contiene ejemplos para resolver los siguientes casos de trigonometría esférica:
+
+* Un ángulo y dos lados.
+* Dos ángulos y un lado opuesto.
+* Todos los lados.
+* Todos los ángulos.
+* Dos ángulos y un lado.
+* Dos lados y un ángulo opuesto.
+
+
+
+## Contacto
+
+Para cualquier pregunta o comentario, no dudes en ponerte en contacto con los autores:
+
+-   **Santiago Julio Davila**
+    
+    -   Email: santiago.juliod@udea.edu.co
+
+-   **Julian Francisco Pinchao Ortiz**
+    
+    -   Email: jfrancisco.pinchao@udea.edu.co
+
+
+-   **Andres Felipe Riaño Quintanilla**
+    
+    -   Email: andres.rianoq@udea.edu.co
+
