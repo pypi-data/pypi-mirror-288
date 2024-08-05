@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: translatorAR
+Version: 0.1.7
+Summary: A translation tool for multiple languages.
+Home-page: https://pypi.org/project/translatorAR/0.1.0/
+Author: Amin Boulouma
+Author-email: amin@boulouma.com
+License: CC BY-NC 4.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: transformers
+Requires-Dist: pymupdf
+Requires-Dist: tqdm
+
+
+# TranslatorAR
+
+**TranslatorAR** is a Python package designed for translating text between Arabic, English, and French. The package uses the Hugging Face Transformers library to perform translations and supports translating text extracted from PDF files.
+
+## Features
+
+- **Text Translation**: Translate text between Arabic, English, and French.
+- **PDF Translation**: Extract text from PDF files and translate it into different languages.
+- **Customizable**: Easily extendable to support additional language pairs.
+
+## Usage
+
+Here are some examples of how to use the TranslatorAR package:
+
+### 1. Translate Text
+
+```python
+from translatorAR import TranslatorAR
+
+translator = TranslatorAR()
+
+text_ar_en = "هذا المساق مقدم من Hugging Face."
+translated_text_ar_en = translator.translate(text_ar_en, "ar", "en")
+print(f"Arabic to English: {translated_text_ar_en}")
+
+text_en_ar = "This course is produced by Hugging Face."
+translated_text_en_ar = translator.translate(text_en_ar, "en", "ar")
+print(f"English to Arabic: {translated_text_en_ar}")
+
+text_ar_fr = "أهلاً وسهلاً بكم في هذا المساق."
+translated_text_ar_fr = translator.translate(text_ar_fr, "ar", "fr")
+print(f"Arabic to French: {translated_text_ar_fr}")
+
+text_fr_ar = "Bienvenue dans ce cours."
+translated_text_fr_ar = translator.translate(text_fr_ar, "fr", "ar")
+print(f"French to Arabic: {translated_text_fr_ar}")
+```
+
+### 2. Translate PDF
+
+```python
+translator = TranslatorAR()
+
+# Translate Arabic PDF to English
+translator.translate_pdf("path/to/arabic-text.pdf", "ar", "en", "translated_to_english.txt")
+
+# Translate English PDF to Arabic
+translator.translate_pdf("path/to/english-text.pdf", "en", "ar", "translated_to_arabic.txt")
+
+# Translate Arabic PDF to French
+translator.translate_pdf("path/to/arabic-text.pdf", "ar", "fr", "translated_to_french.txt")
+
+# Translate French PDF to Arabic
+translator.translate_pdf("path/to/french-text.pdf", "fr", "ar", "translated_to_arabic.txt")
+```
+
+## Requirements
+
+- Python 3.6+
+- PyMuPDF
+- Hugging Face Transformers
+
+## License
+
+This code is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/). You may not use this code for commercial purposes.
+
+## Contact
+
+For any questions or issues, please contact [Amin Boulouma](mailto:amin@boulouma.com).
+
+## Acknowledgments
+
+- [Hugging Face Transformers](https://huggingface.co/transformers) for providing pre-trained translation models.
+- [PyMuPDF](https://pypi.org/project/PyMuPDF/) for PDF text extraction.
