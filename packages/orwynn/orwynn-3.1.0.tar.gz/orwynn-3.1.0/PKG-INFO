@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: orwynn
+Version: 3.1.0
+Summary: Scalable web-framework with out-of-the-box architecture
+Home-page: https://orwynn.ryzhovalex.com
+Keywords: framework,architecture,backend,web-framework,out of the box
+Author: ryzhovalex
+Author-email: thed4rkof@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiofiles (>=23.2.1,<24.0.0)
+Requires-Dist: inflection (>=0.5.1,<0.6.0)
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: pydantic (>=2.6.0,<3.0.0)
+Requires-Dist: sb-rxcat (>=1.0.7,<2.0.0)
+Requires-Dist: typing-extensions (>=4.7.1,<5.0.0)
+Project-URL: Documentation, https://orwynn.ryzhovalex.com
+Project-URL: Repository, https://github.com/ryzhovalex/orwynn
+Description-Content-Type: text/markdown
+
+# Orwynn
+
+Documentation is in progress...
+

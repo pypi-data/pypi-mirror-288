@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "orwynn"
+version = "3.1.0"
+description = "Scalable web-framework with out-of-the-box architecture"
+homepage = "https://orwynn.ryzhovalex.com"
+documentation = "https://orwynn.ryzhovalex.com"
+keywords = [
+    "framework", "architecture", "backend", "web-framework", "out of the box"
+]
+repository = "https://github.com/ryzhovalex/orwynn"
+authors = ["ryzhovalex <thed4rkof@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "orwynn" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+loguru = "^0.7.2"
+typing-extensions = "^4.7.1"
+
+pydantic = "^2.6.0"
+aiofiles = "^23.2.1"
+sb-rxcat = "^1.0.7"
+inflection = "^0.5.1"
+
+[tool.poetry.group.dev.dependencies]
+lorem = "^0.1.1"
+ruff = "0.1.15"
+git-changelog = "^1.0.0"
+coverage = "^6.5.0"
+pytest = "^7.2.0"
+pytest-asyncio = "^0.20.3"
+mkdocs = "^1.4.3"
+mkdocstrings = {extras = ["python"], version = "^0.22.0"}
+mkdocs-material = "^9.1.18"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
