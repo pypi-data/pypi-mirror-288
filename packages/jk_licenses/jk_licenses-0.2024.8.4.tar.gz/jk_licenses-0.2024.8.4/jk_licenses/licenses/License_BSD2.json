@@ -1,0 +1,18 @@
+{
+	"identifiers": [ "BSD2", "BSD-2-Clause" ],
+	"name": "The 2-Clause BSD License",
+	"url": "https://opensource.org/licenses/BSD-2-Clause",
+	"classifier": "License :: OSI Approved :: BSD License",
+	"variables": [
+		{
+			"name": "copyrightHolder",
+			"type": "str",
+			"description": "The name of the copyright holder"
+		},
+		{
+			"name": "year",
+			"type": "int|str",
+			"description": "The year either as a number such as 2019 or as a range such as 2011-2019"
+		}
+	]
+}
