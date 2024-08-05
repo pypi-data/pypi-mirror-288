@@ -1,0 +1,78 @@
+
+
+import { make_unsigned_transaction } from '$lib/Friends_Moves/AA_Transfer_G1/Screenplays/make'
+import { stringify_UT } from '$lib/PTO/Transaction/Unsigned/Stringify'
+import { has_field } from 'procedures/object/has_field'
+
+
+export const build_the_unsigned_transaction = async ({ freight }) => {
+	let exception_message = ""
+	
+	/*
+		fields: {
+			ICANN_net_path: "https://api.mainnet.aptoslabs.com/v1",
+			//
+			from_address_hexadecimal_string: "522D906C609A3D23B90F072AD0DC74BF857FB002E211B852CE38AD6761D4C8FD",
+			to_address_hexadecimal_string: "26F4F8D7C5526BA7DA453041D3A858CFEA06D911C90C2E40EDA2A7261826858C",
+			//
+			amount_of_Octas: "1e8",
+			actual_amount_of_Octas: calculate_actual_octas ("1e8"),
+			//
+			transaction_expiration: "600"
+		},
+	*/
+	
+	try {
+		const { 
+			unsigned_tx,
+			unsigned_tx_as_hexadecimal_string
+		} = await make_unsigned_transaction ({
+			freight,
+			
+			net_path: freight.fields.ICANN_net_path,
+			
+			from_address_hexadecimal_string: freight.fields.from_address_hexadecimal_string,
+			to_address_hexadecimal_string: freight.fields.to_address_hexadecimal_string,
+			
+			amount: freight.fields.actual_amount_of_Octas,
+			
+			transaction_expiration: freight.fields.transaction_expiration
+		});
+		
+		///
+		//	
+		//	Freight Modifications
+		//
+		freight.unsigned_transaction.hexadecimal_string = unsigned_tx_as_hexadecimal_string
+		freight.unsigned_transaction.Aptos_object_fiberized = stringify_UT ({ 
+			unsigned_tx
+		})
+		freight.unsigned_transaction.Aptos_object = unsigned_tx;
+		//
+		//\
+		
+		///
+		//
+		//	Verifications
+		//
+		//
+		if (has_field (freight.unsigned_transaction.Aptos_object, "rawTransaction") !== true) {
+			freight.unsigned_transaction.exception_text = `The "rawTransaction" was not found in the UT object.`
+			console.error ({ unsigned_transaction_fiberized_object })
+			return;
+		}
+		const rawTransaction = freight.unsigned_transaction.Aptos_object ["rawTransaction"]
+		
+		if (has_field (rawTransaction, "sender") !== true) {
+			freight.unsigned_transaction.exception_text = "'sender' was not found in the UT object."
+			return;
+		}
+		//
+		//--
+	}
+	catch (exception) {
+		console.error (exception)
+		freight.unsigned_transaction.exception_text = exception.message;
+	}
+}
+

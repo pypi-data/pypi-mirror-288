@@ -1,0 +1,113 @@
+
+
+
+<pre>
+
+	<header>Aptos Moves</header>
+	
+	
+		@ Version
+			@ Format
+				@ Pattern
+				
+			@ Iteration
+			
+			@ Turn
+			
+			@ Loop
+		
+			@ Adaptation
+		
+			@ Translation
+				@ Portrayal
+				@ Depiction
+				@ Definition
+				@ Interpretation
+				
+			
+			@ Build
+			
+			@ Suggestion
+				@ Offer
+			
+			@ Design
+			
+			@ Generation
+			
+			@ Variant
+			
+			@ Mutation
+			
+			@ Style
+				@ Aesthetic
+				
+			@ Take
+		
+			@ Attempt
+			
+			@ Play
+			
+			@ Path
+				@ Course
+				@ Line
+			
+			@ Model
+			@ Edition
+			@ Drop
+			@ Batch
+			@ Wave
+			
+			@ Cover
+			
+			@ Verse
+				@ Chorus
+			
+			@ Premiere
+			
+			@ Era
+				@ Orbit
+			
+	
+		https://stackoverflow.com/questions/74519630/how-do-i-transfer-apt-to-an-account-that-doesnt-exist-on-chain-yet
+		
+		
+		<header>0x1::coin::transfer</header>
+		<p>Transfer is account exists</p>
+		
+			const unsigned_transaction = await aptos.transaction.build.simple ({
+				sender: from_address,
+				data: {
+					function: "0x1::coin::transfer",
+					typeArguments: [
+						"0x1::aptos_coin::AptosCoin"
+					],
+					functionArguments: [
+						to_address,
+						amount
+					]
+				},
+				options: {
+					expireTimestamp
+					
+					// maxGasAmount: BigInt (300000) 
+				}
+			});
+		
+		
+		<header>0x1::aptos_account::transfer</header>
+		<p>Create account and transfer.</p>
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>

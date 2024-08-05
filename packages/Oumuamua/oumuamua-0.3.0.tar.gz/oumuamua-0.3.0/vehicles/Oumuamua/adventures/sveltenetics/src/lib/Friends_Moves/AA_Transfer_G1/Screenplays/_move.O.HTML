@@ -1,0 +1,38 @@
+
+
+
+<pre>
+
+
+
+//
+//	https://github.com/aptos-labs/aptos-ts-sdk/blob/main/examples/typescript-esm/sponsored_transactions/server_signs_and_submit.ts
+//
+//
+
+/*
+	expiration:
+	https://aptos-labs.github.io/ts-sdk-doc/types/Types.SubmitTransactionRequest.html#__type.expiration_timestamp_secs
+*/
+
+
+// https://github.com/aptos-labs/aptos-ts-sdk/blob/cb7e8bb8c6242eca6d488bb361bdd483dc1a421d/examples/typescript-esm/transaction_with_predefined_abi.ts#L199
+// https://github.com/aptos-labs/aptos-ts-sdk/blob/cb7e8bb8c6242eca6d488bb361bdd483dc1a421d/src/transactions/instances/rawTransaction.ts#L46
+const unsigned_transaction = await aptos.transaction.build.simple ({
+	sender: from_address,
+	data: {
+		function: "0x1::coin::transfer",
+		typeArguments: ["0x1::aptos_coin::AptosCoin"],
+		functionArguments: [
+			to_address,
+			amount
+		]
+	},
+	options: {
+		expireTimestamp,
+		// maxGasAmount: BigInt (300000) 
+	}
+});
+
+
+</pre>

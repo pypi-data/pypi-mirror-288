@@ -1,0 +1,81 @@
+
+
+
+
+
+<pre>
+	
+	<nav>
+		<header>raw transactions</header>
+	</nav>
+	
+		<header>example</header>
+			/*const unsigned_transaction = new RawTransaction (
+				from_address,
+				BigInt (sequenceNumber),
+				payload,
+				BigInt(maxGasAmount),
+				BigInt(gasUnitPrice),
+				BigInt(expireTimestamp),
+				new ChainId(chainId),
+			);*/
+	
+		<header>important</header>
+	
+			https://github.com/aptos-labs/aptos-ts-sdk/blob/687e00152cc139f406182186fcd05b082dd70639/src/transactions/transactionBuilder/transactionBuilder.ts#L247
+			https://aptos-labs.github.io/ts-sdk-doc/types/Types.SubmitTransactionRequest.html#__type.expiration_timestamp_secs
+			https://github.com/aptos-labs/aptos-ts-sdk/blob/cb7e8bb8c6242eca6d488bb361bdd483dc1a421d/examples/typescript-esm/transaction_with_predefined_abi.ts#L199
+			
+			//
+			//	friends: make
+			//
+			//
+			const duration = 600;
+			const expireTimestamp = new U64 (Math.floor (Date.now () / 1000) + duration).value;
+			const unsigned_tx = await aptos.transaction.build.simple ({
+				sender: from_address,
+				data: {
+					function: "0x1::coin::transfer",
+					typeArguments: ["0x1::aptos_coin::AptosCoin"],
+					functionArguments: [
+						to_address,
+						amount
+					]
+				},
+				options: {
+					expireTimestamp
+				}
+			});
+			const unsigned_tx_as_bytes = unsigned_tx.bcsToBytes ()
+			const unsigned_tx_as_hexadecimal_string = string_from_Uint8Array (unsigned_tx_as_bytes)
+
+			
+			//
+			//	relatives: signing
+			//
+			//
+			const unsigned_tx_rebuilt = SimpleTransaction.deserialize (
+				new Deserializer (
+					Uint8Array_from_string (unsigned_tx_as_hexadecimal_string)
+				)
+			);
+			// console.log (unsigned_tx == unsigned_tx_rebuilt)
+			
+			const signed_tx = aptos.transaction.sign ({ 
+				signer: account_1, 
+				transaction: unsigned_tx
+			});
+			const signed_tx_bytes = signed_tx.bcsToBytes ();
+			const signed_tx_hexadecimal_string = string_from_Uint8Array (signed_tx_bytes)
+
+			
+			//
+			//	friends
+			//
+			//
+
+
+
+
+
+</pre>
