@@ -1,0 +1,12 @@
+LICENSE.md,sha256=HhQkzCW1elbmfcOL2UbsX46WEyKe2e4hlD1seU0LrCo,1107
+README.md,sha256=uOmN9s_VRXbaQ7E68T2wwEcstlsTu9qbl-nloi6_2O8,174
+nicovideo/__init__.py,sha256=B8VH616AAVKL2c5UaM3V1VcdsgXwBW8Ha1Y-o5CPGPM,180
+nicovideo/apirawdicts.py,sha256=jG7W830oFYI-AyHD35Ws1BQ6PI-LgJ4j8o-ALpa16Fg,4977
+nicovideo/errors.py,sha256=FWS4nEjbSuRK-WMNoMGLwGVfOj6paJ41Dk3XwgIUBME,470
+nicovideo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nicovideo/user.py,sha256=lg4W7CvFDsQba-_ETNuhgn1_FzhbPHKKtsAq-Tsa_GY,6977
+nicovideo/video.py,sha256=r__1j4Hr4u1xgzcJn86-1-Q_ffJnN35NUJb914TsMfQ,5736
+nicovideo_py-4.1.0.dist-info/LICENSE.md,sha256=HhQkzCW1elbmfcOL2UbsX46WEyKe2e4hlD1seU0LrCo,1107
+nicovideo_py-4.1.0.dist-info/METADATA,sha256=t6FNdWpNGq7aNbJH-72C83X5rnhSr-_Ll5UR6Gy__w4,1308
+nicovideo_py-4.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+nicovideo_py-4.1.0.dist-info/RECORD,,
