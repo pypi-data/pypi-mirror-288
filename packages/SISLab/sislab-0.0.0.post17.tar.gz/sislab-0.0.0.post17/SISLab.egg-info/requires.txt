@@ -1,0 +1,9 @@
+numpy
+pillow
+opencv-python
+tensorflow
+torch
+scikit-learn
+scipy
+matplotlib
+cryptography

@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: SISLab
+Version: 0.0.0.post17
+Summary: Inje University Department of Biomedical Engineering SISLab open source library for signal processing, image processing and AI
+Home-page: https://github.com/Shyuvi/SISLab
+Author: Shyubi
+Author-email: sjslife97@gmail.com
+Keywords: shyubi,sislab,signal,image
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pillow
+Requires-Dist: opencv-python
+Requires-Dist: tensorflow
+Requires-Dist: torch
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: cryptography
+
+Long description of your package
