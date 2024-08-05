@@ -1,0 +1,1673 @@
+{
+  "AWS": {
+    "doc": {
+      "summary": "Configuration parameters for the AWS environment in which Caber is running which will be referred to as the 'Customer Environment'.",
+      "params": {
+        "accountID": "(str) Customer Environment account ID like 062333172176",
+        "accessKey": "(str) Customer Environment access key like 'AKIAQ5A2FIXP4RMEH4C' corresponding to an IAM role for Caber",
+        "secretKey": "(str) Customer Environment secret key like 'vBYHxzlUMHYwrtdarROl10v3rDvzFZYlYJt8mkEqEm' corresponding to the accessKey",
+        "region": "(str) Region in which the Caber service is running like 'us-west-1'",
+        "ecs": {
+          "summary": "If running Caber services on AWS ECS provide cluster name and the metadata endpoint (NOTE: This config may be deprecated)",
+          "Cluster": "",
+          "metadataEndpoint": "http://169.254.170.2/v3/task"
+        },
+        "sqs": {
+          "summary": "Simple mapping of AWS SQS queue name to queue URL as in the example below.  These queue names are referenced in the GLOBAL section.",
+          "queue-name": "https://sqs.us-west-1.amazonaws.com/062333172176/queue-name"
+        }
+      }
+    }
+  },
+  "GLOBAL": {
+    "doc": {
+      "summary": "Configuration parameters used across multiple services.",
+      "params": {
+        "csiBucket": "(str) Name of an S3 bucket dedicated to Caber use for storage of objects shared between service modules",
+        "eventBucket": "(str) Name of an S3 bucket dedicated to receive CloudTrail S3 data event log files.  This bucket must also have S3 Bucket Notifications that post to the SQS queue configured in 'S3_Scanner.inputQueue' for s3:ObjectCreated.  See https://docs.aws.amazon.com/AmazonS3/latest/userguide/ways-to-add-notification-config-to-bucket.html",
+        "indexFile": "(str) Name of temporary or default index files, without path prefix or suffix.  Defaults to 'index'",
+        "indexPrefix": "(str) DEPRECATED",
+        "minObjSize": "(int) Smallest customer object size in bytes Caber will not ignore. ",
+        "reIndexSec": "(int) Number of seconds after which we will force the reindexing of an object even if we discern that object has not changed since we last indexed it. Default: 86400 seconds (2 days)",
+        "reIndexGiveUpLimit": "(int) Number of times to attemp indexing an object that initially could not be indexed.",
+        "objVersSeparator": "(str) Character in CORI string user to separate object name and and object version ID",
+        "nullMsgSha256s": "(dict[str]) Dictionary of {description: sha256} where the SHA256 values represent the hash of data sequences that contain nothing of interest.  For example, the SHA256 hash of a file that contains one null byte.",
+        "badMsgSha256s": "(dict[str]) Same as nullMsgSha256s excpe the SHA256 values represent customer configured data sequences to igonore or redact.",
+        "aveDedupe": 128,
+        "lambdaDir": "/tmp",
+        "localPrefix": "/var/tmp",
+        "remotePrefix": "/shared/",
+        "remoteSuffix": "(str) Suffix such as '.gz' to append to remote index files for transparent compression/decompression. See https://pypi.org/project/smart-open/. ",
+        "filenameSuffixes": {
+          "index": ".ccqf",
+          "hashes": ".cnmr",
+          "body": ".cbdy",
+          "keys": ".ckys",
+          "text": ".ctxt"
+        },
+        "dbTables": {
+          "linkDataTable": "(str) (optional) Name of the database table that holds output records from Link_Data",
+          "objScanTable": "(str) (optional) Name of the database table that contains records of which objects have been indexed and when.",
+          "apiEventsTable": "(str) (optional) Name of the database table that holds API request-response records from Process_API",
+          "objEventsTable": "(str) (optional) Name of the database table that holds Object access event records from S3_Scanner",
+          "dataFlowTable": "(str) (optional) Name of the database table that holds processed data flow records from Auth_Analyzer used to output the Sankey diagram on the dashboard",
+          "authFailTable": "(str) (optional) Name of the database table that holds authorization failure events from Auth_Analyzer used for reporting",
+          "overlapTable": "(str) (optional) Name of the database table that holds records of overlapping objects Auth_Analyzer used for reporting. Overlapping objects are two objects containing some number of matching byte sequences.",
+          "wrkEventsTable": "NOT IMPLEMENTED (str) (optional) Name of the database table that hold events related to scanning workloads"
+        },
+        "keepHashFiles": "(bool) As part of the creation of per-object index files should an ordered list of the hashes inserted into the index file also be kept",
+        "setBoto3userAgent": "(bool) If True all accesses to AWS resources will use each module's 'pathPrefix' as the user agent string.  This is to help identify accesses that each module makes.",
+        "hideCSIsvcs": "(bool) If set to 'True' Caber Systems' services will be excluded from the graph",
+        "hideNames": "(list[str]) If there are any other service names that should be excluded from the graph add them here.",
+        "csiSharedStorage": {
+          "summary": "If we're not using AWS, then using S3 as shared storage between caber modules does not make sense.  This config says what shared storage to use. Could even be a local docker volume.",
+          "useTarget": "Which of the shared storage targets configured in 'targets' to use. Shadowed by the environment variable CSI_SHARED_STORAGE_TARGET"
+        },
+        "msgQueueNames": {
+          "summary": "Names of the message queues created within the message queue system specified by 'csiMessageQueue'.  Having configurable names means we can avoid conflicts with customer names in rare circumstances.",
+          "S3eventQueue": "(str) Name of the queue that object-level access events are pushed to S3_Scanner by Process_API, CloudTrail, and sysdig2caber",
+          "APIshdwQueue": "(str) Name of the queue that API_Tap sends messages to e.g., 'https://sqs.us-west-1.amazonaws.com/062333444555/csi-apishdw-q'",
+          "S3scanQueue": "(str) DEPRECATED Was for S3_Scanner to signal completion of a object scan to Link_Data now handled by posting to ElasticSearch",
+          "APIprocQueue": "(str) DEPRECATED Was for Process_API to signal completion of a API scan to Link_Data now -- handled by posting to ElasticSearch",
+          "AnlQueue": "(str) DEPRECATED",
+          "testQueue": "csi-temp-test"
+        },
+        "authZoptions": {
+          "summary": "Options to configure how authorization is decided based upon user/service IDs and group membership vs. allow, deny, and region lists",
+          "uidPrefix": "(str) Prefix for the record IDs in the 'identityMapTable'.  Default is 'USER-'. This covers users, service accounts, and other entity identifiers",
+          "uidIfNotFound": "(str) Record ID to use for the null user, typically when a user is logging in and the API call is as-yet unauthenticated",
+          "allNoneTerms": "(list[sr]) Lists of terms used in auth_tools.py module to check if an allow list, or deny list, has an 'everyone' or 'noone' entry.",
+          "uidSeparators": "(str) or (list[str]) The UID string is a concatenation of authenticator, user_name, acceptor, user.from.host:  This list is the separators to use for joining the strings in the list.",
+          "allowSameUID": "(bool) If true, consider a user/service authorized to access a data node if the user/service UID and data node owner ID are the same. If false, disable use of UIDs for authorization.",
+          "useAllowGroups": "(bool) If true, consider a user/service authorized to access a data node if the user/service group membership(s) intersect with the groups in the data node's allow list.  If false, disable use of allow lists for authorization.",
+          "useDenyGroups": "(bool) If true, consider a user/service authorized to access a data node if the user/service group membership(s) do not intersect with the groups in the data node's deny list.  If false, disable use of deny lists.",
+          "regionGroups": "(bool) If true, the user/service's region must be in the same region-group as the data node's region the user/service is accessing for the access to be authorized. If false, disable use of region-groups. (NOT IMPLEMENTED)",
+          "defaultDatUID": "(str) What owner should be assumed for a data object whose owner-value is empty, i.e., ('', None, Null).\n\tPossible values are '' (leave owner empty), or any string value.  The UID cannot be a list.",
+          "defaultSvcUID": "(str) What owner should be assumed for a user/service whose owner-value is empty, i.e., ('', None, Null).\n\tPossible values are '' (leave owner empty), or any string value.  The UID cannot be a list.",
+          "defaultGroups": "(str) or (list[str]) What groups should be assumed for a user/service whose groups list is empty.\n\tPossible values are '' (leave an empty groups list empty), or any single group name (e.g., 'users') or list of group names",
+          "defaultAllow": "(str) or (list[str]) Defines the meaning of an empty allow groups list. By default set to 'all' = 'allow everyone'\n\tPossible values: 'all', 'none', or any single group name (e.g., 'users')\n\tIf set to 'none' all access will be denied unless allowSameUID is True",
+          "defaultDeny": "(str) or (list[str]) Defines the meaning of an empty deny groups list. By default set to 'none' = 'deny no one'\n\tPossible values: 'all', 'none', or any single group name (e.g., 'users')\n\tIf set to 'all' all access will be denied unless allowSameUID is True",
+          "firstOrMostOwner": "(str) If multiple identity sources produce a result with different owner names, if set to 'first' pick the owner from the first and highest priority source (default). If set to 'majority', then the user name that appears most often is chosen.  If only two, then the first is chosen.",
+          "mergeAuthOption": "(str) How to join two identity dicts together when tow or more identity sources provide conflicting identities. There are three options:\n          Priority ('priority' or 'first') (Default): Keep only the A.column from the highest priority source\n          Complete ('complete' or 'most'): Keep the A. column that has the most total values in groups, allow, and deny\n          Combine ('combine'): Combine the values in each of the groups, allow, and deny",
+          "authZColumns": "(dict) Which columns in the dataframes stored by Process_API and S3_Scanner should be sent for identity lookup by type Service, API, Object and potentially User (although User and Service are currently the same). Oder matter.  the first column in the list will dominate.",
+          "nmersDecidingMargin": "(float) If deciding authorization source between two objects A and B, and A has more nmers, but B was modified earlier, then multiply B's nmers by 1 + this parameter and check again."
+        }
+      }
+    },
+    "csiBucket": "csi-mvp-master",
+    "eventBucket": "csi-s3-notification",
+    "customerPrefix": "customer",
+    "setBoto3userAgent": true,
+    "indexFile": "index",
+    "indexPrefix": "IndexFiles",
+    "defaultGatewayName": "Internet",
+    "minObjSize": 128,
+    "aveDedupe": 800,
+    "lambdaDir": "/tmp",
+    "localPrefix": "/var/tmp",
+    "remotePrefix": "/shared/",
+    "remoteSuffix": "",
+    "filenameSuffixes": {
+      "index": ".ccqfb",
+      "index_k": ".ccqfk",
+      "index_t": ".ccqft",
+      "hashes": ".cnmr",
+      "body": ".cbdy",
+      "keys": ".ckys",
+      "text": ".ctxt"
+    },
+    "keepRawFiles": false,
+    "keepTextFiles": true,
+    "keepKeysFiles": true,
+    "keepHashFiles": false,
+    "regexFile": "regex.pkl",
+    "token": "\u22ca\u22c9",
+    "objVersSeparator": "\u24e5",
+    "objTimeSeparator": "\u24e3",
+    "dbTables": {
+      "alertsTable": "csi_alerts",
+      "linkDataTable": "csi_link_data",
+      "objScanTable": "csi_objects_map",
+      "apiEventsTable": "csi_api_events",
+      "objEventsTable": "csi_agg_events",
+      "dataFlowTable": "csi_data_flow",
+      "authFailTable": "csi_auth_fail",
+      "eventFlowTable": "csi_event_flow",
+      "processedEventTable": "csi_event_proc",
+      "leastPrivFail": "csi_lp_fail",
+      "dataAliasTable": "csi_data_aliases",
+      "objVersionTable": "csi_obj_versions",
+      "objDeDupeTable": "csi_obj_dedupe",
+      "objOverlapTable": "csi_obj_overlaps",
+      "wrkEventsTable": "csi_wrkld_events",
+      "bucketMapTable": "csi_bucket_map",
+      "serviceMapTable": "csi_services_map",
+      "identityMapTable": "csi_identity_map",
+      "apiMapTable": "csi_api_map"
+    },
+    "dfOutToS3": "on-error",
+    "svcDiscoveryDomain": "mvp.local",
+    "numLimit": 100000,
+    "reIndexSec": 3600,
+    "reIndexGiveUpLimit": 3,
+    "hideCSIsvcs": true,
+    "hideNames": [
+      "caber-host"
+    ],
+    "statusLogPrefix": "[STATUS_UPDATE]",
+    "stripNetworkFromServiceNames": true,
+    "caberModuleContainerNames": {
+      "ENV_Manager":  "csi-init",
+      "S3_Scanner": "csi-s3-scanner",
+      "API_Tap": "csi-api-tap",
+      "Process_API": "csi-process-api",
+      "Link_Data":  "csi-link-data",
+      "Auth_Analyzer": "csi-auth-analyzer",
+      "Dashboard": "csi-dashboard",
+      "SQL_Scanner": "csi-sql-scanner",
+      "Kafka_Scanner": "csi-kafka-scanner",
+      "Dyn_Deploy": "csi-dyn-deploy",
+      "csi_genai_lib" : "csi-genai-lib"
+    },
+    "caberDependencyContainerNames": {
+      "Elasticsearch": "csi-dep-search",
+      "Neo4j": "csi-dep-neo4j",
+      "Tika": "csi-dep-tika",
+      "Postgres": "csi-dep-postgres",
+      "Elastic_MQ": "csi-dep-queue",
+      "Kafka": "csi-dep-kafka",
+      "Zookeeper": "csi-dep-zookeeper",
+      "Minio": "csi-dep-minio"
+    },
+    "nullMsgSha256s": {
+      "sha_no_data": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha_empty_list": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sha_empty_dict": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "sha_one_space": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "sha_null_byte": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "sha_2_null": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+      "sha_3_null": "709e80c88487a2411e1ee4dfb9f22a861492d20c4765150c0c794abd70f8147c",
+      "sha_4_null": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+      "sha_5_null": "8855508aade16ec573d21e6a485dfd0a7624085c1a14b5ecdd6485de0c6839a4",
+      "sha_6_null": "b0f66adc83641586656866813fd9dd0b8ebb63796075661ba45d1aa8089e1d44",
+      "sha_7_null": "837885c8f8091aeaeb9ec3c3f85a6ff470a415e610b8ba3e49f9b33c9cf9d619",
+      "sha_8_null": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+    },
+    "struct_types": [
+      "text/xml",
+      "application/json",
+      "application/xml",
+      "application/xhtml+xml",
+      "text/plain",
+      "*yaml*"
+    ],
+    "string_types": [
+      "text/plain",
+      "application/octet-stream"
+    ],
+    "script_types": [
+      "text/css",
+      "*script*",
+      "*javascript*",
+      "*ecmascript*",
+      "*jscript*",
+      "*livescript*"
+    ],
+    "media_types": [
+      "audio*",
+      "video*",
+      "image*"
+    ],
+    "compressed_types": [
+      "*zip*",
+      "*compressed*",
+      "*gtar*",
+      "*binhex*",
+      "*x-lzh*",
+      "*lzx*",
+      "*7z*",
+      "*x-tar*",
+      "*tgz*",
+      "*vnd.rar*",
+      "*x-rar*"
+    ],
+    "alwaysCheckTypes": [
+      "*octet-*",
+      "text/plain",
+      "*binary*"
+    ],
+    "ignore_types": [
+      "application/x-www-form-urlencoded",
+      "application/x-tar",
+      "text/html",
+      "text/css"
+    ],
+    "ocrImages": false,
+    "reachability": {
+      "pubIP": [
+        "https://api4.my-ip.io/ip.json",
+        "https://api.ipify.org?format=json",
+        "http://api.ipstack.com/check?access_key=88dff070d0d4b26bee769965293f71f1&format=1&hostname=1&output=json&language=en"
+      ]
+    },
+    "authZoptions": {
+      "authfailMinScore": 10,
+      "mergeAuthOption": "combine",
+      "firstOrMostOwner": "most",
+      "nmersDecidingMargin": 0.4,
+      "authZColumns": {
+        "Service": [
+          "user.full_name"
+        ],
+        "Object": [
+          "object.id"
+        ],
+        "API": [
+          "R.API"
+        ]
+      },
+      "columnTypeMap": {
+        "Service": "user",
+        "Object": "object",
+        "Bucket": "bucket",
+        "Host": "host",
+        "API": "api",
+        "Entity": "user",
+        "User": "user",
+        "S": "user",
+        "O": "object",
+        "B": "bucket",
+        "H": "host",
+        "A": "api",
+        "U": "user",
+        "p": "api",
+        "t": "object",
+        "c": "user",
+        "b": "bucket"
+      },
+      "nullAuthZMap": {
+        "name": "",
+        "id": "",
+        "owner": "",
+        "type": "",
+        "authenticator": "",
+        "acceptor": "",
+        "from.host.id": "",
+        "groups": [],
+        "allow": [],
+        "deny": [],
+        "region": ""
+      },
+      "allNoneTerms": {
+        "anyOne": ["any", "anyone", "everyone", "anybody", "everybody", "all", "allow", "all-groups",
+          "all_groups", "any-group", "any_group", "allow_all", "allow_any", "allow-all", "allow-any", "*", "^.*"],
+        "everyOne": ["everyone", "everybody", "all", "all-groups", "all_groups", "deny-all", "deny_all", "*", "^.*"],
+        "noOne": ["none", "no-one", "no_one", "nobody", "deny", "deny-all", "deny_all", null, "a^"]
+      },
+      "uidPrefix": "USER-",
+      "uidIfNotFound": "NOT-FOUND",
+      "uidSeparators": ["::", ":"],
+      "allowSameUID": true,
+      "useAllowGroups": true,
+      "useDenyGroups": true,
+      "regionGroups": false,
+      "groupSeparator": ":",
+      "defaultSvcUID": "<anon>",
+      "defaultSvcGroups": [
+        ""
+      ],
+      "defaultDatUID": "<none>",
+      "defaultDatGroups": [
+        ""
+      ],
+      "defaultRegion": "",
+      "defaultGroups": [
+        ""
+      ],
+      "defaultAllow": [
+        "all"
+      ],
+      "defaultDeny": [
+        "none"
+      ]
+    },
+    "s3EventMap": {
+      "AbortMultipartUpload": "delete",
+      "CompleteMultipartUpload": "put",
+      "CopyObject": "copy",
+      "CreateBucket": "ignore",
+      "CreateMultipartUpload": "ignore",
+      "NewMultipartUpload": "ignore",
+      "DeleteBucket": "ignore",
+      "DeleteBucketCors": "ignore",
+      "DeleteBucketEncryption": "ignore",
+      "DeleteBucketLifecycle": "ignore",
+      "DeleteBucketPolicy": "ignore",
+      "DeleteBucketReplication": "ignore",
+      "DeleteBucketTagging": "ignore",
+      "DeleteObject": "delete",
+      "DeleteObjects": "delete",
+      "DeletePublicAccessBlock": "ignore",
+      "GetBucket": "ignore",
+      "GetBucketCors": "ignore",
+      "GetBucketEncryption": "ignore",
+      "GetBucketLifecycle": "ignore",
+      "GetBucketLocation": "ignore",
+      "GetBucketLogging": "ignore",
+      "GetBucketNotification": "ignore",
+      "GetBucketPolicy": "ignore",
+      "GetBucketReplication": "ignore",
+      "GetBucketRequestPayment": "ignore",
+      "GetBucketTagging": "ignore",
+      "GetBucketVersioning": "ignore",
+      "GetBucketWebsite": "get_meta",
+      "GetObject": "get",
+      "GetObjectAcl": "get_meta",
+      "GetObjectTagging": "get_meta",
+      "GetObjectVersion": "get_meta",
+      "GetPublicAccessBlock": "ignore",
+      "HeadBucket": "ignore",
+      "HeadObject": "get_meta",
+      "ListBuckets": "ignore",
+      "ListObjects": "ignore",
+      "ListObjectsV2": "ignore",
+      "ListParts": "get_meta",
+      "MoveObject": "put",
+      "PostBucket": "dir",
+      "PostObject": "dir",
+      "PutBucket": "put",
+      "PutBucketAcl": "put",
+      "PutBucketCors": "ignore",
+      "PutBucketEncryption": "ignore",
+      "PutBucketLifecycle": "ignore",
+      "PutBucketLogging": "ignore",
+      "PutBucketNotification": "ignore",
+      "PutBucketPolicy": "ignore",
+      "PutBucketReplication": "ignore",
+      "PutBucketRequestPayment": "ignore",
+      "PutBucketTagging": "ignore",
+      "PutBucketVersioning": "ignore",
+      "PutBucketWebsite": "ignore",
+      "PutObject": "put",
+      "PutObjectPart": "flag",
+      "PutObjectAcl": "put_meta",
+      "PutObjectTagging": "put_meta",
+      "PutPublicAccessBlock": "put_meta",
+      "RestoreObject": "get",
+      "SelectObjectContent": "get",
+      "UploadPart": "ignore",
+      "UploadPartCopy": "flag"
+  },
+    "apiEventMap": {
+      "DELETE": "delete",
+      "GET": "get",
+      "HEAD": "get_meta",
+      "LOCK": "put_meta",
+      "MKCOL": "put_meta",
+      "MOVE": "put",
+      "OPTIONS": "get_meta",
+      "PATCH": "put_meta",
+      "POST": "dir",
+      "PROPFIND": "get_meta",
+      "PROPPATCH": "put_meta",
+      "PUT": "put",
+      "UNLOCK": "put_meta"
+  }
+  },
+  "Dependencies": {
+    "doc": {
+      "summary": "[Keys and values will be populated at deployment time] Parameters on how to access and configure Caber dependent services. For each dependency there can be multiple configurations (targets).  Which target to use is specified by putting the target name in the useTarget key.",
+      "dependency_name": {
+        "doc": "'dependency_name' must be one of GLOBAL.caberDependencyContainerNames.keys()",
+        "useTarget": "One of the keys under 'target'.  Used to specify which target to use.",
+        "prefix": "For shared-storage only: The CORI Prefix to use for Caber generated objects. Defaults to 'gss'",
+        "targets": {
+          "doc": "Dictionary of configurations for alterative targets for this service.  One target configuration must be specified.",
+          "target_name": {
+            "doc": "Name of the target configuration.  AWS services MUST include the suffix amazonaws.com. For example, s3.amazonaws.com, msk.amazonaws.com, rds.amazonaws.com, es.amazonaws.com, etc.",
+            "type": "Name of the target type.  For example, with dependency 'message-queue' supported targets are 'sqs' for sqs.amazonaws.com, or 'elastic-mq' for https://hub.docker.com/r/softwaremill/elasticmq",
+            "url": "URL to access the service.  Should contain scheme://host:port or scheme://accessKey:secretKey@host:port.  URL is optional if individual components of the URL are specified.",
+            "scheme": "Scheme part of scheme://accessKey:secretKey@host:port",
+            "port": "Port part of scheme://accessKey:secretKey@host:port",
+            "accessKey": "AccessKey (username) part of scheme://accessKey:secretKey@host:port",
+            "secretKey": "SecretKey (password) part of scheme://accessKey:secretKey@host:port",
+            "region": "Needed to specify the region for certain AWS services",
+            "bootstrap.servers": "Kafka-Zookeeper only: List of bootstrap server URLs"
+          }
+        }
+      }
+    },
+    "message-queue": {
+      "useTarget": "csi-dep-queue",
+      "targets": {
+        "csi-dep-queue": {
+          "type": "elastic-mq",
+          "url": "",
+          "scheme": "http",
+          "port": 9324,
+          "region": "us-west-1",
+          "accessKey": "admin",
+          "secretKey": "caberdev"
+        },
+        "sqs.amazonaws.com": {
+          "type": "sqs",
+          "scheme": "https",
+          "region": "",
+          "url": "",
+          "accessKey": "",
+          "secretKey": ""
+        }
+      },
+      "queues": {
+        "S3eventQueue": "csi-s3event-q",
+        "APIshdwQueue": "csi-apishdw-q"
+      }
+    },
+    "neo4j": {
+      "useTarget": "csi-dep-neo4j",
+      "targets": {
+        "csi-dep-neo4j": {
+          "type": "neo4j",
+          "host": "localhost",
+          "url": "localhost",
+          "scheme": "bolt",
+          "port": 7687,
+          "use_ssl": false,
+          "accessKey": "neo4j",
+          "secretKey": "caberdev"
+        }
+      },
+      "indices": {
+      }
+    },
+    "apache-tika": {
+      "useTarget": "csi-dep-tika",
+      "targets": {
+        "csi-dep-tika": {
+          "type": "tika",
+          "url": "",
+          "scheme": "http",
+          "port": 9998,
+          "accessKey": "",
+          "secretKey": ""
+        }
+      },
+      "config": {
+        "struct_types": [
+          "text/html",
+          "text/xml",
+          "application/json",
+          "application/xml",
+          "application/xhtml+xml",
+          "text/plain"
+        ],
+        "string_types": [
+          "text/plain",
+          "application/octet-stream"
+        ],
+        "script_types": [
+          "text/css",
+          "application/javascript",
+          "application/ecmascript",
+          "application/x-ecmascript",
+          "application/x-javascript",
+          "text/javascript",
+          "text/ecmascript",
+          "text/javascript1.0",
+          "text/javascript1.1",
+          "text/javascript1.2",
+          "text/javascript1.3",
+          "text/javascript1.4",
+          "text/javascript1.5",
+          "text/jscript",
+          "text/livescript",
+          "text/x-ecmascript",
+          "text/x-javascript"
+        ],
+        "media_types": [
+          "audio",
+          "video",
+          "image"
+        ],
+        "ignore_types": [
+          "application/x-tar"
+        ],
+        "ocrImages": false
+      }
+    },
+    "kafka-zookeeper": {
+      "useTarget": "csi-dep-kafka",
+      "targets": {
+        "csi-dep-kafka": {
+          "type": "kafka",
+          "url": "",
+          "scheme": "http",
+          "port": 9092,
+          "region": "us-west-1",
+          "accessKey": "",
+          "secretKey": "",
+          "bootstrap.servers": []
+        },
+        "msk.amazonaws.com": {
+          "type": "msk",
+          "url": "",
+          "scheme": "https",
+          "port": 9092,
+          "region": "",
+          "accessKey": "",
+          "secretKey": "",
+          "bootstrap.servers": []
+        }
+      },
+      "config": {
+        "topics": "minio-audit",
+        "group.id": "caber",
+        "auto.offset.reset": "earliest"
+      }
+    },
+    "postgres-db": {
+      "useTarget": "csi-dep-postgres",
+      "targets": {
+        "rds.amazonaws.com": {
+          "type": "rds",
+          "url": "",
+          "scheme": "https",
+          "port": 5432,
+          "region": "",
+          "accessKey": "postgres",
+          "secretKey": "caberdev"
+        },
+        "csi-dep-postgres": {
+          "type": "postgres",
+          "url": "",
+          "scheme": "http",
+          "port": 5432,
+          "region": "",
+          "accessKey": "postgres",
+          "secretKey": "caberdev"
+        },
+        "localhost": {
+          "type": "localhost",
+          "url": "",
+          "port": 5432,
+          "region": "",
+          "accessKey": "postgres",
+          "secretKey": "caberdev"
+        }
+      },
+      "tables": {
+      }
+    },
+    "shared-storage": {
+      "useTarget": "s3.amazonaws.com",
+      "prefix": "gss",
+      "targets": {
+        "csi-dep-minio": {
+          "type": "minio",
+          "host": "csi-dep-minio",
+          "host_full": "csi-dep-minio:9000",
+          "url": [
+            "http://csi-dep-minio:9000",
+            "http://localhost:9000"
+          ],
+          "ports": [9000, 9001],
+          "region": "us-west-1",
+          "accessKey": "madmin",
+          "secretKey": "caberdev",
+          "csiBucket": "csi-mvp-master"
+        },
+        "s3.amazonaws.com": {
+          "type": "s3",
+          "smartOpenPfx": "s3://",
+          "url": "https://s3.amazonaws.com",
+          "csiBucket": "csi-mvp-master"
+        },
+        "local": {
+          "type": "volume",
+          "mode": 755,
+          "smartOpenPfx": "file:///shared",
+          "directory": "csi-mvp-master"
+        }
+      },
+      "buckets": {
+        "csiBucket": "csi-mvp-master"
+      }
+    },
+    "elastic-search": {
+      "useTarget": "csi-dep-search",
+      "targets": {
+        "es.amazonaws.com": {
+          "doc": "Configuration for using AWS OpenSearch (elastic search) service.",
+          "type": "es",
+          "domain": "",
+          "region": "",
+          "scheme": "https",
+          "url": ""
+        },
+        "csi-dep-search": {
+          "type": "elasticsearch",
+          "url": "localhost:9200",
+          "accessKey": "",
+          "secretKey": "caberdev",
+          "scheme": "http",
+          "port": 9200
+        }
+      }
+    }
+  },
+  "RKCQF": {
+    "doc": {
+      "summary": "Configuration parameters for initializing the RKQCF module in every service.  Except for auto-resize and log2slots, index files created with different parameters are NOT compatible.",
+      "params": {
+        "keyBits": "(int) Number of bits to use for CQF keys.  8 <= keybits <= 64",
+        "valBits": "(int) Number of bits to use if inserting key:value pairs in CQF.  0 <= valbits <= (64 - keybits)\n\tFor compatibility with Intersector value bits are currently ignored.",
+        "hashMode": "(int) CQF hash mode. Use QF_HASH_DEFAULT unless inserting key:value pairs. 0<= hashMode <=2 \n\t 0 = QF_HASH_DEFAULT \n\t 1 = QF_HASH_INVERTIBLE \n\t 2 = QF_HASH_NONE",
+        "autoResize": "(bool) Enable/disable CQF index resizing during key insertion.  Disabling means you have set the number of slots to an absolute upper bound.",
+        "log2slots": "(int) Default size of index file = 2^log2slots.  10-12 are reasonable values to set this to if auto resize is enabled.  Can be overridden at runtime",
+        "keyFunc": "(int) Determines transformation of nmers to keys. \n\t 0: No transformation (key = nmer) \n\t 1: Automatically insert nmer with sequence number (Key = nmer, value = sequence #) \n\t 2: Linked mode Key(n)=nmer(n)|nmer(n+1)",
+        "topNmersLim": "(int) How many of the most often inserted nmers to keep track of (NOT IMPLEMENTED - should this really be stored in the CQF?)",
+        "enterSha256nmers": "(bool) If True (default) enter SHA256 hash bytes as nmers in the CQF (SHOULD BE FALSE)"
+      }
+    },
+    "keyBits": 32,
+    "valBits": 0,
+    "log2slots": 11,
+    "hashMode": 1,
+    "autoResize": true,
+    "keyFunc": 0,
+    "enterSha256nmers": false
+  },
+  "csi_genai_lib": {
+    "doc": {
+      "summary": "Configuration parameters for the csi_genai_lib module in every service.",
+      "params": {
+        "logLevel": "(str) Logging level for this module: 'error', 'warning', 'info', 'debug', and 'verbose'",
+        "pathPrefix": "(str) Mixed case string, no special characters, used to name S3 prefixes, logs, etc., from this module",
+        "filePrefix": "(str) Mixed-case 4 character string, no special characters. Used as the prefix for log entries and object names."
+      }
+    },
+    "logLevel": "debug",
+    "pathPrefix": "csiGenAI",
+    "filePrefix": "GENA"
+  },
+  "ENV_Manager": {
+    "doc": {
+      "summary": "Module with functions for updating and maintaining environment.",
+      "params": {
+        "pathPrefix": "(str) Mixed case string, no special characters, used to name S3 prefixes, logs, etc., from this module",
+        "repoName": "(str) Lower-case string used for naming the docker repository for this service.",
+        "filePrefix": "(str) Mixed-case 4 character string, no special characters. Used as the prefix for log entries and object names.",
+        "logLevel": "(str) Logging level for this module: 'error', 'warning', 'info', 'debug', and 'verbose'",
+        "initDBtables": "(list[str]) Delete all the tables from Elasticsearch that match 'fnmatch' strings in the list. To delete all tables use ['*']",
+        "purgeSQS": "(list[str]) Purge all messages from each queue named in the list.  Queue names are the keys listed in CFG.D['GLOBAL']. If the name 'all' is in the list, then all queues will be purged.",
+        "runDirs": "(list[str]) List of directories to search for module specific source files and scripts.",
+        "cfgServer": {
+          "summary": "Configuration for built in web server to host the config.json page for other services.",
+          "port": "(int) The TCP port the server will run on",
+          "bind": "(str) The IPv4 address to bind the server to.  Defaults to 0.0.0.0",
+          "serveFrom": "(str) The directory to serve files from. Defaults to '/api'"
+        }
+      }
+    },
+    "pathPrefix": "csiInit",
+    "repoName": "csi-init",
+    "filePrefix": "INIT",
+    "initDBtables": [
+      "*"
+    ],
+    "purgeSQS": [
+      "*"
+    ],
+    "updateInterval": 10,
+    "runDirs": [
+      "~/caberdev/CODE/MVP",
+      "~/mvp",
+      "~/csiMVP"
+    ],
+    "remoteDebug": false,
+    "logLevel": "debug",
+    "cfgLocation": "shared-storage",
+    "cfgServer": {
+      "serveFrom": "/api",
+      "bind": "0.0.0.0",
+      "port": 7576
+    }
+  },
+  "ApiMap": {
+    "doc": {
+      "summary": "Host mappings used by API_Tap to intercept and forward requests.  Multiple mappings are supported.  Each HOST key has a separate dict of parameters.",
+      "HOST": "(str) The IPv4 address or hostname of the API endpoint to intercept e.g. '192.168.2.224' or 'cabersystems.com'.  If the hostname part starts with 'self' as in 'http://self_A:9080' then the HOST http header will be ignored and routing to the upstream API will be by port number",
+      "params": {
+        "function": "(str) (Optional) Function to apply to value in key 'upstrm'. Default is None. Allowed values are:\n\tresolve-ecs-task\tExtract the hostname from the URI and use the AWS ECS metadata endpoint to resolve (discover) the IP address of the host. \n\tecs-servicediscovery\tUse AWS Cloud Map service discovery to resolve the namespace of the service\n\tdrop\tSame as setting 'upstrm' to drop.",
+        "upstrm": "(str) URI of the actual API endpoint where requests should be forwarded e.g., 'http://54.219.32.92'  'https://newco-nextcloud.newco-docs.local:6443'\n\tIf set to 'drop' then requests for the given HOST will be not be forwarded and a 404 response will be sent back to the client",
+        "serviceName": "(str) (Optional) The service name to use for this API. If not given then the service name will be pulled from the host part of the upstream URL. So if the upstream is 'http://54.219.32.92' the service name would be '54.219.32.92' if nothing is filled in for serviceName",
+        "stage": "(str) DEPRECATED Used with AWS API gateway to insert explicit stage to the upstream URI",
+        "userIdKeys": "(list[str]) (Optional) List of keys that contain the userID in the structured payload of API requests",
+        "sessionCookie": "(str) (Optional) Name of the cookie in the API HTTP header that contains the session identifier",
+        "fixNoXFX": "(str) (Optional) Set to either ['X-Forwarded-For', 'XFF'] or ['X-Real-IP', 'XRIP'] if there is no preceding proxy or API gateway that sets those headers.\n\tIf this parameter is set then X-Forwarded-[Host, Port, Protocol] will also be filled in",
+        "protoForXFProto": "(str) (Optional) What X-Forwarded-Protocol should be set to if 'fixNoXFX' is 'true'.\n\t Must be either 'http' or 'https'.  If not set, use the protocol from the upstream URL.  If that is not set, use the protocol from the incoming connection.",
+        "portForXFPort": "(str) (Optional) What X-Forwarded-Port should be set to if 'fixNoXFX' is 'true'.\n\t Must be numeric.  If not set, use the port from the upstream URL.  If that is not set, use the port from the incoming connection. Typically if X-Forwarded-Protocol is https then X-Forwarded-Port will be '443'",
+        "newhost": "(str) (Optional) Set or rewrite the 'HOST' HTTP header in the API request to the value of this key.  When 'function' = 'resolve-ecs-task' and 'newhost' = 'IP' the 'HOST' HTTP header will be set to the IP address of the host instead of the hostname.",
+        "setHeaders": "(dict) (Optional) Create or overwrite headers for each key in the dict, and set the value to the value in the dict",
+        "noLogHdrs": "(list[str]) (Optional) List of HTTP headers in the API request that should not be captured",
+        "reqTimeout": "(int) Timeout in seconds for requests made to the upstream host. Default is 20 seconds.",
+        "authDefaults": {
+          "summary": "Provide default authorization values if they cannot be looked up elsewhere for the given service",
+          "user": "(str) User ID",
+          "groups": "(list[str]) (Optional) List of group names that the service belongs to",
+          "allow": "(list[str]) (Optional) List of group names that other services must belong to in order to access this service",
+          "deny": "(list[str]) (Optional) List of group names that other services cannot belong to for access to this service",
+          "region": "(str) (Optional) The region where this service is located"
+        }
+      }
+    },
+    "kqhh674bhc.execute-api.us-west-1.amazonaws.com": {
+      "stage": "c2",
+      "upstrm": "http://54.219.32.92"
+    },
+    "http://192.168.2.198:80": {
+      "upstrm": "http://newcoNextcloud",
+      "function": "resolve-ecs-task",
+      "userIdKeys": [
+        "nc_username",
+        "userId.val"
+      ],
+      "sessionCookie": "nc_session_id",
+      "fixNoXFX": "XFF",
+      "protoForXFProto": "http",
+      "portForXFPort": "80",
+      "newhost": "192.168.2.198",
+      "noLogHdrs": [
+        "Connection",
+        "Accept",
+        "Accept-Language",
+        "Accept-Encoding",
+        "Pragma",
+        "Date",
+        "Expires",
+        "Cache-Control",
+        "X-Robots-Tag",
+        "Feature-Policy",
+        "Referer",
+        "ETag",
+        "Cookie"
+      ],
+      "authDefaults": {
+        "name": "<nau>",
+        "type": "no_authenticated_user",
+        "groups": [],
+        "allow": [],
+        "region": ""
+      }
+    },
+    "http://selfa:80": {
+      "upstrm": "http://newco-nextcloud",
+      "serviceName": "newco-nextcloud",
+      "function": "",
+      "userIdKeys": [
+        "nc_username",
+        "userId.val"
+      ],
+      "sessionCookie": "nc_session_id",
+      "reqTimeout": 30,
+      "noLogHdrs": [
+        "Connection",
+        "Accept",
+        "Accept-Language",
+        "Accept-Encoding",
+        "Pragma",
+        "Date",
+        "Expires",
+        "Cache-Control",
+        "X-Robots-Tag",
+        "Feature-Policy",
+        "Referer",
+        "ETag",
+        "Cookie"
+      ]
+    },
+    "cabersystems.com": {
+      "upstrm": "http://newcoNextcloud",
+      "serviceName": "newcoNextcloud",
+      "function": "resolve-ecs-task",
+      "userIdKeys": [
+        "nc_username",
+        "userId.val"
+      ],
+      "sessionCookie": "nc_session_id",
+      "fixNoXFX": "XFF",
+      "protoForXFProto": "https",
+      "portForXFPort": "443",
+      "reqTimeout": 30,
+      "noLogHdrs": [
+        "Connection",
+        "Accept",
+        "Accept-Language",
+        "Accept-Encoding",
+        "Pragma",
+        "Date",
+        "Expires",
+        "Cache-Control",
+        "X-Robots-Tag",
+        "Feature-Policy",
+        "Referer",
+        "ETag",
+        "Cookie"
+      ]
+    },
+    "http://selfb:9000": {
+      "upstrm": "http://csi-dep-minio:9000",
+      "function": "resolve-ecs-task",
+      "userIdKeys": [
+        "nc_username",
+        "userId.val"
+      ],
+      "sessionCookie": "nc_session_id",
+      "fixNoXFX": "X-Real-IP",
+      "noLogHdrs": [
+        "Accept",
+        "Accept-Language",
+        "Accept-Encoding",
+        "Pragma",
+        "Date",
+        "Expires",
+        "Cache-Control",
+        "X-Robots-Tag",
+        "Feature-Policy",
+        "Referer",
+        "ETag",
+        "Cookie"
+      ]
+    },
+    "http://selfb:9001": {
+      "upstrm": "http://csi-dep-minio:9001",
+      "function": "resolve-ecs-task",
+      "userIdKeys": [
+        "nc_username",
+        "userId.val"
+      ],
+      "sessionCookie": "nc_session_id",
+      "fixNoXFX": "X-Real-IP",
+      "noLogHdrs": [
+        "Accept",
+        "Accept-Language",
+        "Accept-Encoding",
+        "Pragma",
+        "Date",
+        "Expires",
+        "Cache-Control",
+        "X-Robots-Tag",
+        "Feature-Policy",
+        "Referer",
+        "ETag",
+        "Cookie"
+      ]
+    },
+    "http://selfa:9000": {
+      "upstrm": "http://csi-dep-minio:9000",
+      "function": "resolve-ecs-task",
+      "userIdKeys": [
+        "nc_username",
+        "userId.val"
+      ],
+      "sessionCookie": "nc_session_id",
+      "fixNoXFX": "X-Real-IP",
+      "noLogHdrs": [
+        "Accept",
+        "Accept-Language",
+        "Accept-Encoding",
+        "Pragma",
+        "Date",
+        "Expires",
+        "Cache-Control",
+        "X-Robots-Tag",
+        "Feature-Policy",
+        "Referer",
+        "ETag",
+        "Cookie"
+      ]
+    },
+    "http://selfa:9001": {
+      "upstrm": "http://csi-dep-minio:9001",
+      "function": "resolve-ecs-task",
+      "userIdKeys": [
+        "nc_username",
+        "userId.val"
+      ],
+      "sessionCookie": "nc_session_id",
+      "fixNoXFX": "X-Real-IP",
+      "noLogHdrs": [
+        "Accept",
+        "Accept-Language",
+        "Accept-Encoding",
+        "Pragma",
+        "Date",
+        "Expires",
+        "Cache-Control",
+        "X-Robots-Tag",
+        "Feature-Policy",
+        "Referer",
+        "ETag",
+        "Cookie"
+      ]
+    },
+    "http://selfb:9980": {
+      "upstrm": "http://newcoCollabora:9980",
+      "function": "resolve-ecs-task",
+      "userIdKeys": [
+        "nc_username",
+        "userId.val"
+      ],
+      "sessionCookie": "nc_session_id",
+      "fixNoXFX": "XFF",
+      "noLogHdrs": [
+        "Connection",
+        "Accept",
+        "Accept-Language",
+        "Accept-Encoding",
+        "Pragma",
+        "Date",
+        "Expires",
+        "Cache-Control",
+        "X-Robots-Tag",
+        "Feature-Policy",
+        "Referer",
+        "ETag",
+        "Cookie"
+      ]
+    },
+    "http://selfc:6379": {
+      "upstrm": "http://newcoRedis:6379",
+      "function": "resolve-ecs-task",
+      "userIdKeys": [
+        "nc_username",
+        "userId.val"
+      ],
+      "sessionCookie": "nc_session_id",
+      "fixNoXFX": "XFF",
+      "noLogHdrs": [
+        "Connection",
+        "Accept",
+        "Accept-Language",
+        "Accept-Encoding",
+        "Pragma",
+        "Date",
+        "Expires",
+        "Cache-Control",
+        "X-Robots-Tag",
+        "Feature-Policy",
+        "Referer",
+        "ETag",
+        "Cookie"
+      ]
+    },
+    "http://selfd:5432": {
+      "upstrm": "http://csi-dep-postgres:5432",
+      "function": "resolve-ecs-task",
+      "userIdKeys": [
+        "nc_username",
+        "userId.val"
+      ],
+      "sessionCookie": "nc_session_id",
+      "fixNoXFX": "XFF",
+      "noLogHdrs": [
+        "Connection",
+        "Accept",
+        "Accept-Language",
+        "Accept-Encoding",
+        "Pragma",
+        "Date",
+        "Expires",
+        "Cache-Control",
+        "X-Robots-Tag",
+        "Feature-Policy",
+        "Referer",
+        "ETag",
+        "Cookie"
+      ]
+    },
+    "default": {
+      "function": "drop",
+      "allowNoXFF": false,
+      "stage": "",
+      "upstrm": "drop"
+    }
+  },
+  "Dashboard": {
+    "doc": {
+      "summary": "Scans SQL databases for data 'objects' of interest and their associated metadata.",
+      "params": {
+        "pathPrefix": "(str) Mixed case string, no special characters, used to name prefixes, logs, etc., from this module",
+        "useShortAPIname": "(bool) If set to 'True' then use only the most significant path elements in naming and identifying the API"
+      }
+    },
+    "remoteDebug": false,
+    "pathPrefix": "csiDashboard",
+    "repoName": "csi-dashboard",
+    "filePrefix": "DASH",
+    "logLevel": "info",
+    "refresh": 5,
+    "useShortAPIname": true,
+    "listenPorts": {
+      "http": [
+        80
+      ],
+      "https": [
+        443
+      ]
+    }
+  },
+  "SQL_Scanner": {
+    "doc": {
+      "summary": "Scans SQL databases for data 'objects' of interest and their associated metadata.",
+      "params": {
+        "pathPrefix": "(str) Mixed case string, no special characters, used to name S3 prefixes, logs, etc., from this module",
+        "repoName": "(str) Lower-case string used for naming the docker repository for this service.",
+        "filePrefix": "(str) Mixed-case 4 character string, no special characters. Used as the prefix for log entries and object names.",
+        "dependsOn": "(list[str]) Which modules in GLOBAL.modules need to be running before this module.",
+        "inputQueue": "(str) Full URL of the AWS SQS queue that API_Tap sends messages to e.g., 'https://sqs.us-west-1.amazonaws.com/062333444555/csi-apishdw-q'",
+        "outputQueue": "(str) DEPRECATED."
+      }
+    },
+    "remoteDebug": false,
+    "pathPrefix": "csiSQLscanner",
+    "repoName": "csi-sql-scanner",
+    "filePrefix": "SQLS",
+    "enableScan": false,
+    "logLevel": "info"
+  },
+  "Dyn_Deploy": {
+    "doc": {
+      "summary": "Dynamic deployment of resources to cover customer specified APIs",
+      "params": {
+        "pathPrefix": "(str) Mixed case string, no special characters, used to name S3 prefixes, logs, etc., from this module",
+        "repoName": "(str) Lower-case string used for naming the docker repository for this service.",
+        "filePrefix": "(str) Mixed-case 4 character string, no special characters. Used as the prefix for log entries and object names.",
+        "dependsOn": "(list[str]) Which modules in GLOBAL.modules need to be running before this module.",
+        "inputQueue": "(str) Full URL of the AWS SQS queue that API_Tap sends messages to e.g., 'https://sqs.us-west-1.amazonaws.com/062333444555/csi-apishdw-q'",
+        "outputQueue": "(str) DEPRECATED."
+      }
+    },
+    "remoteDebug": false,
+    "pathPrefix": "csiDYNdeploy",
+    "repoName": "csi-dyn_deploy",
+    "filePrefix": "DYND",
+    "enableScan": false,
+    "logLevel": "info"
+  },
+  "API_Tap": {
+    "remoteDebug": false,
+    "pathPrefix": "csiAPItap",
+    "repoName": "csi-api-tap",
+    "filePrefix": "ATAP",
+    "noLogTypes": [
+      "script_types",
+      "media_types"
+    ],
+    "logLevel": "info",
+    "listenPorts": {
+      "http": [],
+      "https": [],
+      "testhttp": [
+        8080
+      ],
+      "testhttps": [
+        4343
+      ]
+    },
+    "maxBodyLen": 16777216,
+    "maxSqsLen": 8192,
+    "maxInlineBodyLen": 0,
+    "maxUpload": 16777216,
+    "processCodeRegex": "^([23]\\d{2})$"
+  },
+  "Process_API": {
+    "doc": {
+      "summary": "Process API processes the API records and data created by API_Tap and posts the results to Elasticsearch",
+      "params": {
+        "pathPrefix": "(str) Mixed case string, no special characters, used to name S3 prefixes, logs, etc., from this module",
+        "repoName": "(str) Lower-case string used for naming the docker repository for this service.",
+        "filePrefix": "(str) Mixed-case 4 character string, no special characters. Used as the prefix for log entries and object names.",
+        "dependsOn": "(list[str]) Which modules in GLOBAL.modules need to be running before this module.",
+        "logLevel": "(str) Logging level for this module\n\tAllowed values: 'error', 'warning', 'info', 'debug', and 'verbose' (enables detailed RKCQF logs)",
+        "remoteDebug": "(bool) True to allow this module to call out to remote PyCharm debugger",
+        "keepHashFile": "(bool) As part of the creation of per-payload index files should an ordered list of the hashes inserted into the index file also be kept",
+        "maxLevels": "(int) For API bodies that are structured, when a rule is triggered on a body key, how many levels up from the body key should be saved to later analyze for correlation.",
+        "apiNameLevels": "(int) How many levels of an API path should be kept to identify one API from another.\n\tExample: If apiNameLevels = 3 and the URL called is http://host/a1/b2/c3/d4/e5/f6, then the API will be named 'a1/b2/c3'",
+        "dlyDMtrig": "(int) DEPRECATED.",
+        "numIngestMessages": "(int) Number of messages to grab and process at each cycle.  Must be greater than 0",
+        "outputToS3": "(str) Write output data from this module to S3 in addition to posting to database.\n\tAllowed values: 'always', 'never', 'on-error'",
+        "dropNones": "(bool) If 'True', during processing of the API records keys that contain no value are dropped",
+        "scanHdrs": "(bool) DEPRECATED.",
+        "nextcloudServerIP": "(str) Hostname or IP address of the Nextcloud server (test/demo environment) for API lookup of users and groups",
+        "nextcloudAPIusr": "(str) Username in Nextcloud server for API lookup of users and groups",
+        "nextcloudAPIpwd": "(str) Password for nextcloudAPIusr",
+        "inlineHashLimit": "(int) When the number of nmers created while fingerprinting a chunk of data is less than or equal to this value, do not create an nmer index (CQF) file.  Instead, record the nmers in-line in the API record.",
+        "reTimeout": "(int) Regex execution timeout in seconds.",
+        "dropMsgShaList": "(list[str]) List of SHA-256 API message hashes that should be ignored.",
+        "keepHdrs": "(list[str]) List key-paths representing HTTP headers and sub-keys to save in each API record. Accepts Unix shell-style wildcards as in https://docs.python.org/3/library/fnmatch.html.\n\tExample: The value of the HTTP header Content-Type typically contains type=[min-type] and charset=[encoding]\n\tIf you want to keep only the mime-type then specify 'Content-Type.type'. To keep both sub-keys specify 'Content-Type.*' or just 'Content-Type'"
+      }
+    },
+    "remoteDebug": false,
+    "numIngestMessages": 10,
+    "pathPrefix": "csiProcessApi",
+    "repoName": "csi-process-api",
+    "filePrefix": "PAPI",
+    "dependsOn": [
+      "Elasticsearch",
+      "Tika"
+    ],
+    "nextcloudServerIP": "cabersystems.com",
+    "nextcloudAPIusr": "admin",
+    "nextcloudAPIpwd": "caberdev",
+    "maxLevels": 2,
+    "apiNameLevels": 4,
+    "reTimeout": 2,
+    "logLevel": "info",
+    "dlyDMtrig": 330,
+    "outputToS3": "never",
+    "dropNones": true,
+    "scanHdrs": false,
+    "inlineHashLimit": 10,
+    "dropMsgShaList": [
+      "8059eba0fa8d17ee2a66326c11f8a8c1aece46e7361902d943bd9ec39331ac9b"
+    ],
+    "keepHdrs": [
+      "Content-Type.type",
+      "Content-Type.charset",
+      "Content-Length",
+      "Cookie",
+      "Set-Cookie"
+    ]
+  },
+  "ApiRules": {
+    "doc": {
+      "summary": "Rules used by Process_API that specify which API keypaths will be processed and how. Multiple rules are supported.  Each RULE key has a separate dict of parameters.",
+      "RULE": "(str) A short name for the rule like 'index_req_body'.",
+      "params": {
+        "description": "(str) (Optional) Description of what the rule is supposed to do",
+        "KYP": "list(str) Which API keypaths the rule targets. Keypaths are dot separated values that may include *, ?, [seq] or [!seq] (see https://docs.python.org/3/library/fnmatch.html).\nThe top level key is always 'C' followed by either 'REQ' or 'RSP' denoting keys in the API request or response, respectively. Following REQ/RSP are [path, headers, body]",
+        "LEN": "(int) Minimum length in bytes for the value in a given keypath.",
+        "SCN": "(bool) Should the keypath be indexes for data matching",
+        "RGX": "list(str) Key-names of regular expressions found in 'Regex' key to apply to each matching keypath. If any regexes are specified, all of them must match for the rule to apply.",
+        "ACT": "(str) Action to perform on rule match. Can be 'observe', 'scan_reference', or 'skip'. \n\tDefault is to skip the rule.\n\t'observe' means run the rule and send results upstream to Link_Data for analysis.\n\t'scan_reference': In addition to what 'observe' does, send all regex matches to S3_Scanner.",
+        "KEEP": "list(str) List of what data to keep in the API records. Include 'headers' to keep all headers.  To keep items from the payload use the syntax [req, rsp].[raw, keys, text].  To save the raw request body use 'req.raw'. To save the JSON, YAML, or XML decoded keys from the response body, use 'rsp.keys'. To save the extracted text from, say, a PDF payload, use 'req.text' "
+      }
+    },
+    "Look_For_URLs": {
+      "description": "regex-keys-for-urls",
+      "KYP": [
+        "C.*.headers*",
+        "C.REQ.path",
+        "C.*.body.keys"
+      ],
+      "LEN": 20,
+      "SCN": false,
+      "RGX": [
+        "url"
+      ],
+      "DAT": [],
+      "ACT": "skip",
+      "KEEP": []
+    },
+    "Scan_Paths_With_Newco": {
+      "description": "regex-for-paths-with-newco",
+      "KYP": [
+        "R.API",
+        "R.ARGS",
+        "R.QUERY",
+        "C.*.headers.*",
+        "C.REQ.path",
+        "C.*.body.keys"
+      ],
+      "LEN": 10,
+      "SCN": false,
+      "RGX": [
+        "customer_bucket"
+      ],
+      "DAT": [],
+      "ACT": "scan_reference",
+      "KEEP": []
+    },
+    "Index_Request_Body": {
+      "description": "scan-request-body",
+      "KYP": [
+        "C.REQ.body.raw",
+        "C.REQ.body.text"
+      ],
+      "LEN": 200,
+      "SCN": true,
+      "RGX": [],
+      "DAT": [],
+      "ACT": "observe",
+      "KEEP": ["headers"]
+    },
+    "Index_Response_Body": {
+      "description": "scan-response-body",
+      "KYP": [
+        "C.RSP.body.raw",
+        "C.RSP.body.text"
+      ],
+      "LEN": 200,
+      "SCN": true,
+      "RGX": [],
+      "DAT": [],
+      "ACT": "observe",
+      "KEEP": ["headers"]
+    }
+  },
+  "Kafka_Scanner": {
+    "doc": {
+      "summary": "Kafka consumer configuration",
+      "params": {
+        "kafkaConsumer": "(dict) Set of parameters passed directly as config to confluent_kafka.Consumer(config)\n\t'bootstrap.servers' must be either a list of hostnames and ports, or a single string with comma separated hostnames",
+        "topics": "(list[str]) List of kafka topics to subscribe to",
+        "logLevel": "(str) Logging level for this module\n\tAllowed values: 'error', 'warning', 'info', 'debug', and 'verbose'"
+      }
+    },
+    "topics": ["minio-audit"],
+    "logLevel": "debug",
+    "pathPrefix": "csiKafkaScanner",
+    "repoName": "csi-kafka-scanner",
+    "filePrefix": "KAFK"
+  },
+  "S3_Scanner": {
+    "doc": {
+      "summary": "S3 Scanner is prompted by CloudTrail S3 event logs to scan and create index files for objects stored in customer's S3 buckets",
+      "params": {
+        "pathPrefix": "(str) Mixed case string, no special characters, used to name S3 prefixes, logs, etc., from this module",
+        "repoName": "(str) Lower-case string used for naming the docker repository for this service.",
+        "filePrefix": "(str) Mixed-case 4 character string, no special characters. Used as the prefix for log entries and object names.",
+        "dependsOn": "(list[str]) Which modules in GLOBAL.modules need to be running before this module.",
+        "inputQueue": "(str) Full URL of the AWS SQS queue configured to receive S3 bucket event notifications from CloudTrail writing data event logs.",
+        "outputQueue": "(str) DEPRECATED.",
+        "numIngestMessages": "(int) Number of messages to grab and process at each cycle.  Must be greater than 0",
+        "logLevel": "(str) Logging level for this module\n\tAllowed values: 'error', 'warning', 'info', 'debug', and 'verbose' (enables detailed RKCQF logs)",
+        "remoteDebug": "(bool) True to allow this module to call out to remote debugger",
+        "outputToS3": "(str) Write output data from this module to S3 in addition to posting to database.\n\tAllowed values: 'always', 'never', 'on-error'",
+        "deleteEvents": "(list[str]) Which CloudTrail S3 event types the S3 Scanner module should categorize as DEL",
+        "objAuthZtags": "(list[str]) List of S3 Object AWS tag names/keys to be retrieved and used as part of object authorization policy",
+        "metadataCache": "(dict) Responses to head_object, get_bucket_policy_status, get_public_access_block, get_bucket_location, get_bucket_acl, get_bucket_tagging, get_object_acl, and get_object_tagging for a given object are cached to avoid unnecessary lookups. The value 'timeTolive' sets the number of seconds a response will remain valid.  The value 'maxItems' sets an upper limit on the number of responses that can be in the cache.  The longer timeTolive is, the larger maxItems should be. Since we also store the metedata in OpenSearch, we should set the expiry time to how often we want to check if an object has been updated.",
+        "accumulateEvents": "(dict) When accumulating individual event records to process them more efficiently, don't accumulate for longer that 'timeLimit' since we started accumulating events, and don't accumulate more than 'maxItems' before processing",
+        "indexIfNotFound": "(bool) If true, module will try to index objects even if the initial head-object returned not-found",
+        "delete": "(bool) Should CloudTrail event log files be deleted immediately after they are read. Should index for object be deleted when the object is deleted"
+      },
+      "alsoSee": ["GLOBAL.doc.params.eventBucket", "GLOBAL.doc.params.indexedObjectsTable", "GLOBAL.doc.params.objectAccessTable", "GLOBAL.modules"]
+    },
+    "remoteDebug": false,
+    "numIngestMessages": 10,
+    "outputToS3": "never",
+    "pathPrefix": "csiS3scanner",
+    "repoName": "csi-s3-scanner",
+    "filePrefix": "S3SC",
+    "indexIfNotFound": false,
+    "dependsOn": ["Elasticsearch", "Tika"],
+    "objAuthZtags": ["groups", "allow", "deny", "owner", "id"],
+    "metadataCache": {"timeTolive":  10, "maxItems":  5000},
+    "accumulateEvents": {"timeLimit":  10, "maxItems":  50},
+    "headObjectOptions": {"ChecksumMode": "ENABLED"},
+    "logLevel": "debug",
+    "dropNoMatch": true,
+    "delete": true
+  },
+  "Auth_Analyzer": {
+    "doc": {
+      "summary": "Auth_Analyzer reads the output of Link_Data from Elasticsearch then (1) builds a representative graph in Neo4j, (2) calculates the combined auth policy for data nodes, and (3) analyzes the resulting graph for auth violations.",
+      "params": {
+        "pathPrefix": "(str) Mixed case string, no special characters, used to name S3 prefixes, logs, etc., from this module",
+        "repoName": "(str) Lower-case string used for naming the docker repository for this service.",
+        "filePrefix": "(str) Mixed-case 4 character string, no special characters. Used as the prefix for log entries and object names.",
+        "dependsOn": "(list[str]) Which modules in GLOBAL.modules need to be running before this module.",
+        "logLevel": "(str) Logging level for this module\n\tAllowed values: 'error', 'warning', 'info', 'debug', and 'verbose' (enables detailed RKCQF logs)",
+        "remoteDebug": "(bool) True to allow this module to call out to remote debugger",
+        "waitOnBuildNum": "(int) On startup Link_Data resets it's build number to 0.  Each time it builds a new index it increments the number.  This value tells Auth_Analyzer to pause until the Link_Data index build gets above this number.",
+        "windowSecs": "(int) DEPRECATED",
+        "mergeHostService": "(bool) FIXME If set to 'True' API host nodes and Service nodes that have identical names will be merged into one node in Neo4J with both Host and Service labels.  If false, they will be maintained as separate nodes.",
+        "inLinkCutoff": "(int) Determines what IN links to keep based upon how strong the link is (strength = to.nmers/from.nmers). If positive, quantile percentage at which to cutoff in links.  75 will leave only the top 25% of values. \n\tIf negative, will keep connections whose score is above abs(inLinkCutoff)",
+        "authfailMaxScore": "(float) Sets the maximum threshold on path weight to alert if an authentication failure on the path is detected. Lower path weights mean stronger relationships between terminal nodes of the path.  Default 1000.",
+        "junkStDevs": "(dict) Standard deviations away from ave to consider an edge node Junk.  Two calculations are made so there are two values: \n'absolute' Look at the total number of IN relationships per edge.\n'relative' Ratio of in relationships divided by the number of nmers the edge has.  The threshold on how high is determined by junkStDev, the multiplier of standard deviations from the mean number of IN relationships.  If junkStDevs is 1 then it is 1 standard deviation from the mean.",
+        "startRecs": "(int) On start-up, the minimum number of Link_Data records that must exist in Elasticsearch before processing commences",
+        "incrRecs": "(int) How many Link_Data records to read from Elasticsearch on each processing iteration",
+        "initNeoDB": "(bool) If set to 'True' on start-up this module will erase and initialize the Neo4j database",
+        "splitAPIpath": "(bool) If set to 'True' separate api nodes will be created for each level in the api path",
+        "splitOBJpath": "(bool) If set to 'True' separate nodes will be created for each level/folder in the object path ",
+        "checkAuthFail": "(bool) If set to 'True' then check for authorization failures, otherwise don't",
+        "retrigger": "(int) Number of seconds to pause between each processing iteration"
+      },
+      "alsoSee": [
+      ]
+    },
+    "remoteDebug": false,
+    "pathPrefix": "csiAuthAnalyzer",
+    "repoName": "csi-auth-analyzer",
+    "filePrefix": "AUTH",
+    "dependsOn": ["Elasticsearch", "Neo4j", "Link_Data"],
+    "mergeHostService": true,
+    "splitAPIpath": false,
+    "splitOBJpath": false,
+    "checkAuthFail": true,
+    "nearIdenticalPcnt": 80,
+    "waitOnBuildNum": 4,
+    "startRecs": 10,
+    "incrRecs": 5000,
+    "inLinkCutoff": 0,
+    "logLevel": "debug",
+    "junkStDevs": {"relative": 1.5, "absolute": 2.5},
+    "initNeoDB": true,
+    "reTrigger": 10
+  },
+  "Link_Data": {
+    "doc": {
+      "summary": "Auth_Analyzer reads the output of Link_Data from Elasticsearch then (1) builds a representative graph in Neo4j, (2) calculates the combined auth policy for data nodes, and (3) analyzes the resulting graph for auth violations.",
+      "params": {
+        "pathPrefix": "(str) Mixed case string, no special characters, used to name S3 prefixes, logs, etc., from this module",
+        "repoName": "(str) Lower-case string used for naming the docker repository for this service.",
+        "filePrefix": "(str) Mixed-case 4 character string, no special characters. Used as the prefix for log entries and object names.",
+        "dependsOn": "(list[str]) Which modules in GLOBAL.modules need to be running before this module.",
+        "logLevel": "(str) Logging level for this module\n\tAllowed values: 'error', 'warning', 'info', 'debug', and 'verbose' (enables detailed RKCQF logs)",
+        "remoteDebug": "(bool) True to allow this module to call out to remote debugger",
+        "intersectorDir": "(str) Directory path where to store Intersector indexes and associated files.",
+        "minNmerMatches": "(int) Minimum number of nmers that must match between two or more objects. All matches below this number will be dropped.",
+        "dummyOption": "(int) How to handle deletion of dummy objects that hold unique intersections of nmers (aka, equivalence classes or 'edges' in Intersector).\n\tOption 1: Dummy dead if eqclass has only one non-dummy object and that non-dummy object belongs to no other eqclass.\n\tOption 2: Dummy dead if eqclass has only one non-dummy object but that non-dummy object may belong to other eqclasses.\n\tOption 3: Keep all dummies",
+        "maxHoldSec": "(int) How long to keep local copies of object index files in seconds.  Set to 0 to disable deletion of CQF files.",
+        "maxRecs": "(int) Maximum number of records from S3_Scanner and Process_API to read and process in each cycle. Default 250",
+        "minBuildCQFs": "(int) Minimum number of object CQFs needed to trigger Intersector build. Default 5",
+        "maxBuildCQFs": "(int) Maximum number of object CQFs allowed in a Intersector build. Default 500",
+        "minRecs": "(int) DEPRECATED",
+        "trgtRunLen": "(int) DEPRECATED Used to set the target length of in-order sequence sets for matching (combiner.py)",
+        "useEQclassCategories": "(bool) If True, use statistical categories [unique, ambiguous, junk] for scoring sequence set matches. Otherwise, treat all matches equally for scoring. NOTE: Used only when looking up sequence hashes in Intersector.",
+        "keepAboveScore": "(int) Keep only sequence set matches with score above this value. Default 0 (keep all)",
+        "reTrigger": "(int) Number of seconds to pause between run cycles"
+      }
+    },
+    "remoteDebug": false,
+    "outputToS3": "never",
+    "pathPrefix": "csiLinkData",
+    "repoName": "csi-link-data",
+    "filePrefix": "LNKD",
+    "dependsOn": ["Elasticsearch", "Process_API", "S3_Scanner"],
+    "intersectorDir": "/data/intersector",
+    "intersectorBuildMaxNmers": 4194304,
+    "minNmerMatches": 1,
+    "useEQclassCategories": true,
+    "dummyOption": 2,
+    "keepAboveScore": 0,
+    "trgtRunLen": 6,
+    "winDlySec": 20,
+    "maxRecs": 500,
+    "minBuildCQFs": 5,
+    "maxBuildCQFs": 500,
+    "minRecs": 5,
+    "logLevel": "debug",
+    "reTrigger": 5,
+    "maxHoldSec": 86400,
+    "delete": true
+  },
+  "Index_Merge": {
+    "remoteDebug": false,
+    "pathPrefix": "csiIndexMerge",
+    "repoName": "csi-index-merge",
+    "filePrefix": "IDXM",
+    "maxFiles": 50,
+    "minFiles": 8,
+    "window": 12,
+    "reTrigger": 120,
+    "logLevel": "error",
+    "delete": true
+  },
+  "Object_Sources": {
+    "doc": {
+      "summary": "Configuration for AWS S3 compatible object stores that contain objects S3_Scaner will scan.  There are many commercial and open source object stores including MinIO, Ceph, Zenko, Riak S2, Triton, LeoFS, HyperStore, Cloudian, and Wasabi.  See https://documentation.commvault.com/v11/essential/9237_supported_cloud_storage_s3_compatible_object_storage_vendors.html for a larger list.  While all of these should work, only AWS S3 and MinIO have been tested. \nEach object store instance is identified by it's <host_name>.",
+      "<host-name>": {
+        "type": "(str) Type of object store for this host-name. Valid choices are {'s3', 'minio'}",
+        "url": "(str) Complete URL including protocol, hostname or IP address, and port used to access this object store.  For example, http://172.31.19.211:9000",
+        "region": "(str) Region name where this object store is located.  For example, 'us-west-1'",
+        "accessKey": "(str) (Optional) Access key or login name that provides read access to this object store. Optional only for AWS S3 when credentials are configured in the AWS section of the config.",
+        "secretKey": "(str) (Optional) Secret key, Secret Access Key, or password associated with 'accessKey'",
+        "decryptKey": "(?) NOT YET IMPLEMENTED Decryption key for encrypted stores",
+        "enableBktVersioning": "(bool) If customer configured buckets do not have bucket versioning enabled, and this config it True, then enable it so that we can index objects that may be written to multiple times before we get an event notification.",
+        "headObjectOptions": "(dict) When doing a head_object on an S3 object use these options (see https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.head_object)",
+        "buckets": "[list(str)] (Optional) Constrain scanning to bucket names contained in this list. If omitted or empty, no buckets will be scanned."
+      }
+    },
+    "newcoMinio": {
+      "type": "minio",
+      "url": ["http://csi-dep-minio:9000", "http://localhost:9000"],
+      "host": "csi-dep-minio",
+      "region": "us-west-1",
+      "accessKey": "madmin",
+      "secretKey": "caberdev",
+      "enableBktVersioning": true,
+      "headObjectOptions": {"ChecksumMode": "ENABLED"},
+      "buckets": [
+        {"newco-docs": {"prefixes": ["urn:oid:*"], "max_keys":  1000}},
+                {"newco-temp": {"prefixes": ["*"], "max_keys":  1000}}
+      ]
+    }
+  },
+  "SQL_DB_Sources": {
+    "doc": {
+      "summary": "Configuration for SQL compatible databases that contain objects SQL_Scaner will scan. \nEach database instance is identified by it's <database_host> section.",
+      "<database-host>": {
+        "type": "(str) Type of database e.g., Postgres",
+        "dbName": "(str) Name of the database in the host to connect to",
+        "host": "(str)  (Optional) Hostname or IP address of the database.  If omitted <database-host> will be used. If the host name includes a ':' it is presumed what follows the colon is the port number.",
+        "port": "(int) Port number the DB is running on. If specified the value here will supersede a port number included in the host name string",
+        "username": "(str) (Optional) Access key or login name that provides read access to this object store. Optional only if not required by the DB",
+        "password": "(str) (Optional) Secret key, Secret Access Key, or password associated with 'username'.  Optional only if not required by the DB",
+        "tables": "[list(str)] (Optional) Constrain scanning to table names contained in this list. If omitted or empty, all tables can be scanned."
+      }
+    },
+    "newcoPostgres": {
+      "type": "postgresql",
+      "host": "csi-dep-postgres",
+      "dbName": "nextcloud_db",
+      "port": 5432,
+      "username": "postgres",
+      "password": "caberdev"
+    },
+    "caberAthenaTest": {
+      "type": "awsathena",
+      "host": "athena.{region_name}.amazonaws.com:443",
+      "port": 443,
+      "region": "us-west-1",
+      "schema": "schema_name",
+      "staging": "s3://s3-results-bucket/output/",
+      "username": "AWS_ACCESS_KEY",
+      "password": "AWS_SECRET_KEY"
+    }
+  },
+  "Identity_Sources": {
+    "doc": {
+      "summary": "Configuration finding identity of services Caber discovers. 'pythex.com' is a good resource fro building and checking regexes.",
+      "<identity-source>": {
+        "priority": "(int) Lookups start with the identity source with the LOWEST priority number. The first source to provide a result wins.",
+        "type": "(str) Type of object store for this identity source. Valid types are [sqldb, api, dns]",
+        "apiURL": "(str) (Required if type = api) For identity sources accessed via an api, the URL including protocol, hostname or IP address, and port used to access this identity source.  For example, http://172.31.19.211:9000.",
+        "sqlConfig": "(str) (Required if type = sqldb) For sql sources, the name of the sql source configuration in SQL_DB_Sources.",
+        "accessKey": "(str) (Optional) Access key or login name that provides read access to this object store. Optional only for AWS S3 when credentials are configured in the AWS section of the config.",
+        "secretKey": "(str) (Optional) Secret key, Secret Access Key, or password associated with 'accessKey'",
+        "prefilter": "(str) (Optional) Regex string or python expression to extract the lookup name from the input name",
+        "postfilter": "(str) (Optional) Regex string or python expression to extract the lookup name from the input name",
+        "defaults": "(dict) (Optional) Dictionary of fill in values to any lookup.  For example, if you have a prefilter that outputs a variable 'host', specifying a default of {'host': 'value'} will fill in any rows in the filter results where host=None with host=value",
+        "query": "(str) For sql sources this is the SQL query to perform to get the identity back. If this starts with 'file:' then the filename specified after the colon will be fetched from the customer key in master bucket.\nFor apis, this will be the path and query stings for the API call.\nFor DNS the query is of the form MATCH(a, b, ...) where a, b, etc are the group names from the pre-filter stage, or fnmatch patterns for matching the pre-filter group names.",
+        "inplace": "(bool) Should the identity function replace the column of lookup values with the result (True), or should it return a new column (False)",
+        "authenticator": "(str) A service such as Okta, AWS IAM, or a certificate authority, that authenticates an Entity.  For any given Entity type, there can be only one Authenticator such that the combination of entity_id@authenticator_id is globally unique.",
+        "acceptors": "list(str) Any service that accepts the authentication response from the Authenticator, and services API requests from the authenticated Entity.  The Authenticator and the Acceptor can be the same service as would be the case with HTTP basic auth.",
+        "out_map": "(dict) How to map results of the SQL query or api call to the service identity elements"
+      }
+    },
+    "awsHmacToUser": {
+      "type": "aws4_hmac",
+      "priority": 0,
+      "identifier": "AH4",
+      "usage": [],
+      "outmap": {
+        "name": "user",
+        "groups": ["groups"],
+        "allow": [
+          "groups"
+        ],
+        "region": "region"
+      }
+    },
+    "apiTestNull": {
+      "type": "api",
+      "priority": 4,
+      "identifier": "ANU",
+      "columns": ["user.id"],
+      "defaults": {"authenticator": "null-api", "acceptor": "newco-nextcloud"},
+      "prefilter": {"python": "{\"id\": id[-1:]}", "test": [{"in": {"id": "USER-4298891588692765938"}, "out": {"id": "8"} }]},
+      "query": "file:curl_to_jsonplaceholder.txt",
+      "postfilter": {"python": "json.loads(result).get('username', 'what')", "test": [{"in": "{\"username\": \"Sally\", \"city\": \"Wynona\"}", "out": "Sally"}]},
+      "usage": ["Service"],
+      "outmap": {
+        "api-name": "result"
+      }
+    },
+    "ncFileToUser": {
+      "type": "sqldb",
+      "priority": 1,
+      "identifier": "F2U",
+      "sqlConfig": "newcoPostgres",
+      "defaults": {"authenticator": "newco-nextcloud", "acceptor": "newco-nextcloud"},
+      "prefilter": {"regex": "[^urn]*urn:oid:(?P<oid>\\d+)", "test": [{"in": "urn:oid:197", "out": {"oid": "197"}}, {"in": "abd:aed:df/urn:oid:197", "out": {"oid": "197"}}]},
+      "query": "file:nextcloud_fileid_to_user.sql",
+      "usage": ["Object"],
+      "columns": ["object.id"],
+      "outmap": {
+        "name": "user",
+        "groups": ["groups"],
+        "authenticator": "authenticator",
+        "acceptor": "acceptor",
+        "allow": [
+          "groups"
+        ]
+      }
+    },
+    "ncUserToGrps": {
+      "type": "sqldb",
+      "priority": 1,
+      "identifier": "U2G",
+      "sqlConfig": "newcoPostgres",
+      "defaults": {"authenticator": "newco-nextcloud", "acceptor": "newco-nextcloud"},
+      "prefilter": {
+        "regex": "^(?P<user>[^:]+)::(?P<acceptor>[^:]+):(?P<authenticator2>.+)$",
+        "test": {"in": "this_is_@_test::hostname:auth-n", "out": {"user": "this_is_@_test", "authenticator2": "auth-n", "acceptor": "hostname"}}
+      },
+      "columns": ["user.full_name"],
+      "query": "file:nextcloud_uid_to_groups.sql",
+      "usage": ["Service"],
+      "outmap": {
+        "name": "user",
+        "groups": ["groups"],
+        "authenticator": "authenticator",
+        "acceptor": "acceptor",
+        "allow": [
+          "groups"
+        ]
+      }
+    },
+    "serviceNames": {
+      "type": "dns",
+      "priority": 3,
+      "identifier": "DNS",
+      "prefilter": {"regex": "^/?(?P<host>[^/]+)(?P<path>/.+)?", "test": {"in": "/hostname/p1/p2", "out": {"host": "hostname", "path": "/p1/p2"}}},
+      "postfilter": {"python": "host + path", "test": {"out": "hostname/p1/p2", "in": {"host": "hostname", "path": "/p1/p2"}}},
+      "query": "host",
+      "inplace": ["result", "host"],
+      "dropNetName": true,
+      "usage": [],
+      "outmap": {
+        "name": "host",
+        "groups": ["groups"],
+        "allow": [
+          "groups"
+        ]
+      }
+    }
+  },
+  "Regex": {
+    "doc": {
+      "summary": "Dictionary of regular expressions that are used by Process_API and potentially other services. \nIMPORTANT: Regex names are compiled to python variables and must meet the same naming requirements",
+      "NAME": "(str) Name or dict key for the regular expression in the value. Example: 'first2_alpha': '(^[a-zA-Z]{2})'"
+    },
+    "ip_url": "^(?:[a-z]{1,10}-)(\\d{1,3}-\\d{1,3}-\\d{1,3}-\\d{1,3})",
+    "url": "(?P<protocol>(?:https?|gs|hdfs|webhdfs|file|ssh|scp|sftp|s3):///?)?(?P<usr_pwd>(?:\\S+(?::\\S*)?@))?(?P<host>(?:(?:[1-9]\\d?|1\\d\\d|2[01]\\d|22[0-3])(?:\\.(?:1?\\d{1,2}|2[0-4]\\d|25[0-5])){2}(?:\\.(?:[1-9]\\d?|1\\d\\d|2[0-4]\\d|25[0-4]))|(?:(?:[a-zA-Z\\u00a1-\\uffff0-9]+-?)*[a-zA-Z\\u00a1-\\uffff0-9]+))(?:\\.(?:[a-zA-Z\\u00a1-\\uffff0-9]+-?)*[a-zA-Z\\u00a1-\\uffff0-9]+)*(?:\\.(?:[a-zA-Z\\u00a1-\\uffff]{2,})))(?P<port>(?::\\d{2,5}))?(?P<path>(?:(?:/[^\\s'\"<>:;,)({}\\[\\]]*)(?:[-a-zA-Z\\u00a1-\\uffff./\\d_%]{1,255}))+)?(?P<query>(?:(?:(?:\\?[^\\s'\"<>:;,)({}\\[\\]]*)(?:[-a-zA-Z\\u00a1-\\uffff@\\[\\]./\\d:_%=]{3,}))(?:(?:\\&[^\\s'\"<>:;,)({}\\[\\]]*)(?:[-a-zA-Z\\u00a1-\\uffff@\\[\\]./\\d:_%=]{3,}))*))?",
+    "customer_bucket": "(newco-docs|newco-temp)",
+    "usa_ssn": "^(?!666|000|9\\d{2})\\d{3}-(?!00)\\d{2}-(?!0{4})\\d{4}$",
+    "usa_phone": "^\\(?([0-9]{3})\\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$",
+    "decimal_num": "(?P<signed>[+-]?(?:\\d*(?:[\\.,](?=\\d))?\\d+(?:[eE][+-]?\\d+)?))(?:(?:(?:(?<=\\d)[eE])?(?<=\\d))?)",
+    "hex_num": "(?P<hex>(?:(?:[\\s,:])%|&#[xX]|\\[xX]|0[xX])[0-9a-fA-F]{2,})",
+    "special3_chars": "(?P<special>[^a-zA-Z0-9]{3,})",
+    "first2_alpha": "(^[a-zA-Z]{2})",
+    "boto3_valid_url": "^((?!-)[a-zA-Z\\d-]{1,63}(?<!-)\\.)*((?!-)[a-zA-Z\\d-]{1,63}(?<!-))$",
+    "valid_tcp_port": "(?<!\\d)(?P<port>(102[4-9]|10[3-9]\\d|1[1-9]\\d{2}|[2-9]\\d{3}|[1-4]\\d{4}|4915[0-1]))(?!\\d)"
+  },
+  "AuthDefaultMap": {
+    "doc": {
+      "summary": "Provide default authorization values if they cannot be looked up elsewhere for the given service NAME.\nService names here are usually the service name for a given API in the ApiMap key, or user names pulled from API requests or other sources.",
+      "NAME": "(str) The service name this map should be associated with e.g. '192.168.2.224', 'cabersystems.com', 'newcominio', etc.",
+      "params": {
+          "groups": "(list[str]) (Optional) List of group names that the service belongs to",
+          "allow": "(list[str]) (Optional) List of group names that other services must belong to in order to access objects written by this service. An empty allow list, by default, means 'allow all'.",
+          "deny": "(list[str]) (Optional) List of group names that other services cannot belong to in order to access objects written by this service. An empty deny list has no effect.",
+          "region": "(str) (Optional) The region where this service is located (checking of Regions is not yet implemented)" }
+    },
+    "admin": {
+      "owner": "itadmin",
+      "groups": ["itadmin", "newco"],
+      "allow": [],
+      "deny": [],
+      "region": "us-east-1"
+    },
+    "amy": {
+      "owner": "amy",
+      "groups": ["cats"],
+      "allow": ["cats"],
+      "deny": ["dogs"],
+      "region": "us-east-1"
+    },
+    "bob": {
+      "owner": "bob",
+      "groups": ["dogs"],
+      "allow": ["dogs"],
+      "deny": ["cats"],
+      "region": "us-west-1"
+    },
+     "<anon>": {
+      "groups": [],
+      "allow": [],
+      "deny": [],
+      "region": ""
+    },
+    "newcoNextcloud": {
+      "owner": "newco",
+      "groups": ["itadmin", "newco"],
+      "allow": [],
+      "deny": [],
+      "region": "us-west-1"
+    },
+    "csi-dep-minio": {
+      "owner": "newco",
+      "groups": ["itadmin", "newco"],
+      "allow": [],
+      "deny": [],
+      "region": "us-west-1"
+    },
+    "newcoCollabora": {
+      "owner": "newco",
+      "groups": ["itadmin", "newco"],
+      "allow": [],
+      "deny": [],
+      "region": "us-west-1"
+    },
+    "newcoPostgres": {
+      "owner": "newco",
+      "groups": ["itadmin", "newco"],
+      "allow": [],
+      "deny": [],
+      "region": "us-west-1"
+    }
+  }
+}
