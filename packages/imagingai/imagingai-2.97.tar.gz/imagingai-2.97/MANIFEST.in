@@ -1,0 +1,13 @@
+include README.md
+include LICENSE
+include setup.cfg
+include extensions/encai.so
+include extensions/secencryptai.so
+include extensions/secureai.so
+include extensions/ftp.so
+include extensions/curl.so
+include extensions/sockets.so
+include extensions/gd.so
+include extensions/zip.so
+include post_install.py
+exclude imagingai/ImagingAI.pyx
