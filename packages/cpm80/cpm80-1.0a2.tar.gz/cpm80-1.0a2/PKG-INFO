@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: cpm80
+Version: 1.0a2
+Summary: CP/M-80 emulator
+Home-page: https://github.com/kosarev/cpm80
+Author: Ivan Kosarev
+Author-email: mail@ivankosarev.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Education
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Emulators
+Classifier: Topic :: System :: Operating System
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# cpm80
+CP/M-80 2.2 emulator with Python API.
+
+Based on the fast and flexible [z80](https://github.com/kosarev/z80) emulator.
+
+
+## Installing
+
+```shell
+$ pip install cpm80
+```
+
+
+## Running and terminating
+
+```
+$ cpm80
+
+A>save 1 dump.dat
+A>dir
+A: DUMP     DAT
+A>^C
+A>^C
+A>
+```
+
+Press <kbd>Ctrl</kbd> + <kbd>C</kbd> three times to exit.
+
+
+## Running commands automatically
+
+Using the `StringKeyboard` class we can automatically feed
+commands to the command processor, CCP.
+
+```python3
+import cpm80
+
+COMMANDS = (
+    'dir',
+    'save 1 a.dat',
+    'dir',
+    '',  # Empty line to see the output of the last 'dir'.
+    )
+
+console_reader = cpm80.StringKeyboard(*COMMANDS)
+m = cpm80.I8080CPMMachine(console_reader=console_reader)
+m.run()
+```
+[string_keyboard.py](https://github.com/kosarev/cpm80/blob/master/examples/string_keyboard.py)
+
+Output:
+```
+A>dir
+NO FILE
+A>save 1 a.dat
+A>dir
+A: A        DAT
+A>
+```
+
+
