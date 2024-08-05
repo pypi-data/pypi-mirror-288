@@ -1,0 +1,11 @@
+legal_citation_parser/__init__.py,sha256=lfBZBXijVZ3zSFA9kQYeGLfhTixzH5x1cHsa75JdYX4,294
+legal_citation_parser/analytics.py,sha256=gwPfybDJOr79oqPxpfhoGXgGXo1mSTRmZNRkt7T4ZYs,1397
+legal_citation_parser/canlii_constants.py,sha256=hX-LPQu76luzODt_bSzYsVbRjzHmtpkbeCsQhdWQwhE,151045
+legal_citation_parser/canlii_rules.py,sha256=0RYgGWfJ_51NtC5IVlKffOhMgRZi-T0nAaLsrTEQ6cE,10869
+legal_citation_parser/citation_parser.py,sha256=w0JErW8E4-g6O7IBrtniG6D5Gs5BGK1BUrOw7jRIlQI,1669
+legal_citation_parser/utils.py,sha256=55x9s2ZdRRjuMUT0nU1WCnm7NwPUTR3MNNdiWVU0png,10737
+legal_citation_parser-0.5.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+legal_citation_parser-0.5.0.dist-info/METADATA,sha256=cHUn6U-v9z7UsFYyc-b_T1kMYVlzbmCXBddlAnt3CKY,7844
+legal_citation_parser-0.5.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+legal_citation_parser-0.5.0.dist-info/top_level.txt,sha256=vXwc1dqXD3KyOBxM7pT5_JP8q0O1j2I1Ue1NNwIQRrM,22
+legal_citation_parser-0.5.0.dist-info/RECORD,,
