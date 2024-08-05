@@ -1,0 +1,16 @@
+README.md
+setup.py
+OldHangeul/__init__.py
+OldHangeul/make_dic.py
+OldHangeul/old_hangeul.py
+OldHangeul.egg-info/PKG-INFO
+OldHangeul.egg-info/SOURCES.txt
+OldHangeul.egg-info/dependency_links.txt
+OldHangeul.egg-info/top_level.txt
+OldHangeul/data/final_jamo.pickle
+OldHangeul/data/initial_jamo.pickle
+OldHangeul/data/ipf.pickle
+OldHangeul/data/jamo_list.pickle
+OldHangeul/data/jamo_list_all.pickle
+OldHangeul/data/jamo_list_key.pickle
+OldHangeul/data/medial_jamo.pickle
