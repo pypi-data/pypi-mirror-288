@@ -1,0 +1,3 @@
+[console_scripts]
+lavague-serve=lavague.server.cli:cli
+
