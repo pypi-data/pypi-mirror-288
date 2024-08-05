@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "edi-core"
+version = "0.3.0"
+description = ""
+authors = ["LtttAZ <louis_zhang_1303@126.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = true
+
+[tool.poetry.dependencies]
+python = "^3.11"
+tinydb = "^4.8.0"
+requests = "^2.32.3"
+dataclass-wizard = "^0.22.3"
+requests-mock = "^1.12.1"
+pytest = "^8.1.1"
+toml = "^0.10.2"
+tomlkit = "^0.13.0"
+filetype = "^1.2.0"
+pendulum = "^3.0.0"
+matplotlib = "^3.8.4"
+pyautogui = "^0.9.54"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
