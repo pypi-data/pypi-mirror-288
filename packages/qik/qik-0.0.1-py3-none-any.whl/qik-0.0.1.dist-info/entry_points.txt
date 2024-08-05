@@ -1,0 +1,3 @@
+[console_scripts]
+qik=qik.cli:main
+
