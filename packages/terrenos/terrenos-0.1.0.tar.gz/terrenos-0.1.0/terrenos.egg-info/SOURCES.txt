@@ -1,0 +1,9 @@
+README.md
+setup.py
+terrenos/__init__.py
+terrenos/utils.py
+terrenos/validations.py
+terrenos.egg-info/PKG-INFO
+terrenos.egg-info/SOURCES.txt
+terrenos.egg-info/dependency_links.txt
+terrenos.egg-info/top_level.txt
