@@ -1,0 +1,128 @@
+Metadata-Version: 2.1
+Name: neoaria-commons
+Version: 0.0.4
+Summary: neoaria commons module for neoaria-backend-generator
+Home-page: https://www.neoaria.io
+Author: yakenator
+Author-email: yakenator@neoaria.io
+License: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Framework :: FastAPI
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: annotated-types ==0.7.0
+Requires-Dist: anyio ==4.4.0
+Requires-Dist: certifi ==2024.7.4
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: click ==8.1.7
+Requires-Dist: confluent-kafka ==2.5.0
+Requires-Dist: dnspython ==2.6.1
+Requires-Dist: email-validator ==2.2.0
+Requires-Dist: fastapi ==0.111.1
+Requires-Dist: fastapi-cli ==0.0.4
+Requires-Dist: h11 ==0.14.0
+Requires-Dist: httpcore ==1.0.5
+Requires-Dist: httptools ==0.6.1
+Requires-Dist: httpx ==0.27.0
+Requires-Dist: idna ==3.7
+Requires-Dist: Jinja2 ==3.1.4
+Requires-Dist: kafka-python ==2.0.2
+Requires-Dist: markdown-it-py ==3.0.0
+Requires-Dist: MarkupSafe ==2.1.5
+Requires-Dist: mdurl ==0.1.2
+Requires-Dist: mysql-connector-python ==9.0.0
+Requires-Dist: pydantic ==2.8.2
+Requires-Dist: pydantic-core ==2.20.1
+Requires-Dist: Pygments ==2.18.0
+Requires-Dist: pymongo ==4.8.0
+Requires-Dist: pysolr ==3.9.0
+Requires-Dist: python-dotenv ==1.0.1
+Requires-Dist: python-multipart ==0.0.9
+Requires-Dist: PyYAML ==6.0.1
+Requires-Dist: requests ==2.32.3
+Requires-Dist: rich ==13.7.1
+Requires-Dist: setuptools ==72.1.0
+Requires-Dist: shellingham ==1.5.4
+Requires-Dist: six ==1.16.0
+Requires-Dist: sniffio ==1.3.1
+Requires-Dist: starlette ==0.37.2
+Requires-Dist: typer ==0.12.3
+Requires-Dist: typing-extensions ==4.12.2
+Requires-Dist: urllib3 ==2.2.2
+Requires-Dist: uvicorn ==0.30.3
+Requires-Dist: uvloop ==0.19.0
+Requires-Dist: watchfiles ==0.22.0
+Requires-Dist: websockets ==12.0
+
+neoaria-commons
+===============
+
+This software is one of the systems that form the basis of software produced by NeoAria Co., Ltd.
+
+It mainly aims to provide the foundation for the back-end system, and among the foundations, it focuses on implementing and operating the source system (data, events, search, web socket).
+
+# Quick start
+
+It can be installed through pip application. 
+
+* **If installing from scratch** :: pip install neoaria-commons
+
+* **In case of update** :: pip install --upgrade neoaria-commons
+
+# How to use
+
+First, after installation, access must be possible through internal Python.
+
+## DataSource
+The data source class is a class that focuses on integrating and using various data sources.  This class is closely related to the configuration and use of MongoDB, MariaDB, Kafka, Solr, and WebSocket, and the initial configuration values ​​must be defined by the system using this class.
+
+Data sources have a total of three types.   Fundamentally, it is divided into DataSource, which manages the state of data, EventSource, which processes data events, and SearchSource, which adjusts data to be searched efficiently.\
+
+### DataSource
+
+* **MongoDBDataSource**
+
+This is a source that is primarily intended to store and update the state of a specific object, and is the main database for the system currently being built in NeoAria.
+
+* **MariaDBDataSource**
+
+Although this source is not currently in active use, it is also a source used for the main purpose of creating and updating the state of data.
+
+### EventSource
+
+* **KafkaDataSource**
+
+This source is for event processing between external systems and will be the only system that can be used at present.
+
+* **RabbitMQDataSource**
+
+Support will be provided later.
+
+### SearchSource
+
+* **SolrDataSource**
+
+It is a data source that searches data by registering a schema, a series of data models, with the main role of searching through data indexing.   It plays an important role in separating and reflecting the existing editing model and service model.
+
+## Business
+
+Based on the actual business model, it is composed of BusinessParameter, BusinessResponse, and BusinessCommon and forms a common business.
+
+
+### BusinessParamter
+
+It is a class that transmits parameters for executing a business, and its main purpose is to transmit an object with a Key-Value structure by inheriting BaseModel.
+
+### BusinessResponse
+
+Business is a program that ultimately produces results.  The main purpose of BusinessResponse is to contain and deliver the results.   Like BusinessPrarameter, this also aims to convey values ​​centered on Key-Value.
+
+### BusinessCommon
+
+As a common class for all businesses, all businesses must inherit and implement this class.  Contains a list of most implementations.
