@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: csi_genai_lib
+Version: 0.1.13
+Summary: Caber GenAI Chat Capture Library
+Author: Rob Quiros
+Author-email: dev@caber.com
+Requires-Dist: boto3 >=1.18.1
+Requires-Dist: smart-open[s3] >=5.1.0
+Requires-Dist: requests >=2.26.0
+Requires-Dist: urllib3 >=1.25.11
+
