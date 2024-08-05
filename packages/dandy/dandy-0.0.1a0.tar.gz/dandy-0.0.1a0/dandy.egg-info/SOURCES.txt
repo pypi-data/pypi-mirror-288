@@ -1,0 +1,15 @@
+CHANGELOG.md
+CONTRIBUTORS.md
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+dandy/__init__.py
+dandy.egg-info/PKG-INFO
+dandy.egg-info/SOURCES.txt
+dandy.egg-info/dependency_links.txt
+dandy.egg-info/not-zip-safe
+dandy.egg-info/top_level.txt
+dandy/__pycache__/__init__.cpython-310.pyc
