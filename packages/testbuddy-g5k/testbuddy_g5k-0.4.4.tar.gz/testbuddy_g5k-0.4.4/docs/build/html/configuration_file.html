@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The configuration file &mdash; testbuddy-g5k 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=b0f84fe6" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="The fenicsx-tests-gsoc2024 script" href="fenicsx-tests-gsoc2024.html" />
+    <link rel="prev" title="Example: Add an experiment" href="add_experiment.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            testbuddy-g5k
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_experiment.html">Example: Add an experiment</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The configuration file</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#the-sync-section">The [sync] section</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-launch-section">The [launch] section</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overriding-fields">Overriding fields</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fenicsx-tests-gsoc2024.html">The fenicsx-tests-gsoc2024 script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendix:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://salsa.debian.org/_-/testbuddy-g5k">Git Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">testbuddy-g5k</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">The configuration file</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/configuration_file.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="the-configuration-file">
+<span id="conffile"></span><h1>The configuration file<a class="headerlink" href="#the-configuration-file" title="Link to this heading"></a></h1>
+<p>We provide an example configuration file under <code class="file docutils literal notranslate"><span class="pre">config/fenicsx-tests-gsoc2024.toml</span></code>. In order to launch its experiments, we would use:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>testbuddy-g5k<span class="w"> </span>--configuration<span class="w"> </span>config/fenicsx-tests-gsoc2024.toml<span class="w"> </span>launch
+</pre></div>
+</div>
+<p>Generally, it is envisioned that you would write your own configuration files to declare the tests you would like to run on Grid’5000. The configuration files are using the TOML format. A configuration file has two sections, <code class="code docutils literal notranslate"><span class="pre">[sync]</span></code> and <code class="code docutils literal notranslate"><span class="pre">[launch]</span></code>. There are also three keys, <code class="code docutils literal notranslate"><span class="pre">login,</span> <span class="pre">project,</span> <span class="pre">name</span></code> that do not belong in those sections, and you would declare them at the top of the file:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">login</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;g5k-username&quot;</span>
+<span class="n">project</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my-fenicsx-tests&quot;</span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my-experiment&quot;</span>
+</pre></div>
+</div>
+<p>This will log in to Grid’5000 with the username set to <code class="code docutils literal notranslate"><span class="pre">g5k-username</span></code>. The <code class="code docutils literal notranslate"><span class="pre">project</span></code> and <code class="code docutils literal notranslate"><span class="pre">name</span></code> keys will have the effect of testbuddy-g5k creating a directory <code class="file docutils literal notranslate"><span class="pre">~/testbuddy-g5k/my-fenics-tests/poisson</span></code>, and putting inside it all declared assets. The experiment is expected to store its results under and <code class="file docutils literal notranslate"><span class="pre">~/testbuddy-g5k/my-fenics-tests/my-experiments/results</span></code>. Note that this is per-server, meaning that under the Grid’5000 access point server you’d find corresponding assets under <code class="file docutils literal notranslate"><span class="pre">~/</span><em><span class="pre">site</span></em></code>.</p>
+<p>In a single configuration file, only one login, project, and name can be set. However, each experiment can declare its own assets, entrypoint, parameters, site, and grd options (i.e. how many hosts to run on, what type of CPU/GPU/hardware resources to request from Grid’5000, and so on.)</p>
+<section id="the-sync-section">
+<h2>The [sync] section<a class="headerlink" href="#the-sync-section" title="Link to this heading"></a></h2>
+<p>These are the configuration options particular to the <code class="code docutils literal notranslate"><span class="pre">sync</span></code> subcommand of <code class="code docutils literal notranslate"><span class="pre">testbuddy-g5k</span></code>. Currently, there is only:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">results</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;/local/path/to/results&quot;</span>
+</pre></div>
+</div>
+<p>which will store all obtained tarballs from <code class="code docutils literal notranslate"><span class="pre">testbuddy</span> <span class="pre">sync</span></code> locally into <code class="code docutils literal notranslate"><span class="pre">/local/path/to/results</span></code>. This directory lies in the filesystem of the computer that runs testbuddy-g5k.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>In order for this feature to work, your experiments must store their results in tarballs under the directory <code class="file docutils literal notranslate"><em><span class="pre">SRC_DIR</span></em><span class="pre">/results</span></code>, where <code class="file docutils literal notranslate"><em><span class="pre">SRC_DIR</span></em></code> is passed to the script by testbuddy-g5k via <code class="code docutils literal notranslate"><span class="pre">--src-dir=</span></code> (you cannot configure this; it is the directory <code class="file docutils literal notranslate"><span class="pre">/home/</span><em><span class="pre">login</span></em><span class="pre">/testbuddy-g5k/</span><em><span class="pre">project</span></em><span class="pre">/</span><em><span class="pre">name</span></em></code>.)</p>
+</div>
+</section>
+<section id="the-launch-section">
+<h2>The [launch] section<a class="headerlink" href="#the-launch-section" title="Link to this heading"></a></h2>
+<p>In this section we declare the <code class="code docutils literal notranslate"><span class="pre">experiments</span></code> array which contains all the experiments that will be executed. Each experiment is a different job on its own resources in Grid’5000. Some options can be the same for all experiments, and are defined in their own keys under <code class="code docutils literal notranslate"><span class="pre">[launch]</span></code>, while others are defined within the elements of <code class="code docutils literal notranslate"><span class="pre">experiments</span></code>. For example:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[launch]</span>
+<span class="n">assets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s2">&quot;/path/to/experiment_sources/&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;/some/additional/directory/&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;/some/additional/file/db.sqlite3&quot;</span>
+<span class="p">]</span>
+<span class="n">entrypoint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;entrypoint.py&quot;</span>
+<span class="n">grd_environment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;debian11-nfs&quot;</span>
+<span class="n">experiments</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="n">site</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;rennes&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">cluster</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;paravance&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">grd_options</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;hosts=8&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="n">site</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;grenoble&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">cluster</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;dahu&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">grd_options</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;hosts=4&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>What we call assets here are the source code files that will run an experiment.</p>
+<p>This is a configuration of two experiments. In this configuration, both experiments have common assets and a common entrypoint, <code class="file docutils literal notranslate"><span class="pre">entrypoint.py</span></code>, as well as common <code class="code docutils literal notranslate"><span class="pre">grd_environment</span></code>, but they have different key values for <code class="code docutils literal notranslate"><span class="pre">site,</span> <span class="pre">cluster,</span> <span class="pre">grd_options</span></code>. The assets are placed under <code class="file docutils literal notranslate"><em><span class="pre">site</span></em><span class="pre">/testbuddy-g5k/</span><em><span class="pre">project</span></em><span class="pre">/</span><em><span class="pre">name</span></em></code>, and then <code class="code docutils literal notranslate"><span class="pre">entrypoint</span></code> is a filepath relative to that directory, i.e. <code class="file docutils literal notranslate"><em><span class="pre">site</span></em><span class="pre">/testbuddy-g5k/</span><em><span class="pre">project</span></em><span class="pre">/</span><em><span class="pre">name</span></em><span class="pre">/</span><em><span class="pre">entrypoint</span></em></code>. The entrypoint script will be executed on one host of those acquired, and typically coordinates all hosts in a cluster to work together for the experiment.</p>
+<p>Note that the entrypoint script is passed in its first argument the directory in which it resides (this is because Grid’5000 launches the entrypoint from a different directory) so that the entrypoint can find all experiment assets.</p>
+<div class="admonition-keep-it-simple admonition">
+<p class="admonition-title">Keep it simple</p>
+<p>The configuration files allow for some cleverness, but it is best to avoid it and instead maintain simple configuration files, perhaps at the cost of some redundancy.</p>
+</div>
+</section>
+<section id="overriding-fields">
+<h2>Overriding fields<a class="headerlink" href="#overriding-fields" title="Link to this heading"></a></h2>
+<p>There’s an interesting interplay between command-line options and declarative configuration files: We can use one to override the other.</p>
+<p>Suppose we have a configuration <code class="file docutils literal notranslate"><span class="pre">example-config.toml</span></code> that defines the following experiments:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">experiments</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="n">site</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;rennes&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">cluster</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;paravance&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="n">site</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;lyon&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">cluster</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;nova&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="n">site</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;grenoble&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">cluster</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;dahu&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">grd_options</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;hosts=8&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>For instance, perhaps we’d like to use <code class="file docutils literal notranslate"><span class="pre">example-config.toml</span></code> but request 2 hosts instead. We can of course edit the file or create a new configuration file, but for a one-off, we can do:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>testbuddy-g5k<span class="w"> </span>--configuration<span class="w"> </span>example-config.toml<span class="w"> </span>launch<span class="w"> </span>--grd-options<span class="w"> </span><span class="nv">hosts</span><span class="o">=</span><span class="m">2</span>
+</pre></div>
+</div>
+<p>This is equivalent to defining the <code class="code docutils literal notranslate"><span class="pre">grd_options</span></code> key in the launch section, and it will have the effect of being added to every experiment that does not already define its <code class="code docutils literal notranslate"><span class="pre">grd_options</span></code> key, i.e. the rennes and lyon clusters but not grenoble. If we would like to override all the <code class="code docutils literal notranslate"><span class="pre">grd_options</span></code> keys, including for experiments that define it (e.g. including grenoble), we must use <code class="code docutils literal notranslate"><span class="pre">--override-options</span></code>.</p>
+<p>This is generally the interplay between the <code class="code docutils literal notranslate"><span class="pre">[launch]</span></code> section and <code class="code docutils literal notranslate"><span class="pre">experiments</span></code> array: you can define the fields for an experiment wholly within it, or you can define some common, between experiments, options in the <code class="code docutils literal notranslate"><span class="pre">[launch]</span></code> section. The fields in <code class="code docutils literal notranslate"><span class="pre">experiments</span></code> array take precedence unless <code class="code docutils literal notranslate"><span class="pre">--override-options</span></code> is used in which case precedence is reversed and the fields in <code class="code docutils literal notranslate"><span class="pre">[launch]</span></code> take precedence. The <code class="code docutils literal notranslate"><span class="pre">site:</span></code> and <code class="code docutils literal notranslate"><span class="pre">cluster</span></code> fields are the only fields that <strong>must</strong> be specified in an experiment.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="add_experiment.html" class="btn btn-neutral float-left" title="Example: Add an experiment" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="fenicsx-tests-gsoc2024.html" class="btn btn-neutral float-right" title="The fenicsx-tests-gsoc2024 script" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Nikolaos Chatzikonstantinou.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

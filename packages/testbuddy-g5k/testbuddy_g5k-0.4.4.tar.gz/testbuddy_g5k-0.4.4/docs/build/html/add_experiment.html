@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Example: Add an experiment &mdash; testbuddy-g5k 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=b0f84fe6" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="The configuration file" href="configuration_file.html" />
+    <link rel="prev" title="Installation" href="install.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            testbuddy-g5k
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Example: Add an experiment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#writing-the-configuration-file">Writing the configuration file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#launching-the-experiment">Launching the experiment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dry-running">Dry running</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#options-and-script-arguments">Options and script arguments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuration_file.html">The configuration file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fenicsx-tests-gsoc2024.html">The fenicsx-tests-gsoc2024 script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendix:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://salsa.debian.org/_-/testbuddy-g5k">Git Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">testbuddy-g5k</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Example: Add an experiment</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/add_experiment.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="example-add-an-experiment">
+<h1>Example: Add an experiment<a class="headerlink" href="#example-add-an-experiment" title="Link to this heading"></a></h1>
+<p>Let’s assume that you have a program that <a class="reference external" href="https://en.wikipedia.org/wiki/Approximations_of_%CF%80">computes the digits of π</a> to a certain precision. Let’s say it’s called <code class="file docutils literal notranslate"><span class="pre">compute_pi</span></code> and it can be distributed over <a class="reference external" href="https://en.wikipedia.org/wiki/Message_Passing_Interface">MPI</a>. This program can either be a script on your computer (or a Debian package you can install with <code class="code docutils literal notranslate"><span class="pre">apt</span></code>; we assume the former case hereafter.) Let’s say that this program also has an option <code class="code docutils literal notranslate"><span class="pre">--mode=</span></code> with two choices, <code class="code docutils literal notranslate"><span class="pre">fast</span></code> and <code class="code docutils literal notranslate"><span class="pre">memory</span></code> and an option <code class="code docutils literal notranslate"><span class="pre">--output</span></code> to store the π computation in a file.</p>
+<p>Naturally you may write another script, say <code class="code docutils literal notranslate"><span class="pre">launch</span></code>, that does two things:</p>
+<ol class="arabic simple">
+<li><p>It parses testbuddy-g5k’s <code class="code docutils literal notranslate"><span class="pre">--src-dir=SRC_DIR</span></code> option to pass down to <code class="code docutils literal notranslate"><span class="pre">compute_pi</span></code> the option <cite>–output=SRC_DIR/pi_computation.txt</cite>.</p></li>
+<li><p>Runs <code class="code docutils literal notranslate"><span class="pre">compute_pi</span></code> in a <code class="code docutils literal notranslate"><span class="pre">mpiexec</span></code> context and passes down other options such as <code class="code docutils literal notranslate"><span class="pre">--mode=fast</span></code>.</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>In the clean-up phase, <code class="code docutils literal notranslate"><span class="pre">launch</span></code> should store <code class="file docutils literal notranslate"><em><span class="pre">SRC_DIR</span></em><span class="pre">/pi_computation.txt</span></code> in a tarball named <code class="file docutils literal notranslate"><em><span class="pre">SRC_DIR</span></em><span class="pre">/results/</span><em><span class="pre">NAME</span></em><span class="pre">.tar.gz</span></code> where <code class="code docutils literal notranslate"><span class="pre">NAME</span></code> is decided by the script. This is important because the <code class="file docutils literal notranslate"><em><span class="pre">SRC_DIR</span></em><span class="pre">/results</span></code> directory is hardcoded and where testbuddy-g5k expects the results to be in. If you don’t do this, <code class="code docutils literal notranslate"><span class="pre">testbuddy-g5k</span> <span class="pre">sync</span></code> will not work.</p>
+</div>
+<section id="writing-the-configuration-file">
+<h2>Writing the configuration file<a class="headerlink" href="#writing-the-configuration-file" title="Link to this heading"></a></h2>
+<p>Assuming we have all this, let’s write a <a class="reference internal" href="configuration_file.html#conffile"><span class="std std-ref">configuration file</span></a> for testbuddy-g5k to launch this experiment:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">login</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;your-Grid5000-login&quot;</span>
+<span class="n">project</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;compute-pi&quot;</span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my-experiment&quot;</span>
+
+<span class="k">[launch]</span>
+<span class="n">assets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s2">&quot;./scripts/compute_pi&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;./scripts/launch&quot;</span>
+<span class="p">]</span>
+<span class="n">entrypoint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;launch&quot;</span>
+<span class="n">script_args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s2">&quot;--mode=fast&quot;</span>
+<span class="p">]</span>
+<span class="n">experiments</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="n">site</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;rennes&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">cluster</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;paravance&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">grd_options</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;host=8&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="n">site</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;nantes&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">cluster</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;econome&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">grd_options</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;host=2&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="p">]</span>
+
+<span class="k">[sync]</span>
+<span class="n">results_dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;/path/to/local/computer/compute-pi/my-experiment/results&quot;</span>
+</pre></div>
+</div>
+<p>This script tells testbuddy-g5k the following:</p>
+<ol class="arabic simple">
+<li><p>In its <em>launch</em> mode, upload the assets to g5k under <code class="file docutils literal notranslate"><span class="pre">~/testbuddy-g5k/compute-pi/my-experiment</span></code>, request 8 hosts from <code class="code docutils literal notranslate"><span class="pre">paravance.rennes.grid5000.fr</span></code> and 2 hosts from <code class="code docutils literal notranslate"><span class="pre">econome.nantes.grid5000.fr</span></code> and then proceed to launch the entrypoint, i.e. the <code class="code docutils literal notranslate"><span class="pre">launch</span></code> script with arguments <code class="code docutils literal notranslate"><span class="pre">--src-dir=/home/your-Grid5000-login/testbuddy-g5k/compute-pi/my-experiment</span></code> and <code class="code docutils literal notranslate"><span class="pre">--mode=fast</span></code>.</p></li>
+<li><p>In its <em>sync</em> mode, testbuddy-g5k will download all <code class="file docutils literal notranslate"><span class="pre">/home/your-Grid5000-login/testbuddy-g5k/compute-pi/my-experiment/*.tar.gz</span></code> tarballs into the local directory <code class="file docutils literal notranslate"><span class="pre">/path/to/local/computer/compute-pi/my-experiment/results</span></code> directory.</p></li>
+</ol>
+</section>
+<section id="launching-the-experiment">
+<h2>Launching the experiment<a class="headerlink" href="#launching-the-experiment" title="Link to this heading"></a></h2>
+<p>We can now launch experiments and download the results. To wit:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>testbuddy-g5k<span class="w"> </span>--configuration<span class="w"> </span>myconf.toml<span class="w"> </span>launch
+mkdir<span class="w"> </span>-p<span class="w"> </span>/path/to/local/computer/compute-pi/my-experiment/results
+testbuddy-g5k<span class="w"> </span>--configuration<span class="w"> </span>myconf.toml<span class="w"> </span>sync
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Testbuddy-g5k relies on <em class="manpage">ssh(1)</em> to establish connections. You must configure your SSH client to allow for passwordless login to <code class="code docutils literal notranslate"><span class="pre">access.grid5000.fr</span></code>.</p>
+</div>
+<section id="dry-running">
+<h3>Dry running<a class="headerlink" href="#dry-running" title="Link to this heading"></a></h3>
+<p>We can check what testbuddy-g5k intends to do with <code class="code docutils literal notranslate"><span class="pre">--dry-run</span></code>:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>testbuddy-g5k<span class="w"> </span>--dry-run<span class="w"> </span>--configuration<span class="w"> </span>myconf.toml<span class="w"> </span>launch
+Progress<span class="w"> </span><span class="p">&amp;</span><span class="w"> </span>Estimated<span class="w"> </span>Time<span class="w"> </span>Left<span class="w">  </span><span class="o">[</span>------------------------------------<span class="o">]</span><span class="w">    </span><span class="m">0</span>%
+<span class="o">[</span><span class="m">1</span>/2<span class="o">]</span><span class="w"> </span>On<span class="w"> </span>compute-pi/my-experiment:
+<span class="w">  </span>Transferring<span class="w"> </span>assets<span class="w"> </span>into<span class="w"> </span>rennes/testbuddy-g5k/compute-pi/my-experiment<span class="w"> </span>with<span class="w"> </span>rsync...
+rsync<span class="w"> </span>--archive<span class="w"> </span>--recursive<span class="w"> </span>--compress<span class="w"> </span>--mkpath<span class="w"> </span>./scripts/compute_pi<span class="w"> </span>./scripts/launch<span class="w"> </span>your-Grid5000-login@access.grid5000.fr:rennes/testbuddy-g5k/compute-pi/my-experiment
+<span class="w">  </span><span class="o">==</span>&gt;<span class="w"> </span>OK.
+<span class="w">  </span>Requesting<span class="w"> </span>resources...
+ssh<span class="w"> </span>-o<span class="w"> </span><span class="nv">StrictHostKeyChecking</span><span class="o">=</span>accept-new<span class="w"> </span>-l<span class="w"> </span>your-Grid5000-login<span class="w"> </span>-T<span class="w"> </span>-J<span class="w"> </span>access.grid5000.fr<span class="w"> </span>rennes.grid5000.fr<span class="w"> </span>grd<span class="w"> </span>bootstrap<span class="w"> </span>--resources<span class="w"> </span><span class="o">{</span><span class="nv">cluster</span><span class="o">=</span><span class="s1">&#39;paravance&#39;</span><span class="o">}</span>/host<span class="o">=</span><span class="m">8</span><span class="w"> </span>--detach<span class="w"> </span>--environment<span class="w"> </span>debiantesting-nfs<span class="w"> </span>--walltime<span class="w"> </span><span class="s1">&#39;1:00:00&#39;</span><span class="w"> </span>--terminate-after-script<span class="w"> </span>--script<span class="w"> </span>/home/your-Grid5000-login/testbuddy-g5k/compute-pi/my-experiment/launch<span class="w"> </span>--script-arg<span class="w"> </span>--src-dir<span class="o">=</span>/home/your-Grid5000-login/testbuddy-g5k/compute-pi/my-experiment<span class="w"> </span>--script-arg<span class="w"> </span>--mode<span class="o">=</span><span class="nv">fast</span>
+<span class="w">  </span><span class="o">==</span>&gt;<span class="w"> </span>OK:<span class="w"> </span><span class="o">[</span><span class="m">1</span>/2<span class="o">]</span><span class="w"> </span>Resources<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>available<span class="w"> </span>when<span class="w"> </span>Grid<span class="s1">&#39;5000 grants them.</span>
+
+<span class="s1">Progress &amp; Estimated Time Left  [##################------------------]   50%</span>
+<span class="s1">[2/2] On compute-pi/my-experiment:</span>
+<span class="s1">  Transferring assets into nantes/testbuddy-g5k/compute-pi/my-experiment with rsync...</span>
+<span class="s1">rsync --archive --recursive --compress --mkpath ./scripts/compute_pi ./scripts/launch your-Grid5000-login@access.grid5000.fr:nantes/testbuddy-g5k/compute-pi/my-experiment</span>
+<span class="s1">  ==&gt; OK.</span>
+<span class="s1">  Requesting resources...</span>
+<span class="s1">ssh -o StrictHostKeyChecking=accept-new -l your-Grid5000-login -T -J access.grid5000.fr nantes.grid5000.fr grd bootstrap --resources {cluster=&#39;</span>econome<span class="s1">&#39;}/host=2 --detach --environment debiantesting-nfs --walltime &#39;</span><span class="m">1</span>:00:00<span class="s1">&#39; --terminate-after-script --script /home/your-Grid5000-login/testbuddy-g5k/compute-pi/my-experiment/launch --script-arg --src-dir=/home/your-Grid5000-login/testbuddy-g5k/compute-pi/my-experiment --script-arg --mode=fast</span>
+<span class="s1">  ==&gt; OK: [2/2] Resources will be available when Grid&#39;</span><span class="m">5000</span><span class="w"> </span>grants<span class="w"> </span>them.
+
+Progress<span class="w"> </span><span class="p">&amp;</span><span class="w"> </span>Estimated<span class="w"> </span>Time<span class="w"> </span>Left<span class="w">  </span><span class="o">[</span><span class="c1">####################################]  100%</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="options-and-script-arguments">
+<h2>Options and script arguments<a class="headerlink" href="#options-and-script-arguments" title="Link to this heading"></a></h2>
+<p>If we’d like to now run the same configuration file but request 1 host from each cluster instead, we can override <code class="code docutils literal notranslate"><span class="pre">grd_options</span></code> as follows:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>testbuddy-g5k<span class="w"> </span>--configuration<span class="w"> </span>myconf.toml<span class="w"> </span>launch<span class="w"> </span>--grd-option<span class="w"> </span><span class="nv">host</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>--override-options
+</pre></div>
+</div>
+<p>Script arguments cannot be overriden, but if we’d like to have the flexibility, we can remove <code class="code docutils literal notranslate"><span class="pre">script_args</span></code> from the configuration file and instead pass it as:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>testbuddy-g5k<span class="w"> </span>--configuration<span class="w"> </span>myconf.toml<span class="w"> </span>launch<span class="w"> </span>--script-args<span class="w"> </span>--mode<span class="o">=</span>memory
+</pre></div>
+</div>
+<p>Repeated script arguments may be passed by using <code class="code docutils literal notranslate"><span class="pre">--script-args</span></code> multiple times.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Testbuddy-g5k can override any option in the configuration via its corresponding command-line option (simply replace underscores by hyphens), or can be used without configuration files, instead specifying everything on the command line. The <code class="code docutils literal notranslate"><span class="pre">[launch]</span></code> and <code class="code docutils literal notranslate"><span class="pre">[sync]</span></code> sections in the TOML configuration correspond to the namesake testbuddy-g5k subcommands, i.e. <code class="code docutils literal notranslate"><span class="pre">testbuddy-g5k</span> <span class="pre">launch</span></code> and <code class="code docutils literal notranslate"><span class="pre">testbuddy-g5k</span> <span class="pre">sync</span></code>.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="install.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="configuration_file.html" class="btn btn-neutral float-right" title="The configuration file" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Nikolaos Chatzikonstantinou.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

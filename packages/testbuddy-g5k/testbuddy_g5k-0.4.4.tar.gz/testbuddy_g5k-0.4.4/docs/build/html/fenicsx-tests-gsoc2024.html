@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The fenicsx-tests-gsoc2024 script &mdash; testbuddy-g5k 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=b0f84fe6" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="License" href="license.html" />
+    <link rel="prev" title="The configuration file" href="configuration_file.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            testbuddy-g5k
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_experiment.html">Example: Add an experiment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration_file.html">The configuration file</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The fenicsx-tests-gsoc2024 script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-session">Example session</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#launching-experiments">Launching experiments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#downloading-the-tarballs">Downloading the tarballs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loading-the-results-in-a-database">Loading the results in a database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plotting-the-results-into-graphs">Plotting the results into graphs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#the-sql-schema">The SQL schema</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendix:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://salsa.debian.org/_-/testbuddy-g5k">Git Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">testbuddy-g5k</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">The fenicsx-tests-gsoc2024 script</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/fenicsx-tests-gsoc2024.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="the-fenicsx-tests-gsoc2024-script">
+<h1>The fenicsx-tests-gsoc2024 script<a class="headerlink" href="#the-fenicsx-tests-gsoc2024-script" title="Link to this heading"></a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
+<p>A typical testbuddy-g5k project will have an <em>entrypoint</em>, it will have some tarball <em>results</em> and other auxiliary scripts for processing the results further.</p>
+<p>In the <code class="file docutils literal notranslate"><span class="pre">fenicsx-tests-gsoc2024</span></code> directory lies an example of a project that testbuddy-g5k can work with. The files <code class="file docutils literal notranslate"><span class="pre">entrypoint.bash</span></code> and <code class="file docutils literal notranslate"><span class="pre">entrypoint.py</span></code> are essentially the entrypoint, meaning the script that will run in one of the hosts when the cluster resources are available. There’s a Bash and a Python script because the Bash script sets up the <code class="code docutils literal notranslate"><span class="pre">python3-requests</span></code> dependency before executing the Python script. The <code class="file docutils literal notranslate"><span class="pre">load_db.py</span></code> script is a post-processing script that will load the tarballed data into an SQLite3 database, whose schema is described below in <a class="reference internal" href="#the-sql-schema">The SQL schema</a> section. The <code class="file docutils literal notranslate"><span class="pre">plot.py</span></code> file will load data from the database and create Plotly plots which will be stored in HTML files in the given output directory.</p>
+<ul class="simple">
+<li><p>The <code class="file docutils literal notranslate"><span class="pre">config/fenicsx-tests-gsoc2024.toml</span></code> configuration file contains the configuration to launch these experiments.</p></li>
+<li><p>The <code class="file docutils literal notranslate"><span class="pre">fenicsx-tests-gsoc2024/entrypoint.bash</span></code> script is the entrypoint that installs the <a class="reference external" href="https://requests.readthedocs.io/en/latest/">Python3 requests</a> Debian package. This is important because the real entrypoint, <code class="file docutils literal notranslate"><span class="pre">fenicsx-tests-gsoc2024/entrypoint.py</span></code> uses requests to interact with the Grid’5000 REST API.</p></li>
+<li><p>The <code class="file docutils literal notranslate"><span class="pre">fenicsx-tests-gsoc2024/load_db.py</span></code> script will import the tarballed results into an SQLite3 database. The database is created if it does not exist.</p></li>
+<li><p>The <code class="file docutils literal notranslate"><span class="pre">fenicsx-tests-gsoc2024/plot.py</span></code> script will plot the results of a database, creating HTML files inside the specified directory.</p></li>
+</ul>
+</section>
+<section id="example-session">
+<h2>Example session<a class="headerlink" href="#example-session" title="Link to this heading"></a></h2>
+<p>We illustrate the use of testbuddy-g5k and the fenicsx-tetss-gsoc2024 scripts in the following section. This is a typical use of them to perform experiments and create HTML plots.</p>
+<section id="launching-experiments">
+<h3>Launching experiments<a class="headerlink" href="#launching-experiments" title="Link to this heading"></a></h3>
+<p>We can launch experiments with:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>testbuddy-g5k<span class="w"> </span>-c<span class="w"> </span>config/fenicsx-tests-gsoc2024.toml<span class="w"> </span>launch
+</pre></div>
+</div>
+<p>Or if we are interested in running on every number of cores of a single host, we can instead do:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>testbuddy-g5k<span class="w"> </span>-c<span class="w"> </span>config/fenicsx-tests-gsoc2024.toml<span class="w"> </span>launch<span class="w"> </span>--grd-options<span class="w"> </span><span class="nv">host</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>--override-options<span class="w"> </span>--script-args<span class="w"> </span>--single-host
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>With <code class="code docutils literal notranslate"><span class="pre">--script-args</span> <span class="pre">--single-host</span></code> we are telling testbuddy-g5k to pass the option <code class="code docutils literal notranslate"><span class="pre">--single-host</span></code> to the entrypoint, which activates the single-host mode for fenicsx-tests-gsoc2024: instead of running on max cores available, run from 1 to max cores available. Reasonably, we tell testbuddy-g5k to only allocate one host with <code class="code docutils literal notranslate"><span class="pre">--grd-options</span> <span class="pre">host=1</span></code> and for this option to override any host configuration with <code class="code docutils literal notranslate"><span class="pre">--override-options</span></code>, since the <code class="file docutils literal notranslate"><span class="pre">config/fenicsx-tests-gsoc2024.toml</span></code> configuration file specifies other numbers of hosts.</p>
+</div>
+</section>
+<section id="downloading-the-tarballs">
+<h3>Downloading the tarballs<a class="headerlink" href="#downloading-the-tarballs" title="Link to this heading"></a></h3>
+<p>We can sync the results with:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>testbuddy-g5k<span class="w"> </span>-c<span class="w"> </span>config/fenicsx-tests-gsoc2024.toml<span class="w"> </span>sync
+</pre></div>
+</div>
+<p>The configured directory under the <code class="code docutils literal notranslate"><span class="pre">[sync]</span></code> section is <code class="file docutils literal notranslate"><span class="pre">./www/results</span></code> and that is where the tarballs will be stored, but it can be changed. Note that tarballs are named according to <a class="reference external" href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> universal time date, i.e. as in the output of <code class="code docutils literal notranslate"><span class="pre">date</span> <span class="pre">-uIs</span></code> of <em class="manpage">date(1)</em> and to be extracted you must use the <code class="code docutils literal notranslate"><span class="pre">--force-local</span></code> option to <em class="manpage">tar(1)</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You typically don’t have to inspect the tarballs yourself. The <code class="file docutils literal notranslate"><span class="pre">fenicsx-tests-gsoc2024/load_db.py</span></code> will load them into an SQLite3 database.</p>
+</div>
+</section>
+<section id="loading-the-results-in-a-database">
+<h3>Loading the results in a database<a class="headerlink" href="#loading-the-results-in-a-database" title="Link to this heading"></a></h3>
+<p>If we’d like to create a brand new database, we can do:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>./fenicsx-tests-gsoc2024/load_db.py<span class="w"> </span>-c<span class="w"> </span>config/fenicsx-tests-gsoc2024.toml<span class="w"> </span>-d<span class="w"> </span>results.db
+</pre></div>
+</div>
+<p>This will load all the results of <code class="file docutils literal notranslate"><span class="pre">www/results</span></code> into a database called <code class="file docutils literal notranslate"><span class="pre">results.db</span></code>. This script takes care to not create duplicate rows, so you can use it as many times as you’d like; it will do nothing if there are no new results.</p>
+</section>
+<section id="plotting-the-results-into-graphs">
+<h3>Plotting the results into graphs<a class="headerlink" href="#plotting-the-results-into-graphs" title="Link to this heading"></a></h3>
+<p>With the command</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>./fenicsx-tests-gsoc2024/plot.py<span class="w"> </span>-d<span class="w"> </span>results.db<span class="w"> </span>www/plots
+</pre></div>
+</div>
+<p>we are instructing the script to load the <code class="file docutils literal notranslate"><span class="pre">results.db</span></code> database and create four HTML files named <code class="file docutils literal notranslate"><span class="pre">strong_poisson.html</span></code>, <code class="file docutils literal notranslate"><span class="pre">weak_poisson.html</span></code>, <code class="file docutils literal notranslate"><span class="pre">strong_elasticity.html</span></code>, and <code class="file docutils literal notranslate"><span class="pre">weak_elasticity.html</span></code> into the directory <code class="file docutils literal notranslate"><span class="pre">www/plots</span></code>.</p>
+</section>
+</section>
+<section id="the-sql-schema">
+<h2>The SQL schema<a class="headerlink" href="#the-sql-schema" title="Link to this heading"></a></h2>
+<p>The database contains a single table called <code class="code docutils literal notranslate"><span class="pre">results</span></code> which contains all the results of the <em>experiments</em>. We explain all the columns of the <code class="code docutils literal notranslate"><span class="pre">results</span></code> table. Keep in mind that an experiment can be a batch of results;  each result is a row entry. To clarify further, an experiment will run both Poisson and Elasticity problems, in both weak and strong scaling; each combination is a single result resulting in a row entry. An experiment is essentially an invocation of the <code class="file docutils literal notranslate"><span class="pre">fenicsx-tests-gsoc2024</span></code> entrypoint in a particular group of hosts in a cluster.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Some of the column names contain dots <code class="code docutils literal notranslate"><span class="pre">.</span></code> and hyphens <code class="code docutils literal notranslate"><span class="pre">-</span></code>. SQLite3 will require you to double-quote these identifiers to operate on them, see <a class="reference external" href="https://sqlite.org/lang_keywords.html">SQLite Keywords</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">id<span class="colon">:</span></dt>
+<dd class="field-odd"><p>An incrementing integer that is unique to the row entry.</p>
+</dd>
+<dt class="field-even">date<span class="colon">:</span></dt>
+<dd class="field-even"><p>The date when the experiment group was conducted in ISO-8601 format.</p>
+</dd>
+<dt class="field-odd">date_id<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A random string; together with date, they are unique to an experiment (but <strong>not</strong> to a result; see above, many results can be performed in a single experiment.)</p>
+</dd>
+<dt class="field-even">experiment.command<span class="colon">:</span></dt>
+<dd class="field-even"><p>The command that gave the results; typically starts with <code class="code docutils literal notranslate"><span class="pre">mpiexec</span> <span class="pre">...</span></code>.</p>
+</dd>
+<dt class="field-odd">experiment.cores<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The number of cores used in the experiment. This is smaller than total cores available when <code class="code docutils literal notranslate"><span class="pre">--cores-mode=single-host</span></code>.</p>
+</dd>
+<dt class="field-even">experiment.dof<span class="colon">:</span></dt>
+<dd class="field-even"><p>The degrees of freedom used.</p>
+</dd>
+<dt class="field-odd">experiment.exit_status<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The exit status of <code class="code docutils literal notranslate"><span class="pre">experiment.command</span></code>.</p>
+</dd>
+<dt class="field-even">experiment.libblas_choice<span class="colon">:</span></dt>
+<dd class="field-even"><p>The particular <a class="reference external" href="https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms">BLAS</a> implementation used.</p>
+</dd>
+<dt class="field-odd">experiment.problem_type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The problem type, either <code class="code docutils literal notranslate"><span class="pre">poisson</span></code> or <code class="code docutils literal notranslate"><span class="pre">elasticity</span></code>.</p>
+</dd>
+<dt class="field-even">experiment.scaling_type<span class="colon">:</span></dt>
+<dd class="field-even"><p>The scaling type, either <code class="code docutils literal notranslate"><span class="pre">weak</span></code> or <code class="code docutils literal notranslate"><span class="pre">strong</span></code>.</p>
+</dd>
+<dt class="field-odd">experiment.stderr<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The <code class="code docutils literal notranslate"><span class="pre">stderr</span></code> of the <code class="code docutils literal notranslate"><span class="pre">experiment.command</span></code>.</p>
+</dd>
+<dt class="field-even">experiment.stdout<span class="colon">:</span></dt>
+<dd class="field-even"><p>The <code class="code docutils literal notranslate"><span class="pre">stdout</span></code> of the <code class="code docutils literal notranslate"><span class="pre">experiment.command</span></code>.</p>
+</dd>
+<dt class="field-odd">grid5000.arch<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The architecture as reported by uname; usually <code class="code docutils literal notranslate"><span class="pre">x86_64</span></code>.</p>
+</dd>
+<dt class="field-even">grid5000.cluster<span class="colon">:</span></dt>
+<dd class="field-even"><p>The name of the Grid’5000 cluster.</p>
+</dd>
+<dt class="field-odd">grid5000.grd_jobid<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The ID of the Grid’5000 job. Information about jobs is permanently stored in Grid’5000 servers; useful for debugging.</p>
+</dd>
+<dt class="field-even">grid5000.host.isa<span class="colon">:</span></dt>
+<dd class="field-even"><p>The architecture as reported by Grid’500; usually <code class="code docutils literal notranslate"><span class="pre">x86-64</span></code>.</p>
+</dd>
+<dt class="field-odd">grid5000.host.model<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The model of the CPU as reported by Grid’5000.</p>
+</dd>
+<dt class="field-even">grid5000.host.model_other<span class="colon">:</span></dt>
+<dd class="field-even"><p>The model of the CPU as reported by Grid’5000 (more details.)</p>
+</dd>
+<dt class="field-odd">grid5000.host.sockets<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The number of sockets of the CPU.</p>
+</dd>
+<dt class="field-even">grid5000.host.total_cores<span class="colon">:</span></dt>
+<dd class="field-even"><p>The total number of cores available to the host; the number of CPU cores multiplied by number of sockets.</p>
+</dd>
+<dt class="field-odd">grid5000.hosts<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The number of hosts reserved in the cluster.</p>
+</dd>
+<dt class="field-even">grid5000.login<span class="colon">:</span></dt>
+<dd class="field-even"><p>The login username to Grid’5000.</p>
+</dd>
+<dt class="field-odd">grid5000.site<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The Grid’5000 site in which the clusters belong to; <code class="code docutils literal notranslate"><span class="pre">grenoble</span></code>, <code class="code docutils literal notranslate"><span class="pre">rennes</span></code>, and so on.</p>
+</dd>
+<dt class="field-even">grid5000.total_cores<span class="colon">:</span></dt>
+<dd class="field-even"><p>The total number of cores reserved; i.e. the number of hosts times the cores in each.</p>
+</dd>
+<dt class="field-odd">software.dolfinx_parameters.hypre<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A boolean <code class="code docutils literal notranslate"><span class="pre">true</span></code> or <code class="code docutils literal notranslate"><span class="pre">false</span></code>. Whether hypre is enabled or not. Hypre is disabled when complex math is enabled.</p>
+</dd>
+<dt class="field-even">software.packages.fenicsx-performance-tests<span class="colon">:</span></dt>
+<dd class="field-even"><p>The version of the Debian package <code class="code docutils literal notranslate"><span class="pre">fenicsx-performance-tests</span></code>.</p>
+</dd>
+<dt class="field-odd">software.packages.BLAS_PKG<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The version of the Debian package <code class="code docutils literal notranslate"><span class="pre">$BLAS_PKG</span></code>; which BLAS packages are installed depends on <code class="code docutils literal notranslate"><span class="pre">--blas</span></code> (see also <code class="code docutils literal notranslate"><span class="pre">--blas-all</span></code>.)</p>
+</dd>
+<dt class="field-even">software.uname<span class="colon">:</span></dt>
+<dd class="field-even"><p>The <code class="code docutils literal notranslate"><span class="pre">uname</span> <span class="pre">--kernel-name</span> <span class="pre">--kernel-release</span> <span class="pre">--kernel-version</span></code> string.</p>
+</dd>
+</dl>
+<p>Also the following timings are available, but we do not individually describe them; they are all grabbed from the table printed in the <code class="code docutils literal notranslate"><span class="pre">stdout</span></code> output of the DOLFINx tested program. Some comments on their particular meaning can be found on this <a class="reference external" href="https://fenicsproject.discourse.group/t/understanding-the-timings-of-performance-tests/14751/7">FEniCS discourse post</a>. We merely point out that <code class="code docutils literal notranslate"><span class="pre">wall_tot</span></code> is the total wall time a particular step took, while <code class="code docutils literal notranslate"><span class="pre">reps</span></code> is the number of repetitions of that step.</p>
+<dl class="field-list simple">
+<dt class="field-odd">timings.build_box_mesh.reps<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.build_box_mesh.wall_avg<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.build_box_mesh.wall_tot<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.build_dofmap_data.reps<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.build_dofmap_data.wall_avg<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.build_dofmap_data.wall_tot<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.build_sparsity.reps<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.build_sparsity.wall_avg<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.build_sparsity.wall_tot<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.compute_connectivity_20.reps<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.compute_connectivity_20.wall_avg<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.compute_connectivity_20.wall_tot<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.compute_dof_reordering_map.reps<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.compute_dof_reordering_map.wall_avg<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.compute_dof_reordering_map.wall_tot<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.compute_entities_dim2.reps<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.compute_entities_dim2.wall_avg<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.compute_entities_dim2.wall_tot<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.compute_local_mesh_dual_graph.reps<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.compute_local_mesh_dual_graph.wall_avg<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.compute_local_mesh_dual_graph.wall_tot<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.compute_local_to_global_links.reps<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.compute_local_to_global_links.wall_avg<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.compute_local_to_global_links.wall_tot<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.compute_local_to_local_map.reps<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.compute_local_to_local_map.wall_avg<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.compute_local_to_local_map.wall_tot<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.compute_nonlocal_mesh_dual_graph.reps<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.compute_nonlocal_mesh_dual_graph.wall_avg<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.compute_nonlocal_mesh_dual_graph.wall_tot<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.compute_scotch_graph_partition.reps<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.compute_scotch_graph_partition.wall_avg<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.compute_scotch_graph_partition.wall_tot<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.distribute_nodes_to_ranks.reps<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.distribute_nodes_to_ranks.wall_avg<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.distribute_nodes_to_ranks.wall_tot<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.distribute_rowwise.reps<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.distribute_rowwise.wall_avg<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.distribute_rowwise.wall_tot<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.gibbs_poole_stockmeyer_ordering.reps<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.gibbs_poole_stockmeyer_ordering.wall_avg<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.gibbs_poole_stockmeyer_ordering.wall_tot<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.gps_create_level_structure.reps<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.gps_create_level_structure.wall_avg<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.gps_create_level_structure.wall_tot<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.init_dofmap_from_element_dofmap.reps<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.init_dofmap_from_element_dofmap.wall_avg<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.init_dofmap_from_element_dofmap.wall_tot<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.init_logging.reps<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.init_logging.wall_avg<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.init_logging.wall_tot<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.init_mpi.reps<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.init_mpi.wall_avg<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.init_mpi.wall_tot<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.init_petsc.reps<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.init_petsc.wall_avg<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.init_petsc.wall_tot<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.petsc_krylov_solver.reps<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.petsc_krylov_solver.wall_avg<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.petsc_krylov_solver.wall_tot<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.scotch_dgraphbuild.reps<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.scotch_dgraphbuild.wall_avg<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.scotch_dgraphbuild.wall_tot<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.scotch_dgraphpart.reps<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.scotch_dgraphpart.wall_avg<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.scotch_dgraphpart.wall_tot<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.sparsitypattern_finalize.reps<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.sparsitypattern_finalize.wall_avg<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.sparsitypattern_finalize.wall_tot<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.topology_create.reps<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.topology_create.wall_avg<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.topology_create.wall_tot<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.topology_shared_index_ownership.reps<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.topology_shared_index_ownership.wall_avg<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.topology_shared_index_ownership.wall_tot<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.topology_vertex_groups.reps<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.topology_vertex_groups.wall_avg<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.topology_vertex_groups.wall_tot<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.zzz_assemble_matrix.reps<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.zzz_assemble_matrix.wall_avg<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.zzz_assemble_matrix.wall_tot<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.zzz_assemble_vector.reps<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.zzz_assemble_vector.wall_avg<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.zzz_assemble_vector.wall_tot<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.zzz_create_boundary_conditions.reps<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.zzz_create_boundary_conditions.wall_avg<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.zzz_create_boundary_conditions.wall_tot<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.zzz_create_facets_connectivity.reps<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.zzz_create_facets_connectivity.wall_avg<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.zzz_create_facets_connectivity.wall_tot<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.zzz_create_forms.reps<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.zzz_create_forms.wall_avg<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.zzz_create_forms.wall_tot<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.zzz_create_mesh.reps<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.zzz_create_mesh.wall_avg<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.zzz_create_mesh.wall_tot<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.zzz_create_nearnullspace.reps<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.zzz_create_nearnullspace.wall_avg<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.zzz_create_nearnullspace.wall_tot<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.zzz_create_rhs_function.reps<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.zzz_create_rhs_function.wall_avg<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.zzz_create_rhs_function.wall_tot<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.zzz_functionspace.reps<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.zzz_functionspace.wall_avg<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.zzz_functionspace.wall_tot<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.zzz_solve.reps<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">timings.zzz_solve.wall_avg<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">timings.zzz_solve.wall_tot<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<p>Finally there is a schema version, currently set at <code class="code docutils literal notranslate"><span class="pre">1.0</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">version<span class="colon">:</span></dt>
+<dd class="field-odd"><p>1.0, the schema version. If the schema changes, this version will change.</p>
+</dd>
+</dl>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="configuration_file.html" class="btn btn-neutral float-left" title="The configuration file" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="license.html" class="btn btn-neutral float-right" title="License" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Nikolaos Chatzikonstantinou.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
