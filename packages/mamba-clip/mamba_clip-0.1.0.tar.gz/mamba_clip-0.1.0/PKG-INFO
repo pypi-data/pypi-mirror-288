@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: mamba-clip
+Version: 0.1.0
+Summary: A package for training mamba vision model and text encoder using CLIP
+Author-email: psmyth1994@gmail.com
+License: Apache 2.0
+Requires-Python: >=3.8.0,<3.12.0
+Requires-Dist: colorlog
+Requires-Dist: h5py
+Requires-Dist: scikit-learn
+Requires-Dist: ipython
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: mamba-ssm
+Requires-Dist: ftfy
+Requires-Dist: regex
+Requires-Dist: fsspec
+Requires-Dist: timm>=1.0.7
+Requires-Dist: huggingface_hub
+Requires-Dist: transformers[sentencepiece]
+Requires-Dist: braceexpand
+Requires-Dist: kaggle
+Requires-Dist: accelerate
+Requires-Dist: open_clip_torch
