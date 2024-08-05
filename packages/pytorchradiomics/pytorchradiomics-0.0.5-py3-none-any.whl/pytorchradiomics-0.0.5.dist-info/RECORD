@@ -1,0 +1,13 @@
+torchradiomics/TorchRadiomicsBase.py,sha256=tBI9dCez5QJPdrMMJDMhGAvmBuIocGZkFpwbBTRsXGE,1203
+torchradiomics/TorchRadiomicsFirstOrder.py,sha256=VW5pZNHMpNK2_sElGlJKE2IDFhJPd5HGuCElDNZshMo,16268
+torchradiomics/TorchRadiomicsGLCM.py,sha256=EZY6mJCJhvMtLgL7l65aqH_aMiZFxUMluxhpFaCG8F0,27486
+torchradiomics/TorchRadiomicsGLDM.py,sha256=BtjhWDYNf49OkRgCYNBaNhJk43xUV1ixfzrcri3nEPo,15659
+torchradiomics/TorchRadiomicsGLRLM.py,sha256=mZff8r3Fp0ZhzbSQQIZoCHaEYSBvGbfhqD6sjRhYphk,15645
+torchradiomics/TorchRadiomicsGLSZM.py,sha256=bHeiV5YYSMApDLJuLb8L2ScjSjJQjZwBEBzmgsx5mFc,15662
+torchradiomics/TorchRadiomicsNGTDM.py,sha256=pUgDc8h2M8yMSpcjL-j3SiqsohZqbF-hYOAfwzNT-ss,8380
+torchradiomics/__init__.py,sha256=GW__8zUeXcoL1zQ846spQbh1syRegTS5FtDa56W1eNY,1247
+pytorchradiomics-0.0.5.dist-info/LICENSE,sha256=PO67UsDjKWa3OWDGhkTQl9PiTNDJsLI2VdN3BmUWXmA,1083
+pytorchradiomics-0.0.5.dist-info/METADATA,sha256=Ir_E2hZ0C0aPQhakom077nsDokV5x9l4WtOeFx3G6NU,2922
+pytorchradiomics-0.0.5.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+pytorchradiomics-0.0.5.dist-info/top_level.txt,sha256=L2ZzgQLShxko9YqnDB3o699oFaFzgzhkwsOnff0PH9k,15
+pytorchradiomics-0.0.5.dist-info/RECORD,,
