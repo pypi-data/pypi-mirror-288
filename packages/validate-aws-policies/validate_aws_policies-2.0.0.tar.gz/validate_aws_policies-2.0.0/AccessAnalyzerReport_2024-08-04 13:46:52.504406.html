@@ -1,0 +1,55 @@
+
+        <html>
+        <style>
+      .tbl { border-collapse: collapse; width:300px; }
+      .tbl th, .tbl td { padding: 5px; border: solid 1px #777; }
+      .tbl th { background-color: #00ff0080; }
+      .tbl-separate { border-collapse: separate; border-spacing: 5px;}
+
+          .fl-table {
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: normal;
+            border: none;
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 100%;
+            white-space: nowrap;
+            background-color: white;
+
+        }
+
+        .fl-table td, .fl-table th {
+            text-align: left;
+            padding: 8px;
+            border: solid 1px #777;
+        }
+
+        .fl-table td {
+            border-right: 1px solid #f8f8f8;
+            font-size: 14px;
+        }
+
+        .fl-table thead th {
+            color: #ffffff;
+            background: #4FC3D8;
+        }
+
+
+        .fl-table thead th:nth-child(odd) {
+            color: #ffffff;
+            background: #324960;
+        }
+
+        .fl-table tr:nth-child(even) {
+            background: #F8F8FA;
+        }
+
+        </style>
+
+          <h1 style="font-size:100px; color:black; margin:10px;">Validate AWS Policies Report</h1>
+
+        <p style="font-size:30px; color: black;"><em>Access Analyzer Report for Permissions Set</em></p>
+
+          </html>
+        <table id="report-table" class="fl-table"><thead><tr><th>filePolicy</th><th>summary</th></tr></thead><tbody><tr><td>policy_allow_all_access_devs_special_users_2.json</td><td><table id="report-table" class="fl-table"><thead><tr><th>policyName</th><th>issueCode</th><th>findingType</th><th>details</th></tr></thead><tbody><tr><td>policy_allow_all_access_devs_special_users_2</td><td>CREATE_SLR_WITH_STAR_IN_ACTION_AND_RESOURCE</td><td>WARNING</td><td><table id="report-table" class="fl-table"><tr><th>findingDetails</th><td>Using wildcards (*) in the action and the resource can allow creation of unintended service-linked roles because it allows iam:CreateServiceLinkedRole permissions on all resources. We recommend that you specify resource ARNs instead.</td></tr><tr><th>findingType</th><td>WARNING</td></tr><tr><th>issueCode</th><td>CREATE_SLR_WITH_STAR_IN_ACTION_AND_RESOURCE</td></tr><tr><th>learnMoreLink</th><td>https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-general-warning-create-slr-with-star-in-action-and-resource</td></tr><tr><th>locations</th><td><table id="report-table" class="fl-table"><thead><tr><th>path</th><th>span</th></tr></thead><tbody><tr><td><ul><li><table id="report-table" class="fl-table"><tr><th>value</th><td>Statement</td></tr></table></li><li><table id="report-table" class="fl-table"><tr><th>index</th><td>1</td></tr></table></li><li><table id="report-table" class="fl-table"><tr><th>value</th><td>Action</td></tr></table></li><li><table id="report-table" class="fl-table"><tr><th>index</th><td>0</td></tr></table></li></ul></td><td><table id="report-table" class="fl-table"><tr><th>start</th><td><table id="report-table" class="fl-table"><tr><th>line</th><td>67</td></tr><tr><th>column</th><td>8</td></tr><tr><th>offset</th><td>1529</td></tr></table></td></tr><tr><th>end</th><td><table id="report-table" class="fl-table"><tr><th>line</th><td>67</td></tr><tr><th>column</th><td>11</td></tr><tr><th>offset</th><td>1532</td></tr></table></td></tr></table></td></tr><tr><td><ul><li><table id="report-table" class="fl-table"><tr><th>value</th><td>Statement</td></tr></table></li><li><table id="report-table" class="fl-table"><tr><th>index</th><td>1</td></tr></table></li><li><table id="report-table" class="fl-table"><tr><th>value</th><td>Resource</td></tr></table></li></ul></td><td><table id="report-table" class="fl-table"><tr><th>start</th><td><table id="report-table" class="fl-table"><tr><th>line</th><td>69</td></tr><tr><th>column</th><td>18</td></tr><tr><th>offset</th><td>1560</td></tr></table></td></tr><tr><th>end</th><td><table id="report-table" class="fl-table"><tr><th>line</th><td>71</td></tr><tr><th>column</th><td>7</td></tr><tr><th>offset</th><td>1580</td></tr></table></td></tr></table></td></tr></tbody></table></td></tr></table></td></tr><tr><td>policy_allow_all_access_devs_special_users_2</td><td>PASS_ROLE_WITH_STAR_IN_ACTION_AND_RESOURCE</td><td>SECURITY_WARNING</td><td><table id="report-table" class="fl-table"><tr><th>findingDetails</th><td>Using wildcards (*) in the action and the resource can be overly permissive because it allows iam:PassRole permissions on all resources. We recommend that you specify resource ARNs or add the iam:PassedToService condition key to your statement.</td></tr><tr><th>findingType</th><td>SECURITY_WARNING</td></tr><tr><th>issueCode</th><td>PASS_ROLE_WITH_STAR_IN_ACTION_AND_RESOURCE</td></tr><tr><th>learnMoreLink</th><td>https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-security-warning-pass-role-with-star-in-action-and-resource</td></tr><tr><th>locations</th><td><table id="report-table" class="fl-table"><thead><tr><th>path</th><th>span</th></tr></thead><tbody><tr><td><ul><li><table id="report-table" class="fl-table"><tr><th>value</th><td>Statement</td></tr></table></li><li><table id="report-table" class="fl-table"><tr><th>index</th><td>1</td></tr></table></li><li><table id="report-table" class="fl-table"><tr><th>value</th><td>Action</td></tr></table></li><li><table id="report-table" class="fl-table"><tr><th>index</th><td>0</td></tr></table></li></ul></td><td><table id="report-table" class="fl-table"><tr><th>start</th><td><table id="report-table" class="fl-table"><tr><th>line</th><td>67</td></tr><tr><th>column</th><td>8</td></tr><tr><th>offset</th><td>1529</td></tr></table></td></tr><tr><th>end</th><td><table id="report-table" class="fl-table"><tr><th>line</th><td>67</td></tr><tr><th>column</th><td>11</td></tr><tr><th>offset</th><td>1532</td></tr></table></td></tr></table></td></tr><tr><td><ul><li><table id="report-table" class="fl-table"><tr><th>value</th><td>Statement</td></tr></table></li><li><table id="report-table" class="fl-table"><tr><th>index</th><td>1</td></tr></table></li><li><table id="report-table" class="fl-table"><tr><th>value</th><td>Resource</td></tr></table></li><li><table id="report-table" class="fl-table"><tr><th>index</th><td>0</td></tr></table></li></ul></td><td><table id="report-table" class="fl-table"><tr><th>start</th><td><table id="report-table" class="fl-table"><tr><th>line</th><td>70</td></tr><tr><th>column</th><td>7</td></tr><tr><th>offset</th><td>1569</td></tr></table></td></tr><tr><th>end</th><td><table id="report-table" class="fl-table"><tr><th>line</th><td>70</td></tr><tr><th>column</th><td>10</td></tr><tr><th>offset</th><td>1572</td></tr></table></td></tr></table></td></tr></tbody></table></td></tr></table></td></tr></tbody></table></td></tr><tr><td>policy_allow_all_access_devs_special_users.json</td><td><table id="report-table" class="fl-table"><thead><tr><th>policyName</th><th>issueCode</th><th>findingType</th><th>details</th></tr></thead><tbody><tr><td>policy_allow_all_access_devs_special_users</td><td>None</td><td>None</td><td>No findings</td></tr></tbody></table></td></tr></tbody></table>
