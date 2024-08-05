@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: sinopsis-ai
+Version: 0.1.0
+Summary: A Python SDK for Sinopsis AI
+Home-page: https://github.com/daa192/sinopsis-ai-sdk
+Author: Sinopsis Data, LLC
+Author-email: info@sinopsisdata.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: boto3 (==1.24.28)
+Requires-Dist: openai (==1.12.0)
+
+# Sinopsis AI SDK
+
+A Python SDK for interacting with Sinopsis AI, designed to simplify the process of logging user prompts and responses, and managing conversation data.
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install sinopsis_ai
