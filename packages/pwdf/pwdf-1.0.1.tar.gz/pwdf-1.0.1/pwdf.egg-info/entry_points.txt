@@ -1,0 +1,2 @@
+[console_scripts]
+pwdf = pwdf.pwdf:run
