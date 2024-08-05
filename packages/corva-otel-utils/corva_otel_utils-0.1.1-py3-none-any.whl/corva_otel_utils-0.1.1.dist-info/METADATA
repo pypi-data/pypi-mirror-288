@@ -1,0 +1,10 @@
+Metadata-Version: 2.3
+Name: corva-otel-utils
+Version: 0.1.1
+Summary: OpenTelemetry utilities for Python at corva.ai
+Project-URL: Homepage, https://github.com/corva-ai/otel/tree/main/python/utils
+Author-email: Radoslav Kirilov <radoslav.kirilov@corva.ai>, Ivaylo Papratilov <ivaylo.papratilov@corva.ai>
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Requires-Dist: opentelemetry-api
