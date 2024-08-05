@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: function-adding-only
+Version: 1.0.0
+Summary: This package can be used to add ony functions
+Author: surya
+Author-email: surya.tvm.apm@gmail.com
+License: MIT
+Keywords: adding,add
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
