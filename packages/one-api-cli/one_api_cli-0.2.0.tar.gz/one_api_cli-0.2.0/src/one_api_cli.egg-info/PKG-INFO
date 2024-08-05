@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: one-api-cli
+Version: 0.2.0
+Summary: A CLI tool for the One API project.
+Author-email: Rex Wang <1073853456@qq.com>
+License: MIT License
+        
+        Copyright (c) 2023 RexWang
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Bug Tracker, https://github.com/rexwzh/one-api-cli/issues
+Keywords: oneapi,cli,tool
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: <3.12,>=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: loguru
+Requires-Dist: click
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: ipython; extra == "dev"
+Requires-Dist: notebook; extra == "dev"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx-rtd-theme; extra == "docs"
+Provides-Extra: lint
+Requires-Dist: mypy; extra == "lint"
+Provides-Extra: all
+Requires-Dist: ipython; extra == "all"
+Requires-Dist: notebook; extra == "all"
+Requires-Dist: pytest; extra == "all"
+Requires-Dist: sphinx; extra == "all"
+Requires-Dist: sphinx-rtd-theme; extra == "all"
+Requires-Dist: mypy; extra == "all"
+
+# One API CLI
+
+<a href="https://pypi.python.org/pypi/one-api-cli">
+    <img src="https://img.shields.io/pypi/v/one-api-cli.svg" alt="PyPI version" />
+</a>
+<a href="https://github.com/RexWzh/one-api-cli/actions/workflows/test.yml">
+    <img src="https://github.com/RexWzh/one-api-cli/actions/workflows/test.yml/badge.svg" alt="Tests" />
+</a>
+<a href="https://rexwzh.github.io/one-api-cli/">
+    <img src="https://img.shields.io/badge/docs-github_pages-blue.svg" alt="Documentation Status" />
+</a>
+<a href="https://codecov.io/gh/RexWzh/one-api-cli">
+    <img src="https://codecov.io/gh/RexWzh/one-api-cli/branch/main/graph/badge.svg" alt="Coverage" />
+</a>
+
+A Python CLI for the [One API](https://github.com/songquanpeng/one-api) project.
+
+## Setup
+
+Install the package using pip:
+
+```bash
+pip install one-api-cli
+```
+
+Setup environment variables:
+
+```bash
+export ONE_API_BASE_URL=https://your_base_url
+export ONE_API_ACCESS_TOKEN=your_access_token # Optional
+export ONE_API_SESSION_TOKEN=your_session_token # Optional
+```
+
+## Usage
+
+See examples in [Jupyter notebooks](demo/one-api.ipynb).
