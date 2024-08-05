@@ -1,0 +1,8 @@
+README.md
+setup.py
+gsmlang.egg-info/PKG-INFO
+gsmlang.egg-info/SOURCES.txt
+gsmlang.egg-info/dependency_links.txt
+gsmlang.egg-info/top_level.txt
+search/__init__.py
+search/search.py
