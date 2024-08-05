@@ -1,0 +1,2 @@
+[console_scripts]
+gooba-new = project_generator:create_project_structure
