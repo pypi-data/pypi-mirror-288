@@ -1,0 +1,43 @@
+html {
+    --theme-bg: rgb(43, 43, 43);
+    --theme-table: #3d3d3d;
+    --theme-text: rgb(194, 194, 194);
+    --theme-text-bright: rgb(230, 230, 230);
+    --theme-table-hover: #4b4b4b;
+    --theme-table-shadow: #222222;
+    --theme-table-button: #555555;
+
+    --theme-logs-bg: #333333;
+    --theme-logs-brdr: grey;
+    --thumb-bg: grey;
+}
+
+.grey,
+.yellow,
+.green,
+.red,
+.blue {
+    text-align: center;
+}
+
+.grey {
+    color:#646464 !important;
+}
+.yellow {
+    background-color:rgb(255, 255, 76) !important;
+    color:black !important;
+}
+.green {
+    background-color:#d2ffcc !important;
+    color:green !important;
+}
+.red {
+    background-color:rgb(255, 68, 68) !important;
+    color:white !important;
+    font-weight:bold !important;
+}
+.blue {
+    background-color:rgb(75, 75, 255) !important;
+    color:white !important;
+    font-weight:bold !important;
+}
