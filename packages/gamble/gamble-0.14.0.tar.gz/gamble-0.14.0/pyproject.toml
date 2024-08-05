@@ -1,0 +1,129 @@
+[tool.poetry]
+name = "gamble"
+version = "0.14.0"
+description = "a collection of gambling classes/tools"
+readme = "README.md"
+authors = ["jacobi petrucciani <j@cobi.dev>"]
+packages = [{ include = "gamble" }]
+homepage = "https://github.com/jpetrucciani/gamble"
+repository = "https://github.com/jpetrucciani/gamble"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "License :: OSI Approved :: MIT License",
+]
+
+[tool.poetry.dependencies]
+python = ">= 3.10"
+
+[tool.poetry.dev-dependencies]
+black = "24.3.0"
+ptpython = ">= 3.0.26"
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+pytest-xdist = "^3.5.0"
+
+# docs
+sphinx = "^7.2.6"
+sphinx-autoapi = "^3.0.0"
+sphinx-autobuild = "^2021.3.14"
+sphinx-autodoc-typehints = "^1.25.2"
+sphinx-rtd-theme = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+lint.select = [
+    "A",
+    "ANN",
+    "ARG",
+    "B",
+    "C4",
+    "D",
+    "E",
+    "F",
+    "ICN",
+    "ISC",
+    "N",
+    "PD",
+    "PGH",
+    "PLR",
+    "PLW",
+    "PIE",
+    "PT",
+    "Q",
+    "RET",
+    "RUF",
+    "S",
+    "SIM",
+    "TID",
+    "UP",
+    "W",
+    "YTT",
+]
+lint.ignore = [
+    "A001",
+    "A003",
+    "ANN101",
+    "ANN102",
+    "ANN401",
+    "B008",
+    "B019",
+    "C405",
+    "D107",
+    "D200",
+    "D203",
+    "D205",
+    "D212",
+    "D400",
+    "D403",
+    "D404",
+    "D415",
+    "E501",
+    "N818",
+    "PGH003",
+    "PGH004",
+    "PLR2004",
+    "PT012",
+    "S101",
+    "S105",
+    "S108",
+    "S311",
+    "W605",
+]
+target-version = "py311"
+exclude = [
+    ".direnv",
+    ".git",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    "__pypackages__",
+]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 30
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.mypy]
+python_version = "3.11"
+disallow_untyped_defs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+filterwarnings = ["ignore::pytest.PytestConfigWarning"]
