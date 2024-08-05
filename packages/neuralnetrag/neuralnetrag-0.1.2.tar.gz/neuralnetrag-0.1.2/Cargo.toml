@@ -1,0 +1,18 @@
+[package]
+name = "neuralnetrag"
+version = "0.1.2"
+edition = "2021"
+
+[dependencies]
+pyo3 = { version = "0.16", features = ["extension-module"] }
+reqwest = { version = "0.11", features = ["blocking"] }
+select = "0.5"  # Add this line for the select crate
+serde = { version = "1.0", features = ["derive"] }
+
+[lib]
+crate-type = ["cdylib"]
+
+[project]
+name = "neuralnetrag"
+version = "0.1.2"
+description = "RAG library in Rust with Python bindings"
