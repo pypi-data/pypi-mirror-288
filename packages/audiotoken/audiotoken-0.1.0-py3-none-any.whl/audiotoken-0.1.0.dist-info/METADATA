@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: audiotoken
+Version: 0.1.0
+Summary: A package for creating audio tokens
+Home-page: https://github.com/cmeraki/audiotoken
+Author: Romit Jain
+Author-email: romit@merakilabs.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy <2
+Requires-Dist: torch ==2.3.1
+Requires-Dist: torchaudio ==2.3.1
+Requires-Dist: transformers ==4.41.2
+Requires-Dist: encodec ==0.1.1
+Requires-Dist: typing
+Requires-Dist: datasets ==2.20.0
+Requires-Dist: tqdm ==4.66.4
+Requires-Dist: psutil ==5.9.8
+Requires-Dist: vector-quantize-pytorch ==1.15.3
+
+# Audiotoken
+
+Tokenize audio to get acoustic and semantic tokens.
