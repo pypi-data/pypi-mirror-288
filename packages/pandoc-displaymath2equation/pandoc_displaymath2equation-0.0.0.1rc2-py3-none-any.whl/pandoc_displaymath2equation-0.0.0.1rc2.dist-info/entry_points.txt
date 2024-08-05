@@ -1,0 +1,2 @@
+[console_scripts]
+pandoc-displaymath2equation = displaymath2equation.main:main
