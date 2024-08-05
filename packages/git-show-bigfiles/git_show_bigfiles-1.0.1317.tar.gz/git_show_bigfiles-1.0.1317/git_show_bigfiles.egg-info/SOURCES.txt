@@ -1,0 +1,11 @@
+LICENSE
+README
+README.MD
+git_show_bigfiles.py
+git_show_bigfiles_tests.py
+setup.cfg
+setup.py
+git_show_bigfiles.egg-info/PKG-INFO
+git_show_bigfiles.egg-info/SOURCES.txt
+git_show_bigfiles.egg-info/dependency_links.txt
+git_show_bigfiles.egg-info/top_level.txt
