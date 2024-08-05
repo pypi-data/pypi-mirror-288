@@ -1,0 +1,51 @@
+{
+    "test_id": "test_02",
+    "test_prompt": "COUNT(LINES) == 5",
+    "test_completion": "NEE, COUNT(LINES) is niet gelijk 5, maar 13",
+    "passed": false,
+    "completion": {
+        "system_role": "Calculate the number of lines, words, characters, or sentences in the prompt. No LLM is used for this.",
+        "model": "calculated",
+        "parameters": {},
+        "response_message": "NEE, COUNT(LINES) is niet gelijk 5, maar 13",
+        "latency": 3.51250000676373e-05,
+        "cost": 0.0,
+        "completion_type": "CalculatedCompletion"
+    },
+    "engineered_prompt": {
+        "prompt_file_path": "examples/prompts/podcast_titels.prompt",
+        "output_path": "examples/completions/podcast_titels/beschrijving",
+        "input_file": "examples/tests/podcast_titels/beschrijving.txt",
+        "input_text": "",
+        "latency": 2.9435376250003173,
+        "cost": 0.00010485,
+        "errors": {
+            "errors": [],
+            "duplicates": 0
+        },
+        "completion": {
+            "system_role": "You are a helpful assistant.",
+            "model": "gpt-4o-mini",
+            "parameters": {
+                "model": "gpt-4o-mini",
+                "prompt_version": 1.0,
+                "temperature": 0.9,
+                "input": "examples/inputs/podcast_titels/beschrijving.txt",
+                "output": "title.txt",
+                "test_path": "examples/tests/podcast_titels"
+            },
+            "cost": 0.00010485,
+            "is_json": false,
+            "test_path": "",
+            "response_message": "Hier zijn vijf titels voor je AI-podcast gericht op businessmensen met een IT-achtergrond:\n\n1. **\"AI in Actie: MLOps en de Toekomst van Bedrijfsintelligentie\"**\n\n2. **\"Uitlegbaarheid in AI: Het Ontsleutelen van Beslissingen\"**\n\n3. **\"De Kracht van Grote Talen: Hoe Large Language Models Bedrijven Transformeren\"**\n\n4. **\"Van Data naar Inzicht: MLOps en Explainable AI voor Succesvolle Implementatie\"**\n\n5. **\"AI voor Besluitvormers: Navigeren door MLOps, Uitlegbaarheid en Taalmodellen\"**\n\nHopelijk inspireren deze titels je voor de podcast!",
+            "latency": 2.9435376250003173
+        },
+        "completion_type": "OpenAICompletion",
+        "response_message": "Hier zijn vijf titels voor je AI-podcast gericht op businessmensen met een IT-achtergrond:\n\n1. **\"AI in Actie: MLOps en de Toekomst van Bedrijfsintelligentie\"**\n\n2. **\"Uitlegbaarheid in AI: Het Ontsleutelen van Beslissingen\"**\n\n3. **\"De Kracht van Grote Talen: Hoe Large Language Models Bedrijven Transformeren\"**\n\n4. **\"Van Data naar Inzicht: MLOps en Explainable AI voor Succesvolle Implementatie\"**\n\n5. **\"AI voor Besluitvormers: Navigeren door MLOps, Uitlegbaarheid en Taalmodellen\"**\n\nHopelijk inspireren deze titels je voor de podcast!"
+    },
+    "last_run": "2024-07-30 12:44:16",
+    "errors": {
+        "errors": [],
+        "duplicates": 0
+    }
+}

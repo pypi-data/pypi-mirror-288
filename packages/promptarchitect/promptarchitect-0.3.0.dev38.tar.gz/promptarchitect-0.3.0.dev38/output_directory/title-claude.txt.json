@@ -1,0 +1,33 @@
+{
+    "prompt_file_path": "/Users/joopsnijder/Projects/promptarchitect/examples/prompts/claude.prompt",
+    "output_path": "output_directory",
+    "input_file": "/Users/joopsnijder/Projects/promptarchitect/examples/inputs/podcast_titels/beschrijving.txt",
+    "input_text": "",
+    "latency": 4.285394124999584,
+    "cost": 0.0,
+    "errors": {
+        "errors": [],
+        "duplicates": 0
+    },
+    "completion": {
+        "system_role": "You are a helpful assistant.",
+        "model": "claude-3-5-sonnet-20240620",
+        "parameters": {
+            "provider": "anthropic",
+            "model": "claude-3-5-sonnet-20240620",
+            "prompt_version": 1.0,
+            "temperature": 0.9,
+            "max_tokens": 1000,
+            "input": "examples/inputs/podcast_titels/beschrijving.txt",
+            "output": "title-claude.txt",
+            "test_path": "examples/tests/podcast_titels"
+        },
+        "cost": 0.0,
+        "is_json": false,
+        "test_path": "",
+        "response_message": "Hier zijn 5 titels voor een AI podcast gericht op business professionals met een IT-achtergrond, met focus op MLOps, Explainable AI en Large Language Models:\n\n1. \"AI Insights: Navigating MLOps, XAI, and LLMs for Business\"\n\n2. \"The AI Advantage: From MLOps to Large Language Models\"\n\n3. \"Decoding AI: Business Perspectives on MLOps, Explainability, and LLMs\"\n\n4. \"AI Frontiers: Exploring MLOps, XAI, and LLMs for IT Professionals\"\n\n5. \"The AI Toolkit: MLOps, Explainable AI, and LLMs for Business Innovation\"\n\nDeze titels combineren de belangrijkste onderwerpen van de podcast met een zakelijke insteek, waardoor ze aantrekkelijk zijn voor het beoogde publiek van IT-professionals in een business context.",
+        "latency": 4.285394124999584
+    },
+    "completion_type": "ClaudeCompletion",
+    "response_message": "Hier zijn 5 titels voor een AI podcast gericht op business professionals met een IT-achtergrond, met focus op MLOps, Explainable AI en Large Language Models:\n\n1. \"AI Insights: Navigating MLOps, XAI, and LLMs for Business\"\n\n2. \"The AI Advantage: From MLOps to Large Language Models\"\n\n3. \"Decoding AI: Business Perspectives on MLOps, Explainability, and LLMs\"\n\n4. \"AI Frontiers: Exploring MLOps, XAI, and LLMs for IT Professionals\"\n\n5. \"The AI Toolkit: MLOps, Explainable AI, and LLMs for Business Innovation\"\n\nDeze titels combineren de belangrijkste onderwerpen van de podcast met een zakelijke insteek, waardoor ze aantrekkelijk zijn voor het beoogde publiek van IT-professionals in een business context."
+}
