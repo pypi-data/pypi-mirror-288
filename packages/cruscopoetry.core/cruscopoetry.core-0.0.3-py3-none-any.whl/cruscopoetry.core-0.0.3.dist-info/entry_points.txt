@@ -1,0 +1,3 @@
+[console_scripts]
+cruscopoetry = cruscopoetry.core.cmdline:CommandLine.main
+
