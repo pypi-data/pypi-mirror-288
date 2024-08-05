@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: fzf-python
+Version: 0.0.6
+License-File: LICENSE
+
+fzfpy is a python wrapper for fzf

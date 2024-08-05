@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+fzf_python.egg-info/PKG-INFO
+fzf_python.egg-info/SOURCES.txt
+fzf_python.egg-info/dependency_links.txt
+fzf_python.egg-info/top_level.txt
+fzfpy/__init__.py
+fzfpy/fzfpy.py
