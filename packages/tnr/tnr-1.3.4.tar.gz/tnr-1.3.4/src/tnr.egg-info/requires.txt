@@ -1,0 +1,12 @@
+Click>=8.0
+colorama>=0.4.0
+cryptography>=40.0
+distro>=1.7.0
+docker-shell>=0.0.9
+packaging>=21.0
+paramiko==3.4.0
+pathlib>=1.0.1
+requests>=2.2
+scp==0.15.0
+watchdog==4.0.1
+yaspin==3.0.2
