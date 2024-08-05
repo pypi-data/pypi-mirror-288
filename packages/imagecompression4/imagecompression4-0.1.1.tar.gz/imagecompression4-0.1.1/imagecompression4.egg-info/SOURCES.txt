@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+imagecompression4/__init__.py
+imagecompression4/helpers.py
+imagecompression4/image_compression.py
+imagecompression4/matrix_operations.py
+imagecompression4/reis_algorithm.py
+imagecompression4.egg-info/PKG-INFO
+imagecompression4.egg-info/SOURCES.txt
+imagecompression4.egg-info/dependency_links.txt
+imagecompression4.egg-info/top_level.txt
