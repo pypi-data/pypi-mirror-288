@@ -1,0 +1,8 @@
+setup.py
+cohesion_calculator/__init__.py
+cohesion_calculator/cohesion.py
+cohesion_calculator/span.py
+cohesion_measuring.egg-info/PKG-INFO
+cohesion_measuring.egg-info/SOURCES.txt
+cohesion_measuring.egg-info/dependency_links.txt
+cohesion_measuring.egg-info/top_level.txt
