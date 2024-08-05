@@ -1,0 +1,9 @@
+README.txt
+setup.py
+crazygames/main.py
+crazygames/setup.py
+crazygames.egg-info/PKG-INFO
+crazygames.egg-info/SOURCES.txt
+crazygames.egg-info/dependency_links.txt
+crazygames.egg-info/requires.txt
+crazygames.egg-info/top_level.txt
