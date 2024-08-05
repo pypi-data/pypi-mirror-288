@@ -1,0 +1,4 @@
+gpt4all-bindings
+openai
+gnureadline
+lark
