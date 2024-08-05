@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: monosurf
+Version: 0.2.2
+Summary: Python API wrapper for the mono.surf payment system.
+License: MIT
+Author: Mykola Solodukha
+Author-email: mykola@mono.surf
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: httpx (>=0.27.0,<0.28.0)
+Requires-Dist: pydantic-settings (>=2.4.0,<3.0.0)
+Requires-Dist: pydantic[email] (>=2.8.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# [monosurf](https://mono.surf)
+
+Python API wrapper for the mono.surf payment system.
+
+
