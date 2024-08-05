@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: devopscodegen-common
+Version: 1.20240710.8
+Summary: Common python modules for all devops code generators like CI/CD pipeline code generator, infrastructure code generator, database code generator, virtual machine image code generator, deployment code generator, container image code generator, container deployment code generator, etc.
+Home-page: https://github.com/devopscodegen/devopscodegen-common
+License: MIT
+Keywords: devops,code-generator,devops-platform,langchain,genai
+Author: Sagar Velankar
+Author-email: sagar.velankar@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Code Generators
+Requires-Dist: GitPython (>=3.1.43,<4.0.0)
+Requires-Dist: langchain (>=0.2.6,<0.3.0)
+Project-URL: Repository, https://github.com/devopscodegen/devopscodegen-common
+Description-Content-Type: text/markdown
+
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
+[![PyPI - Version](https://img.shields.io/pypi/v/devops-code-generator-library)]()
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/devops-code-generator-library)](https://pypistats.org/packages/devops-code-generator-library)
+[![PyPI - License](https://img.shields.io/pypi/l/devops-code-generator-library)]()
+[![PyPI - Status](https://img.shields.io/pypi/status/devops-code-generator-library)]()
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/devops-code-generator-library)]()
+[![GitHub Repo stars](https://img.shields.io/github/stars/devopscodegen/devopscodegen-common)
+](https://star-history.com/#devopscodegen/devopscodegen-common)
+[![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/devopscodegen/devopscodegen-common)](https://github.com/devopscodegen/devopscodegen-common/issues)
+
+# devopscodegen-common
+Common python modules for all devops code generators like CI/CD pipeline code generator, infrastructure code generator, database code generator, virtual machine image code generator, deployment code generator, container image code generator, container deployment code generator, etc.
+
