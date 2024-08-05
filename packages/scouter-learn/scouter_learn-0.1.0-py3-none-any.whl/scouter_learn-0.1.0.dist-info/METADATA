@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: scouter-learn
+Version: 0.1.0
+Summary: A transcriptional response predictor for unseen genetic perturbtions with LLM embeddings
+Home-page: https://github.com/PancakeZoy/scouter
+Author: Ouyang Zhu, Jun Li
+Author-email: ozhu@nd.edu
+Requires-Python: >=3.11.0
+License-File: LICENSE
+Requires-Dist: torch >=2.0.0
+Requires-Dist: tqdm >=4.0.0
+Requires-Dist: anndata >=0.10.0
+Requires-Dist: pandas >=2.2.0
+Requires-Dist: numpy >=1.26.0
+Requires-Dist: scanpy >=1.10.0
+Requires-Dist: seaborn >=0.13.0
+Requires-Dist: matplotlib >=3.9.0
+Requires-Dist: scikit-learn >=1.5.0
+Requires-Dist: scipy >=1.14.0
+
