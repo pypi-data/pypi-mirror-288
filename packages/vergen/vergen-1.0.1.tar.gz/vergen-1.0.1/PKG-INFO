@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: vergen
+Version: 1.0.1
+Summary: vergen is a version generator which uses git tags to generate a branch-dependent version.
+Home-page: https://gitlab.com/wxShayan/vergen
+Author: Shayan Eftekhari
+Author-email: shayan.eftekhari@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# vergen
+vergen is a **ver**sion **gen**erator which uses git tags to generate a branch-dependent version.
+
+## Build
+    python3 setup.py sdist bdist_wheel
+
+## Install
+    pip3 install dist/vergen-1.0.0-py3-none-any.whl
