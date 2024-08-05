@@ -1,0 +1,11 @@
+mongodf/__init__.py,sha256=gZOFEeXNPFJs_2Qwt0_5km80K4y6dFo4nR5JcNLgOMc,2269
+mongodf/cache.py,sha256=VtNmSL_UVsTdCuOwEJqEldGqtl4d7cbHvz-HHiPi23c,10890
+mongodf/column.py,sha256=WyZzjG2A_Iw9PLfca5oTQ8dFOxv6SByDd61kZZ2Lpf8,9202
+mongodf/dataframe.py,sha256=JWpgk3b6jqEjX8AXTicuIYUHLakUfSGQepzXT6Z0BAE,18595
+mongodf/exception.py,sha256=CsBzr2c3_nO4A8CcPRAZH1qSv2Zqfl7qtQpp18ONhsI,848
+mongodf/filter.py,sha256=b5dORMBGyJiT0aMmpCJ279K44niV2xgaHeduiH69Ozc,6166
+mongodf/utils.py,sha256=m4scGnDIgy1eomByrsx0lz5Nk3T3WUGd6BbuBOcXTLg,8027
+mongodf-0.1.5.dist-info/METADATA,sha256=3wU0TvicXNZnnOGchXFxE8leffMu0fLuHQw3v_oX_-4,1718
+mongodf-0.1.5.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+mongodf-0.1.5.dist-info/top_level.txt,sha256=GfGjC2hkO2l-WgfLnM5IBZ5T3PUu1HowmaPSoOCd7VU,8
+mongodf-0.1.5.dist-info/RECORD,,
