@@ -1,0 +1,15 @@
+dejan/__init__.py,sha256=3fWhnRTA8XQBSUmFJXFzUk6Vtj3KPLIWtf_JfSJfXwM,147
+dejan/authority.py,sha256=6Ldedyl_0I1XaftlVmIR-QJ5V-Hdc7OZVupxg5lbZ2w,1587
+dejan/cli.py,sha256=cbygkKlyj-kwnAioV7lv6TvY-S2Q7gb3tnihrFYUVpc,856
+dejan/dirtree.py,sha256=tt7j_nf4YrHp0eW0IK45t6XkqBmDw7Kd8jWjpdgqtTk,862
+dejan/linkbert.py,sha256=4XOqsF5FgvHNeI4JCjW3AWoD_hgc6CbqLovTpzXnMFw,3841
+dejan/roo.py,sha256=hdlYsHoHL3DPOyc7lhWfdI_dqUZZKYTd2BaJ3pXLJx8,2494
+dejan/apps/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dejan/apps/linkbert_app.py,sha256=QsF7Ee67WTT7h5hfbFK3lj9EjJ2SBovKkE3I72lTlCs,457
+dejan/apps/roo_app.py,sha256=BIzjk-ON63G8qU_d94dfdRE8aZnwN8hbjleOVl6pBdI,2504
+dejan-0.2.5.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dejan-0.2.5.dist-info/METADATA,sha256=vYm51pDM9xDLI0vPy5B7QO6oSLTM9c0SI-PnH1wAk6M,4344
+dejan-0.2.5.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+dejan-0.2.5.dist-info/entry_points.txt,sha256=-wV9H3aG9NPyAfDS-1ZWcHKlM4-TXSmVB1Jz6Lnkj_k,40
+dejan-0.2.5.dist-info/top_level.txt,sha256=oG_KmVUdQJJo6KjwZbQataibqrfDglqaAv0FSMgZNXE,6
+dejan-0.2.5.dist-info/RECORD,,
