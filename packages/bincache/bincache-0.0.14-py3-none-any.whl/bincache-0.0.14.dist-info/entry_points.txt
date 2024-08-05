@@ -1,0 +1,2 @@
+[console_scripts]
+bincache = bincache.cli:main
