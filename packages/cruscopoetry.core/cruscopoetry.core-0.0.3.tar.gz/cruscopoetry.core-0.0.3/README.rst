@@ -1,0 +1,135 @@
+This is ``cruscopoetry.core``, the base package of the ``cruscopoetry`` libraries.
+This package handles the processing of poetic texts and their translations written in the 
+*CruscoPoetry syntax*. ``cruscopoetry.core`` can be used both from commandline and programmatically 
+in Python script.
+
+Installation
+------------
+
+Through ``pip``:
+
+    ``pip install cruscopoetry.core``
+
+This will install the package in your Python (global or virtual) environment.
+
+Accessing documentation about CruscoPoetry Syntax
+-------------------------------------------------
+
+Knowing CruscoPoetry syntax is a necessary step to use this library. To read the documentation relative to it, download the source code from https://pypi.org/project/cruscopoetry.core/ and extract the archive; go in the directory docs/cruscopoetry_syntax and find there the documentation in rst format.
+
+Basic operations
+----------------
+
+Help command
+============
+
+``cruscopoetry -h``, ``cruscopoetry --help``
+
+Prints an outline of the basic operations.
+
+Build command
+=============
+
+``cruscopoetry build``
+
+Parses a **source text** written in *CruscoPoetry syntax* and organises its content in a CruscoPoetry Json file.
+
+Options:
+
+    -h, --help                  Shows a help message about this operation
+    -i INPUT, --input INPUT     The path of the file containing the poem in *CruscoPoetry syntax*
+    -o OUTPUT, --output OUTPUT  The path where the new CruscoPoetry Json file shall be saved
+    -v, --verbose               Shows more information during the process.
+
+Add Translations command
+========================
+
+``cruscopoetry add_translations``
+
+Parses a **translation text** written in *CruscoPoetry syntax* and loads its content on a CruscoPoetry Json file.
+
+Options:
+
+    -h, --help                  Shows a help message about this operation
+    -SOURCE, --source SOURCE   The Json file where the translation will be loaded
+    -t TRANSLATIONS, --translations TRANSLATIONS
+        one or more translation files writtern in *CruscoPoetry syntax*. More file names need to be separated by a space; space characters contained in file names must be escaped.
+
+Delete Traslations command
+==========================
+
+``cruscopoetry delete_translations``
+
+Deletes a translation from a CruscoPoetry Json file.
+
+
+Options:
+
+    -h, --help                  Shows a help message about this operation
+    -SOURCE, --source SOURCE   The Json file where the translation will be deleted
+    -t TRANSLATION_IDS, --translation_ids TRANSLATION_IDS
+        the id or ids of each translation to be deleted. More ids need to be separated by a space.
+    --indent INDENT       the indent string to be used in the txt file.
+
+
+List Translations
+=================
+
+``cruscopoetry list_translations``
+
+List the languages and ids of the translations already loaded in a CruscoPoetry Json file.
+
+Options:
+
+    -h, --help                  Shows a help message about this operation
+
+Positional arguments:
+    :json_file:
+        The Json file where the translation will be deleted
+
+Render
+======
+
+Rewrites the content of the poem from the Json File to a human-readable format. Besides the source text, also one translation can be included in the rendering.
+Two subcommands are available, for producing txt and html renderings. Some options are common to both commands:
+
+    -h, -help                       Prints a help message
+    -i INPUT, --input INPUT         the JSON file to render as text
+    --tr_id TR_ID                   the id of the translation to include in the text file
+    --tr_layout                     the translation layout, represented by an integer from 0 to 4
+    --number_after NUMBER_AFTER     the number whose lines have one of its multiples as number will display their number
+    -o OUTPUT, --output OUTPUT      the file to save the rendering in. If not specified, it will be printed on stdout
+
+The translation layout is indicated by an integer. Each integer corresponds to a different option:
+
+    .. _`translations layout table <translayout>`:
+
+    = ================== =================================================================
+    0 NO TRANSLATION     Only the source text is rendered
+    1 AFTER_TEXT         The whole translation is rendered below the whole original text
+    2 AFTER_EACH_STANZA  Each stanza is rendered in its original version and immediately 
+                         below in translation
+    3 AFTER_EACH_LINE    Each line is rendered in its original version and immediately 
+                         below in translation
+    4 SIDE_BY_SIDE       Source text and translations are side by side, each line showing 
+                         the source version and the translation on the same row
+    = ================== =================================================================
+
+Txt rendering
+*************
+
+``cruscopoetry render txt``
+
+Besides the options listed above, there is:
+
+    --indent INDENT       the indent string to be used in the txt file.
+
+
+Html rendering
+**************
+
+``cruscopoetry render html``
+
+Besides the options listed above, there is:
+
+     --pretty_print        pretty-print output option.
