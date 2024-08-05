@@ -1,0 +1,13 @@
+Hier zijn 5 potentiële titels voor een AI podcast gericht op business mensen met een IT-achtergrond, met focus op MLOps, Explainable AI en Large Language Models:
+
+1. "AI Insights: Van Code tot Business Impact"
+
+2. "The ML Boardroom: Waar AI en Bedrijfsstrategie Samenkomen"
+
+3. "Decoded AI: MLOps, Explainability, en LLMs voor IT Professionals"
+
+4. "AI Accelerator: Boosting Business met Machine Learning"
+
+5. "TechExec AI: Navigeren door de Wereld van MLOps en LLMs"
+
+Deze titels combineren elementen van AI, business relevantie, en de specifieke focus-onderwerpen van de podcast. Ze zijn ontworpen om de aandacht te trekken van IT-professionals in zakelijke omgevingen die geïnteresseerd zijn in de praktische toepassing en implementatie van AI-technologieën.

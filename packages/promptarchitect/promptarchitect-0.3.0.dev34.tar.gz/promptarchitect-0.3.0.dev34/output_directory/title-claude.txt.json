@@ -1,0 +1,33 @@
+{
+    "prompt_file_path": "/Users/joopsnijder/Projects/promptarchitect/examples/prompts/claude.prompt",
+    "output_path": "output_directory",
+    "input_file": "/Users/joopsnijder/Projects/promptarchitect/examples/inputs/podcast_titels/beschrijving.txt",
+    "input_text": "",
+    "latency": 5.069309207996412,
+    "cost": 0.0,
+    "errors": {
+        "errors": [],
+        "duplicates": 0
+    },
+    "completion": {
+        "system_role": "You are a helpful assistant.",
+        "model": "claude-3-5-sonnet-20240620",
+        "parameters": {
+            "provider": "anthropic",
+            "model": "claude-3-5-sonnet-20240620",
+            "prompt_version": 1.0,
+            "temperature": 0.9,
+            "max_tokens": 1000,
+            "input": "examples/inputs/podcast_titels/beschrijving.txt",
+            "output": "title-claude.txt",
+            "test_path": "examples/tests/podcast_titels"
+        },
+        "cost": 0.0,
+        "is_json": false,
+        "test_path": "",
+        "response_message": "Hier zijn 5 potenti\u00eble titels voor een AI podcast gericht op business mensen met een IT-achtergrond, met focus op MLOps, Explainable AI en Large Language Models:\n\n1. \"AI Insights: Van Code tot Business Impact\"\n\n2. \"The ML Boardroom: Waar AI en Bedrijfsstrategie Samenkomen\"\n\n3. \"Decoded AI: MLOps, Explainability, en LLMs voor IT Professionals\"\n\n4. \"AI Accelerator: Boosting Business met Machine Learning\"\n\n5. \"TechExec AI: Navigeren door de Wereld van MLOps en LLMs\"\n\nDeze titels combineren elementen van AI, business relevantie, en de specifieke focus-onderwerpen van de podcast. Ze zijn ontworpen om de aandacht te trekken van IT-professionals in zakelijke omgevingen die ge\u00efnteresseerd zijn in de praktische toepassing en implementatie van AI-technologie\u00ebn.",
+        "latency": 5.069309207996412
+    },
+    "completion_type": "ClaudeCompletion",
+    "response_message": "Hier zijn 5 potenti\u00eble titels voor een AI podcast gericht op business mensen met een IT-achtergrond, met focus op MLOps, Explainable AI en Large Language Models:\n\n1. \"AI Insights: Van Code tot Business Impact\"\n\n2. \"The ML Boardroom: Waar AI en Bedrijfsstrategie Samenkomen\"\n\n3. \"Decoded AI: MLOps, Explainability, en LLMs voor IT Professionals\"\n\n4. \"AI Accelerator: Boosting Business met Machine Learning\"\n\n5. \"TechExec AI: Navigeren door de Wereld van MLOps en LLMs\"\n\nDeze titels combineren elementen van AI, business relevantie, en de specifieke focus-onderwerpen van de podcast. Ze zijn ontworpen om de aandacht te trekken van IT-professionals in zakelijke omgevingen die ge\u00efnteresseerd zijn in de praktische toepassing en implementatie van AI-technologie\u00ebn."
+}
