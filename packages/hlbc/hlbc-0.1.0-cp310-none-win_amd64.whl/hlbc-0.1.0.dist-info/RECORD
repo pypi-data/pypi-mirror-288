@@ -1,0 +1,5 @@
+hlbc-0.1.0.dist-info/METADATA,sha256=TGT1b_ULTb0psLfyreGdOolpRQnSRoQlfBnc9gccx8E,1655
+hlbc-0.1.0.dist-info/WHEEL,sha256=WdQznVppN7z1Vmr3uommICdFQ8BTH-_snRK0jTnZY7g,95
+hlbc/__init__.py,sha256=ko8_8bCEqW-6QuSXz1HFU3OHuEdl8fjHQ1ktvIBHfpA,99
+hlbc/hlbc.cp310-win_amd64.pyd,sha256=VW3NVwpLjkI3BR6z7nUGb7gpw53ONzBtASHjlPETYFY,735744
+hlbc-0.1.0.dist-info/RECORD,,
