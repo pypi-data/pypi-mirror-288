@@ -1,0 +1,14 @@
+cruscopoetry/syllabifiers/abstract/__init__.py,sha256=sXoc5mfyAQx9bj5haNv_jT6GOelLWhz81kmVa3xEy_s,918
+cruscopoetry/syllabifiers/abstract/abstract_classes.py,sha256=xHIziL2oCDAVGG6vhQE-e0zFyr0TI2zkDsXTZ5gxCm4,12653
+cruscopoetry/syllabifiers/abstract/abstract_tokenizer.py,sha256=OnUnbqpnUnivlcsw7XLNUKE4EVEfDgssujEpCnyF-U0,3533
+cruscopoetry/syllabifiers/abstract/exceptions.py,sha256=AloQytkytKq7QAg4y9FZfFvwVKbwQuBlzxYrrmSrE2Q,1494
+cruscopoetry/syllabifiers/abstract/markers.py,sha256=aQG4NZokf3vGdUiZm28IJEZyb4mA31jsDLEOCMFDHIo,822
+syllabifiers/abstract/__init__.py,sha256=URRFaDRNN5BUjv6fEuBJve8ag0H60yFFm9XFaH1OWy4,870
+syllabifiers/abstract/abstract_classes.py,sha256=WT4f0vTUvJGIcNKaKWuuEt2rTwPvs4QFihlJy9VFcNI,5811
+syllabifiers/abstract/abstract_tokenizer.py,sha256=F8JFUWudbl9RA0vy15VkWHie1lNrqKk26XiOaklfvAY,3515
+syllabifiers/abstract/exceptions.py,sha256=H899ecvnHUDoT6y28PCPLMvp3f9XoFOcyz_49sbw638,1045
+syllabifiers/abstract/markers.py,sha256=rtv4s7ZZXTc7lE_gBRo5ou_tWbtgO5-EwTC6OZu3oT0,801
+cruscopoetry.syllabifiers.abstract-0.0.3.dist-info/METADATA,sha256=iUevxNU5PjwmfdhOqyCyBdiLVNEkIgjOZzV5AIjMaT4,455
+cruscopoetry.syllabifiers.abstract-0.0.3.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+cruscopoetry.syllabifiers.abstract-0.0.3.dist-info/top_level.txt,sha256=re-25HV-lVb6rsAdTdpYQiW5PqPMTbvzQMP5Yq_PY5w,13
+cruscopoetry.syllabifiers.abstract-0.0.3.dist-info/RECORD,,
