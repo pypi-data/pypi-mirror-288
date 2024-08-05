@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: github_module
+Version: 0.2
+Summary: Modules for interacting with GitHub API.
+Home-page: 
+Author: Pavan Bhatt
+Author-email: pavanhbhatt1@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+The best way to interact with GitHub API.
+
+> **Note:** _This module is useful for the GitHub API_ <br>
+> Your URL should look like this https://api.github.com
+> This is working module with your PAT Token
+
+
+# Prerequisites
+```python
+from github_module import GitHubHelper
+```
+
+# Getting Started
+
+## Connectivity to GitHub
+
+To initialize a connection to GitHub, instantiate the `GitHubHelper` class with your GitHub URL, ORG, and Personal API Token:
+
+```python
+github_helper = GitHubHelper(GITHUB_API, API_TOKEN)
+```
+______________________________________________________________________________
+______________________________________________________________________________
+# 1. Check existing remaining API calls
+- Fetch existing remaining API calls
+```python
+from github_module import GitHubHelper
+
+github_api = "https://api.github.com"
+access_token = "<your_token>"
+github_helper = GitHubHelper(github_api, access_token)
+
+rate_limit_remaining = github_helper.get_rate_limit()
+
+if rate_limit_remaining is not False:
+    print(f"Remaining GitHub API rate limit: {rate_limit_remaining}")
+else:
+    print("Failed to fetch the rate limit.")
+
+```
+# 2. Check if repository exist with error if not
+- Check if repository exist with access otherwise collects the error
+```python
+from github_module import GitHubHelper
+
+github_api = "https://api.github.com"
+access_token = "<your_token>"
+github_helper = GitHubHelper(github_api, access_token)
+
+owner = "octocat"
+repo = "Hello-World"
+repo_status = github_helper.check_repository(owner, repo)
+
+print(f"Status: {repo_status['status']}")
+print(f"Message: {repo_status['message']}")
+
+```
+
+______________________________________________________________________________
+______________________________________________________________________________
+# Data Privacy Note
+
+🔒 **We respect your privacy**: This module does **not** store any of your data anywhere. It simply interacts with the GitHub API to perform the requested operations. Ensure you manage your connection details securely.
+
+# Release Notes
+
+## Latest Release: 0.1 (05 Aug 2024)
+- Get your current rate limit
+  - Use the function `get_rate_limit` to check your existing remaining rate limit for your token
+  - Imp Note: Your rate limit is associated with your account. Not with per PAT Token
