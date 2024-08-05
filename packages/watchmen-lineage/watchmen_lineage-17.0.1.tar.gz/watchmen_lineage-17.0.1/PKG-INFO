@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: watchmen-lineage
+Version: 17.0.1
+Summary: 
+Author: luke0623
+Author-email: luke0623@outlook.com
+Requires-Python: >=3.12,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: networkx (>=2.8.8,<3.0.0)
+Requires-Dist: watchmen-data-surface (==17.0.1)
+Requires-Dist: watchmen-indicator-surface (==17.0.1)
+Requires-Dist: watchmen-inquiry-surface (==17.0.1)
+Requires-Dist: watchmen-inquiry-trino (==17.0.1)
+Requires-Dist: watchmen-pipeline-surface (==17.0.1)
+Requires-Dist: watchmen-storage-mysql (==17.0.1)
+Description-Content-Type: text/markdown
+
+# Watchmen Lineage
+
+Lineage of _**Watchmen**_.
