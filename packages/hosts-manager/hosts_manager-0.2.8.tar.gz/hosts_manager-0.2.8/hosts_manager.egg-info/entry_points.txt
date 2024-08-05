@@ -1,0 +1,2 @@
+[console_scripts]
+hosts = hosts.main:main

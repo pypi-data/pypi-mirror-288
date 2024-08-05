@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+hosts/__init__.py
+hosts/main.py
+hosts_manager.egg-info/PKG-INFO
+hosts_manager.egg-info/SOURCES.txt
+hosts_manager.egg-info/dependency_links.txt
+hosts_manager.egg-info/entry_points.txt
+hosts_manager.egg-info/requires.txt
+hosts_manager.egg-info/top_level.txt
