@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lite-telegram
+Version: 0.2.0
+Summary: This is a simplified version of the Telegram API, designed to help developers integrate Telegram functionalities into their applications with ease.
+Author: akrstp
+Author-email: akrstp@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Telegram Lite
+Welcome to the Telegram Lite! This is a simplified version of the Telegram API, designed to help developers integrate Telegram functionalities into their applications with ease.
