@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: orion-ai-sdk
+Version: 1.0.0
+Summary: SDK to integrate Orion with other apps
+Home-page: https://github.com/pybalt/orion-sdk
+Author: pybalt
+Author-email: 96897286+pybalt@users.noreply.github.com
+Keywords: OpenAPI,OpenAPI-Generator,FastAPI
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: urllib3 <2.1.0,>=1.25.3
+Requires-Dist: python-dateutil
+Requires-Dist: pydantic >=2
+Requires-Dist: typing-extensions >=4.7.1
+
+    Orion is an Intelligent Assistant developed by Leonel B. Bravo.
+    You won't find this useful since it needs its server-side component to work.
+    This is intended to integrate Orion with other applications.
+    
