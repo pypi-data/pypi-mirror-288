@@ -1,0 +1,1 @@
+from .translatorAR import TranslatorAR
