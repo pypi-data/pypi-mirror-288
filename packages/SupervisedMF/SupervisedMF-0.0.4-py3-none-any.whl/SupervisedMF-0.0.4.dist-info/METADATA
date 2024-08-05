@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: SupervisedMF
+Version: 0.0.4
+Summary: A package for various supervised matrix factorization methods
+Author-email: Agam Goyal <agamg2@illinois.edu>, Yi Wei <ywei224@wisc.edu>, Hanbaek Lyu <hlyu@math.wisc.edu>
+Maintainer-email: Agam Goyal <agamg2@illinois.edu>
+Project-URL: Homepage, https://github.com/ljw9510/SMF/tree/main
+Project-URL: Issues, https://github.com/ljw9510/SMF/issues
+Keywords: supervised matrix factorization,matrix factorization,dimensionality reduction,low-rank compression,classification
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy >=2.0.0
+Requires-Dist: scipy >=1.13.0
+Requires-Dist: scikit-learn >=1.5.1
+Requires-Dist: matplotlib >=3.9.0
+Requires-Dist: pandas >=2.2.2
+Requires-Dist: seaborn >=0.13.0
+Requires-Dist: tqdm >=4.66.4
+
+# Supervised Matrix Factorization
+
+This Python package contains source codes for algorithms for Supervised Matrix Factorization (SMF) in the papers [1] and [2]: 
+
+## Installation
+
+To install the package, run the following command in your environment:
+
+```
+python3 -m pip install SupervisedMF
+```
+
+Check your installation by trying to import the main classes in this package:
+
+```
+>>> from SMF import SMF_BCD
+>>> from SMF import SMF_LPGD
+```
+
+## Pytorch Version
+
+If you are looking to use the Pytorch version of the Supervised Matrix Factorization algorithms, please first install `torch` and its related dependencies in your environment using the appropriate command from [the official installation page](https://pytorch.org/get-started/locally/). 
+
+For example, if you want to install `torch` for Linux with CUDA 12.1 using `pip`, run the following command:
+
+```
+pip3 install torch torchvision torchaudio
+```
+
+## References
+
+[1] Lee, Joowon, Hanbaek Lyu, and Weixin Yao. [*"Exponentially convergent algorithms for supervised matrix factorization."*](https://papers.nips.cc/paper_files/paper/2023/hash/f2c80b3c9cf8102d38c4b21af25d9740-Abstract-Conference.html) Advances in Neural Information Processing Systems 36 (2024).
+
+[2] Lee, Joowon, Hanbaek Lyu, and Weixin Yao. [*"Supervised Matrix Factorization: Local Landscape Analysis and Applications."*](https://proceedings.mlr.press/v235/lee24p.html) Forty-first International Conference on Machine Learning (2024).
