@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: lightweight-charts-server
+Version: 0.0.18
+Summary: lightweight-chart custom python server
+Author-email: Won JeongHoo <clomia.sig@gmail.com>
+Project-URL: Homepage, https://github.com/vegaxholdings/lightweight-charts-server
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi==0.111.1
+Requires-Dist: lightweight-charts==2.0.1
+
+### 샘플 실행해보기
+
+```
+python setting_data.py
+
+python line_indicators.py
+
+python styling.py
+```
