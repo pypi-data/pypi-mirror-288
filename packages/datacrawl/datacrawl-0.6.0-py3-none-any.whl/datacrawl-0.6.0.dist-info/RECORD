@@ -1,0 +1,17 @@
+datacrawl/__init__.py,sha256=TEZvrYJb_fn3EclEdi0FfcxMou50XDqPIQjse929_RY,139
+datacrawl/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datacrawl/core/spider.py,sha256=VN_IFa0eoO_PbdisHI_l77910bR0nUd9epEaw3Yi8a4,6413
+datacrawl/core/spider_settings.py,sha256=taTlNAISKNcJNKPQcVqXSepDeKG2w3Zqf1akAKAgHFE,2225
+datacrawl/logger.py,sha256=s8Lxy38QbfT7VjJR9pKJ1L2dYz52vcWhHzaUWw-4ApM,1152
+datacrawl/middlewares/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datacrawl/networking/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datacrawl/networking/fetcher.py,sha256=wNLEGTL4d8EiVixSH1yfcN3_mRFcfWqV3uDbAVl7n9g,2909
+datacrawl/networking/formatter.py,sha256=QlDe-8YztYgsJgLJxQlMveZR7XyfcQqB9R78gW0WTwE,996
+datacrawl/networking/robots_txt.py,sha256=fTvJ5EiE-yJ9KP0H9CLRDrx6TntTHdcZQtkfXMXDhkY,1507
+datacrawl/networking/validator.py,sha256=p1BHJ4IlwM0liwPSDjjMS56i1YPJerdxtYqTSS15Klo,272
+datacrawl/webdrivers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datacrawl-0.6.0.dist-info/LICENSE,sha256=U9aKlCXN08BojRq-OLnMorQUi8LeLaD_gmuTnp7LO8w,1080
+datacrawl-0.6.0.dist-info/METADATA,sha256=QEunlqq-aksERNUk9qvldzwg6wzFyXkNFM3EMx5Nvvs,4633
+datacrawl-0.6.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+datacrawl-0.6.0.dist-info/entry_points.txt,sha256=BCgEYQ1ORCoNsNKa8J05_8sh2oHWyJjkxyyKu14W0xo,53
+datacrawl-0.6.0.dist-info/RECORD,,
