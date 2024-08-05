@@ -1,0 +1,9 @@
+basicnanoclient/__init__.py,sha256=zeH5QBCGYvxcovy--zqsMBFzLUwU3zwkjIX_PcdQ_f0,118
+basicnanoclient/rpc.py,sha256=quEr4xiss2eArl35fkhGLecQhR5XVc5bGeH4GaqhoQQ,9942
+basicnanoclient/utils.py,sha256=vrtNcWSGo-jMmDZMdqEg44a7cbfvP0SEMq_eaDra5uc,4121
+basicnanoclient/wallet.py,sha256=nuKikDFtw-8ZbrESgYvsq5nccUwZDm8xSn8aoJg2Rfo,7651
+basicnanoclient-0.5.0.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+basicnanoclient-0.5.0.dist-info/METADATA,sha256=9B7CM9IV1lOJRMDEUopbF9MfXc_lJTFpG1KA2U0tLYE,3588
+basicnanoclient-0.5.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+basicnanoclient-0.5.0.dist-info/top_level.txt,sha256=UQCE9awAAQnx47Ngo2FukXnVJZZq8Mc5blGpYsPj1U8,16
+basicnanoclient-0.5.0.dist-info/RECORD,,
