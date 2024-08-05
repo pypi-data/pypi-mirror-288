@@ -1,0 +1,9 @@
+vergen/Application.py,sha256=ad2eYcFgWqPsEKaKuCVxGOElQd0l84U0EVQY5Id1daA,4126
+vergen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vergen/__main__.py,sha256=wigj34JFSsnm2B7EKrRfIUTr-B_Bc0lnoG7Nn4XhCIU,68
+vergen/main.py,sha256=BWa1iX5dNHaGuZYEaeenF4hMPUysKOrhHYcSmLZjAlE,219
+vergen-1.0.1.dist-info/METADATA,sha256=xgvFd2pPI7nzNantGWXAEHAqQ3h9qhfefq7Vpo0L2Jg,640
+vergen-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+vergen-1.0.1.dist-info/entry_points.txt,sha256=TtQp6wgXFX5Yh7B5nI64TtjVt5oR6ECPfPfQ4zXydds,44
+vergen-1.0.1.dist-info/top_level.txt,sha256=2_qo6qm1FKwHe52-69wWOj0eS9EDg2ZaFlcaGBOYU0Q,7
+vergen-1.0.1.dist-info/RECORD,,
