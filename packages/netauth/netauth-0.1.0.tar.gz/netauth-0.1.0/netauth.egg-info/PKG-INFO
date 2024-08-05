@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: netauth
+Version: 0.1.0
+Summary: NetAuth client library
+Author-email: classabbyamp <dev@placeviolette.net>
+Project-URL: Homepage, https://netauth.org
+Project-URL: Documentation, https://python.netauth.org
+Project-URL: Repository, https://github.com/netauth/netauth-python
+Project-URL: Changelog, https://github.com/netauth/netauth-python/blob/master/CHANGELOG.md
+Keywords: secure-access,authentication-service,netauth
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: grpcio
+Requires-Dist: protobuf
+Provides-Extra: dev
+Requires-Dist: grpcio-tools; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx-rtd-theme; extra == "docs"
+Requires-Dist: sphinx-toolbox; extra == "docs"
+Requires-Dist: sphinx-autodoc-typehints; extra == "docs"
+Requires-Dist: enum-tools; extra == "docs"
+Provides-Extra: ci
+Requires-Dist: ruff; extra == "ci"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Provides-Extra: publish
+Requires-Dist: build; extra == "publish"
+Requires-Dist: twine; extra == "publish"
+
+## netauth-python
+
+A [NetAuth](https://netauth.org) client library for Python.
+
+### Installation
+
+```
+pip install netauth
+```
+
+### Usage
+
+netauth-python centers around the `NetAuth` object:
+
+```py
+na = netauth.NetAuth("netauth.example.org")
+
+try:
+    resp = na.system_status()
+    print(resp)
+except netauth.error.NetAuthRpcError as e:
+    print(f"Request failed: {e}")
+
+na.close()
+```
+
+`NetAuth` can also be used as a context manager and be initialized from a NetAuth configuration file:
+
+```py
+with netauth.NetAuth.with_config(Path("/etc/netauth/config.toml")) as na:
+    try:
+        resp = na.system_status()
+        print(resp)
+    except netauth.error.NetAuthRpcError as e:
+        print(f"Request failed: {e}")
+```
+
+For interactive or dynamic applications, operations that require authentication can use a callback to retrieve the user's secret:
+
+```py
+def secret_cb() -> str:
+    return getpass(prompt="Secret: ")
+
+with netauth.NetAuth("netauth.example.org", entity="demo", secret=secret_cb) as na:
+    try:
+        na.entity_kv_add("demo", "foo", ["bar", "baz"])
+    except error.NetAuthRpcError as e:
+        print(e)
+```
+
+For more information, see the [API documentation](https://python.netauth.org).
+
