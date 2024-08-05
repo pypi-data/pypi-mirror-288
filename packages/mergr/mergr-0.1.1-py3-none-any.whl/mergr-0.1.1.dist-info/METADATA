@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mergr
+Version: 0.1.1
+Summary: Objects merging utility
+Keywords: python
+Author-Email: alxevvv <alxevvv@gmail.com>
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# mergr
