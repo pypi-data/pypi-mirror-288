@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: uzbekistanweather
+Version: 0.0.1
+Summary: bu worldweather kutubxonasi
+Author: Sino Farmonov
+Author-email: farmonovsino4@gmail.com
+Requires: requests
+Requires: beautifulsoup4
+Description-Content-Type: text/markdown
+
+documentatsiya tezkunda chiqadi :)

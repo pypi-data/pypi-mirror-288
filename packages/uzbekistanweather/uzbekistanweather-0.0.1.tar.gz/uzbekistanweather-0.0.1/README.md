@@ -1,0 +1,1 @@
+documentatsiya tezkunda chiqadi :)
