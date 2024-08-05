@@ -1,0 +1,7 @@
+polars_talib-0.1.3.dist-info/METADATA,sha256=aYeWH2o3gN74UAhqBlNAE1v-VvrJr0GdfwbL_f9kpHA,10937
+polars_talib-0.1.3.dist-info/WHEEL,sha256=WdQznVppN7z1Vmr3uommICdFQ8BTH-_snRK0jTnZY7g,95
+polars_talib-0.1.3.dist-info/license_files/LICENSE,sha256=Ycx9_z3k7WzpDTxSQv-1HLwRamKNXxhLZfB82jnr73I,1085
+polars_talib/utils.py,sha256=2sOA3thqGD_ZlFn8tUG48oIADvlEONYz0Jr4uEvITbw,2801
+polars_talib/__init__.py,sha256=LGkc30qI8r9H9PXLBeE-Eoq-nnEYK16EnkopK3_0C64,174739
+polars_talib/_polars_talib.cp310-win_amd64.pyd,sha256=js2DY3NytkOAI0cNIhV-KiPvp1ESKpGUxus-I53ZUoY,13820928
+polars_talib-0.1.3.dist-info/RECORD,,
