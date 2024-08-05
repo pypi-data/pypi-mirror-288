@@ -1,0 +1,43 @@
+Metadata-Version: 2.3
+Name: piyathon
+Version: 0.3.12.3
+Summary: A language-localized superset of Python with a bi-directional transformer to standard Python
+Project-URL: Homepage, https://github.com/piyawish/piyathon
+Project-URL: Bug Tracker, https://github.com/piyawish/piyathon/issues
+Author-email: Piyawish Piyawat <piyawishone@gmail.com>
+License: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# Piyathon
+
+## Installation
+
+`pip install piyathon`
+
+## How Piyathon works
+
+```mermaid
+graph TD
+    A[Piyathon Source Code] --> B[Lexical Tokenization]
+    B --> C{Token Type}
+    C -->|Keyword| D[Translate to Python Keyword]
+    C -->|Other| E[Keep Original Token]
+    D --> F[Reassemble Tokens]
+    E --> F
+    F --> G[Python Source Code]
+    G --> H[Python Interpreter]
+    H --> I[Execution]
+
+    J[Python Source Code] --> K[Lexical Tokenization]
+    K --> L{Token Type}
+    L -->|Keyword| M[Translate to Thai Keyword]
+    L -->|Other| N[Keep Original Token]
+    M --> O[Reassemble Tokens]
+    N --> O
+    O --> P[Piyathon Source Code]
+```
