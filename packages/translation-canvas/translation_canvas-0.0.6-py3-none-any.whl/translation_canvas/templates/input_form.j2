@@ -1,0 +1,230 @@
+<!--
+This HTML template file is used for rendering a form to input log file details in the Translation Canvas application.
+
+The template extends the "base.html" template and defines blocks for the title and content.
+
+The form allows the user to input the path to the .log file, the source language, target language, a unique memorable name, and their email.
+
+The form is submitted to the 'process_log_input' URL using the POST method.
+
+The input fields are as follows:
+- user_input: The path to the .log file (e.g. /path/to/instances.log)
+- source_lang: The source language
+- target_lang: The target language
+- memorable_name: A unique memorable name for the log file
+- email: The user's email address
+
+The form also includes a submit button to submit the form.
+
+Make sure to include /mnt/taurus, /mnt/aries, or /mnt/gemini in the path when entering the log file path.
+
+This template is part of the Translation Canvas application.
+-->
+{% extends "base.html" %}
+
+{% block title %}
+Translation Canvas
+{% endblock %}
+
+{% block content %}
+    <style>
+
+        .select2-container {
+            margin-bottom: 10px;
+            color: black;
+        }
+    </style>
+
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <div class="container">
+        <form method="POST" action="{{ url_for('file_input') }}" class="input-form" id = "logForm" enctype="multipart/form-data">
+            <h3 class="description">Submit a new run for evaluation</h3>
+            
+            <label for = "memorable_name" class = "field-description-text">Give this run a name:</label>
+            
+            <input type="text" id="memorable_name" name="memorable_name" class="input-field" placeholder="model_name-variation-run">
+            
+            <label for = "gpus" class = "field-description-text">Select the GPUs to use:</label>
+            
+            <select id="gpus" name="gpus" class="input-field" multiple>
+                {% for gpu in available_gpus %}
+                    <option value="{{ gpu }}">{{ gpu }}</option>
+                {% endfor %}
+            </select>
+
+            <label for = "input_method", id = "input_method_label" class = "field-description-text">Select the method of input:</label>
+            <select id="input_method" name="input_method" class="input-field">
+                <option value="" disabled selected>Input Method</option>
+                <option value="manual">Manual Input (data will be entered manually)</option>
+                <option value="file">File Input (data is stored in a file(s))</option>
+            </select>
+            
+            <label for = "data_types", id = "data_types_label" class = "field-description-text">Select the type of data:</label>
+            <select id="data_types" name="data_types" class="input-field">
+                <option value="" disabled selected>Data Type</option>
+                <option value="all">Source, Prediction, and Reference text</option>
+                <option value="ref">Prediction and Reference text</option>
+                <option value="src">Prediction and Source text</option>
+            </select>
+
+            <label for = "evaluation_type", id = "evaluation_type_label" class = "field-description-text">Select the type of evaluation:</label>
+            <select id="evaluation_type" name="evaluation_type" class="input-field" multiple>
+                <option value="bleu" disabled>BLEU</option>
+                <option value="instructscore" disabled>InstructScore</option>
+                <option value="comet" disabled>COMET</option>
+            </select>
+
+            <label for = "source_lang" class = "field-description-text">Source language:</label>
+            <select id="source_lang" name="source_lang" class="input-field" onchange="updateTargetLanguages()">
+                <option value="" disabled selected>Source Language</option>
+                {% for lang in source_languages %}
+                    <option value="{{ lang }}">{{ language_names[lang] }}</option>
+                {% endfor %}
+            </select>
+
+            <label for = "target_lang" class = "field-description-text">Target language:</label>
+            <select id="target_lang" name="target_lang" class="input-field">
+                <option value="" disabled selected>Target Language</option>
+                <!-- Options will be dynamically populated by JavaScript -->
+            </select>
+            
+            <button type="submit" class="submit-button">Next</button>
+        </form>
+    </div>
+
+    <script>
+
+        document.getElementById('data_types').addEventListener('change', function() {
+            updateEvaluationTypes();
+        });
+
+        function updateEvaluationTypes() {
+            var data_types = document.getElementById('data_types').value;
+            const evaluation_type = document.getElementById('evaluation_type');
+            if (data_types == 'src') {
+                updateOption('bleu', true);
+                updateOption('instructscore', true);
+                updateOption('comet', false);
+                
+            }
+
+            else if (data_types == 'ref') {
+               
+                updateOption('comet', true);
+                updateOption('instructscore', false);
+                updateOption('bleu', false);
+
+            }
+
+            else {
+                updateOption('comet', false);
+                updateOption('instructscore', false);
+                updateOption('bleu', false);
+            }
+
+
+        }
+
+        function updateOption(value, disabled) {
+            var options = document.getElementById('evaluation_type').options;
+            options = getOptionByValue(options, value);
+            options.disabled = disabled;
+            const selectedOptions = Array.from(document.getElementById('evaluation_type').selectedOptions);
+
+            // Deselect "instructscore" if it is selected
+            selectedOptions.forEach(selectedOptions => {
+                if (selectedOptions.value === value) {
+                    selectedOptions.selected = false;
+                }
+            });
+        }
+
+        function getOptionByValue(options, value) {
+            for (var i = 0; i < options.length; i++) {
+                if (options[i].value == value) {
+                    return options[i];
+                }
+            }
+            return null;
+        }
+
+        function updateTargetLanguages() {
+            const sourceLang = document.getElementById('source_lang').value;
+            const targetLang = document.getElementById('target_lang');
+            targetLang.innerHTML = '';
+
+            const targetLanguages = {{ target_languages|tojson }};
+            const languageNames = {{ language_names|tojson }};
+
+            const option = document.createElement('option');
+            option.value = '';
+            option.text = 'Select Target Language';
+            option.disabled = true;
+            targetLang.appendChild(option);
+
+            if (targetLanguages[sourceLang]) {
+                targetLanguages[sourceLang].forEach(lang => {
+                    const option = document.createElement('option');
+                    option.value = lang;
+                    option.text = languageNames[lang];
+                    targetLang.appendChild(option);
+                });
+            }
+        }
+
+        document.getElementById('source_lang').addEventListener('change', updateTargetLanguages);
+
+        // Initial call to populate target languages on page load
+        window.onload = function() {
+            updateTargetLanguages();
+        }
+
+
+
+        document.getElementById('logForm').addEventListener('submit', function(event) {
+            // Get form elements
+            var sourceLang = document.getElementById('source_lang').value;
+            var targetLang = document.getElementById('target_lang').value;
+            var memorable_name = document.getElementById('memorable_name').value;
+            var input_method = document.getElementById('input_method').value;
+            var data_types = document.getElementById('data_types').value;
+    
+            // Source and target languages validation
+            if (sourceLang === "") {
+                window.alert("Source language is required.");
+                event.preventDefault();
+                return false;
+            }
+            if (targetLang === "") {
+                window.alert("Target language is required.");
+                event.preventDefault();
+                return false;
+            }
+            if (memorable_name === "") {
+                window.alert("Memorable name is required.");
+                event.preventDefault();
+                return false;
+            }
+            if (input_method === "") {
+                window.alert("Input type is required.");
+                event.preventDefault();
+                return false;
+            }
+
+            if (data_types === "") {
+                window.alert("Data type is required.");
+                event.preventDefault();
+                return false;
+            }
+
+        });
+    </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#gpus').select2();
+        $('#evaluation_type').select2();
+    });
+</script>
+{% endblock %}
