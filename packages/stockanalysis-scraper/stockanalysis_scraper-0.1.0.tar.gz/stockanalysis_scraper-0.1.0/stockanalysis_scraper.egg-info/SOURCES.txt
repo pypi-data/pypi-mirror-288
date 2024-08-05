@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+stockanalysis_scraper.egg-info/PKG-INFO
+stockanalysis_scraper.egg-info/SOURCES.txt
+stockanalysis_scraper.egg-info/dependency_links.txt
+stockanalysis_scraper.egg-info/entry_points.txt
+stockanalysis_scraper.egg-info/requires.txt
+stockanalysis_scraper.egg-info/top_level.txt
