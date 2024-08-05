@@ -1,0 +1,15 @@
+pennylane_qrack/CMakeCache.txt,sha256=Hk2q8CV4hWr_JPCSDTzkNusi_kg8_FRoQojK4WAs4Jc,16093
+pennylane_qrack/Makefile,sha256=QqEh3k483lsToRxd2wfoJfVsTg3ZBXQFZTVezlwRZ6c,7789
+pennylane_qrack/QrackDeviceConfig.toml,sha256=-DboPZyBvStsKPRoDXXMDBtN-tuVx9VXY68AAKsL5T8,6186
+pennylane_qrack/__init__.py,sha256=_g4NKu07_pXqxvQaxjdAPe769S5tWwYjqyHi3z7YKHc,673
+pennylane_qrack/_version.py,sha256=5xqI1eRnT7YmZki_ayJqO3c7PZSwnw96YW4LFg00Kko,691
+pennylane_qrack/cmake_install.cmake,sha256=V_v3t0o7_0wjq0Fxyg_StmG6P2KihbZa6ZWxI1ghWiQ,3088
+pennylane_qrack/libqrack_device.dylib,sha256=7z0b8YcJ0BtTKwXdRMTaQcENku3cMS0hs8GIW7n8CTg,4086288
+pennylane_qrack/qrack_device.cpp,sha256=hW0VCdzlJ3Ucpyr1BWoYiRlwAm_cXTE-ZAbB4CzxR8s,38415
+pennylane_qrack/qrack_device.py,sha256=EO-qaf4jE0WWY8hfnewebETxUQEMJsi6bNASmW2mdUY,23670
+pennylane_qrack-0.7.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pennylane_qrack-0.7.3.dist-info/METADATA,sha256=tYzopn4DCHbdCm4IHg47hjNOIyDuiEtV5NZZLRS38p4,5524
+pennylane_qrack-0.7.3.dist-info/WHEEL,sha256=wqVej-ThQL09z8z2P-EmYklMB2_6CJoYgJ4b8OEA6qY,106
+pennylane_qrack-0.7.3.dist-info/entry_points.txt,sha256=V6f1sN6IZZZaEvxrI47A3K_kksp8fDUWjLWD0Met7Ww,79
+pennylane_qrack-0.7.3.dist-info/top_level.txt,sha256=5NFMNHqCHtVLwNkLg66xz846uUJAlnOJ5VGa6ulW1ow,16
+pennylane_qrack-0.7.3.dist-info/RECORD,,
