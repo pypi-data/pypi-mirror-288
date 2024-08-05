@@ -1,0 +1,10 @@
+imagecompression4/__init__.py,sha256=udYyXytZjJ-K0BJBqD02Z2L2VjyJF5cpJURl7C18GZ0,196
+imagecompression4/helpers.py,sha256=euFqDGqNWpbhHrthUL1BuRG2Uo-oZFvs9xBYkbFS8cE,160
+imagecompression4/image_compression.py,sha256=asBZHTHJpWAnQFHc964pi8VrTHruxfOxFe_AFGvVC3g,2070
+imagecompression4/matrix_operations.py,sha256=sG9P4BheHcn23ECMM8zBrkbFRMNyiRudnphIa7d2vsA,285
+imagecompression4/reis_algorithm.py,sha256=SKYh5FW_YJIT2sal2uuMsTFQUTU-5M079ksGvtuEWCM,1072
+imagecompression4-0.1.1.dist-info/LICENSE.txt,sha256=w4bdLqD9bNf22DjD1q7IM7r19wV9LyL6bwEsY_OL1bQ,1124
+imagecompression4-0.1.1.dist-info/METADATA,sha256=ImwY23sf_mh-j3U3G2k-J1Fih_FouuCPhB8IUbZtD50,349
+imagecompression4-0.1.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+imagecompression4-0.1.1.dist-info/top_level.txt,sha256=uart3-Bb27F-hYHXxhrXbreAcOE30rqC550QNxuShgw,18
+imagecompression4-0.1.1.dist-info/RECORD,,
