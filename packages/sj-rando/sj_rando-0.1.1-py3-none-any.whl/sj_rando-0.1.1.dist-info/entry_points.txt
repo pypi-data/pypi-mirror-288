@@ -1,0 +1,2 @@
+[console_scripts]
+sj-rando = sj_rando:main
