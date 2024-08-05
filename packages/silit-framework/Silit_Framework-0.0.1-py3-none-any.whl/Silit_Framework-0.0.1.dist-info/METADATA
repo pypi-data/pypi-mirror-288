@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: Silit-Framework
+Version: 0.0.1
+Summary: SILIT: Scalable Interface for Lightweight Integrated Tooling, Framework for creating desktop applications with MVC structure using Python. Under Development.
+Home-page: https://github.com/jiilanTj/silitframework
+Author: Jiilan Nashrulloh Tanjung
+Author-email: jiilan3maret2008@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+
+# SILIT: Scalable Interface for Lightweight Integrated Tooling
+
+![SILIT Logo](https://i.ibb.co.com/w7PCMXq/20240805-112137.png)
+
+_Innovative framework for building desktop applications with MVC structure using Python_
+
+## 🚀 Key Features
+
+- 🏗️ **MVC Structure**: Model-View-Controller design pattern to separate application logic, user interface, and controls.
+- 🔌 **Easy Integration**: Integrated backend using Flask, speeding up and streamlining development.
+- 🌐 **Cross-Platform**: Build desktop applications that can run on multiple platforms, including Windows.
+- 🏭 **Build to EXE**: Easily convert your application into an executable (.exe) file.
+
+## 📦 Installation
+
+Install SILIT via pip:
+
+```bash
+pip install silit
+```
+
+## 🛠️ Create a New Project
+
+Create a new project with the command:
+
+```bash
+silit create-project projectname
+```
+
+## 📁 Project Directory Structure
+
+```
+projectname/
+├── app/
+│ ├── controllers/
+│ ├── models/
+│ ├── views/
+│ └── __init__.py
+├── public/
+│ ├── css/
+│ ├── js/
+│ ├── images/
+│ └── index.py
+├── routes/
+│ └── web.py
+├── config/
+│ └── config.py
+├── silit.py
+├── setup.py
+└── build.py
+```
+
+## 🚀 Running the Application
+
+Run the application with the command:
+
+```bash
+python silit.py
+```
+
+## 🏗️ Building the Application into an Executable
+
+Convert the application into an executable (.exe) file:
+
+```bash
+python build.py
+```
+
+## 🤝 Contributions
+
+We welcome contributions from the community. Fork this repository and submit your pull request.
+
+## 📄 License
+
+SILIT is licensed under the [MIT License](LICENSE).
+
+You can copy the entire text above and save it as a .txt file. Is there anything else you need help with?
