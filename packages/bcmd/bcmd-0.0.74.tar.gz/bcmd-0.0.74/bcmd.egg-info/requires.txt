@@ -1,0 +1,4 @@
+benimang==0.5.26
+pathspec
+psutil
+twine
