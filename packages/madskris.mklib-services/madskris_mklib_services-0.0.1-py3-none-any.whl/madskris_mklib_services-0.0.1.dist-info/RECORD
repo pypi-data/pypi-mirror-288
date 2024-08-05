@@ -1,0 +1,11 @@
+mklib_services/__about__.py,sha256=Ui-lcuyQA1vzVhbpIKElTYMJNcDG2DzyYFo3qjGkqaY,126
+mklib_services/__init__.py,sha256=2k_Kihk3MJUQpeVR2sYTMFfHqWWfT70p1_fXozxSIPE,103
+mklib_services/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mklib_services/data.py,sha256=_ZQYyLOg_rhf5quLGqYyx1L_C86v9hksDCNjZEJz9NU,1056
+mklib_services/excel.py,sha256=WObJLK04UuWtTvM6cZVv_RfdmH_ztbGWYUfJElguvNs,5076
+mklib_services/rows.py,sha256=AMIpL1uo6TfVGFPXYEyfcx4jo-4zXwLKB7OUhWJQCkw,856
+mklib_services/tempCodeRunnerFile.py,sha256=58aQ9s7uuZBM6HNPgdfJ-IbA9Rw2cgWxs_iPJgFCs00,12
+madskris_mklib_services-0.0.1.dist-info/METADATA,sha256=8-HC4VsTRcCwSF1lGsJ0WRkYj73pp9C9oQKeJNGHd7c,1219
+madskris_mklib_services-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+madskris_mklib_services-0.0.1.dist-info/licenses/LICENSE.txt,sha256=pMK0A6Cg9lbevgcmGeqw1RBOsOeIHb12IcpnLx_pO8M,1101
+madskris_mklib_services-0.0.1.dist-info/RECORD,,
