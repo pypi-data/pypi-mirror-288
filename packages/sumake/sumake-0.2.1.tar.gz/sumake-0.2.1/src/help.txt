@@ -1,0 +1,17 @@
+sumake:
+  -h, --help: show this help
+  -v, --version: show version
+  --zsh-init: init zsh completion
+
+[ssh]
+# DEPLOY_HOST
+# DEPLOY_PORT
+# DEPLOY_USERNAME
+# DEPLOY_PASSWORD
+
+[docker]
+# DOCKER_SERVICE_NAME
+# DOCKER_HOST
+# DOCKER_SERVICE_PORT
+# DOCKER_RUN_OPTS
+
