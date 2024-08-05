@@ -1,0 +1,26 @@
+[package]
+name = "deepbiop-bam"
+version = { workspace = true }
+authors = { workspace = true }
+edition = { workspace = true }
+homepage = { workspace = true }
+repository = { workspace = true }
+keywords = ["bam", "deep-learning"]
+license = { workspace = true }
+readme = "../../README.md"
+description = "Deep Learning Processing Library for Bam Format"
+
+[dependencies]
+anyhow = { workspace = true }
+noodles = { workspace = true }
+pyo3 = { workspace = true }
+flate2 = { workspace = true }
+bstr = { workspace = true }
+
+[dev-dependencies]
+bio = { workspace = true }
+tempfile = { workspace = true }
+
+
+[features]
+python = []
