@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: docker-image-sync
+Version: 0.0.4
+Summary: Docker Image Synchronizer
+Home-page: https://github.com/yeungchie/docker-image-sync
+Author: YEUNGCHIE
+Keywords: python,docker,image,sync,linux
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML>=5.3.1
+Requires-Dist: docker>=5.0.3
+Requires-Dist: rich>=12.6.0
+
+
+# Docker Image Sync
+
+## Install
+
+```bash
+pip3 install docker-image-sync
+```
+
+## Example
+
++ config.yaml
+
+```yaml
+images:
+  - alpine:latest
+  - python:latest
+  - gitlab/gitlab-ce:latest
+  - homeassistant/home-assistant:latest
+registry: my.registry.com
+namespace: mynamespace
+```
+
++ try run
+
+```bash
+python3 -m docker_image_sync.remote config.yaml --try-run
+```
+
+![Demo](https://raw.githubusercontent.com/yeungchie/docker-image-sync/main/img/demo.gif 'Demo')
