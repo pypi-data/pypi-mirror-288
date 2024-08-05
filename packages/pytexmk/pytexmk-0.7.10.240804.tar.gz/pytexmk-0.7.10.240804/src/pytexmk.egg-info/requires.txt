@@ -1,0 +1,4 @@
+rich
+pymupdf
+toml
+packaging
