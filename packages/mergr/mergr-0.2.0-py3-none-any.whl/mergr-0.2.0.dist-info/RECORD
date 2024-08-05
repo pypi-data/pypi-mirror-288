@@ -1,0 +1,8 @@
+mergr-0.2.0.dist-info/METADATA,sha256=c_j8aDK24-1l2y7TiY1jNN6waxPmc6ybJJiEtK9IXxw,227
+mergr-0.2.0.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+mergr-0.2.0.dist-info/licenses/LICENSE,sha256=GLO0-4g0IXONLasV-4Y4QdIhw6FlubPCrWQxWQDxaa4,1074
+mergr/__init__.py,sha256=kLNu_Mo0FTJEq7zd-WQyKDFtKI3sRzLQoLt-SdjAByA,110
+mergr/_version.py,sha256=RIjV_3xgFmyPNY2UihUqwjGrrxWl05i5EUr4u9rYBx8,23
+mergr/merger.py,sha256=cDvBQl060fGaDZQZch8fZoGbaJuAITE79jfBS92KFcE,2650
+mergr/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mergr-0.2.0.dist-info/RECORD,,
