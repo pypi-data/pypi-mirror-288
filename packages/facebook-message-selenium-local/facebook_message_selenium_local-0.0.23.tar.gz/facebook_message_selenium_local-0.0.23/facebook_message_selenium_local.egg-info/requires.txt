@@ -1,0 +1,8 @@
+logger-local
+database-mysql-local
+python-sdk-remote
+message-local
+selenium
+chromedriver
+chrome-boss
+python-dotenv

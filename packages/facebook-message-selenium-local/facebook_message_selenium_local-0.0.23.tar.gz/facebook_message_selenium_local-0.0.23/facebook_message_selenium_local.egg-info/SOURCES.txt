@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+facebook_message_selenium_local.egg-info/PKG-INFO
+facebook_message_selenium_local.egg-info/SOURCES.txt
+facebook_message_selenium_local.egg-info/dependency_links.txt
+facebook_message_selenium_local.egg-info/requires.txt
+facebook_message_selenium_local.egg-info/top_level.txt
+facebook_message_selenium_local/src/__init__.py
+facebook_message_selenium_local/src/facebook_message_constants.py
+facebook_message_selenium_local/src/facebook_message_selenium.py
+facebook_message_selenium_local/src/facebook_selenium_util.py
