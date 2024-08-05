@@ -1,0 +1,11 @@
+prefix=/var/folders/zn/hj183dg15s713b47j2wlhwzw0000gn/T/tmpfvgpo8we/wheel/platlib
+exec_prefix=/var/folders/zn/hj183dg15s713b47j2wlhwzw0000gn/T/tmpfvgpo8we/wheel/platlib
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: fmt
+Description: A modern formatting library
+Version: 11.0.2
+Libs: -L${libdir} -lfmt
+Cflags: -I${includedir}
+
