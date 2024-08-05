@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rich-form
+Version: 0.1.0
+Summary: 
+Author: kiril
+Author-email: stopcrybby@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: readchar (>=4.1.0,<5.0.0)
+Requires-Dist: rich (>=13.7.1,<14.0.0)
+Description-Content-Type: text/markdown
+
+## Coming soon!
