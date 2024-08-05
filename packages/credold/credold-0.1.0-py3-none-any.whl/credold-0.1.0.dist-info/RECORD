@@ -1,0 +1,12 @@
+credold/__init__.py,sha256=xLg1EvpluQ6EuxSCzHg76awMDlvQgxAuS6PSOxPJIt4,39
+credold/credold.py,sha256=kOe3R9HA3JSWRSLBcVvhcI8c_pP7LNDBG_mqLBftsCw,1933
+credold/local_storage.py,sha256=Cb4aQ7NtkFdru_Zk_uft7SOyfgm3eFT1HSt1v-O6DMo,691
+credold/s3_storage.py,sha256=nA2JvYRMlMJAwJXaWLBlv_YcPLGPiau30Rh8orryXkY,2554
+credold/storage.py,sha256=LRQmVnGJeuLom3dIIEn6WSCKiJVI80NgSS9tKCSh7N4,300
+test/__init__.py,sha256=xLg1EvpluQ6EuxSCzHg76awMDlvQgxAuS6PSOxPJIt4,39
+test/test_local_storage.py,sha256=N8HqgX_3C911uBX3TqdFhSoXwVVQ5ZNDrkW-MP5E88g,2228
+test/test_s3_storage.py,sha256=Qs0EUYtDn-UQsgFlsuPmyBodTVTBC2kqC2a07IzqA8E,820
+credold-0.1.0.dist-info/METADATA,sha256=ET8ec9YG2HU5POQe8EDM05WlFn0JcJU6jh0TarW-MFg,1240
+credold-0.1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+credold-0.1.0.dist-info/top_level.txt,sha256=RvdbvoSK3nJC5dEElhhK9-167PjxmU88y-uK1CPYXkI,13
+credold-0.1.0.dist-info/RECORD,,

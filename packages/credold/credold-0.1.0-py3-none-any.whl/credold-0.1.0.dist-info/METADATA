@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: credold
+Version: 0.1.0
+Summary: A package for managing credentials
+Home-page: https://github.com/koboriakira/credold
+Author: Akira Kobori
+Author-email: private.beats@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: boto3
+
+## localstack
+
+locakstackを利用することで、AWSのリソースをローカルで扱うことができる。
+
+### 利用のための準備
+
+`~/.aws/credentials`に、以下のようなアカウントを作成
+
+```
+[localstack]
+aws_access_key_id = dummy
+aws_secret_access_key = dummy
+region=ap-northeast-1
+```
+
+### 利用例
+
+```shell
+aws --endpoint-url=http://localhost:4567 --profile localstack {awsコマンド}
+```
+
+たとえばS3バケットを作成した場合は、以下のようなコマンドを実行する。
+
+```shell
+# バケット作成
+aws --endpoint-url=http://localhost:4567 --profile localstack s3 mb s3://credold-sample
+
+# バケット一覧表示
+aws --endpoint-url=http://localhost:4567 --profile localstack s3 ls
+```
+
+## PyPi
+
+```shell
+python setup.py sdist bdist_wheel
+```
