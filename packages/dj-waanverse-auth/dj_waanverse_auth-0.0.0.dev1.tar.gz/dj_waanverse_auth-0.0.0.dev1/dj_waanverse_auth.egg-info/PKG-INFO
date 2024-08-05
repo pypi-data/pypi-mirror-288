@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: dj_waanverse_auth
+Version: 0.0.0.dev1
+Summary: A comprehensive interanl package for managing user accounts and authentication
+Home-page: https://github.com/WaanverseLabs/waanverse_accounts
+Author: Waanverse Labs Inc.
+Author-email: software@waanverse.com
+License: Internal Use License
+Keywords: django,user accounts,authentication,JWT,MFA
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Django
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django>=5.0.7
+Requires-Dist: djangorestframework>=3.15.2
+Requires-Dist: djangorestframework-simplejwt>=5.3.1
+Requires-Dist: pyotp>=2.9.0
+Requires-Dist: user-agents>=2.2.0
+
+# Dj-Waanverse-Auth
+
+Welcome to **Dj-Waanverse-Auth**!
+
+This is an internal REST authentication package for Django, developed and maintained by Waanverse Labs Inc. It provides robust authentication features tailored for enterprise use.
+
+For comprehensive documentation, installation instructions, and usage guidelines, please visit our [documentation website](//) (coming soon!).
+
+Thank you for choosing Dj-Waanverse-Auth!
