@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "lisa-on-cuda"
+version = "1.4.0"
+description = "LISA (Reasoning Segmentation via Large Language Model) on cuda, now with huggingface ZeroGPU support!"
+authors = ["alessandro trinca tornidor <alessandro@trinca.tornidor.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+
+[metadata]
+name = "lisa-on-cuda"
+version = "1.4.0"
+
+[tool.poetry.urls]
+Source = "https://huggingface.co/spaces/aletrn/lisa-on-cuda/"
+Demo = "https://huggingface.co/spaces/aletrn/lisa-on-cuda/"
+
+[tool.poetry.dependencies]
+bitsandbytes = "^0.42.0"
+einops = "^0.8.0"
+fastapi = "^0.111.1"
+gradio = "^4.40.0"
+markdown2 = "^2.5.0"
+nh3 = "^0.2.18"
+numpy = [
+    {version = "1.25.2", python = "~3.10"},
+    {version = "^1.26", python = "~3.11"}
+]
+openai = "^1.38.0"
+opencv-python-headless = "4.8.1.78"
+packaging = "^24.1"
+peft-patched = "0.9.3"
+pycocotools = "^2.0.8"
+python = ">=3.10, <3.12"
+requests = "^2.32.3"
+samgis-core = "3.0.11"
+scipy = "^1.14.0"
+sentencepiece = "^0.2.0"
+shortuuid = "^1.0.13"
+spaces = "^0.28.3"
+torch = "2.2.0"
+torchvision = "0.17.0"
+tqdm = "^4.66.5"
+transformers-backport = "4.31.2"
+uvicorn = "^0.30.5"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.2"
+pytest-cov = "^5.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

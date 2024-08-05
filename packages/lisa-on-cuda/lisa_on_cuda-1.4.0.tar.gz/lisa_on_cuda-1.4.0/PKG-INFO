@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: lisa-on-cuda
+Version: 1.4.0
+Summary: LISA (Reasoning Segmentation via Large Language Model) on cuda, now with huggingface ZeroGPU support!
+License: Apache 2.0
+Author: alessandro trinca tornidor
+Author-email: alessandro@trinca.tornidor.com
+Requires-Python: >=3.10,<3.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: bitsandbytes (>=0.42.0,<0.43.0)
+Requires-Dist: einops (>=0.8.0,<0.9.0)
+Requires-Dist: fastapi (>=0.111.1,<0.112.0)
+Requires-Dist: gradio (>=4.40.0,<5.0.0)
+Requires-Dist: markdown2 (>=2.5.0,<3.0.0)
+Requires-Dist: nh3 (>=0.2.18,<0.3.0)
+Requires-Dist: numpy (==1.25.2) ; python_version >= "3.10" and python_version < "3.11"
+Requires-Dist: numpy (>=1.26,<2.0) ; python_version >= "3.11" and python_version < "3.12"
+Requires-Dist: openai (>=1.38.0,<2.0.0)
+Requires-Dist: opencv-python-headless (==4.8.1.78)
+Requires-Dist: packaging (>=24.1,<25.0)
+Requires-Dist: peft-patched (==0.9.3)
+Requires-Dist: pycocotools (>=2.0.8,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: samgis-core (==3.0.11)
+Requires-Dist: scipy (>=1.14.0,<2.0.0)
+Requires-Dist: sentencepiece (>=0.2.0,<0.3.0)
+Requires-Dist: shortuuid (>=1.0.13,<2.0.0)
+Requires-Dist: spaces (>=0.28.3,<0.29.0)
+Requires-Dist: torch (==2.2.0)
+Requires-Dist: torchvision (==0.17.0)
+Requires-Dist: tqdm (>=4.66.5,<5.0.0)
+Requires-Dist: transformers-backport (==4.31.2)
+Requires-Dist: uvicorn (>=0.30.5,<0.31.0)
+Project-URL: Demo, https://huggingface.co/spaces/aletrn/lisa-on-cuda/
+Project-URL: Source, https://huggingface.co/spaces/aletrn/lisa-on-cuda/
+Description-Content-Type: text/markdown
+
+---
+title: lisa + gradio + fastapi + ZeroGPU
+emoji: ⚡
+colorFrom: red
+colorTo: purple
+sdk: gradio
+sdk_version: 4.40.0
+app_file: app.py
+pinned: true
+---
+
+# LISA (Reasoning Segmentation via Large Language Model) on cuda, now with huggingface ZeroGPU support!
+
+## Update requirements.txt, needed on HuggingFace demo
+
+```bash
+python -m samgis_core.utilities.update_requirements_txt \
+  --req_no_version_path requirements_no_versions.txt \
+  --req_output_path requirements.txt
+```
+
+Pay attention about any unnecessary dependency, e.g. gradio_client==1.2.0 (it's installed with gradio).
+
+## Exec jupyter on the remote server with port forwarding on localhost
+
+1. checkout repo, install venv with jupyter
+2. port forwarding in localhost wiht private key: `ssh -i /path/to/private_key name@endpoint.com -L 8889:localhost:8889 -N -f`
+3. start the jupyter-lab server
+4. connect to page in localhost
+
+## Commands to work on remote virtual machines (e.g. SaturnCloud) after clone and git lfs install
+
+```bash
+cd ~/workspace/lisa-on-cuda/
+rm -rf lisa_venv 
+python3 -m venv lisa_venv
+ln -s lisa_venv/ venv
+source  venv/bin/activate
+pip --version
+which python
+python -m pip install pip wheel --upgrade
+python -m pip install pytest pytest-cov jupyterlab
+python -m pip install -r requirements.txt
+nohup jupyter-lab &
+tail -F nohup.out
+```
+
+# Jupyterlab Howto
+
+To run the `test.ipynb` notebook you should already:
+- cloned project https://huggingface.co/spaces/aletrn/lisa-on-cuda with active git lfs
+- created and activated a virtualenv
+- installed jupyterlab dependencies from requirements_jupyter.txt
+- installed dependencies from requirements.txt
+
+## Hardware requirements for local usage
+
+- an nvidia gpu with 10 or 12GB of memory (a T4 should suffice)
+- at least 16GB of system ram
+
+## Hardware requirements on huggingface ZeroGPU
+
+Right now (July 2024) huggingface let use ZeroGPU Nvidia A100 GPUs.
+
+[![Gradio](https://img.shields.io/badge/Gradio-Online%20Demo-blue)](http://103.170.5.190:7860/)
+[![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_app.svg)](https://openxlab.org.cn/apps/detail/openxlab-app/LISA)
+
+See [LISA](https://github.com/dvlab-research/LISA) for details on the original project.
+Note that the authors don't keep the project updated anymore.
+
