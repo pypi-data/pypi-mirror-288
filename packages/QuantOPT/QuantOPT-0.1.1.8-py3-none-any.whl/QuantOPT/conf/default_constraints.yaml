@@ -1,0 +1,37 @@
+general_eq_rc:
+  kwargs: 'object_one, object_two'
+  formula: 'object_one == object_two'
+  direction: 'eq'
+  import_func:
+    - 'import numpy as np'
+
+
+general_lower_rc:
+  kwargs: 'bound_value, object'
+  formula: 'object - bound_value'
+  direction: 'lower'
+  import_func:
+    - 'import numpy as np'
+
+
+general_upper_rc:
+  kwargs: 'bound_value, object'
+  formula: 'bound_value - object '
+  direction: 'upper'
+  import_func:
+    - 'import numpy as np'
+
+
+general_count_lower_rc:
+  kwargs: 'bound_value'
+  formula: 'np.nansum(w>0) - bound_value '
+  direction: 'lower'
+  import_func:
+    - 'import numpy as np'
+
+general_count_upper_rc:
+  kwargs: 'bound_value'
+  formula: 'bound_value - np.nansum(w>0) '
+  direction: 'upper'
+  import_func:
+    - 'import numpy as np'
