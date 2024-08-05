@@ -1,0 +1,2 @@
+[console_scripts]
+biovars = biovars.cli:main
