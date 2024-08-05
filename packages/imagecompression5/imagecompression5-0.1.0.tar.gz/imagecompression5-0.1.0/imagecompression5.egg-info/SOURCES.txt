@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+imagecompression5/__init__.py
+imagecompression5/helpers.py
+imagecompression5/image_compression.py
+imagecompression5/reis_algorithm.py
+imagecompression5.egg-info/PKG-INFO
+imagecompression5.egg-info/SOURCES.txt
+imagecompression5.egg-info/dependency_links.txt
+imagecompression5.egg-info/top_level.txt
