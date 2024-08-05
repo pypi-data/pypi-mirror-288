@@ -1,0 +1,35 @@
+[project]
+name = "pulsar-viewer"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "alexjuda", email = "alexanderjuda@gmail.com" }
+]
+dependencies = [
+    "pulsar-client>=3.5.0",
+    "toga>=0.4.5",
+    "click>=8.1.7",
+]
+readme = "README.md"
+requires-python = ">= 3.10"
+license = { text = "Apache-2.0" }
+
+[project.scripts]
+"pulsar-viewer" = "pulsar_viewer.toga.main:cli_main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "pytest>=8.3.2",
+    "pytest-dependency>=0.6.0",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pulsar_viewer"]
