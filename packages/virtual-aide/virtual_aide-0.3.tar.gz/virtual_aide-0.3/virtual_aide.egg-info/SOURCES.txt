@@ -1,0 +1,8 @@
+README.md
+setup.py
+virtual-aide/__init__.py
+virtual-aide/assistreq_pws.py
+virtual_aide.egg-info/PKG-INFO
+virtual_aide.egg-info/SOURCES.txt
+virtual_aide.egg-info/dependency_links.txt
+virtual_aide.egg-info/top_level.txt
