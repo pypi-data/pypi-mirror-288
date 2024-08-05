@@ -1,0 +1,11 @@
+erc6492_signature_verifier/__init__.py,sha256=xuu1iFNMBoyfwBQSyEPharyRM-cvu_M84hIAMYUJZFE,49
+erc6492_signature_verifier/binary_data.py,sha256=_C5j7xTnSBaQdtCNpmz3iTuo6xJ2swoie_p6NGdGwas,6678
+erc6492_signature_verifier/concat.py,sha256=Se68IOghBLkJs4-sFghFUkMwXzf2Qaf4ngaaXFGV4eI,517
+erc6492_signature_verifier/contracts/UniversalSigValidator.sol,sha256=zp1e7WMksBb0buQQddAoaUafLO4y5Vlp3ZLtf7Ot2tg,4173
+erc6492_signature_verifier/contracts/ValidateSigOffchain.sol,sha256=PA2-070PGoRNPweX2PZ8m5kYIQnr8Huv4Bs_bf5PSHw,565
+erc6492_signature_verifier/hash_msg.py,sha256=kG8W5wKIaKUGa_WE_sl3boxpBWpMONfgAilq2tsfwdU,565
+erc6492_signature_verifier/signature_verifier.py,sha256=v-x3kiBupOa3p2YJ9S4NZn_6jvyZnJQ_CVmZmIh2I90,2522
+erc6492_signature_verifier-0.2.1.dist-info/LICENSE,sha256=Pfeg3ruyqUJFqZlYzSWXYEqO0vYdXo1smJakK8PlOHI,1069
+erc6492_signature_verifier-0.2.1.dist-info/METADATA,sha256=6cIZLbEopUZyscTfhUfAKqfljEWMI-dWgB1_en0Zk9M,3674
+erc6492_signature_verifier-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+erc6492_signature_verifier-0.2.1.dist-info/RECORD,,
