@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: amazfit-pyclient
+Version: 0.2.8
+Summary: Amazfit Python Client
+Home-page: https://github.com/MyrikLD/amazfit_pyclient
+Author: MyrikLD
+Author-email: myrik260138@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: bleak
+Requires-Dist: cryptography
+Provides-Extra: http
+Requires-Dist: httpx; extra == "http"
+Requires-Dist: yarl; extra == "http"
+
+# Python amazfit client
+
+Tested on Amazfit GTR4
+
+# State
+
+- [x] Auth
+- [x] Decode chunked message
+- [x] Encode chunked message
+- [x] Fetch activity data
+
+# How to
+
+### Get key:
+- Pair band to official app (zepp)
+- Use this repo to get key https://github.com/argrento/huami-token.git
+- Run main.py
+
+### Example
+```bash
+main.py -a 00:00:00:00:00:00 -k 79a000a0300001a037a370ee0d219aa9
+```
