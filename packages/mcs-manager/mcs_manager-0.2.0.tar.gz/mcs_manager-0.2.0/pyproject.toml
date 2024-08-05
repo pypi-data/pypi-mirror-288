@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "mcs-manager"
+version = "0.2.0"
+description = ""
+authors = ["Gustavo Soares <gustavo.soares.cdc@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+mcs-manager = "mcs_manager.main:run"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+typer = "^0.12.3"
+pyfiglet = "^1.0.2"
+inquirerpy = "^0.3.4"
+pyngrok = "^7.2.0"
+gitpython = "^3.1.43"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
