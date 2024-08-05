@@ -1,0 +1,8 @@
+directadmin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+directadmin/base.py,sha256=8oSbVCLk5vBMaoJtyNeLAwT_YgqdC7bYZtrKPCsY9XA,5953
+directadmin/client.py,sha256=T41vrHfX0HisUS-x2JZmEejTuZkwjMBcq43sdMjIYUI,10969
+directadmin/endpoints.py,sha256=Kud2cut8p6Gc9DNgY3BG9Apj36nPjxBf0sXIO0nV7yc,704
+directadmin_cli-0.1.5.dist-info/METADATA,sha256=q2M3P9c-y4GSkcOqC1mHvccDz-MbsnHiMU3J2SoD1VA,3856
+directadmin_cli-0.1.5.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+directadmin_cli-0.1.5.dist-info/licenses/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+directadmin_cli-0.1.5.dist-info/RECORD,,
