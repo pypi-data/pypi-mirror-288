@@ -1,0 +1,20 @@
+
+
+
+
+
+let from_private_key_hexadecimal_string = "221E8A39C27416F29FD1C58C1CC1C206DE07FCC8BDA2F9678C792CBC3D1CD82D"
+const account_1 = AptosSDK.Account.fromPrivateKey ({ 
+	privateKey: new AptosSDK.Ed25519PrivateKey (
+		Uint8Array_from_string (from_private_key_hexadecimal_string)
+	), 
+	legacy: false 
+});
+const from_address = account_1.accountAddress;
+// console.log (string_from_Uint8Array (from_address.data))
+// 70133EFDD60CF5E0C4506CA928221564BB05DC31D5943BF6633BC0B269504B6D
+
+
+
+import { Uint8Array_from_string } from '$lib/vars/hexadecimal/Uint8Array_from_string'
+const accountAddress = AccountAddress.from (Uint8Array_from_string (from_address_hexadecimal_string));

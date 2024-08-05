@@ -1,0 +1,34 @@
+
+
+<pre>
+	
+	
+	<header>Transaction</header>
+		
+	<header>Deprecated</header>
+	
+		"Signed"
+		"Unsigned"
+
+
+	<header>Important</header>
+		
+		BCS Format:
+			https://aptos.dev/en/build/sdks/ts-sdk/building-transactions/bcs-format
+			
+			https://github.com/aptos-labs/bcs
+		
+		
+		
+		const transaction_petition_object = await aptos.transaction.build.simple ({
+			sender: account_1_address,
+			data: {
+				function: "0x1::aptos_account::transfer",
+				functionArguments: [
+					Aptos_SDK.AccountAddress.fromString ("0x123"), 
+					new Aptos_SDK.U64 (1_000_000)
+				]
+			},
+			options
+		});
+</pre>

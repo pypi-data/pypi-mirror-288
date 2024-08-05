@@ -1,0 +1,168 @@
+Metadata-Version: 2.1
+Name: Oumuamua
+Version: 0.1.0
+Summary: 
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Emergency (>=2.0.0,<3.0.0)
+Requires-Dist: PyNaCl (>=1.5.0,<2.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: ecdsa (==0.18.0)
+Requires-Dist: h2 (>=4.1.0,<5.0.0)
+Requires-Dist: httpx (>=0.24.0,<0.25.0)
+Requires-Dist: pydash (>=8.0.1,<9.0.0)
+Requires-Dist: ships (>=1.3.8,<2.0.0)
+Requires-Dist: somatic (>=3.0.3,<4.0.0)
+Requires-Dist: tomli (>=2.0.1,<3.0.0)
+Requires-Dist: typing-extensions (>=4.4.0,<5.0.0)
+Requires-Dist: ventures (>=1.6.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+
+
+
+
+
+******
+ 
+Bravo!  You have received a Medical Diploma from   
+the Orbital Convergence University International Air  
+and Water Embassy of the Rusty Tangerine Planet.   
+
+You are now officially clinically certified to  this mixer in your practice.
+
+******
+
+
+# Oumuamua
+
+---
+
+## Summary
+Oumuamua is feature that is supposed to exist on two types of Howl Beacons.   
+
+---
+
+### Howl Beacon 1
+Howl Beacon 1 is a Howl Beacon that is connected to the internet.  Possibly there might be an ICANN address or ICANN addresses online where one can interact with a Howl Beacon 1.
+
+
+### Howl Beacon 2
+Howl Beacon 2 is for consenting to moves.
+
+It is a Howl Beacon that should have very limited connected to the internet.
+It should interact with QR codes and an camera, or possibly with hexadecimal strings over USB.
+
+That is activities in the "Relatives" portion of the feature are activities that should happen offline.
+Those activities are locating addresses and signing transactions.
+
+
+
+---		
+		
+## Install Oumuamua to Howl Beacon 2, Docker Method
+
+```
+1. From Howl Beacon 1, Install the Docker Engine:
+```
+https://docs.docker.com/engine/install/
+
+Docker can open an OS within an OS.  
+
+This is 
+
+```
+2. From Howl Beacon 1, Install the Docker Ubuntu Image
+```
+```
+docker pull ubuntu
+```
+
+```
+3. From Howl Beacon 1, Create an Oumuamua Image
+```
+
+This creates a docker container from the ubuntu image
+and then opens the docker container.
+```
+docker run -it ubuntu
+```
+
+```
+apt update
+apt install python3-pip -y
+apt install python3.12-venv
+mkdir /habitat
+cd /habitat
+python3 -m venv v_env
+. v_env/bin/activate
+```
+
+```
+pip install Oumuamua
+echo "essence = {}" > Oumuamua_essence.py
+```
+
+```
+docker container ls
+docker commit 5d1648e48d6c oumuamua:v0.0.1
+docker image ls
+docker save -o oumuamua_v0.0.1.tar oumuamua:v0.0.1
+```
+
+
+```
+4. From Howl Beacon 2, with Internet Connectivity, Install the Docker Engine
+```
+```
+https://docs.docker.com/engine/install/
+```
+
+```
+5. From Howl Beacon 2, with Internet Connectivity, 
+   Install any other software that you want offline.
+```
+```
+such as:
+	IDE: codelite
+		https://docs.codelite.org/downloads/download/#ubuntu-debian
+		
+	gitnuro
+```
+
+```
+6.	Permanently Disconnect Howl Beacon 2 from the internet.
+```
+If you do want an upgrade to the "Relatives" Howl Beacon that isn't docker
+image, wiping the drive and then creating a fresh OS might be a good plan.
+
+
+---
+
+
+## Glossary
+### Howl Beacon
+It's like a beacon that can send loud alerts. 
+
+Maybe it has a 3 button physical combination lock on the back,
+that unlocks buttons. 
+
+	1 is a loud police alert.
+	1 is a silent police alert.  
+	1 is a silent ambulance alert. 
+
+Could be synced with a wearable.	
+	
+	Similar:
+		@ Alert Beacon
+		
+		
+
+
+
+
+
+
