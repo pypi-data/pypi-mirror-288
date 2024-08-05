@@ -1,0 +1,10 @@
+matplotlib
+numpy
+scipy
+pyyaml
+pynput
+imageio
+pathlib
+shapely
+scikit-image
+loguru
