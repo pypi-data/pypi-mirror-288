@@ -1,0 +1,2 @@
+[dashai.plugins]
+model_name = dashai_img_mlp_plugin.model_class_template:ImgMLPClass

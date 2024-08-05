@@ -1,0 +1,9 @@
+dashai_img_mlp_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dashai_img_mlp_plugin/dataloader_class_template.py,sha256=ogLoNngT6bX_0h7roImLQAikXI6CZD7Ep274MOdCgYY,2275
+dashai_img_mlp_plugin/metric_class_template.py,sha256=t61IyPNUNnnu3rtjh4-wqNeUsI_Fj5Wc0HG0ITVPK2Q,1410
+dashai_img_mlp_plugin/model_class_template.py,sha256=xLrYTTQnw8r2tD3fYAiuhee8oOJxn753Pt19akWOtGc,6937
+dashai_img_mlp_plugin/task_class_template.py,sha256=ERaeNXhUPsOZvC2vp6994iv7yGNcC-em86an2xn3qyc,273
+dashai_img_mlp_plugin-0.0.2.dist-info/METADATA,sha256=guke5feXY9jB_1hgcWs-o5GyPURfqk3a8cK6qwLO0YM,341
+dashai_img_mlp_plugin-0.0.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+dashai_img_mlp_plugin-0.0.2.dist-info/entry_points.txt,sha256=jMUTftv4jNx7tCH4S6hGmpDt-gRzSKO6RgtjlPcivo0,85
+dashai_img_mlp_plugin-0.0.2.dist-info/RECORD,,
