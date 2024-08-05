@@ -1,0 +1,2 @@
+[console_scripts]
+fastnode = fastnode._cli:cli
