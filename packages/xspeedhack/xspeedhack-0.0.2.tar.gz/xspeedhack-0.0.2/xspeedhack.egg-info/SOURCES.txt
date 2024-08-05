@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+xspeedhack/__init__.py
+xspeedhack/client.py
+xspeedhack.egg-info/PKG-INFO
+xspeedhack.egg-info/SOURCES.txt
+xspeedhack.egg-info/dependency_links.txt
+xspeedhack.egg-info/requires.txt
+xspeedhack.egg-info/top_level.txt
+xspeedhack/bin/injector32.exe
+xspeedhack/bin/injector64.exe
+xspeedhack/bin/speedhack32.dll
+xspeedhack/bin/speedhack64.dll
