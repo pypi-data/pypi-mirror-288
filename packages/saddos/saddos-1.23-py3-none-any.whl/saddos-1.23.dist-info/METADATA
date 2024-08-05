@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: saddos
+Version: 1.23
+Summary: This Is Samp Exploit
+Home-page: https://github.com/RemonCalvius/saddos
+Author: Fann
+Author-email: fancoding@outlook.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+
+
+```markdown
+# SA:MP DDOS v1.20
+
+SA:MP DDOS v1.20 adalah alat untuk melakukan serangan Denial of Service (DoS) pada server SA:MP (San Andreas Multiplayer) menggunakan protokol UDP. Alat ini memungkinkan pengiriman paket dengan berbagai payload untuk menguji ketahanan server terhadap serangan DoS.
+
+## Fitur
+
+- Mengirimkan paket UDP dengan payload yang telah ditentukan.
+- Mendukung berbagai payload untuk menguji server pada port tertentu.
+- Menggunakan threading untuk pengiriman paket secara bersamaan.
+
+## Prasyarat
+
+- Python 2.7 atau Python 3.x
+- Modul `socket`, `sys`, `threading`, `random`, `time`, `os`, dan `argparse` (semua ini adalah modul bawaan Python)
+
+## Instalasi
+
+1. Pastikan Python terinstal di sistem Anda.
+2. Unduh atau kloning repositori ini.
+
+## Cara Penggunaan
+
+1. Jalankan skrip dengan argumen berikut:
+
+   ```bash
+    -s <SERVER_IP> -p <PORT> -t <THREADS>
+   ```
+
+   - `-s` atau `--server`: Alamat IP dari server target.
+   - `-p` atau `--port`: Nomor port dari server target.
+   - `-t` atau `--threads`: Jumlah thread yang akan digunakan untuk mengirimkan paket.
+
+2. Contoh perintah untuk menjalankan skrip:
+
+   ```bash
+    -s 192.168.1.1 -p 7777 -t 10
+   ```
+
+   Perintah di atas akan mengirimkan paket ke server dengan IP `192.168.1.1` pada port `7777` menggunakan 10 thread.
+
+3. Untuk menghentikan serangan, ketik `stop` saat diminta di terminal dan tekan Enter, atau tekan `Ctrl + C` untuk menghentikan proses.
+
+## Disclaimer
+
+Alat ini disediakan hanya untuk tujuan edukasi dan pengujian keamanan. Penggunaan alat ini untuk tujuan merugikan atau ilegal dilarang dan dapat melanggar hukum. Pengembang alat ini tidak bertanggung jawab atas penggunaan yang tidak sah atau kerusakan yang disebabkan oleh penggunaan alat ini.
+
+## Kontak
+
+Untuk pertanyaan atau masukan, Anda dapat menghubungi pengembang di [@Fann](mailto:fancoding@outlook.com).
+
+---
+
+Terima kasih telah menggunakan SA:MP DDOS v1.20!
+```
+
+Semoga ini memenuhi kebutuhan Anda!
