@@ -1,0 +1,30 @@
+# https://packaging.python.org/en/latest/tutorials/packaging-projects/
+[project]
+name = "livewire"
+version = "0.0.11"
+authors = [{ name = "Simone Giacomelli", email = "simone.giacomelli@gmail.com" }]
+dependencies = ["watchdog==4.0.1"]
+requires-python = ">=3.8"
+keywords = ["livewire", "development", "tools"]
+readme = "README.md"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/simonegiacomelli/livewire"
+Issues = "https://github.com/simonegiacomelli/livewire/issues"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+pypi = ["twine", "build"]
+
