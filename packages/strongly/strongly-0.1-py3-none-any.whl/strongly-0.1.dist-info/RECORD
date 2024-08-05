@@ -1,0 +1,11 @@
+strongly/__init__.py,sha256=0lGvFGGRasxc6RkIlolRkVQBZRAJ5H7KMLFuimljQwU,34
+strongly/api_client.py,sha256=_IFjmydCv-GMluZW_EfMnfK0ONtOVpsDe9Zwetyhpok,7133
+strongly/exceptions.py,sha256=ZBRtN4HqE7PkvBNYqHksetMuyqV-FueCfHvpXKwNZ5I,84
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=7A7XWj-8WUhOiEFFc58WaMH1FyAHt8kJdm-CG7ne4fs,421
+tests/test_exceptions.py,sha256=Y3k-HG2sibVRsxWV9tkMz-I37uJaRQ0zYAdfQ9YG858,314
+tests/test_strongly.py,sha256=3O_WBFG-TTmgP_Z0KsIlVyIPNrYnDGZvSfIXNJybwoI,11567
+strongly-0.1.dist-info/METADATA,sha256=j6YzY7b9dcRlRl11-obxThxJE6pTBmh_ub_Ls1647JM,8595
+strongly-0.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+strongly-0.1.dist-info/top_level.txt,sha256=L79bgfhnxFJDbzAR3dh96blyURohK4LvULkKhG0cWq8,15
+strongly-0.1.dist-info/RECORD,,
