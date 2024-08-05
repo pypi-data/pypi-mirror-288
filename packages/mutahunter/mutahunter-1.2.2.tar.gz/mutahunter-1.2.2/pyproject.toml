@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = 'mutahunter'
+description = "LLM Mutation Testing for any programming language"
+requires-python = ">= 3.11"
+version = "1.2.2"
+dependencies = [
+    "tree-sitter==0.21.3",
+    'tree_sitter_languages==1.10.2',
+    "tqdm",
+    'grep_ast',
+    'pygments',
+    'networkx',
+    'jinja2',
+    'litellm',
+    "numpy",
+    "scipy",
+]
+keywords = ["mutahunter", 'test', "testing", "LLM", 'mutant']
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Steven Jung" }]
+maintainers = [{ name = "Steven Jung" }]
+
+[project.urls]
+Homepage = "https://mutahunter.ai"
+Repository = "https://github.com/codeintegrity-ai/mutahunter"
+
+[project.optional-dependencies]
+dev = ['isort', 'black']
+testing = ['pytest']
+
+[project.scripts]
+mutahunter = "mutahunter.main:run"
+
+[tool.setuptools.package-data]
+mutahunter = [
+    'src/mutahunter/core/queries/*.scm',
+    'src/mutahunter/core/templates/*.html',
+]
