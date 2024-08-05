@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: facebook-message-selenium-local
+Version: 0.0.24
+Summary: PyPI Package for Circles facebook-message-selenium-local Python
+Home-page: https://github.com/circles-zone/facebook-message-selenium-local-python-package
+Author: Circles
+Author-email: info@circlez.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: logger-local
+Requires-Dist: database-mysql-local
+Requires-Dist: python-sdk-remote
+Requires-Dist: message-local
+Requires-Dist: selenium
+Requires-Dist: chromedriver
+Requires-Dist: chrome-boss
+Requires-Dist: python-dotenv
+
+PyPI Package for Circles facebook-message-selenium-local Python
