@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+setup.py
+translatorAR.egg-info/PKG-INFO
+translatorAR.egg-info/SOURCES.txt
+translatorAR.egg-info/dependency_links.txt
+translatorAR.egg-info/requires.txt
+translatorAR.egg-info/top_level.txt
