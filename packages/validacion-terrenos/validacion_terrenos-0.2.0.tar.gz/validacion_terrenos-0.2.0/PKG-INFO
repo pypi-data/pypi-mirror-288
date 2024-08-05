@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: validacion_terrenos
+Version: 0.2.0
+Summary: Validacion atributos terrenos
+Home-page: https://github.com/tu_usuario/validacion_terrenos
+Author: Daniel Vanegas
+Author-email: tu_email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# terrenos_sahagun
+
+ValidaciÃ³n atributos terrenos actualizaciÃ³n catastral de Sahagun.
+
+## Requisitos
+
+Este paquete requiere que `arcpy` estÃ© instalado y configurado en el entorno. `arcpy` es una biblioteca propietaria de Esri que viene con ArcGIS y no se distribuye a travÃ©s de PyPI.
+
+## InstalaciÃ³n
+
+Para instalar este paquete, usa el siguiente comando:
+
+```sh
+pip install terrenos_sahagun

@@ -1,0 +1,2 @@
+[console_scripts]
+validacion_terrenos = validacion_terrenos.validacion_terrenos:main

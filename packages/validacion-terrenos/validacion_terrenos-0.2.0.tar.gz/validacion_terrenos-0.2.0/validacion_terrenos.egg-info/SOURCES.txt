@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+validacion_terrenos/__init__.py
+validacion_terrenos/terrenos_sahagun.py
+validacion_terrenos.egg-info/PKG-INFO
+validacion_terrenos.egg-info/SOURCES.txt
+validacion_terrenos.egg-info/dependency_links.txt
+validacion_terrenos.egg-info/entry_points.txt
+validacion_terrenos.egg-info/top_level.txt
