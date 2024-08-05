@@ -1,0 +1,10 @@
+include LICENSE
+include README.md
+include requirements.lock
+include requirements-dev.lock
+include pyproject.toml
+
+recursive-include src *
+recursive-exclude notebooks *.ipynb
+
+exclude pyinstaller.py

@@ -1,0 +1,41 @@
+[project]
+name = "py-ai-commit"
+version = "0.1.2"
+description = "Automatic generation of commit messages using AI"
+authors = [
+    { name = "Ouvill", email = "contact@ouvill.net" }
+]
+dependencies = [
+    "gitpython>=3.1.43",
+    "langchain>=0.2.12",
+    "langchain-openai>=0.1.20",
+    "python-dotenv>=1.0.1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[project.urls]
+Homepage = "https://github.com/Ouvill/ai_commit"
+Issues = "https://github.com/Ouvill/ai_commit/issues"
+
+[project.scripts]
+ai-commit = "ai_commit.ai_commit:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "notebook>=7.2.1",
+    "nbstripout>=0.7.1",
+    "pyinstaller>=6.9.0",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ai_commit"]
+
