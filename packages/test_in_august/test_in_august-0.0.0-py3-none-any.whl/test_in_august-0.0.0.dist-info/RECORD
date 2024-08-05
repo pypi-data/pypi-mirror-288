@@ -1,0 +1,10 @@
+test_in_august/__init__.py,sha256=GZJKbA-V67APm57hmbt9B0qp0_KsPSaMDUpxdu0oA1U,364
+test_in_august/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_in_august/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_in_august/tests/resources/.gitignore,sha256=q_Lw1e6eFDht4S5ZahQwLtYQIbzNDd3OGOtMb3rnPQ4,24
+test_in_august/tests/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_in_august/tests/test_base_exception.py,sha256=z6SnuLKarjodKcVjPIklfYvMvHqDSHvNCsCLEHy1Ub8,294
+test_in_august-0.0.0.dist-info/LICENSE,sha256=RmTDRL4Rn20s1pUZ1F7Arnmn9NmwGDBTLgur4IfHBrA,1071
+test_in_august-0.0.0.dist-info/METADATA,sha256=GzxBMybNnTFN3YrBW4OtTMzqHBIqW0QmkOLNK3nA7qg,927
+test_in_august-0.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+test_in_august-0.0.0.dist-info/RECORD,,
