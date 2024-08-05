@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: llama-index-callbacks-literalai
+Version: 1.0.0
+Summary: llama-index callbacks literalai integration
+License: MIT
+Author: Damien BUTY
+Author-email: damien@chainlit.io
+Requires-Python: >=3.8.1,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: llama-index-core (>=0.10.0,<0.11.0)
+Description-Content-Type: text/markdown
+
+# LlamaIndex Callbacks Integration: Literal AI
+
+This integration allows you to get one-click observability of your LlamaIndex RAG pipelines on [Literal AI](https://literalai.com/).
+
+The simplest way to get started and try out Literal AI is to signup on our [cloud instance](https://cloud.getliteral.ai/).
+You can then navigate to **Settings**, grab your API key, and start logging !
+
