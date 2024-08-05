@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "pysrc"}
+
+[project]
+name = "cfw-proxy"
+version = "1.1.5"
+authors = [
+  { name="Alex Griffin", email="gg.alexgriffin@gmail.com" },
+]
+description = "A HTTP proxy server that works with Cloudflare workers"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "colorlog",
+    "cryptography"
+]
+
+[project.urls]
+"Homepage" = "https://example.com"
+"Bug Tracker" = "https://example.com"
+
+[project.scripts]
+cfw-proxy = "cfw_proxy:cli"
+
