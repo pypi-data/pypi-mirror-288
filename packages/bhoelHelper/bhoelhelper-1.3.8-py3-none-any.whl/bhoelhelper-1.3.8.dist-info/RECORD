@@ -1,0 +1,15 @@
+berhoel/__init__.py,sha256=_zbqpMy8cVzYGqM7imvi2PEarJy7Fi7p22Oxv5TC2hQ,364
+berhoel/helper/__init__.py,sha256=o3jwaSctrfJwvQ4Ky-ee1Yc9oN7NdjjR2BHDJug3Oqo,3659
+berhoel/helper/check_args.py,sha256=MBMZeSeWitSmmCEsSEM-ZRpnv_HD3tg9eSFpfBM1Kn8,3939
+berhoel/helper/machar.py,sha256=i8VSxgFrFZKjrryUzGnPcvu5H-3cOgJ8DAUxSBYJxMo,9312
+berhoel/helper/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+berhoel/helper/set_version.py,sha256=Zsl2FsTfHuG01Bxgiv4gzHa2qBcuhAxEIF1g1_tVXoE,2270
+berhoel/helper/tests/.ruff.toml,sha256=6lXB31zOR12agaQY0ERjeEHcxTTKY02sQj2lRXu6-oY,36
+berhoel/helper/tests/test_berhoel_helper.py,sha256=7mf9crEXNYHa8WUQsIe-4AX7YoWRRTiJkReJ-B2RaOY,2946
+berhoel/helper/tests/test_check_args.py,sha256=fas3tWSkz7hZkMla0peCLnTPhVgL2pUIPv1-2e4ZgQI,1724
+berhoel/helper/tests/test_machar.py,sha256=9c2ArWfdgUt1rVypjny7HwnuJpFp2WWdxyB2AQ594kM,1134
+bhoelhelper-1.3.8.dist-info/LICENSE,sha256=4SLBW0cG4M8XFveFBE2xTiAHLvPB0If-WuZS0sOTMsw,1080
+bhoelhelper-1.3.8.dist-info/METADATA,sha256=fxlROHHvRlbLf68c6cSaQtGQ7nh4vm3E7Jp30I4whMU,1363
+bhoelhelper-1.3.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+bhoelhelper-1.3.8.dist-info/entry_points.txt,sha256=McyRRnmeMaSwrWStlfNsm5VN04bMa52Hi-U3bIqDHCk,68
+bhoelhelper-1.3.8.dist-info/RECORD,,
