@@ -1,0 +1,232 @@
+import json
+import logging
+import os
+import re
+import timeit
+from pathlib import Path
+
+import anthropic
+import coloredlogs
+import dotenv
+from retry import retry
+
+from promptarchitect.completions.core import Completion
+
+# Configuring logging
+logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.INFO)
+coloredlogs.install(level="INFO")
+dotenv.load_dotenv()
+
+DEFAULT_MODEL = "claude-3-5-sonnet-20240620"
+
+
+class ClaudeCompletion(Completion):
+    """
+    A class to interact with Anthropic's Claude.ai API to fetch completions for prompts
+    using specified models.
+    """
+
+    def __init__(self, system_role: str = "", model=DEFAULT_MODEL, parameters={}):
+        """
+        Initialize the ClaudeCompletion class with necessary API client and
+        model configuration.
+
+        Args:
+            system_role (str): The role assigned to the system in the conversation.
+            Defaults to an empty string.
+            model (str): The model used for the Claude API calls.
+            Defaults to 'claude-3-5-sonnet-20240620'.
+        """
+
+        super().__init__(parameters)
+
+        price_file_path = Path(__file__).parent / "pricing" / "claude.json"
+
+        with open(price_file_path, "r") as pricing_file:
+            self.pricing = json.load(pricing_file)
+
+        # Check if the model is valid
+        if model not in self.pricing.keys():
+            raise ValueError(f"Model {model} not supported.")
+
+        self.system_role = system_role
+        self.model = model
+        self._prompt = ""
+
+        self.parameters = parameters
+        self.cost = 0.0
+        self.is_json = False
+        self.test_path = ""
+        self.response_message = ""
+        self.latency = 0.0  # Latency of the completion in seconds
+        self.api_key = None
+
+    def _calculate_cost(self, response: dict) -> float:
+        """
+        Calculate the cost of the completion based on the response from the API.
+
+        Args:
+            response (dict): The response from the API.
+
+        Returns:
+            float: The cost of the completion.
+        """
+
+        # Get input and output tokens
+        input_tokens = response["usage"].input_tokens
+        output_tokens = response["usage"].output_tokens
+
+        cost = (
+            input_tokens * self.pricing[self.model]["input_tokens"]
+            + output_tokens * self.pricing[self.model]["output_tokens"]
+        )
+
+        return cost
+
+    @retry(
+        (anthropic.AnthropicError),
+        delay=5,
+        backoff=2,
+        max_delay=40,
+    )
+    def completion(self, prompt: str) -> str:
+        """
+        Fetches a completion for a given prompt using specified parameters.
+
+        Args:
+            parameters (dict, optional): Additional parameters for the completion
+            request. Defaults to None.
+
+        Returns:
+            str: The content of the completion.
+        """
+
+        # Read the API key from the environment
+        self.api_key = os.getenv("CLAUDE_API_KEY")
+
+        if not self.api_key:
+            raise ValueError("API key for Claude.ai is required. Set CLAUDE_API_KEY.")
+
+        self._prompt = prompt
+
+        client = anthropic.Client(api_key=self.api_key)
+
+        # Check if the model is valid and is available in the pricing file
+        if self.model not in self.pricing.keys():
+            raise ValueError(
+                f"Model {self.model} not supported. "
+                f"Make sure the model is available in the pricing file."
+            )
+
+        request = {
+            "model": self.model,
+            "messages": [
+                # {"role": "system", "content": self.system_role},
+                {"role": "user", "content": self.system_role + " " + self._prompt},
+            ],
+            "extra_headers": {"anthropic-beta": "max-tokens-3-5-sonnet-2024-07-15"},
+        }
+
+        if "response_format" in self.parameters:
+            self.is_json = True
+            if self.parameters["response_format"].strip() in ["json", "json_object"]:
+                response_format = {"type": "json_object"}
+                self.parameters["response_format"] = response_format
+
+        # Add the parameters to the request
+        for key, value in self.parameters.items() if self.parameters else {}:
+            if key in [
+                "temperature",
+                "max_tokens",
+                "top_p",
+                "stop_sequence",
+            ]:
+                if key in ["temperature"]:
+                    request[key] = float(value)
+                elif key in ["max_tokens", "top_p"]:
+                    request[key] = int(value)
+                else:
+                    request[key] = value
+
+        # Max_tokens is required for Claude.ai
+        DEFAULT_MAX_TOKENS = 8192
+        if "max_tokens" not in request:
+            request["max_tokens"] = DEFAULT_MAX_TOKENS
+            logger.warning(
+                f"Parameter max_tokens not set, but is required for Claude.ai. "
+                f"Defaulting to {DEFAULT_MAX_TOKENS}. Check the API docs of Anthropic."
+            )
+
+        # Warn the user if temperature and top_p are both set
+        if "temperature" in request and "top_p" in request:
+            logger.warning(
+                "Both temperature and top_p are set. This gives unwanted behaviour. "
+                "Check the API docs of Anthropic."
+            )
+
+        try:
+            # Calculate the latency of the completion
+            start = timeit.default_timer()
+            response = client.messages.create(**request)
+            end = timeit.default_timer()
+            self.latency = end - start
+        except anthropic.BadRequestError as e:
+            raise ValueError(f"Bad Request Error (wrong parameters): {e}")
+
+        self._response = dict(response)
+        # Calculate the cost of the completion
+        self.cost = self._calculate_cost(self._response)
+
+        self.response_message = response.content[0].text
+        if self.is_json:
+            # Claude.ai has the quirks of returning JSON in a weird format
+            # With starting and ending quotes. So we need to extract the JSON
+            self.response_message = self._extract_json(self.response_message)
+
+        return self.response_message
+
+    def _extract_json(self, text):
+        # Regular expression pattern to find text that looks like JSON
+        # This pattern assumes JSON starts with '[' or '{' and ends with ']' or '}'
+        pattern = r"\{[\s\S]*\}|\[[\s\S]*\]"
+
+        # Searching the text for JSON pattern
+        match = re.search(pattern, text)
+
+        if match:
+            json_text = match.group(0)
+            try:
+                # Validating and returning the JSON object
+                _ = json.loads(json_text)
+                return json_text
+            except json.JSONDecodeError:
+                return "The extracted text is not valid JSON."
+        else:
+            return "No JSON found in the text."
+
+    def to_dict(self):
+        return {
+            "system_role": self.system_role,
+            "model": self.model,
+            "parameters": self.parameters,
+            "cost": self.cost,
+            "is_json": self.is_json,
+            "test_path": self.test_path,
+            "response_message": self.response_message,
+            "latency": self.latency,
+        }
+
+    @classmethod
+    def from_dict(cls, data):
+        obj = cls(
+            system_role=data["system_role"],
+            model=data["model"],
+            parameters=data["parameters"],
+        )
+        obj.cost = data.get("cost", 0.0)
+        obj.is_json = data.get("is_json", False)
+        obj.test_path = data.get("test_path", "")
+        obj.response_message = data.get("response_message", "")
+        obj.latency = data.get("latency", 0.0)
+        return obj
