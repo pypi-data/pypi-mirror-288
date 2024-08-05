@@ -1,0 +1,11 @@
+xspeedhack/__init__.py,sha256=rxYMql5Ze5u1uhJl74kUleZoccWvZMzjtLJ_tvM4c54,47
+xspeedhack/client.py,sha256=cQuWIE7DdfaQ9nLcSLDiM5DLzwkJKuvVc9L_AMlUjyA,2902
+xspeedhack/bin/injector32.exe,sha256=J09uGrX116vadPnHD_asEO-03-iCmiCrrVl98hqUQDc,207360
+xspeedhack/bin/injector64.exe,sha256=2K7Z9ChpYnEMUcDtuBSrffPpWR8h74QmA_zlwVdGyN8,264192
+xspeedhack/bin/speedhack32.dll,sha256=eft9oMUdVUcDXOddwEGPO2CYCXAoptkUzsiN2GKsGYg,112128
+xspeedhack/bin/speedhack64.dll,sha256=lolUbIK5MDqvRUGxEBPnBRxjidENWBAeAly-_OP356o,157184
+xspeedhack-0.0.2.dist-info/LICENSE,sha256=IPypf_gm2yEXts8Z_BHoazC3dzTZK7CxGP5T2VU9Vsk,1087
+xspeedhack-0.0.2.dist-info/METADATA,sha256=fxRuAqF__9_ZswHxHM1KgutAeyTxslkANl1Qm-MOE5s,2111
+xspeedhack-0.0.2.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+xspeedhack-0.0.2.dist-info/top_level.txt,sha256=7z7AtfvFUZWu1VW8PqafgI4KxHnE0zdhk7AF1rOE4w4,11
+xspeedhack-0.0.2.dist-info/RECORD,,
