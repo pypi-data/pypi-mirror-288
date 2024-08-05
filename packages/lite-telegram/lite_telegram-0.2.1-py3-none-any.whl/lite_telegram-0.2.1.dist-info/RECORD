@@ -1,0 +1,9 @@
+telegram/__init__.py,sha256=0lm5FnoiXrMSOErxcT5TBhbWcw65jMvtkIzOuicYpJY,29
+telegram/bot.py,sha256=I-mH3M6OuN43itf4shMiDDb00Cc9UpMTW_Wl2ek2yqk,2687
+telegram/exceptions.py,sha256=wDcg8O3OZfMLkZQf7DTh300cm1gvujQ8GMGxNdZD-Xk,49
+telegram/models.py,sha256=QyLuLV4QHLWXfuQmrx-F8JWooRqAFGOGIsMMd6msH1Y,3606
+telegram/request.py,sha256=IfCC949XreowEj7cLx1DrKn2v_VE6BRAxmwrnMUUGNo,911
+lite_telegram-0.2.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+lite_telegram-0.2.1.dist-info/METADATA,sha256=GkD23m0Clt59detAUtjc3bEg32GbKS2Mg6hpyMIWOeU,824
+lite_telegram-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+lite_telegram-0.2.1.dist-info/RECORD,,
