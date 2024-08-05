@@ -1,0 +1,160 @@
+[tool.poetry]
+
+name = "bhoelHelper"
+version = "1.3.8"
+
+description = "Misc helper functionalities."
+
+packages = [{ include = "berhoel" }]
+exclude = ["**/.#*.py", "**/#*.py#"]
+
+authors = ["Berthold Höllmann <berhoel@gmail.com>"]
+license = "MIT"
+
+repository = "https://gitlab.com/berhoel/python/bhoelHelper.git"
+homepage = "https://python.xn--hllmanns-n4a.de/bhoelHelper/"
+documentation = "https://python.xn--hllmanns-n4a.de/bhoelHelper/"
+readme = "README.rst"
+
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Topic :: Utilities",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+tomli = "^2.0.1"
+
+[tool.poetry.group.dev.dependencies]
+berhoel-sphinx-settings = { git = "https://gitlab.com/berhoel/python/berhoel-sphinx-settings.git", rev = "main" }
+black = "*"
+ipython = "*"
+mypy = "*"
+pdbp = "*"
+pytest = "*"
+pytest-benchmark = "*"
+pytest-black-ng = "*"
+pytest-cache = "*"
+pytest-cov = "*"
+pytest-isort = "*"
+pytest-mock = "*"
+pytest-ruff = "*"
+pytest-runner = "*"
+pytest-sugar = "*"
+rope = "*"
+ruff = "*"
+tox = "*"
+sphinx-argparse-cli = "^1.16.0"
+xdoctest = "*"
+
+[tool.poetry.scripts]
+set_lib_version = 'berhoel.helper.set_version:build'
+
+[tool.isort]
+dedup_headings = true
+include_trailing_comma = true
+float_to_top = true
+namespace_packages = ['berhoel']
+force_grid_wrap = 0
+balanced_wrapping = true
+use_parentheses = true
+length_sort = true
+line_length = 88
+combine_as_imports = true
+known_first_party = ["berhoel"]
+known_third_party = ["pytest"]
+
+[tool.ruff]
+namespace-packages = ["docs", 'berhoel']
+line-length = 88
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["ANN101", "D211", "D213", "RUF200", "ISC001", "COM812"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.format]
+# Enable auto-formatting of code examples in docstrings. Markdown,
+# reStructuredText code/literal blocks and doctests are all supported.
+#
+# This is currently disabled by default, but it is planned for this
+# to be opt-out in the future.
+docstring-code-format = true
+
+# Set the line length limit used when formatting code snippets in
+# docstrings.
+#
+# This only has an effect when the `docstring-code-format` setting is
+# enabled.
+docstring-code-line-length = "dynamic"
+
+[tool.ruff.lint.isort]
+force-sort-within-sections = true
+force-wrap-aliases = true
+combine-as-imports = true
+section-order = [
+  "future",
+  "standard-library",
+  "third-party",
+  "first-party",
+  "local-folder",
+]
+default-section = "third-party"
+known-first-party = ["berhoel"]
+known-third-party = ["pytest"]
+
+[tool.ruff.lint.flake8-quotes]
+docstring-quotes = "double"
+
+[tool.ruff.lint.flake8-annotations]
+mypy-init-return = true
+
+[tool.mypy]
+mypy_path = "$MYPY_CONFIG_FILE_DIR/.stubs/"
+
+[tool.tox]
+legacy_tox_ini = """
+
+[tox]
+isolated_build = true
+skip_missing_interpreters = true
+envlist = py{39, 310, 311, 312, 313}
+
+[testenv]
+deps =
+   pdbpp
+   pytest
+   pytest-benchmark
+   pytest-cov
+   pytest-mock
+   pytest-ruff
+   pytest-runner
+   pytest-sugar
+   rope
+   toml
+   xdoctest
+
+whitelist_externals = poetry
+
+commands =
+   pytest                                                    \
+        --doctest-modules                                    \
+        --junitxml=ctitools-report.xml                       \
+        --cov berhoel/                                       \
+        --cov-report term --cov-report html --cov-report xml \
+        --cov-report annotate --cov-report term-missing      \
+        berhoel
+"""
+
+[tool.pytest.ini_options]
+junit_family = "xunit2"
+doctest_encoding = "UTF-8"
+minversion = "7.0"
+addopts = "--doctest-modules --ff --pdb -s --cov=berhoel --cov-report=term --cov-report=html --cov-branch --ruff"
+testpaths = ["berhoel"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
