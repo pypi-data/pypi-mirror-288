@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+torda/__init__.py
+torda/compare.py
+torda/visualization.py
+torda.egg-info/PKG-INFO
+torda.egg-info/SOURCES.txt
+torda.egg-info/dependency_links.txt
+torda.egg-info/requires.txt
+torda.egg-info/top_level.txt
