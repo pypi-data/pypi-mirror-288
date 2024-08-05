@@ -1,0 +1,94 @@
+The best way to interact with GitHub API.
+
+> **Note:** _This module is useful for the GitHub API_ <br>
+> Your URL should look like this https://api.github.com
+> This is working module with your PAT Token
+
+
+# Prerequisites
+```python
+from github_module import GitHubHelper
+```
+
+# Getting Started
+
+## Connectivity to GitHub
+
+To initialize a connection to GitHub, instantiate the `GitHubHelper` class with your GitHub URL, ORG, and Personal API Token:
+
+```python
+github_helper = GitHubHelper(GITHUB_API, API_TOKEN)
+```
+______________________________________________________________________________
+______________________________________________________________________________
+# 1. `get_rate_limit`
+- Purpose:
+  - Fetches the current rate limit from the GitHub API. 
+- Parameters:
+  - None (The method relies on the instance's github_api and headers)
+- Output:
+  - The number of remaining API requests allowed before hitting the rate limit. 
+- Return:
+  - `int`: The remaining rate limit. 
+  - `-1`: If there was an error retrieving the rate limit.
+```python
+remaining_requests = github_helper.get_rate_limit()
+print(f"Remaining rate limit: {remaining_requests}")
+```
+
+# 2. `check_repository`
+- Purpose:
+  - Checks if a GitHub repository exists and handles various error scenarios.
+- Parameters:
+  - `owner` (str): The username or organization that owns the repository.
+  - `repo` (str): The name of the repository. 
+- Output:
+  - A dictionary with the status of the repository check. 
+- Return:
+  - `dict`:
+    - `"status"` (str): Indicates the result of the check. Possible values are "exists", "not_found", "forbidden", "rate_limit_exceeded", and "error".
+    - `"message"` (str): A message providing details about the result.
+```python
+result = github_helper.check_repository(owner="octocat", repo="Hello-World")
+print(result["status"])  # e.g., "exists"
+print(result["message"])  # e.g., "Repository exists."
+```
+
+# 3. `is_repo_read_only`
+- Purpose:
+  - Determines whether a GitHub repository is read-only for the authenticated user. 
+- Parameters:
+  - `owner` (str): The username or organization that owns the repository. 
+  - `repo` (str): The name of the repository.
+- Output:
+  - A boolean indicating whether the repository is read-only.
+- Return:
+  - `True`: If the repository is read-only. 
+  - `False`: If the repository is writable. 
+  - `None`: If there was an error checking the repository (e.g., rate limit too low, repository not found).
+```python
+is_read_only = github_helper.is_repo_read_only(owner="octocat", repo="Hello-World")
+
+if is_read_only is True:
+    print("The repository is read-only.")
+elif is_read_only is False:
+    print("The repository is writable.")
+else:
+    print("Failed to determine the repository's read-only status.")
+```
+______________________________________________________________________________
+______________________________________________________________________________
+# Data Privacy Note
+
+🔒 **We respect your privacy**: This module does **not** store any of your data anywhere. It simply interacts with the GitHub API to perform the requested operations. Ensure you manage your connection details securely.
+
+# Release Notes
+
+## Latest Release: 0.3 (05 Aug 2024)
+- Implemented the `is_repo_read_only` function to determine whether a repository is read-only, helping users avoid unauthorized write operations.
+
+## Latest Release: 0.2 (05 Aug 2024)
+- Added the `check_repository` function to verify if a GitHub repository exists and handle various error scenarios such as permissions issues and rate limit exhaustion.
+
+## Latest Release: 0.1 (05 Aug 2024)
+- Introduced the `get_rate_limit` function to fetch the current rate limit from the GitHub API, ensuring users can manage their API request limits effectively.
