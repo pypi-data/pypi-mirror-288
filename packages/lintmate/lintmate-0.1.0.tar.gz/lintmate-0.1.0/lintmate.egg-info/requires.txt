@@ -1,0 +1,10 @@
+click==8.1.7
+
+[python]
+flake8==7.1.0
+black==24.8.0
+
+[yaml]
+yamllint==1.35.1
+PyYAML==6.0.1
+ruamel.yaml==0.18.6
