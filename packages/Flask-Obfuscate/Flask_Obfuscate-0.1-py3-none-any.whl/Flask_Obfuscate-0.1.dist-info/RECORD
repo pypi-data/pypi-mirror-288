@@ -1,0 +1,8 @@
+flask_obfuscate/__init__.py,sha256=sjFhZDEyTmW8sSCNhPsrSwkBlGjwe9_tFaFxf1I_MHk,607
+flask_obfuscate/obfuscate.py,sha256=Ype_WfoC1WBixrNZDAglmagahEEV_FMXps63Ke9F6M8,3782
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_obfuscate.py,sha256=ZFp7hpXCk1Fqp_qxvDIbyMCNclrCLw38g58HHR0GR6Q,2577
+Flask_Obfuscate-0.1.dist-info/METADATA,sha256=hWz2UoeN2Dhye5r9HQdZOpxQ8QS8cI35l4-nSl6j9zQ,674
+Flask_Obfuscate-0.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+Flask_Obfuscate-0.1.dist-info/top_level.txt,sha256=WMjrGlkYUvY61267jvacMTBrumy4gMPA3r0aD930JD4,22
+Flask_Obfuscate-0.1.dist-info/RECORD,,
