@@ -1,0 +1,6 @@
+setup.py
+voice_assist.egg-info/PKG-INFO
+voice_assist.egg-info/SOURCES.txt
+voice_assist.egg-info/dependency_links.txt
+voice_assist.egg-info/requires.txt
+voice_assist.egg-info/top_level.txt
