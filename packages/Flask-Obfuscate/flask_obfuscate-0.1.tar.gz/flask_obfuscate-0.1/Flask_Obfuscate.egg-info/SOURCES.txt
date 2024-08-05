@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+Flask_Obfuscate.egg-info/PKG-INFO
+Flask_Obfuscate.egg-info/SOURCES.txt
+Flask_Obfuscate.egg-info/dependency_links.txt
+Flask_Obfuscate.egg-info/requires.txt
+Flask_Obfuscate.egg-info/top_level.txt
+flask_obfuscate/__init__.py
+flask_obfuscate/obfuscate.py
+tests/__init__.py
+tests/test_obfuscate.py
