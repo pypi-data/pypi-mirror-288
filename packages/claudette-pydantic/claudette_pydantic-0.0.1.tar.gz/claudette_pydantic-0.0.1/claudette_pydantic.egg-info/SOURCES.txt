@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+claudette_pydantic/__init__.py
+claudette_pydantic/_modidx.py
+claudette_pydantic/struct.py
+claudette_pydantic.egg-info/PKG-INFO
+claudette_pydantic.egg-info/SOURCES.txt
+claudette_pydantic.egg-info/dependency_links.txt
+claudette_pydantic.egg-info/entry_points.txt
+claudette_pydantic.egg-info/not-zip-safe
+claudette_pydantic.egg-info/requires.txt
+claudette_pydantic.egg-info/top_level.txt

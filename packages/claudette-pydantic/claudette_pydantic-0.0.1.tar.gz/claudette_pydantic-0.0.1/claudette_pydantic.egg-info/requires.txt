@@ -1,0 +1,4 @@
+claudette
+pydantic
+
+[dev]
