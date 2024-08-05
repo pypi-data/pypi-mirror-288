@@ -1,0 +1,12 @@
+igraph/__init__.pyi,sha256=I-ezIZc7V4oQvBoF-6ASE9GQNcYzCOqERcqguLAZ4sA,4500
+igraph/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ndspy/__init__.pyi,sha256=BhpBBwBgYx9sHdk0F5i-FyylPw-ZfhEwYQtofQafDpA,413
+ndspy/code.pyi,sha256=o6qONzG4Gclqd6qP3iprAz606s5vjLRFiRCVkr5olkg,1600
+ndspy/fnt.pyi,sha256=i0wkcRX20l-Jy5zabdNkvREVhMk_aOoeKNTtnH0RgDA,556
+ndspy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ndspy/rom.pyi,sha256=LpS-ItAV7WuxMm7nk7Jh7v13nrB3ktE5muYM4DqWVsw,1133
+skytemple_3rdparty_typestubs-1.1.1.dist-info/LICENSE,sha256=wTGh-dHiVV8YIKowpRA-Zg32aa22XG8AEEEnCwwhCao,1066
+skytemple_3rdparty_typestubs-1.1.1.dist-info/METADATA,sha256=JyHC7TUr1pWyzfudVvgy8_QIMgCbOMnMqd2rehKbcyI,359
+skytemple_3rdparty_typestubs-1.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+skytemple_3rdparty_typestubs-1.1.1.dist-info/top_level.txt,sha256=xnaS1e3NmdguBZXOXbsqvp9L7pFQsvE0jI_6qBmExCI,13
+skytemple_3rdparty_typestubs-1.1.1.dist-info/RECORD,,

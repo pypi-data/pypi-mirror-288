@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: skytemple-3rdparty-typestubs
+Version: 1.1.1
+Summary: (Minimal) PEP 561 type stubs for libraries SkyTemple uses
+Home-page: https://github.com/SkyTemple/3rdparty-typestubs/
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+
