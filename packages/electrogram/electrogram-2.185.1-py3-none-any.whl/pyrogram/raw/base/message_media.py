@@ -1,0 +1,13 @@
+from typing import Union
+from pyrogram import raw
+from pyrogram.raw.core import TLObject
+
+MessageMedia = Union["raw.types.MessageMediaContact", "raw.types.MessageMediaDice", "raw.types.MessageMediaDocument", "raw.types.MessageMediaEmpty", "raw.types.MessageMediaGame", "raw.types.MessageMediaGeo", "raw.types.MessageMediaGeoLive", "raw.types.MessageMediaGiveaway", "raw.types.MessageMediaGiveawayResults", "raw.types.MessageMediaInvoice", "raw.types.MessageMediaPaidMedia", "raw.types.MessageMediaPhoto", "raw.types.MessageMediaPoll", "raw.types.MessageMediaStory", "raw.types.MessageMediaUnsupported", "raw.types.MessageMediaVenue", "raw.types.MessageMediaWebPage"]
+
+
+# noinspection PyRedeclaration
+class MessageMedia:  # type: ignore
+    QUALNAME = "pyrogram.raw.base.MessageMedia"
+
+    def __init__(self):
+        raise TypeError("Base types can only be used for type checking purposes")
