@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+streamlit_overlay/__init__.py
+streamlit_overlay/utils.py
+streamlit_overlay.egg-info/PKG-INFO
+streamlit_overlay.egg-info/SOURCES.txt
+streamlit_overlay.egg-info/dependency_links.txt
+streamlit_overlay.egg-info/requires.txt
+streamlit_overlay.egg-info/top_level.txt
+streamlit_overlay/frontend/build/index.html
+streamlit_overlay/frontend/build/assets/index-BeVRhPBe.css
+streamlit_overlay/frontend/build/assets/index-mw35SBtc.js
