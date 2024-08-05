@@ -1,0 +1,2 @@
+[nbdev]
+claudette_pydantic = claudette_pydantic._modidx:d
