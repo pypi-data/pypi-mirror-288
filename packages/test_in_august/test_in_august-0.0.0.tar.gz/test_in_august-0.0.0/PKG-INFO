@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: test_in_august
+Version: 0.0.0
+Summary: This is a test of the full template stack
+Home-page: https://github.com/gbpoole/test_in_august
+License: MIT-expat
+Author: Poole, Gregory
+Requires-Python: >=3.11
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: cookiecutter (>=2,<3)
+Requires-Dist: rich (>=13,<14)
+Project-URL: Documentation, https://test_in_august.readthedocs.io/en/latest/
+Description-Content-Type: text/markdown
+
+# Test in August
+
+This file will be the README content for your repo and PyPI website as well as the first page of your documentation.  We recommend doing the following:
+
+- Start with a clear, consise and catchy statement about what this codebase is/does
+- Give a quick example showing how to get started with it
+
