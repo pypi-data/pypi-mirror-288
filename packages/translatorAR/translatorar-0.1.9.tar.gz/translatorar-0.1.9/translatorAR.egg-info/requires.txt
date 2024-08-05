@@ -1,0 +1,6 @@
+transformers
+pymupdf
+tqdm
+pdf2image
+pytesseract
+pillow
