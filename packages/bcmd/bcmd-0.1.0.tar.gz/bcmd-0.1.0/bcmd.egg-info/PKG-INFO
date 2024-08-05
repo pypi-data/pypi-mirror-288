@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bcmd
+Version: 0.1.0
+Summary: Commands for Beni
+Author-email: Beni Mang <benimang@126.com>
+Maintainer-email: Beni Mang <benimang@126.com>
+Keywords: benimang,beni,bcmd
+Requires-Python: >=3.10
+Requires-Dist: benimang==0.5.42
+Requires-Dist: build
+Requires-Dist: cryptography
+Requires-Dist: pathspec
+Requires-Dist: prettytable
+Requires-Dist: psutil
+Requires-Dist: qiniu
+Requires-Dist: twine
+Requires-Dist: typer

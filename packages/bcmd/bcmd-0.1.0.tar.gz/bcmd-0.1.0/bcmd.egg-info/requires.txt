@@ -1,0 +1,9 @@
+benimang==0.5.42
+build
+cryptography
+pathspec
+prettytable
+psutil
+qiniu
+twine
+typer
