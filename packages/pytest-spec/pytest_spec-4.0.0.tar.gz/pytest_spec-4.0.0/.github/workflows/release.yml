@@ -1,0 +1,30 @@
+name: release
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  release:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.8]
+        os: [ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install projects
+        run: pip install -e ".[test, deploy]"
+      - name: Test with pytest
+        run: pytest .
+      - name: Build and publish
+        env:
+          TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
+          TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+        run: |
+          python3 -m build .
+          twine upload dist/*
