@@ -1,0 +1,14 @@
+OldHangeul/__init__.py,sha256=oVg_Z-LzfgfnustgNrYde3yeypJ5UOsiEoQgdyjkcNg,71
+OldHangeul/make_dic.py,sha256=IVil8q5NnwG3ar3ayg_7SyiWt6R-lh0GLzkGHWsOoGk,983
+OldHangeul/old_hangeul.py,sha256=5lXxS41dIux-Xj2wP4zHksTGbPZ5uN0MGH-psyB6aKA,6978
+OldHangeul/data/final_jamo.pickle,sha256=UHx5NCICfIG1Y3htFpXrPNKt26AMHNSiOEs8PHxJgss,1024
+OldHangeul/data/initial_jamo.pickle,sha256=koBMMSBI7zT47HD50pkTdruPMurkrzlRX3_4jz3BQEg,913
+OldHangeul/data/ipf.pickle,sha256=E1SZsDOPWNkSy0Mg89j05lWzaRMpTu4rgcHWhJuq_3A,59381
+OldHangeul/data/jamo_list.pickle,sha256=f8LBzYdKBuMx3XK2AjYxQzoXOsvJqXpz77msXh3l1sM,1744
+OldHangeul/data/jamo_list_all.pickle,sha256=RQyWI8TXobgR6aEWZW2rhzKrrtnMp-Z0X7cepDkwiCk,988
+OldHangeul/data/jamo_list_key.pickle,sha256=TnEfuzOxYLduFvr1_z87BQquM-Up4CUjLiSzcAGYHBA,341
+OldHangeul/data/medial_jamo.pickle,sha256=ti_o6R9YqoTTYDHUG7kxK8upq10jHbMYzNwhB5iQUoo,929
+OldHangeul-1.2.0.dist-info/METADATA,sha256=ef5XfNRKxErCpMAVgyQQXs24HVQwEWjle9SRxTvdv6g,4031
+OldHangeul-1.2.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+OldHangeul-1.2.0.dist-info/top_level.txt,sha256=c0PHYllr2aWf_9UWNMZHDlxHFMJYSX9qIeKcxDlmlSU,23
+OldHangeul-1.2.0.dist-info/RECORD,,
