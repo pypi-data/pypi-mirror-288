@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cruscopoetry.syllabifiers.wol
+Version: 0.0.2
+Summary: CruscoPoetry syllabifier for Wolof language
+Home-page: https://gitlab.com/kikulacho92/cruscopoetry
+Author: Emiliano Minerba
+Author-email: emi.nerba@gmail.com
+License: GPL
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+
+This is CruscoPoetry's syllabifier or the Wolof language.
+If not yet on your machine, this package is normally automatically download by cruscopoetry.core while parsing a Wolof text. Normally the user doesn't interact with it.
+
+

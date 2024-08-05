@@ -1,0 +1,11 @@
+README.rst
+setup.py
+src/cruscopoetry.syllabifiers.wol.egg-info/PKG-INFO
+src/cruscopoetry.syllabifiers.wol.egg-info/SOURCES.txt
+src/cruscopoetry.syllabifiers.wol.egg-info/dependency_links.txt
+src/cruscopoetry.syllabifiers.wol.egg-info/requires.txt
+src/cruscopoetry.syllabifiers.wol.egg-info/top_level.txt
+src/cruscopoetry/syllabifiers/wol/__init__.py
+src/cruscopoetry/syllabifiers/wol/__main__.py
+src/cruscopoetry/syllabifiers/wol/syllabifier.py
+src/cruscopoetry/syllabifiers/wol/syllable.py
