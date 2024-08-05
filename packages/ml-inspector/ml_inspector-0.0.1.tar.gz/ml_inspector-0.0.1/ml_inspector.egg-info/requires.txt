@@ -1,0 +1,10 @@
+pandas
+scikit-learn
+plotly
+
+[dev]
+pytest
+black
+isort
+flake8
+pytest-cov
