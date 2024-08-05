@@ -1,0 +1,3 @@
+[console_scripts]
+wolofalarud = cruscopoetry.plugins.wolofalarud:WolofalArud.main
+

@@ -1,0 +1,787 @@
+##each element of the configuration must contain at least the following fields:
+## - ascii_name: the name that will be used for the classes representing them. It must be in ASCII letters. USE ONLY LOWERCASE ONES, or the behaviour will be undefined
+## - index: an integer which must be different for any element of the same type (es. for any metre, foot, etc.) They are not required to be progressive, therefore specify them instead on relying 
+##          on the element's position in the array
+## - name: the Arabic, transliterated name, in Unicode (latin) characters.
+## - arabi_name: the name in Arabic script.
+
+##besides the base fields, each daaira must also contain the field:
+##  - base_sequence: the sequence of EPUs contained in the dāʾira represented, as an array of strings, each one being a sequence of ḥarf values (0 and 1)
+[configuration]
+	meta_field_name = "wolofalarud_metre"
+	lines_field_name = "wolofalarud_line_parsings"
+
+[[daairas]]
+	ascii_name = "mukhtalif"
+	arabic_name = "مختلف"
+	index = 0
+	name = "al-muḫtalif"
+	epu_sequence = ["001", "01", "001", "01", "01", "001", "01", "001", "01", "01", "001", "01", "001", "01", "01", "001", "01", "001", "01", "01"]
+
+[[daairas]]
+	ascii_name = "mu2talif"
+	arabic_name = "مؤتلف"
+	index = 1
+	name = "al-muʾtalif"
+	epu_sequence = ["001", "00", "01", "001", "00", "01", "001", "00", "01", "001", "00", "01", "001", "00", "01", "001", "00", "01"]
+
+[[daairas]]
+	ascii_name = "mushtabih"
+	arabic_name = "مشتبه"
+	index = 2
+	name = "al-muštabih"
+	epu_sequence = ["001", "01", "01", "001", "01", "01", "001", "01", "01", "001", "01", "01", "001", "01", "01", "001", "01", "01"]
+
+[[daairas]]
+	ascii_name = "mujtalab"
+	arabic_name = "مجتلب"
+	index = 3
+	name = "al-muǧtalab"
+	epu_sequence = ["01", "01", "001", "01", "01", "001", "01", "01", "010", "01", "01", "001", "01", "01", "001", "01", "01", "010"]
+
+[[daairas]]
+	ascii_name = "muttafiq"
+	arabic_name = "متفق"
+	index = 4
+	name = "al-muttafiq"
+	epu_sequence = ["001", "01", "001", "01", "001", "01", "001", "01", "001", "01", "001", "01", "001", "01", "001", "01"]
+
+##besides the base fields, each metre must also contain:
+##	- feet_sequence: a field that represents the feet of the metre's base_metre.
+##	  this field can be represented in either of these two ways:
+##	  + with an array of integers representing the feet that compose the hemistich (es. [0, 2, 0, 2, 0, 2, 0, 2] for faʿūlun, mafāʿilun, faʿūlun, mafāʿīlun, faʿūlun, mafāʿilun, faʿūlun, mafāʿīlun)
+##	  + with a table, where the key `daaira` is the integer of the dāʾira from which the metre comes from, the key `watid_index` is the position that the watid shall have in each foot
+##		(0 if it has to be at the beginning, -1 if it has to be at the end, 1 if it has to be at the second place, etc.), and the key `start_offset` is an integer expriming from which position in
+##		the circle the metre scanning must start
+##	- forms: an array of integers representing the forms a metre can have (tāmm, maǧzūʾ, etc.)
+
+[[metres]]
+	ascii_name = "tawiil"
+	index = 0x0
+	name = "ṭawīl"
+	arabic_name = "طويل"
+	forms = [0]#tāmm
+	[metres.feet_sequence]
+		from = 0
+		watid_index = 0
+		start_offset = 0
+	
+
+[[metres]]
+	ascii_name = "madiid"
+	index = 0x1
+	name = "madīd"
+	arabic_name = "مديد"
+	forms = [1]#maǧzūʾ
+	[metres.feet_sequence]
+		from = 0
+		watid_index = 1
+		start_offset = 1
+
+[[metres]]
+	ascii_name = "basiit"
+	index = 0x2
+	name = "basīṭ"
+	arabic_name = "بسيط"
+	forms = [0, 1]#tāmm, maǧzūʾ
+	[metres.feet_sequence]
+		from = 0
+		watid_index = -1
+		start_offset = 3
+
+[[metres]]
+	ascii_name = "waafir"
+	arabic_name = "وافر"
+	index = 0x3
+	name = "wāfir"
+	forms = [0, 1]#tāmm, maǧzūʾ
+	[metres.feet_sequence]
+		from = 1
+		watid_index = 0
+		start_offset = 0
+
+[[metres]]
+	ascii_name = "kaamil"
+	arabic_name = "كامل"
+	index = 0x4
+	name = "kāmil"
+	forms = [0, 1]#tāmm, maǧzūʾ
+	[metres.feet_sequence]
+		from = 1
+		watid_index = -1
+		start_offset = 1
+
+[[metres]]
+	ascii_name = "hazaj"
+	arabic_name = "هزج"
+	index = 0x5
+	name = "hazaǧ"
+	forms = [1]#maǧzūʾ
+	[metres.feet_sequence]
+		from = 2
+		watid_index = 0
+		start_offset = 0
+
+[[metres]]
+	ascii_name = "rajaz"
+	arabic_name = "رجز"
+	index = 0x6
+	name = "raǧaz"
+	forms = [0, 1, 2, 3, 5, 6, 7, 8, 9, 0xa, 0xb, 0xc]#tāmm, maǧzūʾ, manhūk, mašṭūr, taṯlīṯa to taʿšīra
+	[metres.feet_sequence]
+		from = 2
+		watid_index = -1
+		start_offset = 1
+
+[[metres]]
+	ascii_name = "ramal"
+	arabic_name = "رمل"
+	index = 0x7
+	name = "ramal"
+	forms = [0, 1]#tāmm, maǧzūʾ
+	[metres.feet_sequence]
+		from = 2
+		watid_index = 1
+		start_offset = 2
+
+[[metres]]
+	ascii_name = "sariic"
+	arabic_name = "سريع"
+	index = 0x8
+	name = "sarīʿ"
+	forms = [0, 1]#tāmm, maǧzūʾ
+	[metres.feet_sequence]
+		from = 3
+		watid_index = -1
+		start_offset = 0
+
+[[metres]]
+	ascii_name = "munsarih"
+	arabic_name = "منسرح"
+	index = 0x9
+	name = "munsariḥ"
+	forms = [0, 2]#tāmm, manhūk
+	[metres.feet_sequence]
+		from = 3
+		watid_index = -1
+		start_offset = 3
+
+[[metres]]
+	ascii_name = "khafiif"
+	index = 0xa
+	name = "ḫafīf"
+	arabic_name = "خفيف"
+	forms = [0, 1]#tāmm, maǧzūʾ
+	[metres.feet_sequence]
+		from = 3
+		watid_index = 1
+		start_offset = 4
+
+[[metres]]
+	ascii_name = "mudaaric"
+	index = 0xb
+	name = "muḍāriʿ"
+	arabic_name = "مضارع"
+	forms = [1]#maǧzūʾ
+	[metres.feet_sequence]
+		from = 3
+		watid_index = 0
+		start_offset = 5
+
+[[metres]]
+	ascii_name = "muqtadab"
+	arabic_name = "مقتضب"
+	index = 0xc
+	name = "muqtaḍab"
+	forms = [1]#maǧzūʾ
+	[metres.feet_sequence]
+		from = 3
+		watid_index = -1
+		start_offset = 6
+
+[[metres]]
+	ascii_name = "mujtathth"
+	arabic_name = "مجتث"
+	index = 0xd
+	name = "muǧtaṯṯ"
+	forms = [1]#maǧzūʾ
+	[metres.feet_sequence]
+		from = 3
+		watid_index = 1
+		start_offset = 7
+
+[[metres]]
+	ascii_name = "mutaqaarib"
+	index = 0xe
+	name = "mutaqārib"
+	arabic_name = "متقارب"
+	forms = [0, 1]#tāmm, maǧzūʾ
+	[metres.feet_sequence]
+		from = 4
+		watid_index = 0
+		start_offset = 0
+
+[[metres]]
+	ascii_name = "mutadaarik"
+	index = 0xf
+	name = "mutadārik"
+	arabic_name = "متدارك"
+	forms = [0, 1]#tāmm, maǧzūʾ
+	[metres.feet_sequence]
+		from = 4
+		watid_index = 1
+		start_offset = 1
+
+[[metres]]
+	ascii_name = "mawaahibu-l-naafic"
+	index = 0x10
+	name = "mawāhib al-nāfiʿ"
+	arabic_name = "مواهب النافع"
+	forms = [
+		0, #tāmm
+		3, #mašṭūr (it shouldn't be included, but it is here for tasmīṭ lines that are written as stanzas)
+		6, #tarbīʿa 
+		7  #taḫmīsa
+	]
+	feet_sequence = [0xa, 0xa]#0xa <-> mustafʿilātun
+
+[[metres]]
+	ascii_name = "njuuj-njaaj"
+	index = 0x11
+	name = "njuuj-njaaj"
+	arabic_name = "جوج جاج"
+	forms = [0,]
+	feet_sequence = [2, 2, 3]#mafāʿīlun, mafāʿīlun, fāʿilātun
+		
+	
+
+##besides the base fields, a metre form must also contain:
+## - aruuds_number: an integer which specifies how many ʿarūḍs the metre has. So, for example, in tāmm forms this number is 1, since we have two hemistichs in total (1 ʿarūḍ + 1 ḍarb);
+##	 in mašṭūr forms it is 0, since the line has only the ḍarb; in tarbīʿa it is 3 (4 cola: 3 ʿarūḍs + 1 ḍarb); etc.
+## - transform: an integer representing the transformation the line must undergo. If it is 0, nothing changes (this is actually the case for most of the forms); if it is 1, ǧazʾ is applied; 
+##	 if it is 2, nahk is applied.
+
+
+[[metre_forms]]
+	ascii_name = "taamm"
+	arabic_name = "تام"
+	index = 0x0
+	name = "tāmm"
+	aruuds_number = 1
+	transform = 0
+
+[[metre_forms]]
+	ascii_name = "majzuu2"
+	index = 0x1
+	name = "maǧzūʾ"
+	arabic_name = "مجزوء"
+	aruuds_number = 1
+	transform = 1
+
+[[metre_forms]]
+	ascii_name = "manhuuk"
+	arabic_name = "منهوك"
+	index = 0x2
+	name = "manhūk"
+	aruuds_number = 1
+	transform = 2
+
+[[metre_forms]]
+	ascii_name = "mashtuur"
+	arabic_name = "مشطور"
+	index = 0x3
+	name = "mašṭūr"
+	aruuds_number = 0
+	transform = 0
+
+[[metre_forms]]
+	ascii_name = "mashtuur_manhuuk"
+	arabic_name = "مشطور منهوك"
+	index = 0x4
+	name = "mašṭūr manhūk"
+	aruuds_number = 0
+	transform = 2
+
+[[metre_forms]]
+	ascii_name = "tathliitha"
+	arabic_name = "تثليثة"
+	index = 0x5
+	name = "taṯlīṯa"
+	aruuds_number = 2
+	transform = 0
+
+[[metre_forms]]
+	ascii_name = "tarbiica"
+	arabic_name = "تربيعة"
+	index = 0x6
+	name = "tarbīʿa"
+	aruuds_number = 3
+	transform = 0
+
+[[metre_forms]]
+	ascii_name = "takhmiisa"
+	arabic_name = "تخميسة"
+	index = 0x7
+	name = "taḫmīsa"
+	aruuds_number = 4
+	transform = 0
+
+[[metre_forms]]
+	ascii_name = "tasdiisa"
+	arabic_name = "تسديسة"
+	index = 0x8
+	name = "tasdīsa"
+	aruuds_number = 5
+	transform = 0
+
+[[metre_forms]]
+	ascii_name = "tasbiica"
+	arabic_name = "تسبيعة"
+	index = 0x9
+	name = "tasbīʿa"
+	aruuds_number = 6
+	transform = 0
+
+[[metre_forms]]
+	ascii_name = "tathmiina"
+	arabic_name = "تثمينة"
+	index = 0xa
+	name = "taṯmīna"
+	aruuds_number = 7
+	transform = 0
+
+[[metre_forms]]
+	ascii_name = "tatsiica"
+	arabic_name = "تتسيعة"
+	index = 0xb
+	name = "tatsīʿa"
+	aruuds_number = 8
+	transform = 0
+
+[[metre_forms]]
+	ascii_name = "tacshiira"
+	arabic_name = "تعشيرة"
+	index = 0xc
+	name = "taʿšīra"
+	aruuds_number = 9
+	transform = 0
+
+## besides the other values, feet must also contain the fields:
+## - base_sequence, an array of strings of 0 and 1 characters representing their EPUS where no ʿilla or ziḥāfa affects them
+## - cillas, an array of the indexes of the cillas they accept, including 0 (no ʿilla)
+[[feet]]
+	ascii_name = "facuulun"
+	arabic_name = "ْفَعُوْلُن"
+	index = 0x0
+	name = "faʿūlun"
+	epu_sequence = ["001", "01"]
+	cillas = [
+		0,
+		2,   #ḫarm
+		6,   #ḥaḏf
+		8,   #qaṣr
+		0xf, #batr 
+	]
+
+[[feet]]
+	ascii_name = "faacilun"
+	arabic_name = "ْفَاْعِلُن"
+	index = 0x1
+	name = "fāʿilun"
+	epu_sequence = ["01", "001"]
+	cillas = [
+		0,
+		3,	 #tarfīl
+		4,	 #taḏyīl
+		9,	 #qaṭʿ
+	]
+
+[[feet]]
+	ascii_name = "mafaaciilun"
+	arabic_name = "ْمَفَاْعِيْلُن"
+	index = 0x2
+	name = "mafāʿīlun"
+	epu_sequence = ["001", "01", "01"]
+	cillas = [
+		0,
+		2, #ḫarm
+		6, #ḥaḏf
+		8, #qaṣr
+	]
+
+[[feet]]
+	ascii_name = "faacilaatun"
+	arabic_name = "ْفَاْعِلَاْتُن"
+	index = 0x3
+	name = "fāʿilātun"
+	epu_sequence = ["01", "001", "01"]
+	cillas = [
+		0,
+		5,   #tasbīġ
+		6,   #ḥaḏf
+		8,   #qaṣr
+		0xa, #tašʿīṯ
+		0xf  #batr
+	]
+
+[[feet]]
+	ascii_name = "mustafcilun"
+	arabic_name = "ْمُسْتَفْعِلُن"
+	index = 0x4
+	name = "mustafʿilun"
+	epu_sequence = ["01", "01", "001"]
+	cillas = [
+		0,
+		4, #taḏyīl
+		9, #qaṭʿ
+	]
+
+[[feet]]
+	ascii_name = "mufaacalatun"
+	arabic_name = "ْمُفَاْعَلَتُن"
+	index = 0x5
+	name = "mufāʿalatun"
+	epu_sequence = ["001", "00", "01"]
+	cillas = [
+		0,
+		2, #ḫarm
+		7, #qaṭf
+	]
+
+[[feet]]
+	ascii_name = "mutafaacilun"
+	arabic_name = "ْمُتَفَاْعِلُن"
+	index = 0x6
+	name = "mutafāʿilun"
+	epu_sequence = ["00", "01", "001"]
+	cillas = [
+		0,
+		3,  #tarfīl
+		4,  #taḏyīl
+		9,  #qaṭʿ
+		0xb #ḥaḏaḏ
+	]
+
+[[feet]]
+	ascii_name = "faaci_laatun"
+	arabic_name = "ْفَاْعِ لَاْتُن"
+	index = 0x7
+	name = "fāʿi_lātun"
+	epu_sequence = ["010", "01", "01"]
+	cillas = [
+		0
+	]
+
+[[feet]]
+	ascii_name = "mustafci_lun"
+	arabic_name = "ْمُسْتَفْعِ لُن"
+	index = 0x8
+	name = "mustafʿi_lun"
+	epu_sequence = ["01", "010", "01"]
+	cillas = [
+		0,
+		8  #qaṣr
+	]
+
+[[feet]]
+	ascii_name = "mafcuulaatu"
+	arabic_name = "ُمَفْعُوْلَات"
+	index = 0x9
+	name = "mafʿūlātu"
+	epu_sequence = ["01", "01", "010"]
+	cillas = [
+		0,
+		0xc, #ṣalm
+		0xd, #kašf
+		0xe  #waqf
+	]
+
+[[feet]]
+	ascii_name = "mustafcilaatun"
+	index = 0xa
+	name = "mustafʿilātun"
+	arabic_name = "ْمُسْتَفْعِلُاتُن"
+	epu_sequence = ["01", "01", "001", "01"]
+	cillas = [0,]
+
+## zihāfāt contain, besides the basis requirements, two other fields: conditions and transform. 
+##	- condition is an array of requirements that the foot must satisfy in order to be affected by the ziḥāfa. Each requirement has the following syntax: 'i -> <h>', where i is an integer indicating 
+##	  the i-th letter of the foot and h is a ḥarf value (0 or 1). If foot contains less than i letters, the requirement will automatically be considered as not satisfy.
+##	  It is possible also to indicate that the harf at a certain index must NOT match a certain harf value using the marker !->. Therefore: 1 !-> 0 means that the second letter of the foot must
+##	  not be vocalized.
+##  - transform is an array of transformations that are applied in the order they are placed to a foot, if all the requirements in condition have been satisfied (order matters! dropping a letter
+##	  changes the index position of the others, therefore pay attention in ziḥāfāt muzdawiǧa to transform first the letter with a higher index!). There are two possible transformations:
+##	   + 'drop i': drops the ḥarf at index i
+##	   + 'silence i': silences the ḥarf at index i.
+
+[[zihaafas]]
+	#number 0 indicates no zihaafa:
+	ascii_name = "nothing"
+	index = 0x0
+	name = "lā ziḥāfa"
+	arabic_name = "لا زحاقة"
+	conditions = []
+	transform = []
+
+#first come *al-ziḥāfāt al-muzdawiǧa*
+[[zihaafas]]
+	ascii_name = "khabl"
+	index = 0x1
+	name = "ḫabl"
+	arabic_name = "خبل"
+	conditions = ["1 -> 1", "3 -> 1"]
+	transform = ["drop 3", "drop 1"]
+
+[[zihaafas]]
+	ascii_name = "khazl"
+	index = 0x2
+	name = "ḫazl"
+	arabic_name = "خزل"
+	conditions = ["1 -> 0", "3 -> 1"]
+	transform = ["drop 3", "silence 1"]
+
+[[zihaafas]]
+	ascii_name = "shakl"
+	arabic_name = "شكل"
+	index = 0x3
+	name = "šakl"
+	conditions = ["1 -> 1", "6 -> 1"]
+	transform = ["drop 6", "drop 1"]
+
+[[zihaafas]]
+	ascii_name = "naqs"
+	arabic_name = "نقص"
+	index = 0x4
+	name = "naqṣ"
+	conditions = ["4 -> 0", "6 -> 1"]
+	transform = ["drop 6", "silence 4"]
+
+#then *al-ziḥāfāt al-munfarida*
+[[zihaafas]]
+	ascii_name = "khabn"
+	arabic_name = "خبن"
+	index = 0x5
+	name = "ḫabn"
+	conditions = ["1 -> 1"]
+	transform = ["drop 1"]
+
+[[zihaafas]]
+	ascii_name = "waqs"
+	arabic_name = "وقص"
+	index = 0x6
+	name = "waqṣ"
+	conditions = ["1 -> 0"]
+	transform = ["drop 1"]
+
+[[zihaafas]]
+	ascii_name = "idmaar"
+	arabic_name = "إضمار"
+	index = 0x7
+	name = "iḍmār"
+	conditions = ["1 -> 0"]
+	transform = ["silence 1"]
+
+[[zihaafas]]
+	ascii_name = "tayy"
+	arabic_name = "طي"
+	index = 0x8
+	name = "ṭayy"
+	conditions = ["3 -> 1"]
+	transform = ["drop 3"]
+
+[[zihaafas]]
+	ascii_name = "qabd"
+	arabic_name = "قبض"
+	index = 0x9
+	name = "qabḍ"
+	conditions = ["4 -> 1"]
+	transform = ["drop 4"]
+
+[[zihaafas]]
+	ascii_name = "caql"
+	arabic_name = "عقل"
+	index = 0xa
+	name = "ʿaql"
+	conditions = ["4 -> 0"]
+	transform = ["drop 4"]
+
+[[zihaafas]]
+	ascii_name = "casb"
+	arabic_name = "عصب"
+	index = 0xb
+	name = "ʿaṣb"
+	conditions = ["4 -> 0"]
+	transform = ["silence 4"]
+
+[[zihaafas]]
+	ascii_name = "kaff"
+	arabic_name = "كف"
+	index = 0xc
+	name = "kaff"
+	conditions = ["6 -> 1"]
+	transform = ["drop 6"]
+
+## ʿilal contain, besides the base values, also a boolean value that says if they can occur in ḥašw, the conditions of their applicability and the way they transform the foot.
+## - the field `in_hashw` stores a boolean value: it is true if the ʿilla can occur within the ḥašw
+## - the field `conditions` is an array of requirements. A foot on which the ʿilla must be applied should first satisfy all these requirements.
+##	 each requirement that any ʿilla must satisfy can be rendered with strings having this syntax: "i -> type_of_epu". In this expression, i is the epu that is at index i in the foot
+##	 (as for python lists and tuples, i can be also negative, and thus indicating an index counting from the last element). type_of_epu is the kind of EPU that should be
+##	 found at index , and is represented by a sequence of ḥarf values represented by 0 and 1: therefore, sabab ḫafīf is 01, sabab ṯaqīl is 00, etc.
+##	 one could also put as requirement that the EPU at index it should NOT match a certain type: in this case, one would write "i !-> type_of_epu", with an exclamation mark before the 
+##	 association symbol.
+##
+## - the field `transform` is an array of transformations. If an ʿilla is applicable to a foot, this will undergo all the transformations in the order they are inserted into this array.
+##   all the transformations can be reduced to these types:
+##    + appending an EPU at the foot's end: the syntax 'put <epu>', where <epu> is the sequence of ḥarf values representing the EPU. For example, put 01 appends a sabab ḫāfīf
+##	  + appending a ḥarf: the syntax is 'put <h>', where <h> is 0 or 1. The program must recognize that a ḥarf is not an epu, and that therefore it must be appended to the last foot of the epu 
+##		rather than be added as new epu.
+##	  + dropping an EPU at a given position: syntax 'pop i'.
+##	  + substituting the first occurrence of a certain kind of epu with another: syntax '<epu> -> <new_epu>'. For example, '001 -> 01' will find the watid maǧmūʿ of a foot and substitute it with a
+##      sabab ḫafīf
+
+[[cillas]]
+	ascii_name = "nothing"
+	index = 0x0
+	name = "lā ʿilla"
+	arabic_name = "لا علة"
+	in_hashw = true
+	conditions = []
+	transform = []
+
+# values smaller than 3 are for ʿilal behaving like ziḥāfāt
+[[cillas]]
+	ascii_name = "khazm"
+	index = 0x1
+	name = "ḫazm"
+	arabic_name = "خزم"
+	in_hashw = true
+	conditions = []
+	transform = []
+
+[[cillas]]
+	ascii_name = "kharm"
+	index = 0x2
+	name = "ḫarm"
+	arabic_name = "خرم"
+	in_hashw = true
+	conditions = ["0 -> 001"]
+	transform = ["001 -> 01"]
+
+[[cillas]]
+	ascii_name = "tarfiil"
+	index = 0x3
+	name = "tarfīl"
+	arabic_name = "ترفيل"
+	in_hashw = false
+	conditions = []
+	transform = ["put 01"]
+
+#then the others
+[[cillas]]
+	ascii_name = "tadhyiil"
+	index = 0x4
+	name = "taḏyīl"
+	arabic_name = "تذييل"
+	in_hashw = false
+	conditions = ["-1 -> 001"]
+	transform = ["put 1"]
+
+[[cillas]]
+	ascii_name = "tasbiigh"
+	index = 0x5
+	name = "tasbīġ"
+	arabic_name = "تسبيغ"
+	in_hashw = false
+	conditions = ["-1 -> 01"]
+	transform = ["put 1"]
+
+[[cillas]]
+	ascii_name = "hadhf"
+	index = 0x6
+	name = "ḥaḏf"
+	arabic_name = "حذف"
+	in_hashw = false
+	conditions = ["-1 -> 01", "-2 !-> 00"]
+	transform = ["pop -1"]
+
+[[cillas]]
+	ascii_name = "qatf"
+	arabic_name = "قطف"
+	index = 0x7
+	name = "qaṭf"
+	in_hashw = false
+	conditions = ["-1 -> 01"]
+	transform = ["pop -1", "00 -> 01"]
+
+[[cillas]]
+	ascii_name = "qasr"
+	arabic_name = "قصر"
+	index = 0x8
+	name = "qaṣr"
+	in_hashw = false
+	conditions = ["-1 -> 01", "-1 !-> 00"] #we need to exclude mufāʿalatun from qaṣr, because in that case the transformation mafāʿilun would be a ziḥāfa (ʿaql)
+	transform = ["pop -1", "put 1"]
+
+[[cillas]]
+	ascii_name = "qatc"
+	arabic_name = "قطع"
+	index = 0x9
+	name = "qaṭʿ"
+	in_hashw = false
+	conditions = ["-1 -> 001"]
+	transform = ["001 -> 01"]
+
+[[cillas]]
+	ascii_name = "tashciith"
+	arabic_name = "تشعيث"
+	index = 0xa
+	name = "tašʿīṯ"
+	in_hashw = false
+	conditions = ["1 -> 001", "-1 !-> 001"]
+	transform = ["001 -> 01"]
+
+[[cillas]]
+	ascii_name = "hadhadh"
+	arabic_name = "حذذ"
+	index = 0xb
+	name = "ḥaḏaḏ"
+	in_hashw = false
+	conditions = ["-1 -> 001"]
+	transform = ["pop -1"]
+
+[[cillas]]
+	ascii_name = "salm"
+	arabic_name = "صلم"
+	index = 0xc
+	name = "ṣalm"
+	in_hashw = false
+	conditions = ["-1 -> 010"]
+	transform = ["pop -1"]
+
+[[cillas]]
+	ascii_name = "kashf"
+	arabic_name = "كشف"
+	index = 0xd
+	name = "kašf"
+	in_hashw = false
+	conditions = ["-1 -> 010"]
+	transform = ["010 -> 01"]
+
+[[cillas]]
+	ascii_name = "waqf"
+	arabic_name = "وقف"
+	index = 0xe
+	name = "waqf"
+	in_hashw = false
+	conditions = ["-1 -> 010"]
+	transform = ["010 -> 011"]
+
+[[cillas]]
+	ascii_name = "batr"
+	arabic_name = "بتر"
+	index = 0xf
+	name = "batr"
+	in_hashw = false
+	conditions = ["-2 -> 001", "-1 -> 01"]
+	transform = ["pop -2"]		
+

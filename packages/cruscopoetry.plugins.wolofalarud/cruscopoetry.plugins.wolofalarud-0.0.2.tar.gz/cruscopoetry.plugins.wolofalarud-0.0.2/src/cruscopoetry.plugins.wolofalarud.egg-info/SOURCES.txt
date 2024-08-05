@@ -1,0 +1,14 @@
+README.rst
+setup.py
+src/cruscopoetry.plugins.wolofalarud.egg-info/PKG-INFO
+src/cruscopoetry.plugins.wolofalarud.egg-info/SOURCES.txt
+src/cruscopoetry.plugins.wolofalarud.egg-info/dependency_links.txt
+src/cruscopoetry.plugins.wolofalarud.egg-info/entry_points.txt
+src/cruscopoetry.plugins.wolofalarud.egg-info/requires.txt
+src/cruscopoetry.plugins.wolofalarud.egg-info/top_level.txt
+src/cruscopoetry/plugins/wolofalarud/__init__.py
+src/cruscopoetry/plugins/wolofalarud/__main__.py
+src/cruscopoetry/plugins/wolofalarud/metric_elements.py
+src/cruscopoetry/plugins/wolofalarud/parser_classes.py
+src/cruscopoetry/plugins/wolofalarud/renderer_class.py
+src/cruscopoetry/plugins/wolofalarud/wolofal_constants.toml
