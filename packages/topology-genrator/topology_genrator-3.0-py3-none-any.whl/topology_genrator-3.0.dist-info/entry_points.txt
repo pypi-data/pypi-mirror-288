@@ -1,0 +1,4 @@
+[console_scripts]
+generate_topology = topology_gen.generate_top:generate_topology
+preprocess_ligand = topology_gen.preprocess_mol2:preprocess_ligand
+
