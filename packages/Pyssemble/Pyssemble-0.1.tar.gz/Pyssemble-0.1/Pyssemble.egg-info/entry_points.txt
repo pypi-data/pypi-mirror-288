@@ -1,0 +1,3 @@
+[console_scripts]
+parse_assemble = Pyssemble.parser:parse
+
