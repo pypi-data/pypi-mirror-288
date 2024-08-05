@@ -1,0 +1,12 @@
+setup.py
+http_browser/__init__.py
+http_browser/browser.py
+http_browser/config.py
+http_browser/httpserver.py
+http_browser/main.py
+http_browser.egg-info/PKG-INFO
+http_browser.egg-info/SOURCES.txt
+http_browser.egg-info/dependency_links.txt
+http_browser.egg-info/not-zip-safe
+http_browser.egg-info/requires.txt
+http_browser.egg-info/top_level.txt
