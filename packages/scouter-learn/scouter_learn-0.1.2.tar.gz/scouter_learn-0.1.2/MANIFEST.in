@@ -1,0 +1,11 @@
+# Exclude the .git directory
+exclude .git
+recursive-exclude .git *
+
+# Exclude .gitignore files
+exclude .gitignore
+exclude .gitignore_global
+
+# (Optional) Exclude any other unnecessary files
+exclude *.pyc
+exclude __pycache__
