@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mypackage/__init__.py
+mypackage/mymodule.py
+new0325_package.egg-info/PKG-INFO
+new0325_package.egg-info/SOURCES.txt
+new0325_package.egg-info/dependency_links.txt
+new0325_package.egg-info/top_level.txt
+tests/__init__.py
+tests/test_mymodule.py
