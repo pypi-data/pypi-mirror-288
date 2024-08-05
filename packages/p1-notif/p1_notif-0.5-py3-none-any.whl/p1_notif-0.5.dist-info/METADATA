@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: p1-notif
+Version: 0.5
+Summary: Notification SDK for Dekoruma's internal use
+Home-page: https://github.com/Dekoruma/p1-notif
+Author: Jauhar Arifin
+Author-email: jauhararifin10@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: future
+Requires-Dist: requests
+
+# Python: Notif
+
+Notification Service SDK, sdk for interacting with f1-notif.
+
+## Setup
+
+```sh
+$ pipenv install p1-notif
+```
