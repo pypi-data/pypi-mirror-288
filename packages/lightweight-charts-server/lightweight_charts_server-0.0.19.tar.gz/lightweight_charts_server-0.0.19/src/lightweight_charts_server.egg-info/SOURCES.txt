@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/lightweight_charts_server.egg-info/PKG-INFO
+src/lightweight_charts_server.egg-info/SOURCES.txt
+src/lightweight_charts_server.egg-info/dependency_links.txt
+src/lightweight_charts_server.egg-info/requires.txt
+src/lightweight_charts_server.egg-info/top_level.txt
