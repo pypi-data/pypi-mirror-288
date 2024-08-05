@@ -1,0 +1,10 @@
+README.md
+setup.py
+kla_first_distributions/Binomialdistribution.py
+kla_first_distributions/Gaussiandistribution.py
+kla_first_distributions/Generaldistribution.py
+kla_first_distributions/__init__.py
+kla_first_distributions.egg-info/PKG-INFO
+kla_first_distributions.egg-info/SOURCES.txt
+kla_first_distributions.egg-info/dependency_links.txt
+kla_first_distributions.egg-info/top_level.txt

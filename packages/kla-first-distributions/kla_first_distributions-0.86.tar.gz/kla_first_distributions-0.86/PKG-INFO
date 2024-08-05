@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: kla_first_distributions
+Version: 0.86
+Summary: Gaussian and Binomial distributions
+Author: KA
+Author-email: myemail@somthing.com
+Description-Content-Type: text/markdown
+
+# Summary of package
+This package is my first objectorientedprogramming python pacakge that adds functionality of Gaussian and Binomial distribution calculations done with Python.
+
+# files
+
+Explination of files in the package
+
+# Installation
