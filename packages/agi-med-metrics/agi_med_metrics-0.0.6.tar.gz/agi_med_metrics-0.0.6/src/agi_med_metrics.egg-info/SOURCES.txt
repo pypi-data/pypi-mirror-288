@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+requirements.txt
+src/agi_med_metrics/__init__.py
+src/agi_med_metrics/errors_cv.py
+src/agi_med_metrics/errors_ml.py
+src/agi_med_metrics/errors_nlp.py
+src/agi_med_metrics.egg-info/PKG-INFO
+src/agi_med_metrics.egg-info/SOURCES.txt
+src/agi_med_metrics.egg-info/dependency_links.txt
+src/agi_med_metrics.egg-info/requires.txt
+src/agi_med_metrics.egg-info/top_level.txt
