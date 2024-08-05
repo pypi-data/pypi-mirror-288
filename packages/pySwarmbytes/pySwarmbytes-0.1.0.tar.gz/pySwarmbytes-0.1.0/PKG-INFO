@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pySwarmbytes
+Version: 0.1.0
+Summary: UNOFFICIAL Python bindings for Swarmbytes Dashboard API
+Home-page: https://github.com/coder-amogh/pySwarmbytes
+Author: coder-amogh (Amogh Datar)
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/coder-amogh/pySwarmbytes/issues
+Description: 
+        # TODO - Write docs!
+        
+Keywords: python,swarmbytes,hg,passive income,swarmbytes api,swarmbytes dashboard,python swarmbytes
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
