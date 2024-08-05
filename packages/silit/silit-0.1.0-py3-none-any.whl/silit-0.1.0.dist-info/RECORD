@@ -1,0 +1,14 @@
+silit/__init__.py,sha256=zf1LbeBgkQN2rfaN3abpb_RWdPZB2OYdNv7fRroMFbE,21
+silit/commands.py,sha256=Niqfr0fpDImXOfmfhK0xBcd-FMmyYypdS5030aw8pNA,594
+silit/templates/project/build.py,sha256=ZdOZRim3Sg-sWtGnpHxf5CSC1ybeglP9RaXbbyAzWyY,70
+silit/templates/project/setup.py,sha256=4w0uqbhyzhxyrSJRw_fFhoWMDgFMoJAC81ch5nGZVlw,525
+silit/templates/project/silit.py,sha256=jgSDk585Pgdfqqv3W8hTSJo7zdKB6n0tch5b7wXywEQ,73
+silit/templates/project/app/__init__.py,sha256=KBp53ODWYbFa9CEop5nXTFnpAvSN8bj7y2yDbVax3jo,43
+silit/templates/project/config/config.py,sha256=rJNEUMpboM8TrSVxP4nl9FWVNCLeZbjNsWpQR5fNOTY,44
+silit/templates/project/public/index.py,sha256=2qNC5jSgjb0Ta3ARucrnSQoHSDTWHBzcvoMbO0KhsVY,43
+silit/templates/project/routes/web.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+silit-0.1.0.dist-info/METADATA,sha256=Kbr8AF0qA0Mgv3Y2ckalPm5F985_JvWyGn3ZhcwghNk,475
+silit-0.1.0.dist-info/WHEEL,sha256=Z4pYXqR_rTB7OWNDYFOm1qRk0RX6GFP2o8LgvP453Hk,91
+silit-0.1.0.dist-info/entry_points.txt,sha256=FTr6EX-yE_a94WzAvL9H6eE-NwJ-2rOFd5m8dQV8900,56
+silit-0.1.0.dist-info/top_level.txt,sha256=NCX0C4a2lGXqD9c3kGwEfXjDcJFjo5W3Pe-SzSjqk60,6
+silit-0.1.0.dist-info/RECORD,,
