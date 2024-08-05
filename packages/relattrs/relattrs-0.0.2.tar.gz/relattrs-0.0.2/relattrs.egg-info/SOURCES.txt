@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+relattrs/__init__.py
+relattrs/relattrs.py
+relattrs.egg-info/PKG-INFO
+relattrs.egg-info/SOURCES.txt
+relattrs.egg-info/dependency_links.txt
+relattrs.egg-info/top_level.txt
+tests/tests.py
