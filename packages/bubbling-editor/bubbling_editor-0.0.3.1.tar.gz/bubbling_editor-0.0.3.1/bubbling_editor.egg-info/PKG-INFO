@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: bubbling-editor
+Version: 0.0.3.1
+Summary: Simple Tkinter image bubbling editor
+Author: vkalyvayut-roboty-a-ne-chelovek
+License: This is free and unencumbered software released into the public domain.
+        
+        Anyone is free to copy, modify, publish, use, compile, sell, or
+        distribute this software, either in source code form or as a compiled
+        binary, for any purpose, commercial or non-commercial, and by any
+        means.
+        
+        In jurisdictions that recognize copyright laws, the author or authors
+        of this software dedicate any and all copyright interest in the
+        software to the public domain. We make this dedication for the benefit
+        of the public at large and to the detriment of our heirs and
+        successors. We intend this dedication to be an overt act of
+        relinquishment in perpetuity of all present and future rights to this
+        software under copyright law.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+        IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+        OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+        ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+        OTHER DEALINGS IN THE SOFTWARE.
+        
+        For more information, please refer to <https://unlicense.org>
+Project-URL: Homepage, https://github.com/vkalyvayut-roboty-a-ne-chelovek/bubbling-editor
+Project-URL: Issues, https://github.com/vkalyvayut-roboty-a-ne-chelovek/bubbling-editor/issues
+Keywords: tkinter,bubbling,image-editor
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: miros
+Requires-Dist: pillow
+
+# bubbling-editor
+Simple Tkinter image bubbling editor
+```
+<Control-o> - open project
+<Control-s> - save project
+<Control-n> - import image
+<Left-click> - draw bubble
+<Right-click> - draw counter bubble
+<Mouse-wheel> or KP_Add/KP_Subtract - change bubble size
+<Control-k> - change background (no bubble) color
+<Control-z> - remove last-bubble
+<Control-e> - export project
+```
+
+Typical workflow:
+```
+1. import image or open project
+2. add bubbles
+3. save project
+4. export image
+```
+Export project from command-line: `bubbling-editor -p <path-to-project> -i <path-to-image>`
+
+
+![editor screenshot](bubbling_editor/assets/editor.png)
