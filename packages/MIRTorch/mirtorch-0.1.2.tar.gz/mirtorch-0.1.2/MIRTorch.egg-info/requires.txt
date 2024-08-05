@@ -1,0 +1,20 @@
+torch>=1.13
+torchvision
+torchkbnufft>=1.4.0
+numpy>=1.24
+dominate
+scipy
+PyWavelets
+requests
+einops
+matplotlib
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[dev]
+check-manifest
+
+[test]
+coverage
+pytest
