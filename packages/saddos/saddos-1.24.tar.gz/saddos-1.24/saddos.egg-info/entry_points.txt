@@ -1,0 +1,2 @@
+[console_scripts]
+saddos = saddos.saddos:main
