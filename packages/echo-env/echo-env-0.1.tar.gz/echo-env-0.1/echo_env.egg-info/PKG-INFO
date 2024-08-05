@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: echo-env
+Version: 0.1
+Summary: A package for configuring projects with large environments
+Home-page: https://github.com/RoePl/echo-env
+Download-URL: https://github.com/RoePl/echo-env/archive/refs/tags/v0.1.tar.gz
+Author: Roe Ploutno
+Author-email: roe.ploutno@gmail.com
+Keywords: environment,configuration
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
