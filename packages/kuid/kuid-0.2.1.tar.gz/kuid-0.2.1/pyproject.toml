@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "kuid"
+version = "0.2.1"
+description = "Library to shorten UUIDs"
+authors = ["Björn Boschman <bjorn.boschman@adm.doctor>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pybase62 = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+"Homepage" = "https://github.com/admdocbr/kuid"
+"Bug Reports" = "https://github.com/admdocbr/kuid/issues"
+"Source" = "https://github.com/admdocbr/kuid"
