@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pyjson_translator
+Version: 0.1.14
+Summary: A simple JSON to Python object translator
+Home-page: https://github.com/moqimoqidea/pyjson_translator
+Keywords: json,translator,python
+Author: moqimoqidea
+Author-email: moqimoqidea@gmail.com
+Requires-Python: >=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: flask_sqlalchemy (>=3.1.1,<4.0.0)
+Requires-Dist: marshmallow (>=3.21.3,<4.0.0)
+Requires-Dist: marshmallow_sqlalchemy (>=1.0.0,<2.0.0)
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Project-URL: Documentation, https://github.com/moqimoqidea/pyjson_translator#readme
+Project-URL: Repository, https://github.com/moqimoqidea/pyjson_translator
+Project-URL: Source, https://github.com/moqimoqidea/pyjson_translator
+Project-URL: Tracker, https://github.com/moqimoqidea/pyjson_translator/issues
+Description-Content-Type: text/markdown
+
+# pyjson_translator
+
+A simple JSON to Python object translator.
+
+## Installation
+
+```bash
+pip install -U pyjson_translator
+```
+
