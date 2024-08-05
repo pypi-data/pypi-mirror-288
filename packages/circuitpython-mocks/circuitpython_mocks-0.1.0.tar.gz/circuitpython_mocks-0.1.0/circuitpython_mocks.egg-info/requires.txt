@@ -1,0 +1,5 @@
+adafruit-circuitpython-typing
+pytest
+
+[tests]
+adafruit-circuitpython-busdevice
