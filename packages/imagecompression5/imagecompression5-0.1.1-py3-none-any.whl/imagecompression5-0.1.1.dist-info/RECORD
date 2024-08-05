@@ -1,0 +1,9 @@
+imagecompression5/__init__.py,sha256=56EI4ru9AT9ESiMWKbQr1meEONCij3AVKM6hByhzRCs,103
+imagecompression5/helpers.py,sha256=kpIXo9SWCbdeZMeu8VLd95caSFXomA8xebG_PR2hDRQ,162
+imagecompression5/image_compression.py,sha256=ddCa1AlHaUR9Ldxut2vGcXitJPEfYYAUpam0TABTg6c,2062
+imagecompression5/reis_algorithm.py,sha256=EfejYPARUOD6GpgTHduAhgQv7n5P4rRw0vrudVf9QrQ,1216
+imagecompression5-0.1.1.dist-info/LICENSE.txt,sha256=w4bdLqD9bNf22DjD1q7IM7r19wV9LyL6bwEsY_OL1bQ,1124
+imagecompression5-0.1.1.dist-info/METADATA,sha256=GDPMRqe6YqzcbNkOwI4pjwiD8ULRUbSxO5N_hOQZobo,349
+imagecompression5-0.1.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+imagecompression5-0.1.1.dist-info/top_level.txt,sha256=oQz9BFJMfQUDPZYM87O0AkZRW1MtSB05i2vQ35m9GT0,18
+imagecompression5-0.1.1.dist-info/RECORD,,
