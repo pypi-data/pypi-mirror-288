@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: mschoi-gui
+Version: 1.2.2
+Summary: A utility library for database operations, directory management, font settings, GUI operations, and JSON parsing
+Author: Ms Choi
+Author-email: mschoi@ybm.co.kr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
