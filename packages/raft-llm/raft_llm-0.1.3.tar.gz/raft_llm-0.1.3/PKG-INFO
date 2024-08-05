@@ -1,0 +1,310 @@
+Metadata-Version: 2.1
+Name: raft_llm
+Version: 0.1.3
+Summary: A brief description of your package
+Home-page: https://github.com/tianjunz/raft_llm
+Author: Tianjun Zhang
+Author-email: tianjunz@eecs.berkeley.edu
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: datasets==2.16.1
+Requires-Dist: docx==0.2.4
+Requires-Dist: fastapi==0.111.1
+Requires-Dist: langchain==0.2.9
+Requires-Dist: langchain_community==0.2.7
+Requires-Dist: langchain_core==0.2.21
+Requires-Dist: langchain_experimental==0.0.62
+Requires-Dist: langchain_openai==0.1.17
+Requires-Dist: langchain_text_splitters==0.2.2
+Requires-Dist: mdc==1.2.1
+Requires-Dist: pydantic==2.8.2
+Requires-Dist: PyPDF2==3.0.1
+Requires-Dist: PyYAML==6.0.1
+Requires-Dist: PyYAML==6.0.1
+Requires-Dist: reportlab==4.2.2
+Requires-Dist: Requests==2.32.3
+Requires-Dist: unstructured[csv,html,pdf]==0.14.9
+Requires-Dist: uvicorn==0.30.1
+Requires-Dist: faiss-cpu==1.8.0
+Requires-Dist: psutil==6.0.0
+
+<p align="center">
+  <picture>
+    <img src="https://raw.githubusercontent.com/tianjunz/raft_llm/main/assets/raft_logo.png" alt="RAFT logo">
+    <!-- <source media="(prefers-color-scheme: dark)" src="https://github.com/tianjunz/raft_llm/main/assets/raft_logo.png"> -->
+    <!-- <img alt="vLLM" src="https://raw.githubusercontent.com/vllm-project/vllm/main/docs/source/assets/logos/vllm-logo-text-light.png" width=55%> -->
+  </picture>
+</p>
+
+<h3 align="center">
+If you are using RAG (Retriever Augmented Generation), you should be using RAFT!
+</h3>
+
+<p align="center">
+| <a href="https://arxiv.org/pdf/2403.10131"><b>Paper</b></a> | <a href="https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/raft-a-new-way-to-teach-llms-to-be-better-at-rag/ba-p/4084674"><b>MSFT Blog</b></a> | <a href="https://ai.meta.com/blog/raft-llama-retrieval-augmented-generation-supervised-fine-tuning-microsoft/"><b>Meta Blog</b></a> | <a href="https://gorilla.cs.berkeley.edu/blogs/9_raft.html"><b>Berkeley Blog</b></a> |
+</p>
+
+One of the most significant uses of generative AI in the business sector is the development of natural language interfaces that tap into existing data repositories. This involves providing answers to inquiries related to specialized areas such as finance, law, and healthcare. Two popular methods are commonly used for this scenario: Domain-Specific Fine-tuning (DSF) and Retriever Augmented Generation (RAG). Retriever Augmented Fine-Tuning (RAFT) looks at combining the two approaches aiming at training the model for a domain-specific open-book exam. 
+
+RAFT makes it easy to: 
+* Synthetically generate training dataset to for domain-specific RAG
+* Cleaning up dataset and prepare them for finetuning
+* Easy plug in and play finetuning framework by OpenAI, Azure, AWS, Llama-recipes, ...
+* Serve finetuned RAG models with Side-by-side comparisons
+
+This repo contains the code for 
+```
+raft 
+├── inference
+│   ├── README.md
+│   ├── config
+│   │   ├── conversation_example.yaml
+│   │   ├── qa_example.yaml
+│   ├── document
+│   ├── evaluation
+│   │   ├── evaluation.py # execution script for `raft eval`
+│   │   ├── llm_judge.py # judge llm used during evaluation
+│   ├── rag
+│   │   ├── base_rag.py # the base rag template that is RAFT compatible
+│   │   ├── compare_rag.py # execution script for `raft compare`
+│   │   ├── constant.py 
+│   │   ├── directory_loader.py # a collection of chunking tools by file type
+│   │   ├── serve_rag.py # host a rag server via FastAPI; execution script for `raft serve_rag`
+│   │   ├── test.py
+│   ├── train
+│   │   ├── train_openai.py # execution script for `raft train`; support openai fine-tuning
+│   ├── utils
+│   ├── cli.py
+│   ├── constant.py
+│   ├── generate.py
+```
+# RAFT Finetuning Data Generation
+## Overview
+This script is designed to generate RAFT (Retrieval Augmented Fine-Tuning) data by first pre-processing documents using customized chunking strategies (e.g. `by_title` for PDF files, `by_html_tag` for HTML files, or `semantic` for embedding parition for any file tyeps), generating question-answer pairs, or conversations in RAFT format, and saving the results in specified formats (e.g. `.json`). The script supports various input formats, including PDF, TXT, JSON, HTML, and CSV files.
+
+
+## Arguments
+
+
+| Section               | Argument                    | Type    | Default                      | Example Value                   | Description                                                                           |
+|-----------------------|-----------------------------|---------|------------------------------|---------------------------------|---------------------------------------------------------------------------------------|
+| **Input**             |                             |         |                              |                                 |                                                                                       |
+|                       | `--datapath`                | str     | `""`                         | `/path/to/your/data.txt`        | The path at which the document is located.                                            |
+| **Output**            |                             |         |                              |                                 |                                                                                       |
+|                       | `--output-dir`              | str     | `"./"`                       | `./output`                      | The path at which to save the dataset.                                                |
+|                       | `--output-format`           | str     | `"chat"`                     | `chat`                          | Format to convert the dataset to (`hf`, `chat`, `completion`).                        |
+|                       | `--output-type`             | str     | `"jsonl"`                    | `jsonl`                         | Type to export the dataset to (`jsonl`).                                              |
+|                       | `--output-chat-system-prompt` | str   | None                         | "You are a helpful assistant."  | The system prompt to use when the output format is chat.                              |
+| **Generation**        |                             |         |                              |                                 |                                                                                       |
+|                       | `--style`                   | str     | `"qa"`                       | `qa`                            | Style of the generated dataset (`qa`, `conversation`).                                |
+|                       | `--questions`               | int     | 5                            | 5                               | The number of questions to generate per document chunk.                               |
+|                       | `--distractors`             | int     | 3                            | 3                               | The number of distractor documents to include per data point/triplet.                 |
+|                       | `--p`                       | float   | 1.0                          | 0.8                             | The percentage that the oracle document is included in the context.                   |
+|                       | `--chunk-size`              | int     | 512                          | 1000                            | The size of each chunk in number of tokens.                                           |
+| **Models**            |                             |         |                              |                                 |                                                                                       |
+|                       | `--models-embedding-provider` | str   | `"openai"`                   | `openai`                        | Provider for the embedding model.                                                     |
+|                       | `--models-embedding-name`   | str     | `"text-embedding-ada-002"`   | `text-embedding-ada-002`        | The embedding model to use to encode document chunks.                                 |
+|                       | `--models-generation-provider` | str | `"openai"`                   | `openai`                        | Provider for the generation model.                                                    |
+|                       | `--models-generation-name`  | str     | `"gpt-4"`                    | `gpt-3.5-turbo`                 | The model to use to generate questions and answers.                                   |
+| **Execution**         |                             |         |                              |                                 |                                                                                       |
+|                       | `--fast`                    | bool    | `False`                      | `True`                          | Run the script in fast mode (no recovery implemented).                                |
+| **Config**            |                             |         |                              |                                 |                                                                                       |
+|                       | `--config`                  | str     | None                         | `config.yaml`                   | Path to the YAML configuration file.                                                  |
+| **Chunking - PDF**    |                             |         |                              |                                 |                                                                                       |
+|                       | `--chunking-pdf-strategy`   | str     | None                         | `by_title`                      | Chunking strategy for PDF files.                                                      |
+|                       | `--chunking-pdf-chunk-size` | int     | None                         | 1000                            | Chunk size for PDF files.                                                             |
+|                       | `--chunking-pdf-max-characters` | int | None                         | 2000                            | Max characters for PDF chunking.                                                      |
+| **Chunking - TXT**    |                             |         |                              |                                 |                                                                                       |
+|                       | `--chunking-txt-strategy`   | str     | None                         | `basic`                         | Chunking strategy for TXT files.                                                      |
+|                       | `--chunking-txt-chunk-size` | int     | None                         | 500                             | Chunk size for TXT files.                                                             |
+| **Chunking - JSON**   |                             |         |                              |                                 |                                                                                       |
+|                       | `--chunking-json-strategy`  | str     | None                         | `recursive`                     | Chunking strategy for JSON files.                                                     |
+|                       | `--chunking-json-chunk-size` | int    | None                         | 800                             | Chunk size for JSON files.                                                            |
+| **Chunking - HTML**   |                             |         |                              |                                 |                                                                                       |
+|                       | `--chunking-html-strategy`  | str     | None                         | `by_html_tag`                   | Chunking strategy for HTML files.                                                     |
+|                       | `--chunking-html-max-characters` | int | None                         | 1500                            | Max characters for HTML chunking.                                                     |
+| **Chunking - CSV**    |                             |         |                              |                                 |                                                                                       |
+|                       | `--chunking-csv-strategy`   | str     | None                         | `by_csv_row`                    | Chunking strategy for CSV files.                                                      |
+|                       | `--chunking-csv-chunk-size` | int     | None                         | 10                              | Chunk size for CSV files.                                                             |
+
+## Usage
+### Generating RAFT Data
+
+#### [Recommended] Method 1: `config.`yaml` file
+
+To generate RAFT data, we recommend drafting your `config.yaml` file to specify chunking strategies, model providers, and other parameters.
+
+You can use our config template obtained using `raft get-configs` as starting point for your use case, `raft get-configs` will copy template file directory to your current working directory.
+
+After defining `config.yaml`, you can start generating raft finetuning data using `raft generate --config config.yaml`
+
+
+
+A sample configuration file (`config.yaml`) could look like this:
+
+```yaml
+input:
+  datapath: "./data"
+  doctype: "pdf"
+output:
+  dir: "./output"
+  format: "json"
+  type: "chat"
+generation:
+  questions: 5
+  conversation_turns: 3
+  style: "qa"
+models:
+  embedding:
+    provider: "openai"
+    name: "text-embedding-ada-002"
+  generation:
+    provider: "openai"
+    name: "gpt-3.5-turbo"
+execution:
+  fast: false
+chunking:
+  pdf:
+    strategy: "by_title"
+    chunk_size: 1000
+    max_characters: 2000
+  txt:
+    strategy: "basic"
+    chunk_size: 500
+  json:
+    strategy: "recursive"
+    chunk_size: 800
+  html:
+    strategy: "by_html_tag"
+    max_characters: 1500
+  csv:
+    strategy: "by_csv_row"
+    chunk_size: 10
+chat_system_prompt: "You are a helpful assistant."
+```
+In plain words, this config file defines RAFT data generation that result in a `json` format output file with `chat` style, 5 questions per document, 3 distractors, and a conversation turn of 3. The document will be chunked by title for PDF files, by basic strategy for TXT files, recursively for JSON files, by HTML tag for HTML files, and by CSV row for CSV files. The embedding model `text-embedding-ada-002` will be used to encode document chunks, and the generation model `gpt-3.5-turbo` will be used to generate questions and answers. The chat system prompt will be set to "You are a helpful assistant."
+
+#### [Recommended] Method 2: `config.`yaml` file + CLI commands
+
+If you want to use the template values as starting point with minor changes, you can use the config plus CLI commands, we will override the values in the config yaml file with the CLI commands.
+
+For example, you can override the `datapath` with your own data path without touching other config parameters
+
+```bash
+raft generate --config config.yaml --datapath /path/to/your/data
+```
+#### [Not Recommended] Method 3: Pure CLI commands 
+
+Alternatively, you can define your raft generation parameter completely using CLI commands. 
+```bash
+python generation.py generate
+    --datapath /path/to/your/data.txt
+    --output-dir ./output
+    --output-format chat
+    --output-type jsonl
+    --output-chat-system-prompt "You are a helpful assistant."
+    --style qa
+    --questions 5
+    --distractors 3
+    --p 0.8
+    --chunk-size 1000
+    --models-embedding-provider openai
+    --models-embedding-name text-embedding-ada-002
+    --models-generation-provider openai
+    --models-generation-name gpt-3.5-turbo
+    --fast True
+    --config config.yaml
+    --chunking-pdf-strategy by_title
+    --chunking-pdf-chunk-size 1000
+    --chunking-pdf-max-characters 2000
+    --chunking-txt-strategy basic
+    --chunking-txt-chunk-size 500
+    --chunking-json-strategy recursive
+    --chunking-json-chunk-size 800
+    --chunking-html-strategy by_html_tag
+    --chunking-html-max-characters 1500
+    --chunking-csv-strategy by_csv_row
+    --chunking-csv-chunk-size 10
+```
+
+# RAG Server README
+
+## Overview
+This README provides instructions for setting up and running a Retrieval-Augmented Generation (RAG) server using the provided arguments and commands. The RAG server integrates a retrieval mechanism with a generation model to provide enhanced responses based on the provided documents.
+
+## Arguments
+
+| Argument                   | Type   | Required | Default   | Description                                      |
+|----------------------------|--------|----------|-----------|--------------------------------------------------|
+| `--model_name`             | str    | Yes      | N/A       | Path to the base model for serving RAG           |
+| `--metadata_storage_path`  | str    | Yes      | N/A       | Path to metadata storage                         |
+| `--document_storage_path`  | str    | Yes      | N/A       | Path to document storage                         |
+| `--k`                      | int    | No       | 5         | Number of documents to retrieve                  |
+| `--host`                   | str    | No       | 0.0.0.0   | Host for RAG server                              |
+| `--port`                   | int    | No       | 8000      | Port for RAG server                              |
+
+# Usage
+## Starting the RAG Server
+
+To start the RAG server, use the raft serve_rag command with the required arguments. Below is an example command:
+
+```bash
+raft serve_rag 
+    --model_name {fine-tuned model name}
+    --metadata_storage_path ./artifact 
+    --document_storage_path ./document
+```
+
+- Use the model {fine-tuned model name} available after OAI fine-tuning
+- Store metadata in the ./artifact directory
+- Store documents in the ./document directory
+
+If `./artifact` does not exist, `raft` will take all the supported documents(refer to `rag/directory_loarder.py`) and build FAISS vector database. If `./artifact` exists, `raft` will load it as a FAISS storage directory and skip document ingest.
+
+
+## Project Roadmap
+
+In the immediate future, we plan to release the following:
+
+README
+- [ ] Add easier entry point for user to start using RAFT with very minimal setup. 
+- [ ] Add cost estimations with examples (calculate using OpenAI token counts, etc) Ofc it will varied by prompt. 
+
+Generate
+- [ ] Add support for vLLM support for open source LLM generation model
+- [ ] Input Chunking: Add support for local embedding models
+- [ ] Input: Option to take chunked documents as input.
+- [ ] Refactor: Place prompts in the config file as well (?). 
+- [ ] Distractor doc using RAG
+- [ ] Refusal @tianjunz
+
+
+RAG
+- [ ] Use refactored utils.data_preprocess to load data
+- [ ] @Fanjia-Yan
+
+Train (finetune)
+- [ ] llama-recipes support
+
+Evaluation
+- [ ] 
+
+
+Propose a new task you would like to work on :star_struck:
+
+## Citation
+
+If you use RAFT, please cite our paper:
+
+```text
+@article{zhang2024raft,
+  title={Raft: Adapting language model to domain specific rag},
+  author={Zhang, Tianjun and Patil, Shishir G and Jain, Naman and Shen, Sheng and Zaharia, Matei and Stoica, Ion and Gonzalez, Joseph E},
+  journal={arXiv preprint arXiv:2403.10131},
+  year={2024}
+}
+```
