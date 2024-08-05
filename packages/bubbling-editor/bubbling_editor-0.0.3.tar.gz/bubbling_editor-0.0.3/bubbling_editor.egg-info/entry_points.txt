@@ -1,0 +1,2 @@
+[console_scripts]
+bubbling-editor = bubbling_editor.editor:run
