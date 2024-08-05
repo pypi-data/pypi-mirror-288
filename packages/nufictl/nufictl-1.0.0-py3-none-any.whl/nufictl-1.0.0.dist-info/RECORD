@@ -1,0 +1,9 @@
+README.md,sha256=AYgP-OShxuB-sgLC2Fy67EfjNxgynELqJCBideUbt88,1646
+nufictl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nufictl/config_manager.py,sha256=h5XO4ElKKWkGUAzBLP9cfBtSvpbIXBLSsTBY0MRvkgY,4463
+nufictl/model.py,sha256=IFovY2SYteJGT-xrI-S72tTd80du5v-IWR8ZlILO8Bw,1281
+nufictl/nufictl.py,sha256=sX91sQeLMrfB_i8TD0Fw43NtxTEYGSkAmRv41ckFWwY,8711
+nufictl-1.0.0.dist-info/METADATA,sha256=a8vXg--hABQ-fFh5rSBlxCBaT_ZHrUdl7WnuD-Uda2w,2195
+nufictl-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+nufictl-1.0.0.dist-info/entry_points.txt,sha256=8NgDib57g8RI76F3BSUrg6CZlhN3bac7hBjg3w5ZNf0,48
+nufictl-1.0.0.dist-info/RECORD,,
