@@ -1,0 +1,10 @@
+strictjson/__init__.py,sha256=dwGokwyYl8xeeNJwlnDwjNObotUM9ZN8DGZHrRX6QXU,197
+strictjson/base.py,sha256=OsYWXl8LILnLJTFLJ27iMpB7lPMEwxnx2kgeEbDyTXw,26898
+strictjson/base_async.py,sha256=GTa8K7U483xBevcTaYfXPRzcsmYEREOoffSmbSODZtw,17456
+strictjson/function.py,sha256=rELs4MnDzFg7Efy-Br-8cWk2IixFdjXe73AQjE903s4,22213
+strictjson/utils.py,sha256=Vu1Dz1WWX0rDx_cHB0M9oAZKYwzJ6D43XasDfQemtUw,1493
+strictjson-5.1.3.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+strictjson-5.1.3.dist-info/METADATA,sha256=-Sx_GYozrp8ZF59TUA3yMYz90t7wj3gc4BU2Jqg5o-k,20874
+strictjson-5.1.3.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+strictjson-5.1.3.dist-info/top_level.txt,sha256=3Y6NtHXWFDw9bmttZNowV58A-LeucNHV1ZSUG5rSPxA,11
+strictjson-5.1.3.dist-info/RECORD,,
