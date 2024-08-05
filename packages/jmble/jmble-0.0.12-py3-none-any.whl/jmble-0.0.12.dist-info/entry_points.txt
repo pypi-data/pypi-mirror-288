@@ -1,0 +1,5 @@
+[console_scripts]
+jumble-cfg=jmble.config.config_cli:main
+prolog=jmble.cli_tools.prolog:main
+vmgr=jmble.cli_tools.version_manager:main
+
