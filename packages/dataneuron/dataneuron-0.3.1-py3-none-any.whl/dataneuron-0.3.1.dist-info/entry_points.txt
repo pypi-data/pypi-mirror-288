@@ -1,0 +1,3 @@
+[console_scripts]
+dnn=dataneuron.cli:cli
+
