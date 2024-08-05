@@ -1,0 +1,1 @@
+from .otel_faas_wrap import *

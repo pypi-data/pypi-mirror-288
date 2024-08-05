@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: corva-otel-faas
+Version: 0.1.1
+Summary: OpenTelemetry faas instrumentation for Python at corva.ai
+Project-URL: Homepage, https://github.com/corva-ai/otel/tree/main/python/faas
+Author-email: Radoslav Kirilov <radoslav.kirilov@corva.ai>, Ivaylo Papratilov <ivaylo.papratilov@corva.ai>
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Requires-Dist: corva-otel-semconv
+Requires-Dist: opentelemetry-api
+Requires-Dist: opentelemetry-semantic-conventions
