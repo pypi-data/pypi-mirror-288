@@ -1,0 +1,17 @@
+LICENSE,sha256=O9MNNIcnBK8NG8CHcu_GllYt3hkGYnq_1i_3L3E27Ss,18053
+README.md,sha256=7-HQNVaKyVms2QlkmdnRVy3Sz_XyxSF09g6b9QyMjVM,14494
+beetsplug/bandcamp/__init__.py,sha256=wEmR_TMsmvAb1T7jGY_uMrXh6BvjmAdtj-VVW8ADVgU,14440
+beetsplug/bandcamp/album.py,sha256=pif8Odt97cxaL3vjY0iXk2d6io24F8utM_khA24JOHQ,7523
+beetsplug/bandcamp/genres_lookup.py,sha256=2axmxMSSCD2MpkOVoMLmnEFUnWhtBc4AAskxzyggCCo,14709
+beetsplug/bandcamp/helpers.py,sha256=AMeKsnSHV5nWZp4aBvh0IEyFbRm8qrBD9hAImz1Ymu4,15455
+beetsplug/bandcamp/http.py,sha256=NdVCGkwaVnovPIkak9VioM73uH5rBgg0333fCH-IAlg,487
+beetsplug/bandcamp/metaguru.py,sha256=xOR5Jp8yOtRWgnoYTCmqKL22YpBhg7Ozi_OiWc3zq2E,17992
+beetsplug/bandcamp/search.py,sha256=8w4Ps6173T9HXXmh4N-Qy-c69dzICsgqGuRO0GIYRkM,3868
+beetsplug/bandcamp/track.py,sha256=zIj6PZnHNsAoL7qoWMfYcuziCHnwA_vMoc6f3wufikE,7929
+beetsplug/bandcamp/track_names.py,sha256=E2XHZFTow_qIlpZqkd9zK--mbEr9rCWzO9WxUVLTM64,5866
+beetsplug/bandcamp/tracks.py,sha256=WVeRJtbYCDel9Yn04yadcwSsXoBDVY2seQ8P55OHPd8,4898
+beetcamp-0.19.2.dist-info/LICENSE,sha256=O9MNNIcnBK8NG8CHcu_GllYt3hkGYnq_1i_3L3E27Ss,18053
+beetcamp-0.19.2.dist-info/METADATA,sha256=qcFQvAy5K4Aj_NOa7p1pShw7zS-cuR-B_LC4S6ffoAU,15822
+beetcamp-0.19.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+beetcamp-0.19.2.dist-info/entry_points.txt,sha256=RoFNnt-i614v54ycIkOr-zOVR8emx8cOxE1sXC0qd5g,52
+beetcamp-0.19.2.dist-info/RECORD,,
