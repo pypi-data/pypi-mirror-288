@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "oneflowpy"
+version = "0.1.1"
+description = "api wrapper for OneFlow contract tool"
+authors = ["leik <nordavindltd@gmail.com>"]
+license = "proprietary license"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+ipython = "*"
+ipykernel = "*"
+
+[tool.poetry.scripts]
+run_main = "OneFlowPy.run:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
