@@ -1,0 +1,10 @@
+README.md
+setup.py
+config_server_client_python.egg-info/PKG-INFO
+config_server_client_python.egg-info/SOURCES.txt
+config_server_client_python.egg-info/dependency_links.txt
+config_server_client_python.egg-info/not-zip-safe
+config_server_client_python.egg-info/top_level.txt
+src/__init__.py
+src/config_server_play_client.py
+src/config_server_python_library.py
