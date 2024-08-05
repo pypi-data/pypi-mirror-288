@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+exnums/__init__.py
+exnums/exnum.py
+exnums.egg-info/PKG-INFO
+exnums.egg-info/SOURCES.txt
+exnums.egg-info/dependency_links.txt
+exnums.egg-info/top_level.txt

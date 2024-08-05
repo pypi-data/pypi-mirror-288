@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: exnums
+Version: 0.1
+Summary: Exnums are libraries for expanding the user's capabilities in Python
+Home-page: https://github.com/KiryxaTechDev/exnums
+Download-URL: https://github.com/KiryxaTechDev/exnums/archive/refs/tags/0.1.zip
+Author: KiryxaTech
+Author-email: kiryxatech@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# exnums
+Exnums are libraries for expanding the user's capabilities in Python
