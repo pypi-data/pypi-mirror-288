@@ -1,0 +1,10 @@
+s2mosaic/__init__.py,sha256=yCnZMMa20BTu26HM7PqUkBbvVri0dx7BeV7nK1ySy5k,118
+s2mosaic/__version__.py,sha256=rPSfWgIeq2YWVPyESOAwCBt8vftsTpIkuLAGDEzyRQc,22
+s2mosaic/coordinator.py,sha256=0TDnQ6k42n0SLvimmEZFWq3SmEIbOp6phKy54fN_g3g,6544
+s2mosaic/helpers.py,sha256=caOd1LO3rsdpsh9E19W1cTBbghnBOom4wuNE0dH32Ws,12788
+s2mosaic/S2_grid/sentinel_2_index.gpkg,sha256=oUC3OUo_7KugyhehNxVhGGrXe7f3T-hzc-edpKDTMpY,15630336
+s2mosaic-0.1.5.dist-info/LICENSE,sha256=PItRahN7HtLMUqxiLdvN-MdrH-7QwbeSaNA5BDS9Z8Q,1066
+s2mosaic-0.1.5.dist-info/METADATA,sha256=S8kNZ-Wo4__zTyzUGiYunAU2_U0oABDGJQQmMjOWms0,5403
+s2mosaic-0.1.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+s2mosaic-0.1.5.dist-info/top_level.txt,sha256=wb5XJ-MmiJbcnX8F7AqvyMsyQfa8Bg-Vmr-rfQStbF0,9
+s2mosaic-0.1.5.dist-info/RECORD,,
