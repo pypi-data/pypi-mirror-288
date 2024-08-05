@@ -1,0 +1,8 @@
+README.md
+setup.py
+StatGrit.egg-info/PKG-INFO
+StatGrit.egg-info/SOURCES.txt
+StatGrit.egg-info/dependency_links.txt
+StatGrit.egg-info/top_level.txt
+statgrit/__init__.py
+statgrit/sg.py
