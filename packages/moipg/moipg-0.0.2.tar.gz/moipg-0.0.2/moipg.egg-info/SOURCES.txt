@@ -1,0 +1,11 @@
+README.md
+setup.py
+moipg/__init__.py
+moipg/test.py
+moipg/vtons.py
+moipg.egg-info/PKG-INFO
+moipg.egg-info/SOURCES.txt
+moipg.egg-info/dependency_links.txt
+moipg.egg-info/not-zip-safe
+moipg.egg-info/requires.txt
+moipg.egg-info/top_level.txt
