@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["biovars"]
+namespaces = false
+
+[project]
+name = "biovars"
+version = "0.2.0"
+description = "Tool for joining all the bioinfo-hcpa's variant information retrieval APIs."
+readme = "README.md"
+authors = [
+    {name = "Felipe Colombelli"},
+    {name = "Paola Carneiro", email = "bioinfo@hcpa.edu.br"}
+]
+license = {file = "LICENSE"}
+keywords = ["gnomad", "api", "variants", "genes"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3.8"
+]
+
+dependencies = [
+    "pandas>=1.0.5",
+    "numpy==1.23.3",
+    "requests>=2.24.0",
+    "pynoma",
+    "pyabraom"
+]
+
+[project.urls]
+Homepage = "https://github.com/bioinfo-hcpa/biovars"
+
+[project.optional-dependencies]
+plots = ["rpy2==3.5.12", "seaborn"]
+
+[project.scripts]
+biovars = "biovars.cli:main"
