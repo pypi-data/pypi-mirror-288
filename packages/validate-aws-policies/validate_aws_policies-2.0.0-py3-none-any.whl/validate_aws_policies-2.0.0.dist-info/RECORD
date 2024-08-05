@@ -1,0 +1,12 @@
+validate_aws_policies/__init__.py,sha256=fTFAmYT-MSMmZx8GIJfspE0CSvVr8VKLsdxufd8X7-4,19
+validate_aws_policies/validate_policies.py,sha256=bs4zqcwO7bxwo588009VWKJ5v2Es5TnbljMnH_fyKOE,3912
+validate_aws_policies/version.py,sha256=ukuvYXQIvvtagSBCr5aYiSbVft2f5pNqI--cEpWtTj0,51
+validate_aws_policies/iam_access_analyzer/__init__.py,sha256=fTFAmYT-MSMmZx8GIJfspE0CSvVr8VKLsdxufd8X7-4,19
+validate_aws_policies/iam_access_analyzer/iam_access_analyzer.py,sha256=zGCavRMRwIVmomdqmev5Ti6N4oEaGt8VunJZGPxw6zM,1197
+validate_aws_policies/ops/__init__.py,sha256=fTFAmYT-MSMmZx8GIJfspE0CSvVr8VKLsdxufd8X7-4,19
+validate_aws_policies/ops/ops.py,sha256=b31-f7jx2Is5Oj_oeTLRi34jUQ6_Rfqjx9JrR1PgjC0,6929
+validate_aws_policies-2.0.0.dist-info/METADATA,sha256=KYeJGasQkENAwgnVTl6st7vNr_zXMwn07144uOWceKM,5254
+validate_aws_policies-2.0.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+validate_aws_policies-2.0.0.dist-info/entry_points.txt,sha256=zAjdWCroEVFhDE9jsirR7Jk6YXJ3U4pZI2DHQFZa1u4,87
+validate_aws_policies-2.0.0.dist-info/licenses/LICENSE,sha256=ExgugT8BWBG-wX11Y79JJ_ur6NDVFMvx7wbJ-_SJgxM,579
+validate_aws_policies-2.0.0.dist-info/RECORD,,
