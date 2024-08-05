@@ -1,0 +1,3 @@
+[console_scripts]
+cruscoarud = cruscopoetry.plugins.cruscoarud.__main__:CruscoArud.main
+
