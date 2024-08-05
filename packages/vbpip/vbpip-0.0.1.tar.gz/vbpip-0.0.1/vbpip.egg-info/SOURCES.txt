@@ -1,0 +1,8 @@
+README.md
+setup.py
+vbpip.py
+vbpip.egg-info/PKG-INFO
+vbpip.egg-info/SOURCES.txt
+vbpip.egg-info/dependency_links.txt
+vbpip.egg-info/entry_points.txt
+vbpip.egg-info/top_level.txt
