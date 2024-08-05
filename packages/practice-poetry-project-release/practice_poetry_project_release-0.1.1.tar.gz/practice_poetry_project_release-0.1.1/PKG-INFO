@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: practice-poetry-project-release
+Version: 0.1.1
+Summary: 
+Author: nakayamaryo0731
+Author-email: ryo_nakayama@caddi.jp
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: flask (>=3.0.3,<4.0.0)
+Requires-Dist: flask-cors (>=4.0.1,<5.0.0)
+Requires-Dist: flask-sqlalchemy (>=3.1.1,<4.0.0)
+Description-Content-Type: text/markdown
+
+# practice-poetry-project-release
+
+### Prerequisites (Windows)
+Recommended to install with the following steps.
+- Python 3.10.x, 3.11.x or 3.12.x (binary distribution of [python.org](https://www.python.org/))
+- Poetry Installtion to global
+```
+> pip install poetry
+```
+
+### Install alib dependencies
+At the root directory,
+```
+$ poetry install
+```
+If it takes long time to finish poetry install, please try to set PYTHON_KEYRING_BACKEND as below.
+```
+$ PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring poetry install
+```
+
+## Enter virtual env. created by poetry
+```sh
+$ poetry shell
+```
