@@ -1,0 +1,2 @@
+[console_scripts]
+lintmate = linter_cli.cli:main

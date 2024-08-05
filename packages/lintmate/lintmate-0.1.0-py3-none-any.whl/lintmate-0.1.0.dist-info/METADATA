@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: lintmate
+Version: 0.1.0
+Summary: A CLI tool for linting and formatting files. Without worying about any dependencies.
+Home-page: https://github.com/thesujai/linter-cli
+Author: thesujai
+Author-email: sujayscience1234@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click==8.1.7
+Provides-Extra: python
+Requires-Dist: flake8==7.1.0; extra == "python"
+Requires-Dist: black==24.8.0; extra == "python"
+Provides-Extra: yaml
+Requires-Dist: yamllint==1.35.1; extra == "yaml"
+Requires-Dist: PyYAML==6.0.1; extra == "yaml"
+Requires-Dist: ruamel.yaml==0.18.6; extra == "yaml"
+
+# Linter
+
+A command-line program that helps you check and fix your code. It leverages existing popular linting tools, allowing you to maintain high code quality effortlessly.
+
+# When to use it?
+
+- **When you don't want to worry about what dependencies to install for linting your code.**
+  Linter-CLI takes care of the setup for you, so you can focus on writing code.
+
+- **For example, if you are working on a Python project and are confused about how to set up tools like flake8 or black.**
+  Just use this tool and it will handle everything for you, making your work easier and faster.
+
+# Features
+
+- Lint and autofix Python files
+- Lint and autofix Yaml files
+- Easily extendable to support more file types
+
+# Installation
+
+You can install Linter-CLI from PyPI.
+- To install with Python linter:
+```
+pip install lintmate[python]
+```
+
+- To install with yaml linter:
+```
+pip install lintmate[yaml]
+```
+
+**All linter(yaml, python) can be used together**
+
+# Usages
+
+- Run lint for a single file
+```
+lintmate lint file_path/file.py
+```
+
+- Run lint for multiple files in a directory
+```
+lintmate lint dir/
+```
+
+- Run lint with autofix
+```
+lintmate lint --autofix <path/to/file>
+```
+
+# Contributing
+
+Contributions are welcome! Please submit a pull request or create an issue for any bugs or feature requests.
