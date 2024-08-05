@@ -1,0 +1,10 @@
+gamble/__init__.py,sha256=Jxt0J06DDSgkLwdY2xcCMvAsjkFFHZWXb3lTq9VZniA,568
+gamble/errors.py,sha256=wM_HgRUOBAa3fjW-r9m48R9th2UUc7LUGvxN74SB4xQ,605
+gamble/models/__init__.py,sha256=53hT2ng8OIpiclvXrSmvkuj7Ic-Rxr-axewR5tqg-1Y,157
+gamble/models/cards.py,sha256=BD5DZeCtLZfVv4pO2A0OkCuOFTIgCmiDfFjDGI2Ug2E,19193
+gamble/models/dice.py,sha256=Nly8t_BEZqy0mpy4qVifYlPzwNXPpfQES-dQ7_AbNxI,8400
+gamble/models/golf.py,sha256=OvQkVmeRwa-OvI6_eYa-DGy8jooohSqCLhkUSLZRNok,2100
+gamble-0.14.0.dist-info/LICENSE,sha256=M4ceSJBcEydNlOaHnC7NECDGvso9ljFe-e-L2eA24Mo,1075
+gamble-0.14.0.dist-info/METADATA,sha256=7x3bCVEQxLK3gLkLG3l9HS6rfWvkn_msGZC0ocKz3m8,2873
+gamble-0.14.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+gamble-0.14.0.dist-info/RECORD,,
