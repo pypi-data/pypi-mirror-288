@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: watchmen-storage-mysql
+Version: 17.0.1
+Summary: 
+License: MIT
+Author: botlikes
+Author-email: 75356972+botlikes456@users.noreply.github.com
+Requires-Python: >=3.12,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: PyMySQL (>=1.1.1,<2.0.0)
+Requires-Dist: cryptography (>=42.0.8,<43.0.0)
+Requires-Dist: watchmen-storage-rds (==17.0.1)
