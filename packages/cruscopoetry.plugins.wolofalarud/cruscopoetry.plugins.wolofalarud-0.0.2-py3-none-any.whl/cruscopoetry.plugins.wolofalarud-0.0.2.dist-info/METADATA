@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cruscopoetry.plugins.wolofalarud
+Version: 0.0.2
+Summary: ʿArūḍ parser for wolofal poems in cruscopoetry format
+Home-page: https://gitlab.com/kikulacho92/cruscopoetry_new
+Author: Emiliano Minerba
+Author-email: emi.nerba@gmail.com
+License: GPL
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+Requires-Dist: cruscopoetry.plugins.cruscoarud
+
+Welcome to Wolofalarud, an adaptation of the Cruscopoetry plugin ``Cruscoarud`` that allows to parse *wolofal* poems.
+The requirements and the way it works are the same of Cruscoarud. Have fun with it!
+
+
+

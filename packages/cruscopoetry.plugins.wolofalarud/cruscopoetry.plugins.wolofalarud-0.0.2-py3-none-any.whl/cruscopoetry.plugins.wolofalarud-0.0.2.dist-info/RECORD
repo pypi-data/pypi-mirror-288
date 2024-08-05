@@ -1,0 +1,11 @@
+cruscopoetry/plugins/wolofalarud/__init__.py,sha256=kT0P4pafqykpjjqr6jirscqARU1KoYvSo3kAFcKwa1w,752
+cruscopoetry/plugins/wolofalarud/__main__.py,sha256=qjZi0deu_fx995tBP2VzcUuCPow80DkUWyjUNewyr28,1065
+cruscopoetry/plugins/wolofalarud/metric_elements.py,sha256=xsYmdmV8RWT5dbnZQxKWwC7Y1qDC7FZBTsEedCvTRvo,981
+cruscopoetry/plugins/wolofalarud/parser_classes.py,sha256=FKAegJQp9uLAkJLEf1cachUtSIdCnMJVL4hus-iUHxU,1054
+cruscopoetry/plugins/wolofalarud/renderer_class.py,sha256=QDQmxSh_zEVU-EiN6cX1XHBW9THXE8APSSbxX8FNaGU,958
+cruscopoetry/plugins/wolofalarud/wolofal_constants.toml,sha256=g_OgFDt0PPuQ5GwyuLaJVdBkQOE7i560Q_7A7GtwxPU,19930
+cruscopoetry.plugins.wolofalarud-0.0.2.dist-info/METADATA,sha256=7arly79arFdEq63lV5xjOb95Ksn-Ed_LI473NUDjA6M,582
+cruscopoetry.plugins.wolofalarud-0.0.2.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+cruscopoetry.plugins.wolofalarud-0.0.2.dist-info/entry_points.txt,sha256=X9H8Dbb0FC-A5Lk1lvO0CHpM3KbVH_FMt-yEmOOq6v4,83
+cruscopoetry.plugins.wolofalarud-0.0.2.dist-info/top_level.txt,sha256=re-25HV-lVb6rsAdTdpYQiW5PqPMTbvzQMP5Yq_PY5w,13
+cruscopoetry.plugins.wolofalarud-0.0.2.dist-info/RECORD,,
