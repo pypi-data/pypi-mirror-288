@@ -1,0 +1,4 @@
+db
+dir
+font
+gui
