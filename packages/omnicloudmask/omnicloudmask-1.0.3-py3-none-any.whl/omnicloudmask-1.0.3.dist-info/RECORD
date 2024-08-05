@@ -1,0 +1,12 @@
+omnicloudmask/__init__.py,sha256=BIm2ROyBgQe4SljXK8p4z9vrY2MCRrHhgHH7HPbD7oY,324
+omnicloudmask/__version__.py,sha256=2plzdEEb24FLjE2I2XyBBcJEPYWHccNL4SgtLC_6erg,22
+omnicloudmask/cloud_mask.py,sha256=MM7J6Z9KQpIVerp2A2Ic_UlQGV-9qbpDQMp2R3fJwP4,19704
+omnicloudmask/data_loaders.py,sha256=QPmxL27WfUUGF1lWIVpdeeJuVrem8jxdDYRwJGupFks,4982
+omnicloudmask/download_models.py,sha256=eOzQmlKaQXkv3q6oG2egcET7pdMlvrE4KTcmzSoO5j4,1426
+omnicloudmask/model_utils.py,sha256=xg2tB-jMBynBoq7MaDoOXz18Ssx02J5HyybSf94634g,5625
+omnicloudmask/raster_utils.py,sha256=ACHhJOBqILfAN4vOLxlFDOzgheKlZbRDFtHa-WKlCe0,3185
+omnicloudmask/models/model_download_links.csv,sha256=NV_DeYCfUNUZygo6bqzPeF_76kICWCcmk5wn5xzEhMU,215
+omnicloudmask-1.0.3.dist-info/METADATA,sha256=skjJjADQibpTM1h4_y48WRrHsCZ4cFsjfi2WKIDSFiw,6829
+omnicloudmask-1.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+omnicloudmask-1.0.3.dist-info/top_level.txt,sha256=a8RM77APPzqYEp1mit50DpyqNYArGq8GbRHHckfke7Q,14
+omnicloudmask-1.0.3.dist-info/RECORD,,
