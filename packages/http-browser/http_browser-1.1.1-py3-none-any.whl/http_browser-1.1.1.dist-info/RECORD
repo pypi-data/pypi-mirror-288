@@ -1,0 +1,9 @@
+http_browser/__init__.py,sha256=HIjtTRObXXYH-wJZlS4cCU_IfJrtWVb0DeZPJ2iy4e8,58
+http_browser/browser.py,sha256=5iBxv0WPf4gYHUjLp-8fEI6BHa-XXTviwz_n5IqMGUg,4823
+http_browser/config.py,sha256=PTHwKmInixHsU6iwWZOGO5PqDoSqXRpkXpzLvyiE9Ao,954
+http_browser/httpserver.py,sha256=-6PrJyOyDpLp7bTEU4FrglPfXYhpP0iHNTUUPp7qT5k,2084
+http_browser/main.py,sha256=n0DUo_m9UMy_nKelzKO6cWbH9Ur71WOqXWstucsWjIY,1887
+http_browser-1.1.1.dist-info/METADATA,sha256=BjBfs2UYFqJeREiJouviD6Kh7iAhTjhJtP48DObkrZs,247
+http_browser-1.1.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+http_browser-1.1.1.dist-info/top_level.txt,sha256=FO2NFR5JcQHDdfQ0i1m3whL0F0us43LuJ2W8MmvCa3I,13
+http_browser-1.1.1.dist-info/RECORD,,

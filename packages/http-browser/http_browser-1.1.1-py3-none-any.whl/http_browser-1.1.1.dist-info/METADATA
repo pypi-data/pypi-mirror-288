@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: http-browser
+Version: 1.1.1
+Summary: 浏览器助手
+Home-page: UNKNOWN
+Author: jiaobenxiaozi
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: DrissionPage
+
+UNKNOWN
+
