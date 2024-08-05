@@ -1,0 +1,3 @@
+[console_scripts]
+run-bot=otpbot.main:main
+
