@@ -1,0 +1,12 @@
+termol/__init__.py,sha256=KI3GnOAuleOR2GTtXMReAxfDS25UdpkzjUVwzpz292A,106
+termol/canvas.py,sha256=0aCe0bfDkyDDEK1-LXi_dr33JT4OV85J9TcQdz8zNBI,7525
+termol/cli.py,sha256=__6UBoeqGcLU4QweDpXocQC_gmz_izt1PiGZ8ugLbeY,3819
+termol/render.py,sha256=BtSxIN4CzARPD4kJ2oTkEG0nmlhQPRBmgOtRK_TRlm4,11669
+termol/smiles_1000.csv,sha256=TCWcW8w9eLBIb8G1Zl6o7D9vGUJd9OmA1kwrpSEEgQg,81420
+termol/utilities.py,sha256=sgtCH4HzxHkrUw4qg6-QjHO2msCoaioAufKnADR0m58,4379
+termol-0.1.6.dist-info/LICENSE,sha256=6B-SHQZUHgsbhV5XsdGXV5LQKrim6EpOJ1fR5LhWAJ8,1073
+termol-0.1.6.dist-info/METADATA,sha256=s1puGL__BLScP7VhKoJ5mUcIlfcueiZCse9WwPTcZXg,4751
+termol-0.1.6.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+termol-0.1.6.dist-info/entry_points.txt,sha256=lETgp-xoKX5ycYlU523vYGlYxtMGWas9Zb28CdWN3vY,91
+termol-0.1.6.dist-info/top_level.txt,sha256=0pUDV0oZ06WD94BPGyKAjzNyS-Z5tsMMOFugGbQx9fM,7
+termol-0.1.6.dist-info/RECORD,,
