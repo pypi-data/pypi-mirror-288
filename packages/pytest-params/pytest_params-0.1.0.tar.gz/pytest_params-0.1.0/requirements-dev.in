@@ -1,0 +1,18 @@
+-r requirements.txt
+
+# Dev tools
+invoke              # Tasks
+pip-tools           # Package management
+semantic-version    # Semantic versioning, more useful than `packaging.version`
+
+# Linting
+black               # Linter
+flake8              # Linter
+isort               # Linter
+mypy                # Code inspector
+
+# Test
+pytest              # Test framework
+
+# Build and publish
+flit                # Upload to Pypi
