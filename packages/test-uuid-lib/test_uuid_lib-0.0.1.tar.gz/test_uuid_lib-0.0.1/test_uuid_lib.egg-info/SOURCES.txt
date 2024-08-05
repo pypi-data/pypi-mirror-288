@@ -1,0 +1,6 @@
+README.md
+setup.py
+test_uuid_lib.egg-info/PKG-INFO
+test_uuid_lib.egg-info/SOURCES.txt
+test_uuid_lib.egg-info/dependency_links.txt
+test_uuid_lib.egg-info/top_level.txt
