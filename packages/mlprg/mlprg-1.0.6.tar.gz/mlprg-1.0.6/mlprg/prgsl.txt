@@ -1,0 +1,427 @@
+# Program 1
+
+import csv
+def loadcsv(filename):
+  lines=csv.reader(open(filename,"r"))
+  dataset = list(lines)
+  headers=dataset.pop(0)
+  return dataset,headers
+def print_hypoyhesis(h):
+  print('<',end='')
+  for i in range(0,len(h)-1):
+    print(h[i],end=',')
+  print('>')
+def findS():
+  dataset,features=loadcsv("sports1.csv")
+  rows=len(dataset)
+  cols=len(dataset[0])
+  flag=0
+  for x in range(0,rows):
+    t=dataset[x]
+    if t[-1]=='1' and flag==0:
+      flag=1
+      h=dataset[x]
+    elif t[-1] == '1':
+      for y in range(cols):
+        if h[y]!=t[y]:
+          h[y]='?'
+  print("The maximally specific hypothessis for a given trainsing exams")
+  print_hypoyhesis(h)
+findS()
+
+# Program 2
+
+import numpy as np
+import pandas as pd
+
+df = pd.read_csv("sports1.csv")
+concept=np.array(df.iloc[:,0:-1])
+target=np.array(df.iloc[:,-1])
+
+def learn(concept,target):
+    specific_h=concept[0].copy()
+    print("Most specific",specific_h)
+    general_h=[["?" for i in range(len(specific_h))] for i in range(len(specific_h))]
+    print("General",general_h)
+
+    for i,h in enumerate(concept):
+        print("Instances", i+1, "is", h)
+        if target[i]==1:
+            print("Instance is positive")
+            for x in range(len(specific_h)):
+                if(h[x]!=specific_h[x]):
+                    specific_h[x]='?'
+                    general_h[x][x]='?'
+
+        if(target[i]==0):
+            print("instance is negative")
+            for x in range(len(specific_h)):
+                if h[x]!=specific_h[x]:
+                    general_h[x][x]=specific_h[x]
+                else:
+                    general_h[x][x]='?'
+        print("Specific boundary", i+1, specific_h)
+        print("General bundary", i+1, general_h)
+        print("\n")
+
+learn(concept, target)
+
+# Program 3
+
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.preprocessing import LabelEncoder
+from sklearn import metrics
+from sklearn.metrics import confusion_matrix
+from matplotlib import pyplot as plt
+import warnings
+warnings.filterwarnings('ignore')
+from sklearn import tree
+
+df=pd.read_csv("Iris.csv")
+df.head()
+
+df.drop('Id',axis=1,inplace=True)
+df.head()
+
+le = LabelEncoder()
+df['Species']= le.fit_transform(df['Species'])
+df['Species'].unique()
+
+X=df.iloc[:,:4]
+y=df.iloc[:,4:]
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,random_state=123)
+
+clf=DecisionTreeClassifier(criterion='entropy', splitter='best', max_leaf_nodes=3)
+clf.fit(X_train,y_train.values.ravel())
+y_pred=clf.predict(X_test)
+
+print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
+
+confusion_matrix(y_test, y_pred)
+
+fn=['SepalLengthCm' ,'SepalWidthCm' ,'PetalLengthCm',   'PetalWidthCm']#column names of the dataset
+cn=['Iris-setosa',' Iris-versicolor','Iris-virginica']#names of classes to be classified
+
+fig, axes = plt.subplots(nrows = 1,ncols = 1,figsize = (2,2), dpi=200)
+tree.plot_tree(clf,
+               feature_names = fn,
+               class_names=cn,
+               filled = True);
+
+species_check = clf.predict([[4.7,  3.2,    1.3,    0.2]])[0]
+
+# Program 4
+
+import numpy as np
+
+X = np.array(([2, 9], [1, 5], [3, 6]), dtype=float)
+y = np.array(([92], [86], [89]), dtype=float)
+
+X = X / np.amax(X, axis=0)
+y = y / 100
+
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+
+def derivatives_sigmoid(x):
+    return x * (1 - x)
+
+epoch = 5000
+lr = 0.1
+inputlayer_neurons = 2
+hiddenlayer_neurons = 3
+output_neurons = 1
+
+wh = np.random.uniform(size=(inputlayer_neurons, hiddenlayer_neurons))
+bh = np.random.uniform(size=(1, hiddenlayer_neurons))
+wout = np.random.uniform(size=(hiddenlayer_neurons, output_neurons))
+bout = np.random.uniform(size=(1, output_neurons))
+
+for i in range(epoch):
+    hinp1 = np.dot(X, wh)
+    hinp = hinp1 + bh
+    hlayer_act = sigmoid(hinp)
+    outinp1 = np.dot(hlayer_act, wout)
+    outinp = outinp1 + bout
+    output = sigmoid(outinp)
+
+    EO = y - output
+    outgrad = derivatives_sigmoid(output)
+    d_output = EO * outgrad
+    EH = d_output.dot(wout.T)
+
+    hiddengrad = derivatives_sigmoid(hlayer_act)
+    d_hiddenlayer = EH * hiddengrad
+
+    wout += hlayer_act.T.dot(d_output) * lr
+    bout += np.sum(d_output, axis=0, keepdims=True) * lr
+    wh += X.T.dot(d_hiddenlayer) * lr
+    bh += np.sum(d_hiddenlayer, axis=0, keepdims=True) * lr
+
+print("Input: \n" + str(X))
+print("Actual Output: \n" + str(y))
+print("Predicted Output: \n" + str(output))
+
+# Program 5
+
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import GaussianNB
+from sklearn import metrics
+from sklearn.metrics import classification_report
+
+df=pd.read_csv('naivebasedataset.csv',header=None)
+X=df.drop([8],axis=1)
+Y=df[8]
+x_train,x_test,y_train,y_test=train_test_split(X,Y,test_size=0.2,random_state=1)
+
+gn=GaussianNB()
+gn.fit(x_train,y_train)
+y_pred=gn.predict(x_test)
+
+print(len(x_test))
+print(len(x_train))
+print(metrics.accuracy_score(y_test,y_pred)*100)
+print(classification_report(y_test,y_pred))
+
+
+# Program 6
+
+import matplotlib.pyplot as plt
+from sklearn.inspection import DecisionBoundaryDisplay
+from sklearn.svm import SVC
+from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
+import pandas as pd
+
+df = pd.read_csv("Iris.csv")
+df.drop('Id',axis=1,inplace=True)
+df.head()
+
+df.info()
+
+le = LabelEncoder()
+df['Species']= le.fit_transform(df['Species'])
+df['Species'].unique()
+
+X=df.iloc[:,:4]
+y=df.iloc[:,4:]
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,random_state=123)
+
+svm = SVC(kernel="rbf", gamma=0.5, C=1.0)
+svm.fit(X_train, y_train)
+y_prediction=svm.predict(X_test)
+
+class_names=["Iris-setosa","Iris-virginica","Iris-versicolor"]
+print(classification_report(y_test, y_prediction ,target_names=class_names))
+
+
+x=df.iloc[:,:2]
+svm2 = SVC(kernel="rbf", gamma=0.5, C=1.0)
+svm2.fit(x,y)
+DecisionBoundaryDisplay.from_estimator(
+        svm2,
+        x,
+        response_method="predict",
+        cmap=plt.cm.Spectral,
+        alpha=0.8,
+    )
+
+
+# Program 7
+
+import matplotlib.pyplot as plt
+from sklearn import datasets
+from sklearn.cluster import KMeans
+import sklearn.metrics as sm
+import pandas as pd
+import numpy as np
+
+iris = datasets.load_iris()
+
+X = pd.DataFrame(iris.data)
+X.columns = ['Sepal_Length','Sepal_Width','Petal_Length','Petal_Width']
+
+y = pd.DataFrame(iris.target)
+y.columns = ['Targets']
+
+model = KMeans(n_clusters=3)
+model.fit(X)
+
+
+plt.figure(figsize=(14,7))
+
+colormap = np.array(['red', 'lime', 'black'])
+
+# Plot the Original Classifications
+plt.subplot(1, 2, 1)
+plt.scatter(X.Petal_Length, X.Petal_Width, c=colormap[y.Targets], s=40)
+plt.title('Real Classification')
+plt.xlabel('Petal Length')
+plt.ylabel('Petal Width')
+
+
+# Plot the Models Classifications
+plt.subplot(1, 2, 2)
+plt.scatter(X.Petal_Length, X.Petal_Width, c=colormap[model.labels_], s=40)
+plt.title('K Mean Classification')
+plt.xlabel('Petal Length')
+plt.ylabel('Petal Width')
+print('The accuracy score of K-Mean: ',sm.accuracy_score(y, model.labels_))
+print('The Confusion matrixof K-Mean: ',sm.confusion_matrix(y, model.labels_))
+
+
+from sklearn import preprocessing
+scaler = preprocessing.StandardScaler()
+scaler.fit(X)
+xsa = scaler.transform(X)
+xs = pd.DataFrame(xsa, columns = X.columns)
+#xs.sample(5)
+
+from sklearn.mixture import GaussianMixture
+gmm = GaussianMixture(n_components=3)
+gmm.fit(xs)
+
+y_gmm = gmm.predict(xs)
+#y_cluster_gmm
+
+plt.subplot(2, 2, 3)
+plt.scatter(X.Petal_Length, X.Petal_Width, c=colormap[y_gmm], s=40)
+plt.title('GMM Classification')
+plt.xlabel('Petal Length')
+plt.ylabel('Petal Width')
+
+print('The accuracy score of EM: ',sm.accuracy_score(y, y_gmm))
+print('The Confusion matrix of EM: ',sm.confusion_matrix(y, y_gmm))
+
+
+# Program 8
+
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import classification_report, confusion_matrix
+from sklearn import datasets
+
+iris=datasets.load_iris()
+
+x = iris.data
+y = iris.target
+
+print ('sepal-length', 'sepal-width', 'petal-length', 'petal-width')
+print(x)
+print('class: 0-Iris-Setosa, 1- Iris-Versicolour, 2- Iris-Virginica')
+print(y)
+
+x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.3)
+
+#To Training the model and Nearest nighbors K=5
+classifier = KNeighborsClassifier(n_neighbors=5)
+classifier.fit(x_train, y_train)
+
+#To make predictions on our test data
+y_pred=classifier.predict(x_test)
+
+print('Confusion Matrix')
+print(confusion_matrix(y_test,y_pred))
+print('Accuracy Metrics')
+print(classification_report(y_test,y_pred))
+
+# Program 9
+
+import numpy as np
+from bokeh.plotting import figure, show, output_notebook
+from bokeh.layouts import gridplot
+
+# Enable Bokeh to display the plots in the notebook
+output_notebook()
+
+def local_regression(x0, X, Y, tau):
+    # Add bias term to x0
+    x0 = np.r_[1, x0]  # Add one to avoid the loss in information
+    # Add bias term to X
+    X = np.c_[np.ones(len(X)), X]
+
+    # Fit model: normal equations with kernel
+    xw = X.T * radial_kernel(x0, X, tau)  # XTranspose * W
+
+    beta = np.linalg.pinv(xw @ X) @ xw @ Y  # @ is matrix multiplication (dot product)
+
+    # Predict value
+    return x0 @ beta  # @ is matrix multiplication (dot product) for prediction
+
+def radial_kernel(x0, X, tau):
+    # Weight or Radial Kernel Bias Function
+    return np.exp(np.sum((X - x0) ** 2, axis=1) / (-2 * tau * tau))
+
+# Generate dataset
+n = 1000
+X = np.linspace(-3, 3, num=n)
+print("The Data Set (10 Samples) X :\n", X[:10])
+Y = np.log(np.abs(X ** 2 - 1) + .5)
+print("The Fitting Curve Data Set (10 Samples) Y :\n", Y[:10])
+
+# Jitter X
+X += np.random.normal(scale=.1, size=n)
+print("Normalized (10 Samples) X :\n", X[:10])
+
+# Domain for prediction
+domain = np.linspace(-3, 3, num=300)
+print("X0 Domain Space (10 Samples) :\n", domain[:10])
+
+def plot_lwr(tau):
+    # Prediction through regression
+    prediction = [local_regression(x0, X, Y, tau) for x0 in domain]
+    plot = figure(width=400, height=400)
+    plot.title.text = f'tau={tau}'
+    plot.scatter(X, Y, alpha=.3)
+    plot.line(domain, prediction, line_width=2, color='red')
+    return plot
+
+# Create and display the plots
+plots = [
+    [plot_lwr(10.), plot_lwr(1.)],
+    [plot_lwr(0.1), plot_lwr(0.01)]
+]
+show(gridplot(plots))
+
+# Program 10
+
+!pip install pgmpy
+import pandas as pd
+import numpy as np
+from pgmpy.estimators import MaximumLikelihoodEstimator
+from pgmpy.models import BayesianModel
+from pgmpy.inference import VariableElimination
+import networkx as nx
+import matplotlib.pyplot as plt
+
+df=pd.read_csv("medical dataset.csv")
+df.head()
+
+print(df.info())
+print(pd.unique(df['age']))
+
+model= BayesianModel([('age','heartdisease'),('gender','heartdisease'),('exang','heartdisease'),('cp','heartdisease'),('heartdisease','restecg'),('heartdisease','chol')])
+
+model.fit(df,estimator=MaximumLikelihoodEstimator)
+
+print('\n Inferencing with Bayesian Network:')
+HeartDisease_infer = VariableElimination(model)
+
+print('\n 1. Probability of HeartDisease given evidence= cp')
+q1=HeartDisease_infer.query(variables=['heartdisease'],evidence={'gender':1})
+print(q1)
+
+print('\n 2. Probability of HeartDisease given evidence= restecg')
+q2=HeartDisease_infer.query(variables=['heartdisease'],evidence={'restecg':1})
+print(q2)
+
+graph = nx.DiGraph(model.edges())
+nx.draw_networkx(graph,with_labels=True)
+#plot
+plt.show()
+
