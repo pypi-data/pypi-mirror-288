@@ -1,0 +1,9 @@
+**/__pycache__
+.idea
+dist
+pyproject.toml
+venv
+readme_build
+test
+sweetbean/translator
+test.js
