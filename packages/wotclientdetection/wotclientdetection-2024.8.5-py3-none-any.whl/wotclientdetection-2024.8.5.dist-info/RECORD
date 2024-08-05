@@ -1,0 +1,11 @@
+wotclientdetection/__init__.py,sha256=UaB2SkOijifuLz0G3qRvvQWqmbg0aqGHxKfu-0CIBRA,318
+wotclientdetection/constants.py,sha256=pHCSDfh2UAKf0-O0mLf9ucsW-2rYfNRC5fWCtxWqKy8,1449
+wotclientdetection/manager.py,sha256=J0F-pfhHzBaozsboEkpfxoff7LSLy23AnQSEsqqjgUQ,2628
+wotclientdetection/entities/__init__.py,sha256=n1bnYdeb_bNDBKASWGywTRa0Ne9hMAkal3AuVZJgovI,5
+wotclientdetection/entities/client.py,sha256=kNabz5BcRyrmlvM8rpWKP04gsyjYmfVGn0bmjQFCg18,6190
+wotclientdetection/entities/launcher.py,sha256=YO5wur0pbc2lxM3euQWeUOKzlgpZe8qBIi5tEFAkHUE,4670
+wotclientdetection-2024.8.5.dist-info/LICENSE.md,sha256=twZVzOP7NDFJcbsIJMxBj-LwrInVvzGkylhzkE12Hss,1115
+wotclientdetection-2024.8.5.dist-info/METADATA,sha256=VH2hTaGtj1JKpI7EYvzjX8qeEKk3EAD_sghRfdlMB1s,3289
+wotclientdetection-2024.8.5.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+wotclientdetection-2024.8.5.dist-info/top_level.txt,sha256=LJOtAC12CDtZvGW6wX3pYEoo6Ri-kN-uSEjuhM39s54,19
+wotclientdetection-2024.8.5.dist-info/RECORD,,
