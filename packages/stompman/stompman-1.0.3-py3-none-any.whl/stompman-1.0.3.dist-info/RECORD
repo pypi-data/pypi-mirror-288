@@ -1,0 +1,13 @@
+stompman/__init__.py,sha256=i31Qh51JYfgYKxk_HX0IEzJUpriG8-vrnDlWFmHrBI0,1639
+stompman/client.py,sha256=D7CzNh4enajLyjbrsUvHnqb_VQHpKgvtKfxUu8PwKmM,14214
+stompman/config.py,sha256=BhS13RuY8fizJQDYDjbCXPsix6yjAzfOV8WTKKmzWWg,2308
+stompman/connection.py,sha256=9OCaa9Ppvz2wgjHKnvUTMIi8pa66AWvcxxAj7EEQqRI,3029
+stompman/connection_manager.py,sha256=eLItD7fRcrxOg0igFkr0HRkNbog_rjriGlW0REhFaxw,5991
+stompman/errors.py,sha256=GwWvkC_QsT57Q8dWSRV8w4DSQRBRS2qQIB2URY1SPDU,1074
+stompman/frames.py,sha256=wJJtQ0HydT0xpxUE4EGbXNSeV1pAgZFJn_TypF_nTMs,5316
+stompman/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stompman/serde.py,sha256=1AJaqYcmUnSB5N3hViSwDceo4BEZgJPzcGJ4TwJjCMs,6251
+stompman-1.0.3.dist-info/METADATA,sha256=_vylXGWlQR2FKCrtffuPKGJBSlldhXVEviJ4Uucs_Wc,5384
+stompman-1.0.3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+stompman-1.0.3.dist-info/licenses/LICENSE,sha256=yRjHcVk5oiyAVD9dQFvWTrp-oIP1GlWoG5D4oKaZn1c,1091
+stompman-1.0.3.dist-info/RECORD,,
