@@ -1,0 +1,3 @@
+[console_scripts]
+chaturbate_event_listener=chaturbate_event_listener.__main__:start
+
