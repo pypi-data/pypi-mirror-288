@@ -1,0 +1,10 @@
+omicron_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omicron_utils/_version.py,sha256=yBVOKdXLEcTVc7YV7ZPqRXhRDRt-pKrfXxcgHkgPY5g,411
+omicron_utils/check_certs.py,sha256=dSyg5pK_CqnKChuPJl0m9WlTXpuFWsgJ6LtuQT9JeQk,1940
+omicron_utils/ligoomicron.ini,sha256=MGNeJ30B15y56ItADMl8bl-PP2NvGliAxu3b9QhuEvA,745
+omicron_utils/omicron_config.py,sha256=P0rYMApGujC35P51l8NdOB1zV7NqGvDyFVnT7EtXrQY,3611
+omicron_utils-0.0.4.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+omicron_utils-0.0.4.dist-info/METADATA,sha256=zS6Q7BCo_GPyOHrmY5knHH9OkwfPjAK9utcZsFKZEPk,7294
+omicron_utils-0.0.4.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+omicron_utils-0.0.4.dist-info/top_level.txt,sha256=muRbsa3cn7NgHy4z46DxgUJkhC7eQrOvJgeqeYQDvTc,14
+omicron_utils-0.0.4.dist-info/RECORD,,
