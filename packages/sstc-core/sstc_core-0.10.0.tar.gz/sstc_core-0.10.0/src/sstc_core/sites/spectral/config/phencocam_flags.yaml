@@ -1,0 +1,17 @@
+'flag_brightness': False
+'flag_blur': False
+'flag_snow': False
+'flag_rain': False
+'flag_water_drops': False
+'flag_dirt': False
+'flag_obstructions': False
+'flag_glare': False
+'flag_fog': False
+'flag_rotation': False
+'flag_birds': False     
+'flag_haze': False
+'flag_ice': False
+'flag_shadows': False
+'flag_clouds': False
+'flag_other': False
+'flag_high_quality': False 
