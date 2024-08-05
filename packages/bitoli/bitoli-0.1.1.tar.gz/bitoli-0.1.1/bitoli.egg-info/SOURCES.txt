@@ -1,0 +1,10 @@
+LICENSE.txt
+README.rst
+setup.py
+bitoli/__init__.py
+bitoli/bitoli.py
+bitoli.egg-info/PKG-INFO
+bitoli.egg-info/SOURCES.txt
+bitoli.egg-info/dependency_links.txt
+bitoli.egg-info/requires.txt
+bitoli.egg-info/top_level.txt
