@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+fileup/__init__.py
+fileup/get.py
+fileup/updater.py
+fileup/urls.py
+fileup.py.egg-info/PKG-INFO
+fileup.py.egg-info/SOURCES.txt
+fileup.py.egg-info/dependency_links.txt
+fileup.py.egg-info/entry_points.txt
+fileup.py.egg-info/requires.txt
+fileup.py.egg-info/top_level.txt
