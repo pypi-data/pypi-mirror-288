@@ -1,0 +1,62 @@
+[build-system]
+  build-backend = "hatchling.build"
+  requires = ["hatchling"]
+
+[project]
+  authors = [{ name = "thatgaypigeon", email = "pigeon43.stuff@gmail.com" }]
+  classifiers = [
+    "Development Status :: 1 - Planning",
+    "License :: OSI Approved",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Multimedia",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Other/Nonlisted Topic",
+    "Typing :: Typed",
+  ]
+  description = "A segmented display tool for Python!"
+  keywords = [
+    "display",
+    "segment",
+    "segments",
+    "segmented",
+    "segmented display",
+    "segmented displays",
+    "7-segment display",
+    "8-segment display",
+    "9-segment display",
+    "14-segment display",
+    "16-segment display",
+    "recurrence relation",
+    "SSD",
+    "FSD",
+    "SISD",
+  ]
+  license = { file = "LICENSE" }
+  name = "segmenter"
+  readme = "README.md"
+  requires-python = ">=3.8"
+  version = "0.0.0"
+
+  [project.urls]
+    "Documentation" = "https://segmenter.rtfd.io"
+    "Homepage" = "https://pigeon.uk.to/segmenter"
+    "Issues / Bugs" = "https://github.com/thatgaypigeon/segmenter/issues"
+    "PyPI" = "https://pypi.org/project/segmenter"
+    "Support Server" = "https://discord.gg/aB4Bw5pyTS"
+    "Wikipedia Page" = "https://en.wikipedia.org/wiki/Display_device#Segment_displays"
+
+[tool.hatch.build.targets.wheel]
+  packages = ["src"]
