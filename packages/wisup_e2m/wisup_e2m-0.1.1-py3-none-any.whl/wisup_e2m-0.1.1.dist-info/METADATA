@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: wisup_e2m
+Version: 0.1.1
+Summary: Everything to Markdown.
+Home-page: https://github.com/wisupai/e2m
+License: MIT
+Author: Wisup Team
+Author-email: team@wisup.a
+Requires-Python: >=3.10,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: litellm (>=1.42.12,<2.0.0)
+Requires-Dist: marker-pdf (>=0.2.16,<0.3.0)
+Requires-Dist: matplotlib (>=3.9.1,<4.0.0)
+Requires-Dist: pdfminer-six (>=20240706,<20240707)
+Requires-Dist: pikepdf (>=9.1.0,<10.0.0)
+Requires-Dist: pillow-heif (>=0.18.0,<0.19.0)
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Requires-Dist: surya-ocr (>=0.4.15,<0.5.0)
+Requires-Dist: tomlkit (==0.12.0)
+Requires-Dist: torch (>=2.4.0,<3.0.0)
+Requires-Dist: unstructured-inference (>=0.7.36,<0.8.0)
+Requires-Dist: unstructured-pytesseract (>=0.3.12,<0.4.0)
+Requires-Dist: unstructured[all] (>=0.15.0,<0.16.0)
+Project-URL: Repository, https://github.com/wisupai/e2m
+Description-Content-Type: text/markdown
+
+# e2m
+Everything to Markdown.
+
+# Demo
+
+## Install
+
+```bash
+pip install wisup_e2m
+```
+
+## Demo
+
+```python
+from wisup_e2m import PdfParser
+from wisup_e2m.parsers.base import BaseParserConfig
+
+pdf_parser = PdfParser(
+    BaseParserConfig(engine="unstructured", langs=["en"])
+)
+
+parsed_data = pdf_parser.get_parsed_data(
+    "sample.pdf",
+    include_image_link_in_text=True,
+    work_dir="./out",
+    image_dir="./out/figures",
+    relative_path=True
+)
+
+print(parsed_data.text)
+```
+
