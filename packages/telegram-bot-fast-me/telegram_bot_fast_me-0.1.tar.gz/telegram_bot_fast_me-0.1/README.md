@@ -1,0 +1,30 @@
+# TelegramBotFastMe
+
+TelegramBotFastMe is a fast and simple library for creating Telegram bots in Python.
+
+## Installation
+
+Install the library using pip:
+
+pip install telegram-bot-fast-me
+
+
+## Usage
+
+Here's a simple example of how to use the library:
+
+```python
+import asyncio
+from telegram_bot_fast_me import TelegramBotFastMe
+
+bot = TelegramBotFastMe("YOUR_BOT_TOKEN")
+
+@bot.command("start")
+async def start_command(bot, chat_id, message):
+    await bot.send_message(chat_id, "Hello! I'm a fast bot.")
+
+@bot.command("help")
+async def help_command(bot, chat_id, message):
+    await bot.send_message(chat_id, "This is the help message.")
+
+asyncio.run(bot.start())
