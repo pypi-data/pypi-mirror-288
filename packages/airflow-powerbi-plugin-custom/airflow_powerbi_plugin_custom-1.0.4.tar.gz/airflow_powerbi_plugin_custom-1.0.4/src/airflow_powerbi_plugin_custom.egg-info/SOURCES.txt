@@ -1,0 +1,12 @@
+LICENSE
+pyproject.toml
+src/airflow_powerbi_plugin/__init__.py
+src/airflow_powerbi_plugin/powerbi_plugin.py
+src/airflow_powerbi_plugin/hooks/__init__.py
+src/airflow_powerbi_plugin/hooks/powerbi.py
+src/airflow_powerbi_plugin/operators/__init__.py
+src/airflow_powerbi_plugin/operators/powerbi.py
+src/airflow_powerbi_plugin_custom.egg-info/PKG-INFO
+src/airflow_powerbi_plugin_custom.egg-info/SOURCES.txt
+src/airflow_powerbi_plugin_custom.egg-info/dependency_links.txt
+src/airflow_powerbi_plugin_custom.egg-info/top_level.txt
