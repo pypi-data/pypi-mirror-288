@@ -1,0 +1,6 @@
+beos/__init__.py,sha256=uH8pTq1bISErG4TFep_Lj0O8ww_smSheCnmiw62pxWo,1115
+beos/_beos.cp38-win_amd64.pyd,sha256=IAc--wxcMI4R2x7X8GlzMli-WI0sOVz5EqEWbU5sYKk,3085944
+beos-1.3.0.dist-info/LICENSE,sha256=ekECcZpmH0GJYYM56V7y8YG-AtsaepKGFEBX-SGdUhg,279
+beos-1.3.0.dist-info/METADATA,sha256=Vve8wYcDjI-xnA9a1kyht5WLHfGa6HCwj-J6715NwN8,4276
+beos-1.3.0.dist-info/WHEEL,sha256=K2G7kGTWD2YcsdN35Y42w-2ri-sq6ciiHI37sKK7B8s,96
+beos-1.3.0.dist-info/RECORD,,
