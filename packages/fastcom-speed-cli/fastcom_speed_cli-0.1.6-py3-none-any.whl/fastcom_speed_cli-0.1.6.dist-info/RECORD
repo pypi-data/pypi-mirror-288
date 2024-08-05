@@ -1,0 +1,11 @@
+fast_speedtest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fast_speedtest/_version.py,sha256=bmrkyQLvFqlrJ0UjuyNWgZBCvZpDwEWxN8PGsRJh9B4,478
+fast_speedtest/api.py,sha256=hMCbxQ5lmVYHUnlzKXQR3YUkF6ThrusV5tAVV1WPYrI,4011
+fast_speedtest/cli.py,sha256=H-nIlc7Nsr_OpRhgy5HT409J4GmqNF6eArL6vFBG8Jg,2644
+fast_speedtest/utils.py,sha256=OxqlMw1YVIsDH3wDt5nsM8W-7Pz5z8QoFsrqjXOgbhY,737
+fastcom_speed_cli-0.1.6.dist-info/LICENSE,sha256=lE7HtOgBHyMWX6GwG5oPG7aeU26cqVLNxg8OPUwTpIs,1066
+fastcom_speed_cli-0.1.6.dist-info/METADATA,sha256=QjqA32_Vj5wSaRGkD6OtvAvDa9L8Q5XK-wcR9QaavmQ,8698
+fastcom_speed_cli-0.1.6.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+fastcom_speed_cli-0.1.6.dist-info/entry_points.txt,sha256=7h2Wt5kzNCEIKLugy0hS02WDx02xvyBLIfrlDbbKA64,53
+fastcom_speed_cli-0.1.6.dist-info/top_level.txt,sha256=KY00yEJnfCSdWnVG2Wu8_zZ8wK_u0XtPy4ZWt_1s7OU,15
+fastcom_speed_cli-0.1.6.dist-info/RECORD,,
