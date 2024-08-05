@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "postcode_parser_uk"
+version = "1.0.2"
+authors = [
+  { name="Jason Kaufman", email="jasonkaufman111@gmail.com" },
+]
+description = "A Python package to parse UK postcodes"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "pytest",
+    "flake8",
+    "black",
+    "build",
+    "python-dotenv",
+    "pandas",
+    "requests",
+]
+
+[project.optional-dependencies]
+lint = ["black", "flake8"]

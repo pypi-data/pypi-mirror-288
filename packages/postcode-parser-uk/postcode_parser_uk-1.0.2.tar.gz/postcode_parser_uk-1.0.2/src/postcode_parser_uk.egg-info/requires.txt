@@ -1,0 +1,11 @@
+pytest
+flake8
+black
+build
+python-dotenv
+pandas
+requests
+
+[lint]
+black
+flake8
