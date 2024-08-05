@@ -1,0 +1,7 @@
+matplotlib>=3.8
+ipython>=8.0
+openpyxl>=3.1
+
+[dev]
+pytest
+tox
