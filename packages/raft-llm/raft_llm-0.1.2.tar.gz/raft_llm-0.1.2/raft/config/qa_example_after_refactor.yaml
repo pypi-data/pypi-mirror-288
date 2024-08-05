@@ -1,0 +1,51 @@
+input:
+  datapath: "/Users/charliecheng-jieji/Downloads/codebase/raft_llm_ws/raft_llm/raft/document/raft.html"
+
+output:
+  dir: "raft_qa_example_generation_output"
+  format: "chat"
+  type: "jsonl"
+
+generation:
+  style: "qa"  # Choices: qa, conversation
+  questions: 1
+  distractors: 2
+  p: 1.0
+  ckpt_freq: 1
+
+chunking:
+  pdf:
+    strategy: "by_title"  # Choices: by_title, basic, semantic
+    max_characters: 1000
+    chunk_size: 512
+    chunk_overlap: 50
+  txt:
+    strategy: "basic"  # Choices: basic, semantic
+    chunk_size: 512
+    chunk_overlap: 50
+  json:
+    strategy: "recursive"  # Choices: recursive, basic, semantic
+    chunk_size: 512
+    chunk_overlap: 50
+  html:
+    strategy: "by_html_tag"  # Choices: by_html_tag, basic, semantic
+    max_characters: 1000
+    chunk_size: 512
+    chunk_overlap: 50
+  csv:
+    strategy: "by_csv_row"  # Choices: by_csv_row, basic, semantic
+    chunk_size: 10
+
+models:
+  embedding:
+    provider: "openai"
+    name: "text-embedding-ada-002"
+  generation:
+    provider: "openai"
+    name: "gpt-3.5-turbo"
+
+execution:
+  fast: false
+
+# Only used when output.format is 'chat'
+chat_system_prompt: "You are a helpful assistant."
