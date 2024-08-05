@@ -1,0 +1,2 @@
+[console_scripts]
+silit = silit.commands:create_project
