@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SupervisedMF"
+version = "0.0.4"
+dependencies = [
+    "numpy>=2.0.0",
+    "scipy>=1.13.0",
+    "scikit-learn>=1.5.1",
+    "matplotlib>=3.9.0",
+    "pandas>=2.2.2",
+    "seaborn>=0.13.0",
+    "tqdm>=4.66.4"
+]
+authors = [
+  {name = "Agam Goyal", email = "agamg2@illinois.edu"},
+  {name = "Yi Wei", email = "ywei224@wisc.edu"},
+  {name = "Hanbaek Lyu", email = "hlyu@math.wisc.edu"},
+]
+maintainers = [
+  {name = "Agam Goyal", email = "agamg2@illinois.edu"}
+]
+description = "A package for various supervised matrix factorization methods"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["supervised matrix factorization", "matrix factorization", "dimensionality reduction", "low-rank compression", "classification"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/ljw9510/SMF/tree/main"
+Issues = "https://github.com/ljw9510/SMF/issues"
