@@ -1,0 +1,4 @@
+pyside6             # Qt
+pyyaml              # YAML functionality
+
+mashumaro           # JSON to class serialization
