@@ -1,0 +1,7 @@
+README.md
+setup.py
+amisha_star.egg-info/PKG-INFO
+amisha_star.egg-info/SOURCES.txt
+amisha_star.egg-info/dependency_links.txt
+amisha_star.egg-info/requires.txt
+amisha_star.egg-info/top_level.txt
