@@ -1,0 +1,7 @@
+setup.py
+chromeAPI/__init__.py
+chromeAPI/main.py
+chromeAPI.egg-info/PKG-INFO
+chromeAPI.egg-info/SOURCES.txt
+chromeAPI.egg-info/dependency_links.txt
+chromeAPI.egg-info/top_level.txt
