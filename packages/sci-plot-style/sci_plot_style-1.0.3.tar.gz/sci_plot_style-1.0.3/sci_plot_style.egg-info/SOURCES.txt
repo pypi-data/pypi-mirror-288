@@ -1,0 +1,9 @@
+README.md
+setup.py
+sci_plot_style/__init__.py
+sci_plot_style/plot.py
+sci_plot_style.egg-info/PKG-INFO
+sci_plot_style.egg-info/SOURCES.txt
+sci_plot_style.egg-info/dependency_links.txt
+sci_plot_style.egg-info/requires.txt
+sci_plot_style.egg-info/top_level.txt
