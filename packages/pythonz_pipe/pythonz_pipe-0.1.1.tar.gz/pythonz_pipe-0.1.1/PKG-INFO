@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pythonz_pipe
+Version: 0.1.1
+Summary: pipe implementation of pythonz
+Author-Email: Yuichiro Smith <yu-ichiro@s3i7h.com>
+License: MIT
+Requires-Python: >=3.8
+Requires-Dist: pythonz_symbol>=0.1.0
+Description-Content-Type: text/markdown
+
+# pythonz_pipe
+
+simple implementation of pipe for pythonz
+
+# example
+
+```python
+from pythonz_pipe import pipe
+
+print(pipe(5).and_then(range).then_finally(list))  # [0, 1, 2, 3, 4]
+print(pipe(5) / range // list)  # [0, 1, 2, 3, 4]
+f = pipe().and_then(range).and_then(list)
+print(f.call(5))  # [0, 1, 2, 3, 4]
+print(f(5))  # [0, 1, 2, 3, 4]
+```

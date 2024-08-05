@@ -1,0 +1,24 @@
+[project]
+name = "pythonz_pipe"
+version = "0.1.1"
+description = "pipe implementation of pythonz"
+authors = [
+    { name = "Yuichiro Smith", email = "yu-ichiro@s3i7h.com" },
+]
+dependencies = [
+    "pythonz_symbol>=0.1.0",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
