@@ -1,0 +1,2 @@
+[console_scripts]
+home_assistant_litedb = home_assistant_litedb.main:main
