@@ -1,0 +1,2 @@
+[console_scripts]
+srcomp-update = sr.comp.http.update:main
