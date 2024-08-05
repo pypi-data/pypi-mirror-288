@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: zyjared-cli
+Version: 0.1.4
+Summary: zyjared's cli tool
+License: MIT
+Author: zyjared
+Author-email: zyjared@outlook.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: typer[all] (>=0.12.3,<0.13.0)
+Requires-Dist: zyjared-color (>=0.4.0,<0.5.0)
+Requires-Dist: zyjared-fs (>=0.1.1,<0.2.0)
+Project-URL: documentation, https://github.com/zyjared/zyjared-cli#readme
+Project-URL: homepage, https://github.com/zyjared/zyjared-cli
+Project-URL: repository, https://github.com/zyjared/zyjared-cli
+Description-Content-Type: text/markdown
+
+# zyjared-cli
+
+## Usage
+
+```sh
+pip install zyjared-cli
+```
+
+```sh
+zycli --help
+```
+
+## Commands
+
+### clean
+
+```sh
+zycli clean --help
+```
