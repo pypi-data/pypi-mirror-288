@@ -1,0 +1,10 @@
+LICENSE
+README.md
+proompter/__init__.py
+proompter/proompter.py
+proompter/setup.py
+proompter.egg-info/PKG-INFO
+proompter.egg-info/SOURCES.txt
+proompter.egg-info/dependency_links.txt
+proompter.egg-info/requires.txt
+proompter.egg-info/top_level.txt

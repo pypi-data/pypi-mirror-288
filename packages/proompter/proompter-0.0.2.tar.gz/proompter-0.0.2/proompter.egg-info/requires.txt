@@ -1,0 +1,6 @@
+ollama==0.2.1
+huggingface_hub==0.24.2
+transformers==4.43.2
+pandas==2.1.1
+mocker_db==0.2.0
+attrs==23.2.0
