@@ -1,0 +1,1 @@
+[![Upload Python Package](https://github.com/Leikaab/OneFlowPy/actions/workflows/python-publish.yml/badge.svg?branch=main)](https://github.com/Leikaab/OneFlowPy/actions/workflows/python-publish.yml)
