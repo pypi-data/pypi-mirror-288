@@ -1,0 +1,4 @@
+include tune8/templates/*
+include tune8/static/css/*
+include tune8/default_system.txt
+include tune8/prompts.jsonl

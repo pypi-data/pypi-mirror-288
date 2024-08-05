@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tune8 - Manage Prompts</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+    <style>
+        #save-default:hover {
+            background-color: #28a745;
+            border-color: #28a745;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>tune8 - Manage Prompts</h1>
+        
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h6>Add New Prompt</h6>
+            <div>
+                <button id="export-json" class="btn btn-secondary">Export JSONL</button>
+                <button id="import-json" class="btn btn-secondary ml-2">Import JSONL</button>
+                <input type="file" id="import-file" style="display: none;">
+            </div>
+        </div>
+
+        <form id="add-prompt-form">
+            <div class="form-group">
+                <label for="system">System:</label>
+                <div class="d-flex align-items-center">
+                    <textarea class="form-control" name="system" id="system" placeholder="Enter system content" rows="3" required></textarea>
+                    <button type="button" id="save-default" class="btn btn-outline-secondary ml-2 btn-sm">Save default</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="prompt">Prompt:</label>
+                <textarea class="form-control" name="prompt" placeholder="Enter prompt" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="ideal_answer">Ideal Answer:</label>
+                <textarea class="form-control" name="ideal_answer" placeholder="Enter ideal answers" rows="3" required></textarea>
+            </div>
+            <div class="d-flex">
+                <button type="submit" class="btn btn-success">Add Prompt</button>
+                <button type="button" id="edit-all-system" class="btn btn-secondary ml-2">Edit All System</button>
+            </div>
+        </form>
+
+        <table id="prompts-table" class="table table-striped table-bordered mt-5">
+            <thead>
+                <tr>
+                    <th>Prompt</th>
+                    <th>Ideal Answer</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for prompt in prompts %}
+                <tr>
+                    <td>{{ prompt.messages[1].content | replace('\n', '<br>') | safe }}</td>
+                    <td>{{ prompt.messages[2].content | replace('\n', '<br>') | safe }}</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary edit-prompt" data-index="{{ loop.index0 }}">Edit</button>
+                        <button class="btn btn-sm btn-danger delete-prompt" data-index="{{ loop.index0 }}">Delete</button>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var table = $('#prompts-table').DataTable();
+            
+            // Load default system content
+            $.get('/get_default_system', function(data) {
+                $('#system').val(data.default_system);
+            });
+
+            // Add new prompt
+            $('#add-prompt-form').submit(function(e) {
+                e.preventDefault();
+                $.post('/manage_prompts', $(this).serialize() + '&action=add', function(response) {
+                    if (response.success) {
+                        location.reload();
+                    }
+                });
+            });
+
+            // Edit prompt
+            $('.edit-prompt').click(function() {
+                let index = $(this).data('index');
+                let row = $(this).closest('tr');
+                let prompt = row.find('td:eq(0)').html().replace(/<br>/g, '\n');
+                let idealAnswer = row.find('td:eq(1)').html().replace(/<br>/g, '\n');
+                
+                row.html(`
+                    <td><textarea class="form-control" name="prompt" rows="3">${prompt}</textarea></td>
+                    <td><textarea class="form-control" name="ideal_answer" rows="3">${idealAnswer}</textarea></td>
+                    <td>
+                        <button class="btn btn-sm btn-success save-edit" data-index="${index}">Save</button>
+                        <button class="btn btn-sm btn-secondary cancel-edit">Cancel</button>
+                    </td>
+                `);
+            });
+
+            // Save edited prompt
+            $(document).on('click', '.save-edit', function() {
+                let index = $(this).data('index');
+                let row = $(this).closest('tr');
+                let prompt = row.find('textarea[name="prompt"]').val();
+                let idealAnswer = row.find('textarea[name="ideal_answer"]').val();
+                
+                $.post('/manage_prompts', {
+                    action: 'edit',
+                    index: index,
+                    prompt: prompt,
+                    ideal_answer: idealAnswer
+                }, function(response) {
+                    if (response.success) {
+                        location.reload();
+                    }
+                });
+            });
+
+            // Cancel edit
+            $(document).on('click', '.cancel-edit', function() {
+                location.reload();
+            });
+
+            // Delete prompt
+            $('.delete-prompt').click(function() {
+                if (confirm('Are you sure you want to delete this prompt?')) {
+                    let index = $(this).data('index');
+                    $.post('/manage_prompts', {
+                        action: 'delete',
+                        index: index
+                    }, function(response) {
+                        if (response.success) {
+                            location.reload();
+                        }
+                    });
+                }
+            });
+
+            // Export JSONL
+            $('#export-json').click(function() {
+                window.location.href = '/export_jsonl';
+            });
+
+            // Import JSONL
+            $('#import-json').click(function() {
+                if (confirm('Importing a JSONL file will overwrite the current prompts. Are you sure you want to continue?')) {
+                    $('#import-file').click();
+                }
+            });
+
+            $('#import-file').change(function() {
+                var formData = new FormData();
+                formData.append('file', this.files[0]);
+                $.ajax({
+                    url: '/import_jsonl',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        if (response.success) {
+                            alert('JSONL imported successfully!');
+                            location.reload();
+                        } else {
+                            alert('Error importing JSONL: ' + response.error);
+                        }
+                    }
+                });
+            });
+
+            // Save default system
+            $('#save-default').click(function() {
+                $.post('/save_default_system', { system: $('#system').val() }, function(response) {
+                    if (response.success) {
+                        alert('Default system content saved successfully!');
+                    }
+                });
+            });
+
+            // Edit all system
+            $('#edit-all-system').click(function() {
+                let newSystem = prompt('Enter new system content for all prompts:');
+                if (newSystem !== null) {
+                    $.post('/edit_all_system', { system: newSystem }, function(response) {
+                        if (response.success) {
+                            alert('All system contents updated successfully!');
+                            location.reload();
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
