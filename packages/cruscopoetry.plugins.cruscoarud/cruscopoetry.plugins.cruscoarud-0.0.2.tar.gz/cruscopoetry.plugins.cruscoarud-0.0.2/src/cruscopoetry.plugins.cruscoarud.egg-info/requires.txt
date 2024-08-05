@@ -1,0 +1,5 @@
+cruscopoetry.core
+cruscopoetry.plugins.abstract
+myusefulclasses
+myusefulmetaclasses
+tomli

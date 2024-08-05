@@ -1,0 +1,18 @@
+Welcome to CruscoArud, a plugin of CruscoPoetry that allows to parse lines written in one of the sixteen Classical Arabic metres (the *ʿArūḍ* metres) and store the result of this parsing in the poem's 
+JSON file.
+
+Requirements
+============
+
+Since the base version of Cruscopetry doesn't provide a specific syllabification algorithm, cruscoarud can work only with customized packages. In particular, the customized classes inheriting from ``cruscopoetry.abstracts.AbstractSyllable`` needs to include the attribute (or property) ``morae``, whose value must be a positive integer indicating the syllabic quantity (for example, 1 for short syllables, 2 for long, 3 for extra-long ones in the Arabic language). Moreover, in the metadata section of the text the key ``cruscoarud_metre``, to whom an appropriate integer value must correspond (see the documentation for further details.
+
+Command-line employment
+=======================
+
+Once installed ``cruscoarud`` on your Python environment, give
+
+::
+
+    cruscoarud -h
+
+For an outline of the commands.
