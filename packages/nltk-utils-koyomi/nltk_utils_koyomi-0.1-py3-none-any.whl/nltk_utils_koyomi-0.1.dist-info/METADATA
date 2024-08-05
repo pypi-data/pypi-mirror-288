@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: nltk_utils_koyomi
+Version: 0.1
+Summary: Utility functions for NLP tasks using NLTK
+Home-page: https://github.com/KoyomiHidaka/NeuroAssist
+Author: Koyomi Hidaka
+Author-email: ftpxtf@mail.ru
+License-File: LICENSE
+Requires-Dist: nltk
+Requires-Dist: numpy
+
