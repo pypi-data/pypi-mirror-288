@@ -1,0 +1,14 @@
+
+[all]
+sqlalchemy
+pandera
+pandas
+
+[pandas]
+pandas
+
+[sql]
+sqlalchemy
+
+[validation]
+pandera
