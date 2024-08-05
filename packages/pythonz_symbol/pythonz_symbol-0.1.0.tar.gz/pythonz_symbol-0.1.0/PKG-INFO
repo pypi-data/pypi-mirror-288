@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pythonz_symbol
+Version: 0.1.0
+Summary: symbol implementation of pythonz
+Author-Email: Yuichiro Smith <yu-ichiro@s3i7h.com>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# pythonz_pipe
+
+simple implementation of symbol for pythonz
+
+# example
+
+```python
+from pythonz_symbol import symbol
+
+__empty__ = symbol("empty")  # <Symbol(empty) at ...>
+
+def func(a = __empty__):
+    if a is __empty__:
+        print("`a` is empty!")
+    return a
+
+func()  # `a` is empty!
+```
