@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+openai_tiny_function_calling/__init__.py
+openai_tiny_function_calling.egg-info/PKG-INFO
+openai_tiny_function_calling.egg-info/SOURCES.txt
+openai_tiny_function_calling.egg-info/dependency_links.txt
+openai_tiny_function_calling.egg-info/requires.txt
+openai_tiny_function_calling.egg-info/top_level.txt
+tests/test_example.py
