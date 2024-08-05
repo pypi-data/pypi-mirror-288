@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dual_numbers"
+version = "0.0.1"
+dependencies = [
+    "forbiddenfruit",
+    "custom-literals",
+]
+authors = [
+  { name="Vicente Carrasco Álvarez", email="vidacaal@gmail.com" },
+]
+description = "2D dual numbers for python, with support for complex scalars"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/vichoca9/dual_numbers"
+Issues = "https://github.com/vichoca9/dual_numbers/issues"
