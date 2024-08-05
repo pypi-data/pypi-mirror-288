@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyjson-translator
+Version: 0.1.7
+Summary: A simple JSON to Python object translator
+Home-page: https://github.com/moqimoqidea/pyjson_translator
+Author: moqimoqidea
+Author-email: moqimoqidea@gmail.com
+Project-URL: Documentation, https://github.com/moqimoqidea/pyjson_translator#readme
+Project-URL: Source, https://github.com/moqimoqidea/pyjson_translator
+Project-URL: Tracker, https://github.com/moqimoqidea/pyjson_translator/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyjson_translator
+
+A simple JSON to Python object translator.
+
+## Installation
+
+```bash
+pip install pyjson_translator
+```
