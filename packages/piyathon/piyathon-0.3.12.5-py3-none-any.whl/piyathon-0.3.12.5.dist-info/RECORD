@@ -1,0 +1,12 @@
+src/piyathon/__init__.py,sha256=-kSAnmEymiAefJV2_eGSgDY9nQ-R69zb_iJ2tCSRG6E,60
+src/piyathon/keywords.py,sha256=jy3ozqCIX0jbQzymdGLj3_GdnZdoAiRR1146Osw7Zus,5817
+src/piyathon/p2p.py,sha256=iAkarqFXL8jPlMeyi-FIEMwpzQdNBB9xpdQd5Qz5JdQ,2385
+src/piyathon/piyathon.py,sha256=2QlEJcV7ktsbCBP96IUNMzirjSghsY72PMccGGirqrw,1414
+src/piyathon/piyathon_translator.py,sha256=T_Zy7p71MyalcYAxO2eBRlKUVSICDqZ5eUN4W7fs69M,5005
+src/piyathon/Lib/สุ่ม.py,sha256=-rdN_YwvGnx2aQSRszNEnvZFAE6cNfD-V2UpoYqK6bI,1865
+src/piyathon/Lib/เต่า.py,sha256=NXuClaNMEqtMlBVbH1K6TizFeCUSKEWT-cCZ4EkOsEI,7485
+piyathon-0.3.12.5.dist-info/METADATA,sha256=kWBGBU4gddKIeux-RQqWPZanJQT5_nU0rPLd6u7lm0U,1596
+piyathon-0.3.12.5.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+piyathon-0.3.12.5.dist-info/entry_points.txt,sha256=hhxjU0rOmPDk8LTCnTFru_leyi1f2WQCBfhxeFWM_xc,76
+piyathon-0.3.12.5.dist-info/licenses/LICENSE,sha256=nizwK0x2TkPrLwWyVw9f9i7JP3mxTTvFOQCqMlTlKRc,1073
+piyathon-0.3.12.5.dist-info/RECORD,,
