@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: bazpy
+Version: 0.0.2
+Summary: My convenience library
+Author-email: Baz Pya <baz@pya.com>
+Project-URL: Homepage, https://github.com/pyabzz/bazpy
+Project-URL: Issues, https://github.com/pyabzz/bazpy/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Dashas mashas
