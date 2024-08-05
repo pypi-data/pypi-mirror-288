@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+topology_gen/__init__.py
+topology_gen/generate_top.py
+topology_gen/preprocess_mol2.py
+topology_genrator.egg-info/PKG-INFO
+topology_genrator.egg-info/SOURCES.txt
+topology_genrator.egg-info/dependency_links.txt
+topology_genrator.egg-info/entry_points.txt
+topology_genrator.egg-info/requires.txt
+topology_genrator.egg-info/top_level.txt
