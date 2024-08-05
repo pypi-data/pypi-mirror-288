@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cruscopoetry.plugins.abstract
+Version: 0.0.2
+Summary: Abstract classes for CruscoPoetry plugins
+Home-page: https://gitlab.com/kikulacho92/cruscopoetry_new
+Author: Emiliano Minerba
+Author-email: emi.nerba@gmail.com
+License: GPL
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+
+Package of abstract classes for the release of new CruscoPoetry plugins. Normally, this package will not be employed directly from the user.
+
