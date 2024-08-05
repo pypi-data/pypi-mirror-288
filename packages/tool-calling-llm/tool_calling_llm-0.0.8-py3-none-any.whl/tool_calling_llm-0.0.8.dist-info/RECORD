@@ -1,0 +1,7 @@
+tool_calling_llm/__init__.py,sha256=6RevHRcurpXc7oaeRbY78tBccehv1_ctpbqBGQO2v24,254
+tool_calling_llm/tool_calling_llm.py,sha256=TwcE1rzPDL83OcNkDOyenLhi7WpMwUci6FeZ0YeBrEU,13765
+tool_calling_llm-0.0.8.dist-info/LICENSE,sha256=X1MKFDGN5zf2MUZJONX8gxjiVlf0nX-qjYRdQn-M2YM,1060
+tool_calling_llm-0.0.8.dist-info/METADATA,sha256=t9VtouOBOHQWrFg093a-V2MSWCsfpJl6kDV-DHOmL7w,3281
+tool_calling_llm-0.0.8.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+tool_calling_llm-0.0.8.dist-info/top_level.txt,sha256=LVtMqUbuUwCHw7-CQJSg8lvvBi0JGXetvL4W37NZgRA,17
+tool_calling_llm-0.0.8.dist-info/RECORD,,
