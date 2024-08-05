@@ -1,0 +1,43 @@
+[project]
+name = 'pandoc-displaymath2equation'
+description = 'Automatically number display-math equations in pandoc.'
+authors = [
+    { name = 'Freyer, Fynn', email = 'fynn.freyer@googlemail.com' }
+]
+version = '0.0.0.2'
+readme = 'README.md'
+requires-python = '>=3.10'
+classifiers = [
+    'Programming Language :: Python :: 3.10',
+    'Topic :: Text Processing',
+    'Topic :: Text Processing :: Filters',
+    'Topic :: Text Processing :: Markup',
+    'Topic :: Text Processing :: Markup :: LaTeX',
+    'License :: OSI Approved :: MIT License',
+    'Development Status :: 3 - Alpha',
+]
+
+dependencies = [
+    'panflute',
+]
+
+[project.urls]
+Homepage = "https://github.com/FynnFreyer/pandoc-displaymath2equation"
+Issues = "https://github.com/FynnFreyer/pandoc-displaymath2equation/issues"
+
+[project.optional-dependencies]
+dev = [
+    'hatch',
+    'pip-tools',
+    'pytest'
+]
+
+[project.scripts]
+pandoc-displaymath2equation = "displaymath2equation.main:main"
+
+[build-system]
+requires = ['hatchling']
+build-backend = 'hatchling.build'
+
+[tool.hatch.build]
+packages = ['displaymath2equation']
