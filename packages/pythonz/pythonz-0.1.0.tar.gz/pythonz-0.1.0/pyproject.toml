@@ -1,0 +1,27 @@
+[project]
+name = "pythonz"
+version = "0.1.0"
+description = "Python but it's Z"
+authors = [
+    {name = "Yuichiro Smith", email = "yu-ichiro@s3i7h.com"},
+]
+dependencies = [
+    "pythonz_pipe>=0.1.0",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "ruff>=0.5.6",
+    "pytest>=8.3.2",
+]

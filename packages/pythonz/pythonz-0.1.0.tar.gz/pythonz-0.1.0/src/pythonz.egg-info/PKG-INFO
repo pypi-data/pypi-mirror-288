@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pythonz
+Version: 0.1.0
+Summary: Python but it's Z
+Author-email: Yuichiro Smith <yu-ichiro@s3i7h.com>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pythonz_pipe>=0.1.0
+
+# pythonz
+
+pythonz is a package to make your python coding experience more powerful.
+
+# example
+
+```python
+from pythonz.pipe import
+```
+

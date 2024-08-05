@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/pythonz/__init__.py
+src/pythonz/pipe.py
+src/pythonz.egg-info/PKG-INFO
+src/pythonz.egg-info/SOURCES.txt
+src/pythonz.egg-info/dependency_links.txt
+src/pythonz.egg-info/requires.txt
+src/pythonz.egg-info/top_level.txt
