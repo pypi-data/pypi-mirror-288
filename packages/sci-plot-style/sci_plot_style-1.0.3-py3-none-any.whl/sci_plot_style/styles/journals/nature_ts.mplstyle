@@ -1,0 +1,63 @@
+# Matplotlib style for Nature journal figures.
+
+# 设置颜色盘: blue, green, yellow, red, violet, gray
+axes.prop_cycle : cycler('color', ['0C5DA5', '00B945', 'FF9500', 'FF2C00', '845B97', '474747', '9e9e9e'])
+
+# 图尺寸
+figure.figsize : 5, 3.8  # max width is 3.5 for single column
+
+# 字体大小
+axes.titlesize: 12
+axes.labelsize: 12
+xtick.labelsize: 12
+ytick.labelsize: 12
+legend.fontsize: 12
+font.size: 12
+axes.unicode_minus : False
+
+# 字体
+font.family: sans-serif
+font.sans-serif: Times New Roman + SimSun, Times New Roman, DejaVu Sans, Arial, Helvetica, Lucida Grande, Verdana, Geneva, Lucid, Avant Garde, sans-serif
+mathtext.fontset : stix
+
+# 线宽
+axes.linewidth : 1.
+grid.linewidth : 0.5
+lines.linewidth : 1.
+lines.markersize: 1.5
+
+# X轴
+xtick.direction : in
+xtick.major.size : 5
+xtick.major.width : 0.5
+xtick.minor.size : 3
+xtick.minor.width : 0.5
+xtick.minor.visible : True
+xtick.top : True
+
+# y轴
+ytick.direction : in
+ytick.major.size : 5
+ytick.major.width : 0.5
+ytick.minor.size : 3
+ytick.minor.width : 0.5
+ytick.minor.visible : True
+ytick.right : True
+
+# 去除图例边框
+legend.frameon : False
+
+# 边框可见性
+axes.spines.left:   True  # display axis spines
+axes.spines.bottom: True
+axes.spines.top:    True
+axes.spines.right:  True
+
+# 保存图片
+savefig.dpi : 600
+savefig.bbox : tight
+savefig.pad_inches : 0.01
+
+# Use LaTeX for math formatting
+# text.usetex : True
+text.latex.preamble : \usepackage{amsmath} \usepackage{amssymb}
