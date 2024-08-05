@@ -1,0 +1,130 @@
+# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+
+name: Python package
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  run_demo: false
+  run_pytest: false
+  run_ruff: false
+  run_type_check: false
+
+jobs:
+  job_global_vars:
+    runs-on: ubuntu-latest
+    outputs:
+      publish_to_pypi: true
+    steps:
+      - name: No ops
+        run: echo "No ops!"
+
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      is_pypi_compatible: ${{ steps.check_pypi_compatbility.outputs.is_pypi_compatible }}
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+    - name: Fetch
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Fetch all history so that tags are included
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install virtualenv
+      run: python -m pip install --user virtualenv
+    - name: Prepare venv and Install dependencies
+      run: |
+        python3 myprepare.py
+    - name: check type
+      if: env.run_type_check == 'true'
+      run: |
+        ./devenv_exec ./check_types.sh
+    - name: Lint with Ruff
+      if: env.run_ruff == 'true'
+      run: |
+        ./devenv_exec pip install ruff
+        ./devenv_exec ruff check --output-format=github fast_speedtest tests
+    - name: Test with pytest
+      if: env.run_pytest == 'true'
+      run: |
+        ./devenv_exec pytest
+    - name: Show example result
+      if: env.run_demo == 'true' && matrix.python-version == '3.11'
+      run: ./devenv_exec python3 -m fast_speedtest.cli --min-duration 2 --max-duration 3 --max-connections 1 --no-upload --interval 1 --json
+    - name: Build a binary wheel and a source tarball
+      run: ./build.sh
+    - name: Check if the version is PyPi compatible
+      id: check_pypi_compatbility
+      run: ./devenv_exec python3 ./check-dist.py
+    - name: Store the distribution packages
+      if: matrix.python-version == '3.11'
+      uses: actions/upload-artifact@v4
+      with:
+        name: python-package-distributions
+        path: dist/
+
+  publish-to-testpypi:
+    name: Publish Python 🐍 distribution 📦 to TestPyPI
+    needs:
+    - build
+    - job_global_vars
+    runs-on: ubuntu-latest
+    if: (needs.job_global_vars.outputs.publish_to_pypi != 'true') && needs.build.outputs.is_pypi_compatible == 'true'
+    environment:
+      name: testpypi
+      url: https://test.pypi.org/p/fast-com-cli
+
+    permissions:
+      id-token: write  # IMPORTANT: mandatory for trusted publishing
+
+    steps:
+    - name: Download all the dists
+      uses: actions/download-artifact@v4
+      with:
+        name: python-package-distributions
+        path: dist/
+    - name: Publish distribution 📦 to TestPyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        repository-url: https://test.pypi.org/legacy/
+        verbose: true
+
+  pypi-publish:
+    needs:
+      - build
+      - job_global_vars
+    runs-on: ubuntu-latest
+    if: (needs.job_global_vars.outputs.publish_to_pypi == 'true') && needs.build.outputs.is_pypi_compatible == 'true'
+    permissions:
+      # IMPORTANT: this permission is mandatory for trusted publishing
+      id-token: write
+
+    # Dedicated environments with protections for publishing are strongly recommended.
+    environment:
+      name: pypi
+      # OPTIONAL: uncomment and update to include your PyPI project URL in the deployment status:
+      # url: https://pypi.org/p/YOURPROJECT
+
+    steps:
+      - name: Retrieve release distributions
+        uses: actions/download-artifact@v4
+        with:
+          name: python-package-distributions
+          path: dist/
+
+      - name: Publish release distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          verbose: true
