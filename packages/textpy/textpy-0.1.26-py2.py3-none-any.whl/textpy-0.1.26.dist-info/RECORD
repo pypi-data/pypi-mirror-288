@@ -1,0 +1,16 @@
+textpy/__init__.py,sha256=pjqPFpw-VksPSppXvGM7WUSk1iGxSisbYYCJZtzgjPo,5992
+textpy/__version__.py,sha256=jGdxwND12xcMcHt52-JOZX96BV8GprwnU3-YHN_HtWE,85
+textpy/abc.py,sha256=At6TklsdehkMdxZOIpfVQWup5kihOLdf7CGfley6Oao,19702
+textpy/core.py,sha256=qmrZpxbpnHXIzbAYK30BGVqORBZjHEIAIeKW_-Vu9-E,2203
+textpy/doc.py,sha256=WJuQ3-r9ZZHD05BXyoU1-r8cOGuWt6BhxyEnuFLTju4,852
+textpy/experimental.py,sha256=G6M74M2We4_2nyTYbr0030FCLNEpEMBer-9nt9RT8Ss,2009
+textpy/interaction.py,sha256=paXkuCy7pni8n67rTFEdiRmvyW3EcKd5i3Yisu-6TxI,16026
+textpy/text.py,sha256=iYtapaoS9YNqwukXOknaf7Zwio-vFW2WYT9E7NHDxGE,7989
+textpy/utils/__init__.py,sha256=Tp1m1SIki6Ik7FYqwGLLod4SrrB3ymc3FXp_T1o0AWc,56
+textpy/utils/re_extensions.py,sha256=qcjBytKS5rsZ_TwredWWI8Gggf7ijOBMnjpqRaSeL8s,28651
+textpy/utils/validator.py,sha256=L_rBMOIwN1QHlKXJhxmffL3krczn72prmxzDpd_SR7c,3181
+textpy-0.1.26.dist-info/LICENSE,sha256=rlOb8JrIQs-p03IkqjgLlXbFGIwdABeHAaRckd4b8N8,1495
+textpy-0.1.26.dist-info/METADATA,sha256=hVYn7TjM5M7NuV2k-ifYdTQTzjEbrYv6fxiQFmU4CXY,12022
+textpy-0.1.26.dist-info/WHEEL,sha256=fS9sRbCBHs7VFcwJLnLXN1MZRR0_TVTxvXKzOnaSFs8,110
+textpy-0.1.26.dist-info/top_level.txt,sha256=oWHnPcR9GIzbwkj6ZR9wflWbnft6QtEx8r6MbNbSBR4,7
+textpy-0.1.26.dist-info/RECORD,,
