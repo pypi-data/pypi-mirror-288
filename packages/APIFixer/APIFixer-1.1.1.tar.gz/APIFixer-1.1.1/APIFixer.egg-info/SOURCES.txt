@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+APIFixer/APIFixer.py
+APIFixer/__init__.py
+APIFixer.egg-info/PKG-INFO
+APIFixer.egg-info/SOURCES.txt
+APIFixer.egg-info/dependency_links.txt
+APIFixer.egg-info/requires.txt
+APIFixer.egg-info/top_level.txt
