@@ -1,0 +1,12 @@
+README.rst
+setup.py
+src/cruscopoetry.syllabifiers.abstract.egg-info/PKG-INFO
+src/cruscopoetry.syllabifiers.abstract.egg-info/SOURCES.txt
+src/cruscopoetry.syllabifiers.abstract.egg-info/dependency_links.txt
+src/cruscopoetry.syllabifiers.abstract.egg-info/requires.txt
+src/cruscopoetry.syllabifiers.abstract.egg-info/top_level.txt
+src/cruscopoetry/syllabifiers/abstract/__init__.py
+src/cruscopoetry/syllabifiers/abstract/abstract_classes.py
+src/cruscopoetry/syllabifiers/abstract/abstract_tokenizer.py
+src/cruscopoetry/syllabifiers/abstract/exceptions.py
+src/cruscopoetry/syllabifiers/abstract/markers.py

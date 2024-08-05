@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cruscopoetry.syllabifiers.abstract
+Version: 0.0.3
+Summary: Abstract classes for CruscoPoetry syllabifiers
+Home-page: https://gitlab.com/kikulacho92/cruscopoetry
+Author: Emiliano Minerba
+Author-email: emi.nerba@gmail.com
+License: GPL
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+
+Abstract classes for CruscoPoetry syllabifiers. This class will not be directly employed by the user.
+

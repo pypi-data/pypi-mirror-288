@@ -1,0 +1,1 @@
+Abstract classes for CruscoPoetry syllabifiers. This class will not be directly employed by the user.
