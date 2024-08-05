@@ -1,0 +1,30 @@
+Metadata-Version: 2.3
+Name: deepbiop
+Version: 0.1.4
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Rust
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE
+Summary: Deep Learning Preprocessing Library for Biological Data
+Keywords: deep-learning,bioinformatics,biological-data
+Author-email: Yangyang Li <sunlifeliz5@gmail.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://github.com/cauliyang/DeepBioP
+Project-URL: Documentation, https://github.com/cauliyang/DeepBioP
+Project-URL: Repository, https://github.com/cauliyang/DeepBioP
+Project-URL: Changelog, https://github.com/cauliyang/DeepBioP/CHANGELOG.md
+
+../README.md
+
