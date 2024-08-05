@@ -1,0 +1,83 @@
+# ESP32 MicroPython TUI IDE
+
+This project is currently being set up and not intended to be usable by anyone but me.
+However `mpide` _runs_ on my machine and might as well run on your's, too.
+
+Project goal is a 'smart' REPL for MicroPython devices similar to `mpremote`
+(currently `mpide` is even based on `mpremote`), but with additional features like
+
+* auto pre-compiling and syncing of locally modified files with device
+* providing a web based remote update mechanism
+* providing a powerful set of pure Python base functionality for rapid development
+* transparent and intuitive device bootstrapping, logging etc.
+
+
+## Usage
+
+Install:
+```
+[python3 -m ]pip install [--user] [--upgrade] mpide
+``
+
+Execute:
+```
+mpide
+```
+
+Or add `mpide` as dependency to an existing MicroPython project in order to synchronize locally
+modified files while `mpide` is running.
+
+
+## Roadmap
+
+This is what I intend to implement in the near future, since it's what I need in daily live:
+
+- [x] Textual based IDE stub based on `trickkiste/TuiBaseApp`
+- [x] involve `mpremote` to automatically connect to attached (ESP32) devices running MicroPython
+- [x] REPL command history
+- [x] fix multi-line input
+- [x] auto-update mpy/py files on change
+- [x] make auto-update optional
+- [ ] add instructions to build MicroPython
+- [ ] add commands: `:help`, `:rm`, `:tree`
+- [ ] add passthrough (`!..`)
+- [ ] allow device / connection speed settings
+- [ ] provide RAM-FS for temporarily patched files and to avoid wearing out your flash
+- [ ] make pre-compilation optional
+- [ ] persist temporary files
+- [ ] fix dark-mode
+- [ ] check micropython / mpy-cross versions
+- [ ] cleanup cache folder
+- [ ] bootstrap (i.e. populate a newly flashed device with helper stuff for remote working)
+- [ ] auto-reload modules on development host
+- [ ] Web-REPL
+- [ ] Web-based remote updating
+- [ ] support terminal colors
+- [ ] make web-server optional
+
+
+## License
+
+For all code contained in this repository the rules of GPLv3 apply unless
+otherwise noted. That means that you can do what you want with the source
+code as long as you make the files with their original copyright notice
+and all modifications available.
+
+See [GNU / GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) for details.
+
+This project is not free for machine learning. If you're using any content
+of this repository to train any sort of machine learned model (e.g. LLMs),
+you agree to make the whole model trained with this repository and all data
+needed to train (i.e. reproduce) the model publicly and freely available
+(i.e. free of charge and with no obligation to register to any service) and
+make sure to inform the author (me, frans.fuerst@protonmail.com) via email
+how to get and use that model and any sources needed to train it.
+
+
+
+## Interesting Links
+
+* Phind.com: [with mpy-cross is it possible to pre-compile `@viper` decorated python-functions? how would mpy-cross know which platorm to create code for?](https://www.phind.com/search?cache=hbflpe9qo1caidumt6edsaz2)
+* [Esp32-c3 native and viper decorators](https://github.com/orgs/micropython/discussions/9785)
+
+* https://www.analog.com/en/resources/analog-dialogue/articles/introduction-to-spi-interface.html
