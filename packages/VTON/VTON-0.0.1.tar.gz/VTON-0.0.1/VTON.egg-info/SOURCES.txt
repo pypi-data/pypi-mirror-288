@@ -1,0 +1,11 @@
+README.md
+setup.py
+VTON/__init__.py
+VTON/test.py
+VTON/vtons.py
+VTON.egg-info/PKG-INFO
+VTON.egg-info/SOURCES.txt
+VTON.egg-info/dependency_links.txt
+VTON.egg-info/not-zip-safe
+VTON.egg-info/requires.txt
+VTON.egg-info/top_level.txt
