@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+machinemind_bpe/__init__.py
+machinemind_bpe/dependency_check.py
+machinemind_bpe/machinemind_bpe.py
+machinemind_bpe.egg-info/PKG-INFO
+machinemind_bpe.egg-info/SOURCES.txt
+machinemind_bpe.egg-info/dependency_links.txt
+machinemind_bpe.egg-info/requires.txt
+machinemind_bpe.egg-info/top_level.txt

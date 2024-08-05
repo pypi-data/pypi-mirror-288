@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: machinemind-bpe
+Version: 1.0.1
+Summary: A Byte Pair Encoding (BPE) tokenizer package for CPU and GPU.
+Home-page: https://github.com/machineminduzb_v2/bpe_tokenizer
+Author: Javokhir
+Author-email: machinemind60@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+BPE Tokenizer
+This package provides an implementation of Byte Pair Encoding (BPE) tokenizer, designed to be efficient and fast. It includes training on both CPU and GPU, along with encoding and decoding functionalities.
+
+Features
+Train BPE tokenizer on CPU and GPU
+Encode and decode text using the trained tokenizer
+Save and load merges and vocabulary to/from JSON files
+Support for special tokens and customizable regex patterns
+Installation
+To install the package, use the following command:
+
+pip install machinemind_bpe
