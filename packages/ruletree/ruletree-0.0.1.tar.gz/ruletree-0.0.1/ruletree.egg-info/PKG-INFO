@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ruletree
+Version: 0.0.1
+Summary: Package description
+Home-page: https://github.com/riccotti/RuleTree
+Author: Cristiano Landi
+Author-email: cristiano.landi@phd.unipi.it
+License: BSD-Clause-2
+Keywords: keyword1 keyword2 keyword3
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Other
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >3.11.0
+Description-Content-Type: text/markdown
+Provides-Extra: flag
+License-File: LICENSE
+
+# RuleTree
+TODO
+
+
