@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "devopscodegen-common"
+version = "1.20240710.8"
+description = "Common python modules for all devops code generators like CI/CD pipeline code generator, infrastructure code generator, database code generator, virtual machine image code generator, deployment code generator, container image code generator, container deployment code generator, etc."
+authors = ["Sagar Velankar <sagar.velankar@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/devopscodegen/devopscodegen-common"
+keywords = ["devops", "code-generator", "devops-platform", "langchain", "genai"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Code Generators",
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+GitPython = "^3.1.43"
+langchain = "^0.2.6"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.1"
+pytest = "^8.2.2"
+black = "^24.4.2"
+pylint = "^3.2.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
