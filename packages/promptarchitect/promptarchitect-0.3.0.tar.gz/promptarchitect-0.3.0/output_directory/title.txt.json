@@ -1,0 +1,32 @@
+{
+    "prompt_file_path": "/Users/joopsnijder/Projects/promptarchitect/examples/prompts/podcast_titels.prompt",
+    "output_path": "output_directory",
+    "input_file": null,
+    "input_text": "",
+    "latency": 1.6913393329959945,
+    "cost": 6.195e-05,
+    "errors": {
+        "errors": [],
+        "duplicates": 0
+    },
+    "completion": {
+        "system_role": "You are a helpful assistant.",
+        "model": "gpt-4o-mini",
+        "parameters": {
+            "model": "gpt-4o-mini",
+            "prompt_version": 1.0,
+            "temperature": 0.9,
+            "input": "examples/inputs/podcast_titels/beschrijving.txt",
+            "output": "title.txt",
+            "test_path": "examples/tests/podcast_titels"
+        },
+        "cost": 6.195e-05,
+        "is_json": false,
+        "test_path": "",
+        "response_message": "1. \"Ethiek en AI: De Toekomst van Mens en Machine\"\n2. \"De Morele Kompas: AI, Ethiek en Maatschappelijke Verandering\"\n3. \"Verantwoordelijkheid in de Digitale Wereld: AI en Ethiek\"\n4. \"De Mens achter de Code: Ethiek in de Era van AI\"\n5. \"AI en de Menselijke Waarden: Navigeren door Ethische Dilemma's\"",
+        "latency": 1.6913393329959945,
+        "pricing_file": "openai.json"
+    },
+    "completion_type": "OpenAICompletion",
+    "response_message": "1. \"Ethiek en AI: De Toekomst van Mens en Machine\"\n2. \"De Morele Kompas: AI, Ethiek en Maatschappelijke Verandering\"\n3. \"Verantwoordelijkheid in de Digitale Wereld: AI en Ethiek\"\n4. \"De Mens achter de Code: Ethiek in de Era van AI\"\n5. \"AI en de Menselijke Waarden: Navigeren door Ethische Dilemma's\""
+}
