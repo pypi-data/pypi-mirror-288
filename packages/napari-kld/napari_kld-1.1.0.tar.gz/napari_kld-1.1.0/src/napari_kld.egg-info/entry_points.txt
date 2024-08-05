@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-kld = napari_kld:napari.yaml
