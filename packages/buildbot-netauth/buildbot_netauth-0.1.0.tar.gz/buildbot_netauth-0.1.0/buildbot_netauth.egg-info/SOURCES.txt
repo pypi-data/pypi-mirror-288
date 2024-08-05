@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/ruff.yaml
+buildbot_netauth/__init__.py
+buildbot_netauth.egg-info/PKG-INFO
+buildbot_netauth.egg-info/SOURCES.txt
+buildbot_netauth.egg-info/dependency_links.txt
+buildbot_netauth.egg-info/entry_points.txt
+buildbot_netauth.egg-info/requires.txt
+buildbot_netauth.egg-info/top_level.txt
