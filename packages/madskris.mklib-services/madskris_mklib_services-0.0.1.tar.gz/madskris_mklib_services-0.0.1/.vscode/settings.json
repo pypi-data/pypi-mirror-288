@@ -1,0 +1,11 @@
+{
+    "code-runner.customCommand": "hatch run pytest tests -rP",
+    "files.exclude": {
+        ".pytest_cache": true,
+        "**/tempCodeRunnerFile.py": true
+    },
+    "python.analysis.extraPaths": [
+        "components",
+        "./src/mklib_services"
+    ]
+}

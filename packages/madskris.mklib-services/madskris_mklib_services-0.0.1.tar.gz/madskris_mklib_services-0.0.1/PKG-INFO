@@ -1,0 +1,39 @@
+Metadata-Version: 2.3
+Name: madskris.mklib-services
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/unknown/mklib-services#readme
+Project-URL: Issues, https://github.com/unknown/mklib-services/issues
+Project-URL: Source, https://github.com/unknown/mklib-services
+Author-email: mads kristensen <madskris@proton.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.12
+Requires-Dist: attrs
+Requires-Dist: pandas
+Requires-Dist: xlrd
+Description-Content-Type: text/markdown
+
+# mklib services
+
+[![PyPI - Version](https://img.shields.io/pypi/v/mklib-services.svg)](https://pypi.org/project/mklib-services)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mklib-services.svg)](https://pypi.org/project/mklib-services)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install mklib-services
+```
+
+## License
+
+`mklib-services` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
