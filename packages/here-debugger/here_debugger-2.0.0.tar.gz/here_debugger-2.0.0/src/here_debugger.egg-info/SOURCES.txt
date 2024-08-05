@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/here_debugger/__init__.py
+src/here_debugger/debug.py
+src/here_debugger.egg-info/PKG-INFO
+src/here_debugger.egg-info/SOURCES.txt
+src/here_debugger.egg-info/dependency_links.txt
+src/here_debugger.egg-info/top_level.txt
+tests/test_here_debugger.py
