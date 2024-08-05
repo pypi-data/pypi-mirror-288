@@ -1,0 +1,8 @@
+attrs>=21.4.0
+lark>=1.1.4
+inject
+marshmallow
+marshmallow_enum
+maus>=0.6.0
+pytz
+efoli>=1.1.0
