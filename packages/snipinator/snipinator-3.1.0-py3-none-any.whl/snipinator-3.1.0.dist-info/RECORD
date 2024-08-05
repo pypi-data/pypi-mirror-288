@@ -1,0 +1,14 @@
+snipinator/__init__.py,sha256=F6ekUSL_KNMzvo2gZXtNSRkXEwxS0_wZ1pHQ8P2SQsI,514
+snipinator/cli.py,sha256=gHzAqcsXagUa1qOuRqqU2WPD3TvK5hDNnEl6gRmS6ZY,28298
+snipinator/snipinate.py,sha256=qva4WT0nSaudi9yId16VF7YgcrjN3SRyHHSHQq-XEvQ,40124
+snipinator/snipinate_test.py,sha256=TWhwk3c9v6DVmyFKD-Pf441v5a1tcH2xad5kLOauCWk,1139
+snipinator/examples/code.py,sha256=VIJ9IUudJplpSH9tfwPxamL1VjsxDic_76sVDj72tIg,677
+snipinator/examples/code_test.py,sha256=k0FN5hfFLwxaeKNw9woT8FS5XPNmKOnqdB-NgddE4bE,485
+snipinator/private/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snipinator/private/utilities.py,sha256=sdFPbZ56RHpfZNlAOcgtQBuU_7VdejJpaTwZrnq94fo,860
+snipinator-3.1.0.dist-info/LICENSE.md,sha256=pB8Y9uQJ53ntqW8qACEsDRkGey4YoYJxbfnqrcd2o_w,1102
+snipinator-3.1.0.dist-info/METADATA,sha256=CMEA9kqepKI9zqs9ck-uRRRdRwk7J6TTB62NCUuhABY,57172
+snipinator-3.1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+snipinator-3.1.0.dist-info/entry_points.txt,sha256=Q6Ym7wk6bNqV2OHeUoPvkfyC8J3FJpiHK5hKCUzoWrM,51
+snipinator-3.1.0.dist-info/top_level.txt,sha256=WUxUKIq0MstXkOQo_34Uhkewsq9rJEVm-gTLmjHOXw8,11
+snipinator-3.1.0.dist-info/RECORD,,
