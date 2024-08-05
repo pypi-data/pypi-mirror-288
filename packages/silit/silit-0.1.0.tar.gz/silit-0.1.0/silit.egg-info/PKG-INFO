@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: silit
+Version: 0.1.0
+Summary: Framework untuk membuat aplikasi desktop dengan struktur MVC menggunakan Python
+Home-page: https://github.com/username/silit
+Author: Nama Anda
+Author-email: email@anda.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: flask

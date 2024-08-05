@@ -1,0 +1,17 @@
+README.md
+setup.py
+silit/__init__.py
+silit/commands.py
+silit.egg-info/PKG-INFO
+silit.egg-info/SOURCES.txt
+silit.egg-info/dependency_links.txt
+silit.egg-info/entry_points.txt
+silit.egg-info/requires.txt
+silit.egg-info/top_level.txt
+silit/templates/project/build.py
+silit/templates/project/setup.py
+silit/templates/project/silit.py
+silit/templates/project/app/__init__.py
+silit/templates/project/config/config.py
+silit/templates/project/public/index.py
+silit/templates/project/routes/web.py
