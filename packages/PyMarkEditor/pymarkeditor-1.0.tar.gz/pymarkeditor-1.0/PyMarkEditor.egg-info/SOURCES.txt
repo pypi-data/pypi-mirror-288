@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+PyMarkEditor.egg-info/PKG-INFO
+PyMarkEditor.egg-info/SOURCES.txt
+PyMarkEditor.egg-info/dependency_links.txt
+PyMarkEditor.egg-info/entry_points.txt
+PyMarkEditor.egg-info/top_level.txt
+pme/__init__.py
+pme/main.py
