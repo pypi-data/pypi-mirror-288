@@ -1,0 +1,14 @@
+msearch/__about__.py,sha256=07NzQXBgNlnw5kSN6ZYxE9By-_RuH3Jyy58Z74sIio0,21
+msearch/__init__.py,sha256=Ao_1SbMg--W8AZUpqavJE5Fiyv9R_NKlKoPPe0wqqmc,40
+msearch/browse.py,sha256=vI319m_qKbZ-BrU8VEc6GGex15BhJELTeRIfRCsJjDw,5821
+msearch/inspecting.py,sha256=EFEKJoyD62j8qI6--iP9LHgGUlVG7oTP76eBn5v26A4,10369
+msearch/main.py,sha256=CBQNaBDiaPMDBEWKFtrBI7rgpeBWr7llz47x5VUGKq4,103
+msearch/requirements.txt,sha256=oIxw7izR_V5i-CJJEk_SJMg-PQ3SYl1oNSunOfI-Mwg,7
+msearch/search.py,sha256=p0n_gKyG4ZJ_1aggCfHCdt6zyVNQjZ52zFsyVadRyoo,9323
+msearch/web.py,sha256=6B-6oiEwViC7tmGLPPBJCN2doutLkA8oiIzRt1PHdBw,322
+msearch/resources,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msearch-0.0.1.dist-info/METADATA,sha256=RuURqu2SxJvSHFmLSWf4K_4IDwsMDy-zly0MqREvP1A,886
+msearch-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+msearch-0.0.1.dist-info/entry_points.txt,sha256=gjtT_GZ96qZT0j7BjX3qHa9Fh6YE9NqSrLVvBCGrgZ8,40
+msearch-0.0.1.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msearch-0.0.1.dist-info/RECORD,,
