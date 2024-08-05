@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: virtual-aide
+Version: 0.1
+Summary: Required package to run assistant
+Requires-Python: >=3.6
+
