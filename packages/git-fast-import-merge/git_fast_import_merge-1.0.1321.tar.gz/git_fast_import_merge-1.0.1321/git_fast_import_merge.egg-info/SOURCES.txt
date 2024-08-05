@@ -1,0 +1,12 @@
+LICENSE
+README
+README.md
+git_fast_import_merge.py
+git_fast_import_merge.test.py
+git_fast_import_merge.tests.py
+setup.cfg
+setup.py
+git_fast_import_merge.egg-info/PKG-INFO
+git_fast_import_merge.egg-info/SOURCES.txt
+git_fast_import_merge.egg-info/dependency_links.txt
+git_fast_import_merge.egg-info/top_level.txt
