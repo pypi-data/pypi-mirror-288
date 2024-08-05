@@ -1,0 +1,20 @@
+
+from petdb.service.api import API, DEFAULT_PORT
+from petdb.service.pcollection import PetServiceCollection
+
+class PetServiceDB:
+
+	def __init__(self, password: str, port: int = DEFAULT_PORT):
+		self.__api = API(password, port)
+
+	def collection(self, name: str) -> PetServiceCollection:
+		return PetServiceCollection(name, self.__api)
+
+	def collections(self) -> list[str]:
+		return self.__api.collections()
+
+	def drop(self):
+		self.__api.drop_db()
+
+	def drop_collection(self, name: str):
+		self.__api.drop_collection(name)
