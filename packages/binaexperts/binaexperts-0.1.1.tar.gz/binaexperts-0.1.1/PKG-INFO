@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: binaexperts
+Version: 0.1.1
+Summary: SDK for Bina Experts to access BinaExperts' datasets and conduct ML projects
+Author: Mohammad Javad Rahimi
+Author-email: manre80@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# BinaExperts SDK
+
+This is an SDK for interacting with the Bina Experts API.
+
+## Installation
+
+```bash
+pip install binaexperts
