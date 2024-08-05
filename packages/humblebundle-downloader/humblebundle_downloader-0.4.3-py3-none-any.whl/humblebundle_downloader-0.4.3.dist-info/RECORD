@@ -1,0 +1,8 @@
+humblebundle_downloader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+humblebundle_downloader/cli.py,sha256=xjvnCbsE-h-ejNX1zYwLe2gVhDcyPHWVCngvBlx8bmI,3061
+humblebundle_downloader/download_library.py,sha256=MW_380DAPOOeSsNZwhHaYLvo4h0oYFDmKNp3EIds5xc,26046
+humblebundle_downloader-0.4.3.dist-info/LICENSE,sha256=UfqZGmiaTGQ49CCELwI9BQwehSbr4XQ-vho96qhwqNA,1078
+humblebundle_downloader-0.4.3.dist-info/METADATA,sha256=xsA86E71jYaVWAe-n9meGdFvr9YKWEfRsIFDLr33JEw,3914
+humblebundle_downloader-0.4.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+humblebundle_downloader-0.4.3.dist-info/entry_points.txt,sha256=lTtZwbxSiRKxPQrFhmYftkjcvRl9dvVllpYJlvFpIbU,55
+humblebundle_downloader-0.4.3.dist-info/RECORD,,
