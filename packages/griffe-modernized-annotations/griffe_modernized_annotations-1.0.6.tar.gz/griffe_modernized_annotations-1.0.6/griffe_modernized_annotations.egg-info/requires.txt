@@ -1,0 +1,11 @@
+griffe
+typing-extensions
+
+[dev]
+pytest
+mypy
+rich
+ruff
+
+[tests]
+pytest
