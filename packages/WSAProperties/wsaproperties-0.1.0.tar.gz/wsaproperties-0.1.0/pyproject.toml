@@ -1,0 +1,26 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+Issues = "https://t.me/cubebug"
+
+[tool.hatch.env]
+python_version = "3.8"
+
+[tool.hatch.project]
+description = "Package for calculating the properties of water and steam"
+license = "MIT License"
+
+[tool.poetry]
+name = "WSAProperties"
+version = "0.1.0"
+description = "Package for calculating the properties of water and steam"
+authors = ["Mikhael <shofer2007@gmail.com>", "Lev <ooooooorrrrr@gmail.com>"]
+readme = "README.md"
+packages = [{include = "WSAProperties"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+scipy = "^1.8"
+numpy = "^1.22"
