@@ -1,0 +1,14 @@
+ninja_crud/__init__.py,sha256=cgoLMurn9v7_x_5GTUbeiMoM3EbhfIAcZHBsKm-KsEA,86
+ninja_crud/views/__init__.py,sha256=-3L3iRqJQzPuQs8wEVpqZjLidekHl8d6udalvoxUQMs,318
+ninja_crud/views/api_view.py,sha256=QIOU87T89e-8-_sdU1oZei9fOgsacwLVnC5BgGfOkQo,14649
+ninja_crud/views/create_view.py,sha256=VBzsLLT-pbQ-UOJZNPm7lwtV_CV5Nzco7w-hbzELLCo,7974
+ninja_crud/views/delete_view.py,sha256=MQZWgE57A51r2nieH8Dcs5dnMmD3oEN2_Ns34RnG_i8,6653
+ninja_crud/views/list_view.py,sha256=SzQgMjhj46uBXvDqvpUlBsouUUhLwcLMi6hyD44B0mI,8057
+ninja_crud/views/read_view.py,sha256=87UdsMXYiN8pMRpFzOLTJAMe6UD3CS3xir517kOCnvc,5936
+ninja_crud/views/update_view.py,sha256=oaMzHo4Y7WC82x5qtMHxAiWpmnzcpl8D5Cp_AfoJTe0,8131
+ninja_crud/viewsets/__init__.py,sha256=dWSjF14TQbOFbIjfpNFkyLtsgDFQ1VlcB8DUGlvyaEY,62
+ninja_crud/viewsets/api_viewset.py,sha256=H8QShra5kqhe8W6tkL21Cfid-RItV9dysJPP0oj0C7Q,4794
+django_ninja_crud-0.6.1.dist-info/LICENSE,sha256=optnXGUPjzEVulZ9owl46WjDe1Fo2BeI4AZXzb4kBdQ,1069
+django_ninja_crud-0.6.1.dist-info/METADATA,sha256=bKI1yno4ZCbax4XaprKMktKHylFAUh3Av-NXx6IFaGg,11772
+django_ninja_crud-0.6.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_ninja_crud-0.6.1.dist-info/RECORD,,
