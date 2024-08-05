@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: accdbtools
+Version: 0.0.3
+Summary: convert accdb tables to csv files
+License: MIT
+Author: Zachary Hamida
+Author-email: zac.hamida@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: mdbtools (>=0.3.14,<0.4.0)
+Requires-Dist: pyodbc (>=4.0.39,<5.0.0)
