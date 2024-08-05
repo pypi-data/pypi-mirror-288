@@ -1,0 +1,18 @@
+{
+	"identifiers": [ "Proprietary", "proprietary" ],
+	"name": "Proprietary",
+	"url": null,
+	"classifier": "License :: Other/Proprietary License",
+	"variables": [
+		{
+			"name": "copyrightHolder",
+			"type": "str",
+			"description": "The name of the copyright holder"
+		},
+		{
+			"name": "year",
+			"type": "int|str",
+			"description": "The year either as a number such as 2019 or as a range such as 2011-2019"
+		}
+	]
+}

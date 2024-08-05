@@ -1,0 +1,6 @@
+{
+	"identifiers": [ "Apache2", "Apache-2.0" ],
+	"name": "Apache License 2.0",
+	"url": "https://opensource.org/licenses/Apache-2.0",
+	"classifier": "License :: OSI Approved :: Apache Software License"
+}

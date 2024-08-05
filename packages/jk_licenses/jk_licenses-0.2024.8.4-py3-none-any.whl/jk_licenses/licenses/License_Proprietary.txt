@@ -1,0 +1,5 @@
+Copyright (c) {{year}} by {{copyrightHolder}}
+
+This software is genuine work created by {{copyrightHolder}}.
+Distribution as source code or in compiled form in whole or in part is prohibited.
+
