@@ -1,0 +1,2 @@
+
+from evo_package_assistant.control.CAssistantApi import CAssistantApi
