@@ -1,0 +1,29 @@
+Metadata-Version: 2.3
+Name: msearch
+Version: 0.0.1
+Summary: Search web, hf, pypi, stackovf
+Project-URL: Documentation, https://github.com/mbodiai/msearch#readme
+Project-URL: Issues, https://github.com/mbodiai/msearch/issues
+Project-URL: Source, https://github.com/mbodiai/msearch
+Author: mbodiai
+License-Expression: Apache-2.0
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# msearch
+
+Search web, hf, pypi, stackovf
+
+## Installation
+
+```bash
+pip install msearch
+```
