@@ -1,0 +1,10 @@
+streamlit_analytics2/__init__.py,sha256=0AH8HDM6vPBsova0UO6vobOMitC8wJFkQrZh0e8ialU,100
+streamlit_analytics2/display.py,sha256=ORga1K7B7ajIiukbjU5DRK2I3u5c5NQiZHcPGJVDOF8,6029
+streamlit_analytics2/firestore.py,sha256=zya3uN0eQr18bhC0xO8LrgbacCldcUqSynMxiMLH4MQ,2962
+streamlit_analytics2/main.py,sha256=DIH8p2_QMAzeX8_gGJdghc5_onBssdy321HpqvvogIw,22937
+streamlit_analytics2/utils.py,sha256=zm6EtrL44ZDfuonCvAA_mAp3ecGdO70RrRNvv2FlaaM,715
+streamlit_analytics2-0.8.1.dist-info/LICENSE,sha256=kVsZb4oHXaeVxpN0E5BVj2w8btyAW8k1cwEs90APcsY,1096
+streamlit_analytics2-0.8.1.dist-info/METADATA,sha256=DGonp4P6pGe8jbfQEndu-iL0kckR61-9JstGmlOTYNI,7739
+streamlit_analytics2-0.8.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+streamlit_analytics2-0.8.1.dist-info/top_level.txt,sha256=zlKYgXiEOEQZo7xcXYPPaMZcYq-zl4Vfyp5ym3r70NI,21
+streamlit_analytics2-0.8.1.dist-info/RECORD,,
