@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: efficient-linear-decoding
+Version: 0.0.1
+Summary: Efficient computation library for linear attention.
+Home-page: https://github.com/Computational-Machine-Intelligence/efficient_linear_decoding
+Author: Jiaping Wang
+Author-email: wjp666.s@gmail.com
+License: MIT Licence
+Keywords: pip,efficient_linear_decoding
+Platform: any
