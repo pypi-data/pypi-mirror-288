@@ -1,0 +1,9 @@
+cohesion_calculator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cohesion_calculator/cohesion.py,sha256=Zny2OxRKJWOwxMIuvh8F3fILJL0VYJi1k1nS5tXGRjk,2183
+cohesion_calculator/log.py,sha256=NzPE3hju-xFJ9rRN7ayCUL7hrwQX8q6zIkHk7ABYpQU,7751
+cohesion_calculator/span.py,sha256=4x4QB79OVnRRgmE3VgVdzhNaVkfzkcuG39W8r-_7w9Y,6521
+cohesion_calculator/trace.py,sha256=oXefSyC2JK1rTOrKoXwe3gez8eqjQ-KyD46_SDoH3Vw,7074
+cohesion_measuring-0.1.dist-info/METADATA,sha256=HqiWplmEvPeHJnfFn11Okawm2HQOfI3nk6VTtqThJ1U,1519
+cohesion_measuring-0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cohesion_measuring-0.1.dist-info/top_level.txt,sha256=GOtKcgy_zo_KLC2L4hn-drZfbXuAgc-uw8yb5RP6B_s,20
+cohesion_measuring-0.1.dist-info/RECORD,,
