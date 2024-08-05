@@ -1,0 +1,2 @@
+[console_scripts]
+linkedin_search_job = linkedin_search_job.scraper:main

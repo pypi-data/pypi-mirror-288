@@ -1,0 +1,10 @@
+linkedin_search_job/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+linkedin_search_job/scraper.py,sha256=kji8vRM9HGfyko7MLEpy0V8lRC6Icb_kWtioj6Lu994,1622
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_scraper.py,sha256=Xcsbc-GfszHaOqR30GvKLTC82zCbWo_V9VTSTpibXME,504
+linkedin_job_search-0.1.0.dist-info/LICENSE,sha256=8gVUTlopzZEcDhPn5YjhxuMoLp5o1dl-WGaE_oyfTL8,1090
+linkedin_job_search-0.1.0.dist-info/METADATA,sha256=kDZvxUkzGWsQiTc2-UCS_oK2sYOcrEDkq6HDH1G0oG0,3894
+linkedin_job_search-0.1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+linkedin_job_search-0.1.0.dist-info/entry_points.txt,sha256=OZkNO7w0sRqYigsyHqYDmhwURu-7K6ZveRliHEGC8vg,73
+linkedin_job_search-0.1.0.dist-info/top_level.txt,sha256=2LNZDTJ9wJbFAfAGXvMy7WlL_HeBYe8gazodH42bLtM,26
+linkedin_job_search-0.1.0.dist-info/RECORD,,
