@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: untappdscr
+Version: 1.1.0
+Summary: An https://untappd.com scraper.
+Home-page: https://github.com/GiorgosXou/untappdscr
+Author: George Chousos
+Author-email: gxousos@gmail.com
+Requires-Dist: BeautifulSoup4
+Requires-Dist: dacite
