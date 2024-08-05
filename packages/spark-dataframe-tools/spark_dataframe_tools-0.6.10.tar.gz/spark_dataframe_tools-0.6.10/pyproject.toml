@@ -1,0 +1,36 @@
+[project]
+name = "spark_dataframe_tools"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    { name = "jonathan", email = "jony327@gmail.com" },
+]
+dependencies = [
+    "pandas==1.5.3",
+    "numpy==1.25.2",
+    "pyspark==3.1.1",
+    "findspark>=2.0.1",
+    "pyarrow>=17.0.0",
+    "setuptools==58.2.0",
+    "wheel>=0.40.0",
+    "jinja2>=3.1.4",
+    "sizebytes-tools>=0.0.3",
+    "color-tools>=0.0.2",
+    "faker>=26.1.0",
+    "prettytable>=3.10.2",
+    "pyhocon>=0.3.61",
+    "humanize>=4.10.0"
+]
+requires-python = "==3.9.*"
+readme = "README.md"
+license = { text = "MIT" }
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "twine>=5.1.1",
+    "jupyterlab>=4.2.4",
+]
