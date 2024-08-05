@@ -1,0 +1,11 @@
+manage_sql/MYSQL.py,sha256=H4Bg4b8BoJNXMSDL4BC6vTKE112wGZ_wnkpEwobskWw,23838
+manage_sql/POSTGRESQL.py,sha256=6o0XPsT2uqQ9kFwQFB6l0dXGt4q5unus0BrsMLIRDmQ,25490
+manage_sql/SQLITE.py,sha256=sfyAB9ankd4o84dHDYOxj-ITZradx1t9x03Ty_lO7AU,20785
+manage_sql/__init__.py,sha256=3u7cAkN4g04zV9ATuDvG0OHvfJxUOzJZc8eBWmPG704,777
+test_manage_sql/__init__.py,sha256=U3bK-sA2KpmhixkZkEUESNnCNjkj63zIukUvSn1WZAo,35
+test_manage_sql/test_SQLITE.py,sha256=2-MaBdDiMxBN9DqpLtHEy4LMmU8sJ90FQZr_q8df3nc,3851
+manage_sql-0.5.1.dist-info/LICENCE,sha256=Jrj79HT3Z-YHl370yCwRDTNJE2EjDOuspVtay-FVMWE,1090
+manage_sql-0.5.1.dist-info/METADATA,sha256=HLkZ4AswTM_c3Soac6bZP72g1291ucepRbxGoEKtJVI,16517
+manage_sql-0.5.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+manage_sql-0.5.1.dist-info/top_level.txt,sha256=xlAusArQN6Gb_3qRUjLiAElDyZgZMPMPsmiz54KZS7M,27
+manage_sql-0.5.1.dist-info/RECORD,,
