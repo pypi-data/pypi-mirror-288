@@ -1,0 +1,2 @@
+[console_scripts]
+pulsar-viewer = pulsar_viewer.toga.main:cli_main
