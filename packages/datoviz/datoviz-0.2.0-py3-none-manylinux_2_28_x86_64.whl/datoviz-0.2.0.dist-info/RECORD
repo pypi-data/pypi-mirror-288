@@ -1,0 +1,7 @@
+datoviz/__init__.py,sha256=H1I0kKnW7xIs2MkS3hAyksLZkLuWmXlHrtHhCJ5qgt8,91886
+datoviz/libdatoviz.so,sha256=btQet0TaAN5hWArHtG3KzulRptZXrEwVqu8KXiTypNo,11070392
+datoviz/libvulkan.so.1,sha256=IO4IVUVcI3aetZpUDSwDY3nKx_w3e-2pNS5QXlUvXxw,734968
+datoviz-0.2.0.dist-info/METADATA,sha256=fCvYiVNUyyW_KiOwHS7T0h6XoDBmyx0mW5MAMRtnlKM,649
+datoviz-0.2.0.dist-info/WHEEL,sha256=e7iqHJ9CDiO4pq5j8nr1v3fBdjgxIepLuigUu9brItE,109
+datoviz-0.2.0.dist-info/top_level.txt,sha256=ZaZtmaWMHkuB-uc2uYfnY6SKvxtbEDksGwfJ8a5nsCI,8
+datoviz-0.2.0.dist-info/RECORD,,
