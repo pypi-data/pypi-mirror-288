@@ -1,0 +1,16 @@
+datoviz/__init__.py,sha256=KlC2vorvGAEDacJW1raQjXhlvJkK2YH3eZQJy0dBG1w,95348
+datoviz/brotlicommon.dll,sha256=HqyuJvgaXzT-i_U-276XZUX2CHW9pe7A9paL8hPu9g0,137728
+datoviz/brotlidec.dll,sha256=POTTz1zUh9U4CHsv5wWXdGAqS8jgZmMquZvSF8TeQ0Y,50688
+datoviz/bz2.dll,sha256=obS2wdafS3iy3tQP0XDf1RE-rwO3sH6kyfiLKvKI1Uo,76288
+datoviz/freetype.dll,sha256=U0A1u0-sbjeKbJlrOhoms8uLToDIKxhJgbvZpT_xqZk,691712
+datoviz/libdatoviz.dll,sha256=lnG0qbyJdsA4edR_mbAkM5D3yAltmL2vEn31SLGzt7Y,18279033
+datoviz/libgcc_s_seh-1.dll,sha256=-3LAgTU6OulcTFM4CvgQGSZoYwZXiQNO91gWpK1Qc_A,929975
+datoviz/libpng16.dll,sha256=U_m8F8dM_JZZcZIz7dHRISyPZz3aBuNlhk28Ar_FZww,202240
+datoviz/libstdc++-6.dll,sha256=qjewjAysNLXQuycw0uEEfjT-XRo4TI6IZvD0yjTMTX0,2373257
+datoviz/libwinpthread-1.dll,sha256=JVbeRYsYN8JzEO9wb78mZ9kzML5L34u2ODb1f-Qm1ik,94595
+datoviz/vulkan-1.dll,sha256=vHAB8XVo5YbMQiRmj3mUEW8dlhto6YNuE1Lq_EXcRAY,1442584
+datoviz/zlib1.dll,sha256=oMZalFS2p8oZiQNl-6LOvlxT3Y4HTeWM98IqM1iyVus,90624
+datoviz-0.2.0.dist-info/METADATA,sha256=fCvYiVNUyyW_KiOwHS7T0h6XoDBmyx0mW5MAMRtnlKM,649
+datoviz-0.2.0.dist-info/WHEEL,sha256=87BRyezC8KnrcMI_z4tCzFYC3DxpD7TAVunwk556SAc,97
+datoviz-0.2.0.dist-info/top_level.txt,sha256=ZaZtmaWMHkuB-uc2uYfnY6SKvxtbEDksGwfJ8a5nsCI,8
+datoviz-0.2.0.dist-info/RECORD,,
