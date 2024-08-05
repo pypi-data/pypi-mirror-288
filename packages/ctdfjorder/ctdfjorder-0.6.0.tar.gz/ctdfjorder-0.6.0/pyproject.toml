@@ -1,0 +1,53 @@
+[build-system]
+requires = ["poetry-core>=1.8.3"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = true
+name = "ctdfjorder"
+version = "0.6.0"
+description = "A package for processing and analyzing CTD data."
+homepage = "https://github.com/nikothomas/ctdfjorder"
+repository = "https://github.com/nikothomas/ctdfjorder"
+documentation = "https://nikothomas.github.io/ctdfjorder/"
+readme = "README.md"
+authors = ["Nikolas Yanek-Chrones <research@icarai.io>"]
+license = "MIT"
+keywords = ["CTD"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+packages = [{include = "ctdfjorder"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+torch = ">=2.4.0"
+polars = ">=1.4.1"
+psutil = "^6.0.0"
+pandas = ">=2.2.2"
+openpyxl = ">=3.1.4"
+numpy = ">=2.0.0"
+gsw = ">=3.6.18"
+matplotlib = ">=3.9.0"
+statsmodels = ">=0.14.2"
+pyarrow = ">=17.0.0"
+fastexcel = ">=0.10.4"
+rich-argparse = "^1.5.2"
+rich = "^13.7.1"
+plotly = "^5.20.0"
+dash = "^2.17.1"
+flask = "^3.0.3"
+pytest = "^8.3.1"
+scikit-learn = "^1.5.1"
+
+[tool.poetry.urls]
+homepage = "https://github.com/nikothomas/ctdfjorder"
+issues = "https://github.com/nikothomas/ctdfjorder/issues"
+
+[tool.poetry.scripts]
+ctdcli = "ctdfjorder.cli.cli:main"
+
+
