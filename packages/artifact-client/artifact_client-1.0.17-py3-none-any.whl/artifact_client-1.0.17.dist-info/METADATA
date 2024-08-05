@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: artifact-client
+Version: 1.0.17
+Summary: Artifact Client API
+Home-page: 
+Author: OpenAPI Generator community
+Author-email: team@openapitools.org
+Keywords: OpenAPI,OpenAPI-Generator,Artifact Client API
+Description-Content-Type: text/markdown
+Requires-Dist: urllib3 <2.1.0,>=1.25.3
+Requires-Dist: python-dateutil
+Requires-Dist: pydantic >=2
+Requires-Dist: typing-extensions >=4.7.1
+
+    API for interacting with the Artifact Client.
+    
