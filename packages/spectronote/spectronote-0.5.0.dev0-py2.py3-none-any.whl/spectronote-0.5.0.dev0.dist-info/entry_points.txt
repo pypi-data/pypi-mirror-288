@@ -1,0 +1,2 @@
+[console_scripts]
+spectronote = SpectroNote.__main__:main
