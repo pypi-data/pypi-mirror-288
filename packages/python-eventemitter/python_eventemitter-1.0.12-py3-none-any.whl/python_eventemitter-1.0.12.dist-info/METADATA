@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: python-eventemitter
+Version: 1.0.12
+Summary: A Python port of Node.js EventEmitter that supports both synchronous and asynchronous event execution
+Home-page: https://github.com/jonghwanhyeon/python-eventemitter
+Author: Jonghwan Hyeon
+Author-email: jonghwanhyeon93@gmail.com
+License: MIT
+Keywords: eventemitter,event
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typing-extensions
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: griffe-generics ; extra == 'dev'
+Requires-Dist: griffe-modernized-annotations ; extra == 'dev'
+Requires-Dist: mkdocs ; extra == 'dev'
+Requires-Dist: mkdocs-material ; extra == 'dev'
+Requires-Dist: mkdocstrings[python] ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: rich ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: black ; extra == 'docs'
+Requires-Dist: griffe-generics ; extra == 'docs'
+Requires-Dist: griffe-modernized-annotations ; extra == 'docs'
+Requires-Dist: mkdocs ; extra == 'docs'
+Requires-Dist: mkdocs-material ; extra == 'docs'
+Requires-Dist: mkdocstrings[python] ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
+# python-eventemitter
+![Build status](https://github.com/jonghwanhyeon/python-eventemitter/actions/workflows/publish.yml/badge.svg)
+
+A Python port of Node.js EventEmitter that supports both synchronous and asynchronous event execution
+
+## Help
+See [documentation](https://python-eventemitter.readthedocs.io) for more details
+
+## Install
+To install **python-eventemitter**, simply use pip:
+
+```console
+$ pip install python-eventemitter
+```
+
+## Usage
+### Synchronous API
+```python
+from eventemitter import EventEmitter
+
+
+def main():
+    ee = EventEmitter()
+
+    sounds: list[str] = []
+
+    ee.add_listener("sound", lambda: sounds.append("woof"))
+    ee.prepend_listener("sound", lambda: sounds.append("meow"))
+    ee.on("sound", lambda: sounds.append("oink"))
+
+    @ee.on("sound")
+    def from_cow():
+        sounds.append("moo")
+
+    @ee.once("sound")
+    def from_bee():
+        sounds.append("buzz")
+
+    ee.emit("sound")  # Run events in order
+    print(sounds)  # ['meow', 'woof', 'oink', 'moo', 'buzz']
+
+
+if __name__ == "__main__":
+    main()
+```
+
+### Asynchronous API
+``` python
+import asyncio
+
+from eventemitter import AsyncIOEventEmitter
+
+
+async def main():
+    aee = AsyncIOEventEmitter()
+
+    sounds: set[str] = set()
+
+    aee.add_listener("sound", lambda: sounds.add("woof"))
+    aee.prepend_listener("sound", lambda: sounds.add("meow"))
+    aee.on("sound", lambda: sounds.add("oink"))
+
+    @aee.on("sound")
+    def from_cow():
+        sounds.add("moo")
+
+    @aee.once("sound")
+    async def from_bee():
+        sounds.add("buzz")
+
+    await aee.emit("sound") # Run events concurrently
+    print(sounds)  # {'woof', 'meow', 'buzz', 'moo', 'oink'}
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
