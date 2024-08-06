@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+Mangrove.egg-info/PKG-INFO
+Mangrove.egg-info/SOURCES.txt
+Mangrove.egg-info/dependency_links.txt
+Mangrove.egg-info/requires.txt
+Mangrove.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py
+src/install.py
+src/integrity.py
