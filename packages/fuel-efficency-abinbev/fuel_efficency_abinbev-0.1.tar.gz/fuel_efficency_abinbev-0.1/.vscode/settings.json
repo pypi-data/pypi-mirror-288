@@ -1,0 +1,45 @@
+{
+    "python.defaultInterpreterPath": "/Users/michaelroothsjr/.pyenv/versions/3.9.12/bin/python",
+    "python.autoComplete.extraPaths": [
+        "/Users/michaelroothsjr/.pyenv/versions/3.9.12/lib/python3.8/site-packages"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "editor.wordWrap": "on",
+    "files.trimTrailingWhitespace": true,
+    "debug.allowBreakpointsEverywhere": true,
+    "debug.console.fontSize": 10,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "workbench.preferredLightColorTheme": "Default Dark+",
+    "workbench.preferredHighContrastColorTheme": "Default Dark+",
+    "workbench.fontAliasing": "antialiased",
+    "workbench.view.alwaysShowHeaderActions": true,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorWidth": 2,
+    "python.terminal.activateEnvironment": true,
+    "git.enableCommitSigning": true,
+    "python.analysis.extraPaths": [
+        "/Users/michaelroothsjr/.pyenv/versions/3.9.12/lib/python3.8/site-packages",
+        "/Users/michaelroothsjr/.pyenv/shims/"
+    ],
+    "python.languageServer": "Pylance",
+    "python.envFile": "${workspaceFolder}/.databricks/.databricks.env",
+    "testing.defaultGutterClickAction": "debug",
+    "python.testing.pytestArgs": [
+        "tests",
+        "--disable-warnings",
+        "-m not (integration or cluster_integration_test or tensorflow)",
+        "-vv"
+    ],
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "editor.defaultFormatter": "ms-python.python",
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+    }
+
+}
