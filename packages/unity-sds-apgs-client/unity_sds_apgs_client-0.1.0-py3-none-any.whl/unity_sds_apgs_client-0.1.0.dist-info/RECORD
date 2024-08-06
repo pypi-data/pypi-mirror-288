@@ -1,0 +1,14 @@
+unity_sds_apgs_client/__init__.py,sha256=mAtchuAoLH0u2OTKcsFFKbtjRms0mCtLysN8oZPGEOY,902
+unity_sds_apgs_client/api/__init__.py,sha256=D6he85id_8UqN2u3SDk_ZGmzXq0PPAJTytg91qht-ZM,108
+unity_sds_apgs_client/api/default_api.py,sha256=u2N5ODqikAO3GJsd_OmgULOGU0kPviIM2z2hggyR2_E,10646
+unity_sds_apgs_client/api_client.py,sha256=H-ZArSjrUPXGLsQJshfmZ2uRU5a0HRYbuetXfE6D1Ss,25971
+unity_sds_apgs_client/api_response.py,sha256=rSuCVGY-HE8X_WwteQP5wyANIuS-L5AmtZEUOwTicak,641
+unity_sds_apgs_client/configuration.py,sha256=DSm9SOnkf5-pnyfX297fGvm4cx6zD6iQGx8_pZDF9ck,15292
+unity_sds_apgs_client/exceptions.py,sha256=9K0uxMuoJsSziMbqlbIUP5hgYipNY22G4thv4WbgFmM,5865
+unity_sds_apgs_client/models/__init__.py,sha256=IjUjrFsIuQ3teKh3laypWkl8IfDooFk0fYSUEwqzAAI,425
+unity_sds_apgs_client/models/ads_acb_mcp_clone_get200_response.py,sha256=fbjX6H3TX4AxNXdTHC7lROqo3cgvpoMhJgGYJCSOJ1M,2640
+unity_sds_apgs_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unity_sds_apgs_client/rest.py,sha256=uaGnb7a1455cwV2RCcBZqkLN9CWcCn70UNq2yLK1s00,9192
+unity_sds_apgs_client-0.1.0.dist-info/METADATA,sha256=18aeuwl_nBCU6tRqIQy0waWUFiJa1eF1ud1wy-Zv1WQ,4080
+unity_sds_apgs_client-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+unity_sds_apgs_client-0.1.0.dist-info/RECORD,,
