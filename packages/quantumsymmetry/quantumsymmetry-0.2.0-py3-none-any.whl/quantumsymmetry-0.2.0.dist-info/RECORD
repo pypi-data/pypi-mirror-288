@@ -1,0 +1,8 @@
+quantumsymmetry/__init__.py,sha256=dmo-gUsP-3WLwNCjLRfVFrymh10fJET_k619ObLBOSU,225
+quantumsymmetry/core.py,sha256=VKCosQH5dgUqeE6vvLKDDPa43QScHy1fr9961iaq1EQ,60338
+quantumsymmetry/encoding.py,sha256=J8VzwxPRqP9xToRkn0RymLLa0REUDvtJpb6_wmijzWY,14915
+quantumsymmetry/qiskit_converter.py,sha256=6I13lUad3-Y5P5hqOFVUXwKMAFU4j4h71MYRiKZIghA,9329
+quantumsymmetry-0.2.0.dist-info/LICENSE,sha256=dTp14f4NWOt8FaqisE8qVOUDM8uiW4mzf1jzCyQvjEs,35095
+quantumsymmetry-0.2.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+quantumsymmetry-0.2.0.dist-info/METADATA,sha256=hDTSp3MRPfOCiuwhEmUf3oHFCU-RUcp7-GOgnnmAYVE,1366
+quantumsymmetry-0.2.0.dist-info/RECORD,,
