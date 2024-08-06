@@ -1,0 +1,41 @@
+[project]
+name = "beancount-stubs"
+version = "0.1.4"
+dependencies = ["beancount>=2.3.6,<3"]
+requires-python = ">= 3.8.18"
+authors = [{ name = "Joshua Gilman", email = "joshuagilman@gmail.com" }]
+description = "Stub files for the beancount package"
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["beancount", "stubs", "mypy", "types"]
+
+[project.urls]
+Repository = "https://github.com/jmgilman/beancount-stubs"
+
+[tool.rye]
+managed = true
+dev-dependencies = ["mypy>=1.11", "twine>=5.1.1"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.lint.per-file-ignores]
+"**/*.pyi" = [
+  "E301",
+  "E302",
+  "E305",
+  "E501",
+  "E701",
+  "E741",
+  "F401",
+  "F403",
+  "F405",
+  "F822",
+]
