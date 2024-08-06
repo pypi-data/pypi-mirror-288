@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "nufictl"
+version = "1.0.1"
+description = "NufiCTL is a command-line tool for managing CRD Npu Deployments."
+authors = ["DongHyun <ydh0924@gmail.com>"]
+readme = "README.md"
+exclude = ["config.yaml"]
+include = ["nufictl/*", "README.md"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+setuptools = "^72.1.0"
+fire = "^0.6.0"
+pyyaml = "^6.0.1"
+tabulate = "^0.9.0"
+
+[tool.poetry.scripts]
+nufictl = "nufictl.nufictl:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
