@@ -1,0 +1,14 @@
+projectcard/__init__.py,sha256=nexWzo4LmhAZzNleWeg4PTNfk8Y6fZlTUx-hTMOTF0o,284
+projectcard/io.py,sha256=nX0InpXRjGWn7PUBWl6ZUnZU9BcZP8E_v_5BBly9wPI,7861
+projectcard/logger.py,sha256=qlKpkFwDKTU8v3oZwv_r3MM_wu4LfmBubrKKOtehXs0,2360
+projectcard/projectcard.py,sha256=zvqHZc1wfKNStWMgu87FMket4RmYrWL7DVriJ9msgr0,9121
+projectcard/update.py,sha256=IYLPd8W_VM6tKAL7GbJYtRp6aqAuhN-ErDPZw1UrRcU,17339
+projectcard/utils.py,sha256=ID3Tcjds972SESfQU4YuBAKzw6XPZAhWqkWYL9W4AYo,1357
+projectcard/validate.py,sha256=sYkC9olZb_6TL4W2Jy0DTu7tJctGUgxaDK_ZDDmLoVY,6912
+projectcard-0.1.2.data/scripts/update_projectcard_schema,sha256=LViaEuctZ8hU15GJqclNmso9D3zEIhVHGsOAI00XxR4,1113
+projectcard-0.1.2.data/scripts/validate_card,sha256=okrPIkHYZ7RnAcsacwkNfnBlnMbHyTlTwM54e18IFmA,1138
+projectcard-0.1.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+projectcard-0.1.2.dist-info/METADATA,sha256=cLAHaO-RPUpw0l3N3hFehZ81-wJPgRF9oevQo3I0ZQ0,16105
+projectcard-0.1.2.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+projectcard-0.1.2.dist-info/top_level.txt,sha256=dAvxy-Hd2mFXxC3Hw9sTxVNTLqdbVW2ktNwpO1LdUd4,12
+projectcard-0.1.2.dist-info/RECORD,,
