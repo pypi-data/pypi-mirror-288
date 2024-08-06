@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: text_sanitization_suite
+Version: 0.2
+Summary: Text Sanitization Suite is a robust Python package designed for personas who work in Data Science Domain i.e Data Scientists, Data Analysts, AI Engineers, Machine learning professionals to efficiently clean and prepare text data. 
+Author: Gaurav Singh
+Author-email: gauravdsmailbox@gmail.com
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Text Sanitization Suite is a powerful Python package designed for data scientists and machine learning professionals to enhance data quality and model performance through comprehensive preprocessing. It supports multiple languages i.e English, French, German, Spanish, Italian, Portuguese, Dutch. 
+
+It is tailored for data preprocessing workflows, focusing on transforming raw text into structured data for analysis and modeling.Ideal for tasks like Text Classification, Sentiment Analysis, Topic Modeling, and Named Entity Recognition. Also it efficiently removes sensitive PII Information (PII).
