@@ -1,0 +1,58 @@
+import re
+
+class TextCase:
+    simbol = ".-_/\ "
+    kapital = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    cpattern = re.compile(r'(?=[ \-_/\.\\A-Z])')
+
+    def __init__(self, text:str) -> None:
+        self.text = self.explode(text)
+        print(self.text)
+
+    def explode(self, text):
+        return self.cpattern.split(text)
+
+    def ToTitleCase(self):
+        r = ""
+        for i in self.text:
+            if i:
+                r += i.title()
+        return r
+
+    def to_snake_case(self):
+        r = ""
+        for i in self.text:
+            print(i)
+            if len(i):
+                r += i.lower()
+            else:
+                r += "_"
+        return r
+
+    def toCamelCase(self):
+        r = ""
+        for i in self.text:
+            if i:
+                if r:
+                    r += i.title()
+                else:
+                    r += i.lower()
+        return r
+
+    def to_path_case(self):
+        r = ""
+        for i in self.text:
+            if i:
+                r += i
+            else:
+                r += "/"
+        return r
+
+    def to_dot_case(self):
+        r = ""
+        for i in self.text:
+            if i:
+                r += i
+            else:
+                r += "."
+        return r
