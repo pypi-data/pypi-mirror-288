@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: audiosample
+Version: 2.1.4
+Summary: AudioSample is an optimized numpy-like audio manipulation library, created for researchers, used by developers.
+Home-page: https://deepdub.ai
+Author: Nir Krakowski
+Author-email: nir@deepdub.ai
+License: MIT
+Project-URL: Source, https://github.com/deepdub-ai/audiosample
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy<=1.23.5
+Provides-Extra: jupyter
+Requires-Dist: jupyter; extra == "jupyter"
+Requires-Dist: IPython; extra == "jupyter"
+Requires-Dist: librosa; extra == "jupyter"
+Requires-Dist: matplotlib; extra == "jupyter"
+Provides-Extra: torch
+Requires-Dist: torch>=1.5; extra == "torch"
+Provides-Extra: noui
+Requires-Dist: torch>=1.5; extra == "noui"
+Requires-Dist: av; extra == "noui"
+Provides-Extra: av
+Requires-Dist: av; extra == "av"
+Provides-Extra: play
+Requires-Dist: pyaudio; extra == "play"
+Provides-Extra: all
+Requires-Dist: jupyter; extra == "all"
+Requires-Dist: IPython; extra == "all"
+Requires-Dist: librosa; extra == "all"
+Requires-Dist: matplotlib; extra == "all"
+Requires-Dist: pyaudio; extra == "all"
+Requires-Dist: torch>=1.5; extra == "all"
+Requires-Dist: av; extra == "all"
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: jupyter; extra == "tests"
+Requires-Dist: IPython; extra == "tests"
+Requires-Dist: librosa; extra == "tests"
+Requires-Dist: matplotlib; extra == "tests"
+Requires-Dist: scipy; extra == "tests"
+Requires-Dist: pyaudio; extra == "tests"
+Requires-Dist: torch>=1.5; extra == "tests"
+Requires-Dist: av; extra == "tests"
+
+# audiosample
+AudioSample is an optimized numpy-like audio manipulation library, created for researchers, used by developers.
