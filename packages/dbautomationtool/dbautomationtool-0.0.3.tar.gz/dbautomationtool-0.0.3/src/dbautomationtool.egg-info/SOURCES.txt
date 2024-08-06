@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/dbautomationtool.egg-info/PKG-INFO
+src/dbautomationtool.egg-info/SOURCES.txt
+src/dbautomationtool.egg-info/dependency_links.txt
+src/dbautomationtool.egg-info/requires.txt
+src/dbautomationtool.egg-info/top_level.txt
+src/mongodb_connect/__init__.py
+src/mongodb_connect/mongo_crud.py
