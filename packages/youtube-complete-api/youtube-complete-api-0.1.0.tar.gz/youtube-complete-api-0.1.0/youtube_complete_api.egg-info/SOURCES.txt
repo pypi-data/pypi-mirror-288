@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+tests/__init__.py
+tests/test_youtube_client.py
+youtube_complete_api/__init__.py
+youtube_complete_api/youtube_client.py
+youtube_complete_api.egg-info/PKG-INFO
+youtube_complete_api.egg-info/SOURCES.txt
+youtube_complete_api.egg-info/dependency_links.txt
+youtube_complete_api.egg-info/requires.txt
+youtube_complete_api.egg-info/top_level.txt
