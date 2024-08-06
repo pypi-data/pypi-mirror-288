@@ -1,0 +1,12 @@
+LICENSE
+setup.py
+fbxloader/__init__.py
+fbxloader/converter.py
+fbxloader/nodes.py
+fbxloader/utils.py
+fbxloader.egg-info/PKG-INFO
+fbxloader.egg-info/SOURCES.txt
+fbxloader.egg-info/dependency_links.txt
+fbxloader.egg-info/entry_points.txt
+fbxloader.egg-info/requires.txt
+fbxloader.egg-info/top_level.txt
