@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: WedgieIntegrator
+Version: 0.1.2.11
+Summary: An API client toolkit that is async friendly
+Home-page: https://github.com/deathbywedgie/WedgieIntegrator
+Author: Chad Roberts
+Author-email: jcbroberts@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx
+Requires-Dist: pydantic
+Requires-Dist: tenacity
+Requires-Dist: structlog
+Requires-Dist: aiolimiter
+
+# WedgieIntegrator
+WedgieIntegrator is an async friendly package for Python which acts as API client toolkit for creating and managing API clients with ease.
+
+## Features
+
+- Fully asynchronous
+- Simple configuration
+- Multiple authentication strategies
+- Retry mechanisms
+- Pagination
+- Helpful logging
+
+## Installation
+
+```bash
+pip install WedgieIntegrator
+```
+
+
+# ToDo
+- Add pagination option where the response can provide all remaining links at once
+- Break out the steps for inspecting httpx responses. This way an overridden method could apply custom exceptions without 
+  having to override the entire send_request method.
+- Add automatic wait & retry for connection errors
+- Add automatic wait & retry for rate limit errors
+- More tests
+- Documentation
+- sample scripts, or perhaps a library of specific API configurations
+- Review all non-async methods and consider making them async
+
+- kinda done: Add rate limiting (safe for Python 3.7)
