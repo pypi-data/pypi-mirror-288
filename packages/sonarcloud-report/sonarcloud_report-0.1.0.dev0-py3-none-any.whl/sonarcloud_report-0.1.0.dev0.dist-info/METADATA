@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sonarcloud_report
+Version: 0.1.0.dev0
+Summary: Tool used to generate a report about the latest SonarCloud analysis of a project.
+Author-email: "cedric.fdl-lupin" <cedric.fdl-ext@lupindental.com>
+Maintainer-email: "cedric.fdl-lupin" <cedric.fdl-ext@lupindental.com>
+License: MIT license
+Project-URL: homepage, https://gitlab.com/lupindental/arsene/devops/sonarcloud_report
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: typer
+Requires-Dist: python-sonarqube-api
+Provides-Extra: dev
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+# sonarcloud_report
+
+Tool used to generate a report about the latest SonarCloud analysis of a project.
