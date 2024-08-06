@@ -1,0 +1,36 @@
+[project]
+name = "cloudflare-images"
+description = "Wrapper around Cloudflare Images API"
+version = "0.1.8"
+authors = [
+  {name="Marcelino Veloso III", email="hi@mv3.dev" }
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "start-cloudflare >= 0.0.5",
+  "httpx >= 0.24",
+]
+
+[project.optional-dependencies]
+dev = [
+  "rich >= 13.3",
+  "pytest >= 8.3",
+  "pytest-cov >= 4.1",
+  "build >= 1.0.3",
+  "twine >= 4.0.2",
+]
+
+[tool.pytest.ini_options]
+minversion = "8.3"
+addopts = "-ra -q --doctest-modules --cov"
+# filterwarnings = ["ignore::DeprecationWarning"] see pkg_resources
+testpaths = ["src"]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+ignore = ["F401", "F403"]
+fixable = ["F", "E", "W", "I001"]
+select = ["F", "E", "W", "I001"]
