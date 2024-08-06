@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: nstm
+Version: 0.0.5
+Summary: This is a test for my python package upload to pypi
+Home-page: https://github.com/powerjsv/jsv_package_test
+Author: powerjsv
+Author-email: powerjsv12@gmail.com
+Keywords: vton,powerjsv,toy project,pypi
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
+Requires-Dist: pip==23.3.1
+Requires-Dist: accelerate==0.25.0
+Requires-Dist: tqdm==4.66.1
+Requires-Dist: transformers==4.36.2
+Requires-Dist: diffusers==0.25.0
+Requires-Dist: einops==0.7.0
+Requires-Dist: bitsandbytes==0.39.0
+Requires-Dist: scipy==1.11.1
+Requires-Dist: opencv-python
+Requires-Dist: transformers
+Requires-Dist: huggingface_hub
