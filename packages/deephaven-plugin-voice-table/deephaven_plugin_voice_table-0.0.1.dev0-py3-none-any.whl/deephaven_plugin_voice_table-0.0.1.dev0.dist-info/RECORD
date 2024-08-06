@@ -1,0 +1,8 @@
+deephaven_plugin_voice_table/__init__.py,sha256=7c03g0oK6d3dgYRlWe6Ldt6oOr54bXHPkgaPxncFp5M,186
+deephaven_plugin_voice_table/command_decoder.py,sha256=lHXaY74igOUta7uUqHS9jYaYuy_rHtNdFW0rk8ZTokM,5129
+deephaven_plugin_voice_table/voice_table.py,sha256=3Zh_avXlPII7pZH-p8949gnrlfIo9wN0CqMKEBuBtac,2736
+deephaven_plugin_voice_table-0.0.1.dev0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+deephaven_plugin_voice_table-0.0.1.dev0.dist-info/METADATA,sha256=smVECFjOXG1Slsr9U9GTN5Kc6nrNTJC7dVsajHe8dMM,5645
+deephaven_plugin_voice_table-0.0.1.dev0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+deephaven_plugin_voice_table-0.0.1.dev0.dist-info/top_level.txt,sha256=1BwDGecJbI2m-fcr1lc5MmuUHt_4k6eXs_R93nPq0hI,29
+deephaven_plugin_voice_table-0.0.1.dev0.dist-info/RECORD,,
