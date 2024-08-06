@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: sqlalchemy_profiler
+Version: 1.0.0
+Summary: SQLAlchemy profiler classes and extentions for other packages.
+Author-Email: Dmitriy Lunev <dima.lunev14@gmail.com>
+License: MIT
+Requires-Python: >=3.11
+Requires-Dist: sqlalchemy>=2.0
+Requires-Dist: python-dev-utils==7.0.1
+Requires-Dist: fastapi; extra == "fastapi"
+Provides-Extra: fastapi
+Description-Content-Type: text/markdown
+
+
+# Dev utils
+
+![coverage](./coverage.svg)
+
+## For what?
+
+I made this project to avoid copy-pasting with utils in my projects. I was aiming to simplify
+working with sqlalchemy, FastAPI and other libraries.
+
+## Install
+
+With pip:
+
+```bash
+pip install sqlalchemy_profiler
+```
+
+With pdm:
+
+```bash
+pdm install sqlalchemy_profiler
+```
+
+With poetry:
+
+```bash
+poetry add sqlalchemy_profiler
+```
+
+## Profiling
+
+Profiling utils. Now available 2 profilers and 2 middlewares (FastAPI) for such profilers:
+
+1. SQLAlchemyQueryProfiler - profile entire sqlalchemy query - it text, params, duration.
+2. SQLAlchemyQueryCounter - count sqlalchemy queries.
