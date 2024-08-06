@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "eythos"
+version = "0.1.2"
+description = ""
+authors = ["zijianluo7 <167813021+zijianluo7@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^1.37.1"
+pillow = "^10.4.0"
+fitz = "^0.0.1.dev2"
+pymupdf = "^1.24.9"
+google-cloud-storage = "^2.18.0"
+google = "^3.0.0"
+openpyxl = "^3.1.5"
+gcloud = "^0.18.3"
+google-auth = "^2.32.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: eythos
+Version: 0.1.2
+Summary: 
+Author: zijianluo7
+Author-email: 167813021+zijianluo7@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fitz (>=0.0.1.dev2,<0.0.2)
+Requires-Dist: gcloud (>=0.18.3,<0.19.0)
+Requires-Dist: google (>=3.0.0,<4.0.0)
+Requires-Dist: google-auth (>=2.32.0,<3.0.0)
+Requires-Dist: google-cloud-storage (>=2.18.0,<3.0.0)
+Requires-Dist: openai (>=1.37.1,<2.0.0)
+Requires-Dist: openpyxl (>=3.1.5,<4.0.0)
+Requires-Dist: pillow (>=10.4.0,<11.0.0)
+Requires-Dist: pymupdf (>=1.24.9,<2.0.0)
+Description-Content-Type: text/markdown
+
+
