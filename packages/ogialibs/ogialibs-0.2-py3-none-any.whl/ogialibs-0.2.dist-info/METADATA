@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ogialibs
+Version: 0.2
+Summary: Common Python methods for OGIA
+Home-page: https://github.com/Office-of-Groundwater-Impact-Assessment/ogialibs/
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Other/Nonlisted Topic
+Requires-Dist: geopandas >=0.13
+Requires-Dist: pyarrow
+
+README.md
