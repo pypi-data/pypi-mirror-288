@@ -1,0 +1,9 @@
+setup.py
+text_to_ascii/__init__.py
+text_to_ascii/main.py
+text_to_ascii.egg-info/PKG-INFO
+text_to_ascii.egg-info/SOURCES.txt
+text_to_ascii.egg-info/dependency_links.txt
+text_to_ascii.egg-info/entry_points.txt
+text_to_ascii.egg-info/requires.txt
+text_to_ascii.egg-info/top_level.txt
