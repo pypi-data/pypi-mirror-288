@@ -1,0 +1,10 @@
+anthropic
+openai
+pygithub
+google-generativeai
+toolz
+
+[testing]
+tox
+pytest
+pytest-cov
