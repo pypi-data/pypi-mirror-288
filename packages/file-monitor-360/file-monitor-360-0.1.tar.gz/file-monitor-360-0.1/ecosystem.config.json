@@ -1,0 +1,11 @@
+{
+    "apps": [{
+        "name": "python-app",
+        "script": "./main_process.py",
+        "instances": "1",
+        "wait_ready": true,
+        "autorestart": true,
+        "max_restarts": 3,
+        "interpreter" : "/usr/bin/python3"
+    }]
+}

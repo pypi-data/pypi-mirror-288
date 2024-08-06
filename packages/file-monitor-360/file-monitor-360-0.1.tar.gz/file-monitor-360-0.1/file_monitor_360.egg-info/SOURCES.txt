@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+ecosystem.config.js
+ecosystem.config.json
+error_monitor.py
+file_watcher.py
+main_process.py
+restart_system.py
+send_client_info.py
+setup.py
+file_monitor_360.egg-info/PKG-INFO
+file_monitor_360.egg-info/SOURCES.txt
+file_monitor_360.egg-info/dependency_links.txt
+file_monitor_360.egg-info/top_level.txt
