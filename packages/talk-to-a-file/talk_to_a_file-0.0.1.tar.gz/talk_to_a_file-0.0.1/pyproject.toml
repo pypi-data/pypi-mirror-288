@@ -1,0 +1,27 @@
+[project]
+name = "talk-to-a-file"
+version = "0.0.1"
+dependencies = [
+  "click",
+  "PyPDF2",
+  "anthropic==0.28.0",
+]
+requires-python = ">= 3.8"
+authors = [
+  {name = "Deven Mistry", email = "masterdeven@gmail.com"},
+]
+description = "Simple CLI to talk to a file"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["anthropic", "pypdf", "click"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+talk-to-a-pdf = "ttp.talk:main"

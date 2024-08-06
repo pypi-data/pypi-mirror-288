@@ -1,0 +1,2 @@
+[console_scripts]
+talk-to-a-pdf = ttp.talk:main
