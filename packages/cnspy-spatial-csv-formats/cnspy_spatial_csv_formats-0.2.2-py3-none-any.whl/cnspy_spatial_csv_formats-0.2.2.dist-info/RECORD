@@ -1,0 +1,14 @@
+cnspy_spatial_csv_formats/CSVSpatialFormat.py,sha256=FZIifdej46phxZYhD31ohHKFRgHHmXjJx5pWVpZdRE0,2296
+cnspy_spatial_csv_formats/CSVSpatialFormatType.py,sha256=evy3yaDWR-h9NylEW-aO83H8rlywxXCdiZDHDN_z1h4,9605
+cnspy_spatial_csv_formats/ErrorRepresentationType.py,sha256=Pz-TbxWJLQ9nJCrd-BqSCBEP_AFPSy46mH0Nis5DSMI,2268
+cnspy_spatial_csv_formats/EstimationErrorType.py,sha256=XJozWo-fcyO8vbRIhQ7fqX9-TmlMXFWxmHFNpt-_hWY,3165
+cnspy_spatial_csv_formats/PoseStructs.py,sha256=JxrgmM7_x9_AEhfqzXNQ0MgvuOy5GRkYrNrQtJKrN_M,6415
+cnspy_spatial_csv_formats/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_CSVSpatialFormatType.py,sha256=fW2cGxdejk76NsciBCFwHwo9EEA5kQjFpp3nJ-Irgx0,4988
+test/test_EstimationErrorType.py,sha256=hWvn2jrES6AFrWNGg1SMLrG9TIA6u9RWLzHK_rkBB50,1443
+cnspy_spatial_csv_formats-0.2.2.dist-info/LICENCE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cnspy_spatial_csv_formats-0.2.2.dist-info/METADATA,sha256=R7RAaIicqSDFF3esdyfoZxZpMNZjiylETgOXcTBEHQ0,4489
+cnspy_spatial_csv_formats-0.2.2.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+cnspy_spatial_csv_formats-0.2.2.dist-info/top_level.txt,sha256=eCtYh0aK8DS23pr_SWyUDQ_n5D4ijn7YDYVfI22n7PE,31
+cnspy_spatial_csv_formats-0.2.2.dist-info/RECORD,,
