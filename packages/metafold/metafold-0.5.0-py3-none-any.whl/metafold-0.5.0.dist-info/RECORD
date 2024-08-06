@@ -1,0 +1,15 @@
+metafold/__init__.py,sha256=fKBROcKjJ_wYEa-R4HtO_u9MFoV7SCzgLx7BujWbuTI,1128
+metafold/api.py,sha256=jO5FRMGrm6hhjdfz79nOgSU1pyaFdXBwOZxMuUIjsz4,1040
+metafold/assets.py,sha256=u0Dcq8p_W3PiTA4LqHrLZSwdejcJ_9-krP70RFS1JtI,4838
+metafold/client.py,sha256=hWwwlrxriBCFRtDrnOqVBaovHQzIB5Z8ZdwGPjm_7eU,2218
+metafold/exceptions.py,sha256=dJhBgbryBhJUf20FT3eU1rjQJQ-aDEZ25g-YCn_TwQk,110
+metafold/func.py,sha256=FY2yRGvU2rtTUplDR9PL4gKSvbLv80R3rbKjXWtI7MY,33906
+metafold/func_types.py,sha256=I4OJ4ToCrwg5vCCStlMFLPBp58wPblqOSVrOCys7RMM,5645
+metafold/jobs.py,sha256=RgxkcLds1dexP8TWtw2qu6P4qvk3aCCBOgo-717PCaA,4537
+metafold/nx.py,sha256=TIMjeWP3pUVyE6duAwe88y_wdBJOxp9QBKXMzitUF48,1278
+metafold/projects.py,sha256=gSjV3i-5uvyVO71iB5nl7VMWpWkLhl764W4CIkAgy5g,5487
+metafold-0.5.0.dist-info/LICENSE,sha256=LejZXzGwe9t0Ezk6g0bRmWUuFSI9vQSk1wJAc1NrrhE,1059
+metafold-0.5.0.dist-info/METADATA,sha256=KVGqlGCMWaBqGnwyjIhKm69U81so-1q7TfeeS_l1YRY,3473
+metafold-0.5.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+metafold-0.5.0.dist-info/top_level.txt,sha256=0dvwa2N6gvl2x4T9c62V4MbYD2soFedI6hm3-lWgyew,9
+metafold-0.5.0.dist-info/RECORD,,
