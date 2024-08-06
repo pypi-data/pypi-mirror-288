@@ -1,0 +1,19 @@
+matplotlib
+numpy
+
+[dev]
+bumpver==2023.1124
+pre-commit
+pytest
+pytest-cov
+sphinx
+furo
+myst-parser
+
+[opencl]
+pyopencl
+reikna
+ase
+
+[opencl:platform_system == "Windows"]
+PyQt5
