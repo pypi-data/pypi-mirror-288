@@ -1,0 +1,2 @@
+[console_scripts]
+rosmetasys = rosmetasys.cli:cli
