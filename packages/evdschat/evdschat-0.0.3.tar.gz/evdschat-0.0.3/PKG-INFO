@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: evdschat
+Version: 0.0.3
+Summary: evdschat
+License: MIT
+Author: Sermet Pekin
+Author-email: sermet.pekin@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: evdspy (>=1.1.39,<2.0.0)
+Description-Content-Type: text/markdown
+
+# evdschat
+
+Coming soon.
+
