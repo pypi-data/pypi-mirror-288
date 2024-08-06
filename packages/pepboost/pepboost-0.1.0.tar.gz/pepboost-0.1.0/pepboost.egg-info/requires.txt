@@ -1,0 +1,16 @@
+numpy~=2.0.1
+uniplot~=0.13.0
+xgboost~=2.1.1
+scikit-learn~=1.5.1
+pandas~=2.2.2
+
+[test]
+pytest
+coverage
+flake8
+black
+isort
+pytest-cov
+mypy
+gitchangelog
+mkdocs
