@@ -1,0 +1,3 @@
+[console_scripts]
+model-schema-exporter = model_schema_exporter.cli:main
+
