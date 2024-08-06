@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+SungrowModbusTcpClient/SungrowModbusTcpClient.py
+SungrowModbusTcpClient/__init__.py
+SungrowModbusTcpClient_jesseklm.egg-info/PKG-INFO
+SungrowModbusTcpClient_jesseklm.egg-info/SOURCES.txt
+SungrowModbusTcpClient_jesseklm.egg-info/dependency_links.txt
+SungrowModbusTcpClient_jesseklm.egg-info/requires.txt
+SungrowModbusTcpClient_jesseklm.egg-info/top_level.txt
