@@ -1,0 +1,73 @@
+site_name: Duploctl Wiki
+
+docs_dir: dist/docs
+site_dir: dist/site
+
+watch:
+- src
+- wiki
+
+theme:
+  name: material
+  features:
+  - content.code.annotate
+  - content.code.copy
+
+plugins:
+- mkdocstrings:
+    custom_templates: wiki/templates
+    handlers:
+      python:
+        options:
+          show_source: false
+          inherited_members: true
+          filters:
+          - "^(?!__).*"
+
+markdown_extensions:
+- pymdownx.highlight:
+    anchor_linenums: true
+    line_spans: __span
+    pygments_lang_class: true
+- pymdownx.inlinehilite
+- pymdownx.superfences
+- pymdownx.magiclink
+- pymdownx.snippets:
+    check_paths: true
+
+hooks:
+- ./scripts/mkdocs.py
+
+nav:
+- Readme: index.md
+- Overview: Home.md
+- Resources:
+  - JIT: Jit.md
+  - Infrastructure: Infrastructure.md
+  - Plan: Plan.md
+  - Tenants: Tenant.md
+  - Autoscaling Groups: Asg.md
+  - Hosts: Hosts.md
+  - Lambda: Lambda.md
+  - Service: Service.md
+  - CronJobs: CronJob.md
+  - Ingress: Ingress.md
+  - CloudFront: CloudFront.md
+  - Secret: Secret.md
+  - ConfigMap: ConfigMap.md
+  - User: User.md
+  - System: System.md
+  - Version: Version.md
+  - S3: S3.md
+  - PVC: PersistentVolumeClaim.md
+  - StorageClass: StorageClass.md
+  - Job: Job.md
+  - RDS: RDS.md
+  - Pod: Pod.md
+  - ECS: EcsService.md
+- Module:
+  - Client: Client.md
+- Plugins:
+  - AWS: plugins/aws.md
+- Changelog: CHANGELOG.md
+- Contributing: CONTRIBUTING.md
