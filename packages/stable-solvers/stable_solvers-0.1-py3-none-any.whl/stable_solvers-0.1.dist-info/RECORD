@@ -1,0 +1,13 @@
+stable_solvers/__init__.py,sha256=kAydumRK_id2KWlz63O2Yot6tEEqvxoNtknLwu5ZQgY,146
+stable_solvers/autograd.py,sha256=uK7wcQWel7JQ9f02UB0fn6L1FVJrTPiFVcdvRhF26cA,2696
+stable_solvers/distributed.py,sha256=gieBhDSI8dQsTW8tO3Xsm4e_FaOLZs2a6CpXyzUyU-s,1412
+stable_solvers/eigen.py,sha256=a32ryCWE9-fc-W002XPzwJaYFUc-9I5ys7GOpxLjUIg,8684
+stable_solvers/jacobians.py,sha256=2c7eH5u6BGhLCQSEBkVov1gVvSd3RmQz09HJUkEdwHw,2191
+stable_solvers/loss_functions.py,sha256=FK59nlWieCpbTJcpGQZHvh1Usezw28NYSp4Xs_gh_wI,6441
+stable_solvers/operators.py,sha256=AmFyXQvSK2vO0Vx5IpKR4POVEqUwdug8ddSIDVbHHEU,7094
+stable_solvers/solvers.py,sha256=YE-hEViP6MRM47OGh8JzAE14okSciUOH2R77OoENUr4,14382
+stable_solvers/utils.py,sha256=dS34iurUZzv51tqLITAUpxSvqvpkjB7Cd9AIUzwHnxk,1395
+stable_solvers-0.1.dist-info/METADATA,sha256=PKGiHqdYFj-RMdtRtTnXuvJ3feEUHXWzYnb4zKapjg4,2107
+stable_solvers-0.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+stable_solvers-0.1.dist-info/top_level.txt,sha256=qAbwd1e-cG3Qg07e0m7fUo1k86La6zkK4SZotOKkar4,15
+stable_solvers-0.1.dist-info/RECORD,,
