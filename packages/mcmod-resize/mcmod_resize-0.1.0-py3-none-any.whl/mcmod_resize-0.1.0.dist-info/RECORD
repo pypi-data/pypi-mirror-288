@@ -1,0 +1,9 @@
+mcmod_resize/__init__.py,sha256=Bd5qZQXxjlknpEugqWFkfw-tOpztIGfoBUYLURtfrW8,71
+mcmod_resize/cli.py,sha256=wchsJgK1KJ01EzTbuSp42wR4c4KREuGhuLURv95-PAs,2776
+mcmod_resize/main_.py,sha256=H9WK5L5o7-bXFIcfVnsOzmSstFhvbmrGFSkIpXr8mS0,1362
+mcmod_resize-0.1.0.dist-info/LICENSE,sha256=XJsjME784aCEElWIy2g1tLx1rR56wh7TU8Q1jEBC1Do,11541
+mcmod_resize-0.1.0.dist-info/METADATA,sha256=7Byyga1SBlG0LoS6f3QuJwW4XEfKi1NSGpfjxfE08YA,219
+mcmod_resize-0.1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+mcmod_resize-0.1.0.dist-info/entry_points.txt,sha256=8sigR-GdydVwab1Ufx6zAfxLrDXhEFajDmlu35Rh8DM,50
+mcmod_resize-0.1.0.dist-info/top_level.txt,sha256=mB1E6gxRL_C6mdJYM0xwhu8mXgoY9Wi1Jz7AkOrGJHU,13
+mcmod_resize-0.1.0.dist-info/RECORD,,
