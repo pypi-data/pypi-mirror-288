@@ -1,0 +1,16 @@
+numpy
+scipy
+numba
+
+[docs]
+matplotlib
+sphinx-gallery
+scikit-image
+pydata-sphinx-theme
+pandas
+seaborn
+
+[test]
+tox
+pytest
+pytest-cov
