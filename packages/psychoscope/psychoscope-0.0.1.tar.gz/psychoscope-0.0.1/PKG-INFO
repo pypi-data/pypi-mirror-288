@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: psychoscope
+Version: 0.0.1
+Summary: Python client library for PsychoScope
+Project-URL: Homepage, https://github.com/intelligence-observatory/psychoscope-public
+Project-URL: Issues, https://github.com/intelligence-observatory/psychoscope-public/issues
+Author-email: Intelligence Observatory <observatory@mit.edu>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+This is the Python client library for PsychoScope.
