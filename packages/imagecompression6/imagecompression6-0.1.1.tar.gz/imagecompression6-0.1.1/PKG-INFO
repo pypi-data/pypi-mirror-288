@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: imagecompression6
+Version: 0.1.1
+Summary: Image compression using REIS algorithms
+Author: Katie Wen Ling Kuo
+Author-email: katie20030705@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-image
+Requires-Dist: matplotlib

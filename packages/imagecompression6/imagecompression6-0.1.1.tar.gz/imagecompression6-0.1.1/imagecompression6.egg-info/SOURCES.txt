@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+imagecompression6/__init__.py
+imagecompression6/compression.py
+imagecompression6/utils.py
+imagecompression6.egg-info/PKG-INFO
+imagecompression6.egg-info/SOURCES.txt
+imagecompression6.egg-info/dependency_links.txt
+imagecompression6.egg-info/requires.txt
+imagecompression6.egg-info/top_level.txt
