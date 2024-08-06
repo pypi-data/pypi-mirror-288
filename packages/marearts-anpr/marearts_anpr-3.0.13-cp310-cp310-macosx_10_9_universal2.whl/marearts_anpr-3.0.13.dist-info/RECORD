@@ -1,0 +1,12 @@
+marearts_anpr/__init__.py,sha256=MVB9ZcFRcUWpC9rUnRfQikUnHj_fxyg3Aw7iS92h0Ec,639
+marearts_anpr/image_processor.py,sha256=5N_dojVV5ca-CP3gFsifbj6PWwjgGyf-f-HSTOOQIqE,3176
+marearts_anpr/marearts_anpr.py,sha256=WF2AhfIVPgcHSL8YQquwTO6dDCTlz5zKs37S2akmpI8,1856
+marearts_anpr/marearts_anpr_d.cpython-310-darwin.so,sha256=2g3xZBQxBgd21vl-SHJ8N7WhXWZEAoFQn7tcnNaMoZs,397176
+marearts_anpr/marearts_anpr_r.cpython-310-darwin.so,sha256=ra62APnAX-nOQMnnKh62D46X_tbtT0JmL3xDn-e5YkM,451944
+marearts_anpr/marearts_protect.cpython-310-darwin.so,sha256=To-jV-gHTNO0FNFbYgOFmbzmXn7evYQCGCN4rPxZ2j0,311480
+marearts_anpr/tokenizer.py,sha256=7bVgAcFQImvZp5XyTXaWDFSQkdG2sJgASXPV1zkTtQ4,6493
+marearts_anpr/utils.py,sha256=rZtiCwFdIPztccJLMQztUuTqoYv29Y6TiuxkNj7g_LI,4762
+marearts_anpr-3.0.13.dist-info/METADATA,sha256=42mAmovE6WZ7gd0LEyAJ8C5dTu2-qobQTTZ_za1ykHs,7539
+marearts_anpr-3.0.13.dist-info/WHEEL,sha256=RNtgRL1ujC2TymWV9oL0Oq6EKBLR3oYp0uxLEG7w8S4,115
+marearts_anpr-3.0.13.dist-info/top_level.txt,sha256=DX3y7nst7V7YBYS7dHQIIZxROhrheWGRsl2aCOLErEA,14
+marearts_anpr-3.0.13.dist-info/RECORD,,
