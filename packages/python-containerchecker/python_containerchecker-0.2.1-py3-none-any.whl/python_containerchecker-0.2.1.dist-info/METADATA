@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: python-containerchecker
+Version: 0.2.1
+Summary: 
+Author: Tim Bryant
+Author-email: timothybryant3@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: PyYAML (>=6.0.1,<7.0.0)
+Requires-Dist: paramiko (>=3.4.0,<4.0.0)
+Requires-Dist: rich (>=13.7.1,<14.0.0)
+Description-Content-Type: text/markdown
+
+# Summary
+
+A simple CLI tool that reports running containers one or more hosts.
+
