@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: gai-sdk
+Version: 0.173
+Summary: Refer to https://gai-labs.github.io/gai for more information
+Author: kakkoii1337
+Author-email: kakkoii1337@gmail.com
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx
+Requires-Dist: rich
+Requires-Dist: pynvml
+Requires-Dist: aioconsole
+Requires-Dist: colorlog==6.8.2
+Requires-Dist: python-dotenv
+Requires-Dist: markdownify
+Requires-Dist: fastapi
+Requires-Dist: openai==1.32.0
+Requires-Dist: pydantic
+Requires-Dist: ipykernel
+Requires-Dist: pytest
+Requires-Dist: PyYAML
+Requires-Dist: nats-py
+Requires-Dist: requests
+Requires-Dist: huggingface_hub
+
+Refer to https://gai-labs.github.io/gai for more information
