@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: SortVisualization
+Version: 1.4
+Project-URL: Repository, https://github.com/Andy1iang/Sorting_Algorithms
+Description-Content-Type: text/markdown
+Requires-Dist: pygame
+
+# SortVisualization: Visualize Different Sorting Algorithms with Custom Datasets
+
+## Dependencies:
+
+-   [pygame: used to create visualization GUI](https://www.pygame.org/news)
+
+## Quick Start:
+
+**This visualizer is best used with integer values**
+
+1. Run ```pip install SortVisualization``` in the terminal to install this library 
+
+2. Create a new Python file (name it whatever you like)
+
+3. Import this library:<br>
+   ```import  SortVisualization```
+
+4. Create your custom list of integers:<br>
+ 	<code>import random <br>arr  =  list(random.randint(-100,  100) for  _  in  range(30))</code>
+
+5. Visualize it!<br>
+   `SortVisualization.visualizeSort(arr)`
+
+## Features:
+-   Sort by Ascending / Descending Order
+	-   Can only be changed when sorting *not* in progress
+-   Dark Mode (Press Moon Icon on Top Right Corner)
+
+## All Methods:
+
+-   Visualize All Sorting Algorithms with given list:<br>
+    &nbsp; &nbsp; &nbsp;`visualizeSort(arr)`
+
+-   Visualize a random list with given size, minimum value, and maximum value:<br>
+    &nbsp; &nbsp; &nbsp;`visualizeRandomList(sizeOfArr, minValue, maxValue)`
+
+-   Visualize Bubble Sort with given list:<br>
+    &nbsp; &nbsp; &nbsp;`visualizeBubbleSort(arr)`
+
+-   Visualize Bogo Sort with given list: <br>
+    &nbsp; &nbsp; &nbsp;`visualizeBogoSort(arr)`
+
+-   Visualize Insertion Sort with given list: <br>
+    &nbsp; &nbsp; &nbsp;`visualizeInsertionSort(arr)`
+
+-   Visualize Counting Sort with given list: <br>
+    &nbsp; &nbsp; &nbsp;`visualizeShellSort(arr)`
+
+-   Visualize Miracle Sort with given list: <br>
+    &nbsp; &nbsp; &nbsp;`visualizeMiracleSort(arr)`
+
+-   Visualize Selection Sort with given list: <br>
+    &nbsp; &nbsp; &nbsp;`visualizeSelectionSort(arr)`
+
+-   Visualize Shell Sort with given list: <br>
+    &nbsp; &nbsp; &nbsp;`visualizeShellSort(arr)`
