@@ -1,0 +1,7 @@
+python-singleton-metaclasses
+
+[:python_version < "3.9"]
+importlib-resources>=5.2.0
+
+[video-streams]
+streamlink
