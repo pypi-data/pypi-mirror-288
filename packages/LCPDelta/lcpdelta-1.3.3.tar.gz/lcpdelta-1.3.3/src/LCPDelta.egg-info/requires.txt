@@ -1,0 +1,9 @@
+numpy
+pandas
+requests
+signalrcore
+matplotlib
+
+[dev]
+pre-commit
+ruff
