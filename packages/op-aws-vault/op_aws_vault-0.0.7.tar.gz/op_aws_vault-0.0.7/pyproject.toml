@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "op-aws-vault"
+version = "0.0.7"
+dependencies = [
+    "boto3",
+    "requests",
+    "typer",
+    "pytimeparse2"
+]
+requires-python = ">=3.8"
+description = "1Password aws-vault like utility"
+readme = "README.md"
+authors = [
+  { name = "David Markey", email = "david@dmarkey.com" },
+]
+
+[project.urls]
+"Homepage" = "https://github.com/dmarkey/op-aws-vault"
+"Bug Tracker" = "https://github.com/dmarkey/op-aws-vault/issues"
+
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/op_aws_vault"]
+
+[project.scripts]
+op-aws-vault = "op_aws_vault:main_cli"
