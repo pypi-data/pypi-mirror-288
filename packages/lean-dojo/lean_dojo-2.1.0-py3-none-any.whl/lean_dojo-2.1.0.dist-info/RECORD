@@ -1,0 +1,16 @@
+lean_dojo/__init__.py,sha256=nhgDXmC7RHuvsuEkM0y66QGCMW20GxKF9gNLbGLn7Eo,680
+lean_dojo/constants.py,sha256=VffQ96Q45QsMyq62D_GFaAoaZHvyxdpqVb9tg212cdc,2818
+lean_dojo/utils.py,sha256=D08h8QVSCxwfg5f3W2Kum5iy5yF2VqMzyNejCHnbPvU,9757
+lean_dojo/data_extraction/ExtractData.lean,sha256=BCAH2qn73YrDGU_dzm4RrtInTQBnOmmUOM4hDhvUT60,17696
+lean_dojo/data_extraction/ast.py,sha256=RcsBZf9DENr4xDZLaIsf6K1hgjLz8koZsxhQYCOcdT4,50464
+lean_dojo/data_extraction/cache.py,sha256=uVhcEFW5gDI4QQLgYu6K6iSdGnrrScTJORs3EBmXbV4,3111
+lean_dojo/data_extraction/lean.py,sha256=1VHShqkGrtBXg7YErharD30ABraYbbgpxeiCRAaScxI,28301
+lean_dojo/data_extraction/trace.py,sha256=9G6kRUZjVg0IysAMp0u3OLAqfiikQFECIa25p_GG5DA,9652
+lean_dojo/data_extraction/traced_data.py,sha256=UVTWLuOEW83VTZBVEPMOL27WhrpUQgdGXlVziY8pIjU,43861
+lean_dojo/interaction/Lean4Repl.lean,sha256=18Kj2oYpEn05sDeSUHLR8ske7rDgAPwe4JwFBLcPE9A,11219
+lean_dojo/interaction/dojo.py,sha256=l_Oo5YbF71bThOBOZWC0G1E_fK2Ak72lzrRY5Jb6-xU,14397
+lean_dojo/interaction/parse_goals.py,sha256=wWVQw2CIUbfvVqugCj7P08RAhGBTO2L2kEp0P7fhw64,1773
+lean_dojo-2.1.0.dist-info/METADATA,sha256=JlBtKYVsO0Sncrh5v5NbQtJ1roJ95TR7eRL8pvdTbOA,7899
+lean_dojo-2.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+lean_dojo-2.1.0.dist-info/licenses/LICENSE,sha256=iGKZ60MHRLJE-TXF6EuIE8jSdcQqTcVY0RBI0gRo9jA,1070
+lean_dojo-2.1.0.dist-info/RECORD,,
