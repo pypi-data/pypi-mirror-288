@@ -1,0 +1,9 @@
+succulent/__init__.py,sha256=2RTA3nfVVfcvzVZkOeExz8nzdWA4PN8tsyzgonB5-FM,107
+succulent/api.py,sha256=9AC0uXo1MvcxFBorYS25tuGk6YseUVuN2xIVcSecIMQ,4788
+succulent/configuration.py,sha256=q_Z74fLsH8zEVTPjWjXp81YnCmLAoutdpTWVG-NgtyA,932
+succulent/processing.py,sha256=kfUEty5nPxoltQobqRyuDSLTWEuwrT9uivMlJrKw7j0,11051
+succulent/static/logo.png,sha256=RzK-6ezRhS-yjGzI9fmNVlNk0i08MRqhn3da7fWc1qQ,108532
+succulent-0.3.4.dist-info/LICENSE,sha256=UYa72f3eVKWHYDWISrL5pmAVCLI2fm4WlVzL-fmQczU,1078
+succulent-0.3.4.dist-info/METADATA,sha256=Zvd4Mtv1NWM4QVI-JsuscquUMV8cM44LzRCeAp38BTI,13365
+succulent-0.3.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+succulent-0.3.4.dist-info/RECORD,,
