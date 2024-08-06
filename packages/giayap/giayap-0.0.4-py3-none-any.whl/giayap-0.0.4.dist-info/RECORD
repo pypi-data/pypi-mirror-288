@@ -1,0 +1,8 @@
+giayap/__init__.py,sha256=zFcCTSDoeuQRAtU4Dtfo8iVzZLSBAYV_HG-ai8ArTak,1190
+giayap/__version__.py,sha256=Qkdiz6Ybn1PE1SlWhKAQBmETf7pQ0yr5HmkqLVDxsqE,21
+giayap/giayap.pydd,sha256=Sk-g-t83m54W-g4o4HKKecBmPHeTL3LnbNuXkHY8e68,17913344
+giayap/index_2_word.json,sha256=yzflIKlSv_wxq-ljRPjOT-5S2sYDiBr3DxwTsQt9NUM,41704
+giayap/model_training.onnx,sha256=_2e5pJIM-nDQNJHIXaoxZC0DUZudPcOZQyKJx0up_gY,15564441
+giayap-0.0.4.dist-info/METADATA,sha256=iVYvmL0xzxd9yJbt5Mxh4A7NPlE-w8MFDeOfnOYiLJc,260
+giayap-0.0.4.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+giayap-0.0.4.dist-info/RECORD,,
