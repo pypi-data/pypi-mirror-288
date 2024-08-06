@@ -1,0 +1,14 @@
+aniworld/__init__.py,sha256=DLVsVfKvR2HvT40nUBOGgvsg9E82_zvoccUv1t1y6pc,265
+aniworld/__main__.py,sha256=IeVeBMuSLef8ACXjydfsOj7qt5qkcHzXM0A92TtWa8I,19675
+aniworld/aniskip/ani_skip.py,sha256=N7aqpBgFPwX65-k9mBOerQ_XkwAU0PQ_KJVaXRKpBn4,3454
+aniworld/aniskip/skip.lua,sha256=xexTQNB71ptN2XJkt9XiwW2CTscHTfxp3WOiweg1e5c,669
+aniworld/extractors/doodstream.py,sha256=HMxDk3jXYZy3-SPfONNgZ26rC0FYO68LHjx_TlmYAGg,1048
+aniworld/extractors/streamtape.py,sha256=23SBkTgTOFFVg0DqGwaYc4cVqSKn4dwKouF6JXCKPm0,347
+aniworld/extractors/vidoza.py,sha256=4JMXT_2cDDX03xngLXNT-2plPI1Lm0aSyA_Y82iXjxM,267
+aniworld/extractors/voe.py,sha256=6Agvjx4Zq9cLeAO0bXXvQ4_n5QVAZVuwFTXIu1x6p2A,1178
+aniworld-1.1.0.dist-info/LICENSE,sha256=vBMwQWXDX4Mm6qhEgPMNogH6TKaM5CspHDCkTvZUMbw,1073
+aniworld-1.1.0.dist-info/METADATA,sha256=G2KlBXartBt8Eq13Ekabx0UotgiQ-cDtMFpywl7En_k,2126
+aniworld-1.1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+aniworld-1.1.0.dist-info/entry_points.txt,sha256=6lXWy8J-D8SWKjH22wb3wNoSxRUA4eiHz8feWfVeBVM,52
+aniworld-1.1.0.dist-info/top_level.txt,sha256=XF8O0z5dcwPQ8_4L3qdQEng9Cu53UQg4pBJ3d1cV_Jk,9
+aniworld-1.1.0.dist-info/RECORD,,
