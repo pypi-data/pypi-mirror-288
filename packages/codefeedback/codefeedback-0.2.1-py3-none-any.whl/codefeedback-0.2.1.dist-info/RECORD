@@ -1,0 +1,15 @@
+codefeedback/__init__.py,sha256=wYDiGfPkcVX-CMy0Bisd8L-ibY2j87sNUf-bOu1iv4A,64
+codefeedback/codeval.py,sha256=mUtyr8iH1legQ-U0Lxae2t8pHDLyId8MsabW3xxx_A4,7907
+codefeedback/format.py,sha256=OaD-kx10pLB0D6S4EfHD07oMj1MW6Sq2opMcrDJTQuc,3631
+codefeedback/general_check.py,sha256=kcUSbZ8jqGmtQl2q92rRmE3FF1Zr3uzwqDOY_FETSUk,2652
+codefeedback/global_variable_check.py,sha256=SL94omYkcaX1mCkOSwT_4YuplBXWBx_Lu3uLp8Rmpgs,6020
+codefeedback/globals.py,sha256=VL9IcCdZd7k6ZOFm3urJQobgRdVgYPr96EGP97pmTJg,2580
+codefeedback/local_variable_check.py,sha256=rOCfAESHjlop8obj8jd92OGQwkr9Mx4pbd_uYSE-AEA,8234
+codefeedback/method_utils.py,sha256=_g95IgNp4kOYCKNcU2a9U496n81oiLPkXJR2hUaKrvY,3264
+codefeedback/param_generator.py,sha256=Hw4YmP0JrUcqE1N0dqRgEMzu6PwmXRghugmE5h2ob2w,5436
+codefeedback/same_variable_content_check.py,sha256=U9icqX0BffwBdaYI_LuIChZ1JxmTijr-ikx6S1fjygY,3499
+codefeedback/structure_check.py,sha256=LPeXBxMsLQjqIAoh7hDT1FMQ2JHsyhE9KWAjpD0HzgA,1039
+codefeedback-0.2.1.dist-info/METADATA,sha256=eWuuTYrQUQtGHBWWNFdkFZ1gqY0-Sy61Eo9zQsoyDfo,113
+codefeedback-0.2.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+codefeedback-0.2.1.dist-info/top_level.txt,sha256=VReFxgFcJEs1hzjkWZjWL3HDqt1XMs55pg2nkeuy4KY,13
+codefeedback-0.2.1.dist-info/RECORD,,
