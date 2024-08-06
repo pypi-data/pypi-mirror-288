@@ -1,0 +1,10 @@
+devart/postgresql/__init__.py,sha256=-u9EimDhk1osIiYh5s05UCw4LFiK0jcC9lptandDGJQ,944
+devart/postgresql/postgresql.cpython-38-darwin.so,sha256=2PIdzdscQxoNpfsJ5SO0j8j-LiPthET_2qtoYdJ5UGU,14005448
+devart/postgresql/postgresql.pyi,sha256=-GSbIAtRxvyce14Hhcn2-7jwjIkoTpV7cUGirmsRn24,12367
+devart/postgresql/http/tunnel.php,sha256=qjhBbshLEKSmoA7RAXVi29TbVNsPBad364d2YHsbyNQ,20720
+devart/postgresql/sqlalchemy/__init__.py,sha256=9T8yOdqr93tCiO3_79gBcO978mycjTt4STwuY8Kvv1g,525
+devart_postgresql_connector-1.1.0.dist-info/LICENSE.txt,sha256=3sjizf07RF-z3Lp3tnA-jy3rN103Ypw11NO9tFnRLtU,8559
+devart_postgresql_connector-1.1.0.dist-info/METADATA,sha256=ZAZxKm1oLsoQyUGbWonVMp0sjLCQgxgWM7Y9VqW0_4o,2733
+devart_postgresql_connector-1.1.0.dist-info/WHEEL,sha256=l1zPmsL7B-ljvNpL8OqYRG2OppnVc8YoCR7cf-ErV_4,112
+devart_postgresql_connector-1.1.0.dist-info/top_level.txt,sha256=h_mZcghGiX6pnc-Kb1EoAfIW2iHeDA0kJKfcLJMbq44,7
+devart_postgresql_connector-1.1.0.dist-info/RECORD,,
