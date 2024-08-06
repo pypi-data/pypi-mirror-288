@@ -1,0 +1,2 @@
+[console_scripts]
+ghc = github_context.github_context:main
