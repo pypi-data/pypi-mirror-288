@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "artorias"
+version = "0.1.7"
+description = "My web utilities"
+authors = ["Abyssknight <501835725@qq.com>"]
+readme = "README.md"
+packages = [{ include = "artorias" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
+flask-cors = "*"
+flask-jwt-extended = "*"
+sqlalchemy = "*"
+celery = "*"
+pydantic-settings = "*"
+redis-om = "*"
+typer = { extras = ["all"], version = "*" }
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+ipython = "*"
+pre-commit = "*"
+pytest = "*"
+
+[tool.poetry.scripts]
+artorias = 'artorias.commands.main:app'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+fix = true
+show-fixes = true
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "B",  # flake8-bugbear
+    "E",  # pycodestyle error
+    "F",  # pyflakes
+    "I",  # isort
+    "W",  # pycodestyle warning
+    "UP", # pyupgrade
+]
+
+[tool.ruff.lint.isort]
+force-single-line = true
+order-by-type = false
