@@ -1,0 +1,9 @@
+simsimd.cpython-36m-x86_64-linux-gnu.so,sha256=d_nFnsLxsjlZB3z4-zsFM2mxo11_Rho4SvrXLRELMlM,796881
+simsimd/__init__.pyi,sha256=_SdBxx6q_AQVHr4fbTUfCQGeh-jub5a5FBeUsIbf_n8,4980
+simsimd/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simsimd-5.0.0.dist-info/RECORD,,
+simsimd-5.0.0.dist-info/top_level.txt,sha256=kA2CGlVhy5wNyCLTKLh20j75IM5fnuQ_-4bK53XLl8o,8
+simsimd-5.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+simsimd-5.0.0.dist-info/WHEEL,sha256=M_cxCyP_P0zCFeFTiMvxQ1rFa6JziQkhzVeihEZQkW4,112
+simsimd-5.0.0.dist-info/METADATA,sha256=lU9WT1-WyAdprOVF-0rbO069PnETlaOjPW-XIYjc7ko,31672
+simsimd./libgomp-1f0f45f5.so.1.0.0,sha256=JYZuzgiypSabjFLxXb3Nm6c4Q12fyT_uNMXOENwHwuE,336801
