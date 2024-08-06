@@ -1,0 +1,3 @@
+[console_scripts]
+unigradicon-register = unigradicon:main
+unigradicon-warp = unigradicon:warp_command
