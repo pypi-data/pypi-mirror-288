@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: schp
+Version: 0.1
+Summary: Package of Self Correction for Human Parsing
+Home-page: https://github.com/BbChip0103/Self-Correction-Human-Parsing
+Author: BbChip0103
+Author-email: bbchip13@gmail.com
+Keywords: human,parser,clothes,segmentation
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pillow
+Requires-Dist: tqdm
+Requires-Dist: Ninja
+Requires-Dist: opencv-python
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: torchaudio
+Requires-Dist: gdown
+
+# SCHP python package
+
+[SCHP](https://github.com/GoGoDuck912/Self-Correction-Human-Parsing.git) is clothes segmentation model.
+
+This repository wrapped SCHP to python package. </br>
+
+
+## Installing
+

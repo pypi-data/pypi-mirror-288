@@ -1,0 +1,8 @@
+pillow
+tqdm
+Ninja
+opencv-python
+torch
+torchvision
+torchaudio
+gdown
