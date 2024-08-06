@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <!-- 必须的 meta 标签 -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="description" content="">
+  <meta name="author" content="Webpixels">
+
+  <link rel="icon" href="static/img/ico/favicon.png" type="image/png"><!-- Font Awesome -->
+
+  <!-- Bootstrap 的 CSS 文件 -->
+  <link rel="stylesheet" href="static/libs/bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/screen/screen.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/libs/bootstrap-icons/font/bootstrap-icons.css">
+
+  <script src="static/libs/jquery/jquery.js"></script>
+  <script src="static/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <link href="static/libs/jquery-menu/jquery.contextMenu.min.css" rel="stylesheet" type="text/css">
+
+  <title>图形处理|AScript</title>
+</head>
+
+<body class="mycontainer" style="padding: 0px; margin: 0px; overflow: hidden;">
+
+  <canvas id="preview_img_canvas" crossOrigin="anonymous" style="display: none"></canvas>
+  <input type="file" id="fileupload" accept-charset="utf-8" name="avatar" hidden>
+
+  <div class="row screen-container">
+
+    <div class="screen-img-list-con col-12" style="display: none;">
+      <div class="screen-img-list col-12">
+        <!-- Image 列表区域 -->
+      </div>
+
+      <button id="delect_img" type="button" class="btn btn-danger rounded-circle btn-icon-only"
+        style="position:absolute;left: 10px; top: 10px; display: none; width: 30px; height: 30px; top:5px;z-index: 500; padding: 0; margin: 0;">
+        <i class="bi bi-trash3"></i>
+      </button>
+
+      <div class="screen-imglist-bar row col-12 ">
+        <div class="input-group input-group-sm col-auto mr-auto" style="margin: 0px; padding: 0px;">
+          <div class="input-group-prepend" style="background: transparent; border: none;">
+            <span class="input-group-text">缓存图片数量:</span>
+            <span class="imglist_size input-group-text text-primary" style="border-left: 0px;">-</span>
+          </div>
+          <div class="input-group-prepend" style="background: transparent; border: none;">
+
+            <button id="toolbar_img_delall" class="btn btn-danger" type="button">
+              <i class="bi bi-trash"></i>
+              删除所有
+              <div id="toolbar_img_delall_loading" style="display: none;"
+                class="spinner-border spinner-border-sm text-light" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+            </button>
+          </div>
+
+          <div class="input-group-prepend" style="background: transparent; border: none;">
+            <span class="input-group-text text-info"
+              style="border: none; background-color: transparent;">覆盖不显示的图片,可以立即显示哦.</span>
+          </div>
+          <!-- <input id="crop_top" type="text" class="form-control text-primary" placeholder="最大显示数量" value="10" aria-describedby="button-addon4"> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="screen-img-bar" style="">
+      <!-- 状态栏 -->
+      <!-- Image 状态栏 -->
+
+      <span id="screen_logo" class="screen-img-statue-item mt-1 mb-2">
+        <img src="static/img/ico/paintpalette.png" style="width: 25px;" />
+      </span>
+
+      <span id="toolbar_img_capture" class="screen-img-bar-item col-auto d-flex" style="position: relative;"
+        data-toggle="tooltip" data-placement="right" title="截图">
+        <i class="bi bi-camera" style=""></i>
+        <span id="imagelist_loading" class=""
+          style="padding: 0; margin: 0px; position: absolute;width: 100%; background-color: #efefef;" role="status">
+          <span class="spinner-border spinner-border-sm text-primary" role="status" aria-hidden="true"></span>
+        </span>
+      </span>
+
+      <span id="toolbar_img_upload" class="screen-img-bar-item col-auto" data-toggle="tooltip" data-placement="right"
+        title="上传图片">
+        <i class="bi bi-upload"></i>
+      </span>
+
+      <span id="toolbar_zoom_reset" class="screen-img-bar-item col-auto" data-toggle="tooltip" data-placement="right"
+        title="重置">
+        <i class="bi bi-arrow-repeat"></i>
+      </span>
+
+      <span id="toolbar_zoom_in" class="screen-img-bar-item col-auto" data-toggle="tooltip" data-placement="right"
+        title="放大">
+        <i class="bi bi-zoom-in"></i>
+      </span>
+
+      <span id="toolbar_zoom_out" class="screen-img-bar-item col-auto" data-toggle="tooltip" data-placement="right"
+        title="缩小">
+        <i class="bi bi-zoom-out"></i>
+      </span>
+
+      <span id="toolbar_eraser_wipe" class="screen-img-bar-item col-auto" data-toggle="tooltip" data-placement="right"
+        title="橡皮擦,擦除区域颜色">
+        <i class="bi bi-eraser"></i>
+      </span>
+
+      <span id="toolbar_mask_clear" class="screen-img-bar-item col-auto" data-toggle="tooltip" data-placement="right"
+        title="清空标注">
+        <i class="bi bi-slash-square"></i>
+      </span>
+
+    </div>
+    <div class=" screen-img-container" style="width: 35vw; position: relative;">
+      <div class="screen-img-statue col-12" style="display: flex; flex-direction: row;">
+        <span class="screen-img-statue-item ml-1"> <i class="bi bi-record2"></i></span>
+
+        <span class="col-auto" style="padding: 0px; margin: 0px;">
+          <input id="header_color_current" type="text" placeholder="数字键1-9 获取坐标颜色" style="width:170px; border: none; background-color: white;"
+              class="form-control form-control-sm text-primary" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </span>
+
+        <span class="screen-img-statue-item ml-2"> <i class="bi bi-fullscreen"></i></span>
+        <span class="col-auto" style="padding: 0px; margin: 0px;">
+          <input id="image_input_rect" type="text" placeholder="拖动选择范围" style="width:170px; border: none; background-color: white;"
+              class="form-control form-control-sm text-primary image_input_rect" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </span>
+
+        <span class="screen-img-statue-item col-auto pb_con align-items-center" data-toggle="tooltip" data-placement="bottom" title="左">
+          <i id="p_b_l_c" class="bi bi-patch-minus part_box_control"></i>
+          <span id="p_i_l" class="badge badge-pill">0</span>
+          <i id="p_b_l_a" class="bi bi-patch-plus part_box_control"></i>
+        </span>
+
+        <span class="screen-img-statue-item col-auto pb_con" data-toggle="tooltip" data-placement="bottom" title="上">
+          <i id="p_b_t_c" class="bi bi-patch-minus part_box_control"></i>
+          <span id="p_i_t" class="badge badge-pill">0</span>
+          <i id="p_b_t_a" class="bi bi-patch-plus part_box_control"></i>
+        </span>
+
+        <span class="screen-img-statue-item col-auto pb_con" data-toggle="tooltip" data-placement="bottom" title="右">
+          <i id="p_b_r_c" class="bi bi-patch-minus part_box_control"></i>
+          <span id="p_i_r" class="badge badge-pill">0</span>
+          <i id="p_b_r_a" class="bi bi-patch-plus part_box_control"></i>
+        </span>
+
+        <span class="screen-img-statue-item col-auto pb_con" data-toggle="tooltip" data-placement="right" title="下">
+          <i id="p_b_b_c" class="bi bi-patch-minus part_box_control"></i>
+          <span id="p_i_b" class="badge badge-pill">0</span>
+          <i id="p_b_b_a" class="bi bi-patch-plus part_box_control"></i>
+        </span>
+
+        <span class="screen-img-statue-item col-auto pb_con text-success p_b_copy" data-toggle="tooltip" data-placement="bottom" title="复制范围" style="cursor: pointer;">
+          <i class="bi bi-device-ssd"></i>
+        </span>
+
+      </div>
+      <div class="screen-img-con" style="padding: 10px;">
+        <div id="container_img" class="screen-img-shower col-12">
+          <!-- Image 展示区域-->
+          <img id="img_preview" crossOrigin="anonymous" src=""
+            style="image-rendering:pixelated; float: left; position: absolute; ">
+          </img>
+          <div id="part_box">
+            <!-- class="shadow-dark-lg" -->
+          </div>
+  
+          <div class="marks" style="width: 100%; height: 100%;">
+            <div class="mark-points" style="width: 100%; height: 100%;">
+  
+            </div>
+  
+            <div class="mark-rects" style="width: 100%; height: 100%;">
+  
+            </div>
+  
+          </div>
+        </div>
+        <div class="touch_slide" ></div>
+      </div>
+
+
+
+      
+    </div>
+
+    <div class="col-2" style="height: 100%; padding:0px;margin: 0px;">
+      <div class="col-12 plug-list-con" style="overflow: hidden;">
+        <div class="plug-list-con-header row col-12" style="padding: 0px; margin: 0px;">
+          <span class="col-auto mr-auto align-items-center p-2"> <i class="bi bi-puzzle-fill"></i><b
+              style="color: black;"> 工具列表</b>
+            <span id="plug-list-con-header-loading" style="display: none;"
+              class="spinner-border spinner-border-sm text-primary" role="status">
+              <span class="sr-only">Loading...</span>
+            </span>
+          </span>
+
+          <div class="btn-group col-auto mr-1 dropleft" style="display: none">
+            <span class="dropleft text-primary" type="button" data-toggle="dropdown" style="font-size:large;">
+              <i
+                class="bi bi-node-plus-fill" aria-expanded="false" data-toggle="tooltip" data-placement="bottom"
+                title="更多插件"></i></span>
+            <div class="dropdown-menu">
+              <span id="gp_test" class="dropdown-item"><a href="#">调试工程插件</a></span>
+              <span id="gp_plugs" class=" dropdown-item"><a href="#">图色插件商店</a></span>
+            </div>
+          </div>
+        </div>
+
+        <ul id="group_plug" style="padding: 0px;margin: 0px; overflow: scroll; border: none; list-style-type: none; width: 100%;" >
+          
+
+        </ul>
+
+
+
+      </div>
+    </div>
+
+    <div class="col control-borad">
+      <div class="col-12 row coder-iframe" style=" height: 70vh; padding: 0px;margin: 0px; overflow:hidden; overflow: auto;">
+        
+        <div class="col-12 pulg_frame" style="padding: 0px; margin: 0px;">
+          <iframe id="gpiframe" class="gpiframe" src=""></iframe>
+        </div>
+      </div>
+      <div class="col-12 coder-board" style="padding: 0px; margin: 0px; overflow: hidden;">
+        
+        <div class="row col-12 coder-board-header">
+          <div class="col-6 d-flex align-items-center" style="align-items: center;"><i class="bi bi-stars"></i>
+            <span style="font-size: small;"> 图像处理流程</span>
+            <span id="coder-board-reset" class="screen-img-bar-item col-auto text-danger" data-toggle="tooltip"
+              data-placement="bottom" title="重置">
+              <i class="bi bi-arrow-repeat"></i>
+            </span>
+
+            <span id="coder-board-result" class="screen-img-bar-item col-auto text-warning" data-toggle="tooltip"
+              data-placement="bottom" title="执行结果">
+              <i class="bi bi-chat-dots-fill"></i>
+            </span>
+
+
+
+
+            <span id="coder-board-loading" class="screen-img-bar-item col-auto" style="display: none;">
+              <span class="spinner-border spinner-border-sm text-primary" role="status" aria-hidden="true"></span>
+            </span>
+
+          </div>
+          <div class="col-6 row d-flex align-items-center" style="padding: 0px; margin: 0px;">
+            <span id="btn_strack_export" class="screen-img-bar-item col-auto ml-auto mr-2 text-success"
+              data-toggle="tooltip" data-placement="bottom" title="生成代码并保存文件">
+              <i class="bi bi-file-earmark-code-fill"></i>
+            </span>
+
+          </div>
+        </div>
+        <div class="coder-board-body" style="margin: 0px; padding: 0px; background-color: white;; overflow: scroll;">
+          <ul id="coder-board-body-list" style="margin: 0px; padding: 0px;">
+            <li class="row col-12 coder-board-body-item ">
+              <span class="row col-3 d-flex align-items-center coder-board-body-item-left">
+                <span class="ml-4 mr-auto text-secondary">没有任何GP流程</span>
+                <span class="ml-1 coder-board-body-item-left-ico d-flex align-items-center"></span>
+                <span class="ml-3 mr-auto"></span>
+              </span>
+              <span class="row col-9 d-flex align-items-center coder-board-body-item-right">
+
+                <span class="mr-3 d-flex align-items-center" style="padding: 0px; margin: 0px;">
+                </span>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="gp_touch_bar">
+        </div>
+        
+      </div>
+    </div>
+
+    <div id="as_toast" class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
+      <div id="liveToast" class="toast hide"  style="min-width: 20vw;" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
+        <div class="toast-header">
+          <img src="../assets/img/mipmap/ico_tip.png" style="width: 20px;" class="rounded mr-2" alt="...">
+          <strong class="mr-auto">消息提示</strong>
+          <small></small>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div id="as_toast_msg" class="toast-body text-success" style="background-color: #FAfAfA;">
+           
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 这里是 所有条目的 模版 -->
+
+
+    <div id="hidden_con" style="display: none;">
+
+      <li id="gp_line_list_item" class="gp_line_list_item row col-12 mt-1 pt-2"
+        style="padding: 0px; margin: 0px; background-color: white;">
+        <div class="row col-12" style=" margin: 0px;">
+          <span class="col-3 text-primary gp_id" style="font-size: large;">id:1.1.1</span>
+          <span class="col-3 "><i class="bi bi-person"></i><span class="gp_author text-black-50"></span></span>
+          <span class="col-3 mr-auto"><i class="bi bi-fire text-danger"></i><span
+              class="text-black-50 gp_hot"></span></span>
+          <span class="col-auto gp_load">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-secondary gp_info">详情</button>
+              <button type="button" class="btn btn-success gp_add">加载</button>
+            </div>
+          </span>
+        </div>
+        <div class="gp_line_childs" style="margin: 0px; width: 100%;">
+
+        </div>
+      </li>
+
+      <div id="gp_line_list_item_child" class="gp_line_list_item_child"><span class="gp_line_id text-info">123</span>
+        <span class="gp_line_des ml-2 text-secondary">123</span>
+      </div>
+
+      <img id="image_list_item" class="screen-img-list-item ml-2" data-toggle="tooltip" data-placement="top" title="">
+
+      <div id="mark-point-item" class="mark-point-item shadow" style="">
+        <span class="mark-point badge badge-danger shadow" style="border-radius: 20px;">·</span>
+        <span class="badge mark-point-des"><span class="mark-points-number badge badge-pill badge-warning">2</span><span
+            class="mark-points-xy ml-1">23,400</span></span>
+      </div>
+
+      <div id="mark-rect-item" class="mark-rect-item shadow-lg">
+        <span class="badge badge-danger mark-rect-number">1</span>
+      </div>
+
+      <li id="coder-board-body-item" class="row col-12 coder-board-body-item">
+        <span class="row col-4 d-flex align-items-center coder-board-body-item-left">
+          <span class="ml-1 coder-board-body-item-left-ico d-flex align-items-center"><i
+              class="bi bi-arrow-down"></i></span>
+          <span class="ml-3 mr-auto item-name">图片裁剪</span>
+          <span class="mr-3 d-flex align-items-center" style="padding: 0px; margin: 0px;">
+            <span id="coder-board-body-item_fix" class="mr-3 item_action"><i class="bi bi-wrench"></i></span>
+            <span id="coder-board-body-item_delect" class="item_action mr-3"><i class="bi bi-x-circle-fill"></i></span>
+          </span>
+        </span>
+        <span class="row col-8 d-flex align-items-center coder-board-body-item-right">
+          <span class="ml-2 item-code">action.add(<code>GPCrop(1,1,100,100)</code>)</span>
+        </span>
+      </li>
+    </div>
+
+    <!-- <div class="rect_board row col-12">
+        <div class="col-3">
+          <div class="btn-group-vertical">
+            <button type="button" class="btn btn-sm btn-secondary">+</button>
+            <input type="email" value="200" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <button type="button" class="btn btn-sm btn-secondary">-</button>
+          </div>
+        </div>
+        
+        <div class="col-12" style="height: 35px;">
+
+        </div>
+    </div> -->
+
+
+
+
+    
+
+  </div>
+
+  <div class="container_bottombar row">
+      <!-- 底部的状态栏 -->
+      <div class="screen-img-statue-bottom row col-12">
+
+        <span class="col-auto" style="padding: 0px; margin: 0px;">
+          <span id="imglist_size" class=" screen-img-statue-item col-auto" data-toggle="tooltip"
+              data-placement="bottom">
+              <span class="mr-1" style="font-size: small;">缓存截图</span>
+              <span class="imglist_size text-primary">-</span>
+              <i class="bi bi-arrow-up ml-2"></i>
+          </span>
+        </span>
+
+        <span class="screen-img-statue-item-b col-auto">
+          <i class="bi bi-tablet mr-1"></i>
+          <span id="header_pixels"></span>
+        </span>
+
+        <span id="header_key_focus" class="screen-img-statue-item-b col-auto">
+          <span  style="font-weight: 200; cursor: pointer;">如键盘取色无效,先点我一下!</span>
+        </span>
+
+        <!-- <span class="col-auto" style="padding: 0px; margin: 0px;">
+          <input id="header_color_current" type="text" placeholder="数字键1-9 获取坐标颜色" style="width:170px; border: none; background-color: white;"
+              class="form-control form-control-sm text-primary" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </span> -->
+
+      </div>
+  </div>
+
+  <div class="zoomContainer"
+      style="-webkit-transform: translateZ(0);position:absolute; display: none; pointer-events: none; ">
+      <div class="zoomWindowContainer" style="height: 180px;">
+        <div
+          style="overflow: hidden; background-position: 200px 200px; text-align: center; background-color:   rgb(255, 255, 255); width: 160px; height: 160px; float: left;  z-index: 100;  background-repeat: no-repeat; position: absolute; margin-top: 30px;"
+          class="zoomWindow shadow-lg">
+          <div class="zoomWindow_lines">
+            <div class="shadow-info-sm" style="background-color: red; width: 100%;height: 1px;"></div>
+            <div class="shadow-info-sm" style="background-color: red; position: absolute; height: 100%;width: 1px;">
+            </div>
+            <span
+              style="width: 3px; height: 3px;position: absolute; background-color: transparent; border-radius: 20px; border: white solid 1px;"></span>
+          </div>
+        </div>
+        <div style="margin-top: -10px;">
+          <span class=" shadow-lg small"
+            style="border-radius: 5px; background-color: rgba(255, 255, 255, 0.5); padding:1px">
+            <i class="bi bi-mouse toolbar_img_delall-mousecolor mr-1"></i>
+            <span id="header_cur_rgb">#efefef</span>
+            <span id="header_cur_xy" class="ml-1"></span>
+
+          </span>
+        </div>
+      </div>
+    </div>
+
+  <div style="position: absolute; padding: 0px; margin: 0px;">
+
+    <!-- 在线插件列表 -->
+    <div id="gp_line_modal" class="modal fade" data-backdrop="static" data-keyboard="false" style="margin: 0px;"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">图色插件列表</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="margin: 0px; background-color: aliceblue; padding: 0px;">
+            <ul id="gp_line_list" class="gp_line_list">
+
+            </ul>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 模态 gp执行失败后 -->
+    <div id="model_gp_error" class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-danger" id="staticBackdropLabel">GP处理异常</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="margin: 0px; padding: 0px;">
+            <form class="row col-12" style="padding: 0px; margin: 0px;">
+              <div class="input-group input-group-sm col-6 mt-1">
+                <span class="col-12 text-primary">GP源码</span>
+                <textarea id="gp_run_e_code" class="form-control" id="message-text"
+                  style="min-height: 40vh;"></textarea>
+                </select>
+              </div>
+
+              <div class="input-group input-group-sm col-6 mt-1">
+                <span class="col-12 text-danger">错误信息</span>
+                <textarea id="gp_run_e_msg" class="form-control" id="message-text" style="min-height: 40vh;"></textarea>
+                </select>
+              </div>
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <span class="text-danger">自动回退至上一步</span>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">知道了</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 插件工程调试的模态框 -->
+    <div id="gp_test_modal" class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">GP插件调试</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="margin: 0px; background-color: aliceblue;">
+            <form>
+
+              <div class="input-group input-group-sm mt-2">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">插件路径:</span>
+                </div>
+                <input id="gp_test_name" type="text" placeholder="工程名.文件路径.你的插件类" class="form-control"
+                  id="recipient-name">
+
+              </div>
+
+              <div class="input-group input-group-sm mt-2" style="">
+                <span class="small">
+                  插件路径: 如果您的工程中,有类继承GPTask,那么请详细写该类的路径.<br />
+                  工程名.文件路径.你的插件类
+                </span>
+              </div>
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+            <button id="gp_test_submit" type="button" class="btn btn-success">调试</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 导出结果的模态框 -->
+    <div id="gp_export" class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header" style="border-bottom: none; margin-bottom: 0px;">
+            <div style="width: 100%;">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="e_pg" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">导出为GP文件</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="e_module" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">存储至工程</button>
+                </li>
+  
+              </ul> 
+
+              
+
+    
+  
+              <div class="input-group input-group-sm mt-3" style=" width: 100%;">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">保存至工程:</span>
+                </div>
+                <select id="as_modules" class="as_modules custom-select custom-select-sm form-control">
+                </select>
+              </div>
+
+            </div>
+
+            
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="margin: 0px;background-color: #f8f9fa;">
+
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                <div class="text-info mb-3">
+                  <span style="font-size: smaller;">gp文件不但可以打开重复修改,还可以直接运行. <span class="text-danger">但无法更改参数,如需要更改参数,请保存至工程</span></span>
+                </div>
+
+                <form>
+                  
+                  <div id="gp_export_copy" class="input-group input-group-sm " style="">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">文件命名为:</span>
+                    </div>
+                    <input id="gp_export_name" type="text" class="form-control" id="recipient-name">
+    
+                  </div>
+    
+                  <div class="input-group input-group-sm mt-2" style="">
+                    <textarea id="gp_export_code" class="form-control text-primary" id="message-text"
+                      style="min-height: 30vh;"></textarea>
+    
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="text-info mb-3"> 
+                  <span style="font-size: smaller;">所有res资源全都会拷贝至工程目录下. <span class="text-danger">以下代码是相对于__init__.py运行,请注意资源路径</span></span>
+                </div>
+
+                <form>
+                  <div class="input-group input-group-sm" style="">
+                    <textarea id="gp_module_code" class="form-control text-primary" id="message-text"
+                      style="min-height: 30vh;"></textarea>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+            <button id="gp_export_submitf" type="button" class="btn btn-success">
+              <div id="gp_export_submitf_loading" style="display: none;"
+                class="spinner-border spinner-border-sm text-light" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+              保存并复制代码</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="static/libs/jquery-menu/jquery.contextMenu.js"></script>
+  <script src="static/js/base/baseurl.js"></script>
+  <script src="static/js/screen/screen.js"></script>
+  <script src="static/js/screen/image_mouse.js"></script>
+  <script src="static/js/screen/screen_maker.js"></script>
+  <script src="static/js/screen/gp_plug.js"></script>
+  <script src="static/js/screen/screen_api.js"></script>
+
+</body>
+
+</html>
