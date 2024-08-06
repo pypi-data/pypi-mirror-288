@@ -1,0 +1,15 @@
+ess/reduce/__init__.py,sha256=2zbox2LZD92bfion5_v0syHvtoiT8uneMVIskf1x5TU,394
+ess/reduce/logging.py,sha256=6n8Czq4LZ3OK9ENlKsWSI1M3KvKv6_HSoUiV4__IUlU,357
+ess/reduce/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ess/reduce/uncertainty.py,sha256=UrS7wB2aK8QoLD3qG2Ud-XmjDl7Y9dANY31k83-cZKs,6982
+ess/reduce/nexus/__init__.py,sha256=rxu1rBOXL7aFXMfbt2QyYgrUTXs48UNHX9nXYwJZwSM,837
+ess/reduce/nexus/_nexus_loader.py,sha256=31eVQoAMLYMYJtk1YxVkKzFliBLQMMerXYE1vzfwsoI,15921
+ess/reduce/nexus/json_nexus.py,sha256=QrVc0p424nZ5dHX9gebAJppTw6lGZq9404P_OFl1giA,10282
+ess/reduce/nexus/types.py,sha256=FiMGrj45f4a1EY37YrzVp5gjoDfjyGIc8xtEnVb0Ueg,1572
+ess/reduce/scripts/grow_nexus.py,sha256=usBA5dLtnzRlLU26rq9BsvDkMxyArHi0BiJSqsT8B7Q,3430
+essreduce-24.8.0.dist-info/LICENSE,sha256=nVEiume4Qj6jMYfSRjHTM2jtJ4FGu0g-5Sdh7osfEYw,1553
+essreduce-24.8.0.dist-info/METADATA,sha256=ocJ9ps3-zgaYSNVso-hN7RzpVXdaPL7R5h1LR1EBuUw,3359
+essreduce-24.8.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+essreduce-24.8.0.dist-info/entry_points.txt,sha256=PMZOIYzCifHMTe4pK3HbhxUwxjFaZizYlLD0td4Isb0,66
+essreduce-24.8.0.dist-info/top_level.txt,sha256=0JxTCgMKPLKtp14wb1-RKisQPQWX7i96innZNvHBr-s,4
+essreduce-24.8.0.dist-info/RECORD,,
