@@ -1,0 +1,17 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retriever_transformers"
+version = "0.0.3"
+dependencies = [
+    "torch",
+    "transformers",
+    'numpy',
+]
+readme = "README.rst"
+[project.optional-dependencies]
+dev = ["pip-tools", "pytest"]
