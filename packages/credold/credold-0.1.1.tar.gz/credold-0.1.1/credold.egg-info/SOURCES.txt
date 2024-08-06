@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+credold/__init__.py
+credold/credold.py
+credold/local_storage.py
+credold/s3_storage.py
+credold/storage.py
+credold.egg-info/PKG-INFO
+credold.egg-info/SOURCES.txt
+credold.egg-info/dependency_links.txt
+credold.egg-info/requires.txt
+credold.egg-info/top_level.txt
+test/__init__.py
+test/test_local_storage.py
+test/test_s3_storage.py
