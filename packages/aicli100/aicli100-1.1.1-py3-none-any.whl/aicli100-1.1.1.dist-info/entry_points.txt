@@ -1,0 +1,3 @@
+[console_scripts]
+aicli100 = aicli100.main:main
+aicli100-post-install = aicli100.post_install:create_config

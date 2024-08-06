@@ -1,0 +1,12 @@
+aicli100/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aicli100/ai.py,sha256=p0g3L9nNM9erg3W5_Jnpg_YaLO9m8XSQ0lFAgbT6DVI,5210
+aicli100/cli.py,sha256=bmlyNzKPG8Ja2DYlCiBlxAoPwtoQujizbYaIBXGBsOA,9587
+aicli100/main.py,sha256=5UDu_v_FRuU2_ShfG6IAemqsPrQvFpgJK4l7Rh7TFoE,505
+aicli100/post_install.py,sha256=hybs7OnYXJ4Bar1rI9P54Odqsk3Pevb6PkjDYrFsfdg,513
+aicli100/setup.py,sha256=v1qg04hvBrwLQTTPJmGExhJeU5qTKvegLa-vby2W7kc,2627
+aicli100-1.1.1.data/data/share/aicli100/post_install.py,sha256=hybs7OnYXJ4Bar1rI9P54Odqsk3Pevb6PkjDYrFsfdg,513
+aicli100-1.1.1.dist-info/METADATA,sha256=yBdrnsQQ7xZRKMARzog9rdiaqxD7YdesMlSjcMYJjo8,2748
+aicli100-1.1.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+aicli100-1.1.1.dist-info/entry_points.txt,sha256=22-y9QgMIwfX8ihY1G-gM9NmIndpsjZbAXmHeTPCXxI,108
+aicli100-1.1.1.dist-info/licenses/LICENSE,sha256=amwgR-P10BB8XE6YmUMVG4o2ppIqun-Mt9kdt7ENUZA,1084
+aicli100-1.1.1.dist-info/RECORD,,
