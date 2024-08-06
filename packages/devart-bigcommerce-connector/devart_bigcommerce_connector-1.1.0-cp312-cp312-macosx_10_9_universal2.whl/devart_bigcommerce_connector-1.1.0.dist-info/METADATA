@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: devart-bigcommerce-connector
+Version: 1.1.0
+Summary: New level of functionality and performance in data access via Python
+Home-page: https://devart.com
+Author: Devart
+Author-email: support@devart.com
+License: LGPL with exceptions
+Project-URL: Homepage, https://devart.com/python/bigcommerce/
+Project-URL: Download, https://devart.com/python/bigcommerce/download.html
+Project-URL: History, https://devart.com/python/bigcommerce/revision_history.html
+Project-URL: Documentation, https://devart.com/python/bigcommerce/overview.html
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Python Connector for BigCommerce #
+
+Python Connector for BigCommerce is a connectivity solution for accessing
+BigCommerce from Python applications to read and update data. It fully
+implements the Python DB API 2.0 specification. The connector is distributed
+as a wheel package for Windows, macOS, and Linux.
+
+Standard SQL syntax
+
+The connector fully supports the ANSI SQL standard and lets you execute SQL
+statements against your BigCommerce data just like you would normally work
+with relational databases. Simple queries are directly converted
+to BigCommerce API calls and executed on the BigCommerce side.
+Complex queries are transformed into simpler queries, which are then converted
+to BigCommerce API calls. The embedded SQL engine then processes the results
+in the local cache and applies advanced SQL features from the original complex
+query.
+
+## Using the connector ##
+
+To retrieve data from a database:
+
+Import the module.
+```
+import devart.bigcommerce
+```
+
+Connect to a database using the `connect()` module method and obtain a `connection` object: 
+If you're using basic authentication:
+```
+my_connection = devart.bigcommerce.connect(
+    Version="Ver2",
+    Authentication="Basic",
+    Server="your_bigcommerce_url",
+    UserId="your_username",
+    AuthenticationToken="your_auth_token"
+)
+```
+If you're using OAuth 2.0 authentication:
+```
+my_connection = devart.bigcommerce.connect(
+    Version="Ver2",
+    Authentication="OAuth",
+    StoreId="your_store_hash",
+    ClientId="your_client_id",
+    AccessToken="your_access_token"
+)
+```
+
+Create a `cursor` object using the `cursor()` connection method.
+```
+my_cursor = my_connection.cursor()
+```
+
+Execute the SQL statement using the `execute()` cursor method.
+```
+my_cursor.execute("SELECT * FROM employees")
+```
+
+Retrieve the result set using one of the `fetch*()` cursor methods.
+```
+for row in my_cursor.fetchall(): 
+    print(row)
+```
+
+## Ordering and activating the license ##
+
+You can purchase a license for the connector on the ordering page:             
+https://www.devart.com/python/bigcommerce/ordering.html
+
+To activate the license, follow the instructions in the documentation:             
+https://docs.devart.com/python/bigcommerce/activate-a-license.htm
+
+## What's new ##
+
+Python Connector for BigCommerce 1.1
+
+- Added connection pooling
+- Added activation with a license key
+- Added the subscription license type
