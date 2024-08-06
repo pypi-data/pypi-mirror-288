@@ -1,0 +1,2 @@
+[console_scripts]
+dputils-i2e = dputils:i2e.main
