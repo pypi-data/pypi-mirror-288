@@ -1,0 +1,39 @@
+<div class="flex flex-col gap-3">
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Description</th>
+                <th>AXE ID</th>
+                <th>Impact</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for node in node_list %}
+                <tr>
+                    <td>
+                        <a href="#{{ prefix }}-{{ node.index }}">{{ node.index }}</a>
+                    </td>
+                    <td>
+                        <a href="#{{ prefix }}-{{ node.index }}">{{ node.help }}</a>
+                    </td>
+                    <td>
+                        <a href="{{ node.helpUrl }}" target="_blank">{{ node.id }}</a>
+                    </td>
+                    <td>
+                        <div class="group/title relative flex text-center w-full justify-center">
+                            <svg class="icon icon-severity icon-severity-{{ node.impact }} cursor-pointer"
+                                 role="img">
+                                <title class="capitalize">{{ node.impact }} severity</title>
+                                <use xlink:href="#icon-severity-{{ node.impact }}"></use>
+                            </svg>
+                            <span class="absolute bottom-0 m-4 group/title invisible group-hover/title:visible p-1 border rounded text-sm bg-slate-900 text-slate-100 whitespace-nowrap"> {{ node.impact }} severity</span>
+                        </div>
+                    </td>
+                    <td>{{ node.nodes|length }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
