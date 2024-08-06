@@ -1,0 +1,15 @@
+[project]
+name = "amarillo-enhancer"
+version = "2.0.1"
+description = "FastAPI app to enhance carpool offers from Amarillo"
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = [
+    "amarillo",
+    "amarillo-stops",
+    "watchdog",
+    "schedule==1.2.1",
+]
+
+[tool.setuptools.packages]
+find = {}
