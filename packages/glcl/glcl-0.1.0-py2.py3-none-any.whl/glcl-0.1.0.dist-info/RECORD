@@ -1,0 +1,10 @@
+glcl/__init__.py,sha256=Csikal6v_7dw3kOn6iaXOdeQe3NU3ip6VsnCm6r_AsQ,1793
+glcl/__init__.pyi,sha256=pMMwPL_pWvFJ8Vp1lV5dSyO0QNQmHUirOe_vSjW9hLk,2689377
+glcl/__version__.py,sha256=5gDYWsez7IkCPqgUKVxFWKz8xy6oTXbthnK40ZUYAZw,282
+glcl/Win32/glcl.pyd,sha256=V34xlm-TkS1FdzH86Ac7KMX89rQWlzNufVzGEapEHIA,8045568
+glcl/Win64/glcl.pyd,sha256=pJNCMSvthLenjzaQK26FSIhA-V5YEL4sXu6XO3Xt3Wc,12394496
+glcl/doc/docs.xml,sha256=Bpqp93TaDGTMul0JUCU8RI-Sw0JFdyihkhoCIVcfqf8,1465315
+glcl-0.1.0.dist-info/METADATA,sha256=RC48jmsb5h4uyGte8ZuFSXmFvz21xWGRNaLwfKHvxyU,933
+glcl-0.1.0.dist-info/WHEEL,sha256=XRxW4r1PNiVhMpP4bT9oWtu3HyndxpJ84SkubFgzp_Y,109
+glcl-0.1.0.dist-info/top_level.txt,sha256=71cguvBKUo59Mab-cwAIuE5GvSZj-Dgy5idrOdDGRto,5
+glcl-0.1.0.dist-info/RECORD,,
