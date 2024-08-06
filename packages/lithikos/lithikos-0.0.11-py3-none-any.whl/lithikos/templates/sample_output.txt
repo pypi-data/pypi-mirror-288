@@ -1,0 +1,91 @@
+
+
+                                    ***********************  RESULTS  *********************
+
+***********  RESULTS  ***********      {{construction_data.analysis_method.text}} analysis of {{artefact_info.name}} oriented {{artefact_info.orientation_method.text}}     ************  RESULTS  ************
+
+                                    ********   ALL VOLUMES DISPLAYED IN CUBIC mm   ********
+
+
+                                    Endo-Sym VOLUME:   {{ '%16.6f' % artefact_analysis.reference_mesh_volume}}
+                           ORIENTED ARTEFACT VOLUME:   {{ '%16.6f' % artefact_segments.volume}}
+
+                                    RADIAL SYMMETRY:     {{ '%12.4f' % artefact_analysis.radial_symmetry}}
+                           LINEAR REFINEMENT (Th/B):     {{ '%12.4f' % artefact_analysis.refinement_linear}}
+
+                          BILATERAL MIRROR SYMMETRY:
+                                                VENTRAL:   {{ '%12.4f' % artefact_analysis.bilateral_ventral_asymmetry_coefficient}}
+                                                 DORSAL:   {{ '%12.4f' % artefact_analysis.bilateral_dorsal_asymmetry_coefficient}}
+                                            ARITHMETIC MEAN:   {{ '%12.4f' % artefact_analysis.bilateral_mirror_symmetry.arithmetic_mean}}
+                                               WEIGHTED AVG:   {{ '%12.4f' % artefact_analysis.bilateral_mirror_symmetry.weighted_average}}
+                                             GEOMETRIC MEAN:   {{ '%12.4f' % artefact_analysis.bilateral_mirror_symmetry.geometric_mean}}
+                                              HARMONIC MEAN:   {{ '%12.4f' % artefact_analysis.bilateral_mirror_symmetry.harmonic_mean}}
+                                                        RMS:   {{ '%12.4f' % artefact_analysis.bilateral_mirror_symmetry.rms}}
+                           BIFACIAL MIRROR SYMMETRY:
+                                                   LEFT:   {{ '%12.4f' % artefact_analysis.bifacial_left_asymmetry_coefficient}}
+                                                  RIGHT:   {{ '%12.4f' % artefact_analysis.bifacial_right_asymmetry_coefficient}}
+                                            ARITHMETIC MEAN:   {{ '%12.4f' % artefact_analysis.bifacial_mirror_symmetry.arithmetic_mean}}
+                                               WEIGHTED AVG:   {{ '%12.4f' % artefact_analysis.bifacial_mirror_symmetry.weighted_average}}
+                                             GEOMETRIC MEAN:   {{ '%12.4f' % artefact_analysis.bifacial_mirror_symmetry.geometric_mean}}
+                                              HARMONIC MEAN:   {{ '%12.4f' % artefact_analysis.bifacial_mirror_symmetry.harmonic_mean}}
+                                                        RMS:   {{ '%12.4f' % artefact_analysis.bifacial_mirror_symmetry.rms}}
+
+
+                                             ASYMMETRIC VOLUMES VISUALIZED
+                                        BY QUADRANT IN BOTTOM CROSS-SECTIONAL VIEW
+                                  ______________________________________________________
+                                 |                                                      |
+                                 |   QIV (VENTRAL-LEFT)            QI (VENTRAL-RIGHT)   |
+                                 |                          + Z                         |
+                                 |                                                      |
+                                 |              {{ '%12.4f' % artefact_analysis.ventral_left_asymmetric_volume}} | {{ '%12.4f' % artefact_analysis.ventral_right_asymmetric_volume}}             |
+                                 |        - X   -------------+-------------   + X       |
+                                 |              {{ '%12.4f' % artefact_analysis.dorsal_left_asymmetric_volume}} | {{ '%12.4f' % artefact_analysis.dorsal_right_asymmetric_volume}}             |
+                                 |                                                      |
+                                 |                          - Z                         |
+                                 |   QIII (DORSAL-LEFT)            QII (DORSAL-RIGHT)   |
+                                 |______________________________________________________|
+
+
+                      ASYMMETRIC VOLUME DIFFERENCES:
+                                              BILATERAL:
+                                                    VENTRAL:   {{ '%12.4f' % artefact_analysis.bilateral_ventral_asymmetric_volume_difference}}
+                                                     DORSAL:   {{ '%12.4f' % artefact_analysis.bilateral_dorsal_asymmetric_volume_difference}}
+                                               BIFACIAL:
+                                                       LEFT:   {{ '%12.4f' % artefact_analysis.bifacial_left_asymmetric_volume_difference}}
+                                                      RIGHT:   {{ '%12.4f' % artefact_analysis.bifacial_right_asymmetric_volume_difference}}
+
+
+                         QI (VENTRAL-RIGHT) VOLUMES:
+                                      ORIENTED ARTEFACT:   {{ '%12.4f' % artefact_segments.ventral_right.volume()}}
+                                  SYMMETRICAL REFERENCE:   {{ '%12.4f' % artefact_analysis.reference_mesh_quadrant_volume}}
+                                     ARTEFACT ASYMMETRY:   {{ '%12.4f' % artefact_analysis.ventral_right_asymmetric_volume}}
+
+                         QII (DORSAL-RIGHT) VOLUMES:
+                                      ORIENTED ARTEFACT:   {{ '%12.4f' % artefact_segments.dorsal_right.volume()}}
+                                  SYMMETRICAL REFERENCE:   {{ '%12.4f' % artefact_analysis.reference_mesh_quadrant_volume}}
+                                     ARTEFACT ASYMMETRY:   {{ '%12.4f' % artefact_analysis.dorsal_right_asymmetric_volume}}
+
+                         QIII (DORSAL-LEFT) VOLUMES:
+                                      ORIENTED ARTEFACT:   {{ '%12.4f' % artefact_segments.dorsal_left.volume()}}
+                                  SYMMETRICAL REFERENCE:   {{ '%12.4f' % artefact_analysis.reference_mesh_quadrant_volume}}
+                                     ARTEFACT ASYMMETRY:   {{ '%12.4f' % artefact_analysis.dorsal_left_asymmetric_volume}}
+
+                         QIV (VENTRAL-LEFT) VOLUMES:
+                                      ORIENTED ARTEFACT:   {{ '%12.4f' % artefact_segments.ventral_left.volume()}}
+                                  SYMMETRICAL REFERENCE:   {{ '%12.4f' % artefact_analysis.reference_mesh_quadrant_volume}}
+                                     ARTEFACT ASYMMETRY:   {{ '%12.4f' % artefact_analysis.ventral_left_asymmetric_volume}}
+
+
+              ORIENTED ARTEFACT HEMISPHERIC VOLUMES:
+                                              LEFT SIDE:   {{ '%12.4f' % artefact_segments.left.volume()}}
+                                             RIGHT SIDE:   {{ '%12.4f' % artefact_segments.right.volume()}}
+                                           VENTRAL FACE:   {{ '%12.4f' % artefact_segments.ventral.volume()}}
+                                            DORSAL FACE:   {{ '%12.4f' % artefact_segments.dorsal.volume()}}
+
+
+     ORIENTED ARTEFACT ASYMMETRY VOLUME DIFFERENCES:
+                                              BILATERAL:   {{ '%0.4f' % artefact_analysis.bilateral_asymmetric_volume}} (NEGATIVE = right side heavy)
+                                               BIFACIAL:   {{ '%0.4f' % artefact_analysis.bifacial_asymmetric_volume}} (NEGATIVE = dorsal face heavy)
+
+****************************************************************************************************************************

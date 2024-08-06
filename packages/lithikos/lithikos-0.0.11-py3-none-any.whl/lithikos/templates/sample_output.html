@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <h1>
+        Results
+    </h1>
+
+    <h2>
+        {{construction_data.analysis_method.text}}
+        analysis of
+        {{artefact_info.name}}
+        oriented
+        {{artefact_info.orientation_method.text}}
+    </h2>
+
+    <h3>ALL VOLUMES DISPLAYED IN CUBIC mm</h3>
+    <style type="text/css">
+        .tg {
+            border-collapse: collapse;
+            border-spacing: 0;
+            margin: 0px auto;
+        }
+
+        .tg td {
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg th {
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg .table-heading {
+            text-align: center;
+            vertical-align: middle
+        }
+
+        .tg .table-label {
+            text-align: right;
+            vertical-align: middle
+        }
+
+        .tg .table-number {
+            text-align: right;
+            vertical-align: middle
+        }
+    </style>
+
+    <table class="tg">
+        <thead>
+            <tr>
+                <th class="table-heading" colspan="2">VOLUME</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="table-label">{{construction_data.analysis_method.text}}</td>
+                <td class="table-number">{{ '%0.6f' % artefact_analysis.reference_mesh_volume}}</td>
+            </tr>
+            <tr>
+                <td class="table-label">ORIENTED ARTEFACT</td>
+                <td class="table-number">{{ '%0.6f' % artefact_segments.volume}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="tg">
+        <thead>
+            <tr>
+                <th class="table-heading" colspan="2">COEFFICIENTS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="table-label">RADIAL SYMMETRY</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.radial_symmetry}}</td>
+            </tr>
+            <tr>
+                <td class="table-label">LINEAR REFINEMENT (Th/B)</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.refinement_linear}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="tg">
+        <thead>
+            <tr>
+                <th class="table-heading" colspan="3">MIRROR SYMMETRY</th>
+            </tr>
+            <tr>
+                <th class="table-heading"></th>
+                <th class="table-heading">BILATERAL</th>
+                <th class="table-heading">BIFACIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="table-label">VENTRAL</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.bilateral_ventral_asymmetry_coefficient}}</td>
+                <td class="table-heading">-</td>
+            </tr>
+            <tr>
+                <td class="table-label">DORSAL</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.bilateral_dorsal_asymmetry_coefficient}}</td>
+                <td class="table-heading">-</td>
+            </tr>
+            <tr>
+                <td class="table-label">LEFT</td>
+                <td class="table-heading">-</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.bifacial_left_asymmetry_coefficient}}</td>
+            </tr>
+            <tr>
+                <td class="table-label">RIGHT</td>
+                <td class="table-heading">-</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.bifacial_right_asymmetry_coefficient}}</td>
+            </tr>
+            <tr>
+                <td class="table-label">ARITHMETIC MEAN</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.bilateral_mirror_symmetry.arithmetic_mean}}</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.bifacial_mirror_symmetry.arithmetic_mean}}</td>
+            </tr>
+            <tr>
+                <td class="table-label">WEIGHTED AVG</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.bilateral_mirror_symmetry.weighted_average}}
+                </td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.bifacial_mirror_symmetry.weighted_average}}</td>
+            </tr>
+            <tr>
+                <td class="table-label">GEOMETRIC MEAN</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.bilateral_mirror_symmetry.geometric_mean}}</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.bifacial_mirror_symmetry.geometric_mean}}</td>
+            </tr>
+            <tr>
+                <td class="table-label">HARMONIC MEAN</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.bilateral_mirror_symmetry.harmonic_mean}}</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.bifacial_mirror_symmetry.harmonic_mean}}</td>
+            </tr>
+            <tr>
+                <td class="table-label">RMS</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.bilateral_mirror_symmetry.rms}}</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.bifacial_mirror_symmetry.rms}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="tg">
+        <thead>
+            <tr>
+                <th class="table-heading" colspan="4">
+                    ASYMMETRIC VOLUMES VISUALIZED<br>
+                    BY QUADRANT IN BOTTOM CROSS-SECTIONAL VIEW
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="table-heading" colspan="2">QIV (VENTRAL-LEFT)</td>
+                <td class="table-heading" colspan="2">QI (VENTRAL-RIGHT)</td>
+            </tr>
+            <tr>
+                <td class="table-heading"></td>
+                <td class="table-heading" colspan="2">+ Z</td>
+                <td class="table-heading"></td>
+            </tr>
+            <tr>
+                <td class="table-heading" rowspan="2">- X</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.ventral_left_asymmetric_volume}}</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.ventral_right_asymmetric_volume}}</td>
+                <td class="table-heading" rowspan="2">+ X</td>
+            </tr>
+            <tr>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.dorsal_left_asymmetric_volume}}</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.dorsal_right_asymmetric_volume}}</td>
+            </tr>
+            <tr>
+                <td class="table-heading"></td>
+                <td class="table-heading" colspan="2">+ Z</td>
+                <td class="table-heading"></td>
+            </tr>
+            <tr>
+                <td class="table-heading" colspan="2">QIII (DORSAL-LEFT)</td>
+                <td class="table-heading" colspan="2">QII (DORSAL-RIGHT)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="tg">
+        <thead>
+            <tr>
+                <th class="table-heading" colspan="3">ASYMMETRIC VOLUME DIFFERENCES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="table-label" rowspan="2">BILATERAL</td>
+                <td class="table-label">VENTRAL</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.bilateral_ventral_asymmetric_volume_difference}}
+                </td>
+            </tr>
+            <tr>
+                <td class="table-label">DORSAL</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.bilateral_dorsal_asymmetric_volume_difference}}
+                </td>
+            </tr>
+            <tr>
+                <td class="table-label" rowspan="2">BIFACIAL</td>
+                <td class="table-label">LEFT</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.bifacial_left_asymmetric_volume_difference}}
+                </td>
+            </tr>
+            <tr>
+                <td class="table-label">RIGHT</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.bifacial_right_asymmetric_volume_difference}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="tg">
+        <thead>
+            <tr>
+                <th class="table-heading" colspan="4">QUADRANT VOLUMES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="table-label"></td>
+                <td class="table-label">ORIENTED ARTEFACT</td>
+                <td class="table-label">SYMMETRICAL REFERENCE</td>
+                <td class="table-label">ARTEFACT ASYMMETRY</td>
+            </tr>
+            <tr>
+                <td class="table-label">QI (VENTRAL-RIGHT)</td>
+                <td class="table-number">{{ '%0.4f' % artefact_segments.ventral_right.volume()}}</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.reference_mesh_quadrant_volume}}</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.ventral_right_asymmetric_volume}}</td>
+            </tr>
+            <tr>
+                <td class="table-label">QII (DORSAL-RIGHT)</td>
+                <td class="table-number">{{ '%0.4f' % artefact_segments.dorsal_right.volume()}}</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.reference_mesh_quadrant_volume}}</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.dorsal_right_asymmetric_volume}}</td>
+            </tr>
+            <tr>
+                <td class="table-label">QIII (DORSAL-LEFT)</td>
+                <td class="table-number">{{ '%0.4f' % artefact_segments.dorsal_left.volume()}}</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.reference_mesh_quadrant_volume}}</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.dorsal_left_asymmetric_volume}}</td>
+            </tr>
+            <tr>
+                <td class="table-label">QIV (VENTRAL-LEFT)</td>
+                <td class="table-number">{{ '%0.4f' % artefact_segments.ventral_left.volume()}}</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.reference_mesh_quadrant_volume}}</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.ventral_left_asymmetric_volume}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="tg">
+        <thead>
+            <tr>
+                <th class="table-heading" colspan="2"> ORIENTED ARTEFACT HEMISPHERIC VOLUMES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="table-label">LEFT SIDE</td>
+                <td class="table-number">{{ '%0.4f' % artefact_segments.left.volume()}}</td>
+            </tr>
+            <tr>
+                <td class="table-label">RIGHT SIDE</td>
+                <td class="table-number">{{ '%0.4f' % artefact_segments.right.volume()}}</td>
+            </tr>
+            <tr>
+                <td class="table-label">VENTRAL FACE</td>
+                <td class="table-number">{{ '%0.4f' % artefact_segments.ventral.volume()}}</td>
+            </tr>
+            <tr>
+                <td class="table-label">DORSAL FACE</td>
+                <td class="table-number">{{ '%0.4f' % artefact_segments.dorsal.volume()}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="tg">
+        <thead>
+            <tr>
+                <th class="table-heading" colspan="3">ORIENTED ARTEFACT ASYMMETRY VOLUME DIFFERENCES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="table-label">BILATERAL</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.bilateral_asymmetric_volume}}</td>
+                <td class="table-label">(NEGATIVE = right side heavy)</td>
+            </tr>
+            <tr>
+                <td class="table-label"> BIFACIAL</td>
+                <td class="table-number">{{ '%0.4f' % artefact_analysis.bifacial_asymmetric_volume}}</td>
+                <td class="table-label">(NEGATIVE = dorsal face heavy)</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
