@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: prompt-as
+Version: 0.1.0
+Summary: GPT
+Home-page: https://github.com/Upsonic/prompt-as-function
+Author: Upsonic
+Author-email: onur@upsonic.co
+License: MIT
+Description: # prompt-as-code
+Platform: UNKNOWN
+Requires-Python: >= 3.9
+Description-Content-Type: text/markdown
