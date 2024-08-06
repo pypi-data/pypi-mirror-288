@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: aoffp
+Version: 0.1.1
+Summary: Python sdk for ffp
+Home-page: https://github.com/permadao/ffp/tree/develop/sdk/python
+Download-URL: 
+Author: young
+Author-email: 
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# ao.py
+python sdk for permaswap ffp protocol
+
+## install
+
+```
+pip install aoffp
+```
+
+
+## Example
+
+see demo/python/cli.py
