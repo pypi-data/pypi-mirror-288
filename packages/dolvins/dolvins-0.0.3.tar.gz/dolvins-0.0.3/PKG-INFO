@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dolvins
+Version: 0.0.3
+Summary: Dolvin's Math and Stats Library
+Author: Landon Dolvin
+Author-email: landondolvin@gmail.com
+Keywords: python,distributions,probability,linear algebra,statistics,mathematics
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+This is the Beta Version of dolvins. More detailed instructions / updates to follow.
