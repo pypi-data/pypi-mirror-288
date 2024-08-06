@@ -1,0 +1,6 @@
+dist
+documentation
+helicopyter
+node_modules
+providers
+stacks
