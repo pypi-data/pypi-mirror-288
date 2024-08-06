@@ -1,0 +1,2 @@
+[console_scripts]
+imaging-publish = imagingai.imaging_publish:main
