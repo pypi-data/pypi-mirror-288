@@ -1,0 +1,49 @@
+Metadata-Version: 2.3
+Name: ProgressGym
+Version: 0.0.2
+Summary: alpha
+Project-URL: Documentation, https://pku-alignment.github.io/ProgressGym/
+Project-URL: Github, https://github.com/PKU-Alignment/ProgressGym
+Author-email: "Tianyi Qiu, Yang Zhang, Xuchuan Huang, Jasmine Xinze Li" <2200013216@stu.pku.edu.cn>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: argparse
+Requires-Dist: bs4
+Requires-Dist: deepspeed
+Requires-Dist: gensim
+Requires-Dist: guidance
+Requires-Dist: jsonstreamer
+Requires-Dist: levenshtein
+Requires-Dist: lxml
+Requires-Dist: nltk
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: ray
+Requires-Dist: seaborn
+Requires-Dist: tqdm
+Requires-Dist: transformers==4.40.0
+Requires-Dist: trl
+Requires-Dist: vllm>0.4.0
+Requires-Dist: wheel
+Requires-Dist: yajl
+Description-Content-Type: text/markdown
+
+# ProgressAlign: Dataset & Experimental Framework for Progress-Aware Alignment
+
+## Building the dataset
+
+- Running `python ./build_dataset.py` will automatically download the relevant files and then compile them into the desired dataset. Specifically, it will...
+  - Download and decompress raw data files from multiple sources, placing them in `./dataset/raw_downloads` 
+  - Organize downloaded data into an unified format, and the resulting historical text dataset is saved as a series of files `./dataset/dataset_textseq/[century_num]/[year_num].json` 
+  - Train a series of historical language models  `./dataset/dataset_modelseq/[century_num]` using the historical text dataset.
+
+
+
+## Running the benchmark
+
+- Running `python ./run_benchmark.py --challenge [challenge_name] --testtaker [path_to_tested_system]` will produce the benchmark results. Omitting `--challenge [challenge_name]` will default to testing all challenges.
+

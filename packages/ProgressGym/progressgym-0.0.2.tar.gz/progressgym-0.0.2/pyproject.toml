@@ -1,0 +1,64 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ProgressGym"
+version = "0.0.2"
+authors = [
+  { name="Tianyi Qiu, Yang Zhang, Xuchuan Huang, Jasmine Xinze Li", email="2200013216@stu.pku.edu.cn" },
+]
+description = "alpha"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "wheel",
+    "tqdm",
+    "bs4",
+    "trl",
+    "vllm>0.4.0",
+    "ray",
+    "lxml",
+    "nltk",
+    "yajl",
+    "numpy",
+    "pandas",
+    "gensim",
+    "seaborn",
+    "argparse",
+    "guidance",
+    "deepspeed",
+    "Levenshtein",
+    "jsonstreamer",
+    "transformers==4.40.0"
+]
+
+[project.urls]
+Documentation = "https://pku-alignment.github.io/ProgressGym/"
+Github = "https://github.com/PKU-Alignment/ProgressGym"
+
+[build.targets.sdist]
+include = [
+  "algorithms/*",
+  "benchmark/*",
+  "challenges/*",
+  "dataset/*",
+  "examples/*",
+  "src/*",
+  "*.py"
+]
+exclude = [
+  "libs/*",
+  "doc/*",
+  "doc_generation/*",
+  "doc38/*",
+  "_*",
+  "src/evaluation/assets/input_alpaca_old.json",
+  "src/evaluation/assets/moralchoice_alpaca.json"
+]
