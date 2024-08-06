@@ -1,0 +1,85 @@
+## TinyMoss
+
+基于RabbitMQ的轻量级分布式消息开发框架。
+
+### 快速使用
+
+#### 安装 RabbitMQ
+
+#### 安装库
+```bash
+pip install tinymoss
+```
+
+#### 项目结构
+
+```bash
+project --- 项目目录
+  |--- app.py  主入口程序
+  |--- moss.nodes.json 节点配置文件
+  |--- nodes   自定义节点目录
+         |--- node1 noed1节点
+                 |--- __init__.py  初始化文件
+                 |--- node1.py   node1节点的具体实现
+         |--- node2 noed2节点
+                 |--- __init__.py  初始化文件
+                 |--- node2.py   node2节点的具体实现
+```
+
+#### 定义节点
+
+```python
+# node1.py
+
+class HelloNode(MossNode):
+  
+  _should_shutup = False
+
+  def on_running(self):
+    print('Hello Node is running')
+  
+    while not self._should_shutup:
+      time.sleep(5)
+      self.pub_to_service('<Other Node Service Id>', 'Hi!')
+
+    
+  def on_messaged(self, route, body):
+    data = str (body, 'utf-8')
+    print(f'[Rx] {route}, {data}')
+    if route == 'urn:node:id:5cf3ed19-571d-4631-9bb0-e62de70bedea:service:shutup':
+      self._should_shutup = True
+```
+
+#### 配置节点 
+
+```json
+{
+  "amqp": "amqp://guest:guest@localhost:5672/%2F",
+  "nodes": [
+    {
+      "id": "urn:node:id:5cf3ed19-571d-4631-9bb0-e62de70bedea",
+      "pacakge": "nodes/node1",
+      "name": "HelloNode",
+      "nodeData": {},
+      "services":[
+        "urn:node:id:5cf3ed19-571d-4631-9bb0-e62de70bedea:service:shutup"
+      ],
+      "config": {}
+    }
+  ]
+}
+```
+
+
+#### 调起 TinyMoss
+```python
+from tinymoss import TinyMoss
+
+moss = TinyMoss()
+try:
+    moss.startup()
+    while True:
+        time.sleep(.1)
+except KeyboardInterrupt:
+    moss.shutdown()
+```
