@@ -1,0 +1,17 @@
+universql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+universql/catalog/__init__.py,sha256=NnKe6uj8TREFvrHxqOLx6zWyiYmi9gdP6bBikwEui3g,1630
+universql/catalog/snow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+universql/catalog/snow/polaris.py,sha256=3XFf36DKqdmW8XWqFclrHs_EPHr3jO9DVJnIMLacfwk,2876
+universql/catalog/snow/show_iceberg_tables.py,sha256=0PBMmyTdkrlI88Z1ESAtRLrY9uPn1Py64wSm3Mwyk8s,11905
+universql/lake/cloud.py,sha256=ZwQxuwWnWRAtyhIA496SOEH5m3UU2Yw_Rb4KHQIUHgA,1497
+universql/lake/fsspec_util.py,sha256=6UMq9yA9rbCSkzO6EzMJQstF0RpysIi4GYWym2JF25s,6077
+universql/main.py,sha256=3V0z5WwtoMJqeuUtWbLh1oUPRgl8JUucABFaZBrzf-M,6781
+universql/server.py,sha256=HTRz90FRIBa10RkkOoGHBkR5VsDGFVijV_6n1eWWlVI,9196
+universql/util.py,sha256=RT5s4VmoQuYmrTkylY1Ymb6IfZ_r8XkmxIUVeq8qc08,15389
+universql/warehouse/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+universql/warehouse/duckdb.py,sha256=_KJk1Me9uVbcPGF6tR5ODuq0g_SJQUFjLD6kaeh6Scw,13386
+universql-0.1.1.dev1722870670.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+universql-0.1.1.dev1722870670.dist-info/METADATA,sha256=6yYT0E9HBgu7hqGaV-Xp7Lzacsy9raYHXu_YXAOcA-o,19970
+universql-0.1.1.dev1722870670.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+universql-0.1.1.dev1722870670.dist-info/entry_points.txt,sha256=mD3fusZhNi_gko9Wj1OE6giEEkx0id8p-nbCB5lbSRU,48
+universql-0.1.1.dev1722870670.dist-info/RECORD,,
