@@ -1,0 +1,17 @@
+microcsound/__init__.py,sha256=3PTwyl8qbk9xb4QiNHAXhPq4yfEGMQqFwTiB14Yya8Q,141
+microcsound/config.py,sha256=trdcpBhZDjV38QRGLkL5IrggRJ3NEbrPnG2_UR9vfbM,990
+microcsound/handlers.py,sha256=ctfAkbIesrFEYrnPaktbjUV-ZnEywkswvJLPHOFc5DE,8032
+microcsound/helpers.py,sha256=Zj_06Yc560brn4-NWB5z5IwWPGQLgYvaudq4uQmZWnM,3610
+microcsound/main.py,sha256=nPmHyEsyv-ye9PsvBEuyjANy5KV80lJ1c1ynawGk50I,8347
+microcsound/parser.py,sha256=sbp-jNYFaVFgzDSFAGFju-3dMYUa-6GqPPUjdSKY6kE,6827
+microcsound/state.py,sha256=7YNKE4YT5RslBPsk7XAeAyLaHQPYX4_YuT1se7w-qbY,1527
+microcsound/tests.py,sha256=vKzk2QSvx1-pvevqojbSN-us4nllakKMon4XaU6mCoU,5983
+microcsound/share/data/8bit.orc,sha256=RdtxfZXYvyV3inW7yh_ENaDaEqTBJa6XO711QGvn1oE,6258
+microcsound/share/data/ciconia.mc,sha256=QOQy1kkGEL6AHrxO0dY-KxIpgzP9HPiunLNhHQMCKIE,15080
+microcsound/share/doc/CHANGES,sha256=d9yr96TM2A_U0mdI3QmzzlAedKg7kMetV-oW68oN9sc,4461
+microcsound/share/doc/microcsound_tutorial.txt,sha256=pP8Oh_VsJYeJzy7IvBGUPQ_IG-BV8FmAz-3eZ1IhfQk,16627
+microcsound-1.4.0.dist-info/METADATA,sha256=fgWgP64HHNaFbBr3jApEGP3e9z54QToxEacAmHcctJo,5659
+microcsound-1.4.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+microcsound-1.4.0.dist-info/entry_points.txt,sha256=ngyB8KJKVNr5ycb8lTYbqPAxnFHkOIJjghTKGHjn8T0,54
+microcsound-1.4.0.dist-info/licenses/LICENSE.txt,sha256=zUEoeriKQ4sRYbepTc2BhQQCz5DDJpJjjBJZ_pzEC30,1493
+microcsound-1.4.0.dist-info/RECORD,,
