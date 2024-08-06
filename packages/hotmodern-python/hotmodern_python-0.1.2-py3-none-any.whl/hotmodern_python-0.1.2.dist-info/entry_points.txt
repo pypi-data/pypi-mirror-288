@@ -1,0 +1,3 @@
+[console_scripts]
+hotmodern-python=hotmodern_python.console:main
+
