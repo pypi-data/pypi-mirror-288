@@ -1,0 +1,17 @@
+usercloudssdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+usercloudssdk/asyncclient.py,sha256=03dnrjaqtJLRHO_cqRKlf40B43aoBaymZEPt2LXMESM,50883
+usercloudssdk/client.py,sha256=BOQNJ--tYLyRW7iQVI05xBiTVqgPy3X_kL3N-39oycY,47629
+usercloudssdk/client_helpers.py,sha256=wTybcLExNiRNeWLAq-GfLbT68iklMFKtPIkHESPh-NQ,965
+usercloudssdk/client_test.py,sha256=E6YQfBamRIY0AsuY0f9J8nD2H5m5FDUCFTbRAV--pVo,1335
+usercloudssdk/constants.py,sha256=LJhzImsxczF4aKpxB1mwVcSMOCRj0Py31WUT3bEgFps,1453
+usercloudssdk/data_types.py,sha256=KLxYzKp6GVOwGalEv_UqQ-9f9LiFrb4J4NA4l2tLxng,676
+usercloudssdk/errors.py,sha256=m07I5ZEXN22C2iisZdHfK0EMTYQPa4hEQnH6PqOmrv4,1452
+usercloudssdk/models.py,sha256=yw51HV-XXbXwctEM6custpC_AmcpC9hcWQGLZSVT-is,45721
+usercloudssdk/policies.py,sha256=aFXyGo4npv0lfZwCWsdJQZZqakQCqiBRwOVCnufX0nc,791
+usercloudssdk/token.py,sha256=O-3XvXW6A0iwfSCr7hr37EFasDVHCI8jNHeRIhaLDqo,971
+usercloudssdk/uchttpclient.py,sha256=JHkpMY4D3fEjYfgdqhipI8yVO42rXVHqbch6Aa8LKx8,6260
+usercloudssdk/ucjson.py,sha256=sGga-PAH2bsmQuldAxPb9gBOCUc4z5YS_61aFe781lE,574
+usercloudssdk-1.9.1.dist-info/METADATA,sha256=ocRdqKAKSbiodDUoAs7rX6V97QP9W4pLYYz5CVHJuHk,955
+usercloudssdk-1.9.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+usercloudssdk-1.9.1.dist-info/top_level.txt,sha256=7gMfrGPREDVA46J0RhLP3U_0b2zdtmaJ2C6l_VYa1AQ,14
+usercloudssdk-1.9.1.dist-info/RECORD,,
