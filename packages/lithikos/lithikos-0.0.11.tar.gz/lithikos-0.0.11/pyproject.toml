@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lithikos"
+version = "0.0.11"
+authors = [
+    { name = "Graham James Addis", email = "graham@addis.org.uk" },
+    { name = "James Hicks", email = "james.hicks@arch.ox.ac.uk" },
+]
+description = "A package supporting analysis of stone tools."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    'scipy==1.11.1',
+    'matplotlib==3.7.2',
+    'vedo==2024.5.1',
+    'vtk==9.2.6',
+    'treelib==1.7.0',
+    'pandas==2.0.3',
+    'tqdm==4.66.1',
+    'pyyaml==6.0.1',
+    'trimesh==4.1.0',
+    'filelock==3.13.1',
+    'jinja2==3.1.4',
+]
+
+[project.scripts]
+lithikos = "lithikos.__main__:main"
+
+[project.urls]
+Homepage = "https://gitlab.com/lithikos/lithikos"
+Issues = "https://gitlab.com/lithikos/lithikos/issues"
+
+[tool.pylint]
+max-line-length = 90
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"lithikos.templates" = ["*.html", "*.txt"]
+"lithikos.configs" = ["*.yaml"]
