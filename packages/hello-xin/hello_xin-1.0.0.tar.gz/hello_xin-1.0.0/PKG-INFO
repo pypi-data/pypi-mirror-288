@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: hello-xin
+Version: 1.0.0
+Summary: A minimal liberary for testing packaging and publishing.
+Author-email: nimaxin <nimaxin@proton.me>
+Project-URL: Repository, https://github.com/nimaxin/hello-xin.git
+Keywords: hello,xin
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Hello Xin Library
+
+A minimal python library for testing packaging and publishing.
+
+## Installation
+
+You can install this package using pip:
+
+```bash
+pip install hello-xin
+```
+
+## Usage
+
+To use this library, simply import and call the say_hello function:
+
+```python
+from hello_xin import say_hello
+
+say_hello()
+```
+
+## License
+
+This project is licensed under the MIT License.

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+hello_xin/__init__.py
+hello_xin/say_hello.py
+hello_xin.egg-info/PKG-INFO
+hello_xin.egg-info/SOURCES.txt
+hello_xin.egg-info/dependency_links.txt
+hello_xin.egg-info/top_level.txt
