@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+SecureCrypt/__init__.py
+SecureCrypt.egg-info/PKG-INFO
+SecureCrypt.egg-info/SOURCES.txt
+SecureCrypt.egg-info/dependency_links.txt
+SecureCrypt.egg-info/requires.txt
+SecureCrypt.egg-info/top_level.txt
