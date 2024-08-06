@@ -1,0 +1,3 @@
+setuptools
+importlib_metadata
+packaging
