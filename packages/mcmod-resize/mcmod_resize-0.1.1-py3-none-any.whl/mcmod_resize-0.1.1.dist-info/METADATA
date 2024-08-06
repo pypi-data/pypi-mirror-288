@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: mcmod-resize
+Version: 0.1.1
+Summary: resize your textures into mcmod.cn size!
+Author: TunaFish2K
+License-File: LICENSE
+Requires-Dist: pillow
+
