@@ -1,0 +1,2 @@
+recursive-include src/starrail *.png *.jpg *.jpeg *.txt *.c *.exe
+recursive-include src/starrail/automation *.json
