@@ -1,0 +1,226 @@
+
+<style>
+
+
+       .grid-container {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .iconfont-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .iconfont-wrapper:hover {
+            transform: scale(1.1);
+        }
+
+        .mbr-iconfont {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .icon-label {
+            margin-top: 8px;
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+<section data-bs-version="5.1" class="form7 cid-tyy7JKhmHi" id="form7-s">
+    <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                <strong>Icon Library</strong>
+            </h3>
+
+        </div>
+    <div class="grid-container">
+        <!-- Icons will be inserted here -->
+        </div>
+</section>
+    <script>
+        // List of icon class names
+        const iconClasses = [
+            "mobi-mbri-add-submenu",
+            "mobi-mbri-alert",
+            "mobi-mbri-align-center",
+            "mobi-mbri-align-justify",
+            "mobi-mbri-align-left",
+            "mobi-mbri-align-right",
+            "mobi-mbri-android",
+            "mobi-mbri-apple",
+            "mobi-mbri-arrow-down",
+            "mobi-mbri-arrow-next",
+            "mobi-mbri-arrow-prev",
+            "mobi-mbri-arrow-up",
+            "mobi-mbri-bold",
+            "mobi-mbri-bookmark",
+            "mobi-mbri-bootstrap",
+            "mobi-mbri-briefcase",
+            "mobi-mbri-browse",
+            "mobi-mbri-bulleted-list",
+            "mobi-mbri-calendar",
+            "mobi-mbri-camera",
+            "mobi-mbri-cart-add",
+            "mobi-mbri-cart-full",
+            "mobi-mbri-cash",
+            "mobi-mbri-change-style",
+            "mobi-mbri-chat",
+            "mobi-mbri-clock",
+            "mobi-mbri-close",
+            "mobi-mbri-cloud",
+            "mobi-mbri-code",
+            "mobi-mbri-contact-form",
+            "mobi-mbri-credit-card",
+            "mobi-mbri-cursor-click",
+            "mobi-mbri-cust-feedback",
+            "mobi-mbri-database",
+            "mobi-mbri-delivery",
+            "mobi-mbri-desktop",
+            "mobi-mbri-devices",
+            "mobi-mbri-down",
+            "mobi-mbri-download-2",
+            "mobi-mbri-download",
+            "mobi-mbri-drag-n-drop-2",
+            "mobi-mbri-drag-n-drop",
+            "mobi-mbri-edit-2",
+            "mobi-mbri-edit",
+            "mobi-mbri-error",
+            "mobi-mbri-extension",
+            "mobi-mbri-features",
+            "mobi-mbri-file",
+            "mobi-mbri-flag",
+            "mobi-mbri-folder",
+            "mobi-mbri-gift",
+            "mobi-mbri-github",
+            "mobi-mbri-globe-2",
+            "mobi-mbri-globe",
+            "mobi-mbri-growing-chart",
+            "mobi-mbri-hearth",
+            "mobi-mbri-help",
+            "mobi-mbri-home",
+            "mobi-mbri-hot-cup",
+            "mobi-mbri-idea",
+            "mobi-mbri-image-gallery",
+            "mobi-mbri-image-slider",
+            "mobi-mbri-info",
+            "mobi-mbri-italic",
+            "mobi-mbri-key",
+            "mobi-mbri-laptop",
+            "mobi-mbri-layers",
+            "mobi-mbri-left-right",
+            "mobi-mbri-left",
+            "mobi-mbri-letter",
+            "mobi-mbri-like",
+            "mobi-mbri-link",
+            "mobi-mbri-lock",
+            "mobi-mbri-login",
+            "mobi-mbri-logout",
+            "mobi-mbri-magic-stick",
+            "mobi-mbri-map-pin",
+            "mobi-mbri-menu",
+            "mobi-mbri-mobile-2",
+            "mobi-mbri-mobile-horizontal",
+            "mobi-mbri-mobile",
+            "mobi-mbri-mobirise",
+            "mobi-mbri-more-horizontal",
+            "mobi-mbri-more-vertical",
+            "mobi-mbri-music",
+            "mobi-mbri-new-file",
+            "mobi-mbri-numbered-list",
+            "mobi-mbri-opened-folder",
+            "mobi-mbri-pages",
+            "mobi-mbri-paper-plane",
+            "mobi-mbri-paperclip",
+            "mobi-mbri-phone",
+            "mobi-mbri-photo",
+            "mobi-mbri-photos",
+            "mobi-mbri-pin",
+            "mobi-mbri-play",
+            "mobi-mbri-plus",
+            "mobi-mbri-preview",
+            "mobi-mbri-print",
+            "mobi-mbri-protect",
+            "mobi-mbri-question",
+            "mobi-mbri-quote-left",
+            "mobi-mbri-quote-right",
+            "mobi-mbri-redo",
+            "mobi-mbri-refresh",
+            "mobi-mbri-responsive-2",
+            "mobi-mbri-responsive",
+            "mobi-mbri-right",
+            "mobi-mbri-rocket",
+            "mobi-mbri-sad-face",
+            "mobi-mbri-sale",
+            "mobi-mbri-save",
+            "mobi-mbri-search",
+            "mobi-mbri-setting-2",
+            "mobi-mbri-setting-3",
+            "mobi-mbri-setting",
+            "mobi-mbri-share",
+            "mobi-mbri-shopping-bag",
+            "mobi-mbri-shopping-basket",
+            "mobi-mbri-shopping-cart",
+            "mobi-mbri-sites",
+            "mobi-mbri-smile-face",
+            "mobi-mbri-speed",
+            "mobi-mbri-star",
+            "mobi-mbri-success",
+            "mobi-mbri-sun",
+            "mobi-mbri-sun2",
+            "mobi-mbri-tablet-vertical",
+            "mobi-mbri-tablet",
+            "mobi-mbri-target",
+            "mobi-mbri-timer",
+            "mobi-mbri-to-ftp",
+            "mobi-mbri-to-local-drive",
+            "mobi-mbri-touch-swipe",
+            "mobi-mbri-touch",
+            "mobi-mbri-trash",
+            "mobi-mbri-underline",
+            "mobi-mbri-undo",
+            "mobi-mbri-unlink",
+            "mobi-mbri-unlock",
+            "mobi-mbri-up-down",
+            "mobi-mbri-up",
+            "mobi-mbri-update",
+            "mobi-mbri-upload-2",
+            "mobi-mbri-upload",
+            "mobi-mbri-user-2",
+            "mobi-mbri-user",
+            "mobi-mbri-users",
+            "mobi-mbri-video-play",
+            "mobi-mbri-video",
+            "mobi-mbri-watch",
+            "mobi-mbri-website-theme-2",
+            "mobi-mbri-website-theme",
+            "mobi-mbri-wifi",
+            "mobi-mbri-windows",
+            "mobi-mbri-zoom-in",
+            "mobi-mbri-zoom-out"
+        ];
+
+        const gridContainer = document.querySelector('.grid-container');
+
+        // Generate HTML for each icon and add to the grid container
+        iconClasses.forEach(iconClass => {
+            const iconElement = document.createElement('div');
+            iconElement.classList.add('iconfont-wrapper');
+            iconElement.innerHTML = `
+                <span class="mbr-iconfont ${iconClass}"></span>
+                <span class="icon-label">${iconClass.replace('mobi-mbri-', '')}</span>
+            `;
+            gridContainer.appendChild(iconElement);
+        });
+    </script>
