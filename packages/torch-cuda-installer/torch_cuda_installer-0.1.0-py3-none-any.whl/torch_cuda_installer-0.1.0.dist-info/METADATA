@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: torch-cuda-installer
+Version: 0.1.0
+Summary: A tool to automatically install PyTorch packages with CUDA support if available
+Author-email: Güvenç Usanmaz <gusanmaz@gmail.com>
+Project-URL: Homepage, https://github.com/gusanmaz/torch-cuda-installer
+Keywords: pytorch,torch,cuda,installer,deep-learning,nvidia
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+
+
+# PyTorch CUDA Installer
+
+PyTorch CUDA Installer is a Python package that simplifies the process of installing PyTorch packages with CUDA support. It automatically detects the available CUDA version on your system and installs the appropriate PyTorch packages.
+
+## Installation
+
+You can install the PyTorch CUDA Installer using pip:
+
+```
+pip install torch-cuda-installer
+```
+
+## Usage
+
+After installation, you can use the package in two ways:
+
+1. As a command-line tool:
+
+   ```
+   torch-cuda-installer --torch --torchvision --torchaudio
+   ```
+
+2. As a Python module:
+
+   ```python
+   from torch_cuda_installer import install_pytorch
+
+   install_pytorch(cuda_key=None, packages=['torch', 'torchvision', 'torchaudio'])
+   ```
+
+Use any combination of `--torch`, `--torchvision`, and `--torchaudio` to select which packages to install.

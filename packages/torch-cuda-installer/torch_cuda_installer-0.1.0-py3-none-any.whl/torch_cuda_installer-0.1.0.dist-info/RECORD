@@ -1,0 +1,7 @@
+torch_cuda_installer/__init__.py,sha256=d3nGWSvDljF_eXTWNSnSCWFDE8CgHvs0Tn39B9Ieak8,173
+torch_cuda_installer/installer.py,sha256=jOc7CJdOr_A-NBC7Lrzatr3zSTJ21ESTog6FlRPbVTI,3392
+torch_cuda_installer-0.1.0.dist-info/METADATA,sha256=WyLBYZZrDx7zZAQZ739RJPYZ1syTdOeBzUKlTkIZEM4,1460
+torch_cuda_installer-0.1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+torch_cuda_installer-0.1.0.dist-info/entry_points.txt,sha256=jgc_afIwQfUqvh-qBsEhqHZ06oxYu4NuORLuFeJwJUg,77
+torch_cuda_installer-0.1.0.dist-info/top_level.txt,sha256=WQieMV3wSYA5SvzrR4uuKwcY67oF-XpCq0gWolHNEdw,21
+torch_cuda_installer-0.1.0.dist-info/RECORD,,
