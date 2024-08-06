@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "feat-feedback-tool"
+version = "0.4.0"
+description = "Create fast feedback based on prewritten sentences combined with personalised messages."
+license = "CC-BY-NC-SA-2.5"
+readme = "README.md"
+authors = ["AnneliesVlaar <66774020+AnneliesVlaar@users.noreply.github.com>"]
+repository = "https://github.com/AnneliesVlaar/Feat"
+packages = [{ include = "feat", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+pyqtgraph = "^0.12.3"
+toml = "^0.10.2"
+pyqt6 = "^6.5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+'ft.' = 'feat.views.gui:main'
