@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: devart-interbase-connector
+Version: 1.1.0
+Summary: New level of functionality and performance in data access via Python
+Home-page: https://devart.com
+Author: Devart
+Author-email: support@devart.com
+License: LGPL with exceptions
+Project-URL: Homepage, https://devart.com/python/interbase/
+Project-URL: Download, https://devart.com/python/interbase/download.html
+Project-URL: History, https://devart.com/python/interbase/revision_history.html
+Project-URL: Documentation, https://devart.com/python/interbase/overview.html
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Python Connector for InterBase #
+
+Python Connector for InterBase is a connectivity solution for accessing
+InterBase databases from Python applications. It fully implements the Python
+DB API 2.0 specification. The connector is distributed as a wheel package
+for Windows, macOS, and Linux.
+
+Secure communication
+
+The connector supports the Over-the-Wire (OTW) encryption feature of InterBase
+to encrypt data during the transmission process.
+
+## Using the connector ##
+
+To retrieve data from a database:
+
+Import the module.
+```
+import devart.interbase
+```
+
+Connect to a database using the `connect()` module method and obtain a `connection` object.
+```
+my_connection = devart.interbase.connect(
+    Server="your_server",
+    Database="your_database",
+    UserId="your_username",
+    Password="your_password",
+    ClientLibrary="your_client_library"
+)
+```
+
+Create a `cursor` object using the `cursor()` connection method.
+```
+my_cursor = my_connection.cursor()
+```
+
+Execute the SQL statement using the `execute()` cursor method.
+```
+my_cursor.execute("SELECT * FROM employees")
+```
+
+Retrieve the result set using one of the `fetch*()` cursor methods.
+```
+for row in my_cursor.fetchall(): 
+    print(row)
+```
+
+## Ordering and activating the license ##
+
+You can purchase a license for the connector on the ordering page:             
+https://www.devart.com/python/interbase/ordering.html
+
+To activate the license, follow the instructions in the documentation:             
+https://docs.devart.com/python/interbase/activate-a-license.htm
+
+## What's new ##
+
+Python Connector for InterBase 1.1
+
+- Added connection pooling
+- Added activation with a license key
+- Added the subscription license type
