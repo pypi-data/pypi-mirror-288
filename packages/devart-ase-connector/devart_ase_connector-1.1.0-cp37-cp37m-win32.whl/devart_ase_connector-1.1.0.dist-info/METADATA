@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: devart-ase-connector
+Version: 1.1.0
+Summary: New level of functionality and performance in data access via Python
+Home-page: https://devart.com
+Author: Devart
+Author-email: support@devart.com
+License: LGPL with exceptions
+Project-URL: Homepage, http://devart.com/python/ase
+Project-URL: Download, http://devart.com/python/ase/download.html
+Project-URL: History, http://devart.com/python/ase/revision_history.html
+Project-URL: Documentation, http://devart.com/python/ase/overview.html
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python Connector for ASE #
+
+Python Connector for ASE is a connectivity solution for accessing ASE
+databases from Python applications. It fully implements the Python DB API 2.0
+specification. The connector is distributed as a wheel package for Windows,
+macOS, and Linux.
+
+Direct connection
+
+The connector enables you to establish a direct connection to ASE from
+a Python application via TCP/IP, eliminating the need for the database client
+library. A direct connection increases the speed of data transmission between
+the application and ASE database server. It also streamlines the deployment
+process since you don't have to distribute any client libraries with
+the application.
+
+Secure communication
+
+The connector supports encrypted communications using SSL/TLS, SSH tunneling,
+and HTTP/HTTPS tunneling.
+
+## Using the connector ##
+
+To retrieve data from a database:
+
+Import the module.
+```
+import devart.ase
+```
+
+Connect to a database using the `connect()` module method and obtain a `connection` object.
+```
+my_connection = devart.ase.connect(
+    Server="your_server",
+    Database="your_database",
+    UserId="your_username",
+    Password="your_password"
+)
+```
+
+Create a `cursor` object using the `cursor()` connection method.
+```
+my_cursor = my_connection.cursor()
+```
+
+Execute the SQL statement using the `execute()` cursor method.
+```
+my_cursor.execute("SELECT * FROM employees")
+```
+
+Retrieve the result set using one of the `fetch*()` cursor methods.
+```
+for row in my_cursor.fetchall(): 
+    print(row)
+```
+
+## Ordering and activating the license ##
+
+You can purchase a license for the connector on the ordering page:             
+https://www.devart.com/python/ase/ordering.html
+
+To activate the license, follow the instructions in the documentation:             
+https://docs.devart.com/python/ase/activate-a-license.htm
+
+## What's new ##
+
+Python Connector for ASE 1.1
+
+- Added connection pooling
+- Added activation with a license key
+- Added the subscription license type
