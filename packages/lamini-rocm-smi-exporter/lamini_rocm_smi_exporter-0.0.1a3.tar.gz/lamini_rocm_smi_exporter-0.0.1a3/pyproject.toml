@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lamini-rocm-smi-exporter"
+version = "0.0.1a3"
+dependencies = [
+  "prometheus_client==0.20.0",
+  "pyrsmi==1.0.1",
+]
+requires-python = ">= 3.10"
+authors = [
+  {name = "Yaxiong Zhao", email = "yaxiong@powerml.co"},
+]
+maintainers = [
+  {name = "Yaxiong Zhao", email = "yaxiong@powerml.co"},
+]
+description = "Export rocm-smi metrics as prometheus metrics"
+readme = "README.md"
+
+[project.scripts]
+lamini-rocm-smi-exporter = "rocm_smi_exporter.main:main"
