@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: PyCoOT
+Version: 0.1.2
+Summary: PyCoOT: Python Combinatorial Optimal Transport
+Author: Kaiyi Zhang
+License: MIT
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: numpy ==1.24
+Requires-Dist: scipy ==1.11
+Requires-Dist: torch ==1.13
+Requires-Dist: jpype1 ==1.5.0
+
