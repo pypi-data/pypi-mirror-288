@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aau-ais-utilities
+Version: 0.1.19
+Summary: Utilities for working with the AAU AIS database.
+Author-Email: Mikael Vind Mikkelsen <mvmi@cs.aau.dk>
+License: MIT
+Requires-Python: ==3.12.*
+Requires-Dist: sqlalchemy==2.0.*
+Requires-Dist: pydantic-settings==2.2.*
+Description-Content-Type: text/markdown
+
+# AAU AIS Utilities
+## License
+This project is licensed under the terms of the MIT license.
+
+## Contact
+For questions or support, please contact:
+- Developer: [Mikael Vind Mikkelsen](mailto:mvmi@cs.aau.dk)
