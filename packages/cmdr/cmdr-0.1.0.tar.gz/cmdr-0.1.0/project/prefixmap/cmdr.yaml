@@ -1,0 +1,15 @@
+{
+   "OBI": "http://example.org/UNKNOWN/OBI/",
+   "PATO": "http://purl.obolibrary.org/obo/PATO_",
+   "biolink": "https://w3id.org/biolink/",
+   "cmdr": "https://w3id.org/linkml/cmdr/",
+   "example": "https://example.org/",
+   "linkml": "https://w3id.org/linkml/",
+   "schema": "http://schema.org/",
+   "MaterialProcessing": {
+      "@id": "OBI:0000094"
+   },
+   "SpecimenCollectionProcess": {
+      "@id": "OBI:0000659"
+   }
+}

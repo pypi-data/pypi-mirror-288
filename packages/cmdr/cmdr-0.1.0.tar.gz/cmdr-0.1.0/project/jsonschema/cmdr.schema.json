@@ -1,0 +1,273 @@
+{
+    "$defs": {
+        "Container": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "investigations": {
+                    "items": {
+                        "$ref": "#/$defs/Investigation"
+                    },
+                    "type": "array"
+                },
+                "material_processings": {
+                    "items": {
+                        "$ref": "#/$defs/MaterialProcessing"
+                    },
+                    "type": "array"
+                },
+                "materials": {
+                    "items": {
+                        "$ref": "#/$defs/MaterialEntity"
+                    },
+                    "type": "array"
+                },
+                "participations": {
+                    "items": {
+                        "$ref": "#/$defs/Participation"
+                    },
+                    "type": "array"
+                },
+                "specimen_collection_processes": {
+                    "items": {
+                        "$ref": "#/$defs/SpecimenCollectionProcess"
+                    },
+                    "type": "array"
+                },
+                "subjects": {
+                    "items": {
+                        "$ref": "#/$defs/Subject"
+                    },
+                    "type": "array"
+                }
+            },
+            "title": "Container",
+            "type": "object"
+        },
+        "DataObject": {
+            "additionalProperties": false,
+            "description": "A DataFile Associated with a Subject or Investigation or MaterialEntity",
+            "title": "DataObject",
+            "type": "object"
+        },
+        "Investigation": {
+            "additionalProperties": false,
+            "description": "General information about the Investigation",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "part_of": {
+                    "type": "uriorcurie"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "Investigation",
+            "type": "object"
+        },
+        "MaterialEntity": {
+            "additionalProperties": false,
+            "description": "Physical entity that is an input our output of a process from a Subject",
+            "properties": {
+                "concentration": {
+                    "$ref": "#/$defs/Quantity"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "source": {
+                    "type": "uriorcurie"
+                },
+                "used_in": {
+                    "items": {
+                        "type": "uriorcurie"
+                    },
+                    "type": "array"
+                },
+                "volume": {
+                    "$ref": "#/$defs/Quantity"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "MaterialEntity",
+            "type": "object"
+        },
+        "MaterialProcessing": {
+            "additionalProperties": false,
+            "description": "A planned process which results in physical changes in a specified input material",
+            "properties": {
+                "has_input": {
+                    "items": {
+                        "type": "uriorcurie"
+                    },
+                    "type": "array"
+                },
+                "has_output": {
+                    "items": {
+                        "type": "uriorcurie"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "MaterialProcessing",
+            "type": "object"
+        },
+        "Participation": {
+            "additionalProperties": false,
+            "description": "Subject/Study participation information",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "includes": {
+                    "type": "uriorcurie"
+                },
+                "involved_in": {
+                    "items": {
+                        "type": "uriorcurie"
+                    },
+                    "type": "array"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "Participation",
+            "type": "object"
+        },
+        "Quantity": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "comparator": {
+                    "type": "string"
+                },
+                "has_numeric_value": {
+                    "type": "number"
+                },
+                "has_raw_value": {
+                    "type": "string"
+                },
+                "has_unit": {
+                    "type": "string"
+                }
+            },
+            "title": "Quantity",
+            "type": "object"
+        },
+        "SpecimenCollectionProcess": {
+            "additionalProperties": false,
+            "description": "A planned process with the objective of collecting a specimen",
+            "properties": {
+                "has_input": {
+                    "items": {
+                        "type": "uriorcurie"
+                    },
+                    "type": "array"
+                },
+                "has_output": {
+                    "items": {
+                        "type": "uriorcurie"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "SpecimenCollectionProcess",
+            "type": "object"
+        },
+        "Subject": {
+            "additionalProperties": false,
+            "description": "Demographic and clinical information about the subject",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "Subject",
+            "type": "object"
+        }
+    },
+    "$id": "https://w3id.org/linkml/cmdr",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": true,
+    "description": "",
+    "metamodel_version": "1.7.0",
+    "properties": {
+        "investigations": {
+            "items": {
+                "$ref": "#/$defs/Investigation"
+            },
+            "type": "array"
+        },
+        "material_processings": {
+            "items": {
+                "$ref": "#/$defs/MaterialProcessing"
+            },
+            "type": "array"
+        },
+        "materials": {
+            "items": {
+                "$ref": "#/$defs/MaterialEntity"
+            },
+            "type": "array"
+        },
+        "participations": {
+            "items": {
+                "$ref": "#/$defs/Participation"
+            },
+            "type": "array"
+        },
+        "specimen_collection_processes": {
+            "items": {
+                "$ref": "#/$defs/SpecimenCollectionProcess"
+            },
+            "type": "array"
+        },
+        "subjects": {
+            "items": {
+                "$ref": "#/$defs/Subject"
+            },
+            "type": "array"
+        }
+    },
+    "title": "cmdr",
+    "type": "object",
+    "version": null
+}
