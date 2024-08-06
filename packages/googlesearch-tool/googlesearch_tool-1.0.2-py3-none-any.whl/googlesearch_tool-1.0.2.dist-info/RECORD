@@ -1,0 +1,14 @@
+googlesearch/models.py,sha256=vbfThQYbCvF35MUOrYwr3wdoR8m-VgfZXlGSuvKP7M0,340
+googlesearch/news_search.py,sha256=R7n2_xgDaZXbeIP3S8z5-zoA_XGJTXchOV5-ddUWhE8,2046
+googlesearch/search.py,sha256=US2bm8ib2giiQWOWvreO4yJ7_zhsdoaIEIrrhMA1qh8,3060
+googlesearch/test.py,sha256=QTxQfh7UGv_f_7doFSW-rLR0YWjuoHO5No9m7fQzmr8,1588
+googlesearch/utils.py,sha256=yocEusErfYA88jZbXwgCgfn5QFf05EU2ULLcDOlJ7sw,459
+googlesearch/config/config.py,sha256=PrOgBv_KHKp2b991MYsnq1-kzIjoasBhaZ4ZBPtLoOQ,1849
+googlesearch/config/data/all_domain.txt,sha256=EkHMVWzte60MtGIIIiOqNhSTyJwlA_WKOc6gW4MNyVE,5601
+googlesearch/config/data/fetch_and_save_user_agents.py,sha256=gAgHZGzRHP9u2I4c-gjDAa-p31CeIxwLSClKqetAwEY,1523
+googlesearch/config/data/fetch_and_save_user_domain.py,sha256=ctoo2KJnRHws0DTAEDGoPeGi7VAO8aiKlUvazMkBQC0,1275
+googlesearch/config/data/user_agents.txt,sha256=Fl8JXHph3yBMxcXBHJ7V4FylKuP00MAljKM4AdPJrMk,2426
+googlesearch_tool-1.0.2.dist-info/METADATA,sha256=1De-ARKrM-LAl5kMiduZbbuRBAtk9qedztJijmK9XK0,3249
+googlesearch_tool-1.0.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+googlesearch_tool-1.0.2.dist-info/licenses/LICENSE.txt,sha256=YVAUQ6VgWmEMBj5LX0BIpYoxET5wU5-qPKpUsBtm8lY,1065
+googlesearch_tool-1.0.2.dist-info/RECORD,,
