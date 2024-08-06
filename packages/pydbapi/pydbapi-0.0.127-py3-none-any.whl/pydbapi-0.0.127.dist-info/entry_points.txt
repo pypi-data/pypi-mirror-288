@@ -1,0 +1,2 @@
+[ipython.magic]
+load_ipython_extension = pydbapi:load_ipython_extension
