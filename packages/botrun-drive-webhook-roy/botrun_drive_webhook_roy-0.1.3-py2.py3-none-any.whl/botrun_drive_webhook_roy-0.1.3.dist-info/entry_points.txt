@@ -1,0 +1,2 @@
+[console_scripts]
+botrun_drive_webhook_roy = botrun_drive_webhook:botrun_drive_webhook

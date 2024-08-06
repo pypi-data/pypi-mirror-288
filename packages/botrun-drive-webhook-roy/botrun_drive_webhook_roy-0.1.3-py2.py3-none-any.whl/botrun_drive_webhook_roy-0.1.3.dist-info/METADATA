@@ -1,0 +1,52 @@
+Metadata-Version: 2.3
+Name: botrun_drive_webhook_roy
+Version: 0.1.3
+Requires-Dist: cachetools==5.4.0
+Requires-Dist: certifi==2024.7.4
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: google-api-core==2.19.1
+Requires-Dist: google-api-python-client==2.138.0
+Requires-Dist: google-auth-httplib2==0.2.0
+Requires-Dist: google-auth==2.32.0
+Requires-Dist: googleapis-common-protos==1.63.2
+Requires-Dist: httplib2==0.22.0
+Requires-Dist: idna==3.7
+Requires-Dist: jieba==0.42.1
+Requires-Dist: numpy==2.0.1
+Requires-Dist: pandas==2.2.2
+Requires-Dist: proto-plus==1.24.0
+Requires-Dist: protobuf==5.27.2
+Requires-Dist: pyasn1-modules==0.4.0
+Requires-Dist: pyasn1==0.6.0
+Requires-Dist: pyparsing==3.1.2
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: pytz==2024.1
+Requires-Dist: requests==2.32.3
+Requires-Dist: rsa==4.9
+Requires-Dist: six==1.16.0
+Requires-Dist: tzdata==2024.1
+Requires-Dist: uritemplate==4.1.1
+Requires-Dist: urllib3==2.2.2
+Description-Content-Type: text/markdown
+
+# Botrun Drive Webhook
+
+這個專案提供了一個從 Google Drive 資料夾監控哪些修改檔案，並可以呼叫 callback function 去處理更新的工具。以下是如何使用這個工具的說明。
+
+---
+
+## 安裝
+
+請先確保您已經安裝 Python 以及 pip。然後，您可以使用以下指令來安裝這個專案的依賴套件：
+
+```sh
+pip install botrun-drive-webhook
+```
+
+---
+
+## 使用方法
+
+### 調用 `get_update_queue()` 取得要更新的檔案清單
+### 調用 `finish_queue_process()` 回傳檔案更新完畢
