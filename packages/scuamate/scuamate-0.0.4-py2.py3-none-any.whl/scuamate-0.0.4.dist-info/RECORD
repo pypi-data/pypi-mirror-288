@@ -1,0 +1,16 @@
+scuamate/__init__.py,sha256=UZCrmjEl9CpkDY2olhZPmV4WntfYxiBfHANH6iAww5g,577
+scuamate/core.py,sha256=1JlY4FEA5OlzFaBllXPqg-f9r5u8BvDT72W1ZxaqIyU,5505
+scuamate/version.py,sha256=-Wqu9UyJphp-2_EahEsqQvkcE0VBhm1-N7D6e5rANdY,22
+scuamate/az/__init__.py,sha256=Iz9GYq7bK3L8dVyhgFn9FLjzwg5SM7s1rM4LDkrOYa4,65
+scuamate/az/azfuncs.py,sha256=tnD5J7gBAwT28OzlPvTi171doMDWq7ZQDMX4I26piX4,494
+scuamate/az/keyvault.py,sha256=8TcO7vTPOdYcQs1AxfciQNi_bJfmCwZ1xg5wfEsDVtw,1370
+scuamate/az/mssql.py,sha256=Kd900BxvnH_zNyNCe0B-A46mL1Z4Vtkdnpw6kNo8M3I,10912
+scuamate/gc/__init__.py,sha256=fWYYCE-kq0lUmnHTU-ZXcW6yz63H0w5MVuelU23O2_U,24
+scuamate/gc/firestore.py,sha256=zx6MMDcyhQxJ23CYo1O8B2gtzjn2CnLeyO_ZwiPLUOQ,2040
+scuamate/gsattrack/__init__.py,sha256=_tIVrArpyfvhvvLdixf91IVn6IZJu1j91Ea-RdFM-98,24
+scuamate/gsattrack/gsattrack.py,sha256=ITzVqiDvaitxPUiZf-46-3RSCusdrLG8OiGdiHf6YM8,7692
+scuamate-0.0.4.dist-info/LICENSE.txt,sha256=VZu96Ng8--7NGvxKXYzf5Pgv4CBPbWdi1KXrg_pITOg,1123
+scuamate-0.0.4.dist-info/METADATA,sha256=wOPZTn3FfU9f5V3KqnmqnBEj-62AdxjULD_KCu2vGcg,2425
+scuamate-0.0.4.dist-info/WHEEL,sha256=P2T-6epvtXQ2cBOE_U1K4_noqlJFN3tj15djMgEu4NM,110
+scuamate-0.0.4.dist-info/top_level.txt,sha256=cJvI5lszwswqw0MFe-ragu8owwkBwxC5d-zOABvVtdE,9
+scuamate-0.0.4.dist-info/RECORD,,
