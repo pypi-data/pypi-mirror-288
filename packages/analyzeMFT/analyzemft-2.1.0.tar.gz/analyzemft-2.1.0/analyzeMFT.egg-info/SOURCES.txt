@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+analyzeMFT.py
+setup.py
+analyzeMFT.egg-info/PKG-INFO
+analyzeMFT.egg-info/SOURCES.txt
+analyzeMFT.egg-info/dependency_links.txt
+analyzeMFT.egg-info/top_level.txt
+analyzemft/__init__.py
+analyzemft/mft.py
+analyzemft/mftsession.py
+analyzemft/mftutils.py
+tests/test_mft.py
+tests/test_mftsession.py
+tests/test_mftutils.py
