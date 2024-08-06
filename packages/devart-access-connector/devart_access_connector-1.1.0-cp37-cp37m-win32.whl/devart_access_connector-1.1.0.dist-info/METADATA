@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: devart-access-connector
+Version: 1.1.0
+Summary: New level of functionality and performance in data access via Python
+Home-page: https://devart.com
+Author: Devart
+Author-email: support@devart.com
+License: LGPL with exceptions
+Project-URL: Homepage, http://devart.com/python/access
+Project-URL: Download, http://devart.com/python/access/download.html
+Project-URL: History, http://devart.com/python/access/revision_history.html
+Project-URL: Documentation, http://devart.com/python/access/overview.html
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python Connector for Microsoft Access #
+
+Python Connector for Microsoft Access is a connectivity solution for accessing
+Microsoft Access databases from Python applications. It fully implements
+the Python DB API 2.0 specification. The connector is distributed as a wheel
+package for Windows, macOS, and Linux.
+
+Direct connection
+
+Python offers a standard pyodbc module, which you can use to access Microsoft
+Access databases through the Microsoft Access ODBC Driver. This method has
+several disadvantages:
+- Microsoft offers Access ODBC drivers only for the Windows platform.
+- Users might experience issues opening databases created in the latest
+versions of Microsoft Access.
+- Users have to install either Microsoft Access or Microsoft Access Database
+Engine Redistributable on their machine.
+- By default, Microsoft Access is a single-user database system. An Access
+database cannot be opened concurrently in multiple applications.
+Our connector provides the following advantages:
+- A direct access to a database without installing Microsoft Access or
+Microsoft Access Database Engine Redistributable on the user's machine
+- Support for all major desktop platforms: Windows, macOS, and Linux
+- Support for the .mdb and .accdb file formats, including databases created
+in the latest Microsoft Access versions
+- A read-only multi-user mode to enable several users to read data from
+a database simultaneously
+
+## Using the connector ##
+
+To retrieve data from a database:
+
+Import the module.
+```
+import devart.access
+```
+
+Connect to a database using the `connect()` module method and obtain a `connection` object.
+```
+my_connection = devart.access.connect(
+    Database="path_to_db"
+)
+```
+
+Create a `cursor` object using the `cursor()` connection method.
+```
+my_cursor = my_connection.cursor()
+```
+
+Execute the SQL statement using the `execute()` cursor method.
+```
+my_cursor.execute("SELECT * FROM employees")
+```
+
+Retrieve the result set using one of the `fetch*()` cursor methods.
+```
+for row in my_cursor.fetchall(): 
+    print(row)
+```
+
+## Ordering and activating the license ##
+
+You can purchase a license for the connector on the ordering page:             
+https://www.devart.com/python/access/ordering.html
+
+To activate the license, follow the instructions in the documentation:             
+https://docs.devart.com/python/access/activate-a-license.htm
+
+## What's new ##
+
+Python Connector for Microsoft Access 1.1
+
+- Added connection pooling
+- Added activation with a license key
+- Added the subscription license type
