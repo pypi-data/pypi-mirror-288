@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: Jarvislib
+Version: 2.3
+Summary: Импорт функции: from Jarvislib import potok. Запуск главного цикла: potok()
+Author-email: babadey.pl@gmail.com
