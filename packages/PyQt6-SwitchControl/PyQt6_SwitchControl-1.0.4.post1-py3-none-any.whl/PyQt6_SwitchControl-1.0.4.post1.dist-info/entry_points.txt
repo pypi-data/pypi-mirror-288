@@ -1,0 +1,2 @@
+[qt_designer_widgets]
+switch_control = designer_plugin:registerCustomWidgets
