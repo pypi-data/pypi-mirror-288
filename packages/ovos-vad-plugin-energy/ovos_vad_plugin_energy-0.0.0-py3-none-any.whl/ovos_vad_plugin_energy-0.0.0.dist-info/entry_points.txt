@@ -1,0 +1,2 @@
+[ovos.plugin.VAD]
+ovos-vad-plugin-energy = ovos_vad_plugin_energy:EnergyVAD
