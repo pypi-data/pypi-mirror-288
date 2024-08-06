@@ -1,0 +1,16 @@
+Auto_HookPoint/HookedTransformerAdapter.py,sha256=Mw8jZR6B6eAvfzrmV_Y47V7dNGkgspZ-bHELRZL00-o,17916
+Auto_HookPoint/__init__.py,sha256=8ngLoAK_TrHUz53BXUD_Gd7vN8QZedAvESS7OuFaY5Q,255
+Auto_HookPoint/check.py,sha256=l1e32TylqGTgMqAxFyVvTgKxIQx8nSdJewIKy2CpSOw,2942
+Auto_HookPoint/hook.py,sha256=NnJ2R-z5y4zTdVHP81bWedaOFbatMGc9KFJFBvjW_SI,13889
+Auto_HookPoint/utils.py,sha256=xwxzkEZglrAJpt5yaosT9MNOBmWgU6g-uZVED32M8nU,1921
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/speed_benchmark.py,sha256=-oAPWs7Nuzgo2y2ZB6bEI_cjdH5gnw57NF2hnMDSrMg,1744
+tests/test_adapter.py,sha256=JM07hixl2yb21Zai6kz1xgnkucy-RfIMfaDyI1EwTxI,7611
+tests/test_auto_hook.py,sha256=R-7t46QRrz25c_28O8tb-EQuUrO0fpKTCrfZipMpla4,13119
+tests/test_check_auto_wrap.py,sha256=s2VWx52TxldZ9H0rlzYrh6e-gbxgzgepTll5EFCg2K8,1526
+tests/test_models.py,sha256=CTiCLJY-cUBWt8k0GlbolSXEwp0cZ4ESuBBZelTL4lg,5002
+tests/test_sae_lens_train.py,sha256=isHAg8nWACpY29Z6Y8PjsuM8IMa4T3lOqxAXJ4BtZgk,3432
+tests/test_utils.py,sha256=enJnBv-Pv2bo_Rf8lmWeF54wruTUlkjai62FDJLH7j8,1951
+auto_hookpoint-0.5.0.dist-info/METADATA,sha256=IWjM4L4R9BA9JLljaK4Qy6ZbVLVG-uI7P2BZJxq4_rA,7793
+auto_hookpoint-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+auto_hookpoint-0.5.0.dist-info/RECORD,,
