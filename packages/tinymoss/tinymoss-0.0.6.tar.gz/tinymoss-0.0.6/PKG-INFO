@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: tinymoss
+Version: 0.0.6
+Summary: A ROS-like system called tiny moss
+Project-URL: Homepage, https://
+Project-URL: Issues, https://
+Author-email: xuwh <xuwhdev@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: paho-mqtt==2.1.0
+Requires-Dist: pika==1.3.2
