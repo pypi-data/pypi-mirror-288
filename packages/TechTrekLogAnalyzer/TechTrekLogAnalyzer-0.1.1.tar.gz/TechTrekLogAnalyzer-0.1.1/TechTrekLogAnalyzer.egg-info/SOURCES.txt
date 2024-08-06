@@ -1,0 +1,6 @@
+Setup.py
+TechTrekLogAnalyzer.egg-info/PKG-INFO
+TechTrekLogAnalyzer.egg-info/SOURCES.txt
+TechTrekLogAnalyzer.egg-info/dependency_links.txt
+TechTrekLogAnalyzer.egg-info/requires.txt
+TechTrekLogAnalyzer.egg-info/top_level.txt
