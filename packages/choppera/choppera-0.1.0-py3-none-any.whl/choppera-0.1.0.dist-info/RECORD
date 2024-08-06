@@ -1,0 +1,15 @@
+choppera/__init__.py,sha256=t3AJYxTwUjHhscKqLofe2Yo5R6efVzAYSEZrO1qeEys,520
+choppera/chopper.py,sha256=dFWUOnAJwU7o2ypnLa3Ga2okYTBNwWkTaMGh9h0Eruw,17340
+choppera/config.py,sha256=a3a1ZKG4Ta3UhxWWKHzGhWBYYj9h9vb9YQ41ifcvALA,13079
+choppera/flightpaths.py,sha256=jTeG2lfwwkvcttChPSDNgdqfl_0OTK-Hq5jAtKY9Ogw,6147
+choppera/frequencies.py,sha256=sVupCG218gnkhyojBAmaxlMPIYYSuYnG0HR6SwZjuaY,2186
+choppera/nexus.py,sha256=7XDr9DEs70wUQXCHrceOLfknvsYWuo9EKY-5Pb8oBbg,14859
+choppera/phase.py,sha256=9JFgfOLKtpnEE_dofd4XQ5Td2drCeJ4uQw0Vq13hKj8,2012
+choppera/primary.py,sha256=LEdjCpNcwTxFRThRqiMjMsS-nJhXm3LG3Zy02gSFEhA,13406
+choppera/secondary.py,sha256=uK_tnGny79NbAdkD9DnlvtHoe5j3ZNLW3Oj8Kmh833Q,2582
+choppera/tv_patch.py,sha256=dVA2MPHthXRRDnmw0jldR50PcXrLljApsoZgp24DFxw,572
+choppera/utils.py,sha256=uIa2YFgY_ZvJIzqH4j-CNfeGwAhEfyf5pZS8nogCxLo,898
+choppera-0.1.0.dist-info/METADATA,sha256=To_Rfs36vIZtYjsHgCVxqb8HkyXthX_wMtvNYpOHnho,1723
+choppera-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+choppera-0.1.0.dist-info/licenses/LICENSE.txt,sha256=WLuqS-lzT9BgxOcV-NogeCpVke2VZBDH7neknVjip98,1497
+choppera-0.1.0.dist-info/RECORD,,
