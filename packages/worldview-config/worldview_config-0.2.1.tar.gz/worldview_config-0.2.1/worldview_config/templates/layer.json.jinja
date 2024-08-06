@@ -1,0 +1,31 @@
+{
+  "layers": {
+    "{{ layer.id }}": {
+      "id": "{{ layer.id }}",
+      "title": "{{ layer.title }}",
+      "subtitle": "{{ layer.satellite | upper }} / {{ layer.instrument | upper }}",
+      "group": "{{ layer.group }}",
+      "layergroup": "{{ layer.measurement }}",
+      "description": "{{ layer.instrument }}/{{ layer.satellite }}/{{ layer.id }}",
+      "tags": "{{ layer.tags | join(' ')}}",
+      "type": "wmts",
+      "period": "{{ layer.period }}",
+      "startDate": "{{ layer.start_date.strftime('%Y-%m-%dT%H:%M:%SZ') }}",
+      "format": "image/{{ layer.format }}",
+      {% if layer.period == "subdaily" %}"temporal": "{{ layer.temporal_start.strftime('%Y-%m-%dT%H:%M:%SZ')  }}/{{ layer.temporal_end.strftime('%Y-%m-%dT%H:%M:%SZ')  }}/PT{{ layer.date_interval }}M",{% endif %}
+      "disableSmartHandoff": true,
+      "wrapadjacentdays": true,
+      {% if layer.colormap_id is not none %}"palette": {
+        "id": "{{ layer.colormap_id }}"
+      },{% endif %}
+     "projections": {
+        {% for key, value in layer.projections.items() %}
+          "{{ key }}": {
+              "matrixSet": "{{ value.matrixSet }}",
+              "source": "{{ value.source }}"
+            }{% if not loop.last %},{% endif %}
+        {% endfor %}
+      }
+    }
+  }
+}

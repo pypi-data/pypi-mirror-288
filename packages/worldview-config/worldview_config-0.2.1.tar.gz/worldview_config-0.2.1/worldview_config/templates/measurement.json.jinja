@@ -1,0 +1,18 @@
+{
+    "measurements": {
+        "{{ name }}": {
+            "id": "{{ name | replace(" ", "-") | lower }}",
+            "title": "{{ name }}",
+            "subtitle": "{{ sources | unique | sort | join(', ') }}",
+            "sources": { {% for source, layers in sources.items() %}
+                "{{ source }}": {
+                    "id": "{{ source | replace("/", "-") }}",
+                    "title": "{{ source }}",
+                    "description": "",
+                    "image": "",
+                    "settings": {{ layers | sort | tojson }}
+                }{% if not loop.last %},{% endif %}{% endfor %}
+            }
+        }
+    }
+}

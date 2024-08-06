@@ -1,0 +1,56 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "worldview-config"
+license = "MIT"
+authors = [{name = "Zachary Griffith", email = "zdgriffith@wisc.edu"}]
+description = "Tooling to simplify applying custom configuration for NASA Worldview."
+dynamic = ["version"]
+readme = "README.md"
+requires-python = "~=3.0,>=3.10"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "jinja2",
+    "pydantic",
+    "typer[all]",
+]
+
+[project.scripts]
+worldview_config = "worldview_config.cli:app"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "worldview_config/_version.py"
+
+[tool.hatch.build.targets.sdist]
+include = ["/worldview_config"]
+
+[tool.hatch.envs.default]
+dependencies = [
+    "black",
+    "flake8",
+    "isort",
+    "pytest",
+    "pytest-cov",
+    "pytest-xdist"
+]
+
+[[tool.hatch.envs.all.matrix]]
+python = ["3.10", "3.11", "3.12"]
+
+[tool.hatch.envs.default.scripts]
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=worldview_config {args}"
+no-cov = "cov --no-cov {args}"
+
+[tool.pytest.ini_options]
+addopts = "--disable-warnings --tb=short"
