@@ -1,0 +1,11 @@
+beos-1.3.0.dist-info/METADATA,sha256=dxtWPJaO0bFkvP6oUoK_rfJ-cVxK_1ZFACy1r_C0eas,4140
+beos-1.3.0.dist-info/WHEEL,sha256=-DVeCqzUcLdEc2lv508fDM-C2afflbLSbdjHqH6eoIs,142
+beos-1.3.0.dist-info/LICENSE,sha256=ekECcZpmH0GJYYM56V7y8YG-AtsaepKGFEBX-SGdUhg,279
+beos-1.3.0.dist-info/RECORD,,
+beos/_beos.cpython-35m-x86_64-linux-gnu.so,sha256=p9M44x4X7mC0rx6J-2mb7togp5Jr2c9bVs_EZKFGuEU,2636304
+beos/__init__.py,sha256=vgFeXkbDZ2QOike5yZWr46kclIqnVI74yGOCiLqVsZY,1075
+beos.libs/libgfortran-139be63a.so.3.0.0,sha256=spGBfVHtj5iqi_e0IvcpHPYC31B3vELXuMfRbzdDOt0,1023952
+beos.libs/libgfortran-2e0d59d6.so.5.0.0,sha256=iF7pNyumQrHZq6sLPdW_7YahPLHEhykty75kPBU2IyQ,2223184
+beos.libs/libquadmath-2d0c479f.so.0.0.0,sha256=nw_dV1mLMDFbFsMwYHIwErTgu6dsMaBajxJfe8TohIA,263992
+beos.libs/libblas-8d819fb1.so.3.2.1,sha256=-4RZ6xGXYvafkvoOw7QnCiteBhdOMW3mVveDQPDajw0,357816
+beos.libs/liblapack-029dbe9a.so.3.2.1,sha256=28QKN4PkcQbYCF3igUt70rf1dlUdV5F9cpSsEdMHnZM,5296960
