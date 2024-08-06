@@ -1,0 +1,13 @@
+deephaven_plugin_microphone/__init__.py,sha256=_vc-E8tR4MpzCOn2suqsqpzjGm8MUJf8JbyKuuMAGgE,167
+deephaven_plugin_microphone/deephaven_plugin_microphone_object.py,sha256=peuo7X2TKv11ZtrRk7YKnSiHHIhFkM7Xadce1-RmTCc,1299
+deephaven_plugin_microphone/deephaven_plugin_microphone_type.py,sha256=lhg7amAku-GrhAWfQ0SqnVTuMHA1BelxkCHIONCUAqU,3123
+deephaven_plugin_microphone/js_plugin.py,sha256=NwkM0VsB5GZrUJg6pU7kMLDIV5FmHdioJefzUz9W5p8,767
+deephaven_plugin_microphone/register.py,sha256=obVwCpu-Nj4jgM7oWBzN5tOLsyrJ_K4x6bpoDNXxZ94,1053
+deephaven_plugin_microphone/_js/package.json,sha256=PryllQceT5_sXR08FUKPUDKp7AkyQeHPZD-Hu88tsTg,1176
+deephaven_plugin_microphone/_js/dist/index.js,sha256=MCpPW4wbh62QifG3mTlXk-i0MtwDJMEuE2SNf5T32Vk,127301
+deephaven_plugin_microphone-0.0.1.dev0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+deephaven_plugin_microphone-0.0.1.dev0.dist-info/METADATA,sha256=y4PmsQlWJwdQE40DH4S0NNH9m8Zg7AC9cParmqb4rAw,5588
+deephaven_plugin_microphone-0.0.1.dev0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+deephaven_plugin_microphone-0.0.1.dev0.dist-info/entry_points.txt,sha256=k85q35BiBQ9H54LBE-fCyICBvFeZWEzOEypclVoqiD4,113
+deephaven_plugin_microphone-0.0.1.dev0.dist-info/top_level.txt,sha256=A8Cs1_HUwSPj4Uqe2vbkdYX3oH1ZU7SYI3qwnjQDYf8,31
+deephaven_plugin_microphone-0.0.1.dev0.dist-info/RECORD,,
