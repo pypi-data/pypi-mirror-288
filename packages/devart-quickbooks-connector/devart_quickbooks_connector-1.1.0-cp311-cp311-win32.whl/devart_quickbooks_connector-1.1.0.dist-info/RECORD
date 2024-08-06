@@ -1,0 +1,11 @@
+devart/quickbooks/__init__.py,sha256=cfRWbcNng0m29K1qJL2d5-bHV2jAGdOma_I9ttPvzHo,1019
+devart/quickbooks/quickbooks.cp311-win32.pyd,sha256=oWAWQoXE3g_Wm85kIU_hVQ4J71cZGhaTcijdrDsfJY8,743592
+devart/quickbooks/quickbooks.pyi,sha256=siUkOQO84--DMMEy7dZvnuJzIkp7UehEJPErcZaZIU0,12770
+devart/quickbooks/QuickBooks/Devart.Python.QuickBooksEngine.dll,sha256=6bVs5ARB8RFfHXje8ZjX9S2qQROAqM21JlEIwrnEM98,10779136
+devart/quickbooks/QuickBooks/sqlite3.dll,sha256=r0yVbT-MTaVycXm-hR1V8npXYhUmSq0DmipW9mVY2kA,1032192
+devart/quickbooks/sqlalchemy/__init__.py,sha256=-w7cV7T_dXZl_RCdpSN0EvE8pXbFLYqTXjbET37ybps,1436
+devart_quickbooks_connector-1.1.0.dist-info/LICENSE,sha256=3sjizf07RF-z3Lp3tnA-jy3rN103Ypw11NO9tFnRLtU,8559
+devart_quickbooks_connector-1.1.0.dist-info/METADATA,sha256=70wNKes-ugrKxbJqLVp_D46RVM6MiClf_ZNxCQZjxHM,3099
+devart_quickbooks_connector-1.1.0.dist-info/WHEEL,sha256=BHD1bsz6EG6UeOUx--37-1ujOCvWuiZbKf2dYlPNLME,97
+devart_quickbooks_connector-1.1.0.dist-info/top_level.txt,sha256=h_mZcghGiX6pnc-Kb1EoAfIW2iHeDA0kJKfcLJMbq44,7
+devart_quickbooks_connector-1.1.0.dist-info/RECORD,,
