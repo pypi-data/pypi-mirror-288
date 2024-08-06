@@ -1,0 +1,28 @@
+{
+  "_lib-08238c3d.cjs": {
+    "file": "lib-08238c3d.cjs"
+  },
+  "_lib-c63660f2.js": {
+    "file": "lib-c63660f2.js"
+  },
+  "src/lib.ts": {
+    "file": "lib.cjs",
+    "imports": [
+      "_lib-08238c3d.cjs"
+    ],
+    "isEntry": true,
+    "src": "src/lib.ts"
+  },
+  "src/main.tsx": {
+    "file": "main.cjs",
+    "imports": [
+      "_lib-08238c3d.cjs"
+    ],
+    "isEntry": true,
+    "src": "src/main.tsx"
+  },
+  "style.css": {
+    "file": "style.css",
+    "src": "style.css"
+  }
+}
