@@ -1,0 +1,9 @@
+mypackage/__init__.py,sha256=5Np9ej-l3jeeI9H9w6lfC7u7np9JAA86XfUmrpp2Dww,155
+mypackage/mymodule.py,sha256=3dFADpkTVIPVb0x0_PTzSde04aKAPnNSa98IwWijGpk,69
+tests/__init__.py,sha256=StFWJ7soF1pW2vyPCBcvBixnPMzM0FT_MFwcf71xKMk,79
+tests/test_mymodule.py,sha256=dA-lsISRX4jnd-ebU3JxWvUdrcajxr_jo6P1m00rkDE,261
+julim_package-0.1.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+julim_package-0.1.1.dist-info/METADATA,sha256=aJ38n5qEgGhHHvtzcQxVqM4AgVP3YA9Y-kEmASL0M28,429
+julim_package-0.1.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+julim_package-0.1.1.dist-info/top_level.txt,sha256=EPaQ7bohfbQYpXluIecATfHFlNVEU6p7LxDTpUYjEV8,16
+julim_package-0.1.1.dist-info/RECORD,,
