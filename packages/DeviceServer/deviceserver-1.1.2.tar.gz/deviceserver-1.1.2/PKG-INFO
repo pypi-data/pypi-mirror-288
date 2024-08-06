@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: DeviceServer
+Version: 1.1.2
+Summary: DeviceServer
+Home-page: 
+Author: David Atkins
+Author-email: david@3adesign.co.uk
+Keywords: OpenAPI,OpenAPI-Generator,DeviceServer
+Description-Content-Type: text/markdown
+Requires-Dist: urllib3>=1.25.3
+Requires-Dist: six>=1.10
+Requires-Dist: python-dateutil
+
+    DeviceServer API  # noqa: E501
+    
