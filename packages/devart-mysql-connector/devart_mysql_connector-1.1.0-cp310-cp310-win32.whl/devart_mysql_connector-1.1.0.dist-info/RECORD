@@ -1,0 +1,10 @@
+devart/mysql/__init__.py,sha256=FStv0poGaS3lzX7t1ApkRaFSzfJd2War23vN4OUs6fY,939
+devart/mysql/mysql.cp310-win32.pyd,sha256=kH75nTuPsSNa4tNaC6Oi0t--ki0Q7TAkhDkwPfTsGc0,843944
+devart/mysql/mysql.pyi,sha256=siUkOQO84--DMMEy7dZvnuJzIkp7UehEJPErcZaZIU0,12770
+devart/mysql/http/tunnel.php,sha256=qjhBbshLEKSmoA7RAXVi29TbVNsPBad364d2YHsbyNQ,20720
+devart/mysql/sqlalchemy/__init__.py,sha256=3FBJe9j7qtaxvAiaQ-wGHb8Zr0vnbtXoshIaKj00_Mo,1545
+devart_mysql_connector-1.1.0.dist-info/LICENSE,sha256=3sjizf07RF-z3Lp3tnA-jy3rN103Ypw11NO9tFnRLtU,8559
+devart_mysql_connector-1.1.0.dist-info/METADATA,sha256=cEhtuS6ebL-kqzWvTE9UNRCRr1vQQXZfz6lMFBra9T4,2702
+devart_mysql_connector-1.1.0.dist-info/WHEEL,sha256=alY7hT6F3vmhcmL_iZGJD2X3hWc-8Y3OXCJmNU5zYpQ,97
+devart_mysql_connector-1.1.0.dist-info/top_level.txt,sha256=h_mZcghGiX6pnc-Kb1EoAfIW2iHeDA0kJKfcLJMbq44,7
+devart_mysql_connector-1.1.0.dist-info/RECORD,,
