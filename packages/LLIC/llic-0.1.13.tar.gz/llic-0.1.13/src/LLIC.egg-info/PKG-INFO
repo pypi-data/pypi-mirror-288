@@ -1,0 +1,159 @@
+Metadata-Version: 2.1
+Name: LLIC
+Version: 0.1.13
+Summary: Lightweight Learned Image Compression
+Author-email: Dan Jacobellis <danjacobellis@utexas.edu>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: compressai
+Requires-Dist: numpy
+
+# Lightweight Learned Image Compression (LLIC)
+
+## Installation
+
+1. Follow the installation instructions for [torch](https://pytorch.org/get-started/locally/) and [compressai](https://interdigitalinc.github.io/CompressAI/installation.html)
+2. Install LLIC via pip: `pip install LLIC`
+
+## Pre-trained checkpoints
+
+An imagenet-trained checkpoint for RGB images is available on huggingface: [LLIC_rgb_v0.0.1.pth](https://huggingface.co/danjacobellis/LLIC/resolve/main/LLIC_rgb_v0.0.1.pth)
+
+[Request access to other checkpoints (grayscale, hyperspectral, microscopy, etc)](mailto:danjacobellis@utexas.edu)
+
+## Usage example
+
+
+```python
+import torch
+import zlib
+import numpy as np
+import compressai
+from io import BytesIO
+from IPython.display import display
+from PIL import Image
+from LLIC import LLIC
+from torchvision.transforms import ToPILImage, PILToTensor
+```
+
+Load the model
+
+
+```python
+checkpoint = torch.load("LLIC_rgb_v0.0.1.pth",map_location="cpu")
+codec = LLIC.RateDistortionAutoEncoder()
+codec.load_state_dict(checkpoint['model_state_dict'])
+```
+
+
+
+
+    <All keys matched successfully>
+
+
+
+Download example image
+
+
+```python
+!wget https://r0k.us/graphics/kodak/kodak/kodim05.png
+```
+
+
+```python
+original_image = Image.open("kodim05.png")
+original_image
+```
+
+
+
+
+    
+![png](README_files/README_6_0.png)
+    
+
+
+
+The analysis and synthesis transforms expect dimensions to be multiples of of 16. Zero padding can be applied otherwise.
+
+
+```python
+def pad(x, p=2**5):
+    h, w = x.size(2), x.size(3)
+    pad, _ = compressai.ops.compute_padding(h, w, min_div=p)
+    return torch.nn.functional.pad(x, pad, mode="constant", value=0)
+
+def preprocess(pil_image):
+    tensor = PILToTensor()(pil_image)
+    tensor = tensor.unsqueeze(0)
+    tensor = tensor.to(torch.float)
+    tensor = tensor/255
+    tensor = tensor - 0.5
+    return pad(tensor)
+```
+
+Compress the image and save file
+
+
+```python
+padded_image = preprocess(original_image)
+original_size = padded_image.shape
+compressed_image, compressed_shape = LLIC.compress(padded_image, codec)
+with open("kodim05.llic", 'wb') as f:
+    f.write(compressed_image)
+```
+
+Decompress and view the image
+
+
+```python
+def crop(x, size):
+    H, W = x.size(2), x.size(3)
+    h, w = size
+    _, unpad = compressai.ops.compute_padding(h, w, out_h=H, out_w=W)
+    return torch.nn.functional.pad(x, unpad, mode="constant", value=0)
+
+def postprocess(tensor):
+    tensor = tensor[0] + 0.5
+    tensor = 255*tensor
+    tensor = tensor.clamp(0,255)
+    tensor = tensor.to(torch.uint8)
+    pil_image = ToPILImage()(tensor)
+    return pil_image
+```
+
+
+```python
+with open("kodim05.llic", 'rb') as f:
+    compressed_image = f.read()
+    tensor = LLIC.decompress(compressed_image, compressed_shape, codec)
+    recovered_image = postprocess(crop(tensor, (512,768)))
+```
+
+
+```python
+recovered_image
+```
+
+
+
+
+    
+![png](README_files/README_14_0.png)
+    
+
+
+
+
+```python
+!jupyter nbconvert --to markdown README.ipynb
+```
+
+    [NbConvertApp] Converting notebook README.ipynb to markdown
+    [NbConvertApp] Support files will be in README_files/
+    [NbConvertApp] Making directory README_files
+    [NbConvertApp] Writing 2873 bytes to README.md
+
