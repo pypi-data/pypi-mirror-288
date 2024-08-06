@@ -1,0 +1,11 @@
+devart/zohocrm/__init__.py,sha256=pMLY-iRGjry6C3jyZv9sTnnZJ--3vNs6d_X-oxmKrNA,951
+devart/zohocrm/zohocrm.cp310-win32.pyd,sha256=5ML_FAeDdaVdM8clnmr-93fL0kricGhgGe8uS4JzbbA,743592
+devart/zohocrm/zohocrm.pyi,sha256=siUkOQO84--DMMEy7dZvnuJzIkp7UehEJPErcZaZIU0,12770
+devart/zohocrm/ZohoCRM/Devart.Python.ZohoEngine.dll,sha256=8Q044dywJ7OZYbij2nblTBrcKYYHfjJEwsZYRkN97qw,11166208
+devart/zohocrm/ZohoCRM/sqlite3.dll,sha256=r0yVbT-MTaVycXm-hR1V8npXYhUmSq0DmipW9mVY2kA,1032192
+devart/zohocrm/sqlalchemy/__init__.py,sha256=GoyuPwEFQ8N0Q9uaq8ag5ZwFIwo7dkIlPCr_Ngo5Obk,1804
+devart_zohocrm_connector-1.1.0.dist-info/LICENSE,sha256=3sjizf07RF-z3Lp3tnA-jy3rN103Ypw11NO9tFnRLtU,8559
+devart_zohocrm_connector-1.1.0.dist-info/METADATA,sha256=PDDl7DlFKm5rAILQWu71cihpAsyTHwxAEAEQaOR4pOQ,2973
+devart_zohocrm_connector-1.1.0.dist-info/WHEEL,sha256=alY7hT6F3vmhcmL_iZGJD2X3hWc-8Y3OXCJmNU5zYpQ,97
+devart_zohocrm_connector-1.1.0.dist-info/top_level.txt,sha256=h_mZcghGiX6pnc-Kb1EoAfIW2iHeDA0kJKfcLJMbq44,7
+devart_zohocrm_connector-1.1.0.dist-info/RECORD,,
