@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ksj_package.egg-info/PKG-INFO
+ksj_package.egg-info/SOURCES.txt
+ksj_package.egg-info/dependency_links.txt
+ksj_package.egg-info/top_level.txt
+mypackage/__init__.py
+mypackage/mymodule.py
+tests/__init__.py
+tests/test_mymodule.py
