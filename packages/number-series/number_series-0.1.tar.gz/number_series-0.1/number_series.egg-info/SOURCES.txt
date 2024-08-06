@@ -1,0 +1,8 @@
+README.md
+setup.py
+number_series/Numbers.py
+number_series/__init__.py
+number_series.egg-info/PKG-INFO
+number_series.egg-info/SOURCES.txt
+number_series.egg-info/dependency_links.txt
+number_series.egg-info/top_level.txt
