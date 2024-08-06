@@ -1,0 +1,89 @@
+import os
+
+import gitlab
+from dateutil import parser
+
+
+class Git:
+    """
+    Git class to interact with git commands
+    """
+
+    def __init__(self):
+        self._gl = None
+        self._repo = None
+
+    def get_local_repo_url(self):
+        return os.popen("git config --get remote.origin.url").read().strip()
+
+    def is_repo_part_of(self, group):
+        _, repo = self.get_local_repo_url().split(":", 1)
+        if not repo.startswith(group.lower()):
+            gitlab_ci_group = os.environ.get("CI_PROJECT_ROOT_NAMESPACE")
+            if gitlab_ci_group is None or gitlab_ci_group.lower() != group.lower():
+                return False
+        return True
+
+    @property
+    def branch(self):
+        return os.environ["CI_DEFAULT_BRANCH"]
+
+    @property
+    def gl(self):
+        if self._gl is None:
+            self._gl = gitlab.Gitlab(private_token=os.environ["GITLAB_TOKEN"])
+        return self._gl
+
+    @property
+    def repo(self):
+        if self._repo is None:
+            self._repo = self.gl.projects.get(os.environ["CI_PROJECT_ID"])
+        return self._repo
+
+    def new_version(self, version):
+        old_tag = self.latest_tag()
+        self.delete_tag(old_tag)
+        commit = self.commit(f"Release version {version} [skip ci]")
+        self.tag(version, commit.id)
+
+    def tag(self, tag, commit):
+        return self.repo.tags.create({"tag_name": tag, "ref": commit})
+
+    def commit(self, message):
+        filename = "pyproject.toml"
+        return self.repo.commits.create(
+            {
+                "branch": self.branch,
+                "commit_message": message,
+                "author_name": "Vitaleey CLI",
+                "author_email": "admin@vitaleey.com",
+                "actions": [
+                    {
+                        "action": "update",
+                        "file_path": filename,
+                        "content": open(os.path.join(os.getcwd(), filename)).read(),
+                    }
+                ],
+            }
+        )
+
+    def delete_tag(self, tag):
+        return self.repo.tags.delete(tag)
+
+    def latest_tag(self):
+        tags = self.repo.tags.list()
+        newest_tag = None
+        newest_date = None
+
+        for tag in tags:
+            created_at = parser.parse(tag.commit["created_at"])
+
+            if newest_date is None or created_at > newest_date:
+                newest_date = created_at
+                newest_tag = tag
+
+        if newest_tag:
+            return newest_tag.name
+
+
+git = Git()
