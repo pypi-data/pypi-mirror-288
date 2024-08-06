@@ -1,0 +1,5 @@
+graft jerry
+include pyproject.toml
+include setup.py
+include finance-charts-apple.csv
+global-exclude *.py[cod]
