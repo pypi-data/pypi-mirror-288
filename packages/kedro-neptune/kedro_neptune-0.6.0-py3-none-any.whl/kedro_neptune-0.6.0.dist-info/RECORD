@@ -1,0 +1,10 @@
+CHANGELOG.md,sha256=TjQELQfq8cpP53eougCE7XpPmnW1OE3mOsRFqEJY1lo,4116
+kedro_neptune/__init__.py,sha256=jdP1TD9urCPm1u9iqt62SkvqNBpo6XSUYFg2xfaCgb8,18692
+kedro_neptune/config.py,sha256=LYw1CTufMZh3x11OFXPhjqQM5C6iu6C6ELrUQFAsbdQ,1889
+kedro_neptune/utils.py,sha256=lPynaUeu0SvhLnuh7pp6fiyeftrmDxJ5VbvbLc0bBC4,1868
+kedro_neptune/version.py,sha256=LUAGgCzdaAnYEqlveGir4yApS9OkS0xu-cmGdcB6Z0o,736
+kedro_neptune-0.6.0.dist-info/LICENSE,sha256=eflwnyAc4dmNFtHIFCk_Y3QtgOGz9x_fey1CuqALPw8,11354
+kedro_neptune-0.6.0.dist-info/METADATA,sha256=_xGCnkrp4CHBon8wLkKimHPJN-xIXPn55nDniBTC6F4,3738
+kedro_neptune-0.6.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+kedro_neptune-0.6.0.dist-info/entry_points.txt,sha256=kVgPDtzcFuv7a3MXqy1fh7gcwrM1Jb7b2yiun3pVK_I,114
+kedro_neptune-0.6.0.dist-info/RECORD,,
