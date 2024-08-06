@@ -1,0 +1,2 @@
+[console_scripts]
+depthflow = DepthFlow.__main__:main
