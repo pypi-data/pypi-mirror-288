@@ -1,0 +1,12 @@
+TestResultDBAccess/DBAccessFactory.py,sha256=nFkwrvlwhTL8TLdbNfStCLudjzFaYuIQRemYGqdKgX8,1312
+TestResultDBAccess/TestResultDBAccess.pdf,sha256=9glng7F7Eqv7Md2_34UFc9mdOvBS6CWsRbM2tyX8G5M,191864
+TestResultDBAccess/__init__.py,sha256=9P49-b0EgTw7sdP3XcPqkhqhTGh6zvMvlAuBGV8joLs,677
+TestResultDBAccess/version.py,sha256=DiWdxJUS5dldkrEqA3ZJaXH-lN2CuwUHY0Kukd7tYT0,922
+TestResultDBAccess/DBAccess/__init__.py,sha256=lqP1yakUWAqqnUO2gaM42gUBlXZVUVTGwYrJl3t37mk,92
+TestResultDBAccess/DBAccess/db_access_interface.py,sha256=o2QczN3JiU9xlGnRYdMnO4XXCLN3M477dqDbbO9i8TM,4504
+TestResultDBAccess/DBAccess/direct_db_access.py,sha256=V0jAZov2x2-tNPcrwzMqBu2GveZmRpzojyPigCRvwiY,41608
+TestResultDBAccess/DBAccess/rest_api_db_access.py,sha256=jBkdgH4kRLeTAKusLWZd96aF4fPnko5J14TVv9ISlh0,31106
+TestResultDBAccess-0.1.4.dist-info/METADATA,sha256=yL5B8wqxVYdJIx7oHoJdq9rXomVk9YjAAh1cqYmGDPM,5530
+TestResultDBAccess-0.1.4.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+TestResultDBAccess-0.1.4.dist-info/top_level.txt,sha256=OouBRel-pL2ybG-bpxt-SiRJy_lZ3-Dlosh3BCUKE9w,19
+TestResultDBAccess-0.1.4.dist-info/RECORD,,
