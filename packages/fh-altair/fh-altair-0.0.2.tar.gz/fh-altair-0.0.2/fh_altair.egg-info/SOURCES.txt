@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+fh_altair/__init__.py
+fh_altair.egg-info/PKG-INFO
+fh_altair.egg-info/SOURCES.txt
+fh_altair.egg-info/dependency_links.txt
+fh_altair.egg-info/requires.txt
+fh_altair.egg-info/top_level.txt
+tests/__init__.py
+tests/test_basics.py
+tests/test_clicker.py
