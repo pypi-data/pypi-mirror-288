@@ -1,0 +1,16 @@
+koerce/__init__.py,sha256=6BQMh_mnAsBkfHe2zoS-GxLmvsnu7YHsgQ1KstWMKpA,161
+koerce/builders.cp312-win_amd64.pyd,sha256=cz_Aa6CM5CvE6VznJ-hKNbIsNvMebS_yTzhrDcLOVEQ,253952
+koerce/builders.py,sha256=nER4i2RUsTzOFyh-RlXLR1-N5qTCVIbs3vT3Gbdqbg8,19805
+koerce/patterns.cp312-win_amd64.pyd,sha256=cyginAjj6cLQYllqGLDzFT1j8DXA42stKU421wzdaBQ,623104
+koerce/patterns.py,sha256=cAKxWGuHuLCQMnY0BZOH2PjuWsYOFvIc8QW0u16tfOQ,62647
+koerce/sugar.py,sha256=kIwBItRVyBc0QYlDrnXSOJ6ihLjs6Ilk_oE2-JChRqI,5579
+koerce/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+koerce/tests/test_builders.py,sha256=bkWvqj6tf5LCXf8QHKM7EOrR-eXG86diAjcf3AzB7tc,13251
+koerce/tests/test_patterns.py,sha256=DbFC7xFr8IJDfuDVCzcDeDNnrgamReI7pXOLTDvHC1s,42296
+koerce/tests/test_sugar.py,sha256=1TKzn1y6EnykLIp4rUpFHi-1-WE5lc__EkF5hJh__-I,7976
+koerce/tests/test_utils.py,sha256=PCLtBi-FeRDaNjVMKbndvUZeeNX9Ukk6uhN6gUGPZm4,2643
+koerce/utils.py,sha256=u-jia-WPMZ_h4vaoN5ICinxAay9MzmE-4BQ7rHXMDIY,6288
+koerce-0.0.7.dist-info/LICENSE.txt,sha256=deRaacRtAggJ0pVvU5X3Nyh3ewW5pBbO3h5rZbJs5go,12543
+koerce-0.0.7.dist-info/METADATA,sha256=04ZDt0bexDD6UNbgYNYHACGIWAnQEitbdjRD6hb-nuA,1854
+koerce-0.0.7.dist-info/WHEEL,sha256=4N0hGcnWMI_Ty6ATf4qJqqSl-UNI-Ln828iTWGIywmU,98
+koerce-0.0.7.dist-info/RECORD,,
