@@ -1,0 +1,11 @@
+markpi/__init__.py,sha256=jXfvcU_tTrofrkuEwcJX7nez_PvhY-ZJvIuiVLMABPY,81
+markpi/app.py,sha256=eSGMk3LBC1KG4pw-qMgSjQp1x84YqHC3s_rdj6_QXQo,3977
+markpi/config.py,sha256=fTJF-dwqxARsJYwOz8kjUrC4ISy5M5D53-khPC-oqUI,1143
+markpi/data_dantic.py,sha256=_JcDjzR3IGc9hUv49V2t7olrxzlRMELQKoX3h8va1hI,1146
+markpi/default_config/settings.yaml,sha256=wvSfTI1d_DlqAutFQQ5ZzZmPRqx1HIFn3B-zoqpkxv4,118
+markpi/funcs.py,sha256=RA4U2PPrHEqoTAaM4LlXCcfHkaZ1FuqMHc46-w6Bnjc,2385
+markpi/md.py,sha256=WKwqNVGCP1yuMshAjjPVGitgiq7L2zGpy2BqzGgFCNo,6065
+markpi-0.1.0.dist-info/LICENSE,sha256=Zp4vA2FgY1Kp9FHvRCBUHJmqYYe3Mau3Y1fgrTlsgQw,1082
+markpi-0.1.0.dist-info/METADATA,sha256=GjQqmh54IwDRoJJ_6mJNveSsWXwlLE0OpELhrS10xPQ,879
+markpi-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+markpi-0.1.0.dist-info/RECORD,,
