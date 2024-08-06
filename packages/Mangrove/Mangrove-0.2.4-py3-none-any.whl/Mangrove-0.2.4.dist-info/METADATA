@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: Mangrove
+Version: 0.2.4
+Summary: A PostgreSQL extension manager
+Home-page: https://atomgit.com/zouxiangneihe/Mangrove
+Author: Haorong Xu
+Author-email: db_haorong@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: argparse>=1.4.0
+Requires-Dist: tabulate>=0.9.0
+Requires-Dist: requests>=2.24.0
+
+## Mangrove - 基于 Python 制作的 PostgreSQL 拓展管理器
+
+Mangrove 是一款基于 Python 制作的 PostgreSQL 拓展管理器，它可以简化你安装 PostgreSQL 的流程。
+
+## 安装与部署
+
+```shell
+# 请确保你已经安装 Python & pip 包管理器
+pip install mangrove
+# 安装成功后，使用 mangrove 的帮助指令学习更多用法
+python -m mangrove --help
+```
+
+## 参与 Mangrove 生态建设
+
+[我们所建设的文档网站](http://zouxiangneihe.atomgit.net/website_public/docs/Mangrove%20%E6%8B%93%E5%B1%95%E7%AE%A1%E7%90%86%E5%99%A8/) 详细阐述了向 Mangrove 贡献 PostgreSQL 拓展，借助 Mangrove 安装 PostgreSQL 拓展，以及 Mangrove 程序自身的原理的有关内容，阅读他们可以快速帮助你成为一名 PostgreSQL 的开发者。
+
+倘若你遇到了任何疑问，或是希望分享你的所知所学，欢迎参与到[社区](https://atomgit.com/zouxiangneihe)的讨论之中。
+
+我们真诚祝愿你成为一名一流的 PostgreSQL 内核开发者！
+
+## 特别感谢
+
+[徐浩荣](https://atomgit.com/haorongxu)   
+[张凯老师](https://atomgit.com/kyle)   
+[开放原子开源基金会](https://www.openatom.org/)   
+[中国 PostgreSQL 分会](https://www.postgresqlchina.com/)   
+[青年数据库学习会 MOP 社区](https://mp.weixin.qq.com/s/WC2erGNwky9qUFhwGnQ96w)
