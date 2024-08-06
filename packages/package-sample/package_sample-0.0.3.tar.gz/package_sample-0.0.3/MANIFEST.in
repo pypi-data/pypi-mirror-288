@@ -1,0 +1,3 @@
+include package_sample/*.*
+include package_sample/doc/*.*
+include package_sample/Win64/*.*

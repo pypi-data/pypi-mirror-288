@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+package_sample/README.MD
+package_sample/__init__.py
+package_sample/__init__.pyi
+package_sample/__version__.py
+package_sample.egg-info/PKG-INFO
+package_sample.egg-info/SOURCES.txt
+package_sample.egg-info/dependency_links.txt
+package_sample.egg-info/top_level.txt
+package_sample/Win64/glcl.pyd
+package_sample/doc/docs.xml
