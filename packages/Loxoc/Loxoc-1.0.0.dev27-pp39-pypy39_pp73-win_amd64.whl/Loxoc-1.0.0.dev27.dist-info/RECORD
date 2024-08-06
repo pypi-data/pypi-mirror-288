@@ -1,0 +1,16 @@
+Loxoc/MissingTexture.jpg,sha256=Ri9aQEUutusG1Bagwnc2f7MEl8w31kzDhHjOAfzH67M,42958
+Loxoc/__init__.py,sha256=pU-ZtVsp4HyIPaefbP1aJE0nvFZBktGZDXI-DX6bDug,48
+Loxoc/core.pxd,sha256=GuTrG2r2NZKBYgdM1uTvqQAzR_grIpnGAAgpNsLX0Yk,33757
+Loxoc/core.pyi,sha256=Kz1cdELIxYAaTJtUzARRs1GFyF-omhDQoPbjyVi6kfM,56477
+Loxoc/core.pypy39-pp73-win_amd64.pyd,sha256=u2M4BXedfsrEcrbUyVUk2wXJqk1jhUytzU4J6owA0F8,7564800
+Loxoc/core.pyx,sha256=59ydKkdeQpEvlwEOO_OxhS-OKk-o2ELaSWxaHVq2UNc,77563
+Loxoc/default_fragment.glsl,sha256=vk9VImcIe5fwXG2scEyXYNs1oPCTJy4E8fInUpKrpSA,5476
+Loxoc/default_fragment_2D.glsl,sha256=nkOMzHUeHm_BYz75LA-TI_tniLHC6tFl49jJ8PwB8MY,181
+Loxoc/default_vertex.glsl,sha256=T9icxYUia0Q_lC1RvfPnkRkK3rA1T5aFUvjPJybxS4I,480
+Loxoc/default_vertex_2D.glsl,sha256=0aLCDst8mlPY182jbMf_iNLWA0u15i8qev9nn5hsato,241
+Loxoc/temp.pyx,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Loxoc-1.0.0.dev27.dist-info/LICENSE,sha256=NPlosWBAHerFB9rbZjRmDWsxCQjISM0ZSt47l-7C8rg,1092
+Loxoc-1.0.0.dev27.dist-info/METADATA,sha256=sE4ebmpMMeqO4aNsNaOpbgUI1R9HTcPJgekzV550jfg,9205
+Loxoc-1.0.0.dev27.dist-info/WHEEL,sha256=-wAfbAyAfAeht6wQxmDEiJvyA9C4FxNBdR0GU-KBusQ,106
+Loxoc-1.0.0.dev27.dist-info/top_level.txt,sha256=zS5Xi5CLZ47zPApcMnGeVz-PDJlYAxx0P13I24mbHz0,6
+Loxoc-1.0.0.dev27.dist-info/RECORD,,
