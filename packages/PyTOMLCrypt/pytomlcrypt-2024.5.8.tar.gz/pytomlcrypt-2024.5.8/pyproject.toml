@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyTOMLCrypt"
+version = "2024.05.08"
+dependencies = [
+  "cryptography>=42.0.2",
+  "pytest>=8.0.0",
+  "toml>=0.10.2",
+]
+
+requires-python = ">=3.8"
+
+authors = [
+  {name = "Munum Butt"},
+]
+
+maintainers = [
+  {name = "Munum Butt"},
+]
+
+description = "Small utility to encrypt and decrypy TOML files"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["python", "TOML", "encryption", "decryption", "Encrypt", "Decrypt"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Homepage = "https://github.com/MunumButt/PyTOMLEncrypt"
+Documentation = "https://github.com/MunumButt/PyTOMLEncrypt/blob/main/README.md"
+Repository = "https://github.com/MunumButt/PyTOMLEncrypt"
+"Bug Tracker" = "https://github.com/MunumButt/PyTOMLEncrypt/issues"

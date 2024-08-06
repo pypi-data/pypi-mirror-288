@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+PyTOMLCrypt/PyTOMLCrypt.py
+PyTOMLCrypt/__init__.py
+PyTOMLCrypt.egg-info/PKG-INFO
+PyTOMLCrypt.egg-info/SOURCES.txt
+PyTOMLCrypt.egg-info/dependency_links.txt
+PyTOMLCrypt.egg-info/requires.txt
+PyTOMLCrypt.egg-info/top_level.txt
+tests/tests.py
