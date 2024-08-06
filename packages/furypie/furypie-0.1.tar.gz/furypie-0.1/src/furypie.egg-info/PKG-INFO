@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: furypie
+Version: 0.1
+Summary: Install private python packages from gemfury
+Author-email: Soumyo Deep Gupta <deep.main.ac@gmail.com>
+Maintainer-email: Soumyo Deep Gupta <deep.main.ac@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Soumyo Deep Gupta
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: GitHub, https://github.com/d33pster/gemfury-installer
+Keywords: d33pster,gemfury,fury,furypie,pyfury
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ende
+Requires-Dist: argpi
+
+# Overview
+
+`furypie` lets u download your private python packages from [`Gemfury`](https://manage.fury.io/dashboard) securely.
+
+> Requirements: You need to create a Deploy Token from your tokens tab in GemFury website.
+
+## Steps
+
+> Install `furypie`
+
+```bash
+pip install furypie
+```
+
+> Install your packages
+
+```bash
+furypie --install <package-name>
+# or furypie -i <package-name>
+```
+
+### `Important Notes to consider.`
+
+1. First time setup will ask for your deploy token generated from gemfury website and your gemfury username.
+
+2. You need to choose a password to encrypt these credentials and enter it when prompted to do so.
+
+3. `furypie` in no way saves your password which makes it safe.
+
+4. `furypie` will only install python packages that are uploaded in your gemfury packages.
