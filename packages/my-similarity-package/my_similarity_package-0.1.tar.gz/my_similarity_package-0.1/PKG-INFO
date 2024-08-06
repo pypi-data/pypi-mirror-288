@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: my_similarity_package
+Version: 0.1
+Summary: A package for calculating cosine similarity between sentences
+Author: Your Name
+Author-email: your.email@example.com
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: nltk
+
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Aug  6 11:19:47 2024
+
+@author: 90545
+"""
+
+# My Similarity Package
+
+This package calculates the cosine similarity between sentences.
+
+## Installation
+
+```bash
+pip install my_similarity_package
