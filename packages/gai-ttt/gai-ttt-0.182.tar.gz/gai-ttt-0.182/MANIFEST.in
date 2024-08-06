@@ -1,0 +1,5 @@
+include VERSION
+include setup_utils.py
+include src/gai/ttt/client/requirements.txt
+include src/gai/ttt/server/requirements.txt
+
