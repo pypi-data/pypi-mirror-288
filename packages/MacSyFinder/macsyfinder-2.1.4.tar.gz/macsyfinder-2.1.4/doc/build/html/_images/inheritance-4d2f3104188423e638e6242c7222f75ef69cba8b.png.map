@@ -1,0 +1,9 @@
+<map id="inheritancee6a3e0bde2" name="inheritancee6a3e0bde2">
+<area shape="rect" id="node1" href="#macsypy.system.AbstractClusterizedHits" target="_top" title="Modelize SetOfHits that colocalize." alt="" coords="191,57,365,85"/>
+<area shape="rect" id="node5" href="#macsypy.system.RejectedCandidate" target="_top" title="Handle a set of clusters which has been rejected during the :func:`macsypy.system.match` &#160;step" alt="" coords="413,5,557,33"/>
+<area shape="rect" id="node6" href="#macsypy.system.System" target="_top" title="Modeling as system. a system is an occurrence of a given model on a replicon." alt="" coords="449,57,521,85"/>
+<area shape="rect" id="node2" href="#macsypy.system.AbstractSetOfHits" target="_top" title="Is the mother class of &#160;System, RejectedCandidates, LikelySystems UnlikelySystem, ..." alt="" coords="5,84,143,112"/>
+<area shape="rect" id="node3" href="#macsypy.system.AbstractUnordered" target="_top" title="Technical abstract class to factorize code share between" alt="" coords="206,109,350,137"/>
+<area shape="rect" id="node4" href="#macsypy.system.LikelySystem" target="_top" title="&quot;" alt="" coords="431,109,539,137"/>
+<area shape="rect" id="node7" href="#macsypy.system.UnlikelySystem" target="_top" title="Handle components that not fill the quorum requirements defined in model." alt="" coords="424,161,547,189"/>
+</map>
