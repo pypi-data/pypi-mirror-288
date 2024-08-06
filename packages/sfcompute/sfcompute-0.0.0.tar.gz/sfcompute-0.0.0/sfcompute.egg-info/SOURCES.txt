@@ -1,0 +1,6 @@
+pyproject.toml
+sfcompute/__init__.py
+sfcompute.egg-info/PKG-INFO
+sfcompute.egg-info/SOURCES.txt
+sfcompute.egg-info/dependency_links.txt
+sfcompute.egg-info/top_level.txt
