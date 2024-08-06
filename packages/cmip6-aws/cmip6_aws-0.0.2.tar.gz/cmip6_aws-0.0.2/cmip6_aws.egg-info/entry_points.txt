@@ -1,0 +1,2 @@
+[console_scripts]
+cmip6_aws = cmip6_aws.cli:main

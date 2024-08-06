@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: cmip6_aws
+Version: 0.0.2
+Summary: download data from NASA Earth Exchange Global Daily Downscaled Projections (NEX-GDDP-CMIP6)
+Author-email: advancehs <1019753743@qq.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/advancehs/cmip6_aws
+Keywords: cmip6_aws
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: xarray
+Requires-Dist: pyinstaller
+Provides-Extra: all
+Requires-Dist: cmip6_aws[extra]; extra == "all"
+Provides-Extra: extra
+Requires-Dist: pandas; extra == "extra"
+
+# cmip6_aws
+
+
+[![image](https://img.shields.io/pypi/v/cmip6_aws.svg)](https://pypi.python.org/pypi/cmip6_aws)
+[![image](https://img.shields.io/conda/vn/conda-forge/cmip6_aws.svg)](https://anaconda.org/conda-forge/cmip6_aws)
+
+
+**download data from NASA Earth Exchange Global Daily Downscaled Projections (NEX-GDDP-CMIP6)**
+
+
+-   Free software: MIT license
+-   Documentation: https://advancehs.github.io/cmip6_aws
+    
+
+## install 
+
+```
+pip install cmip6-aws
+
+```
+## Compile to exe
+
+- choose file - open in terminal
+
+```
+
+pyinstaller -F -w main.py
+
+```
+![](https://advance-markdown.oss-cn-shenzhen.aliyuncs.com/img/20240805193559.png)
