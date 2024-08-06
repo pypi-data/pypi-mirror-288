@@ -1,0 +1,29 @@
+[build-system]
+requires      = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fluxutils"
+version = "1.0.0"
+description = "Various utilties to enhance your projects"
+readme = "README.md"
+authors = [{ name = "dombom" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["utils", "logger", "log"]
+dependencies = [
+    "black",
+    "pygments",
+    "colorama",
+]
+requires-python = ">=3.12"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/DomBom16/fluxutils"
