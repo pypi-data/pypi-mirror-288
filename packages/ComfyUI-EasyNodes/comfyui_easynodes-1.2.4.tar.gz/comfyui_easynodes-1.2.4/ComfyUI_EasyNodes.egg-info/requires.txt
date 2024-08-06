@@ -1,0 +1,7 @@
+torch
+pillow
+ansi2html
+colorama
+coloredlogs
+numpy
+openai
