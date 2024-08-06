@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: python-process
+Version: 1.0.11
+Summary: A Python package that provides a simple and intuitive interface for spawning, managing, and interacting with processes
+Home-page: https://github.com/jonghwanhyeon/python-process
+Author: Jonghwan Hyeon
+Author-email: jonghwanhyeon93@gmail.com
+License: MIT
+Keywords: process,subprocess
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typing-extensions
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+Provides-Extra: docs
+Requires-Dist: black; extra == "docs"
+Requires-Dist: griffe-generics; extra == "docs"
+Requires-Dist: griffe-modernized-annotations; extra == "docs"
+Requires-Dist: mkdocs; extra == "docs"
+Requires-Dist: mkdocs-material; extra == "docs"
+Requires-Dist: mkdocstrings[python]; extra == "docs"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: griffe-generics; extra == "dev"
+Requires-Dist: griffe-modernized-annotations; extra == "dev"
+Requires-Dist: mkdocs; extra == "dev"
+Requires-Dist: mkdocs-material; extra == "dev"
+Requires-Dist: mkdocstrings[python]; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: rich; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+
+# python-process
+![Build status](https://github.com/jonghwanhyeon/python-process/actions/workflows/publish.yml/badge.svg)
+
+A Python package that provides a simple and intuitive interface for spawning, managing, and interacting with processes.
+
+## Help
+See [documentation](https://python-process.readthedocs.io) for more details
+
+## Install
+To install **python-process**, simply use pip:
+
+```console
+$ pip install python-process
+```
+
+## Usage
+You can find more examples in [the documentation](https://python-process.readthedocs.io/examples/running-command/).
+
+### Synchronous API
+```python
+from process import Process
+
+
+def main() -> None:
+    with Process("echo 'Hello World!'") as process:
+        print(process.output())  #  b'Hello World!\n'
+
+
+if __name__ == "__main__":
+    main()
+```
+
+### Asynchronous API
+```python
+import asyncio
+
+from process.asyncio import Process
+
+
+async def main() -> None:
+    async with Process("echo 'Hello World!'") as process:
+        print(await process.output())  # b'Hello World!\n'
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
