@@ -1,0 +1,3 @@
+ovos-utils
+quebra-frases
+ovos-plugin-manager
