@@ -1,0 +1,4 @@
+[console_scripts]
+dissector = smart_tools.dissector.main:main
+morpher = smart_tools.morpher.main:main
+
