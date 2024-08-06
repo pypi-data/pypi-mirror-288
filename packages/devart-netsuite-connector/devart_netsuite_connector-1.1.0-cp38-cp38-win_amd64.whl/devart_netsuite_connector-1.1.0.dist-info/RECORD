@@ -1,0 +1,11 @@
+devart/netsuite/__init__.py,sha256=SHQcqH46y-_dfgB5GFeLN2uQ9YaXdiVScXgWzibBu2g,953
+devart/netsuite/netsuite.cp38-win_amd64.pyd,sha256=Ucj4Tcl-BZtinUcdoDjpaVXPko4cQ-2pannWCvkbTPo,903336
+devart/netsuite/netsuite.pyi,sha256=siUkOQO84--DMMEy7dZvnuJzIkp7UehEJPErcZaZIU0,12770
+devart/netsuite/NetSuite/Devart.Python.NetSuiteEngine.dll,sha256=ysNyRlgxRJPw7bi6uEpjr7neXnqxj66x25GLKA0WdQM,11474432
+devart/netsuite/NetSuite/sqlite3.dll,sha256=CkFtk1k8MzrSu52Eg5XvOT0NIvYIsXTE6xkBurbR-RI,1277952
+devart/netsuite/sqlalchemy/__init__.py,sha256=myPdZ7wjYjAF1Zyl_jF02nmVyQQGOv4fJjJYClL3m9o,1295
+devart_netsuite_connector-1.1.0.dist-info/LICENSE,sha256=3sjizf07RF-z3Lp3tnA-jy3rN103Ypw11NO9tFnRLtU,8559
+devart_netsuite_connector-1.1.0.dist-info/METADATA,sha256=uO2GHNJt869oG-V1DWscDSkkN_k6Y9xZgnWOaYmJhcQ,4132
+devart_netsuite_connector-1.1.0.dist-info/WHEEL,sha256=W2kdImq02l-EUh3at9VjR6o2QIEyWCSYSH9BzhJTfwY,99
+devart_netsuite_connector-1.1.0.dist-info/top_level.txt,sha256=h_mZcghGiX6pnc-Kb1EoAfIW2iHeDA0kJKfcLJMbq44,7
+devart_netsuite_connector-1.1.0.dist-info/RECORD,,
