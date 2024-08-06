@@ -1,0 +1,10 @@
+package_sample/README.MD,sha256=goNq_IcdAOcZfqZopirWqEpHHkKu0g8rUQlolmJyGWc,90
+package_sample/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_sample/__init__.pyi,sha256=k0bbwBQ6kimNU3jkjUGSPjV5yHX33PaHllS4ol8OhHA,2166101
+package_sample/__version__.py,sha256=4Oix3dsMOI66mSOoft_Il4MPXGClV3mrVnWHaBnt_MU,282
+package_sample/Win64/glcl.pyd,sha256=uN6-atJ4L0ol7TCnUDA_TfYrxlDoRLKkC7w13B6tdX8,12390400
+package_sample/doc/docs.xml,sha256=Bpqp93TaDGTMul0JUCU8RI-Sw0JFdyihkhoCIVcfqf8,1465315
+package_sample-0.0.3.dist-info/METADATA,sha256=jVSG_iotIhgmiKrE9Up5ntLLSikSLSsrOceRBlCevvY,951
+package_sample-0.0.3.dist-info/WHEEL,sha256=XRxW4r1PNiVhMpP4bT9oWtu3HyndxpJ84SkubFgzp_Y,109
+package_sample-0.0.3.dist-info/top_level.txt,sha256=iliDtxPeV0Guc8yNt6rlDC1sqm0IY3tpCFZc-nAK3Qk,15
+package_sample-0.0.3.dist-info/RECORD,,
