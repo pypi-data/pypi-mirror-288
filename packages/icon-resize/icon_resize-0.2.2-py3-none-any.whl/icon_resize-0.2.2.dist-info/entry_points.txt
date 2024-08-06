@@ -1,0 +1,3 @@
+[console_scripts]
+icon-resize=icon_resize:entry
+
