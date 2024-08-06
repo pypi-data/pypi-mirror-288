@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: devart-netsuite-connector
+Version: 1.1.0
+Summary: New level of functionality and performance in data access via Python
+Home-page: https://devart.com
+Author: Devart
+Author-email: support@devart.com
+License: LGPL with exceptions
+Project-URL: Homepage, http://devart.com/python/netsuite
+Project-URL: Download, http://devart.com/python/netsuite/download.html
+Project-URL: History, http://devart.com/python/netsuite/revision_history.html
+Project-URL: Documentation, http://devart.com/python/netsuite/overview.html
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python Connector for NetSuite #
+
+Python Connector for NetSuite is a connectivity solution for accessing
+NetSuite from Python applications to read and update data. It fully implements
+the Python DB API 2.0 specification. The connector is distributed as a wheel
+package for Windows and Windows Server.
+
+Standard SQL syntax
+
+The connector fully supports the ANSI SQL standard and lets you execute SQL
+statements against your NetSuite data just like you would normally work with
+relational databases. Simple queries are directly converted to NetSuite API
+calls and executed on the NetSuite side.
+Complex queries are transformed into simpler queries, which are then converted
+to NetSuite API calls. The embedded SQL engine then processes the results
+in the local cache and applies advanced SQL features from the original complex
+query.
+
+## Using the connector ##
+
+To retrieve data from a database:
+
+Import the module.
+```
+import devart.netsuite
+```
+
+Connect to a database using the `connect()` module method and obtain a `connection` object: 
+If you're using basic authentication:
+```
+my_connection = devart.netsuite.connect(
+    Ver=1,
+    Authentication="Basic",
+    UserID="your_username",
+    Password="your_password",
+    AccountId="your_account_id",
+    RoleId="your_role_id",
+    ApplicationId="your_application_id"
+)
+```
+If you're using token-based authentication:
+```
+my_connection = devart.netsuite.connect(
+    Version="Ver2",
+    Authentication="TokenBased",
+    AccountId="your_account_id",
+    AccountTimeZone="your_account_timezone",
+    ConsumerKey="your_consumer_key",
+    ConsumerSecret="your_consumer_secret",
+    TokenId="your_token_id",
+    TokenSecret="your_token_secret"
+)
+```
+If you're using OAuth 2.0 authentication and have a refresh token:
+```
+my_connection = devart.netsuite.connect(
+    Ver=2,
+    Authentication="OAuth",
+    AccountId="your_account_id",
+    AccountTimeZone="your_account_timezone",
+    ClientID="your_client_id",
+    ClientSecret="your_client_secret",
+    RefreshToken="your_refresh_token"
+)
+```
+If you're using OAuth 2.0 authentication and don't have a refresh token:
+```
+response = devart.netsuite.signin(
+    AccountId="your_account_id",
+    ClientId="your_client_id",
+    ClientSecret="your_client_secret")
+my_connection = devart.netsuite.connect(
+    Authentication="OAuth",
+    AccountID="your_account_id",
+    AccountTimeZone="your_account_timezone",
+    ClientID="your_client_id",
+    ClientSecret="your_client_secret",
+    RefreshToken=response["Refresh Token"]
+)
+```
+
+Create a `cursor` object using the `cursor()` connection method.
+```
+my_cursor = my_connection.cursor()
+```
+
+Execute the SQL statement using the `execute()` cursor method.
+```
+my_cursor.execute("SELECT * FROM employees")
+```
+
+Retrieve the result set using one of the `fetch*()` cursor methods.
+```
+for row in my_cursor.fetchall(): 
+    print(row)
+```
+
+## Ordering and activating the license ##
+
+You can purchase a license for the connector on the ordering page:             
+https://www.devart.com/python/netsuite/ordering.html
+
+To activate the license, follow the instructions in the documentation:             
+https://docs.devart.com/python/netsuite/activate-a-license.htm
+
+## What's new ##
+
+Python Connector for NetSuite 1.1
+
+- Added metadata caching
+- Added connection pooling
+- Added activation with a license key
+- Added the subscription license type
