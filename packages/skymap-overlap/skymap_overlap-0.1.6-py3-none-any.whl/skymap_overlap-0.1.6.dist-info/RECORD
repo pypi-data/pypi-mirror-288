@@ -1,0 +1,11 @@
+skymap_overlap/_version.py,sha256=n3oM6B_EMz93NsTI18NNZd-jKFcUPzUkbIKj5VFK5ok,22
+skymap_overlap/combine_skymaps.py,sha256=e6pMuXAUAQkmUWlnP1OG7VxgA6jBREjg_skvAkqflbw,3009
+skymap_overlap/compute_overlap.py,sha256=1T9_kzN4yZpHzapmyKFUloHxDB3_jJRqi0ysrKTtJEg,11180
+skymap_overlap/compute_overlap_from_skymaps_pipe.py,sha256=91Ra6I7z-8_BEmJZmsDxRFkmCyrVB-qhBVaYyXrdOz8,3537
+skymap_overlap/download_skymap.py,sha256=N-Qn3JD4G2mkZRLHoJF8Q3q51lsP60vu9pDcdwr8a8w,2175
+skymap_overlap-0.1.6.dist-info/LICENSE,sha256=YM5-_UnQx5KPZgMIPCZmszz6-eC_wwb5jbZGZzp93CI,1070
+skymap_overlap-0.1.6.dist-info/METADATA,sha256=0m1dbpNkO1irMt6o7rVZz_YefobrWtkSIWyc-RLe1J4,3585
+skymap_overlap-0.1.6.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+skymap_overlap-0.1.6.dist-info/entry_points.txt,sha256=919-hCbJdr1t53chsIt15OSDOE4tRY9eScp6P_fdlcE,270
+skymap_overlap-0.1.6.dist-info/top_level.txt,sha256=4TFlhNm87u3BZ7dBDe96YKRphFW6XNneidE-CCBKHXk,15
+skymap_overlap-0.1.6.dist-info/RECORD,,
