@@ -1,0 +1,2 @@
+[console_scripts]
+dastyor = dastyor.custom_commands:get_sample
