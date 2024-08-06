@@ -1,0 +1,6 @@
+Django
+boto3==1.34.87
+django-model-utils
+django-rest-framework
+openedx-atlas
+requests

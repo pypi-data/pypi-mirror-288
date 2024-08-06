@@ -1,0 +1,2 @@
+[lms.djangoapp]
+panorama_openedx_backend = panorama_openedx_backend.apps:PanoramaOpenedxBackendConfig
