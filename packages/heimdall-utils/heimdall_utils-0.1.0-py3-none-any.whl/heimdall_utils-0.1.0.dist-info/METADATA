@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: heimdall-utils
+Version: 0.1.0
+Summary: 
+Author: joaocarlos-hotmart
+Author-email: joao.almeida@hotmart.com
+Requires-Python: ==3.9.*
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+[![Build Status](https://drone.devops.hotmart.com/api/badges/Hotmart-Org/heimdall-utils/status.svg)](https://drone.devops.hotmart.com/Hotmart-Org/heimdall-utils)
+
+# heimdall-utils
+
+Heimdall Utils
+
+---
+## Components
+
+### component 1
+
+Description of component 1
+
+Example of usage:
+```
+...put a code example here
+```
