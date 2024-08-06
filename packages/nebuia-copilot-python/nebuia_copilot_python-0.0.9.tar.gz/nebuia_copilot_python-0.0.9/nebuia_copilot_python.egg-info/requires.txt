@@ -1,0 +1,4 @@
+requests
+python-magic
+loguru
+requests_toolbelt
