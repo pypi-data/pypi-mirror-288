@@ -1,0 +1,9 @@
+devart/sqlite/__init__.py,sha256=CC-FqtePVdzpV9K3woZHVwjxQ0XqKvPBcaaDBFzWsss,846
+devart/sqlite/sqlite.cpython-37m-darwin.so,sha256=KI12rcQy9WjhR77SGFKD-w06HPHMZb1F8oUVW-9ijgQ,7517392
+devart/sqlite/sqlite.pyi,sha256=-GSbIAtRxvyce14Hhcn2-7jwjIkoTpV7cUGirmsRn24,12367
+devart/sqlite/sqlalchemy/__init__.py,sha256=eVnoQJboS1K4eGV-i0I8e9kfFbhziqGA7h8RJz2FfuU,655
+devart_sqlite_connector-1.1.0.dist-info/LICENSE.txt,sha256=3sjizf07RF-z3Lp3tnA-jy3rN103Ypw11NO9tFnRLtU,8559
+devart_sqlite_connector-1.1.0.dist-info/METADATA,sha256=WQurZy1iiwohD3wtW6W5IATLRrV1Cpz6lPp-LarPSRU,2734
+devart_sqlite_connector-1.1.0.dist-info/WHEEL,sha256=RxT17OhvDn_QFKQicWB-bsnj3dVwvYWlRKJRQ0dRyQA,110
+devart_sqlite_connector-1.1.0.dist-info/top_level.txt,sha256=h_mZcghGiX6pnc-Kb1EoAfIW2iHeDA0kJKfcLJMbq44,7
+devart_sqlite_connector-1.1.0.dist-info/RECORD,,
