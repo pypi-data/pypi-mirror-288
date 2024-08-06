@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/py42195/__init__.py
+src/py42195/constants.py
+src/py42195/types.py
+src/py42195/utils.py
+src/py42195.egg-info/PKG-INFO
+src/py42195.egg-info/SOURCES.txt
+src/py42195.egg-info/dependency_links.txt
+src/py42195.egg-info/requires.txt
+src/py42195.egg-info/top_level.txt
+tests/test_types.py
