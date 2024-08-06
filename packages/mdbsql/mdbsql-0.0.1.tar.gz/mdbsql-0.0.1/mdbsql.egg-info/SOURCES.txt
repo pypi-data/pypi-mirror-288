@@ -1,0 +1,11 @@
+README.txt
+license.txt
+setup.py
+mdbsql/__init__.py
+mdbsql/get_myconf.py
+mdbsql/mongo_update.py
+mdbsql/mysql_update.py
+mdbsql.egg-info/PKG-INFO
+mdbsql.egg-info/SOURCES.txt
+mdbsql.egg-info/dependency_links.txt
+mdbsql.egg-info/top_level.txt
