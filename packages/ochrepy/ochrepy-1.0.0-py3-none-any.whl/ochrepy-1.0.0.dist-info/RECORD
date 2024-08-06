@@ -1,0 +1,11 @@
+ochrepy/__init__.py,sha256=htwUz5IBmcGXjvLUinnh2VBWbaU9WmS0uL_DOGKerIM,160
+ochrepy/auth.py,sha256=lFhtZyOlKWVuieZk92bZTE1rLm2z8nbmxkUcmpIZewk,6588
+ochrepy/cache_handler.py,sha256=lEOo_-3DIV55PpoAd-27_PdHyxk8k0AtQRqkVrc0HVI,1639
+ochrepy/client.py,sha256=buBJslSD91CVKEQjHuRbGJpv1FZcAv5k9BRz5bFnkW8,9467
+ochrepy/exceptions.py,sha256=wgNbvn89cacT8S4nKPCaKB7cQ11wGTmJHs7uKr_1XAo,518
+ochrepy/util.py,sha256=h2IrN8ZM4BbIvRuEWkWR9H4cy64WkzSdPMx0WfuNMAw,2295
+ochrepy-1.0.0.dist-info/LICENSE.md,sha256=3dKQ2hfMOre7I7Ffeda2O0cHxGtGc3cLzh62B08sPcw,1089
+ochrepy-1.0.0.dist-info/METADATA,sha256=dWVKIThI9vybIjxT4qDObehDJ4rXCOSxpjPG_i72pEA,2678
+ochrepy-1.0.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+ochrepy-1.0.0.dist-info/top_level.txt,sha256=9TJEbE7P64aHtbYu5EssOH_pQJvp2Ozpk6RvHzFnrd8,8
+ochrepy-1.0.0.dist-info/RECORD,,
