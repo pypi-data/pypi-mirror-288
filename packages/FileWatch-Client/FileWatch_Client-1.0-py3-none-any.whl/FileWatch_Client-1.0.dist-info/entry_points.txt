@@ -1,0 +1,3 @@
+[console_scripts]
+filewatch_client = main_process:main
+
