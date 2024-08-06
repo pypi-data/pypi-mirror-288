@@ -1,0 +1,9 @@
+README.md
+setup.py
+vecx_langchain/__init__.py
+vecx_langchain/base.py
+vecx_langchain.egg-info/PKG-INFO
+vecx_langchain.egg-info/SOURCES.txt
+vecx_langchain.egg-info/dependency_links.txt
+vecx_langchain.egg-info/requires.txt
+vecx_langchain.egg-info/top_level.txt
