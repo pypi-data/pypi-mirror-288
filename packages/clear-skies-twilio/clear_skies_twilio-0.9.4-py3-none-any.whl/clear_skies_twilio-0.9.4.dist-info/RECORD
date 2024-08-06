@@ -1,0 +1,13 @@
+clearskies_twilio/__init__.py,sha256=nT0CsXA-gZb3NxLMAi2Fm1zuOHRy0XUV0qNfI0RI1NQ,33
+clearskies_twilio/actions/__init__.py,sha256=WJDWNEkGsZTlHBSxPSb6bZEd5lXxq2WKxJjJt769zJc,488
+clearskies_twilio/actions/sms.py,sha256=4gz6PJBc_uNEYz71U7CGMRdKG4-v9uIjfKgip4CHZ08,6445
+clearskies_twilio/actions/sms_test.py,sha256=ZR8SVhytzDZTTV5wVUOYZPYEMearEpQjKTDo1kAtuBQ,2452
+clearskies_twilio/di/__init__.py,sha256=7aohQSG96JbunPzNfZLsmEJ_qFAMIEUEVrw5Ks5xnNE,428
+clearskies_twilio/di/twilio.py,sha256=EDWoxhNWB9ry4eDast1KaWixtMKDXn0vMXh-eDWTs5g,2298
+clearskies_twilio/mocks/__init__.py,sha256=mn764gINN667tYoJfnsM6HjAAhCsO_kZ6E-fUwdLY50,22
+clearskies_twilio/mocks/actions/__init__.py,sha256=s9xWpI1VYoAbMlAGpXqtvUmS3Ku_5xEZSfKbqakXyBQ,40
+clearskies_twilio/mocks/actions/sms.py,sha256=Tyjx7ipe3Zq1uf--VKYnVLb9ulqCF5e7eFWt1cu-qQw,654
+clear_skies_twilio-0.9.4.dist-info/LICENSE,sha256=TNgZtlw0IPD5dhgkxKLrut16ZbVB29qhVBdaPsioc4Q,1065
+clear_skies_twilio-0.9.4.dist-info/METADATA,sha256=4FzmQtO-5pHX42WqY-p7ztxRioW3bovDuyIRGQvsQ9A,3787
+clear_skies_twilio-0.9.4.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+clear_skies_twilio-0.9.4.dist-info/RECORD,,
