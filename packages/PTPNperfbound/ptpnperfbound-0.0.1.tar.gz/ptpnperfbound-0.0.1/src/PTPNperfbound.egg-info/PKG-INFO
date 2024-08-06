@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: PTPNperfbound
+Version: 0.0.1
+Summary: Performance bound solver for Probabilistic Timed Petri Nets
+Author-email: Simona Bernardi <simonab@unizar.es>
+Maintainer-email: Simona Bernardi <simonab@unizar.es>
+Project-URL: Repository, https://github.com/simber72/PTPNperfbound
+Keywords: PTPN,LPP,performance,bounds,slowest subnet
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/plain
+License-File: LICENSE
+
+A performance bound solver for Probabilistic Timed Petri Nets
+
+The solver computes:
+1. Transitions maximum throughput bound 
+2. Transitions minimum cycle times (in case of live nets) and identifies the slowest subnet.
+
+The computation is performed using Linear Programming techniques.
