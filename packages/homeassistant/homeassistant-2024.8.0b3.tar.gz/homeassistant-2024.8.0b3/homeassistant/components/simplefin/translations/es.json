@@ -1,0 +1,14 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Esta URL de acceso ya est\u00e1 configurada."
+        }
+    },
+    "entity": {
+        "sensor": {
+            "age": {
+                "name": "Edad de los datos"
+            }
+        }
+    }
+}
