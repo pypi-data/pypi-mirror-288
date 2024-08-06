@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+kmon_file_streamer.egg-info/PKG-INFO
+kmon_file_streamer.egg-info/SOURCES.txt
+kmon_file_streamer.egg-info/dependency_links.txt
+kmon_file_streamer.egg-info/top_level.txt
+kmon_streamer/__init__.py
+kmon_streamer/stream_json.py
+tests/__init__.py
+tests/test_streamer.py

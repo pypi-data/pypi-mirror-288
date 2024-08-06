@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: kmon-file-streamer
+Version: 0.1.0
+Summary: This is used to stream JSON from tar.gz file
+Home-page: UNKNOWN
+Author: Tanvir Ahmed
+Author-email: tanvir.ahmed@kmon.net
+License: UNKNOWN
+Description: # README #
+        
+        This file contains the information how to use the library
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
