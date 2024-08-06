@@ -1,0 +1,2 @@
+[console_scripts]
+roy-hello-pkg = roy_hello_pkg:roy_hello_pkg
