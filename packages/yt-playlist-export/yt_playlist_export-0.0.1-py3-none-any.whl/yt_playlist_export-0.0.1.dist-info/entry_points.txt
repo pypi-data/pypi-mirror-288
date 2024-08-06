@@ -1,0 +1,2 @@
+[console_scripts]
+yt-playlist-export = yt_playlist_export:main
