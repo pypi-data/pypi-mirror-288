@@ -1,0 +1,65 @@
+[project]
+name = "three_d_city_model_generator"
+version = "0.1.2"
+description = "3d-city-model-generator is an easy and one-stop tool to output 3d city models for microclimate simulation by integrating multiple geospatial open-data"
+readme = "README.rst"
+authors = [
+  {name = "Kunihiko Fujiwara", email = "kunihiko@nus.edu.sg"}
+]
+maintainers = [
+  {name = "Kunihiko Fujiwara", email = "kunihiko@nus.edu.sg"}
+]
+license = {text = "MIT license"}
+dependencies = [
+    "typer",
+    "pandas",
+    "requests",
+    "pyproj",
+    "ipyleaflet",
+    "geopandas",
+    "rasterio",
+    "shapely",
+    "gdown",
+    "numpy",
+    "matplotlib",
+    "contextily",
+    "fiona",
+    "rtree",
+    "plotly",
+    "tqdm",
+    "scipy"
+]
+
+[project.scripts]
+three_d_city_model_generator = "three_d_city_model_generator.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "coverage",
+    "mypy",
+    "pytest",
+    "ruff"
+]
+
+[project.urls]
+bugs = "https://github.com/kunifujiwara/three_d_city_model_generator/issues"
+changelog = "https://github.com/kunifujiwara/three_d_city_model_generator/blob/master/changelog.md"
+homepage = "https://github.com/kunifujiwara/three_d_city_model_generator"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["three_d_city_model_generator", "three_d_city_model_generator.download", "three_d_city_model_generator.geo", "three_d_city_model_generator.utils"]
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]
+
+[tool.mypy]
+files = "."
+strict = true
+warn_unreachable = true
+warn_no_return = true
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+allow_untyped_defs = true
+disable_error_code = "attr-defined"

@@ -1,0 +1,2 @@
+[console_scripts]
+three_d_city_model_generator = three_d_city_model_generator.cli:main
