@@ -1,0 +1,13 @@
+simple_sqlite3_orm/__init__.py,sha256=4D1lLuWa6pS6_xSfH0HpGF3sJPBaNVcNm8Sy_149B1o,859
+simple_sqlite3_orm/_orm.py,sha256=g8adonP94xN0APTV3pCdywBG2uVFWtsCokPe4ibZL7Y,27450
+simple_sqlite3_orm/_sqlite_spec.py,sha256=_fryjCwAmoQ-rI6ytqwdwVmfzaIxqYCaFg6VWsVwZVc,4170
+simple_sqlite3_orm/_table_spec.py,sha256=9i8eNJuzU9mpxCFWfDIaS1mDFuV3eOvxITKqTIngaxI,16894
+simple_sqlite3_orm/_types.py,sha256=pnIc8B3AIzFG2sDEkeHFo194AJzpW07z63gDt6sg9po,1708
+simple_sqlite3_orm/_utils.py,sha256=Z3PT4pfQxvAhBcPheFYih4O7ZPFfy8J0QwuK3-cvD7I,3937
+simple_sqlite3_orm/_version.py,sha256=RrHB9KG1O3GPm--rbTedqmZbdDrbgeRLXBmT4OBUqqI,411
+simple_sqlite3_orm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_sqlite3_orm/utils.py,sha256=XIGnNqNBPc6t5NNKxhq39nzgXIkLtG-3U-bLlsHwsog,10129
+simple_sqlite3_orm-0.2.2.dist-info/METADATA,sha256=imeD1G0FoNwgcE72kiID09y9tHPSgO5XM6LdJYOS64s,2128
+simple_sqlite3_orm-0.2.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+simple_sqlite3_orm-0.2.2.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+simple_sqlite3_orm-0.2.2.dist-info/RECORD,,

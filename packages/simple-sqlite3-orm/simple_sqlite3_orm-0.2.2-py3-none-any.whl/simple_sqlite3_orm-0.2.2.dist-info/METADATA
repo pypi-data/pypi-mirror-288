@@ -1,0 +1,41 @@
+Metadata-Version: 2.3
+Name: simple-sqlite3-orm
+Version: 0.2.2
+Summary: A simple yet powerful SQLite3 ORM, powered by pydantic.
+Project-URL: Source, https://github.com/pga2rn/simple-sqlite3-orm
+License: LICENSE.md
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Requires-Dist: pydantic<3,>=2.6
+Requires-Dist: typing-extensions>=4
+Provides-Extra: dev
+Requires-Dist: black==24.4.2; extra == 'dev'
+Requires-Dist: coverage==7.6; extra == 'dev'
+Requires-Dist: flake8==7.1; extra == 'dev'
+Requires-Dist: isort==5.13.2; extra == 'dev'
+Requires-Dist: pytest-asyncio==0.23.8; extra == 'dev'
+Requires-Dist: pytest-mock==3.14; extra == 'dev'
+Requires-Dist: pytest==8.3.1; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Simple python SQLite3 ORM
+
+A simple yet powerful SQLite3 ORM, powered by pydantic.
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=pga2rn_simple-sqlite3-orm&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=pga2rn_simple-sqlite3-orm)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=pga2rn_simple-sqlite3-orm&metric=coverage)](https://sonarcloud.io/summary/new_code?id=pga2rn_simple-sqlite3-orm)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=pga2rn_simple-sqlite3-orm&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=pga2rn_simple-sqlite3-orm)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=pga2rn_simple-sqlite3-orm&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=pga2rn_simple-sqlite3-orm)
+
+## Sample usage
+
+Check [sample_db.table](tests/sample_db/table.py) for more details.
