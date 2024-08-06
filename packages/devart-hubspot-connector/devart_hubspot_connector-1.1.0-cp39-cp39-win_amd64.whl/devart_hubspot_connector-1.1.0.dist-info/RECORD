@@ -1,0 +1,11 @@
+devart/hubspot/__init__.py,sha256=7QXnyqv2TrDPetWAe7JuuLGuM_nyTtZ3mqTqZUZon74,945
+devart/hubspot/hubspot.cp39-win_amd64.pyd,sha256=xIRAtwbyHisB1EC9EB9DZA3X-ssI0TcvfNFMtEiEmxE,897704
+devart/hubspot/hubspot.pyi,sha256=siUkOQO84--DMMEy7dZvnuJzIkp7UehEJPErcZaZIU0,12770
+devart/hubspot/HubSpot/Devart.Python.HubSpotEngine.dll,sha256=jmjzXIRj0sBijG6pdNX9FW-VrJk8srIPdwuXxeJ34bk,10967040
+devart/hubspot/HubSpot/sqlite3.dll,sha256=CkFtk1k8MzrSu52Eg5XvOT0NIvYIsXTE6xkBurbR-RI,1277952
+devart/hubspot/sqlalchemy/__init__.py,sha256=PThcgujtbwgxXh8pnvAVVbiaceC4XxOSfpr_zENTn2c,1285
+devart_hubspot_connector-1.1.0.dist-info/LICENSE,sha256=3sjizf07RF-z3Lp3tnA-jy3rN103Ypw11NO9tFnRLtU,8559
+devart_hubspot_connector-1.1.0.dist-info/METADATA,sha256=vg4bvWzcBtZIjo_XE0VGon5S5c0GsJwrW7-lMGwrU9Q,3331
+devart_hubspot_connector-1.1.0.dist-info/WHEEL,sha256=DmZ7B4aiAganfWOCUyjXG_z2uvUu-tkD3rVXMivgyOM,99
+devart_hubspot_connector-1.1.0.dist-info/top_level.txt,sha256=h_mZcghGiX6pnc-Kb1EoAfIW2iHeDA0kJKfcLJMbq44,7
+devart_hubspot_connector-1.1.0.dist-info/RECORD,,
