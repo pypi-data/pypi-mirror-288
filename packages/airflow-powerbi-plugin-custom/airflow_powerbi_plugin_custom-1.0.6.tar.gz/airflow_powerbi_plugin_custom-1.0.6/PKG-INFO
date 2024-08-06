@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: airflow_powerbi_plugin_custom
+Version: 1.0.6
+Summary: Airflow PowerBI plugin
+Author-email: Ambika Garg <ambikagarg1101@gmail.com>, Domagoj Gusic <dgusic94@gmail.com>
+Project-URL: Homepage, https://github.com/ambika-garg/PowerBI_Airflow_Plugin
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
