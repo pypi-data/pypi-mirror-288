@@ -1,0 +1,17 @@
+[package]
+name = "uuid-lib"
+version = "0.2.3"
+edition = "2021"
+
+[lib]
+name = "uuid_lib"
+crate-type = ["cdylib"]
+
+
+[dependencies]
+chrono = "0.4.38"
+rand = "0.9.0-alpha.2"
+uuid = { version = "1.10.0", features = ["v1", "v3", "v4", "v5", "v6", "v7", "v8"] }
+libc = "0.2.155"
+pyo3 = "0.22.2"
+mac_address = "1.1.2"
