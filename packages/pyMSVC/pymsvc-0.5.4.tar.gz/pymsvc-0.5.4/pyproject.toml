@@ -1,0 +1,48 @@
+[project]
+name = 'pyMSVC'
+version = '0.5.4'
+license = {file = "LICENSE"}
+description='Simple to use MSVC build environment setup tool.'
+readme = "README.md"
+dependencies = ["comtypes == 1.1.11"]
+authors = [{name="Kevin Schlosser"}]
+keywords = [
+    "windows",
+    "setuptools",
+    "msvc",
+    "compiler",
+    "build",
+    "extension module"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Win32 (MS Windows)",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: Microsoft :: Windows :: Windows 7",
+    "Operating System :: Microsoft :: Windows :: Windows 8",
+    "Operating System :: Microsoft :: Windows :: Windows 8.1",
+    "Operating System :: Microsoft :: Windows :: Windows 10",
+    "Operating System :: Microsoft :: Windows :: Windows 11",
+    "Operating System :: Microsoft :: Windows :: Windows Server 2003",
+    "Operating System :: Microsoft :: Windows :: Windows Server 2008",
+    "Programming Language :: C++",
+    "Programming Language :: C#",
+    "Programming Language :: C",
+    "Programming Language :: Cython",
+    "Programming Language :: F#",
+    "Programming Language :: Objective C",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Compilers",
+    "Topic :: Software Development :: Pre-processors"
+]
+
+
+[project.urls]
+Homepage = "https://github.com/kdschlosser/python_msvc"
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
