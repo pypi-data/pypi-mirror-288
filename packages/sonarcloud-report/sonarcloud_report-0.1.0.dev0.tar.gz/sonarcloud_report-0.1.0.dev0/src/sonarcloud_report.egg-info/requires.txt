@@ -1,0 +1,6 @@
+typer
+python-sonarqube-api
+
+[dev]
+coverage
+pytest

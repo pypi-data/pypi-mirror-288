@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+src/sonarcloud_report/__init__.py
+src/sonarcloud_report/generate_sonarcloud_project_report.py
+src/sonarcloud_report.egg-info/PKG-INFO
+src/sonarcloud_report.egg-info/SOURCES.txt
+src/sonarcloud_report.egg-info/dependency_links.txt
+src/sonarcloud_report.egg-info/requires.txt
+src/sonarcloud_report.egg-info/top_level.txt
