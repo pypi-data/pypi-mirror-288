@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fpm-py
+Version: 0.0.1
+Summary: 
+Author: Robin Cunningham
+Author-email: rspcunningham@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# fpm-py
+
+Combine point-source images from different points in frequency-domain to get a single, resolution-enhanced image.
+
