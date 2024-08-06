@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "doc2html"
+#version = "v0.0.1"
+dynamic = ["version"]
+dependencies = [
+    "unoserver",
+    "virtualenv>=20.26.3",
+    "beautifulsoup4>=4.12.3",
+    "mammoth>=1.8.0",
+    "pdfpluber>=0.11.2"
+]
+requires-python = ">= 3.9"
+
+authors = [
+  {name = "Jose del Rio", email = "jgregrs@yahoo.es"},
+]
+maintainers = [
+  {name = "Jose del Rio", email = "jgregrs@yahoo.es"},
+]
+description = "Convert documents between formats. For example docx to html or pdf to html"
+readme = {file = "README.txt", content-type = "text/markdown"}
+license = {file = "LICENSE"}
+keywords = ["document", "transformation", "docx", "pdf", "pptx", "html"]
+classifiers = [
+  # How mature is this project? Common values are
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+  "Development Status :: 4 - Beta",
+
+  # Indicate who your project is intended for
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools",
+
+  # Pick your license as you wish (see also "license" above)
+  "License :: OSI Approved :: GNU General Public License (GPL)",
+
+  # Specify the Python versions you support here.
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]
+
+
+[tool.setuptools.packages.find]
+include = ["doc2html*"]  # package names should match these glob patterns (["*"] by default)
+exclude = ["doc2html.tests*", "environments"]  # exclude packages matching these glob patterns (empty by default)
+namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
+
+
+[project.urls]
+Homepage = "https://github.com/jgdelrio/doc2html"
+Documentation = "https://github.com/jgdelrio/doc2html"
+Repository = "https://github.com/jgdelrio/doc2html.git"
+Issues = "https://github.com/jgdelrio/doc2html/issues"
+
+# pip install twine
+# twine upload dist/*

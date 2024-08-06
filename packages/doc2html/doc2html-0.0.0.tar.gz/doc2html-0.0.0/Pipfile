@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+gunicorn = "*"
+uvicorn = "*"
+fastapi = "*"
+unoserver = "*"
+asyncio = "*"
+pydantic = "*"
+requests = "*"
+virtualenv = "*"
+mammoth = "*"
+pdfplumber = "*"
+beautifulsoup4 = "*"
+
+[dev-packages]
+pytest = "*"
+pyhamcrest = "*"
+pytest-asyncio = "*"
+psutil = "*"
+aiofiles = "*"
+
+[requires]
+python_version = "3.11.7"

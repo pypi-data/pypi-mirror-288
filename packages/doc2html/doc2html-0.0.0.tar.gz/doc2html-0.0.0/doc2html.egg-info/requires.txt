@@ -1,0 +1,5 @@
+unoserver
+virtualenv>=20.26.3
+beautifulsoup4>=4.12.3
+mammoth>=1.8.0
+pdfpluber>=0.11.2
