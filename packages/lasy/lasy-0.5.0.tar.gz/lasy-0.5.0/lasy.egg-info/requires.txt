@@ -1,0 +1,9 @@
+axiprop
+numpy
+openpmd-api
+openpmd-viewer
+scipy
+
+[tests]
+openpmd-viewer
+pytest

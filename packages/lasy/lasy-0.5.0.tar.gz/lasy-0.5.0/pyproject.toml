@@ -1,0 +1,10 @@
+[tool.pydocstyle]
+convention = "numpy"
+add-ignore = ["D100", "D104"]
+#inherit = false
+#match = .*\.py
+
+
+[tool.isort]
+known_first_party = ["lasy"]
+profile = "black"
