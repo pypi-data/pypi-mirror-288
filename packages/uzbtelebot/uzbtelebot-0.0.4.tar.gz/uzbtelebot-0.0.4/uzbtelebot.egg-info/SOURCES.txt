@@ -1,0 +1,9 @@
+README.md
+setup.py
+uzbot/__init__.py
+uzbot/uzbtelebot.py
+uzbtelebot.egg-info/PKG-INFO
+uzbtelebot.egg-info/SOURCES.txt
+uzbtelebot.egg-info/dependency_links.txt
+uzbtelebot.egg-info/requires.txt
+uzbtelebot.egg-info/top_level.txt
