@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: rag_engine
+Version: 0.1.1
+Summary: A Retrieval-Augmented Generation (RAG) Engine for managing embeddings and similarity search
+Home-page: https://github.com/slava-vishnyakov/rag_engine
+Author: Slava Vishnyakov
+Author-email: bomboze@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai>=1.0.0
+Requires-Dist: sqlite-vec>=0.1.0
+Requires-Dist: python-dotenv>=0.19.0
+Provides-Extra: dev
+Requires-Dist: bump2version>=1.0.1; extra == "dev"
+Requires-Dist: pytest>=6.2.5; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.14.0; extra == "dev"
+
+# RAG Engine
+
+[![Python Tests](https://github.com/slava-vishnyakov/rag_engine/actions/workflows/python-tests.yml/badge.svg)](https://github.com/slava-vishnyakov/rag_engine/actions/workflows/python-tests.yml)
+
+RAG Engine is a Python package for implementing Retrieval-Augmented Generation (RAG) using OpenAI's embeddings and a SQLite database with vector search capabilities.
+
+## Installation
+
+You can install the RAG Engine package using pip:
+
+```
+pip install rag_engine
+```
+
+## Usage
+
+Here's a quick example of how to use RAG Engine:
+
+```python
+import asyncio
+from rag_engine import RAGEngine
+
+async def main():
+    # Initialize the RAG Engine
+    rag = RAGEngine("database.sqlite")
+
+    # Add some sentences
+    sentences = ["This is a test sentence.", "Another example sentence."]
+    await rag.add(sentences)
+
+    # Search for similar sentences
+    results = await rag.search("test sentence", n=2)
+    print(results)
+
+# Run the async function
+asyncio.run(main())
+```
+
+## Features
+
+- Supports multiple OpenAI embedding models: ADA_002, SMALL_3, and LARGE_3
+- Asynchronous operations for better performance
+- SQLite database with vector similarity search
+- Flexible API for adding, searching, and deleting embeddings
+
+## Development
+
+To set up the development environment:
+
+1. Clone the repository
+2. Install the package with development dependencies:
+   ```
+   pip install -e .[dev]
+   ```
+3. Run the tests:
+   ```
+   pytest
+   ```
+
+Note: Tests require a valid OpenAI API key. Set the `OPENAI_API_KEY` environment variable before running the tests.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
