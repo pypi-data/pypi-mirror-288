@@ -1,0 +1,3 @@
+[console_scripts]
+problem_designer=problem_designer.cli.__main__:run
+
