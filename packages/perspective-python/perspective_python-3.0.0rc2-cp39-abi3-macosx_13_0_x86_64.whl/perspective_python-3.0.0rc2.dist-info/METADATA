@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: perspective-python
+Version: 3.0.0rc2
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Summary: A data visualization and analytics component, especially well-suited for large and/or streaming datasets.
+Home-Page: https://perspective.finos.org
+Author: Andrew Stein <steinlink@gmail.com>
+Author-email: Andrew Stein <steinlink@gmail.com>
+License: Apache-2.0
+Requires-Python: >=3.9
+Project-URL: Source Code, https://github.com/finos/perspective
