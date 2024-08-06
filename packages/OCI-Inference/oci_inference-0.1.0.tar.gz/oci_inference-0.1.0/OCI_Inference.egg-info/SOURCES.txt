@@ -1,0 +1,9 @@
+README.md
+setup.py
+OCI_Inference/OCI_Inference.py
+OCI_Inference/__init__.py
+OCI_Inference.egg-info/PKG-INFO
+OCI_Inference.egg-info/SOURCES.txt
+OCI_Inference.egg-info/dependency_links.txt
+OCI_Inference.egg-info/requires.txt
+OCI_Inference.egg-info/top_level.txt
