@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: mcmod-resize
+Version: 0.1.0
+Summary: auto-resize your item textures!
+Author: TunaFish2K
+Author-email: tunafish2k@163.com
+License: Apache-2.0
+Requires: pillow
+License-File: LICENSE
