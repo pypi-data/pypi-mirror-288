@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: bluetooth_linux_drivers
+Version: 0.1
+Summary: Bluetooth drivers for Linux
+Home-page: https://github.com/wjasper/Linux_Drivers
+Author: W. Jasper
+Author-email: wjasper@ncsu.edu
