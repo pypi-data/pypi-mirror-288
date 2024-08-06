@@ -1,0 +1,4 @@
+[console_scripts]
+miscraper=scraper.cli:miscraper
+nfscraper=scraper.cli:nfscraper
+
