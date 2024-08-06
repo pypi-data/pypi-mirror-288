@@ -1,0 +1,105 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+
+  build-sphinx-80plus:
+    name: Build
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [ "3.10", "3.11", "3.12" ]
+        sphinx-version: [
+          "8.0.*", "8.*"  # 8.0.x and latest
+        ]
+    uses: ./.github/workflows/build.yml
+    with:
+      python-version: ${{ matrix.python-version }}
+      extra-requirements: '\
+        "sphinx==${{ matrix.sphinx-version }}"'
+
+
+  build-legacy-sphinx-45plus:
+    name: Build
+
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [ "3.8", "3.9", "3.10", "3.11", "3.12" ]
+        sphinx-version: [
+          "7.0.*",  # possible range: 7.0.0 - 7.4.7
+          "6.0.*",  # possible range: 6.0.0 - 6.2.1
+          "5.0.*",  # possible range: 5.0.0 - 5.3.0
+          "4.5.*"   # possible range: 4.5.0, also latest that supports py3.8
+        ]
+        include:
+          - python-version: "3.9"
+            sphinx-version: "7.2.*"  # latest version that supports py3.9
+    uses: ./.github/workflows/build.yml
+    with:
+      python-version: ${{ matrix.python-version }}
+      extra-requirements: '\
+        "sphinx==${{ matrix.sphinx-version }}"
+        "sphinxcontrib-applehelp<1.0.8"
+        "sphinxcontrib-devhelp<1.0.6"
+        "sphinxcontrib-htmlhelp<2.0.5"
+        "sphinxcontrib-jsmath<1.0.1"
+        "sphinxcontrib-qthelp<1.0.7"
+        "sphinxcontrib-serializinghtml<1.1.10"'
+
+
+  build-legacy-sphinx-40plus:
+    name: Build
+
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [ "3.8", "3.9" ]
+        sphinx-version: [
+          "4.0.*"  # possible range: 4.0.0 - 4.4.0
+        ]
+    uses: ./.github/workflows/build.yml
+    with:
+      python-version: ${{ matrix.python-version }}
+      extra-requirements: '\
+        "sphinx==${{ matrix.sphinx-version }}"
+        "sphinxcontrib-applehelp<1.0.8"
+        "sphinxcontrib-devhelp<1.0.6"
+        "sphinxcontrib-htmlhelp<2.0.5"
+        "sphinxcontrib-jsmath<1.0.1"
+        "sphinxcontrib-qthelp<1.0.7"
+        "sphinxcontrib-serializinghtml<1.1.10"'
+
+
+  build-legacy-sphinx-30plus:
+    name: Build
+
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [ "3.7", "3.8", "3.9" ]
+        sphinx-version: [
+          "3.0.*",  # possible range: 3.0.0 - 3.5.4
+        ]
+        include:
+          - python-version: "3.7"
+            sphinx-version: "3.5.*"  # latest version that supports py3.7
+    uses: ./.github/workflows/build.yml
+    with:
+      python-version: ${{ matrix.python-version }}
+      extra-requirements: '\
+        "sphinx==${{ matrix.sphinx-version }}"
+        "jinja2<3.1"
+        "alabaster<0.7.14"
+        "sphinxcontrib-applehelp<1.0.8"
+        "sphinxcontrib-devhelp<1.0.6"
+        "sphinxcontrib-htmlhelp<2.0.5"
+        "sphinxcontrib-jsmath<1.0.1"
+        "sphinxcontrib-qthelp<1.0.7"
+        "sphinxcontrib-serializinghtml<1.1.10"'
