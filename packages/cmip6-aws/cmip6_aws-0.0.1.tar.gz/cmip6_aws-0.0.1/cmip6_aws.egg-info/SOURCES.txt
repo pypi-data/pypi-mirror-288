@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+cmip6_aws/__init__.py
+cmip6_aws/cmip6_aws.py
+cmip6_aws/common.py
+cmip6_aws.egg-info/PKG-INFO
+cmip6_aws.egg-info/SOURCES.txt
+cmip6_aws.egg-info/dependency_links.txt
+cmip6_aws.egg-info/not-zip-safe
+cmip6_aws.egg-info/requires.txt
+cmip6_aws.egg-info/top_level.txt
+tests/test_cmip6_aws.py
