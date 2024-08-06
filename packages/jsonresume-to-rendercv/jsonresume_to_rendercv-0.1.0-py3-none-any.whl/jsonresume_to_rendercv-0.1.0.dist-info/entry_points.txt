@@ -1,0 +1,3 @@
+[console_scripts]
+jsonresume_to_rendercv = jsonresume_to_rendercv.converter:main
+
