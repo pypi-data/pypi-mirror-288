@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+lu_package.egg-info/PKG-INFO
+lu_package.egg-info/SOURCES.txt
+lu_package.egg-info/dependency_links.txt
+lu_package.egg-info/top_level.txt
+mypackage/__init__.py
+mypackage/mymodule.py
+tests/__init__.py
+tests/test_mymodule.py
