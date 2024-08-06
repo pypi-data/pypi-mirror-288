@@ -1,0 +1,6 @@
+uuid_lib-0.2.3.dist-info/METADATA,sha256=nyhl_nHhCRxLdJ0zN_rmiScrCW-gU16vlE_n5kmoYvA,487
+uuid_lib-0.2.3.dist-info/WHEEL,sha256=U4wncjHGVx94sE2JsxnUTr0tXWD2AXq2J1h09ZXN3Q4,91
+uuid_lib/__init__.py,sha256=ORKx242gJfL1q7fp-R90j3JXZLANnOM9GVaInlAcoq4,144
+uuid_lib/__init__.pyi,sha256=CP7hFkQvaqDZe8CV0OGd6-Fg60sI7E4DETExVaEjXI8,450
+uuid_lib/_uuid_lib.cp310-win32.pyd,sha256=Gwu3Kv5eAx0-T_bHDH562oxA-RUjNU24kawcKj8RWP0,253952
+uuid_lib-0.2.3.dist-info/RECORD,,
