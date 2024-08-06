@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: ao3-parser
+Version: 1.0.0
+Summary: Package for parsing AO3 pages and creating urls based on requirements.
+Author: petak33
+License: MIT License
+        
+        Copyright (c) 2024 petak33
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/petak33/ao3-parser
+Project-URL: Issues, https://github.com/petak33/ao3-parser/issues
+Keywords: ao3,archiveofourown,archive of our own
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: BeautifulSoup4
+
+# AO3 Parser
+Tools for parsing AO3 pages and creating urls based on requirements.
+
+Main advantage over similar packages is it's complete control over requests to AO3.
+Instead of handling requests on it's own, it shifts this to the user, giving more room for optimization.
+The main bottleneck for anyone in need of collecting larger amounts of data.
+(Scraping data for AI training is discouraged)
+
+If this is not what you're looking for, I'd recommend [ao3_api](https://github.com/ArmindoFlores/ao3_api) that handles requests on it's own.
+
+## Installation
+```bash
+pip install ao3-parser
+```
+
+# Usage
+An average user will find themselves using two main modules the most, `Search` and `Page`. 
+
+## Search
+Common example of using `Search` would look like this.
+Just like on AO3, pages are numbered from 1 and up.
+
+```python
+import AO3Parser as AO3P
+from AO3Parser import Params
+from datetime import datetime
+
+search = AO3P.Search("Original Work", Sort_by=Params.Sort.Kudos,
+                     Include_Ratings=[Params.Rating.General_Audiences],
+                     Words_From=1000, Words_To=1500,
+                     Date_From=datetime(2024, 6, 30))
+url = search.GetUrl(page=1)
+print(f"URL: {url}")
+```
+```
+URL: https://archiveofourown.org/works?commit=Sort+and+Filter&page=1&work_search%5Bsort_colum%5D=Kudos&tag_id=Original+Work&include_work_search%5Brating_ids%5D%5B%5D=10&work_search%5Bwords_from%5D=1000&work_search%5Bwords_to%5D=1500&work_search%5Bdate_from%5D=2024-06-30
+```
+
+## Page
+
+```python
+import AO3Parser as AO3P
+import requests
+
+search = AO3P.Search("Original Work")
+url = search.GetUrl()
+page_data = requests.get(url).content
+
+page = AO3P.Page(page_data)
+print(f"Total works: {page.Total_Works}")
+print(f"Works on page: {len(page.Works)}")
+print(f"Title of the first work: [{page.Works[0].Title}]")
+```
+```
+Total works: 282069
+Works on page: 20
+Title of the first work: [Title Of This Work]
+```
+
+### Notes
+`Params.Category.No_Category` is not recognized as a valid ID on AO3 and should not be used with `Search`.
