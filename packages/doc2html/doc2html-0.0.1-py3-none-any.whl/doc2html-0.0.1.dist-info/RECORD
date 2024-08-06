@@ -1,0 +1,11 @@
+doc2html/__init__.py,sha256=OAhRNjKsfStXDkBOjRGz7EES0WEy9gJke1iSmIh_HVM,135
+doc2html/allocate_unoserver.sh,sha256=SgXIBXzChrtt8q8KUJyWWB1fGIeRro1L8-SpVQBRkZ8,508
+doc2html/config.py,sha256=bx6fFoLreiEHSkBQ9HZfACiAs9o77rW8iSRWxLsQgTw,1045
+doc2html/reformat.py,sha256=IR1lXr2fXrUntGFDbDcK797Krz1EakTEQFbvD2pC9bg,6727
+doc2html/schemas.py,sha256=X-fc8YpprxW1gw457oTQKUDYo2qf8lt6rxpoGaPIvvI,480
+doc2html/server.py,sha256=kKE57b3DpXwZSx4sk80YBKwl4scO8u5E4oijeEQCkn8,3662
+doc2html-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+doc2html-0.0.1.dist-info/METADATA,sha256=IvcCZZq2aTznQ-1fNR9KDfeCyhjUtAeRU72Jnb3PSCI,44653
+doc2html-0.0.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+doc2html-0.0.1.dist-info/top_level.txt,sha256=muFSZmwMxFBr832624HeZiwIKFzwsxTGyxp8yp5d_Tk,9
+doc2html-0.0.1.dist-info/RECORD,,
