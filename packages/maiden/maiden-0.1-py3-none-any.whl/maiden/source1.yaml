@@ -1,0 +1,6 @@
+integration:
+  header: "My Custom Header"
+  author: "John Doe"
+  date: "2023-01-01"
+  content: |
+    This is the content fetched from the YAML file.

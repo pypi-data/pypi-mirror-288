@@ -1,0 +1,2 @@
+[console_scripts]
+generate_md = my_tool.main:generate_md

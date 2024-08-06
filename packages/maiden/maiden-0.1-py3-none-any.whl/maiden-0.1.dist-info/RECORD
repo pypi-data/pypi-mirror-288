@@ -1,0 +1,9 @@
+maiden/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+maiden/main.py,sha256=_KmPZXB3tTOZFpHfSOK7acXV_Mio58pQsDsJM8B8760,1913
+maiden/source1.yaml,sha256=s5ma1zsi8gLRGZKFh_CppsnRpyJx_xdhRH8aDfU0y6c,149
+maiden/templates/my_template.md,sha256=FGzLFJKiTlOlC6uRma3oRxVEB-508B38JQDskQv-B4g,222
+maiden-0.1.dist-info/METADATA,sha256=oBp94xW7l8Pg9YHXf0nb6VmBmK0mBO6jzKeq2LlAjZA,781
+maiden-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+maiden-0.1.dist-info/entry_points.txt,sha256=PiwUGd1BKoNYCDZ3uga_lF_XKS-hRilKGrWzNGRplC4,57
+maiden-0.1.dist-info/top_level.txt,sha256=Rr6f_xxXVtfEGUaEUIh5FwCF3iFJk3xB_lLLDxqEXD0,7
+maiden-0.1.dist-info/RECORD,,
