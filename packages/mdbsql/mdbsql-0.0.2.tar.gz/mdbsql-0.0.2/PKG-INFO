@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mdbsql
+Version: 0.0.2
+Author: xigua, 
+Author-email: 2587125111@qq.com
+License: MIT
+Requires-Python: >=3.6
+License-File: license.txt
+
+
+      mongodb/mysql 数据库更新, 移除冗余数据。
+      
