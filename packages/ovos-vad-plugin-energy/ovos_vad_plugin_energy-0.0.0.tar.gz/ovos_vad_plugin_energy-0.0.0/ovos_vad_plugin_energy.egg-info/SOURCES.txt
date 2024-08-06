@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+ovos_vad_plugin_energy/__init__.py
+ovos_vad_plugin_energy/energy.py
+ovos_vad_plugin_energy/version.py
+ovos_vad_plugin_energy.egg-info/PKG-INFO
+ovos_vad_plugin_energy.egg-info/SOURCES.txt
+ovos_vad_plugin_energy.egg-info/dependency_links.txt
+ovos_vad_plugin_energy.egg-info/entry_points.txt
+ovos_vad_plugin_energy.egg-info/requires.txt
+ovos_vad_plugin_energy.egg-info/top_level.txt
+ovos_vad_plugin_energy.egg-info/zip-safe

@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ovos-vad-plugin-energy
+Version: 0.0.0
+Summary: Lorem Ipsum
+Home-page: https://github.com/suvanbanerjee/ovos-vad-plugin-energy
+Author: suvanbanerjee
+Author-email: banerjeesuvan@gmail.com
+License: MIT
+Keywords: mycroft plugin VAD OVOS OpenVoiceOS
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+Requires-Dist: ovos-plugin-manager>=0.0.11
