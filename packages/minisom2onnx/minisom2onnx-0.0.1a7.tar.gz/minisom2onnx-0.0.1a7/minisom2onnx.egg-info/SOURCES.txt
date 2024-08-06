@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+minisom2onnx/__init__.py
+minisom2onnx/minisom2onnx.py
+minisom2onnx/version.py
+minisom2onnx.egg-info/PKG-INFO
+minisom2onnx.egg-info/SOURCES.txt
+minisom2onnx.egg-info/dependency_links.txt
+minisom2onnx.egg-info/requires.txt
+minisom2onnx.egg-info/top_level.txt
