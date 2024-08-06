@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: paddyhong
+Version: 0.1.0
+Author: paddyhong
+Author-email: 1707262291@qq.com
+Requires-Dist: easygui
+
