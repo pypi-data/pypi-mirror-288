@@ -1,0 +1,10 @@
+dyson_equalizer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dyson_equalizer/algorithm.py,sha256=aeuEitFka1Opy6Q-mwjidBDiR5aCnfosD-pHX0e6sZA,6665
+dyson_equalizer/dyson_equalizer.py,sha256=HvKqtJenzfSJnSoZ0PKWMP09ST6kLOqaDwodbF0jHpw,6621
+dyson_equalizer/examples.py,sha256=qW1kF2h1Bq7slKkWvAMPtxwf6T2LxxiQx4AzjO6OJbU,889
+dyson_equalizer/plots.py,sha256=dPqBwbfl8netZNpgNmxJhkp9Xdjov4pCvSnKKN57H1I,3241
+dyson_equalizer/validation.py,sha256=AFZqxcaDPelgXBseSmHYu9cPm4Kq1VbveJqkm6JR31A,1844
+dyson_equalizer-0.1.0.dist-info/LICENSE,sha256=xShT7SqBfnrKjWzo44zi188kz-9eE3t8r-1T3e-2nfI,1067
+dyson_equalizer-0.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+dyson_equalizer-0.1.0.dist-info/METADATA,sha256=oi6kpOcTe1dV9d5lAg1UpFvkuzg6KZn4lxrrpWyl2dg,1549
+dyson_equalizer-0.1.0.dist-info/RECORD,,
