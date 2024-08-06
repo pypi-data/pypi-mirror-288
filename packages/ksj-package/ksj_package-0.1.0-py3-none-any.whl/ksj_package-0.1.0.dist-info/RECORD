@@ -1,0 +1,9 @@
+mypackage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypackage/mymodule.py,sha256=deyODT-PwTIbvdr8oE6cctv63vyu7bmI5wfabJhaCyM,68
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_mymodule.py,sha256=eOTKS3R_oisFnMtzm_cBqzqWC1_QpZG3ELFC_ziEB4Q,238
+ksj_package-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ksj_package-0.1.0.dist-info/METADATA,sha256=5ojhBeAuIdZBomSNF8idckul7KoB67L2a4AxwzARHt0,627
+ksj_package-0.1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+ksj_package-0.1.0.dist-info/top_level.txt,sha256=EPaQ7bohfbQYpXluIecATfHFlNVEU6p7LxDTpUYjEV8,16
+ksj_package-0.1.0.dist-info/RECORD,,
