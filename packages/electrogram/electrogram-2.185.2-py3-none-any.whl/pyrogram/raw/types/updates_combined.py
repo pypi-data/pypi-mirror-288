@@ -1,0 +1,59 @@
+from io import BytesIO
+
+from pyrogram.raw.core.primitives import Int, Long, Int128, Int256, Bool, Bytes, String, Double, Vector
+from pyrogram.raw.core import TLObject
+from pyrogram import raw
+from typing import List, Optional, Any
+
+
+class UpdatesCombined(TLObject):  # type: ignore
+    __slots__: List[str] = ["updates", "users", "chats", "date", "seq_start", "seq"]
+
+    ID = 0x725b04c3
+    QUALNAME = "types.UpdatesCombined"
+
+    def __init__(self, *, updates: List["raw.base.Update"], users: List["raw.base.User"], chats: List["raw.base.Chat"], date: int, seq_start: int, seq: int) -> None:
+        self.updates = updates  # Vector<Update>
+        self.users = users  # Vector<User>
+        self.chats = chats  # Vector<Chat>
+        self.date = date  # int
+        self.seq_start = seq_start  # int
+        self.seq = seq  # int
+
+    @staticmethod
+    def read(b: BytesIO, *args: Any) -> "UpdatesCombined":
+        # No flags
+        
+        updates = TLObject.read(b)
+        
+        users = TLObject.read(b)
+        
+        chats = TLObject.read(b)
+        
+        date = Int.read(b)
+        
+        seq_start = Int.read(b)
+        
+        seq = Int.read(b)
+        
+        return UpdatesCombined(updates=updates, users=users, chats=chats, date=date, seq_start=seq_start, seq=seq)
+
+    def write(self, *args) -> bytes:
+        b = BytesIO()
+        b.write(Int(self.ID, False))
+
+        # No flags
+        
+        b.write(Vector(self.updates))
+        
+        b.write(Vector(self.users))
+        
+        b.write(Vector(self.chats))
+        
+        b.write(Int(self.date))
+        
+        b.write(Int(self.seq_start))
+        
+        b.write(Int(self.seq))
+        
+        return b.getvalue()
