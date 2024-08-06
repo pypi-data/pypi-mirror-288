@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "contextforce-sdk"
+version = "0.1.0"
+description = ""
+authors = ["raymond <rayhon1014@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+setuptools = "^72.1.0"
+wheel = "^0.44.0"
+twine = "^5.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

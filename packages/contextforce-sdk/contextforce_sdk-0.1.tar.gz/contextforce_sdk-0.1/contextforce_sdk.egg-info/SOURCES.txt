@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+contextforce_sdk/__init__.py
+contextforce_sdk/main.py
+contextforce_sdk.egg-info/PKG-INFO
+contextforce_sdk.egg-info/SOURCES.txt
+contextforce_sdk.egg-info/dependency_links.txt
+contextforce_sdk.egg-info/requires.txt
+contextforce_sdk.egg-info/top_level.txt
+tests/__init__.py
