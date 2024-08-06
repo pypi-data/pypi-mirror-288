@@ -1,0 +1,12 @@
+README.md
+main.py
+setup.py
+ascii_flix.egg-info/PKG-INFO
+ascii_flix.egg-info/SOURCES.txt
+ascii_flix.egg-info/dependency_links.txt
+ascii_flix.egg-info/entry_points.txt
+ascii_flix.egg-info/requires.txt
+ascii_flix.egg-info/top_level.txt
+modules/__init__.py
+modules/home_screen.py
+modules/video_player.py
