@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: base-assistant-extension
+Version: 0.6.5
+Summary: 
+License: MIT
+Author: Samuel
+Author-email: samuelint@gmail.com
+Requires-Python: >=3.9,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: host-dependencies
+Requires-Dist: fastapi (>=0.112.0) ; extra == "host-dependencies"
+Requires-Dist: langchain (>=0.2.6) ; extra == "host-dependencies"
+Requires-Dist: langchain-openai (>=0.1.20) ; extra == "host-dependencies"
+Requires-Dist: langchain-openai-api-bridge (>=0.11.1)
+Requires-Dist: langgraph (>=0.1.19) ; extra == "host-dependencies"
+Requires-Dist: uvicorn (>=0.30.5) ; extra == "host-dependencies"
+Description-Content-Type: text/markdown
+
+# Assistant Base Extension
+
+Use this library to add extension to https://github.com/samuelint/ai-assistant.
+
+## How to use
+1. Add the library to your project
+```bash
+poetry add base-assistant-extension
+```
+
+2. At the base of your project export a class Called `Extension`
+```python
+# extension.py
+from langchain_core.language_models import BaseChatModel
+from langchain_core.runnables import Runnable
+from base_assistant_extension.base_extension import (
+    BaseExtension,
+)
+from langchain_core.prompts import PromptTemplate
+
+
+class Extension(BaseExtension):
+    def name(self) -> str:
+        return "joker"
+
+    def description(self) -> str:
+        return "Tell jokes."
+
+    def create_runnable(self, llm: BaseChatModel) -> Runnable:
+        prompt = PromptTemplate.from_template(
+            "You tell jokes. No matter the question. You have to tell a joke."
+            "{messages}"
+        )
+
+        return prompt | llm
+```
+
+```python
+# __init__.py
+from .extension import Extension
+
+__all__ = ["Extension"]
+```
+
+3. Build
+```bash
+poetry build
+```
+will produce a `.whl` file. Which is the extension to be used.
+

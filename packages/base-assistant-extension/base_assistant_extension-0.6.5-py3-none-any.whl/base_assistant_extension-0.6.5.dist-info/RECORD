@@ -1,0 +1,10 @@
+base_assistant_extension/__init__.py,sha256=zFMFIAIeQDQJSM_md1-C-BoS3kSReAZY1dvslSLh_78,292
+base_assistant_extension/base_extension.py,sha256=QICS7EXG3SeH63Wv5YCs1ifGKS_Y5ip-aDUO70Ga6rw,779
+base_assistant_extension/entry.py,sha256=etzwZ0e0aR3XxSd_jxnAl8jM2bDFRy5AXMGncPgC-UM,670
+base_assistant_extension/extension_agent_factory.py,sha256=AcXhpzuikXymv_IjmiKH3JT50wstkGZacRxO-BK5qs0,1079
+base_assistant_extension/extension_host.py,sha256=CL6J5QN5vjrsyLwZ3ADkL6-lx61SAY-QDrzC-BpZt3o,1540
+base_assistant_extension/extension_metadata.py,sha256=UTvgR2j7dU6dOlySoBoqvrT3brzWvDAVqG6MAiVuLnM,107
+base_assistant_extension-0.6.5.dist-info/LICENSE,sha256=TsZ-TKbmch26hJssqCJhWXyGph7iFLvyFBYAa3stBHg,1067
+base_assistant_extension-0.6.5.dist-info/METADATA,sha256=5IrbzTKvM8cpSHGODtotT_3TGiaY-rlg5rt6HzKsjHk,2055
+base_assistant_extension-0.6.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+base_assistant_extension-0.6.5.dist-info/RECORD,,
