@@ -1,0 +1,2 @@
+[console_scripts]
+worldview_config = worldview_config.cli:app

@@ -1,0 +1,10 @@
+{
+    "categories": {
+        "science disciplines": {
+            "{{ discipline | capitalize }}": {
+                "id": "{{ discipline | lower }}",
+                "measurements": {{ measurements | unique | list | sort | tojson }}
+            }
+        }
+    }
+}
