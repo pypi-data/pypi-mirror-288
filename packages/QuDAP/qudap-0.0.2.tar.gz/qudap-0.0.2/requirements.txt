@@ -1,0 +1,15 @@
+PyQt6
+pandas
+MultiPyVu
+PyVISA
+PyVISA-sim
+numpy
+python-pptx
+pywin32
+setuptools
+pillow
+matplotlib
+psutil
+numpy
+requests
+python-pptx
