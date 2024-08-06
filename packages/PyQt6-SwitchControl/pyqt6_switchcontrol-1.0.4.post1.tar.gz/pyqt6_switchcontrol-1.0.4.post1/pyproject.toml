@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyQt6_SwitchControl"
+version = "1.0.4.post1"
+authors = [{name = "Parsa.py", email = "munichbayern2005@gmail.com"}]
+maintainers = [{ name="M1GW" }]
+description = "An easy-to-use and modern toggle switch for Qt Python binding PyQt"
+dependencies = ["PyQt6"]
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.8"
+license = {text = "LICENSE"}
+keywords =["PyQt", "PyQt6", "switch", "toggle", "toggle-button" , "toggle-switch", "qt6-widgets", "qt"]
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11",
+	"Programming Language :: Python :: 3.12",
+	"Programming Language :: Python :: Implementation :: CPython",
+    "License :: OSI Approved :: MIT License"
+]
+
+[project.urls]
+Repository = "https://github.com/M1GW/PyQt6_SwitchControl"
+Issues = "https://github.com/M1GW/PyQt6_SwitchControl/issues"

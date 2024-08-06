@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+PyQt6_SwitchControl/PyQt6_SwitchControl.py
+PyQt6_SwitchControl/PyQt6_SwitchControl_plugin.py
+PyQt6_SwitchControl/__init__.py
+PyQt6_SwitchControl/__main__.py
+PyQt6_SwitchControl.egg-info/PKG-INFO
+PyQt6_SwitchControl.egg-info/SOURCES.txt
+PyQt6_SwitchControl.egg-info/dependency_links.txt
+PyQt6_SwitchControl.egg-info/entry_points.txt
+PyQt6_SwitchControl.egg-info/requires.txt
+PyQt6_SwitchControl.egg-info/top_level.txt
