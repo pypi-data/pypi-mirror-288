@@ -1,0 +1,3 @@
+[console_scripts]
+wirepas_apt_data_collector = wirepas_wpe_apt.data_collector:main
+wirepas_apt_report_generator = wirepas_wpe_apt.report_generator:main

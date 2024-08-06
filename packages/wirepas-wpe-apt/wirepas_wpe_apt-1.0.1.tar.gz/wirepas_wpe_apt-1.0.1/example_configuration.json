@@ -1,0 +1,22 @@
+{
+    "wnt_hostname": "wnt_hostname",
+    "wnt_username": "wnt_username",
+    "wnt_password": "wnt_password",
+    "influxdb_port": 8886,
+    "influxdb_ssl": true,
+    "influxdb_verify_ssl": true,
+    "influxdb_database": "influxdb_database",
+
+    "anchors_dataset": "node_metadata",
+    "measurements_dataset": "location_measurement",
+    "references_dataset": "node_metadata",
+    "location_dataset": "location_update",
+
+    "wpe_mqtt_hostname": "wpe_mqtt_hostname",
+    "wpe_mqtt_username": "wpe_mqtt_username",
+    "wpe_mqtt_password": "wpe_mqtt_password",
+    "wpe_mqtt_port": 8883,
+
+    "ws_auth_port": 8813,
+    "ws_metadata_port": 8812
+}
