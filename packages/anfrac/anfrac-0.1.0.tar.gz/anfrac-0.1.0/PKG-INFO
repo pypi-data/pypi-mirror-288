@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: anfrac
+Version: 0.1.0
+Summary: A custom Fraction data type library
+Home-page: https://github.com/anvai0304/anfrac
+Author: Anvai Shrivastava
+Author-email: anvaishrivastava@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# anfrac
+
+`anfrac` is a Python library providing a custom `Fraction` data type with basic arithmetic operations.
+This is a first demo of the datatype, more additions will be coming soon.
+
+## Installation
+
+To install `anfrac`, run:
+
+```bash
+pip install anfrac

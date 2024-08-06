@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+anfrac/__init__.py
+anfrac/fraction.py
+anfrac.egg-info/PKG-INFO
+anfrac.egg-info/SOURCES.txt
+anfrac.egg-info/dependency_links.txt
+anfrac.egg-info/top_level.txt
