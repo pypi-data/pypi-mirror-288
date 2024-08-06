@@ -1,0 +1,3 @@
+[pytest11]
+mask_secrets = pytest_mask_secrets.plugin
+
