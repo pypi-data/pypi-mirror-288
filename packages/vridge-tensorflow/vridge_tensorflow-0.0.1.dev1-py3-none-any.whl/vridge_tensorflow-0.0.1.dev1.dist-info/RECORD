@@ -1,0 +1,7 @@
+tensorflow/__init__.py,sha256=AnTfF37xtSOJOnwdEVGW9cs6CF6_6erplNSQCU4B6Ck,29
+tensorflow/data_processing.py,sha256=1joKvm4F1NOL6riOEdUbQWwaRysjZNSb_eiBFwrnhdY,1668
+tensorflow/model_utils.py,sha256=G-IYo9XxlCbXKizeW_gYwItByezB6twGN3j9VrU1lM8,2178
+vridge_tensorflow-0.0.1.dev1.dist-info/METADATA,sha256=kHJTtOdS1p6r-eRXQY6SPeB21ly07o0s-oul4M-mX1M,407
+vridge_tensorflow-0.0.1.dev1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+vridge_tensorflow-0.0.1.dev1.dist-info/top_level.txt,sha256=hrF9HcQHTkMhDvacQJ50IatO6wijWSIePBCOUAmJzzU,11
+vridge_tensorflow-0.0.1.dev1.dist-info/RECORD,,
