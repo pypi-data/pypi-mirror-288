@@ -1,0 +1,9 @@
+rapidjson.cpython-312-i386-linux-musl.so,sha256=YDLKt5RjR-44DT7i9NFQmLmH9yYk8zSA0vQC65S2Ja0,4752369
+python_rapidjson-1.20.dist-info/RECORD,,
+python_rapidjson-1.20.dist-info/top_level.txt,sha256=Z68HubZmoU3a6tE9t-9GAz06mxudnoTwOtpJtI0TnFc,26
+python_rapidjson-1.20.dist-info/LICENSE,sha256=SxBY-0DAFp_UYz-4Iedct0RQCF1zk1xJx3-7JdH7W-k,1228
+python_rapidjson-1.20.dist-info/WHEEL,sha256=D-IobFJHZA7Lnyj-vthCitCupfzPSEKGL4bUjTyFlZM,110
+python_rapidjson-1.20.dist-info/METADATA,sha256=BhXRg3HbuKzZThCvoH3U6b8elKpBw2F0bmdWcB1INHw,22643
+rapidjson-stubs/__init__.pyi,sha256=isAErwjA_cxafvQDeeTd-xt5-QtN81ENbRQNGNP-xYA,7288
+python_rapidjson.libs/libgcc_s-f3fb5a36.so.1,sha256=SrjjCCuY7RHj-T9JLrY9XFMgCCpYD9Qmezr4uoJGVEQ,168321
+python_rapidjson.libs/libstdc++-d2a021ba.so.6.0.32,sha256=1zr_iwGwEBe95gyKdgiw7C4Y1RR9ijV40j66rk4elzg,3537349
