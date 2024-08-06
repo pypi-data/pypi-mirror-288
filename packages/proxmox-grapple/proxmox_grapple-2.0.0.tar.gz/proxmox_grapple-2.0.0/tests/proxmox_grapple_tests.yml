@@ -1,0 +1,42 @@
+testing:
+  job-end:
+    mode: script
+    run:
+      - echo 'hi'
+      - sleep 1
+      - echo 'there'
+      - echo 'This is a test.'
+
+  backup-end:
+    mode: script
+    run:
+    extract:
+      enabled: true
+      source_directory: /tmp
+      destination_directory: /tmp
+  #    exclude_storeids:
+
+  job-start:
+    mode: script
+    run:
+      - some_missing_command
+
+  backup-start:
+    mode: script
+    run:
+      - /usr/bin/false
+
+  post-restart:
+    mode: script
+    run:
+      derp
+
+  backup-abort:
+    mode: shell
+    run:
+      - echo 'This is a test' | tr 'i' 'z'
+
+  pre-restart:
+    mode: script
+    run:
+      - echo 'This is a test' | tr 'i' 'z'
