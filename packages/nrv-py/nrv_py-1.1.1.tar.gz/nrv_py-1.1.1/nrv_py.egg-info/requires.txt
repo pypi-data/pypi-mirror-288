@@ -1,0 +1,11 @@
+gmsh
+mph
+numpy
+scipy
+neuron
+matplotlib
+numba
+ezdxf
+icecream
+pyswarms
+tqdm
