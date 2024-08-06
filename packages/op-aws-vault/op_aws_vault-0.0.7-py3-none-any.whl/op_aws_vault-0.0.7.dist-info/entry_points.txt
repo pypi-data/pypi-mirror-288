@@ -1,0 +1,2 @@
+[console_scripts]
+op-aws-vault = op_aws_vault:main_cli
