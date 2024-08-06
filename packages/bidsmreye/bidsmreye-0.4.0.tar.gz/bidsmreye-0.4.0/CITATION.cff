@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+
+title: "bidsMReye"
+
+version: 0.3.0
+
+abstract:
+  "BIDS app using deepMReye to decode eye motion for fMRI time series data."
+
+message: "If you use this software, please cite it as below."
+
+repository-code: "https://github.com/cpp-lln-lab/bidsMReye.git"
+
+identifiers:
+  - description: deepMReye paper
+    type: doi
+    value: "10.1038/s41593-021-00947-w"
+  - description: zenodo code
+    type: doi
+    value: "10.5281/zenodo.7493322"
+
+contact:
+  - affiliation: "McGill university"
+    email: remi.gau2@mcgill.ca
+    family-names: Gau
+    given-names: Rémi
+
+authors:
+  - family-names: "Gau"
+    given-names: "Rémi"
+    orcid: "https://orcid.org/0000-0002-1535-9767"
+    affiliation: "McGill university"
+
+  - family-names: "Cabee"
+    given-names: "Pauline"
+
+  - family-names: "Yang"
+    given-names: "Ying"
+    orcid: "https://orcid.org/0000-0002-4157-2975"
+    affiliation: "Université catholique de Louvain"
+
+license: GPL-3.0
+
+keywords:
+  - BIDS
+  - brain imaging data structure
+  - neuroimaging
+  - automated pipeline
+  - MRI
+  - Python
+  - Eyetracking
+  - Machine learning

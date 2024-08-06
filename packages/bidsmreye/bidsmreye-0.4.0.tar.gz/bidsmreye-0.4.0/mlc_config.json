@@ -1,0 +1,12 @@
+{
+  "ignorePatterns": [
+    {
+      "pattern": "^https://doi.org\/"
+    },
+    {
+      "pattern": "^./faq.md#.*"
+    }
+  ],
+  "timeout": "20s",
+  "retryOn429": true
+}

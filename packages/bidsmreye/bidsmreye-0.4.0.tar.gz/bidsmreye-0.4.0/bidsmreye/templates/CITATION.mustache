@@ -1,0 +1,55 @@
+## eye gaze position decoding
+
+Eyetracking results included in this manuscript
+come from preprocessing
+performed using [*bidsMReye*](https://github.com/cpp-lln-lab/bidsMReye) (version {{version}}),
+a BIDS app relying on [deepMReye](https://github.com/DeepMReye/DeepMReye) (@deepmreye)
+to decode eye motion from fMRI time series data.
+
+{{^qc_only}}
+### data extraction
+
+The data of each BOLD runs underwent co-registration conducted
+using Advanced Normalization Tools (ANTs, RRID:SCR_004757) within Python (ANTsPy).
+First, each participant's mean EPI was non-linearly co-registered
+to an average template.
+Second, all voxels within a bounding box that included the eyes
+were co-registered to a preselected bounding box in our group template to further improve the fit.
+
+Each voxel within those bounding box underwent two normalization steps.
+First, the across-run median signal intensity was subtracted
+from each voxel and sample
+and was divided by the median absolute deviation over time (temporal normalization).
+Second, for each sample, the mean across all voxels
+within the eye masks was subtracted and divided by the standard deviation
+across voxels (spatial normalization).
+
+### decoding
+
+Voxels time series were used as inputs for generalization decoding
+using a
+{{#is_known_models}}
+pre-trained model {{ model }} from deepMReye from [OSF](https://osf.io/23t5v).
+    {{#is_default_model}}
+This model was trained on the following datasets:
+guided fixations (@alexander_open_2017),
+smooth pursuit (@nau_real-motion_2018, @polti_rapid_2022, @nau_hexadirectional_2018),
+free viewing (@julian_human_2018).
+    {{/is_default_model}}
+{{/is_known_models}}
+{{^is_known_models}}
+model trained on calibration data from the current study.
+{{/is_known_models}}
+{{/qc_only}}
+
+### quality control
+
+For each run the following values were computed:
+- the variance for the X gaze position
+- the variance for the Y gaze position
+- the framewise gaze displacement
+- the number of outliers for the X gaze position
+- the number of outliers for the Y gaze position
+- the number of outliers for the gaze displacement
+
+Outliers were robustely estimated using an implementation of @carling_resistant_2000.

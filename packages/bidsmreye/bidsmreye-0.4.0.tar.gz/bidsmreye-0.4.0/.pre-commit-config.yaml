@@ -1,0 +1,83 @@
+---
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+    -   id: end-of-file-fixer
+    -   id: check-added-large-files
+    -   id: check-case-conflict
+    -   id: check-json
+    -   id: check-merge-conflict
+    -   id: check-yaml
+    -   id: debug-statements
+    -   id: trailing-whitespace
+
+-   repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
+    rev: 0.2.3
+    hooks:
+    -   id: yamlfmt
+        args: [--mapping, '4', --sequence, '4', --offset, '0']
+
+-   repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+    rev: v2.14.0
+    hooks:
+    -   id: pretty-format-toml
+        args: [--autofix, --indent, '4']
+
+-   repo: https://github.com/asottile/pyupgrade
+    rev: v3.17.0
+    hooks:
+    -   id: pyupgrade
+        args: [--py38-plus]
+
+-   repo: https://github.com/seddonym/import-linter
+    rev: v2.0
+    hooks:
+    -   id: import-linter
+
+-   repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+    -   id: isort
+        args: [--settings-path, pyproject.toml]
+
+-   repo: https://github.com/adamchainz/blacken-docs
+    rev: 1.18.0
+    hooks:
+    -   id: blacken-docs
+        additional_dependencies:
+        -   black==24.2.0
+
+-   repo: https://github.com/psf/black-pre-commit-mirror
+    rev: 24.4.2
+    hooks:
+    -   id: black
+        args: [--config=pyproject.toml]
+
+-   repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.11.0
+    hooks:
+    -   id: mypy
+        additional_dependencies: [types-all, pydantic]
+        files: bidsmreye
+        args: [--config-file, pyproject.toml]
+
+-   repo: https://github.com/codespell-project/codespell
+    rev: v2.3.0
+    hooks:
+    -   id: codespell
+        args: [--toml=pyproject.toml]
+        additional_dependencies: [tomli]
+
+-   repo: https://github.com/pycqa/flake8
+    rev: 7.1.0
+    hooks:
+    -   id: flake8
+        exclude: tests_.*.py|version.*.py|setup.py     # ignore tests and versioneer related code
+        args: [--config, .flake8, --verbose]
+        additional_dependencies: [flake8-docstrings, flake8-use-fstring, flake8-functions, flake8-bugbear]
+
+ci:
+    autoupdate_commit_msg: 'chore: update pre-commit hooks'

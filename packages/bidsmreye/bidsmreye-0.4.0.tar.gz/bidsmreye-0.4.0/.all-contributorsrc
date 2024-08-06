@@ -1,0 +1,50 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "WeeXee",
+      "name": "Pauline Cabee",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91776803?v=4",
+      "profile": "https://weexee.github.io/Portfolio/",
+      "contributions": [
+        "code",
+        "ideas",
+        "infra"
+      ]
+    },
+    {
+      "login": "Remi-Gau",
+      "name": "Remi Gau",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6961185?v=4",
+      "profile": "https://remi-gau.github.io/",
+      "contributions": [
+        "code",
+        "ideas",
+        "test",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "yyang1234",
+      "name": "Ying Yang",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59220868?v=4",
+      "profile": "https://github.com/yyang1234",
+      "contributions": [
+        "bug",
+        "userTesting"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "bidsMReye",
+  "projectOwner": "cpp-lln-lab",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true,
+  "commitType": "docs",
+  "commitConvention": "angular"
+}

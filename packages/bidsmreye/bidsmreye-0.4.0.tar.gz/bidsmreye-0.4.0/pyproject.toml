@@ -1,0 +1,185 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling", "hatch-vcs"]
+
+[project]
+authors = [
+    {name = "Remi Gau", email = "remi.gau@gmail.com"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Operating System :: Unix",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Image Processing"
+]
+dependencies = [
+    "attrs",
+    "chevron>=0.14.0",
+    "deepmreye>=0.2.1",
+    "kaleido",
+    "pooch>=1.6.0",
+    "pybids",
+    "tqdm",
+    "tomli; python_version < '3.11'",
+    "keras<3.0.0",
+    "rich_argparse"
+]
+description = "bids app using deepMReye to decode eye motion for fMRI time series data"
+dynamic = ["version"]
+keywords = [
+    "BIDS",
+    "brain imaging data structure",
+    "neuroimaging",
+    "automated pipeline",
+    "MRI",
+    "Eyetracking",
+    "Machine learning"
+]
+license = {file = "LICENSE"}
+name = "bidsmreye"
+readme = "README.md"
+requires-python = ">=3.9.0"
+
+[project.optional-dependencies]
+dev = ["bidsmreye[doc,test,style]"]
+# also stored in docs/requirements.txt
+# to speed up readthedocs build
+doc = [
+    "faqtory",
+    "myst-parser",
+    "rstcheck",
+    "sphinx",
+    "sphinx-argparse",
+    "sphinx-copybutton",
+    "sphinx-rtd-theme",
+    "sphinxcontrib-bibtex"
+]
+docs = ["bidsmreye[doc]"]
+style = [
+    "black",
+    "codespell",
+    "flake8",
+    "flake8-docstrings",
+    "mypy",
+    'types-all',
+    'pandas-stubs',
+    "pre-commit",
+    "sourcery"
+]
+test = [
+    "pytest",
+    "pytest-cov"
+]
+tests = ["bidsmreye[test]"]
+
+[project.scripts]
+bidsmreye = "bidsmreye._cli:cli"
+bidsmreye_model = "bidsmreye._cli:cli_download"
+
+[project.urls]
+"Bug Tracker" = "https://github.com/cpp-lln-lab/bidsMReye/issues"
+Homepage = "https://github.com/cpp-lln-lab/bidsMReye"
+
+[tool.black]
+line-length = 90
+
+[tool.codespell]
+builtin = "clear,rare"
+ignore-words-list = "fo,slite"
+skip = "*.svg,*.eps,.git,env,*build,.mypy*,outputs,.mypy_cache,moae_fmriprep,bidsmreye/templates/CITATION.bib"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "bidsmreye/_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["bidsmreye"]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.importlinter]
+ignore_imports = [
+    "bidsmreye._version"
+]
+root_package = "bidsmreye"
+
+[[tool.importlinter.contracts]]
+containers = "bidsmreye"
+layers = [
+    "_cli",
+    "_parsers | bidsmreye",
+    "prepare_data | generalize | download",
+    "quality_control",
+    "visualize",
+    "bids_utils",
+    "methods",
+    "utils",
+    "configuration",
+    "logging",
+    "defaults"
+]
+name = "Layered architecture"
+type = "layers"
+
+[tool.isort]
+combine_as_imports = true
+line_length = 90
+profile = "black"
+skip_gitignore = true
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+# enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool"]
+exclude = ['tests/']
+no_implicit_optional = true
+plugins = "pydantic.mypy"
+warn_redundant_casts = true
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+ignore_errors = true
+module = [
+    'bids.*',
+    "bidsmreye._version"
+]
+
+[[tool.mypy.overrides]]
+ignore_missing_imports = true
+module = [
+    'attrs.*',
+    'bids.layout.*',
+    "bidsmreye._version",
+    'chevron.*',
+    'deepmreye.*',
+    'nibabel.*',
+    'pandas.*',
+    'plotly.*',
+    'pooch.*',
+    'rich.*',
+    'scipy.*',
+    "rich_argparse"
+]
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true
+warn_untyped_fields = true
+
+[tool.pytest.ini_options]
+addopts = "-ra --cov bidsmreye --strict-config --strict-markers --doctest-modules --showlocals -s -vv --durations=0"
+doctest_optionflags = "NORMALIZE_WHITESPACE ELLIPSIS"
+junit_family = "xunit2"
+log_cli_level = "INFO"
+minversion = "6.0"
+testpaths = ["tests"]
+xfail_strict = true

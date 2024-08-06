@@ -1,0 +1,25 @@
+{
+    "bold": {
+        "datatype": "func",
+        "desc": "preproc",
+        "suffix": "^bold$",
+        "extension": "nii.*"
+    },
+    "mask": {
+        "suffix": "mask",
+        "extension": "p"
+    },
+    "no_label": {
+        "desc": "nolabel",
+        "suffix": "^bidsmreye$$",
+        "extension": "npz"
+    },
+    "eyetrack": {
+        "suffix": "^eyetrack$$",
+        "extension": "tsv"
+    },
+    "eyetrack_qc": {
+        "suffix": "^eyetrack$$",
+        "extension": "json"
+    }
+}

@@ -1,0 +1,191 @@
+---
+version: 2.1
+
+jobs:
+    build:
+        machine:
+            image: ubuntu-2204:2022.10.2
+        steps:
+        -   checkout
+
+        -   run:
+                name: Build Docker image
+                command: |
+                    set -eux -o pipefail
+                    # make sure we have a lowercase repo
+                    user_name=cpplab
+                    repo_name=$(echo "${CIRCLE_PROJECT_REPONAME}" | tr '[:upper:]' '[:lower:]')
+                    if [[ -e "${HOME}/docker/image.tar" ]]; then
+                        docker load -i "${HOME}/docker/image.tar"
+                    fi
+                    git describe --tags --always > version
+                    docker build -t "${user_name}/${repo_name}" .
+                    mkdir -p "${HOME}/docker"
+                    docker save "${user_name}/${repo_name}" > "${HOME}/docker/image.tar"
+                    docker images
+
+        -   persist_to_workspace:
+                root: /home/circleci
+                paths:
+                -   docker/image.tar
+
+    get_data:
+        machine:
+            image: ubuntu-2204:2022.10.2
+        steps:
+        -   checkout
+        -   run:
+                name: Install dependencies
+                command: |
+                    sudo apt-get update
+                    sudo apt-get install -y python3 git-annex
+                    python3 -m pip install --upgrade pip setuptools
+                    pip3 install datalad
+                    datalad wtf
+        -   restore_cache:
+                keys:
+                -   my_cache
+        -   run:
+                name: Get ds002799
+                command: |
+                    # Git set up: to keep datalad warnings away
+                    git config --global --add user.name "Ford Escort"
+                    git config --global --add user.email 42@H2G2.com
+                    mkdir -p ${HOME}/data/
+                    datalad install -s ///openneuro/ds002799 ${HOME}/data/ds002799
+                    cd ${HOME}/data/ds002799/derivatives/fmriprep
+                    datalad get -J 2 sub-30[27]/ses-*/func/*run-*MNI152NLin2009cAsym*preproc*bold*
+                    datalad unlock sub-30[27]/ses-*/func/*run-*MNI152NLin2009cAsym*preproc*bold*
+        -   save_cache:
+                key: my_cache
+                paths:
+                -   ~/data
+        -   persist_to_workspace:
+                root: /home/circleci
+                paths:
+                -   data/ds002799
+
+
+    test:
+        machine:
+            image: ubuntu-2204:2022.10.2
+        steps:
+        -   attach_workspace:
+                at: /tmp/workspace
+        -   run: docker load -i /tmp/workspace/docker/image.tar
+
+        -   run: mkdir -p ${HOME}/outputs
+        -   run:
+                name: print version
+                command: |
+                    user_name=cpplab
+                    repo_name=$(echo "${CIRCLE_PROJECT_REPONAME}" | tr '[:upper:]' '[:lower:]')
+                    docker run -ti --rm \
+                      -v /tmp/workspace/data/ds002799/derivatives/fmriprep:/bids_dataset \
+                        ${user_name}/${repo_name} --version
+        -   run:
+                name: run all
+                command: |
+                    user_name=cpplab
+                    repo_name=$(echo "${CIRCLE_PROJECT_REPONAME}" | tr '[:upper:]' '[:lower:]')
+                    docker run -ti --rm \
+                      -v /tmp/workspace/data/ds002799/derivatives/fmriprep:/bids_dataset \
+                      -v ${HOME}/outputs:/outputs \
+                        ${user_name}/${repo_name} \
+                          /bids_dataset \
+                          /outputs \
+                          participant \
+                          all \
+                          --participant_label 302 307 \
+                          --space MNI152NLin2009cAsym \
+                          --reset_database \
+                          --model 1to5 \
+                          -vv
+        -   run:
+                name: rerun prepare - fast as output already exists
+                command: |
+                    user_name=cpplab
+                    repo_name=$(echo "${CIRCLE_PROJECT_REPONAME}" | tr '[:upper:]' '[:lower:]')
+                    docker run -ti --rm \
+                      -v /tmp/workspace/data/ds002799/derivatives/fmriprep:/bids_dataset \
+                      -v ${HOME}/outputs:/outputs \
+                        ${user_name}/${repo_name} \
+                          /bids_dataset \
+                          /outputs \
+                          participant \
+                          prepare \
+                          --participant_label 302 307 \
+                          --space MNI152NLin2009cAsym \
+                          --reset_database \
+                          -vv
+        -   run:
+                name: run group level QC
+                command: |
+                    user_name=cpplab
+                    repo_name=$(echo "${CIRCLE_PROJECT_REPONAME}" | tr '[:upper:]' '[:lower:]')
+                    docker run -ti --rm \
+                      -v ${HOME}/outputs:/outputs \
+                        ${user_name}/${repo_name} \
+                          /outputs/bidsmreye \
+                          /outputs \
+                          group \
+                          qc \
+                          --participant_label 302 307 \
+                          --space MNI152NLin2009cAsym \
+                          --reset_database \
+                          -vv
+        -   store_artifacts:
+                path: /home/circleci/outputs/bidsmreye
+
+    deploy:
+        machine:
+            image: ubuntu-2204:2022.10.2
+        steps:
+        -   attach_workspace:
+                at: /tmp/workspace
+
+        -   run: docker load -i /tmp/workspace/docker/image.tar
+        -   run:
+                name: push to dockerhub
+                command: |
+                    set -ex -o pipefail
+                    if [[ -n "${DOCKER_TOKEN}" ]]; then
+                        # make sure we have a lowercase repo
+                        user_name=cpplab
+                        repo_name=$(echo "${CIRCLE_PROJECT_REPONAME}" | tr '[:upper:]' '[:lower:]')
+                        if [[ -n "${DOCKER_TOKEN}" ]]; then
+                            echo "${DOCKER_TOKEN}" | docker login -u remigau --password-stdin
+                            : "Pushing to DockerHub ${user_name}/${repo_name}:unstable"
+                            docker tag "${user_name}/${repo_name}" "${user_name}/${repo_name}:unstable"
+                            docker push "${user_name}/${repo_name}:unstable"
+                            if [[ -n "${CIRCLE_TAG}" ]]; then
+                                : "Pushing to DockerHub ${user_name}/${repo_name}:${CIRCLE_TAG}"
+                                docker tag "${user_name}/${repo_name}" "${user_name}/${repo_name}:latest"
+                                docker push "${user_name}/${repo_name}:latest"
+                                docker tag "${user_name}/${repo_name}" "${user_name}/${repo_name}:${CIRCLE_TAG}"
+                                docker push "${user_name}/${repo_name}:${CIRCLE_TAG}"
+                            fi
+                        fi
+                    else
+                        : "No DOCKER_TOKEN, skipping push to DockerHub"
+                        exit 1
+                    fi
+
+workflows:
+    build-test-deploy:
+        jobs:
+        -   build
+        -   get_data
+        -   test:
+                requires:
+                -   build
+                -   get_data
+        -   deploy:
+                context:
+                -   DOCKER_HUB
+                requires:
+                -   test
+
+
+
+# VS Code Extension Version: 1.5.1
