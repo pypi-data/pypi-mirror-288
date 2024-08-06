@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: practice-poetry-project-release
+Version: 0.2.1
+Summary: 
+Author: nakayamaryo0731
+Author-email: ryo_nakayama@caddi.jp
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: flask (>=3.0.3,<4.0.0)
+Requires-Dist: flask-cors (>=4.0.1,<5.0.0)
+Requires-Dist: flask-sqlalchemy (>=3.1.1,<4.0.0)
+Description-Content-Type: text/markdown
+
+# practice-poetry-project-release
+
+## Overview
+This is the repository for Poetry project releases and package management PoCs.
+
+## How to release and publish package
+We use [poetry-dynamic-versioning](https://github.com/mtkennerly/poetry-dynamic-versioning) for generate package version from git release version tag.
+
+We have implemented a [github actions workflow](./.github/workflows/publish.yml) that triggers a git release to publish the package.
+
+## Where to publish
+PyPI: https://pypi.org/project/practice-poetry-project-release/
+
