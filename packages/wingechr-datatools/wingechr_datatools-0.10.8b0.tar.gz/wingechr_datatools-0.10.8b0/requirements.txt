@@ -1,0 +1,9 @@
+# install package itself to install it's dependencies
+.
+
+# developer dependencies
+prettier
+bumpversion
+tox
+setuptools
+wheel
