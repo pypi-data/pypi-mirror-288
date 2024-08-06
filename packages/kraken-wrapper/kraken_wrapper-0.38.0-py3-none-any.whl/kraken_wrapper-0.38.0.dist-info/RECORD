@@ -1,0 +1,14 @@
+kraken/wrapper/__init__.py,sha256=35YA7zR1see8oEhfzZN-GB2fXOWvbIQG4VNQ_K4Vrb8,134
+kraken/wrapper/_buildenv.py,sha256=br3NBbNvd_iOjGX4PauEQ3Bf0OMB6IK6r1dO1RCeoKo,3499
+kraken/wrapper/_buildenv_manager.py,sha256=dMJ0l-UYNC_P6a9SCsEM3LRaQ2twdIXwO2xxmMyg1Z0,6410
+kraken/wrapper/_buildenv_uv.py,sha256=ekkLtSxMVfPgm-p0kTY94cV9ueOOgazLXH27-Jv7RiY,1168
+kraken/wrapper/_buildenv_venv.py,sha256=LauCW9J8DULHJGLwUdSHmAiRpsqOB2jtG0y8-e_9tX0,10375
+kraken/wrapper/_config.py,sha256=FVS_JDivEiaOfNOka9CyqERn9WSFGTbGRGHEUbAqIfs,8225
+kraken/wrapper/_lockfile.py,sha256=v3u9hKkjKwuKoZVs8J0yWBcSiIFA1tew6lnFJAkoC0Y,4594
+kraken/wrapper/_option_sets.py,sha256=7CxZcqM0WtYbkUnB0tr-Dy_Rjr7cZvwU4sGK0Ql1sYs,5688
+kraken/wrapper/main.py,sha256=sXWiyWIYq8NnnH_H_flWQx09qwuTVbBC6eT8SZe7dV0,18691
+kraken/wrapper/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kraken_wrapper-0.38.0.dist-info/METADATA,sha256=Oy0SLWQXilhu3BW_i7MfBckDP5bIx0SxAkuli_aa2qg,1305
+kraken_wrapper-0.38.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+kraken_wrapper-0.38.0.dist-info/entry_points.txt,sha256=wDL2kvBXyAOd9IHYMm9TikZbjwSBSh03OhXd8lUb8FE,52
+kraken_wrapper-0.38.0.dist-info/RECORD,,
