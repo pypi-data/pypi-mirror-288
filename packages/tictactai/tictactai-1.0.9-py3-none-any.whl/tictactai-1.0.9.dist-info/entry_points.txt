@@ -1,0 +1,2 @@
+[console_scripts]
+tictactai = tictactai.tictactai:cli
