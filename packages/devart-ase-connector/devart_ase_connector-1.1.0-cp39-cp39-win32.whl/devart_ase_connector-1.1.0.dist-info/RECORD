@@ -1,0 +1,10 @@
+devart/ase/__init__.py,sha256=HTWHfptgrOe6QtQajNfcDjrXdX5ndBUgMIgBdl-vmns,927
+devart/ase/ase.cp39-win32.pyd,sha256=vfE7fkprKfiRCleBzLt1FyHCiMSeY_20wxX0zeksyDE,906920
+devart/ase/ase.pyi,sha256=siUkOQO84--DMMEy7dZvnuJzIkp7UehEJPErcZaZIU0,12770
+devart/ase/http/tunnel.php,sha256=qjhBbshLEKSmoA7RAXVi29TbVNsPBad364d2YHsbyNQ,20720
+devart/ase/sqlalchemy/__init__.py,sha256=2PVjf4tmdQJpO_9dXSYo_ANFE52jk665kAMEg5WhJng,1811
+devart_ase_connector-1.1.0.dist-info/LICENSE,sha256=3sjizf07RF-z3Lp3tnA-jy3rN103Ypw11NO9tFnRLtU,8559
+devart_ase_connector-1.1.0.dist-info/METADATA,sha256=bR0PfPSVsq2pfagQXM9KHdANgK20lrjTC9KZJ7JX-Z8,2672
+devart_ase_connector-1.1.0.dist-info/WHEEL,sha256=RGwqtRvW_oOsMMUOIYl69Nqx1L0RT5kPQtdYJzAVFx8,95
+devart_ase_connector-1.1.0.dist-info/top_level.txt,sha256=h_mZcghGiX6pnc-Kb1EoAfIW2iHeDA0kJKfcLJMbq44,7
+devart_ase_connector-1.1.0.dist-info/RECORD,,
