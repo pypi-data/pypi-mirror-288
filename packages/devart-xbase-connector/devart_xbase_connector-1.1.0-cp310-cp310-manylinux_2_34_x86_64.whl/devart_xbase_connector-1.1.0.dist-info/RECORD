@@ -1,0 +1,9 @@
+devart/xbase/__init__.py,sha256=p5kYxdO0zy32wUaj0KY7oJWNwqQX-QJhIu_fewXkEro,1066
+devart/xbase/xbase.cpython-310-x86_64-linux-gnu.so,sha256=KHJsCsnm4_I1MWtKQZK8d0VGvS3hHRshv2yVARD1EZw,8257248
+devart/xbase/xbase.pyi,sha256=-GSbIAtRxvyce14Hhcn2-7jwjIkoTpV7cUGirmsRn24,12367
+devart/xbase/sqlalchemy/__init__.py,sha256=H8xGUCQ_QNjpee27ZhdgCr42GvIkxs9Go3Ky70ewBME,1101
+devart_xbase_connector-1.1.0.dist-info/LICENSE.txt,sha256=3sjizf07RF-z3Lp3tnA-jy3rN103Ypw11NO9tFnRLtU,8559
+devart_xbase_connector-1.1.0.dist-info/METADATA,sha256=xoEmjl2LBNVXBUeW2iHzeiOYTB5FTHWdmIcxxXV_7Aw,2782
+devart_xbase_connector-1.1.0.dist-info/WHEEL,sha256=uX6M8n1UuBJa6X8aETzn3vE6PsZBtfxpeKpjn7UBRtw,104
+devart_xbase_connector-1.1.0.dist-info/top_level.txt,sha256=h_mZcghGiX6pnc-Kb1EoAfIW2iHeDA0kJKfcLJMbq44,7
+devart_xbase_connector-1.1.0.dist-info/RECORD,,
