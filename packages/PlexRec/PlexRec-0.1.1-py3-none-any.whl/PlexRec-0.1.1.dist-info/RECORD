@@ -1,0 +1,15 @@
+plexrec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plexrec/__main__.py,sha256=iKjQSEuFxH1180YserdCAkoyV_sASb-LrhGL2VVhm9I,290
+plexrec/app.py,sha256=y17xAvbZDdJgZk04aEt0zNSaPRurPT5GtyDazx0JdU0,6306
+plexrec/config.py,sha256=fJpcAd-ZqfeTg0aTjqY1C2K0rVnkwQIggFHti2z1SB8,113
+plexrec/database.py,sha256=ZwKj1uWm272MHGbfdZlZJjQ4SR1BzLME9gy9c792ET8,461
+plexrec/media.py,sha256=wNJUNaqKqQP4npg-F3WNRTNvJcgWyEFlkjbF-CHFYKM,1062
+plexrec/playlist.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plexrec/similarity.py,sha256=N7n0JgbiFQ1kMCKUdO_TwtiLPxLw28n9VUllklgQWiw,2905
+plexrec/subtitle.py,sha256=AbWuICR-WnT01X9Ej1XOdjaNDhpj2iWIyNEd2ROjrjs,6435
+plexrec/suggest.py,sha256=f-yaeZn4-YyRQkqBkngy9WyZZmlbGCcxujsc0Rv76vQ,9441
+PlexRec-0.1.1.dist-info/LICENSE,sha256=AAJuoBGX7nv1rRp6fxsTALEPyMsXD0Jtu0qkysQmFFc,1061
+PlexRec-0.1.1.dist-info/METADATA,sha256=uO_Q6TKBlkClMgEhuKM_OZQWHdeyMdWBIFmUleaCKPs,6264
+PlexRec-0.1.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+PlexRec-0.1.1.dist-info/top_level.txt,sha256=w1Kvx8DpHD0CVgpsxjbLkZWkAnBuwOV6JW3oDggxbHw,8
+PlexRec-0.1.1.dist-info/RECORD,,
