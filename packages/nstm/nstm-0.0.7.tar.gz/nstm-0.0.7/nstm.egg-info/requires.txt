@@ -1,0 +1,15 @@
+pip==23.3.1
+accelerate==0.25.0
+tqdm==4.66.1
+transformers==4.36.2
+diffusers==0.25.0
+einops==0.7.0
+bitsandbytes==0.39.0
+scipy==1.11.1
+opencv-python
+transformers
+huggingface_hub
+fvcore
+omegaconf
+av
+onnxruntime
