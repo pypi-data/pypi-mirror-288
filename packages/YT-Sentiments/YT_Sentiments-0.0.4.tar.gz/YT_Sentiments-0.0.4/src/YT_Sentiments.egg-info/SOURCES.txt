@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+src/YT_Sentiments/__init__.py
+src/YT_Sentiments/sentiment.py
+src/YT_Sentiments/test_analyze.py
+src/YT_Sentiments.egg-info/PKG-INFO
+src/YT_Sentiments.egg-info/SOURCES.txt
+src/YT_Sentiments.egg-info/dependency_links.txt
+src/YT_Sentiments.egg-info/requires.txt
+src/YT_Sentiments.egg-info/top_level.txt
+src/YT_Sentiments/helpers/__init__.py
+src/YT_Sentiments/helpers/sentimentScore.py
+src/YT_Sentiments/helpers/ytComments.py

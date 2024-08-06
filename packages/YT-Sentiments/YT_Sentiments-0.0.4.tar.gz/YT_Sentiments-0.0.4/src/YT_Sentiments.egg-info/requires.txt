@@ -1,0 +1,4 @@
+emoji>=2.12.1
+google_api_python_client>=2.139.0
+vaderSentiment>=3.3.2
+vaderSentiment>=3.3.2
