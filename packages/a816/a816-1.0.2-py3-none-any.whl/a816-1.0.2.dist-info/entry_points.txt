@@ -1,0 +1,3 @@
+[console_scripts]
+a816 = a816.cli:cli_main
+x816 = a816.cli:cli_main
