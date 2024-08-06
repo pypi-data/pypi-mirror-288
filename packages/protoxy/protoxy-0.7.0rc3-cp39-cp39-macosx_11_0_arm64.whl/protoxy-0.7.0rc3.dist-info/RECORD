@@ -1,0 +1,7 @@
+protoxy-0.7.0rc3.dist-info/METADATA,sha256=1IpbztDzzBITwE-RavP8ZvxDg1gupLZsvfIh2nKSK9o,7573
+protoxy-0.7.0rc3.dist-info/WHEEL,sha256=DplG7aPDeyIwJoGJs76l3MiD8v1ljehCcgyZQ0Zgi70,102
+protoxy-0.7.0rc3.dist-info/license_files/LICENSE,sha256=MP78On1qAEFUGFgpO8vqLd5MqkwKWAL5lqf36MAIVlI,1022
+protoxy/__init__.py,sha256=6-hOnVhQVEMkSAxePoGJveDYxe6Yymro6NEpJhmGGo8,7415
+protoxy/errors.py,sha256=rk79pkMC_CqdYK4XAo5dT4lFDd-3bA_qNRhWMcQjDXU,1637
+protoxy/_protoxy.cpython-39-darwin.so,sha256=ptrGZ3OZThbBoWyBMwNaETukJ8FvzoL56rh6LgYNehs,2786240
+protoxy-0.7.0rc3.dist-info/RECORD,,
