@@ -1,0 +1,11 @@
+YT_Sentiments/__init__.py,sha256=NYUzLHQs_fuYx0Q8NAcbvD3G4D7Ji8rrHunuTT0L-M4,31
+YT_Sentiments/sentiment.py,sha256=zFiNfcuA0RnK9ou65ZenqKFBA8sx-cOL3f0zjjBiLP8,2847
+YT_Sentiments/test_analyze.py,sha256=SYhUgfxf7qkIcLjzp6yU1Ao-PyrSneoS_PcWz-sksY8,1030
+YT_Sentiments/helpers/__init__.py,sha256=4F0cfyluJAIn-JO8wON06sRV9Z-sbMvATKQoHzM_rTk,126
+YT_Sentiments/helpers/sentimentScore.py,sha256=XU0l85hWZbFkkIBddxUBCEltrNCuk7UoN_htJQaA9wc,600
+YT_Sentiments/helpers/ytComments.py,sha256=vv6geAekp9AecmY_S70EF72Nb71SYBKttGU1NGcRn2g,2886
+YT_Sentiments-0.0.4.dist-info/LICENSE,sha256=BJoPdiRLXyo2nLQ8PnJKPrTHoBJB6faNZY1fgv9X4Z0,1088
+YT_Sentiments-0.0.4.dist-info/METADATA,sha256=Ek1TN6WwyxplA05fQf7u-Z65WsBfCDNSPFc0amh7xlQ,5406
+YT_Sentiments-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+YT_Sentiments-0.0.4.dist-info/top_level.txt,sha256=aH0DSSSkNcFgcS3RpE4wQwSJaTQnXIn31eP2fNtASZo,14
+YT_Sentiments-0.0.4.dist-info/RECORD,,
