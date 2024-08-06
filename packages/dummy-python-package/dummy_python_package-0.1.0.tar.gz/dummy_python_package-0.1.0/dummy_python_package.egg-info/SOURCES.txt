@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+dummy_package/__init__.py
+dummy_python_package.egg-info/PKG-INFO
+dummy_python_package.egg-info/SOURCES.txt
+dummy_python_package.egg-info/dependency_links.txt
+dummy_python_package.egg-info/top_level.txt
+tests/__init__.py
+tests/test_dummy.py
