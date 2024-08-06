@@ -1,0 +1,7 @@
+my_datasets/__init__.py,sha256=vFSF4w1oef3gCpsI1RiB3_QGl2rIDh45ytWK0w1SMGk,97
+my_datasets/iris.py,sha256=umda7oyZJLRe5hgq1vVrFnw4zVdyWYwTFr8LbMfGL58,1119
+my_datasets/data/Iris.csv,sha256=YArETyPC5uCuN9qsjOsrq6Tflj76WA6zGztXayjjTFU,5107
+my_unique_datasets_library-0.5.dist-info/METADATA,sha256=1Pf6yKbJyQEw6AYrQ_URPEnTlf0lWlpsdpSGswrjqjY,385
+my_unique_datasets_library-0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+my_unique_datasets_library-0.5.dist-info/top_level.txt,sha256=63bakP7FopIG96rbcdK_2cnk0BrnnJ_yKqfFV_RVKIw,12
+my_unique_datasets_library-0.5.dist-info/RECORD,,
