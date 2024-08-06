@@ -1,0 +1,6 @@
+snakemake_storage_plugin_azure/__init__.py,sha256=E8zm5wnEFve4PPq7ZW9Wf7Gp4s0IK1kB40RtLYF5f0U,16182
+snakemake_storage_plugin_azure/utils.py,sha256=f2luf1Ywo2WScVr7tA1tqGQuy1ZnZjwDxxXkerTE5EI,1351
+snakemake_storage_plugin_azure-0.4.1.dist-info/LICENSE,sha256=jpg1rXzRGPY4l7MAusB21rpc-5SrPkesCFTHCSO0-Vs,1066
+snakemake_storage_plugin_azure-0.4.1.dist-info/METADATA,sha256=aKydgIs-KUOnjmUYOh-4LdIv26MLdVSMYVS5yA34_dc,2269
+snakemake_storage_plugin_azure-0.4.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+snakemake_storage_plugin_azure-0.4.1.dist-info/RECORD,,
