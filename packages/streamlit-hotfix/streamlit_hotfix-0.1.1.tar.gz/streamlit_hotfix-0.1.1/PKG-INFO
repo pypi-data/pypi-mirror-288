@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: streamlit-hotfix
+Version: 0.1.1
+Summary: 
+Author: weihong.xu
+Author-email: xuweihong.cn@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beautifulsoup4 (>=4.12.3,<5.0.0)
+Requires-Dist: fire (>=0.6.0,<0.7.0)
+Description-Content-Type: text/markdown
+
+# streamlit-hotfix
+A command line tool to provide advanced features (CDN, etc) for streamlit by apply patch to the installed packages.
+
+## Get started
+
+```bash
+pip install streamlit-hotfix
+st-hotfix --help
+```
+
+For developer,
+
+```
+cd streamlit-hotfix
+poetry install
+
+python -m st_hotfix --help
+```
+
+Note that you have to install this tool in the same environment as streamlit and streamlit components you want to patch.
+Otherwise, the patch may not work as expected.
+
+## Examples
+
+### Load streamlit assets from CDN
+
+```bash
+# dump assets to a folder
+st-hotfix cdn dump streamit ./path/to/streamlit-assets
+
+# now you can distribut streamlit-assets with CDN, for example jsDelivr 
+# e.g: https://cdn.jsdelivr.net/gh/link89/assets@0.1.0/cdn/streamlit/
+
+# then you can patch streamlit to load assets from CDN
+st-hotfix cdn patch streamlit --cdn_url https://cdn.jsdelivr.net/gh/link89/assets@0.1.0/cdn/streamlit/
+```
+Now when you run your streamlit app, it will load assets from the CDN.
+
+Note that the CDN tool makes use of the on-the-fly mode of webpack publicPath. 
+Since `streamlit` 1.36.0, the publicPath of streamlit frontend can be override in runtime by setting `window.____WEBPACK_PUBLIC_PATH_OVERRIDE`.
+
+If the components are not allow to change the publicPath on-the-fly, 
+you have to patch them first by yourself before using this tool to patch it with CDN URL.
+For example: https://github.com/mik-laj/streamlit-ketcher/pull/120/files
+
+You can always revert the patch by running
+
+```bash
+st-hotfix cdn restore streamlit
+```
