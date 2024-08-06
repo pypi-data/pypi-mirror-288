@@ -1,0 +1,7 @@
+vridge_tf/__init__.py,sha256=AnTfF37xtSOJOnwdEVGW9cs6CF6_6erplNSQCU4B6Ck,29
+vridge_tf/data_processing.py,sha256=Ki_WNDYo4Nidg2-6HYLsDOyFR__P5-NLMJvFKYvdukg,1666
+vridge_tf/model_utils.py,sha256=fkR2-LmlF95-Np0bs8nJgS-ho9aREMF5kKnoQzbz8gI,2136
+vridge_tf-0.0.1.dev1.dist-info/METADATA,sha256=QgTxdxBLqC1bVE6hZNud43WWbM_YSmYLIX_9OjiYyrE,391
+vridge_tf-0.0.1.dev1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+vridge_tf-0.0.1.dev1.dist-info/top_level.txt,sha256=3C9Q1J-lxmqYdbzd27yJDl4k_Z06sxLMYjCNOGDQEWc,10
+vridge_tf-0.0.1.dev1.dist-info/RECORD,,
