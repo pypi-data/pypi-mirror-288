@@ -1,0 +1,13 @@
+deephaven_plugin_notebook/__init__.py,sha256=EkYLlCEshR-wkWNNZV0qSJbOUAttRoVnKFJInlAmVaI,165
+deephaven_plugin_notebook/deephaven_plugin_notebook_object.py,sha256=gHgfEnSZSZaHFF5EAgi38xrTnoNiQV_FVAkGhbObM4A,2012
+deephaven_plugin_notebook/deephaven_plugin_notebook_type.py,sha256=ISkglvp9G49d12MC4HsF3sj0u4EhML_lqenL-cdOyJU,2706
+deephaven_plugin_notebook/js_plugin.py,sha256=Afjo71u_ZsUTr68JPQ3AIcflyN1803MmfgQb__1kKDE,765
+deephaven_plugin_notebook/register.py,sha256=SMXj_LP5CFi8sMjdnipT00NOZ3DPs-Zk5reLO5XN8A8,1039
+deephaven_plugin_notebook/_js/package.json,sha256=BydWV7vjpqdWKmktfh9GnclDdgv816ARVAyhPs3eoKg,1043
+deephaven_plugin_notebook/_js/dist/index.js,sha256=gPUH7KKeiber4s3AFfEYZoh6Ew18DOyvkSvzucMEOB8,5080
+deephaven_plugin_notebook-0.0.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+deephaven_plugin_notebook-0.0.1.dist-info/METADATA,sha256=ehQL55NCGXjngc51Ojs_K2uzH-CWQHERA71gmh1acYE,6391
+deephaven_plugin_notebook-0.0.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+deephaven_plugin_notebook-0.0.1.dist-info/entry_points.txt,sha256=j_zElKHD9__LcViOgQ2HmOClBozZ_0LyXsdRJYkzsaI,109
+deephaven_plugin_notebook-0.0.1.dist-info/top_level.txt,sha256=nKYr15CoSfrHtQljSdrLdLf6IPE-i9gozw38SOR4Kus,29
+deephaven_plugin_notebook-0.0.1.dist-info/RECORD,,
