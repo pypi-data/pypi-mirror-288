@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: nufictl
+Version: 1.0.1
+Summary: NufiCTL is a command-line tool for managing CRD Npu Deployments.
+Author: DongHyun
+Author-email: ydh0924@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fire (>=0.6.0,<0.7.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: setuptools (>=72.1.0,<73.0.0)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+### Python CLI (name : nufictl) for CRD npudeploy 
+
+```bash
+poetry shell
+poetry install
+```
+
+* nufictl exmaple
+```bash
+nufictl ls
+
+(nufi-cli-py3.12) kade93-mac-air-m2 :: workspaces/aichip/nufi-cli ‹feature/nufi-cli*› % nufictl ls                                                                       
++---------------------------+---------------------------+----------+---------------------+---------------------------------------------------+
+|           Name            |         Namespace         | Replicas |       Created       |                   Endpoint URL                    |
++---------------------------+---------------------------+----------+---------------------+---------------------------------------------------+
+| npu-deploy-nginx-hxyvjbwr | kubeflow-user-example-com |    1     | 2024-08-05 06:48:04 |   https://[npu-deploy-url].com:4443               |
+|   test-npu-deploy-cli-0   | kubeflow-user-example-com |    1     | 2024-08-05 06:31:05 |   https://test-npu-deploy-cli-0.com:4443          |
++---------------------------+---------------------------+----------+---------------------+---------------------------------------------------+
+
+nufictl create
+
+Name [npu-deploy-example]: nufictl-test
+Image [nginx]: 
+CPU [1]: 
+Memory [1]: 
+Replicas [1]: 
+Accelerator Type [npu]: 
+Accelerator Count [1]: 
+Successfully created nufictl-test with image: nginx
+
+
+nufictl run --image=nginx                                                        
+Successfully created npu-deploy-nginx-70w2c8yt with image: nginx
+
+
+nufictl delete npu-deploy-example                                           
+Successfully deleted npu-deploy-example
+```
