@@ -1,0 +1,17 @@
+nonexistingpackage>=0.0.1
+nats-py
+openai==1.32.0
+fastapi
+pydantic
+rich
+ipykernel
+httpx
+aioconsole
+python-dotenv
+markdownify
+huggingface_hub
+requests
+pytest
+pynvml
+PyYAML
+colorlog==6.8.2
