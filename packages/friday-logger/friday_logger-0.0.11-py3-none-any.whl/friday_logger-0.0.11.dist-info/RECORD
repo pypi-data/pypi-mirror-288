@@ -1,0 +1,10 @@
+friday/__about__.py,sha256=Q33dcVoKv7IJh5LCnsrgO5ZOvg8yaFECSxY8OpnfeAI,127
+friday/__init__.py,sha256=SLmdwi7kJP6T6AG7SbobKrhUOcXjBYkbBjxgfnXKhZY,74
+friday/aggregator.py,sha256=HOtMkNGsaIAsJdKRQ0NSELWJcbNQhFmshZDl0-oTW1U,1339
+friday/logger.py,sha256=b2KpeSr1gKNvygdOQkDY9A_MIytvI2m0FowlPFDTkVc,1628
+friday/types.py,sha256=CHwzPs1l6DGfWtQ726KggArdIiAMsRpBMBnyKlCY6JA,622
+friday/utils.py,sha256=vJtL533UxeZTwR9oSb_uK7iBsyNG_Rs2L_CAm-0PsEA,705
+friday_logger-0.0.11.dist-info/METADATA,sha256=m0TTVJ_W96mQtoKtGcs5gqeRzVNFPC-8QmIpt-S4QJI,1413
+friday_logger-0.0.11.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+friday_logger-0.0.11.dist-info/licenses/LICENSE.txt,sha256=42INcfKgrXjQ5vGMO_3sBEALTNGp23I8lFIc9Of70CI,1107
+friday_logger-0.0.11.dist-info/RECORD,,
