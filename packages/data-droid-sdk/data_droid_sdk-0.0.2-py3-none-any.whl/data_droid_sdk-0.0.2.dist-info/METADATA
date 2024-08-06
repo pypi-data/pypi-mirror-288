@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: data-droid-sdk
+Version: 0.0.2
+Summary: Data Factory Library from Doctor Droid to fetch data from various sources
+Home-page: UNKNOWN
+Author: Mohit Goyal
+Author-email: mohit.goyal@drdroid.io
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: awscli (==1.33.35)
+Requires-Dist: azure-identity (==1.17.1)
+Requires-Dist: azure-mgmt-loganalytics (==12.0.0)
+Requires-Dist: azure-monitor-query (==1.4.0)
+Requires-Dist: boto3 (==1.34.148)
+Requires-Dist: clickhouse-connect (==0.7.18)
+Requires-Dist: Command (==0.1.0)
+Requires-Dist: datadog-api-client (==2.26.0)
+Requires-Dist: elasticsearch (==8.14.0)
+Requires-Dist: google (==3.0.0)
+Requires-Dist: google-api-python-client (==2.139.0)
+Requires-Dist: gql (==3.5.0)
+Requires-Dist: grpc-tools (==0.0.1)
+Requires-Dist: grpcio-tools (==1.65.1)
+Requires-Dist: kubernetes (==30.1.0)
+Requires-Dist: mypy-protobuf (==3.6.0)
+Requires-Dist: paramiko (==3.4.0)
+Requires-Dist: pipdeptree (==2.23.1)
+Requires-Dist: psycopg2-binary (==2.9.9)
+Requires-Dist: pytest (==8.3.1)
+Requires-Dist: SQLAlchemy (==2.0.31)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: twine (==5.1.1)
+Requires-Dist: wheel (==0.37.1)
+
+UNKNOWN
+
