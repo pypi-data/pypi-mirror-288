@@ -1,0 +1,10 @@
+scarx_api_client/Channel.py,sha256=CAKCJ04A2_Rj5nCXE1tQAPRq0puHBmiTWKPNcBhfcsg,4758
+scarx_api_client/__init__.py,sha256=1Pr1WyEVRzjwiD2TjLC8x3e60QIfaYj8nXprlF9EFqU,53
+scarx_api_client/proto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scarx_api_client/proto/grpc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scarx_api_client/proto/grpc/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scarx_api_client/proto/grpc/api/v1.py,sha256=J8u13jir5GAOfhNF2vzBs9wiwKOQxtxq8aGKhzI_2pM,55153
+scarx_api_client-0.5.0.dist-info/METADATA,sha256=-ttIhCgca_HB_MearmigZqubBBwODVIONe--spZpTpQ,600
+scarx_api_client-0.5.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+scarx_api_client-0.5.0.dist-info/top_level.txt,sha256=lhA_SDmE1hsWpiu1q2csrmnyqLjiLOyHBDt3tk8u6lw,17
+scarx_api_client-0.5.0.dist-info/RECORD,,
