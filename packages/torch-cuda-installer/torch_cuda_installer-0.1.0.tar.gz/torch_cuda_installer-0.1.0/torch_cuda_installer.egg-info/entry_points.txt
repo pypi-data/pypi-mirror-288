@@ -1,0 +1,2 @@
+[console_scripts]
+torch-cuda-installer = torch_cuda_installer.installer:main
