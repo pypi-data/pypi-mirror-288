@@ -1,0 +1,10 @@
+fastapi_templateapp/__init__.py,sha256=-cgvs8nLrfjxPMZFZTBEIlTxySmm3SNzjgBGjLQH0Oc,398
+fastapi_templateapp/async_requests_manager.py,sha256=_mm2xRkFE2yjEyYPsrROmVg28khoC9tNWW-SAUlr4rM,1275
+fastapi_templateapp/exceptions.py,sha256=6oSb7No1UH6Fkwmo6L1spedLAgzjaUvm7Ru426xF0OU,4147
+fastapi_templateapp/security.py,sha256=wQRh9oT-zRmkvN1rOh27ytRWEPVoNQdp1EcD07e0cfQ,1891
+fastapi_templateapp/template_app.py,sha256=jD3VhQ_l5VREBH5XZTfRnyzxv6wI8cgoJ690a7JtVSs,1777
+fastapi_templateapp/templates/errors/base_error.html,sha256=gJD9iqgSfjD6phbrAK8iZzGAdt7Qlw9S53o_OVldM7o,326
+fastapi_templateapp-0.1.6.dist-info/METADATA,sha256=anaKYDrx2W_y5xxXDJx-9J_Kn7KHNESmPE3zd6wIEmQ,443
+fastapi_templateapp-0.1.6.dist-info/WHEEL,sha256=-oYQCr74JF3a37z2nRlQays_SX2MqOANoqVjBBAP2yE,91
+fastapi_templateapp-0.1.6.dist-info/top_level.txt,sha256=DS61QQw9utqIFTOkJxcPiU3Cf9ZcP9rpKl5wcNd33Ls,20
+fastapi_templateapp-0.1.6.dist-info/RECORD,,
