@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: vbaProject
+Version: 0.0.1
+Summary: vba工具库，通过vbpip进行包管理。
+Author: PyDa5
+Author-email: 1174446068@qq.com
+License: MIT
+Description-Content-Type: text/markdown
+
+# 项目概述
+封装vba常用模块（.bas）、窗体(.frm)、类(.cls)，通过vbpip包管理模块来方便调用。
+
+# 目录结构
+```yaml
+- bas
+  - xx.bas
+  - xx.bas
+  - ...
+- cls
+  - xx.cls
+  - xx.cls
+  - ...
+- frm
+  - xx.frm
+  - xx.frm
+  - ...
+```

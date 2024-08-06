@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+bas/README.md
+bas/vbaFileUtils.bas
+cls/README.md
+frm/README.md
+vbaProject.egg-info/PKG-INFO
+vbaProject.egg-info/SOURCES.txt
+vbaProject.egg-info/dependency_links.txt
+vbaProject.egg-info/top_level.txt
