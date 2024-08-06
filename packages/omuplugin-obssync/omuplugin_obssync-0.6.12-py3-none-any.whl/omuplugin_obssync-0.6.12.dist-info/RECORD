@@ -1,0 +1,12 @@
+omuplugin_obssync/__init__.py,sha256=S_Z2T00JfILtZKGKEc4QYVZM5k06uRTo-teobwPAXlQ,191
+omuplugin_obssync/__main__.py,sha256=Bp4HkaVl7r7viEF7oIZPujgEE2pFg9jcd8hWlAMPiQ8,61
+omuplugin_obssync/obsconfig.py,sha256=1peY_M5wWuXzWE4jbTvMOQML_Ob_qd9fCte6sWMjNgI,984
+omuplugin_obssync/plugin.py,sha256=pF6lZjNxMuHkavLXk0AGxhJ4vPuGlHwkG9zmwBxgCCs,3863
+omuplugin_obssync/version.py,sha256=7OTP3Q9TZmFBy1TnkcTf7ks3d_9_uvVi9Xl0ZUwFrOU,108
+omuplugin_obssync/script/.gitignore,sha256=WHy5gK92_cflI2n9C52Sbf8maXa2-KxjHjWP7MSf-M8,11
+omuplugin_obssync/script/find_venv.py,sha256=vt579ZRZkSCroVsr4c_qzHNKVRQJ7q6z-ApcFDy4tfk,454
+omuplugin_obssync/script/omuapps_plugin.py,sha256=cRbg6k9f4iu89SD4j0-biEK5DKfl_FXRlUQ5cCECnTc,1184
+omuplugin_obssync-0.6.12.dist-info/METADATA,sha256=HWfOz-FaKHKkEtBjp2DHBoC2PzjyjQ_w9XsBKb2VWE4,357
+omuplugin_obssync-0.6.12.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+omuplugin_obssync-0.6.12.dist-info/entry_points.txt,sha256=jq2zItTYLcNIuQD3gTlDAfmu5-YLUF2HsekKh54SmmE,48
+omuplugin_obssync-0.6.12.dist-info/RECORD,,
