@@ -1,0 +1,9 @@
+devart/firebird/__init__.py,sha256=8rQhITd8SKo71ZZv-OU4PEwYtoIitkcJHrOwig8qu5s,511
+devart/firebird/firebird.cpython-312-darwin.so,sha256=Gueddvl9EKtnQ9xKCag7ZrzcSz8CyIVQiRsV37yTx5A,13548248
+devart/firebird/firebird.pyi,sha256=-GSbIAtRxvyce14Hhcn2-7jwjIkoTpV7cUGirmsRn24,12367
+devart/firebird/sqlalchemy/__init__.py,sha256=IQrkmZZimy5VeHpI6gmvLpw0kfIDqlPNdc6k2rTweRA,722
+devart_firebird_connector-1.1.0.dist-info/LICENSE.txt,sha256=3sjizf07RF-z3Lp3tnA-jy3rN103Ypw11NO9tFnRLtU,8559
+devart_firebird_connector-1.1.0.dist-info/METADATA,sha256=FFWZq5UGADg_9LBNfTTFxawpJBRZ8iaCMrlrOzV6LBE,2345
+devart_firebird_connector-1.1.0.dist-info/WHEEL,sha256=ymAnvVQyEsxi1_L6E7o5i2hbE6cS7zMcXkr7bGSHj30,114
+devart_firebird_connector-1.1.0.dist-info/top_level.txt,sha256=h_mZcghGiX6pnc-Kb1EoAfIW2iHeDA0kJKfcLJMbq44,7
+devart_firebird_connector-1.1.0.dist-info/RECORD,,
