@@ -1,0 +1,44 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry]
+name = "TWON-Ranker"
+version = "0.0.6"
+description = ""
+license = "Apache-2.0"
+authors = [
+    "Simon Münker <muenker@uni-trier.de>"
+]
+readme = "README.md"
+homepage = "https://ranker.twon.unit-trier.de"
+repository = "https://github.com/smnmnkr/TWON-Ranker"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.8.2"
+fastapi = "^0.112.0"
+uvicorn = "^0.30.5"
+gunicorn = "^22.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+ruff = "^0.5.6"
+
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+log_cli = true
+log_cli_level = "INFO"
+filterwarnings = [
+    "ignore::DeprecationWarning"
+]
