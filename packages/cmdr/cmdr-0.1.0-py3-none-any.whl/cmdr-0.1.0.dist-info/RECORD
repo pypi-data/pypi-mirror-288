@@ -1,0 +1,9 @@
+README.md,sha256=ehpiX0t97mKjRuliRu_FEgEmGSj13gyZ0J4uwGwOynU,1811
+cmdr/_version.py,sha256=9_PpJA80c3rcLE52V6csAU7dPSLuplcFsvYRebrvqDc,186
+cmdr/datamodel/__init__.py,sha256=7c2IYZzpL5eo9XiSi6dn_q7Ax8o2tPGlko5kEBCKx2Y,178
+cmdr/datamodel/cmdr.py,sha256=1i7WVGor7foigPEkyM_9c0BwEA2EGKiIe07eVcEYuX0,26691
+cmdr/schema/cmdr.yaml,sha256=uCJnoz1Bi5d7dgOudMMhaQDRnDc_9JvobLuYVHWIHQs,5859
+cmdr-0.1.0.dist-info/LICENSE,sha256=E6fY-3_q6bbGgF5aSYp9caF3b60kyBP6anNU9JdckdA,1075
+cmdr-0.1.0.dist-info/METADATA,sha256=aOeKEKgTiYVUBq6PhJsByt8TveOIGLcf79lFT120TQ4,2512
+cmdr-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cmdr-0.1.0.dist-info/RECORD,,
