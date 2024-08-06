@@ -1,0 +1,16 @@
+pls/__init__.py,sha256=2oDMcIriMuG6wBKQ7UQIHf7xOwboQ5UYCUvRjABjFAg,18
+pls/cmd.py,sha256=bXkRIbsjwfPW6S_EIv0qCiA3BevMT8Ai0bLUZ4YCK_Q,21371
+pls/static/version,sha256=mY9riH7Xpu9E6EIQ0CN7cVvtQupyVPSNxBiv7ApIQQM,6
+pls/static/dot_pls/cc_instrument.sh,sha256=Cg4aP1fE4922Vvj-nP7v2pyDszPJuQJa3dg2Vm_Z18k,161
+pls/static/dot_pls/export_gdb_or_lldb.sh,sha256=aHNhjpsf4-_pcOLZ66-f2FC1SZyRmngLr5qnzy337cY,218
+pls/static/dot_pls/git_clone.sh,sha256=s84X_DHBcibTk2rMXRJiMoU9YvHpItTPM7_gZWxKfx8,135
+pls/static/dot_pls/pls_h_dir/pls.h,sha256=r9nqzHVfgeXa6lj3GEkWEXc_TetQRcRLkn_VdOm_peE,647
+pls/static/dot_vscode/launch.json,sha256=12Vd4Grt0G0qoSPhNQZkV1U2cqqXngZMcjVV6RG7G3o,438
+pls/static/dot_vscode/settings.json,sha256=kaia9OT_9gi_ZcJVe2MbXvFJsEgke3R9e2hDBkhvs9A,213
+pls/static/dot_vscode/tasks.json,sha256=KSW-dueaSFXPRjFO9pemYSDwInYJ2zEirErQktp-ELc,542
+plsbuild-0.2.2.dist-info/LICENSE,sha256=30PkixFl5H7_tZkqY3Hev04S4KhR7CmEyLIL4aEWkYs,1079
+plsbuild-0.2.2.dist-info/METADATA,sha256=o1onBkdCK4tXIFa3U8GtjbTwtfOjIvSZ67F_mYZOfLc,152
+plsbuild-0.2.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+plsbuild-0.2.2.dist-info/entry_points.txt,sha256=hKcWigJBwtneXM_X9_e7Mip2q1WC1paUB-k8yal22N8,37
+plsbuild-0.2.2.dist-info/top_level.txt,sha256=rIlNFwp5AVflg5ua7r2EJ0ibFkJ0e0FT0xWGuaQQAE0,4
+plsbuild-0.2.2.dist-info/RECORD,,
