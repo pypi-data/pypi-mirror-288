@@ -1,0 +1,11 @@
+sqlalchemy_profiler-1.0.0.dist-info/METADATA,sha256=h9lcUvhquScRAqIve97XXs2qkqeP_UT2E6qknDkzU0o,1041
+sqlalchemy_profiler-1.0.0.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+sqlalchemy_profiler-1.0.0.dist-info/licenses/LICENSE,sha256=ulFFDJpb2nPaeXrqRZ0pfJcSD6F-9vaqhLzQL5_d8xo,1064
+sqlalchemy_profiler/__init__.py,sha256=T89N1oZLPJzYrugWy5F1_I9I2O4lJ6vQPW9L5PrbgUM,516
+sqlalchemy_profiler/containers.py,sha256=K7Xa9r1tCYTkiTwlsYVO6I10FT3GC6hCH5H4xNYIbS4,1730
+sqlalchemy_profiler/ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlalchemy_profiler/ext/fastapi.py,sha256=ym5k_M0OxtgTY1LAHlvBwFm8PzKLYFWo-STgIjHnYbA,2791
+sqlalchemy_profiler/profilers.py,sha256=G7LvYq7HM0zCQXxSP3UQ-TQ43WwT-TPZSXT5eYzrMUo,10846
+sqlalchemy_profiler/types.py,sha256=9hmS6cKsZXZayQBf4LurUVFIkH70netR1tSO2M11-oc,2434
+sqlalchemy_profiler/utils.py,sha256=_3BOtXb3QfCACn-R0fwBcrgWfH4ok4pGqTFcbXcBDvQ,917
+sqlalchemy_profiler-1.0.0.dist-info/RECORD,,
