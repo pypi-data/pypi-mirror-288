@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+github_context/__init__.py
+github_context/github_context.py
+github_context.egg-info/PKG-INFO
+github_context.egg-info/SOURCES.txt
+github_context.egg-info/dependency_links.txt
+github_context.egg-info/entry_points.txt
+github_context.egg-info/requires.txt
+github_context.egg-info/top_level.txt
