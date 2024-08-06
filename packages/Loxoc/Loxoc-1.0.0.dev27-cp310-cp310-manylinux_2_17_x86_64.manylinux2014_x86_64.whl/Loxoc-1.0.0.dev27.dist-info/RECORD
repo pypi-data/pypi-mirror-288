@@ -1,0 +1,17 @@
+Loxoc.libs/libSDL2-2-00949601.0.so.0.3000.4,sha256=vTFOX3yeNX2P06TXn33o1mHFleXmwB3RNxGOLcm3JJ0,2191297
+Loxoc-1.0.0.dev27.dist-info/RECORD,,
+Loxoc-1.0.0.dev27.dist-info/top_level.txt,sha256=zS5Xi5CLZ47zPApcMnGeVz-PDJlYAxx0P13I24mbHz0,6
+Loxoc-1.0.0.dev27.dist-info/LICENSE,sha256=kFWpeNoYjfwrGE2Z7zY6s0WBYIdnN06uhTci0y5pzeo,1071
+Loxoc-1.0.0.dev27.dist-info/WHEEL,sha256=uCTnTYDkhCVbLZEn8B5frUZwY0tHr_bhBUFcl9OVz_k,151
+Loxoc-1.0.0.dev27.dist-info/METADATA,sha256=uvnNJq6Tki36fFk6gOjmir0bd6DuCshiUQOB1ZqVIDM,8938
+Loxoc/core.pxd,sha256=vtcFTHaDnrp5hOoEzL2VyoZLQSiaXSQl8O10AXcpDOs,32503
+Loxoc/__init__.py,sha256=W7f_cuVxfzIB9Wm-B-uaOjMNO5ujYFFyR4f0DXnlu50,47
+Loxoc/MissingTexture.jpg,sha256=Ri9aQEUutusG1Bagwnc2f7MEl8w31kzDhHjOAfzH67M,42958
+Loxoc/default_vertex.glsl,sha256=0Rprk8c0evsYu03efSIdNX263IUivKKsOL-7u3X2AT0,461
+Loxoc/core.pyi,sha256=KNRNNsaGEhHLX9wHpc1s2VNdWpHKGHtjzFO1tOI7brE,54432
+Loxoc/default_fragment_2D.glsl,sha256=IfCSRQ9Xc6zMhnwOkKwTsbuw_s5pBi-AAMbn9M_ipjM,170
+Loxoc/default_vertex_2D.glsl,sha256=N6bmnShWyY1K2QpDe1NAmJM9shMgck07nPOneiZeXTY,229
+Loxoc/temp.pyx,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Loxoc/core.pyx,sha256=f0Ibd5Wv8kQwN-tBvsJIofdaS5FRWsMTDLRzIzh3WMs,75157
+Loxoc/default_fragment.glsl,sha256=Ju1fIM7XLPLxVpGdximxxttD7DwMwgeYLQNl6s1sVc0,5305
+Loxoc/core.cpython-310-x86_64-linux-gnu.so,sha256=YiFoiQnfLvsqkC-QyDze2mJ3bpZIzXqKEt6kV5Evnn4,31893225
