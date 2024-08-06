@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: devart-dynamics365-connector
+Version: 1.1.0
+Summary: New level of functionality and performance in data access via Python
+Home-page: https://devart.com
+Author: Devart
+Author-email: support@devart.com
+License: LGPL with exceptions
+Project-URL: Homepage, http://devart.com/python/dynamics365
+Project-URL: Download, http://devart.com/python/dynamics365/download.html
+Project-URL: History, http://devart.com/python/dynamics365/revision_history.html
+Project-URL: Documentation, http://devart.com/python/dynamics365/overview.html
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python Connector for Dynamics 365 #
+
+Python Connector for Dynamics 365 is a connectivity solution for accessing
+Dynamics 365 Customer Engagement (formerly Dynamics CRM) from Python
+applications to read and update data. It fully implements the Python DB API
+2.0 specification. The connector is distributed as a wheel package
+for Windows, macOS, and Linux.
+
+Standard SQL syntax
+
+The connector fully supports the ANSI SQL standard and lets you execute SQL
+statements against your Dynamics 365 data just like you would normally work
+with relational databases. Simple queries are directly converted to Dynamics
+365 API calls and executed on the Dynamics 365 side.
+Complex queries are transformed into simpler queries, which are then converted
+to Dynamics 365 API calls. The embedded SQL engine then processes the results
+in the local cache and applies advanced SQL features from the original complex
+query.
+
+## Using the connector ##
+
+To retrieve data from a database:
+
+Import the module.
+```
+import devart.dynamics365
+```
+
+Connect to a database using the `connect()` module method and obtain a `connection` object: 
+If you're using basic authentication:
+```
+my_connection = devart.dynamics365.connect(
+    Authentication="Basic",
+    Server="your_dynamics365_url",
+    UserId="your_username",
+    Password="your_password"
+)
+```
+If you're using OAuth 2.0 authentication and have a refresh token:
+```
+my_connection = devart.dynamics365.connect(
+    Authentication="OAuth",
+    Server="your_dynamics365_url",
+    RefreshToken="your_refresh_token"
+)
+```
+If you're using OAuth 2.0 authentication and don't have a refresh token:
+```
+response = devart.dynamics365.signin(Server="your_dynamics365_url")
+my_connection = devart.dynamics365.connect(
+    Authentication="OAuth",
+    Server="your_dynamics365_url",
+    RefreshToken=response["Refresh Token"]
+)
+```
+
+Create a `cursor` object using the `cursor()` connection method.
+```
+my_cursor = my_connection.cursor()
+```
+
+Execute the SQL statement using the `execute()` cursor method.
+```
+my_cursor.execute("SELECT * FROM employees")
+```
+
+Retrieve the result set using one of the `fetch*()` cursor methods.
+```
+for row in my_cursor.fetchall(): 
+    print(row)
+```
+
+## Ordering and activating the license ##
+
+You can purchase a license for the connector on the ordering page:             
+https://www.devart.com/python/dynamics365/ordering.html
+
+To activate the license, follow the instructions in the documentation:             
+https://docs.devart.com/python/dynamics365/activate-a-license.htm
+
+## What's new ##
+
+Python Connector for Dynamics 365 1.1
+
+- Added metadata caching
+- Added connection pooling
+- Added activation with a license key
+- Added the subscription license type
