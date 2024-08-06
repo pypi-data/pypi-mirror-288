@@ -1,0 +1,6 @@
+README.md
+setup.py
+galactic_ai.egg-info/PKG-INFO
+galactic_ai.egg-info/SOURCES.txt
+galactic_ai.egg-info/dependency_links.txt
+galactic_ai.egg-info/top_level.txt
