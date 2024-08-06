@@ -1,0 +1,9 @@
+splinebox/__init__.py,sha256=d-6XhO0TbGW5GcM5497OH22l49WCwROPs60f4WtTjxQ,221
+splinebox/_version.py,sha256=zAwlKNfY9ce-8Xt6nPrs1YM-MWdAenef4tnieOi9euE,413
+splinebox/basis_functions.py,sha256=wHLO3QKR96_RbKpDlXFIewsvg49XThPRRtwuvaJxYB4,25617
+splinebox/spline_curves.py,sha256=oBBsDrPNGS_EuoqOhFgKkqCogKVdXNjf6HMUaUNkVVk,28918
+splinebox-0.0.3a0.dist-info/LICENSE,sha256=suZOx3TMBD44YOrg4fQHp7STe9yCxpdmxGeF0g_sGow,1510
+splinebox-0.0.3a0.dist-info/METADATA,sha256=RHJa3IaoQBsJQh0x5_jv5ThwkqTZA6c2JfFO3JbqJeE,4482
+splinebox-0.0.3a0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+splinebox-0.0.3a0.dist-info/top_level.txt,sha256=77I8FpK2RDqmMa7kHPspX-ISbVsrXUCdjGO6d9bO4is,10
+splinebox-0.0.3a0.dist-info/RECORD,,
