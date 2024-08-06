@@ -1,0 +1,11 @@
+transmutate/Services.py,sha256=48D8ohy47mWAFFF6hvxOxO6my_uQECsghk6aYF-bPeU,2688
+transmutate/__init__.py,sha256=imJVoxHHK7ENJCPrkSwY_TNl6b9XVgIVQeryfh91WgY,378
+transmutate/base_model.py,sha256=R1oIMw7PKWbsV-2eR79WLccMvQ2XIo2Wz6ieAyLq1mw,2964
+transmutate/json_handler.py,sha256=TfgMexmOg4PMRvKkE0BtqeU3AbHExBGURaqZDJubHt4,970
+transmutate/jsonb_handler.py,sha256=yMTLYqkm0Llni6kwMV6YlnFVMlpBHS0owvlYqnnpAyY,1005
+transmutate/proto_generator.py,sha256=ErYffvpSrqrch_QyyZD32ax7ukFHcuuC-z0LGumR2AY,4086
+transmutate/proto_handler.py,sha256=-EiQT2iFGU2BANQbUobP_HgwNwgKVFK4uDISe0vIeGM,2048
+transmutate-0.2.1.dist-info/LICENSE,sha256=SisGljIS8o7AcEazYJ2F97O_1WnceF6_jgTyeoHekOw,1070
+transmutate-0.2.1.dist-info/METADATA,sha256=zK_CE3B9-iiz1tyz8hckrVqkkC-6i2OIHrXMBriIKN0,6480
+transmutate-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+transmutate-0.2.1.dist-info/RECORD,,
