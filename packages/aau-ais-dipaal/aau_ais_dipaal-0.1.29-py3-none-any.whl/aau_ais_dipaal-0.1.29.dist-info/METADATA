@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: aau-ais-dipaal
+Version: 0.1.29
+Summary: A collection of utilities for working with the DIPAAL data warehouse.
+Author-Email: Mikael Vind Mikkelsen <mvmi@cs.aau.dk>
+License: MIT
+Requires-Python: ==3.12.*
+Requires-Dist: aau-ais-utilities>=0.1.17
+Requires-Dist: pydantic==2.8.*
+Requires-Dist: pydantic-settings==2.2.*
+Requires-Dist: jinjasql==0.1.*
+Requires-Dist: jinja2==3.0.*
+Requires-Dist: pandas==2.2.*
+Description-Content-Type: text/markdown
+
+# AAU AIS DIPAAL
+## License
+This project is licensed under the terms of the MIT license.
+
+## Contact
+For questions or support, please contact:
+- Developer: [Mikael Vind Mikkelsen](mailto:mvmi@cs.aau.dk)
+- 
