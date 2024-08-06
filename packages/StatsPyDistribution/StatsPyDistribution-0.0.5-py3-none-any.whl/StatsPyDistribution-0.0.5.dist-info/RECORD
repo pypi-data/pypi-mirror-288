@@ -1,0 +1,16 @@
+src/BinomialDistribution.py,sha256=CGWfM9nQvVs5bx8ryYrOjau9qoX6I9CBylBBuQRUUz0,3196
+src/Distributions.py,sha256=z3RmUd2U-PiDSOX5X04Ew4e9xwUCVNGtoHCLmrHNbcE,3125
+src/ExponentialDistribution.py,sha256=XTsTk2HYQUOshb4wINhRXqYCUPbScoMjhjJyK5LtYXU,2194
+src/GeometricDistribution.py,sha256=Tgm_0nTfPNKFb8t4L1Ft8AxnjHYyp8nv8qvOBSEejJE,2482
+src/HypergeometricDistribution.py,sha256=EhLx33N6LfJSniEd_oi-bUy1QdGBrLZl_heI8nFUxoA,3217
+src/NormalDistribution.py,sha256=BBsHaozQsqTWcmEyMc3tbS8z3NI7-I-FTsGfJ4WQhsA,2604
+src/PoissonDistribution.py,sha256=FVVwqWnbDGPUITG2ZiTj_qPb9_rTvOrZ8ZKluk-2-JY,2216
+src/RectangularDistribution.py,sha256=rt9VrRDfqTmjIv4QxtKtlo0kkHcIqXWEA2F6MVViERQ,2564
+src/SymmetricTriangularDistribution.py,sha256=e5OyeS5AWliHzQ6GkSuwNUsMNZ_PRhMzo9Wf-I6aqEU,835
+src/TriangularDistribution.py,sha256=TIdvEb6Gx0B86BV7VZiFfKr9rUy9Uq4n2-sKuhVAqf0,4063
+src/__init__.py,sha256=8p9UDVH4Zt7-k_4DsiQQg4M5211uqhDx3RT6QkZfpRA,167
+StatsPyDistribution-0.0.5.dist-info/LICENSE,sha256=gysWpj5KdqqR0k_mzUtCvLw7qwf7NM2AHnt5TDKlXXM,592
+StatsPyDistribution-0.0.5.dist-info/METADATA,sha256=fRFpRh5_11gglNWlnMoAitZpmVwXQC9T16jnjf0iFSI,451
+StatsPyDistribution-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+StatsPyDistribution-0.0.5.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+StatsPyDistribution-0.0.5.dist-info/RECORD,,
