@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pynetworklib
+Version: 1.0.0
+Summary: A simple library for makeing dense multilayer neural networks
+Author: Joseph Bronsten
+Author-email: josephbronsten.dev_contact@gmail.com
+Description-Content-Type: text/plain
+Requires-Dist: numpy
+
+ This is an INDEV version of a multi-layer perception network written in Python. It is designed to be used as a library, it has a network module that provides trainable dense multilayer perceptron networks, a configuration module that provides a way to store parameters for training and optimization, and an optimization module that creates an optimized network structure and hyperparameters for a given dataset
