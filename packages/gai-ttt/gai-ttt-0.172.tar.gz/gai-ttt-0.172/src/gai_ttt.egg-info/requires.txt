@@ -1,0 +1,16 @@
+ipykernel
+jsonschema==4.22.0
+pytest
+pynvml
+nats-py
+gai-sdk
+
+[all]
+ipykernel
+jsonschema==4.22.0
+pytest
+pynvml
+nats-py
+gai-sdk
+
+[svr]
