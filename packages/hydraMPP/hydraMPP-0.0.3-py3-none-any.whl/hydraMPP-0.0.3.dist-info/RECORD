@@ -1,0 +1,11 @@
+hydraMPP/__init__.py,sha256=V-ZDN0xS4dei9SW_y3bSPt8ih_pGavZeFriO65droFo,10105
+hydraMPP/client.py,sha256=zglxAdvybrG0IsQS1Oah2ce_eDYPN6d9rjB4BqeRVDE,1297
+hydraMPP/host.py,sha256=7xwaNZEEGn8IhJirNN53jQj4KgNxnWUY842EWGwd3EI,1393
+hydraMPP/log.py,sha256=s17bvsSd-jSXu2aQyITX8lk5F60s002kRF3jzrGS6Sc,356
+hydraMPP/net.py,sha256=xS_lJkjMdjHWf1de2gpEJqi9M0P9mmdBn-IEQHKkgV8,1227
+hydraMPP-0.0.3.data/scripts/hydra-status.py,sha256=2fJMPcjOcsO6WXyfNcH7cJEKMQNyHAnV0NkkGIMc9sw,1133
+hydraMPP-0.0.3.dist-info/LICENSE.txt,sha256=EDd9zegLdoqgL6Vq6r4blyLoUU29Wx9OoIAYaTNYYYg,1507
+hydraMPP-0.0.3.dist-info/METADATA,sha256=BQK-mC52OIIK1FMP83t6YPzQU-QYs4z1u96-KIV72UI,6817
+hydraMPP-0.0.3.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+hydraMPP-0.0.3.dist-info/top_level.txt,sha256=oJk307D3Jix6VPXQiu48Gw0xxRPBVyKz3GVzXkD95F0,9
+hydraMPP-0.0.3.dist-info/RECORD,,
