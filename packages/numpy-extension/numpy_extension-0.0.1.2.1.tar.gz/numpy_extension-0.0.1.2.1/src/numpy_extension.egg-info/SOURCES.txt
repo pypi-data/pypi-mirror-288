@@ -1,0 +1,12 @@
+.DS_Store
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/numpy_ext/__init__.py
+src/numpy_ext/numpy_ext.py
+src/numpy_extension.egg-info/PKG-INFO
+src/numpy_extension.egg-info/SOURCES.txt
+src/numpy_extension.egg-info/dependency_links.txt
+src/numpy_extension.egg-info/requires.txt
+src/numpy_extension.egg-info/top_level.txt
