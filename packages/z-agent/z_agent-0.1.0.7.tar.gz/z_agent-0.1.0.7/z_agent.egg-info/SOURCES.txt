@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+z_agent/__init__.py
+z_agent/cli.py
+z_agent/web_sockets.py
+z_agent.egg-info/PKG-INFO
+z_agent.egg-info/SOURCES.txt
+z_agent.egg-info/dependency_links.txt
+z_agent.egg-info/entry_points.txt
+z_agent.egg-info/requires.txt
+z_agent.egg-info/top_level.txt
