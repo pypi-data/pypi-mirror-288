@@ -1,0 +1,8 @@
+README.md
+setup.py
+koteswarao/__init__.py
+koteswarao/mymodule.py
+koti_suraboina.egg-info/PKG-INFO
+koti_suraboina.egg-info/SOURCES.txt
+koti_suraboina.egg-info/dependency_links.txt
+koti_suraboina.egg-info/top_level.txt
