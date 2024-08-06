@@ -1,0 +1,9 @@
+mdbsql/__init__.py,sha256=qLuJG241t9LroqgIcfPzNJFtU9NqzXLsyd85T_eLkjs,22
+mdbsql/get_myconf.py,sha256=-hUwX7OW4hpVFeCeredDvK1h5UCvPgo_RfbW-wgSSqg,5180
+mdbsql/mongo_update.py,sha256=jUfsLYOw7GWrBVQmYXnoNezM_qV_LiNZ8j7Sv2sNok0,30637
+mdbsql/mysql_update.py,sha256=mDfUmSaCnwnXQI4dUUPQcy4quyvpLOnk-2mAA_VcznM,22787
+mdbsql-0.0.1.dist-info/METADATA,sha256=5mnGGvRFSMoriwhoMqKY94k-AoAMgHlkqQLsJrohkI0,240
+mdbsql-0.0.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+mdbsql-0.0.1.dist-info/license.txt,sha256=BiTOcvqspP3gLat6FgX-BHEUKAwRMpNp35iJ-BBnARI,52
+mdbsql-0.0.1.dist-info/top_level.txt,sha256=TgzS35FRV9Z0PeZleKWC_fB6qFmLxmR-oDgA5VtTptk,7
+mdbsql-0.0.1.dist-info/RECORD,,
