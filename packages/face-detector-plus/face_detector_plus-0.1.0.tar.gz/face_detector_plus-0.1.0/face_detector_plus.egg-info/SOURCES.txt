@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+face_detector_plus.egg-info/PKG-INFO
+face_detector_plus.egg-info/SOURCES.txt
+face_detector_plus.egg-info/dependency_links.txt
+face_detector_plus.egg-info/requires.txt
+face_detector_plus.egg-info/top_level.txt
+face_detectors_plus/__init__.py
+face_detectors_plus/utils.py
+face_detectors_plus/detectors/__init__.py
+face_detectors_plus/detectors/caffemodel.py
+face_detectors_plus/detectors/cnn.py
+face_detectors_plus/detectors/hog.py
+face_detectors_plus/detectors/onnx_ultralight.py
+face_detectors_plus/detectors/utils.py
