@@ -1,0 +1,14 @@
+febedatasetswits/__init__.py,sha256=0c0WWL-DrBc-K_bUF9Dn0UhEg9EiIxpcwXQ6CawO_LI,41
+febedatasetswits/dataset_loader.py,sha256=NIAHumlunec7h_qiKNtI_sYBi2_SXO6DZEBFwg_duXA,444
+febedatasetswits/data/station_origin_center_1_data.csv,sha256=RFbuXTppbfPrC3CeiwyakX_Rlul9TYiLdq1c0za8rbo,126430
+lab01/__init__.py,sha256=wQ4Kqr0HtZbKvB4om9RehzH-5fD_IfyI52-cwW4FQhM,75
+lab01/image_loader.py,sha256=GIe8dqi6s0galEoVNKOhmYTC6QR8ZsheCF7uqlbssyM,420
+lab01/init_grader_.py,sha256=WergZqcukc7NjfwUExEEmsIiqZAmr6mupT28pgfjnFs,268
+lab01/images/cat_lengths.png,sha256=uxyxu8xTwE8Quufrj4A6WVSEVPQewjxpt1vigTKff8E,9331
+lab01/images/gradescope.png,sha256=Z2059la4xNWXxt6GeA1jbdaplRU2Gah6bVQXR6iMgAw,59595
+lab01/images/harley.png,sha256=Y2tXxLDNqSuM1v_DuxJaWZu3L-4J1VSJEERHd5yrhSI,12727272
+febedatasets-1.0.dist-info/LICENCE,sha256=TFL04rPlwBUAoAxPNPHgdXqOSObaoT60Lkxkr8yJ1-Y,928
+febedatasets-1.0.dist-info/METADATA,sha256=nmsO4cje0CmSznKTAAQg-WY85UFlf8jSVa7_ymQM-TQ,506
+febedatasets-1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+febedatasets-1.0.dist-info/top_level.txt,sha256=ET9zoFJTGPYCJ21KoLEdKfFFHKXtcMkTqakiT7m2Bzo,23
+febedatasets-1.0.dist-info/RECORD,,
