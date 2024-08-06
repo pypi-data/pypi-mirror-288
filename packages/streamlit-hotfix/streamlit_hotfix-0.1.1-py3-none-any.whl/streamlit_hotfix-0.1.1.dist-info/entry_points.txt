@@ -1,0 +1,3 @@
+[console_scripts]
+st-hotfix=st_hotfix.__main__:main
+
