@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ascii_flix
+Version: 0.22
+Summary: A terminal-based video player that converts videos to ASCII art.
+Author: Saad Ahmed Siddiqui
+Requires-Python: >=3.6
+Requires-Dist: pygame
+Requires-Dist: moviepy
+Requires-Dist: opencv-python
+Requires-Dist: rich
+Requires-Dist: numpy
+
+# ASCII Flix
+
+**ASCII Flix** is a terminal-based video player that converts videos into ASCII art. This project allows users to watch videos in their terminal by displaying them as ASCII characters.
+
+## Features
+
+- Convert video frames into ASCII art.
+- Supports both "normal" and "filled" ASCII modes.
+- Extract and play audio using `pygame`.
