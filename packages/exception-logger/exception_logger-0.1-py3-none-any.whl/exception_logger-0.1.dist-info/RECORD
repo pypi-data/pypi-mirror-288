@@ -1,0 +1,8 @@
+exception_logger/__init__.py,sha256=0mM5FN0XT83iu9YTJOvWOsXOm_NNSW65h1J_tmfVLKM,29
+exception_logger/app.py,sha256=4OLi2sStuzSrvA9v0Mryu15ymLI-EzgONe5_vxwc1ck,1977
+exception_logger/config.py,sha256=1hVx6jEkyJCHviwPgUeNjjzDD5FWPf_8mVbTdT-5At0,265
+exception_logger/models.py,sha256=HLjajL67SP8quLJKSqpNfIjQTeD4G5p_bY4V_LTwSCk,453
+exception_logger-0.1.dist-info/METADATA,sha256=s_TA_gf0p0vtO0_R-9IQ5GZ_0GKSCPV0C5WLM-FBxRc,213
+exception_logger-0.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+exception_logger-0.1.dist-info/top_level.txt,sha256=3OZXBFxvVMBjQpvg6T2Hxt4oviBkizfV6XBADM9wX14,17
+exception_logger-0.1.dist-info/RECORD,,
