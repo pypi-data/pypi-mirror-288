@@ -1,0 +1,2 @@
+[console_scripts]
+slurm-log-to-sqlite = slurm_completed_logs_utils.completed_log_to_sqlite:main
