@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cogfy"
+version = "0.1.0"
+description = "A Python client and CLI for the Cogfy API"
+authors = []
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "requests",
+]
+
+[project.urls]
+homepage = "https://github.com/IndigoHive/cogfy-python"
+issues = "https://github.com/IndigoHive/cogfy-python/issues"
+
+[project.scripts]
+cogfy = "cogfy.cli:main"

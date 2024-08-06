@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/cogfy.egg-info/PKG-INFO
+src/cogfy.egg-info/SOURCES.txt
+src/cogfy.egg-info/dependency_links.txt
+src/cogfy.egg-info/entry_points.txt
+src/cogfy.egg-info/requires.txt
+src/cogfy.egg-info/top_level.txt
+tests/test_client.py
