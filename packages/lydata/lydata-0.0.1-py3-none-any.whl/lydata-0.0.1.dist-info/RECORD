@@ -1,0 +1,15 @@
+2021-clb-oropharynx/data.csv,sha256=1a7qDRSeXscgETHsquBekldDmWHcYo02kn8g6m8mLcc,92744
+2021-usz-oropharynx/data.csv,sha256=NQ7o3qsgV83CO6X9VxoYXybZgCWLR05lG5j5y1ogvhg,166966
+2023-clb-multisite/data.csv,sha256=EUzpaOO5R4IRPyNb5cYoROxlQmFhtUNDM-3rj5cHT54,124311
+2023-isb-multisite/data.csv,sha256=GTwx7MRFLigB1QiUs8BD-uw4GWPa0Z8-OMLcKeLyLMc,204322
+lydata/__init__.py,sha256=GbgsAWeNPavsJPTN1s3Xr74GfKRaGe_zFIVxrRM9Zkw,285
+lydata/_version.py,sha256=pMnmqZnpVmaqR5nqHztNWzbbtb1oy5bPN_v7uhOH8K8,411
+lydata/accessor.py,sha256=Czls3ry9FqDHKhWUG_1_WstCq6oAzNA4w2LReIfXWCY,16304
+lydata/loader.py,sha256=94v59kjLfc_Ocp2YS5MBQ8dKHjA05kEnDhPh3rpogPg,8550
+lydata/utils.py,sha256=nbX5edPWA-pYLjdCXVAr328ja8h34y2KILYFWk1TQn0,3511
+lydata/validator.py,sha256=IWKZ7UavNRjIWOqeTooxtXDlGEFTF1D7t3E0EVFaAqs,3233
+lydata-0.0.1.dist-info/LICENSE,sha256=Bis4XECoQLKQUzqCh66YtSMTuZTeFnhE5B1tfcr_X_E,1069
+lydata-0.0.1.dist-info/METADATA,sha256=WCZfgXQiD8p1UOwU8ro_GRdkt8PTOTFGoF1rn39FeXw,13066
+lydata-0.0.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+lydata-0.0.1.dist-info/top_level.txt,sha256=nd6Tp6BI9wOwlIL2oY1_iEGqqoIUL-dU1OTSxkxX1MQ,7
+lydata-0.0.1.dist-info/RECORD,,
