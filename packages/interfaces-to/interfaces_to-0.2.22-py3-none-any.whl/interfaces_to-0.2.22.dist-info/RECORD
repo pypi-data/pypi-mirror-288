@@ -1,0 +1,15 @@
+interfaces_to/__init__.py,sha256=nHQYwipt536f1eBaZ6q39I0DVnt5okht3BPFMCZ8oDI,844
+interfaces_to/bases.py,sha256=C2vnBdYqrlGdc61fOXWwgBvH_Lt5lBacz0ciTDsu7pw,2605
+interfaces_to/messages/__init__.py,sha256=dyxllI-fcNDdtVQDv1gqmzS0tO79MTAFldgGx9LptbA,446
+interfaces_to/messages/slack.py,sha256=kLRTGdxwjFYr3rZsQ0imROiYpm65BEvRYpQ82e1t3EQ,2531
+interfaces_to/tools/airtable.py,sha256=0Xj7rHhcCOeDQpEtMfgET4RYpAdAtTo9MW3iEpyc4ng,3605
+interfaces_to/tools/notion.py,sha256=omlaY8KQAEeRnZz8MZjQ4evtMXJ_CW1Sv7Nmm5oyGxs,9378
+interfaces_to/tools/openai.py,sha256=VBmr47tFWaQuGL3e17-TIInqiTPNl57PdKxxAFI-rs8,4378
+interfaces_to/tools/peopledatalabs.py,sha256=WgFdbwwNtT06HG69D-BHumKUgVlPAE_PT2QuFS1W90Y,3181
+interfaces_to/tools/self.py,sha256=1sNhQQD79i2Hfj0oHI--D80tZSIM3OtHAbzaMahW1dI,5384
+interfaces_to/tools/slack.py,sha256=_nnNMoOLvLs7Jf7dzjXKemHFPCt4TteUnxL1WfUk79s,8501
+interfaces_to/utils.py,sha256=jxUjNQAjJcUQbGapFf_2jcPCCeZeuiuWNQW8DizgOis,10488
+interfaces_to-0.2.22.dist-info/LICENSE,sha256=basW1hzsyRhx7ZCivJMcWJhxDWCIjaRaa6h1uQS95eI,1068
+interfaces_to-0.2.22.dist-info/METADATA,sha256=lEv4gaPxd31hPGAERJORV3ssnAEnIQLIqSdPGC5CiAQ,12040
+interfaces_to-0.2.22.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+interfaces_to-0.2.22.dist-info/RECORD,,
