@@ -1,0 +1,11 @@
+numpy
+pandas
+meson>=1.5.1
+thick
+
+[:python_version < "3.11"]
+tomli
+
+[dev]
+mypy
+ruff
