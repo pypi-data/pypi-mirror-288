@@ -1,0 +1,35 @@
+# Xanthus
+
+Xanthus is a tool for managing your X (formerly Twitter) feed.
+
+## Usage
+
+### Gather Tweets
+
+```bash
+$ xanthus --bookmarks https://x.com/i/bookmarks/1820335919360270491
+
+This will output the list of tweets from this week at `weekly_updates_YYYY-MM-DD.json`
+```
+
+### Generate Thread
+
+```text
+I will give you the list of weekly updates on Twitter in a JSON format. The primary focus of my account is in the AI domain. Your goal is to provide me the content for a Weekly Update Summary Thread based on the data.
+
+Data (see attached):
+
+Format: 
+
+* You will write multiple tweets forming a thread based on the posts above such that the most 
+important announcement comes on the top
+* First post will be a generic announcement posts e.g. "Big updates from X, Y and Z in the A, B, 
+C categories. Here's what you need to know:"
+* You should then output a list of tweets in a twitter thread. Each tweet should summarize an 
+important update and then provide the link of the relevant tweet e.,g. "Avi just unveiled Friend, an AI wearable designed to combat loneliness by providing constant companionship https://x.com/AviSchiffmann/status/1818284595902922884"
+* You should use the last week as a call to action e.g. "Follow @zeffmuks for more updates in X, Y, Z"
+```
+
+## [License](./LICENSE)
+
+All Rights Reserved (c) Zeff Muks 2024
