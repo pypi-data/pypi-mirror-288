@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aicli100"
+version = "1.1.1"
+authors = [
+  { name="Roberto Fernandino", email="romfernandino@gmail.com", role="developer", github="roberto-fernandino"},
+]
+description = "A CLI to use AI directly from the Terminal."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = [
+    "aiohttp",
+    "anyio",
+    "configparser",
+    "distro",
+    "httpx",
+    "openai",
+    "requests",
+]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.targets.wheel.shared-data]
+"src/aicli100/post_install.py" = "share/aicli100/post_install.py"
+
+[project.scripts]
+aicli100-post-install = "aicli100.post_install:create_config"
+aicli100 = "aicli100.main:main"
+
+[tool.hatch.envs.default]
+dependencies = [
+   "configparser",
+]
+
+[tool.hatch.envs.default.scripts]
+post-install = "python src/aicli100/post_install.py"
+
+
+[project.urls]
+Homepage = "https://github.com/roberto-fernandino/aicli_project"
