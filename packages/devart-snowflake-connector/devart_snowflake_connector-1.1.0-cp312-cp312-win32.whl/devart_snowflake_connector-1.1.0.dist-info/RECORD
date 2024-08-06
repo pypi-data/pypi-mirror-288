@@ -1,0 +1,11 @@
+devart/snowflake/__init__.py,sha256=PstUUGYtHB4ZRUwElyDGe1LKFzqruJIDgbHbQ_WEgdw,373
+devart/snowflake/snowflake.cp312-win32.pyd,sha256=IB6mraj5gpishygRQ2kjC_g09rl90qb2eTSGdCIWPtY,716456
+devart/snowflake/snowflake.pyi,sha256=siUkOQO84--DMMEy7dZvnuJzIkp7UehEJPErcZaZIU0,12770
+devart/snowflake/Snowflake/Devart.Python.SnowflakeEngine.dll,sha256=ZSAiye_AKpGb7Qa81lj788vCHKwbq3zR3zlid5qX6b8,10457088
+devart/snowflake/Snowflake/sqlite3.dll,sha256=r0yVbT-MTaVycXm-hR1V8npXYhUmSq0DmipW9mVY2kA,1032192
+devart/snowflake/sqlalchemy/__init__.py,sha256=OfccAdVW2vE5qgH3u45raLZEsbd9VSnov-1c7jAbW0I,1431
+devart_snowflake_connector-1.1.0.dist-info/LICENSE,sha256=3sjizf07RF-z3Lp3tnA-jy3rN103Ypw11NO9tFnRLtU,8559
+devart_snowflake_connector-1.1.0.dist-info/METADATA,sha256=IyzaqWUqwHT3bphxDNdkDAcN_1KyBbKtrQ-T1GjWofQ,2204
+devart_snowflake_connector-1.1.0.dist-info/WHEEL,sha256=7bfvbhlR4ohGH3GBgAUlYFOQDnPqYMjb806cZ8ZkkfQ,97
+devart_snowflake_connector-1.1.0.dist-info/top_level.txt,sha256=h_mZcghGiX6pnc-Kb1EoAfIW2iHeDA0kJKfcLJMbq44,7
+devart_snowflake_connector-1.1.0.dist-info/RECORD,,
