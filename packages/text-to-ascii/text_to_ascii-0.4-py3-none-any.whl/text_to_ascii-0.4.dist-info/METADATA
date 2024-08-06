@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: text_to_ascii
+Version: 0.4
+Home-page: https://github.com/noahprero/text-to-ascii
+Author: Noah Prero
+Requires-Dist: opencv-python >=4.10.0.84
+Requires-Dist: numpy >=2.0.1
+
