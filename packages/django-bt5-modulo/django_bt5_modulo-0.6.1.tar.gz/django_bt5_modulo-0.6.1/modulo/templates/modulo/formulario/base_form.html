@@ -1,0 +1,14 @@
+{% block content_css %}
+
+{% endblock %}
+{% csrf_token %}
+<div class="col-12">
+    <div class=" alert-danger text-justify">
+        {{ form.non_field_errors }}
+    </div>
+</div>
+<div class="row">
+    {% block content_inputs %}
+
+    {% endblock %}
+</div>
