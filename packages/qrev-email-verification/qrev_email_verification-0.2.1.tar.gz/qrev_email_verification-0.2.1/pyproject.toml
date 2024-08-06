@@ -1,0 +1,32 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
+
+[tool.poetry]
+authors = ["leeparnell <152523161+leeparnell@users.noreply.github.com>"]
+description = ""
+name = "qrev-email-verification"
+packages = [{include = "qrev_email_verification"}]
+readme = "README.md"
+version = "0.2.1"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pi-conf = "^0.8.5.1"
+pydantic-settings = "^2.3.4"
+pymongo = "^4.8.0"
+qrev-cache = "^0.2.2"
+requests = "^2.32.3"
+sympy = "^1.12.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+types-requests = "^2.32.0.20240622"
+
+[tool.poetry.group.scripts.dependencies]
+pandas = "^2.2.2"
+
+[tool.tomlsort]
+all = true
+in_place = true
+overrides."tool.poetry.dependencies".first = ["python"]
