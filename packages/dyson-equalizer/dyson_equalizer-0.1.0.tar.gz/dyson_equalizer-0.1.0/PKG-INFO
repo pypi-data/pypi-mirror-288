@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: dyson-equalizer
+Version: 0.1.0
+Summary: Computes the Dyson Equalizer and related low rank approximation of the input data
+Keywords: Dyson Equalizer,low rank approximation
+Author-email: Francesco Strino <francesco.strino@pcmgf.com>, Francesco Strino <francesco.strino@pcmgf.com>, Yuval Kluger <yuval.kluger@yale.edu>
+Maintainer-email: Francesco Strino <francesco.strino@pcmgf.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Science/Research
+Requires-Dist: matplotlib>=3.6
+Requires-Dist: numpy>=1.25
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: twine ; extra == "dev"
+Project-URL: Bug Tracker, https://github.com/KlugerLab/DysonEqualizer/issues
+Project-URL: Documentation, https://github.com/KlugerLab/DysonEqualizer.git
+Project-URL: Repository, https://github.com/KlugerLab/DysonEqualizer.git
+Provides-Extra: dev
+
+# Dyson Equalizer
+
+This package is a Python implementation of the Dyson Equalizer. 
+The method is described in detail in the article [The Dyson Equalizer: Adaptive Noise Stabilization for Low-Rank Signal Detection and Recovery
+](https://doi.org/10.48550/arXiv.2306.11263)
+
+# Install #
+The main version of the package can be installed as 
+```
+pip install dyson-equalizer
+```
+
+
+The development version of the package can be installed as 
+```
+pip install git+https://github.com/Klugerlab/DysonEqualizer.git
+```
+
