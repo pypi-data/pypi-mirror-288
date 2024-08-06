@@ -1,0 +1,9 @@
+TAP_Producer-1.0.0.dist-info/WHEEL,sha256=G-YpvNn7b49IcbsddbgKBlWh_QlxneL6-6e09CgDTeE,80
+TAP_Producer-1.0.0.dist-info/METADATA,sha256=qgmixwuEskbPYbKiXMdZr1dMCUIizmODMkks1M8Afi4,2536
+tap_producer/__init__.py,sha256=YrpKxxcSrtZn5gw8KIvcz7RNCT36Xb35YkR30f0egTQ,12369
+tap_producer/__init__.pyi,sha256=Vmq-Mn25P-34VQ2PeSs7e6p7K0eWfL_gLsW85PUzbtE,4181
+tap_producer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_producer/__pycache__/__init__.cpython-310.pyc,sha256=skMDN0EqYoiV5i5d5Xy0G_n-gy6zOEyjKlVseuXD88A,11851
+tap_producer/tests/test_tap.py,sha256=Cwu7hx2_J5zjhnm0QYy1IQCTsHzP-DlvfrUTFlwDk7U,5126
+tap_producer/tests/__pycache__/test_tap.cpython-310.pyc,sha256=8MsG5Q5MH0Hz3j-ig6ZWuNIN3AkVKWzCbPiTMrV8-wk,6170
+TAP_Producer-1.0.0.dist-info/RECORD,,
