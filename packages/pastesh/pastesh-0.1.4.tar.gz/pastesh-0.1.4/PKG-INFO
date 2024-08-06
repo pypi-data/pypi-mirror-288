@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: pastesh
+Version: 0.1.4
+Summary: A Python package for creating encrypted pastes using Paste.sh
+Home-page: UNKNOWN
+Author: Wooyoung Han
+Author-email: hanu@a-fin.co.kr
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
