@@ -1,0 +1,10 @@
+cmip6_aws/__init__.py,sha256=DV17QdVUOJH_WB_ZuBamuHpER3Lumjt6rPalOIlujvI,123
+cmip6_aws/cmip6_aws.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+cmip6_aws/common.py,sha256=Si4ZvbkkaVGyKrOa7gmsVNWS2Abtji-V5nEsJhrIM3M,188
+cmip6_aws/main.py,sha256=uvOzacZdy90BXAQs0XFGwqormS-c6-BvsCO5W1Oz0dk,9921
+cmip6_aws-0.0.2.dist-info/LICENSE,sha256=4bN4XVO_MsnOb0MtDwQYTXd-4C2gqNkBgeR4-9ffAwk,1068
+cmip6_aws-0.0.2.dist-info/METADATA,sha256=3jGEPHrbiPatQ5cyXKIEJ-V5D3qRVTbjFgFtF4Fcd7I,1611
+cmip6_aws-0.0.2.dist-info/WHEEL,sha256=XRxW4r1PNiVhMpP4bT9oWtu3HyndxpJ84SkubFgzp_Y,109
+cmip6_aws-0.0.2.dist-info/entry_points.txt,sha256=dCBgKI9SQ83hV7o_axX98m19ybDJ16KsrPkQVq0SUT8,49
+cmip6_aws-0.0.2.dist-info/top_level.txt,sha256=oiPnXCxjxE5I0mmCDLQIJ11L0yr4kEiGKFYF_MC6Ink,10
+cmip6_aws-0.0.2.dist-info/RECORD,,
