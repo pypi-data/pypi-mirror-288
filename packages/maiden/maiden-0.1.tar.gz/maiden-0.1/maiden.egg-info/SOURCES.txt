@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+maiden/__init__.py
+maiden/main.py
+maiden/source1.yaml
+maiden.egg-info/PKG-INFO
+maiden.egg-info/SOURCES.txt
+maiden.egg-info/dependency_links.txt
+maiden.egg-info/entry_points.txt
+maiden.egg-info/requires.txt
+maiden.egg-info/top_level.txt
+maiden/templates/my_template.md
+tests/test_main.py

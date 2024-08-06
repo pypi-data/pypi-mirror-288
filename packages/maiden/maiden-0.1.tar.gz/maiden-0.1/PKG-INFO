@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: maiden
+Version: 0.1
+Summary: A tool to generate Markdown files from templates populated with data from YAML or JSON files.
+Home-page: https://github.com/gomleksiz/maiden
+Author: Huseyin Gomleksizoglu
+Author-email: huseyim@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# MaiDEN
+
+A command-line utility to generate Markdown files from templates populated with data from YAML or JSON files.
+
+## Installation
+
+\`\`\`bash
+pip install maiden
+\`\`\`
+
+## Usage
+
+\`\`\`bash
+maiden templates/my_template.md output.md
+\`\`\`
