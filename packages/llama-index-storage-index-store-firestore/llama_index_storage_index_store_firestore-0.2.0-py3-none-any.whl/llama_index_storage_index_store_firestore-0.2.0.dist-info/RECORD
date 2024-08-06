@@ -1,0 +1,5 @@
+llama_index/storage/index_store/firestore/__init__.py,sha256=ugB70UCTSiN9Y4X-1ICvuN04juntRIlTkEw-EsYyDf4,114
+llama_index/storage/index_store/firestore/base.py,sha256=QRR-Bf0_5p4FY9d5QIGHKuDDAUQaRD_l3-yLkUzY-t8,1488
+llama_index_storage_index_store_firestore-0.2.0.dist-info/METADATA,sha256=8-XscHN3AmjGp6REeJ7LtXG5jLOIpkD4ZDanXbCkj0U,747
+llama_index_storage_index_store_firestore-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_storage_index_store_firestore-0.2.0.dist-info/RECORD,,
