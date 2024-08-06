@@ -1,0 +1,2 @@
+[console_scripts]
+imaging-publish = imaging_publish:main
