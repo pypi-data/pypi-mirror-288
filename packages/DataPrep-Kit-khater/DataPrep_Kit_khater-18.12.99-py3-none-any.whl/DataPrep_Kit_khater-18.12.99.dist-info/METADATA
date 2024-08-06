@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: DataPrep_Kit_khater
+Version: 18.12.99
+Summary: This package aims to be a comprehensive toolkit for preprocessing datasets.
+Home-page: https://github.com/Mahmoud-Khater/ElectroPi/blob/main/dataprep_kit.ipynb
+Author: Khater
+Author-email: mahmoudgamalkhater@gmail.com
+Description-Content-Type: text/markdown
+License-File: license.txt
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+hello
