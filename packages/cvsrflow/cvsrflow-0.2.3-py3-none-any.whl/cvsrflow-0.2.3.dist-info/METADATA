@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cvsrflow
+Version: 0.2.3
+Summary: This is cvsrflow - a computer vision-based scrapping replacement technology developed by Exthalpy Technoligies.
+Home-page: https://exthalpy.com
+Author: Exthalpy
+Author-email: udit@exthalpy.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: requests
+
