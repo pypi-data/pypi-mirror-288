@@ -1,0 +1,15 @@
+dataprob/__init__.py,sha256=kL6XF9nswj-8_GsI97nWIbiMjulYbvhYxD1dWAevw7U,314
+dataprob/__version__.py,sha256=64ozm8LOjf9u7pPpOMvkrvDywCJuu_rZwX808gBCZRA,63
+dataprob/check.py,sha256=anJpKoxgfOChB72x8NqY2i1XUHfzoCDrCSHesBl_jeg,11031
+dataprob/fit_param.py,sha256=5OS1LNH-4FcX-iARblFZ-QWZM7LgOk81FCyP91tiOFE,13461
+dataprob/model_wrapper.py,sha256=FV0YC_mWiVTeLnYvB8Xp7jHsgiGw5GJ_92FUSZTancA,10916
+dataprob/fitters/__init__.py,sha256=6qfwGtDDIJFDdcClMySRa3Yi69y4fyFoaqbcoXj5PyU,102
+dataprob/fitters/base.py,sha256=rqoA8odfZlLc-UMLhXBoYVrfSGL6cgGP7KIZ1QaJTK8,30095
+dataprob/fitters/bayesian.py,sha256=URSw9d9Jtg8mo0tEoQ2Vmfa-InUZoz2Kphpgl6Yc1Zc,18784
+dataprob/fitters/bootstrap.py,sha256=m0VMBacvR-reXKB9BQ1-tZqdffPAA2hQEHMvO5Zj-mw,3690
+dataprob/fitters/ml.py,sha256=KY_wZCdye5eAkyT7DSyLgPZo3A62ufHXnhlOhRy0oZc,4856
+dataprob-0.2.0.dist-info/LICENSE,sha256=f1UOSHoWgmYT6vvqGRCx1rjSYYKvLj8Jmk77evFp-HE,1063
+dataprob-0.2.0.dist-info/METADATA,sha256=e6cJdflfrZWO2GHy9Zf_TNfXnzo4mcCDMWO0_mDFI64,2430
+dataprob-0.2.0.dist-info/WHEEL,sha256=XRxW4r1PNiVhMpP4bT9oWtu3HyndxpJ84SkubFgzp_Y,109
+dataprob-0.2.0.dist-info/top_level.txt,sha256=In_LDzC4w4TbOTsFM3xn275dQdMKY15W9nD-IxPJj_c,9
+dataprob-0.2.0.dist-info/RECORD,,
