@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+mcmod_resize/__init__.py
+mcmod_resize/cli.py
+mcmod_resize/main_.py
+mcmod_resize.egg-info/PKG-INFO
+mcmod_resize.egg-info/SOURCES.txt
+mcmod_resize.egg-info/dependency_links.txt
+mcmod_resize.egg-info/entry_points.txt
+mcmod_resize.egg-info/requires.txt
+mcmod_resize.egg-info/top_level.txt
