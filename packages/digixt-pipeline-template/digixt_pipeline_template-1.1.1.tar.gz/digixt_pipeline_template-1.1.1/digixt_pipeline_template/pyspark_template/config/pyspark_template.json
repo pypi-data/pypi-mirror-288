@@ -1,0 +1,34 @@
+{
+  "airflow-task-details": {
+    "pyspark-template": {
+      "spark_details": {
+        "spark_kubernetes_args": {
+          "pyspark_job_main_file_s3_path": "s3a://workflows/pyspark_template/scripts/pyspark_template.py",
+          "driver_cores": 1,
+          "driver_memory": "1g",
+          "executor_instances": 1,
+          "executor_cores": 1,
+          "executor_memory": "1g"
+        },
+        "spark_job_args": {
+          "project_dir_name":"pyspark_template",
+          "task_name": "employee_data",
+          "s3_schema_file_path": "s3a://workflows/pyspark_template/config/employee_data_schema.json",
+          "schema_file_object_key": "employee_data",
+          "output_warehouse_fq_table": "datawarehouse.pyspark_template.employee_data",
+          "output_wh_table_load_strategy": "APPEND",
+          "output_table_snapshots_delete_period": 60
+        }
+      }
+    }
+  },
+
+  "aiflow-task-dependencies-details": {
+           "task-auto-dependencies":{"trigger_order": "sequential"}
+  },
+  "aiflow-dag-details": {
+    "dag_id": "pyspark_template",
+    "dag_description": "Employee data ingestion project"
+  }
+
+}
