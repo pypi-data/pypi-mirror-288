@@ -1,0 +1,9 @@
+devart/interbase/__init__.py,sha256=xSLrhFMpf19It9dl5CO501RFhfCAeUPjomn5koLU3HM,532
+devart/interbase/interbase.cp39-win_amd64.pyd,sha256=5oagF51-kJxaNfDuQ_DVK8Ul-Rp8u1Prc_WOSUn9aiw,948904
+devart/interbase/interbase.pyi,sha256=siUkOQO84--DMMEy7dZvnuJzIkp7UehEJPErcZaZIU0,12770
+devart/interbase/sqlalchemy/__init__.py,sha256=I3Q7UBomXr0X1jdwjKSh4agfgjDpz6obL1hSPmLrrnA,545
+devart_interbase_connector-1.1.0.dist-info/LICENSE,sha256=3sjizf07RF-z3Lp3tnA-jy3rN103Ypw11NO9tFnRLtU,8559
+devart_interbase_connector-1.1.0.dist-info/METADATA,sha256=4pbWDjjVHqHR7J-fT0ScSShu4wUUJONuorrZs05CbV4,2398
+devart_interbase_connector-1.1.0.dist-info/WHEEL,sha256=DmZ7B4aiAganfWOCUyjXG_z2uvUu-tkD3rVXMivgyOM,99
+devart_interbase_connector-1.1.0.dist-info/top_level.txt,sha256=h_mZcghGiX6pnc-Kb1EoAfIW2iHeDA0kJKfcLJMbq44,7
+devart_interbase_connector-1.1.0.dist-info/RECORD,,
