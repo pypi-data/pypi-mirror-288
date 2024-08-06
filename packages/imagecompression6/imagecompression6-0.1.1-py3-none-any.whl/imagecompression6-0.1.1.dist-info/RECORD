@@ -1,0 +1,11 @@
+image_compression/__init__.py,sha256=GUxQ8tI7kDnEaevzGhRGeRsBOUrkDMKKokeD5fLkTYE,106
+image_compression/compression.py,sha256=aT0JjGfdiE-JiM92DdGeeai8Iue-pUPeVYVAMLx_WT8,1295
+image_compression/utils.py,sha256=PBAy74YXHCrw1ptqFHAKpdLyLkpj15NoWO-MHcpj868,375
+imagecompression6/__init__.py,sha256=GUxQ8tI7kDnEaevzGhRGeRsBOUrkDMKKokeD5fLkTYE,106
+imagecompression6/compression.py,sha256=7lAuIXXaqs0kvEw9q-qG_cZPsG74Ow2-aNX0-cTcDUQ,1572
+imagecompression6/utils.py,sha256=PBAy74YXHCrw1ptqFHAKpdLyLkpj15NoWO-MHcpj868,375
+imagecompression6-0.1.1.dist-info/LICENSE.txt,sha256=w4bdLqD9bNf22DjD1q7IM7r19wV9LyL6bwEsY_OL1bQ,1124
+imagecompression6-0.1.1.dist-info/METADATA,sha256=YWb7MOl9PkIKHG6TzAMXqm925jvoV1g2UIkoIzg1r2I,449
+imagecompression6-0.1.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+imagecompression6-0.1.1.dist-info/top_level.txt,sha256=A00p6lxYXtl8xrEVv5kwseV9x3F-phcDRuj1nrI_oMU,18
+imagecompression6-0.1.1.dist-info/RECORD,,
