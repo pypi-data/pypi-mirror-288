@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: uuid_lib
+Version: 0.2.3
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: Python bindings for the UUID library
+Keywords: uuid,uuid_lib,uuid1,uuid2,uuid3,uuid4,uuid5,uuid6,uuid7,uuid8
+Author-email: intezya <intezya@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+
