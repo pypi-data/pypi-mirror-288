@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: PDFAnnotationExtra-t
+Version: 0.1.1
+Summary: A tool for extracting annotations from PDF files
+Home-page: https://github.com/oprometeumoderno/PDFAnnotationExtract
+Author: Henrique de Paula
+Author-email: oprometeumoderno@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyMuPDF
+Requires-Dist: pandas
+Requires-Dist: Jinja2
+Requires-Dist: openpyxl
+
+# PDFAnnotationExtract
