@@ -1,0 +1,3 @@
+[console_scripts]
+dbmanager=db_hj3415.cli:dbmanager
+
