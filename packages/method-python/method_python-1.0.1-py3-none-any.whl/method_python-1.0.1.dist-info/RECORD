@@ -1,0 +1,10 @@
+method/__init__.py,sha256=1uXulzIVVdqhCxFdddQYdHhHZkEevaFemEY2LFjEyZA,182
+method/configuration.py,sha256=9K8Fpd9Ot_5qfpSsLzT6TYV1slCwXyuiYgbdvhousRA,1028
+method/errors.py,sha256=hsh4n6LearnVufpEOtmpDIFKIy61LtmsPVul4mGfW3I,1598
+method/method.py,sha256=Z5Z4ODmIjj7i_-JSy-Vy5B9lgcFsQdKwm-LH21MFJLI,1585
+method/resource.py,sha256=0-0KNRPH_JTkhM34y4ADr0tZJUd6CTY-Cajp6DRn-y0,3570
+method_python-1.0.1.dist-info/LICENSE,sha256=XomO2WcWnZFpiDC2gHQvRp7v9hOWCrDV3fDvKmzjAl8,1074
+method_python-1.0.1.dist-info/METADATA,sha256=Q6PVVHMp_H0W1mCF1aDtROiZSnL-hPf3Gc4JdDP2-a0,373
+method_python-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+method_python-1.0.1.dist-info/top_level.txt,sha256=kmcEg4D_GRTOzPiyKgHIGlJeP0mZfvV5DgK2JnkZ9Mo,7
+method_python-1.0.1.dist-info/RECORD,,
