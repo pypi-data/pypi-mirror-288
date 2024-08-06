@@ -1,0 +1,8 @@
+my_similarity_package/__init__.py,sha256=KYoRIaCV9qwTY8o14NfHoJqi8j9Mt9wQ7cmTLr1bg78,176
+my_similarity_package/similarity.py,sha256=QHpEAAZgWFZI1w0J2dqgBLyXrpRlaHVYckfmRAMuyCU,2975
+tests/__init__.py,sha256=qmLs25lg704c0VYJQ3zsTj3LG4MV6iJaPnNBUxip3NE,107
+tests/test_CosineSimilarity.py,sha256=AAljmTOiVZ_aarLjYqD1DeRZ7E6s8SKi2JNEgYZJGUk,718
+my_similarity_package-0.1.dist-info/METADATA,sha256=W2nTVLC8gxQXgDnhyPv4ZU2Q7Xfo_9n84wIfFa07uro,568
+my_similarity_package-0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+my_similarity_package-0.1.dist-info/top_level.txt,sha256=ZLKQzZfSSfAtp290NPYY-vhtpH3ZCOyxH_RAU_hH2k0,28
+my_similarity_package-0.1.dist-info/RECORD,,
