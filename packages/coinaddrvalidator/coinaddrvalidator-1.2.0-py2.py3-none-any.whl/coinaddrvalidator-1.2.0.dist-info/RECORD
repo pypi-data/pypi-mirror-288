@@ -1,0 +1,17 @@
+coinaddrvalidator/__init__.py,sha256=42vl9okhQV3xHkk84oE8_f20NVkE_2I93Kq4F3lVNUI,710
+coinaddrvalidator/attrs_zope.py,sha256=Z0EcydLd2adMl8ntVBoFjKhcsA0aAS5FFH2hvVCv2hY,1243
+coinaddrvalidator/base.py,sha256=7EKghFB5eyLcicvUd3kGz7pODwdzUl2ZtE_7RvbI9dI,1570
+coinaddrvalidator/currency.py,sha256=nr9oBPEoUP7Nt7Gy6k9R4C7vNX3JX03Zf38i_XhZ-zw,5920
+coinaddrvalidator/interfaces.py,sha256=G6EhqQi-dhnITmEiP_6X8ND9A2plYuqt-dxBZlHlWmM,3418
+coinaddrvalidator/validation.py,sha256=-nVupHFpOMwkl6iMJp3awyoMTUKQ6kHWE2r-5WkntO8,24091
+coinaddrvalidator/encoding/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coinaddrvalidator/encoding/crc16.py,sha256=t1T1maRw7ozO4G2QjFsqxXRNMD3kuHObpsbApmQWsRI,5251
+tests/__init__.py,sha256=IAAx077AC3A-iW9r7ryAL51ruSYx_P9yNe3cc3Duu4g,96
+tests/test_coinaddr.py,sha256=dtiXrGdql3RpJY2YiBNxOJm1wILtbcUlczanmtZss1o,6219
+tests/test_currency.py,sha256=BSauvTWu79r-VQEBLHGTwAd8hYB0TFo7b4l7N7uI_IE,575
+tests/test_validation.py,sha256=nO6_GOPa1UoKyh60QMyPMXOwB1MBbYYNHFfJ-izG1aM,1189
+coinaddrvalidator-1.2.0.dist-info/LICENSE,sha256=gB1aWYwCx_Fl7WYhCRXLugMGqEIeVOQ8z5qKe_3fwY4,1073
+coinaddrvalidator-1.2.0.dist-info/METADATA,sha256=LiqeR-k9xXXsG4nsxGiASw7hoTK_VpBnDPUvvWI5sOI,5476
+coinaddrvalidator-1.2.0.dist-info/WHEEL,sha256=0XQbNV6JE5ziJsWjIU8TRRv0N6SohNonLWgP86g5fiI,109
+coinaddrvalidator-1.2.0.dist-info/top_level.txt,sha256=DQ7SME8ZbYZ7kq0pO0yxL3GrvVtBBn2EgtMxedAxZbw,24
+coinaddrvalidator-1.2.0.dist-info/RECORD,,
