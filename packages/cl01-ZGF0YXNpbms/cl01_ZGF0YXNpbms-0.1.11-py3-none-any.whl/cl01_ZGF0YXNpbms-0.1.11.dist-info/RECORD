@@ -1,0 +1,8 @@
+data_sink_api_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data_sink_api_client/async_client.py,sha256=7NN-JNGvL4uldY8cm7oQNSxZfFsl1m7z1ggqG5OYCBo,12260
+data_sink_api_client/client.py,sha256=ypaIvK7fSOTxYaSg4P-_S_z28uYwwrQuwatxznAF79E,12030
+data_sink_api_client/models.py,sha256=wxUpTkp1EnmTI7A3WkwY2eT9PkwCmEEoAS4Cdkqp8ZI,5112
+cl01_ZGF0YXNpbms-0.1.11.dist-info/METADATA,sha256=R3fqKP6MJrEU5HDShPknlBGWuJGlmIhrSEc0NZICczw,255
+cl01_ZGF0YXNpbms-0.1.11.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+cl01_ZGF0YXNpbms-0.1.11.dist-info/top_level.txt,sha256=BNHYqJWgfzmbvwGfU5z6_gvDJeOits-CnEzzPmBZpuM,21
+cl01_ZGF0YXNpbms-0.1.11.dist-info/RECORD,,
