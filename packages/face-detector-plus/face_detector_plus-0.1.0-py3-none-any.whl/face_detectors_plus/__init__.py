@@ -1,0 +1,1 @@
+from face_detectors_plus.detectors import *
