@@ -1,0 +1,12 @@
+risclog.logging-1.0-py3.9-nspkg.pth,sha256=hcuO9Dx6k_WjALKvuGBr2x8pf_5TVBGuMEPDx89xWBE,472
+risclog/logging/__init__.py,sha256=mpToVrvyjXaKzRoaVbof6kGAVWycJaejOuu85lkbmS8,14185
+risclog/logging/conftest.py,sha256=A-pZNNNyRUyj-uXZ7hPvzEl-ssvW-wJFTSy3veSFB4A,454
+risclog/logging/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+risclog/logging/tests/test_logger.py,sha256=-frSVaqDgBmshmo5qtHL_9j47JfztLzDYnp2ujk2SbI,8050
+risclog.logging-1.0.dist-info/AUTHORS.rst,sha256=pVVRKSOAsIIpu2buAkIq8tk9Dy_sY6IhsUSIhHNtWYI,162
+risclog.logging-1.0.dist-info/LICENSE,sha256=oMdbT2VqsrzqxdQaxc2s4GTDfqoaZL5MBuxiVj-ouJA,1079
+risclog.logging-1.0.dist-info/METADATA,sha256=b-oIziAhO3yl_C9yBFZ7rrNVIBTkmlG6CoC1DS8xvRY,8652
+risclog.logging-1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+risclog.logging-1.0.dist-info/namespace_packages.txt,sha256=3mNzAyFsNr3rScCOTOeT6a_uYKMR3jp5ucOiCZy5k8g,8
+risclog.logging-1.0.dist-info/top_level.txt,sha256=3mNzAyFsNr3rScCOTOeT6a_uYKMR3jp5ucOiCZy5k8g,8
+risclog.logging-1.0.dist-info/RECORD,,
