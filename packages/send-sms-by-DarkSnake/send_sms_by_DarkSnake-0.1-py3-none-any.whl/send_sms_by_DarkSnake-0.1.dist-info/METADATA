@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: send_sms_by_DarkSnake
+Version: 0.1
+Summary: Un module pour envoyer des SMS via l'API Free Mobile
+Home-page: https://github.com/XDarkSnake/send_sms.git
+Author: Briand
+Author-email: matisse2019@yahoo.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# send_sms
+
+Un module pour envoyer des SMS via l'API Free Mobile.
+
+## Installation
+
+```bash
+pip install send_sms
