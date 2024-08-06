@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = {attr = "package_name.__version__"}
+
+[project]
+name = "dual_numbers"
+version = "0.0.10"
+dependencies = [
+    "forbiddenfruit",
+    "custom-literals",
+]
+authors = [
+  { name="Vicente Carrasco Álvarez", email="vidacaal@gmail.com" },
+]
+description = "2D dual numbers for python, with support for complex scalars"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/vichoca9/dual_numbers"
+Issues = "https://github.com/vichoca9/dual_numbers/issues"

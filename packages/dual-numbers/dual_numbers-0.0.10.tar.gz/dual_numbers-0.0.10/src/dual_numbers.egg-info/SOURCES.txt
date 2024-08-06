@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/dual_numbers/__init__.py
+src/dual_numbers.egg-info/PKG-INFO
+src/dual_numbers.egg-info/SOURCES.txt
+src/dual_numbers.egg-info/dependency_links.txt
+src/dual_numbers.egg-info/requires.txt
+src/dual_numbers.egg-info/top_level.txt
