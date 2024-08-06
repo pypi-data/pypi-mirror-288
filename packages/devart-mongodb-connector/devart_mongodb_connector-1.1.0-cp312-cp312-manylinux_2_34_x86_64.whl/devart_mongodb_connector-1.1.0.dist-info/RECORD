@@ -1,0 +1,9 @@
+devart/mongodb/__init__.py,sha256=hfGGUcslQUrrq-PGCfCtK2_wrSsOtJ6FA4t0MdCKqCc,348
+devart/mongodb/mongodb.cpython-312-x86_64-linux-gnu.so,sha256=27QCVMkKh6jr6IJlf7msKPCJ0jva-0L4M_R-EI9vqvk,8254992
+devart/mongodb/mongodb.pyi,sha256=-GSbIAtRxvyce14Hhcn2-7jwjIkoTpV7cUGirmsRn24,12367
+devart/mongodb/sqlalchemy/__init__.py,sha256=DkM3NCCLamdIQHhhxqd-Dd4IkhL2iOk2CVgMySiYqIw,1112
+devart_mongodb_connector-1.1.0.dist-info/LICENSE.txt,sha256=3sjizf07RF-z3Lp3tnA-jy3rN103Ypw11NO9tFnRLtU,8559
+devart_mongodb_connector-1.1.0.dist-info/METADATA,sha256=Mj19OHDN12L8qUYSdAZINsWzLdo2yLVWCnCNQ2jwzHo,2315
+devart_mongodb_connector-1.1.0.dist-info/WHEEL,sha256=Fa4luOZMtbP9T1lH9r5CAb1tiEKk2EoLvCD0sxktAMY,104
+devart_mongodb_connector-1.1.0.dist-info/top_level.txt,sha256=h_mZcghGiX6pnc-Kb1EoAfIW2iHeDA0kJKfcLJMbq44,7
+devart_mongodb_connector-1.1.0.dist-info/RECORD,,
