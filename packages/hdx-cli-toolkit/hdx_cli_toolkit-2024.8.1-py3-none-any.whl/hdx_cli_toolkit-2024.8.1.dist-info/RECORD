@@ -1,0 +1,10 @@
+hdx_cli_toolkit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hdx_cli_toolkit/cli.py,sha256=M08_FXNHIOHipkf_rT_7GjctbTv_VEgaGz6voV77hek,22188
+hdx_cli_toolkit/hdx_utilities.py,sha256=ISjlJF2ZUlbE_Uu-9fYVUE22JNSzLJGDBbd2l6FIQLk,22695
+hdx_cli_toolkit/utilities.py,sha256=5l51x2Bnj2q-uhVaM7QKDjwi_Ow4wygBNTbdSS5qgDY,14498
+hdx_cli_toolkit-2024.8.1.dist-info/LICENSE,sha256=JbCpPljLxczKDGqqOSV5ENisLSQpO-A0b9eYPEIHI0Q,1080
+hdx_cli_toolkit-2024.8.1.dist-info/METADATA,sha256=Hl3pHjc_hRtVWKEr-S4-V_y1inOYqvE0Cyc43FqMiho,6671
+hdx_cli_toolkit-2024.8.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+hdx_cli_toolkit-2024.8.1.dist-info/entry_points.txt,sha256=J2wFpUS0qWxrKtLY11XLOnNvBfdhkd1OuYptx-0MWbw,64
+hdx_cli_toolkit-2024.8.1.dist-info/top_level.txt,sha256=bN60R_SCKuRXX_8cg0gB_GOQMdtikdqfmU2WroSt-70,16
+hdx_cli_toolkit-2024.8.1.dist-info/RECORD,,
