@@ -1,0 +1,80 @@
+[project]
+name = "FlareSolverr"
+dynamic = []
+description = "Proxy server to bypass Cloudflare protection"
+authors = [
+    { name = "Diego Heras", email = "ngosang@hotmail.es" },
+]
+maintainers = [
+    { name = "Paul Pfeister", email = "code@pfeister.dev" },
+]
+dependencies = [
+    "bottle==0.12.25",
+    "waitress==2.1.2",
+    "func-timeout==4.3.5",
+    "prometheus-client==0.17.1",
+    "requests==2.32.0",
+    "certifi==2024.07.04",
+    "websockets==11.0.3",
+    "xvfbwrapper==0.2.9; platform_system != \"Windows\"",
+    "pefile==2023.2.7; platform_system == \"Windows\"",
+    "lxml",
+    "cssselect",
+    "DownloadKit>=2.0.0",
+    "websocket-client",
+    "click",
+    "tldextract",
+    "psutil",
+    "openpyxl>=3.1.5",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+keywords = [
+    "proxy",
+    "cloudflare",
+    "ddos-guard",
+    "captcha",
+    "security",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+version = "0.0.1b1"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+test = [
+    "WebTest==3.0.0",
+]
+
+[project.urls]
+homepage = "https://github.com/FlareSolverr/FlareSolverr/"
+bug-tracker = "https://github.com/FlareSolverr/FlareSolverr/issues/"
+documentation = "https://github.com/FlareSolverr/FlareSolverr/wiki/"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+test = [
+    "WebTest==3.0.0",
+]
+
+[tool.pdm.version]
+source = "scm"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
