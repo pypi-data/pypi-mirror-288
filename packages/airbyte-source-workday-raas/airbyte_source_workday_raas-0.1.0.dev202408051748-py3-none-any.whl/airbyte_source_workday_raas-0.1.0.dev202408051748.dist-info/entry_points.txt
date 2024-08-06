@@ -1,0 +1,3 @@
+[console_scripts]
+source-workday-raas=source_workday_raas.run:run
+
