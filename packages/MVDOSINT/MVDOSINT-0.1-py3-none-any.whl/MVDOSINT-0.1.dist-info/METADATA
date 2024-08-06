@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: MVDOSINT
+Version: 0.1
+Summary: Модуль MVDOSINT
+Author: Ваше имя
+Author-email: ваш_email@example.com
+Requires-Dist: pip
+Requires-Dist: setuptools
+

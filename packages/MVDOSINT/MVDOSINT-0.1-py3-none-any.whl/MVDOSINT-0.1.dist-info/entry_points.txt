@@ -1,0 +1,2 @@
+[console_scripts]
+cybermvd = mvdosint.mvd:main
