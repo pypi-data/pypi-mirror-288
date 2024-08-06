@@ -1,0 +1,4 @@
+[console_scripts]
+avnie=avnie.cli:run
+avro=avnie.cli:run
+
