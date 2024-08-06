@@ -1,0 +1,15 @@
+[project]
+name = "amarillo-gtfs-generator"
+version = "2.0.1"
+description = "FastAPI app providing GTFS generation for Amarillo carpools"
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = [
+    "amarillo",
+    "amarillo-stops",
+    "schedule",
+    "watchdog",
+]
+
+[tool.setuptools.packages]
+find = {}
