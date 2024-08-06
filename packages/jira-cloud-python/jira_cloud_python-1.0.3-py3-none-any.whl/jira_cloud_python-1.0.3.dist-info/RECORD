@@ -1,0 +1,12 @@
+jiracloud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jiracloud/client.py,sha256=YmEqFum50r1MAy2OcFzZFaX_dwTEh8_89Em4VfDdhic,5733
+jiracloud/exceptions.py,sha256=Z4cUS5SRjkPylVUbXQKUT4jV7RMJv2X3wcOG-1nD19M,423
+jiracloud/issues.py,sha256=b0GePTK-3ND4Lew1Rta6tL9_gZEI2m16LULBi9ooV10,3878
+jiracloud/permissions.py,sha256=fHEJxl3BhOb3_gDckqIz0u1t9i3fbHg2oWzsnUeadiY,1749
+jiracloud/projects.py,sha256=PgyXwohFYNXzcGhzRkIvvfXB3ce-7KegQ_33b5Rm24I,363
+jiracloud/users.py,sha256=KspXCJw5dgdpAdDwN9ReqM_YapJSw098qF33LXre338,1032
+jiracloud/webhooks.py,sha256=RaGPdC_QcTP8QmXGVnYzNSo6WlGqSXqtsxe5OtJQA-g,673
+jira_cloud_python-1.0.3.dist-info/LICENSE,sha256=7bwe-hTbBZDn4_dpg2w92BmivmC5FbZk2WUCwWN1EHw,1086
+jira_cloud_python-1.0.3.dist-info/METADATA,sha256=lWL-e1OY-XYMTV0PAkrDraW2qDEOeGhrPuWI0yHarZo,6004
+jira_cloud_python-1.0.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+jira_cloud_python-1.0.3.dist-info/RECORD,,
