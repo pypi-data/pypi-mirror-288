@@ -1,0 +1,2 @@
+[console_scripts]
+medusa-clear = medusa_resources.storage.storage_manager:uninstall_resources
