@@ -1,0 +1,24 @@
+.. include:: ../README.rst
+
+
+********
+Contents
+********
+
+.. toctree::
+   :maxdepth: 2
+   :titlesonly:
+
+   overview
+   install
+   settings
+   views/index
+   optimizations/index
+   testing
+   healthchecks
+   files
+   responses
+   django-sendfile
+   demo
+   about/index
+   contributing

@@ -1,0 +1,195 @@
+#####
+Nginx
+#####
+
+If you serve Django behind Nginx, then you can delegate the file streaming
+to Nginx and get increased performance:
+
+* lower resources used by Python/Django workers ;
+* faster download.
+
+See `Nginx X-accel documentation`_ for details.
+
+
+*****************
+Known limitations
+*****************
+
+* Nginx needs access to the resource by URL (proxy) or path (location).
+* Thus :class:`~django_downloadview.files.VirtualFile` and any generated files
+  cannot be streamed by Nginx.
+
+
+************
+Given a view
+************
+
+Let's consider the following view:
+
+.. literalinclude:: /../demo/demoproject/nginx/views.py
+   :language: python
+   :lines: 1-6, 8-17
+
+What is important here is that the files will have an ``url`` property
+implemented by storage. Let's setup an optimization rule based on that URL.
+
+.. note::
+
+   It is generally easier to setup rules based on URL rather than based on
+   name in filesystem. This is because path is generally relative to storage,
+   whereas URL usually contains some storage identifier, i.e. it is easier to
+   target a specific location by URL rather than by filesystem name.
+
+
+********************************
+Setup XAccelRedirect middlewares
+********************************
+
+Make sure ``django_downloadview.SmartDownloadMiddleware`` is in
+``MIDDLEWARE`` of your `Django` settings.
+
+Example:
+
+.. literalinclude:: /../demo/demoproject/settings.py
+   :language: python
+   :lines: 62-69
+
+Then set ``django_downloadview.nginx.XAccelRedirectMiddleware`` as
+``DOWNLOADVIEW_BACKEND``:
+
+.. literalinclude:: /../demo/demoproject/settings.py
+   :language: python
+   :lines: 75
+
+Then register as many ``DOWNLOADVIEW_RULES`` as you wish:
+
+.. literalinclude:: /../demo/demoproject/settings.py
+   :language: python
+   :lines: 83-88
+
+Each item in ``DOWNLOADVIEW_RULES`` is a dictionary of keyword arguments passed
+to the middleware factory. In the example above, we capture responses by
+``source_url`` and convert them to internal redirects to ``destination_url``.
+
+.. autoclass:: django_downloadview.nginx.middlewares.XAccelRedirectMiddleware
+   :members:
+   :inherited-members:
+   :undoc-members:
+   :show-inheritance:
+   :member-order: bysource
+
+
+**********************************************
+Per-view setup with x_accel_redirect decorator
+**********************************************
+
+Middlewares should be enough for most use cases, but you may want per-view
+configuration. For `nginx`, there is ``x_accel_redirect``:
+
+.. autofunction:: django_downloadview.nginx.decorators.x_accel_redirect
+
+As an example:
+
+.. literalinclude:: /../demo/demoproject/nginx/views.py
+   :language: python
+   :lines: 1-7, 17-
+
+
+*******************************************
+Test responses with assert_x_accel_redirect
+*******************************************
+
+Use :func:`~django_downloadview.nginx.decorators.assert_x_accel_redirect`
+function as a shortcut in your tests.
+
+.. literalinclude:: /../demo/demoproject/nginx/tests.py
+   :language: python
+
+.. autofunction:: django_downloadview.nginx.tests.assert_x_accel_redirect
+
+The tests above assert the `Django` part is OK. Now let's configure `nginx`.
+
+
+***********
+Setup Nginx
+***********
+
+See `Nginx X-accel documentation`_ for details.
+
+Here is what you could have in :file:`/etc/nginx/sites-available/default`:
+
+.. code-block:: nginx
+
+   charset utf-8;
+
+   # Django-powered service.
+   upstream frontend {
+       server 127.0.0.1:8000 fail_timeout=0;
+   }
+
+   server {
+       listen 80 default;
+
+       # File-download proxy.
+       #
+       # Will serve /var/www/files/myfile.tar.gz when passed URI
+       # like /optimized-download/myfile.tar.gz
+       #
+       # See http://wiki.nginx.org/X-accel
+       # and https://django-downloadview.readthedocs.io
+       #
+       location /proxied-download {
+           internal;
+           # Location to files on disk.
+           alias /var/www/files/;
+       }
+
+       # Proxy to Django-powered frontend.
+       location / {
+           proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+           proxy_set_header Host $http_host;
+           proxy_redirect off;
+           proxy_pass http://frontend;
+       }
+   }
+
+... where specific configuration is the ``location /optimized-download``
+section.
+
+.. note::
+
+   ``/proxied-download`` has the ``internal`` flag, so this location is not
+   available for the client, i.e. users are not able to download files via
+   ``/optimized-download/<filename>``.
+
+
+*********************************************
+Assert everything goes fine with healthchecks
+*********************************************
+
+:doc:`Healthchecks </healthchecks>` are the best way to check the complete
+setup.
+
+
+*************
+Common issues
+*************
+
+``Unknown charset "utf-8" to override``
+=======================================
+
+Add ``charset utf-8;`` in your nginx configuration file.
+
+``open() "path/to/something" failed (2: No such file or directory)``
+====================================================================
+
+Check your ``settings.NGINX_DOWNLOAD_MIDDLEWARE_SOURCE_DIR`` in Django
+configuration VS ``alias`` in nginx configuration: in a standard configuration,
+they should be equal.
+
+
+.. rubric:: References
+
+.. target-notes::
+
+.. _`Nginx X-accel documentation`: http://wiki.nginx.org/X-accel

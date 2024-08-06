@@ -1,0 +1,92 @@
+##################
+Optimize streaming
+##################
+
+Some reverse proxies allow applications to delegate actual download to the
+proxy:
+
+* with Django, manage permissions, generate files...
+* let the reverse proxy serve the file.
+
+As a result, you get increased performance: reverse proxies are more efficient
+than Django at serving static files.
+
+
+***********************
+Supported features grid
+***********************
+
+Supported features depend on backend. Given the file you want to stream, the
+backend may or may not be able to handle it:
+
++-----------------------+-------------------------+-------------------------+-------------------------+
+| View / File           | :doc:`nginx`            | :doc:`apache`           | :doc:`lighttpd`         |
++=======================+=========================+=========================+=========================+
+| :doc:`/views/path`    | Yes, local filesystem.  | Yes, local filesystem.  | Yes, local filesystem.  |
++-----------------------+-------------------------+-------------------------+-------------------------+
+| :doc:`/views/storage` | Yes, local and remote.  | Yes, local filesystem.  | Yes, local filesystem.  |
++-----------------------+-------------------------+-------------------------+-------------------------+
+| :doc:`/views/object`  | Yes, local and remote.  | Yes, local filesystem.  | Yes, local filesystem.  |
++-----------------------+-------------------------+-------------------------+-------------------------+
+| :doc:`/views/http`    | Yes.                    | No.                     | No.                     |
++-----------------------+-------------------------+-------------------------+-------------------------+
+| :doc:`/views/virtual` | No.                     | No.                     | No.                     |
++-----------------------+-------------------------+-------------------------+-------------------------+
+
+As an example, :doc:`Nginx X-Accel </optimizations/nginx>` handles URL for
+internal redirects, so it can manage
+:class:`~django_downloadview.files.HTTPFile`; whereas :doc:`Apache X-Sendfile
+</optimizations/apache>` handles absolute path, so it can only deal with files
+on local filesystem.
+
+There are currently no optimizations to stream in-memory files, since they only
+live on Django side, i.e. they do not persist after Django returned a response.
+Note: there is `a feature request about "local cache" for streamed files`_.
+
+
+*****************
+How does it work?
+*****************
+
+View return some :class:`~django_downloadview.response.DownloadResponse`
+instance, which itself carries a :doc:`file wrapper </files>`.
+
+`django-downloadview` provides response middlewares and decorators that are
+able to capture :class:`~django_downloadview.response.DownloadResponse`
+instances and convert them to
+:class:`~django_downloadview.response.ProxiedDownloadResponse`.
+
+The :class:`~django_downloadview.response.ProxiedDownloadResponse` is specific
+to the reverse-proxy (backend): it tells the reverse proxy to stream some
+resource.
+
+.. note::
+
+   The feature is inspired by :mod:`Django's TemplateResponse
+   <django.template.response>`
+
+
+***********************
+Available optimizations
+***********************
+
+Here are optimizations builtin `django_downloadview`:
+
+.. toctree::
+   :titlesonly:
+
+   nginx
+   apache
+   lighttpd
+
+.. note:: If you need support for additional optimizations, `tell us`_!
+
+
+.. rubric:: Notes & references
+
+.. target-notes::
+
+.. _`tell us`:
+   https://github.com/jazzband/django-downloadview/issues?labels=optimizations
+.. _`a feature request about "local cache" for streamed files`:
+   https://github.com/jazzband/django-downloadview/issues/70

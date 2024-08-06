@@ -1,0 +1,86 @@
+###################
+VirtualDownloadView
+###################
+
+.. py:module:: django_downloadview.views.virtual
+
+:class:`VirtualDownloadView` **serves files that do not live on disk**.
+Use it when you want to stream a file which content is dynamically generated
+or which lives in memory.
+
+It is all about overriding :meth:`VirtualDownloadView.get_file` method so that
+it returns a suitable file wrapper...
+
+.. note::
+
+   Current implementation does not support reverse-proxy optimizations,
+   because content is actually generated within Django, not stored in some
+   third-party place.
+
+
+************
+Base options
+************
+
+:class:`VirtualDownloadView` inherits from
+:class:`~django_downloadview.views.base.DownloadMixin`, which has various
+options such as :attr:`~django_downloadview.views.base.DownloadMixin.basename`
+or :attr:`~django_downloadview.views.base.DownloadMixin.attachment`.
+
+
+***************************************
+Serve text (string or unicode) or bytes
+***************************************
+
+Let's consider you build text dynamically, as a bytes or string or unicode
+object. Serve it with Django's builtin
+:class:`~django.core.files.base.ContentFile` wrapper:
+
+.. literalinclude:: /../demo/demoproject/virtual/views.py
+   :language: python
+   :lines: 1, 3, 7-11
+
+
+**************
+Serve StringIO
+**************
+
+:class:`~StringIO.StringIO` object lives in memory. Let's wrap it in some
+download view via :class:`~django_downloadview.files.VirtualFile`:
+
+.. literalinclude:: /../demo/demoproject/virtual/views.py
+   :language: python
+   :lines: 1-4, 5-6, 13-17
+
+
+************************
+Stream generated content
+************************
+
+Let's consider you have a generator function (``yield``) or an iterator object
+(``__iter__()``):
+
+
+.. literalinclude:: /../demo/demoproject/virtual/views.py
+   :language: python
+   :lines: 20-23
+
+
+Stream generated content using :class:`VirtualDownloadView`,
+:class:`~django_downloadview.files.VirtualFile` and
+:class:`~django_downloadview.io.BytesIteratorIO`:
+
+.. literalinclude:: /../demo/demoproject/virtual/views.py
+   :language: python
+   :lines: 3, 26-30
+
+
+*************
+API reference
+*************
+
+.. autoclass:: VirtualDownloadView
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :member-order: bysource

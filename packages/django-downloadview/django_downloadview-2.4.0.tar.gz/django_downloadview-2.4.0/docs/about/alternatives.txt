@@ -1,0 +1,80 @@
+#################################
+Alternatives and related projects
+#################################
+
+This document presents other projects that provide similar or complementary
+functionalities. It focuses on differences with django-downloadview.
+
+There is a comparison grid on djangopackages.com:
+https://www.djangopackages.com/grids/g/file-streaming/.
+
+Here are additional highlights...
+
+
+*************************
+Django's static file view
+*************************
+
+`django.contrib.staticfiles provides a view to serve files`_. It is simple and
+quite naive by design: it is meant for development, not for production.
+See `Django ticket #2131`_: advanced file streaming is left to third-party
+applications.
+
+`django-downloadview` is such a third-party application.
+
+
+***************
+django-sendfile
+***************
+
+`django-sendfile`_ is a wrapper around web-server specific methods for sending
+files to web clients.
+
+.. note::
+
+   :func:`django_downloadview.shortcuts.sendfile` is a port of
+   `django-sendfile`'s main function. See :doc:`/django-sendfile` for details.
+
+``django-senfile``'s main focus is simplicity: API is made of a single
+``sendfile()`` function you call inside your views:
+
+.. code:: python
+
+   from sendfile import sendfile
+
+   def hello_world(request):
+	"""Send 'hello-world.pdf' file as a response."""
+    	return sendfile(request, '/path/to/hello-world.pdf')
+
+The download response type depends on the chosen backend, which could
+be Django, Lighttpd's X-Sendfile, Nginx's X-Accel... depending your settings:
+
+.. code:: python
+
+   SENDFILE_BACKEND = 'sendfile.backends.nginx'  # sendfile() will return
+                                                 # X-Accel responses.
+   # Additional settings for sendfile's nginx backend.
+   SENDFILE_ROOT = '/path/to'
+   SENDFILE_URL = '/proxied-download'
+
+Here are main differences between the two projects:
+
+* ``django-sendfile`` supports only files that live on local filesystem (i.e.
+  where ``os.path.exists`` returns ``True``). Whereas ``django-downloadview``
+  allows you to serve or proxy files stored in various locations, including
+  remote ones.
+
+* ``django-sendfile`` uses a single global configuration (i.e.
+  ``settings.SENDFILE_ROOT``), thus optimizations are limited to a single
+  root folder. Whereas ``django-downloadview``'s
+  ``DownloadDispatcherMiddleware`` supports multiple configurations.
+
+
+.. rubric:: References
+
+.. target-notes::
+
+.. _`django.contrib.staticfiles provides a view to serve files`:
+   https://docs.djangoproject.com/en/3.0/ref/contrib/staticfiles/#static-file-development-view
+.. _`Django ticket #2131`: https://code.djangoproject.com/ticket/2131
+.. _`django-sendfile`: http://pypi.python.org/pypi/django-sendfile

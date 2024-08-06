@@ -1,0 +1,32 @@
+# Local binaries.
+/bin/
+
+# Libraries.
+/lib/
+
+# Data files.
+/var/
+coverage.xml
+.coverage/
+
+# Python files.
+*.pyc
+*.pyo
+*.egg-info
+
+# Tox files.
+/.tox/
+.eggs
+*.egg-info
+
+# Virtualenv files (created by tox).
+/build/
+/dist/
+
+# Virtual environments (created by user).
+/venv/
+
+# Editors' temporary buffers.
+.*.swp
+*~
+.idea
