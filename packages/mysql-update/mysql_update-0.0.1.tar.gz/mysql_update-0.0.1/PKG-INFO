@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mysql_update
+Version: 0.0.1
+Author: xigua, 
+Author-email: 2587125111@qq.com
+License: MIT
+Requires-Python: >=3.6
+License-File: license.txt
+
+
+      mysql 数据更新, 移除冗余数据。
+      
