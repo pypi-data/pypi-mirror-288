@@ -1,0 +1,12 @@
+mensajes/__init__.py,sha256=VigG6UE1SrRKYnf1L3awi7Ik__fybpikyeoTP0fLOOc,34
+mensajes/bienvenida/__init__.py,sha256=6idaD5Dp1gt6jMQAF5ScbpCuAvIwQe-itsn2NZ_RY90,39
+mensajes/bienvenida/saludos.py,sha256=N2_0yr_RBh9VbEU5Aw9RdStqKAmXKL2PfyIQNFG-5tw,356
+mensajes/despedida/__init__.py,sha256=es1TJAqbzRCCb1McGlqCFNRTSQ2l1rxZPeFZXsXAHCs,36
+mensajes/despedida/despedirse.py,sha256=BbKkrAZ-ysgSPtHuBWtI73Iptxj_rnkgnjx2WE0jpbA,171
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_hola.py,sha256=R4AS9Oa7e1lwnolm4AgVmewPVN1TOrtlvIN12jDsSDw,243
+Mensajes_laxus-6.0.dist-info/LICENSE,sha256=1TrCCGXnJskvo1zXLjGbdgMOXYdb80opVGCyu2m60Vo,1099
+Mensajes_laxus-6.0.dist-info/METADATA,sha256=MwcXf3gHz_OorLQrK4q-vx6lS_AafNE5NEXGa8YFnx4,709
+Mensajes_laxus-6.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+Mensajes_laxus-6.0.dist-info/top_level.txt,sha256=gD40JdIxiaPRvMl4iCu3Edq1ctVrOdqjON-Ms9kPSQk,15
+Mensajes_laxus-6.0.dist-info/RECORD,,
