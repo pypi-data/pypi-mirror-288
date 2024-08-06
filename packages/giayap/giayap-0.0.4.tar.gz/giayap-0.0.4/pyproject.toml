@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "giayap"
+version = "0.0.4"
+authors = [
+  { name="Infstellar" },
+]
+description = "yap for GIA."
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+    ]
+
+[tool.hatch.build]
+include = [
+  "*.json",
+  "giayap.pydd",
+  "*.onnx",
+  "*.pydd",
+  "*.py"
+]
