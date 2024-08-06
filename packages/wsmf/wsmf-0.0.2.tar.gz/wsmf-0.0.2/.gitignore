@@ -1,0 +1,10 @@
+**__pycache__**
+*.db
+errors
+.vscode/
+results
+d2v*
+!d2v*.py
+.venv/
+dist/
+wsmf.egg-info/
