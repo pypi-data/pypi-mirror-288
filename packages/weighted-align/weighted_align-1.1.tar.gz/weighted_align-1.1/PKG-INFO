@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: weighted_align
+Version: 1.1
+Summary: A tool for aligning DNA or marker seq.
+Home-page: https://github.com/CycloneSEQ-Bioinformatics/Weighted_Align.git
+Author: Junyi He
+Author-email: guilitianya@126.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# Weighted_Align
+
+## What Is Weighted_Align?
+
+Weighted_Align is a tool for aligning DNA or marker seq.
+
+### Linux, macOS, FreeBSD
+  * GCC ≥ 11
+  * Python 3
+  * Cython
+  * numpy
+
+### Build system
+  * use pip to install  
+  `pip install weighted_align`
+  * use sorce code to build  
+  `git clone https://github.com/CycloneSEQ-Bioinformatics/Weighted_Align.git`  
+  `python3 setup.py build_ext --inplace`
+

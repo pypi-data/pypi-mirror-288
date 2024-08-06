@@ -1,0 +1,14 @@
+README.md
+setup.py
+src/AlignTools.cpp
+src/align.cpp
+src/align.h
+src/c_align.cpp
+tests/test_char.py
+tests/test_integer.py
+weightedAlign/__init__.py
+weighted_align.egg-info/PKG-INFO
+weighted_align.egg-info/SOURCES.txt
+weighted_align.egg-info/dependency_links.txt
+weighted_align.egg-info/requires.txt
+weighted_align.egg-info/top_level.txt
