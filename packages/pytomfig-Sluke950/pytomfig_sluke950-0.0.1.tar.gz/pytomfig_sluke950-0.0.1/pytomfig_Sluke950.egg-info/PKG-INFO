@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pytomfig_Sluke950
+Version: 0.0.1
+Summary: TOML configuration file manager.
+Author-email: Luke Shuttleworth <Sluke950@gmail.com>
+Project-URL: Homepage, https://github.com/Sluke950/pytomfig
+Project-URL: Issues, https://github.com/Sluke950/pytomfig/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# pytomfig
+
+## Overview
+
+**pytomfig** is a Python package designed to make the loading of configuration TOML files easier. It provides global configuration value access and allows variables to be stored within the class to be shared across all files in a python application.
+
+## Features
+
+- **TOML file reading**: Loads a TOML file as a dictionary.
+- **Configuration get**: Get method for easy retrieval of configuration parameters.
+
+## Installation
+
+To install **pytomfig**, you can use pip. Ensure you have Python 3.6+ installed, then run:
+
+```bash
+pip install pytomfig
