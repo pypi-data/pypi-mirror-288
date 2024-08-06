@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: qrev-email-verification
+Version: 0.2.1
+Summary: 
+Author: leeparnell
+Author-email: 152523161+leeparnell@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pi-conf (>=0.8.5.1,<0.9.0.0)
+Requires-Dist: pydantic-settings (>=2.3.4,<3.0.0)
+Requires-Dist: pymongo (>=4.8.0,<5.0.0)
+Requires-Dist: qrev-cache (>=0.2.2,<0.3.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: sympy (>=1.12.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Email Verification Service
+
+This package provides a flexible email verification service that supports multiple verification providers.
+
+## Features
+
+- Support for multiple email verification services (currently MillionVerifier and ZeroBounce)
+- MongoDB integration for caching and storing verification results
+- Configurable via environment variables
+- Easy to extend with additional verification services
+
+## Installation
+
+```bash
+pip install qrev-email-verification
+```

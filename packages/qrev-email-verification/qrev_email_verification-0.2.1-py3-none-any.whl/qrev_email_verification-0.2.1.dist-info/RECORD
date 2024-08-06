@@ -1,0 +1,14 @@
+qrev_email_verification/__init__.py,sha256=Xu6AxKpkejPrLE3AKWwe3rcE0INy599tdCV2qMdQxRA,1996
+qrev_email_verification/email_verification.py,sha256=CkmPGhse3UHFHV5jgmyQv6U29nnlWLIovu_RxPM5m_8,4062
+qrev_email_verification/email_verifying_service.py,sha256=LkoxlUI0kYJ876AIPhCve7pKJiuGvMg3l4UrKLO5kms,971
+qrev_email_verification/models/models.py,sha256=6ipqh293I-PDwCtzrNth0rK0p2R6YM7o_Buu-ED0H74,1052
+qrev_email_verification/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qrev_email_verification/services/millionverifier/api.py,sha256=4e-7K1-iXcgGcMfs7I16zS0v0G4PwYGWDkSLSWDSn2Q,2731
+qrev_email_verification/services/millionverifier/models.py,sha256=uQu4cHlqvS9KQaJkyE8KZkqPAM7E5qwSrd18k6toK_E,1326
+qrev_email_verification/services/millionverifier/mongo_api.py,sha256=wa5-PJfteCw68_qAuJDkeXk_IF-r021cYyNbXCK8N8o,1411
+qrev_email_verification/services/zerobounce/api.py,sha256=WsqrUT55q-_iO8hZO9v1JIr6XiRznuub-Tyl8zHaEFI,2246
+qrev_email_verification/services/zerobounce/models.py,sha256=nEStthCuoFXXHbRlmcUdhnOTNtCjrHcNhFRp8y_WjAM,1782
+qrev_email_verification/services/zerobounce/mongo_api.py,sha256=3TLTDM9q7xxy_KxROP8ET7JwD5Vkk4tidxDEQ56zYzo,1373
+qrev_email_verification-0.2.1.dist-info/METADATA,sha256=vDhFF64B1cmWyYy5GaVny-NQ1gynPdX8RECSkbKTc4E,1108
+qrev_email_verification-0.2.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+qrev_email_verification-0.2.1.dist-info/RECORD,,
