@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+cvsrflow.egg-info/PKG-INFO
+cvsrflow.egg-info/SOURCES.txt
+cvsrflow.egg-info/dependency_links.txt
+cvsrflow.egg-info/requires.txt
+cvsrflow.egg-info/top_level.txt
