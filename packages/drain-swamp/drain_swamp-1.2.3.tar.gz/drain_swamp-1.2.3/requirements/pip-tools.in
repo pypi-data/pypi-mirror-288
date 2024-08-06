@@ -1,0 +1,9 @@
+# Licensed under the AGPLv3+ License: https://www.gnu.org/licenses/
+# For details: https://github.com/msftcangoblowm/drain-swamp/blob/master/NOTICE.txt
+
+-c pip.in
+
+# "make upgrade-one package=pip-tools"
+# "make upgrade" turns this into requirements/pip-tools.pip
+
+pip-tools
