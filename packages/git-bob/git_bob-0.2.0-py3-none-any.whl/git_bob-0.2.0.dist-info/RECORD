@@ -1,0 +1,13 @@
+git_bob/__init__.py,sha256=cbEycjpBMVttmsNnML7PDSg7sEiIwKWNlpbF4aS9PnE,45
+git_bob/_ai_github_utilities.py,sha256=-wAoOKQ6AzPXT0sDv_zT9dTTlR4wfeFHRDnVUBrTgQk,12113
+git_bob/_endpoints.py,sha256=FVa2hKJqxhpGammP7xLSEwNMfBAMmlryxzLDJu575W4,1980
+git_bob/_github_utilities.py,sha256=Mr5DWjmrj_xoyTY8JxT432d_6TcbjBe-uF9X1ejpsQM,19222
+git_bob/_logger.py,sha256=z-yEi7nHhR5_M1ZvZPs8sOtKNKZKJ9PXmTTq56BzL94,407
+git_bob/_terminal.py,sha256=0RX7qrc7B4ucJA_vYwKRC2La1r0WOm2fHgY5IuYIinw,3925
+git_bob/_utilities.py,sha256=_VkMOnwIsId4X5O0owcRtpGD-nHcHnZ47Um1GnWXaOs,4640
+git_bob-0.2.0.dist-info/LICENSE,sha256=LwcZXklk_wK4goUHx0hO2B97PklLqQb_CwL-Csob5so,1550
+git_bob-0.2.0.dist-info/METADATA,sha256=GzjGb0Tgqx5XIytS4Ako3WssYV43VCy6Nek6pHEcbCU,8940
+git_bob-0.2.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+git_bob-0.2.0.dist-info/entry_points.txt,sha256=kLY3PsT9eGl0z_H3YtnXkQCtP_tRCOFlBEHQOAYDi9s,69
+git_bob-0.2.0.dist-info/top_level.txt,sha256=bweFleryRSQHmsoJcmZx6R0AQFzpDBqe7qEf_DTdCoo,8
+git_bob-0.2.0.dist-info/RECORD,,
