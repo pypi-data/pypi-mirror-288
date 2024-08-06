@@ -1,0 +1,9 @@
+pygraphv1/__init__.py,sha256=UiJeBwHsyVuHyMIaqfsPyKdnD6SBg7UQeiY9P3MgZjo,131
+pygraphv1/client/__init__.py,sha256=UiJeBwHsyVuHyMIaqfsPyKdnD6SBg7UQeiY9P3MgZjo,131
+pygraphv1/client/graph_api_graph.py,sha256=SAZH99i-p08ZhZ4U-SmtEkwZTyNGrQ778pZR8Ezr_tA,940
+pygraphv1/client/graph_api_operator.py,sha256=e6JweK9act5pP3ZuGEbjRtG4NGogJNQRixhl9NlAJJQ,1136
+pygraphv1/client/graph_api_variable.py,sha256=Io0Wwk80EaK8gAGCLPKFHM2qnMZ7jYYMoq-vPS8Hhr4,1587
+pygraphv1-1.0.0.1.dist-info/METADATA,sha256=bVR3AXsa3E0Ied1xgQ5YMPyj_RNLXFc2EnCLjF2KGEA,56
+pygraphv1-1.0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pygraphv1-1.0.0.1.dist-info/top_level.txt,sha256=6srxzIWQoi9zNnCetG4Ge6P5_PXnXswIXGRPwq9lx18,10
+pygraphv1-1.0.0.1.dist-info/RECORD,,
