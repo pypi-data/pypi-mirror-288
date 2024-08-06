@@ -1,0 +1,9 @@
+cloud_api_signer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud_api_signer/bce.py,sha256=rUvUrnBMbPXLBCt4OOQ61brLI7lcPGQQB7olYNgJNCQ,3602
+cloud_api_signer/models.py,sha256=ajtWO6dRGshXAJrCGeBKBQBlOTh493oIVQb-6oyWs-M,339
+cloud_api_signer/utils.py,sha256=res1dBjfjDn1uQmzqEbIxOm2_uMkFLWYv0jMd2Mf9uQ,1020
+cloud_api_signer/volc.py,sha256=DcMIotz_KPesfunyykom0wk_OQTAbHZi5j5i2XZdX9s,4594
+cloud_api_signer-0.4.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cloud_api_signer-0.4.0.dist-info/METADATA,sha256=3A_b7PZ4DTPi86Yxy1UZHE4GsGeyuRPd82wr32GzGjE,447
+cloud_api_signer-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cloud_api_signer-0.4.0.dist-info/RECORD,,
