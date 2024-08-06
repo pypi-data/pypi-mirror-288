@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: devart-bigquery-connector
+Version: 1.1.0
+Summary: New level of functionality and performance in data access via Python
+Home-page: https://devart.com
+Author: Devart
+Author-email: support@devart.com
+License: LGPL with exceptions
+Project-URL: Homepage, http://devart.com/python/bigquery
+Project-URL: Download, http://devart.com/python/bigquery/download.html
+Project-URL: History, http://devart.com/python/bigquery/revision_history.html
+Project-URL: Documentation, http://devart.com/python/bigquery/overview.html
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python Connector for Google BigQuery #
+
+Python Connector for Google BigQuery is a connectivity solution for accessing
+the Google BigQuery data warehouse from Python applications. It fully
+implements the Python DB API 2.0 specification. The connector is distributed
+as a wheel package for Windows and Windows Server.
+
+GoogleSQL for BigQuery
+
+The connector fully supports the BigQuery SQL dialects, data types, and query
+syntax, including functions, operators, and conditional expressions.
+Examples of supported BigQuery functions:
+- Aggregate functions
+- Array functions
+- Datetime functions
+- Navigation functions
+
+## Using the connector ##
+
+To retrieve data from a database:
+
+Import the module.
+```
+import devart.bigquery
+```
+
+Connect to a database using the `connect()` module method and obtain a `connection` object: 
+If you have a refresh token, pass it in the connection string.
+```
+my_connection = devart.bigquery.connect(
+    ProjectId="your_project_id;",
+    DataSetId="your_dataset_id",
+    RefreshToken="your_refresh_token"
+)
+```
+If you don't have a refresh token, obtain it in the following way.
+```
+response = devart.bigquery.signin()
+my_connection = devart.bigquery.connect(
+    ProjectId="your_project_id",
+    DataSetId="your_dataset_id",
+    RefreshToken=response["Refresh Token"]
+)
+```
+
+Create a `cursor` object using the `cursor()` connection method.
+```
+my_cursor = my_connection.cursor()
+```
+
+Execute the SQL statement using the `execute()` cursor method.
+```
+my_cursor.execute("SELECT * FROM employees")
+```
+
+Retrieve the result set using one of the `fetch*()` cursor methods.
+```
+for row in my_cursor.fetchall(): 
+    print(row)
+```
+
+## Ordering and activating the license ##
+
+You can purchase a license for the connector on the ordering page:             
+https://www.devart.com/python/bigquery/ordering.html
+
+To activate the license, follow the instructions in the documentation:             
+https://docs.devart.com/python/bigquery/activate-a-license.htm
+
+## What's new ##
+
+Python Connector for Google BigQuery 1.1
+
+- Added connection pooling
+- Added activation with a license key
+- Added the subscription license type
