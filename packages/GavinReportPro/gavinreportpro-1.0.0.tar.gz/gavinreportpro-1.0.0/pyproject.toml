@@ -1,0 +1,27 @@
+[project]
+name = "GavinReportPro"
+version = "1.0.0"  # 版本号
+authors=[
+    {name="GavinHaydy",email="bugpz2779@gmail.com"}
+]
+description="Report for unittest"  # 描述
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers=[
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Natural Language :: Chinese (Simplified)",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Testing",
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License"
+]
+dependencies = [
+    "requests","PyYAML","Jinja2"
+]
+keywords=[ "Gavin", "GavinHaydy", "ruffian", "GavinReportPro"]
+
+
+[project.urls]
+"Homepage" = "https://github.com/GavinHaydy/TheRuffianReportPro"
+"download_page" = "https://codeload.github.com/GavinHaydy/TheRuffianReportPro/zip/refs/heads/master"

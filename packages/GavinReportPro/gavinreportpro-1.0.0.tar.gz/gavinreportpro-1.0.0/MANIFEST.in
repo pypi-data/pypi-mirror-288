@@ -1,0 +1,2 @@
+include GavinReportPro/templates/*.md
+include GavinReportPro/templates/*.html
