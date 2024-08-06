@@ -1,0 +1,208 @@
+# Compairer Module
+
+## Overview
+
+The `compairer` module is a powerful, flexible Python library for comparing various types of data. It provides a suite of comparison methods for strings, vectors, and custom objects, along with utilities for normalization, statistical analysis, and detailed explanations of comparison results.
+
+## Features
+
+- Multiple comparison methods (Levenshtein, Jaccard, Cosine, etc.)
+- Support for string and vector compairer
+- Customizable comparison methods
+- Normalization and statistical utilities
+- Detailed explanations for comparison results
+- Batch comparison capabilities
+- Incremental comparison for streaming data
+
+## Installation
+
+```bash
+pip install compairer
+```
+
+## Quick Start
+
+```python
+from compairer import compare
+
+ref = "hello"
+targets = ["hello", "hola", "bonjour"]
+
+results = compare(ref, targets)
+print(f"Most similar word to '{ref}' is {results.top()}. All scores: {results.scores}")
+```
+
+## Core Components
+
+### Comparison Methods
+
+The module includes several built-in comparison methods:
+
+- String compairer: Levenshtein, Jaccard, Cosine, Fuzzy, Regex
+- Vector compairer: Euclidean, Manhattan, Cosine, Jaccard
+
+Example:
+
+```python
+from compairer import compare
+
+ref, target = "hello", "hola"
+levenshteinScore = compare(ref, target, method="levenshtein")
+jaccardScore = compare(ref, target, method="jaccard")
+
+print(f"Levenshtein similarity: {levenshteinScore}")
+print(f"Jaccard similarity: {jaccardScore}")
+```
+
+### Custom Comparison Methods
+
+You can create custom comparison methods:
+
+```python
+from compairer.methods import CustomComparison
+
+def myCompareFunc(ref, target):
+    return len(set(ref) & set(target)) / len(set(ref) | set(target))
+
+customMethod = CustomComparison(myCompareFunc)
+score = customMethod("hello", "hola")
+print(f"Custom similarity: {score}")
+```
+
+### Batch Compairer
+
+Compare multiple targets against a reference:
+
+```python
+from compairer import compare
+
+ref = "hello"
+targets = ["hello", "hola", "bonjour", "ciao"]
+
+results = compare(ref, targets)
+print(f"Similarities: {results.scores}")
+print(f"Most similar: {results.top()}")
+print(f"Top 2 similar: {results.top(2)}")
+```
+
+### Chained Operations
+
+Perform multiple operations in a chain:
+
+```python
+from compairer import compare
+
+ref = "hello"
+targets = ["hello", "hola", "bonjour", "ciao", "hi"]
+
+results = (compare(ref, targets)
+           .normalize()
+           .filter(threshold=0.5)
+           .top(3))
+
+print(f"Top 3 similar words (similarity > 0.5): {results}")
+```
+
+### Incremental Compairer
+
+For streaming data or updating compairer:
+
+```python
+from compairer.models import IncrementalComparison
+from compairer.methods import LevenshteinComparison
+
+incComp = IncrementalComparison(LevenshteinComparison(), initialRef="hello")
+
+newData = ["hola", "bonjour", "ciao"]
+for data in newData:
+    score = incComp.update(data)
+    print(f"Updated score after comparing with '{data}': {score}")
+
+print(f"Final score: {incComp.getCurrentScore()}")
+print(f"Comparison history: {incComp.getHistory()}")
+```
+
+### Explanation Generation
+
+Get detailed explanations for comparison results:
+
+```python
+from compairer import compare
+
+ref, target = "hello", "hola"
+result = compare(ref, target, method="levenshtein")
+explanation = result.explain()
+
+print(explanation)
+```
+
+## Advanced Usage
+
+### Using Type Hints
+
+The module supports type hinting for better code clarity:
+
+```python
+from compairer import compare
+from typing import List
+
+def findBestMatch(reference: str, candidates: List[str]) -> str:
+    result = compare(reference, candidates)
+    return result.top()
+
+bestMatch = findBestMatch("hello", ["hola", "bonjour", "ciao"])
+print(f"Best match: {bestMatch}")
+```
+
+### Context Managers for Batch Compairer
+
+Use context managers for efficient batch compairer:
+
+```python
+from compairer import compare
+from contextlib import contextmanager
+
+@contextmanager
+def batchCompare(ref, method="levenshtein"):
+    comparer = compare(ref, method=method)
+    try:
+        yield comparer
+    finally:
+        print("Batch comparison completed")
+
+ref = "hello"
+with batchCompare(ref) as comparer:
+    result1 = comparer("hola")
+    result2 = comparer("bonjour")
+    result3 = comparer("ciao")
+
+print(f"Results: {result1}, {result2}, {result3}")
+```
+
+### Decorators for Comparison Caching
+
+Implement caching for expensive compairer:
+
+```python
+from functools import lru_cache
+from compairer import compare
+
+@lru_cache(maxsize=100)
+def cachedCompare(ref, target, method="levenshtein"):
+    return compare(ref, target, method=method)
+
+# First call will compute the result
+result1 = cachedCompare("hello", "hola")
+# Second call will retrieve from cache
+result2 = cachedCompare("hello", "hola")
+
+print(f"Results: {result1}, {result2}")
+```
+
+## Contributing
+
+Contributions are welcome! Please check out our [Contribution Guidelines](CONTRIBUTING.md) for details on how to get started.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
