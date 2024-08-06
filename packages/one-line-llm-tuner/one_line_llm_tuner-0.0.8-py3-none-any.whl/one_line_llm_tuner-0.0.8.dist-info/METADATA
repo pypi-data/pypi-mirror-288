@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: one-line-llm-tuner
+Version: 0.0.8
+Summary: A Large Language Model Fine-tuning package. The package uses a single line to fine-tune an LLM by taking care of all the boilerplate in the backend.
+Home-page: https://github.com/metriccoders/one-line-llm-tuner
+Author: Suhas Bhairav
+Author-email: info@metriccoders.com
+Project-URL: Bug Tracker, https://github.com/metriccoders/one-line-llm-tuner/issues
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: scikit-learn>=0.24.0
+Requires-Dist: transformers>=4.0.0
+
+# one-line-llm-tuner
+
+Fine-tune a Large Language Model (LLM) in a single line.
+
+## Overview
+
+`one-line-llm-tuner` is a Python package designed to simplify the process of fine-tuning large language models (LLMs) like GPT-3. With just one line of code, you can adapt a pre-trained model to your specific dataset.
+
+## Features
+
+- **Simple API**: Fine-tune models with minimal code.
+- **Supports Popular LLMs**: Works with models from the `transformers` library, including GPT, BERT, and more.
+- **Customizable**: Advanced users can customize the fine-tuning process with additional parameters.
+
+## Installation
+
+You can install `one-line-llm-tuner` using pip:
+
+```bash
+pip install one-line-llm-tuner
+```
+
+## Usage
+
+The PyPI package can be used in the following way after installation.
+
+```bash
+from one_line_llm_tuner.tuner import llm_tuner
+
+print(llm_tuner.fine_tune_model("train.txt", "Metric Coders is "))
+```
