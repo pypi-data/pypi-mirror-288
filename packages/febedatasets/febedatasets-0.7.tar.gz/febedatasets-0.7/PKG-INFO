@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: febedatasets
+Version: 0.7
+Summary: A package to load different datasets as dataframes
+Home-page: https://github.com/Tech-Gui/febe1004Datasets
+Author: Isaiah Chiraira
+Author-email: itchiraira@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENCE
+Requires-Dist: pandas
+Requires-Dist: Pillow
