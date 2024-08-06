@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ogialibs
+Version: 0.1.1
+Summary: Common Python methods for OGIA
+Requires-Dist: geopandas>=0.13
+Requires-Dist: pyarrow
+
+README.md
