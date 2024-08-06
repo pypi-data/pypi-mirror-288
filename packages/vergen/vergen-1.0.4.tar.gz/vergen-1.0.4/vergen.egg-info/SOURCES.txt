@@ -1,0 +1,11 @@
+README.md
+setup.py
+vergen/Application.py
+vergen/__init__.py
+vergen/__main__.py
+vergen/main.py
+vergen.egg-info/PKG-INFO
+vergen.egg-info/SOURCES.txt
+vergen.egg-info/dependency_links.txt
+vergen.egg-info/entry_points.txt
+vergen.egg-info/top_level.txt
