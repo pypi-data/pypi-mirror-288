@@ -1,0 +1,11 @@
+numpy
+pandas
+geopandas
+matplotlib
+dotenv
+azure-identity
+azure-keyvault
+azure-functions
+firebase-admin
+pyodbc
+scuamate
