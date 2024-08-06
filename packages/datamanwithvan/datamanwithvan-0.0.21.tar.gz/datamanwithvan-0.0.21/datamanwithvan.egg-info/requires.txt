@@ -1,0 +1,8 @@
+hdfs
+impyla
+azure-storage-file-datalake
+dynaconf
+SQLAlchemy
+pyodbc
+dask
+boto3
