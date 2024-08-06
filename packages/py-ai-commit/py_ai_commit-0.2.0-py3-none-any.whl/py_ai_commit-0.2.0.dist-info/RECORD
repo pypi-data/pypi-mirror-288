@@ -1,0 +1,10 @@
+ai_commit/__init__.py,sha256=Ir3bJvH2BLu0CxNgeP4slzRzWO872wOnA-hy_6aD_lY,55
+ai_commit/ai_commit.py,sha256=5CAPR0ikscnVFB6NCj-0wzKwGqITXKIT_ex86QXV5bo,3137
+ai_commit/config.py,sha256=73l6bLghBT3ZcnfUT53CRreSAfbb_P8beMuqhr-NHI4,2509
+ai_commit/config_test.py,sha256=FKYsHGg2i8s4RcWl0vt6sm9MS0R893lgbwXgd1VhePg,2518
+ai_commit/default_config.py,sha256=BqrJ4cxsY61j25HjNm_hQUb-nbYoh-3mCKN-uvpnCUM,5329
+py_ai_commit-0.2.0.dist-info/METADATA,sha256=x64xnR_NCeDQFe3sZhz5iHNPGV9zAvzbYAN2DkU4YiA,5622
+py_ai_commit-0.2.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+py_ai_commit-0.2.0.dist-info/entry_points.txt,sha256=yDIyCK0S7fy9sJXiH-uBw7SqYVXK9DaGu1ymTkVEzN4,55
+py_ai_commit-0.2.0.dist-info/licenses/LICENSE,sha256=Fw7keLWICIe-G4R9CMIB4O8QfSPTsqiFOVowz_EvHN8,1063
+py_ai_commit-0.2.0.dist-info/RECORD,,
