@@ -1,0 +1,10 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/app_auth.py,sha256=E2SpbHzz1qOWFZjLAoVgxQsm5QAz2J9vRG6mLegCi_I,937
+src/azure_utils.py,sha256=H0DsncWrByNx9i3kqeCmvNvIrTa_rRb0gwAyVF9FLBo,8350
+src/config.py,sha256=2d5oiw8TCcz3tAnLtLitfU5Qzjv-JPPfIpQDTpMuD74,240
+src/test.py,sha256=T7L42ioutDW4Rissst8OTVenqfo4EAIq4pu32rHSQUk,2663
+azure_graph_helper-1.0.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+azure_graph_helper-1.0.0.dist-info/METADATA,sha256=XWxYlRHLlQgzDbUOjbC6rSPPnPqzZxPmi8v6xsGessc,7457
+azure_graph_helper-1.0.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+azure_graph_helper-1.0.0.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+azure_graph_helper-1.0.0.dist-info/RECORD,,
