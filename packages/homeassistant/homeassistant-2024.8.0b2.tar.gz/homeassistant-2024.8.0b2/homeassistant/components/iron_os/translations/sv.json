@@ -1,0 +1,31 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Enheten \u00e4r redan konfigurerad",
+            "no_devices_found": "Inga enheter hittades i n\u00e4tverket"
+        },
+        "step": {
+            "bluetooth_confirm": {
+                "description": "Vill du konfigurera {name}?"
+            },
+            "user": {
+                "data": {
+                    "address": "Enhet"
+                },
+                "description": "V\u00e4lj en enhet att konfigurera"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "estimated_power": {
+                "name": "Ber\u00e4knad effekt"
+            },
+            "operating_mode": {
+                "state": {
+                    "idle": "Inaktiv"
+                }
+            }
+        }
+    }
+}
