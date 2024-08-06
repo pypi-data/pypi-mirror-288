@@ -1,0 +1,8 @@
+dummy_package/__init__.py,sha256=lHyWKXxepEyKLH4Q7HuZMpHxAWsC9PKYlIVWmU8c8hg,54
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_dummy.py,sha256=5H9E7g8ZV5VVnKbP1FAewVbmc49FWl5VMjFEnWncEvw,115
+dummy_project_python_package-0.1.0.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+dummy_project_python_package-0.1.0.dist-info/METADATA,sha256=ByMS3HULUKRlZM7dh5SoxZCsyAymTzts5fWuF-bB9c0,528
+dummy_project_python_package-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+dummy_project_python_package-0.1.0.dist-info/top_level.txt,sha256=PR8gyeAfTXCy7Qlz5RemOloR4WnStgtn5_GeqQcS3hA,20
+dummy_project_python_package-0.1.0.dist-info/RECORD,,
