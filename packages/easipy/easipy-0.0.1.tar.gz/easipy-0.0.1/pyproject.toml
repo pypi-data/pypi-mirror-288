@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "easipy"
+version = "0.0.1"
+description = "A library for various easing functions."
+authors = ["Strimnik"]
+license = "MIT"
+packages = [{ include = "easipy" }]
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+numpy = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
