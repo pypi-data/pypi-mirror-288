@@ -1,0 +1,5 @@
+click
+django
+sqlalchemy
+fastapi
+pydantic
