@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: easy_sm
+Version: 0.1.2
+Summary: Making working with Sagemaker Easy
+Author: Prateek
+Author-email: prteek@icloud.com
+Requires-Python: >=3.11
+License-File: LICENSE
