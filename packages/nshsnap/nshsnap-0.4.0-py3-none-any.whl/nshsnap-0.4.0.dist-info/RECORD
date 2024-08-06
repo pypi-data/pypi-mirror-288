@@ -1,0 +1,13 @@
+nshsnap/__init__.py,sha256=tydRQ6B5XvvNwwc-RrNIgqfzWIJeWLwlcitPxuF2zfQ,338
+nshsnap/_config.py,sha256=GkP6h1UCnlISNLwHrLjOdCTPObO75jZBwxh3pzakjSA,2651
+nshsnap/_load.py,sha256=WGeGCPDp3aXrYTESkmsxRpDtkFeXwIGSf1LJZx_iyv4,11344
+nshsnap/_meta.py,sha256=qAevtFUFzm2f_nG9nKtrejd8Thg9okLsCU0VPWTBb5M,839
+nshsnap/_pip_deps.py,sha256=BbaIAPyl4f1HQfgQTt_8CYurjgYQuSRr6KHB2MbZaPs,2160
+nshsnap/_snapshot.py,sha256=lPca-T9UF6rVOKrBm0_Tpco2J1T7BsJU-hzCJnt6XtA,5750
+nshsnap/_util.py,sha256=2zsk4IYOlTbnyNs-4YALTS0C4JbVSrNmqeMsjWzdd9Y,1885
+nshsnap/cli.py,sha256=nLYK6idxnEFOd4PG4WYCsyuSo_O5MV3maxbqy8Gdn5E,1733
+nshsnap-0.4.0.dist-info/LICENSE,sha256=dOWH5TP09gmi-ePA_t01XH92g5B6aZ07yJVuN1XNl-4,1072
+nshsnap-0.4.0.dist-info/METADATA,sha256=EAKRHQbKGmvugVq0afnce1KY6dhirRk6DvSnHjSMaFQ,3902
+nshsnap-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+nshsnap-0.4.0.dist-info/entry_points.txt,sha256=Q_jaZPmPqLTmbzl8vHOBXAwnLKhptxYFgw13EM4Ktsk,44
+nshsnap-0.4.0.dist-info/RECORD,,
