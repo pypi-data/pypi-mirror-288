@@ -1,0 +1,8 @@
+pip
+packaging
+matplotlib<3.5
+kornia_moons
+kornia>=0.5.10
+numpy<2
+
+[dev]
