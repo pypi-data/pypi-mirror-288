@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+sensecam_control/__init__.py
+sensecam_control/onvif_config.py
+sensecam_control/onvif_control.py
+sensecam_control/vapix_config.py
+sensecam_control/vapix_control.py
+so_ptz_control.egg-info/PKG-INFO
+so_ptz_control.egg-info/SOURCES.txt
+so_ptz_control.egg-info/dependency_links.txt
+so_ptz_control.egg-info/requires.txt
+so_ptz_control.egg-info/top_level.txt
