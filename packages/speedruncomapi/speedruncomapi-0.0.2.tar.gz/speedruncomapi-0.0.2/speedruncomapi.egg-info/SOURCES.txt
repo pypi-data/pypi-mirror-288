@@ -1,0 +1,8 @@
+setup.py
+speedruncomapi/__init__.py
+speedruncomapi.egg-info/.pypirc
+speedruncomapi.egg-info/PKG-INFO
+speedruncomapi.egg-info/SOURCES.txt
+speedruncomapi.egg-info/dependency_links.txt
+speedruncomapi.egg-info/requires.txt
+speedruncomapi.egg-info/top_level.txt
