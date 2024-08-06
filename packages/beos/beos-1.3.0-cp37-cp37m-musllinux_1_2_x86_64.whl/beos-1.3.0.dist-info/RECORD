@@ -1,0 +1,9 @@
+beos-1.3.0.dist-info/METADATA,sha256=VJl17ULNsnUQZ0Xs3FWN2JUT-YQgA5hEJa1OMC94SDY,4225
+beos-1.3.0.dist-info/WHEEL,sha256=2qYhnHof5OkPUH7pL0wzLwunuE-bsmFS4HpZmmLvJ3U,108
+beos-1.3.0.dist-info/LICENSE,sha256=ekECcZpmH0GJYYM56V7y8YG-AtsaepKGFEBX-SGdUhg,279
+beos-1.3.0.dist-info/RECORD,,
+beos/_beos.cpython-37m-x86_64-linux-gnu.so,sha256=izmNgAlO0N2D2LzTyOeGyEXVkjzM25TNzYKs_GMXFCo,3160721
+beos/__init__.py,sha256=vgFeXkbDZ2QOike5yZWr46kclIqnVI74yGOCiLqVsZY,1075
+beos.libs/libgcc_s-452e9da3.so.1,sha256=fKy7Q_k8bveczsPLknZm47fVPJJQPrlpedzUP8r7YC4,105833
+beos.libs/libquadmath-001c3ec9.so.0.0.0,sha256=tw9FXIRkVi1hAbzTeyXNYh2xnxZDSbB50l50ntoW31Y,301233
+beos.libs/libgfortran-8d7ace49.so.5.0.0,sha256=zjOW9EiSq6boMDPeA0-vRgKHaxXJGyzkXdKZtvLwnEU,3072625
