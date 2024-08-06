@@ -1,0 +1,8 @@
+savis/__init__.py,sha256=5sg4o-FgvcbNxfArjbdb6ibvEEXIXPI-PqZRTn6XJPk,164
+savis/attention.py,sha256=nRLHecQHHyI71F7egeO7CdexnRMH2M0-itWxSdoRfb8,7678
+savis/generator.py,sha256=mg-7ctiP78PxrVRQzy0SqEtFlSl2Ihq-Ws7q7UZyxRg,1517
+savis/visualization.py,sha256=41IGaNKcrEKmGBHBdBB43Vj_s6alnFmxurWKUmTPQbc,7462
+savis-0.3.6.dist-info/METADATA,sha256=2Pp63oKMJD9UQZPYDxdNljfi4qIEXihUJ2TUR0q4Lqc,4885
+savis-0.3.6.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+savis-0.3.6.dist-info/licenses/LICENSE,sha256=dOWH5TP09gmi-ePA_t01XH92g5B6aZ07yJVuN1XNl-4,1072
+savis-0.3.6.dist-info/RECORD,,
