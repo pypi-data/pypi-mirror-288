@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+python_ntrexlab_usb2can_vcp.egg-info/PKG-INFO
+python_ntrexlab_usb2can_vcp.egg-info/SOURCES.txt
+python_ntrexlab_usb2can_vcp.egg-info/dependency_links.txt
+python_ntrexlab_usb2can_vcp.egg-info/entry_points.txt
+python_ntrexlab_usb2can_vcp.egg-info/requires.txt
+python_ntrexlab_usb2can_vcp.egg-info/top_level.txt
