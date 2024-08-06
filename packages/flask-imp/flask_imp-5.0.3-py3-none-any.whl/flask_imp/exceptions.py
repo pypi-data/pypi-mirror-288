@@ -1,0 +1,2 @@
+class NoConfigProvided(Exception):
+    pass
