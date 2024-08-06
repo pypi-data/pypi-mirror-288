@@ -1,0 +1,2 @@
+[console_scripts]
+odoo-sort-manifest-depends = odoo_sort_manifest_depends.sort_manifest_deps:sort_manifest_deps

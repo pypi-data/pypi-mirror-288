@@ -1,0 +1,8 @@
+odoo_sort_manifest_depends/__init__.py,sha256=0-q_TPBrUsUMSPDQGCd5e5ZeVdkB5VN7zW0scyN5gYY,79
+odoo_sort_manifest_depends/__main__.py,sha256=tk94SCdnVp5_lPyR_123WjLDbaC1cAAasOEPoEGuicI,232
+odoo_sort_manifest_depends/sort_manifest_deps.py,sha256=B_86O8LKREHcgmu5yoZKyFwr0cwGtWLriEY46j35CUc,4089
+odoo_sort_manifest_depends-1.3.dist-info/METADATA,sha256=wM7SscZjBHEJtf0YszovMQw_s6vh29O3YIqqHTfn2YU,2691
+odoo_sort_manifest_depends-1.3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+odoo_sort_manifest_depends-1.3.dist-info/entry_points.txt,sha256=IDzo9WPn4f4TJKeS5a6BhxsQihdXky4MMyRcU-S6aXs,112
+odoo_sort_manifest_depends-1.3.dist-info/licenses/LICENSE.txt,sha256=iofgqxfM9tw-vx_i0q7J95zdYjXe9naku6GOqGDeEs8,1071
+odoo_sort_manifest_depends-1.3.dist-info/RECORD,,
