@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: graphrag_for_all
+Version: 0.1.1
+Summary: Graphrag and vectorstore for all LLMs
+Home-page: https://github.com/ChihchengHsieh/rag-aug
+Author: Chihcheng Hsieh
+Author-email: chihcheng.hsieh.82@gmail.com
+License: MIT
