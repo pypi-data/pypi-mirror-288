@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: pyiwctl
+Version: 0.3
+Summary: A Python package to manage WiFi connections using iwctl
+Home-page: https://github.com/muratozk/pyiwctl
+Author: ozkan
+Author-email: mozkan.91@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# pyiwctl
+
+`pyiwctl` is a Python package for managing WiFi connections using `iwctl`.
+
+## Installation
+
+### Prerequisites
+
+Ensure you have `iwd` (iNet Wireless Daemon) installed on your system. You can install it using the following commands:
+
+```bash
+- Debian:
+sudo apt install iwd -y
+
+- Fedora:
+sudo dnf install iwd
+
+- Arch Linux:
+sudo pacman -Sy iwd
+
+```
+
+### Python Package
+
+Install the `pyiwctl` package using `pip`:
+
+```bash
+pip install pyiwctl
+```
+
+## Usage
+
+```python
+from pyiwctl import WiFiManager
+
+manager = WiFiManager()
+manager.scan_networks()
+ssids = manager.get_ssids()
+print("Available networks:", ssids)
+
+success = manager.connect_to_network('SSID_NAME', 'PASSWORD')
+print("Connection successful:", success)
+```
