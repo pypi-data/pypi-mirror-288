@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: ChartSmith
+Version: 0.1.2
+Summary: A package for creating well-formatted, well-labeled visualizations
+Home-page: https://github.com/tullyoleary/ChartSmith
+Author: Tully OLeary
+Author-email: tullyro@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: matplotlib>=3.0.0
+Requires-Dist: seaborn>=0.11.0
+
+# ChartSmith
+
+ChartSmith is a Python package built on top of Matplotlib and Seaborn that creates well-formatted, well-labeled visualizations.
+
+## Installation
+
+```sh
+pip install ChartSmith
+```
+
+## Usage
+
+Here's how you can use the ChartSmith package:
+
+```python
+from ChartSmith import ChartSmith
+
+# Create an instance of the ChartSmith class
+viz = ChartSmith()
+
+# Line plot
+viz.line_plot(x=[1, 2, 3, 4], y=[10, 20, 25, 30], title='Line Plot', xlabel='X Axis', ylabel='Y Axis')
+
+# Bar plot
+viz.bar_plot(x=['A', 'B', 'C', 'D'], y=[10, 20, 25, 30], title='Bar Plot', xlabel='Categories', ylabel='Values')
+
+# Scatter plot
+viz.scatter_plot(x=[1, 2, 3, 4], y=[10, 20, 25, 30], title='Scatter Plot', xlabel='X Axis', ylabel='Y Axis')
+```
+
+## License
+This project is licensed under the MIT License - see the LICENSE.txt file for details.
