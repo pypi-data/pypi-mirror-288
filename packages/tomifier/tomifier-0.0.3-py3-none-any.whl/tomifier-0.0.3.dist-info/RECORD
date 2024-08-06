@@ -1,0 +1,12 @@
+tomifier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tomifier/cli.py,sha256=AdozfOc9_dnaFTiIlkI1-JoYpfK3urRmGU0TSvpxS4o,223
+tomifier/defaults.py,sha256=3bLafaAFDBWxz2lhqMblvJv7_zHPMgLJMtROgpfDok0,2173
+tomifier/fileutils.py,sha256=noKEQUolGEFGJ6nK-40xLCl7t3vx_kHRcHB1o9WjhEM,554
+tomifier/initcmd.py,sha256=3PgS8Frg-HGKUWe38HLF-y7bKg8xIEXKM73Z2PSZHs0,5344
+tomifier/validation.py,sha256=6Dsbv7RaPwZ01nLFJTqdt7GUJgm3vJ11PHvEuGUX1sk,864
+tomifier/version.py,sha256=F-CRwsDIjc4sljSxTLZEqr-LCBMmyq7kNZmEPUwmwGY,58
+tomifier-0.0.3.dist-info/METADATA,sha256=j1_J1V3a2XwXgaQRrQb94m8C13xRSzIMiJNjknIEhYM,3931
+tomifier-0.0.3.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+tomifier-0.0.3.dist-info/entry_points.txt,sha256=lkE9Rim9OtzXzIMZTjYWPtxnBAFM23nYBcltbcGezIg,47
+tomifier-0.0.3.dist-info/top_level.txt,sha256=87t6MSHkBJIERbyONokI0eLoyArXJLMJnhpotMnEQkY,9
+tomifier-0.0.3.dist-info/RECORD,,
