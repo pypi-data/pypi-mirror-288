@@ -1,0 +1,11 @@
+devart/mongodb/__init__.py,sha256=lE7mydztbsIF9BEt9BArDjVIV1lQFiA0uVpwe81moWQ,359
+devart/mongodb/libbson-1.0.dll,sha256=2ukFBltSXSi3dbyMW9_ljDYk6k8xWpcajNJlV3zQbqc,78336
+devart/mongodb/libmongoc-1.0.dll,sha256=EGyUjAduCgdHH572CenlVgmYSOAnCtYK8YhhWDEZgr4,301056
+devart/mongodb/mongodb.cp311-win_amd64.pyd,sha256=Jy6J8mCieiT7dpMdxRiBiEsGrZIAqZa6UGkbFbpDH3g,1413288
+devart/mongodb/mongodb.pyi,sha256=siUkOQO84--DMMEy7dZvnuJzIkp7UehEJPErcZaZIU0,12770
+devart/mongodb/sqlalchemy/__init__.py,sha256=DkM3NCCLamdIQHhhxqd-Dd4IkhL2iOk2CVgMySiYqIw,1112
+devart_mongodb_connector-1.1.0.dist-info/LICENSE,sha256=3sjizf07RF-z3Lp3tnA-jy3rN103Ypw11NO9tFnRLtU,8559
+devart_mongodb_connector-1.1.0.dist-info/METADATA,sha256=XIAt12tWOeTlZg0sFRdEiTwY6Wumo8BbGifc1vVfA0M,2384
+devart_mongodb_connector-1.1.0.dist-info/WHEEL,sha256=SAw8ns6kJWJnXnbRE00TtcpGWx44Z3WvjJsDRxwIxr8,101
+devart_mongodb_connector-1.1.0.dist-info/top_level.txt,sha256=h_mZcghGiX6pnc-Kb1EoAfIW2iHeDA0kJKfcLJMbq44,7
+devart_mongodb_connector-1.1.0.dist-info/RECORD,,
