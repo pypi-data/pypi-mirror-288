@@ -1,0 +1,7 @@
+LICENSE.md
+README.md
+setup.py
+SNUPEL_Modules.egg-info/PKG-INFO
+SNUPEL_Modules.egg-info/SOURCES.txt
+SNUPEL_Modules.egg-info/dependency_links.txt
+SNUPEL_Modules.egg-info/top_level.txt
