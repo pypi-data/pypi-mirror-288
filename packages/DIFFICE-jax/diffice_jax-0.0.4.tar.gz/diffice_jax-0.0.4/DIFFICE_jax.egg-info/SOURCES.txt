@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+DIFFICE_jax.egg-info/PKG-INFO
+DIFFICE_jax.egg-info/SOURCES.txt
+DIFFICE_jax.egg-info/dependency_links.txt
+DIFFICE_jax.egg-info/requires.txt
+DIFFICE_jax.egg-info/top_level.txt
+diffice_jax/__init__.py
