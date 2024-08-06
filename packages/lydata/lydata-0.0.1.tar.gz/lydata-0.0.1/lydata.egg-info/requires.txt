@@ -1,0 +1,17 @@
+numpy
+pandas
+pygithub
+mistletoe
+pandera
+
+[dev]
+pre-commit
+
+[docs]
+sphinx
+sphinx-book-theme
+sphinx-autodoc-typehints
+myst-parser[linkify]
+
+[tests]
+pytest
