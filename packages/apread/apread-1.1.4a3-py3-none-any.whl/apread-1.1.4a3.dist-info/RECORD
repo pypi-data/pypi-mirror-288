@@ -1,0 +1,11 @@
+apread/__init__.py,sha256=pR2tcjQ8vKgxQF2MHu-egKZfKuzW8ZekPzbootU2O2M,101
+apread/apreader.py,sha256=3br9ul8tqEvmtUqvKehv7MYTcD8QOym8aqGzSFExufE,12051
+apread/binaryReader.py,sha256=efROLZALI951_Wp0qg_Mclx3KKdS-a3lCUPmQtyI610,2032
+apread/entries.py,sha256=qIFIqGDN1-pBEDXrrAXrFE55nHo99cK469n0_ZoweII,18802
+apread/loader.py,sha256=cZISXnedu7gWfVVGYp8rG0XfKyk8GH2lYs41zsUr0zE,2441
+apread/tools.py,sha256=-quhp6iItKXBo7W_ZCEqOPgKl63pJHyc_hWLi_B5sa8,2707
+apread-1.1.4a3.dist-info/LICENSE.txt,sha256=qk7b4_WGx4-kH5sNz7pu8kkUS_ffhrNqLK63DqEANbY,1051
+apread-1.1.4a3.dist-info/METADATA,sha256=I30YaOLNroeNVse6Jffew1GflNcSNxBjb4XERBBTWXU,12420
+apread-1.1.4a3.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+apread-1.1.4a3.dist-info/top_level.txt,sha256=-FfQeOp_rxYOf7l-zgt818nbxLgYaeTyNH0mW-IDx9Y,7
+apread-1.1.4a3.dist-info/RECORD,,
