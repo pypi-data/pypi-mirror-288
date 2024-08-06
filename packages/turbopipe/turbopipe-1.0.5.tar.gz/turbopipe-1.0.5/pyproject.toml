@@ -1,0 +1,22 @@
+[project.urls]
+issues        = "https://github.com/BrokenSource/TurboPipe/issues"
+repository    = "https://github.com/BrokenSource/TurboPipe"
+documentation = "https://github.com/BrokenSource/TurboPipe"
+homepage      = "https://brokensrc.dev"
+
+[project]
+name        = "turbopipe"
+dynamic     = ["version"]
+description = "🌀 Faster ModernGL Buffer inter process data transfers"
+authors     = [{name="Tremeschin", email="29046864+Tremeschin@users.noreply.github.com"}]
+readme      = "Readme.md"
+license     = {file="License.md"}
+dependencies = ["moderngl"]
+requires-python = ">=3.7"
+
+[build-system]
+requires = ["meson-python", "ninja"]
+build-backend = "mesonpy"
+
+[tool.ruff.format]
+exclude = ["*"]
