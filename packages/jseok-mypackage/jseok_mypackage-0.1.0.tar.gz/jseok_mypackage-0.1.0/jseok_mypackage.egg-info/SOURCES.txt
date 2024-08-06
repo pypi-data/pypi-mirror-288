@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+jseok_mypackage.egg-info/PKG-INFO
+jseok_mypackage.egg-info/SOURCES.txt
+jseok_mypackage.egg-info/dependency_links.txt
+jseok_mypackage.egg-info/top_level.txt
+mypackage/__init__.py
+mypackage/mymodule.py
+tests/__init__.py
+tests/tests_mymodule.py

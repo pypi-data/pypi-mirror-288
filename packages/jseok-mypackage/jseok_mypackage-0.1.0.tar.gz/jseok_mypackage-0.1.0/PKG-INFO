@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: jseok_mypackage
+Version: 0.1.0
+Summary: A simple example package
+Home-page: https://github.com/koesnuj/python_study
+Author: julim
+Author-email: whizkid00@gmail.com
+License: UNKNOWN
+Description: # mypackage
+        This is a simple example package.
+        ## Installation
+        You can install the package using pip:
+        ```bash
+        pip install mypackage
+        ```
+        
+        ## Usage
+        from mypackage.mymodule import hello_world
+        print(hello_world())
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
