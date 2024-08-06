@@ -1,0 +1,4 @@
+include bdei/*.hpp
+include pybdei/*.hpp
+include README.md
+include LICENCE
