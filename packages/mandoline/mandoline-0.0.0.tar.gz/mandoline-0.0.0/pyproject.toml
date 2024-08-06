@@ -1,0 +1,7 @@
+[project]
+name = "mandoline"
+version = "0.0.0"
+authors = [
+    {name = "Mandoline AI", email = "support@mandoline.ai"},
+]
+description = "wip"

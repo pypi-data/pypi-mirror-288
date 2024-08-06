@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+mandoline/__init__.py
+mandoline.egg-info/PKG-INFO
+mandoline.egg-info/SOURCES.txt
+mandoline.egg-info/dependency_links.txt
+mandoline.egg-info/top_level.txt
