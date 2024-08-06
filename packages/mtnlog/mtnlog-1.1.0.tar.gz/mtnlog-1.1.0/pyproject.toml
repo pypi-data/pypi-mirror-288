@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mtnlog"
+version = "1.1.0"
+authors = [
+    { name = "Wongkraiwich Chuenchomphu", email = "wongkraiwich@inedible.dev" },
+]
+description = "A simple performance logger for Python"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["nvitop", "pandas", "psutil"]
+
+[project.urls]
+Homepage = "https://github.com/kentakoong/mtnlog"
+Issues = "https://github.com/kentakoong/mtnlog/issues"

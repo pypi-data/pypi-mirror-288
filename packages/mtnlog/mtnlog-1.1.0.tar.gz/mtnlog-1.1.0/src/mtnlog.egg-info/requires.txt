@@ -1,0 +1,3 @@
+nvitop
+pandas
+psutil
