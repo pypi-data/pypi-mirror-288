@@ -1,0 +1,3 @@
+[console_scripts]
+bidsmreye = bidsmreye._cli:cli
+bidsmreye_model = bidsmreye._cli:cli_download

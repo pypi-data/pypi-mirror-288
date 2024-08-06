@@ -1,0 +1,343 @@
+Metadata-Version: 2.3
+Name: bidsmreye
+Version: 0.4.0
+Summary: bids app using deepMReye to decode eye motion for fMRI time series data
+Project-URL: Bug Tracker, https://github.com/cpp-lln-lab/bidsMReye/issues
+Project-URL: Homepage, https://github.com/cpp-lln-lab/bidsMReye
+Author-email: Remi Gau <remi.gau@gmail.com>
+License: GNU GENERAL PUBLIC LICENSE
+                              Version 3, 29 June 2007
+        
+            bids app using deepMReye to decode eye motion for fMRI time series data
+            Copyright (C) 2022  Remi Gau
+        
+            This program is free software: you can redistribute it and/or modify
+            it under the terms of the GNU General Public License as published by
+            the Free Software Foundation, either version 3 of the License, or
+            (at your option) any later version.
+        
+            This program is distributed in the hope that it will be useful,
+            but WITHOUT ANY WARRANTY; without even the implied warranty of
+            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+            GNU General Public License for more details.
+        
+            You should have received a copy of the GNU General Public License
+            along with this program.  If not, see <http://www.gnu.org/licenses/>.
+        
+        Also add information on how to contact you by electronic and paper mail.
+        
+          You should also get your employer (if you work as a programmer) or school,
+        if any, to sign a "copyright disclaimer" for the program, if necessary.
+        For more information on this, and how to apply and follow the GNU GPL, see
+        <http://www.gnu.org/licenses/>.
+        
+          The GNU General Public License does not permit incorporating your program
+        into proprietary programs.  If your program is a subroutine library, you
+        may consider it more useful to permit linking proprietary applications with
+        the library.  If this is what you want to do, use the GNU Lesser General
+        Public License instead of this License.  But first, please read
+        <http://www.gnu.org/philosophy/why-not-lgpl.html>.
+License-File: LICENSE
+Keywords: BIDS,Eyetracking,MRI,Machine learning,automated pipeline,brain imaging data structure,neuroimaging
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: >=3.9.0
+Requires-Dist: attrs
+Requires-Dist: chevron>=0.14.0
+Requires-Dist: deepmreye>=0.2.1
+Requires-Dist: kaleido
+Requires-Dist: keras<3.0.0
+Requires-Dist: pooch>=1.6.0
+Requires-Dist: pybids
+Requires-Dist: rich-argparse
+Requires-Dist: tomli; python_version < '3.11'
+Requires-Dist: tqdm
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: codespell; extra == 'dev'
+Requires-Dist: faqtory; extra == 'dev'
+Requires-Dist: flake8; extra == 'dev'
+Requires-Dist: flake8-docstrings; extra == 'dev'
+Requires-Dist: mypy; extra == 'dev'
+Requires-Dist: myst-parser; extra == 'dev'
+Requires-Dist: pandas-stubs; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: rstcheck; extra == 'dev'
+Requires-Dist: sourcery; extra == 'dev'
+Requires-Dist: sphinx; extra == 'dev'
+Requires-Dist: sphinx-argparse; extra == 'dev'
+Requires-Dist: sphinx-copybutton; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme; extra == 'dev'
+Requires-Dist: sphinxcontrib-bibtex; extra == 'dev'
+Requires-Dist: types-all; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: faqtory; extra == 'doc'
+Requires-Dist: myst-parser; extra == 'doc'
+Requires-Dist: rstcheck; extra == 'doc'
+Requires-Dist: sphinx; extra == 'doc'
+Requires-Dist: sphinx-argparse; extra == 'doc'
+Requires-Dist: sphinx-copybutton; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme; extra == 'doc'
+Requires-Dist: sphinxcontrib-bibtex; extra == 'doc'
+Provides-Extra: docs
+Requires-Dist: faqtory; extra == 'docs'
+Requires-Dist: myst-parser; extra == 'docs'
+Requires-Dist: rstcheck; extra == 'docs'
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinx-argparse; extra == 'docs'
+Requires-Dist: sphinx-copybutton; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme; extra == 'docs'
+Requires-Dist: sphinxcontrib-bibtex; extra == 'docs'
+Provides-Extra: style
+Requires-Dist: black; extra == 'style'
+Requires-Dist: codespell; extra == 'style'
+Requires-Dist: flake8; extra == 'style'
+Requires-Dist: flake8-docstrings; extra == 'style'
+Requires-Dist: mypy; extra == 'style'
+Requires-Dist: pandas-stubs; extra == 'style'
+Requires-Dist: pre-commit; extra == 'style'
+Requires-Dist: sourcery; extra == 'style'
+Requires-Dist: types-all; extra == 'style'
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Provides-Extra: tests
+Requires-Dist: pytest; extra == 'tests'
+Requires-Dist: pytest-cov; extra == 'tests'
+Description-Content-Type: text/markdown
+
+[![System tests](https://github.com/cpp-lln-lab/bidsMReye/actions/workflows/system_tests.yml/badge.svg?branch=main)](https://github.com/cpp-lln-lab/bidsMReye/actions/workflows/system_tests.yml)
+[![Test and coverage](https://github.com/cpp-lln-lab/bidsMReye/actions/workflows/test_and_coverage.yml/badge.svg)](https://github.com/cpp-lln-lab/bidsMReye/actions/workflows/test_and_coverage.yml)
+[![codecov](https://codecov.io/gh/cpp-lln-lab/bidsMReye/branch/main/graph/badge.svg?token=G5fm2kaloM)](https://codecov.io/gh/cpp-lln-lab/bidsMReye)
+[![Documentation Status](https://readthedocs.org/projects/bidsmreye/badge/?version=latest)](https://bidsmreye.readthedocs.io/en/latest/?badge=latest)
+[![License](https://img.shields.io/badge/license-GPL3-blue.svg)](./LICENSE)
+[![PyPI version](https://badge.fury.io/py/bidsmreye.svg)](https://badge.fury.io/py/bidsmreye)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/bidsmreye)
+![https://github.com/psf/black](https://img.shields.io/badge/code%20style-black-000000.svg)
+[![Sourcery](https://img.shields.io/badge/Sourcery-enabled-brightgreen)](https://sourcery.ai)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg)](#contributors)
+[![paper doi](https://img.shields.io/badge/paper-10.1038%2Fs41593--021--00947--w-blue)](https://doi.org/10.1038/s41593-021-00947-w)
+[![zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7493322.svg)](https://doi.org/10.5281/zenodo.7493322)
+
+
+
+# bidsMReye
+
+BIDS app for decoding gaze position from the eyeball MR-signal using
+[deepMReye](https://github.com/DeepMReye/DeepMReye)
+([1](https://doi.org/10.1038/s41593-021-00947-w)).
+
+To be used on preprocessed BIDS derivatives (e.g.
+[fMRIprep](https://github.com/nipreps/fmriprep) outputs).
+No eye-tracking data required.
+
+By default, bidsMReye uses a [pre-trained version](https://osf.io/mrhk9/) of
+[deepMReye](https://github.com/DeepMReye/DeepMReye) trained on 5 datasets incl.
+guided fixations ([2](https://doi.org/10.1038/sdata.2017.181)), smooth pursuit
+([3](https://doi.org/10.1016/j.neuroimage.2018.04.012),[4](https://doi.org/10.1101/2021.08.03.454928),[5](https://doi.org/10.1038/s41593-017-0050-8))
+and free viewing ([6](https://doi.org/10.1038/s41593-017-0049-1)). Other
+pretrained versions are optional. Dedicated model training is recommended.
+
+The pipeline automatically extracts the eyeball voxels.
+This can be used also for other multivariate pattern
+analyses in the absence of eye-tracking data.
+Decoded gaze positions allow computing eye movements.
+
+Some basic quality control and outliers detection is also performed:
+
+- for each run
+
+![](https://github.com/cpp-lln-lab/bidsMReye/blob/main/docs/source/images/sub-01_task-auditory_space-MNI152NLin6Asym_desc-bidsmreye_eyetrack.png)
+
+
+- at the group level
+
+![](https://github.com/cpp-lln-lab/bidsMReye/blob/main/docs/source/images/group_eyetrack.png)
+
+For more information, see the
+[User Recommendations](https://deepmreye.slite.com/p/channel/MUgmvViEbaATSrqt3susLZ/notes/kKdOXmLqe).
+If you have other questions, please reach out to the developer team.
+
+## Install
+
+Better to use the docker image as there are known install issues
+of deepmreye on Apple M1 for example.
+
+### Docker
+
+#### Build
+
+```bash
+docker build --tag cpplab/bidsmreye:latest --file docker/Dockerfile .
+```
+
+#### Pull
+
+Pull the latest docker image:
+
+```bash
+docker pull cpplab/bidsmreye:latest
+```
+
+### Python package
+
+You can also get the package from pypi if you want.
+
+```bash
+pip install bidsmreye
+```
+
+#### Conda installation
+
+**NOT TESTED YET**
+
+To encapsulate bidsMReye in a virtual environment install with the following commands:
+
+```bash
+conda create --name bidsmreye python=3.10
+conda activate bidsmreye
+conda install pip
+pip install bidsmreye
+```
+
+The tensorflow dependency supports both CPU and GPU instructions.
+
+Note that you might need to install cudnn first
+
+```bash
+conda install -c conda-forge cudnn
+```
+
+#### ANTsPy installation issues
+
+If installation of [ANTsPy](https://github.com/ANTsX/ANTsPy) fails try to manually install it via:
+
+<!-- may help on windows ? -->
+
+```bash
+git clone https://github.com/ANTsX/ANTsPy
+cd ANTsPy
+pip install CMake
+python3 setup.py install
+```
+
+### Dev install
+
+Clone this repository.
+
+```bash
+git clone git://github.com/cpp-lln-lab/bidsmreye
+```
+
+Then install the package:
+
+```bash
+cd bidsMReye
+make install_dev
+```
+
+## Usage
+
+## Requirements
+
+bidsmreye requires your input fmri data:
+
+ - to be minimally preprocessed (at least realigned),
+ - with filenames and structure that conforms to a BIDS derivative dataset.
+
+Two bids apps are available to generate those types of preprocessed data:
+
+- [fmriprep](https://fmriprep.org/en/stable/)
+- [bidspm](https://bidspm.readthedocs.io/en/latest/general_information.html)
+
+Obviousvly your fmri data must include the eyes of your participant for bidsmreye to work.
+
+<!-- old fmriprep versions may not work -->
+
+### CLI
+
+Type the following for more information:
+
+```bash
+bidsmreye --help
+```
+
+## Preparing the data
+
+`prepapre` means that bidsmreye will extract the data coming from the
+eyes from the fMRI images.
+
+If your data is not in MNI space, bidsmreye will also register the data to MNI.
+
+```bash
+bidsmreye bids_dir output_dir participant prepare
+```
+
+## Computing the eye movements
+
+`generalize` use the extracted timeseries to predict the eye movements
+using the default pre-trained model of deepmreye.
+
+This will also generate a quality control report of the decoded eye movements.
+
+```bash
+bidsmreye bids_dir output_dir participant generalize
+```
+## Doing it all at once
+
+`all` does "prepare" then "generalize".
+
+```bash
+bidsmreye bids_dir output_dir participant all
+```
+
+## Group level summary
+
+```
+bidsmreye bids_dir output_dir group qc
+```
+
+## Demo
+
+Please look up the [documentation](https://bidsmreye.readthedocs.io/en/latest/demo.html)
+
+## Contributors ✨
+
+Thanks goes to these wonderful people
+([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://weexee.github.io/Portfolio/"><img src="https://avatars.githubusercontent.com/u/91776803?v=4?s=100" width="100px;" alt="Pauline Cabee"/><br /><sub><b>Pauline Cabee</b></sub></a><br /><a href="https://github.com/cpp-lln-lab/bidsMReye/commits?author=WeeXee" title="Code">💻</a> <a href="#ideas-WeeXee" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-WeeXee" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://remi-gau.github.io/"><img src="https://avatars.githubusercontent.com/u/6961185?v=4?s=100" width="100px;" alt="Remi Gau"/><br /><sub><b>Remi Gau</b></sub></a><br /><a href="https://github.com/cpp-lln-lab/bidsMReye/commits?author=Remi-Gau" title="Code">💻</a> <a href="#ideas-Remi-Gau" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/cpp-lln-lab/bidsMReye/commits?author=Remi-Gau" title="Tests">⚠️</a> <a href="#maintenance-Remi-Gau" title="Maintenance">🚧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/yyang1234"><img src="https://avatars.githubusercontent.com/u/59220868?v=4?s=100" width="100px;" alt="Ying Yang"/><br /><sub><b>Ying Yang</b></sub></a><br /><a href="https://github.com/cpp-lln-lab/bidsMReye/issues?q=author%3Ayyang1234" title="Bug reports">🐛</a> <a href="#userTesting-yyang1234" title="User Testing">📓</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the
+[all-contributors](https://github.com/all-contributors/all-contributors)
+specification. Contributions of any kind welcome!
+
+If you train [deepMReye](https://github.com/DeepMReye/DeepMReye), or if you have
+eye-tracking training labels and the extracted eyeball voxels, consider sharing
+it to contribute to the [pretrained model pool](https://osf.io/mrhk9/).
