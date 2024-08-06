@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pastesh/__init__.py
+pastesh.egg-info/PKG-INFO
+pastesh.egg-info/SOURCES.txt
+pastesh.egg-info/dependency_links.txt
+pastesh.egg-info/requires.txt
+pastesh.egg-info/top_level.txt

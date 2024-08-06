@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pastesh
+Version: 0.1.5
+Summary: A Python package for creating encrypted pastes using Paste.sh
+Author: Wooyoung Han
+Author-email: hanu@a-fin.co.kr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pastesh
+
+A package to create and upload encrypted pastes to paste.sh.
+
+## Installation
+
+```bash
+pip install pastesh
+```
+
+## Dependencies
+- requests
+- openssl (should be installed on your system)
+
+## Usage
+```python
+from pastesh import upload_to_pastesh
+
+title = "Sample Title"
+message = "This is the body of the paste."
+api_endpoint = "https://paste.sh"
+
+try:
+    url = upload_to_pastesh(title, message, api_endpoint)
+    print(f"Paste created successfully: {url}")
+except Exception as e:
+    print(f"Failed to create paste: {str(e)}")
+```
+
+## Similar Projects
+- [node-pastesh](https://github.com/cokia/node-pastesh)
+- [paste-sh](https://github.com/dgl/paste.sh)
