@@ -1,0 +1,10 @@
+tau_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tau_tools/courses.py,sha256=riSkBxA2a94bqOOB1-TfUTT_RM8_YY3y5phbLgx7Nyk,12169
+tau_tools/logging.py,sha256=0XOJ6Nkeyt0Te9Sgjz5Fi8-KvpwnUoXTEHQ3mNXaPQg,532
+tau_tools/moodle.py,sha256=R4UFNzqQlWERr_1CLk_wf1lYhgBBDt9ENywXD0w1M2M,10712
+tau_tools/plans.py,sha256=NnG3bX_ALu7Nl6-mWk3mWiOEHKwzat-gtyCih7Rk4TA,9429
+tau_tools/utilities.py,sha256=b0zyoHnRyrgv9vMB_FVAFWbH-HNH8yV_KSIgNilseRI,1552
+tau_tools-1.1.2.dist-info/METADATA,sha256=QBfplfTBpxHZWPHZgJ2cvc7wSusOWF7ysqkemR9gB0E,3821
+tau_tools-1.1.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+tau_tools-1.1.2.dist-info/licenses/LICENSE.md,sha256=SJI6rPc16JCPWp645ZWFC1lW1pK7p7e1MPS1H57HvKs,2193
+tau_tools-1.1.2.dist-info/RECORD,,
