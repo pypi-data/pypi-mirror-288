@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: jerry-finance-charts-apple
+Version: 0.2.0
+Summary: A simple python package to run specific actions on a csv file for apple stock prices
+Author: Jerry Osorio
+License: The Unlicense
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10, <3.12
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (>=2.2)
+Requires-Dist: plotly (>=5.23)
+
+# Jerry Finance Charts Apple
+
+## Running the script
+To utilize, imoprt the python package and in your main function, pass in the path to your finance-charts-apple.csv file. Example provided below
+```angular2html
+from jerry_finance_charts_apple import run
+run('C:/Users/jerry/Documents/finance-charts-apple.csv')
+```
+The outputs requested will be found in the terminal and on your browser. Example screenshots below 
+
+![img.png](img.png)
+![img_1.png](img_1.png)
