@@ -1,0 +1,7 @@
+rapidjson.cpython-312-aarch64-linux-gnu.so,sha256=52YHmx6gkAp5tTPyE-TUHFNKVWHfmGEr0bMD8DR8YeA,6986760
+python_rapidjson-1.20.dist-info/RECORD,,
+python_rapidjson-1.20.dist-info/top_level.txt,sha256=Z68HubZmoU3a6tE9t-9GAz06mxudnoTwOtpJtI0TnFc,26
+python_rapidjson-1.20.dist-info/LICENSE,sha256=SxBY-0DAFp_UYz-4Iedct0RQCF1zk1xJx3-7JdH7W-k,1228
+python_rapidjson-1.20.dist-info/WHEEL,sha256=0oV6AuBsIdiUgIYQRfH2VtM4fUoUekwZp1AtVteESK0,153
+python_rapidjson-1.20.dist-info/METADATA,sha256=BhXRg3HbuKzZThCvoH3U6b8elKpBw2F0bmdWcB1INHw,22643
+rapidjson-stubs/__init__.pyi,sha256=isAErwjA_cxafvQDeeTd-xt5-QtN81ENbRQNGNP-xYA,7288
