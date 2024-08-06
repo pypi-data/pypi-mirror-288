@@ -1,0 +1,11 @@
+powerbox/__init__.py,sha256=0qBPpo45VE2lxxki94qeGn3EVVI9QNMqjss7ZnMKniA,731
+powerbox/_version.py,sha256=t6tJJG56wlBKsg_0M1Q4l1ir09jgXRw1tolMbDalW9g,411
+powerbox/dft.py,sha256=Zhhb3zw-aGZmw5OM1xNcY_7MhC_NIiLZeDyF_jGIzzc,12257
+powerbox/dft_backend.py,sha256=v-c5gngPYaADnQVl63-OIYr82FkD4wbc03GuIWTn7tc,3927
+powerbox/powerbox.py,sha256=989qhqgrNtdujUlO1s2VxNNXZYVL7Gnc6syM9c4Ey_U,15737
+powerbox/tools.py,sha256=4gpYAy7VQ4rkwLUie_8g4ZQQEczYpPV8Bf4BP5xEOlk,48001
+powerbox-0.8.2.dist-info/LICENSE.rst,sha256=8uRRQqChkDRY_KvTR_ZBMbxUDXlznQpRNRaUV4joNhM,1074
+powerbox-0.8.2.dist-info/METADATA,sha256=wmKofL4dknLPJ7uNRmL-w4HQ9xKzLjBZ-swyCVmWAec,3798
+powerbox-0.8.2.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+powerbox-0.8.2.dist-info/top_level.txt,sha256=F5vqmTrCI8PTC6Hebkn_tgv8vfSqig49mUr709JXccY,9
+powerbox-0.8.2.dist-info/RECORD,,
