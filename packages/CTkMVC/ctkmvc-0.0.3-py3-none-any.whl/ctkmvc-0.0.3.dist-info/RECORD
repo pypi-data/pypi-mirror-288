@@ -1,0 +1,8 @@
+ctkmvc/controller.py,sha256=HHtGQ0d_IDFPO_k57382nswA8zDKxjxtK_Jo-a3Lz1Y,400
+ctkmvc/interface.py,sha256=k_4yG5YtYXAao_ZVUxyBaiWcXW-iX-cfxzmRssC1Suw,136
+ctkmvc/model.py,sha256=kVHakrXWIhqlqfPJ1cksv8RQAe8TJnabCO6HmLwWyQg,563
+ctkmvc/view.py,sha256=WxubNyvd1DSuQNrFex9LvexJDKYTmQTi3nIikTSsyIk,511
+ctkmvc-0.0.3.dist-info/METADATA,sha256=0cZrzihp9icOukY5Ltv21RdQYErqamd-X6PaJNINmFc,3629
+ctkmvc-0.0.3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+ctkmvc-0.0.3.dist-info/licenses/LICENSE,sha256=K9VPpuDPEcbDVlG74iFCbYVxyeumCXQ3-ULbcZawLQo,1059
+ctkmvc-0.0.3.dist-info/RECORD,,
