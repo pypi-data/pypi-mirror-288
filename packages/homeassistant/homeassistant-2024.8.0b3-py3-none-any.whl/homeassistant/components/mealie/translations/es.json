@@ -1,0 +1,45 @@
+{
+    "config": {
+        "step": {
+            "reconfigure_confirm": {
+                "data": {
+                    "verify_ssl": "Verificar el certificado SSL"
+                }
+            },
+            "user": {
+                "data": {
+                    "verify_ssl": "Verificar el certificado SSL"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "categories": {
+                "name": "Categor\u00edas"
+            },
+            "recipes": {
+                "name": "Recetas"
+            },
+            "tags": {
+                "name": "Etiquetas"
+            },
+            "tools": {
+                "name": "Herramientas"
+            },
+            "users": {
+                "name": "Usuarios"
+            }
+        }
+    },
+    "services": {
+        "set_mealplan": {
+            "description": "Establecer un plan de comidas para una fecha concreta",
+            "fields": {
+                "entry_type": {
+                    "description": "El tipo de plato para el que se va a configurar la receta."
+                }
+            }
+        }
+    }
+}

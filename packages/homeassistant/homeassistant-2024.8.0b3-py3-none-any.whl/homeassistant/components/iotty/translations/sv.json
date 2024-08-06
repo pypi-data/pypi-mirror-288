@@ -1,0 +1,15 @@
+{
+    "config": {
+        "abort": {
+            "user_rejected_authorize": "Kontol\u00e4nkning avvisades: {error}"
+        },
+        "create_entry": {
+            "default": "Autentisering lyckades"
+        },
+        "step": {
+            "pick_implementation": {
+                "title": "V\u00e4lj autentiseringsmetod"
+            }
+        }
+    }
+}

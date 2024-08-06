@@ -1,0 +1,19 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El servicio ya est\u00e1 configurado"
+        },
+        "error": {
+            "network_error": "No se encontr\u00f3 la instancia de Mastodon.",
+            "unauthorized_error": "Las credenciales son incorrectas.",
+            "unknown": "Se produjo un error desconocido al conectar con la instancia de Mastodon."
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "access_token": "Token de acceso"
+                }
+            }
+        }
+    }
+}
