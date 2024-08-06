@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "roy_hello_pkg"
+version = "0.1.1"
+dependencies = [
+]
+readme = "README.md"
+scripts = { "roy-hello-pkg" = "roy_hello_pkg:roy_hello_pkg" }
+
+[tool.hatch.build.targets.wheel]
+include = [
+    "roy_hello_pkg/**/*.py",
+    "README.md",
+    "requirements.txt",
+]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "roy_hello_pkg/**/*.py",
+    "README.md",
+    "requirements.txt",
+]
