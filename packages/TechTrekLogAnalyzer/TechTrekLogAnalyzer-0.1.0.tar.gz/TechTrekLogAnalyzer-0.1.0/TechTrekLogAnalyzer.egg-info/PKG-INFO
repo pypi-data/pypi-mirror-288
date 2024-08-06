@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: TechTrekLogAnalyzer
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/Durbace/TechTrekLogAnalyzer
+Author: Tech Trek Team
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
