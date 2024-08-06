@@ -1,0 +1,58 @@
+{
+    "metadata": {
+        "sequence_name": "test2",
+        "date_created": "2024-08-05 13:55:40",
+        "monitor_info": {
+            "width": 3840,
+            "height": 2160
+        },
+        "other_data": null
+    },
+    "actions_sequence": [
+        {
+            "coordinate": {
+                "x": 1919,
+                "y": 1079
+            },
+            "delay": 0.0,
+            "click": true,
+            "window_info": {
+                "left": 0,
+                "top": 0,
+                "width": 3840,
+                "height": 2160,
+                "is_fullscreen": false
+            }
+        },
+        {
+            "coordinate": {
+                "x": 1920,
+                "y": 1079
+            },
+            "delay": 0.7751848697662354,
+            "click": true,
+            "window_info": {
+                "left": 0,
+                "top": 0,
+                "width": 3840,
+                "height": 2160,
+                "is_fullscreen": false
+            }
+        },
+        {
+            "key": "a",
+            "delay": 0.6132478713989258,
+            "hold_time": 0.8162503242492676
+        },
+        {
+            "key": "w",
+            "delay": 0.2276442050933838,
+            "hold_time": 0.19785094261169434
+        },
+        {
+            "key": "w",
+            "delay": 0.1715998649597168,
+            "hold_time": 0.6302030086517334
+        }
+    ]
+}
