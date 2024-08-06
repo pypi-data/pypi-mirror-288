@@ -1,0 +1,44 @@
+= Scheduling Problem Designer
+
+image::https://img.shields.io/badge/code%20style-black-000000.svg[link="https://github.com/psf/black"]
+
+[abstract]
+== Abstract
+
+Scheduling is a highly relevant field in the current day. The scheduling problem
+is present in many different fields still represents a challenge. Smaller instances
+can be solved quite easily by commercial solvers like IBEX<<CITE>>.
+However, larger and more complex instances are very hard to tackle. Some benchmark
+problems have been published<<taillard1993>><<adams1988>><<lawrence1984>> which have been used for the purpose
+of comparing algorithms. Nevertheless, these only take into account a fraction of
+possible characteristics and their respective parameters. To improve on the current
+state-of-the-art a scheduling problem designer is implemented. It improves upon the
+current benchmarks by making it possible to design the problem space and generate
+many benchmark problems from a given definition. The design process allows a researcher to specify
+type, characteristics and underlying distributions. In the past the 3 field notation<<lawler1993>><<graham1979>>
+was used to define problem types. The new format leans on this notation and expands
+it. Traditionally, the benchmarks were shared either using the "standard"<<CITE>> or "taillard"<<taillard1993>> format,
+however these formats do not take additional information (like setup times, unavailable times, ...) into account.
+To compensate this a new problem format is defined.
+
+
+== Designer Format
+
+== Problem Format
+
+== Lower Bound OpenShop<<pineda1995>>
+
+
+Also:
+http://dx.doi.org/10.1007/978-3-319-77028-4_88
+https://www.researchgate.net/publication/324488505_Heuristic_Approaches_for_the_Open-Shop_Scheduling_Problem
+
+[bibliography]
+== References
+
+* [[[lawrence1984]]] S. Lawrence. Resource Constrained Project Scheduling. An Experimental Investigation of Heuristic Scheduling Techniques (Supplement). Carnegie-Mellon University, 1984.
+* [[[taillard1993]]] Taillard, E. (1993). Benchmarks for basic scheduling problems. In European Journal of Operational Research (Vol. 64, Issue 2, pp. 278–285). Elsevier BV. https://doi.org/10.1016/0377-2217(93)90182-m
+* [[[adams1988]]] Adams, J., Balas, E., & Zawack, D. (1988). The Shifting Bottleneck Procedure for Job Shop Scheduling. In Management Science (Vol. 34, Issue 3, pp. 391–401). Institute for Operations Research and the Management Sciences (INFORMS). https://doi.org/10.1287/mnsc.34.3.391
+* [[[graham1979]]] Graham, R. L., Lawler, E. L., Lenstra, J. K., & Kan, A. H. G. R. (1979). Optimization and Approximation in Deterministic Sequencing and Scheduling: a Survey. In Discrete Optimization II, Proceedings of the Advanced Research Institute on Discrete Optimization and Systems Applications of the Systems Science Panel of NATO and of the Discrete Optimization Symposium co-sponsored by IBM Canada and SIAM Banff, Aha. and Vancouver (pp. 287–326). Elsevier. https://doi.org/10.1016/s0167-5060(08)70356-x
+* [[[lawler1993]]] Lawler, E. L., Lenstra, J. K., Rinnooy Kan, A. H. G., & Shmoys, D. B. (1993). Chapter 9 Sequencing and scheduling: Algorithms and complexity. In Logistics of Production and Inventory (pp. 445–522). Elsevier. https://doi.org/10.1016/s0927-0507(05)80189-6
+* [[[pineda1995]]] M. Pineda, Scheduling: Theory, Algorithms, and Systems (Prentice Hall, Englewood Cliffs, NJ, 1995)

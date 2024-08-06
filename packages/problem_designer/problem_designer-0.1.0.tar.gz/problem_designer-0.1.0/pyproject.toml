@@ -1,0 +1,91 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "problem_designer"
+version = "0.1.0"
+description = "A package for designing and distributing problems"
+authors = ["Dominik Falkner <dominik.falkner@risc-software.at>"]
+readme = "README.adoc"
+packages = [
+    { include = "problem_designer"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.24.1"
+pydantic = "^1.10.4"
+pyjson5 = "^1.6.4"
+pydantic-cli = "^4.3.0"
+pluggy = "^1.0.0"
+rich = "^13.3.1"
+scikit-learn = "^1.2.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+pytest-cov = "^4.0.0"
+pytest-xdist = "^3.1.0"
+pytest-clarity = "^1.0.1"
+poethepoet = "^0.18.1"
+black = { version = "^23.3.0", extras = ["jupyter"] }
+ruff = "^0.0.252"
+isort = "^5.12.0"
+mkdocs = "^1.4.3"
+mkdocs-material = "^9.1.15"
+mkdocstrings = {extras = ["python"], version = "^0.22.0"}
+
+
+[tool.poetry.scripts]
+problem_designer = "problem_designer.cli.__main__:run"
+
+
+# https://github.com/nat-n/poethepoet
+[tool.poe.tasks]
+_format = "black ."
+_sort_imports = "isort ."
+_lint = "ruff check --fix ."
+
+_check_format = "black --check ."
+_check_sort_imports = "isort --check ."
+_check_lint = "ruff check ."
+
+docs = "mkdocs serve"
+precommit = ["_format", "_sort_imports", "_lint"]
+check = ["_check_format", "_check_sort_imports", "_check_lint"]
+test = "pytest"
+
+[tool.poe.tasks.cli]
+help = "Start the cli"
+script = "problem_designer.cli.__main__:run"
+
+# https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html#configuration-via-a-file
+[tool.black]
+line-length = 120
+
+# https://pycqa.github.io/isort/docs/configuration/config_files
+[tool.isort]
+profile = "black"
+
+# https://docs.pytest.org/en/7.1.x/reference/customize.html
+[tool.pytest.ini_options]
+addopts = "--color=yes --doctest-modules  -ra --cov --cov-report=html --cov-report term --exitfirst --failed-first --strict-config --strict-markers --verbosity=2 --junitxml=python-junit.xml"
+xfail_strict = true
+pythonpath = ["problem_designer"]
+testpaths = ["problem_designer", "tests"]
+# ignore any of these paths
+norecursedirs = [ ]
+
+# https://github.com/charliermarsh/ruff
+[tool.ruff]  
+fix = true
+ignore-init-module-imports = true
+line-length = 120
+src = ["problem_designer", "tests"]
+
+[tool.ruff.pycodestyle]
+max-doc-length = 120
+
+[tool.ruff.pydocstyle]
+convention = "google"
