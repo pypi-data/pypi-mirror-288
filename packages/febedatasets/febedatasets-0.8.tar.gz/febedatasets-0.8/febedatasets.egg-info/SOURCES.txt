@@ -1,0 +1,17 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+febedatasets.egg-info/PKG-INFO
+febedatasets.egg-info/SOURCES.txt
+febedatasets.egg-info/dependency_links.txt
+febedatasets.egg-info/requires.txt
+febedatasets.egg-info/top_level.txt
+febedatasetswits/__init__.py
+febedatasetswits/dataset_loader.py
+febedatasetswits/data/station_origin_center_1_data.csv
+lab01/__init__.py
+lab01/image_loader.py
+lab01/images/cat_lengths.png
+lab01/images/gradescope.png
+lab01/images/harley.png
