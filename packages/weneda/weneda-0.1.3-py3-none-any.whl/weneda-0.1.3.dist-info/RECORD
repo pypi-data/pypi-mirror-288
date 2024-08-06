@@ -1,0 +1,10 @@
+LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+pyproject.toml,sha256=hlBO6AmyFkfyl-rKU8jLAoddUmCQWJRC93kAfytLQOk,411
+weneda/__init__.py,sha256=J406sRiqS2wWfx34RGAOsG576mE2cDy5k81Xa4Aivbk,89
+weneda/ansi.py,sha256=UxtKInU5SqK-teFMHpWE1eJRfGoCLbTPlP28ikc6oqw,2791
+weneda/compose.py,sha256=vHZHf2J1tWG2M3LvCNXoxEA5SwSaZwYJJw4OVG1yab4,8049
+weneda/utils.py,sha256=hKWXZ5ExXYHLJIt8IJNJL9cnWYCIJ-74p5a1Bf9CzJQ,1663
+weneda-0.1.3.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+weneda-0.1.3.dist-info/METADATA,sha256=M7i5FV5W_NVREHmRy1uvIJMHoluSZCgTk6Z1eKpIM5Q,1041
+weneda-0.1.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+weneda-0.1.3.dist-info/RECORD,,
