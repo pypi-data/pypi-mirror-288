@@ -1,0 +1,12 @@
+README.md
+setup.py
+SimplePyTools.egg-info/PKG-INFO
+SimplePyTools.egg-info/SOURCES.txt
+SimplePyTools.egg-info/dependency_links.txt
+SimplePyTools.egg-info/requires.txt
+SimplePyTools.egg-info/top_level.txt
+simplepytools/__init__.py
+simplepytools/logmanager/__init__.py
+simplepytools/logmanager/custom_logger.py
+tests/__init__.py
+tests/test_logmanager.py
