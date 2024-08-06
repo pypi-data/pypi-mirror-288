@@ -1,0 +1,4 @@
+[psychopy.hardware.emulator]
+ResponseEmulator = psychopy_mri_emulator.emulator:ResponseEmulator
+SyncGenerator = psychopy_mri_emulator.emulator:SyncGenerator
+launchScan = psychopy_mri_emulator.emulator:launchScan

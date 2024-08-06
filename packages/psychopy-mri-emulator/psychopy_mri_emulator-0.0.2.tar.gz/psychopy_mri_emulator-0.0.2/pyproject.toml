@@ -1,0 +1,45 @@
+[project]
+name = "psychopy-mri-emulator"
+version = "0.0.2"
+description = "Software emulator for fMRI machines."
+readme = "README.md"
+requires-python = ">= 3.7"
+license = {text = "GNU General Public License v3 (GPLv3)"}
+authors = [
+  { name = "Jeremy Gray" },
+  { name = "Jon Peirce", email = "jon@opensceincetools.org" },
+  { name = "Matthew Cutone", email = "mcutone@opensceincetools.org" },
+  { name = "Todd Parsons", email = "todd@opensceincetools.org" },
+]
+dependencies = []
+
+[project.urls]
+homepage = "https://github.com/psychopy/psychopy-mri-emulator"
+repository = "https://github.com/psychopy/psychopy-mri-emulator"
+changelog = "https://github.com/psychopy/psychopy-mri-emulator/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+# dependencies for building the docs
+docs = [
+  "psychopy",
+  "sphinx",
+  "furo",
+]
+# dependencies for running the test suite
+tests = [
+  "psychopy",
+  "pytest",
+]
+
+[project.entry-points."psychopy.hardware.emulator"]
+ResponseEmulator = "psychopy_mri_emulator.emulator:ResponseEmulator"
+SyncGenerator = "psychopy_mri_emulator.emulator:SyncGenerator"
+launchScan = "psychopy_mri_emulator.emulator:launchScan"
+
+[tool.setuptools.package-data]
+# any resources you want including in the package, add their file extensions here (e.g. "*.wav" if you want audio files)
+"*" = ["*.png"] 
+
+[tool.setuptools.packages.find]
+# any folders to ignore when building the Python package for this plugin
+exclude = ["docs*", "docs_src*", "tests*"]
