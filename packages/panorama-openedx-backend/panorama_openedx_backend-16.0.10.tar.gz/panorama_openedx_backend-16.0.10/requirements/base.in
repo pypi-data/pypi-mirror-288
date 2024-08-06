@@ -1,0 +1,10 @@
+# Core requirements for using this application
+-c constraints.txt
+
+Django             # Web application framework
+django-model-utils        # Provides TimeStampedModel abstract base class
+django-rest-framework
+openedx-atlas
+requests
+
+boto3==1.34.87
