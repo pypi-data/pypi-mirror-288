@@ -1,0 +1,9 @@
+clientmonitor/Client.py,sha256=xiNks_ae8HyR2e4TDWezwPyTz81XHJcG1il5CTkb3yA,989
+clientmonitor/Errors.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clientmonitor/Message.py,sha256=f7S2Hpn7eYhzFgov-iYnofQoGMq0f9IPL1TT8MqKSNk,594
+clientmonitor/Server.py,sha256=wa_TDKUSN6N4XSL5hcT-qg0J9AeR1HvoZNQIEOpAc-0,5444
+clientmonitor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clientmonitor-0.1.0.dist-info/METADATA,sha256=22ZGUS1Lo-q8rZAMz0vlD5FrwVHjpoJ79yXUUZj4z34,2086
+clientmonitor-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+clientmonitor-0.1.0.dist-info/licenses/LICENSE,sha256=Fkx4Pc1yIlGzh-aIl56I8NqQPCaH4kBmE5-fRnZ5A84,1055
+clientmonitor-0.1.0.dist-info/RECORD,,
