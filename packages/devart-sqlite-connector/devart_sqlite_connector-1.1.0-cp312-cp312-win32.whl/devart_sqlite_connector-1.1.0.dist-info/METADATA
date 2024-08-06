@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: devart-sqlite-connector
+Version: 1.1.0
+Summary: New level of functionality and performance in data access via Python
+Home-page: https://devart.com
+Author: Devart
+Author-email: support@devart.com
+License: LGPL with exceptions
+Project-URL: Homepage, http://devart.com/python/sqlite
+Project-URL: Download, http://devart.com/python/sqlite/download.html
+Project-URL: History, http://devart.com/python/sqlite/revision_history.html
+Project-URL: Documentation, http://devart.com/python/sqlite/overview.html
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python Connector for SQLite #
+
+Python Connector for SQLite is a connectivity solution for accessing SQLite
+databases from Python applications. It fully implements the Python DB API 2.0
+specification. The connector is distributed as a wheel package for Windows,
+macOS, and Linux.
+
+Direct connection
+
+The connector supports two SQLite library linking modes: static linking and
+dynamic linking. Static linking enables a direct connection to SQLite, so you
+don't have to deploy the SQLite libraries on user workstations. You can use
+the built-in encryption capabilities in the Direct mode to protect your data
+from unauthorized access-the statically linked library provides SQLite
+database encryption without requiring you to purchase an encryption extension.
+
+## Using the connector ##
+
+To retrieve data from a database:
+
+Import the module.
+```
+import devart.sqlite
+```
+
+Connect to a database using the `connect()` module method and obtain a `connection` object: 
+If you're using the Direct mode:
+```
+my_connection = devart.sqlite.connect(
+    Direct=True,
+    Database="your_database"
+)
+```
+If you're using a dynamically linked SQLite client library:
+```
+my_connection = devart.sqlite.connect(
+    Direct=False,
+    Database="your_database",
+    ClientLibrary="your_sqlite_lib"
+)
+```
+
+Create a `cursor` object using the `cursor()` connection method.
+```
+my_cursor = my_connection.cursor()
+```
+
+Execute the SQL statement using the `execute()` cursor method.
+```
+my_cursor.execute("SELECT * FROM employees")
+```
+
+Retrieve the result set using one of the `fetch*()` cursor methods.
+```
+for row in my_cursor.fetchall(): 
+    print(row)
+```
+
+## Ordering and activating the license ##
+
+You can purchase a license for the connector on the ordering page:             
+https://www.devart.com/python/sqlite/ordering.html
+
+To activate the license, follow the instructions in the documentation:             
+https://docs.devart.com/python/sqlite/activate-a-license.htm
+
+## What's new ##
+
+Python Connector for SQLite 1.1
+
+- Added connection pooling
+- Added activation with a license key
+- Added the subscription license type
