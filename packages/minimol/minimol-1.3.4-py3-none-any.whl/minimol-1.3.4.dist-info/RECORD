@@ -1,0 +1,12 @@
+minimol/__init__.py,sha256=4z5RXEszPirf9ptz-z_VU3GwDKVM6xoXL5ehq-oFH5Y,50
+minimol/model.py,sha256=QzMlH9r2UIyROeXv7C0-Yh7HKad-OhFA5d8ITqufKw8,4269
+minimol/ckpts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minimol/ckpts/minimol_v1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minimol/ckpts/minimol_v1/base_shape.yaml,sha256=aluzQifGE4vg08AC4qlX3lIXSj4rg6btcuEim_QpEvM,19695
+minimol/ckpts/minimol_v1/config.yaml,sha256=oS1bW2mUcqI69g7tXT_APkEjyMtYYmZMXq-38gAEEeA,13532
+minimol/ckpts/minimol_v1/state_dict.pth,sha256=owYeHNu9XlRBaPv4weAYNsjBmsAwiR1JWirp8pz-l6c,20791455
+minimol-1.3.4.dist-info/LICENSE,sha256=o7Dk1Vmy4KzopeLOBDHT_QRtW2-riJSJ2jEIlUVIu3A,1070
+minimol-1.3.4.dist-info/METADATA,sha256=gUbTU7VMQVmdR7RcmXdtuwa-85ZyW3YvxX1It92S8DI,6439
+minimol-1.3.4.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+minimol-1.3.4.dist-info/top_level.txt,sha256=zO-D4PMa52AHMR0G8AukYI0VS0u5rIra1TKLunGIrqk,8
+minimol-1.3.4.dist-info/RECORD,,
