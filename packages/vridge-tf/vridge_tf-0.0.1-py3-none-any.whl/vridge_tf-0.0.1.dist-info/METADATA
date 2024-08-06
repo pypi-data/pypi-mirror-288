@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: vridge-tf
+Version: 0.0.1
+Summary: vridge 텐서플로우 패키지
+Author: byungchan
+Author-email: bgk@vazilcompany.com
+Keywords: vazil,vazilcompany,vridge,vridge_tf
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7, <3.8
+Requires-Dist: tensorflow (==2.6.0)
+Requires-Dist: keras (==2.6.0)
+Requires-Dist: numpy (==1.19.2)
+
