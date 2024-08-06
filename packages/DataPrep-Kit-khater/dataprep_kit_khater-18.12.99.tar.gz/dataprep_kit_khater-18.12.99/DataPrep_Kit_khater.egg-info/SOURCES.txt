@@ -1,0 +1,10 @@
+README.md
+license.txt
+setup.py
+DataPrep_Kit_khater.egg-info/PKG-INFO
+DataPrep_Kit_khater.egg-info/SOURCES.txt
+DataPrep_Kit_khater.egg-info/dependency_links.txt
+DataPrep_Kit_khater.egg-info/requires.txt
+DataPrep_Kit_khater.egg-info/top_level.txt
+package/DataPrep_Kit_khater.py
+package/__init__.py
