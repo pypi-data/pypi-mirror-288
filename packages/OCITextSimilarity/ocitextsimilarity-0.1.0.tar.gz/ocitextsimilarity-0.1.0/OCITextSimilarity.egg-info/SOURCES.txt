@@ -1,0 +1,9 @@
+README.md
+setup.py
+OCITextSimilarity/OCITextSimilarity.py
+OCITextSimilarity/__init__.py
+OCITextSimilarity.egg-info/PKG-INFO
+OCITextSimilarity.egg-info/SOURCES.txt
+OCITextSimilarity.egg-info/dependency_links.txt
+OCITextSimilarity.egg-info/requires.txt
+OCITextSimilarity.egg-info/top_level.txt
