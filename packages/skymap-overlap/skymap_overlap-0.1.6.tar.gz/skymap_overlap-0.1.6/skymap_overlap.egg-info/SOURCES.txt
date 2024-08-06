@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+skymap_overlap/_version.py
+skymap_overlap/combine_skymaps.py
+skymap_overlap/compute_overlap.py
+skymap_overlap/compute_overlap_from_skymaps_pipe.py
+skymap_overlap/download_skymap.py
+skymap_overlap.egg-info/PKG-INFO
+skymap_overlap.egg-info/SOURCES.txt
+skymap_overlap.egg-info/dependency_links.txt
+skymap_overlap.egg-info/entry_points.txt
+skymap_overlap.egg-info/requires.txt
+skymap_overlap.egg-info/top_level.txt

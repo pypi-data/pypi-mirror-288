@@ -1,0 +1,5 @@
+[console_scripts]
+combine_skymaps = skymap_overlap.combine_skymaps:main
+compute_overlap = skymap_overlap.compute_overlap:main
+compute_overlap_from_skymaps_pipe = skymap_overlap.compute_overlap_from_skymaps_pipe:main
+download_skymap = skymap_overlap.download_skymap:main
