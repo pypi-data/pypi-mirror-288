@@ -1,0 +1,10 @@
+image_to_psd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_to_psd/color_printer.py,sha256=uMkieUM5i99V6pQiK8Ts2piGDuhs8beJDssBEYBhcwg,802
+image_to_psd/processor.py,sha256=Il3OcEKZ_Iss6o45KtzFM9f3Aj2iEcy9Y5H_EBc1zMg,6509
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_processor.py,sha256=OzRl0nrl-mHtli-zwIEmHmTjiIQQmLfUkK1QZDsU_wg,657
+image_to_psd-1.0.2.dist-info/LICENSE,sha256=XqgaiqcaK-04aqNe5-o8ETSdtQWwPGkjaJj22gP-Rjw,1070
+image_to_psd-1.0.2.dist-info/METADATA,sha256=H1bNbI2Kok74tHD-7xy1D7pEr9KptseC7xBtBOjElC8,2982
+image_to_psd-1.0.2.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+image_to_psd-1.0.2.dist-info/top_level.txt,sha256=NZa0yJS5iXlgO4nrx_MbHDkVNdj4Yjv3uou2MBXrK1s,19
+image_to_psd-1.0.2.dist-info/RECORD,,
