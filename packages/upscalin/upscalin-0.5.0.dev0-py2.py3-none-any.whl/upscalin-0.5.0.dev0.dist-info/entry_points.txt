@@ -1,0 +1,2 @@
+[console_scripts]
+upscalin = Upscalin.__main__:main
