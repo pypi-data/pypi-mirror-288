@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: image-distillation
+Version: 0.1
+Summary: Python package for image datasets distillations via clustering and grid-based sampling
+Home-page: https://github.com/serdarbicici-visualstudio/image-distillation
+Author: Serdar Biçici
+Author-email: serdarbicici1@gmail.com
+License: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Requires-Python: >=3.9
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+
+Python package for image datasets distillations via clustering and grid-based sampling

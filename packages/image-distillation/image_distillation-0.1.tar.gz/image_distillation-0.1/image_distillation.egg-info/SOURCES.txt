@@ -1,0 +1,9 @@
+README.md
+setup.py
+image-distillation/__init__.py
+image-distillation/main.py
+image_distillation.egg-info/PKG-INFO
+image_distillation.egg-info/SOURCES.txt
+image_distillation.egg-info/dependency_links.txt
+image_distillation.egg-info/requires.txt
+image_distillation.egg-info/top_level.txt
