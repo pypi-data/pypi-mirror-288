@@ -1,0 +1,6 @@
+blue_shell_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blue_shell_client/client.py,sha256=C8IklvN_VxNUhXY_NdAVHtE9SItCXjNgQ2Dt3DciYio,1049
+blue_shell_client/test_client.py,sha256=CrPkpJ_dq2JphIUeX4oHmghfsI_QufjHHvaiOh_zUrU,526
+blue_shell_client-0.2.0.dist-info/METADATA,sha256=8McHuX_9Ly3jUGDzOKatnkEQOxOUY5TfrbpCCJSkMK4,418
+blue_shell_client-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+blue_shell_client-0.2.0.dist-info/RECORD,,
