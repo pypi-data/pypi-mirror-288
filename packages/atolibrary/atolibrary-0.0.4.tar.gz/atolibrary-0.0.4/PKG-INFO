@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: atolibrary
+Version: 0.0.4
+Author: ATO JEON
+Author-email: atto.jeon@gmail.com
+Requires-Dist: Pillow>=9.0.0
+Requires-Dist: requests

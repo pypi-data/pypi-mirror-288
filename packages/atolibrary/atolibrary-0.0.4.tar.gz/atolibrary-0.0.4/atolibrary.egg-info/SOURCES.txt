@@ -1,0 +1,9 @@
+setup.py
+atolibrary/__init__.py
+atolibrary/image.py
+atolibrary/lotto.py
+atolibrary.egg-info/PKG-INFO
+atolibrary.egg-info/SOURCES.txt
+atolibrary.egg-info/dependency_links.txt
+atolibrary.egg-info/requires.txt
+atolibrary.egg-info/top_level.txt
