@@ -1,0 +1,224 @@
+Metadata-Version: 2.1
+Name: neptyne-kernel
+Version: 0.1
+Summary: The Neptyne kernel
+Requires-Python: ==3.11
+Description-Content-Type: text/markdown
+Requires-Dist: affine ==2.4.0
+Requires-Dist: aiohttp ==3.8.4
+Requires-Dist: aiosignal ==1.2.0
+Requires-Dist: altair ==4.2.0
+Requires-Dist: annotated-types ==0.6.0
+Requires-Dist: anthropic ==0.30.0
+Requires-Dist: anyio ==3.7.0
+Requires-Dist: appnope ==0.1.4
+Requires-Dist: asttokens ==2.0.5
+Requires-Dist: async-timeout ==4.0.2
+Requires-Dist: attrs ==21.4.0
+Requires-Dist: backcall ==0.2.0
+Requires-Dist: bahttext ==1.0.2
+Requires-Dist: beautifulsoup4 ==4.11.1
+Requires-Dist: black ==22.3.0
+Requires-Dist: blinker ==1.7.0
+Requires-Dist: bokeh ==3.3.2
+Requires-Dist: branca ==0.7.0
+Requires-Dist: bs4 ==0.0.1
+Requires-Dist: cachetools ==5.3.2
+Requires-Dist: calweek ==0.5.0
+Requires-Dist: cartopy ==0.22.0
+Requires-Dist: certifi ==2021.10.8
+Requires-Dist: charset-normalizer ==2.0.12
+Requires-Dist: chroma-py ==0.1.0.dev1
+Requires-Dist: click ==8.1.3
+Requires-Dist: click-plugins ==1.1.1
+Requires-Dist: cligj ==0.7.2
+Requires-Dist: colour ==0.1.5
+Requires-Dist: contextily ==1.5.0
+Requires-Dist: contourpy ==1.0.7
+Requires-Dist: croniter ==2.0.1
+Requires-Dist: cycler ==0.11.0
+Requires-Dist: db-dtypes ==1.2.0
+Requires-Dist: debugpy ==1.6.0
+Requires-Dist: decorator ==5.1.1
+Requires-Dist: descartes ==1.1.0
+Requires-Dist: distro ==1.8.0
+Requires-Dist: entrypoints ==0.4
+Requires-Dist: et-xmlfile ==1.1.0
+Requires-Dist: executing ==0.8.3
+Requires-Dist: fastavro ==1.9.3
+Requires-Dist: fastjsonschema ==2.19.1
+Requires-Dist: feedparser ==6.0.11
+Requires-Dist: fiona ==1.9.5
+Requires-Dist: folium ==0.15.1
+Requires-Dist: fonttools ==4.33.3
+Requires-Dist: frozenlist ==1.3.3
+Requires-Dist: geodatasets ==2023.3.0
+Requires-Dist: geographiclib ==2.0
+Requires-Dist: geojson ==2.5.0
+Requires-Dist: geopandas ==0.14.1
+Requires-Dist: geoplot ==0.5.1
+Requires-Dist: geopy ==2.4.1
+Requires-Dist: gitdb ==4.0.11
+Requires-Dist: gitpython ==3.1.43
+Requires-Dist: google-ai-generativelanguage ==0.6.4
+Requires-Dist: google-api-core ==2.14.0
+Requires-Dist: google-api-python-client ==2.108.0
+Requires-Dist: google-auth ==2.23.4
+Requires-Dist: google-auth-httplib2 ==0.1.1
+Requires-Dist: google-auth-oauthlib ==1.1.0
+Requires-Dist: google-cloud-bigquery ==3.16.0
+Requires-Dist: google-cloud-bigquery-storage ==2.24.0
+Requires-Dist: google-cloud-core ==2.4.1
+Requires-Dist: google-crc32c ==1.5.0
+Requires-Dist: google-generativeai ==0.6.0
+Requires-Dist: google-resumable-media ==2.7.0
+Requires-Dist: googleapis-common-protos ==1.61.0
+Requires-Dist: graphlib ==0.9.5
+Requires-Dist: grpcio ==1.60.0
+Requires-Dist: grpcio-status ==1.60.0
+Requires-Dist: gspread ==5.10.0
+Requires-Dist: gspread-asyncio ==1.9.0
+Requires-Dist: h11 ==0.14.0
+Requires-Dist: html5lib ==1.1
+Requires-Dist: httpcore ==0.17.2
+Requires-Dist: httplib2 ==0.22.0
+Requires-Dist: httpx ==0.24.1
+Requires-Dist: idna ==3.3
+Requires-Dist: iexfinance ==0.5.0
+Requires-Dist: ipykernel ==6.13.0
+Requires-Dist: ipython ==8.3.0
+Requires-Dist: isoweek ==1.3.3
+Requires-Dist: jaconv ==0.3.4
+Requires-Dist: jedi ==0.18.1
+Requires-Dist: jinja2 ==3.1.2
+Requires-Dist: jiter ==0.5.0
+Requires-Dist: joblib ==1.3.2
+Requires-Dist: json-fix ==0.3.0
+Requires-Dist: jsonschema ==4.5.1
+Requires-Dist: jupyter-client ==8.2.0
+Requires-Dist: jupyter-core ==5.3.0
+Requires-Dist: kiwisolver ==1.4.4
+Requires-Dist: libcst ==1.3.1
+Requires-Dist: lxml ==4.9.2
+Requires-Dist: mapboxgl ==0.10.2
+Requires-Dist: mapclassify ==2.6.1
+Requires-Dist: markdown ==3.4.1
+Requires-Dist: markdown-it-py ==3.0.0
+Requires-Dist: markupsafe ==2.1.2
+Requires-Dist: matplotlib ==3.7.1
+Requires-Dist: matplotlib-inline ==0.1.3
+Requires-Dist: mdurl ==0.1.2
+Requires-Dist: mercantile ==1.2.1
+Requires-Dist: multidict ==6.0.4
+Requires-Dist: mypy-extensions ==1.0.0
+Requires-Dist: nbformat ==5.10.4
+Requires-Dist: nest-asyncio ==1.5.5
+Requires-Dist: networkx ==3.0
+Requires-Dist: numpy ==1.24.2
+Requires-Dist: oauthlib ==3.2.0
+Requires-Dist: openai ==1.30.1
+Requires-Dist: openpyxl ==3.1.2
+Requires-Dist: orjson ==3.9.1
+Requires-Dist: packaging ==23.0
+Requires-Dist: pandas ==1.5.3
+Requires-Dist: parso ==0.8.3
+Requires-Dist: pathspec ==0.11.0
+Requires-Dist: patsy ==0.5.3
+Requires-Dist: pdoc ==14.4.0
+Requires-Dist: pexpect ==4.8.0
+Requires-Dist: pickleshare ==0.7.5
+Requires-Dist: pillow ==9.4.0
+Requires-Dist: platformdirs ==3.0.0
+Requires-Dist: plotly ==5.8.0
+Requires-Dist: pooch ==1.8.0
+Requires-Dist: prompt-toolkit ==3.0.29
+Requires-Dist: proto-plus ==1.23.0
+Requires-Dist: protobuf ==4.25.1
+Requires-Dist: psutil ==5.9.4
+Requires-Dist: ptyprocess ==0.7.0
+Requires-Dist: pure-eval ==0.2.2
+Requires-Dist: pyarrow ==14.0.2
+Requires-Dist: pyasn1 ==0.5.0
+Requires-Dist: pyasn1-modules ==0.3.0
+Requires-Dist: pydantic ==2.4.2
+Requires-Dist: pydantic-core ==2.10.1
+Requires-Dist: pydeck ==0.8.0
+Requires-Dist: pyflakes ==2.5.0
+Requires-Dist: pygments ==2.17.2
+Requires-Dist: pyparsing ==3.0.9
+Requires-Dist: pypng ==0.20220715.0
+Requires-Dist: pyproj ==3.6.1
+Requires-Dist: pyrsistent ==0.19.3
+Requires-Dist: pyshp ==2.3.1
+Requires-Dist: python-dateutil ==2.8.2
+Requires-Dist: pytz ==2022.1
+Requires-Dist: pyxirr ==0.8.1
+Requires-Dist: pyyaml ==6.0.1
+Requires-Dist: pyzmq ==25.0.0
+Requires-Dist: qrcode ==7.4.2
+Requires-Dist: rasterio ==1.3.9
+Requires-Dist: requests ==2.31.0
+Requires-Dist: requests-oauthlib ==1.3.1
+Requires-Dist: rich ==13.7.1
+Requires-Dist: roman ==3.3
+Requires-Dist: rsa ==4.9
+Requires-Dist: scikit-learn ==1.3.0
+Requires-Dist: scipy ==1.10.1
+Requires-Dist: seaborn ==0.13.0
+Requires-Dist: setuptools ==70.1.1
+Requires-Dist: sgmllib3k ==1.0.0
+Requires-Dist: shapely ==2.0.2
+Requires-Dist: six ==1.16.0
+Requires-Dist: smmap ==5.0.1
+Requires-Dist: sniffio ==1.3.0
+Requires-Dist: snuggs ==1.4.7
+Requires-Dist: soupsieve ==2.3.2.post1
+Requires-Dist: stack-data ==0.2.0
+Requires-Dist: statsmodels ==0.13.5
+Requires-Dist: streamlit ==1.36.0
+Requires-Dist: tenacity ==8.2.3
+Requires-Dist: threadpoolctl ==3.2.0
+Requires-Dist: tokenize-rt ==5.0.0
+Requires-Dist: tokenizers ==0.13.3
+Requires-Dist: toml ==0.10.2
+Requires-Dist: toolz ==0.11.2
+Requires-Dist: tornado ==6.2
+Requires-Dist: tqdm ==4.65.0
+Requires-Dist: traitlets ==5.9.0
+Requires-Dist: tweepy ==4.9.0
+Requires-Dist: typing-extensions ==4.8.0
+Requires-Dist: untokenize ==0.1.1
+Requires-Dist: uritemplate ==4.1.1
+Requires-Dist: urllib3 ==1.26.9
+Requires-Dist: wcwidth ==0.2.5
+Requires-Dist: webencodings ==0.5.1
+Requires-Dist: xyzservices ==2023.10.1
+Requires-Dist: yarl ==1.8.2
+
+# The Neptyne Kernel
+
+This package contains everything shipped in a [Neptyne](https://neptyne.com) kernel container. Running outside of a Neptyne context isnt fully supported yet, but this may prove useful for some advanced use cases.
+
+## Installing
+
+Neptyne kernels use Python 3.11, so this is the only version currently supported.
+
+```python
+python3.11 -m venv venv
+. venv/bin/activate
+pip install -r kernel/requirements.txt # or pip install uv && uv pip install -r kernel/requirements.txt
+```
+
+## Usage
+
+In Neptyne containers, you'd typically import the API using
+
+```
+import neptyne as nt
+```
+
+Outside of this context, you'll need to do something like
+
+```
+import kernel.neptyne_api as nt
+```
