@@ -1,0 +1,9 @@
+cmip6_aws/__init__.py,sha256=zeVOhcua4Xo3JlgUNhGveQdohuaflY1Y6y6R9uoQofY,123
+cmip6_aws/cmip6_aws.py,sha256=uvOzacZdy90BXAQs0XFGwqormS-c6-BvsCO5W1Oz0dk,9921
+cmip6_aws/common.py,sha256=Si4ZvbkkaVGyKrOa7gmsVNWS2Abtji-V5nEsJhrIM3M,188
+cmip6_aws-0.0.1.dist-info/LICENSE,sha256=4bN4XVO_MsnOb0MtDwQYTXd-4C2gqNkBgeR4-9ffAwk,1068
+cmip6_aws-0.0.1.dist-info/METADATA,sha256=jLoiFuUhUb5gmtYM2FDzHHlTxE94VItid2jZAvdE6ZA,1250
+cmip6_aws-0.0.1.dist-info/WHEEL,sha256=XRxW4r1PNiVhMpP4bT9oWtu3HyndxpJ84SkubFgzp_Y,109
+cmip6_aws-0.0.1.dist-info/dependency_links.txt,sha256=wTBzYqQ4M_FQcSVhyuDi4zLnam5UPTE1JA-CZ8Dn61U,15
+cmip6_aws-0.0.1.dist-info/top_level.txt,sha256=oiPnXCxjxE5I0mmCDLQIJ11L0yr4kEiGKFYF_MC6Ink,10
+cmip6_aws-0.0.1.dist-info/RECORD,,
