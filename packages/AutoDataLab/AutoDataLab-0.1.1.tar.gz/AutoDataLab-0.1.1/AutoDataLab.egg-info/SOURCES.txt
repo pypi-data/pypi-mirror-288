@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+AutoDataLab/__init__.py
+AutoDataLab/main.py
+AutoDataLab.egg-info/PKG-INFO
+AutoDataLab.egg-info/SOURCES.txt
+AutoDataLab.egg-info/dependency_links.txt
+AutoDataLab.egg-info/entry_points.txt
+AutoDataLab.egg-info/top_level.txt
