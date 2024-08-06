@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: my_cookies
+Version: 0.1.4
+Summary: Retrieve cookies from your favorite browsers.
+Home-page: https://github.com/kaiwk/my_cookies
+Download-URL: https://github.com/kaiwk/my_cookies
+Author: Wang Kai
+Author-email: kaiwkx@gmail.com
+License: MIT
+Keywords: browser,cookies
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
+Requires-Dist: click
+Requires-Dist: browser_cookie3
