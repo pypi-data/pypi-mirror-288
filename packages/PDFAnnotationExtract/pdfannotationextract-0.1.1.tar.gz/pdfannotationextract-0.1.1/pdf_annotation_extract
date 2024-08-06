@@ -1,0 +1,125 @@
+#!/usr/bin/env python
+import argparse
+import fitz
+import pandas as pd
+from pathlib import Path
+
+
+def is_in(rect_w, rect_hl, word):
+    wx0, wy0, wx1, wy1 = [round(w, 4) for w in rect_w]
+    hlx0, hly0, hlx1, hly1 = [round(hl, 4) for hl in rect_hl]
+    if (wx0 + 5 >= hlx0 and wx1 <= hlx1 + 5) and (
+        wy0 + 0.5 >= hly0 and wy1 <= hly1 + 0.5
+    ):
+        return True
+    else:
+        return False
+
+
+def highlight_missing_text(s):
+    is_above_threshold = (s == "") | (s.str.startswith("UNMATCHED"))
+    return ["background-color: yellow" if v else "" for v in is_above_threshold]
+
+
+parser = argparse.ArgumentParser(
+    prog="PDFAnnotationExtract",
+    description="Extract annotations and highlights from specified PDF file",
+    epilog="",
+)
+parser.add_argument("filename")
+args = parser.parse_args()
+path = Path(args.filename)
+if not path.is_file():
+    exit(f"File not found: {args.filename}")
+
+
+src = args.filename
+doc = fitz.open(src)
+
+highlighted_text = {}
+substitute_words = {}
+for page_number, page in enumerate(doc):
+
+    all_words = page.get_text_words()
+    annot = page.first_annot
+    while annot:
+        if annot.type[0] == 2:
+            if page_number not in substitute_words:
+                substitute_words[page_number] = []
+            substitute_words[page_number].append(
+                {
+                    "word": annot.get_text().strip().replace("\n", ""),
+                    "position": annot.rect,
+                }
+            )
+
+        if annot.type[0] == 8:
+            highlights = []
+            if page_number not in highlighted_text:
+                highlighted_text[page_number] = []
+            highlighted_t = ""
+            all_coordinates = annot.vertices
+            x0 = all_coordinates[0][0]
+            y0 = all_coordinates[0][1]
+            if len(all_coordinates) == 4:
+                highlight_coord = fitz.Quad(all_coordinates).rect
+                highlights.append(highlight_coord)
+            else:
+                all_coordinates = [
+                    all_coordinates[x : x + 4]
+                    for x in range(0, len(all_coordinates), 4)
+                ]
+                for i in range(0, len(all_coordinates)):
+                    coord = fitz.Quad(all_coordinates[i]).rect
+                    highlights.append(coord)
+            for h in highlights:
+                sentence = [w[4] for w in all_words if is_in(w[:4], h[:4], w[4])]
+
+                highlighted_t = f"{highlighted_t} {' '.join(sentence)}"
+            highlighted_text[page_number].append(
+                {"word": highlighted_t.strip(), "y0": y0, "x0": x0}
+            )
+
+        annot = annot.next
+
+for key in substitute_words:
+    if len(substitute_words[key]) > 1:
+        substitute_words[key] = sorted(
+            substitute_words[key], key=lambda x: x["position"][1]
+        )
+    if len(highlighted_text[key]) > 1:
+        highlighted_text[key] = sorted(
+            highlighted_text[key], key=lambda x: (x["y0"], x["x0"])
+        )
+
+page_ns = sorted(highlighted_text.keys())
+
+for page_number in page_ns:
+    if len(substitute_words[page_number]) > len(highlighted_text[page_number]):
+        for i in range(
+            0, len(substitute_words[page_number]) - len(highlighted_text[page_number])
+        ):
+            highlighted_text[page_number].append({"word": "UNMATCHED ANNOTATION"})
+    elif len(substitute_words[page_number]) < len(highlighted_text[page_number]):
+        for i in range(
+            0, len(highlighted_text[page_number]) - len(substitute_words[page_number])
+        ):
+            substitute_words[page_number].append({"word": "UNMATCHED HIGHLIGHT"})
+
+data = []
+for page_number in page_ns:
+    for i in range(len(substitute_words[page_number])):
+        data.append(
+            {
+                "page": page_number + 1,
+                "highlight": highlighted_text[page_number][i]["word"],
+                "annotation": substitute_words[page_number][i]["word"],
+            }
+        )
+
+output_filename = f"{args.filename.replace('.pdf', '')}_annotations.xlsx"
+df = pd.DataFrame(data=data)
+df.style.apply(highlight_missing_text, subset=["highlight"]).to_excel(
+    output_filename, index=False
+)
+print(f"Annotations exported to file {output_filename}")

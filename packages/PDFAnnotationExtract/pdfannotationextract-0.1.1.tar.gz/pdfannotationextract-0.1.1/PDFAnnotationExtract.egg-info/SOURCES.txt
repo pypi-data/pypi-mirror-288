@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pdf_annotation_extract
+setup.py
+PDFAnnotationExtract.egg-info/PKG-INFO
+PDFAnnotationExtract.egg-info/SOURCES.txt
+PDFAnnotationExtract.egg-info/dependency_links.txt
+PDFAnnotationExtract.egg-info/requires.txt
+PDFAnnotationExtract.egg-info/top_level.txt
