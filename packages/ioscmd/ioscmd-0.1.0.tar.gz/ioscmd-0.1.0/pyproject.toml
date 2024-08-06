@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "ioscmd"
+version = "0.1.0"
+description = "Execute commands on jailbroken devices"
+authors = ["walden <waldennna@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+click = "*"
+paramiko = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+ioscmd = "ioscmd.__main__:__main__"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+
+[tool.coverage.run]
+branch = true
