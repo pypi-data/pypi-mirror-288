@@ -1,0 +1,13 @@
+flatwhite/__init__.py,sha256=C0SGnm8-fZRNIodh2vTZbgifLHOomFkH3ohy2qJ1bD4,117
+flatwhite/file_handler.py,sha256=DOYoUEkuZCVDYqjnHq1PlhgMqWHxEV7_stIIRxg9i9g,6753
+flatwhite/format_validator.py,sha256=VOxkEh0GBfl8mRxXyiLjjgNcDBOG03W7Kkmfxj1hbj4,1420
+flatwhite/templates.py,sha256=yf0xpcDTK5elcy4llFFOO2mWXCk8rBju1crTjDoBaK8,1749
+flatwhite/web_scraper.py,sha256=cK_ZCrmgk5vKMAWYWxlcF1ph4y5u2_S0KZPBUNQ6cKw,61
+tests/__init__.py,sha256=_4GRF4d2W-K1mdq81m44gcp4FVpKcY1WJA-IWlTxpFM,21
+tests/test_file_handler.py,sha256=hhxWRxuZrAfsHQrHQhgM8wieF3wSya2OW2Hy5SQq2j0,267
+tests/test_format_validator.py,sha256=ctiFJrPS2qn-ZJoP6LomPLlNT0liBSlV4h4SakrcqmE,284
+flatwhite-0.3.2.dist-info/LICENSE,sha256=QQ9Eralsj5r7HVjTr3e8vPPjJnV7cnak5nnxwC2d0Ig,1092
+flatwhite-0.3.2.dist-info/METADATA,sha256=IoUWHSM5AD_DfTBdcxDKL_2CQpEbKAifMCwrkDdqbvI,476
+flatwhite-0.3.2.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+flatwhite-0.3.2.dist-info/top_level.txt,sha256=LogOTBMj_Z1qCdtKZWf5RBz4YRf34p7OGpKExgAaVo0,16
+flatwhite-0.3.2.dist-info/RECORD,,
