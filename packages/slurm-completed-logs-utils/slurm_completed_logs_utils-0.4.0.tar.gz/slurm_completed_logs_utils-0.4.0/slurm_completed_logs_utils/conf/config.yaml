@@ -1,0 +1,51 @@
+---
+# The following represents the filename
+# extension to be applied to the SQLite3
+# database file.
+database_file_extension: db
+
+# Any column names listed here will be
+# ignored by the loader.
+ignore_columns:
+  - groupid
+  - partition
+  - timelimit
+  - nodelist
+  - nodecnt
+  - proccnt
+  - workdir
+  - reservationname
+  - gres
+  - account
+  - qos
+  - wckey
+  - cluster
+  - submittime
+  - eligibletime
+  - derivedexitcode
+
+table_schema:
+  jobs:
+    jobid: str
+    userid: str
+    groupid: str
+    name: str
+    jobstate: str
+    partition: str
+    timelimit: str
+    starttime: str
+    endtime: str
+    nodelist: str
+    nodecnt: str
+    proccnt: str
+    workdir: str
+    reservationname: str
+    gres: str
+    account: str
+    qos: str
+    wckey: str
+    cluster: str
+    submittime: str
+    eligibletime: str
+    derivedexitcode: str
+    exitcode: str
