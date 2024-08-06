@@ -1,0 +1,3 @@
+include src/dtPyWebAppFramework/_resources/*
+include src/dtPyWebAppFramework/dev_tools/_resources/*
+include src/dtPyWebAppFramework/*.dat
