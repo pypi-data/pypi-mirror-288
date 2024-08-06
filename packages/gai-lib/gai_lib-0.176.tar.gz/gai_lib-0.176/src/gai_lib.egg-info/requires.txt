@@ -1,0 +1,16 @@
+PyYAML
+pydantic
+openai==1.32.0
+ipykernel
+requests
+markdownify
+colorlog==6.8.2
+pynvml
+pytest
+python-dotenv
+httpx
+huggingface_hub
+fastapi
+nats-py
+aioconsole
+rich
