@@ -1,0 +1,22 @@
+[project]
+name = "QuDAP"
+version = "0.0.3"
+authors = [
+  { name="Chunli Tang", email="chunli.tang@auburn.edu" },
+]
+description = "Quantum Materials Data Acquisition and Processing (QuDAP), a Python-based and open-source software package, is designed to control and automate material characterizations based on the Physical Property Measurement System (PPMS)."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/CharlieGPA40/QuDAP"
+Issues = "https://github.com/CharlieGPA40/QuDAP/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
