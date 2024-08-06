@@ -1,0 +1,9 @@
+torchreg/__init__.py,sha256=26V6SyAL1iz8-Q9htAnxWd6c2fxmTIFz8oNzz74VKdU,72
+torchreg/affine.py,sha256=o9mkY06yDaJkt_z6kZ7mqbjxzSWSkvm87uoEpXs3UXI,5735
+torchreg/metrics.py,sha256=OcDfPsOHfh0xGuIlMSqCJefBujhykX89_C6lB9bMTfE,2671
+torchreg/syn.py,sha256=DefB5QZGCYhWgfIMoA4x-byaeGzB-HSu4YB9S1P9CY4,6417
+torchreg/utils.py,sha256=HuBDSNfm5d4nEEwbcUaUR2SKvLws8qvJdyj5TJPFWrk,1708
+torchreg-0.1.1.dist-info/LICENSE,sha256=V6-KgmrQL5zLUB2j_2sbih5bn_BMARnHcJ63skNpNJA,1068
+torchreg-0.1.1.dist-info/METADATA,sha256=zxh20_K8qdsgUtKni_yC7_ymt7zg-KjJjYD7yDDOb6w,3960
+torchreg-0.1.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+torchreg-0.1.1.dist-info/RECORD,,
