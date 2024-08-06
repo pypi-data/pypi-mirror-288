@@ -1,0 +1,8 @@
+jax[cuda12]>=0.4.26
+flax>=0.8.4
+optax
+numpy
+tqdm
+mergedeep
+typing
+orbax-checkpoint>=0.5.15
