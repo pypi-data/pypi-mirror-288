@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+Mensajes_laxus.egg-info/PKG-INFO
+Mensajes_laxus.egg-info/SOURCES.txt
+Mensajes_laxus.egg-info/dependency_links.txt
+Mensajes_laxus.egg-info/requires.txt
+Mensajes_laxus.egg-info/top_level.txt
+mensajes/__init__.py
+mensajes/bienvenida/__init__.py
+mensajes/bienvenida/saludos.py
+mensajes/despedida/__init__.py
+mensajes/despedida/despedirse.py
+tests/__init__.py
+tests/test_hola.py
