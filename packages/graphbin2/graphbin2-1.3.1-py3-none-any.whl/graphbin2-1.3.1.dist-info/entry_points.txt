@@ -1,0 +1,4 @@
+[console_scripts]
+graphbin2=graphbin2.cli:main
+prepResult=graphbin2.support.prepResult:main
+
