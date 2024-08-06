@@ -1,0 +1,6 @@
+transformers
+tokenizers
+datasets
+torch
+torchmetrics
+tqdm
