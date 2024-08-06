@@ -1,0 +1,15 @@
+pls/__init__.py,sha256=iEbNQmmZ-oyqyqmCTrusdIuTxcDDBHfEeoXq8AYVOl0,24
+pls/functions.py,sha256=rL1uTwkj0UoMxI6LCSHtUT0t3oR_p23UqKmhsavhD9g,21147
+pls/static/.pls/cc_instrument.sh,sha256=Cg4aP1fE4922Vvj-nP7v2pyDszPJuQJa3dg2Vm_Z18k,161
+pls/static/.pls/export_gdb_or_lldb.sh,sha256=aHNhjpsf4-_pcOLZ66-f2FC1SZyRmngLr5qnzy337cY,218
+pls/static/.pls/git_clone.sh,sha256=s84X_DHBcibTk2rMXRJiMoU9YvHpItTPM7_gZWxKfx8,135
+pls/static/.pls/pls_h_dir/pls.h,sha256=r9nqzHVfgeXa6lj3GEkWEXc_TetQRcRLkn_VdOm_peE,647
+pls/static/.vscode/launch.json,sha256=12Vd4Grt0G0qoSPhNQZkV1U2cqqXngZMcjVV6RG7G3o,438
+pls/static/.vscode/settings.json,sha256=kaia9OT_9gi_ZcJVe2MbXvFJsEgke3R9e2hDBkhvs9A,213
+pls/static/.vscode/tasks.json,sha256=KSW-dueaSFXPRjFO9pemYSDwInYJ2zEirErQktp-ELc,542
+plsbuild-0.1.dist-info/LICENSE,sha256=30PkixFl5H7_tZkqY3Hev04S4KhR7CmEyLIL4aEWkYs,1079
+plsbuild-0.1.dist-info/METADATA,sha256=RM0LanDYIs7n9wmf42T1HnSSdYXGCVXCOh1aQ_0apnw,155
+plsbuild-0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+plsbuild-0.1.dist-info/entry_points.txt,sha256=QafG14wwOT2ZP5HcUCHTBKhLhL_E_zD4WdfKB8AXpVE,43
+plsbuild-0.1.dist-info/top_level.txt,sha256=rIlNFwp5AVflg5ua7r2EJ0ibFkJ0e0FT0xWGuaQQAE0,4
+plsbuild-0.1.dist-info/RECORD,,
