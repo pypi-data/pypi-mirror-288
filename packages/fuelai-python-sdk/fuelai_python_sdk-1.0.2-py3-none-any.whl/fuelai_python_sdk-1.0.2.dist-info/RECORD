@@ -1,0 +1,11 @@
+fuelai/__init__.py,sha256=mAGDVsjLYCSmWG_amkohd043saIAwTaPf_W-9ht-phc,287
+fuelai/answers.py,sha256=_DKKccHva64hG6ZVZOVElEx0Lx7Y9Ko71nmV_sd4QPs,2061
+fuelai/api_client.py,sha256=BUP1Om8FGKQ_WDs-E4vdM0Clnp--ySwqgFcFJS91sCw,3725
+fuelai/errors_extensions.py,sha256=r-3ognCcQ6Om_9kuZOtB2Eil2n3x8VWqU4_abcU_7FI,1021
+fuelai/projects.py,sha256=xjxyUZZgmm67YAMY_KD5NEBca8J3ZKH9at1sMGaOQVY,4163
+fuelai/tasks.py,sha256=lecq5AHuTJhXN6gtvMp3BVtICCgu2-EDXdbJrW5Baq4,2623
+fuelai_python_sdk-1.0.2.dist-info/LICENSE,sha256=5nr_vmVjiest6RFPt2fT8mu4WdaPICFyxkPEUP8hdBA,1063
+fuelai_python_sdk-1.0.2.dist-info/METADATA,sha256=wzdjgcbDx2QH6SfW-oTewp0R9D82jhBfs2wO5nQCzSU,1754
+fuelai_python_sdk-1.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fuelai_python_sdk-1.0.2.dist-info/top_level.txt,sha256=XKeuSIgjFLvenx5x5AvHLaqkYEaTsC4IQ1sB5kbC1pA,7
+fuelai_python_sdk-1.0.2.dist-info/RECORD,,
