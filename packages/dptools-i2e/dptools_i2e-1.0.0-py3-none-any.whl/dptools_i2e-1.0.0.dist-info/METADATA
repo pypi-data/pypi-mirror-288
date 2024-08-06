@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: dptools-i2e
+Version: 1.0.0
+Summary: Hack normal objects into external objects
+Author-email: deepfos-python-team <deepfos_py@deepfinance.com>
+License: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: edgedb ==1.4.0
+Requires-Dist: psycopg2-binary ==2.9.9
+
+# What is this?
+
+`i2e` stands for `internal to external`, which explains itself that this
+is a script for altering internal objects to external objects.
+
+
+# Usage
+
+```shell
+dptools-i2e --help
+```

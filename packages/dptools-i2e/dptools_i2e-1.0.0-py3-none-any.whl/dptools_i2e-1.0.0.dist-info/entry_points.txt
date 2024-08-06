@@ -1,0 +1,2 @@
+[console_scripts]
+dptools-i2e = dptools:i2e.main
