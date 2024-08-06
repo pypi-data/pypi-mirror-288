@@ -1,0 +1,11 @@
+README.txt
+license.txt
+setup.py
+mysql_update/__init__.py
+mysql_update/get_myconf.py
+mysql_update/mongo_update.py
+mysql_update/mysql_update.py
+mysql_update.egg-info/PKG-INFO
+mysql_update.egg-info/SOURCES.txt
+mysql_update.egg-info/dependency_links.txt
+mysql_update.egg-info/top_level.txt
