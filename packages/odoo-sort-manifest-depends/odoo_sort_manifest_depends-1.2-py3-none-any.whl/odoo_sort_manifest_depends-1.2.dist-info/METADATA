@@ -1,0 +1,71 @@
+Metadata-Version: 2.3
+Name: odoo-sort-manifest-depends
+Version: 1.2
+Summary: Sort modules dependencies section in odoo addon's manifest
+Project-URL: Documentation, https://github.com/acsone/odoo-sort-manifest-depends#readme
+Project-URL: Issues, https://github.com/acsone/odoo-sort-manifest-depends/issues
+Project-URL: Source, https://github.com/acsone/odoo-sort-manifest-depends
+Author: Acsone
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: click
+Requires-Dist: manifestoo-core
+Description-Content-Type: text/markdown
+
+# odoo-sort-manifest-depends
+
+## Table of Contents
+
+- [Help](#help)
+- [Pre-commit hook](#pre-commit)
+- [License](#license)
+
+## Help
+
+```
+Usage: odoo-sort-manifest-depends [OPTIONS]
+
+  Sort modules dependencies section in odoo addons manifests
+
+Options:
+  --local-addons-dir DIRECTORY  Directory containing manifests to sort
+                                [required]
+  --odoo-version TEXT           Project's Odoo version (e.g. 16.0)  [required]
+  --project-name TEXT           Name of the project, will be the name of
+                                category of local addons (default: Local)
+  --help                        Show this message and exit.
+```
+
+
+## Pre-commit
+
+```yaml
+  - repo: https://github.com/acsone/odoo-sort-manifest-depends
+    rev: v1.1
+    hooks:
+      - id: odoo-sort-manifest-depends
+        args:
+          [
+            --local-addons-dir=./odoo/addons/,
+            --odoo-version=16.0,
+            --project-name=MyProject,
+          ]
+```
+
+## Credits
+
+ * [Laurent Mignon](https://github.com/lmignon)
+ * [Thomas Binsfeld](https://github.com/ThomasBinsfeld)
+ * [Zina Rasoamanana](https://github.com/AnizR)
+
+## License
+
+`odoo-sort-manifest-depends` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
