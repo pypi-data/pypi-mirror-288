@@ -1,0 +1,7 @@
+numpy
+colorthief
+scikit-learn
+Pillow
+colormath
+wand
+colorama
