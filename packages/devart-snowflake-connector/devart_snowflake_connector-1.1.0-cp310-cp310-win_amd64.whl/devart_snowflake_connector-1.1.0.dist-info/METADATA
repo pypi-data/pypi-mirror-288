@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: devart-snowflake-connector
+Version: 1.1.0
+Summary: New level of functionality and performance in data access via Python
+Home-page: https://devart.com
+Author: Devart
+Author-email: support@devart.com
+License: LGPL with exceptions
+Project-URL: Homepage, http://devart.com/python/snowflake
+Project-URL: Download, http://devart.com/python/snowflake/download.html
+Project-URL: History, http://devart.com/python/snowflake/revision_history.html
+Project-URL: Documentation, http://devart.com/python/snowflake/overview.html
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python Connector for Snowflake #
+
+Python Connector for Snowflake is a connectivity solution for accessing
+the Snowflake data cloud from Python applications. It fully implements
+the Python DB API 2.0 specification. The connector is distributed as a wheel
+package for Windows and Windows Server.
+
+## Using the connector ##
+
+To retrieve data from a database:
+
+Import the module.
+```
+import devart.snowflake
+```
+
+Connect to a database using the `connect()` module method and obtain a `connection` object.
+```
+my_connection = devart.snowflake.connect(
+    Domain="your_instance;",
+    UserId="your_username",
+    Password="your_password",Database="your_database;"
+)
+```
+
+Create a `cursor` object using the `cursor()` connection method.
+```
+my_cursor = my_connection.cursor()
+```
+
+Execute the SQL statement using the `execute()` cursor method.
+```
+my_cursor.execute("SELECT * FROM employees")
+```
+
+Retrieve the result set using one of the `fetch*()` cursor methods.
+```
+for row in my_cursor.fetchall(): 
+    print(row)
+```
+
+## Ordering and activating the license ##
+
+You can purchase a license for the connector on the ordering page:             
+https://www.devart.com/python/snowflake/ordering.html
+
+To activate the license, follow the instructions in the documentation:             
+https://docs.devart.com/python/snowflake/activate-a-license.htm
+
+## What's new ##
+
+Python Connector for Snowflake 1.1
+
+- Added connection pooling
+- Added activation with a license key
+- Added the subscription license type
