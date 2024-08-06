@@ -1,0 +1,11 @@
+grpcio~=1.64.0
+matplotlib~=3.7.5
+mpld3~=0.5.10
+numpy~=1.24.4
+paho-mqtt~=1.5.1
+pandas~=1.2.4
+protobuf~=4.22.1
+pytz~=2020.1
+requests~=2.32.3
+typing~=3.7.4.1
+websocket-client~=1.8.0
