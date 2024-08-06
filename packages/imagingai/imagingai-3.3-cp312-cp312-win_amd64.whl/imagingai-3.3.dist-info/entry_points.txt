@@ -1,0 +1,2 @@
+[console_scripts]
+imaging-publish = AIProcessor.imaging_publish:main
