@@ -1,0 +1,4 @@
+Pillow
+nonebot2
+nonebot-plugin-alconna
+nonebot_plugin_userinfo
