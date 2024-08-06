@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: local-abbfreeathome
+Version: 0.0.8
+Summary: A python package designed to interact with the ABB (Busch Jaeger) Free@Home System over the Local API
+Project-URL: Homepage, https://github.com/kingsleyadam/local-abbfreeathome
+Project-URL: Issues, https://github.com/kingsleyadam/local-abbfreeathome/issues
+Author-email: Adam Kingsley <adam@kingsley.io>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# Python Package - ABB Free@Home via Local Api
+
+Coming soon...
