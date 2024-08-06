@@ -1,0 +1,2 @@
+[pymodaq.instruments]
+AvaSpec = pymodaq_plugins_AvaSpec
