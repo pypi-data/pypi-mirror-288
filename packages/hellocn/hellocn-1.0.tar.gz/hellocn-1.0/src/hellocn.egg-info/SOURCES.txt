@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/hellocn/__init__.py
+src/hellocn/hello.py
+src/hellocn.egg-info/PKG-INFO
+src/hellocn.egg-info/SOURCES.txt
+src/hellocn.egg-info/dependency_links.txt
+src/hellocn.egg-info/entry_points.txt
+src/hellocn.egg-info/top_level.txt
