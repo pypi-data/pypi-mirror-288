@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: eds_ds_tools
+Version: 0.1
+Summary: tools for data
+Author-email: wenleicao@gmail.com
+Requires-Dist: boto3
+Requires-Dist: botocore
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pytz
+Requires-Dist: requests

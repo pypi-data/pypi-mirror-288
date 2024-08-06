@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+eds_ds_tools/__init__.py
+eds_ds_tools/_amazons3.py
+eds_ds_tools/_config.py
+eds_ds_tools/_imports.py
+eds_ds_tools.egg-info/PKG-INFO
+eds_ds_tools.egg-info/SOURCES.txt
+eds_ds_tools.egg-info/dependency_links.txt
+eds_ds_tools.egg-info/not-zip-safe
+eds_ds_tools.egg-info/requires.txt
+eds_ds_tools.egg-info/top_level.txt
