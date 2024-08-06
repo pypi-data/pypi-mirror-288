@@ -1,0 +1,16 @@
+inventree_wireviz/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inventree_wireviz/processing.py,sha256=VUwwlJxanCEZ171dHPWxVsjkf5_XJA-7sSrHF6XYNwI,13817
+inventree_wireviz/serializers.py,sha256=i2P6Qx18DsI5_ZDH9u-wNQE3wgjQtAyvOYw-4Lb5dlc,4104
+inventree_wireviz/version.py,sha256=FOi9dGvmtkgpQo5VruICHmHxx159N0fCCjkFR8QAdAM,85
+inventree_wireviz/views.py,sha256=YsSyCYc5ikkYGCvwq7C1ixOhjgbqwfxPew5Sh9AK2AI,2086
+inventree_wireviz/wireviz.py,sha256=Z_6zmjIg7jof6Q-q2xFV2DhFRuTbZlfgNr6LJ5LQ9T4,8853
+inventree_wireviz/templates/wireviz/harness_panel.html,sha256=yuCFzUmIZkEazmTlYl4bB7SsbbCasj4l2C-ngeH2ASs,2840
+inventree_wireviz/templates/wireviz/harness_panel.js,sha256=Z7P4Y6uzdwDSV7ffF6IuaX7rcDSNmWY4PksNw2Uha38,40
+inventree_wireviz/templates/wireviz/settings_panel.html,sha256=l0oGSjMQe1KESN4uff_8wof-X8HuANPy0QiJRChCsqM,1195
+inventree_wireviz/templates/wireviz/upload_script.html,sha256=Qqj297VfiFTFk4uCQfS9yz-m_bG0Toky1PAxZstuRws,2966
+inventree_wireviz_plugin-0.6.2.dist-info/LICENSE,sha256=95Z9OJH4hRNNKLjuS3chVEp6nZdRXLBfmDOsTh9ZugM,1066
+inventree_wireviz_plugin-0.6.2.dist-info/METADATA,sha256=kZylRpG5zNSAWhIHxVuYrluwWCmkhPTt3symbe7XJ7Q,6026
+inventree_wireviz_plugin-0.6.2.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+inventree_wireviz_plugin-0.6.2.dist-info/entry_points.txt,sha256=MojpcXxbmOhbDYsKN9iiWk995MSaq4a9CrH5bWLaqy8,76
+inventree_wireviz_plugin-0.6.2.dist-info/top_level.txt,sha256=HSHZPhnIFhQcmS60P62Wd31S7dFTkRXxmi_rLh_lZXA,18
+inventree_wireviz_plugin-0.6.2.dist-info/RECORD,,
