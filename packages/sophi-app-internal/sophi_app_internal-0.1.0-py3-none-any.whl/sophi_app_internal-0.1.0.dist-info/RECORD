@@ -1,0 +1,11 @@
+sophi_app_internal/__init__.py,sha256=_eizSZCI5xGT029FH4YQN7RjMvv8-NSXboJqVqzQmQU,231
+sophi_app_internal/azure.py,sha256=mXVnVGXAO3N9_-bd9F70yysrvtNQzHub5H-Ww87eG5Q,1298
+sophi_app_internal/cosmos_client.py,sha256=HW4SZ3ZOc0rsVVeUtqe1BJibNDhwJbdI1OqJim4QZR0,3208
+sophi_app_internal/google.py,sha256=bmR1MxpD33GbuRQ1vIaxy3YvkzfiXg84gUw7D2RI8OY,2964
+sophi_app_internal/main.py,sha256=HKE0mnn0LBZN51GK5YHFZJmoWGLC_EDH76UaOJQ6sRA,691
+sophi_app_internal/management_api.py,sha256=ZbktTJcfHeqaoFD0oZGb3vVs9TApG4I4LOt3gt_M-Ps,1624
+sophi_app_internal/token_validation.py,sha256=AzhtK7JvPf_PxxaQORPbvWM9QDYavl-OHFdFu-xBaf8,1784
+sophi_app_internal-0.1.0.dist-info/METADATA,sha256=AvKi__kGFF6uXemRJg70b2zjnTcqN28EUjPLJUXo3h4,3983
+sophi_app_internal-0.1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+sophi_app_internal-0.1.0.dist-info/top_level.txt,sha256=-oRkbk5dIXuW7C6MzlO9sTgc-hLU2ljHQmP6aQ_cw9Y,19
+sophi_app_internal-0.1.0.dist-info/RECORD,,
