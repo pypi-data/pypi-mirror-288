@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/tictactai.egg-info/PKG-INFO
+src/tictactai.egg-info/SOURCES.txt
+src/tictactai.egg-info/dependency_links.txt
+src/tictactai.egg-info/entry_points.txt
+src/tictactai.egg-info/requires.txt
+src/tictactai.egg-info/top_level.txt
+tests/test_board.py
+tests/test_evaluator.py
+tests/test_game.py
+tests/test_game_ai.py
