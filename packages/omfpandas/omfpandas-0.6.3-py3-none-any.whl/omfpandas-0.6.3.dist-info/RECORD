@@ -1,0 +1,14 @@
+omfpandas/__init__.py,sha256=FTkbguONvx21torZUEQXJkvv-IHamDD0hJie37oQ9-c,303
+omfpandas/base.py,sha256=vDbXfc1Ne6P0Ue9ClujBWPqRqsmhgnIEPa9uZBP7btI,3156
+omfpandas/blockmodel.py,sha256=AJ6FcnNNXfC0CZfeRWmYohyXy7xxrJPfdEd1nLW3O_E,13758
+omfpandas/converter.py,sha256=HFi2A2Uouu7VYsErRnFxzt-TI_6fnBUXZ8CJkIODOKk,1581
+omfpandas/extras.py,sha256=IlOAFtpGFnXSId1zuJzJuDVHs_Flhw7TopNzhDKyQNA,1013
+omfpandas/reader.py,sha256=Ys5Meb763mrVcQ-Y3iD3MtBc5KH9DNMhuBayRxmkLWg,1657
+omfpandas/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omfpandas/utils/pandas.py,sha256=zZ7iB7K3z8ETbYtn0Ua_V7bJN_RQfAGFdjzUXevFX-w,1995
+omfpandas/utils/timer.py,sha256=P47TEVZWLAfvGwe15gsdLENsIkYo88Gkmdei5peDwA0,2828
+omfpandas/writer.py,sha256=cjvrDo_eC0TR81U__i-Cp6sZJDfgYaUM152_7Xo5ntg,9029
+omfpandas-0.6.3.dist-info/LICENSE,sha256=GrSVdcGtNbGvAYC_tIjLHBrIVPyg-Ksfe7ZGr087yCI,1069
+omfpandas-0.6.3.dist-info/METADATA,sha256=yqxUFhfhiIZM0DOVNB7cPdZKZzBMOQ_QCEn0nqguduA,2796
+omfpandas-0.6.3.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+omfpandas-0.6.3.dist-info/RECORD,,
