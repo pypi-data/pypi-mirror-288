@@ -1,0 +1,10 @@
+lightwind/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+lightwind/chat.py,sha256=T1KlzqWfNM1LQuN5jlBQKKaxq5k1E0gQYzwgeHu-dAY,5266
+lightwind/client.py,sha256=h11kK4-2iTYtnlippasz3Mh1RZzs3ni-mG4M022aabM,709
+lightwind/inference.proto,sha256=Xes6r447-V87_RlYNzqXs0EWfl-iWTQ0UbSSJ8dZQJY,858
+lightwind/inference_pb2.py,sha256=PMhbEpVKWhqV2ZeIf5Cqxwj_-eFF1-LB2aFuh5yWKCc,2480
+lightwind/inference_pb2.pyi,sha256=bDAdYv56LHSH71aSshaOX1hjB6rQ9HQnjFpGcopKYTQ,1831
+lightwind/inference_pb2_grpc.py,sha256=15IGF6Io4tFOgH-DmK9TmvEKNO6U6Fyl14tOo4fDNxs,3768
+lightwind-0.1.0.dist-info/METADATA,sha256=_xGGM-IQbnpcVoxfh1Olh6iQ1BWJ8_G_gyFLnIKpCnc,320
+lightwind-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+lightwind-0.1.0.dist-info/RECORD,,
