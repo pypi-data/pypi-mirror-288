@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: pyawaitable
+Version: 1.2.0
+Author-email: ZeroIntensity <zintensitydev@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 ZeroIntensity
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Documentation, https://awaitable.zintensity.dev
+Project-URL: Issues, https://github.com/ZeroIntensity/pyawaitable/issues
+Project-URL: Source, https://github.com/ZeroIntensity/pyawaitable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyAwaitable
+
+## CPython API for asynchronous functions
+
+![Tests](https://github.com/ZeroIntensity/pyawaitable/actions/workflows/tests.yml/badge.svg)
+![Memory Check](https://github.com/ZeroIntensity/pyawaitable/actions/workflows/memory_check.yml/badge.svg)
+
+-   [Docs](https://awaitable.zintensity.dev)
+-   [Source](https://github.com/ZeroIntensity/pyawaitable)
+-   [PyPI](https://pypi.org/project/pyawaitable)
+
+## What is it?
+
+PyAwaitable is the *only* library to support writing and calling asynchronous Python functions from pure C code (with the exception of manually implementing an awaitable class from scratch, which is essentially what PyAwaitable does).
+
+It was originally designed to be directly part of CPython - you can read the [scrapped PEP](https://gist.github.com/ZeroIntensity/8d32e94b243529c7e1c27349e972d926) about it. Since this library only uses the public ABI, it's better fit outside of CPython, as a library.
+
+## Installation
+
+Add it to your project's build process:
+
+```toml
+# pyproject.toml example with setuptools
+[build-system]
+requires = ["setuptools", "pyawaitable"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# ...
+dependencies = ["pyawaitable"]
+```
+
+Include it in your extension:
+
+```py
+from setuptools import setup, Extension
+import pyawaitable
+
+if __name__ == "__main__":
+    setup(
+        ...,
+        ext_modules=[Extension(..., include_dirs=[pyawaitable.include()])]
+    )
+```
+
+## Example
+
+```c
+#include <pyawaitable.h>
+
+// Assuming that this is using METH_O
+static PyObject *
+hello(PyObject *self, PyObject *coro) {
+    // Make our awaitable object
+    PyObject *awaitable = pyawaitable_new();
+
+    if (!awaitable)
+        return NULL;
+
+    // Mark the coroutine for being awaited
+    if (pyawaitable_await(awaitable, coro, NULL, NULL) < 0) {
+        Py_DECREF(awaitable);
+        return NULL;
+    }
+
+    // Return the awaitable object to yield to the event loop
+    return awaitable;
+}
+```
+
+```py
+# Assuming top-level await
+async def coro():
+    await asyncio.sleep(1)
+    print("awaited from C!")
+
+# Use our C function to await it
+await hello(coro())
+```
+
+## Copyright
+
+`pyawaitable` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
