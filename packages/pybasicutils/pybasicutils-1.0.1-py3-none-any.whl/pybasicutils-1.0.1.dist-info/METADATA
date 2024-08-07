@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pybasicutils
+Version: 1.0.1
+Summary: Basic Utilities for python development.
+Author: ItzSCodez1467 (Srijal Dutta)
+Author-email: <srijaldutta.official+pybasicutils@gmail.com>
+Keywords: python,utils,pytils,pyutils,basic utils,utilities
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Some basic utilities in python to save you some time! You won't ever need to write some lines of code to for example clear the screen but use our solution which also should adjust for nt os systems! Visit the official github: ItzSCodez1467
