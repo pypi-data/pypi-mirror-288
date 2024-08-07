@@ -1,0 +1,15 @@
+image_label/common_bus.py,sha256=UH4PzUX1MgBFHJfX8I2w-sl8z9xFpAhFSFHPMUg3kLM,948
+image_label/figure.py,sha256=vgUQr1y6OY61m5Ey2rqHHWMEqjKBAY2UTvMzprUjRpE,3513
+image_label/gui.py,sha256=zo-vZB8yQ0qrJmFMPJHVzOcijY1aqhqcvTfAFu8sCM0,44204
+image_label/helpers.py,sha256=VwLmNDcAUD4qX9C1WcXjvdXGp8yGJQQ7iMILpGX8_Yo,12424
+image_label/history.py,sha256=21bSVvG_NnBVfZIAcogPqXrPp3Oti29oK4g4wr5HeU4,1014
+image_label/main.py,sha256=sLQ0nxm3XDrq3JTwlwRdKS_dOUjDGo3vNy7wU5b39tg,359
+image_label/project.py,sha256=8A-r9ID38B-kC2VJVXsd1_TuvphnZvZbcuLNVCnyOzs,5991
+image_label/statechart.py,sha256=qZDGyaDYEmMCXjYtOH88_75jjgBuVTiArlUgpjp9fJg,23519
+image_label/exporters/yolo.py,sha256=tS_bklRrsInN75JappV2DuLpeSgz-TggECZQU3D-Gu8,10358
+simple_image_label-0.0.1.1.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+simple_image_label-0.0.1.1.dist-info/METADATA,sha256=O9ZmcJ2wRneW5SDAjbuYIzP1Fdh8ZGNV2Dkl3lU9MNE,1454
+simple_image_label-0.0.1.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+simple_image_label-0.0.1.1.dist-info/entry_points.txt,sha256=DsF8xLanv5y6s5rTYWtG3c-U4JcuMM5UVjP-E-Is0tI,60
+simple_image_label-0.0.1.1.dist-info/top_level.txt,sha256=i38pmDmpKmZecCeUhHrBRZjXfZZg1QoxlVery_6Mi3U,12
+simple_image_label-0.0.1.1.dist-info/RECORD,,

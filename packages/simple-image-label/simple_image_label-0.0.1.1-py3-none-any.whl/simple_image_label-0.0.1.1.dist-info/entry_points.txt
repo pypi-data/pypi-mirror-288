@@ -1,0 +1,2 @@
+[console_scripts]
+simple-image-label = image_label.main:run
