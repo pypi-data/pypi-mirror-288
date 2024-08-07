@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pymbse-commons
+Version: 0.1.0
+Summary: Common classes and functions for PyMBSE
+Home-page: https://pymbse.docs.cern.ch
+License: BSD-4-Clause
+Author: Matthias Bonora
+Author-email: matthias.bonora@cern.ch
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2,<3)
+Project-URL: Documentation, https://pymbse-commons.docs.cern.ch/pymbse-commons
+Project-URL: Repository, https://gitlab.cern.ch/pymbse/pymbse-commons
+Description-Content-Type: text/markdown
+
+<!---
+SPDX-FileCopyrightText: 2024 CERN
+
+SPDX-License-Identifier: BSD-4-Clause
+--->
+# PYMBSE commons
+
+Common dependencies between different Pymbse Tools.
+
