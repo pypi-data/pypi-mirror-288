@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: reflex-giscus
+Version: 0.1.0
+Summary: Reflex custom component giscus
+Author-email: Adarsh Gourab Mahalik <adarshgourabmahalik@outlook.com>
+License: Apache-2.0
+Project-URL: homepage, https://github.com/itsmeadarsh2008/reflex-giscus
+Project-URL: source, https://github.com/itsmeadarsh2008/reflex-giscus
+Keywords: reflex,reflex-custom-components
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: reflex>=0.4.2
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+# giscus
+
+A Reflex custom component giscus.
+
+## Installation
+
+```bash
+pip install reflex-giscus
+```
