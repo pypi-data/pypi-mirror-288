@@ -1,0 +1,7 @@
+pydantic
+hashlib
+hmac
+traceback
+urllib
+fastapi
+bson
