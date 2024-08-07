@@ -1,0 +1,65 @@
+
+neuron gl_exp:
+    state:
+        refr_spikes_buffer mV = 0 mV
+        refr_tick integer = 0    # Counts number of tick during the refractory period
+        V_m mV = V_r     # Membrane potential
+
+    equations:
+        kernel G = delta(t)
+        V_m' = -(V_m - V_r) / tau_m + (mV / ms) * convolve(G, spikes) + (I_e + I_stim) / C_m
+
+    parameters:
+        tau_m   ms   = 10 ms              # Membrane time constant
+        C_m     pF   = 250 pF             # Capacity of the membrane
+        t_ref   ms   = 2 ms               # Duration of refractory period
+        tau_syn ms   = 0.5 ms             # Time constant of synaptic current
+        V_r     mV   = -65 mV             # Resting membrane potential
+        V_reset mV   = -65 mV             # Reset potential of the membrane
+        b     real   = 27                 # Parameter for the exponential curve
+        a       mV   = 5 mV               # Parameter for the exponential curve
+        V_b mV       = -51.3 mV             # Membrane potential at which phi(V)=1/b
+        with_refr_input boolean = false # If true, do not discard input during refractory period.
+
+        # constant external input current
+        I_e pA = 0 pA
+
+    internals:
+        h ms = resolution()
+        RefractoryCounts integer = steps(t_ref) # refractory time in steps
+
+    input:
+        spikes <- spike
+        I_stim pA <- continuous
+
+    output:
+        spike
+
+    function phi(V_m mV) real:
+        return ((1/b) * exp((V_m - V_b)/a))
+
+    update:
+        if refr_tick == 0: # neuron not refractory
+            integrate_odes()
+
+            # if we have accumulated spikes from refractory period,
+            # add and reset accumulator
+            if with_refr_input and refr_spikes_buffer != 0.0 mV:
+                V_m += refr_spikes_buffer
+                refr_spikes_buffer = 0.0 mV
+
+        else: # neuron is absolute refractory
+            # read spikes from buffer and accumulate them, discounting
+            # for decay until end of refractory period
+            # the buffer is clear automatically
+            if with_refr_input:
+                refr_spikes_buffer += spikes * exp(-refr_tick * h / tau_m) * mV * s
+            refr_tick -= 1
+
+        if random_uniform(0, 1) <= h*phi(V_m):
+            # tmp real = phi(V_m)
+            # println("{tmp}")
+            refr_tick = RefractoryCounts
+            V_m = V_reset
+            emit_spike()
+

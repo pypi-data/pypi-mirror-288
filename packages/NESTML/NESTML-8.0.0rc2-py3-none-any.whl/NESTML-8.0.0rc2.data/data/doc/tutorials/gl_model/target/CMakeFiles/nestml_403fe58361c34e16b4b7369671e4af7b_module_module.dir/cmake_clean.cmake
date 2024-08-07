@@ -1,0 +1,15 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/nestml_403fe58361c34e16b4b7369671e4af7b_module_module.dir/gl_ca403fe58361c34e16b4b7369671e4af7b_nestml.o"
+  "CMakeFiles/nestml_403fe58361c34e16b4b7369671e4af7b_module_module.dir/gl_ca403fe58361c34e16b4b7369671e4af7b_nestml.o.d"
+  "CMakeFiles/nestml_403fe58361c34e16b4b7369671e4af7b_module_module.dir/gl_ca403fe58361c34e16b4b7369671e4af7b_nestml__with_syn_gl_ca403fe58361c34e16b4b7369671e4af7b_nestml.o"
+  "CMakeFiles/nestml_403fe58361c34e16b4b7369671e4af7b_module_module.dir/gl_ca403fe58361c34e16b4b7369671e4af7b_nestml__with_syn_gl_ca403fe58361c34e16b4b7369671e4af7b_nestml.o.d"
+  "CMakeFiles/nestml_403fe58361c34e16b4b7369671e4af7b_module_module.dir/nestml_403fe58361c34e16b4b7369671e4af7b_module.o"
+  "CMakeFiles/nestml_403fe58361c34e16b4b7369671e4af7b_module_module.dir/nestml_403fe58361c34e16b4b7369671e4af7b_module.o.d"
+  "nestml_403fe58361c34e16b4b7369671e4af7b_module.pdb"
+  "nestml_403fe58361c34e16b4b7369671e4af7b_module.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/nestml_403fe58361c34e16b4b7369671e4af7b_module_module.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

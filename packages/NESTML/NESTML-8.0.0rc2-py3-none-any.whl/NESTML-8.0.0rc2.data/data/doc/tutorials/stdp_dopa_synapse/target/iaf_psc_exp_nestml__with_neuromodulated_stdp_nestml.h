@@ -1,0 +1,932 @@
+
+/**
+ *  iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml.h
+ *
+ *  This file is part of NEST.
+ *
+ *  Copyright (C) 2004 The NEST Initiative
+ *
+ *  NEST is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 2 of the License, or
+ *  (at your option) any later version.
+ *
+ *  NEST is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with NEST.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ *  Generated from NESTML at time: 2024-04-04 08:53:09.590500
+**/
+#ifndef IAF_PSC_EXP_NESTML__WITH_NEUROMODULATED_STDP_NESTML
+#define IAF_PSC_EXP_NESTML__WITH_NEUROMODULATED_STDP_NESTML
+
+#ifndef HAVE_LIBLTDL
+#error "NEST was compiled without support for dynamic loading. Please install libltdl and recompile NEST."
+#endif
+
+// C++ includes:
+#include <cmath>
+
+#include "config.h"
+
+// Includes from nestkernel:
+#include "structural_plasticity_node.h"
+#include "connection.h"
+#include "dict_util.h"
+#include "event.h"
+#include "nest_types.h"
+#include "ring_buffer.h"
+#include "universal_data_logger.h"
+
+// Includes from sli:
+#include "dictdatum.h"
+
+namespace nest
+{
+namespace iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names
+{
+    const Name _r( "r" );
+    const Name _V_m( "V_m" );
+    const Name _post_tr__for_neuromodulated_stdp_nestml( "post_tr__for_neuromodulated_stdp_nestml" );
+    const Name _I_kernel_inh__X__inh_spikes( "I_kernel_inh__X__inh_spikes" );
+    const Name _I_kernel_exc__X__exc_spikes( "I_kernel_exc__X__exc_spikes" );
+    const Name _C_m( "C_m" );
+    const Name _tau_m( "tau_m" );
+    const Name _tau_syn_inh( "tau_syn_inh" );
+    const Name _tau_syn_exc( "tau_syn_exc" );
+    const Name _t_ref( "t_ref" );
+    const Name _E_L( "E_L" );
+    const Name _V_reset( "V_reset" );
+    const Name _V_th( "V_th" );
+    const Name _I_e( "I_e" );
+    const Name _tau_tr_post__for_neuromodulated_stdp_nestml( "tau_tr_post__for_neuromodulated_stdp_nestml" );
+}
+}
+
+
+
+
+#include "nest_time.h"
+  typedef size_t nest_port_t;
+  typedef size_t nest_rport_t;
+
+// entry in the spiking history
+class histentry__iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml
+{
+public:
+  histentry__iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml( double t,
+double post_tr__for_neuromodulated_stdp_nestml,
+size_t access_counter )
+  : t_( t )
+  , post_tr__for_neuromodulated_stdp_nestml_( post_tr__for_neuromodulated_stdp_nestml )
+  , access_counter_( access_counter )
+  {
+  }
+
+  double t_;              //!< point in time when spike occurred (in ms)
+   double post_tr__for_neuromodulated_stdp_nestml_;
+  size_t access_counter_; //!< access counter to enable removal of the entry, once all neurons read it
+};
+
+/* BeginDocumentation
+  Name: iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml
+
+  Description:
+
+    """
+  iaf_psc_exp - Leaky integrate-and-fire neuron model with exponential PSCs########################################################################
+
+  Description
+  +++++++++++
+
+  iaf_psc_exp is an implementation of a leaky integrate-and-fire model
+  with exponential-kernel postsynaptic currents (PSCs) according to [1]_.
+  Thus, postsynaptic currents have an infinitely short rise time.
+
+  The threshold crossing is followed by an absolute refractory period (t_ref)
+  during which the membrane potential is clamped to the resting potential
+  and spiking is prohibited.
+
+  .. note::
+     If tau_m is very close to tau_syn_exc or tau_syn_inh, numerical problems
+     may arise due to singularities in the propagator matrics. If this is
+     the case, replace equal-valued parameters by a single parameter.
+
+     For details, please see ``IAF_neurons_singularity.ipynb`` in
+     the NEST source code (``docs/model_details``).
+
+
+  References
+  ++++++++++
+
+  .. [1] Tsodyks M, Uziel A, Markram H (2000). Synchrony generation in recurrent
+         networks with frequency-dependent synapses. The Journal of Neuroscience,
+         20,RC50:1-5. URL: https://infoscience.epfl.ch/record/183402
+
+
+  See also
+  ++++++++
+
+  iaf_cond_exp
+  """
+
+
+  Parameters:
+  The following parameters can be set in the status dictionary.
+C_m [pF]  Capacitance of the membrane
+tau_m [ms]  Membrane time constant
+tau_syn_inh [ms]  Time constant of inhibitory synaptic current
+tau_syn_exc [ms]  Time constant of excitatory synaptic current
+t_ref [ms]  Duration of refractory period
+E_L [mV]  Resting potential
+V_reset [mV]  Reset value of the membrane potential
+V_th [mV]  Spike threshold potential
+I_e [pA]  constant external input current
+tau_tr_post__for_neuromodulated_stdp_nestml [ms]  STDP time constant for weight changes caused by post-before-pre spike pairings.
+
+
+  Dynamic state variables:
+r [integer]  Counts number of tick during the refractory period
+V_m [mV]  Membrane potential
+
+
+  Sends: nest::SpikeEvent
+
+  Receives: Spike, Current, DataLoggingRequest
+*/
+
+// Register the neuron model
+void register_iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml( const std::string& name );
+
+class iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml : public nest::StructuralPlasticityNode
+{
+public:
+  /**
+   * The constructor is only used to create the model prototype in the model manager.
+  **/
+  iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml();
+
+  /**
+   * The copy constructor is used to create model copies and instances of the model.
+   * @node The copy constructor needs to initialize the parameters and the state.
+   *       Initialization of buffers and interal variables is deferred to
+   *       @c init_buffers_() and @c pre_run_hook() (or calibrate() in NEST 3.3 and older).
+  **/
+  iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml(const iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml &);
+
+  /**
+   * Destructor.
+  **/
+  ~iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml() override;
+
+  // -------------------------------------------------------------------------
+  //   Import sets of overloaded virtual functions.
+  //   See: Technical Issues / Virtual Functions: Overriding, Overloading,
+  //        and Hiding
+  // -------------------------------------------------------------------------
+
+  using nest::Node::handles_test_event;
+  using nest::Node::handle;
+
+  /**
+   * Used to validate that we can send nest::SpikeEvent to desired target:port.
+  **/
+  nest_port_t send_test_event(nest::Node& target, nest_rport_t receptor_type, nest::synindex, bool) override;
+
+
+  // -------------------------------------------------------------------------
+  //   Functions handling incoming events.
+  //   We tell nest that we can handle incoming events of various types by
+  //   defining handle() for the given event.
+  // -------------------------------------------------------------------------
+
+
+  void handle(nest::SpikeEvent &) override;        //! accept spikes
+  void handle(nest::CurrentEvent &) override;      //! accept input current
+
+  void handle(nest::DataLoggingRequest &) override;//! allow recording with multimeter
+  nest_port_t handles_test_event(nest::SpikeEvent&, nest_port_t) override;
+  nest_port_t handles_test_event(nest::CurrentEvent&, nest_port_t) override;
+  nest_port_t handles_test_event(nest::DataLoggingRequest&, nest_port_t) override;
+
+  // -------------------------------------------------------------------------
+  //   Functions for getting/setting parameters and state values.
+  // -------------------------------------------------------------------------
+
+  void get_status(DictionaryDatum &) const override;
+  void set_status(const DictionaryDatum &) override;
+
+
+  // support for spike archiving
+
+  /**
+   * \fn void get_history(long t1, long t2,
+   * std::deque<Archiver::histentry__>::iterator* start,
+   * std::deque<Archiver::histentry__>::iterator* finish)
+   * return the spike times (in steps) of spikes which occurred in the range
+   * (t1,t2].
+   * XXX: two underscores to differentiate it from nest::Node::get_history()
+   */
+  void get_history__( double t1,
+    double t2,
+    std::deque< histentry__iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml >::iterator* start,
+    std::deque< histentry__iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml >::iterator* finish );
+
+  /**
+   * Register a new incoming STDP connection.
+   *
+   * t_first_read: The newly registered synapse will read the history entries
+   * with t > t_first_read.
+   */
+  void register_stdp_connection( double t_first_read, double delay );
+  // -------------------------------------------------------------------------
+  //   Getters/setters for state block
+  // -------------------------------------------------------------------------
+
+  inline long get_r() const
+  {
+    return S_.r;
+  }
+
+  inline void set_r(const long __v)
+  {
+    S_.r = __v;
+  }
+
+  inline double get_V_m() const
+  {
+    return S_.V_m;
+  }
+
+  inline void set_V_m(const double __v)
+  {
+    S_.V_m = __v;
+  }
+
+  inline double get_post_tr__for_neuromodulated_stdp_nestml() const
+  {
+    return S_.post_tr__for_neuromodulated_stdp_nestml;
+  }
+
+  inline void set_post_tr__for_neuromodulated_stdp_nestml(const double __v)
+  {
+    S_.post_tr__for_neuromodulated_stdp_nestml = __v;
+  }
+
+  inline double get_I_kernel_inh__X__inh_spikes() const
+  {
+    return S_.I_kernel_inh__X__inh_spikes;
+  }
+
+  inline void set_I_kernel_inh__X__inh_spikes(const double __v)
+  {
+    S_.I_kernel_inh__X__inh_spikes = __v;
+  }
+
+  inline double get_I_kernel_exc__X__exc_spikes() const
+  {
+    return S_.I_kernel_exc__X__exc_spikes;
+  }
+
+  inline void set_I_kernel_exc__X__exc_spikes(const double __v)
+  {
+    S_.I_kernel_exc__X__exc_spikes = __v;
+  }
+
+
+  // -------------------------------------------------------------------------
+  //   Getters/setters for parameters
+  // -------------------------------------------------------------------------
+
+  inline double get_C_m() const
+  {
+    return P_.C_m;
+  }
+
+  inline void set_C_m(const double __v)
+  {
+    P_.C_m = __v;
+  }
+
+  inline double get_tau_m() const
+  {
+    return P_.tau_m;
+  }
+
+  inline void set_tau_m(const double __v)
+  {
+    P_.tau_m = __v;
+  }
+
+  inline double get_tau_syn_inh() const
+  {
+    return P_.tau_syn_inh;
+  }
+
+  inline void set_tau_syn_inh(const double __v)
+  {
+    P_.tau_syn_inh = __v;
+  }
+
+  inline double get_tau_syn_exc() const
+  {
+    return P_.tau_syn_exc;
+  }
+
+  inline void set_tau_syn_exc(const double __v)
+  {
+    P_.tau_syn_exc = __v;
+  }
+
+  inline double get_t_ref() const
+  {
+    return P_.t_ref;
+  }
+
+  inline void set_t_ref(const double __v)
+  {
+    P_.t_ref = __v;
+  }
+
+  inline double get_E_L() const
+  {
+    return P_.E_L;
+  }
+
+  inline void set_E_L(const double __v)
+  {
+    P_.E_L = __v;
+  }
+
+  inline double get_V_reset() const
+  {
+    return P_.V_reset;
+  }
+
+  inline void set_V_reset(const double __v)
+  {
+    P_.V_reset = __v;
+  }
+
+  inline double get_V_th() const
+  {
+    return P_.V_th;
+  }
+
+  inline void set_V_th(const double __v)
+  {
+    P_.V_th = __v;
+  }
+
+  inline double get_I_e() const
+  {
+    return P_.I_e;
+  }
+
+  inline void set_I_e(const double __v)
+  {
+    P_.I_e = __v;
+  }
+
+  inline double get_tau_tr_post__for_neuromodulated_stdp_nestml() const
+  {
+    return P_.tau_tr_post__for_neuromodulated_stdp_nestml;
+  }
+
+  inline void set_tau_tr_post__for_neuromodulated_stdp_nestml(const double __v)
+  {
+    P_.tau_tr_post__for_neuromodulated_stdp_nestml = __v;
+  }
+
+
+  // -------------------------------------------------------------------------
+  //   Getters/setters for internals
+  // -------------------------------------------------------------------------
+
+  inline long get_RefractoryCounts() const
+  {
+    return V_.RefractoryCounts;
+  }
+
+  inline void set_RefractoryCounts(const long __v)
+  {
+    V_.RefractoryCounts = __v;
+  }
+  inline double get___h() const
+  {
+    return V_.__h;
+  }
+
+  inline void set___h(const double __v)
+  {
+    V_.__h = __v;
+  }
+  inline double get___P__V_m__V_m() const
+  {
+    return V_.__P__V_m__V_m;
+  }
+
+  inline void set___P__V_m__V_m(const double __v)
+  {
+    V_.__P__V_m__V_m = __v;
+  }
+  inline double get___P__V_m__I_kernel_inh__X__inh_spikes() const
+  {
+    return V_.__P__V_m__I_kernel_inh__X__inh_spikes;
+  }
+
+  inline void set___P__V_m__I_kernel_inh__X__inh_spikes(const double __v)
+  {
+    V_.__P__V_m__I_kernel_inh__X__inh_spikes = __v;
+  }
+  inline double get___P__V_m__I_kernel_exc__X__exc_spikes() const
+  {
+    return V_.__P__V_m__I_kernel_exc__X__exc_spikes;
+  }
+
+  inline void set___P__V_m__I_kernel_exc__X__exc_spikes(const double __v)
+  {
+    V_.__P__V_m__I_kernel_exc__X__exc_spikes = __v;
+  }
+  inline double get___P__post_tr__for_neuromodulated_stdp_nestml__post_tr__for_neuromodulated_stdp_nestml() const
+  {
+    return V_.__P__post_tr__for_neuromodulated_stdp_nestml__post_tr__for_neuromodulated_stdp_nestml;
+  }
+
+  inline void set___P__post_tr__for_neuromodulated_stdp_nestml__post_tr__for_neuromodulated_stdp_nestml(const double __v)
+  {
+    V_.__P__post_tr__for_neuromodulated_stdp_nestml__post_tr__for_neuromodulated_stdp_nestml = __v;
+  }
+  inline double get___P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes() const
+  {
+    return V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes;
+  }
+
+  inline void set___P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes(const double __v)
+  {
+    V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes = __v;
+  }
+  inline double get___P__I_kernel_exc__X__exc_spikes__I_kernel_exc__X__exc_spikes() const
+  {
+    return V_.__P__I_kernel_exc__X__exc_spikes__I_kernel_exc__X__exc_spikes;
+  }
+
+  inline void set___P__I_kernel_exc__X__exc_spikes__I_kernel_exc__X__exc_spikes(const double __v)
+  {
+    V_.__P__I_kernel_exc__X__exc_spikes__I_kernel_exc__X__exc_spikes = __v;
+  }
+
+
+  /* getters/setters for variables transferred from synapse */
+  double get_post_tr__for_neuromodulated_stdp_nestml( double t, const bool before_increment = true );
+
+  // -------------------------------------------------------------------------
+  //   Initialization functions
+  // -------------------------------------------------------------------------
+  void calibrate_time( const nest::TimeConverter& tc ) override;
+
+protected:
+  // support for spike archiving
+
+  /**
+   * record spike history
+   */
+  void set_spiketime( nest::Time const& t_sp, double offset = 0.0 );
+
+  /**
+   * return most recent spike time in ms
+   */
+  inline double get_spiketime_ms() const;
+
+  /**
+   * clear spike history
+   */
+  void clear_history();
+
+private:
+  void recompute_internal_variables(bool exclude_timestep=false);
+  // support for spike archiving
+
+  // number of incoming connections from stdp connectors.
+  // needed to determine, if every incoming connection has
+  // read the spikehistory for a given point in time
+  size_t n_incoming_;
+
+  double max_delay_;
+
+  double last_spike_;
+
+  // spiking history needed by stdp synapses
+  std::deque< histentry__iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml > history_;
+
+  // cache for initial values
+  double post_tr__for_neuromodulated_stdp_nestml__iv;
+
+private:
+
+  static const nest_port_t MIN_SPIKE_RECEPTOR = 0;
+  static const nest_port_t PORT_NOT_AVAILABLE = -1;
+
+  enum SynapseTypes
+  {
+    EXC_SPIKES = 0,
+    INH_SPIKES = 1,
+    MAX_SPIKE_RECEPTOR = 2
+  };
+
+  static const size_t NUM_SPIKE_RECEPTORS = MAX_SPIKE_RECEPTOR - MIN_SPIKE_RECEPTOR;
+
+static std::vector< std::tuple< int, int > > rport_to_nestml_buffer_idx;
+
+  /**
+   * Reset state of neuron.
+  **/
+
+  void init_state_internal_();
+
+  /**
+   * Reset internal buffers of neuron.
+  **/
+  void init_buffers_() override;
+
+  /**
+   * Initialize auxiliary quantities, leave parameters and state untouched.
+  **/
+  void pre_run_hook() override;
+
+  /**
+   * Take neuron through given time interval
+  **/
+  void update(nest::Time const &, const long, const long) override;
+
+  // The next two classes need to be friends to access the State_ class/member
+  friend class nest::RecordablesMap<iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml>;
+  friend class nest::UniversalDataLogger<iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml>;
+
+  /**
+   * Free parameters of the neuron.
+   *
+
+
+   *
+   * These are the parameters that can be set by the user through @c `node.set()`.
+   * They are initialized from the model prototype when the node is created.
+   * Parameters do not change during calls to @c update() and are not reset by
+   * @c ResetNetwork.
+   *
+   * @note Parameters_ need neither copy constructor nor @c operator=(), since
+   *       all its members are copied properly by the default copy constructor
+   *       and assignment operator. Important:
+   *       - If Parameters_ contained @c Time members, you need to define the
+   *         assignment operator to recalibrate all members of type @c Time . You
+   *         may also want to define the assignment operator.
+   *       - If Parameters_ contained members that cannot copy themselves, such
+   *         as C-style arrays, you need to define the copy constructor and
+   *         assignment operator to copy those members.
+  **/
+  struct Parameters_
+  {    
+    //!  Capacitance of the membrane
+    double C_m;
+    //!  Membrane time constant
+    double tau_m;
+    //!  Time constant of inhibitory synaptic current
+    double tau_syn_inh;
+    //!  Time constant of excitatory synaptic current
+    double tau_syn_exc;
+    //!  Duration of refractory period
+    double t_ref;
+    //!  Resting potential
+    double E_L;
+    //!  Reset value of the membrane potential
+    double V_reset;
+    //!  Spike threshold potential
+    double V_th;
+    //!  constant external input current
+    double I_e;
+    //!  STDP time constant for weight changes caused by post-before-pre spike pairings.
+    double tau_tr_post__for_neuromodulated_stdp_nestml;
+
+    /**
+     * Initialize parameters to their default values.
+    **/
+    Parameters_();
+  };
+
+  /**
+   * Dynamic state of the neuron.
+   *
+   *
+   *
+   * These are the state variables that are advanced in time by calls to
+   * @c update(). In many models, some or all of them can be set by the user
+   * through @c `node.set()`. The state variables are initialized from the model
+   * prototype when the node is created. State variables are reset by @c ResetNetwork.
+   *
+   * @note State_ need neither copy constructor nor @c operator=(), since
+   *       all its members are copied properly by the default copy constructor
+   *       and assignment operator. Important:
+   *       - If State_ contained @c Time members, you need to define the
+   *         assignment operator to recalibrate all members of type @c Time . You
+   *         may also want to define the assignment operator.
+   *       - If State_ contained members that cannot copy themselves, such
+   *         as C-style arrays, you need to define the copy constructor and
+   *         assignment operator to copy those members.
+  **/
+  struct State_
+  {    
+    //!  Counts number of tick during the refractory period
+    long r;
+    //!  Membrane potential
+    double V_m;
+    double post_tr__for_neuromodulated_stdp_nestml;
+    double I_kernel_inh__X__inh_spikes;
+    double I_kernel_exc__X__exc_spikes;
+
+    State_();
+  };
+
+  struct DelayedVariables_
+  {
+  };
+
+  /**
+   * Internal variables of the neuron.
+   *
+   *
+   *
+   * These variables must be initialized by @c pre_run_hook (or calibrate in NEST 3.3 and older), which is called before
+   * the first call to @c update() upon each call to @c Simulate.
+   * @node Variables_ needs neither constructor, copy constructor or assignment operator,
+   *       since it is initialized by @c pre_run_hook() (or calibrate() in NEST 3.3 and older). If Variables_ has members that
+   *       cannot destroy themselves, Variables_ will need a destructor.
+  **/
+  struct Variables_
+  {
+    //!  refractory time in steps
+    long RefractoryCounts;
+    double __h;
+    double __P__V_m__V_m;
+    double __P__V_m__I_kernel_inh__X__inh_spikes;
+    double __P__V_m__I_kernel_exc__X__exc_spikes;
+    double __P__post_tr__for_neuromodulated_stdp_nestml__post_tr__for_neuromodulated_stdp_nestml;
+    double __P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes;
+    double __P__I_kernel_exc__X__exc_spikes__I_kernel_exc__X__exc_spikes;
+  };
+
+  /**
+   * Buffers of the neuron.
+   * Usually buffers for incoming spikes and data logged for analog recorders.
+   * Buffers must be initialized by @c init_buffers_(), which is called before
+   * @c pre_run_hook() (or calibrate() in NEST 3.3 and older) on the first call to @c Simulate after the start of NEST,
+   * ResetKernel or ResetNetwork.
+   * @node Buffers_ needs neither constructor, copy constructor or assignment operator,
+   *       since it is initialized by @c init_nodes_(). If Buffers_ has members that
+   *       cannot destroy themselves, Buffers_ will need a destructor.
+  **/
+  struct Buffers_
+  {
+    Buffers_(iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml &);
+    Buffers_(const Buffers_ &, iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml &);
+
+    /**
+     * Logger for all analog data
+    **/
+    nest::UniversalDataLogger<iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml> logger_;
+
+    // -----------------------------------------------------------------------
+    //   Buffers and sums of incoming spikes/currents per timestep
+    // -----------------------------------------------------------------------
+    // Buffer containing the incoming spikes
+    
+
+inline std::vector< nest::RingBuffer >& get_spike_inputs_()
+{
+    return spike_inputs_;
+}
+std::vector< nest::RingBuffer > spike_inputs_;
+
+    // Buffer containing the sum of all the incoming spikes
+    
+
+inline std::vector< double >& get_spike_inputs_grid_sum_()
+{
+    return spike_inputs_grid_sum_;
+}
+std::vector< double > spike_inputs_grid_sum_;
+
+nest::RingBuffer
+ I_stim;   //!< Buffer for input (type: pA)    
+    inline nest::RingBuffer& get_I_stim() {
+        return I_stim;
+    }
+
+double I_stim_grid_sum_;
+  };
+
+  // -------------------------------------------------------------------------
+  //   Getters/setters for inline expressions
+  // -------------------------------------------------------------------------
+  inline double get_I_syn() const
+  {
+    return S_.I_kernel_exc__X__exc_spikes * 1.0 - S_.I_kernel_inh__X__inh_spikes * 1.0;
+  }
+
+
+
+  // -------------------------------------------------------------------------
+  //   Getters/setters for input buffers
+  // -------------------------------------------------------------------------
+
+  // Buffer containing the incoming spikes
+  
+
+inline std::vector< nest::RingBuffer >& get_spike_inputs_()
+{
+    return B_.get_spike_inputs_();
+}
+
+  
+
+inline std::vector< double >& get_spike_inputs_grid_sum_()
+{
+    return B_.get_spike_inputs_grid_sum_();
+}
+  
+inline nest::RingBuffer& get_I_stim() {
+    return B_.get_I_stim();
+}
+
+  // -------------------------------------------------------------------------
+  //   Member variables of neuron model.
+  //   Each model neuron should have precisely the following four data members,
+  //   which are one instance each of the parameters, state, buffers and variables
+  //   structures. Experience indicates that the state and variables member should
+  //   be next to each other to achieve good efficiency (caching).
+  //   Note: Devices require one additional data member, an instance of the
+  //   ``Device`` child class they belong to.
+  // -------------------------------------------------------------------------
+
+
+  Parameters_       P_;        //!< Free parameters.
+  State_            S_;        //!< Dynamic state.
+  DelayedVariables_ DV_;       //!< Delayed state variables.
+  Variables_        V_;        //!< Internal Variables
+  Buffers_          B_;        //!< Buffers.
+
+  //! Mapping of recordables names to access functions
+  static nest::RecordablesMap<iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml> recordablesMap_;
+
+}; /* neuron iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml */
+
+inline nest_port_t iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml::send_test_event(nest::Node& target, nest_rport_t receptor_type, nest::synindex, bool)
+{
+  // You should usually not change the code in this function.
+  // It confirms that the target of connection @c c accepts @c nest::SpikeEvent on
+  // the given @c receptor_type.
+  nest::SpikeEvent e;
+  e.set_sender(*this);
+  return target.handles_test_event(e, receptor_type);
+}
+
+inline nest_port_t iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml::handles_test_event(nest::SpikeEvent&, nest_port_t receptor_type)
+{
+    // You should usually not change the code in this function.
+    // It confirms to the connection management system that we are able
+    // to handle @c SpikeEvent on port 0. You need to extend the function
+    // if you want to differentiate between input ports.
+    if (receptor_type != 0)
+    {
+      throw nest::UnknownReceptorType(receptor_type, get_name());
+    }
+    return 0;
+}
+
+inline nest_port_t iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml::handles_test_event(nest::CurrentEvent&, nest_port_t receptor_type)
+{
+  // You should usually not change the code in this function.
+  // It confirms to the connection management system that we are able
+  // to handle @c CurrentEvent on port 0. You need to extend the function
+  // if you want to differentiate between input ports.
+  if (receptor_type != 0)
+  {
+    throw nest::UnknownReceptorType(receptor_type, get_name());
+  }
+  return 0;
+}
+
+inline nest_port_t iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml::handles_test_event(nest::DataLoggingRequest& dlr, nest_port_t receptor_type)
+{
+  // You should usually not change the code in this function.
+  // It confirms to the connection management system that we are able
+  // to handle @c DataLoggingRequest on port 0.
+  // The function also tells the built-in UniversalDataLogger that this node
+  // is recorded from and that it thus needs to collect data during simulation.
+  if (receptor_type != 0)
+  {
+    throw nest::UnknownReceptorType(receptor_type, get_name());
+  }
+
+  return B_.logger_.connect_logging_device(dlr, recordablesMap_);
+}
+
+inline void iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml::get_status(DictionaryDatum &__d) const
+{
+  // parameters
+  def<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_C_m, get_C_m());
+  def<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_tau_m, get_tau_m());
+  def<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_tau_syn_inh, get_tau_syn_inh());
+  def<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_tau_syn_exc, get_tau_syn_exc());
+  def<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_t_ref, get_t_ref());
+  def<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_E_L, get_E_L());
+  def<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_V_reset, get_V_reset());
+  def<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_V_th, get_V_th());
+  def<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_I_e, get_I_e());
+  def<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_tau_tr_post__for_neuromodulated_stdp_nestml, get_tau_tr_post__for_neuromodulated_stdp_nestml());
+
+  // initial values for state variables in ODE or kernel
+  def<long>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_r, get_r());
+  def<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_V_m, get_V_m());
+  def<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_post_tr__for_neuromodulated_stdp_nestml, get_post_tr__for_neuromodulated_stdp_nestml());
+  def<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_I_kernel_inh__X__inh_spikes, get_I_kernel_inh__X__inh_spikes());
+  def<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_I_kernel_exc__X__exc_spikes, get_I_kernel_exc__X__exc_spikes());
+
+  StructuralPlasticityNode::get_status( __d );
+
+  (*__d)[nest::names::recordables] = recordablesMap_.get_list();
+}
+
+inline void iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml::set_status(const DictionaryDatum &__d)
+{
+  // parameters
+  double tmp_C_m = get_C_m();
+  nest::updateValueParam<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_C_m, tmp_C_m, this);
+  double tmp_tau_m = get_tau_m();
+  nest::updateValueParam<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_tau_m, tmp_tau_m, this);
+  double tmp_tau_syn_inh = get_tau_syn_inh();
+  nest::updateValueParam<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_tau_syn_inh, tmp_tau_syn_inh, this);
+  double tmp_tau_syn_exc = get_tau_syn_exc();
+  nest::updateValueParam<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_tau_syn_exc, tmp_tau_syn_exc, this);
+  double tmp_t_ref = get_t_ref();
+  nest::updateValueParam<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_t_ref, tmp_t_ref, this);
+  double tmp_E_L = get_E_L();
+  nest::updateValueParam<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_E_L, tmp_E_L, this);
+  double tmp_V_reset = get_V_reset();
+  nest::updateValueParam<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_V_reset, tmp_V_reset, this);
+  double tmp_V_th = get_V_th();
+  nest::updateValueParam<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_V_th, tmp_V_th, this);
+  double tmp_I_e = get_I_e();
+  nest::updateValueParam<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_I_e, tmp_I_e, this);
+  double tmp_tau_tr_post__for_neuromodulated_stdp_nestml = get_tau_tr_post__for_neuromodulated_stdp_nestml();
+  nest::updateValueParam<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_tau_tr_post__for_neuromodulated_stdp_nestml, tmp_tau_tr_post__for_neuromodulated_stdp_nestml, this);
+
+  // initial values for state variables in ODE or kernel
+  long tmp_r = get_r();
+  nest::updateValueParam<long>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_r, tmp_r, this);
+  double tmp_V_m = get_V_m();
+  nest::updateValueParam<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_V_m, tmp_V_m, this);
+  double tmp_post_tr__for_neuromodulated_stdp_nestml = get_post_tr__for_neuromodulated_stdp_nestml();
+  nest::updateValueParam<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_post_tr__for_neuromodulated_stdp_nestml, tmp_post_tr__for_neuromodulated_stdp_nestml, this);
+  double tmp_I_kernel_inh__X__inh_spikes = get_I_kernel_inh__X__inh_spikes();
+  nest::updateValueParam<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_I_kernel_inh__X__inh_spikes, tmp_I_kernel_inh__X__inh_spikes, this);
+  double tmp_I_kernel_exc__X__exc_spikes = get_I_kernel_exc__X__exc_spikes();
+  nest::updateValueParam<double>(__d, nest::iaf_psc_exp_nestml__with_neuromodulated_stdp_nestml_names::_I_kernel_exc__X__exc_spikes, tmp_I_kernel_exc__X__exc_spikes, this);
+
+  // We now know that (ptmp, stmp) are consistent. We do not
+  // write them back to (P_, S_) before we are also sure that
+  // the properties to be set in the parent class are internally
+  // consistent.
+  StructuralPlasticityNode::set_status(__d);
+
+  // if we get here, temporaries contain consistent set of properties
+  set_C_m(tmp_C_m);
+  set_tau_m(tmp_tau_m);
+  set_tau_syn_inh(tmp_tau_syn_inh);
+  set_tau_syn_exc(tmp_tau_syn_exc);
+  set_t_ref(tmp_t_ref);
+  set_E_L(tmp_E_L);
+  set_V_reset(tmp_V_reset);
+  set_V_th(tmp_V_th);
+  set_I_e(tmp_I_e);
+  set_tau_tr_post__for_neuromodulated_stdp_nestml(tmp_tau_tr_post__for_neuromodulated_stdp_nestml);
+  set_r(tmp_r);
+  set_V_m(tmp_V_m);
+  set_post_tr__for_neuromodulated_stdp_nestml(tmp_post_tr__for_neuromodulated_stdp_nestml);
+  set_I_kernel_inh__X__inh_spikes(tmp_I_kernel_inh__X__inh_spikes);
+  set_I_kernel_exc__X__exc_spikes(tmp_I_kernel_exc__X__exc_spikes);
+
+
+
+
+
+  // recompute internal variables in case they are dependent on parameters or state that might have been updated in this call to set_status()
+  recompute_internal_variables();
+};
+
+
+
+#endif /* #ifndef IAF_PSC_EXP_NESTML__WITH_NEUROMODULATED_STDP_NESTML */

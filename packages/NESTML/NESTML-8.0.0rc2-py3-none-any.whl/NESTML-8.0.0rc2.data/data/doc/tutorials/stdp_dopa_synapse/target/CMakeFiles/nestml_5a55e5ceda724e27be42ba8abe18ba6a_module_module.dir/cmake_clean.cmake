@@ -1,0 +1,15 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/nestml_5a55e5ceda724e27be42ba8abe18ba6a_module_module.dir/iaf_psc_delta_neuron_nestml.o"
+  "CMakeFiles/nestml_5a55e5ceda724e27be42ba8abe18ba6a_module_module.dir/iaf_psc_delta_neuron_nestml.o.d"
+  "CMakeFiles/nestml_5a55e5ceda724e27be42ba8abe18ba6a_module_module.dir/iaf_psc_delta_neuron_nestml__with_neuromodulated_stdp_synapse_nestml.o"
+  "CMakeFiles/nestml_5a55e5ceda724e27be42ba8abe18ba6a_module_module.dir/iaf_psc_delta_neuron_nestml__with_neuromodulated_stdp_synapse_nestml.o.d"
+  "CMakeFiles/nestml_5a55e5ceda724e27be42ba8abe18ba6a_module_module.dir/nestml_5a55e5ceda724e27be42ba8abe18ba6a_module.o"
+  "CMakeFiles/nestml_5a55e5ceda724e27be42ba8abe18ba6a_module_module.dir/nestml_5a55e5ceda724e27be42ba8abe18ba6a_module.o.d"
+  "nestml_5a55e5ceda724e27be42ba8abe18ba6a_module.pdb"
+  "nestml_5a55e5ceda724e27be42ba8abe18ba6a_module.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/nestml_5a55e5ceda724e27be42ba8abe18ba6a_module_module.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
