@@ -1,0 +1,2 @@
+include kin_tokenizer/data/kin_tokenizer.pkl
+include README.md
