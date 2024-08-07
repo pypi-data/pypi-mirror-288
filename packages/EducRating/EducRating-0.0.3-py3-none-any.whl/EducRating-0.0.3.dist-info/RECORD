@@ -1,0 +1,10 @@
+EducRating/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+EducRating/attempt.py,sha256=ucSqJUgkXnHQ8WOBVY8KYA7trJAWQpDsh3FwKs0gUlo,1543
+EducRating/elo.py,sha256=pCmz3MgMlA4wir-Eg3NS0bsHj-wRFFkDkx39By1RTKM,9409
+EducRating/m_elo.py,sha256=qKqQrQlpmIv_j5sA5kB3FWOyV9IaCB3FBOQOLI_K6OY,13714
+EducRating/mv_glicko.py,sha256=in-GIrWWC04liouXqCPEVtkzx9rb5hULKtHcCOPoEGE,17707
+EducRating-0.0.3.dist-info/LICENSE,sha256=bx5iLIKjgAdYQ7sISn7DsfHRKkoCUm1154sJJKhgqnU,35184
+EducRating-0.0.3.dist-info/METADATA,sha256=rggbCk-s2xTioSOtnGu48mV8UfDZa2xxmFtY_u_t4-w,615
+EducRating-0.0.3.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+EducRating-0.0.3.dist-info/top_level.txt,sha256=1LsjzdlSSw5PjhS3N7GomV3Rxw4qfBL45F-gnnTkbxU,11
+EducRating-0.0.3.dist-info/RECORD,,
