@@ -1,0 +1,17 @@
+ddeutil/workflow/__about__.py,sha256=jgkUUyo8sKJnE1-6McC_AbxbZqvAFoYRfSE3HCAexlk,27
+ddeutil/workflow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ddeutil/workflow/__regex.py,sha256=bOngaQ0zJgy3vfNwF2MlI8XhLu_Ei1Vz8y50iLj8ao4,1061
+ddeutil/workflow/__scheduler.py,sha256=wSzv6EN2Nx99lLxzrA80qfqQ_AxOFJAOk_EZYgafVzk,20965
+ddeutil/workflow/__types.py,sha256=AkpQq6QlrclpurCZZVY9RMxoyS9z2WGzhaz_ikeTaCU,453
+ddeutil/workflow/exceptions.py,sha256=XAq82VHSMLNb4UjGatp7hYfjxFtMiKFtBqJyAhwTl-s,434
+ddeutil/workflow/loader.py,sha256=xiOtxluhLXfryMp3q1OIJggykr01WENKV7zBkcJ9-Yc,5763
+ddeutil/workflow/on.py,sha256=vYNcvh74MN2ttd9KOehngOhJDNqDheFbbsXeEhDSqyk,5280
+ddeutil/workflow/pipeline.py,sha256=tnzeAQrXb_-OIo53IGv6LxZoMiOJyMPWXAbisdBCXHI,19298
+ddeutil/workflow/utils.py,sha256=A-k3L4OUFFq6utlsbpEVMGyofiLbDrvThM8IqFDE9gE,6093
+ddeutil/workflow/tasks/__init__.py,sha256=HcQ7xNETFOKovMOs4lL2Pl8hXFZ515jU5Mc3LFZcSGE,336
+ddeutil/workflow/tasks/dummy.py,sha256=b_y6eHGxj4aQ-ZmvcNL7aBHu3eIzL6BeXgqj0MDqSPw,1460
+ddeutil_workflow-0.0.5.dist-info/LICENSE,sha256=nGFZ1QEhhhWeMHf9n99_fdt4vQaXS29xWKxt-OcLywk,1085
+ddeutil_workflow-0.0.5.dist-info/METADATA,sha256=dcZadiwnhPD6DnoBaugdPHlOw108lRCmhDD7KF2s-Dg,7717
+ddeutil_workflow-0.0.5.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+ddeutil_workflow-0.0.5.dist-info/top_level.txt,sha256=m9M6XeSWDwt_yMsmH6gcOjHZVK5O0-vgtNBuncHjzW4,8
+ddeutil_workflow-0.0.5.dist-info/RECORD,,
