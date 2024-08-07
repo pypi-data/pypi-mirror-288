@@ -1,0 +1,30 @@
+Metadata-Version: 2.3
+Name: rolo_tools
+Version: 0.0.3
+Summary: A collection of reusable python tools
+Project-URL: Homepage, https://github.com/nullredirect/rolo_tools
+Project-URL: Issues, https://github.com/nullredirect/rolo_tools/issues
+Author-email: Rolando Teixeiro <rteixeiro@phantomsoftworks.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: cryptography
+Description-Content-Type: text/markdown
+
+# Rolo's Tools
+
+## A collection of reusable python tools for use in Windows Environments
+
+### Logger
+Write to a log file in C:\windows\temp and also display in the console. 
+Easily log plain strings, dated strings, and json objects
+
+### Manip
+Clean and manipulate different variable and data types
+
+### Secure Env
+securely store and retrieve environment variables
+
+More details to come...
