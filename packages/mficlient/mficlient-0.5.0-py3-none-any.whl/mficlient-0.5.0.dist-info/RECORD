@@ -1,0 +1,10 @@
+mficlient/__init__.py,sha256=6RLg11-5O3Asc40XKwkKTE1oF9thbiiWOIKMSJaK6g0,59
+mficlient/client.py,sha256=RWdEh8GkwWewaKjZvtyaC3KOh5TRMvUzvynT0u1IK9E,8919
+mficlient/fake.py,sha256=6QH9J_6qSnKdfJaBzqZXFPqgUPU7pMp8DknIqSd1oRM,1630
+mficlient/fake_data.py,sha256=fQ4mCMhic-zxBTUdV4mfa2z4A8dnjBFj8lhrPGCl4Mc,11215
+mficlient/main.py,sha256=9dwUaHRNFYJw_MUXSMsPRnQdpnb2zFIBcZWghCOYJtM,5616
+mficlient-0.5.0.dist-info/LICENSE.md,sha256=xglNcWDr-7kLQ0omGacup3v-qO-7CqkRxmfA9G30b6A,1079
+mficlient-0.5.0.dist-info/METADATA,sha256=K9Bf_iaVFU3co1yJWxLlJJ3vZJ-SefgNz4pWRhKKoNM,3073
+mficlient-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mficlient-0.5.0.dist-info/entry_points.txt,sha256=ocAy2svTf8Kgt6BcaKWiWcUcuV8XG16bxhmRPmVKC6w,32
+mficlient-0.5.0.dist-info/RECORD,,
