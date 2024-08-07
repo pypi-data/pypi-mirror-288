@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+prompt_as/__init__.py
+prompt_as/prompt_as_f_decorator.py
+prompt_as/prompt_to_code.py
+prompt_as/prompt_to_function.py
+prompt_as.egg-info/PKG-INFO
+prompt_as.egg-info/SOURCES.txt
+prompt_as.egg-info/dependency_links.txt
+prompt_as.egg-info/not-zip-safe
+prompt_as.egg-info/top_level.txt
