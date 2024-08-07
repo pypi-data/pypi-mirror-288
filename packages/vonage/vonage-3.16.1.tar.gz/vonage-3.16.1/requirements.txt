@@ -1,0 +1,13 @@
+-e .
+pytest>=8.3.2
+responses>=0.25.3
+pydantic>=2.8.2
+requests>=2.32.2
+urllib3>=2.2.2
+zipp>=3.19.1
+coverage
+
+bump2version
+build
+twine
+pre-commit
