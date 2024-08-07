@@ -1,0 +1,2 @@
+[console_scripts]
+parsftp = parsftp:main
