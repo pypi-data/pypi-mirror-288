@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+sphinxcontrib/__init__.py
+sphinxcontrib/beamer/__init__.py
+sphinxcontrib/beamer/templates/beamer.tex_t
+sphinxcontrib_beamer.egg-info/PKG-INFO
+sphinxcontrib_beamer.egg-info/SOURCES.txt
+sphinxcontrib_beamer.egg-info/dependency_links.txt
+sphinxcontrib_beamer.egg-info/namespace_packages.txt
+sphinxcontrib_beamer.egg-info/requires.txt
+sphinxcontrib_beamer.egg-info/top_level.txt
