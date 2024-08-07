@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "ryz"
+version = "0.12.4"
+description = "prelude"
+authors = ["ryzhovalex <thed4rkof@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.5.2"
+dictdiffer = "^0.9.0"
+pyyaml = "^6.0.1"
+bcrypt = "^4.1.1"
+loguru = "^0.7.2"
+pymongo = "^4.7.3"
+aiofile = "^3.8.8"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.285"
+coverage = "^7.3.0"
+pytest = "^7.4.0"
+pytest-asyncio = "^0.21.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
