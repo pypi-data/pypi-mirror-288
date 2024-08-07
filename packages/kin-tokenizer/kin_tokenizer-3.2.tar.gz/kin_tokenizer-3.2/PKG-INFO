@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: kin_tokenizer
+Version: 3.2
+Summary: Kinyarwanda tokenizer for encoding and decoding Kinyarwanda language text
+Home-page: https://github.com/Nschadrack/Kin-Tokenizer
+Author: Schadrack Niyibizi
+Author-email: niyibizischadrack@gmail.com
+Keywords: Tokenizer,Kinyarwanda,KinGPT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Kin-Tokenizer
+
+`kin-tokenizer` is a Python library designed for tokenizing Kinyarwanda language text. It can both encode and decode text in Kinyarwanda, it has a vocabulary size of 20,257.
+
+## Installation
+
+You can install the package using pip:
+
+```pip install kin-tokenizer```
+
+## Basis Usage
+
+```python
+
+from kin_tokenizer import KinTokenizer  # Importing Tokenizer class
+
+# Creating an instance of tokenizer
+tokenizer = KinTokenizer()
+
+# Loading the state of the tokenizer (pretrained tokenizer)
+tokenizer.load()
+
+# Encoding
+text = "Nagiye gusura inshuti zanjye dusoma ibitabo"
+tokens = tokenizer.encode(text)
+print(tokens)
+
+# Decoding
+decoded_text = tokenizer.decode(tokens)
+print(decoded_text)
+
+# Printing the vocab size
+print(tokenizer.vocab_size)
+
+# Print vocabulary (first 1000 items)
+count = 0
+for k, v in tokenizer.vocab.items():
+    print("{} : {}".format(k, v))
+    count += 1
+    if count > 1000:
+        break
+```
+
+## Training Your Own Tokenizer
+
+You can also train your own tokenizer using the utils module, which provides two functions: a training function and a function for creating sequences after encoding your text.
+
+```python
+
+from kin_tokenizer import KinTokenizer
+from kin_tokenizer.utils import train_kin_tokenizer, create_sequences
+
+# Training the tokenizer
+tokenizer = train_kin_tokenizer(training_text, vocab_size=512, save=True, tokenizer_path=SAVE_PATH_ROOT)
+
+# Creating sequences
+x_seq, y_seq = create_sequences(tokens, seq_len=128)
+
+```
+
+## Contributing
+
+The project is still being updated and contributions are welcome. You can contribute by:
+
+- Reporting bugs
+- Suggesting features
+- Writing or improving documentation
+- Submitting pull requests
+  
