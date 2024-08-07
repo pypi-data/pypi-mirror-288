@@ -1,0 +1,12 @@
+overturetoosm/__about__.py,sha256=NHaUaPNTXWi9E9krdQRUCEoRrD9ntVbxNxy8RK4DRIg,66
+overturetoosm/__init__.py,sha256=-tyoNziv9SPNFGBl5BY9UJL0lga6BvPXGe36TiEDu7g,859
+overturetoosm/addresses.py,sha256=i6j1giXyxYRaql30pslPoGrsN0yXrO0n0JVC9_VAl8Q,671
+overturetoosm/buildings.py,sha256=DoqdOHHAk0wMeHcM-y1oP1Rg6QpuJVvKZDhhXduXwfg,747
+overturetoosm/objects.py,sha256=wKa-6e11x5RY-3kFmHgUAEB1B0ka2Edxal92x7aVbF4,10604
+overturetoosm/places.py,sha256=1bzg0iZboZO0lYSXrFd-o7ICi-4rAECkIjNWv-7y6K4,1899
+overturetoosm/resources.py,sha256=nn7IxBysry0Q7UQyA2wTRrwxPLDgfSYruE0fEFL-DXw,41427
+overturetoosm/utils.py,sha256=2FbZLmmAN5vqDDTLFh7COUUAsmEL9BtIkbSi77DC1tg,1539
+overturetoosm-0.2.2.dist-info/METADATA,sha256=KhLzlutkieqfeqz2aLcLXmELRDjiNsMXdWYqddViZ_o,5181
+overturetoosm-0.2.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+overturetoosm-0.2.2.dist-info/licenses/LICENSE.txt,sha256=b5WOl3a6Gti3d3gAPHP7TybGNScqVDGytjXwwzLIauU,1064
+overturetoosm-0.2.2.dist-info/RECORD,,
