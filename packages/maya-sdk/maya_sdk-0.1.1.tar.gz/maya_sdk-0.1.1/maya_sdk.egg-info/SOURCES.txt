@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+maya_sdk/__init__.py
+maya_sdk/api_client.py
+maya_sdk/client.py
+maya_sdk/errors.py
+maya_sdk/version.py
+maya_sdk.egg-info/PKG-INFO
+maya_sdk.egg-info/SOURCES.txt
+maya_sdk.egg-info/dependency_links.txt
+maya_sdk.egg-info/not-zip-safe
+maya_sdk.egg-info/requires.txt
+maya_sdk.egg-info/top_level.txt

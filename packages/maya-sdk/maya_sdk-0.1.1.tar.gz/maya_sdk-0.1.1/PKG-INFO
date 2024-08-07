@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: maya_sdk
+Version: 0.1.1
+Summary: Maya Insights python SDK
+Home-page: https://github.com/mayainsights/maya-sdk-python
+Author: Maya Insights
+Author-email: support@mayainsights.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/mayainsights/maya-sdk-python/issues
+Project-URL: Documentation, https://github.com/mayainsights/maya-sdk-python/
+Project-URL: Source Code, https://github.com/mayainsights/maya-sdk-python/
+Keywords: maya insights bi marketing
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# maya-sdk
+A client library for accessing Maya Insights API
+
+## Usage
+
+```python
+import maya_sdk
+maya_sdk.api_key = <API_KEY>
+```
+
+## API Key
+
+Replace the <API_KEY> in the examples with an api key provided from Maya Insights. 
+
+To generate a key, you could sign in to Maya on https://app.mayainsights.com on your business account (make sure you have received the invitation to join via email). From there, under Administration -> Developers you can find the API Key. 
+
+Alternatively, contact our live chat support at https://mayainsights.com.
+
+## Examples
+
+### CSV Upload
+
+```python
+import maya_sdk
+maya_sdk.api_key = <API_KEY>
+
+with open("data.csv", "rb") as f:
+    maya_sdk.files.upload_csv(category="imported_orders", file=f)
+```
+
+Feel free to adjust the category name to describe the data that is being sent.
