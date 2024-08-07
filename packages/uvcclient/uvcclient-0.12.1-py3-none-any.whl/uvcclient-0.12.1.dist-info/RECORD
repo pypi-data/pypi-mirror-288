@@ -1,0 +1,11 @@
+uvcclient/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uvcclient/camera.py,sha256=YBHQcfRIytYkP8PLkSaYY5zoFMMymoov1KC66IStmS4,5086
+uvcclient/main.py,sha256=D5THZ-srZMlkpvcGzzNhzaLXkEYZLiK8hsqs0uUBu-g,9439
+uvcclient/nvr.py,sha256=zWms9V2opBhs_a6I3RlCwYsec3gI-D5dnZGlpy0OolU,10616
+uvcclient/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uvcclient/store.py,sha256=Avf5-bJRx5qZwv2j3TC0Mo5n1bNFUN9JX0a5MJJrmNQ,1850
+uvcclient-0.12.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+uvcclient-0.12.1.dist-info/METADATA,sha256=O7jGWtivcQd4ydqkJLhlp2duNUxsOpFi2L_qJRiAxj8,3693
+uvcclient-0.12.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+uvcclient-0.12.1.dist-info/entry_points.txt,sha256=uJwSFUNqIopjQ0vkiZql4JNb2K1Rp3-Flekw4NpvFnc,32
+uvcclient-0.12.1.dist-info/RECORD,,
