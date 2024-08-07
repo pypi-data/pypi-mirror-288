@@ -1,0 +1,2 @@
+[console_scripts]
+zs-server = zs_server.server:main
