@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mm-mnemonic
+Version: 0.0.2
+Requires-Python: >=3.12
+Requires-Dist: eth-account ==0.13.1
+Requires-Dist: ecdsa ==0.19.0
+Requires-Dist: base58 ==2.1.1
+Requires-Dist: typing-extensions ==4.12.2
+Requires-Dist: typer ==0.12.3
+Provides-Extra: dev
+Requires-Dist: build ~=1.2.1 ; extra == 'dev'
+Requires-Dist: twine ~=5.1.0 ; extra == 'dev'
+Requires-Dist: pytest ~=8.3.2 ; extra == 'dev'
+Requires-Dist: pytest-xdist ~=3.6.1 ; extra == 'dev'
+Requires-Dist: pytest-httpserver ~=1.0.8 ; extra == 'dev'
+Requires-Dist: coverage ~=7.6.0 ; extra == 'dev'
+Requires-Dist: ruff ~=0.5.2 ; extra == 'dev'
+Requires-Dist: pip-audit ~=2.7.0 ; extra == 'dev'
+Requires-Dist: bandit ~=1.7.7 ; extra == 'dev'
+Requires-Dist: mypy ~=1.11.0 ; extra == 'dev'
+Requires-Dist: pyinstaller ~=6.9.0 ; extra == 'dev'
+
