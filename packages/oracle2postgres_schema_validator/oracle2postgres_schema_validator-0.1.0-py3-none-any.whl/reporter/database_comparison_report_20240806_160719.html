@@ -1,0 +1,114 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Database Comparison Report</title>
+    <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+      }
+      
+      h2 {
+        color: #2980b9;
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      
+      h3 {
+        color: #3498db;
+        margin-top: 2em;
+        margin-bottom: 1em;
+      }
+      
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 2em;
+      }
+      
+      li {
+        display: inline-block;
+        margin: 0 1em;
+      }
+      
+      a {
+        color: #2980b9;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        text-decoration: underline;
+      }
+      
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 2em;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      
+      th {
+        background-color: #f0f0f0;
+        font-weight: bold;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      
+      tr:hover {
+        background-color: #e0e0e0;
+      }
+      
+      .missing {
+        color: #c0392b;
+        font-weight: bold;
+      }
+      
+      .present {
+        color: #2ecc71;
+        font-weight: bold;
+      }
+    </style>
+    </head>
+    <body>
+    <h2>Database Comparison Report</h2>
+    <ul>
+    <li><a href='#Instances'>Instances</a></li><li><a href='#Object_Counts'>Object Counts</a></li><li><a href='#Mismatched_Object_Counts'>Mismatched Object Counts</a></li><li><a href='#Object_Counts_(per_Schema)'>Object Counts (per Schema)</a></li><li><a href='#Mismatched_Object_Counts_(per_Schema)'>Mismatched Object Counts (per Schema)</a></li><li><a href='#Missing_Objects'>Missing Objects</a></li><li><a href='#Missing_Columns'>Missing Columns</a></li><li><a href='#Missing_PLSQL'>Missing PLSQL</a></li></ul><h3><a name='Instances'></a>Instances</h3><table><thead><tr><th>instance_id</th></tr></thead><tbody><tr><td>instance-1_NOK19ORC_061324151150</td></tr><tr><td>dms-test_2024-07-16130631</td></tr></tbody></table><h3><a name='Object_Counts'></a>Object Counts</h3><table><thead><tr><th>owner</th><th>object_type</th><th>instance_1_count</th><th>instance_2_count</th></tr></thead><tbody><tr><td>SAMET</td><td>INDEX</td><td>3</td><td>None</td></tr><tr><td>SAMET</td><td>SEQUENCE</td><td>3</td><td>None</td></tr><tr><td>SAMET</td><td>TABLE</td><td>3</td><td>3</td></tr></tbody></table><h3><a name='Mismatched_Object_Counts'></a>Mismatched Object Counts</h3><p>No results found.</p><h3><a name='Object_Counts_(per_Schema)'></a>Object Counts (per Schema)</h3><table><thead><tr><th>owner</th><th>object_type</th><th>instance_1_count</th><th>instance_2_count</th></tr></thead><tbody><tr><td>SAMET</td><td>INDEX</td><td>3</td><td>None</td></tr><tr><td>SAMET</td><td>SEQUENCE</td><td>3</td><td>None</td></tr><tr><td>SAMET</td><td>TABLE</td><td>3</td><td>3</td></tr></tbody></table><h3><a name='Mismatched_Object_Counts_(per_Schema)'></a>Mismatched Object Counts (per Schema)</h3><p>No results found.</p><h3><a name='Missing_Objects'></a>Missing Objects</h3><table><thead><tr><th>owner</th><th>object_name</th><th>object_type</th><th>instance_1_status</th><th>instance_2_status</th></tr></thead><tbody><tr><td>SAMET</td><td>SAMET_TEST_PK_ROWID</td><td>INDEX</td><td>Missing</td><td>Present</td></tr><tr><td>SAMET</td><td>SAMET_TEST_PK_ROWID</td><td>INDEX</td><td>Missing</td><td>Present</td></tr><tr><td>SAMET</td><td>SAMET_TEST_PK_ROWID</td><td>INDEX</td><td>Missing</td><td>Present</td></tr><tr><td>SAMET</td><td>TEST_ROWID_SEQ</td><td>SEQUENCE</td><td>Missing</td><td>Present</td></tr><tr><td>SAMET</td><td>TEST_ROWID_SEQ</td><td>SEQUENCE</td><td>Missing</td><td>Present</td></tr><tr><td>SAMET</td><td>TEST_ROWID_SEQ</td><td>SEQUENCE</td><td>Missing</td><td>Present</td></tr></tbody></table><h3><a name='Missing_Columns'></a>Missing Columns</h3><table><thead><tr><th>owner</th><th>table_name</th><th>column_name</th><th>instance_1_status</th><th>instance_2_status</th></tr></thead><tbody><tr><td>SAMET</td><td>TEST</td><td>ROWID</td><td>Missing</td><td>Present</td></tr><tr><td>SAMET</td><td>TEST</td><td>ROWID</td><td>Missing</td><td>Present</td></tr><tr><td>SAMET</td><td>TEST</td><td>ROWID</td><td>Missing</td><td>Present</td></tr></tbody></table><h3><a name='Missing_PLSQL'></a>Missing PLSQL</h3><p>No results found.</p>
+    <button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    <script>
+        // Get the button element
+        const backToTopButton = document.querySelector(".back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+
+        // When the user clicks on the button, scroll to the top of the document
+        backToTopButton.addEventListener("click", function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+    </body>
+    </html>
+    
