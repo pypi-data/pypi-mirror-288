@@ -1,0 +1,3 @@
+[console_scripts]
+vst-advise=view_selection_python.main:run
+
