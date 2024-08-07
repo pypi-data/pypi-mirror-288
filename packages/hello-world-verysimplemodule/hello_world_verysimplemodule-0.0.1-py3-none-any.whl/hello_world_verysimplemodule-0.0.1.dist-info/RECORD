@@ -1,0 +1,10 @@
+hello_world_verysimplemodule/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hello_world_verysimplemodule/add.py,sha256=RpYKFKVOpibFORzMNlOydhostBzoEoTCv2iOrhUMXBQ,48
+hello_world_verysimplemodule/subtract.py,sha256=viIUtyEjDn0pzwXrrRsb3-K09etaqJ3pFAk6WmBBD6g,53
+hello_world_verysimplemodule/extras/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hello_world_verysimplemodule/extras/divide.py,sha256=mHVK1U93V4CV6LZpYpQosmpA-RJowiQmAmCjRbjVB0A,65
+hello_world_verysimplemodule/extras/multiply.py,sha256=SpTrXPQ9WCAW9qWg9PpwSsBcC3LHYK-ncI9e0Gw8qSk,67
+hello_world_verysimplemodule-0.0.1.dist-info/METADATA,sha256=DwKxCHsT43H3bjwQUNUh6bPgboAyqDgFqSqHGB3birU,552
+hello_world_verysimplemodule-0.0.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+hello_world_verysimplemodule-0.0.1.dist-info/top_level.txt,sha256=WIblr8z90PX5EwMMss9ebqGZAtnlKbRjoRReo1bm7dE,29
+hello_world_verysimplemodule-0.0.1.dist-info/RECORD,,
