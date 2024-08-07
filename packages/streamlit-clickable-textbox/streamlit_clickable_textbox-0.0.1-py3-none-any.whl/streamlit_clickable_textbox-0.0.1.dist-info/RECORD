@@ -1,0 +1,13 @@
+clickable_textbox/__init__.py,sha256=ZY9jyJsvyuhyWLwmxLZHoywKLTuMURDhxRJ-bGph094,3850
+clickable_textbox/example.py,sha256=eeC4IARUohYBT_5F91xXxk8qZ2B0AhQ5vPvz2Q-xG4k,677
+clickable_textbox/frontend/build/asset-manifest.json,sha256=yWZZ6Keo2wr8lysBEbQi9E6WmKfFR83gmSJjIvu13TQ,221
+clickable_textbox/frontend/build/bootstrap.min.css,sha256=hTwg6axJ8dAPmGVJmYTrsQS3JhKWA0skJ-td54UbEOk,197459
+clickable_textbox/frontend/build/index.html,sha256=DxX1PrCI1fUb-0sZog2gDxKJJk1Ez_bb83kAwATlwCs,492
+clickable_textbox/frontend/build/static/js/main.4d0bf7d9.js,sha256=9-J_JOqwwJRi2_fhTxW1rvilqtQKn-oxCvcFFpJj87U,317183
+clickable_textbox/frontend/build/static/js/main.4d0bf7d9.js.LICENSE.txt,sha256=cmjEMovgjlkZ-Bs7b5rRQ8FsJtL1F77Y3YkM2E9yfUs,1293
+clickable_textbox/frontend/build/static/js/main.4d0bf7d9.js.map,sha256=CQZym6zmbX4Mv87xJlR7KCsCrpV-C1Vd1mPnsJLhLws,1249195
+streamlit_clickable_textbox-0.0.1.dist-info/LICENSE,sha256=9VDWIUfeWnnobvVpN2KtC5cHaNpAmxhdjyF4LivEPNw,1063
+streamlit_clickable_textbox-0.0.1.dist-info/METADATA,sha256=k6F-haMYCYsrrIceWfk4aFtQP86OitLL8BRsaloaaT8,999
+streamlit_clickable_textbox-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+streamlit_clickable_textbox-0.0.1.dist-info/top_level.txt,sha256=Dn8AEUsAIwLAJ4ETT_vXQG7IpqyHlOXOmOLUE3gB0ro,18
+streamlit_clickable_textbox-0.0.1.dist-info/RECORD,,
