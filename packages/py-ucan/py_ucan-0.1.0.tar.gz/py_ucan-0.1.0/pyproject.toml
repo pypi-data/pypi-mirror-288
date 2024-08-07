@@ -1,0 +1,389 @@
+# build-system
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# ----------------------------------------------------------------------------------------------------------------------
+# poetry
+[tool.poetry]
+package-mode = true
+name = "py-ucan"
+version = "0.1.0"
+description = "Python Ucan"
+readme = "README.md"
+authors = [
+    "Subham Agarwal <177206897+subham1099@users.noreply.github.com>",
+]
+maintainers = []
+# links
+homepage = "https://github.com/fileverse/py-ucan"
+repository = "https://github.com/fileverse/py-ucan"
+documentation = "https://github.com/fileverse/py-ucan"
+# Meta
+keywords = []
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+# Packaging
+packages = [
+    { include = "ucan", from = "src" },
+]
+include = [
+    { path = "**/py.typed", format = ["sdist", "wheel"] },
+]
+exclude = [
+    "**/tests/**/*.*",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typing_extensions = "4.11.0"
+pydantic = "2.7.1"
+cryptography = "42.0.5"
+base58 = "2.1.1"
+pyjwt = "2.8.0"
+
+[tool.poetry.group.release.dependencies]
+python-semantic-release = "9.5.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "8.2.0"
+pytest-asyncio = "0.23.6"
+pytest-cov = "5.0.0"
+
+[tool.poetry.group.qa.dependencies]
+mypy = "1.10.0"
+ruff = "0.4.2"
+
+[tool.poetry.urls]
+# adding this section to avoid poetry formating issues
+"Bug Tracker" = "https://github.com/fileverse/py-ucan/issues"
+
+# ----------------------------------------------------------------------------------------------------------------------
+# ci::semantic_release
+[tool.semantic_release]
+allow_zero_version = true
+major_on_zero = false  # When you are ready to release a stable version, set it to true
+commit_parser = "angular"
+commit_message = "chore(release): v{version} [skip ci]\n\nSee the changelog for changes."
+tag_format = "v{version}"
+
+build_command = """
+    python -m pip install build
+    python -m build .
+"""
+version_variables = [
+    "src/ucan/__init__.py:__version__",
+]
+version_toml = [
+    "pyproject.toml:tool.poetry.version",
+]
+
+[tool.semantic_release.commit_author]
+env = "GIT_COMMIT_AUTHOR"
+default = "semantic-release <semantic-release>"
+
+[tool.semantic_release.branches.main]
+match = "(main|master)"
+#prerelease_token = "rc"
+prerelease = false
+
+[tool.semantic_release.branches.develop]
+match = "develop"
+prerelease_token = "rc"
+prerelease = true
+
+[tool.semantic_release.changelog]
+template_dir = "templates"
+changelog_file = "CHANGELOG.md"
+exclude_commit_patterns = []
+
+[tool.semantic_release.changelog.environment]
+block_start_string = "{%"
+block_end_string = "%}"
+variable_start_string = "{{"
+variable_end_string = "}}"
+comment_start_string = "{#"
+comment_end_string = "#}"
+trim_blocks = false
+lstrip_blocks = false
+newline_sequence = "\n"
+keep_trailing_newline = false
+extensions = []
+autoescape = true
+
+[tool.semantic_release.remote]
+name = "origin"
+type = "github"
+ignore_token_for_push = false
+
+[semantic_release.remote.token]
+env = "GH_TOKEN"
+
+[tool.semantic_release.publish]
+upload_to_vcs_release = true
+
+# ----------------------------------------------------------------------------------------------------------------------
+# test::pytest Pytest & coverage settings
+[tool.pytest.ini_options]
+addopts = "--strict-markers --cov --cov-report term-missing --cov-report html"
+pythonpath = [
+    "tests",
+    "src",
+]
+
+[tool.coverage.run]
+source = ["src"]
+omit = [
+    "**/tests/**/*.*",
+]
+data_file = ".pytest/.coverage"
+
+[tool.coverage.html]
+directory = ".pytest/htmlcov"
+
+# ----------------------------------------------------------------------------------------------------------------------
+# qa::mypy
+# qa::mypy: global options
+[tool.mypy]
+python_version = "3.10"
+mypy_path = "$MYPY_CONFIG_FILE_DIR/src"
+disallow_untyped_defs = true
+no_implicit_reexport = true
+disallow_any_generics = true
+check_untyped_defs = true
+ignore_missing_imports = true
+follow_imports = "normal"
+warn_return_any = true
+warn_unused_configs = true
+no_implicit_optional = true
+strict_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_unreachable = true
+implicit_reexport = false
+# NOTE: TOML's single-quoted strings do not require escaping backslashes
+exclude = [
+    '^build',
+    '^dist',
+    '^.*\.egg-info',
+    '.idea',
+    '.mypy.*',
+    '.pytest.*',
+    '.ruff.*',
+]
+plugins = [
+    "pydantic.mypy",
+]
+
+# qa::mypy: per-module options:
+[[tool.mypy.overrides]]
+module = "ucan.*"
+ignore_missing_imports = false
+
+# ----------------------------------------------------------------------------------------------------------------------
+# qa::ruff
+# qa::ruff: global settings
+[tool.ruff]
+# Allow imports relative to the "src" and "test" directories.
+src = ["src"]
+include = [
+    "src/**/*.py",
+    "src/**/*.pyi",
+    "**/tests/**/*.py",
+    "**/pyproject.toml",
+]
+extend-exclude = [
+    ".idea",
+    ".pytest*",
+    "build",
+    "dist",
+    "docs",
+]
+force-exclude = true
+# Group violations by containing file.
+output-format = "grouped"
+# Disable autofix behavior by-default when running ruff
+fix = false
+unsafe-fixes = false
+# Enumerate all fixed violations.
+show-fixes = true
+# Same as Black.
+line-length = 88
+indent-width = 4
+
+# qa::ruff format base settings
+# https://docs.astral.sh/ruff/settings/#format
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+# Enable auto-formatting of code examples in docstrings. Markdown,
+# reStructuredText code/literal blocks and doctests are all supported.
+#
+# This is currently disabled by default, but it is planned for this
+# to be opt-out in the future.
+docstring-code-format = true
+# Set the line length limit used when formatting code snippets in
+# docstrings.
+#
+# This only has an effect when the `docstring-code-format` setting is
+# enabled.
+docstring-code-line-length = 60
+
+# qa::ruff lint base settings
+# https://docs.astral.sh/ruff/settings/#lint
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    # modules
+    # https://docs.astral.sh/ruff/rules/#flake8-type-checking-tch
+    "TCH",
+    # rules
+    # Deprecated: See https://docs.astral.sh/ruff/rules/missing-type-self/
+    "ANN101",
+    # Deprecated: See https://docs.astral.sh/ruff/rules/missing-type-cls/
+    "ANN102",
+    # See https://github.com/PyCQA/pycodestyle/issues/373
+    "E203",
+    # Allow Multi-line docstring summary not starting at the first line
+    "D212",
+    # Conflicting Linter rules with formatter: https://docs.astral.sh/ruff/formatter/#conflicting-lint-rules
+    "COM812",
+    "ISC001",
+    # Checks for except clauses that catch all exceptions.
+    "BLE001",
+]
+# Only allow fix behavior for the following rules.
+#fixable = ["I"]
+extend-fixable = []
+extend-safe-fixes = []
+unfixable = [
+    # Disable autofix for unused imports (`F401`).
+    "F401",
+    # Disable autofix for unused variables (`F841`).
+    "F841",
+]
+extend-unfixable = []
+extend-unsafe-fixes = []
+
+ignore-init-module-imports = true
+logger-objects = []
+typing-modules = []
+task-tags = ["TODO", "FIXME"]
+
+[tool.ruff.lint.per-file-ignores]
+"**/tests/**/*.*" = [
+    # Dynamically typed expressions (typing.Any) are disallowed
+    "ANN401",
+    # allow `assert` usage
+    "S101",
+    # Missing docstring in public module
+    "D100",
+    # Missing docstring in public class
+    "D101",
+    # Missing docstring in public method
+    "D102",
+    # Missing docstring in public function
+    "D103",
+    # Missing docstring in public package
+    "D104",
+    # One-line docstring should fit on one line
+    "D200",
+    # blank-line-after-summary
+    "D205",
+    # magic-value-comparison 
+    "PLR2004",
+]
+
+[tool.ruff.lint.flake8-pytest-style]
+parametrize-values-type = "tuple"
+
+# qa::ruff: lint flake8-quotes settings
+[tool.ruff.lint.flake8-quotes]
+docstring-quotes = "double"
+inline-quotes = "double"
+multiline-quotes = "double"
+
+# qa::ruff: lint flake8-tidy-imports settings
+[tool.ruff.lint.flake8-tidy-imports]
+# Disallow relative imports of parent module or beyond .
+ban-relative-imports = "parents"
+
+[tool.ruff.lint.flake8-tidy-imports.banned-api]
+"typing.Awaitable".msg = "Use collections.abc.Awaitable or ucan.typing.Awaitable instead."
+"typing.Callable".msg = "Use collections.abc.Callable or ucan.typing.Callable instead."
+"typing.Coroutine".msg = "Use collections.abc.Coroutine or ucan.typing.Coroutine instead."
+"typing.TypedDict".msg = "Use typing_extensions.TypedDict instead."
+
+# qa::ruff: lint flake8-type-checking settings
+[tool.ruff.lint.flake8-type-checking]
+strict = true
+exempt-modules = ["typing", "typing_extensions"]
+runtime-evaluated-base-classes = ["pydantic.BaseModel"]
+runtime-evaluated-decorators = ["pydantic.validate_call"]
+
+# qa::ruff: flake8-unused-arguments
+[tool.ruff.lint.flake8-unused-arguments]
+ignore-variadic-names = true
+
+[tool.ruff.lint.isort]
+case-sensitive = false
+split-on-trailing-comma = true
+detect-same-package = false
+force-sort-within-sections = false
+from-first = false
+# Use a zero blank line between direct and from import.
+lines-between-types = 0
+lines-after-imports = 2
+extra-standard-library = ["typing_extensions"]
+known-first-party = []
+known-local-folder = ["ucan"]
+order-by-type = false
+relative-imports-order = "closest-to-furthest"
+section-order = [
+    "future",
+    "standard-library",
+    "third-party",
+    "third-party-test",
+    "first-party",
+    "local-folder",
+]
+
+[tool.ruff.lint.isort.sections]
+"third-party-test" = ["pytest", "_pytest"]
+"tests" = ["tests"]
+
+[tool.ruff.lint.mccabe]
+# Flag errors (`C901`) whenever the complexity level exceeds 10.
+max-complexity = 10
+
+[tool.ruff.lint.pep8-naming]
+classmethod-decorators = [
+    # Allow Pydantic's `@field_validator` decorator to trigger class method treatment.
+    "pydantic.field_validator",
+]
+
+[tool.ruff.lint.pycodestyle]
+max-doc-length = 88
+
+# qa::ruff: lint pydocstyle settings
+[tool.ruff.lint.pydocstyle]
+# Use Google-style docstrings.
+convention = "google"
+ignore-decorators = ["typing.overload"]
+
+[tool.ruff.lint.pyupgrade]
+keep-runtime-typing = false
+
+# ----------------------------------------------------------------------------------------------------------------------
