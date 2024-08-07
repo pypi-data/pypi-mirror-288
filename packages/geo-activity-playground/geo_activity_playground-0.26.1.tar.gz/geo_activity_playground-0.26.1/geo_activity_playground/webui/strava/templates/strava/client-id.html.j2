@@ -1,0 +1,36 @@
+{% extends "page.html.j2" %}
+
+{% block container %}
+
+<h1 class="mb-3">Strava Connect</h1>
+
+<div class="row mb-3">
+    <div class="col-md-6">
+        <p>You can connect to Strava such that it automatically downloads your activities.</p>
+
+        <p>The Strava API has rather strict rate limiting. If you don't mind waiting a bit, you can just use the "client
+            ID" and "client secret" that are provided to use a pre-defined Strava app. In that case, just click on the
+            button. If you don't want to share the API limits with other people, go the <a
+                href="https://www.strava.com/settings/api">Strava API page</a> and create your own app. Then fill in
+            "client ID" and "client secret" in the form.</p>
+    </div>
+
+    <div class="col-md-6">
+        <form action="/strava/post-client-id" method="POST">
+            <div class="mb-3">
+                <label for="client_id" class="form-label">Client ID</label>
+                <input type="text" class="form-control" id="client_id" name="client_id" value="131693" />
+            </div>
+            <div class="mb-3">
+                <label for="client_secret" class="form-label">Client Secret</label>
+                <input type="text" class="form-control" id="client_secret" name="client_secret"
+                    value="0ccc0100a2c218512a7ef0cea3b0e322fb4b4365" />
+            </div>
+
+            <input type="submit" value="Connect to Strava" />
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}
