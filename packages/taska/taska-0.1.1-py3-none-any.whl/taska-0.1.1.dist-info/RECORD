@@ -1,0 +1,12 @@
+taska/__init__.py,sha256=ONhG46ilj6xBiy13vUm-tTr9PgA72WpfBpaPDQoFGNY,79
+taska/__main__.py,sha256=z6v9-4-3qW7t6HjTK3xuDIj6rZyCrnlvYuKPDt_D5Os,2545
+taska/config.py,sha256=EC2bRyojA_ZnoGhIncAWqYBnfgOE6DKmfV5b1Oy3tjw,1320
+taska/core.py,sha256=3pVV5A0J-s5Z2EXAcfTudsfV0DB7nZDBYAk2VM-aHcQ,19214
+taska/bottle_app/__main__.py,sha256=fYgyo3EYStN5UhNiwy7RENPVxHmXSQyCip02bInEKO8,93
+taska/bottle_app/app.py,sha256=EL2crUysX1pt6f21PUjT4yyqO84CUibqW4i1PIH6pbo,27342
+taska/bottle_app/console_template.py,sha256=oHT3QJZfBvOFLe8dUFv6iIm5vZKEBShDLo0eCOJm4bU,1518
+taska/templates/runner.py,sha256=DWqPKPKXjyuyAV8JjGO7_XBN0qih_h6CvI1mXfpuEu0,9784
+taska-0.1.1.dist-info/LICENSE,sha256=Jqa6BvQuV3M3llc1nbwVZkd7eKS-v3wOLc-OuBMpS5M,1065
+taska-0.1.1.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+taska-0.1.1.dist-info/METADATA,sha256=gkgiNGvczlOwwUb4_cfHro3mU8FVhigzOcoDJYdUS5k,2465
+taska-0.1.1.dist-info/RECORD,,
