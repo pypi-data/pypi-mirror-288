@@ -1,0 +1,12 @@
+freeGPTFix/__init__.py,sha256=14FNuPr_ENadIIHeZbSctxTGQwrhcnh15xZvvBwhtHs,390
+freeGPTFix/Client/__init__.py,sha256=uJ1mMXXu7h9-MRYt6fjZ2ZHYIjyUFiuPl4AgC9PURAs,577
+freeGPTFix/Client/gpt3.py,sha256=hlZXxdvhPRJHqPgsvWyMe4jSlW8VIIg7qQbg3Nro6Rc,1690
+freeGPTFix/Client/gpt3_5.py,sha256=Jw1dIsAkbtIHSjlCy1CUzS7e4ygmSQouAbvibfZgZ3A,1333
+freeGPTFix/Client/gpt4.py,sha256=EzBv-6_okGCqhzjsMwKLBVkEIFGdsQtTNBZPxpT2m1o,2374
+freeGPTFix/Client/pollinations.py,sha256=rxQycN8had_bE4f7ksYaWGM0b0QBeYsVOmQQU_V9DYg,803
+freeGPTFix/Client/prodia.py,sha256=dgNIOOfz0p-pd2XSfZc0pmylYTEKxGVG_mFvI0-LIeQ,2826
+freeGPTFix-1.0.0.dist-info/LICENSE,sha256=j28s6wSrf57hIpHwycGclzrLwQ-qd3nWwV4UZR0ls0w,1063
+freeGPTFix-1.0.0.dist-info/METADATA,sha256=onuePJ9lyobDxscBWD8L-zxEeFgdJTvHQy9OBvxUV70,2217
+freeGPTFix-1.0.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+freeGPTFix-1.0.0.dist-info/top_level.txt,sha256=KHQJ1U7kalRewcdNzspopjCkhx8RvU5r13NA1QplCyw,11
+freeGPTFix-1.0.0.dist-info/RECORD,,
