@@ -1,0 +1,10 @@
+_pyawaitable.cp312-win32.pyd,sha256=gGJ9TnheH6AogDo4GNnvTGJ2VYobPT-K20ZyFnvbzyY,17408
+pyawaitable/__init__.py,sha256=pszn-yqyQJRbMjsa9zn1recVEVeqbeLjGAWeJd3fi_I,535
+pyawaitable/abi.py,sha256=Xv_pwfhgdSoGE_pIpVEJ4iuelw7a4V_oGDu_jPF8OMo,69
+pyawaitable/bindings.py,sha256=9faEzVsmFR4k2CZmFZOND8UWu_EDaGoCtZraUgFELu8,3958
+pyawaitable/pyawaitable.h,sha256=NV-F6MwQJ1o1vEO9nmGpHcWg0oz9WJDsccC3tuUvU4U,4549
+pyawaitable-1.2.0.dist-info/LICENSE,sha256=TLAVQqZV28ExKnA6CHEMwAPn629YqAugdmYqfikcYGI,1091
+pyawaitable-1.2.0.dist-info/METADATA,sha256=UGmFljXEF2Gstya_Wh6jZabqf8YTqB8cjoGo8UYgjeY,4333
+pyawaitable-1.2.0.dist-info/WHEEL,sha256=7bfvbhlR4ohGH3GBgAUlYFOQDnPqYMjb806cZ8ZkkfQ,97
+pyawaitable-1.2.0.dist-info/top_level.txt,sha256=PXAbPz3-IVCEA7V8stWbz1QV-MqJfxJz18buTUhpq9M,25
+pyawaitable-1.2.0.dist-info/RECORD,,
