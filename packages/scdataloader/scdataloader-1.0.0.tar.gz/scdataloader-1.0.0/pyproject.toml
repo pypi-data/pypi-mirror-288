@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "scdataloader"
+version = "1.0.0"
+description = "a dataloader for single cell data in lamindb"
+authors = ["jkobject"]
+license = "GPL3"
+readme = ["README.md", "LICENSE"]
+repository = "https://github.com/jkobject/scDataLoader"
+keywords = ["scRNAseq", "dataloader", "pytorch", "lamindb", "scPrint"]
+
+[tool.poetry.dependencies]
+python = "3.10.*"
+lamindb = "*"
+cellxgene-census = "*"
+torch = "*"
+lightning = "*"
+anndata = "*"
+matplotlib = "*"
+seaborn = "*"
+ipykernel = "*"
+torchdata = "*"
+biomart = "*"
+pandas = ">=2.0.0"
+leidenalg = "*"
+decoupler = "*"
+django = "*"
+lnschema-bionty = "*"
+bionty = "*"
+scikit-misc = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+coverage = "^7.3.4"
+flake8 = "^6.1.0"
+black = "^23.12.1"
+isort = "^5.13.2"
+pytest-cov = "^4.1.0"
+mypy = "^1.8.0"
+gitchangelog = "^3.0.4"
+mkdocs = "^1.5.3"
+mkdocs-git-revision-date-localized-plugin = "*"
+mkdocstrings = "*"
+mkdocs-git-authors-plugin = "*"
+mkdocs-jupyter = "*"
+mkdocstrings-python = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+scdataloader = 'scdataloader.__main__:main'
