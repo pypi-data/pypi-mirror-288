@@ -1,0 +1,2 @@
+[console_scripts]
+mamba-clip = mamba_clip.cli.main:main

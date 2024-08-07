@@ -1,0 +1,17 @@
+colorlog
+h5py
+scikit-learn
+ipython
+pandas
+tqdm
+mamba-ssm
+ftfy
+regex
+fsspec
+timm>=1.0.7
+huggingface_hub
+transformers[sentencepiece]
+braceexpand
+kaggle
+accelerate
+open_clip_torch
