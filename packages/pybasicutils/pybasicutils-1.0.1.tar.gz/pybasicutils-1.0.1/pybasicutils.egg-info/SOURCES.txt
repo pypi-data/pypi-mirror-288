@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pybasicutils/__init__.py
+pybasicutils/clearScreen.py
+pybasicutils/maths.py
+pybasicutils.egg-info/PKG-INFO
+pybasicutils.egg-info/SOURCES.txt
+pybasicutils.egg-info/dependency_links.txt
+pybasicutils.egg-info/top_level.txt
