@@ -1,0 +1,2 @@
+[console_scripts]
+datamanwithvan = datamanwithvan.datamanwithvan:datamanwithvan_entry
