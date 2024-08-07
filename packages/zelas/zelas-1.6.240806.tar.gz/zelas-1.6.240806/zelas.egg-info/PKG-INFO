@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: zelas
+Version: 1.6.240806
+Summary: Professor Liying Wang official point clouds algorithm library
+Home-page: UNKNOWN
+Author: Zelas You, Huaxin Chen, Mengyao Gao, Yimo Geng
+Author-email: youze1997@163.com
+License: UNKNOWN
+Keywords: python,las
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+Produced by CCG.Lidar Point Clouds Research Institute
+
