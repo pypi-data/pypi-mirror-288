@@ -1,0 +1,9 @@
+regress-2024.8.1.dist-info/METADATA,sha256=9L3SKQbCoBNZaPk04miZpOTOmRzwbZvV1qCIgoJdiZc,2105
+regress-2024.8.1.dist-info/WHEEL,sha256=Q0o_BrLNlL-HvKQAQafLiaVKzLv_RQxHqDuyYtNqsnY,112
+regress-2024.8.1.dist-info/license_files/LICENSE,sha256=MU5Okb47qpPA-0vMyeTpfNZD64ObBlr5IXgsIXX-mQk,1057
+regress.libs/libgcc_s-b5472b99.so.1,sha256=wh8CpjXz9IccAyeERcB7YDEx7NH2jF-PykwOyYNeRRI,453841
+regress/__init__.py,sha256=wFCBf-PinEt94zQBb74Xa1Td262ScujdrWtA_NVORIM,111
+regress/__init__.pyi,sha256=9NnS0L_f57YRzgFtbzr-dTZs0XP1aCbVB__TNTospys,394
+regress/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+regress/regress.pypy310-pp73-x86-linux-gnu.so,sha256=unaNb9FCi5xZn8LKb3R7tQcgTSCSM6r-C6CU1lJOb8s,1468673
+regress-2024.8.1.dist-info/RECORD,,
