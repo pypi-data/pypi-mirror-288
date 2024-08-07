@@ -1,0 +1,6 @@
+boot_django
+db
+ei_signals
+frontend
+user
+v1

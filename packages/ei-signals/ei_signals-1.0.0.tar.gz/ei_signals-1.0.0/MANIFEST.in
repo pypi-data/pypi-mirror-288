@@ -1,0 +1,4 @@
+include README.rst
+include LICENSE
+include requirements.txt
+include fetl/functional_etl-0.0.2.tar.gz

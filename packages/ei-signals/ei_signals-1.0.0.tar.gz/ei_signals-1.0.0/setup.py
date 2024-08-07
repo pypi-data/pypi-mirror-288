@@ -1,0 +1,18 @@
+import setuptools
+
+
+setuptools.setup(
+    name="ei_signals",
+    version="v1.0.0",
+    install_requires=[
+        'amqp==5.2.0','asgiref==3.8.1','ballpark==1.4.0','bcrypt==4.2.0','billiard==3.6.4.0','boto3==1.18.29','botocore==1.21.65','celery==5.1.2','certifi==2024.7.4','cffi==1.16.0','chardet==4.0.0','charset-normalizer==3.3.2','click==7.1.2','click-didyoumean==0.3.1','click-plugins==1.1.1','click-repl==0.3.0','coverage==7.6.0','cryptography==43.0.0','Django==5.0.7','django-guardian==2.4.0','django-login-required-middleware==0.9.0','formulas==1.0.0','gunicorn==22.0.0','idna==2.10','iniconfig==2.0.0','jmespath==0.10.0','kombu==5.3.7','numpy==2.0.1','packaging==24.1','pandas==2.2.2','paramiko==3.4.0','pluggy==1.5.0','pprintpp==0.4.0','prompt_toolkit==3.0.47','psycopg2-binary==2.9.9','pycountry==24.6.1','pycountry-convert==0.7.2','pycparser==2.22','PyJWT==2.3.0','PyNaCl==1.5.0','pytest==8.3.2','pytest-cov==5.0.0','pytest-mock==3.14.0','python-dateutil==2.9.0.post0','python-http-client==3.3.7','pytz==2024.1','PyYAML==5.3.1','regex==2024.7.24','repoze.lru==0.7','requests==2.25.1','s3transfer==0.5.2','schedula==1.5.11','sendgrid==6.11.0','setuptools==72.1.0','six==1.16.0','sqlparse==0.5.1','starkbank-ecdsa==2.2.0','tzdata==2024.1','urllib3==1.26.19','vine==5.1.0','wcwidth==0.2.13','wheel==0.43.0'
+    ],
+    author="easyinsights",
+    author_email="support@easyinsights.ai",
+    description="EI Activation Backend",
+    include_package_data=True,
+    package_dir={"": "."},
+    packages=setuptools.find_packages(where="."),
+    python_requires=">=3.9",
+    scripts=["manage.py"],
+)
