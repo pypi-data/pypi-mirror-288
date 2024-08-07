@@ -1,0 +1,10 @@
+description: Régimes complémentaires
+metadata:
+  label_en: Complementary schemes
+  order:
+  - agirc_arrco
+  - arrco
+  - agirc
+  - probtp
+  - unirs
+  - coeff_temp

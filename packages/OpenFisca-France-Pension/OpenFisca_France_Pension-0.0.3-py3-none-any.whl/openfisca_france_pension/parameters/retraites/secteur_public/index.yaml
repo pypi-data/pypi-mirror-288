@@ -1,0 +1,6 @@
+description: Secteur public
+metadata:
+  label_en: Public sector
+  order:
+  - pension_civile
+  - regimes_complementaires
