@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+zs_server/__init__.py
+zs_server/server.py
+zs_server.egg-info/PKG-INFO
+zs_server.egg-info/SOURCES.txt
+zs_server.egg-info/dependency_links.txt
+zs_server.egg-info/entry_points.txt
+zs_server.egg-info/requires.txt
+zs_server.egg-info/top_level.txt
