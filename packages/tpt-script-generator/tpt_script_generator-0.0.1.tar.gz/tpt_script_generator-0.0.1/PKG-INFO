@@ -1,0 +1,43 @@
+Metadata-Version: 2.3
+Name: tpt-script-generator
+Version: 0.0.1
+Summary: A python pacakge for Teradata PT script builder
+Project-URL: Documentation, https://github.com/rhasanm/tpt-script-generator#readme
+Project-URL: Issues, https://github.com/rhasanm/tpt-script-generator/issues
+Project-URL: Source, https://github.com/rhasanm/tpt-script-generator
+Author-email: "Md. Rakibul Hasan" <hasanrakibul.masum@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# tpt-script-generator
+
+[![PyPI - Version](https://img.shields.io/pypi/v/tpt-script-generator.svg)](https://pypi.org/project/tpt-script-generator)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/tpt-script-generator.svg)](https://pypi.org/project/tpt-script-generator)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install tpt-script-generator
+```
+
+## License
+
+`tpt-script-generator` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
