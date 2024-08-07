@@ -1,0 +1,26 @@
+[project]
+name = "baltimorestrings.venver"
+version = "0.1.2"
+description = "venver"
+readme = "README.md"
+authors = [{name = "baltimorestrings"}]
+urls.homepage = "https://github.com/baltimorestrings/venver"
+license = {text = "LICENSE"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3.11"
+]
+requires-python = ">=3.8"
+dependencies = [
+  "tomli"
+]
+
+scripts = {venver = "baltimorestrings._venver:main" }
+
+[build-system]
+requires = [
+  "setuptools",
+  "wheel",
+  "build",
+]
+build-backend = "setuptools.build_meta"

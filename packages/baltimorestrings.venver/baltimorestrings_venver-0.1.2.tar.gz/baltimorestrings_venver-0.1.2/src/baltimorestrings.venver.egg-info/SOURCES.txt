@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/baltimorestrings.venver.egg-info/PKG-INFO
+src/baltimorestrings.venver.egg-info/SOURCES.txt
+src/baltimorestrings.venver.egg-info/dependency_links.txt
+src/baltimorestrings.venver.egg-info/entry_points.txt
+src/baltimorestrings.venver.egg-info/requires.txt
+src/baltimorestrings.venver.egg-info/top_level.txt
+src/baltimorestrings/venver/__init__.py
+src/baltimorestrings/venver/_venver.py
