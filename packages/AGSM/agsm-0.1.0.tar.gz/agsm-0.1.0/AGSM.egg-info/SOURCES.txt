@@ -1,0 +1,10 @@
+README.md
+setup.py
+AGSM/_test.py
+AGSM/convert.py
+AGSM/convertProperties.py
+AGSM/extraction.py
+AGSM.egg-info/PKG-INFO
+AGSM.egg-info/SOURCES.txt
+AGSM.egg-info/dependency_links.txt
+AGSM.egg-info/top_level.txt
