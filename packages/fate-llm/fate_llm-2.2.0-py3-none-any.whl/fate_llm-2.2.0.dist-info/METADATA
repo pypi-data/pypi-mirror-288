@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: fate_llm
+Version: 2.2.0
+Summary: Federated Learning for Large Language Models
+Home-page: https://fate.fedai.org/
+Author: FederatedAI
+Author-email: contact@FedAI.org
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: accelerate ==0.27.2
+Requires-Dist: deepspeed ==0.13.3
+Requires-Dist: peft ==0.8.2
+Requires-Dist: sentencepiece ==0.2.0
+Requires-Dist: lm-eval ==0.4.2
+Requires-Dist: rouge-score ==0.1.2
+Requires-Dist: datasets ==2.18.0
+Requires-Dist: editdistance
+Requires-Dist: torch
+Requires-Dist: transformers ==4.37.2
+Requires-Dist: opacus ==1.4.1
+Requires-Dist: fastchat
+Requires-Dist: Jinja2
+Requires-Dist: sentence-transformers
+Requires-Dist: openai
+Provides-Extra: fate
+Requires-Dist: pyfate ==2.2.0 ; extra == 'fate'
+Provides-Extra: fate_client
+Requires-Dist: fate-client ==2.2.0 ; extra == 'fate_client'
+Provides-Extra: fate_flow
+Requires-Dist: fate-flow ==2.2.0 ; extra == 'fate_flow'
+
+Federated Learning for Large Language Models (FATE-LLM) provides a framework to train and evaluate large language models in a federated manner.

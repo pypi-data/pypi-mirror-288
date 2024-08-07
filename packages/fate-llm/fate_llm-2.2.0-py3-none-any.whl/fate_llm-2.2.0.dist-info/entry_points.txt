@@ -1,0 +1,2 @@
+[console_scripts]
+fate_llm = fate_llm.evaluate.scripts.fate_llm_cli:fate_llm_cli
