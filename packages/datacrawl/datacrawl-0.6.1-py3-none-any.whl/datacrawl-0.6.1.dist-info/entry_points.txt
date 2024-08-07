@@ -1,0 +1,3 @@
+[console_scripts]
+post_install=scripts:post_install
+
