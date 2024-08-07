@@ -1,0 +1,5 @@
+pytest
+pytest-metadata
+pytest-reportlog
+pytango
+jinja2

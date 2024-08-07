@@ -1,0 +1,44 @@
+[build-system]
+requires = [
+    "setuptools>=45",
+    "wheel",
+    "setuptools_scm>=6.2"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "tango_checkup/_version.py"
+
+[tool.setuptools]
+packages = ["tango_checkup"]
+
+[tool.setuptools.package-data]
+checkup = ["*.html"]
+
+[[tool.mypy.overrides]]
+module = [
+    "tango",
+    "pytest_metadata.plugin",
+]
+ignore_missing_imports = true
+
+[project]
+name = "tango-checkup"
+dynamic = ["version"]
+authors = [
+  {name = "MAX IV KITS Software", email = "kits-sw@maxiv.lu.se"},
+]
+description = "Pytest fixtures and helpers for checking the health of a Tango control system."
+readme = "README.md"
+dependencies = [
+    "pytest",
+    "pytest-metadata",
+    "pytest-reportlog",
+    "pytango",
+    "jinja2",
+]
+requires-python = ">= 3.10"
+license = {file = "LICENSE"}
+
+[project.entry-points."pytest11"]
+tango_checkup = "tango_checkup.plugin"
