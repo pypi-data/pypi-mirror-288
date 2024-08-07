@@ -1,0 +1,7 @@
+langchain_groq/__init__.py,sha256=md9NYlMhiJORBO29QyPMOQUSrCKNZwk2pzM-8Am45nI,72
+langchain_groq/chat_models.py,sha256=G4tKmxoE6VMFYpdahsG3tjAPpnSLkz7S4qbsjtm0YtA,53472
+langchain_groq/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gigachain_groq-0.1.9.dist-info/LICENSE,sha256=DppmdYJVSc1jd0aio6ptnMUn5tIHrdAhQ12SclEBfBg,1072
+gigachain_groq-0.1.9.dist-info/METADATA,sha256=F52ruQlPkLnibzjyc3jSeEIFzY3MHuClPHvG0w17nYY,2914
+gigachain_groq-0.1.9.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gigachain_groq-0.1.9.dist-info/RECORD,,
