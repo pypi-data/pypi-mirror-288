@@ -1,0 +1,2 @@
+[can.interface]
+mw_usb2can_vcp = ntrexlab_usb2can_vcp:MW_USB2CAN_VCP
