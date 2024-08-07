@@ -1,0 +1,7 @@
+signals/__init__.py,sha256=GnHqqjYBsrg2aaOdB6bgrX802VE6FQjQcEcR_ChL-pQ,567
+signals/_cellmagic.py,sha256=CCkz0OqdXPMz31BpaBuWFcZyKI6UJ2gV0UelIWd8T_E,4860
+signals/_core.py,sha256=z6FYe-88jABHUF3Li5RNgrq0j2L7GT1XLdzVo7np9IE,13176
+signals/_version.py,sha256=CwnjCqHz43kHLp7RCNsdznNU68mZvEy5z0IgnZzUBHw,115
+signals-0.1.0a2.dist-info/METADATA,sha256=fzI1WmAWWKx2bnPgL7y4twuDckEYqGQvrJU6Kbfg6Wg,2638
+signals-0.1.0a2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+signals-0.1.0a2.dist-info/RECORD,,
