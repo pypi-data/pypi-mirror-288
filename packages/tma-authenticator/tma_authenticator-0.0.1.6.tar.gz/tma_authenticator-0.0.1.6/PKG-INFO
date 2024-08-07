@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: tma_authenticator
+Version: 0.0.1.6
+Summary: Verifying telegram user token.
+Author: Ivan Kochelorov
+Requires-Dist: pydantic
+Requires-Dist: fastapi
+Requires-Dist: bson
