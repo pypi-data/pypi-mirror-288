@@ -1,0 +1,9 @@
+langchain_ollama/__init__.py,sha256=HhQZqbCjhrbr2dC_9Dkw12pg4HPjnDXUoInROMNJKqA,518
+langchain_ollama/chat_models.py,sha256=M2q6WK8tvFN9Q_CVH_cAYvNbhx7HNtN2PIw5255cpxs,30451
+langchain_ollama/embeddings.py,sha256=i0k-K2vi4SYMBiVpsFzzSKNkQHQ1X5uZZsNpCywGjbQ,2328
+langchain_ollama/llms.py,sha256=L3bSB6ProsVfbuzeODWWCy41VfIlIqRMSWgJgftvWu8,12890
+langchain_ollama/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gigachain_ollama-0.1.1.dist-info/LICENSE,sha256=2btS8uNUDWD_UNjw9ba6ZJt_00aUjEw9CGyK-xIHY8c,1072
+gigachain_ollama-0.1.1.dist-info/METADATA,sha256=FtS17iGBszf50Vjq1yNhz0AxCvsjN2VZqE--J1W1fuY,1819
+gigachain_ollama-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gigachain_ollama-0.1.1.dist-info/RECORD,,
