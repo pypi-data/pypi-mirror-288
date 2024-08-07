@@ -1,0 +1,10 @@
+langchain_fireworks/__init__.py,sha256=K_5hw6mYH_YnXe-1_nSEKJcjMDT6udsNBQuxCORW9EA,319
+langchain_fireworks/chat_models.py,sha256=sZTDF4L38FtXZvkQ9RJfHgWbJPBpjk0a1zMKAMHFprE,43195
+langchain_fireworks/embeddings.py,sha256=U1aIrDaOAu9e94sxOBrUSETx83gMPGqgEJAasg7ThZM,1788
+langchain_fireworks/llms.py,sha256=jgZekZh6Xlm-lRbc4C1-0StQolNnHKBlNI4iHCAY5T4,7985
+langchain_fireworks/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langchain_fireworks/version.py,sha256=veBTXdBkNs_8Pf4ekXLYxuv2FZqX7KvxeZQYrJirIKg,233
+gigachain_fireworks-0.1.7.dist-info/LICENSE,sha256=2btS8uNUDWD_UNjw9ba6ZJt_00aUjEw9CGyK-xIHY8c,1072
+gigachain_fireworks-0.1.7.dist-info/METADATA,sha256=rqII4Evo6u5s9ZtP1VUPE9FyfymaXhuiSrdxOgJP4AY,3996
+gigachain_fireworks-0.1.7.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gigachain_fireworks-0.1.7.dist-info/RECORD,,
