@@ -1,0 +1,9 @@
+LICENSE
+MistrasDTA.py
+README.md
+setup.py
+MistrasDTA.egg-info/PKG-INFO
+MistrasDTA.egg-info/SOURCES.txt
+MistrasDTA.egg-info/dependency_links.txt
+MistrasDTA.egg-info/requires.txt
+MistrasDTA.egg-info/top_level.txt
