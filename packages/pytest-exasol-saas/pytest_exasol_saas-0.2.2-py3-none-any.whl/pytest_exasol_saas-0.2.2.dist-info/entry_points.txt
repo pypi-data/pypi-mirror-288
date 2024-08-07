@@ -1,0 +1,3 @@
+[pytest11]
+saas=exasol.pytest_saas
+
