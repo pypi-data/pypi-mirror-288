@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: test_publish_hello_world
+Version: 0.0.1
+Summary: learn distributed python
+Author-Email: aryanicode <aryanicosa@gmail.com>
+License: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# python_distributed
+
