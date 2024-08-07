@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+
+name = "task_5_Rakitin_Sergey"
+version = "0.0.1"
+authors = [{name="Rakitin Sergey", email="dronyx@inbox.ru"}]
+description = "A package for counting unique symbols in a string"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [ "Programming Language :: Python :: 3",
+                "Operating System :: OS Independent" ]
+
+
+[project.urls]
+
+Homepage = "https://git.foxminded.ua/rakitin-sergey/task_5"
+
+
+[tool.hatch.build]
+sources = ["src"]
+
+[tool.hatch.build.targets.sdist]
+include = ["pyproject.toml", "README.md", "requirements.txt"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["task_5_Rakitin_Sergey"]
+
