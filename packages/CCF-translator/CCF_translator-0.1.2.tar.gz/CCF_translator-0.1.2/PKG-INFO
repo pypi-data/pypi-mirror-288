@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: CCF_translator
+Version: 0.1.2
+Summary: a package to translate data between common coordinate templates
+License: MIT
