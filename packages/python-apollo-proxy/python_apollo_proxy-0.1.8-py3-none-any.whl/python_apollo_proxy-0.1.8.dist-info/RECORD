@@ -1,0 +1,11 @@
+apollo_proxy/__init__.py,sha256=yYHFN64vpzquMOjJdhurakWk0qdnabCeI1ruSF7Rvik,467
+apollo_proxy/client.py,sha256=7h8tOSI5JwLJ7qCrPfdVTSHnCeZYIsAE0RFdJobLrZc,13923
+apollo_proxy/helper.py,sha256=c-CfASVc361IzDwcMIE2QgG7t_of32-EYTs4l8fA6iQ,2854
+apollo_proxy/logger_handler.py,sha256=DgBsHJEKQ7sdB3iVPNaLXSK-EaxK_FUFs_A3hx7cK3Q,532
+apollo_proxy/python_2x.py,sha256=UJh-IrUUEBoAMU4pYsaWVMivJHdEoYxwMzWDtfWhjrc,977
+apollo_proxy/python_3x.py,sha256=0w9ooLo-F-wltAjVwkqwHUJ2dfUGgwkAekvUXUD1dhw,1107
+python_apollo_proxy-0.1.8.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+python_apollo_proxy-0.1.8.dist-info/METADATA,sha256=EMFz-cq6AiWSPeWUxqvdpYvl4o8PpMUZD6cqUvXyBac,434
+python_apollo_proxy-0.1.8.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+python_apollo_proxy-0.1.8.dist-info/top_level.txt,sha256=-9UydPkhC0DzlbNbItHlrXVa1lFP9ioKeF65AaeXuz8,13
+python_apollo_proxy-0.1.8.dist-info/RECORD,,
