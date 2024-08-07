@@ -1,0 +1,17 @@
+mtng/__init__.py,sha256=6eVt52l205Ccl4NRvs-OTlYDOqN1cW7ArR7iYQtmvu4,83
+mtng/cli.py,sha256=ZKaO0p5igeEX-Ao-KOTpPF3Xz5IHZHw4ecNx6P33hSA,6969
+mtng/collect.py,sha256=o1MaJ2LgPtnWQpFIv2xmYevBSn6bFIDHDTEtiepUWnM,8340
+mtng/generate.py,sha256=dsmxXBtQNLuLQwkaDga9aDvKj_2TRnu5PIaYKIKZ2tA,1142
+mtng/spec.py,sha256=CavTRp0UAdcKm-QOVlgmI7YercnODyGDFgCt3utzOcE,2244
+mtng/template/base.tex,sha256=BV1nWQtAd_CgJFzswEFDHBiXFqQGnMgPCPPuaSorxhg,437
+mtng/template/item.tex,sha256=wMqlio00INZzwHNk4myee3GV4nMg0Gka1IHGdT6JRzE,119
+mtng/template/item_context.tex,sha256=xk3r-kgeit3gQ8ri95PnMgoPA3DVD5u_gb0Cj2MKYfg,261
+mtng/template/macros.tex,sha256=IdeYg6Qk5hX1eJZpkRwxf4axn68MkRy5a166_7MQlYI,2532
+mtng/template/main.tex,sha256=zdIL-La3pmev2aH35tIq7gwDtlZ6M2uSBd33mlnpy8E,725
+mtng/template/preamble.tex,sha256=hi_zrG4WlLB7jvPmsNEF5T9JHFdGcrWsAbDKc8pWtWM,3299
+mtng/template/provides.tex,sha256=447ImRO0Z57B0FXbHzNFqqcGnKipDyTFEAxRCRuQ3ds,386
+mtng/template/repo.tex,sha256=CW3t6p6x8lmQPTxA1s751qWwTI8C0gbmmJl663ooY-Q,3423
+mtng-0.7.4.dist-info/METADATA,sha256=5MGCQXFujFQOvK16-xv93SY0T0cVzuuFRYprfB7nV2k,5852
+mtng-0.7.4.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+mtng-0.7.4.dist-info/entry_points.txt,sha256=YC8OdkJ64JZvwhrjeH81ffFNv9buTFKkjpgn8yLvyfk,37
+mtng-0.7.4.dist-info/RECORD,,

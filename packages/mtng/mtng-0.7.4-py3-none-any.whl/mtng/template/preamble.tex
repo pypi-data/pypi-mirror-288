@@ -1,0 +1,108 @@
+\providecolor{Purple}{rgb}{0.56,0.27,0.64}
+\providecolor{LimeGreen}{rgb}{0.53,0.79,0.27}
+\providecolor{Yellow}{rgb}{1,0.92,0.24}
+\providecolor{beige}{HTML}{ffebc6}
+
+\usepackage{iftex}
+
+\ifluatex
+\usepackage{emoji}
+\providecommand{\cusemoji}[1]{\raisebox{-0.15\height}{\emoji{#1}}}
+\providecommand{\emojispace}[1]{\raisebox{-0.15\height}{\emoji{#1} }}
+\fi
+
+\providecommand{\prstr}[1]{\##1}
+\providecommand{\issstr}[1]{\##1}
+
+\usepackage{tikz}
+\usetikzlibrary{calc,arrows,arrows.meta,external}
+\tikzset{>={Triangle[angle=50:0.13em 3]}}
+
+\providecommand{\prmerged}{
+  \normalsize
+  \tikzsetnextfilename{prmerged}
+  \hspace*{-0.8em}
+  \raisebox{-0.3\height}{
+  \begin{tikzpicture}[line width=1pt,color=Purple]
+    \begin{scope}[transform canvas={scale=0.80}]
+      \node[draw,circle,inner sep=0,minimum width=0.27em] (bl) at (0,0) {};
+      \node[draw,circle,inner sep=0,minimum width=0.27em] (mr) at (0.9em,0.4em) {};
+      \node[draw,circle,inner sep=0,minimum width=0.27em] (tl) at (0,1em) {};
+      \draw[shorten <=-0.1pt,shorten >=-0.1pt] (mr) to[in=-90,out=180] (tl);
+      \draw[shorten >=-0.1pt,shorten <=-0.1pt] (bl) -- (tl);
+    \end{scope}
+    \coordinate (tl) at (-0.3em,-0.3em);
+    \coordinate (br) at (1.1em,1em);
+    \clip (tl) rectangle (br);
+  \end{tikzpicture}
+  \hspace*{-0.9em}
+  }
+}
+
+
+\providecommand{\propen}{
+  \normalsize
+  % \tikzset{external/export next=false}
+  \tikzsetnextfilename{propen}
+  \hspace*{-0.8em}
+  \raisebox{-0.3\height}{
+  \begin{tikzpicture}[line width=1pt,color=LimeGreen]
+    \begin{scope}[transform canvas={scale=0.80}]
+      \node[draw,circle,inner sep=0,minimum width=0.27em] (bl) at (0,0) {};
+      \node[draw,circle,inner sep=0,minimum width=0.27em] (br) at (0.9em,0) {};
+      \node[draw,circle,inner sep=0,minimum width=0.27em] (tl) at (0,1em) {};
+      \draw[->,shorten <=-0.1pt,shorten >=-0.1pt] (br) --++(0,0.5em) ..controls ++(0,0.4em) and ++(0.5em,0).. (tl);
+      \draw[shorten >=-0.1pt,shorten <=-0.1pt] (bl) -- (tl);
+    \end{scope}
+    \coordinate (tl) at (-0.3em,-0.3em);
+    \coordinate (br) at (1.1em,1em);
+    \clip (tl) rectangle (br);
+  \end{tikzpicture}
+  \hspace*{-0.9em}
+}
+}
+
+\providecommand{\prwip}{
+  \normalsize
+  \tikzsetnextfilename{prwip}
+  \hspace*{-1.1em}
+  \raisebox{-0.3\height}{
+  \begin{tikzpicture}[]
+    \node[rectangle,fill=Yellow,rounded corners=0.5em,
+          minimum height=1.55em,minimum width=2.9em] (t) {\small\emojispace{construction}WIP};
+  \end{tikzpicture}
+  \hspace*{-0.8em}
+}
+}
+
+\providecommand{\prstale}{
+  \normalsize
+  \tikzsetnextfilename{prstale}
+  \hspace*{-1.1em}
+  \raisebox{-0.3\height}{
+  \begin{tikzpicture}[]
+    \node[rectangle,fill=beige,rounded corners=0.5em,
+          minimum height=1.55em] (t) {\small{}Stale};
+  \end{tikzpicture}
+  \hspace*{-0.8em}
+}
+}
+
+\providecommand{\iss}{
+  % \tikzset{external/export next=false}
+  \tikzsetnextfilename{iss}
+  \normalsize
+  \hspace*{-0.7em}
+  \raisebox{-0.3\height}{
+  \begin{tikzpicture}[line width=1pt,color=LimeGreen]
+    \begin{scope}[transform canvas={scale=0.85},shift={(0.4em,0.5em)}]
+      \draw[line width=1.0pt] (0,0) circle(0.6em);
+      \fill[] (0,0) circle(0.15em);
+    \end{scope}
+    \coordinate (tl) at (-0.3em,-0.3em);
+    \coordinate (br) at (1.1em,1em);
+    \clip (tl) rectangle (br);
+  \end{tikzpicture}
+  \hspace*{-0.9em}
+}
+}

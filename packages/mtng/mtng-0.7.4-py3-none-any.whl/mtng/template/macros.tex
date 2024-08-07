@@ -1,0 +1,66 @@
+{% macro show_item(item, spec, mode = none) %}
+    \item
+    {%- if item.is_pr -%}
+      {% if mode == "OPEN" %}\propen{% elif mode == "MERGED" -%}\prmerged{% endif %}
+    {%- else -%}
+      \iss
+    {%- endif -%}
+    {%- if item.is_wip -%}\prwip
+    {%- endif -%}
+    {%- if item.is_stale -%}\prstale
+    {%- endif -%}
+    \textbf{\href{
+      {{- item.html_url -}}
+    }{\textcolor{black}{
+      {{- item.title|sanitize -}}
+    }}}
+    (\href{ {{- item.html_url -}} }{
+    {%- if item.is_pr -%}
+    \prstr{ {{- item.number -}} }
+    {%- else -%}
+    \issstr{ {{- item.number -}} }
+    {%- endif -%}
+    }) \\
+    by \href{ {{- item.user.html_url -}} }{@{{- item.user.login|sanitize -}}}
+    {%- if spec.do_assignee or (spec.do_reviewers and item.is_pr) -%}
+        ,{}
+    {%- endif -%}
+    {%- if spec.do_assignee -%}
+        {%- if item.assignee -%}
+            assigned to {{ user(item.assignee) }}
+        {%- else -%}
+            {%- if spec.no_assignee_attention and mode != "MERGED"-%}
+                \emojispace{warning}\textbf{\textcolor{Red}{no assignee}}
+            {%- else -%}
+                no assignee
+            {%- endif -%}
+        {%- endif -%}
+    {%- endif -%}
+    {%- if spec.do_reviewers and item.is_pr -%}
+        {%- if item.reviews is defined and item.reviews|length > 0 -%}
+            {%- set approvals = item.reviews|selectattr("state", "==", "APPROVED")|list -%}
+            {%- set comments = item.reviews|selectattr("state", "==", "COMMENTED")|list -%}
+            {%- if approvals|length -%}
+                {} \cusemoji{check-mark-button} reviewed by {{ user((approvals|last).user) }}
+            {%- elif comments|length -%}
+                {} \cusemoji{check-mark-button} comment by {{ user((comments|last).user) }}
+            {%- else -%}
+                {} \cusemoji{cross-mark} changes requested by {{ user(item.reviews[-1].user) }}
+            {%- endif -%}
+        {%- else -%}
+            {%- if item.requested_reviewers is defined and item.requested_reviewers|length > 0 -%}
+                {%- for req in item.requested_reviewers -%}
+                    review requested
+                {%- endfor -%}
+            {%- else -%}
+                {%- if mode != "MERGED" -%}
+                    \emojispace{warning}\textbf{\textcolor{Red}{no reviewer}}
+                {%- endif -%}
+            {%- endif -%}
+        {%- endif -%}
+    {%- endif -%}
+    {{- caller() }}
+{% endmacro %}
+{% macro user(data) -%}
+\href{ {{- data.html_url -}} }{@{{- data.login|sanitize -}}}
+{%- endmacro %}
