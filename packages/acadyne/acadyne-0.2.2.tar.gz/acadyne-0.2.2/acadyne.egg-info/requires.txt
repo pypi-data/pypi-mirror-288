@@ -1,0 +1,9 @@
+numpy>=1.0
+sympy>=1.0
+scipy>=1.0
+pydantic>=1.0
+
+[dev]
+pytest
+flake8
+twine
