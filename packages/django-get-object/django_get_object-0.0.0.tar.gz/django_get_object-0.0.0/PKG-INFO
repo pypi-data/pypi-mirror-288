@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: django-get-object
+Version: 0.0.0
+Summary: django get_object(model,**kwargs) function
+Keywords: django
+Classifier: Framework :: Django
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+
+### Installation
+```bash
+$ pip install django-get-object
+```
+
+### Features
+*   one-liner get object
+
+### Examples
+```python
+from django_get_object import get_object
+
+context_data['object'] = get_object(Model,key="value")
+```
+
