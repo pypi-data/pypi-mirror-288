@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: puyaisp
+Version: 1.4.0
+Summary: Programming Tool for PUYA PY32F0xx Microcontrollers
+Home-page: https://github.com/wagiminator/MCU-Flash-Tools
+Author: Stefan Wagner
+Author-email: Stefan Wagner <wagiminator@web.de>
+Maintainer-email: Stefan Wagner <wagiminator@web.de>
+License: MIT License
+        
+        Copyright (c) 2023 Stefan Wagner
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://wagiminator.github.io/
+Project-URL: Repository, https://github.com/wagiminator/MCU-Flash-Tools
+Project-URL: Issues, https://github.com/wagiminator/MCU-Flash-Tools/issues
+Keywords: PUYA,PY32F002A,PY32F003,PY32F030,microcontroller
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Embedded Systems
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyserial
+
+#  puyaisp - Programming Tool for PUYA PY32F0xx Microcontrollers
+## Description
+With this tool, PUYA microcontrollers of the series PY32F0xx (and maybe other PY32) can be flashed via a simple USB-to-serial converter by utilizing the factory built-in embedded UART bootloader.
+
+## Preparations
+If necessary, a driver for the USB-to-serial converter used must be installed.
+
+## Installation
+- Install [Python3](https://www.pythontutorial.net/getting-started/install-python/).
+- Install [pip](https://pip.pypa.io/en/stable/installation/).
+- Install puyaisp: 
+
+```
+pip install puyaisp
+```
+
+## Usage
+Connect your USB-to-serial converter to your PY32F0xx MCU as follows:
+
+```
+USB2SERIAL            PY32F0xx
++--------+      +-------------------+
+|     RXD| <--- |PA2 or PA9  or PA14|
+|     TXD| ---> |PA3 or PA10 or PA15|
+|     VDD| ---> |VDD                |
+|     GND| ---> |GND                |
++--------+      +-------------------+
+```
+
+Set your MCU to bootloader mode by using ONE of the following methods:
+- Disconnect your USB-to-serial converter, pull BOOT0 pin (PF4) to VCC (or press and hold the BOOT button, if your board has one), then connect the converter to your USB port. BOOT0 pin (or BOOT button) can be released now.
+- Connect your USB-to-serial converter to your USB port. Pull BOOT0 pin (PF4) to VCC, then pull nRST (PF2) shortly to GND (or press and hold the BOOT button, then press and release the RESET button and then release the BOOT button, if your board has them).
+
+```
+Usage: puyaisp [-h] [-u] [-l] [-e] [-o] [-G] [-R] [-f FLASH]
+
+Optional arguments:
+  -h, --help                show this help message and exit
+  -u, --unlock              unlock chip (remove read protection)
+  -l, --lock                lock chip (set read protection)
+  -e, --erase               perform chip erase (implied with -f)
+  -o, --rstoption           reset option bytes
+  -G, --nrstgpio            make nRST pin a GPIO pin
+  -R, --nrstreset           make nRST pin a RESET pin
+  -f FLASH, --flash FLASH   write BIN file to flash and verify
+
+Example:
+puyaisp -f firmware.bin
+```
+
+## Links
+- [MCU Flash Tools](https://github.com/wagiminator/MCU-Flash-Tools)
+- [MCU Templates](https://github.com/wagiminator/MCU-Templates)
+- [MCU Development Boards](https://github.com/wagiminator/Development-Boards)
+- [AVR Development Boards](https://github.com/wagiminator/AVR-Development-Boards)
+- [AVR Programmers](https://github.com/wagiminator/AVR-Programmer)
+- [SAMD Development Boards](https://github.com/wagiminator/SAMD-Development-Boards)
