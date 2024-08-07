@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/tempmailorg/__init__.py
+src/tempmailorg/tempmail.py
+src/tempmailorg.egg-info/PKG-INFO
+src/tempmailorg.egg-info/SOURCES.txt
+src/tempmailorg.egg-info/dependency_links.txt
+src/tempmailorg.egg-info/entry_points.txt
+src/tempmailorg.egg-info/top_level.txt
