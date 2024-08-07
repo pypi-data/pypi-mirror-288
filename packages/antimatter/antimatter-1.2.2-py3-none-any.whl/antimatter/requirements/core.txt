@@ -1,0 +1,13 @@
+# This will be replaced by the build system with the appropriate version
+antimatter-engine==1.2.2
+antimatter_api==1.1.5
+annotated_types>=0.6
+packaging>=21.1
+pydantic>=2.0
+python-dateutil>=2.7.0
+pyyaml
+cbor2~=5.5
+urllib3>=2.0.2
+google-auth>=2.29.0
+requests>=2.31.0
+safer>=4.0
