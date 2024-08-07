@@ -1,0 +1,10 @@
+tensorhue/__init__.py,sha256=ORv2LGdiLA6kz8E3pqt2-JyjMCm9S_auaviDAe5vN5I,2322
+tensorhue/_print_opts.py,sha256=xW0bJVooq3foaKuQWygxiTOqj8oKyz90kJNcGO8f6ic,854
+tensorhue/colors.py,sha256=ukTW7jWiwm3C19PGLNV8e9_102rO5DdP6BuP014xiX0,3529
+tensorhue/eastereggs.py,sha256=VzHwrFGKoFljTtgphSsGawZSUdQA1X-9583k0U0b2rI,1031
+tensorhue/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tensorhue/viz.py,sha256=AdRTQ3XqAzhbFnjkDe_9gmlwAQ7kDYZL-1gL2Mx73lA,7082
+tensorhue-0.0.14.dist-info/METADATA,sha256=1MEeqBaljFFewbq9z4tJrg9L14bsraewPDUIJSljrzk,1158
+tensorhue-0.0.14.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+tensorhue-0.0.14.dist-info/top_level.txt,sha256=x2r4Tfoi-7nsb0pL-P8q8DGb1uZBucQJdRdF5GnlZBU,10
+tensorhue-0.0.14.dist-info/RECORD,,
