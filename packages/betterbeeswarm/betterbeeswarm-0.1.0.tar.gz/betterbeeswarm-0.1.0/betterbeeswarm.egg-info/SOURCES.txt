@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+betterbeeswarm/__init__.py
+betterbeeswarm/betterbeeswarm.py
+betterbeeswarm.egg-info/PKG-INFO
+betterbeeswarm.egg-info/SOURCES.txt
+betterbeeswarm.egg-info/dependency_links.txt
+betterbeeswarm.egg-info/requires.txt
+betterbeeswarm.egg-info/top_level.txt
