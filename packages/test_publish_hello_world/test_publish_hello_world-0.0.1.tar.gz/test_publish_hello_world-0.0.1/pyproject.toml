@@ -1,0 +1,21 @@
+[project]
+name = "test_publish_hello_world"
+version = "0.0.1"
+description = "learn distributed python"
+authors = [
+    { name = "aryanicode", email = "aryanicosa@gmail.com" },
+]
+dependencies = []
+requires-python = ">=3.11"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool]
