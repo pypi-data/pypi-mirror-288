@@ -1,0 +1,18 @@
+{% extends "orga/cfp/base.html" %}
+{% load bootstrap4 %}
+{% load i18n %}
+
+{% block content %}
+    <h2>
+        {% blocktranslate trimmed count count=1 %}
+            Speaker Information Note
+        {% plural %}
+            Speaker Information Notes
+        {% endblocktranslate %}
+    </h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% bootstrap_form form layout='event' %}
+        {% include "orga/includes/submit_row.html" %}
+    </form>
+{% endblock %}
