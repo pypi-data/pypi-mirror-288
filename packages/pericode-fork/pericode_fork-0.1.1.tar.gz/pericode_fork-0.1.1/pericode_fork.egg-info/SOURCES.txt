@@ -1,0 +1,7 @@
+README.md
+setup.py
+pericode_fork.egg-info/PKG-INFO
+pericode_fork.egg-info/SOURCES.txt
+pericode_fork.egg-info/dependency_links.txt
+pericode_fork.egg-info/requires.txt
+pericode_fork.egg-info/top_level.txt
