@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: oneflowpy
+Version: 0.1.7
+Summary: api wrapper for OneFlow contract tool
+License: proprietary license
+Author: leik
+Author-email: nordavindltd@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Api Wrapper for Oneflow
+
+[![Upload Python Package](https://github.com/Leikaab/OneFlowPy/actions/workflows/python-publish.yml/badge.svg?branch=main)](https://github.com/Leikaab/OneFlowPy/actions/workflows/python-publish.yml)
+
+
+Todos:
+
+implementere filter og sort på en smooth måte i crud.list
+implementere iterator funksjon for enten crud.list eller ApiResponse
+implementere context manager for api og client
+
+
+implementere filter by extension_type and template_type_id for templates.list()
