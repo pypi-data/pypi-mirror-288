@@ -1,0 +1,46 @@
+[project]
+name = "lightwind"
+description = "Add your description here"
+authors = [
+    { name = "sagewe", email = "sagewe@fastmail.com" }
+]
+dynamic = ["version"]
+dependencies = [
+    "langchain~=0.2",
+    "grpcio<=1.63.0",
+    "protobuf",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.version]
+path = "src/lightwind/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lightwind"]
+
+[tool.hatch.build.hooks.protobuf]
+dependencies = ["hatch-protobuf", "grpcio-tools<=1.63.0"]
+proto_paths = ["src"]
+output_path = "src"
+generate_grpc = true
+
+
+[tool.ruff]
+line-length = 119
+target-version = 'py310'
+extend-include = ["*.ipynb"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

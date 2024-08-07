@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: lightwind
+Version: 0.1.0
+Summary: Add your description here
+Author-email: sagewe <sagewe@fastmail.com>
+Requires-Python: >=3.8
+Requires-Dist: grpcio<=1.63.0
+Requires-Dist: langchain~=0.2
+Requires-Dist: protobuf
+Description-Content-Type: text/markdown
+
+# lightwind
+
+Describe your project here.
