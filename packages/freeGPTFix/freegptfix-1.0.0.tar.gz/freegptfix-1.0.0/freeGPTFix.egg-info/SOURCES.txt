@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+freeGPTFix/__init__.py
+freeGPTFix.egg-info/PKG-INFO
+freeGPTFix.egg-info/SOURCES.txt
+freeGPTFix.egg-info/dependency_links.txt
+freeGPTFix.egg-info/requires.txt
+freeGPTFix.egg-info/top_level.txt
+freeGPTFix/Client/__init__.py
+freeGPTFix/Client/gpt3.py
+freeGPTFix/Client/gpt3_5.py
+freeGPTFix/Client/gpt4.py
+freeGPTFix/Client/pollinations.py
+freeGPTFix/Client/prodia.py
