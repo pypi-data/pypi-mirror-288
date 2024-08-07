@@ -1,0 +1,10 @@
+retryhttp/__init__.py,sha256=LGay1ndF72-veWAem_pmzEn8vm_NtufEB6x_S_rfVBs,429
+retryhttp/_retry.py,sha256=kAlnCl6e4aGS-MIOHcAoaiXql5fnzTi4n9Z7yklDkdw,7378
+retryhttp/_types.py,sha256=6whpkh7aUw3-av9a5b9gx0fa4eHL_Idk2gN-AwSlRD8,145
+retryhttp/_utils.py,sha256=O-l2tUOxkCRTCfUMmhgJ_FdPqmkWoC_v5SxoGMLup58,3103
+retryhttp/_wait.py,sha256=HxHHQ7tyLSYD6jyCl78oMDvYbjs8QYWGS903U8QcjxY,4662
+retryhttp-1.0.0.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+retryhttp-1.0.0.dist-info/METADATA,sha256=XSueKBf4Ih95MZDtmZthbb-48qOW-IwLW5QLbNSv9rY,16843
+retryhttp-1.0.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+retryhttp-1.0.0.dist-info/top_level.txt,sha256=qaNjxFv92FPkpLJAVqD-flBdXzP5nwDqlmOAc_e79lQ,10
+retryhttp-1.0.0.dist-info/RECORD,,
