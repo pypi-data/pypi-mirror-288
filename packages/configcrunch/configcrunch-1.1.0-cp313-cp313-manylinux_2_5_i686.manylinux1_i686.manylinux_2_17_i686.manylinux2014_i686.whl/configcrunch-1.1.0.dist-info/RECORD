@@ -1,0 +1,10 @@
+configcrunch/__init__.py,sha256=c1Z0c-DGSjakuFyIdXAoF7NH0EfMhClPpNK42gdzvOg,1249
+configcrunch/_util.py,sha256=6z-xE2aubm0IOJlnxWoOSn4OLxRYa7nscAhVT8dN_Uo,819
+configcrunch/_main.pyi,sha256=m8ieLcJ4V8o_N_wOfmyIC18QOdzXouNnhf7srjpNPHI,4696
+configcrunch/_main.cpython-313-i386-linux-gnu.so,sha256=aUpL7xx-ytaST6_UeFSIIIQWic27M0_EVwxumOAgojU,2720884
+configcrunch/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+configcrunch-1.1.0.dist-info/RECORD,,
+configcrunch-1.1.0.dist-info/top_level.txt,sha256=xWR7p4hhFeis17nZUBow8-VIIl1iPaCW08K4fwiUNNw,13
+configcrunch-1.1.0.dist-info/LICENSE,sha256=sbxIq6n3sQ1YXAdLi0oXaJaLlivbWDoiMJlM0-wQdEw,1070
+configcrunch-1.1.0.dist-info/WHEEL,sha256=UhHv9XmhaXvCvkxY3s_M949fo_96OU1hyW5ydxteDZ8,217
+configcrunch-1.1.0.dist-info/METADATA,sha256=L34QtXvn4LoJkwiffoB4gqbDvoCKvuB0LXimINKTfKs,7172
