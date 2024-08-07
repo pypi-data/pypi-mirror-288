@@ -1,0 +1,8 @@
+setup.py
+durationsense/__init__.py
+durationsense/main.py
+durationsense.egg-info/PKG-INFO
+durationsense.egg-info/SOURCES.txt
+durationsense.egg-info/dependency_links.txt
+durationsense.egg-info/entry_points.txt
+durationsense.egg-info/top_level.txt
