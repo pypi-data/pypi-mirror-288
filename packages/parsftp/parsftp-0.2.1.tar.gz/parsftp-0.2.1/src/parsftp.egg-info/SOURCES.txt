@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/parsftp/__init__.py
+src/parsftp/batch.py
+src/parsftp/logger.py
+src/parsftp/maincli.py
+src/parsftp/parsftp.py
+src/parsftp.egg-info/PKG-INFO
+src/parsftp.egg-info/SOURCES.txt
+src/parsftp.egg-info/dependency_links.txt
+src/parsftp.egg-info/entry_points.txt
+src/parsftp.egg-info/requires.txt
+src/parsftp.egg-info/top_level.txt
+tests/test_050_parsftp_class.py
+tests/test_100_parsftp_script.py

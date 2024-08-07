@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: parsftp
+Version: 0.2.1
+Summary: Transfer files through SFTP, launching multiple transfers in parallel.
+Author: CNRGH
+Author-email: Pierrick ROGER <pierrick.roger@cnrgh.fr>
+License: CeCILL
+Project-URL: Homepage, https://gitlab.com/cnrgh/parsftp
+Project-URL: Repository, https://gitlab.com/cnrgh/parsftp
+Project-URL: Bug Tracker, https://gitlab.com/cnrgh/parsftp/issues
+Keywords: CNRGH,SFTP,parallel
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML
+Requires-Dist: schema
+Requires-Dist: colorlog
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: mypy; extra == "tests"
+Requires-Dist: pylint; extra == "tests"
+Requires-Dist: coverage; extra == "tests"
+Requires-Dist: yamllint; extra == "tests"
+Requires-Dist: types-PyYAML; extra == "tests"
+Provides-Extra: doc
+Requires-Dist: sphinx; extra == "doc"
+Requires-Dist: sphinx_rtd_theme; extra == "doc"
+Provides-Extra: deploy
+Requires-Dist: build; extra == "deploy"
+Requires-Dist: twine; extra == "deploy"
+
+# parsftp
+
+A Python module and program to launch multiple SFTP transfers in parallel.
+
+See [documentation](https://cnrgh.gitlab.io/parsftp).
+
+## NEWS
+
+### 0.2.0 - 2024-08-06
+
+ * Accept command line arguments to pass to sftp command.
