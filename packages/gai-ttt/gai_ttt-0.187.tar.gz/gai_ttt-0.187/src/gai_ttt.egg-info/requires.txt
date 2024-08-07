@@ -1,0 +1,6 @@
+gai-lib
+nats-py
+pytest
+jsonschema==4.22.0
+ipykernel
+pynvml
