@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: asm-sql-python-crud
+Version: 1.0.0
+Summary: Python SQL Manager
+Author: Alberto Sanmartin Martinez
+Author-email: <albertosanmartinmartinez@gmail.com>
+Keywords: python,sql
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+Python SQL Manager based on SQLModel
