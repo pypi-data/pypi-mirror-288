@@ -1,0 +1,54 @@
+# Irreversible Matplotlib style file
+
+lines.linewidth : 1.5
+lines.linestyle : -
+
+
+patch.facecolor : c989bf
+patch.edgecolor : 492a57
+
+font.family : sans-serif
+font.size : 12
+font.sans-serif : Avenir-Medium.ttf, Avenir, DejaVu Sans, Arial, Helvetica
+font.weight : regular
+
+axes.titlesize: x-large
+axes.titleweight: normal
+
+axes.prop_cycle  : cycler('color', 'b879ba,563857,9d839e,ab09a3,ed95c6,c91c7d,a37a92')
+axes.facecolor   : f4f0f5 
+axes.edgecolor   : 341c39
+axes.grid       :  True
+axes.labelweight : regular
+axes.xmargin : 0.05
+axes.ymargin : 0.05
+
+xtick.color : 341c39
+ytick.color : 341c39
+axes.labelcolor : 341c39
+axes.labelsize : large
+#figure.facecolor : c5ccd1
+
+image.cmap : RdPu
+
+lines.markersize : 5
+
+legend.fancybox : False
+legend.facecolor: f4f0f5
+legend.edgecolor: 84728a
+legend.framealpha: 0.9
+legend.scatterpoints: 3
+
+grid.color : 84728a
+grid.linestyle : : 
+grid.linewidth : 0.25
+grid.alpha : 1.0
+
+mathtext.default: it
+mathtext.fontset: dejavusans
+
+
+savefig.facecolor   : fcf5ff
+savefig.dpi : 300
+
+
