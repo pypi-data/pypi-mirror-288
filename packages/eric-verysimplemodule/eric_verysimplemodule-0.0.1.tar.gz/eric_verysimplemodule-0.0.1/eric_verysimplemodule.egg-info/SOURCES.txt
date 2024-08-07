@@ -1,0 +1,11 @@
+setup.py
+eric-verysimplemodule/__init__.py
+eric-verysimplemodule/add.py
+eric-verysimplemodule/subtract.py
+eric-verysimplemodule/extras/__init__.py
+eric-verysimplemodule/extras/divide.py
+eric-verysimplemodule/extras/multiply.py
+eric_verysimplemodule.egg-info/PKG-INFO
+eric_verysimplemodule.egg-info/SOURCES.txt
+eric_verysimplemodule.egg-info/dependency_links.txt
+eric_verysimplemodule.egg-info/top_level.txt
