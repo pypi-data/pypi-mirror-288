@@ -1,0 +1,5 @@
+
+
+pytest==8.2.2
+
+python-Levenshtein==0.25.1
