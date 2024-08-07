@@ -1,0 +1,11 @@
+setup.py
+hello_world_verysimplemodule/__init__.py
+hello_world_verysimplemodule/add.py
+hello_world_verysimplemodule/subtract.py
+hello_world_verysimplemodule.egg-info/PKG-INFO
+hello_world_verysimplemodule.egg-info/SOURCES.txt
+hello_world_verysimplemodule.egg-info/dependency_links.txt
+hello_world_verysimplemodule.egg-info/top_level.txt
+hello_world_verysimplemodule/extras/__init__.py
+hello_world_verysimplemodule/extras/divide.py
+hello_world_verysimplemodule/extras/multiply.py
