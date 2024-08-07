@@ -1,0 +1,2 @@
+graft common/templates
+graft common/static
