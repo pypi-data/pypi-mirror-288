@@ -1,0 +1,1 @@
+import{_ as e}from"./DbInitComponent.vue_vue_type_script_setup_true_lang-oIIKuR8G.js";import{d as o,c as t,o as a}from"./index-h8UZd-vy.js";const m=o({__name:"DbInitView",setup(n){return(r,_)=>(a(),t(e))}});export{m as default};
