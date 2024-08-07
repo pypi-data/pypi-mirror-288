@@ -1,0 +1,4 @@
+[console_scripts]
+funbuild=funbuild.core:funbuild
+funserver=funbuild.server.base:funserver
+
