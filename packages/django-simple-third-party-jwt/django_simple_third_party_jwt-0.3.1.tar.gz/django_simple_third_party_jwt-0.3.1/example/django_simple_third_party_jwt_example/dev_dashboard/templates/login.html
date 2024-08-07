@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}登入{% endblock %}
+
+{% block extra_css %}
+<style>
+    .login-container {
+        max-width: 400px;
+        margin: 2rem auto;
+        padding: 2rem;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .login-title {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    .btn-login {
+        margin-top: 1rem;
+    }
+    .d-none {
+      display: none;
+    }
+    .alert-danger {
+      color: #721c24;
+      background-color: #f8d7da;
+      border-color: #f5c6cb;
+      padding: 0.75rem 1.25rem;
+      margin-bottom: 1rem;
+      border: 1px solid transparent;
+      border-radius: 0.25rem;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="login-container">
+      <h2 class="login-title">登入</h2>
+      <div id="error-container" class="alert alert-danger d-none"></div>
+      <form method="POST">
+          {% csrf_token %}
+          <div class="form-group">
+              <label for="{{ form.username.id_for_label }}">用戶名</label>
+              {{ form.username }}
+          </div>
+          <div class="form-group">
+              <label for="{{ form.password.id_for_label }}">密碼</label>
+              {{ form.password }}
+          </div>
+          <input type="hidden" name="next" value="{{ next }}" />
+          
+          <button type="submit" name="action" value="jwt" class="btn btn-primary btn-block btn-login">
+              <i class="fas fa-sign-in-alt"></i> JWT 登入
+          </button>
+          <button type="submit" name="action" value="session" class="btn btn-secondary btn-block btn-login">
+              <i class="fas fa-sign-in-alt"></i> Session 登入
+          </button>
+      </form>
+
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'js/login.js' %}"></script>
+<script src="{% static 'js/logout.js' %}"></script>
+{% endblock %}
