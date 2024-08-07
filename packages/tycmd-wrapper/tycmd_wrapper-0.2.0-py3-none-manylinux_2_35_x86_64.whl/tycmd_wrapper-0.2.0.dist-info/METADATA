@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: tycmd-wrapper
+Version: 0.2.0
+Summary: A python wrapper for tycmd
+Keywords: tycmd,teensy,firmware
+Author-Email: Florian Rau <bimac@users.noreply.github.com>
+License: MIT
+Project-URL: Homepage, https://github.com/int-brain-lab/tycmd-wrapper/
+Project-URL: Documentation, https://int-brain-lab.github.io/tycmd-wrapper/
+Project-URL: Repository, https://github.com/int-brain-lab/tycmd-wrapper.git
+Project-URL: Issues, https://github.com/int-brain-lab/tycmd-wrapper/issues
+Project-URL: Changelog, https://github.com/int-brain-lab/tycmd-wrapper/blob/main/CHANGELOG.md
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# tycmd-wrapper
+
+A Python wrapper for [tycmd](https://koromix.dev/tytools) by [Niels 
+Martignène](https://github.com/Koromix/).
+
+Documentation: https://int-brain-lab.github.io/tycmd-wrapper
+
+![License](https://img.shields.io/github/license/int-brain-lab/tycmd-wrapper)
+[![Coverage](https://img.shields.io/coverallsCoverage/github/int-brain-lab/tycmd-wrapper)](https://coveralls.io/github/int-brain-lab/tycmd-wrapper)
+[![CI](https://github.com/int-brain-lab/tycmd-wrapper/actions/workflows/testing.yaml/badge.svg)](https://github.com/int-brain-lab/tycmd-wrapper/actions)
+[![PyPI](https://img.shields.io/pypi/v/tycmd-wrapper)](https://pypi.org/project/tycmd-wrapper/)
