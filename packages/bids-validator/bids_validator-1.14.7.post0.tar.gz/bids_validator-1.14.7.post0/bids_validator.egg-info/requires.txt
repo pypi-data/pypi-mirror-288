@@ -1,0 +1,1 @@
+bidsschematools>=0.10
