@@ -1,0 +1,8 @@
+mlstac/README.md,sha256=r5QErKqhS8l0bDQm0bPA5QIR1udjaOp5VdCdXr3_YKY,3089
+mlstac/__init__.py,sha256=s9VOybRevGz_d-aO9ZizOJiK9Fh3osBtJd7I7mHF3Fw,49
+mlstac/main.py,sha256=SkbbOoJHPQATkSY6C5vEw9sUrYfnMnO_2qug6QZBJb8,4206
+mlstac/utils.py,sha256=PMheD8K-PKelQM00DEBSVc-wSDnEGIV2JlBqYkzXuow,6396
+mlstac-0.1.1.dist-info/LICENSE,sha256=YdB4BQMkMzWuKvXRIpQR4g91IQ_pwA5PSH2lNM97zFI,1070
+mlstac-0.1.1.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+mlstac-0.1.1.dist-info/METADATA,sha256=e3-yn2EWJ3vjZTAh3bdNbj9TNZW4aiKHZhafF0INKZU,3113
+mlstac-0.1.1.dist-info/RECORD,,
