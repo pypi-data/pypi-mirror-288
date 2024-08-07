@@ -1,0 +1,17 @@
+tray_weather/__init__.py,sha256=wH4SexuvVsZKQ41JNyI3KJpYd3rwGomk1MSnnZAWH14,189
+tray_weather/__main__.py,sha256=NLVSim1sHE6LbASNSsUR-aXZYggsVLeuGfiGbF7w2l0,83
+tray_weather/config.py,sha256=0cJnUKYVqNu8Ukt5YVYOjTS2qXDHdNBbpmfcjIe58Xk,2351
+tray_weather/data_points.py,sha256=b7rbpINzOcIQ_ylkgieG7hPX5gAmb_pt2g38dvcEaT8,4030
+tray_weather/dialog_custom_location.py,sha256=B-GuNCFWNjBFUq5C4f2QmQv64qSRppHVjQQR5-RGJXE,5997
+tray_weather/dialog_solar_plot.py,sha256=ksRagYbR1D7JspSLfZvD3JCGwp6RAagBnUXPEePvdyg,593
+tray_weather/dialog_temperature_plot.py,sha256=PL8IbzTnrFl4QpFjMlmriRNlpKFRUjgHhLQvqB0Z9ds,613
+tray_weather/location.py,sha256=7LMIY5EZCNDmBa5dFxTyBpoxrBg4g9OIObbLJ4cFTgo,14704
+tray_weather/main.py,sha256=FWwyof2breaWzj-59PbHbHat0ck8pTwL409CnZsf1hA,14899
+tray_weather/oklahoma.png,sha256=NxkJjABrtiMh5cTAEUfHycuJgvQwddWqGMC3qtfp2EM,135731
+tray_weather/solar.py,sha256=qhugUV6OVqIHUljJgBj_8jfoKLXQCdlTW00t1DArz_U,4499
+tray_weather/storms.py,sha256=QjXG9Zjhbz2oRni7fecWZ_7SRP0zKiTkEFV2TliNN4s,3978
+TrayWeatherTool_Oklahoma-0.5.dist-info/METADATA,sha256=Z0XPgh9CxkGVCsRKZF4HXs9RcdyrV_3evhRjcLfW49U,3615
+TrayWeatherTool_Oklahoma-0.5.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+TrayWeatherTool_Oklahoma-0.5.dist-info/entry_points.txt,sha256=9A3QUmDqgIT3EgvTy-CeKBn3a9P-sZDaslV2fMoZXCc,65
+TrayWeatherTool_Oklahoma-0.5.dist-info/top_level.txt,sha256=eRkjbTV_TtGi1GgiTvPdIK_6vCxOivoOacTzAbVrlP4,13
+TrayWeatherTool_Oklahoma-0.5.dist-info/RECORD,,
