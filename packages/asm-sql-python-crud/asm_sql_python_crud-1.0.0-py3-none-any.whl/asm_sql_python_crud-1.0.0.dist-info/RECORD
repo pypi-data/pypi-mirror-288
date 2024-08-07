@@ -1,0 +1,11 @@
+asm_sql_python_crud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asm_sql_python_crud/managers.py,sha256=ySlZy8Hxgx7Ny0b1-rMNZcVyF_8LMPVQvSK-ITLt8WM,2988
+asm_sql_python_crud/models.py,sha256=UubBkvZJw71YmpBtdldW13RNEBgKlapswduWS-Xh7R0,245
+asm_sql_python_crud/routers.py,sha256=NZFo3PLGmZHGkZvL5Wq4XsFZJ7VPEilHVk6rLcSbErQ,4597
+asm_sql_python_crud/settings.py,sha256=FMOU75bbqmAw3MfgoUUYEUIT9BllX0RN447m2Rx1nEc,648
+asm_sql_python_crud/utils.py,sha256=REAC5EtV2qnn8SgOK-lVDp2J13G7CQ6_wMoYzNaSy5E,1725
+asm_sql_python_crud/viewsets.py,sha256=7tl3NzgJnhF90-VW_jjzYToSwIFO2Xl6s5qxNNitpRo,5201
+asm_sql_python_crud-1.0.0.dist-info/METADATA,sha256=PF-oTXI5lviVAeVCJulJNuHaIH1MuhpHVQTH7K1e8P0,473
+asm_sql_python_crud-1.0.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+asm_sql_python_crud-1.0.0.dist-info/top_level.txt,sha256=BimOKGbp3InJyMYhlpbryfI4gQagYrf7OKDf5BLHZ0M,20
+asm_sql_python_crud-1.0.0.dist-info/RECORD,,
