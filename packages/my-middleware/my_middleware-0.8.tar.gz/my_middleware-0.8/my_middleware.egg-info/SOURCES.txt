@@ -1,0 +1,9 @@
+README.md
+setup.py
+my_middleware/__init__.py
+my_middleware/middleware.py
+my_middleware.egg-info/PKG-INFO
+my_middleware.egg-info/SOURCES.txt
+my_middleware.egg-info/dependency_links.txt
+my_middleware.egg-info/requires.txt
+my_middleware.egg-info/top_level.txt
