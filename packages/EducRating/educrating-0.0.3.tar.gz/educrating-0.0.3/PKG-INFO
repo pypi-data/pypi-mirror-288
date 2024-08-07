@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: EducRating
+Version: 0.0.3
+Summary: Python package for rating systems usable in educational environments.
+Author-email: Julian Manz <julian.manz@hs-kempten.de>
+Project-URL: Homepage, https://github.com/juli-txt/EducRating
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# EducRating
+Python package for rating systems usable in educational environments.
