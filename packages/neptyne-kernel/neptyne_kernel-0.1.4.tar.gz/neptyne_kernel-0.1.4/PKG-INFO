@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: neptyne-kernel
+Version: 0.1.4
+Summary: The Neptyne kernel
+Project-URL: Homepage, https://neptyne.com
+Project-URL: Documentation, https://docs.neptyne.com
+Project-URL: Repository, https://github.com/neptyneco/neptyne-kernel.git
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# The Neptyne Kernel
+
+This package contains everything shipped in a [Neptyne](https://neptyne.com) kernel container. Running outside of a Neptyne context isnt fully supported yet, but this may prove useful for some advanced use cases.
+
+## Installing
+
+Neptyne kernels use Python 3.11, so this is the only version currently supported.
+
+```python
+python3.11 -m venv venv
+. venv/bin/activate
+pip install -r neptyne_kernel/requirements.txt # or pip install uv && uv pip install -r neptyne_kernel/requirements.txt
+```
+
+## Usage
+
+In Neptyne containers, you'd typically import the API using
+
+```
+import neptyne as nt
+```
+
+Outside of this context, you'll need to do something like
+
+```
+import neptyne_kernel.neptyne_api as nt
+```
