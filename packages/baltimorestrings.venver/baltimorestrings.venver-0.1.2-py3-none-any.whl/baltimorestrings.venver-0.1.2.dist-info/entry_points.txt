@@ -1,0 +1,2 @@
+[console_scripts]
+venver = baltimorestrings._venver:main
