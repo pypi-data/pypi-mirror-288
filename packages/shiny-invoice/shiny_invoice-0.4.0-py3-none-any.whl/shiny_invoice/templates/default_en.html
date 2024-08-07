@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <style>
+        .invoice-wrapper {
+            margin: auto;
+            padding: 30px;
+            font-size: 13px;
+            line-height: 22px;
+            font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+            color: #555;
+        }
+
+        .invoice-wrapper .top {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .invoice-wrapper .top .title .name{
+            font-size: 2em;
+            color: #333;
+        }
+
+        .invoice-wrapper .top .details {
+            text-align: right;
+        }
+
+        .invoice-wrapper .addresses {
+            display: flex;
+            justify-content: space-between;
+            margin: 2em 0;
+        }
+
+        .invoice-wrapper .addresses .sender{
+            text-align: right;
+
+        }
+        .invoice-wrapper .addresses .sender-small{
+            font-size: 0.7em;
+            border-bottom: 1px solid #333;
+        }
+
+        .invoice-wrapper .addresses .recipient{
+            margin: 4em 0 0 0;
+        }
+
+        .invoice-wrapper .subject {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 0 1em 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .invoice-wrapper .greetings {
+            margin-bottom: 1em;
+        }
+
+        .invoice-wrapper table {
+            width: 100%;
+        }
+
+        .invoice-wrapper table td {
+            padding: 2px;
+        }
+
+        .invoice-wrapper table tr td:first-child, .invoice-wrapper table thead th:first-child {
+            text-align: left;
+        }
+        .invoice-wrapper table tr td {
+            text-align: right;
+        }
+
+        .invoice-wrapper table thead th {
+            background: #eee;
+            border-bottom: 1px solid #ddd;
+            font-weight: bold;
+        }
+
+        .invoice-wrapper table tr.item td {
+            border-bottom: 1px solid #eee;
+        }
+
+        .invoice-wrapper .totals {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .invoice-wrapper .totals table{
+            width: fit-content;
+            margin: 0.5em 0;
+        }
+        .invoice-wrapper .totals table td{
+            padding: 0 2px 0 2px;
+            font-size: 0.8em;
+        }
+        .invoice-wrapper .totals table td:first-child{
+            padding-right: 10px;
+        }
+
+        .invoice-wrapper .totals table tr:last-child{
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .invoice-wrapper .closing .highlight{
+            font-weight: bold;
+        }
+
+        .invoice-wrapper .footer {
+            display: flex;
+            font-size: 0.6em;
+            line-height: 1.2em;
+            justify-content: space-around;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+        }
+
+        .invoice-wrapper .footer span{
+            font-weight: bold;
+        }
+
+        @media print {
+            .invoice-wrapper .footer{
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
+            .pagebreak {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="invoice-wrapper">
+    <div class="top">
+        <div class="title">
+            <span class="name">${name}</span><br/>
+            <span class="skills">${primary_skills}</span>
+        </div>
+        <div class="details">
+            <td>Invoice ${invoice_number}<br/>Due date: ${due_at_date}</td>
+        </div>
+    </div>
+    <div class="addresses">
+        <div class="recipient">
+            <span class="sender-small">${name} | ${piped_address}</span><br/>
+            ${recipient_address}
+        </div>
+        <div class="sender">
+            ${name}<br/>
+            ${linebreaked_address}<br/>
+            ${primary_contact}
+        </div>
+    </div>
+
+    <div class="subject">
+        <span>Invoice</span>
+        <span>${created_at_date}</span>
+    </div>
+
+    <div class="greetings">
+        ${introduction}<br/>
+        I appreciate your trust and would ask you to pay this invoice, without deductions, till the ${due_at_date}.
+    </div>
+    ${invoice_items}
+    <div class="totals">
+        <table>
+            <tr><td>Net total:</td><td>${total_net}</td></tr>
+            <tr><td>VAT ${tax_rate}:</td><td>${tax}</td></tr>
+            <tr><td>Gross total:</td><td>${total_gross}</td></tr>
+        </table>
+    </div>
+    <div class="closing">
+        <p>Please make the payment to:<br/>
+        <span class="highlight">IBAN: ${iban}</span> at the <span class="highlight">${bank} (BIC: ${bic})</span><br/>
+        with the reference <span class="highlight">Invoice ${invoice_number}</span>.</p>
+
+        <p>Best Regards<br/>${name}</p>
+    </div>
+    <div class="footer">
+        <div class="left">
+            <span>${name}</span><br/>${all_skills}
+        </div>
+        <div class="center">
+            <span>Contact</span><br/>
+            ${linebreaked_address}<br/>
+            ${all_contact}
+        </div>
+        <div class="right">
+            <span>Bank details</span><br/>
+            Bank: ${bank}<br/>
+            IBAN: ${iban}<br/>
+            BIC: ${bic}<br/>
+            Tax number: ${tax_number}
+        </div>
+    </div>
+</div>
+</body>
+</html>
