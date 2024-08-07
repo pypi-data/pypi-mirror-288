@@ -1,0 +1,12 @@
+test_tunnel/__init__.py,sha256=6d4O0GB8p0FVMKF9-gaJAnOou1Ispx1PAKObcni1cGY,294
+test_tunnel/addresses.py,sha256=7oOGMqSRTTgSAua9CnGX9jG5NhlVMLmkGB_KG0g_96o,14041
+test_tunnel/defs.py,sha256=yGYhLoNIEWE6-d0OJBINXw1cbZqQvkQA5WIflwhTR3g,1432
+test_tunnel/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_tunnel/run_test.py,sha256=Fui6MQ_YVASOgdlDq4FQTlt6nVuBovUO-pzd-zXf-UI,12515
+test_tunnel/cmd_test/__init__.py,sha256=f0Pdi9Z1hd8EbTO1lNhqyls-sLoFqjqF3TyLRpy2-tM,180
+test_tunnel/cmd_test/microsocks.py,sha256=f2vxYcZJOlr1phyI9mjqtwFrHiPDomwS_zOWiealw24,4981
+test_tunnel/cmd_test/socat.py,sha256=c7DCtPtkFIhd9CJKm7RhnWe3WqXKVAWfqnKJLvdXCvY,2430
+test_tunnel/cmd_test/util.py,sha256=cuL3jaSGR1qz4BMbXR9tNFF5CTl8nOBouNyd5dkMIsw,2581
+test_tunnel-0.1.0.dist-info/METADATA,sha256=Bryj1ZieqBwPRnPeQz3LtdHajWCdxD_b_LcwtqjEpKs,1249
+test_tunnel-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+test_tunnel-0.1.0.dist-info/RECORD,,
