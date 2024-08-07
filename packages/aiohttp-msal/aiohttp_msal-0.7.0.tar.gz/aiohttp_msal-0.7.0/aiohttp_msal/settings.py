@@ -1,0 +1,44 @@
+"""Settings."""
+
+from typing import TYPE_CHECKING, Any, Awaitable, Callable
+
+from aiohttp_msal.settings_base import SettingsBase, Var
+
+if TYPE_CHECKING:
+    from redis.asyncio import Redis
+else:
+    Redis = Any
+
+
+class MSALSettings(SettingsBase):
+    """Settings."""
+
+    SP_APP_ID = Var(str, required=True)
+    """SharePoint Application ID."""
+    SP_APP_PW = Var(str, required=True)
+    """SharePoint Application Secret."""
+    SP_AUTHORITY = Var(str, required=True)
+    """SharePoint Authority URL.
+
+    Examples:
+    "https://login.microsoftonline.com/common"  # For multi-tenant app
+    "https://login.microsoftonline.com/Tenant_Name_or_UUID_Here"."""
+
+    DOMAIN = "mydomain.com"
+    """Your domain. Used by routes & Redis functions."""
+
+    COOKIE_NAME = "AIOHTTP_SESSION"
+    """The name of the cookie with the session identifier."""
+
+    login_callback: list[Callable[[Any], Awaitable[Any]]] = []
+    """A list of callbacks to execute on successful login."""
+    info: dict[str, Callable[[Any], Any | Awaitable[Any]]] = {}
+    """List of attributes to return in /user/info."""
+
+    REDIS = "redis://redis1:6379"
+    """OPTIONAL: Redis database connection used by app_init_redis_session()."""
+    database: Redis = None  # type: ignore
+    """Store the Redis connection when using app_init_redis_session()."""
+
+
+ENV = MSALSettings()

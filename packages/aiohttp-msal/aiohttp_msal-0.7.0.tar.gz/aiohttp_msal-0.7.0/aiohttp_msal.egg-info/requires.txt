@@ -1,0 +1,16 @@
+msal>=1.30.0
+aiohttp_session>=2.12
+aiohttp>=3.8
+
+[redis]
+aiohttp_session[aioredis]>=2.12
+
+[tests]
+black==24.8.0
+pylint==3.2.6
+flake8
+pytest-aiohttp
+pytest
+pytest-cov
+pytest-asyncio
+pytest-env
