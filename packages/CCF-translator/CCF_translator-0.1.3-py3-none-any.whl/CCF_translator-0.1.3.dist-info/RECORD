@@ -1,0 +1,17 @@
+CCF_translator/__init__.py,sha256=ezOahiRD80yUIwIhj-eJ4ll7KlPAP-hoZhUVC8YqT8c,111
+CCF_translator/pointset.py,sha256=6ZI-WWMP4rgPmk-EX-vmp1FJsUE7eXlJTvrMdHxAr5I,2486
+CCF_translator/read_write.py,sha256=pBM2WvGPIzi0s6EB8kQVgrkYUGh_q07zi7ALJILjCaw,1326
+CCF_translator/time_series.py,sha256=bwsvoeFZCiqPshuarJmnkVUF5Ehwg093IdyE9Z7tF_M,167
+CCF_translator/volume.py,sha256=ptVAXc1dKu36fBbarnv8QS89C2VW2slnLMOSSc0Wrag,2340
+CCF_translator/deformation/__init__.py,sha256=2O8YjaE2EMoGDgJreu1p_ATYk-LoO9-l4WA1A8Mp5Yo,17
+CCF_translator/deformation/apply_deformation.py,sha256=fsJSPQ08cuEnXVC6lBHFhK0pXS49cJfEAXjlUsevdqs,7802
+CCF_translator/deformation/forward_transform.py,sha256=jZTzZnkX4mCo1nJVPbmgWDWWDQhSsmCyuC-xdaNV7wc,2711
+CCF_translator/deformation/route_calculation.py,sha256=FZp9Ql9RF0Zd-h6DY_ZtBR6M9Llai1jCI2-TO45vHkw,378
+CCF_translator/deformation/interpolation/NearestNDInterpolator.py,sha256=bIEnlI-iaNTJhYqzijlNkJhmGzgq5QI2P15y2-gFx4g,7095
+CCF_translator/deformation/interpolation/__init__.py,sha256=2O8YjaE2EMoGDgJreu1p_ATYk-LoO9-l4WA1A8Mp5Yo,17
+CCF_translator/metadata/translation_metadata.csv,sha256=hN5hmbiRsvlHvpjW2EPFLBc3YmC1uDjZjub_oy3R7KQ,243288
+CCF_translator-0.1.3.dist-info/LICENSE,sha256=IifUmjbaDwhUT8pQ_-9klSspAMK0CBQuFaEAf6EgG-o,1069
+CCF_translator-0.1.3.dist-info/METADATA,sha256=LqNa8vhOOcgOjELHyBQtuOxumAoGjXaMkHgoehhsuvc,167
+CCF_translator-0.1.3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+CCF_translator-0.1.3.dist-info/top_level.txt,sha256=9hJvReXg20v6YORi3V5-218sk2xb5oU9wyp3fuDqe_Q,15
+CCF_translator-0.1.3.dist-info/RECORD,,
