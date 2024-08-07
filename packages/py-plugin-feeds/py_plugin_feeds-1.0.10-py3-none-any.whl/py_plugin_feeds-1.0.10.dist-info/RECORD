@@ -1,0 +1,10 @@
+py_plugin_feeds/__init__.py,sha256=9zRaKz-bK0EaD2aRtwCwuXUdOeDuvuBfHQEAZ4wwcvU,59
+py_plugin_feeds/py_plugin_feeds.py,sha256=IZQMuaTUpHNwJSCXmU6bVyoojBr1-CrwqL6KH9D_XFc,2930
+py_plugin_feeds/abi/token/token.json,sha256=rxNQ9TOhZ2arq59eORZ2WtUUMomsemJ9WBbmVjAfOIA,26407
+py_plugin_feeds/mapping/__init__.py,sha256=zK6whGBWau2yjm7kxmgWuMOzXtOa9P9i5reF4auJ7qc,63
+py_plugin_feeds/mapping/list.json,sha256=Eb_P3GqxAGh-Z2YxFYiAVoXeCUwGBnzh_53HxGzaA88,953
+py_plugin_feeds/mapping/token_mapping.py,sha256=-MyYOEhIojqyhcfslsKOsVuiYceJTMM4EElx4ZIpmss,266
+py_plugin_feeds-1.0.10.dist-info/METADATA,sha256=w5jjps7UnLCMfyjxR3_feLMfP-PktOs49cKUicvTMY0,4766
+py_plugin_feeds-1.0.10.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+py_plugin_feeds-1.0.10.dist-info/top_level.txt,sha256=dQUawgfew5xjE97u_Hd11zTdWQxRzSCVeBDs3CvXC6c,16
+py_plugin_feeds-1.0.10.dist-info/RECORD,,

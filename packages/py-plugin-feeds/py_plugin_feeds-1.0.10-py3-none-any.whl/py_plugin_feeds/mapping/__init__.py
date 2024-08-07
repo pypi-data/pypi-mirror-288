@@ -1,0 +1,1 @@
+from py_plugin_feeds.mapping.token_mapping import token_mapping
