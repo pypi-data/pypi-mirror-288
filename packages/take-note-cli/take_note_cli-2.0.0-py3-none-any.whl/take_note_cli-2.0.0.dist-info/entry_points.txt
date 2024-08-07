@@ -1,0 +1,3 @@
+[console_scripts]
+take-note=take_note_cli.__main__:main
+

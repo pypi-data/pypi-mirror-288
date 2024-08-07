@@ -1,0 +1,15 @@
+take_note_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+take_note_cli/__main__.py,sha256=JkkhUBD7hcwIqNLwvmovoUtg7R8sBl2SPTVuw-PfCGw,131
+take_note_cli/config/config.yaml,sha256=gao1wnP-qLatJAZolipxrA_VibF4FGqZ3jB6xiQ9guQ,74
+take_note_cli/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+take_note_cli/core/notes.py,sha256=pnMxNe91vioAHPPQmsfVPR10Gmk0ay7HomlweZu2jr4,3119
+take_note_cli/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+take_note_cli/utils/args.py,sha256=W0nQepbe_DuQC5Wheu4e9BXNlvciLnuBSIavh4sgvPU,2417
+take_note_cli/utils/config.py,sha256=iKvUpuTaDElnvVh4MoFtphfHUngoRfHPA7TTZp9M1H8,1036
+take_note_cli/utils/dates.py,sha256=QNIEDAaGy238HgGqS-R30vD8cwEnmutbrjhIlG--OmI,682
+take_note_cli/utils/paths.py,sha256=7ALjgn54uS59pC3z9t-N8ORjbsfpAr_3ZTKEvFbgD38,421
+take_note_cli-2.0.0.dist-info/LICENSE,sha256=9Tx1wr1qxCt3qb05ubvl6zoOKcO5ILzurKNzSAUr5CA,1064
+take_note_cli-2.0.0.dist-info/METADATA,sha256=GTfAw8XYYW23ELHgHlji5jA6QUxvqq6CxLL7-q0TYAg,6264
+take_note_cli-2.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+take_note_cli-2.0.0.dist-info/entry_points.txt,sha256=tV2dA8ZrC-trJXoAMDleT0h42wUAfaCU4lQ_LFG6t_g,57
+take_note_cli-2.0.0.dist-info/RECORD,,
