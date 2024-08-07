@@ -1,0 +1,6 @@
+fpm_py/__init__.py,sha256=E5N3EPCsXrh4ETzWiKHKzRZz5ZiSZGgOVdCoVOV4e-8,38
+fpm_py/core_algo.py,sha256=RSdBYXtWJYrDXDMSZtLHSLYRRLsPfoF3Iupbge9bnZM,3406
+fpm_py-0.0.0.dist-info/LICENSE,sha256=k1vyFriKdti-Cm9QzaylY8JVvlgAYUQdBBVRuxBTypg,1126
+fpm_py-0.0.0.dist-info/METADATA,sha256=-WFkt20wHvJtejyc7afJ00UcdNPCr7PebNsY2bmOmkU,574
+fpm_py-0.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fpm_py-0.0.0.dist-info/RECORD,,
