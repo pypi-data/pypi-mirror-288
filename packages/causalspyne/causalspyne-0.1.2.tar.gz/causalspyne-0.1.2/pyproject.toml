@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "causalspyne"
+version = "0.1.2"
+description = "hierarchical data generation for causal discovery and abstraction"
+authors = ["Xudong Sun, Alex Markham"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+matplotlib = "^3.9.0"
+networkx = "^3.2.1"
+numpy = "^2.0.0"
+pandas = "^2.2.2"
+scipy = "^1.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
