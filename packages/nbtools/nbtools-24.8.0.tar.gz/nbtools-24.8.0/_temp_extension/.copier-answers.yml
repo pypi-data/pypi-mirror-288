@@ -1,0 +1,15 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.2.1
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: tmtabor@cloud.ucsd.edu
+author_name: Thorin Tabor
+has_binder: false
+has_settings: true
+kind: server
+labextension_name: '@g2nb/nbtools'
+project_short_description: Framework for creating user-friendly Jupyter notebooks,
+    accessible to both programming and non-programming users alike.
+python_name: nbtools
+repository: https://github.com/g2nb/nbtools
+test: false
+

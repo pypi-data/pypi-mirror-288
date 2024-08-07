@@ -1,0 +1,8 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "@g2nb/nbtools",
+  "description": "@g2nb/nbtools settings.",
+  "type": "object",
+  "properties": {},
+  "additionalProperties": false
+}

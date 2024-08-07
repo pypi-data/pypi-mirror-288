@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3659d906-5dc7-4943-8d63-1217d897f1e0" name="Changes" comment="Changed text &quot;Cannot find tool&quot; to &quot;Tool not loaded&quot;">
+      <change afterPath="$PROJECT_DIR$/lab4.Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev.Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/dev.Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2bdyZFqIvS2RpkSOBFZENjmLnHJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;/Users/tmtabor/workspace/nbtools&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-PY-241.14494.241" />
+        <option value="bundled-python-sdk-0509580d9d50-28c9f5db9ffe-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.14494.241" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Style fix for data panel">
+      <created>1706298589015</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706298589015</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3659d906-5dc7-4943-8d63-1217d897f1e0" name="Changes" comment="Style fix for data panel" />
+      <created>1706559304940</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706559304940</updated>
+      <workItem from="1706559306284" duration="891000" />
+      <workItem from="1706631733180" duration="1077000" />
+      <workItem from="1707329511823" duration="4787000" />
+      <workItem from="1707409151245" duration="326000" />
+      <workItem from="1707754715150" duration="2245000" />
+      <workItem from="1707842100410" duration="10935000" />
+      <workItem from="1708015117755" duration="2611000" />
+      <workItem from="1708040014916" duration="354000" />
+      <workItem from="1708453179849" duration="3422000" />
+      <workItem from="1708708592011" duration="3233000" />
+      <workItem from="1708979467243" duration="214000" />
+      <workItem from="1708985104678" duration="163000" />
+      <workItem from="1709064937802" duration="2371000" />
+      <workItem from="1709573193110" duration="42000" />
+      <workItem from="1709591499093" duration="1820000" />
+      <workItem from="1709654448834" duration="4180000" />
+      <workItem from="1709881158145" duration="6672000" />
+      <workItem from="1710175152135" duration="7862000" />
+      <workItem from="1710261634852" duration="766000" />
+      <workItem from="1710276261352" duration="6490000" />
+      <workItem from="1710697104269" duration="8000" />
+      <workItem from="1710785946254" duration="997000" />
+      <workItem from="1710862299289" duration="2804000" />
+      <workItem from="1711050659720" duration="5735000" />
+      <workItem from="1712165007556" duration="1291000" />
+      <workItem from="1712334447235" duration="86000" />
+      <workItem from="1712699571966" duration="1292000" />
+      <workItem from="1713981293398" duration="56000" />
+      <workItem from="1713988997796" duration="4167000" />
+      <workItem from="1714493116771" duration="1291000" />
+      <workItem from="1714494719015" duration="3029000" />
+      <workItem from="1714673383412" duration="208000" />
+      <workItem from="1715030868316" duration="1830000" />
+      <workItem from="1715097073686" duration="15684000" />
+      <workItem from="1715282231356" duration="1178000" />
+      <workItem from="1715616568468" duration="6544000" />
+      <workItem from="1715699586513" duration="317000" />
+      <workItem from="1715749818415" duration="11000" />
+      <workItem from="1715790157575" duration="4100000" />
+      <workItem from="1716220658993" duration="3539000" />
+      <workItem from="1716308110098" duration="9985000" />
+      <workItem from="1717595133335" duration="5994000" />
+      <workItem from="1717680740019" duration="3734000" />
+      <workItem from="1718124253229" duration="5114000" />
+      <workItem from="1719328568585" duration="1010000" />
+      <workItem from="1719416241321" duration="1291000" />
+      <workItem from="1719437105637" duration="1391000" />
+      <workItem from="1720635227405" duration="208000" />
+      <workItem from="1720635760264" duration="4167000" />
+      <workItem from="1722882997431" duration="1940000" />
+      <workItem from="1722958939376" duration="192000" />
+    </task>
+    <task id="LOCAL-00002" summary="Fix for data panel search">
+      <created>1707333848165</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707333848165</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added collapse to each grouping in data panel">
+      <created>1707339433307</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707339433307</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adding register_all() method to ToolManager">
+      <created>1707409467462</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707409467462</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fixed bug handling unescaped single quotes in data group names">
+      <created>1707763220796</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707763220796</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Data Panel style improvements">
+      <created>1707845888768</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707845888768</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Data Panel event handling improvements">
+      <created>1707850841438</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707850841438</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Allow widget caches to contain functions">
+      <created>1707862333592</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707862333592</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Allow ordering of registered data">
+      <created>1707930625173</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1707930625173</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Support (uri, label, kind) tuples in UIOutput.files">
+      <created>1708017746624</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1708017746624</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fix occasional index bug">
+      <created>1708625584041</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1708625584041</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Improvement to data panel drag-and-drop">
+      <created>1708979674965</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708979674965</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Allow overriding of group names in UIOutout.register_data()">
+      <created>1708985262008</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1708985262008</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fixed bug handling menu item method callbacks in the UI Builder post ipywidgets 8 support">
+      <created>1709593177862</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1709593177862</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added color parameter type">
+      <created>1709654800487</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1709654800487</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Don't enforce kind for file params unless a flag is set">
+      <created>1709664270936</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1709664270936</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Sort data panel by most recent">
+      <created>1709919264075</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1709919264075</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Updating @rjsf">
+      <created>1709920558285</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1709920558285</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Updating typescript">
+      <created>1709921055718</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1709921055718</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Support for data refresh callback">
+      <created>1710183470253</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1710183470253</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Adding support for custom tool panel icons">
+      <created>1711051847659</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1711051847659</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Adding support for filtering error'ed data from come from menus">
+      <created>1711141586261</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1711141586261</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Better support for observe() on file parameters">
+      <created>1712173855599</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1712173855599</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Adding support for button parameters">
+      <option name="closed" value="true" />
+      <created>1713990844550</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1713990844550</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Updating version number to 24.4">
+      <option name="closed" value="true" />
+      <created>1714493576487</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1714493576487</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Fixed bug in unregister()">
+      <option name="closed" value="true" />
+      <created>1714496847249</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1714496847249</updated>
+    </task>
+    <task id="LOCAL-00027" summary="A couple style tweaks">
+      <option name="closed" value="true" />
+      <created>1715031733748</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1715031733748</updated>
+    </task>
+    <task id="LOCAL-00028" summary="A couple style tweaks">
+      <option name="closed" value="true" />
+      <created>1715032158423</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1715032158423</updated>
+    </task>
+    <task id="LOCAL-00029" summary="A couple style tweaks">
+      <option name="closed" value="true" />
+      <created>1715032398918</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1715032398918</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Refactoring is_url()">
+      <option name="closed" value="true" />
+      <created>1715102255220</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1715102255220</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Support for blank defaults in ColorFormInput">
+      <option name="closed" value="true" />
+      <created>1715102275714</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1715102275714</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Adding support for nested parameter groups">
+      <option name="closed" value="true" />
+      <created>1715191129796</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1715191129796</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Style tweak">
+      <option name="closed" value="true" />
+      <created>1715191183455</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1715191183456</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Style tweak">
+      <option name="closed" value="true" />
+      <created>1715200960085</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1715200960085</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Style tweak">
+      <option name="closed" value="true" />
+      <created>1715201134324</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1715201134324</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Adding additional options for handling output file links">
+      <option name="closed" value="true" />
+      <created>1715620104031</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1715620104031</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Better error handling for default values in multi-select parameters">
+      <option name="closed" value="true" />
+      <created>1715624147968</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1715624147968</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Retain expanded/collapsed state of data panel items when the contents are altered/refresh">
+      <option name="closed" value="true" />
+      <created>1716223396639</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1716223396639</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Added filter method to DataManager">
+      <option name="closed" value="true" />
+      <created>1716490307699</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1716490307699</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Support sendto=False in file parameters">
+      <option name="closed" value="true" />
+      <created>1719252862267</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1719252862267</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Style fix for select[multiple] parameters with really long values">
+      <option name="closed" value="true" />
+      <created>1719330039086</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1719330039086</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Changed text &quot;Cannot find tool&quot; to &quot;Tool not loaded&quot;">
+      <option name="closed" value="true" />
+      <created>1720635298182</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1720635298182</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="38cf77c5-44da-4b88-8fdd-9fc6ac438ba6">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed bug handling menu item method callbacks in the UI Builder post ipywidgets 8 support" />
+    <MESSAGE value="Added color parameter type" />
+    <MESSAGE value="Don't enforce kind for file params unless a flag is set" />
+    <MESSAGE value="Sort data panel by most recent" />
+    <MESSAGE value="Updating @rjsf" />
+    <MESSAGE value="Updating typescript" />
+    <MESSAGE value="Support for data refresh callback" />
+    <MESSAGE value="Adding support for custom tool panel icons" />
+    <MESSAGE value="Adding support for filtering error'ed data from come from menus" />
+    <MESSAGE value="Better support for observe() on file parameters" />
+    <MESSAGE value="Adding support for button parameters" />
+    <MESSAGE value="Updating version number to 24.4" />
+    <MESSAGE value="Fixed bug in unregister()" />
+    <MESSAGE value="A couple style tweaks" />
+    <MESSAGE value="Refactoring is_url()" />
+    <MESSAGE value="Support for blank defaults in ColorFormInput" />
+    <MESSAGE value="Adding support for nested parameter groups" />
+    <MESSAGE value="Style tweak" />
+    <MESSAGE value="Adding additional options for handling output file links" />
+    <MESSAGE value="Better error handling for default values in multi-select parameters" />
+    <MESSAGE value="Retain expanded/collapsed state of data panel items when the contents are altered/refresh" />
+    <MESSAGE value="Added filter method to DataManager" />
+    <MESSAGE value="Support sendto=False in file parameters" />
+    <MESSAGE value="Style fix for select[multiple] parameters with really long values" />
+    <MESSAGE value="Changed text &quot;Cannot find tool&quot; to &quot;Tool not loaded&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed text &quot;Cannot find tool&quot; to &quot;Tool not loaded&quot;" />
+  </component>
+</project>
