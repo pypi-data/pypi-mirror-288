@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+py_plugin_feeds/__init__.py
+py_plugin_feeds/py_plugin_feeds.py
+py_plugin_feeds.egg-info/PKG-INFO
+py_plugin_feeds.egg-info/SOURCES.txt
+py_plugin_feeds.egg-info/dependency_links.txt
+py_plugin_feeds.egg-info/requires.txt
+py_plugin_feeds.egg-info/top_level.txt
+py_plugin_feeds/abi/token/token.json
+py_plugin_feeds/mapping/__init__.py
+py_plugin_feeds/mapping/list.json
+py_plugin_feeds/mapping/token_mapping.py
+tests/test.py
