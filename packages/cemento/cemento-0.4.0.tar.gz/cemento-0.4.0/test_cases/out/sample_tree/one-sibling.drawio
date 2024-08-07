@@ -1,0 +1,33 @@
+<mxfile modified="None" type="device">
+  <diagram name="one-sibling.drawio" id="280ebee6f839">
+    <mxGraphModel dx="1600" dy="850" grid="1" gridSize="10" guides="1" tooltips="1" connect="1"
+      arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0"
+      shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="280ebee6f839-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;endArrow=none;curved=0;dashed=0" edge="1" parent="1" source="280ebee6f839-1" target="280ebee6f839-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="280ebee6f839-4" value="pmd:sibling" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="280ebee6f839-3">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>        <mxCell id="280ebee6f839-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;endArrow=none;curved=1;dashed=1" edge="1" parent="1" source="280ebee6f839-2" target="280ebee6f839-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="280ebee6f839-6" value="pmd:sibling" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="280ebee6f839-5">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>        <mxCell id="280ebee6f839-1" value="term_1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#aaaaaa;strokeColor=#000000;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="205.0" y="0" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="280ebee6f839-2" value="term_2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#aaaaaa;strokeColor=#000000;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="205.0" y="180" width="200" height="80" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

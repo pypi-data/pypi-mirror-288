@@ -1,0 +1,80 @@
+<mxfile host="Electron" modified="2024-06-16T14:30:15.717Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.5.1 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="WutI6nKYvW6v9hjEsm60" version="24.5.1" type="device">
+  <diagram name="Page-1" id="y95NtlflLEOP_hBBiJEF">
+    <mxGraphModel dx="954" dy="674" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="R-ySSVpc46mNYWlCbCv4-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="R-ySSVpc46mNYWlCbCv4-1" target="R-ySSVpc46mNYWlCbCv4-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R-ySSVpc46mNYWlCbCv4-1" value="Term 1" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R-ySSVpc46mNYWlCbCv4-2" value="Term 2" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R-ySSVpc46mNYWlCbCv4-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="R-ySSVpc46mNYWlCbCv4-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R-ySSVpc46mNYWlCbCv4-18" value="disconn_1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="R-ySSVpc46mNYWlCbCv4-9" vertex="1" connectable="0">
+          <mxGeometry x="-0.2872" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R-ySSVpc46mNYWlCbCv4-3" value="Term 3" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="390" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R-ySSVpc46mNYWlCbCv4-4" value="Term 4" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="390" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R-ySSVpc46mNYWlCbCv4-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="R-ySSVpc46mNYWlCbCv4-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="170" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R-ySSVpc46mNYWlCbCv4-19" value="disconn_2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="R-ySSVpc46mNYWlCbCv4-10" vertex="1" connectable="0">
+          <mxGeometry x="-0.1115" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R-ySSVpc46mNYWlCbCv4-5" value="Term 5" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="590" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R-ySSVpc46mNYWlCbCv4-6" value="Term 6" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="590" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R-ySSVpc46mNYWlCbCv4-14" value="Term 8" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R-ySSVpc46mNYWlCbCv4-15" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="235" y="430" as="sourcePoint" />
+            <mxPoint x="285" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R-ySSVpc46mNYWlCbCv4-20" value="disconn_3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="R-ySSVpc46mNYWlCbCv4-15" vertex="1" connectable="0">
+          <mxGeometry x="-0.02" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R-ySSVpc46mNYWlCbCv4-21" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="440" as="sourcePoint" />
+            <mxPoint x="470" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R-ySSVpc46mNYWlCbCv4-23" value="Stray Text" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="600" y="320" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R-ySSVpc46mNYWlCbCv4-24" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Stray Block&lt;/h1&gt;&lt;div&gt;Since we have space, this file is meant to simulate all the possible common mistakes a user can commit for their diagrams.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="590" y="370" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="R-ySSVpc46mNYWlCbCv4-25" value="Term 7" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="290" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
