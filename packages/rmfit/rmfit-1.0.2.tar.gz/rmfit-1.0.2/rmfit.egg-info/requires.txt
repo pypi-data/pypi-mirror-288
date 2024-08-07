@@ -1,0 +1,7 @@
+emcee
+batman-package
+radvel
+corner
+pandas
+h5py
+pytransit
