@@ -1,0 +1,12 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud/azure.py,sha256=qPHAs5EgKIUM3fSHAFQPBDEvY2kB16DtYI1gAA2czoI,451
+cloud/graph.py,sha256=iDYnqrElBr8j6IEZN2YzOJvpqYdLfYakImpKwXjcNyI,2864
+data_processing/pandas.py,sha256=IDOV_wy5F8q_7sGsra3twmzSStD_hns-gQjIZDccdZs,1502
+environment/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+environment/env.py,sha256=DH1upuKYPP7W0IoW1OkcgOLp9J2NP8hfGubXKep0BWM,377
+toolpy_buddy-0.0.1.dist-info/LICENSE,sha256=iRV-B5s8-Hbui_gEi6kGPbwAHAw184biSE2XsZQ2OPg,1089
+toolpy_buddy-0.0.1.dist-info/METADATA,sha256=6-eCGQtd1no4EUsy26fbyitXGch7WrFQUVSH_l8vlEY,1947
+toolpy_buddy-0.0.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+toolpy_buddy-0.0.1.dist-info/top_level.txt,sha256=1o073PL9Psu9ORTZB4kvjZ8pfNOYazgSzJ-c1MLKzvQ,43
+toolpy_buddy-0.0.1.dist-info/RECORD,,
