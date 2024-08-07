@@ -1,0 +1,6 @@
+minihelper/gcp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minihelper/gcp/bigquery.py,sha256=_reGM1ZWZAICF6ByteMybG9Fv62krfPauIPS2qGc7vk,1407
+minihelper/gcp/storage.py,sha256=XlgqCtey27DTlzIoIO_LPMtmga40iTTi_3edcqdP2M8,2136
+minihelper-0.1.4.dist-info/METADATA,sha256=-Tbtr96DSuSy8eBdg9FiiABU-wdQhFyW1hTG_kirs8U,678
+minihelper-0.1.4.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+minihelper-0.1.4.dist-info/RECORD,,
