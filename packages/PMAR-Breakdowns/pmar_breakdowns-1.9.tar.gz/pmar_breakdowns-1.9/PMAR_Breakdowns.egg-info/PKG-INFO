@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: PMAR_Breakdowns
+Version: 1.9
+Summary: This Library serves as a support file for IVZ python scipts. It contains functions and classes that are utilized in data processing for PMAR FI analytics.
+Author: Timothy Colledge
+Author-email: timothy.colledge@invesco.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
