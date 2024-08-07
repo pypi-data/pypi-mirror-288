@@ -1,0 +1,4 @@
+include VERSION
+include setup_utils.py
+include requirements.txt
+include src/gai/cli/scripts/docker-compose.yml
