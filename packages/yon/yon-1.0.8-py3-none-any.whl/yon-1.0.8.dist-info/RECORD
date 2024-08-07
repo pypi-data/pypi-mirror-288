@@ -1,0 +1,11 @@
+yon/__init__.py,sha256=wXxlvJ5FlJBlO7rjwAdREvkcufZGDziRmpzLFcMG9WU,36450
+yon/_msg.py,sha256=ciYf1oExw1HQjD9r99udJTumAyhNcOAiTFBeujmmHr8,7491
+yon/_rpc.py,sha256=oVtTpo5h1Bgtx8RnkI4l391n22ezgJ3uF3GhGLpE1yo,1631
+yon/_transport.py,sha256=7qdbay6MjWn04SDqA_PRlUgV7SJFWSXSU3bHXeLyeaQ,4138
+yon/_udp.py,sha256=GYsvY0hBSyg1CtV_Btj6CG814RNy0IKHP238xIE1JOQ,736
+yon/_ws.py,sha256=3wtU21MAL-ZM2u1BJrFeTuOOeG1UqSrwRs-baYV_34o,866
+yon/filters.py,sha256=CZoQQCE7guvmiF1kbqElbG9p2ITDZ6O-w1XQPFow8GA,148
+yon-1.0.8.dist-info/license,sha256=LNiYKTqA1oHQqcEG9QUpzP-NRr3zflejh6oppjZt1co,1067
+yon-1.0.8.dist-info/METADATA,sha256=B9oYSFyzOiqARFWEgER7tHS_c3TTy8M9TmkBy-OUJYA,567
+yon-1.0.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+yon-1.0.8.dist-info/RECORD,,
