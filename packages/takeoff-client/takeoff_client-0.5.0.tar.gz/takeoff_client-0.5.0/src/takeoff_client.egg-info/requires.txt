@@ -1,0 +1,3 @@
+sseclient-py>=1.8.0
+httpx==0.27.0
+takeoff-config>=0.5.1
