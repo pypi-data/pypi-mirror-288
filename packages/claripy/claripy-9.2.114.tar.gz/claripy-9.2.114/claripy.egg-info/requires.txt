@@ -1,0 +1,12 @@
+cachetools
+z3-solver==4.13.0.0
+
+[docs]
+furo
+myst-parser
+sphinx
+sphinx-autodoc-typehints
+
+[testing]
+pytest
+pytest-xdist
