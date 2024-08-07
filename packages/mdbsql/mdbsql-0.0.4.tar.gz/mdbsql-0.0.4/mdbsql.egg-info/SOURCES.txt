@@ -1,0 +1,16 @@
+README.txt
+setup.py
+mdbsql/__init__.py
+mdbsql/bdup.py
+mdbsql/get_myconf.py
+mdbsql/mongo_update.py
+mdbsql/mylogger3.py
+mdbsql/mysql_update.py
+mdbsql/pbix_refresh.py
+mdbsql/pov_city.py
+mdbsql/ua_sj.py
+mdbsql/xigua_porxy.py
+mdbsql.egg-info/PKG-INFO
+mdbsql.egg-info/SOURCES.txt
+mdbsql.egg-info/dependency_links.txt
+mdbsql.egg-info/top_level.txt
