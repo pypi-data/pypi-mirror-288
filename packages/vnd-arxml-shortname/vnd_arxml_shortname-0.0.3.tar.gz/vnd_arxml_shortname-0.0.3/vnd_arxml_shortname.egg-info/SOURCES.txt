@@ -1,0 +1,7 @@
+setup.py
+vnd_arxml_shortname/__init__.py
+vnd_arxml_shortname/arxml_shortname.py
+vnd_arxml_shortname.egg-info/PKG-INFO
+vnd_arxml_shortname.egg-info/SOURCES.txt
+vnd_arxml_shortname.egg-info/dependency_links.txt
+vnd_arxml_shortname.egg-info/top_level.txt
