@@ -1,0 +1,16 @@
+tensorhue/__init__.py,sha256=oDyMk4ZYPGE6Mh9fkxb5sHlO8RhakAG5Pz8C3Z3uRws,2322
+tensorhue/_print_opts.py,sha256=xW0bJVooq3foaKuQWygxiTOqj8oKyz90kJNcGO8f6ic,854
+tensorhue/colors.py,sha256=ukTW7jWiwm3C19PGLNV8e9_102rO5DdP6BuP014xiX0,3529
+tensorhue/eastereggs.py,sha256=VzHwrFGKoFljTtgphSsGawZSUdQA1X-9583k0U0b2rI,1031
+tensorhue/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tensorhue/viz.py,sha256=AdRTQ3XqAzhbFnjkDe_9gmlwAQ7kDYZL-1gL2Mx73lA,7082
+tensorhue/connectors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tensorhue/connectors/_jax.py,sha256=TMe-px6KJuDX83RF9eAXCbzcCbwNipYFB2KAKV4p7cc,1064
+tensorhue/connectors/_numpy.py,sha256=YIN7j2rqj9GLxEp6IfDFtyQwGrIgbitaJ2vVca6FXQs,216
+tensorhue/connectors/_pillow.py,sha256=XGvT3-yaIajYQTzQzl7MvUaKWJJC-_QWWmibaOxgBno,390
+tensorhue/connectors/_tensorflow.py,sha256=pAAK6XCJY6BG8F--Uo5Cto_E5b3jQVLX7f7FNHY5JcQ,1163
+tensorhue/connectors/_torch.py,sha256=dUSns0da0B8Dgjf7qXOMSH_bJy2v-t-q-nBrunjPR44,746
+tensorhue-0.0.15.dist-info/METADATA,sha256=0eo6JPv1o1tgmAq4gK5gsvDcKXRv15kCHhdCZbMHG90,1158
+tensorhue-0.0.15.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+tensorhue-0.0.15.dist-info/top_level.txt,sha256=x2r4Tfoi-7nsb0pL-P8q8DGb1uZBucQJdRdF5GnlZBU,10
+tensorhue-0.0.15.dist-info/RECORD,,
