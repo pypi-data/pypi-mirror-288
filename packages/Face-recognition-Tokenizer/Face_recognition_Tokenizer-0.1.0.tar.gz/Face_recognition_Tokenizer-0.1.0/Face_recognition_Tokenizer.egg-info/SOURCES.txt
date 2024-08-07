@@ -1,0 +1,7 @@
+README.md
+setup.py
+Face_recognition_Tokenizer.egg-info/PKG-INFO
+Face_recognition_Tokenizer.egg-info/SOURCES.txt
+Face_recognition_Tokenizer.egg-info/dependency_links.txt
+Face_recognition_Tokenizer.egg-info/requires.txt
+Face_recognition_Tokenizer.egg-info/top_level.txt
