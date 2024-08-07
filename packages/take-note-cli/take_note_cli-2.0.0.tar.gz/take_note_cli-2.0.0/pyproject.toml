@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "take-note-cli"
+version = "2.0.0"
+description = "Create and open notes in your favourite editor."
+license = "MIT"
+authors = [
+  "wsinned <wsinned@tutanota.com>",
+]
+readme = "README.md"
+homepage = "https://github.com/wsinned/take-note"
+repository = "https://github.com/wsinned/take-note"
+keywords = ["note", "tool", "utility", "cli"]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Utilities",
+    "License :: OSI Approved :: MIT License",
+]
+
+packages = [
+  { include = "take_note_cli", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+confuse = "^2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+dateutils = "^0.6.12"
+ruff = "^0.1.4"
+
+[tool.poetry.scripts]
+take-note = "take_note_cli.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
+
+[tool.ruff]
+src = ["src"]
+
+[tool.ruff.per-file-ignores]
+

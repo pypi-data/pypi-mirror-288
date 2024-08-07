@@ -1,0 +1,6 @@
+notesFolder: Notes
+editor: code
+workspace:
+template:
+batch:
+verbose: False
