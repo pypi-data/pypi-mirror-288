@@ -1,0 +1,62 @@
+root: index
+subtrees:
+- entries:
+  - file: overview
+- entries:
+  - file: getting_started/index
+    entries:
+    - file: getting_started/drain-swamp-files
+    - file: getting_started/pipenv-unlock
+    - file: getting_started/setuptools-scm
+    - file: getting_started/from-source
+    - file: getting_started/build-package
+- entries:
+  - file: api/index
+    entries:
+    - glob: api/*
+- entries:
+  - file: code/index
+    entries:
+    - file: code/snip
+    - file: code/cli_unlock
+    - file: code/general/index
+      entries:
+      - file: code/general/version
+      - file: code/general/check_type
+      - file: code/general/constants
+      - file: code/general/exceptions
+      - file: code/general/pep518_read
+      - file: code/general/parser_in
+      - file: code/general/version_semantic
+    - file: code/ext/index
+      entries:
+      - file: code/ext/pipenv_unlock/index
+        entries:
+        - file: code/ext/pipenv_unlock/backend_abc
+        - file: code/ext/pipenv_unlock/backend_setuptools
+        - file: code/ext/pipenv_unlock/lock_toggle
+      - file: code/ext/drain_swamp/index
+        entries:
+        - file: code/ext/drain_swamp/sphinx_conf
+- caption: Articles
+  entries:
+  - file: snippets/snippets
+  - file: article-version-specifiers
+  - file: why/about_authors
+  - file: why/cringe-culture
+    entries:
+    - file: troubleshooting/index
+      entries:
+      - glob: troubleshooting/*
+- entries:
+  - file: LICENSE/index
+    entries:
+    - file: LICENSE/donation
+    - file: LICENSE/closed-source-license
+- caption: Links
+  entries:
+  - file: getting-help
+  - title: Contact
+    url: https://mastodon.social/@msftcangoblowme
+meta:
+  exclude_missing: true
