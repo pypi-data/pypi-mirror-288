@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rbdlp
+Version: 2.6.0
+Summary: RBDL Binary Python wheel.
+Home-page: https://move.ai
+Author: Move.ai
+License: UNKNOWN
+Keywords: rbdlp
+Platform: UNKNOWN
+Requires-Python: >=3.8,<3.11
+Requires-Dist: numpy (==1.24.3)
+
+UNKNOWN
+
