@@ -1,0 +1,2 @@
+[console_scripts]
+pls = pls.cmd:main
