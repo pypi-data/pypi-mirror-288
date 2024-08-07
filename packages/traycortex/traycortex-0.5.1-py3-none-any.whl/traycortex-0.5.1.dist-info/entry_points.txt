@@ -1,0 +1,4 @@
+[console_scripts]
+traycortex=traycortex.tray:app
+traycortex-cli=traycortex.client:cli
+
