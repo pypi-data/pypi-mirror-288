@@ -1,0 +1,8 @@
+mrseql-0.0.4.dist-info/RECORD,,
+mrseql-0.0.4.dist-info/LICENSE,sha256=n3dv0bfXwmhQdJR_jiIXEhof9g1tjfeCL1J7pHb9bvY,1102
+mrseql-0.0.4.dist-info/WHEEL,sha256=qInexQ74b1rKVKKGmioa259tVQhKkh7rDm94Z6Evo-0,110
+mrseql-0.0.4.dist-info/top_level.txt,sha256=wbKTuVDTnOI2_j7Sl4sgTr5MLBJCWCPMssitqOku2tA,7
+mrseql-0.0.4.dist-info/METADATA,sha256=iaBc2iebooTLYLcAVY8bHRZREA0thSG3cR3j9W2SGxc,1034
+mrseql/__init__.py,sha256=RB8K-EH_RzJzsl1Xz8W6cfO29EPk-53esSq1hHfT9_M,65
+mrseql/mrseql.cpython-312-darwin.so,sha256=lUOKrt9NUdy-ReE2xw7GQBORaoqERN1mrbvwuKf6jf8,489472
+mrseql/.dylibs/libfftw3.3.dylib,sha256=OBatEq0ANQD7wBMf5wHCfV84lPCMrT0gk1YthSNv9g0,2816496
