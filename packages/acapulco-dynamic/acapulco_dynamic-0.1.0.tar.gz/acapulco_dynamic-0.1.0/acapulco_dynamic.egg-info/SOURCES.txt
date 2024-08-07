@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+acapulco_dynamic.egg-info/PKG-INFO
+acapulco_dynamic.egg-info/SOURCES.txt
+acapulco_dynamic.egg-info/dependency_links.txt
+acapulco_dynamic.egg-info/requires.txt
+acapulco_dynamic.egg-info/top_level.txt
