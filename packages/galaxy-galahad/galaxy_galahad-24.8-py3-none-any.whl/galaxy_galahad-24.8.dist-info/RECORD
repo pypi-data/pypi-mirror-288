@@ -1,0 +1,14 @@
+galahad/__init__.py,sha256=aVFLA9Ni1zF9YK1eBgFY9M-7rtuPylEle-fsORtqfn4,440
+galahad/authentication.py,sha256=jR3bqdaK-skEzGRoawAaA23ioYk_nF0RQ8cVpuyECmw,8853
+galahad/dataset.py,sha256=H6SLQ1gbMBlptRtfLnboIUZUFQ7Nj_dm5yBgDgpdlvM,7195
+galahad/display.py,sha256=Xzo-Ir-MWxzmEiHygXjxD9kLyp8c-19DZ4dSdozDHX4,868
+galahad/history.py,sha256=m3vQowp3zhOY01WDn6xJSZxNO4tGn5IFnmUKu6JdEb0,3706
+galahad/sessions.py,sha256=Q2JOAbXtG3Q7arcUfTRlECJwFkenK2-9Wc46FdVLPUo,2184
+galahad/tool.py,sha256=X7Iy9ZgegXmsVsbG0-GAiN_7w27U2kdPJGqr6_V1y6s,31688
+galahad/utils.py,sha256=soHNqI_-ydkQ7jM6IX1fW4w3Ez7TQ7emjW8jO7K1DXs,16746
+galaxy_galahad-24.8.data/data/share/jupyter/nbtools/galahad.json,sha256=NdBKewdg0A-1f6TbZSgiJde2ohC2LJRXg09g2DmmFnk,25
+galaxy_galahad-24.8.dist-info/LICENSE.txt,sha256=DhZRb-Z_7HZJLXKiTBt7LQHSOWGUjxWyUzCxd_H7NZQ,1544
+galaxy_galahad-24.8.dist-info/METADATA,sha256=8YIGzLFKz9I-Z_TocCdBTwE-Hl_jFfo6Sqlj0iy8wrM,2121
+galaxy_galahad-24.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+galaxy_galahad-24.8.dist-info/top_level.txt,sha256=3HBC_Qz-O_Nb_Y52xA5UIzfGXknyiyQGkf8JpyXDHX0,8
+galaxy_galahad-24.8.dist-info/RECORD,,
