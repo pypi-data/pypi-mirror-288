@@ -1,0 +1,4 @@
+include VERSION
+include src/gai/gai.yml
+include setup_utils.py
+
