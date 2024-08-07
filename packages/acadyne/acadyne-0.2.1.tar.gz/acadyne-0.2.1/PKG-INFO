@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: acadyne
+Version: 0.2.1
+Summary: Una biblioteca para el modelado simbólico y simulación de sistemas dinámicos complejos.
+Home-page: https://github.com/acadyne/acapulco_dynamic/
+Author: Jose Fabian Soltero Escobar
+Author-email: Jose Fabian Soltero Escobar <acadyne@gmail.com>
+License: MIT
+Project-URL: homepage, https://github.com/acadyne/acapulco_dynamic/
+Project-URL: repository, https://github.com/acadyne/acapulco_dynamic/
+Keywords: tensor,computation,symbolic,mathematics,simulation
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.0
+Requires-Dist: sympy>=1.0
+Requires-Dist: scipy>=1.0
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+# AcaDyne (Acapulco Dynamic)
+
+**AcaDyne** es una potente biblioteca de cálculo tensorial y simbólico diseñada para ofrecer herramientas avanzadas para matemáticos, físicos, ingenieros y científicos de datos. Proporciona una amplia gama de funciones para trabajar con conjuntos, operaciones simbólicas, simulaciones dinámicas, y más.
+
+## Características
+
+- **Operaciones con Conjuntos**: Soporta operaciones como unión, intersección, diferencia, y conjunto potencia.
+- **Manipulación Simbólica**: Incluye simplificación, expansión, factorización, derivación e integración de expresiones simbólicas.
+- **Solución de Ecuaciones**: Resuelve ecuaciones algebraicas y diferenciales, incluyendo sistemas de ecuaciones.
+- **Simulación de Sistemas Dinámicos**: Simula modelos dinámicos continuos y discretos, incluyendo modelos epidemiológicos como el SIR.
+- **Optimización y Análisis**: Ofrece técnicas de optimización global y análisis de estabilidad para sistemas complejos.
+- **Transformaciones Matemáticas**: Realiza transformaciones de Lorentz y cálculos de series de Fibonacci.
+
+## Instalación
+
+Puedes instalar AcaDyne directamente desde PyPI usando `pip`:
+ 
+ $ pip install acapulco-dynamic
+
+Licencia
+AcaDyne está licenciado bajo la Licencia Apache 2.0. Consulta el archivo LICENSE para más información.
+
+Contacto
+Para preguntas o sugerencias, por favor contacta a [acadyne@gmail.com].
+
+### Explicación
+
+- **Título y Descripción**: Proporciona un resumen claro del propósito y capacidades de la biblioteca.
+- **Características**: Enumera las principales funciones y capacidades de la biblioteca para dar una idea clara de su alcance.
+- **Instalación**: Proporciona instrucciones para instalar el paquete usando `pip`.
+- **Uso**: Incluye ejemplos básicos de cómo usar algunas de las funciones clave de la biblioteca.
+- **Contribuciones**: Explica cómo otros pueden contribuir al proyecto.
+- **Licencia**: Indica la licencia bajo la cual se distribuye el software.
+- **Contacto**: Proporciona un correo electrónico o método de contacto para soporte o consultas.
+
+Este README debería servir como un buen punto de partida para cualquier usuario interesado en usar o contribuir a
