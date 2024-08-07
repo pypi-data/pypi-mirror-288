@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mastercode
+Version: 1.1
+Summary: A world of tools for python!
+Author-email: Mohammad Parsa Mortazavi <mpmms@outlook.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Hello!
+This is a Toolbox of tools for python!

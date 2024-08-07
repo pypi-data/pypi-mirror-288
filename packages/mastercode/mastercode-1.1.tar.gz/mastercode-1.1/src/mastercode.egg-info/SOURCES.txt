@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/mastercode/__init__.py
+src/mastercode/mastercode.py
+src/mastercode.egg-info/PKG-INFO
+src/mastercode.egg-info/SOURCES.txt
+src/mastercode.egg-info/dependency_links.txt
+src/mastercode.egg-info/top_level.txt
