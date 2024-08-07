@@ -1,0 +1,30 @@
+[build-system]
+requires = [
+    "setuptools>=61.0.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anfesibena"
+version = "1.0.0"
+description = "numbers with additative and multiplicative inverses"
+readme = "README.rst"
+authors = [
+    { name = "Johannes", email = "johannes-computer@mailfence.com" },
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = []
+dependencies = []
+requires-python = ">=3.11"
+
+[project.license]
+file = "LICENSE.txt"
+
+[project.urls]
+Download = "https://pypi.org/project/anfesibena/#files"
+Source = "https://github.com/johannes-computer/anfesibena"
+
