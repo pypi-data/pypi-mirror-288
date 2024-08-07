@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+wtok/__init__.py
+wtok/__main__.py
+wtok/cli.py
+wtok.egg-info/PKG-INFO
+wtok.egg-info/SOURCES.txt
+wtok.egg-info/dependency_links.txt
+wtok.egg-info/entry_points.txt
+wtok.egg-info/requires.txt
+wtok.egg-info/top_level.txt
