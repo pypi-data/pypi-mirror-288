@@ -1,0 +1,23 @@
+\documentclass[aspectratio=169,9pt]{beamer}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamersize{text margin left=5mm,text margin right=5mm} 
+\setbeamertemplate{footline}[frame number]
+
+{{ include_raw("preamble.tex") }}
+
+
+\begin{document}
+
+\title{Pull request and issue summary for \\
+{% for repo_name, repo in repos.items() %}
+{{ repo_name }}\\
+{%- endfor -%}
+}
+\frame{\titlepage}
+  
+{% block body %}
+{% endblock %}
+
+
+\end{document}
