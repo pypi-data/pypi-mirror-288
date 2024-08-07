@@ -1,0 +1,11 @@
+README.md
+setup.py
+tma_authenticator/__init__.py
+tma_authenticator/storage_provider.py
+tma_authenticator/tma_authenticator.py
+tma_authenticator/users.py
+tma_authenticator.egg-info/PKG-INFO
+tma_authenticator.egg-info/SOURCES.txt
+tma_authenticator.egg-info/dependency_links.txt
+tma_authenticator.egg-info/requires.txt
+tma_authenticator.egg-info/top_level.txt
