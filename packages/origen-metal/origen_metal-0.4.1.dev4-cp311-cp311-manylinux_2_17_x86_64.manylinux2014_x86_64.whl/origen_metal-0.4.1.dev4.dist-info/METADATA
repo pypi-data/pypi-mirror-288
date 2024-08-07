@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: origen-metal
+Version: 0.4.1.dev4
+Requires-Dist: colorama >=0.4.4
+Requires-Dist: importlib-metadata >=6.7.0
+Requires-Dist: pyreadline3 >=3.3, <4.0 ; sys_platform == 'win32'
+Requires-Dist: termcolor >=1.1.0
+Author: Origen-SDK
+Requires-Python: >=3.7.0, <3.13
