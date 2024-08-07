@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: yon
+Version: 1.0.8
+Summary: Yon protocol implementation for Python.
+Author: ryzhovalex
+Author-email: thed4rkof@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp[speedups] (>=3.9.3,<4.0.0)
+Requires-Dist: sb-pykit (>=0.12.3,<0.13.0)
+Description-Content-Type: text/markdown
+
+# 🐱 Yon for Python
+
+Provides implementation of [Yon Protocol](http://yon.ryzhovalex.com) for Python.
+
