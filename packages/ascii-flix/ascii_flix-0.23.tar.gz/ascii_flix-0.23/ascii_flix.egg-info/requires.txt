@@ -1,0 +1,6 @@
+pygame
+moviepy
+opencv-python
+rich
+numpy
+windows-curses
