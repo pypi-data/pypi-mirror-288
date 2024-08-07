@@ -1,0 +1,29 @@
+{% extends "cfp/event/base.html" %}
+{% load bootstrap4 %}
+{% load compress %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}{{ submission.title }} :: {% endblock %}
+
+{% block content %}
+    <div class="col-md-10 ml-auto mr-auto">
+        {% include "cfp/includes/user_submission_header.html" %}
+        <div class="alert alert-danger">
+            {% blocktranslate trimmed %}
+                Do you really want to discard your draft proposal? All data will be lost.
+            {% endblocktranslate %}
+        </div>
+        <form method="post" class="availability-form">
+            {% csrf_token %}
+            <div class="submit-group">
+                <a href="{{ submission.urls.user_base }}" class="btn btn-lg btn-info">
+                    {{ phrases.base.back_button }}
+                </a>
+                <button type="submit" class="btn btn-lg btn-danger">
+                    {{ phrases.base.delete_button }}
+                </button>
+            </div>
+        </form>
+    </div>
+{% endblock %}
