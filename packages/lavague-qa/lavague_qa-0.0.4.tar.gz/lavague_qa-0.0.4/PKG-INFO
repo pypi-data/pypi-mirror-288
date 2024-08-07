@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: lavague-qa
+Version: 0.0.4
+Summary: QA Automation with LaVague
+Home-page: https://lavague.ai
+License: Apache-2.0
+Keywords: QA,testing,automation,cypress,agents,RAG,selenium,ai
+Author: lavague-ai
+Requires-Python: >=3.10.0,<4.0.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: gherkin-official (>=28.0.0,<29.0.0)
+Requires-Dist: lavague-core (>=0.2.33,<0.3.0)
+Requires-Dist: lavague-drivers-selenium (>=0.2.6,<0.3.0)
+Requires-Dist: lavague-tests (>=0.0.4,<0.0.5)
+Requires-Dist: yaspin (>=3.0.2,<4.0.0)
+Project-URL: Documentation, https://docs.lavague.ai/en/latest/
+Project-URL: Repository, https://github.com/lavague-ai/LaVague/
+Description-Content-Type: text/markdown
+
+# Test runner for LaVague
+
+LaVague QA is a specialized tool to generate pytest files from Gherkin test descriptions. 
+
+## Usage
+
+```
+Usage: lavague-qa [OPTIONS]
+
+Options:
+  -u, --url TEXT      URL of the site to test
+  -f, --feature TEXT  Path to the .feature file containing Gherkin
+  -l, --full-llm      Enable full LLM pytest generation
+  -c, --context TEXT  Path of python file containing an initialized context
+                      and token_counter. Defaults to OpenAI GPT4o
+  -h, --headless      Enable headless mode for the browser
+  -db, --log-to-db    Enables logging to a SQLite database
+  --help              Show this message and exit.
+```
+
+
+Some examples are provided in `./features/`:
+
+```bash
+lavague-qa --url https://amazon.fr/ --feature features/demo_amazon.feature
+```
+Run `lavague-qa` to run a default example: Wikipedia login test
+
+## Learn more
+
+To learn more, please visit our LaVague QA documentation and join our [Discord](https://discord.gg/invite/SDxn9KpqX9) to reach our core team and get support!
+
+
