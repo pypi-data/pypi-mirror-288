@@ -1,0 +1,29 @@
+[tool.flake8]
+ignore = ['W291', 'E126', 'W504', 'E203']
+per-file-ignores = ['__init__.py:F401']
+max-line-length = 120
+exclude = ['tests/*', '.venv', 'test.py', '.git', '__pycache__', 'Dockerfile', 'venv', 'air_migrations/migrations/env.py']
+max-complexity = 10
+
+
+[tool.black]
+line-length = 120
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | venv
+    | _build
+    | buck-out
+    | build
+    | dist
+    | tests
+  )/
+)
+'''

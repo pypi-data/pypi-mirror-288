@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+air_migrations/__init__.py
+air_migrations/cli.py
+air_migrations/utils.py
+air_migrations.egg-info/PKG-INFO
+air_migrations.egg-info/SOURCES.txt
+air_migrations.egg-info/dependency_links.txt
+air_migrations.egg-info/entry_points.txt
+air_migrations.egg-info/requires.txt
+air_migrations.egg-info/top_level.txt

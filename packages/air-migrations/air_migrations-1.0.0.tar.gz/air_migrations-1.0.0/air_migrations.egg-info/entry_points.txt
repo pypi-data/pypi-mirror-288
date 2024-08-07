@@ -1,0 +1,2 @@
+[console_scripts]
+migrate = air_migrations.cli:main
