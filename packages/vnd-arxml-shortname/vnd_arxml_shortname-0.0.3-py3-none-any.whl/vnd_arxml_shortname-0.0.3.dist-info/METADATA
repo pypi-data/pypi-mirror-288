@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vnd-arxml-shortname
+Version: 0.0.3
+Summary: Library for parsing and changing the names of arxml files
+Home-page: https://github.com/volvo-cars/vnd_arxml_shortname
+Author: HJANSS16
+Author-email: HJANNS16@volvocars.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+UNKNOWN
+
