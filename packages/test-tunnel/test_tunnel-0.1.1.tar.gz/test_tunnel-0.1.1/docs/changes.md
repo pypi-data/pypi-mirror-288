@@ -1,0 +1,30 @@
+<!--
+SPDX-FileCopyrightText: Peter Pentchev <roam@ringlet.net>
+SPDX-License-Identifier: BSD-2-Clause
+-->
+
+# Changelog
+
+All notable changes to the test-tunnel project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+## [0.1.1] - 2024-08-06
+
+### Additions
+
+- Documentation:
+    - adapt the documentation index to add a `README.md` file
+
+## [0.1.0] - 2024-08-06
+
+### Started
+
+- First public release.
+
+[Unreleased]: https://gitlab.com/ppentchev/test-tunnel/-/compare/release%2F0.1.1...main
+[0.1.1]: https://gitlab.com/ppentchev/test-tunnel/-/compare/release%2F0.1.0...release%2F0.1.1
+[0.1.0]: https://gitlab.com/ppentchev/test-tunnel/-/tags/release%2F0.1.0
