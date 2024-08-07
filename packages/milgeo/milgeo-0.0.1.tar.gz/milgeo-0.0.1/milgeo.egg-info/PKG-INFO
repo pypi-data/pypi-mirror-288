@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: milgeo
+Version: 0.0.1
+Summary: Common geometries for mil applications
+Home-page: https://github.com/adamwoodintel/milgeo
+Author: Adam Wood
+Author-email: adamwoodintel@gmail.com
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools==70.2.0
+Requires-Dist: pytest==8.2.2
+
+#### Mil geometries by Battlewatch :earth_americas:
