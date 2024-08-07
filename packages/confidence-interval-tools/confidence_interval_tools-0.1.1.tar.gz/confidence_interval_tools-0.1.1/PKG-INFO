@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: confidence-interval-tools
+Version: 0.1.1
+Summary: A small package for calculating drawing confidence intervals.
+Author: Yohann OPOLKA
+Author-email: yohann.opolka@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: matplotlib (>=3.9,<4.0)
+Requires-Dist: numpy (>=1.26,<2.0)
+Requires-Dist: pandas (>=2.2,<3.0)
+Requires-Dist: scipy (>=1.14,<2.0)
+Requires-Dist: seaborn (>=0.13,<0.14)
+Description-Content-Type: text/markdown
+
+
