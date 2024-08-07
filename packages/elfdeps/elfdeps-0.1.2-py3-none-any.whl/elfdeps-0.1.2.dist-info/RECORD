@@ -1,0 +1,11 @@
+elfdeps/__init__.py,sha256=f4NZ6udI7YtMPdmrwkx8lyK8vovf2Pw6f1mlESYJ03I,454
+elfdeps/__main__.py,sha256=3nvG79H5V6nim6Ae9YmExn6vV-d67Fqd1qUDm3TikG8,3184
+elfdeps/_archives.py,sha256=F5b2PUOwvg7_m1xTrMm8nGH9aaSJFJJQI9tR0AaGZFM,1360
+elfdeps/_elfdeps.py,sha256=Qv7FXPtKzjPDnwUnjxJVkEKR23VZYhtngQilQZmKa34,11133
+elfdeps/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+elfdeps-0.1.2.dist-info/LICENSE,sha256=xwU7CabsRiEMQaOiFOtvI3-YHzPDyepGLbPCKS7d5Ec,11349
+elfdeps-0.1.2.dist-info/METADATA,sha256=hvAwWENPOFu3mwXs_IcbfA7d_KnrtsjKs2sty7p2yJc,16277
+elfdeps-0.1.2.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+elfdeps-0.1.2.dist-info/entry_points.txt,sha256=d_XTSZEMfAqutKdYgcWxEpzT1pFJb17SCqDZoQbNNwE,50
+elfdeps-0.1.2.dist-info/top_level.txt,sha256=tZYXxASUotV2ntNR9p8z0M4qbUatrz9WtbmwVM7THXo,8
+elfdeps-0.1.2.dist-info/RECORD,,
