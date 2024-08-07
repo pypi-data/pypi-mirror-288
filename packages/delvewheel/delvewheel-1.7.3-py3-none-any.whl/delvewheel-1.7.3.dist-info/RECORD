@@ -1,0 +1,12 @@
+delvewheel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+delvewheel/__main__.py,sha256=KryWYErQf_rfPzXQ_ZxB0ZQIOXnWrItkLaYReSW9yMc,6381
+delvewheel/_dll_list.py,sha256=XMQcaL4Vw2uz5dPgQst9ftVaPobx1WtCtEeMFs0FHVY,137517
+delvewheel/_dll_utils.py,sha256=8W--NcmNcyJJjks8hwK6Bww8iQo-hRAM5CXflQvFxAM,38795
+delvewheel/_version.py,sha256=OxZWUX6v6A1PIZlKfkedkC6hETslPgKfb5ilgpkCrV0,23
+delvewheel/_wheel_repair.py,sha256=0vFZV0VzfMKhjEovJ5bvoXjtmXNUNfTkbsxXhHKUIZY,55815
+delvewheel-1.7.3.dist-info/LICENSE,sha256=5D2T2haqO2HvCWn_8hMLE1mEhZoFZk-85COtEmaIxdM,1073
+delvewheel-1.7.3.dist-info/METADATA,sha256=kpjD6rYLStcYi5t4xZuB9m3zk-D_k5cBI6Qdl7aSZos,16670
+delvewheel-1.7.3.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+delvewheel-1.7.3.dist-info/entry_points.txt,sha256=ZEcxs8mGbvLA3A2oTJTVy3unZElnfzfiGM5cNpp72kU,56
+delvewheel-1.7.3.dist-info/top_level.txt,sha256=HK--hfesflBm5oJon4WK2d8mkdWmVNbhtU5r6ASBGHk,11
+delvewheel-1.7.3.dist-info/RECORD,,
