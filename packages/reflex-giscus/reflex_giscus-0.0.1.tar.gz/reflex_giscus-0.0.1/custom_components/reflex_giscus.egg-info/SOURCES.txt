@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+custom_components/reflex_giscus/__init__.py
+custom_components/reflex_giscus/giscus.py
+custom_components/reflex_giscus.egg-info/PKG-INFO
+custom_components/reflex_giscus.egg-info/SOURCES.txt
+custom_components/reflex_giscus.egg-info/dependency_links.txt
+custom_components/reflex_giscus.egg-info/requires.txt
+custom_components/reflex_giscus.egg-info/top_level.txt
