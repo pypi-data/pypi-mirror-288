@@ -1,0 +1,2 @@
+[console_scripts]
+wtok = wtok.cli:cli
