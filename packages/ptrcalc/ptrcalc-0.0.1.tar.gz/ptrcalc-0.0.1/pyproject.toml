@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ptrcalc"
+version = "0.0.1"
+authors = [
+  { name="clerie", email="hallo@clerie.de" },
+]
+description = ""
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.11"
+
+[project.scripts]
+ptrcalc = "ptrcalc:main"
