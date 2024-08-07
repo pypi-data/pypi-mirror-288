@@ -1,0 +1,3 @@
+[console_scripts]
+wscli=wscli.scripts.wscli:cli
+

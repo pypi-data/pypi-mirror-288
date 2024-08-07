@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: wscli
+Version: 0.2.0
+Summary: 
+Author: Lorenzo Trojan
+Author-email: ltrojan@wildersensing.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.34.136,<2.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: pydantic (==2.7.4)
+Requires-Dist: pyjwt (>=2.8.0,<3.0.0)
+Requires-Dist: requests (>=2.32.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+![pipeline](https://gitlab.com/wilder-sensing/platform/wscli/badges/main/pipeline.svg)
+![coverage](https://gitlab.com/wilder-sensing/platform/wscli/badges/main/coverage.svg)
+
+# pip install poetry
+
+
+Once you are in the home directory of wscli in order to install and run the setup 
+
+```
+pip install .
+```
+
+Once you have the install all dependencys to run the cli simply use the command
+
+```
+wscli
+```
+
+This will give you the options of what you can run using the cli
+
+CONFIG
+This is user for getting your configuration options such as access tokens
+
+```
+```
+
+AUTH
+This is used for authenticating the user
+In order to access to send jobs to the api you must first get your access token
+Here you will be prompted for your login details you used when signing up to wilder sensing
+
+```
+wscli auth login 
+```
+
+ML
+This is where you can create job tasks and retrieve results 
+
