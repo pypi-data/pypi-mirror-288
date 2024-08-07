@@ -1,0 +1,13 @@
+Version 0.4.0
+2024-07-31
+- Adapting code for geocover_utils 0.4.0
+- Adding CHANGES.txt file
+- Syncing geocover_utils and this module version number
+
+Version 0.4.1
+2024-07-31
+- Fixing conda build issues
+
+Version 0.4.2
+2024-07-31
+- Storing project path in config to use between tools
