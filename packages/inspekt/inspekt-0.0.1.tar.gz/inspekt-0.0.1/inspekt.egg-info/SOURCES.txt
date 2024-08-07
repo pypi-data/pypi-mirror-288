@@ -1,0 +1,5 @@
+setup.py
+inspekt.egg-info/PKG-INFO
+inspekt.egg-info/SOURCES.txt
+inspekt.egg-info/dependency_links.txt
+inspekt.egg-info/top_level.txt
