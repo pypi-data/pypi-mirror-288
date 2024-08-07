@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "tysserand"
+version = "0.6.0"
+description = "Fast and accurate spatial networks reconstruction."
+authors = ["Alexis Coullomb <alexis.coullomb.pro@gmail.com>"]
+license = "GNU GPLv3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">= 3.8"
+ipykernel = "*"
+matplotlib = "*"
+qtconsole = "*"
+scipy = "*"
+seaborn = "*"
+pathlib = "*"
+scikit-learn = "*"
+scikit-image = "*"
+numpy = "*"
+hdbscan = "*"
+umap-learn = "*"
+dask = {extras = ["complete"], version = "*"}
+opencv-python-headless = "*"
+napari = {extras = ["all"], version = "*"}
+
+[tool.poetry.dev-dependencies]
+networkx = "*"
+igraph = "*"
+cairocffi = "*"
+pysal = "*"
+geopandas = "*"
+anndata = "*"
+scanpy = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
