@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: aoupy
+Version: 0.0.1
+Summary: A toolkit to work with All of Us data.
+Author-email: Adnan Cihan Cakar <cakar.adnancihan@gmail.com>
+Maintainer-email: Adnan Cihan Cakar <cakar.adnancihan@gmail.com>
+License-File: LICENSE
+Keywords: allofus,bioinformatics
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Requires-Python: >=3.9
+Requires-Dist: polars
+Description-Content-Type: text/markdown
+
+# Aoupy
+
+aoupy is a Python package that contains various tools to help with the research on All of Us workbench.
