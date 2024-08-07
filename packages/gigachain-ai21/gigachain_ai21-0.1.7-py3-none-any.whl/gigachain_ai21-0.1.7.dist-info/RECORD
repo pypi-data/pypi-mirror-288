@@ -1,0 +1,15 @@
+langchain_ai21/__init__.py,sha256=SQyuGpO8AFGj-CuHZLoxQz1rKcgzCn6RV-iU3_jDDXs,413
+langchain_ai21/ai21_base.py,sha256=vyX7cfebcGu841QWEK2_ExolQLq3gL4MPkMIvbsgq10,1514
+langchain_ai21/chat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langchain_ai21/chat/chat_adapter.py,sha256=u2BAAe6k5QWLyTN7NhqAsJfHoszSL6pd2aCcmtT6JKc,6829
+langchain_ai21/chat/chat_factory.py,sha256=UG3WNjXuZSZkGg00LM0dU_xwqScw_5XcEBOsFtI10b8,516
+langchain_ai21/chat_models.py,sha256=6iq67xDlFB6eZNdy0fgAM36VpMoOkbHXO63e8Lx6Tno,8152
+langchain_ai21/contextual_answers.py,sha256=yLBi9FCSF5siOJ90sH6lFPrMuA0RIyDcOHvqYNE6Rnc,3177
+langchain_ai21/embeddings.py,sha256=hWqMUQcsbEaNRHLIDbB35q1LbB019esEU7h0IUg-RCo,2245
+langchain_ai21/llms.py,sha256=YZuvfHvhP4wqhyeXOSyjmH9xgL7Ow4TrtU9Rihmp6DE,5936
+langchain_ai21/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langchain_ai21/semantic_text_splitter.py,sha256=cUmrIFe4ZNzsj_5SVW2TlVKnQMfzOZxMWLqs0rlRKFQ,5122
+gigachain_ai21-0.1.7.dist-info/LICENSE,sha256=DppmdYJVSc1jd0aio6ptnMUn5tIHrdAhQ12SclEBfBg,1072
+gigachain_ai21-0.1.7.dist-info/METADATA,sha256=kietgvcagYPVKJvDGgxv4th_qG8XH3yFi3UC3BlhBpY,5200
+gigachain_ai21-0.1.7.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gigachain_ai21-0.1.7.dist-info/RECORD,,
