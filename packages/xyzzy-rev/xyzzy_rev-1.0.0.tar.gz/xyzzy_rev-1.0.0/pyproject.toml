@@ -1,0 +1,16 @@
+[project]
+name = "xyzzy-rev"
+version = "1.0.0"
+description = "A package to use for the gnomic message \"xyzzy\""
+requires-python = ">=3.8"
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+authors = [
+  { name="Darshan Shaligram", email="scintilla@gmail.com" },
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
