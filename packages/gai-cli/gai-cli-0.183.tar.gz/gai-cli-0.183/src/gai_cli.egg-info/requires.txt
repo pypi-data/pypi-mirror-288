@@ -1,0 +1,6 @@
+gai-ttt
+pytest
+pynvml
+ipykernel
+gai-lib
+nats-py
