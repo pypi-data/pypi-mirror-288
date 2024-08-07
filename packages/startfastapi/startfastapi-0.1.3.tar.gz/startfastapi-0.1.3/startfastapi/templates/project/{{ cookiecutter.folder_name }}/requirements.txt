@@ -1,0 +1,12 @@
+uvicorn==0.29.0
+gunicorn==22.0.0
+loguru==0.7.2
+fastapi==0.110.2
+pydantic_settings==2.2.1
+sqlmodel==0.0.16
+pymysql==1.1.0
+passlib==1.7.4
+sqlalchemy_utils==0.41.2
+asyncmy==0.2.9
+python-multipart==0.0.9
+PyJWT==2.8.0
