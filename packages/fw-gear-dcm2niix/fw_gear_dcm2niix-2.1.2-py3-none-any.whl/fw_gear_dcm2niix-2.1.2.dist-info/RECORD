@@ -1,0 +1,15 @@
+fw_gear_dcm2niix/__init__.py,sha256=qZUBR5GjUYRN5I5YsLAlAfeFI469jnGgesk4G6OGpPQ,187
+fw_gear_dcm2niix/dcm2niix/__init__.py,sha256=gD5DzU4HJdzPQrsVL3sChft0ymhmdyDtqaPrG2AcX4U,27
+fw_gear_dcm2niix/dcm2niix/arrange.py,sha256=VwfF52hYLsAM5m-UaVoQ098VoTclGpr8vp6ksZHCWvE,14361
+fw_gear_dcm2niix/dcm2niix/dcm2niix_run.py,sha256=jzBp0OIG-C9v7-ganTM-iN30_LU4JMM8NvakWec4b3I,7388
+fw_gear_dcm2niix/dcm2niix/dcm2niix_utils.py,sha256=Bi7FVy2B4qeUJr_57FAM9OjizTRYeDDuLIvzoVEDpf8,5646
+fw_gear_dcm2niix/dcm2niix/interfaces.py,sha256=le6USl7visnS-HqKtOPjaGRqkUzBc5rffrgNeHXGrgY,3543
+fw_gear_dcm2niix/dcm2niix/prepare.py,sha256=SXB0Hglz6Y8L0yJ1h61YBFtAZMVtht1c59Iltz3O4II,1240
+fw_gear_dcm2niix/utils/__init__.py,sha256=JqFj1MIfZbijg-OcS_ho5QzMfpHEy2G-Pn95dFTlioM,24
+fw_gear_dcm2niix/utils/metadata.py,sha256=DUL9V5mqTGEAlFEwu7kEOBsc6PWhhWC6IXk0dKV-Wo0,15004
+fw_gear_dcm2niix/utils/parse_config.py,sha256=twPGXRx0ai0a5qVrn6skF7RDxjLCRQa-qMF0Zuh-sE0,9413
+fw_gear_dcm2niix/utils/resolve.py,sha256=Mzygfvs_Bwu6LkV9XN86aWnhQ4lvYWtu0TKdyktFJ8c,7038
+fw_gear_dcm2niix-2.1.2.dist-info/LICENSE,sha256=NNC8xrLtqnhvmkJdOB71ctPp2jBi_2V5u9RzRVEpBcs,1092
+fw_gear_dcm2niix-2.1.2.dist-info/METADATA,sha256=T0hRU5ftdBc5QZKZC9tbio1SDfsZbyYcCeEqi23wQ8Y,14674
+fw_gear_dcm2niix-2.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fw_gear_dcm2niix-2.1.2.dist-info/RECORD,,
