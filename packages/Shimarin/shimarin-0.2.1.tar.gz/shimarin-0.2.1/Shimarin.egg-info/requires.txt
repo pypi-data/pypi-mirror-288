@@ -1,0 +1,4 @@
+aiohttp==3.9.5
+
+[flask]
+Flask[async]==2.3.2
