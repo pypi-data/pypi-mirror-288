@@ -1,0 +1,6 @@
+# SPDX-FileCopyrightText: Peter Pentchev <roam@ringlet.net>
+# SPDX-License-Identifier: BSD-2-Clause
+
+click >= 7, < 9
+netifaces >= 0.10, < 0.12
+utf8_locale >= 1, < 2
