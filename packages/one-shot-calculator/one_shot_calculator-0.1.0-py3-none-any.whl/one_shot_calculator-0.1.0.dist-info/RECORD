@@ -1,0 +1,10 @@
+one_shot_calculator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+one_shot_calculator/discrete_dists.py,sha256=VJwqNYUAW_L4xluhCRr8pYz-1Nq6FmFaKqxUSywLvFA,2417
+one_shot_calculator/one_shot_calculator_3p5.py,sha256=0o929Kf6qaKy3daHN6QjNytpe9v3lFPJRBE2PdA2aeY,3294
+one_shot_calculator/process_csv.py,sha256=PuKCGymAXEhQvHJLp7tLQHBEgpRsNfJxgJjuDV7rJCU,3568
+one_shot_calculator/csv/Monster Compendium (Graphless).csv,sha256=CyHmn6aNWL_bT95S2emoJny7Kbx8alXUy66qwC8_qng,1626582
+one_shot_calculator/csv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+one_shot_calculator-0.1.0.dist-info/METADATA,sha256=Bbykrk0A8QGEUuMP_HSVjUgrJ8IGT21tRgAXZG7PVI0,4366
+one_shot_calculator-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+one_shot_calculator-0.1.0.dist-info/licenses/LICENSE,sha256=e1aWjqw-1KrrEKPKQZ3EmyQ6azOzW9zGjBlIOetSb2Y,1071
+one_shot_calculator-0.1.0.dist-info/RECORD,,
