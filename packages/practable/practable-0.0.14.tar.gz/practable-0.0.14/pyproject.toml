@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "practable"
+version = "0.0.14"
+authors = [
+  { name="Timothy Drysdale", email="timothy.d.drysdale@gmail.com" },
+]
+description = "Connect to remote laboratory experiments hosted on a github.com/practable service"
+readme = "README.md"
+dependencies = [
+    "numpy>=1.20",
+    "platformdirs>=4.2",
+    "requests>=2.32",
+    "websockets>=12.0", 
+] 
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+    ]
+
+[project.urls]
+Homepage = "https://github.com/practable/practable-python"
+Issues = "https://github.com/practable/practable-python/issues"
+
+[options.packages.find]
+where = "src"
