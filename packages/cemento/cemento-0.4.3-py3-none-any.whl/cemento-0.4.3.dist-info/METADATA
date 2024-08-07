@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: cemento
+Version: 0.4.3
+Summary: A package to view and write ontologies directly from draw.io diagram files.
+Author-email: Gabriel Obsequio Ponon <gop2@case.edu>
+Project-URL: Homepage, https://bitbucket.org/cwrusdle/fairmaterials/src/gabriel-gxp/packages/xrd-onto-viewer/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: certifi >=2024.6
+Requires-Dist: charset-normalizer >=3.3
+Requires-Dist: click >=8.1
+Requires-Dist: cloudpickle >=3.0
+Requires-Dist: contourpy >=1.2
+Requires-Dist: cycler >=0.1
+Requires-Dist: dask >=2024.5
+Requires-Dist: diffpy.structure >=3.1
+Requires-Dist: fonttools >=4.5
+Requires-Dist: fsspec >=2024.6
+Requires-Dist: h5py >=3.1
+Requires-Dist: idna >=3.7
+Requires-Dist: importlib-metadata >=7.1
+Requires-Dist: importlib-resources >=6.4
+Requires-Dist: kiwisolver >=1.4
+Requires-Dist: llvmlite >=0.4
+Requires-Dist: locket >=1.0
+Requires-Dist: matplotlib >=3.9
+Requires-Dist: matplotlib-scalebar >=0.8
+Requires-Dist: numba >=0.5
+Requires-Dist: numpy >=1.2
+Requires-Dist: numpy-quaternion >=2023.0
+Requires-Dist: orix >=0.1
+Requires-Dist: packaging >=24.1
+Requires-Dist: pandas >=2.2
+Requires-Dist: partd >=1.4
+Requires-Dist: pillow >=10.3
+Requires-Dist: pip >=24.0
+Requires-Dist: platformdirs >=4.2
+Requires-Dist: ply >=3.1
+Requires-Dist: pooch >=1.8
+Requires-Dist: PyCifRW >=4.4
+Requires-Dist: pyparsing >=3.1
+Requires-Dist: python-dateutil >=2.9
+Requires-Dist: pytz >=2024.1
+Requires-Dist: PyYAML >=6.0
+Requires-Dist: requests >=2.3
+Requires-Dist: scipy >=1.1
+Requires-Dist: setuptools >=70.0
+Requires-Dist: six >=1.1
+Requires-Dist: toolz >=0.1
+Requires-Dist: tqdm >=4.6
+Requires-Dist: tzdata >=2024.1
+Requires-Dist: urllib3 >=2.2
+Requires-Dist: zipp >=3.1
+
+# SDLE FAIR Package: Centralized Entity Mapping & Extraction Nexus for Triples and Ontologies (CEMENTO)
+
+**Description:**
+
+This package is part of the larger SDLE FAIR application suite that features tools to create scientific ontologies faster and more efficiently. This package can provide OOP interfaces for drawing and reading ontology diagrams made using draw.io. The code is able to generate a list of relationship triples that are used to store and construct ontology diagrams.
+
+## Installation
+
+To install this particular package, download the latest wheel file available online (link not live yet), and the use pip in the following manner:
+
+```{bash}
+python -m build
+pip install dist/cemento-0.3.0-py3-none-any.whl
+```
+
+## Usage
+
+One can refer to the examples folder for sample implementations of basic read and write operations with draw.io diagrams.
+
+## License
+
+[Open Source Initiative](https://opensource.org/licenses)
+
+## Contact Information
+If you have any questions or need further assistance, feel free to contact us at:
+
+Email: 
+[gop2@case.edu](Gabriel Obsequio Ponon)
