@@ -1,0 +1,25 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "pipable"
+version = "0.3.2"
+description = "pseudo pipe operation in python"
+authors = ["Kelvin Ng <hoishing@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/hoishing/pipable"
+homepage = "https://hoishing.github.io/pipable"
+keywords = ["pipe", "FP", "functional programming", "chain"]
+packages = [{ include = "pipable" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+mkdocs-material = "^9.5.31"
+pytest = "^8.3.2"
+toml = "^0.10.2"
+mkdocstrings = {extras = ["python"], version = "^0.25.2"}
+
