@@ -1,0 +1,5 @@
+[psychopy.experiment.components]
+KeyboardMonkeyComponent = psychopy_monkeys.components.keyboardMonkey:KeyboardMonkeyComponent
+MouseMonkeyComponent = psychopy_monkeys.components.mouseMonkey:MouseMonkeyComponent
+RoutineEnderMonkeyComponent = psychopy_monkeys.components.enderMonkey:RoutineEnderMonkeyComponent
+SliderMonkeyComponent = psychopy_monkeys.components.sliderMonkey:SliderMonkeyComponent
