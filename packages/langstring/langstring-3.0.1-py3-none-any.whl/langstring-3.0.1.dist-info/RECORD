@@ -1,0 +1,15 @@
+langstring/__init__.py,sha256=njEztMDcNwRHkulujt84IkHPAq-eeRYgGOhhjWqWTYM,3279
+langstring/controller.py,sha256=s5vxzj8_2gmi__JX2R_Hb-5r7Hx-Vq5pGrKXWIaV3o8,16294
+langstring/converter.py,sha256=6jDmg3GB6xuUVpDigBlzoOh4Dz94pwNruyr-2dqZ1AY,47917
+langstring/flags.py,sha256=gq4Kqxhxh4kw1Q0Gl2MRcgctVYw50CSrvHGdi87yBEw,9189
+langstring/langstring.py,sha256=ah79gVBNhvvDcTHg9ZliCGYSgxGz1o3fguHvn62zsKk,73084
+langstring/multilangstring.py,sha256=1cFAKBNy6bC4ZxfWEw8ZsRsZWlh5JWIhd2OQBAaT8RU,78306
+langstring/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langstring/setlangstring.py,sha256=_3eaKH11QVLnwe3D6jCuUKiTaC8n5hdvJjTSMHpQVuI,61570
+langstring/utils/__init__.py,sha256=YrKzL2qd2rulcsSUUICO4w7NnYdY7M0cNcZTWwav6Qc,675
+langstring/utils/non_instantiable.py,sha256=hexFrZr4fCtJquiTVPBXxJPe9DmsUYpQOZwNfOQwxNQ,3327
+langstring/utils/validators.py,sha256=utsIO_5rwY__juGcEOtvy9zDDy_SjfnhHa82OVOKUik,29768
+langstring-3.0.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+langstring-3.0.1.dist-info/METADATA,sha256=ZoKWOFnn4v5CJduYfEUGkV-cp7ia_PGXKHfY_hCv5Ng,30509
+langstring-3.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+langstring-3.0.1.dist-info/RECORD,,
