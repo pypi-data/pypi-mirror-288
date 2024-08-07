@@ -1,0 +1,9 @@
+opencv-python
+pyclipper
+shapely
+onnxruntime
+six
+Pillow
+numpy
+onnxruntime-gpu
+numba
