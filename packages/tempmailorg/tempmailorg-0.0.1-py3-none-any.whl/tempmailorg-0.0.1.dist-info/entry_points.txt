@@ -1,0 +1,2 @@
+[console_scripts]
+tempmailorg = tempmailorg.cli:main
