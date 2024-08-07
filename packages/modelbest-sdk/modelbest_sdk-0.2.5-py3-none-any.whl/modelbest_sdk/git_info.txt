@@ -1,0 +1,3 @@
+repo: git@codeup.aliyun.com:modelbest/infra/modelbest_sdk.git
+commit: 2ab797d92111aed9e7ac7da96f699d6e1be7a696
+branch: master
