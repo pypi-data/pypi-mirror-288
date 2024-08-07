@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: RAGLink
+Version: 0.0.1
+Summary: RAGLink is an open-source Retrieval-Augmented Generation framework, designed to enhance the performance and efficiency of natural language processing tasks by combining retrieval and large model generation techniques. It provides users with a powerful, flexible, and easily extensible development environment.
+Home-page: https://github.com/justinzm/RAGLink
+Author: Justin ZM
+Author-email: 3907721@qq.com
+Maintainer: Justin ZM
+Maintainer-email: 3907721@qq.com
+License: MIT
+Platform: all
+Description-Content-Type: text/markdown
+Requires-Dist: langchain ==0.2.5
+Requires-Dist: langchain-community ==0.2.5
+Requires-Dist: langchain-openai ==0.1.8
+Requires-Dist: loguru ==0.7.2
+Requires-Dist: pymilvus ==2.4.1
+Requires-Dist: python-dotenv ==1.0.1
+Requires-Dist: unstructured ==0.15.0
+Requires-Dist: openpyxl ==3.1.5
+Requires-Dist: python-magic ==0.4.27
+Requires-Dist: qdrant-client ==1.10.1
+Requires-Dist: docx2txt ==0.8
+
+# IntelliRAG：Enhancing NLP with Retrieval-Augmented Generation
+<div align="center">
+
+[**中文**](README.zh.md) | [**英文**](README.md) 
+
+</div>
+IntelliRAG is an open-source Retrieval-Augmented Generation framework, designed to enhance the performance and efficiency of natural language processing tasks by combining retrieval and large model generation techniques. It provides users with a powerful, flexible, and easily extensible development environment.
+
+### 🔑 Core Features
+- Retrieval Enhancement: Through retrieval technology, the framework can quickly retrieve relevant information from a large amount of data, providing context support for generation tasks.
+- Generation Capability: It integrates various large models for generation, capable of generating fluent and accurate text based on the retrieved information.
+- Modular Design: Adopts a modular design, making it easy for developers to customize and extend functionalities according to their needs.
+
+### 🚀 Installation Method
+```angular2html
+pip install -r requirements.txt
+```
+
+### 🔧 System Configuration
+- Rename the `.env_template` file to `.env` and set the AI large model corresponding TOKEN or KEY and other data within the file.
+- Set system-related configurations in the `config.json` file.
+
+### 🗺️ Integration
+#### AI Large Models
+- [x] OpenAI
+- [x] Minimax
+- [x] Deepseek
+
+#### Vector Databases
+- [x] Milvus
+- [x] Qdrant
+
+#### Embeddings Models
+- [x] OpenAIEmbeddings
+- [x] MiniMaxEmbeddings
+- [x] bce-embedding-base_v1
+
+#### Reranker Models
+- [x] bce-embedding-base_v1
+
+### 🔥System Structure
+- data: Holds data files.
+- rag: Contains files related to RAG.
+    - DocumentLoaders.py: Document loading class
+    - MilvusDatabase.py: Milvus database operation class
+    - SelectEmbeddings.py: Selects the Embedding model
+    - SelectModelChat.py: Selects the AI large model
+    - VectorStorage.py: Selects the dialogue large model
+    - TextSplitter.py: Text content splitting class
+    - GetContext.py: Retrieves content from the knowledge base
+- models: Holds model files.
+- utils: Contains utility class files.
+- RAGChat.py: Main entry file
+- README.md: Project documentation file.
+- requirements.txt: Project dependency file.
+- .env_template: Environment variable file template.
+- config.json: System configuration file.
+
+### 📖 Usage Instructions
+```angular2html
+# Vectorization storage of data
+rag_chat = RAGChat()
+file_path = "data/***.pdf"
+namespace = "…"
+rag_chat.execute_store(file_path, namespace)
+```
+
+```angular2html
+# RAG dialogue
+question = "……"
+rag_chat.execute_chat(question, namespace="…")
+```
+
+### 🙋‍♂️ Version Update
+```angular2html
+0.0.4
+- Added HuggingFaceEmbeddings mode is loaded into the Embedding model
+
+0.0.3
+- Added Qdrant vector database
+
+0.0.1
+- Project initialization, basic framework setup completed.
+```
+
