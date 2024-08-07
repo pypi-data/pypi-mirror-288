@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/practable/__init__.py
+src/practable/book.py
+src/practable.egg-info/PKG-INFO
+src/practable.egg-info/SOURCES.txt
+src/practable.egg-info/dependency_links.txt
+src/practable.egg-info/top_level.txt

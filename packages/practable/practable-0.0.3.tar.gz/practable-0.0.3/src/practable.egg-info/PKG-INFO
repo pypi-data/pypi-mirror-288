@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: practable
+Version: 0.0.3
+Summary: Connect to remote laboratory experiments hosted on a github.com/practable service
+Author-email: Timothy Drysdale <timothy.d.drysdale@gmail.com>
+Project-URL: Homepage, https://github.com/practable/practable-python
+Project-URL: Issues, https://github.com/practable/practable-python/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# practable-python
+a library for connecting to experiments in python
+
+## Requirements
+
+book:
+```
+expt = practable.book(group, duration, [, type="spin"| name="spin32"])
+```
+
+experiment:
+
+```
+expt.streams()
+```
+
+list the streams the experiment has
+
+```
+stream = expt.connect(stream_name) 
+```
+connect to experiment stream
+
+```
+stream.ok()
+```
+check if stream is connected, within the session time
+
+
+Stream should be a generator (iterator) with ability to send and receive messages
+
+```
+next(stream)
+
+stream.send(message)
+```
+
+
+

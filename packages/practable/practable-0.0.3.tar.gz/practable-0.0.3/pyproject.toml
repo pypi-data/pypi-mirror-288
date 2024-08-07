@@ -1,0 +1,29 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "practable"
+version = "0.0.3"
+authors = [
+  { name="Timothy Drysdale", email="timothy.d.drysdale@gmail.com" },
+]
+description = "Connect to remote laboratory experiments hosted on a github.com/practable service"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+    ]
+    
+[project.urls]
+Homepage = "https://github.com/practable/practable-python"
+Issues = "https://github.com/practable/practable-python/issues"
+
+[options.packages.find]
+where = "src"
