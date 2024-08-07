@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: django-contact-message
+Version: 0.0.0
+Summary: Django site contact Message model and admin
+Keywords: django
+Classifier: Framework :: Django
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: Django
+Requires-Dist: setuptools
+
+### Installation
+```bash
+$ pip install django-contact-message
+```
+
+#### `settings.py`
+```python
+INSTALLED_APPS+=['django_contact_message']
+```
+
+#### `migrate`
+```bash
+$ python manage.py migrate
+```
+
+### Features
++   `Message` model
++   admin
+
+### Models
+model|table|columns/fields
+-|-|-
+`Message`|`django_contact_message`|`id`,`user`,`email`,`subject`,`message`,`created_at`
+
+### Examples
+```python
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic.base import View
+from django_contact_message.models import Message
+
+class View(LoginRequiredMixin, View):
+    def post(self, request, *args, **kwargs):
+        Message(
+            user=request.user,
+            subject=request.POST['subject'],
+            email=request.POST['email'],
+            message=request.POST['message'],
+        ).save()
+```
+
