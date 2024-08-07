@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools >= 70.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "parsftp"
+version = "0.2.2"
+dependencies = [
+    "PyYAML",
+    "schema",
+    "colorlog"
+]
+requires-python = ">= 3.11"
+authors = [
+    { name = "CNRGH" },
+    { name = "Pierrick ROGER", email = "pierrick.roger@cnrgh.fr" }]
+description = "Transfer files through SFTP, launching multiple transfers in parallel."
+readme = "README.md"
+license = { text = "CeCILL" }
+keywords = ["CNRGH", "SFTP", "parallel"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)",
+    "Programming Language :: Python :: 3.11"
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/cnrgh/parsftp"
+"Repository" = "https://gitlab.com/cnrgh/parsftp"
+"Bug Tracker" = "https://gitlab.com/cnrgh/parsftp/issues"
+
+[project.optional-dependencies]
+tests = [
+    "pytest",
+    "mypy",
+    "pylint",
+    "coverage",
+    "yamllint",
+    "types-PyYAML"
+]
+doc = [
+    'sphinx',
+    'sphinx_rtd_theme'
+]
+deploy = [
+    'build',
+    'twine'
+]
+
+[project.scripts]
+parsftp = "parsftp:main"
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
+
+[tool.setuptools.package-data]
+"parsftp" = ["py.typed"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
