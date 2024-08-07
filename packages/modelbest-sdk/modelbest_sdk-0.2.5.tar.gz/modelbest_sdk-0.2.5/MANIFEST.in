@@ -1,0 +1,3 @@
+include modelbest_sdk/file_format/lib/libmbtable_sdk_shared.so
+include modelbest_sdk/proto/*.thrift
+include modelbest_sdk/git_info.txt
