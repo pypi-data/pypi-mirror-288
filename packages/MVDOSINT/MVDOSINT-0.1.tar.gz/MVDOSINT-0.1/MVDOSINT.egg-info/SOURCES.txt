@@ -1,0 +1,9 @@
+setup.py
+MVDOSINT.egg-info/PKG-INFO
+MVDOSINT.egg-info/SOURCES.txt
+MVDOSINT.egg-info/dependency_links.txt
+MVDOSINT.egg-info/entry_points.txt
+MVDOSINT.egg-info/requires.txt
+MVDOSINT.egg-info/top_level.txt
+mvdosint/__init__.py
+mvdosint/mvd.py
