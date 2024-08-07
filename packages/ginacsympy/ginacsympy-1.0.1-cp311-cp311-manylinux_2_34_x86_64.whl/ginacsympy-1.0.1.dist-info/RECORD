@@ -1,0 +1,11 @@
+ginacsympy_abc.py,sha256=SAxCsnW3BOyF61yL_EtTXef7CGH8j0JntViTG4P3rnc,2042
+ginacsympy_version.py,sha256=7BusdTIPGKY9iWNhnrViqHgcWuovzx6VLdmhMt6w2Js,120
+ginacsympy.cpython-311-x86_64-linux-gnu.so,sha256=vcVvrlCQoBltiTPlkhzmMH57AeAvtd8B811XT4uHrBc,145976720
+__pycache__/ginacsympy_abc.cpython-311.pyc,sha256=vaKUfDUgawNkw5pitRd7zvFRpWJ7b9gwxSR6B-jvfvQ,2820
+__pycache__/ginacsympy_version.cpython-311.pyc,sha256=IDGjBRVFxGYZ7xQ_Yy8Wu_mItz6qW7mJuhXwrmBCPwU,226
+ginacsympy-1.0.1.dist-info/WHEEL,sha256=lWDiE1HLlwE-7WWR6-z0vu2BrDdgX4YEbFjI_yCt3sc,114
+ginacsympy-1.0.1.dist-info/RECORD,,
+ginacsympy-1.0.1.dist-info/AUTHORS,sha256=HjIFYZAe6ah8RnGgqpNXZ1vTVLk_YDAPiqDtS62iYzA,1392
+ginacsympy-1.0.1.dist-info/COPYING,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ginacsympy-1.0.1.dist-info/top_level.txt,sha256=hEVMhpiPo-GJJLSB_aO4cmsE0JHHoqIW6dnO2F6lgDc,11
+ginacsympy-1.0.1.dist-info/METADATA,sha256=YEwZpFv2Jo1FbeZjP4JkeYH59bDDvrjFYnutaxk_5bE,2738
