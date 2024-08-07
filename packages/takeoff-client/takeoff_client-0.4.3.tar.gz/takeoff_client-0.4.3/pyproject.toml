@@ -1,0 +1,24 @@
+# This file is used to configure all tools used in the project. 
+
+# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────── #
+#                                                Project Configuration                                                 #
+# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────── #
+
+[project]
+name = "takeoff-client"
+version = "0.4.3"
+description = "Takeoff Client is a Python client for the Takeoff Server"
+authors = [{ name = "TitanML", email = "hello@titanml.co" }]
+readme = "README.md"
+dependencies = [
+  "sseclient-py >= 1.8.0",
+  "httpx==0.27.0",
+  "takeoff-config>=0.5.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"] # list of folders that contain the packages (["."] by default)
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
