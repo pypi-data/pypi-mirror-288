@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/furypie/__init__.py
+src/furypie/helper.py
+src/furypie.egg-info/PKG-INFO
+src/furypie.egg-info/SOURCES.txt
+src/furypie.egg-info/dependency_links.txt
+src/furypie.egg-info/entry_points.txt
+src/furypie.egg-info/requires.txt
+src/furypie.egg-info/top_level.txt
+tests/test1.py
