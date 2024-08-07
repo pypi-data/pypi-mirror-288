@@ -1,0 +1,9 @@
+dir2text/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dir2text/__main__.py,sha256=dl180qvuMU8xdapwW7KyLess66iCE5eqdxrzIMN5C8I,794
+dir2text/_util.py,sha256=jMRmH8hZzZNPV881wVvzwdTrmxEHuFPk4UIZDLpX2DA,876
+dir2text/markdown.py,sha256=HZoa2jLp8ATZPcYDZR-0tl6tl0_GRWpNPZ_vAvg0fgU,2524
+dir2text/text.py,sha256=luJu9UtUtx8ApL6dlH3w9gj0MKPDK8_uj_Qgkc57inc,5048
+dir2text-0.2.0.dist-info/METADATA,sha256=D7LNetJht-ACblQY03eiNLr5bqEcukBG7KqyX8hrvMg,588
+dir2text-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+dir2text-0.2.0.dist-info/entry_points.txt,sha256=3dwmMafFnOhHUuvoHF7672jaNnzqIqzgb98Xv4QYfig,77
+dir2text-0.2.0.dist-info/RECORD,,

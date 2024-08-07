@@ -1,0 +1,4 @@
+[console_scripts]
+dir2md=dir2text.markdown:main
+dir2text=dir2text.text:main
+
