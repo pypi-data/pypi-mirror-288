@@ -1,0 +1,17 @@
+evdschat/__init__.py,sha256=mEnbY1F4MJLlotU6aLOiM8-QfiUajRib_mIc_4SLNqw,52
+evdschat/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evdschat/common/akeys.py,sha256=JEXVaETE1NymFb-0aU7XnKtmk_P1Bg9R5cr5SlEaMcc,2670
+evdschat/common/bridge.py,sha256=W4K2cylrpyg3O_5uILGQkaPCqG-Vb1gpXaErrX8-h0Y,2131
+evdschat/common/github_actions.py,sha256=P2Wshz_tMhEXfNdyb4ysR3c7Vc88Z53NwrFTIbXKO38,1173
+evdschat/common/globals.py,sha256=9bYArC7Hr0WTJR8DRregtz3Q-L1IK0CsyppWkGWPG-4,1160
+evdschat/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evdschat/core/builder.py,sha256=qCo4ocp2lBNaKrGsLVqTY9g_X4uKQZdIujIB8Ceu1as,1086
+evdschat/core/chat.py,sha256=V_ZB8rucDXSKhMtFj83DNeuSFDv5qQq1mI-RXQs0BAA,3089
+evdschat/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evdschat/model/chatters.py,sha256=Eng9e2knjbxJdow8AB8O_RyMqcxXnoOBa9SP2-DgNAQ,4298
+evdschat/src/getter.c,sha256=eebVZTOCxTboHH7nqnuKyNru2seGcGKIDnZipn8gm7Y,2779
+evdschat-0.1.1.dist-info/LICENSE,sha256=AQQstKUH3vJiqSolXhj6SllKG0d6Uk7X6vk5Pm7-Jr4,7200
+evdschat-0.1.1.dist-info/METADATA,sha256=1hrMGcs3ZZBf2WcfgD-GFPzkrQzvDHcupOwhCrzNaoI,3817
+evdschat-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+evdschat-0.1.1.dist-info/entry_points.txt,sha256=NvH1LX6ATe--_xHkyrb1CVADiXwcI3DTv0uNkgQ2c1k,50
+evdschat-0.1.1.dist-info/RECORD,,

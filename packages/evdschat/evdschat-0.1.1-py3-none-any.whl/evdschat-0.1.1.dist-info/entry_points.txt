@@ -1,0 +1,3 @@
+[console_scripts]
+evdschat=evdschat:chat_console
+
