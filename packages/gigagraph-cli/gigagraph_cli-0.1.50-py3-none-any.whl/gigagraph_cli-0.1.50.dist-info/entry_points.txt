@@ -1,0 +1,3 @@
+[console_scripts]
+gigagraph=langgraph_cli.cli:cli
+
