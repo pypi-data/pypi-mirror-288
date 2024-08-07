@@ -1,0 +1,17 @@
+stardist_napari/__init__.py,sha256=BhrZB19ixBW5cpjjwSm7ycfkgEox9rPmjn07L0IhVOU,470
+stardist_napari/_dock_widget.py,sha256=saS11h-TGcGecOuIrPAuH_RD2yKCZypFtCKD363xtAc,66168
+stardist_napari/_sample_data.py,sha256=myxPrNGGgNNG2rE_1KanArgqnusaJlhKvvMbPEylcoQ,370
+stardist_napari/_version.py,sha256=mQs5aKWJ6q2TvirZJzZzLibyCpt2CyimnSsSrV9JnW4,50
+stardist_napari/napari.yaml,sha256=t9mnmb6gQ1ueg_HthIHmjYbJeKm_WyP0t6yypfoa40s,965
+stardist_napari/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stardist_napari/_tests/conftest.py,sha256=BkXZrK2-EmKMiIxdEMwxAPQhqjrtwXbHSMShQTYH05g,852
+stardist_napari/_tests/test_run.py,sha256=EJO1LzkVXbVjE8AQpFfCzGxaGtNyAXf20r60YO_4eDc,5987
+stardist_napari/_tests/test_samples.py,sha256=I38YR1R91ZN46DzrKDNxPtEPVe8qwOyssUWQlFuqODs,272
+stardist_napari/_tests/test_ui.py,sha256=kfrMUaoQR_04bmHi5_cywiGKIS-R859MeQ9Myt7-Gus,662
+stardist_napari/resources/stardist_logo_napari.png,sha256=HEOwgINusODLaruB5rbW8TJiylqH1gJ9-N4_6QBCAcI,15945
+stardist_napari-2024.8.6.1.dist-info/LICENSE.txt,sha256=_zxNLL4tP5et9p-v_jwmCT_Am_SxNEPW3Y-GGk0zgbE,1532
+stardist_napari-2024.8.6.1.dist-info/METADATA,sha256=gs3CgAMWupRcY38g7lOmxAaRGANZ42oy0Ks_vKXzETI,15856
+stardist_napari-2024.8.6.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+stardist_napari-2024.8.6.1.dist-info/entry_points.txt,sha256=erEueqXBA7fNQ0TVqo5Qy-v4GK7RZp7ZlLi9aLxY7R4,64
+stardist_napari-2024.8.6.1.dist-info/top_level.txt,sha256=U3mYVeX6h2ih0AFM0f_1JUVJXkcnfOAJx_r1L6MP4io,16
+stardist_napari-2024.8.6.1.dist-info/RECORD,,
