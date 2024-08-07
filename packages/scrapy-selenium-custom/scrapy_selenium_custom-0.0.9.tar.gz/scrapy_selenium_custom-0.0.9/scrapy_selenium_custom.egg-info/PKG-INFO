@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: scrapy-selenium-custom
+Version: 0.0.9
+Summary: Scrapy with selenium
+Home-page: https://github.com/sebin-maret/scrapy-selenium-custom
+License-File: LICENCE
+Requires-Dist: scrapy>=1.0.0
+Requires-Dist: selenium>=4.1.0
+Requires-Dist: webdriver-manager>=4.0.2

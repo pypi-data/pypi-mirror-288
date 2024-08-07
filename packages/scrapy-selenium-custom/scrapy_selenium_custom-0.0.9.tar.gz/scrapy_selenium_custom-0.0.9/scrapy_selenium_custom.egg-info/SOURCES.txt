@@ -1,0 +1,17 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+requirements/requirements.txt
+scrapy_selenium/__init__.py
+scrapy_selenium/http.py
+scrapy_selenium/middlewares.py
+scrapy_selenium_custom.egg-info/PKG-INFO
+scrapy_selenium_custom.egg-info/SOURCES.txt
+scrapy_selenium_custom.egg-info/dependency_links.txt
+scrapy_selenium_custom.egg-info/requires.txt
+scrapy_selenium_custom.egg-info/top_level.txt
+tests/__init__.py
+tests/test_cases.py
+tests/test_middlewares.py
