@@ -1,0 +1,14 @@
+mastersign/datascience/core/__init__.py,sha256=CDEdHvhvPF9ez6wUa2dUoRj6iOTu_Jy84FWiQn7d7qc,409
+mastersign/datascience/database/__init__.py,sha256=EdGgaza2nl1tx-He-Gpde-0ZWttj7-LlJk1mf41z4lE,9464
+mastersign/datascience/files/__init__.py,sha256=ACNSy63Et9U1ASGQ1SdjFejGO-MnmsC2E0Rvrzh87hM,1868
+mastersign/datascience/notebook/__init__.py,sha256=5FQ0s_2rPa2Vpj_dOhp6usXXAHPT9X-MBVVZLP2Uoqo,23
+mastersign/datascience/notebook/export_cell_code.py,sha256=69n5I-_Chvpu6950qCKhIeD_4-xcm22gsrBk0FAJ92I,2279
+mastersign/datascience/notebook/remove_input_from_html.py,sha256=sSxo8eTvqmq06AVZYpLK8cL8u9Clyn1vmhWjRkuBQUE,1111
+mastersign/datascience/plot/__init__.py,sha256=Uz0d9CP1GuqTCFXstSwMBqyIzNazRCrg6dfeV2ElCqI,60223
+mastersign/datascience/plot/basemap.py,sha256=T0dDHaepHYLzL9eeNxj0A-Oxy_1pLgcGsS_W8unDj-g,10637
+mastersign/datascience/reversegeocoder/__init__.py,sha256=W3YsROw_hm9EpDfuQwLC3ZssKxBA6UMFhf03pt8bWRM,5518
+mastersign_datascience-0.3.0.dist-info/LICENSE,sha256=hZmnvul4vO8DHVmY9_npuACEFGi5IW82cT-9CRrqRug,1555
+mastersign_datascience-0.3.0.dist-info/METADATA,sha256=_h1f28chI7HQCDlBFkyWf2caHsjIURUCIaDeQeOKx-U,2541
+mastersign_datascience-0.3.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mastersign_datascience-0.3.0.dist-info/top_level.txt,sha256=62goFL9CD-XnLKsATmcarCKr9dy6Q2XWISapgpCBTyo,11
+mastersign_datascience-0.3.0.dist-info/RECORD,,
