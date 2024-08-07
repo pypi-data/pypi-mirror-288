@@ -1,0 +1,12 @@
+face_detector_plus/__init__.py,sha256=eKD7bqRgk-biaNwZ0FFJ7yieQR_6dvFEXuLsO2c9gDc,42
+face_detector_plus/utils.py,sha256=S6QfbrznfYH8WbQmvRpE4xgQO8stkjDWvnKY_bD8zMo,1270
+face_detector_plus/detectors/__init__.py,sha256=F1V7tCkmSYmOtUVsh8CKAO8jLEF--FCUj4iE_pkrvqs,423
+face_detector_plus/detectors/caffemodel.py,sha256=WD78hAtJJ8zamV7ObsENSgaDIkfsqs3vAik8XYvdCas,3974
+face_detector_plus/detectors/cnn.py,sha256=H_oOI5NFOP3gZmIeqeuVuIU0mEah-EwBpKUvGWk0cGo,2983
+face_detector_plus/detectors/hog.py,sha256=AtqYVsaDuDFzY7lSXfJEUuGacD0NX9kS1jIeS170NvU,2888
+face_detector_plus/detectors/onnx_ultralight.py,sha256=4tcR11E-eydb3NQeFOfC3OHxeG3JNTjAIshdxyUUqGg,8572
+face_detector_plus/detectors/utils.py,sha256=U9ohJSd_J6mR6Nujjnnun2Al0qKa_VQBQ1EbcsIKFX4,15697
+face_detector_plus-1.0.1.dist-info/METADATA,sha256=NQGd42LxoMSd9AVRpwdDSGQM1b4nPa9ZXo6Q24KU6Zg,20124
+face_detector_plus-1.0.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+face_detector_plus-1.0.1.dist-info/top_level.txt,sha256=-mOQDF2RnJvFeHbY5rPCHBC2Cr2KFVusXP9Wb1xjgwk,19
+face_detector_plus-1.0.1.dist-info/RECORD,,
