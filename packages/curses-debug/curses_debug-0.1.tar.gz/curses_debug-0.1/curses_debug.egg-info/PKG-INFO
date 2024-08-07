@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: curses_debug
+Version: 0.1
+Summary: A simple library for a beautiful output window written in curses and multiprocessing
+Author-email: kirillovigor662@gmail.com
