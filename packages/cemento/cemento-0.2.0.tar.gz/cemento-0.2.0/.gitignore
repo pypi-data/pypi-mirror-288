@@ -1,0 +1,13 @@
+.env
+in/*
+man/*
+__pycache__/
+out/*
+dist
+*.egg-info
+onto_viewer_gxp/src/gxp_*
+gxp_*
+*.sh
+*.drawio
+*.bkp
+.*
